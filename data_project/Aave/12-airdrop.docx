@@ -1,0 +1,131 @@
+PROJECT: AAVE
+
+STATUS AIRDROP
+
+Belum ada
+Aave tidak pernah melakukan distribusi token gratis (airdrop) dalam arti retroactive claim ke pengguna awal. Distribusi token AAVE terjadi melalui: (1) ICO token LEND pada November 2017 (penjualan, bukan airdrop)【Phase 3 EV-002】, (2) Migrasi LEND ke AAVE rasio 100:1 pada Oktober 2020 untuk pemegang LEND yang sudah ada【Phase 3 EV-009】, (3) Insentif Safety Module 400 AAVE/hari mulai September 2020 untuk staker【Phase 3 EV-008】, (4) Alokasi Ecosystem Reserve 3 juta AAVE (18.75%) yang dikelola DAO【Phase 6 Distribution】. Tidak ada event snapshot untuk pengguna non-pemegang LEND, tidak ada program points, dan tidak ada distribusi gratis ke alamat yang berinteraksi dengan protokol sebelum TGE.
+
+AIRDROP EVENTS
+
+Tidak ada event airdrop yang tercatat. Blok ini dikosongkan karena project status "Belum ada".
+
+CONTEXT SAAT KEPUTUSAN
+
+Tidak ada keputusan airdrop yang diambil. Namun, konteks saat TGE AAVE (Oktober 2020) relevan untuk memahami mengapa airdrop tidak dipilih:
+- Tahap funding: Baru menyelesaikan Series B $25M (Oktober 2020) dipimpin Blockchain Capital【Phase 5 Round 3】; total raised ~$32.5M (ICO $16.2M + private $3M + ParaFi $4.5M + Series B $25M)【Phase 5 Funding History】
+- Ukuran komunitas: ~300.000+ pemegang LEND (dari distribusi ICO 23% ke founder/tim, 77% publik)【Phase 3 EV-002】; pengguna protokol V1 masih terbatas (launch Jan 2020)【Phase 3 EV-005】
+- Kondisi pasar: DeFi Summer 2020 puncak; Uniswap baru saja airdrop UNI September 2020 (400 UNI per alamat)【Pengetahuan umum era, tidak dari fase sebelumnya】; Compound START COMP distribution Juni 2020【Pengetahuan umum era】
+- Kompetitor terdekat: Compound (COMP mining live), Maker (MKR holders governance), Uniswap (UNI airdrop baru saja terjadi)
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Tidak ada trigger airdrop karena keputusan tidak diambil.
+Alternatif yang dievaluasi (dari pola keputusan Phase 9):
+- Token sale publik: Sudah dilakukan via ICO LEND 2017【Phase 3 EV-002】
+- Migrasi token existing holders: Dipilih — LEND ke AAVE 100:1【Phase 3 EV-009】
+- Liquidity mining / staking rewards: Dipilih — Safety Module 400 AAVE/hari【Phase 3 EV-008】, kemudian GHO facilitator rewards【Phase 3 EV-024】
+- Ecosystem grants: Dipilih — Aave Ecosystem Reserve 3M AAVE (18.75%)【Phase 6 Distribution】; Aave Chan Initiative grants【Phase 2 Entity 14】
+- Retroactive airdrop ke pengguna protokol: TIDAK dipilih. Tidak terdokumentasi di Phase 3, 6, atau 9 sebagai alternatif yang dibahas.
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Tidak ada pernyataan resmi menjelaskan "mengapa tidak airdrop" karena keputusan tidak pernah diumumkan sebagai proposal atau blog post. Dokumentasi hanya menjelaskan jalur yang diambil: migrasi LEND, Safety Module, Ecosystem Reserve【Phase 3 EV-007, EV-008, EV-009】【Phase 6 Distribution】
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Fokus pada alignment pemegang LEND existing: 81.25% supply dialokasikan ke migran LEND【Phase 6 Distribution】; airdrop ke pengguna baru akan melonggarkan kepemilikan early backers (HIPOTESIS, MEDIUM) [Phase 6 Distribution, Phase 9 Decision Framework Step 1]
+- Regulatory caution era 2020: Token sale ICO sudah dilakukan; airdrop tambahan bisa menarik perhatian SEC sebagai unregistered securities distribution (HIPOTESIS, LOW) [Phase 9 Strategic Trade-offs Trade-off 1, general 2020 regulatory context]
+- Capital efficiency: Safety Module staking mengunci token sebagai insurance, bukan mendistribusikan gratis ke alamat yang mungkin langsung menjual (HIPOTESIS, MEDIUM) [Phase 6 Utility Staking, Phase 9 Decision Framework Step 3]
+- Treasury sustainability: Ecosystem Reserve 3M AAVE dialokasikan untuk grants berkelanjutan, bukan one-time drop (HIPOTESIS, MEDIUM) [Phase 6 Distribution, Phase 5 Treasury]
+- No competitive pressure to airdrop: Uniswap UNI airdrop Sep 2020 terjadi SETELAH Aavenomics diumumkan Jul 2020【Phase 3 EV-007】; design sudah final sebelum tren airdrop retroactive meledak (HIPOTESIS, MEDIUM) [Phase 3 EV-007 timeline]
+
+OUTCOME PER POV
+
+POV Founder (Stani Kulechov): Sukses
+- Jangka pendek: Migrasi LEND→AAVE lancar; 81.25% supply terkunci di tangan early believers; Safety Module aktif dengan staking signifikan【Phase 3 EV-009】【Phase 6 Distribution】
+- Jangka panjang: Tokenomics fixed supply 16M AAVE terjaga; tidak ada tekanan jual dari airdrop claimers; governance control tetap pada komunitas yang aligned【Phase 6 Supply】【Phase 9 Core Insights Insight 2】
+- Dasar: Phase 3 EV-009, Phase 6 Distribution, Phase 9 Core Insights Insight 2 (HIGH)
+
+POV VC (Blockchain Capital, Framework Ventures, ParaFi, Standard Crypto, Blockchain.com Ventures): Sukses
+- Jangka pendek: Investasi Series B $25M (Oct 2020) tidak dilusi oleh airdrop besar; token price discovery tanpa overhang claimers【Phase 5 Round 3】
+- Jangka panjang: Early investors (Framework, 3AC, ParaFi dari private sale $3M+$4.5M Jul 2020) memegang AAVE via migrasi LEND atau pembelian secondary; tidak ada unlock cliff airdrop yang menimbulkan sell pressure tiba-tiba【Phase 5 Rounds 1-2】【Phase 6 Vesting Schedule】
+- Dasar: Phase 5 Funding History Rounds 1-3, Phase 6 Vesting Schedule (HIGH)
+
+POV Retail (pembeli LEND ICO & early AAVE buyers): Sukses
+- Jangka pendek: Tidak ada dumper airdrop yang menekan harga; migrasi 100:1 transparan; early buyers LEND mendapat AAVE tanpa konkurensi claimers baru【Phase 3 EV-009】【Phase 6 Distribution】
+- Jangka panjang: Supply fixed 16M sejak TGE; tidak ada inflasi dari airdrop; price appreciation didorong protocol growth bukan distribusi gratis【Phase 6 Supply】【Phase 8 Adoption Metrics】
+- Dasar: Phase 3 EV-009, Phase 6 Distribution Supply, Phase 8 Adoption Metrics (HIGH)
+
+POV Community (pengguna protokol Aave V1/V2 pre-TGE): Sebagian
+- Jangka pendek: Pengguna aktif V1 (launch Jan 2020) tidak mendapat reward retroactive; hanya pemegang LEND yang benefit【Phase 3 EV-005】【Phase 3 EV-009】
+- Jangka panjang: Komunitas tumbuh via Safety Module staking, GHO facilitator rewards, dan grants dari Ecosystem Reserve — insentif berkelanjutan bukan one-time drop【Phase 3 EV-008】【Phase 3 EV-024】【Phase 6 Distribution】
+- Dasar: Phase 3 EV-005 EV-008 EV-024, Phase 6 Distribution (MEDIUM)
+
+POV Developer (builder di atas Aave): Sebagian
+- Jangka pendek: Tidak ada insentif token langsung untuk developer early; fokus pada tooling (SDK, Address Book) dan grants kemudian【Phase 7 Developer Ecosystem】
+- Jangka panjang: Developer ecosystem tumbuh via Aave Grants DAO, BGD Labs Address Book, Aave Kit (planned) — sustainable funding bukan airdrop【Phase 2 Entity 42 Entity 82】【Phase 7 Developer Ecosystem】
+- Dasar: Phase 2 Entity 42 Entity 82, Phase 7 Developer Ecosystem (MEDIUM)
+
+POV Institution (institusi yang menggunakan Aave Arc/Horizon): Tidak relevan
+- Jangka pendek: Institutional products (Arc Nov 2021, Horizon 2025) muncul setelah TGE; tidak terpengaruh keputusan airdrop 2020【Phase 3 EV-017】【Phase 2 Entity 19】
+- Jangka panjang: Institutional adoption didorong permissioned access (KYC/AML), RWA lending, white-label — bukan token incentives【Phase 2 Entity 20 Entity 63】【Phase 7 Major Integrations】
+- Dasar: Phase 3 EV-017, Phase 2 Entity 19 Entity 20 Entity 63, Phase 7 Major Integrations (HIGH)
+
+POV Validator (tidak ada validator pada Aave — protokol lending bukan chain): Tidak relevan
+- Jangka pendek: Aave bukan blockchain Layer 1; tidak ada validator set; Safety Module stakers berperan sebagai insurance backstop bukan validator【Phase 6 Utility Staking】
+- Jangka panjang: Security model bergantung pada auditors, formal verification, bug bounty — bukan validator economics【Phase 4 Security Model】【Phase 7 Infrastructure Providers】
+- Dasar: Phase 6 Utility, Phase 4 Security Model, Phase 7 Infrastructure Providers (HIGH)
+
+POV Builder (proyek yang compose/integrate Aave): Sebagian
+- Jangka pendek: Builder early (seperti Instadapp, DeFi Saver, Yearn) tidak mendapat airdrop AAVE; mengandalkan composability V1/V2 tanpa token incentive【Phase 3 EV-005】【Phase 3 EV-011】
+- Jangka panjang: Builder benefit dari V3 modular architecture, V4 hub-and-spoke, stablecoin GHO, dan grants — sustainable integration value bukan token drop【Phase 4 Architecture V3 V4】【Phase 2 Entity 18】【Phase 7 Developer Ecosystem】
+- Dasar: Phase 3 EV-005 EV-011, Phase 4 Architecture V3 V4, Phase 2 Entity 18, Phase 7 Developer Ecosystem (MEDIUM)
+
+METRIK RETENSI
+
+Tidak ditemukan — tidak ada airdrop sehingga tidak ada metrik retensi claimer.
+
+FARMING DAN SYBIL
+
+Tidak ditemukan — tidak ada airdrop sehingga tidak ada farming/sybil response.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Token AAVE live dengan supply fixed 16M sejak Oktober 2020【Phase 6 Supply】
+- DAO governance matang dengan treasury $329M (incl AAVE) / $132.7M (ex-AAVE)【Phase 5 Treasury】
+- Multi-chain deployment 16+ chains, TVL $22.4B, revenue $773.6M annualized fees【Phase 8 Adoption Metrics Market Share】
+- Native stablecoin GHO live ($185M supply) dengan facilitator model【Phase 3 EV-024】【Phase 8 Adoption Metrics】
+- Developer ecosystem 120+ monthly active contributors【Phase 8 Adoption Metrics】
+- Security-first reputation dengan formal verification V4【Phase 4 Security Model】
+
+Prasyarat yang belum:
+- Tidak ada sinyal dari DAO atau Aave Labs tentang rencana airdrop/points program
+- Governance proposal untuk airdrop tidak pernah diajukan di governance.aave.com【Phase 7 Governance Ecosystem】
+- Token utility sudah lengkap (governance, staking, GHO discount, collateral, buyback) — tidak ada gap yang butuh airdrop untuk diisi【Phase 6 Utility】
+- Regulatory environment ketat (MiCA EU, US stablecoin bills) membuat airdrop berisiko hukum【Phase 8 Narrative Position Regulatory Risk】
+
+Sinyal yang biasanya mendahului:
+- Perubahan dokumentasi tokenomics di aave.com/docs/ecosystem/aave
+- Kontrak distribusi baru di-deploy ke GitHub aave/aave-v4 atau aave-dao/aave-v3-origin
+- Pengumuman snapshot di governance.aave.com atau Snapshot org
+- Perekrutan tim "growth/community incentives" di Aave Labs
+- Proposal on-chain untuk alokasi dari Ecosystem Reserve 3M AAVE untuk airdrop
+
+Penilaian: Kemungkinan airdrop AAVE di masa depan RENDAH (keyakinan MEDIUM). Tokenomics sudah matang dengan supply fixed, utility multi-fungsi, dan revenue diversification. DAO lebih memilih insentif berkelanjutan (Safety Module, GHO facilitator, Orbit Program delegates, grants) daripada one-time drop. Airdrop hanya mungkin jika: (1) major protocol upgrade (V5) butuh bootstrap adoption baru, (2) competitive pressure dari protocol baru dengan points program agresif, atau (3) regulatory clarity memungkinkan airdrop tanpa risiko sekuritas. Faktor yang akan mengubah penilaian: proposal on-chain resmi, blog post Aave Labs tentang "points program", atau deployment kontrak merkle distributor.
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika tokenomics sudah final (fixed supply, utility lengkap) SEBELUM tren airdrop retroactive meledak (era 2020, pre-UNI), project bisa menghindari tekanan jual airdrop dan mempertahankan alignment early backers — akibatnya price discovery lebih bersih tanpa overhang claimers.
+- Ketika protokol memilih staking-as-insurance (Safety Module) daripada airdrop ke pengguna, token terkunci sebagai collateral protokol bukan dijual segera — akibatnya supply circulating terkendali dan security budget internal terbentuk sejak awal.
+- Ketika DAO mengelola Ecosystem Reserve untuk grants berkelanjutan (bukan one-time drop), komunitas builder tumbuh sustainable tanpa spike aktivitas palsu — akibatnya developer retention 120+ monthly active contributors setelah 6+ tahun.
+- Ketika institutional product suite (Arc, Horizon) dibangun tanpa token incentives retail, adoption didorong compliance dan product-market fit bukan farming — akibatnya white-label Kraken V3 disetujui komunitas tanpa insentif token tambahan.
+- Ketika founder personal commitment (Stani 5k ETH pasca-exploit) visible on-chain, trust protokul dipulihkan tanpa butuh airdrop untuk "buy back community" — akibatnya TVL recovery ke $22.4B dalam 2 bulan tanpa distribusi gratis.
+
+OPEN THREADS
+
+- Apakah ada diskusi internal Aave Labs/DAO tentang airdrop/points program yang tidak terekspos di forum publik?
+- Bagaimana komposisi holder AAVE saat ini membandingkan dengan distribusi awal (LEND migrator 81.25%, Ecosystem Reserve 18.75%) — apakah sudah terjadi redistribusi signifikan via secondary market?
+- Apakah GHO facilitator rewards atau Orbit Program delegate compensation bisa berevolusi menjadi bentuk "continuous airdrop" untuk kategori pengguna tertentu?
+- Bagaimana regulatory treatment airdrop di jurisdictions utama (US, EU, Singapore) mempengaruhi keputusan Aave DAO jika proposal airdrop diajukan?
+- Apakah ada on-chain data yang bisa membedakan "early protocol users pre-TGE" vs "LEND holders" untuk analisis counterfactual "what if airdrop to users"?

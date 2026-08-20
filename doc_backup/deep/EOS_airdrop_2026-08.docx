@@ -1,0 +1,123 @@
+PROJECT: EOS
+
+STATUS AIRDROP
+
+Belum ada. EOS tidak pernah melakukan airdrop, program points, retroactive reward, lockdrop, atau distribusi token gratis lainnya. Seluruh supply awal (1 miliar EOS) didistribusikan melalui ICO berbayar 341 hari (2017-06-26 s.d. 2018-06-01) dan 10% dialokasikan ke Block.one dengan vesting 10 tahun【Phase 5 — Funding History】【Phase 6 — Distribution】【Phase 3 — EV-002, EV-008】. Snapshot mainnet 2018-06-14 hanyalah migrasi 1:1 token ERC-20 yang sudah dibeli, bukan distribusi baru【Phase 3 — EV-009】.
+
+AIRDROP EVENTS
+
+Tidak ada event airdrop yang tercatat dalam sejarah EOS. Semua distribusi token berbasis pembayaran (ICO) atau inflasi protokol berkelanjutan【Phase 6 — Distribution】【Phase 3 — EV-002, EV-008, EV-010】.
+
+CONTEXT SAAT KEPUTUSAN
+
+Tahap funding: Pre-revenue, pre-mainnet, modal diperlukan untuk R&D protokol DPoS/WASM berskala besar【Phase 5 — Funding History】.
+Ukuran komunitas: Belum ada komunitas on-chain; komunitas terbentuk seiring ICO berlangsung (peserta harian)【Phase 3 — EV-002】.
+Kondisi pasar: ICO boom 2017-2018; investor retail dan institusi mencari exposure Layer 1 baru; Ethereum congestion mendorong narasi "Ethereum killer"【Phase 8 — Market Category】【Phase 3 — EV-003】.
+Kompetitor terdekat: Ethereum (PoW lalu PoS), Cardano (ICO 2017), Tezos (ICO 2017), EOS memilih ICO tahunan terpanjang untuk distribusi luas dan price discovery【Phase 8 — Competitor Landscape】.
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Kebutuhan kapital besar ($4.1B target) untuk membangun protokol dari nol, merekrut tim, dan mendanai ekosistem awal【Phase 5 — Funding History】.
+Alternatif yang tersedia: (1) Airdrop ke holder Bitcoin/Ethereum — tidak dipilih karena tidak mengumpulkan dana; (2) Private sale ke VC — tidak dipilih (ICO permissionless, no private allocation)【Phase 6 — Distribution】; (3) Fair launch mining — tidak cocok arsitektur DPoS non-PoW【Phase 4 — Consensus Mechanism】; (4) Hybrid ICO + airdrop komunitas — tidak dilakukan.
+Alternatif tidak terdokumentasi: Tidak ada catatan internal yang publik menunjukkan pertimbangan airdrop sebagai opsi serius【Phase 3 — EV-001 through EV-008】.
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Year-long token distribution ensures broad participation and fair price discovery" — Block.one whitepaper & ICO terms【Phase 1 — Whitepaper】【Phase 3 — EV-003】.
+- "No private sale, no pre-sale, no preferential terms" — Block.one communication sepanjang ICO【Phase 5 — Token Sale】.
+- Tujuan: Mendistribusikan token ke sebanyak mungkin tangan sebelum mainnet, menghindari konsentrasi whale awal【Phase 6 — Distribution】.
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Kebutuhan dana tunai masif ($4.1B) untuk R&D protokol kompleks (DPoS, parallel execution, WASM runtime) yang tidak bisa difunding via airdrop【Phase 5 — Funding History】 (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf].
+- Menghindari klasifikasi sekuritas: Model ICO dengan kontribusi ETH/BTC menciptakan "investment contract" risk, tapi airdrop gratis justru semakin rawan dianggap securities offering tanpa consideration (Howey test prong "investment of money")【Phase 5 — Financial Risk】 (MEDIUM) [SEC Press Release, https://www.sec.gov/news/press-release/2019-197].
+- Block.one ingin retain kontrol supply besar (10% reserve) untuk funding operasional jangka panjang (Voice, investasi strategis) — airdrop mengurangi treasury founder【Phase 6 — Vesting Schedule】 (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf].
+- Narasi "Ethereum killer" membutuhkan war chest untuk ekosistem grants, BD, marketing — ICO menyediakan $4.1B cash/ETH/BTC【Phase 3 — EV-001】 (MEDIUM) [Bloomberg, https://www.bloomberg.com/news/articles/2018-06-02/eos-raises-4-billion-in-year-long-ico-the-largest-ever].
+
+OUTCOME PER POV
+
+POV Founder: Tidak berlaku (tidak ada airdrop)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Tidak ada event airdrop【Phase 3 — History】.
+
+POV VC: Tidak berlaku (tidak ada airdrop)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Tidak ada VC allocation; ICO permissionless【Phase 6 — Distribution】.
+
+POV Retail: Tidak berlaku (tidak ada airdrop)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Retail partisipasi via ICO berbayar, bukan gratis【Phase 5 — Token Sale】.
+
+POV Community: Tidak berlaku (tidak ada airdrop)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Komunitas terbentuk dari peserta ICO, bukan penerima airdrop【Phase 3 — EV-002】.
+
+POV Developer: Tidak berlaku (tidak ada airdrop)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Developer incentive via grants (ENF) dan inflasi, bukan airdrop【Phase 5 — Revenue Model】.
+
+POV Institution: Tidak berlaku (tidak ada airdrop)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Institusi beli via ICO atau secondary market【Phase 8 — Exchange Ecosystem】.
+
+POV Validator: Tidak berlaku (tidak ada airdrop)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: BP reward via inflasi 1%/tahun, bukan airdrop【Phase 6 — Inflation/Deflation】.
+
+POV Builder: Tidak berlaku (tidak ada airdrop)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Builder funding via ENF grants & EOS Network Ventures【Phase 5 — Revenue Model】.
+
+METRIK RETENSI
+
+Tidak ditemukan — tidak ada airdrop untuk diukur retensinya【Phase 3 — History】【Phase 6 — Token】.
+
+FARMING DAN SYBIL
+
+Tidak berlaku — tidak ada airdrop, snapshot, atau kriteria kelayakan gratis yang bisa di-farm【Phase 3 — History】. ICO menggunakan mekanisme daily auction on-chain (smart contract Ethereum) yang inherently anti-sybil karena butuh kontribusi ETH/BTC per hari【Phase 3 — EV-002】.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Mainnet live 6+ tahun dengan komunitas terdesentralisasi (BP collective, ENF)【Phase 3 — EV-009, EV-017】.
+- Token liquid di 50+ CEX/DEX【Phase 8 — Exchange Ecosystem】.
+- Treasury ENF menerima inflasi 1%/tahun untuk grants/ventures【Phase 5 — Revenue Model】.
+- EOS EVM live menarik developer Ethereum【Phase 3 — EV-019】.
+
+Prasyarat yang belum:
+- Tidak ada sinyal dari ENF/BP tentang rencana airdrop atau points program【Phase 9 — Strategic Objectives】.
+- Tokenomics saat ini: inflasi 1% BP + 1% ENF + REX yield — sudah menyediakan insentif staking tanpa butuh airdrop【Phase 6 — Inflation/Deflation】.
+- Regulatory overhang SEC 2019 membuat airdrop gratis berisiko (bisa dianggap unregistered securities distribution)【Phase 5 — Financial Risk】.
+- Komunitas governance (BP voting) berfungsi tanpa insentif tambahan【Phase 6 — Governance】.
+
+Sinyal yang biasanya mendahului:
+- Pengumuman "snapshot date" atau "eligibility criteria" di blog ENF/Discord/GitHub.
+- Deploy kontrak distribusi baru (MerkleDrop, Claim contract) di mainnet atau EOS EVM.
+- Perubahan parameter inflasi via proposal `eosio.system` untuk mengalihkan supply ke rewards program.
+- Rekrutmen tim "growth/community incentives" di ENF careers page.
+
+Penilaian: Peluang airdrop EOS di masa depan RENDAH (keyakinan: 80%). Alasan: (1) Model inflasi + staking yield + REX + grants sudah menyediakan insentif berkelanjutan tanpa perlu distribusi massal gratis; (2) Regulatory risk tinggi pasca-SEC settlement 2019 — airdrop gratis justru memperkuat argumen "investment contract" di mata regulator AS; (3) ENF fokus pada EOS Network Ventures (equity/token investment) dan grants berbasis proposal, bukan distribusi breit; (4) Narasi "EVM-Compatible Layer 1" menarik developer via tooling kompatibilitas, bukan token gratis. Airdrop hanya mungkin jika: (a) Major protocol upgrade (mis. Leap 6.0 ZK/sidechain) butuh bootstrap liquidity/users cepat; (b) Competitor (Solana, Base, Arbitrum) meluncurkan agresif incentive program yang menggeser market share signifikan; (c) Regulatory clarity di AS mengubah risk profile airdrop.
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika proyek butuh kapital R&D masif pre-mainnet (era 2017-2018, ICO boom), ICO permissionless tahunan lebih efektif dari airdrop untuk: (a) mengumpulkan dana tunai, (b) price discovery pasar, (c) menciptakan komunitas "skin in the game" sejak hari pertama — trade-off: regulatory risk tinggi (SEC settlement EOS $24M)【Phase 3 — EV-013】.
+- Distribusi 100% paid (ICO) + 0% free allocation menciptakan holder base yang secara finansial terkomit, mengurangi sell pressure pasca-TGE dibanding airdrop massal — tapi menciptakan barrier to entry bagi non-capital users【Phase 6 — Distribution】.
+- Inflasi protokol terprogram (1% BP, 1% ENF) berfungsi sebagai "continuous airdrop" kepada staker/validator/builder tanpa memerlukan snapshot/event tunggal — model ini lebih sustainable untuk Layer 1 mature (era 2021-sekarang)【Phase 6 — Inflation/Deflation】.
+- Migration snapshot (ERC-20 → native) bukan airdrop: user harus sudah beli token sebelumnya; ini memastikan tidak ada supply overhang tambahan di mainnet launch【Phase 3 — EV-009】.
+- Regulatory settlement early (2019) memaksa proyek memisahkan legal entity (Block.one) dari protocol steward (ENF) — airdrop di masa depan akan menambah kompleksitas hukum, bukan menguranginya【Phase 3 — EV-013, EV-017】.
+
+OPEN THREADS
+
+- Apakah ENF pernah mendiskusikan airdrop/points program secara internal (mis. di board meeting) — tidak ada catatan publik.
+- Apakah snapshot untuk REX (2019) atau EOS EVM deployment (2022) pernah dipertimbangkan sebagai basis retroactive reward — tidak terdokumentasi.
+- Bagaimana komunitas EOS (Discord/Telegram) merespons airdrop besar kompetitor (ARB, OP, JTO, PYTH) — tidak ada survei terverifikasi.
+- Apakah Leap 6.0 (ZK/sidechain roadmap) akan memerlukan bootstrap incentive baru — tergantung eksekusi teknis 2024-2025.
+- Status hukum airdrop di AS pasca-SEC vs Ripple, SEC vs Coinbase, dll — apakah ada safe harbor baru untuk protocol-native distribution.

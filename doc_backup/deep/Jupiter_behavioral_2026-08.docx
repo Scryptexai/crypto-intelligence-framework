@@ -1,0 +1,477 @@
+PROJECT: Jupiter
+
+Strategic Objectives
+
+1. Menjadi infrastruktur swap dan likuiditas dominan di Solana
+· Evidence: Jupiter Aggregator merutekan >85-90% volume aggregator Solana (Phase 8 Market Share); kumulatif volume >$500B per blog resmi (Phase 3 EV-018); integrasi dengan 20+ DEX Solana (Phase 4 Core Components, Phase 7 Major Integrations)
+· Supporting Dataset: Phase 3 EV-002, EV-007, EV-012, EV-018; Phase 4 System Architecture; Phase 7 Major Integrations; Phase 8 Market Share
+
+2. Membangun full-stack DeFi suite (swap, limit, DCA, perps) terintegrasi pada satu routing layer
+· Evidence: Produk dirilis berurutan: Aggregator v1 (2021-10, EV-002), Limit Orders (2022, EV-003), DCA (2022, EV-004), Perps v1 (2022-11, EV-005), API/SDK/Terminal (2023, EV-006), Perps v2/JLP (2024-07, EV-013), Mobile (2024-10, EV-015), Ultra API (2024-11, EV-016)
+· Supporting Dataset: Phase 3 EV-002 sampai EV-018; Phase 4 Core Components; Phase 7 Applications
+
+3. Desentralisasi progresif melalui DAO governance dengan token JUP
+· Evidence: TGE JUP 2024-01-31 (EV-008); DAO formation (EV-009); proposal fee switch (EV-014); airdrop berulang Jupuary 1/2/3 (EV-008, EV-011, EV-017); treasury allocation 40% supply (Phase 6 Distribution)
+· Supporting Dataset: Phase 3 EV-008, EV-009, EV-011, EV-014, EV-017; Phase 6 Token Information, Distribution, Governance
+
+4. Menjadi developer infrastructure layer utama untuk Solana DeFi
+· Evidence: TypeScript/Rust SDK, REST API v6/Ultra API, Terminal widget, Mobile SDK (Phase 4 Core Components); Ultra API sub-100ms latency untuk enterprise (Phase 4 Current Technical Stack); 50-80 active contributors GitHub (Phase 8 Adoption Metrics)
+· Supporting Dataset: Phase 4 Core Components, Technical Upgrade History; Phase 7 Developer Ecosystem; Phase 8 Adoption Metrics
+
+5. Membangun sustainable revenue melalui protocol fees dan enterprise API
+· Evidence: Swap fees, perps fees, Ultra API enterprise tier (Phase 5 Revenue Model); fee switch proposal untuk alirkan fee ke DAO (EV-014); JLP fee revenue untuk LP (Phase 4 Jupiter Perps v2)
+· Supporting Dataset: Phase 5 Revenue Model, Financial Dependencies; Phase 3 EV-014; Phase 4 Jupiter Perps v2
+
+Decision Timeline
+
+Keputusan: Pendirian Jupiter Exchange Ltd. di British Virgin Islands (2021)
+· Trigger: Perlu entitas hukum untuk operasikan protokol DeFi global dari jurisdiksi crypto-friendly
+· Evidence: OpenCorporates menunjukkan registrasi BVI 2055186 (Phase 1 Founding Entity); Terms of Service mengacu pada Jupiter Exchange Ltd. (Phase 1)
+· Decision: Mendaftarkan perusahaan di BVI sebagai legal wrapper
+· Immediate Result: Entitas hukum resmi terbentuk untuk kontrak, employment, IP, compliance
+· Long-term Impact: Memisahkan legal liability dari tim pseudonim; memungkinkan CEX listing, partnership enterprise, treaty compliance
+· Supporting Dataset: Phase 1 Founding Entity; Phase 2 Entity: Jupiter Exchange Ltd.; Phase 3 EV-001
+
+Keputusan: Luncurkan Aggregator v1 pada Solana Mainnet tanpa testnet publik formal (2021-10)
+· Trigger: Solana DeFi ecosystem tumbuh cepat (Serum, Raydium, Orca live); window of opportunity untuk first-mover aggregator
+· Evidence: Blog v1 launch (Phase 3 EV-002); program deploy Solscan (Phase 1 Launch Date); tidak ada dokumentasi testnet phase di Phase 1/3
+· Decision: Deploy langsung ke mainnet dengan routing melalui Serum, Raydium, Orca
+· Immediate Result: Produk live, user dapat swap best price; menangkap early Solana DeFi growth
+· Long-term Impact: Menetapkan Jupiter sebagai default aggregator Solana; network effect sulit digeser kompetitor
+· Supporting Dataset: Phase 1 Launch Date; Phase 3 EV-002; Phase 4 System Architecture; Phase 8 Market Timeline
+
+Keputusan: Bangun produk suite berurutan (Limit Orders → DCA → Perps) bukan parallel
+· Trigger: Setiap produk memperluas use case dan retention; resource team terbatas (~30-40 orang, Phase 1 Core Team)
+· Evidence: Timeline Phase 3: Limit Orders (2022), DCA (2022), Perps v1 (2022-11) — masing-masing ~6-12 bulan gap
+· Decision: Fokus satu produk per periode, integrasikan ke aggregator existing
+· Immediate Result: Setiap launch memperkuat moat aggregator; user tidak perlu pindah platform
+· Long-term Impact: Full-stack DeFi suite menciptakan switching cost tinggi; data cross-product meningkatkan routing quality
+· Supporting Dataset: Phase 3 EV-003, EV-004, EV-005; Phase 1 Core Team; Phase 4 Core Components
+
+Keputusan: Launch Jupiter Perps v1 dengan oracle Pyth dan integrasi Wormhole (2022-11)
+· Trigger: Solana butuh native perps DEX; Serum orderbook pasca-FTX tidak reliable; Drift/Zeta belum dominant
+· Evidence: Perps v1 launch blog (EV-005); Pyth oracle docs (Phase 4 Oracle); Wormhole ecosystem page (Phase 2 Entity: Wormhole, Phase 7 External Dependencies)
+· Decision: Build perps engine on-chain dengan hybrid orderbook/AMM, gunakan Pyth untuk mark price, Wormhole untuk cross-chain messaging
+· Immediate Result: Perps live dengan funding rate, liquidation engine; JUP token belum ada jadi fee ke treasury company
+· Long-term Impact: Fondasi untuk Perps v2/JLP; menarik trader derivatif ke Jupiter ecosystem; diversifikasi revenue beyond swap fees
+· Supporting Dataset: Phase 3 EV-005; Phase 4 Core Components (Jupiter Perps v2), Oracle; Phase 7 External Dependencies (Pyth, Wormhole)
+
+Keputusan: Rilis API/SDK/Terminal sebagai developer infrastructure (2023)
+· Trigger: Wallet dan dApp meminta embed swap; Jupiter menjadi de facto liquidity layer Solana
+· Evidence: EV-006; Terminal docs (Phase 4 Core Components); SDK TypeScript/Rust (Phase 4); Ultra API v6 (EV-016)
+· Decision: Open infrastructure gratis untuk integrator; monetisasi via enterprise tier (Ultra API) kemudian
+· Immediate Result: Adopsi luas di wallet (Phantom, Solflare, Backpack), trading bot, portfolio tracker
+· Long-term Impact: Jupiter jadi "Stripe of Solana DeFi"; network effect memperkuat moat aggregator; revenue diversification
+· Supporting Dataset: Phase 3 EV-006, EV-016; Phase 4 Core Components, Technical Upgrade History; Phase 7 Developer Ecosystem, Wallet Ecosystem
+
+Keputusan: TGE JUP via LFG Launchpad LBP + airdrop Jupuary 1 (2024-01-31)
+· Trigger: Butuh token untuk governance DAO, incentive alignment, community ownership; hindari VC allocation yang menciptakan sell pressure
+· Evidence: Tokenomics blog (Phase 6 Token Information, Distribution); TGE blog (EV-008); 0% investor allocation (Phase 6 Distribution)
+· Decision: LBP di LFG Launchpad (price discovery fair) + airdrop 10% supply ke ~955k wallet eligible berdasarkan on-chain activity
+· Immediate Result: JUP listed di 7+ major CEX simultan (EV-010); DAO formed (EV-009); wide distribution menciptakan legitimate governance base
+· Long-term Impact: Token distribution community-centric memperkuat DAO legitimacy; no VC unlock risk; fee switch proposal feasible
+· Supporting Dataset: Phase 3 EV-008, EV-009, EV-010; Phase 6 TGE, Distribution, Utility; Phase 5 Fundraising Mechanism
+
+Keputusan: Perps v2 dengan JLP (Jupiter Liquidity Pool) menggantikan orderbook murni (2024-07)
+· Trigger: Orderbook perps v1 capital inefficient; LP butuh single-sided exposure; competitor Drift/Zeta menggunakan AMM model
+· Evidence: Perps v2 blog (EV-013); JLP multi-asset pool (Phase 4 Jupiter Perps v2); TVL peak $1.2B lalu $600M (Phase 8 Liquidity)
+· Decision: Hybrid AMM/orderbook dengan JLP sebagai counterparty; LP mint/burn JLP shares; trader leverage 100x
+· Immediate Result: TVL naik signifikan; fee revenue ke JLP holders; perps volume tumbuh
+· Long-term Impact: Capital efficiency lebih tinggi; align LP incentives dengan protocol; tapi introduce impermanent loss risk untuk LP
+· Supporting Dataset: Phase 3 EV-013; Phase 4 Core Components, Technical Upgrade History; Phase 8 Liquidity, Adoption Metrics
+
+Keputusan: Fee switch proposal untuk alirkan protocol fee ke DAO treasury/stakers (2024-09)
+· Trigger: DAO treasury 40% JUP (nilai volatil); butuh sustainable revenue stream bukan token sales; community demand
+· Evidence: Fee switch proposal blog (EV-014); vote.jup.ag (Phase 6 Governance); Phase 5 Financial Risk (fee switch not activated)
+· Decision: Governance proposal untuk redirect swap/perps fee portion ke DAO; voting ongoing
+· Immediate Result: Diskusi komunitas aktif; belum dieksekusi on-chain per info publik
+· Long-term Impact: Jika pass, DAO punya revenue real yield; JUP jadi productive asset; align token value dengan protocol usage
+· Supporting Dataset: Phase 3 EV-014; Phase 5 Revenue Model, Financial Risk; Phase 6 Utility (Fee Switch), Governance
+
+Keputusan: Launch Mobile App native iOS/Android (2024-10)
+· Trigger: Mobile-first user growth; wallet extension friction; competitor (Phantom, Backpack) punya mobile app
+· Evidence: Mobile launch blog (EV-015); App Store/Play Store links (Phase 1 Social); React Native framework (Phase 4 Programming Languages)
+· Decision: Native app wrap Jupiter API + web view untuk semua produk (swap, limit, DCA, perps, portfolio)
+· Immediate Result: Akses mobile tanpa browser extension; user acquisition channel baru
+· Long-term Impact: Retention tinggi untuk retail; data mobile usage improve routing; brand presence beyond web
+· Supporting Dataset: Phase 3 EV-015; Phase 4 Core Components, Programming Languages; Phase 7 Applications
+
+Keputusan: Ultra API v6 dengan sub-100ms latency untuk enterprise (2024-11)
+· Trigger: Market maker/institutional butuh SLA, rate limit tinggi, quote streaming; public RPC tidak cukup
+· Evidence: Ultra API blog (EV-016); docs (Phase 4 Current Technical Stack); enterprise tier mention (Phase 5 Revenue Model)
+· Decision: Dedicated infrastructure (cloud, CDN, RPC) untuk enterprise; monetisasi subscription/usage-based
+· Immediate Result: Institutional onboard; revenue stream baru non-retail
+· Long-term Impact: Diversifikasi revenue; sticky enterprise relationships; moat vs competitor aggregator
+· Supporting Dataset: Phase 3 EV-016; Phase 4 Current Technical Stack; Phase 5 Revenue Model; Phase 7 Infrastructure Providers
+
+Keputusan: Aggregator v4 / Metis v2 dengan parallel route execution dan atomic arb swap���perps (2025-01)
+· Trigger: Routing latency dan slippage masih pain point; cross-product arb opportunity (JLP funding rate vs spot)
+· Evidence: Metis v2 blog (EV-018); docs (Phase 4 Technical Upgrade History); atomic arb mention (Phase 4 Known Technical Limitations)
+· Decision: Parallel execution multiple routes; dynamic slippage protection; atomic integration dengan JLP untuk arb
+· Immediate Result: Execution quality terbaik Solana; gas optimization untuk complex route
+· Long-term Impact: Technical moat diperkuat; cross-product synergy (aggregator + perps) unik di Solana
+· Supporting Dataset: Phase 3 EV-018; Phase 4 Technical Upgrade History, Known Technical Limitations; Phase 7 Major Integrations
+
+Evolution Pattern
+
+Perubahan Strategi: Dari Single Product (Aggregator) → Full-Stack DeFi Suite → Developer Platform → DAO-Governed Protocol
+· Evidence: Phase 3 timeline menunjukkan ekspansi produk bertahap: 2021 Aggregator only → 2022 Limit/DCA/Perps → 2023 API/SDK/Terminal → 2024 Token/DAO/Mobile/Ultra API → 2025 Metis v2 atomic cross-product
+· Supporting Dataset: Phase 3 semua EV; Phase 4 Core Components; Phase 7 Applications, Developer Ecosystem
+
+Perubahan Teknologi: Dari Routing Sederhana → Metis Algorithm → Apollo (compressed NFT support) → Metis v2 (Parallel Execution + Atomic Arb)
+· Evidence: Phase 4 Technical Upgrade History: v1 (2021) → v2 Metis (2023-11) → v3 Apollo (2024-04) → v4 Metis v2 (2025-01); setiap upgrade menambah complexity dan performance
+· Supporting Dataset: Phase 3 EV-002, EV-007, EV-012, EV-018; Phase 4 Technical Upgrade History
+
+Perubahan Tokenomics: Dari No Token (2021-2023) → JUP Token dengan Governance + Fee Switch Proposal + Recurring Airdrops (2024+)
+· Evidence: Phase 1/3 tidak ada token hingga EV-008; Tokenomics: 40% DAO treasury, 20% team 4yr vesting, 10% airdrop, 20% liquidity, 10% future (Phase 6 Distribution); Jupuary 1/2/3 (EV-008, EV-011, EV-017)
+· Supporting Dataset: Phase 3 EV-008, EV-009, EV-011, EV-014, EV-017; Phase 6 Token Information, Distribution, Vesting, Governance
+
+Perubahan Governance: Dari Team-Controlled → DAO Off-Chain Voting (vote.jup.ag) + Multisig Execution → Fee Switch Activation (Proposed)
+· Evidence: Phase 3 EV-009 DAO formation; vote.jup.ag live (Phase 6 Governance); fee switch proposal (EV-014); multisig signer tidak publik (Phase 5 Treasury, Phase 6 Governance)
+· Supporting Dataset: Phase 3 EV-009, EV-014; Phase 5 Treasury; Phase 6 Governance; Phase 7 Governance Ecosystem
+
+Perubahan Revenue: Dari Zero Revenue (2021) → Swap Fees + Perps Fees → + Ultra API Enterprise → + Fee Switch (Proposed) → + Treasury Yield (Planned)
+· Evidence: Phase 5 Revenue Model: swap fees live, perps fees live, Ultra API enterprise live, fee switch proposed, treasury yield planned; no revenue report publik (Phase 5 Revenue History)
+· Supporting Dataset: Phase 5 Revenue Model, Revenue History, Financial Dependencies; Phase 3 EV-014, EV-016
+
+Perubahan Ecosystem Position: Dari Solana DEX Aggregator → Dominan Solana DeFi Infrastructure (Aggregator + Perps + API + Mobile + Launchpad) → Cross-Chain Ambiguity (Wormhole referenced tapi tidak confirmed production)
+· Evidence: Phase 8 Market Position: 85-90% Solana aggregator share; Phase 7 Major Integrations: 20+ DEX, Pyth, Wormhole, LFG, Terminal embed, API consumers; Phase 7 Ecosystem Risks: single-chain dependency
+· Supporting Dataset: Phase 3 semua EV; Phase 7 Major Integrations, External Dependencies, Ecosystem Risks; Phase 8 Market Position, Competitor Landscape
+
+Technical Decision Pattern
+
+Pola 1: On-Chain Execution + Off-Chain Routing (Hybrid Architecture)
+· Decision Pattern: Semua eksekusi trade (swap, limit, DCA, perps) terjadi on-chain di Solana SVM via Jupiter Program; routing/price discovery dilakukan off-chain oleh Jupiter API/engine untuk latency dan komputasi kompleks
+· Evidence: Phase 4 System Architecture: "Routing Layer — Jupiter mengagregasi likuiditas... untuk menemukan best price path"; "Eksekusi tetap on-chain via Jupiter Program"; Phase 4 Execution Environment: "Semua produk... berjalan langsung di SVM"
+· Supporting Dataset: Phase 4 System Architecture, Core Components, Execution Environment; Phase 3 EV-002, EV-007, EV-012, EV-018
+
+Pola 2: Iterative Routing Algorithm Upgrades (Metis → Apollo → Metis v2)
+· Decision Pattern: Routing engine di-upgrade bertahap setiap ~6-12 bulan dengan nama kode (Metis, Apollo, Metis v2); setiap versi menambah fitur: gas optimization, compressed NFT support, parallel execution, atomic cross-product arb
+· Evidence: Phase 4 Technical Upgrade History: v1→v2 Metis (2023-11) → v3 Apollo (2024-04) → v4 Metis v2 (2025-01); Phase 3 EV-007, EV-012, EV-018
+· Supporting Dataset: Phase 3 EV-007, EV-012, EV-018; Phase 4 Technical Upgrade History, Current Technical Stack
+
+Pola 3: Program Upgradeable (Not Immutable) dengan Multisig Authority
+· Decision Pattern: Jupiter Program pada Solana tidak di-freeze (immutable); upgrade authority dikontrol multisig (signer tidak publik); memungkinkan patch bug, upgrade routing, tambah fitur tanpa migrasi user
+· Evidence: Phase 4 Security Model: "Program Jupiter memiliki upgrade authority (bukan immutable)"; Solscan program account (Phase 4); Phase 7 Ecosystem Risks: "Upgrade Authority Centralization"
+· Supporting Dataset: Phase 4 Security Model; Phase 7 Ecosystem Risks; Phase 3 EV-007, EV-012, EV-018 (upgrade history proves authority used)
+
+Pola 4: Rust untuk On-Chain, TypeScript untuk SDK/API, React/React Native untuk Frontend
+· Decision Pattern: Pemisahan bahasa berdasarkan domain: Rust (SVM program), TypeScript (SDK, API client), React (Terminal, Web), React Native (Mobile); tidak ada polyglot di layer yang sama
+· Evidence: Phase 4 Programming Languages: "Rust — bahasa utama untuk program on-chain", "TypeScript — bahasa utama untuk SDK dan API client", "JavaScript/React — untuk frontend web, Terminal, dan Mobile app"
+· Supporting Dataset: Phase 4 Programming Languages, Development Framework; Phase 7 Developer Ecosystem
+
+Pola 5: Oracle Dependency Terpusat ke Pyth untuk Perps
+· Decision Pattern: Jupiter Perps sepenuhnya bergantung pada Pyth Network untuk mark price, funding rate, liquidation trigger; tidak ada fallback oracle atau TWAP internal sebagai backup
+· Evidence: Phase 4 Oracle: "Jupiter Perps menggunakan oracle eksternal (Pyth Network) untuk harga mark/funding rate"; Phase 4 Known Technical Limitations: "Oracle Delay — Jupiter Perps mengandalkan Pyth; bila oracle harga tertunda... dapat menyebabkan likuidasi yang tidak diinginkan"
+· Supporting Dataset: Phase 4 Core Components (Oracle), Known Technical Limitations; Phase 7 External Dependencies (Pyth Network); Phase 3 EV-005, EV-013
+
+Pola 6: Single-Chain (Solana Only) dengan Cross-Chain Messaging Hanya untuk Perps (Wormhole, Unconfirmed)
+· Decision Pattern: Semua produk core (Aggregator, Limit, DCA, Perps, Terminal, Mobile, JUP token) hanya di Solana; Wormhole hanya direferensikan untuk Perps cross-chain messaging di dokumen awal, tidak dikonfirmasi di Perps v2 docs
+· Evidence: Phase 4 System Architecture: "Tipe: DEX Aggregator... di atas Solana Mainnet"; "Chain(s): Solana (primary)"; Phase 7 External Dependencies: Wormhole "current production dependency not confirmed"; Phase 7 Ecosystem Risks: "Single Chain Dependency"
+· Supporting Dataset: Phase 4 System Architecture; Phase 7 External Dependencies, Ecosystem Risks; Phase 1 Chain(s)
+
+Pola 7: Enterprise-Grade API Infrastructure (Ultra API) Sebagai Differentiator Teknis
+· Decision Pattern: Public API gratis untuk retail/integrator standar; Ultra API v6 berbayar dengan dedicated infra (sub-100ms, quote streaming, SLA) untuk market maker/institusi; infrastructure tidak di-disclose (cloud, RPC, CDN provider)
+· Evidence: Phase 4 Current Technical Stack: "Cloud/Infra: tidak dipublikasikan"; Phase 5 Revenue Model: "Ultra API enterprise tier... custom quote"; Phase 7 Infrastructure Providers: Cloud Provider, RPC Providers, CDN "undisclosed"
+· Supporting Dataset: Phase 3 EV-016; Phase 4 Current Technical Stack, Technical Upgrade History; Phase 5 Revenue Model; Phase 7 Infrastructure Providers
+
+Financial Decision Pattern
+
+Pola 1: Zero External Funding (Bootstrapped + Protocol Revenue + Token Treasury)
+· Decision Pattern: Tidak ada VC funding, private sale, atau Series funding yang diumumkan; operasi didanai dari pendapatan protokol (swap fees, perps fees) sejak 2021 dan treasury token JUP (40% supply) sejak TGE 2024
+· Evidence: Phase 5 Funding History: "Tidak ada ronde pendanaan yang diumumkan secara publik"; "Jupiter tampak dibangun melalui bootstrapping dan pendapatan protokol"; Phase 5 Fundraising Mechanism: "Bootstrapping", "Protocol Revenue", "DAO Treasury (Token Allocation)"; Phase 1 Investor: "(tidak ada investor teridentifikasi)"
+· Supporting Dataset: Phase 5 Funding History, Fundraising Mechanism, Financial Dependencies; Phase 1 Investor; Phase 2 Entity (no investor entities)
+
+Pola 2: Treasury Concentration di Native Token (JUP 40% Supply)
+· Decision Pattern: DAO treasury sebagian besar berupa JUP token (4 miliar JUP = 40% supply); tidak ada diversifikasi ke stablecoin/asset lain yang diungkapkan; nilai treasury korelasi tinggi dengan harga JUP
+· Evidence: Phase 5 Treasury: "DAO treasury menguasai ~40% total supply JUP (4 miliar JUP)"; "Stablecoin Holdings: Tidak diungkap"; "Other Assets: Tidak diungkap"; Phase 6 Distribution: "Treasury: 40% (DAO/Community Treasury)"; Phase 5 Financial Risk: "Treasury Concentration in Native Token (JUP)"
+· Supporting Dataset: Phase 5 Treasury, Financial Risk; Phase 6 Distribution; Phase 3 EV-008, EV-009
+
+Pola 3: Revenue Diversification Bertahap (Swap Fees → Perps Fees → Enterprise API → Fee Switch Proposed)
+· Decision Pattern: Setiap produk baru menambah revenue stream: Aggregator swap fees (2021), Perps trading fees (2022), Ultra API enterprise (2024-11), Fee switch proposal (2024-09) untuk alirkan fee ke DAO
+· Evidence: Phase 5 Revenue Model: "Protocol Fees (Swap Aggregator) Status: Live", "Perps Trading Fees Status: Live", "API Fees (Ultra API/Enterprise) Status: Live", "Fee Switch (Proposed)"; Phase 3 EV-002, EV-005, EV-016, EV-014
+· Supporting Dataset: Phase 5 Revenue Model, Financial Dependencies; Phase 3 EV-002, EV-005, EV-014, EV-016
+
+Pola 4: Token Launch Fair (LBP + Airdrop) Tanpa VC Allocation
+· Decision Pattern: JUP TGE via LBP di LFG Launchpad (price discovery) + airdrop 10% ke komunitas; 0% allocation untuk investor/VC; 20% team dengan vesting 4 tahun
+· Evidence: Phase 6 TGE: "Launch Platform: Jupiter LFG Launchpad (Liquidity Bootstrapping Pool)"; Phase 6 Distribution: "Investors: 0%", "Team: 20% (vesting 4 tahun)", "Community: 10% (Launchpool/Airdrop)"; Phase 5 Token Sale: "Tidak ada private sale/presale/VC allocation"
+· Supporting Dataset: Phase 6 TGE, Distribution, Vesting Schedule; Phase 5 Token Sale, Fundraising Mechanism; Phase 3 EV-008
+
+Pola 5: No Financial Transparency Reporting (Tidak Ada Revenue Report, Treasury Dashboard, Audit Finansial)
+· Decision Pattern: Jupiter tidak mempublikasikan laporan keuangan berkala, treasury dashboard, atau audited financials; data on-chain tersedia tapi tidak diagregasikan resmi; estimasi pihak ketiga (Token Terminal, DefiLlama) menjadi referensi utama
+· Evidence: Phase 5 Revenue History: "Tidak diungkap secara resmi dalam laporan berkala"; "Official Financial Resources: Transparency Report: Tidak ada, Treasury Dashboard: Tidak ada"; Phase 5 Financial Risk: "No Public Financial Audit / Transparency Report"
+· Supporting Dataset: Phase 5 Revenue History, Official Financial Resources, Financial Risk; Phase 7 Ecosystem Risks (Multisig Signer Opacity)
+
+Pola 6: JLP Sebagai Revenue Sharing Mechanism untuk LP (Bukan Protocol Fee)
+· Decision Pattern: Perps v2 JLP mengumpulkan trading fee, borrowing fee, funding rate ke pool; LP mendapat yield langsung; protocol fee portion tidak terpisah jelas (fee switch proposal belum pass)
+· Evidence: Phase 5 Revenue Model: "Perps Trading Fees... sebagian fee mengalir ke JLP... dan sebagian ke protokol/DAO. Detail split fee tidak dipublikasikan"; Phase 4 Jupiter Perps v2: "JLP (multi-asset LP pool) sebagai counterparty"
+· Supporting Dataset: Phase 5 Revenue Model; Phase 4 Core Components (Jupiter Perps v2); Phase 3 EV-013
+
+Ecosystem Decision Pattern
+
+Pola 1: Deep Integration dengan Solana DEX Ecosystem (Routing Through, Not Competing)
+· Decision Pattern: Jupiter tidak membangun DEX sendiri (kecuali Perps); aggregator merutekan melalui Raydium, Orca, Meteora, Lifinity, Phoenix, dll.; menjadi "meta-DEX" yang memperkuat seluruh ekosistem
+· Evidence: Phase 7 Major Integrations: "Jupiter Aggregator ↔ Solana DEXs (Raydium, Orca, Meteora, Lifinity, Phoenix, etc.)"; Phase 4 System Architecture: "Layer: Routing Layer — Jupiter mengagregasi likuiditas dari banyak DEX Solana"; Phase 8 Competitor Landscape: Orca, Raydium sebagai competitor tapi juga liquidity source
+· Supporting Dataset: Phase 3 EV-002, EV-007, EV-012, EV-018; Phase 4 System Architecture; Phase 7 Major Integrations; Phase 8 Competitor Landscape
+
+Pola 2: Oracle Partnership Eksklusif dengan Pyth untuk Perps
+· Decision Pattern: Jupiter Perps menggunakan Pyth Network sebagai sole oracle provider; tidak ada multi-oracle setup; partnership mendalam (Pyth cited di docs, blog, integration)
+· Evidence: Phase 7 Major Integrations: "Jupiter Perps ↔ Pyth Network"; Phase 4 Oracle: "Jupiter Perps menggunakan oracle eksternal (Pyth Network)"; Phase 7 External Dependencies: Pyth "Criticality: Critical (for Perps)"; Phase 3 EV-005, EV-013
+· Supporting Dataset: Phase 3 EV-005, EV-013; Phase 4 Core Components (Oracle), Known Technical Limitations; Phase 7 Major Integrations, External Dependencies
+
+Pola 3: Developer-First Infrastructure (SDK, API, Terminal Gratis; Enterprise Berbayar)
+· Decision Pattern: TypeScript/Rust SDK, REST API, Terminal widget disediakan gratis untuk adopsi luas; Ultra API v6 dengan SLA enterprise jadi monetisasi; strategi "Stripe of Solana DeFi"
+· Evidence: Phase 7 Developer Ecosystem: "SDK: Jupiter SDK TypeScript... API: Jupiter REST API... Developer Tools: Jupiter Terminal... Open Source Repository"; Phase 5 Revenue Model: "Terminal/SDK Licensing Status: Live (gratis untuk penggunaan standar)"; Phase 3 EV-006, EV-016
+· Supporting Dataset: Phase 3 EV-006, EV-016; Phase 4 Core Components; Phase 5 Revenue Model; Phase 7 Developer Ecosystem, Infrastructure Providers
+
+Pola 4: Wallet Integration via Standard Adapter (Terminal Works dengan Semua Wallet Adapter)
+· Decision Pattern: Jupiter Terminal tidak negosiasi partnership eksklusif per wallet; menggunakan Solana wallet adapter standard sehingga kompatibel dengan Phantom, Solflare, Backpack, Ledger, dll. secara otomatis
+· Evidence: Phase 7 Wallet Ecosystem: "Terminal works dengan any Solana wallet adapter"; Phase 4 Core Components: "Jupiter Terminal... Embeddable React widget"; Phase 7 Major Integrations: "Jupiter Terminal ↔ External dApps/Wallets... specific partners not enumerated"
+· Supporting Dataset: Phase 4 Core Components; Phase 7 Wallet Ecosystem, Major Integrations; Phase 3 EV-006
+
+Pola 5: Launchpad Internal (LFG) untuk Token Launch Sendiri dan Proyek Lain
+· Decision Pattern: Jupiter membangun LFG Launchpad sendiri (bukan pakai platform lain); digunakan untuk JUP TGE (EV-008); dijadikan produk untuk proyek lain launch token
+· Evidence: Phase 3 EV-008: "TGE Token JUP via LFG Launchpad"; Phase 7 Applications: "LFG Launchpad... Product under Jupiter Exchange — used for JUP TGE and future project launches"; Phase 2 Entity: LFG Launchpad; Phase 7 Major Integrations: "JUP Token ↔ LFG Launchpad"
+· Supporting Dataset: Phase 3 EV-008; Phase 2 Entity: LFG Launchpad; Phase 7 Applications, Major Integrations
+
+Pola 6: Cross-Chain Ambiguity (Wormhole Referenced Tapi Tidak Confirmed Production)
+· Decision Pattern: Wormhole terdaftar di ecosystem page dan early Perps docs; tapi Jupiter Perps v2 docs tidak mention Wormhole; Jupiter Aggregator tidak punya cross-chain swap; status dependency unclear
+· Evidence: Phase 7 External Dependencies: Wormhole "Status: Live (per Wormhole ecosystem page) / Unconfirmed current production dependency"; Phase 7 Major Integrations: "Jupiter Perps ↔ Wormhole... production usage in v2 not explicitly confirmed"; Phase 7 Ecosystem Risks: "Bridge / Cross-chain Dependency... Current production dependency not confirmed"
+· Supporting Dataset: Phase 2 Entity: Wormhole; Phase 3 EV-005; Phase 7 External Dependencies, Major Integrations, Ecosystem Risks
+
+Pola 7: Mobile-First Expansion (Native App) untuk Retail Acquisition
+· Decision Pattern: Mobile app native iOS/Android (React Native) dirilis 2024-10 setelah 3 tahun web-only; wrap semua produk (swap, limit, DCA, perps, portfolio); tidak ada fitur mobile-exclusive
+· Evidence: Phase 3 EV-015; Phase 7 Applications: "Jupiter Mobile App... native mobile frontend for all Jupiter products"; Phase 4 Programming Languages: "Mobile Framework — React Native"; Phase 8 Market Timeline: EV-015
+· Supporting Dataset: Phase 3 EV-015; Phase 4 Programming Languages; Phase 7 Applications; Phase 8 Market Timeline
+
+Governance Decision Pattern
+
+Pola 1: Token-Weighted Off-Chain Voting (vote.jup.ag) dengan On-Chain Multisig Execution
+· Decision Pattern: Governance menggunakan snapshot-style voting off-chain di vote.jup.ag (gasless); proposal lolos dieksekusi on-chain oleh DAO multisig (signer tidak publik); tidak menggunakan on-chain DAO framework seperti Realms
+· Evidence: Phase 6 Governance: "Governance Model: Token-weighted voting via Jupiter DAO (off-chain voting on vote.jup.ag, on-chain execution via multisig)"; "Voting System: Snapshot-style off-chain voting"; Phase 7 Governance Ecosystem: "Council: Not established... Committee: Not established"
+· Supporting Dataset: Phase 6 Governance; Phase 7 Governance Ecosystem; Phase 3 EV-009, EV-014
+
+Pola 2: Proposal Inisiatif Tim/Core Contributor (Fee Switch, Parameter Changes) Bukan Community-Sourced
+· Decision Pattern: Proposal besar (fee switch, parameter upgrade) diajukan oleh tim/core contributor; komunitas vote approve/reject; tidak ada bukti proposal community-initiated yang pass
+· Evidence: Phase 3 EV-014: "Jupiter DAO mengajukan proposal untuk mengaktifkan fee switch"; Phase 6 Governance: "Proposal System: Proposal dapat diajukan oleh komunitas; memerlukan quorum dan threshold yang tidak dipublikasikan detailnya"; Phase 7 Governance Ecosystem: "Foundation: Jupiter Exchange Ltd.... DAO: Jupiter DAO"
+· Supporting Dataset: Phase 3 EV-014; Phase 6 Governance; Phase 7 Governance Ecosystem
+
+Pola 3: Airdrop Berulang (Jupuary 1/2/3) Sebagai Governance Incentive dan Retention
+· Decision Pattern: Airdrop tidak sekali saja (Jupuary 1 di TGE); Jupuary 2 (2024-03) dan Jupuary 3/Catdets (2024-12) di-announce dari DAO treasury; Catdets introduksi soulbound NFT untuk tracking kontribusi jangka panjang
+· Evidence: Phase 3 EV-008 (Jupuary 1), EV-011 (Jupuary 2), EV-017 (Jupuary 3); Phase 6 Utility: "Incentive/Reward (Airdrop/Jupuary)"; Phase 6 Major Token Events: EV-008, EV-011, EV-017
+· Supporting Dataset: Phase 3 EV-008, EV-011, EV-017; Phase 6 Utility, Major Token Events
+
+Pola 4: Multisig Signer Opacity (Tidak Ada Disclosure Siapa Yang Menandatangani Eksekusi)
+· Decision Pattern: DAO treasury dan program upgrade authority dikontrol multisig; daftar signer tidak dipublikasikan; governance execution transparency terbatas
+· Evidence: Phase 5 Treasury: "Treasury Custodian: Dikelola oleh Jupiter DAO multisig (jumlah signer dan alamat tidak dipublikasikan resmi)"; Phase 4 Security Model: "Multisig/Timelock: Jupiter menyatakan bahwa upgrade program dan transfer treasury DAO dikontrol oleh multisig — jumlah signer dan alamat multisig tidak dipublikasikan"; Phase 7 Ecosystem Risks: "Multisig Signer Opacity"
+· Supporting Dataset: Phase 4 Security Model; Phase 5 Treasury; Phase 7 Ecosystem Risks; Phase 6 Governance
+
+Pola 5: Fee Switch Sebagai Kunci Value Accrual Token (Belum Aktif)
+· Decision Pattern: Utility utama JUP adalah governance; fee switch proposal (EV-014) akan mengaktifkan value accrual (fee ke stakers/treasury); tanpa fee switch, JUP pure governance token tanpa yield
+· Evidence: Phase 6 Utility: "Fee Switch (Proposed)... Belum dieksekusi on-chain"; "Staking (Governance Staking)... Fee reward: Planned (bergantung fee switch)"; Phase 5 Financial Risk: "Fee Switch Not Yet Activated"; Phase 3 EV-014
+· Supporting Dataset: Phase 3 EV-014; Phase 5 Financial Risk; Phase 6 Utility, Governance
+
+Pola 6: Team Allocation 20% dengan Vesting 4 Tahun (Standard Alignment)
+· Decision Pattern: Team allocation 20% supply dengan vesting 4 tahun linear; cliff dan unlock frequency tidak dipublikasikan; tidak ada accelerated unlock atau token buyback untuk team
+· Evidence: Phase 6 Distribution: "Team: 20% (vesting 4 tahun)"; Phase 6 Vesting Schedule: "Category: Team... Vesting: 4 tahun (linear vesting over 4 years per tokenomics)... Cliff: tidak diketahui... Unlock Frequency: tidak diketahui"
+· Supporting Dataset: Phase 6 Distribution, Vesting Schedule; Phase 5 Fundraising Mechanism (no investor allocation)
+
+Risk Response Pattern
+
+Pola 1: Solana Downtime/Congestion → Tidak Ada Fallback Chain (Acceptance Risk)
+· Decision Pattern: Jupiter 100% bergantung pada Solana; tidak ada cross-chain deployment, tidak ada L2, tidak ada fallback RPC chain; ketika Solana down, seluruh produk Jupiter tidak bisa diakses
+· Evidence: Phase 7 Ecosystem Risks: "Single Chain Dependency: 100% of Jupiter products... operate exclusively on Solana. Solana downtime, congestion, or consensus failure directly halts all Jupiter operations"; Phase 4 Known Technical Limitations: "Single-chain Dependency... jika Solana mainnet down atau congestion, Jupiter tidak memiliki fallback chain"
+· Trigger: Solana mainnet outage (beberapa kali terjadi 2022-2023)
+· Response: Tidak ada mitigasi teknis; komunikasi ke user via Twitter/Discord; tunggu Solana recovery
+· Result: User experience terganggu selama outage; tidak ada kehilangan dana (funds safe di wallet user); brand trust sedikit terkikis tapi recover cepat
+· Supporting Dataset: Phase 4 Known Technical Limitations; Phase 7 Ecosystem Risks; Phase 1 Chain(s)
+
+Pola 2: Oracle Failure/Manipulation (Pyth) → Documentation Risk Disclosure Only
+· Decision Pattern: Jupiter Perps mengakui risiko oracle delay/manipulation di dokumentasi; tidak implementasi circuit breaker, TWAP fallback, atau multi-oracle; risiko ditanggung user/LP
+· Evidence: Phase 4 Known Technical Limitations: "Oracle Delay: Jupiter Perps mengandalkan Pyth; bila oracle harga tertunda atau tidak akurat, dapat menyebabkan likuidasi yang tidak diinginkan — dijelaskan sebagai risiko dalam dokumentasi"; Phase 7 Ecosystem Risks: "Oracle Dependency (Perps): Jupiter Perps relies entirely on Pyth Network... Pyth oracle failure, manipulation, or delay can cause incorrect liquidations"
+· Trigger: Pyth oracle incidents (historical Solana oracle issues)
+· Response: Disclosure di docs; tidak ada code-level mitigation
+· Result: LP dan trader bear risk; tidak ada insidens besar terlaporkan publik
+· Supporting Dataset: Phase 4 Known Technical Limitations; Phase 7 Ecosystem Risks, External Dependencies; Phase 3 EV-005, EV-013
+
+Pola 3: Smart Contract Upgrade Authority Compromise → Multisig Security (Tidak Di-Public Verifikasi)
+· Decision Pattern: Program upgradeable oleh multisig; tim mengandalkan keamanan multisig (signer tidak publik); tidak ada timelock publik, tidak ada governance delay untuk upgrade; bug bounty aktif di Immunefi
+· Evidence: Phase 4 Security Model: "Multisig/Timelock: Jupiter menyatakan bahwa upgrade program dan transfer treasury DAO dikontrol oleh multisig — jumlah signer dan alamat multisig tidak dipublikasikan"; "Bug Bounty: Jupiter memiliki program bug bounty yang aktif di platform imunefi"; Phase 7 Ecosystem Risks: "Upgrade Authority Centralization... Compromise of upgrade authority could allow malicious program changes"
+· Trigger: General smart contract upgrade risk; tidak ada insiden spesifik
+· Response: Multisig (opaque), bug bounty, audit berkala (6 auditor)
+· Result: Tidak ada exploit upgrade authority terlaporkan; audit menemukan issues yang diperbaiki
+· Supporting Dataset: Phase 4 Security Model, Audit History; Phase 7 Ecosystem Risks; Phase 3 EV-007, EV-012, EV-018 (upgrade history)
+
+Pola 4: Market Downturn / Bear Market → Product Expansion dan Community Incentive (Jupuary)
+· Decision Pattern: Selama bear market 2022-2023, Jupiter terus launch produk (Perps v1, API, Terminal); pasca-TGE 2024, Jupuary airdrop berulang untuk retain user dan drive volume
+· Evidence: Phase 3 Timeline: 2022 (bear market) launch Limit, DCA, Perps v1; 2023 launch API/Terminal; 2024 TGE + Jupuary 1/2/3; Phase 8 Narrative Position: "DeFi (DEX Aggregator) Main Narrative", "Solana Ecosystem Main Narrative"
+· Trigger: Crypto winter 2022-2023; post-TGE volume retention challenge
+· Response: Continue building; airdrop incentive program berulang
+· Result: Volume dan user retention relatif stabil vs competitor; market share Solana aggregator tetap dominan
+· Supporting Dataset: Phase 3 EV-003, EV-004, EV-005, EV-006, EV-008, EV-011, EV-017; Phase 8 Narrative Position, Market Share
+
+Pola 5: Competitor Entry (Odos di Solana 2024) → Technical Moat Deepening (Metis v2, Ultra API)
+· Decision Pattern: Odos launch di Solana 2024 dengan patented routing; Jupiter respond dengan Metis v2 (parallel execution, atomic arb) dan Ultra API (enterprise latency) — technical differentiation bukan fee war
+· Evidence: Phase 8 Competitor Landscape: "Odos... Multi-chain including Solana... patented routing algorithm"; Phase 3 EV-018 (Metis v2 Jan 2025), EV-016 (Ultra API Nov 2024); Phase 4 Technical Upgrade History
+· Trigger: Odos Solana launch 2024; aggregator competition meningkat
+· Response: Accelerate routing engine upgrade (Metis v2); launch enterprise API tier
+· Result: Technical moat diperkuat; enterprise revenue stream baru; market share belum terganggu signifikan
+· Supporting Dataset: Phase 3 EV-016, EV-018; Phase 4 Technical Upgrade History; Phase 8 Competitor Landscape, Market Share
+
+Pola 6: FTX/Serum Collapse (2022) → Diversifikasi Liquidity Source (Tidak Bergantung Single DEX)
+· Decision Pattern: Serum (FTX-backed) adalah major liquidity source awal; pasca-FTX collapse Nov 2022, Jupiter memperluas routing ke Raydium, Orca, Meteora, Phoenix, dll.; tidak ada single point of failure DEX
+· Evidence: Phase 3 EV-002: "routing melalui Serum, Raydium, Orca"; Phase 7 Major Integrations: "20+ Solana DEXs"; Phase 4 System Architecture: "mengagregasi likuiditas dari banyak DEX Solana"; Phase 8 Market Timeline: EV-002 mention Serum
+· Trigger: FTX collapse November 2022; Serum orderbook tidak reliable
+· Response: Expand DEX integrations; routing algorithm (Metis) handle fragmented liquidity
+· Result: Aggregator resilient; tidak ada service disruption; market share naik karena competitor yang bergantung Serum mati
+· Supporting Dataset: Phase 3 EV-002; Phase 7 Major Integrations; Phase 4 System Architecture; Phase 8 Market Timeline
+
+Recurring Behavioral Pattern
+
+Pola 1: Ship Product First, Token Later (Product-Market Fit Sebelum Tokenomics)
+· Decision Pattern: Jupiter beroperasi 2.5 tahun (Oct 2021 - Jan 2024) tanpa token; fokus build aggregator, limit, DCA, perps, API, Terminal; token hanya launch setelah dominant position terbukti
+· Evidence: Phase 3 Timeline: EV-002 (2021-10) sampai EV-006 (2023) semua pre-token; EV-008 TGE Jan 2024; Phase 1 Launch Date: "Launch Date - TGE: 31 Januari 2024"; Phase 6 TGE
+· Supporting Dataset: Phase 3 EV-002 hingga EV-008; Phase 1 Launch Date; Phase 6 TGE
+
+Pola 2: Iterative Major Upgrades Setiap 6-12 Bulan (Routing Engine)
+· Decision Pattern: Aggregator routing engine di-upgrade major berkala: v1 (2021) → v2 Metis (2023-11) → v3 Apollo (2024-04) → v4 Metis v2 (2025-01); interval ~6-12 bulan; setiap upgrade named release dengan blog announcement
+· Evidence: Phase 4 Technical Upgrade History: 4 major upgrades dalam ~3 tahun; Phase 3 EV-002, EV-007, EV-012, EV-018
+· Supporting Dataset: Phase 3 EV-002, EV-007, EV-012, EV-018; Phase 4 Technical Upgrade History
+
+Pola 3: Expand Product Suite Vertikal (Swap → Limit → DCA → Perps → API → Mobile)
+· Decision Pattern: Setiap 6-12 bulan produk baru dirilis yang memperluas use case user yang sama; tidak pivot ke vertical baru yang tidak related; semua produk terintegrasi ke aggregator core
+· Evidence: Phase 3 Timeline: 2022 Limit/DCA/Perps, 2023 API/Terminal, 2024 Mobile/Ultra API, 2025 Metis v2 cross-product; Phase 7 Applications: 8 produk core
+· Supporting Dataset: Phase 3 semua EV; Phase 7 Applications
+
+Pola 4: Community Incentive Berulang via Airdrop (Jupuary Series)
+· Decision Pattern: Airdrop tidak one-off; Jupuary 1 (TGE), Jupuary 2 (Mar 2024), Jupuary 3/Catdets (Dec 2024); setiap ronde refine eligibility (volume, governance, soulbound NFT)
+· Evidence: Phase 3 EV-008, EV-011, EV-017; Phase 6 Utility: "Incentive/Reward (Airdrop/Jupuary)"; Phase 6 Major Token Events
+· Supporting Dataset: Phase 3 EV-008, EV-011, EV-017; Phase 6 Utility, Major Token Events
+
+Pola 5: Technical Blog-Driven Transparency (Setiap Upgrade Punya Blog Post Detail)
+· Decision Pattern: Setiap major upgrade (v2, v3, v4, Perps v2, Ultra API, Mobile, Metis v2) diumumkan via blog.jup.ag dengan detail teknis; bukan hanya marketing announcement
+· Evidence: Phase 3 Sources hampir semua ke blog.jup.ag; Phase 4 Technical Upgrade History sources ke blog; Phase 8 Market Timeline sources ke blog
+· Supporting Dataset: Phase 3 semua EV sources; Phase 4 Technical Upgrade History sources; Phase 8 Market Timeline sources
+
+Pola 6: Pseudonymous Leadership dengan Public Accountability (Meow, Rolex, Slorg, Worm)
+· Decision Pattern: Founder dan core lead pseudonymous (Meow, Rolex, Slorg, Worm) tapi aktif komunikasi publik (Twitter, blog, forum); tidak doxxed tapi accountable via on-chain execution dan community feedback
+· Evidence: Phase 1 Core Team: "Meow (pseudonim)", "Rolex (pseud.)", "Slorg (pseud.)", "Worm (pseud.)"; Phase 2 Entity: semua Person pseudonim; Phase 3 Meow Twitter threads sebagai sources berulang
+· Supporting Dataset: Phase 1 Core Team; Phase 2 Entity (Person); Phase 3 sources (Meow Twitter)
+
+Pola 7: Zero VC Funding Disclosure (Bootstrap Narrative Konsisten)
+· Decision Pattern: Dari Phase 1-5, tidak ada satupun investor/VC teridentifikasi; OpenCorporates BVI filing tidak show shareholders; narrative konsisten "bootstrapped + protocol revenue"
+· Evidence: Phase 1 Investor: "(tidak ada investor teridentifikasi)"; Phase 2 Entity: no investor entities; Phase 5 Funding History: "Tidak ada ronde pendanaan yang diumumkan"; Phase 5 Fundraising Mechanism: "Bootstrapping"
+· Supporting Dataset: Phase 1 Investor; Phase 2 Entity; Phase 5 Funding History, Fundraising Mechanism
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi vs Kecepatan Eksekusi (Off-Chain Voting + Multisig vs On-Chain DAO)
+· Decision: Gunakan off-chain voting (vote.jup.ag) + multisig execution, bukan on-chain DAO framework (Realms, SPL Governance)
+· Trade-off: Mengorbankan desentralisasi eksekusi (multisig signer opaque, tidak ada timelock publik) demi kecepatan, gasless voting, dan UX sederhana
+· Evidence: Phase 6 Governance: "Voting System: Snapshot-style off-chain voting... on-chain execution via multisig"; Phase 7 Governance Ecosystem: "Council: Not established... Committee: Not established"; Phase 7 Ecosystem Risks: "Multisig Signer Opacity"
+· Supporting Dataset: Phase 6 Governance; Phase 7 Governance Ecosystem, Ecosystem Risks
+
+Trade-off 2: Single-Chain Focus (Solana Only) vs Cross-Chain Expansion
+· Decision: Semua produk hanya di Solana; tidak deploy ke Ethereum L2, tidak build cross-chain swap, Wormhole hanya untuk Perps messaging (unconfirmed)
+· Trade-off: Mengorbangkan total addressable market (multi-chain users) demi technical focus, latency optimization, dan dominance di single chain
+· Evidence: Phase 4 System Architecture: "Tipe: DEX Aggregator... di atas Solana Mainnet"; "Chain(s): Solana (primary)"; Phase 7 Ecosystem Risks: "Single Chain Dependency"; Phase 8 Narrative Position: "Chain Abstraction / Cross-chain: Not Applicable"
+· Supporting Dataset: Phase 4 System Architecture; Phase 7 Ecosystem Risks; Phase 8 Narrative Position, Market Position
+
+Trade-off 3: Program Upgradeability vs Immutability Trust
+· Decision: Jupiter Program tetap upgradeable (bukan immutable); multisig authority bisa upgrade kapan saja
+· Trade-off: Mengorbangkan trust-minimized guarantee (user harus trust multisig tidak malicious) demi kemampuan patch bug, upgrade routing, tambah fitur tanpa migrasi
+· Evidence: Phase 4 Security Model: "Program Jupiter memiliki upgrade authority (bukan immutable)"; Phase 7 Ecosystem Risks: "Upgrade Authority Centralization"; Phase 4 Technical Upgrade History: 4 major upgrades证明 authority digunakan
+· Supporting Dataset: Phase 4 Security Model, Technical Upgrade History; Phase 7 Ecosystem Risks
+
+Trade-off 4: Treasury Concentration in JUP vs Diversified Stable Assets
+· Decision: DAO treasury 40% supply JUP (4B JUP); tidak diversifikasi ke USDC/SOL/asset lain yang diungkapkan
+· Trade-off: Mengorbangkan treasury stability (nilai treasury korelasi 1:1 dengan JUP price) demi alignment token holder dan simplicity; fee switch belum aktif jadi tidak ada revenue real yield
+· Evidence: Phase 5 Treasury: "DAO treasury menguasai ~40% total supply JUP"; "Stablecoin Holdings: Tidak diungkap"; Phase 5 Financial Risk: "Treasury Concentration in Native Token (JUP)"; Phase 6 Distribution: "Treasury: 40%"
+· Supporting Dataset: Phase 5 Treasury, Financial Risk; Phase 6 Distribution
+
+Trade-off 5: Free Developer Infrastructure vs Direct Monetization
+· Decision: SDK, API public, Terminal gratis; hanya Ultra API enterprise berbayar
+· Trade-off: Mengorbangkan short-term revenue dari API access demi network effect, adoption luas, dan moat sebagai default infrastructure layer
+· Evidence: Phase 5 Revenue Model: "Terminal/SDK Licensing Status: Live (gratis untuk penggunaan standar)"; "API Fees (Ultra API/Enterprise) Status: Live... custom quote"; Phase 7 Developer Ecosystem: semua tools gratis
+· Supporting Dataset: Phase 5 Revenue Model; Phase 7 Developer Ecosystem; Phase 3 EV-006, EV-016
+
+Trade-off 6: Pseudonymous Team vs Institutional Trust
+· Decision: Founder dan core lead pseudonymous (Meow, Rolex, Slorg, Worm); tidak doxxed ke publik
+· Trade-off: Mengorbangkan institutional trust (beberapa tradfi/enterprise butuh KYC team) demi privacy, security, dan crypto-native culture
+· Evidence: Phase 1 Core Team: semua pseudonim; Phase 2 Entity: Person semua pseudonim; Phase 7 Infrastructure Providers: Cloud/RPC/CDN provider undisclosed (consistent opacity)
+· Supporting Dataset: Phase 1 Core Team; Phase 2 Entity; Phase 7 Infrastructure Providers
+
+Trade-off 7: Perps v2 JLP Model (Capital Efficient) vs LP Impermanent Loss Risk
+· Decision: Perps v2 menggunakan JLP multi-asset pool sebagai counterparty (hybrid AMM/orderbook), menggantikan orderbook murni v1
+· Trade-off: Mengorbangkan LP protection (introduce impermanent loss risk untuk LP JLP) demi capital efficiency, single-sided LP exposure, dan fee revenue sharing ke LP
+· Evidence: Phase 3 EV-013: "JLP (multi-asset liquidity pool) sebagai counterparty... menggantikan model orderbook murni"; Phase 4 Known Technical Limitations: "Perps dan JLP Risk: JLP pool menghadapi risk dari impermanent loss dan large position"; Phase 8 Liquidity: JLP TVL peak $1.2B lalu $600M
+· Supporting Dataset: Phase 3 EV-013; Phase 4 Known Technical Limitations; Phase 8 Liquidity, Adoption Metrics
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. Technical Excellence di Routing/Execution (Metis v2, Ultra API sub-100ms, atomic arb) — bukti: 4 major routing upgrades, enterprise API, cross-product atomic integration
+2. Product Suite Completeness (Swap, Limit, DCA, Perps, API, Terminal, Mobile, Launchpad) — bukti: 8 core products dirilis bertahap 2021-2025
+3. Solana Ecosystem Dominance (85-90% aggregator market share, deep DEX integrations) — bukti: Phase 8 Market Share, Phase 7 Major Integrations
+4. Community Ownership via DAO (JUP token, Jupuary airdrops, fee switch proposal) — bukti: Phase 3 EV-008, EV-009, EV-011, EV-014, EV-017; Phase 6 Governance
+5. Developer Infrastructure Moat (Free SDK/API/Terminal, paid Ultra API) — bukti: Phase 7 Developer Ecosystem, Phase 5 Revenue Model
+
+Cara Mengambil Keputusan:
+- Data-driven dari on-chain metrics (volume, user, TVL) — tiap produk launch based on usage evidence
+- Iterative shipping: release MVP, upgrade berkala (6-12 bulan), named releases dengan blog teknis
+- Founder-led (Meow) dengan core team kecil (~30-40) — keputusan cepat, tidak committee-heavy
+- Community feedback via Discord/forum/Twitter tapi proposal besar dari tim
+- Risk acceptance untuk single-chain, oracle dependency, upgrade authority — dokumentasi transparan tapi tidak selalu mitigate code-level
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Solana Ecosystem Dynamics (DEX landscape, Serum collapse, competitor entry) — trigger paling banyak pivot/expansion
+2. User Retention & Volume Growth (Jupuary airdrops, mobile app, new products) — driver product roadmap
+3. Technical Differentiation vs Competitors (Metis routing, Ultra API latency, atomic arb) — response ke Odos/1inch entry
+4. Token Utility Activation (Fee switch, staking yield, governance) — driver DAO proposals
+5. Enterprise Revenue Need (Ultra API, institutional onboarding) — driver infrastructure investment
+
+Pola Evolusi:
+- Phase 1 (2021): Single product (Aggregator) → Product-Market Fit
+- Phase 2 (2022): Vertical expansion (Limit, DCA, Perps) → Full-Stack DeFi
+- Phase 3 (2023): Horizontal expansion (API, SDK, Terminal) → Developer Platform
+- Phase 4 (2024): Tokenization & DAO (JUP, Governance, Mobile, Ultra API) → Protocol + Business
+- Phase 5 (2025): Cross-product synergy (Metis v2 atomic arb) → Integrated Moat
+
+Kekuatan Utama:
+- Technical moat terdalam di Solana DeFi (routing algorithm, latency, atomic cross-product)
+- Dominant market position (85-90% aggregator share, sticky user base)
+- Full product suite menciptakan high switching cost
+- Strong developer ecosystem (free tools, enterprise tier)
+- Community-aligned tokenomics (no VC, fair launch, recurring airdrops)
+- Sustainable revenue diversification (swap + perps + enterprise API)
+
+Kelemahan Utama:
+- Single-chain risk (100% Solana dependency, no fallback)
+- Treasury concentration in volatile native token (40% JUP, no stable diversification)
+- Governance opacity (multisig signers undisclosed, off-chain voting only)
+- Program upgradeability centralization (multisig authority, no timelock)
+- Oracle single point of failure (Pyth only for Perps)
+- No financial transparency (no revenue reports, treasury dashboard, audits)
+- Pseudonymous leadership limits institutional partnerships
+- Fee switch not activated (token utility incomplete)
+- Cross-chain ambiguity (Wormhole referenced but unconfirmed)
+
+Open Threads
+
+- Fee Switch Proposal Final Outcome: vote.jup.ag menunjukkan discussion tapi tidak ada konfirmasi eksekusi on-chain (transaksi multisig yang mengaktifkan fee switch) — perlu verifikasi on-chain apakah proposal sudah pass dan dieksekusi
+- Jupuary 2 dan 3 Actual Distribution: Di-announce tapi detail eksekusi (tanggal claim, jumlah token, eligibility on-chain) tidak diverifikasi terpusat — perlu cross-check Solscan/Dune
+- DAO Treasury Multisig Signers & Asset Breakdown: Tidak dipublikasikan; hanya diketahui 40% JUP allocation; stablecoin/other asset unknown — governance transparency gap
+- Jupiter Program Upgrade Authority Multisig: On-chain verifiable via Solscan program account tapi tidak di-publish human-readable — security transparency gap
+- Wormhole Current Production Dependency: Wormhole ecosystem page lists Jupiter; Jupiter Perps v2 docs tidak mention Wormhole — status unclear, perlu clarifikasi dari tim
+- Cloud/RPC/CDN Infrastructure Providers: Ultra API enterprise SLA imply managed infra tapi provider undisclosed — vendor concentration risk unknown
+- Circulating Supply Exact Figure: CoinGecko, Token Terminal, DefiLlama report different figures; no official real-time dashboard — tokenomics transparency gap
+- Team Vesting Detail (Cliff, Unlock Frequency): Tokenomics menyebut "4 tahun linear" tapi cliff dan frequency tidak dipublikasikan — insider selling risk unknown
+- Solana Foundation Grant History: Listed di ecosystem page tapi amounts/dates/terms tidak public — funding history incomplete
+- JLP TVL Decline Cause: Peak $1.2B (Jul 2024) → ~$600M (Jan 2025); apakah SOL price drop atau capital outflow? — perlu on-chain analysis
+- Ultra API Enterprise Customer Count & Revenue: Jupiter claims "institutional market makers" tapi discloses no numbers — revenue diversification opacity
+- Competitor Odos Market Share Impact: Odos launched Solana 2024 dengan patented routing; impact ke Jupiter market share tidak diukur publik
+- Mobile App MAU/DAU Metrics: Apple/Google Play stats tidak public; Jupiter belum release mobile metrics — user acquisition channel performance unknown
+- Jupiter Terminal Embed Adoption Count: Berapa dApp/wallet yang integrate Terminal? Tidak disclosed — developer ecosystem traction unknown
+- Jupiter Exchange Ltd. vs DAO Treasury Separation: Apakah entitas BVI punya revenue/treasury terpisah dari DAO? Tidak clarified — financial structure opacity
+- Anchor vs Native Rust untuk Jupiter Program: Tidak confirmed di docs; perlu source code inspection — technical architecture detail gap
+- Cross-Chain JUP Token (Wormhole-wrapped): Apakah Jupiter officially support multi-chain JUP? Tidak confirmed — chain abstraction narrative gap

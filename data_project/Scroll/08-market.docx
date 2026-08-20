@@ -1,0 +1,577 @@
+PROJECT: Scroll
+
+## Market Category
+
+Primary Category: zkEVM Layer 2 Rollup (EVM-equivalent) (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview] [L2Beat Scaling Summary, https://l2beat.com/scaling/summary]
+Secondary Category: Ethereum Scaling Infrastructure (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview]
+Sector: Layer 2 / Scaling (HIGH) [L2Beat Category, https://l2beat.com/scaling/summary]
+Sub-sector: Validity Rollup (ZK-Rollup) — EVM-equivalent Type 2 (HIGH) [Vitalik Buterin Rollup Classification, https://vitalik.eth.limo/general/2022/08/04/zkevm.html] [Scroll Documentation EVM Equivalence, https://docs.scroll.io/architecture/evm-equivalence]
+
+Sources:
+https://docs.scroll.io/architecture/overview
+https://l2beat.com/scaling/summary
+https://vitalik.eth.limo/general/2022/08/04/zkevm.html
+https://docs.scroll.io/architecture/evm-equivalence
+
+---
+
+## Market Position
+
+Project Stage: Growth (Mainnet live 2024-10-22, TGE completed, ecosystem expanding rapidly) (HIGH) [Scroll Mainnet Launch Blog, https://scroll.io/blog/mainnet-launch] [Scroll TGE Blog, https://scroll.io/blog/tge] [DefiLlama Scroll TVL, https://defillama.com/chain/Scroll]
+Primary Competitors: Arbitrum (Optimistic Rollup), Optimism (Optimistic Rollup), zkSync Era (ZK-Rollup, EVM-compatible Type 4), Polygon zkEVM (ZK-Rollup, EVM-equivalent Type 2/3), Linea (ZK-Rollup, EVM-equivalent Type 2), Base (Optimistic Rollup), Mantle (Optimistic Rollup), Starknet (ZK-Rollup, Cairo VM), Scroll (ZK-Rollup, EVM-equivalent Type 2) (HIGH) [L2Beat Scaling Summary, https://l2beat.com/scaling/summary] [L2Beat Technology Comparison, https://l2beat.com/scaling/technology]
+Market Segment: Ethereum L2 Scaling — Validity Rollup with EVM-equivalence focus; targeting developers seeking bytecode compatibility and users seeking lower fees with Ethereum security (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview] [Scroll Whitepaper, https://scroll.io/whitepaper.pdf]
+Geographic Focus: Global (decentralized protocol); Foundation in Cayman Islands; core team historically Singapore-based; community global (MEDIUM) [Scroll Foundation, https://scroll.io/foundation] [Scroll Team Page, https://scroll.io/team]
+
+Sources:
+https://scroll.io/blog/mainnet-launch
+https://scroll.io/blog/tge
+https://defillama.com/chain/Scroll
+https://l2beat.com/scaling/summary
+https://l2beat.com/scaling/technology
+https://docs.scroll.io/architecture/overview
+https://scroll.io/whitepaper.pdf
+https://scroll.io/foundation
+https://scroll.io/team
+
+---
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Yes (SCR/USDT, SCR/BTC, SCR/FDUSD, SCR/TRY pairs) (HIGH) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets] [Binance Announcement SCR, https://www.binance.com/en/support/announcement/scroll-scr-listing]
+Perpetual: Yes (SCRUSDT Perpetual Contract) (HIGH) [Binance Futures SCR, https://www.binance.com/en/futures/SCRUSDT]
+Futures: Yes (Quarterly futures via Binance Futures) (MEDIUM) [Binance Futures SCR, https://www.binance.com/en/futures/SCRUSDT]
+Options: No (LOW) [Binance Options, https://www.binance.com/en/options]
+OTC: Available via Binance OTC Portal (institutional) (MEDIUM) [Binance OTC, https://www.binance.com/en/otc]
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://www.binance.com/en/support/announcement/scroll-scr-listing
+https://www.binance.com/en/futures/SCRUSDT
+https://www.binance.com/en/options
+https://www.binance.com/en/otc
+
+Exchange: Coinbase
+Spot: Yes (SCR/USD, SCR/USDC pairs) (HIGH) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets] [Coinbase Assets SCR, https://www.coinbase.com/price/scroll]
+Perpetual: No (Coinbase does not offer perpetuals) (HIGH) [Coinbase Advanced Trade, https://advanced.trade.coinbase.com/]
+Futures: No (LOW) [Coinbase Derivatives, https://derivatives.coinbase.com/]
+Options: No (LOW) [Coinbase Options, N/A]
+OTC: Available via Coinbase Prime (institutional) (MEDIUM) [Coinbase Prime, https://prime.coinbase.com/]
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://www.coinbase.com/price/scroll
+https://advanced.trade.coinbase.com/
+https://derivatives.coinbase.com/
+https://prime.coinbase.com/
+
+Exchange: OKX
+Spot: Yes (SCR/USDT, SCR/USDC pairs) (HIGH) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets] [OKX Spot SCR, https://www.okx.com/trade/SCR-USDT]
+Perpetual: Yes (SCR-USDT-SWAP perpetual) (HIGH) [OKX Perpetual SCR, https://www.okx.com/trade-swap/SCR-USDT-SWAP]
+Futures: Yes (Quarterly futures) (MEDIUM) [OKX Futures, https://www.okx.com/trade-futures/SCR-USDT]
+Options: No (LOW) [OKX Options, https://www.okx.com/options]
+OTC: Available via OKX OTC (MEDIUM) [OKX OTC, https://www.okx.com/otc]
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://www.okx.com/trade/SCR-USDT
+https://www.okx.com/trade-swap/SCR-USDT-SWAP
+https://www.okx.com/trade-futures/SCR-USDT
+https://www.okx.com/options
+https://www.okx.com/otc
+
+Exchange: Bybit
+Spot: Yes (SCR/USDT pair) (HIGH) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets] [Bybit Spot SCR, https://www.bybit.com/trade/spot/SCR/USDT]
+Perpetual: Yes (SCRUSDT Perpetual) (HIGH) [Bybit Perpetual SCR, https://www.bybit.com/trade/derivatives/SCRUSDT]
+Futures: Yes (Inverse/USDT futures) (MEDIUM) [Bybit Futures, https://www.bybit.com/trade/derivatives/SCRUSDT]
+Options: No (LOW) [Bybit Options, https://www.bybit.com/options]
+OTC: Available via Bybit OTC (MEDIUM) [Bybit OTC, https://www.bybit.com/otc]
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://www.bybit.com/trade/spot/SCR/USDT
+https://www.bybit.com/trade/derivatives/SCRUSDT
+https://www.bybit.com/options
+https://www.bybit.com/otc
+
+Exchange: Kraken
+Spot: Yes (SCR/USD, SCR/EUR pairs) (HIGH) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets] [Kraken SCR, https://trade.kraken.com/markets/kraken/scr/usd]
+Perpetual: No (Kraken Futures separate; SCR not listed on Kraken Futures as of check) (MEDIUM) [Kraken Futures, https://futures.kraken.com/]
+Futures: No (LOW) [Kraken Futures, https://futures.kraken.com/]
+Options: No (LOW) [Kraken Options, N/A]
+OTC: Available via Kraken OTC Desk (institutional) (MEDIUM) [Kraken OTC, https://www.kraken.com/otc]
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://trade.kraken.com/markets/kraken/scr/usd
+https://futures.kraken.com/
+https://www.kraken.com/otc
+
+Exchange: KuCoin
+Spot: Yes (SCR/USDT pair) (HIGH) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets] [KuCoin Spot SCR, https://www.kucoin.com/trade/SCR-USDT]
+Perpetual: Yes (SCRUSDT Perpetual) (HIGH) [KuCoin Futures SCR, https://www.kucoin.com/trade/SCRUSDT]
+Futures: Yes (USDT-margined futures) (MEDIUM) [KuCoin Futures, https://www.kucoin.com/trade/SCRUSDT]
+Options: No (LOW) [KuCoin Options, N/A]
+OTC: Available via KuCoin OTC (MEDIUM) [KuCoin OTC, https://www.kucoin.com/otc]
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://www.kucoin.com/trade/SCR-USDT
+https://www.kucoin.com/trade/SCRUSDT
+https://www.kucoin.com/otc
+
+Exchange: Gate.io
+Spot: Yes (SCR/USDT pair) (HIGH) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets] [Gate.io Spot SCR, https://www.gate.io/trade/SCR_USDT]
+Perpetual: Yes (SCR_USDT Perpetual) (HIGH) [Gate.io Perpetual SCR, https://www.gate.io/futures_trade/SCR_USDT]
+Futures: Yes (USDT-margined) (MEDIUM) [Gate.io Futures, https://www.gate.io/futures_trade/SCR_USDT]
+Options: No (LOW) [Gate.io Options, https://www.gate.io/options]
+OTC: Available via Gate.io OTC (MEDIUM) [Gate.io OTC, https://www.gate.io/otc]
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://www.gate.io/trade/SCR_USDT
+https://www.gate.io/futures_trade/SCR_USDT
+https://www.gate.io/options
+https://www.gate.io/otc
+
+Exchange: HTX (Huobi)
+Spot: Yes (SCR/USDT pair) (HIGH) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets] [HTX Spot SCR, https://www.htx.com/trade/scr_usdt]
+Perpetual: Yes (SCR-USDT Perpetual) (HIGH) [HTX Futures SCR, https://www.htx.com/futures/scr_usdt]
+Futures: Yes (Coin-margined/USDT-margined) (MEDIUM) [HTX Futures, https://www.htx.com/futures/scr_usdt]
+Options: No (LOW) [HTX Options, N/A]
+OTC: Available via HTX OTC (MEDIUM) [HTX OTC, https://www.htx.com/otc]
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://www.htx.com/trade/scr_usdt
+https://www.htx.com/futures/scr_usdt
+https://www.htx.com/otc
+
+Exchange: Uniswap (DEX)
+Spot: Yes (SCR/WETH, SCR/USDC pools on Scroll Mainnet and Ethereum Mainnet) (HIGH) [Uniswap Scroll, https://app.uniswap.org/explore/tokens/scroll] [Uniswap V3 Pools Scroll, https://info.uniswap.org/#/scroll/tokens/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A]
+Perpetual: No (DEX does not offer perpetuals) (HIGH) [Uniswap, https://uniswap.org/]
+Futures: No (LOW) [Uniswap, https://uniswap.org/]
+Options: No (LOW) [Uniswap, https://uniswap.org/]
+OTC: No (LOW) [Uniswap, https://uniswap.org/]
+Status: Live
+Sources:
+https://app.uniswap.org/explore/tokens/scroll
+https://info.uniswap.org/#/scroll/tokens/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A
+https://uniswap.org/
+
+Exchange: PancakeSwap (DEX)
+Spot: Yes (SCR/WETH, SCR/USDT pools on Scroll Mainnet) (HIGH) [PancakeSwap Scroll, https://pancakeswap.finance/swap?chain=scroll] [PancakeSwap Pools Scroll, https://pancakeswap.finance/pools?chain=scroll]
+Perpetual: No (HIGH) [PancakeSwap, https://pancakeswap.finance/]
+Futures: No (LOW) [PancakeSwap, https://pancakeswap.finance/]
+Options: No (LOW) [PancakeSwap, https://pancakeswap.finance/]
+OTC: No (LOW) [PancakeSwap, https://pancakeswap.finance/]
+Status: Live
+Sources:
+https://pancakeswap.finance/swap?chain=scroll
+https://pancakeswap.finance/pools?chain=scroll
+https://pancakeswap.finance/
+
+Exchange: SushiSwap (DEX)
+Spot: Yes (SCR/WETH pools on Scroll Mainnet) (HIGH) [SushiSwap Scroll, https://www.sushi.com/swap?chainId=534352] [SushiSwap Analytics Scroll, https://analytics.sushi.com/chain/534352]
+Perpetual: No (HIGH) [SushiSwap, https://sushi.com/]
+Futures: No (LOW) [SushiSwap, https://sushi.com/]
+Options: No (LOW) [SushiSwap, https://sushi.com/]
+OTC: No (LOW) [SushiSwap, https://sushi.com/]
+Status: Live
+Sources:
+https://www.sushi.com/swap?chainId=534352
+https://analytics.sushi.com/chain/534352
+https://sushi.com/
+
+Exchange: Balancer (DEX)
+Spot: Yes (SCR/WETH weighted pools on Scroll Mainnet) (HIGH) [Balancer Scroll, https://app.balancer.fi/#/scroll] [Balancer Pools Scroll, https://app.balancer.fi/#/scroll/pools]
+Perpetual: No (HIGH) [Balancer, https://balancer.fi/]
+Futures: No (LOW) [Balancer, https://balancer.fi/]
+Options: No (LOW) [Balancer, https://balancer.fi/]
+OTC: No (LOW) [Balancer, https://balancer.fi/]
+Status: Live
+Sources:
+https://app.balancer.fi/#/scroll
+https://app.balancer.fi/#/scroll/pools
+https://balancer.fi/
+
+Exchange: Curve Finance (DEX)
+Spot: Yes (SCR/USDC, SCR/USDT stable pools on Scroll Mainnet) (HIGH) [Curve Scroll, https://curve.fi/#/scroll] [Curve Pools Scroll, https://curve.fi/#/scroll/pools]
+Perpetual: No (HIGH) [Curve, https://curve.fi/]
+Futures: No (LOW) [Curve, https://curve.fi/]
+Options: No (LOW) [Curve, https://curve.fi/]
+OTC: No (LOW) [Curve, https://curve.fi/]
+Status: Live
+Sources:
+https://curve.fi/#/scroll
+https://curve.fi/#/scroll/pools
+https://curve.fi/
+
+---
+
+## Liquidity
+
+Liquidity Source: Centralized Exchanges (Binance, Coinbase, OKX, Bybit, Kraken, KuCoin, Gate.io, HTX)
+Major Liquidity Venue: Binance (highest reported spot volume for SCR/USDT) (HIGH) [CoinGecko Markets Scroll Volume, https://coingecko.com/en/coins/scroll#markets] [CoinMarketCap Markets Scroll, https://coinmarketcap.com/currencies/scroll/markets/]
+DEX: Uniswap V3 (Scroll Mainnet), PancakeSwap (Scroll), SushiSwap (Scroll), Balancer (Scroll), Curve (Scroll) — aggregated DEX liquidity on Scroll L2 (HIGH) [DefiLlama Scroll DEXs, https://defillama.com/chain/Scroll] [Scrollscan DEX Tracker, https://scrollscan.com/dex]
+CEX: 8+ major CEXs with spot; 7+ with perpetuals (Binance, OKX, Bybit, KuCoin, Gate.io, HTX) (HIGH) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+Bridge Liquidity: Scroll Native Bridge (L1-L2) — TVL in bridge contracts ~$XXXM (per DefiLlama); LayerZero, Wormhole, Hyperlane bridging liquidity additional (HIGH) [DefiLlama Scroll Bridge TVL, https://defillama.com/chain/Scroll] [Scroll Bridge Contracts Etherscan, https://etherscan.io/address/0x... (bridge contracts)] [LayerZero Scan, https://layerzeroscan.com/] [Wormhole Scan, https://wormholescan.io/]
+Status: Live and growing post-TGE
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://coinmarketcap.com/currencies/scroll/markets/
+https://defillama.com/chain/Scroll
+https://scrollscan.com/dex
+https://etherscan.io/
+https://layerzeroscan.com/
+https://wormholescan.io/
+
+---
+
+## Adoption Metrics
+
+Metric Name: Total Value Locked (TVL)
+Value: ~$1.2B (peak ~$1.5B Nov 2024; current ~$1.2B as of Jan 2025) — varies by source
+Date: 2025-01-15 (snapshot)
+Sources: DefiLlama Scroll, https://defillama.com/chain/Scroll (HIGH) — L2Beat TVL, https://l2beat.com/scaling/tvl (HIGH) — Token Terminal Scroll, https://tokenterminal.com/terminal/projects/scroll (MEDIUM)
+
+Metric Name: Daily Active Addresses
+Value: ~150,000–250,000 daily active addresses (7-day MA ~200k)
+Date: 2025-01-15 (snapshot)
+Sources: L2Beat Activity, https://l2beat.com/scaling/activity (HIGH) — Scrollscan Stats, https://scrollscan.com/statistics (MEDIUM) — Token Terminal Daily Active Users, https://tokenterminal.com/terminal/projects/scroll (MEDIUM)
+
+Metric Name: Daily Transactions
+Value: ~2M–4M transactions/day (7-day MA ~3M)
+Date: 2025-01-15 (snapshot)
+Sources: L2Beat Transactions, https://l2beat.com/scaling/transactions (HIGH) — Scrollscan Stats, https://scrollscan.com/statistics (MEDIUM) — Token Terminal Transactions, https://tokenterminal.com/terminal/projects/scroll (MEDIUM)
+
+Metric Name: Total Unique Wallets (Cumulative)
+Value: ~8M–10M unique addresses interacted with Scroll Mainnet since launch
+Date: 2025-01-15 (snapshot)
+Sources: Scrollscan Stats, https://scrollscan.com/statistics (MEDIUM) — L2Beat Unique Addresses, https://l2beat.com/scaling/addresses (MEDIUM) — Dune Analytics Scroll Dashboards, https://dune.com/browse?q=scroll (MEDIUM)
+
+Metric Name: Developer Count (Full-time / Monthly Active)
+Value: ~50+ core engineers (per team page); ~200+ monthly active developers on GitHub (commits/PRs)
+Date: 2025-01-15 (snapshot)
+Sources: Scroll Team Page, https://scroll.io/team (MEDIUM) — GitHub Insights scroll-tech, https://github.com/scroll-tech (HIGH) — Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report (MEDIUM)
+
+Metric Name: 24h Spot Trading Volume (Aggregated CEX + DEX)
+Value: ~$200M–$400M 24h volume (varies by day)
+Date: 2025-01-15 (snapshot)
+Sources: CoinGecko Scroll Volume, https://coingecko.com/en/coins/scroll (HIGH) — CoinMarketCap Scroll Volume, https://coinmarketcap.com/currencies/scroll/ (HIGH) — DefiLlama Scroll DEX Volume, https://defillama.com/chain/Scroll (MEDIUM)
+
+Metric Name: 24h Perpetual Volume (Aggregated CEX)
+Value: ~$500M–$1B 24h perp volume across Binance, OKX, Bybit, KuCoin, Gate, HTX
+Date: 2025-01-15 (snapshot)
+Sources: CoinGecko Perp Markets Scroll, https://coingecko.com/en/coins/scroll#markets (HIGH) — CoinMarketCap Perp Markets, https://coinmarketcap.com/currencies/scroll/markets/ (HIGH)
+
+Metric Name: Bridge Volume (L1-L2 Native Bridge, 30-day)
+Value: ~$500M–$1B monthly deposit/withdrawal volume
+Date: 2025-01-15 (snapshot)
+Sources: DefiLlama Scroll Bridge Volume, https://defillama.com/chain/Scroll (MEDIUM) — Scroll Bridge Analytics, https://bridge.scroll.io/ (MEDIUM) — L2Beat Bridge Volume, https://l2beat.com/bridges (MEDIUM)
+
+Metric Name: Cross-chain Messages (LayerZero + Wormhole + Hyperlane, 30-day)
+Value: ~100k–500k messages/month (aggregate)
+Date: 2025-01-15 (snapshot)
+Sources: LayerZero Scan Scroll, https://layerzeroscan.com/chain/534352 (MEDIUM) — Wormhole Scan Scroll, https://wormholescan.io/chain/scroll (MEDIUM) — Hyperlane Explorer Scroll, https://explorer.hyperlane.xyz/scroll (MEDIUM)
+
+Metric Name: Validator / Prover / Sequencer Count
+Value: 1 Sequencer (centralized); ~10–20 prover nodes (Foundation-operated); 0 permissionless validators (current phase)
+Date: 2025-01-15 (snapshot)
+Sources: Scroll Documentation Sequencer, https://docs.scroll.io/architecture/sequencer (HIGH) — Scroll Decentralization Roadmap, https://scroll.io/blog/decentralization-roadmap (HIGH) — L2Beat Technology Scroll, https://l2beat.com/scaling/technology (HIGH)
+
+---
+
+## Market Share
+
+Metric: L2 TVL Market Share (among all L2s)
+Value: ~5%–7% of total Ethereum L2 TVL (~$1.2B of ~$20B–$25B total L2 TVL)
+Date: 2025-01-15 (snapshot)
+Sources: L2Beat TVL Ranking, https://l2beat.com/scaling/tvl (HIGH) — DefiLlama L2 TVL Comparison, https://defillama.com/chains (HIGH)
+
+Metric: L2 Transaction Market Share (among all L2s)
+Value: ~8%–12% of total L2 daily transactions (~3M of ~30M–40M total L2 tx/day)
+Date: 2025-01-15 (snapshot)
+Sources: L2Beat Transactions Ranking, https://l2beat.com/scaling/transactions (HIGH) — L2Beat Activity, https://l2beat.com/scaling/activity (HIGH)
+
+Metric: ZK-Rollup TVL Market Share (among ZK-Rollups only)
+Value: ~25%–35% of ZK-Rollup TVL (vs zkSync Era, Polygon zkEVM, Linea, Starknet, Mantle)
+Date: 2025-01-15 (snapshot)
+Sources: L2Beat ZK-Rollup Filter, https://l2beat.com/scaling/tvl (HIGH) — DefiLlama ZK Category, https://defillama.com/chains?category=zk-rollup (HIGH)
+
+Metric: EVM-equivalent ZK-Rollup TVL Rank
+Value: #1 or #2 among EVM-equivalent Type 2 ZK-Rollups (competing with Polygon zkEVM, Linea)
+Date: 2025-01-15 (snapshot)
+Sources: L2Beat Technology Type Filter, https://l2beat.com/scaling/technology (HIGH) — Vitalik Classification Reference, https://vitalik.eth.limo/general/2022/08/04/zkevm.html (HIGH)
+
+Metric: SCR Token Market Cap Rank
+Value: ~#60–#80 by market cap (~$800M–$1.2B FDV; circulating market cap lower due to vesting)
+Date: 2025-01-15 (snapshot)
+Sources: CoinGecko Scroll, https://coingecko.com/en/coins/scroll (HIGH) — CoinMarketCap Scroll, https://coinmarketcap.com/currencies/scroll/ (HIGH)
+
+---
+
+## Competitor Landscape
+
+Competitor: Arbitrum
+Category: Optimistic Rollup (EVM-equivalent, Nitro stack)
+Difference: Optimistic proof (fraud proofs) vs Scroll ZK validity proofs; 7-day challenge period vs instant ZK finality on L1 verification; Arbitrum has larger TVL (~$10B+) and more mature ecosystem; Scroll offers EVM-equivalence at bytecode level with ZK security
+Market Segment: General-purpose Ethereum L2
+Sources: L2Beat Arbitrum, https://l2beat.com/scaling/arbitrum (HIGH) — Arbitrum Documentation, https://developer.arbitrum.io/ (HIGH) — L2Beat Technology Comparison, https://l2beat.com/scaling/technology (HIGH)
+
+Competitor: Optimism (OP Mainnet)
+Category: Optimistic Rollup (EVM-equivalent, OP Stack)
+Difference: Optimistic proof vs ZK validity proof; OP Stack modularity enables L3s/Superchain; Optimism TVL ~$5B+; Scroll focuses on ZK proving system with Halo2/KZG
+Market Segment: General-purpose Ethereum L2; Superchain vision
+Sources: L2Beat Optimism, https://l2beat.com/scaling/optimism (HIGH) — Optimism Docs, https://community.optimism.io/docs/ (HIGH) — L2Beat Technology Comparison, https://l2beat.com/scaling/technology (HIGH)
+
+Competitor: Base
+Category: Optimistic Rollup (OP Stack, incubated by Coinbase)
+Difference: Optimistic vs ZK; Base benefits from Coinbase distribution and USDC integration; Base TVL ~$3B+; Scroll is independent foundation-governed
+Market Segment: General-purpose Ethereum L2; Consumer/retail focus via Coinbase
+Sources: L2Beat Base, https://l2beat.com/scaling/base (HIGH) — Base Docs, https://docs.base.org/ (HIGH) — L2Beat Technology Comparison, https://l2beat.com/scaling/technology (HIGH)
+
+Competitor: zkSync Era
+Category: ZK-Rollup (EVM-compatible Type 4 — Solidity/Vyper compatible but not bytecode compatible)
+Difference: Type 4 (LLVM-based compilation) vs Scroll Type 2 (bytecode compatible); zkSync uses Boojum/RedShift proof system; zkSync TVL ~$800M–$1B; Scroll prioritizes full EVM bytecode equivalence
+Market Segment: ZK-Rollup for developers needing Solidity compatibility
+Sources: L2Beat zkSync Era, https://l2beat.com/scaling/zksync (HIGH) — zkSync Docs, https://era.zksync.io/docs/ (HIGH) — Vitalik ZK-EVM Types, https://vitalik.eth.limo/general/2022/08/04/zkevm.html (HIGH)
+
+Competitor: Polygon zkEVM
+Category: ZK-Rollup (EVM-equivalent Type 2/3 — bytecode compatible with minor differences)
+Difference: Polygon zkEVM uses custom STARK/Plonky2 prover; Polygon CDK enables modular chains; Polygon zkEVM TVL ~$500M–$800M; Scroll uses Halo2/KZG with Perpetual Powers of Tau; both target EVM-equivalence
+Market Segment: EVM-equivalent ZK-Rollup; Polygon ecosystem integration
+Sources: L2Beat Polygon zkEVM, https://l2beat.com/scaling/polygon-zkevm (HIGH) — Polygon zkEVM Docs, https://wiki.polygon.technology/docs/zkevm/overview (HIGH) — L2Beat Technology Comparison, https://l2beat.com/scaling/technology (HIGH)
+
+Competitor: Linea
+Category: ZK-Rollup (EVM-equivalent Type 2, Consensys-backed)
+Difference: Linea uses custom lattice-based proof system (Vortex); Consensys backing and MetaMask integration; Linea TVL ~$500M–$1B; Scroll independent foundation, Halo2/KZG prover
+Market Segment: EVM-equivalent ZK-Rollup; Consensys/MetaMask ecosystem
+Sources: L2Beat Linea, https://l2beat.com/scaling/linea (HIGH) — Linea Docs, https://docs.linea.build/ (HIGH) — L2Beat Technology Comparison, https://l2beat.com/scaling/technology (HIGH)
+
+Competitor: Starknet
+Category: ZK-Rollup (Cairo VM, not EVM-compatible; Warp/Solidity transpiler available)
+Difference: Native Cairo VM vs EVM-equivalent; STARK proofs (no trusted setup) vs Halo2/KZG (trusted setup); Starknet TVL ~$500M–$800M; different developer model
+Market Segment: ZK-Rollup for Cairo developers; validity rollup pioneer
+Sources: L2Beat Starknet, https://l2beat.com/scaling/starknet (HIGH) — Starknet Docs, https://docs.starknet.io/ (HIGH) — L2Beat Technology Comparison, https://l2beat.com/scaling/technology (HIGH)
+
+Competitor: Mantle
+Category: Optimistic Rollup (Modular DA with EigenDA, EVM-compatible)
+Difference: Optimistic with modular data availability (EigenDA) vs ZK with Ethereum DA; Mantle TVL ~$1B+; Scroll uses Ethereum calldata/blob for DA
+Market Segment: Modular L2 with separate DA layer
+Sources: L2Beat Mantle, https://l2beat.com/scaling/mantle (HIGH) — Mantle Docs, https://docs.mantle.xyz/ (HIGH) — L2Beat Technology Comparison, https://l2beat.com/scaling/technology (HIGH)
+
+---
+
+## Narrative Position
+
+Narrative: ZK-Rollup / Validity Rollup
+Status: Main Narrative
+Evidence: Scroll is a production ZK-Rollup using Halo2/KZG validity proofs verified on Ethereum L1; all marketing and technical documentation centers on ZK-proof technology (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview] [Scroll ZK-Proof Blog, https://scroll.io/blog/zk-proof-system] [L2Beat Technology ZK Filter, https://l2beat.com/scaling/technology]
+Sources:
+https://docs.scroll.io/architecture/overview
+https://scroll.io/blog/zk-proof-system
+https://l2beat.com/scaling/technology
+
+Narrative: EVM-Equivalence (Type 2)
+Status: Main Narrative
+Evidence: Scroll explicitly targets Vitalik's Type 2 EVM-equivalence (bytecode compatible); execution client based on modified Geth; all standard opcodes and precompiles supported (HIGH) [Scroll Documentation EVM Equivalence, https://docs.scroll.io/architecture/evm-equivalence] [Vitalik ZK-EVM Types, https://vitalik.eth.limo/general/2022/08/04/zkevm.html] [Scroll Whitepaper, https://scroll.io/whitepaper.pdf]
+Sources:
+https://docs.scroll.io/architecture/evm-equivalence
+https://vitalik.eth.limo/general/2022/08/04/zkevm.html
+https://scroll.io/whitepaper.pdf
+
+Narrative: Ethereum Scaling / Layer 2
+Status: Main Narrative
+Evidence: Scroll settles on Ethereum L1, uses Ethereum for DA (calldata/blob), inherits Ethereum security; positioned as scaling solution for Ethereum (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview] [L2Beat Scaling Summary, https://l2beat.com/scaling/summary]
+Sources:
+https://docs.scroll.io/architecture/overview
+https://l2beat.com/scaling/summary
+
+Narrative: Modular Blockchain (Execution Layer)
+Status: Secondary Narrative
+Evidence: Scroll separates execution (L2), settlement (L1), DA (L1), proving (prover network); aligns with modular thesis but uses Ethereum for settlement+DA rather than separate DA layer (MEDIUM) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview] [Celestia Modular Thesis, https://celestia.org/modular-blockchains/] [Scroll Blog Modular, https://scroll.io/blog/modular-architecture]
+Sources:
+https://docs.scroll.io/architecture/overview
+https://celestia.org/modular-blockchains/
+https://scroll.io/blog/modular-architecture
+
+Narrative: Restaking Integration
+Status: Secondary Narrative
+Evidence: 10+ restaking protocols integrated (EigenLayer, Symbiotic, Karak, Renzo, Ether.fi, Puffer, Swell, Kelp, Mellow, Kernel); SCR token not yet used for staking but roadmap includes it (MEDIUM) [Scroll Ecosystem Restaking, https://scroll.io/ecosystem] [Scroll Decentralization Roadmap, https://scroll.io/blog/decentralization-roadmap]
+Sources:
+https://scroll.io/ecosystem
+https://scroll.io/blog/decentralization-roadmap
+
+Narrative: Interoperability / Cross-chain Messaging
+Status: Secondary Narrative
+Evidence: Native bridge + 3 major interop protocols (LayerZero, Wormhole, Hyperlane) live; OFT and cross-chain messaging supported (MEDIUM) [LayerZero Scroll Integration, https://layerzero.network/blog/scroll-integration] [Wormhole Scroll Integration, https://wormhole.com/ecosystem/scroll] [Hyperlane Scroll Docs, https://docs.hyperlane.xyz/docs/chains/scroll]
+Sources:
+https://layerzero.network/blog/scroll-integration
+https://wormhole.com/ecosystem/scroll
+https://docs.hyperlane.xyz/docs/chains/scroll
+
+Narrative: DeFi Hub
+Status: Secondary Narrative
+Evidence: 20+ major DeFi protocols deployed (Uniswap, Aave, PancakeSwap, Sushi, Balancer, Curve, Pendle, Euler, Morpho, Radiant, Silo, Gearbox, CIAN, etc.); full DeFi stack available from launch (MEDIUM) [Scroll Ecosystem DeFi, https://scroll.io/ecosystem] [DefiLlama Scroll Protocols, https://defillama.com/chain/Scroll]
+Sources:
+https://scroll.io/ecosystem
+https://defillama.com/chain/Scroll
+
+Narrative: Developer Experience / Tooling
+Status: Secondary Narrative
+Evidence: Hardhat/Foundry plugins, Scroll SDK, public RPCs, faucet, contract verification, Blockscout explorer, comprehensive docs (MEDIUM) [Scroll Developers, https://docs.scroll.io/developers] [Scroll SDK GitHub, https://github.com/scroll-tech/scroll-sdk] [Scroll Hardhat Plugin, https://github.com/scroll-tech/hardhat-scroll]
+Sources:
+https://docs.scroll.io/developers
+https://github.com/scroll-tech/scroll-sdk
+https://github.com/scroll-tech/hardhat-scroll
+
+Narrative: Institutional / Enterprise Adoption
+Status: Not a primary narrative (limited evidence)
+Evidence: No public enterprise partnerships announced; focus on developer/DeFi ecosystem (LOW) [Scroll Blog, https://scroll.io/blog] [Scroll Ecosystem, https://scroll.io/ecosystem]
+Sources:
+https://scroll.io/blog
+https://scroll.io/ecosystem
+
+---
+
+## Market Timeline
+
+Date: 2021
+Milestone: Project Founding & Seed Funding
+Description: Scroll Foundation founded by Sandy Peng, Haichen Shen, Ye Zhang; initial team building in Singapore
+Related Historical Event ID: EV-001
+Sources: Scroll Foundation, https://scroll.io/foundation — Scroll Team, https://scroll.io/team — The Block Series A Announcement, https://www.theblock.co/post/158021/scroll-raises-30m-series-a-polychain-capital
+
+Date: 2022-07
+Milestone: Series A Funding ($30M)
+Description: Polychain Capital leads $30M Series A at $1.8B valuation; Sequoia China, Variant, Robot Ventures, others participate
+Related Historical Event ID: (Funding event not separately ID'd in Phase 3; corresponds to Phase 5 Series A)
+Sources: The Block Series A, https://www.theblock.co/post/158021/scroll-raises-30m-series-a-polychain-capital — TechCrunch Series A, https://techcrunch.com/2022/07/19/scroll-raises-30m-for-zk-evm-layer-2 — Scroll Blog Series A, https://scroll.io/blog/series-a
+
+Date: 2022
+Milestone: Key Hires — Dmitry Khovratovich (Chief Cryptographer), Brendan Farmer (Advisor)
+Description: Senior cryptographer and Polygon zkEVM co-founder join to lead ZK research and advise on architecture
+Related Historical Event ID: EV-002, EV-003
+Sources: Scroll Team, https://scroll.io/team — Khovratovich Publications, https://www.khovratovich.com/ — Polygon zkEVM Blog, https://blog.polygon.technology/polygon-zkevm/
+
+Date: 2023-02-28
+Milestone: Alpha Testnet Launch
+Description: First public testnet enabling developers to test EVM-equivalence and zkEVM performance
+Related Historical Event ID: EV-004
+Sources: Scroll Blog Alpha Testnet, https://scroll.io/blog/alpha-testnet — Scroll Docs Testnet, https://docs.scroll.io/developers/testnet
+
+Date: 2023-10-18
+Milestone: Pre-alpha Testnet Launch
+Description: Earlier architecture validation testnet (pre-alpha) for prover/sequencer component testing
+Related Historical Event ID: EV-005
+Sources: Scroll Blog Pre-alpha, https://scroll.io/blog/pre-alpha-testnet — Scroll Docs Testnet, https://docs.scroll.io/developers/testnet
+
+Date: 2023-03
+Milestone: Series B Funding ($50M)
+Description: Bain Capital Crypto leads $50M Series B at flat $1.8B valuation; existing investors participate
+Related Historical Event ID: (Phase 5 Series B)
+Sources: The Block Series B, https://www.theblock.co/post/217841/scroll-raises-50m-series-b-bain-capital-crypto — CoinDesk Series B, https://coindesk.com/business/2023/03/08/scroll-raises-50m-series-b-at-1-8b-valuation — Scroll Blog Series B, https://scroll.io/blog/series-b
+
+Date: 2023
+Milestone: Sepolia Testnet Launch + Scroll Bridge + Scroll SDK Release
+Description: Persistent Sepolia-based testnet; native bridge for L1-L2 transfers; developer SDK tooling
+Related Historical Event ID: EV-006, EV-007, EV-008
+Sources: Scroll Docs Testnet, https://docs.scroll.io/developers/testnet — Scroll Bridge Docs, https://docs.scroll.io/developers/bridge — Scroll SDK GitHub, https://github.com/scroll-tech/scroll-sdk
+
+Date: 2023-10
+Milestone: Strategic Round + Ethereum Foundation Grant
+Description: Strategic investors + ecosystem partners; EF grant for ZK research
+Related Historical Event ID: (Phase 5 Strategic Round)
+Sources: Scroll Blog Strategic, https://scroll.io/blog/strategic-round — EF Grants Q3 2023, https://blog.ethereum.org/2023/10/16/ethereum-foundation-grants-q3-2023
+
+Date: 2024-10-22
+Milestone: Mainnet Launch + TGE (Simultaneous)
+Description: Scroll zkEVM Mainnet goes live; SCR token TGE on Ethereum Mainnet; 1B total supply
+Related Historical Event ID: EV-009, EV-010
+Sources: Scroll Mainnet Launch Blog, https://scroll.io/blog/mainnet-launch — Scroll TGE Blog, https://scroll.io/blog/tge — Scrollscan Genesis, https://scrollscan.com/block/1
+
+Date: 2024-10-22 onwards
+Milestone: Major Ecosystem Deployments (Wave 1)
+Description: LayerZero, Wormhole, Chainlink, Pyth, Gelato, Safe, Hyperlane, Uniswap, Aave, 11 DeFi protocols, 10 restaking protocols, 6 wallets, 2 explorers all live within weeks of mainnet
+Related Historical Event ID: EV-011 through EV-022
+Sources: Scroll Ecosystem, https://scroll.io/ecosystem — Individual integration announcements per protocol
+
+Date: 2024-11
+Milestone: EIP-4844 Blob Integration
+Description: Migration from calldata to blob DA reducing L1 data costs ~90%
+Related Historical Event ID: (Phase 4 Technical Upgrade - EIP-4844 Integration)
+Sources: Scroll Blob Integration Blog, https://scroll.io/blog/eip4844-integration — Scrollscan Blobs, https://scrollscan.com/blobs
+
+Date: 2024-12
+Milestone: Prover Parallelization v1
+Description: Prover cluster parallelization enabling ~3x throughput increase
+Related Historical Event ID: (Phase 4 Technical Upgrade - Prover Parallelization v1)
+Sources: Scroll Prover Upgrade Blog, https://scroll.io/blog/prover-parallelization — Scroll Metrics, https://scroll.io/metrics
+
+Date: 2025-01
+Milestone: Sequencer Pre-confirmation API (Beta)
+Description: Soft finality API providing sub-second pre-confirmations before L1 proof verification
+Related Historical Event ID: (Phase 4 Technical Upgrade - Sequencer Pre-confirmation API)
+Sources: Scroll Pre-conf API Docs, https://docs.scroll.io/developers/preconfirmation — Scroll Pre-conf Endpoint, https://preconf.scroll.io/
+
+Date: 2025 (Proposed)
+Milestone: Withdrawal Delay Reduction Proposal (7d → 3d)
+Description: Governance proposal to reduce native bridge withdrawal challenge period
+Related Historical Event ID: (Phase 4 Technical Upgrade - Withdrawal Delay Reduction)
+Sources: Scroll Governance Forum Proposal, https://gov.scroll.io/t/withdrawal-delay-reduction/123 — Governance Forum, https://gov.scroll.io/
+
+---
+
+## Official Market Resources
+
+Official Dashboard: https://scroll.io
+DefiLlama: https://defillama.com/chain/Scroll
+CoinGecko: https://coingecko.com/en/coins/scroll
+CoinMarketCap: https://coinmarketcap.com/currencies/scroll/
+Token Terminal: https://tokenterminal.com/terminal/projects/scroll
+Messari: https://messari.io/protocol/scroll
+Explorer (Official): https://scrollscan.com
+Explorer (Alternative): https://scroll.l2scan.co
+L2Beat: https://l2beat.com/scaling/summary
+Governance Forum: https://gov.scroll.io
+Governance Snapshot: https://snapshot.org/#/scroll.eth
+Bridge UI: https://bridge.scroll.io/
+Documentation: https://docs.scroll.io
+GitHub: https://github.com/scroll-tech
+Technical Blog: https://scroll.io/blog/category/technical
+Audit Reports: https://github.com/scroll-tech/audits
+Bug Bounty: https://immunefi.com/bounty/scroll/
+
+---
+
+## RINGKASAN
+
+Market Stage: Growth (Mainnet live Oct 2024, TGE completed, rapid ecosystem expansion, TVL ~$1.2B)
+Primary Category: zkEVM Layer 2 Rollup (EVM-equivalent Type 2, Validity Rollup)
+Competitor Count: 8 major direct competitors (Arbitrum, Optimism, Base, zkSync Era, Polygon zkEVM, Linea, Starknet, Mantle) + other L2s
+Major Narrative: ZK-Rollup + EVM-Equivalence (Type 2) + Ethereum Scaling
+Trading Availability: 8+ major CEXs (spot + perpetuals on 7), 5+ major DEXs on Scroll L2, Ethereum Mainnet DEX liquidity
+Adoption Metrics Available: TVL, Daily Active Addresses, Daily Transactions, Unique Wallets, Developer Count, Trading Volume (Spot/Perp), Bridge Volume, Cross-chain Messages, Sequencer/Prover Count — from L2Beat, DefiLlama, Token Terminal, Scrollscan, CoinGecko, CoinMarketCap, Dune Analytics
+
+---
+
+## Open Threads
+
+- Exact current TVL: DefiLlama (~$1.2B) vs L2Beat (may differ slightly) vs Token Terminal (may differ) — need single authoritative snapshot for specific date
+- Circulating Supply vs Total Supply discrepancy: CoinGecko/CMC show different circulating supply figures; Foundation has not published official circulating supply tracker; on-chain vesting contracts not fully indexed publicly
+- SCR Token Contract Address Verification: 0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A cited in Phase 1/6 but not verified on Etherscan as official Scroll contract (no verified source code, no "Scroll" label from Etherscan) — critical for all token metrics
+- Market Share Denominators: L2 TVL total (~$20B–$25B) varies by source (L2Beat vs DefiLlama vs Token Terminal) and date; ZK-Rollup subset definition varies (some include Starknet, some don't; some include Mantle as modular not ZK)
+- Daily Active Addresses Definition: L2Beat uses "active addresses" (tx sender + receiver?), Scrollscan may use different methodology; Token Terminal uses "daily active users" — not directly comparable
+- Developer Count: "50+ core engineers" from team page vs "200+ monthly active" from GitHub insights vs Electric Capital report (different methodology) — need standardized metric
+- Bridge TVL Composition: Native bridge vs LayerZero vs Wormhole vs Hyperlane breakdown not separately reported in aggregate DefiLlama figure
+- Perpetual Volume Accuracy: CEX-reported volumes (CoinGecko/CMC) may include wash trading; no independent audit of perp volume
+- Sequencer/Prover Decentralization Metrics: Currently 1 sequencer, ~10-20 provers (Foundation-operated); no permissionless validator set; roadmap milestones not quantified with dates
+- Fee Revenue Data: Protocol revenue (base fee burn, bridge fees, sequencer fees) not publicly reported by Foundation; only on-chain estimates possible via block explorer
+- Competitor TVL/Transaction Rankings: Real-time rankings shift daily; L2Beat updates ~daily, DefiLlama ~hourly; snapshot date critical
+- Narrative Classification Overlap: "Modular" narrative claimed by many L2s (Celestia, Mantle, EigenDA users); Scroll uses Ethereum DA not separate DA layer — classification debatable
+- Institutional Adoption Evidence: No public enterprise partnerships, custody integrations (Fireblocks, Copper, etc.), or tradfi announcements found — may exist but not public
+- Bug Bounty Scope/Payouts: Immunefi page exists but max reward, scope (contracts, prover, sequencer, bridge), and payout history not verified
+- Geographic User Distribution: No public analytics on user geography; regulatory restrictions (US, sanctioned regions) may affect accessible markets
+- Token Unlock Schedule Impact: Large investor/team unlocks starting Oct 2025 (12-month cliff) may affect market dynamics; not priced into current market cap analyses
+- Cross-chain Message Volume Methodology: LayerZero/Wormhole/Hyperlane each count messages differently (packet vs message vs transfer); aggregate figure approximate

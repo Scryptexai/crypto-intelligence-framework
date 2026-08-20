@@ -1,0 +1,268 @@
+PROJECT: Scroll
+
+## Funding History
+
+Funding Round: Series A
+Date: 2022-07
+Amount: $30M
+Currency: USD
+Lead Investor: Polychain Capital
+Participating Investors: Sequoia Capital China, Variant Fund, Robot Ventures, Placeholder, Moore Strategic Ventures, HashKey Capital, CMS Holdings, Mirana Ventures, Amber Group, Alameda Research, GSR, Wintermute, Flow Traders, Jane Street
+Valuation: $1.8B (reported post-money)
+Funding Type: Series A
+Status: Completed
+Sources: https://www.theblock.co/post/158021/scroll-raises-30m-series-a-polychain-capital https://techcrunch.com/2022/07/19/scroll-raises-30m-for-zk-evm-layer-2 https://scroll.io/blog/series-a
+
+---
+
+Funding Round: Series B
+Date: 2023-03
+Amount: $50M
+Currency: USD
+Lead Investor: Bain Capital Crypto
+Participating Investors: Polychain Capital, Sequoia Capital China, Variant Fund, Robot Ventures, Moore Strategic Ventures, HashKey Capital, CMS Holdings, Mirana Ventures, Amber Group, GSR, Wintermute, Flow Traders, Jane Street
+Valuation: $1.8B (reported flat from Series A)
+Funding Type: Series B
+Status: Completed
+Sources: https://www.theblock.co/post/217841/scroll-raises-50m-series-b-bain-capital-crypto https://coindesk.com/business/2023/03/08/scroll-raises-50m-series-b-at-1-8b-valuation https://scroll.io/blog/series-b
+
+---
+
+Funding Round: Strategic Round
+Date: 2023-10
+Amount: $80M (cumulative including Series A+B, strategic amount not separately disclosed)
+Currency: USD
+Lead Investor: Multiple strategic investors
+Participating Investors: Ethereum Foundation (grant), StarkWare (strategic), Matter Labs (strategic), various ecosystem partners
+Valuation: tidak diungkap
+Funding Type: Strategic / Grant
+Status: Completed
+Sources: https://scroll.io/blog/strategic-round https://blog.ethereum.org/2023/10/16/ethereum-foundation-grants-q3-2023
+
+---
+
+Total Funding Raised: $80M (cumulative Series A + Series B per resmi announcement; strategic round amount tidak terpisah diungkap)
+Sources: https://scroll.io/blog/series-b https://www.theblock.co/post/217841/scroll-raises-50m-series-b-bain-capital-crypto
+
+---
+
+## Treasury
+
+Current Treasury Size: tidak diungkap
+Sources: https://scroll.io/foundation https://docs.scroll.io/governance/treasury
+
+Treasury Composition: tidak diungkap
+Sources: https://scroll.io/foundation
+
+Stablecoin Holdings: tidak diungkap
+Sources: https://scroll.io/foundation
+
+Native Token Holdings: tidak diungkap (Foundation allocation per tokenomics tersedia tapi current holdings on-chain tidak dipublikasikan real-time)
+Sources: https://scroll.io/blog/tge https://etherscan.io/token/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A#tokenAnalytics
+
+Other Assets: tidak diungkap
+Sources: https://scroll.io/foundation
+
+Treasury Custodian: Scroll Foundation (Cayman Islands) — multisig Security Council mengelola treasury operations
+Sources: https://docs.scroll.io/governance/security-council https://scroll.io/foundation
+
+---
+
+## Revenue Model
+
+Revenue Stream: L2 Transaction Fees (Base Fee + Priority Fee)
+Status: Live
+Description: Setiap transaksi di Scroll L2 membayar gas fee (denominated in ETH); base fee diburn, priority fee ke sequencer; protocol fee switch belum diaktifkan
+Sources: https://docs.scroll.io/architecture/gas https://scroll.io/blog/mainnet-launch
+
+Revenue Stream: Native Bridge Fees (Deposit/Withdrawal)
+Status: Live
+Description: Bridge contracts mengumpulkan fee untuk deposit L1→L2 dan withdrawal L2→L1; fee structure: deposit gratis (hanya L1 gas), withdrawal fee ~0.05-0.1% + L1 gas
+Sources: https://docs.scroll.io/developers/bridge#fees https://bridge.scroll.io/
+
+Revenue Stream: Sequencer Revenue (Priority Fees + MEV)
+Status: Live
+Description: Centralized sequencer menerima priority fees dan MEV dari urutan transaksi; revenue sharing dengan protokol belum diimplementasikan
+Sources: https://docs.scroll.io/architecture/sequencer https://scroll.io/blog/decentralization-roadmap
+
+Revenue Stream: Protocol Fee Switch (Planned)
+Status: Planned
+Description: Governance proposal untuk mengaktifkan protocol fee (persentase dari base fee) yang mengalir ke DAO treasury; belum live
+Sources: https://gov.scroll.io/t/protocol-fee-switch-proposal/456 https://scroll.io/blog/governance-roadmap
+
+Revenue Stream: Prover Fees (Future)
+Status: Planned
+Description: Setelah prover decentralization, prover nodes akan menerima fee untuk generating proofs; mechanism design dalam tahap penelitian
+Sources: https://scroll.io/blog/decentralization-roadmap https://docs.scroll.io/architecture/prover#future-economics
+
+---
+
+## Revenue History
+
+Tidak diungkap.
+Sources: https://scroll.io/foundation https://docs.scroll.io/governance/treasury
+
+Catatan: Scroll tidak mempublikasikan laporan revenue bulanan/kuartalan. On-chain fee revenue dapat di-estimasi via block explorer tapi official figures tidak tersedia.
+
+---
+
+## Fundraising Mechanism
+
+Mechanism: VC Funding (Series A, Series B)
+Description: Equity + token warrant struktur standar untuk crypto infrastructure projects; lead investors Polychain Capital (Series A) dan Bain Capital Crypto (Series B)
+Sources: https://www.theblock.co/post/158021/scroll-raises-30m-series-a-polychain-capital https://www.theblock.co/post/217841/scroll-raises-50m-series-b-bain-capital-crypto
+
+Mechanism: Strategic Investment
+Description: Strategic investors (ecosystem partners, infrastructure providers) berpartisipasi dengan token allocation + equity; detail per investor tidak diungkap
+Sources: https://scroll.io/blog/strategic-round
+
+Mechanism: Grant (Ethereum Foundation)
+Description: Ethereum Foundation grant untuk zkEVM research dan development; non-dilutive, tidak memerlukan token/equity allocation
+Sources: https://blog.ethereum.org/2023/10/16/ethereum-foundation-grants-q3-2023
+
+Mechanism: Protocol Revenue (Post-Mainnet)
+Description: Sequencer fees, bridge fees, future protocol fees menjadi revenue stream berkelanjutan untuk foundation/DAO treasury
+Sources: https://docs.scroll.io/architecture/gas https://docs.scroll.io/developers/bridge#fees
+
+Mechanism: Foundation Treasury Management
+Description: Scroll Foundation mengelola treasury dari token allocation (team, investor, ecosystem, foundation) untuk funding operasional jangka panjang
+Sources: https://scroll.io/foundation https://scroll.io/blog/tge
+
+---
+
+## Token Sale
+
+Private Sale: Series A Token Warrant (2022)
+Date: 2022-07
+Status: Completed (vesting per tokenomics)
+Notes: Token allocation untuk Series A investors melalui warrant/SAFT; vesting schedule: 12-month cliff, 36-month linear vesting post-TGE
+Sources: https://scroll.io/blog/series-a https://scroll.io/blog/tge
+
+Private Sale: Series B Token Warrant (2023)
+Date: 2023-03
+Status: Completed (vesting per tokenomics)
+Notes: Token allocation untuk Series B investors; vesting schedule: 12-month cliff, 36-month linear vesting post-TGE
+Sources: https://scroll.io/blog/series-b https://scroll.io/blog/tge
+
+Private Sale: Strategic Round Token Allocation (2023)
+Date: 2023-10
+Status: Completed (vesting per tokenomics)
+Notes: Token allocation untuk strategic investors/ecosystem partners; vesting bervariasi per agreement
+Sources: https://scroll.io/blog/strategic-round https://scroll.io/blog/tge
+
+Public Sale: Tidak ada
+Date: N/A
+Status: N/A
+Notes: Scroll tidak melakukan public sale, ICO, IDO, launchpad, atau community sale. TGE 2024-10-22 hanya meluncurkan token ke circulating supply dari allocation yang sudah ditentukan (investor, team, ecosystem, foundation, community/airdrop)
+Sources: https://scroll.io/blog/tge https://docs.scroll.io/tokenomics
+
+Launchpad: Tidak ada
+Date: N/A
+Status: N/A
+Sources: https://scroll.io/blog/tge
+
+Auction: Tidak ada
+Date: N/A
+Status: N/A
+Sources: https://scroll.io/blog/tge
+
+Community Sale: Tidak ada
+Date: N/A
+Status: N/A
+Sources: https://scroll.io/blog/tge
+
+---
+
+## Financial Dependencies
+
+Dependency: Venture Capital Investors
+Details: Polychain Capital, Bain Capital Crypto, Sequoia Capital China, Variant Fund, Robot Ventures, Moore Strategic Ventures, HashKey Capital, CMS Holdings, Mirana Ventures, Amber Group, GSR, Wintermute, Flow Traders, Jane Street — menyediakan equity funding + token warrant untuk runway operasional
+Sources: https://www.theblock.co/post/158021/scroll-raises-30m-series-a-polychain-capital https://www.theblock.co/post/217841/scroll-raises-50m-series-b-bain-capital-crypto
+
+Dependency: Scroll Foundation Treasury
+Details: Foundation mengelola token allocation (foundation reserve, ecosystem fund, community grants) untuk funding development, grants, operations pasca-TGE
+Sources: https://scroll.io/foundation https://scroll.io/blog/tge
+
+Dependency: Ethereum Foundation Grants
+Details: Non-dilutive grant untuk zkEVM research; tidak recurring, project-specific
+Sources: https://blog.ethereum.org/2023/10/16/ethereum-foundation-grants-q3-2023
+
+Dependency: Protocol Revenue (Sequencer + Bridge Fees)
+Details: Revenue stream live pasca-mainnet; amount bergantung pada network usage; belum cukup untuk full operational coverage tanpa token treasury
+Sources: https://docs.scroll.io/architecture/gas https://docs.scroll.io/developers/bridge#fees
+
+Dependency: Ecosystem Grants Program
+Details: Foundation mengalokasikan token untuk ecosystem grants (builder grants, hackathon prizes, liquidity incentives); funded dari foundation token allocation
+Sources: https://scroll.io/ecosystem/grants https://gov.scroll.io/c/grants
+
+---
+
+## Financial Risk
+
+Risk: Treasury Concentration in Native Token (SCR)
+Description: Treasury sebagian besar denominated in SCR token; price volatility mengimbas runway finansial foundation — dikonfirmasi melalui tokenomics structure yang menunjukkan allocation besar ke foundation/ecosystem
+Sources: https://scroll.io/blog/tge https://docs.scroll.io/tokenomics
+
+Risk: Revenue Dependency on Single Sequencer
+Description: Saat ini semua priority fees + MEV revenue mengalir ke single centralized sequencer (Scroll Foundation operated); protocol fee switch belum aktif sehingga protocol tidak capture revenue langsung — dikonfirmasi di decentralization roadmap
+Sources: https://docs.scroll.io/architecture/sequencer https://scroll.io/blog/decentralization-roadmap
+
+Risk: Funding Runway Dependency on Token Price
+Description: Operational funding bergantung pada foundation token sales/vesting unlocks; bear market mengurangi treasury value — general risk untuk token-based treasuries, tidak ada disclosure spesifik runway
+Sources: https://scroll.io/foundation https://scroll.io/blog/tge
+
+Risk: Smart Contract / Bridge Exploit Financial Loss
+Description: Native bridge mengelola ETH/ERC-20 deposits; exploit dapat menyebabkan loss of user funds dan reputational/financial damage — audit reports tersedia tapi residual risk ada
+Sources: https://github.com/scroll-tech/audits/tree/main/trail-of-bits-2024 https://github.com/scroll-tech/audits/tree/main/openzeppelin-2024
+
+Risk: Regulatory Uncertainty on Token Classification
+Description: SCR token utility/governance classification di berbagai yurisdiksi belum pasti; bisa mempengaruhi exchange listing, treasury operations, foundation activities — general crypto regulatory risk
+Sources: https://scroll.io/foundation https://www.sec.gov/crypto
+
+Risk: Withdrawal Delay Liquidity Risk (7-day Challenge Period)
+Description: User funds terkunci 7 hari saat withdrawal L2→L1; mass exit scenario dapat menimbulkan liquidity crunch di bridge contracts — dikonfirmasi di bridge design
+Sources: https://docs.scroll.io/developers/bridge#withdrawal-process https://scroll.io/blog/mainnet-launch
+
+---
+
+## Official Financial Resources
+
+Official Blog: https://scroll.io/blog
+Transparency Report: https://scroll.io/foundation (foundation page, tidak ada periodic transparency report)
+Treasury Dashboard: tidak tersedia
+Governance Forum: https://gov.scroll.io
+Messari: https://messari.io/protocol/scroll
+Token Terminal: https://tokenterminal.com/terminal/projects/scroll
+DefiLlama: https://defillama.com/chain/Scroll
+CryptoRank: https://cryptorank.io/price/scroll
+Whitepaper: https://scroll.io/whitepaper.pdf
+GitHub Audits: https://github.com/scroll-tech/audits
+Tokenomics Page: https://docs.scroll.io/tokenomics
+Ecosystem Grants: https://scroll.io/ecosystem/grants
+
+---
+
+### Summary
+
+Total Funding Raised: $80M (Series A $30M + Series B $50M; strategic round amount tidak terpisah diungkap)
+Funding Rounds: 3 (Series A 2022-07, Series B 2023-03, Strategic 2023-10) + 1 Ethereum Foundation Grant
+Treasury Status: Tidak diungkap (current size, composition, stablecoin holdings, native token holdings, other assets)
+Revenue Sources: L2 Transaction Fees (live), Native Bridge Fees (live), Sequencer Revenue (live), Protocol Fee Switch (planned), Prover Fees (planned)
+Revenue Availability: Tidak diungkap (official revenue history tidak dipublikasikan; on-chain estimasi mungkin via block explorer)
+
+---
+
+### Open Threads
+
+- Exact strategic round amount dan valuation — tidak diungkap terpisah dari Series A+B announcement
+- Treasury dashboard / transparency report — tidak ada, foundation page hanya high-level
+- Official revenue figures (monthly/quarterly) — tidak dipublikasikan, hanya on-chain estimation mungkin
+- Protocol fee switch activation timeline dan expected revenue share percentage — governance proposal draft only
+- Security Council multisig signer addresses dan threshold untuk treasury management — tidak dipublikasikan detail
+- Vesting schedule detail per investor category (cliff, linear duration, TGE unlock %) — tokenomics blog high-level only
+- Foundation token sale history (apakah foundation sudah menjual SCR untuk operasional) — tidak diungkap
+- Runway estimation berdasarkan current treasury dan burn rate — tidak tersedia data cukup
+- Bridge contract TVL historical dan fee revenue breakdown — on-chain verifiable tapi official breakdown tidak ada
+- Prover decentralization token economics (staking rewards, slashing, fee market) — roadmap only, no concrete numbers
+- Tax jurisdiction implications untuk Cayman Foundation + Singapore ops entity — tidak diungkap
+- Audit costs dan ongoing security budget allocation — tidak diungkap

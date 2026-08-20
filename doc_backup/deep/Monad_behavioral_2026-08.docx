@@ -1,262 +1,371 @@
 PROJECT: Monad
 
-1. Menjadi Layer 1 Parallel EVM dengan throughput tertinggi sambil mempertahankan kompatibilitas EVM penuh
+Strategic Objectives
 
-· Evidence: Whitepaper Monad mendefinisikan arsitektur MonadBFT, Asynchronous Execution Engine, dan MonadDb untuk mencapai target 10.000+ TPS dan ~1s block time dengan single-slot finality sambil menjaga full EVM bytecode compatibility [Monad Whitepaper, https://monad.xyz/whitepaper]
-· Supporting Dataset: Phase 1 Foundation, Phase 4 Technology (Architecture, Consensus, Execution Environment)
+1. Membangun Layer 1 Parallel EVM Performa Tinggi dengan Kompatibilitas EVM Penuh
+· Evidence: Whitepaper Monad mendefinisikan arsitektur MonadBFT, Asynchronous Execution Engine, dan MonadDb untuk mencapai 10,000+ TPS dengan finalitas single-slot sambil mempertahankan kompatibilitas bytecode EVM penuh (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]
+· Supporting Dataset: Phase 1 Foundation, Phase 4 Technology (Architecture, Core Components, Consensus, Execution Environment)
 
-2. Membangun ekosistem developer-first melalui kompatibilitas toolchain Ethereum existing
-
-· Evidence: Dokumentasi developer menegaskan dukungan Hardhat, Foundry, ethers.js, viem, MetaMask, dan wallet EVM-kompatibel lainnya via custom RPC tanpa perlu tooling baru [Monad Docs, https://docs.monad.xyz/developers/getting-started]
+2. Menarik Developer Ethereum melalui Tooling dan Standard yang Sudah Dikenal
+· Evidence: Dokumentasi developer menunjukkan dukungan Hardhat, Foundry, ethers.js, viem, MetaMask via custom RPC — tidak memerlukan kurva belajar baru (HIGH) [Monad Docs, https://docs.monad.xyz/developers/getting-started]
 · Supporting Dataset: Phase 4 Technology (Development Framework), Phase 7 Ecosystem (Developer Ecosystem, Wallet Ecosystem)
 
-3. Memisahkan pengembangan protokol inti (Monad Labs Inc.) dari governance protokol masa depan (Foundation/DAO yang belum terbentuk)
+3. Memanfaatkan Keahlian HFT/Jump Trading untuk Optimisasi Sistem Tingkat Rendah
+· Evidence: Core team ~30+ insinyur ex-Jump Trading/HFT; arsitektur MonadDb, parallel execution, dan konsensus BFT dirancang untuk latency rendah dan throughput tinggi (HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]
+· Supporting Dataset: Phase 2 Entity (Monad Core Team, Jump Trading), Phase 3 History (EV-003), Phase 4 Technology (Current Technical Stack)
 
-· Evidence: Hanya Monad Labs Inc. (Delaware corporation) yang terverifikasi sebagai entitas pengembang; FAQ dan team page tidak menyebut Foundation atau DAO terpisah; token MON pre-TGE [Monad Docs FAQ, https://docs.monad.xyz/faq; Monad Team, https://monad.xyz/team]
-· Supporting Dataset: Phase 2 Entity (Company, Foundation, DAO), Phase 6 Token (Governance), Phase 7 Ecosystem (Governance Ecosystem)
+4. Mengamankan Dana Jangka Panjang melalui Series A Besar Sebelum Mainnet
+· Evidence: $225M Series A pada April 2024 dari investor VC untuk pengembangan mainnet, rekrutmen, dan ekosistem (HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a; Forbes, https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million]
+· Supporting Dataset: Phase 3 History (EV-007), Phase 5 Financial (Funding History)
 
-4. Mengamankan dana pengembangan jangka panjang melalui single large Series A ($225M) tanpa public token sale awal
+5. Meluncurkan Testnet Publik untuk Validasi Teknis dan Ekosistem Sebelum Mainnet
+· Evidence: Testnet "Monad Madness" diluncurkan 19 Februari 2025 dengan >100 proyek ekosistem onboard untuk pengujian integrasi (HIGH) [Monad Blog, https://monad.xyz/blog/testnet-launch]
+· Supporting Dataset: Phase 3 History (EV-009, EV-011), Phase 7 Ecosystem (Applications, Major Integrations)
 
-· Evidence: Series A $225M April 2024 dari investor VC; tidak ada seed/strategic round terverifikasi publik; tidak ada public sale, launchpad, atau community sale diumumkan; token MON pre-TGE [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a; Forbes, https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million; Monad FAQ, https://docs.monad.xyz/faq]
-· Supporting Dataset: Phase 5 Financial (Funding History, Fundraising Mechanism, Token Sale), Phase 3 History (EV-007, EV-008)
+6. Menjaga Opsi Tokenomics dan Governance Terbuka Hingga Mainnet
+· Evidence: Token MON pre-TGE, tidak ada foundation/DAO terverifikasi, vesting/distribusi tidak dipublikasikan — fleksibilitas disimpan hingga mainnet (HIGH) [Monad Docs, https://docs.monad.xyz/faq; https://docs.monad.xyz/roadmap]
+· Supporting Dataset: Phase 6 Token (Supply, Distribution, Vesting, TGE, Governance), Phase 2 Entity (no Foundation/DAO), Phase 7 Ecosystem (Governance Ecosystem)
 
-5. Meluncurkan testnet publik iteratif ("Monad Madness") untuk validasi teknis dan onboarding ekosistem sebelum mainnet
+Decision Timeline
 
-· Evidence: Testnet live 2025-02-19 dengan MonadBFT, Execution Engine, MonadDb, JSON-RPC, block explorer; >100 proyek onboarded; roadmap mainnet Q3 2025 [Monad Blog, https://monad.xyz/blog/testnet-launch; Monad Ecosystem, https://monad.xyz/ecosystem; Monad Roadmap, https://docs.monad.xyz/roadmap]
-· Supporting Dataset: Phase 3 History (EV-009, EV-010, EV-011, EV-012), Phase 7 Ecosystem (Applications, Major Integrations), Phase 8 Market (Market Timeline)
+Keputusan: Inkorporasi Monad Labs Inc. di Delaware sebagai Entitas Hukum Pengembang (2022)
+· Trigger: Perlu entitas hukum formal untuk merekrut tim, mengelola IP, dan menerima investasi
+· Evidence: Pendaftaran di Delaware Division of Corporations (HIGH) [OpenCorporates, https://opencorporates.com/companies/us_de/7849212]
+· Decision: Mendirikan Monad Labs Inc. sebagai Delaware corporation
+· Immediate Result: Entitas hukum resmi untuk pengembangan Monad terbentuk (EV-001)
+· Long-term Impact: Struktur korporat sentralisasi pengembangan protokol; belum ada foundation terpisah untuk token governance
+· Supporting Dataset: Phase 2 Entity (Monad Labs Inc.), Phase 3 History (EV-001), Phase 5 Financial (Financial Dependencies)
 
-Keputusan: Inkorporasi Monad Labs Inc. di Delaware sebagai entitas pengembang protokol (2022)
-· Trigger: Perlu entitas hukum formal untuk merekrut tim, mengelola IP, dan menerima investasi VC sebelum pengembangan protokol dimulai
-· Evidence: OpenCorporates mencatat inkorporasi Monad Labs Inc. di Delaware 2022 [OpenCorporates, https://opencorporates.com/companies/us_de/7849212]
-· Decision: Mendirikan Delaware corporation sebagai vehicle korporat untuk Monad Labs
-· Immediate Result: Entitas hukum resmi terbentuk, memungkinkan rekrutmen tim dan fundraising kemudian
-· Long-term Impact: Struktur korporat terpusat (non-foundation) mengontrol pengembangan protokol hingga mainnet; governance protokol masa depan belum terdefinisi
-· Supporting Dataset: Phase 2 Entity (Monad Labs Inc., Delaware Division of Corporations), Phase 3 History (EV-001)
+Keputusan: Rekrutmen Tim Inti dari Alumni Jump Trading/HFT (2022)
+· Trigger: Butuh keahlian sistem performa tinggi, low-latency, dan distributed systems untuk membangun parallel EVM dari nol
+· Evidence: ~30+ insinyur ex-Jump Trading direkrut; The Block melaporkan latar belakang HFT sebagai diferensiasi (HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]
+· Decision: Membangun core team sekitar keahlian HFT/quantitative trading
+· Immediate Result: Tim teknis dengan pengalaman sistem performa tinggi terhimpun (EV-003)
+· Long-term Impact: Arsitektur MonadDb, Execution Engine, dan MonadBFT mencerminkan pendekatan HFT (optimisasi memori, concurrency, networking); ketergantungan pada single talent pool
+· Supporting Dataset: Phase 2 Entity (Monad Core Team, Jump Trading), Phase 3 History (EV-002, EV-003), Phase 4 Technology (Current Technical Stack)
 
-Keputusan: Membangun tim inti dari alumni Jump Trading/HFT background (2022)
-· Trigger: Kebutuhan keahlian sistem performa tinggi, low-latency, dan concurrent engineering untuk arsitektur parallel EVM
-· Evidence: The Block melaporkan ~30+ engineers sebagian besar ex-Jump Trading/HFT [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]
-· Decision: Rekrutmen fokus pada talenta HFT/sistem terdistribusi performa tinggi bukan blockchain tradisional
-· Immediate Result: Tim dengan expertise unik untuk MonadBFT, MonadDb, dan asynchronous execution
-· Long-term Impact: Diferensiasi teknis "HFT heritage" menjadi narasi pasar utama; arsitektur mencerminkan pendekatan sistem performa tinggi
-· Supporting Dataset: Phase 2 Entity (Monad Core Team, Jump Trading), Phase 3 History (EV-002, EV-003), Phase 8 Market (Narrative Position: HFT Heritage)
+Keputusan: Publikasi Whitepaper dan Arsitektur Teknis Lengkap Sebelum Kode (2022)
+· Trigger: Butuh menarik developer, investor, dan validator dengan spesifikasi jelas sebelum implementasi
+· Evidence: Whitepaper dipublikasikan di monad.xyz menjelaskan MonadBFT, MonadDb, Asynchronous Execution Engine (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]
+· Decision: Merilis spesifikasi teknis lengkap (consensus, execution, storage) sebagai dokumen publik
+· Immediate Result: Spesifikasi protokol tersedia untuk review komunitas dan investor (EV-004)
+· Long-term Impact: Menetapkan ekspektasi teknis tinggi (10k TPS, 1s block time); menciptakan tekanan delivery; transparansi teknis dibanding kompetitor
+· Supporting Dataset: Phase 3 History (EV-004), Phase 4 Technology (System Architecture, Core Components, Consensus, Execution Environment)
 
-Keputusan: Memilih arsitektur Monolithic Layer 1 dengan Parallel EVM Execution custom (bukan L2, bukan modular rollup) (2022)
-· Trigger: Target throughput 10k+ TPS dengan EVM equivalence memerlukan kontrol penuh atas konsensus, eksekusi, dan storage
-· Evidence: Whitepaper mendefinisikan MonadBFT, Asynchronous Execution Engine, MonadDb sebagai stack utuh; docs menyebut "monolithic with parallel processing" [Monad Whitepaper, https://monad.xyz/whitepaper; Monad Docs, https://docs.monad.xyz/architecture]
-· Decision: Bangun L1 mandiri dengan komponen custom bukan fork Ethereum atau L2 rollup
-· Immediate Result: Full control over consensus finality, execution scheduling, dan state storage optimization
-· Long-term Impact: Bebas dari ketergantungan L1 Ethereum (finality, gas, upgrade); tapi harus membangun validator set, bridge, dan ekosistem dari nol
-· Supporting Dataset: Phase 4 Technology (System Architecture, Consensus, Execution Environment), Phase 8 Market (Competitor Landscape vs L2s)
+Keputusan: Peluncuran Infrastructure Resmi (Website, Docs, GitHub, Discord, Telegram, Twitter) Serentak (2022)
+· Trigger: Butuh saluran komunikasi, distribusi kode, dan komunitas sejak awal
+· Evidence: Semua platform diluncurkan pada 2022 (HIGH) [Monad Website, https://monad.xyz; Monad Docs, https://docs.monad.xyz; GitHub, https://github.com/monad-labs; Discord, https://discord.gg/monad; Twitter, https://x.com/monad_xyz]
+· Decision: Membangun full stack komunikasi dan infrastructure open source dari hari pertama
+· Immediate Result: Saluran resmi informasi dan kode sumber tersedia (EV-005, EV-006)
+· Long-term Impact: Developer onboarding lancar saat testnet; komunitas terbentuk sebelum mainnet; GitHub sebagai single source of truth
+· Supporting Dataset: Phase 3 History (EV-005, EV-006), Phase 4 Technology (Development Framework), Phase 7 Ecosystem (Infrastructure Providers, Developer Ecosystem)
 
-Keputusan: Memilih Rust sebagai primary implementation language untuk node client (2022)
-· Trigger: Kebutuhan memory safety, concurrency primitives, dan performance untuk parallel execution engine dan BFT consensus
-· Evidence: GitHub org monad-labs menunjukkan Rust codebase; tokio async runtime untuk P2P/consensus/execution [Monad GitHub, https://github.com/monad-labs; Monad Whitepaper, https://monad.xyz/whitepaper]
-· Decision: Rust untuk core protocol; TypeScript/JS untuk SDK/tooling
-· Immediate Result: Single client implementation (Rust) dengan performance characteristics yang diprediksi tinggi
-· Long-term Impact: Client diversity risk (hanya satu client); dependency pada Rust ecosystem; talent pool lebih sempit dibanding Go
-· Supporting Dataset: Phase 4 Technology (Programming Languages, Current Technical Stack), Phase 7 Ecosystem (Risk: Single Client Implementation Dependency)
+Keputusan: Fundraising Series A $225M pada April 2024 (Sebelum Mainnet/Testnet)
+· Trigger: Butuh kapital besar untuk pengembangan mainnet, rekrutmen lanjutan, dan ekosistem tanpa tekanan token launch cepat
+· Evidence: The Block dan Forbes melaporkan Series A $225M April 2024 (HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a; Forbes, https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million]
+· Decision: Mengumpulkan $225M equity funding dari VC sebelum mainnet live
+· Immediate Result: Dana $225M tercatat; runway panjang tanpa tekanan revenue/token (EV-007)
+· Long-term Impact: Independensi finansial dari token launch; investor equity (bukan token) mengurangi sell pressure TGE; valuasi dan cap table opaque; tekanan delivery mainnet Q3 2025
+· Supporting Dataset: Phase 3 History (EV-007, EV-008), Phase 5 Financial (Funding History, Fundraising Mechanism, Financial Risk)
 
-Keputusan: Series A $225M April 2024 sebagai single large funding round (no public token sale) (2024-04)
-· Trigger: Kapital besar diperlukan untuk mainnet development, team scaling (~30+ ke lebih besar), dan ecosystem incentives sebelum revenue
-· Evidence: The Block dan Forbes melaporkan $225M Series A; tidak ada seed round terverifikasi; token MON pre-TGE [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a; Forbes, https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million; Monad FAQ, https://docs.monad.xyz/faq]
-· Decision: Equity funding via VC Series A; menunda token generation event (TGE) hingga pasca-mainnet
-· Immediate Result: $225M treasury untuk ~18-24 bulan runway (estimasi); tidak ada token community holders awal; cap table equity-only
-· Long-term Impact: Token distribution belum terdengar; investor VC memegang equity bukan token; regulatory risk pada token issuance masa depan; no community ownership pre-mainnet
-· Supporting Dataset: Phase 5 Financial (Funding History, Fundraising Mechanism, Financial Risk), Phase 3 History (EV-007, EV-008), Phase 6 Token (TGE, Distribution)
+Keputusan: Peluncuran Public Testnet "Monad Madness" pada 19 Februari 2025
+· Trigger: Butuh validasi produksi untuk MonadBFT, Execution Engine, MonadDb, dan JSON-RPC dengan beban nyata dari ekosistem
+· Evidence: Testnet live dengan block explorer, >100 proyek onboard, RPC endpoint (HIGH) [Monad Blog, https://monad.xyz/blog/testnet-launch; Monad Testnet Explorer, https://testnet.monadexplorer.com]
+· Decision: Meluncurkan testnet publik permissionless dengan full stack protokol
+· Immediate Result: Testnet live, ekosistem >100 proyek mulai integrasi (EV-009, EV-010, EV-011)
+· Long-term Impact: Validasi teknis nyata sebelum mainnet; feedback loop developer; reputasi bergantung pada stabilitas testnet; data performa nyata untuk investor
+· Supporting Dataset: Phase 3 History (EV-009, EV-010, EV-011), Phase 4 Technology (Technical Upgrade History), Phase 7 Ecosystem (Applications, Major Integrations), Phase 8 Market (Market Timeline)
 
-Keputusan: Peluncuran Public Testnet "Monad Madness" 19 Februari 2025 dengan full stack live (2025-02-19)
-· Trigger: Butuh validasi produksi untuk MonadBFT, parallel execution, MonadDb, dan JSON-RPC sebelum mainnet; onboarding ekosistem developer
-· Evidence: Blog resmi announce testnet launch dengan block explorer, >100 projects onboarded [Monad Blog, https://monad.xyz/blog/testnet-launch; Monad Ecosystem, https://monad.xyz/ecosystem; Testnet Explorer, https://testnet.monadexplorer.com]
-· Decision: Public permissionless testnet (bukan devnet/private) dengan full feature parity target mainnet
-· Immediate Result: Real-world workload testing; >100 proyek integrasi; validator/RPC operator onboarding; community engagement
-· Long-term Impact: Testnet menjadi proving ground untuk performance claims (10k TPS, 1s block); feedback loop untuk mainnet readiness; ecosystem stickiness sebelum token
-· Supporting Dataset: Phase 3 History (EV-009, EV-010, EV-011), Phase 7 Ecosystem (Applications, Major Integrations, Infrastructure Providers), Phase 8 Market (Market Timeline)
-
-Keputusan: Menargetkan Mainnet Q3 2025 tanpa tokenomics detail, audit publik, atau governance framework (2025 Q1-Q2)
-· Trigger: Roadmap internal dan komitmen kepada investor/community untuk timeline mainnet
-· Evidence: Docs roadmap menargetkan Q3 2025; FAQ konfirmasi pre-TGE; tidak ada audit report, tokenomics, governance docs [Monad Roadmap, https://docs.monad.xyz/roadmap; Monad FAQ, https://docs.monad.xyz/faq; Monad Whitepaper, https://monad.xyz/whitepaper]
-· Decision: Timeline-driven launch target dengan deferred tokenomics/governance/audit disclosure
-· Immediate Result: Urgency pada core team untuk feature-complete; ekosistem prepare untuk mainnet tanpa clarity ekonomi token
-· Long-term Impact: Risk launch tanpa audit (security), tanpa tokenomics (economic sustainability), tanpa governance (protocol upgrade path); potential regulatory scrutiny pada token issuance post-launch
-· Supporting Dataset: Phase 3 History (EV-012, EV-013), Phase 4 Technology (Audit History, Known Limitations), Phase 5 Financial (Financial Risk), Phase 6 Token (Distribution, Vesting, Governance), Phase 7 Ecosystem (Risks), Phase 8 Market (Open Threads)
+Keputusan: Menetapkan Target Mainnet Q3 2025 dan Konfirmasi Pre-TGE via FAQ (2025)
+· Trigger: Butuh memberikan timeline komunitas dan investor; mencegah spekulasi token palsu
+· Evidence: Roadmap di docs.monad.xyz/roadmap menargetkan Q3 2025; FAQ mengonfirmasi pre-TGE (HIGH) [Monad Docs, https://docs.monad.xyz/roadmap; https://docs.monad.xyz/faq]
+· Decision: Mengumumkan target mainnet Q3 2025 dan menegaskan token belum TGE
+· Immediate Result: Komunitas memiliki jadwal referensi; klarifikasi status token (EV-012, EV-013)
+· Long-term Impact: Commitment publik ke deadline Q3 2025; risiko reputasi jika slip; fleksibilitas tokenomics terjaga hingga mainnet
+· Supporting Dataset: Phase 3 History (EV-012, EV-013), Phase 6 Token (TGE, Status), Phase 8 Market (Market Timeline)
 
 Evolution Pattern
 
-Proyek berevolusi melalui empat fase jelas:
+Perubahan Strategi: Dari Stealth Development ke Public Testnet dengan Ekosistem Terbuka
+· Evidence: 2022-2024: pengembangan internal, whitepaper, fundraising privat; 2025-02: testnet publik dengan >100 proyek ekosistem onboard (HIGH) [Phase 3 History EV-001 through EV-011; Phase 7 Ecosystem Major Integrations]
+· Supporting Dataset: Phase 3 History (all events), Phase 7 Ecosystem (Applications, Major Integrations)
 
-Fase 1: Stealth Research & Team Assembly (2022)
-- Inkorporasi Delaware, rekrutmen tim HFT, whitepaper arsitektur, infrastructure setup (web, docs, GitHub, comms)
-- Fokus: Technical foundation, zero external dependencies beyond Rust/EVM spec
-- Phase 3: EV-001 through EV-006
+Perubahan Teknologi: Dari Spesifikasi Whitepaper ke Implementasi Live Testnet
+· Evidence: Whitepaper 2022 mendefinisikan MonadBFT, MonadDb, Execution Engine; Testnet 2025 menjalankan semua komponen tersebut secara live (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper; Monad Blog, https://monad.xyz/blog/testnet-launch]
+· Supporting Dataset: Phase 3 History (EV-004, EV-009), Phase 4 Technology (Core Components, Technical Upgrade History)
 
-Fase 2: Capitalization & Technical Deepening (2023-2024)
-- Series A $225M (April 2024) sebagai single major funding event; media coverage (The Block, Forbes)
-- Continued core protocol development tanpa public testnet; no ecosystem grants/hackathons
-- Phase 3: EV-007, EV-008; Phase 5: Funding History
+Perubahan Tokenomics: Dari Konsep Whitepaper ke Pre-TGE dengan Detail Tertunda
+· Evidence: Whitepaper menyebutkan peran MON (gas, staking); 2025 FAQ mengonfirmasi pre-TGE, tidak ada detail supply/vesting/allokasi (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper; Monad Docs, https://docs.monad.xyz/faq]
+· Supporting Dataset: Phase 3 History (EV-004, EV-013), Phase 6 Token (all sections)
 
-Fase 3: Public Validation & Ecosystem Bootstrapping (2025-02 onward)
-- Testnet "Monad Madness" launch dengan full stack; >100 projects onboarded organically
-- Developer tooling compatibility proven (Hardhat, Foundry, MetaMask work out-of-box)
-- Phase 3: EV-009, EV-010, EV-011; Phase 7: Major Integrations, Applications
+Perubahan Governance: Dari Corporate-Controlled ke Belum Terdéfinit (Foundation/DAO Belum Ada)
+· Evidence: 2022-2025: Monad Labs Inc. kontrol penuh; tidak ada foundation/DAO terverifikasi; governance model tidak dipublikasikan (HIGH) [Monad Docs, https://docs.monad.xyz/faq; Monad Team, https://monad.xyz/team]
+· Supporting Dataset: Phase 2 Entity (no Foundation/DAO), Phase 6 Token (Governance), Phase 7 Ecosystem (Governance Ecosystem)
 
-Fase 4: Pre-Mainnet Convergence (2025 Q2-Q3 target)
-- Roadmap mainnet Q3 2025 dipublikasikan; token MON pre-TGE dikonfirmasi
-- Critical gaps remain: no audit, no tokenomics, no governance, no foundation, no bridge/oracle integrations
-- Phase 3: EV-012, EV-013; Phase 4: Known Limitations; Phase 6: all sections; Phase 7: Ecosystem Risks
+Perubahan Pasar: Dari Narrative "Parallel EVM" ke Validasi Nyata via Testnet
+· Evidence: 2022-2024: narrative di whitepaper dan media; 2025: testnet live dengan >100 proyek menguji performa paralel (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper; Monad Ecosystem, https://monad.xyz/ecosystem; Testnet Stats, https://testnet.monad.xyz/stats]
+· Supporting Dataset: Phase 3 History (EV-009, EV-011), Phase 8 Market (Narrative Position, Competitor Landscape)
 
-Pergeseran strategis: Dari "technical perfection in stealth" → "capitalized development" → "public iterative validation" → "deadline-driven launch preparation". Setiap fase didorong oleh milestone teknis (whitepaper done, testnet ready) dan finansial (Series A closed, runway management).
+Technical Decision Pattern
 
-Pola 1: Ethereum Alignment First — Full EVM Bytecode Compatibility sebagai Non-Negotiable
+Pola 1: Ethereum Alignment First — Kompatibilitas EVM Penuh sebagai Keputusan Arsitektural Utama
+· Decision Pattern: Semua keputusan teknis (VM, RPC, tooling, precompiles, gas semantics) mendukung kompatibilitas EVM bytecode penuh tanpa modifikasi smart contract
+· Evidence: EVM bytecode compatibility (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]; JSON-RPC Ethereum-compatible (HIGH) [Monad Docs, https://docs.monad.xyz/developers/json-rpc]; Hardhat/Foundry/ethers.js/viem support (HIGH) [Monad Docs, https://docs.monad.xyz/developers/getting-started]; Standard precompiles (MEDIUM) [Monad Docs, https://docs.monad.xyz/developers/evm-compatibility]
+· Supporting Dataset: Phase 4 Technology (Execution Environment, Development Framework, Programming Languages), Phase 7 Ecosystem (Developer Ecosystem, Wallet Ecosystem, Major Integrations)
 
-· Decision Pattern: Semua keputusan arsitektur (consensus, execution, storage, RPC) dirancang untuk mempertahankan full EVM bytecode compatibility; tidak ada custom VM, tidak ada breaking changes dari Ethereum execution semantics
-· Evidence: Whitepaper menegaskan "Full EVM bytecode compatibility"; Developer docs menunjukkan Hardhat/Foundry/ethers.js/viem/MetaMask works tanpa modifikasi; JSON-RPC spec mengikuti Ethereum standard [Monad Whitepaper, https://monad.xyz/whitepaper; Monad Docs, https://docs.monad.xyz/developers/evm-compatibility; Monad Docs, https://docs.monad.xyz/developers/getting-started]
-· Supporting Dataset: Phase 4 Technology (Execution Environment, Development Framework, JSON-RPC Interface), Phase 7 Ecosystem (Major Integrations, Developer Ecosystem, Wallet Ecosystem), Phase 8 Market (Narrative Position: EVM Compatibility)
+Pola 2: Custom Stack dari Nol untuk Performa — Membangun MonadBFT, MonadDb, Execution Engine Sendiri
+· Decision Pattern: Mengembangkan consensus, storage, dan execution engine custom (Rust) alih-alih fork Geth atau gunakan CometBFT/Tendermint
+· Evidence: MonadBFT custom BFT (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]; MonadDb custom storage (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]; Asynchronous Execution Engine custom (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]; Rust implementation (HIGH) [Monad GitHub, https://github.com/monad-labs]
+· Supporting Dataset: Phase 4 Technology (Core Components, Consensus Mechanism, Execution Environment, Current Technical Stack), Phase 2 Entity (Monad Core Team, Jump Trading)
 
-Pola 2: Custom Stack Vertical Integration — Build Consensus, Execution, Storage In-House
+Pola 3: Optimistic Parallel Execution dengan Conflict Detection Deferred
+· Decision Pattern: Eksekusi transaksi secara optimistik paralel, deteksi konflik pasca-eksekusi, re-eksekusi transaksi konflik — bukan static analysis upfront
+· Evidence: Optimistic concurrency control dengan deferred conflict resolution (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]; Deterministic ordering dalam block (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]
+· Supporting Dataset: Phase 4 Technology (Execution Environment, System Architecture), Phase 4 Technology (Known Technical Limitations - conflict rate unknown)
 
-· Decision Pattern: MonadBFT (consensus), Asynchronous Execution Engine (execution), MonadDb (storage) semua dibangun custom oleh Monad Labs; tidak memakai CometBFT, tidak memakai Reth/Erigon, tidak memakai RocksDB langsung tanpa abstraction layer
-· Evidence: Whitepaper mendefinisikan tiga komponen inti sebagai proprietary design; GitHub org berisi implementasi Rust custom untuk semua tiga [Monad Whitepaper, https://monad.xyz/whitepaper; Monad GitHub, https://github.com/monad-labs]
-· Supporting Dataset: Phase 4 Technology (Core Components, Consensus Mechanism, Execution Environment, Current Technical Stack), Phase 2 Entity (MonadBFT, MonadDb, Asynchronous Execution Engine, Monad Core Team)
+Pola 4: Single Client Implementation (Rust) dengan Fokus Performa Tinggi
+· Decision Pattern: Satu implementasi client resmi dalam Rust (tokio async), tidak ada client diversity di rilis awal
+· Evidence: Node client Rust (HIGH) [Monad GitHub, https://github.com/monad-labs]; tokio async runtime (HIGH) [Monad GitHub, https://github.com/monad-labs]; No second client announced (HIGH) [Monad Docs, https://docs.monad.xyz/architecture; Monad FAQ, https://docs.monad.xyz/faq]
+· Supporting Dataset: Phase 4 Technology (Current Technical Stack, Known Technical Limitations), Phase 7 Ecosystem (Ecosystem Risks - Single Client Implementation Dependency)
 
-Pola 3: Parallel Execution via Optimistic Concurrency Control dengan Deferred Conflict Resolution
+Pola 5: Testnet Sebagai Validasi Produksi — Tidak Ada Incentivized Testnet / Points Program
+· Decision Pattern: Testnet "Monad Madness" diluncurkan sebagai public testnet standar tanpa token incentives/points; fokus validasi teknis
+· Evidence: Testnet launch blog tidak menyebut incentives (HIGH) [Monad Blog, https://monad.xyz/blog/testnet-launch]; FAQ mengonfirmasi testnet token tidak bernilai (HIGH) [Monad Docs, https://docs.monad.xyz/faq]
+· Supporting Dataset: Phase 3 History (EV-009), Phase 6 Token (Major Token Events), Phase 7 Ecosystem (Applications), Phase 8 Market (Adoption Metrics)
 
-· Decision Pattern: Transaksi dieksekusi optimistik paralel; konflik dideteksi pasca-eksekusi dan transaksi konflik di-re-execute secara deterministik; bukan static analysis upfront (seperti Solana/Sui) atau sharding
-· Evidence: Whitepaper menjelaskan "optimistic parallel execution with conflict detection"; Asynchronous Execution Engine component melakukan deferred conflict resolution [Monad Whitepaper, https://monad.xyz/whitepaper; Monad Docs, https://docs.monad.xyz/architecture]
-· Supporting Dataset: Phase 4 Technology (Core Components: Asynchronous Execution Engine, Execution Environment: Parallel Execution), Phase 8 Market (Competitor Landscape: vs Sei, MegaETH)
+Financial Decision Pattern
 
-Pola 4: Single Client Implementation (Rust) — No Client Diversity Targeted Pre-Mainnet
+Pola 1: Single Large Equity Round (Series A) Sebelum Mainnet — Menghindari Token Sale Tekanan
+· Decision Pattern: Mengumpulkan $225M via equity Series A (April 2024) dari VC, bukan token sale; investor mendapat equity Monad Labs Inc., bukan token MON
+· Evidence: Series A $225M equity (HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a; Forbes, https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million]; Token MON pre-TGE, tidak ada private/public sale (HIGH) [Monad Docs, https://docs.monad.xyz/faq]
+· Supporting Dataset: Phase 3 History (EV-007), Phase 5 Financial (Funding History, Fundraising Mechanism, Token Sale), Phase 6 Token (TGE, Major Token Events)
 
-· Decision Pattern: Hanya satu client implementation (Rust oleh Monad Labs); tidak ada second client team, tidak ada protocol spec terpisah untuk implementasi independen, tidak ada client diversity roadmap
-· Evidence: GitHub hanya menunjukkan monad-labs org; docs tidak menyebut client diversity; FAQ tidak menyebut audit/formal verification untuk consensus [Monad GitHub, https://github.com/monad-labs; Monad FAQ, https://docs.monad.xyz/faq; Monad Docs, https://docs.monad.xyz/architecture]
-· Supporting Dataset: Phase 4 Technology (Current Technical Stack, Known Limitations), Phase 7 Ecosystem (Risk: Single Client Implementation Dependency), Phase 8 Market (Open Threads)
+Pola 2: Zero Revenue Operations Sampai Mainnet — Bergantung Penuh pada Series A Capital
+· Decision Pattern: Tidak ada revenue stream aktif (pre-mainnet); seluruh operasi didanai Series A $225M; treasury tidak diungkapkan
+· Evidence: Revenue model planned only (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper; Monad Docs, https://docs.monad.xyz/developers/gas]; Treasury tidak diungkapkan (HIGH) [Monad Docs, https://docs.monad.xyz/faq; Monad Whitepaper, https://monad.xyz/whitepaper]; Financial risk: funding dependency (HIGH) [Phase 5 Financial Risk]
+· Supporting Dataset: Phase 5 Financial (Revenue Model, Revenue History, Financial Dependencies, Financial Risk), Phase 3 History (EV-007, EV-012)
 
-Pola 5: Testnet-First Validation dengan Production-Grade Stack
+Pola 3: Tokenomics Tertunda Sepenuhnya — Flexibility Hingga Mainnet
+· Decision Pattern: Tidak mempublikasikan supply, allocation, vesting, inflation, governance hingga mainnet dekat; mencegah komitmen prematur
+· Evidence: Semua field tokenomics "tidak dipublikasikan" (HIGH) [Monad Docs, https://docs.monad.xyz/faq]; Pre-TGE status confirmed (HIGH) [Monad Docs, https://docs.monad.xyz/faq; Monad Docs, https://docs.monad.xyz/roadmap]
+· Supporting Dataset: Phase 6 Token (Supply, Distribution, Vesting Schedule, TGE, Inflation/Deflation, Governance), Phase 3 History (EV-013)
 
-· Decision Pattern: Testnet "Monad Madness" meluncurkan full stack (consensus, execution, storage, RPC, explorer) secara bersamaan — bukan phased rollout komponen per komponen
-· Evidence: Blog testnet launch annonce MonadBFT, Execution Engine, MonadDb, JSON-RPC, block explorer semua live 2025-02-19 [Monad Blog, https://monad.xyz/blog/testnet-launch; Monad Testnet Explorer, https://testnet.monadexplorer.com]
-· Supporting Dataset: Phase 3 History (EV-009, EV-010), Phase 7 Ecosystem (Infrastructure Providers, Applications)
+Pola 4: Tidak Ada Grant Program / Ecosystem Fund Resmi Saat Testnet
+· Decision Pattern: Tidak meluncurkan grant program atau ecosystem fund selama testnet; ekosistem tumbuh organik tanpa insentif dana
+· Evidence: Ecosystem page tidak menyebut grant (MEDIUM) [Monad Ecosystem, https://monad.xyz/ecosystem]; Developer portal tidak menyebut grant (MEDIUM) [Monad Docs, https://docs.monad.xyz/developers]; Financial dependencies hanya Series A (HIGH) [Phase 5 Financial Dependencies]
+· Supporting Dataset: Phase 5 Financial (Fundraising Mechanism), Phase 7 Ecosystem (Developer Ecosystem, Ecosystem Risks), Phase 8 Market (Adoption Metrics)
 
-Pola 1: Single Large Equity Round (Series A) sebagai Primary Capitalization — No Token Sale, No Public Fundraising
+Ecosystem Decision Pattern
 
-· Decision Pattern: $225M Series A April 2024 sebagai satu-satunya ronde funding terverifikasi publik; tidak ada seed round disclosure, tidak ada SAFT/token warrant announcement, tidak ada public sale/ICO/launchpad/community sale
-· Evidence: The Block dan Forbes hanya melaporkan Series A; FAQ konfirmasi pre-TGE; roadmap tidak menyebut fundraising token [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a; Forbes, https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million; Monad FAQ, https://docs.monad.xyz/faq; Monad Roadmap, https://docs.monad.xyz/roadmap]
-· Supporting Dataset: Phase 5 Financial (Funding History, Fundraising Mechanism, Token Sale, Financial Dependencies), Phase 3 History (EV-007, EV-008), Phase 6 Token (TGE, Distribution)
+Pola 1: Ethereum Tooling Compatibility sebagai Strategi Onboarding Utama
+· Decision Pattern: Memastikan Hardhat, Foundry, ethers.js, viem, MetaMask, EVM wallets bekerja out-of-the-box via custom RPC — zero friction untuk developer Ethereum
+· Evidence: Developer docs menunjukkan setup Hardhat/Foundry standar (HIGH) [Monad Docs, https://docs.monad.xyz/developers/getting-started]; JSON-RPC compatible (HIGH) [Monad Docs, https://docs.monad.xyz/developers/json-rpc]; Wallet support via custom RPC (HIGH) [Monad Docs, https://docs.monad.xyz/developers/evm-compatibility]
+· Supporting Dataset: Phase 4 Technology (Development Framework), Phase 7 Ecosystem (Developer Ecosystem, Wallet Ecosystem, Major Integrations), Phase 8 Market (Narrative Position - EVM Compatibility)
 
-Pola 2: Treasury Opacity — No Public Treasury Disclosure, Composition, atau Dashboard
+Pola 2: Ekosistem Testnet Organik >100 Proyek Tanpa Incentive Program
+· Decision Pattern: >100 proyek (DeFi, Infrastructure, Tooling, Apps) join testnet tanpa grant/points/incentive; validasi product-market fit teknis
+· Evidence: Ecosystem page: >100 projects onboarded (MEDIUM) [Monad Ecosystem, https://monad.xyz/ecosystem; Testnet Stats, https://testnet.monad.xyz/stats]; No grant program announced (MEDIUM) [Monad Ecosystem, https://monad.xyz/ecosystem]
+· Supporting Dataset: Phase 3 History (EV-011), Phase 7 Ecosystem (Applications, Major Integrations), Phase 8 Market (Adoption Metrics)
 
-· Decision Pattern: Ukuran treasury, komposisi aset, custodian, burn rate, runway — semua tidak diungkapkan; tidak ada transparency report, tidak ada on-chain treasury address (token belum TGE), tidak ada financial audit
-· Evidence: FAQ, whitepaper, blog, docs tidak mempublikasikan informasi treasury apapun [Monad FAQ, https://docs.monad.xyz/faq; Monad Whitepaper, https://monad.xyz/whitepaper; Monad Blog, https://monad.xyz/blog]
-· Supporting Dataset: Phase 5 Financial (Treasury, Revenue History, Financial Risk), Phase 6 Token (Distribution, Holder Distribution), Phase 8 Market (Open Threads)
+Pola 3: Infrastructure Operations Internal (Monad Labs) — Belum Terdesentralisasi
+· Decision Pattern: Monad Labs mengoperasikan testnet, block explorer, RPC endpoint resmi, GitHub, komunitas; validator set detail tidak dipublikasikan
+· Evidence: Testnet explorer operated by Monad Labs (MEDIUM) [Monad Testnet Docs, https://docs.monad.xyz/testnet/explorer]; Validator docs point to Monad Labs guidance (HIGH) [Monad Docs, https://docs.monad.xyz/validators]; GitHub org Monad Labs (HIGH) [GitHub, https://github.com/monad-labs]
+· Supporting Dataset: Phase 2 Entity (Monad Labs Inc., Monad Core Team), Phase 3 History (EV-005, EV-006, EV-010), Phase 7 Ecosystem (Infrastructure Providers, Ecosystem Risks - Core Development Centralization)
 
-Pola 3: Deferred Token Economics — Tokenomics, Vesting, Governance, Inflation Semua "Planned" Belum "Published"
+Pola 4: Tidak Ada Native Bridge / Cross-Chain / Oracle Integration di Testnet
+· Decision Pattern: Fokus pada eksekusi lokal Monad; cross-chain messaging, bridge, oracle ditunda mainnet; bergantung ekosistem third-party
+· Evidence: Whitepaper/architecture tidak menyebut native bridge (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper; Monad Docs, https://docs.monad.xyz/architecture]; Ecosystem page tidak list bridge/oracle partners (MEDIUM) [Monad Ecosystem, https://monad.xyz/ecosystem]
+· Supporting Dataset: Phase 4 Technology (System Architecture, Known Technical Limitations), Phase 7 Ecosystem (Ecosystem Risks - Bridge/Oracle Dependency), Phase 8 Market (Narrative Position - Interoperability Not Applicable)
 
-· Decision Pattern: Semua parameter token MON (supply, allocation, vesting, TGE date, launch platform, governance model, inflation/deflation, utility detail) statusnya "Planned — not published" per FAQ resmi
-· Evidence: FAQ explisit: "tokenomics belum dipublikasikan"; distribution categories 8 kategori semua "persentase tidak dipublikasikan"; vesting "tidak dipublikasikan"; governance "tidak dipublikasikan" [Monad FAQ, https://docs.monad.xyz/faq; Monad Whitepaper, https://monad.xyz/whitepaper]
-· Supporting Dataset: Phase 6 Token (all sections), Phase 5 Financial (Fundraising Mechanism, Financial Risk), Phase 8 Market (Open Threads)
+Pola 5: Open Source Core Client di GitHub — Transparansi Kode dari Awal
+· Decision Pattern: Kode sumber node, consensus, execution, storage dipublikasikan di github.com/monad-labs sejak 2022
+· Evidence: GitHub org live since 2022 (HIGH) [GitHub, https://github.com/monad-labs]; CI/CD via GitHub Actions (MEDIUM) [Monad GitHub, https://github.com/monad-labs]
+· Supporting Dataset: Phase 2 Entity (Monad GitHub), Phase 3 History (EV-005), Phase 4 Technology (Development Framework, Current Technical Stack), Phase 7 Ecosystem (Infrastructure Providers, Major Integrations)
 
-Pola 4: VC Equity Alignment Over Community Token Alignment (Pre-Mainnet)
+Governance Decision Pattern
 
-· Decision Pattern: Investor Series A memegang equity Monad Labs Inc., bukan token MON; tidak ada konfirmasi SAFT/token warrant; community tidak memiliki token ownership pre-mainnet
-· Evidence: The Block melaporkan Series A sebagai equity funding; investor disebut "Series A Investors" grup tanpa nama; token MON pre-TGE [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a; Monad FAQ, https://docs.monad.xyz/faq]
-· Supporting Dataset: Phase 5 Financial (Funding History, Financial Dependencies), Phase 2 Entity (Series A Investors), Phase 6 Token (Distribution: Investors, Holder Distribution)
+Pola 1: Corporate-Controlled Governance (Monad Labs Inc.) — Tidak Ada DAO/Foundation
+· Decision Pattern: Semua keputusan protokol (technical, roadmap, tokenomics, treasury) dikendalikan Monad Labs Inc. (Delaware corp); tidak ada on-chain governance, DAO, atau foundation terverifikasi
+· Evidence: Monad Labs Inc. sebagai single entity (HIGH) [OpenCorporates, https://opencorporates.com/companies/us_de/7849212]; Team page hanya Monad Labs (HIGH) [Monad Team, https://monad.xyz/team]; FAQ: no governance model published (HIGH) [Monad Docs, https://docs.monad.xyz/faq]
+· Supporting Dataset: Phase 2 Entity (Monad Labs Inc., no Foundation/DAO), Phase 6 Token (Governance), Phase 7 Ecosystem (Governance Ecosystem), Phase 5 Financial (Fundraising Mechanism - no Foundation/DAO)
 
-Pola 5: Revenue Model Deferred to Mainnet — Zero Revenue Pre-Launch
+Pola 2: Token Governance Belum Dirancang — Pre-Governance Phase
+· Decision Pattern: Token MON belum TGE; governance model, voting, delegation, proposal system, treasury governance semua "tidak dipublikasikan"
+· Evidence: Token governance section: semua field "tidak dipublikasikan" (HIGH) [Monad Docs, https://docs.monad.xyz/faq]; Pre-TGE status (HIGH) [Monad Docs, https://docs.monad.xyz/faq]
+· Supporting Dataset: Phase 6 Token (Governance, Distribution, Vesting Schedule), Phase 3 History (EV-013)
 
-· Decision Pattern: Tidak ada revenue stream aktif (protocol fees, RPC fees, enterprise services); semua revenue "Planned" bergantung pada mainnet launch dan adoption
-· Evidence: FAQ tidak melaporkan revenue; whitepaper menjelaskan gas model tapi tidak revenue projection; roadmap mainnet Q3 2025 [Monad FAQ, https://docs.monad.xyz/faq; Monad Whitepaper, https://monad.xyz/whitepaper; Monad Roadmap, https://docs.monad.xyz/roadmap]
-· Supporting Dataset: Phase 5 Financial (Revenue Model, Revenue History, Financial Risk), Phase 3 History (EV-012)
+Pola 3: Upgrade Governance Tidak Terdokumentasi — Hard Fork Coordination Unknown
+· Decision Pattern: Tidak ada dokumentasi proses upgrade protokol (on-chain voting, off-chain signaling, hard fork coordination, client upgrade process)
+· Evidence: Known Technical Limitations: "Upgrade mechanism not documented" (HIGH) [Monad FAQ, https://docs.monad.xyz/faq]; Governance model unpublished (HIGH) [Monad Docs, https://docs.monad.xyz/faq]
+· Supporting Dataset: Phase 4 Technology (Known Technical Limitations), Phase 6 Token (Governance), Phase 7 Ecosystem (Ecosystem Risks)
 
-Pola 1: Organic Ecosystem Onboarding via Technical Compatibility — No Grant Program, No Hackathon, No Incentivized Testnet Campaign (Beyond "Monad Madness" Branding)
+Pola 4: Validator Governance Belum Aktif — Testnet Validator Set Opaque
+· Decision Pattern: Validator set testnet tidak dipublikasikan detailnya (jumlah, selection, permissionless/permissioned); slashing conditions "planned not parameterized"
+· Evidence: Validator docs tidak detail (MEDIUM) [Monad Docs, https://docs.monad.xyz/validators]; Consensus: slashing planned not detailed (LOW) [Monad Docs, https://docs.monad.xyz/architecture]
+· Supporting Dataset: Phase 4 Technology (Consensus Mechanism, Security Model), Phase 7 Ecosystem (Infrastructure Providers, Ecosystem Risks), Phase 8 Market (Adoption Metrics)
 
-· Decision Pattern: >100 proyek join testnet tanpa grant program resmi, tanpa hackathon resmi, tanpa incentivized testnet rewards (points/airdrop confirmed); hanya kompatibilitas EVM dan performance promise yang menarik developer
-· Evidence: Ecosystem page dan testnet stats menunjukkan >100 projects; docs tidak menyebut grant program; blog testnet launch tidak announce rewards program [Monad Ecosystem, https://monad.xyz/ecosystem; Testnet Stats, https://testnet.monad.xyz/stats; Monad Blog, https://monad.xyz/blog/testnet-launch; Monad Docs, https://docs.monad.xyz/developers]
-· Supporting Dataset: Phase 7 Ecosystem (Applications, Developer Ecosystem, Major Integrations, Ecosystem Risks), Phase 3 History (EV-011), Phase 8 Market (Adoption Metrics)
+Risk Response Pattern
 
-Pola 2: Ethereum Tooling Integration sebagai Primary Distribution Channel
+Pola 1: Proaktif Mencegah Token Scam via Komunikasi Pre-TGE Jelas
+· Decision Pattern: FAQ resmi menegaskan "token MON belum TGE" dan memperingatkan scam token palsu — response terhadap risiko impersonation token
+· Evidence: FAQ konfirmasi pre-TGE (HIGH) [Monad Docs, https://docs.monad.xyz/faq]; EV-013 konfirmasi status pre-TGE (HIGH) [Phase 3 History EV-013]
+· Trigger: Risiko scam token MON palsu di DEX/CEX sebelum TGE resmi
+· Response: Publikasi FAQ status pre-TGE; tidak meluncurkan token contract; tidak announce sale
+· Result: Klarifikasi status token mengurangi spekulasi dan scam (EV-013 Immediate Result)
+· Supporting Dataset: Phase 3 History (EV-013), Phase 6 Token (TGE, Major Token Events), Phase 5 Financial (Financial Risk - Token Launch Regulatory Risk)
 
-· Decision Pattern: Tidak membangun SDK/IDE/wallet proprietary; bergantung pada Hardhat, Foundry, ethers.js, viem, MetaMask, Rabby, Coinbase Wallet, Rainbow yang sudah ada — Monad hanya provide JSON-RPC endpoint dan chain config
-· Evidence: Developer docs: "Use your existing Ethereum tooling"; Hardhat/Foundry/ethers.js/viem listed sebagai supported; wallet support via custom RPC [Monad Docs, https://docs.monad.xyz/developers/getting-started; Monad Docs, https://docs.monad.xyz/developers/evm-compatibility]
-· Supporting Dataset: Phase 7 Ecosystem (Major Integrations, Wallet Ecosystem, Developer Ecosystem), Phase 4 Technology (Development Framework, JSON-RPC Interface)
+Pola 2: Equity Funding Sebelum Token — Mengurangi Tekanan Regulatory dan Market
+· Decision Pattern: Series A $225M equity (bukan token) pada 2024 — response terhadap risiko regulatory token sale dan sell pressure TGE
+· Evidence: Series A equity funding (HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a; Forbes, https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million]; Token pre-TGE (HIGH) [Monad Docs, https://docs.monad.xyz/faq]
+· Trigger: Butuh kapital besar tanpa terikat regulatory token sale atau menciptakan investor token yang ingin exit cepat
+· Response: Equity raise dari VC; tokenomics tertunda
+· Result: Runway panjang tanpa token launch pressure; investor aligned dengan equity value creation
+· Supporting Dataset: Phase 3 History (EV-007), Phase 5 Financial (Funding History, Fundraising Mechanism, Financial Risk), Phase 6 Token (TGE)
 
-Pola 3: Infrastructure Self-Reliance — Core Infra (Explorer, RPC, GitHub, CI/CD) Dijalankan Monad Labs, Bukan Third-Party Providers Resmi
+Pola 3: Testnet Publik Tanpa Incentive — Validasi Teknis Murni, Menghindari Sybil/Noise
+· Decision Pattern: Testnet "Monad Madness" tanpa points/airdrop/incentive — response terhadap risiko metrik adoption palsu dan sybil attack
+· Evidence: Testnet launch tanpa mention incentives (HIGH) [Monad Blog, https://monad.xyz/blog/testnet-launch]; Testnet token tidak bernilai (HIGH) [Monad Docs, https://docs.monad.xyz/faq]
+· Trigger: Risiko testnet incentive menarik sybil farmer, mengotori metrik adoption, menciptakan ekspektasi airdrop
+· Response: Pure technical testnet; >100 proyek join organik untuk validasi teknis
+· Result: Adoption metrics mencerminkan genuine developer interest; cleaner technical feedback
+· Supporting Dataset: Phase 3 History (EV-009, EV-011), Phase 6 Token (Major Token Events), Phase 7 Ecosystem (Applications), Phase 8 Market (Adoption Metrics)
 
-· Decision Pattern: Block explorer (testnet.monadexplorer.com), GitHub org, CI/CD (GitHub Actions), testnet RPC — semua dioperasikan Monad Labs; tidak ada Alchemy/QuickNode/NodeReal/The Graph partnership resmi diumumkan untuk testnet
-· Evidence: Testnet explorer URL resmi; GitHub org milik monad-labs; docs validator menjalankan node sendiri; tidak ada partner infrastructure announcement [Monad Testnet Explorer, https://testnet.monadexplorer.com; Monad GitHub, https://github.com/monad-labs; Monad Docs, https://docs.monad.xyz/validators; Monad Docs, https://docs.monad.xyz/developers/json-rpc]
-· Supporting Dataset: Phase 7 Ecosystem (Infrastructure Providers, Major Integrations), Phase 4 Technology (Current Technical Stack), Phase 2 Entity (Infrastructure entities)
+Pola 4: Transparansi Teknis (Whitepaper, Open Source) — Mitigasi Risiko "Vaporware" di Kategori Parallel EVM
+· Decision Pattern: Publikasi whitepaper detail 2022 + open source GitHub 2022 — response terhadap skeptisisme industri terhadap parallel EVM claims
+· Evidence: Whitepaper 2022 (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]; GitHub open source 2022 (HIGH) [GitHub, https://github.com/monad-labs]; Testnet live 2025 membuktikan delivery (HIGH) [Monad Blog, https://monad.xyz/blog/testnet-launch]
+· Trigger: Kategori Parallel EVM penuh claim performa tinggi (Sei, MegaETH, dll.); butuh bukti teknis nyata
+· Response: Spesifikasi teknis transparan dari awal; kode terbuka; testnet delivery on schedule
+· Result: Kredibilitas teknis tinggi; investor Series A $225M berdasarkan substance bukan hype
+· Supporting Dataset: Phase 3 History (EV-004, EV-005, EV-009), Phase 4 Technology (System Architecture, Core Components), Phase 5 Financial (Funding History)
 
-Pola 4: Bridge dan Oracle Integration Deferred — No Native Cross-Chain Messaging, No Official Oracle Partnership
+Recurring Behavioral Pattern
 
-· Decision Pattern: Tidak ada canonical bridge, tidak ada LayerZero/Wormhole/Hyperlane/Axelar integration resmi, tidak ada Chainlink/Pyth/RedStone partnership diumumkan untuk testnet atau mainnet
-· Evidence: Whitepaper tidak menyebut bridge/oracle; ecosystem page tidak list bridge/oracle partners; docs architecture tidak include cross-chain messaging [Monad Whitepaper, https://monad.xyz/whitepaper; Monad Ecosystem, https://monad.xyz/ecosystem; Monad Docs, https://docs.monad.xyz/architecture]
-· Supporting Dataset: Phase 7 Ecosystem (Ecosystem Risks: Bridge/Cross-Chain Dependency, Oracle Dependency), Phase 4 Technology (Known Limitations), Phase 8 Market (Open Threads)
+Pola 1: Technical Delivery Before Token/Marketing — Build First, Launch Later
+· Decision Pattern: 2.5+ tahun pengembangan (2022-2025) sebelum testnet; whitepaper, code, testnet semua delivery sebelum token TGE atau marketing besar
+· Evidence: Incorporation 2022 (EV-001) → Whitepaper 2022 (EV-004) → Series A 2024 (EV-007) → Testnet 2025 (EV-009) → Pre-TGE 2025 (EV-013); No token sale, no mainnet, no TGE hingga Q3 2025 target
+· Supporting Dataset: Phase 3 History (all events), Phase 5 Financial (Funding History, Fundraising Mechanism), Phase 6 Token (TGE, Major Token Events), Phase 8 Market (Market Timeline)
 
-Pola 5: Validator/RPC Operator Onboarding via Technical Docs — No Incentivized Validator Program, No Delegation Mechanism Live
+Pola 2: HFT/Quantitative Engineering Culture Mendorong Custom Low-Level Optimization
+· Decision Pattern: Setiap komponen inti (consensus, storage, execution) custom-built dalam Rust dengan optimisasi performa tingkat sistem — bukan fork atau assembly existing components
+· Evidence: MonadBFT custom (not CometBFT), MonadDb custom (not RocksDB directly), Execution Engine custom; Team ex-Jump Trading (HFT) (HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]; Rust/tokio stack (HIGH) [Monad GitHub, https://github.com/monad-labs]
+· Supporting Dataset: Phase 2 Entity (Monad Core Team, Jump Trading), Phase 3 History (EV-003), Phase 4 Technology (Core Components, Current Technical Stack, Known Technical Limitations)
 
-· Decision Pattern: Validator docs provide technical specs untuk menjalankan node; tidak ada staking rewards testnet, tidak ada delegation UI, tidak ada incentivized testnet program untuk validator
-· Evidence: Validator docs hanya technical requirements; testnet token tidak bernilai; FAQ tidak mention validator incentives [Monad Docs, https://docs.monad.xyz/validators; Monad FAQ, https://docs.monad.xyz/faq]
-· Supporting Dataset: Phase 7 Ecosystem (Infrastructure Providers, Governance Ecosystem), Phase 4 Technology (Consensus Mechanism: Validator Set planned), Phase 6 Token (Utility: Staking planned)
+Pola 3: Ethereum Ecosystem Alignment sebagai Moat — Tidak Menciptakan Standard Baru
+· Decision Pattern: Setiap interface (RPC, VM, tooling, wallet, precompiles) mengikuti standard Ethereum existing — menciptakan kompatibilitas bukan fragmentasi
+· Evidence: Full EVM bytecode compatibility (HIGH); JSON-RPC Ethereum-compatible (HIGH); Hardhat/Foundry/ethers.js/viem (HIGH); MetaMask/EVM wallets (HIGH); Standard precompiles (MEDIUM) [All from Phase 4 Technology, Phase 7 Ecosystem]
+· Supporting Dataset: Phase 4 Technology (Execution Environment, Development Framework), Phase 7 Ecosystem (Developer Ecosystem, Wallet Ecosystem, Major Integrations), Phase 8 Market (Narrative Position)
 
-Pola 1: No Governance Structure Pre-TGE — Corporate Control oleh Monad Labs Inc. Saja
+Pola 4: Centralized Development (Monad Labs) dengan Open Source Transparency
+· Decision Pattern: Monad Labs Inc. sebagai single entity pengembang; semua kode open source di GitHub; tidak ada foundation/DAO/client diversity saat ini
+· Evidence: Monad Labs Inc. single entity (HIGH) [OpenCorporates, https://opencorporates.com/companies/us_de/7849212]; GitHub open source (HIGH) [GitHub, https://github.com/monad-labs]; No foundation/DAO (HIGH) [Monad Docs, https://docs.monad.xyz/faq; Monad Team, https://monad.xyz/team]
+· Supporting Dataset: Phase 2 Entity (Monad Labs Inc., Monad Core Team, no Foundation/DAO), Phase 3 History (EV-001, EV-005), Phase 4 Technology (Development Framework), Phase 7 Ecosystem (Infrastructure Providers, Ecosystem Risks), Phase 5 Financial (Financial Dependencies)
 
-· Decision Pattern: Tidak ada DAO, tidak ada Foundation, tidak ada Council, tidak ada Committee, tidak ada on-chain voting, tidak ada proposal system; semua keputusan protokol (upgrade, parameter, treasury) dikendalikan Monad Labs Inc. (Delaware corp)
-· Evidence: FAQ tidak mention governance; team page hanya Monad Labs Inc. leadership; whitepaper tidak define governance; token pre-TGE [Monad FAQ, https://docs.monad.xyz/faq; Monad Team, https://monad.xyz/team; Monad Whitepaper, https://monad.xyz/whitepaper]
-· Supporting Dataset: Phase 2 Entity (Foundation: none, DAO: none, Company: Monad Labs Inc.), Phase 6 Token (Governance: Pre-governance), Phase 7 Ecosystem (Governance Ecosystem), Phase 3 History (EV-001, EV-002)
+Pola 5: Deferred Decisions pada Tokenomics, Governance, Upgrade Mechanism — Flexibility Preservation
+· Decision Pattern: Semua keputusan berkaitan token (supply, allocation, vesting, inflation), governance (model, voting, upgrade), dan validator economics ditunda hingga mainnet dekat
+· Evidence: Tokenomics all "not published" (HIGH) [Monad Docs, https://docs.monad.xyz/faq]; Governance "not published" (HIGH) [Monad Docs, https://docs.monad.xyz/faq]; Upgrade mechanism "not documented" (HIGH) [Monad FAQ, https://docs.monad.xyz/faq]; Validator slashing "planned not parameterized" (LOW) [Monad Docs, https://docs.monad.xyz/architecture]
+· Supporting Dataset: Phase 6 Token (all sections), Phase 4 Technology (Known Technical Limitations, Consensus Mechanism, Security Model), Phase 7 Ecosystem (Governance Ecosystem, Ecosystem Risks)
 
-Pola 2: Protocol Upgrade Mechanism Undefined — No On-Chain Governance, No Hard Fork Coordination Process Documented
+Strategic Trade-offs
 
-· Decision Pattern: Tidak ada dokumentasi bagaimana protocol upgrade akan dikoordinasikan (on-chain voting, off-chain signaling, hard fork schedule, client upgrade process); Monad LabsInc. akan memutuskan unilateral pre-TGE
-· Evidence: Docs tidak memiliki "Governance" atau "Upgrade" section; FAQ silent; whitepaper tidak address upgrade mechanism [Monad Docs, https://docs.monad.xyz; Monad FAQ, https://docs.monad.xyz/faq; Monad Whitepaper, https://monad.xyz/whitepaper]
-· Supporting Dataset: Phase 4 Technology (Known Limitations: Upgrade mechanism), Phase 6 Token (Governance), Phase 7 Ecosystem (Governance Ecosystem), Phase 8 Market (Open Threads)
+Trade-off 1: Desentralisasi vs Kecepatan Pengembangan (Centralized Core Team untuk Delivery Cepat)
+· Decision: Monad Labs Inc. sebagai single entity pengembang seluruh stack (consensus, storage, execution, networking, tooling)
+· Trade-off: Kecepatan delivery dan koherensi arsitektur tinggi dikorbankan untuk desentralisasi pengembangan; tidak ada client diversity, tidak ada foundation terpisah, governance terpusat
+· Evidence: Single Rust client (HIGH) [Monad GitHub, https://github.com/monad-labs]; Monad Labs controls testnet, explorer, RPC, docs (HIGH) [Phase 7 Infrastructure Providers]; No foundation/DAO (HIGH) [Monad Docs, https://docs.monad.xyz/faq]; Known limitation: single client implementation (HIGH) [Monad FAQ, https://docs.monad.xyz/faq]
+· Supporting Dataset: Phase 2 Entity (Monad Labs Inc., Monad Core Team), Phase 4 Technology (Current Technical Stack, Known Technical Limitations), Phase 7 Ecosystem (Ecosystem Risks), Phase 5 Financial (Financial Dependencies)
 
-Pola 3: Foundation Formation Deferred — No Legal Wrapper for Token Issuance Yet
+Trade-off 2: Performa Eksekusi Paralel vs Kompleksitas Conflict Resolution (Optimistic Execution dengan Re-execution)
+· Decision: Optimistic parallel execution dengan conflict detection deferred dan re-execution — bukan static dependency analysis upfront
+· Trade-off: Throughput tinggi untuk workload independen dikorbankan untuk overhead re-execution pada workload high-conflict (DeFi composable); conflict rate real-world unknown
+· Evidence: Optimistic concurrency control (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]; Known limitation: conflict rate under real-world workloads not characterized (MEDIUM) [Monad Whitepaper, https://monad.xyz/whitepaper]; Cross-contract dependency may limit speedup (MEDIUM) [Monad Whitepaper, https://monad.xyz/whitepaper]
+· Supporting Dataset: Phase 4 Technology (Execution Environment, Known Technical Limitations), Phase 8 Market (Competitor Landscape - Sei uses different approach)
 
-· Decision Pattern: Monad Foundation (Cayman/BVI/Singapore/Delaware nonprofit) belum dibentuk atau diumumkan; token issuance jurisdiction, entity, legal structure tidak dikonfirmasi
-· Evidence: OpenCorporates hanya show Monad Labs Inc. Delaware; tidak ada foundation entity di Phase 2; FAQ tidak mention foundation [OpenCorporates, https://opencorporates.com/companies/us_de/7849212; Monad FAQ, https://docs.monad.xyz/faq; Phase 2 Entity list]
-· Supporting Dataset: Phase 2 Entity (Foundation: none), Phase 5 Financial (Financial Risk: Token Launch Regulatory Risk), Phase 6 Token (Governance, Distribution: Foundation), Phase 8 Market (Open Threads)
+Trade-off 3: Equity Funding vs Token Community Ownership (Series A VC Equity, No Public Sale Yet)
+· Decision: $225M Series A equity dari VC; token MON pre-TGE tanpa public/community sale diumumkan
+· Trade-off: Runway panjang dan alignment investor jangka panjang dikorbankan untuk community ownership awal dan distribusi token wide; risiko "VC chain" narrative
+· Evidence: Series A equity only (HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]; No token sale announced (HIGH) [Monad Docs, https://docs.monad.xyz/faq]; Token distribution all "planned not published" (HIGH) [Monad Docs, https://docs.monad.xyz/faq]
+· Supporting Dataset: Phase 3 History (EV-007), Phase 5 Financial (Funding History, Fundraising Mechanism), Phase 6 Token (Distribution, TGE, Major Token Events), Phase 8 Market (Market Position, Narrative Position)
 
-Pola 4: Investor Governance via Equity, Not Token — Series A Investors Have Corporate Rights, Not Protocol Governance Rights
+Trade-off 4: EVM Compatibility vs Innovation Space (Full Bytecode Compatibility Membatasi VM-Level Optimization)
+· Decision: Full EVM bytecode compatibility — tidak modifikasi opcode, tidak custom precompile (beyond standard), tidak VM-level MEV protection
+· Trade-off: Developer onboarding seamless dan tooling reuse maksimal dikorbankan untuk kemampuan inovasi di layer VM (seperti SVM Solana atau Move VM Aptos/Sui)
+· Evidence: Full EVM bytecode compatibility (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]; Standard precompiles only (MEDIUM) [Monad Docs, https://docs.monad.xyz/developers/evm-compatibility]; No MEV protection documented (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper; Known Technical Limitations]
+· Supporting Dataset: Phase 4 Technology (Execution Environment, Known Technical Limitations), Phase 7 Ecosystem (Developer Ecosystem), Phase 8 Market (Competitor Landscape, Narrative Position)
 
-· Decision Pattern: Investor Series A governance melalui board seats/equity rights di Monad Labs Inc., bukan melalui token voting (token belum ada, allocation tidak dipublikasikan)
-· Evidence: The Block melaporkan Series A equity; token distribution "Investors" category planned tapi percentage tidak dipublikasikan; no SAFT disclosure [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a; Monad FAQ, https://docs.monad.xyz/faq]
-· Supporting Dataset: Phase 5 Financial (Funding History, Financial Dependencies), Phase 6 Token (Distribution: Investors), Phase 2 Entity (Series A Investors)
+Trade-off 5: Testnet Organik vs Incentivized Growth (No Points/Airdrop, Genuine Developer Interest Only)
+· Decision: Testnet "Monad Madness" tanpa incentive program; >100 proyek join organik
+· Trade-off: Metrik adoption bersih dan feedback teknis berkualitas dikorbankan untuk growth speed dan user acquisition volume yang bisa didapat dari incentivized testnet
+· Evidence: No incentives mentioned in testnet launch (HIGH) [Monad Blog, https://monad.xyz/blog/testnet-launch]; >100 projects organik (MEDIUM) [Monad Ecosystem, https://monad.xyz/ecosystem; Testnet Stats, https://testnet.monad.xyz/stats]; No grant program (MEDIUM) [Monad Ecosystem, https://monad.xyz/ecosystem]
+· Supporting Dataset: Phase 3 History (EV-009, EV-011), Phase 7 Ecosystem (Applications, Developer Ecosystem), Phase 8 Market (Adoption Metrics)
 
-Pola 1: Proactive Scam Warning sebagai Risk Response untuk Token Impersonation
+Behavioral Summary
 
-· Decision Pattern: FAQ resmi mempublikasikan peringatan eksplisit: "MON token belum TGE, hati-hati scam token palsu" — respons proaktif terhadap risiko impersonation token di DEX/CEX sebelum TGE resmi
-· Evidence: FAQ halaman "Token" mengonfirmasi pre-TGE dan warn scam [Monad FAQ, https://docs.monad.xyz/faq]
-· Trigger: Kemunculan token "MON" palsu di DEX/Uniswap atau scam airdrop claim sebelum TGE resmi
-· Response: Publikasi FAQ resmi dengan status pre-TGE dan peringatan scam; tidak ada legal action announcement, tidak ada takedown request publik
-· Result: Komunitas mendapat clarity resmi; scam risk mitigated via education bukan enforcement
-· Supporting Dataset: Phase 3 History (EV-013), Phase 6 Token (TGE, Major Token Events), Phase 8 Market (Trading Markets: Not Listed)
+Prioritas Utama Proyek:
+1. Technical Delivery: Membangun Parallel EVM yang benar-benar performa tinggi (10k+ TPS, 1s block time) dengan kompatibilitas EVM penuh — buktikan teknis sebelum token
+2. Developer Onboarding: Zero-friction untuk developer Ethereum via tooling/standard existing — moat melalui ekosistem bukan teknologi proprietary
+3. Financial Independence: Series A equity $225M memberikan runway panjang tanpa tekanan token launch atau revenue prematur
+4. Credibility Building: Transparansi teknis (whitepaper, open source, testnet live) untuk membedakan dari "vaporware" di kategori Parallel EVM
 
-Pola 2: Technical Transparency sebagai Response terhadap Skepticism Performa Claims
+Cara Mengambil Keputusan:
+- Teknis: Bottom-up dari arsitektur sistem (HFT background) — custom stack, optimistic parallel, Rust/tokio
+- Finansial: Single large equity round upfront, defer tokenomics entirely
+- Ekosistem: Ethereum alignment first, organic growth, no incentives
+- Governance: Corporate-controlled sekarang, deferred ke mainnet
+- Risiko: Proaktif komunikasi (pre-TGE FAQ), transparansi kode, equity over token sale
 
-· Decision Pattern: Menghadapi skeptisisme industri terhadap claim "10k TPS, 1s block, parallel EVM", Monad memilih launch public testnet full-stack (bukan private devnet atau benchmark lab) untuk validasi real-world
-· Evidence: Testnet "Monad Madness" live dengan full components; >100 projects onboarded untuk test independen; block explorer publik untuk verifikasi [Monad Blog, https://monad.xyz/blog/testnet-launch; Monad Ecosystem, https://monad.xyz/ecosystem; Testnet Explorer, https://testnet.monadexplorer.com]
-· Trigger: Narrative pasar "Parallel EVM wars" (Sei, MegaETH, Monad) dengan claim performa kompetitif; kebutuhan bukti teknis sebelum mainnet
-· Response: Public testnet launch dengan full feature parity; ecosystem onboarding organik; no incentivized testnet (mencegah sybil/fake volume)
-· Result: Real-world validation mulai; developer confidence meningkat; performance data akan tersedia dari testnet activity
-· Supporting Dataset: Phase 3 History (EV-009, EV-011), Phase 7 Ecosystem (Applications, Major Integrations), Phase 8 Market (Narrative Position, Competitor Landscape, Adoption Metrics)
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Kebutuhan performa sistem tingkat rendah (HFT heritage) → custom consensus/storage/execution
+2. Kompatibilitas Ethereum sebagai strategi adopsi → semua interface follow Ethereum standard
+3. Fleksibilitas tokenomics/governance → defer semua keputusan hingga mainnet
+4. Kredibilitas teknis di kategori kompetitif → whitepaper detail, open source, testnet delivery
 
-Pola 3: Media Engagement Controlled — Selective Coverage via Tier-1 Outlets (The Block, Forbes) untuk Funding Announcement
+Pola Evolusi:
+- 2022: Stealth build + whitepaper + infrastructure + team formation (ex-Jump)
+- 2024: Large equity raise (Series A $225M) — financial independence secured
+- 2025: Public testnet launch dengan full stack live — technical validation + organic ecosystem
+- Next: Mainnet Q3 2025 → TGE → Tokenomics/Governance/Foundation revelation
 
-· Decision Pattern: Series A diumumkan melalui The Block dan Forbes secara eksklusif/koordinasi; tidak ada press release mass distribution, tidak ada community AMA, tidak ada Twitter Spaces dengan founder saat announcement
-· Evidence: The Block dan Forbes artikel April 2024 sebagai primary coverage; Monad Twitter retweet tapi tidak host event sendiri [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a; Forbes, https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million; Monad Twitter, https://x.com/monad_xyz]
-· Trigger: $225M Series A milestone membutuhkan credibility signal ke market, talent, dan ecosystem
-· Response: Tier-1 business/crypto media coverage; founder quotes di artikel; no hype marketing
-· Result: High-signal announcement menarik developer/investor attention tanpa overpromise
-· Supporting Dataset: Phase 3 History (EV-008), Phase 2 Entity (The Block, Forbes), Phase 8 Market (Narrative Position: HFT Heritage)
+Kekuatan Utama:
+- Tim engineering kelas dunia (ex-Jump Trading/HFT) dengan track record sistem performa tinggi
+- Arsitektur custom utuh (MonadBFT + MonadDb + Async Execution) bukan fork
+- $225M equity runway tanpa token pressure
+- Ethereum compatibility penuh = developer moat terbesar
+- Testnet live dengan >100 proyek organik = technical validation nyata
+- Transparansi teknis (whitepaper, open source) membangun kredibilitas
 
-Pola 4: No Public Audit Response — Deferred Security Validation ke Post-Mainnet atau Private
+Kelemahan Utama:
+- Single client implementation (Rust only) — no client diversity
+- Centralized development (Monad Labs Inc.) — no foundation/DAO/client teams
+- Tokenomics/governance/upgrade mechanism पूरी तरह unspecified — uncertainty tinggi
+- No audit/formal verification published — security unproven
+- Validator economics, slashing, staking parameters unknown
+- No native bridge/oracle/MEV infrastructure — dependency eksternal mainnet
+- Corporate structure (Delaware) may complicate token issuance jurisdiction
+- Testnet-only metrics — no mainnet TVL/DAU/revenue proof yet
 
-· Decision Pattern: FAQ eksplisit "belum ada audit publik"; tidak ada bug bounty program, tidak ada audit competition (Code4rena, Sherlock), tidak ada formal verification publication — security validation internal only
-· Evidence: FAQ: "No public audit reports published"; Known Limitations list "No public audit" dan "No formal verification" [Monad FAQ, https://docs.monad.xyz/faq; Monad Whitepaper, https://monad.xyz/whitepaper; Monad Docs, https://docs.monad.xyz/architecture]
-· Trigger: Industry expectation untuk high-value L1 (audit sebelum mainnet); competitor Sei/Aptos/Sui semua audited pre-mainnet
-· Response: Deferred; possible private audit tidak diumumkan; rely pada testnet battle-testing sebagai substitute
-· Result: Security risk tinggi untuk mainnet launch; community/validator harus trust internal team competence
-· Supporting Dataset: Phase 4 Technology (Audit History, Known Limitations), Phase 7 Ecosystem (Ecosystem Risks: No Public Audit), Phase 8 Market (Open Threads)
+Open Threads
 
-Pola 1: HFT/Systems Engineering Culture Driven — Technical Decisions Mirror High-Frequency Trading Architecture Patterns
-
-· Decision Pattern: Arsitektur MonadBFT (
+- Tokenomics MON lengkap (supply, allocation, vesting, inflation, burn) — belum dipublikasikan; apakah akan melalui community vote sebelum finalisasi?
+- Keberadaan Monad Foundation terpisah (Cayman/BVI/Singapore) untuk token issuance dan governance — belum terverifikasi; konflik dengan struktur Delaware Monad Labs Inc.
+- Yurisdiksi hukum entity penerbit token MON — tidak dikonfirmasi; risiko regulatory besar
+- Investor individual/fund dalam Series A $225M — nama tidak dipublikasikan; apakah ada SAFT/token warrant?
+- Tanggal mainnet pasti (hanya "Q3 2025" longsor) — apakah on track atau slip?
+- Audit keamanan status (auditor, timeline, scope untuk MonadBFT, Execution Engine, MonadDb) — FAQ menyatakan belum ada audit publik
+- Formal verification MonadBFT — tidak ada publikasi
+- Client diversity plan — apakah second client team direkrut atau spec dipublikasikan untuk implementasi independen?
+- Validator economics detail (staking min, delegation, slashing conditions, reward curve) — tidak dipublikasikan
+- Upgrade governance mechanism — tidak terdokumentasi sama sekali
+- Native bridge / cross-chain messaging design — tidak diumumkan; bergantung third-party
+- Oracle integration plan (Chainlink, Pyth, dll.) — tidak diumumkan
+- MEV infrastructure (PBS, mev-boost, builder ecosystem) — tidak diumumkan
+- Grant/ecosystem fund program untuk developer aplikasi — tidak diumumkan
+- Exchange listing discussions / market maker engagement untuk TGE — tidak diumumkan
+- Light client / verifiable sync / state sync mechanism — tidak terdokumentasi
+- Snapshot / fast sync untuk node bootstrap — tidak terdokumentasi
+- Token MON wrapping / bridging ke Ethereum (Wormhole, LayerZero, canonical) — tidak diumumkan
+- Burn rate Monad Labs Inc. dan runway exact — tidak diungkapkan
+- Valuasi Series A dan cap table detail — tidak diungkapkan
+- Treasury composition dan custodian — tidak diungkapkan
+- Daftar lengkap 100+ proyek ekosistem testnet dengan nama/kategori/status — hanya agregat
+- Validator set testnet detail (jumlah, geo distribution, operator) — tidak dipublikasikan
+- RPC endpoint publik resmi (URL, rate limit, SLA) — tidak dipublikasikan di docs
+- Cross-check: Apakah Series A investor mendapat token allocation via SAFT? (Phase 5 Financial Risk vs Phase 6 Token Distribution) — konflik potensial perlu verifikasi

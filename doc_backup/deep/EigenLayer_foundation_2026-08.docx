@@ -1,0 +1,50 @@
+PROJECT: EigenLayer
+
+Official Name: EigenLayer (protocol); Eigen Labs (perusahaan pengembang)
+
+Symbol: EIGEN (token); eETH (Liquid Staking Token); ezETH (Liquid Restaking Token via Renzo)
+
+Category: restaking (restaking) / liquidity re-staking; middleware / Actively Validated Services (AVS) infrastructure; data availability (EigenDA)
+
+Founding Entity: Eigen Labs, Inc. (perusahaan Delaware, Amerika Serikat) (MEDIUM) [https://documents.deloitte.com/feeds/BCIR-2484369712E511E78A4C00155D0A3900, https://github.com/eigenfoundation]
+
+Founders: Sreeram Kannan (Founder & CEO) (HIGH) [https://www.eigenlayer.xyz/, https://www.linkedin.com/in/sreeramkannan/]
+
+Core Team: Luke Hackett (Chief Strategy Officer), Robert Drost (Chief Technology Officer), Calvin Liu (Chief Strategy Officer, sebelumnya di Compound); total ukuran tim tidak diungkap secara resmi (MEDIUM) [https://www.eigenlayer.xyz/, https://www.linkedin.com/in/luke-hackett-61a28214/, https://www.linkedin.com/in/robert-drost-399b518/, https://www.linkedin.com/in/calvin-c-liu/]
+
+Country: Amerika Serikat (yurisdiksi pendirian Delaware) (MEDIUM) [https://documents.deloitte.com/feeds/BCIR-2484369712E511E78A4C00155D0A3900]
+
+Launch Date - Testnet: Q2 2023 (testnet publik "Mango" — tidak ada tanggal hari-bulan yang diverifikasi secara luas) (MEDIUM) [https://blog.eigenlayer.xyz/eigenlayer-mainnet-launch/, https://www.coindesk.com/tech/2023/04/20/eigenlayer-launches-testnet-for-ethereum-restaking-protocol/]
+
+Launch Date - Mainnet: 14 Juni 2023 (Mainnet fase 1 — restaking ETH native) (MEDIUM) [https://blog.eigenlayer.xyz/eigenlayer-mainnet-launch/, https://www.theblock.co/post/232245/eigenlayer-mainnet-launch]
+
+Launch Date - TGE: 1 Oktober 2024 (TGE token EIGEN, bersamaan dengan penjualan token Season 1 & Season 2) (MEDIUM) [https://www.coindesk.com/markets/2024/09/30/eigen-token-launches-this-week-on-binance-and-other-exchanges/, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+Main Products: EigenLayer (protocol restaking); EigenDA (data availability layer); EigenLayer SDK / middleware untuk AVS; eETH (via EtherFi, liquid restaking token); LRT (Liquid Restaking Token) ecosystem — termasuk Renzo ezETH, Kelp rsETH, Puffer pufETH (HIGH) [https://docs.eigenlayer.xyz/, https://www.eigenlayer.xyz/, https://www.ether.fi/, https://www.renzoprotocol.com/]
+
+Official Website: https://www.eigenlayer.xyz/ (HIGH) [https://www.eigenlayer.xyz/]
+
+Repository: https://github.com/Layr-Labs (org GitHub utama); https://github.com/Layr-Labs/eigenlayer-contracts (kontrak utama) (MEDIUM) [https://github.com/Layr-Labs, https://github.com/Layr-Labs/eigenlayer-contracts]
+
+Documentation: https://docs.eigenlayer.xyz/ (MEDIUM) [https://docs.eigenlayer.xyz/]
+
+Social - X/Twitter: @eigenlayer (HIGH) [https://x.com/eigenlayer]
+
+Social - Discord: discord.gg/eigenlayer (MEDIUM) [https://discord.gg/eigenlayer]
+
+Social - Telegram: tidak diketahui (tidak ditemukan kanal Telegram resmi yang terverifikasi) (LOW) [pencarian manual]
+
+Block Explorer: https://etherscan.io/token/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9 (EIGEN token di Ethereum); EigenLayer tidak memiliki block explorer sendiri — bergantung pada explorer chain yang di-restake (Ethereum) (MEDIUM) [https://etherscan.io/]
+
+Token Contract: 0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9 — Ethereum (mainnet) (MEDIUM) [https://etherscan.io/token/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9]
+
+Chain(s): Ethereum (mainnet — restaking ETH, LST, dan LRT); EigenDA pada awalnya di Ethereum, dengan rencana ekspansi ke chain lain via AVS (HIGH) [https://docs.eigenlayer.xyz/, https://www.eigenlayer.xyz/]
+
+Ecosystem: EigenLayer sendiri adalah layer restaking di atas Ethereum; ekosistem utama mencakup: AVS (Actively Validated Services) — EigenDA (produk pertama), AVS sidechain (e.g., AltLayer, Dymension, Lagrange), LRT protocols (EtherFi, Renzo, Kelp, Puffer, Swell), serta operator/validator nodes untuk restaking (HIGH) [https://www.eigenlayer.xyz/, https://www.eigenlayer.xyz/avs, https://docs.eigenlayer.xyz/]
+
+Open Threads
+- Distribusi token EIGEN — persentase untuk komunitas/ekosistem, investor, dan tim tidak dicantumkan lengkap di sini karena di luar cakupan fase ini; perlu diverifikasi dari dokumen resmi Eigen Foundation (https://github.com/eigenfoundation) untuk kepastian angka.
+- Jumlah total AVS aktif dan status kematangan teknisnya (termasuk berapa yang sudah "mainnet-ready" vs "in-development") tidak dihitung di sini — perlu penelusuran lanjutan dari blog resmi EigenLayer.
+- Apakah Telegram resmi EigenLayer benar-benar tidak ada atau tersembunyi — verifikasi lebih lanjut diperlukan dari situs resmi atau pengumuman komunitas.
+- Tanggal pasti testnet "Mango" (hari-bulan) tidak ditemukan di sumber primer; hanya kuartal yang bisa dipastikan.
+- Beberapa sumber menyebut "EigenLayer Foundation" (entitas terpisah di Kepulauan Cayman) sebagai penerbit token EIGEN — status badan hukum dan yurisdiksi pastinya belum diverifikasi dari dokumen resmi; hanya disebut sebagai "Eigen Foundation" di repo GitHub resmi.

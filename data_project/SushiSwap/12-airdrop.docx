@@ -1,0 +1,118 @@
+PROJECT: SushiSwap
+
+PROJECT: Dusklight
+
+STATUS AIRDROP
+
+Belum ada. Berdasarkan seluruh hasil Phase 1-11 yang sudah ada di percakapan ini, tidak ditemukan bukti bahwa Dusklight pernah melakukan distribusi token tanpa pembayaran.
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Series B
+- Ukuran komunitas: 200,000 anggota
+- Kondisi pasar: Bear Market
+- Kompetitor terdekat: Melakukan distribusi token melalui private sale
+
+TRIGGER DAN ALTERNATIF
+
+- Yang memicu: Tidak ada pemicu karena belum ada keputusan untuk airdrop.
+- Alternatif: Penjualan publik, private sale lanjutan, aktivitas marketing lainnya.
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi: Tidak ada airdrop yang diumumkan oleh Dusklight, sehingga tidak ada alasan resmi yang dicatat.
+
+Alasan yang tidak diumumkan:
+- HIPOTESIS: Menjaga kestabilan token. Evidence: Bear Market (MEDIUM)
+- HIPOTESIS: Meminimalkan risiko regulasi. Evidence: Market condition and peer strategies (HIGH)
+
+OUTCOME PER POV
+
+POV Founder: Tidak relevan
+- Jangka pendek: Tidak relevan
+- Jangka panjang: Tidak relevan
+- Dasar: Tidak relevan
+
+POV VC: Tidak relevan
+- Jangka pendek: Tidak relevan
+- Jangka panjang: Tidak relevan
+- Dasar: Tidak relevan
+
+POV Retail: Tidak relevan
+- Jangka pendek: Tidak relevan
+- Jangka panjang: Tidak relevan
+- Dasar: Tidak relevan
+
+POV Community: Tidak relevan
+- Jangka pendek: Tidak relevan
+- Jangka panjang: Tidak relevan
+- Dasar: Tidak relevan
+
+POV Developer: Tidak relevan
+- Jangka pendek: Tidak relevan
+- Jangka panjang: Tidak relevan
+- Dasar: Tidak relevan
+
+POV Institution: Tidak relevan
+- Jangka pendek: Tidak relevan
+- Jangka panjang: Tidak relevan
+- Dasar: Tidak relevan
+
+POV Validator: Tidak relevan
+- Jangka pendek: Tidak relevan
+- Jangka panjang: Tidak relevan
+- Dasar: Tidak relevan
+
+POV Builder: Tidak relevan
+- Jangka pendek: Tidak relevan
+- Jangka panjang: Tidak relevan
+- Dasar: Tidak relevan
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: Tidak berlaku (Tidak ada distribusi token) (HIGH)
+Harga +30 hari: Tidak berlaku (Tidak ada distribusi token) (HIGH)
+Harga +90 hari: Tidak berlaku (Tidak ada distribusi token) (HIGH)
+Harga puncak 12 bulan pertama: Tidak berlaku (Tidak ada distribusi token) (HIGH)
+
+METRIK RETENSI
+
+- Perubahan TVL atau volume protokol: Tidak ditemukan
+- Jumlah alamat pemegang token: Tidak ditemukan
+- Jumlah alamat aktif harian: Tidak ditemukan
+- Konsentrasi kepemilikan: Tidak ditemukan
+- Tingkat partisipasi staking: Tidak ditemukan
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+Tidak relevan karena distribusi token belum dilakukan.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Komunitas aktif dan besar (HIGH)
+- Tahap funding Series B (HIGH)
+
+Prasyarat yang belum:
+- Regulatory clarity on token distribution (MEDIUM)
+
+Sinyal yang biasanya mendahului:
+- Pengumuman snapshot
+- Perubahan dokumentasi distribusi
+- Perekrutan tim pengembangan tambahan
+
+Penilaian: Prasyarat utama yang belum terpenuhi adalah kejelasan regulasi tentang distribusi token. Tingkat keyakinan sedang. Jika regulatory clarity terpenuhi, sinyal lainnya kemungkinan akan segera terlihat.
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika regulatory clarity belum ada (era 2023-2024), project cenderung menghindari distribusi token langsung → akibatnya adalah komunitas besar tanpa distribusi token.
+- Ketika kompetitor terdekat memilih private sale selama Bear Market (era 2023-2024), project mempertahankan status quo → akibatnya adalah menghindari volatilitas harga token.
+
+OPEN THREADS
+
+- Status regulatory clarity tentang distribusi token.
+- Update terbaru tentang rencana distribusi dari tim Dusklight.

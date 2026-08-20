@@ -1,0 +1,303 @@
+PROJECT: Sei
+
+## System Architecture
+
+Architecture: Layer 1 blockchain built on Cosmos SDK with parallel execution optimization for trading (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei docs architecture, https://docs.sei.io/learn/architecture]
+
+Architecture: Modular design separating consensus (Tendermint), execution (parallel EVM + CosmWasm), and storage (SeiDB) layers (HIGH) [Sei v2 blog, https://sei.io/blog/introducing-sei-v2; SeiDB blog, https://sei.io/blog/introducing-sei-db]
+
+Architecture: Native Cosmos chain with IBC for inter-chain communication within Cosmos ecosystem (HIGH) [Sei docs IBC, https://docs.sei.io/learn/architecture]
+
+Architecture: Cross-chain messaging via Wormhole and Axelar for Ethereum, Solana, and EVM L2 ecosystems (HIGH) [Sei docs bridges, https://docs.sei.io/learn/architecture]
+
+Architecture: Oracle integration layer supporting Pyth Network and Chainlink for price feeds (HIGH) [Sei ecosystem, https://sei.io/ecosystem]
+
+## Core Components
+
+Component: Sei Chain (Cosmos SDK Application)
+Function: Core blockchain node software handling consensus, transaction processing, state management, and module routing (HIGH) [Sei chain repo, https://github.com/sei-protocol/sei-chain]
+Status: Live (mainnet Pacific-1 since 2023-08-15)
+
+Component: Tendermint Consensus Engine
+Function: BFT consensus providing finality and block production; validator set secures network (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Tendermint spec, https://docs.tendermint.com]
+Status: Live
+
+Component: Parallel Execution Engine
+Function: Parallel transaction processing using dependency detection (optimistic concurrency control) to maximize throughput for trading workloads (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei docs, https://docs.sei.io/learn/architecture]
+Status: Live
+
+Component: Order Matching Engine (Native Module)
+Function: Built-in order book matching at consensus layer for CEX-like performance; supports limit/market orders with frequent batch auctions (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Status: Live
+
+Component: CosmWasm VM (Wasmer)
+Function: WebAssembly execution environment for native Sei smart contracts (CosmWasm); compiles Rust/AssemblyScript to WASM (HIGH) [Sei docs CosmWasm, https://docs.sei.io/develop/cosmwasm; CosmWasm docs, https://docs.cosmwasm.com]
+Status: Live
+
+Component: Sei v2 EVM Layer (Geth Integration)
+Function: Embedded Geth execution client enabling native EVM compatibility; Ethereum transactions execute directly in Sei consensus without separate sequencer (HIGH) [Sei v2 blog, https://sei.io/blog/introducing-sei-v2; Sei v2 docs, https://docs.sei.io/learn/sei-v2]
+Status: Live (mainnet upgrade 2024-08-15)
+
+Component: Precompile Contracts (Sei v2)
+Function: Native Go implementations of common Ethereum precompiles (ecRecover, SHA256, RIPEMD160, identity, modexp, blake2f, BLS12-381, etc.) plus Sei-specific precompiles for bank, staking, IBC, and token factory modules (HIGH) [Sei v2 docs precompiles, https://docs.sei.io/develop/evm/precompiles]
+Status: Live
+
+Component: SeiDB (Parallelized Storage Layer)
+Function: Custom storage backend replacing default IAVDB; separates state store (SS) and state commit log (SCL) for parallel writes, fast sync, and state bloat reduction (HIGH) [SeiDB blog, https://sei.io/blog/introducing-sei-db; SeiDB repo, https://github.com/sei-protocol/sei-db]
+Status: Live (integrated in Sei v2)
+
+Component: IBC Module (ibc-go)
+Function: Inter-Blockchain Communication protocol implementation for trust-minimized asset/data transfer with Cosmos chains (HIGH) [Sei docs IBC, https://docs.sei.io/learn/architecture; ibc-go repo, https://github.com/cosmos/ibc-go]
+Status: Live
+
+Component: Wormhole Bridge Integration
+Function: Generic message passing bridge via Wormhole Guardian network; enables SEI token bridging and arbitrary cross-chain messages to Ethereum, Solana, EVM L2s (HIGH) [Sei docs bridges, https://docs.sei.io/learn/architecture; Wormhole docs, https://docs.wormhole.com]
+Status: Live
+
+Component: Axelar Bridge Integration
+Function: Cross-chain communication via Axelar validator network; supports general message passing and token bridging to EVM and Cosmos ecosystems (HIGH) [Sei docs bridges, https://docs.sei.io/learn/architecture; Axelar docs, https://docs.axelar.dev]
+Status: Live
+
+Component: Pyth Network Oracle
+Function: First-party publisher price feeds pulled on-chain via Pyth contract; low-latency financial market data for DeFi (HIGH) [Sei ecosystem, https://sei.io/ecosystem; Pyth Sei docs, https://docs.pyth.network/price-feeds/sei]
+Status: Live
+
+Component: Chainlink Oracle
+Function: Decentralized oracle network providing price feeds, VRF, CCIP, and automation on Sei (HIGH) [Sei ecosystem, https://sei.io/ecosystem; Chainlink Sei blog, https://blog.chain.link/chainlink-sei-integration]
+Status: Live
+
+Component: Sei Token Factory Module
+Function: Native Cosmos SDK module for creating and managing fungible tokens (denoms) without smart contracts; used for bridged token representations (HIGH) [Sei docs token factory, https://docs.sei.io/develop/token-factory; Cosmos SDK tokenfactory, https://github.com/cosmos/cosmos-sdk/tree/main/x/tokenfactory]
+Status: Live
+
+## Consensus Mechanism
+
+Consensus: Tendermint BFT (Byzantine Fault Tolerant) Proof-of-Stake
+Details: Round-based consensus with proposer selection weighted by stake; 2/3+ validator signatures required for block finality; instant finality (no probabilistic reorgs) (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Tendermint consensus spec, https://docs.tendermint.com/master/spec/consensus/consensus.html]
+Validator Set: Dynamic validator set bonded by SEI stake; delegation supported; slashing for double-sign and downtime (HIGH) [Sei docs staking, https://docs.sei.io/learn/staking]
+Block Time: ~400-600ms target (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Finality: Instant (single block finality) (HIGH) [Tendermint property, https://docs.tendermint.com/master/spec/consensus/consensus.html]
+
+## Execution Environment
+
+Environment: CosmWasm (WASM) — Native execution for Sei-specific smart contracts; Rust/AssemblyScript compiled to WebAssembly; Wasmer runtime (HIGH) [Sei docs CosmWasm, https://docs.sei.io/develop/cosmwasm; CosmWasm docs, https://docs.cosmwasm.com]
+Environment: EVM (Ethereum Virtual Machine) — Sei v2 embedded Geth execution; full Ethereum JSON-RPC compatibility; Solidity/Vyper smart contracts deploy and execute natively (HIGH) [Sei v2 blog, https://sei.io/blog/introducing-sei-v2; Sei v2 docs, https://docs.sei.io/learn/sei-v2]
+Environment: Native Cosmos SDK Modules — Built-in modules (bank, staking, governance, IBC, tokenfactory, order matching) execute as native Go code in consensus layer (HIGH) [Sei chain repo, https://github.com/sei-protocol/sei-chain]
+Interoperability: CosmWasm and EVM contracts can interact via precompile contracts and token factory; shared state access through SeiDB (HIGH) [Sei v2 docs interoperability, https://docs.sei.io/develop/evm/interoperability]
+
+## Programming Languages
+
+Language: Go — Primary language for Sei chain core, Cosmos SDK modules, SeiDB, and native precompiles (HIGH) [Sei chain repo, https://github.com/sei-protocol/sei-chain; SeiDB repo, https://github.com/sei-protocol/sei-db]
+Language: Rust — CosmWasm smart contract development; some off-chain tooling (HIGH) [CosmWasm docs, https://docs.cosmwasm.com; Sei docs CosmWasm, https://docs.sei.io/develop/cosmwasm]
+Language: Solidity — EVM smart contract development for Sei v2; standard Ethereum tooling (Hardhat, Foundry) supported (HIGH) [Sei v2 docs, https://docs.sei.io/learn/sei-v2]
+Language: TypeScript/JavaScript — SDK clients, testing frameworks, frontend integration (HIGH) [Sei JS SDK, https://github.com/sei-protocol/sei.js; Sei TS SDK, https://github.com/sei-protocol/sei.ts]
+Language: Python — Analytics, indexing, and research tooling (MEDIUM) [Sei Python SDK community, https://github.com/sei-protocol; various analytics repos]
+
+## Development Framework
+
+Framework: Cosmos SDK v0.47+ — Application framework for blockchain construction; module-based architecture (HIGH) [Sei chain repo go.mod, https://github.com/sei-protocol/sei-chain/blob/main/go.mod; Cosmos SDK docs, https://docs.cosmos.network]
+Framework: CosmWasm VM (Wasmer) — Smart contract runtime for WASM contracts; Rust-based contract development with cosmwasm-std, cw-storage-plus, cw-multi-test (HIGH) [CosmWasm docs, https://docs.cosmwasm.com]
+Framework: Geth (go-ethereum) v1.13+ — Embedded EVM execution client for Sei v2; modified for Sei consensus integration (HIGH) [Sei v2 blog, https://sei.io/blog/introducing-sei-v2; Geth repo, https://github.com/ethereum/go-ethereum]
+Framework: Tendermint Core v0.38+ — Consensus engine and P2P networking; ABCI++ interface for application layer (HIGH) [Tendermint repo, https://github.com/cometbft/cometbft; Sei chain repo]
+Framework: ibc-go v7+ — IBC protocol implementation for cross-chain communication (HIGH) [ibc-go repo, https://github.com/cosmos/ibc-go]
+Framework: Ethermint EVM Module (legacy reference) — Sei v2 does NOT use Ethermint; uses direct Geth integration instead (HIGH) [Sei v2 blog, https://sei.io/blog/introducing-sei-v2; Ethermint repo, https://github.com/evmos/ethermint]
+Toolchain: Ignite CLI (formerly Starport) — Scaffold Cosmos SDK chains and modules (MEDIUM) [Ignite docs, https://docs.ignite.com]
+Toolchain: Hardhat / Foundry — EVM smart contract development, testing, deployment for Sei v2 (HIGH) [Sei v2 docs Hardhat, https://docs.sei.io/develop/evm/hardhat; Foundry docs, https://book.getfoundry.sh]
+Toolchain: CosmWasm CLI (cargo-contract, wasm-opt) — Build, optimize, deploy CosmWasm contracts (HIGH) [CosmWasm tooling, https://docs.cosmwasm.com/docs/1.0/getting-started/installation]
+SDK: Sei JavaScript/TypeScript SDK — Client libraries for transaction signing, query, and wallet integration (HIGH) [Sei JS SDK, https://github.com/sei-protocol/sei.js; Sei TS SDK, https://github.com/sei-protocol/sei.ts]
+SDK: Sei Python SDK — Community-maintained Python client for analytics and scripting (MEDIUM) [Sei Python community, https://github.com/sei-protocol]
+Indexing: Sei GraphQL API / RPC endpoints — Official RPC and GraphQL for on-chain data querying (HIGH) [Sei docs RPC, https://docs.sei.io/develop/rpc; Seitrace GraphQL, https://seitrace.com/graphql]
+Indexing: SubQuery / The Graph (community) — Decentralized indexing for Sei (MEDIUM) [SubQuery Sei, https://project.subquery.network; The Graph Sei, https://thegraph.com]
+
+## Security Model
+
+Security: Tendermint BFT Consensus — Safety guaranteed with <1/3 Byzantine validators; liveness with <1/3 offline; instant finality prevents reorgs (HIGH) [Tendermint safety proof, https://docs.tendermint.com/master/spec/consensus/consensus.html]
+Security: Proof-of-Stake with Delegation — Validator set secured by bonded SEI; delegators share rewards/slashing risk; economic security proportional to stake (HIGH) [Sei docs staking, https://docs.sei.io/learn/staking]
+Security: Slashing Conditions — Double-sign slashing (5% stake, tombstone); downtime slashing (0.01% per missed block window, jail after threshold) (HIGH) [Sei chain slashing module, https://github.com/sei-protocol/sei-chain/tree/main/x/slashing; Cosmos SDK slashing, https://docs.cosmos.network/main/modules/slashing]
+Security: Validator Set — Active validator set determined by top bonded stake; governance can adjust max validators (currently 100) (HIGH) [Sei docs validators, https://docs.sei.io/learn/validators]
+Security: CosmWasm Sandbox — WASM execution isolated via Wasmer; deterministic gas metering; no host access except defined imports (HIGH) [CosmWasm security, https://docs.cosmwasm.com/docs/1.0/smart-contracts/security]
+Security: EVM Isolation (Sei v2) — Geth execution runs in separate process with RPC interface; state commits via ABCI++; precompiles are native Go with audited interfaces (HIGH) [Sei v2 architecture, https://sei.io/blog/introducing-sei-v2]
+Security: IBC Light Client Verification — Trust-minimized cross-chain verification via Tendermint light client on counterparty chains (HIGH) [IBC security model, https://ibc.cosmos.network/main/ibc/tao.html]
+Security: Bridge Security (Wormhole/Axelar) — Wormhole: Guardian multisig (19 validators); Axelar: PoS validator set with threshold signatures; both external to Sei consensus (HIGH) [Wormhole security, https://docs.wormhole.com/docs/security; Axelar security, https://docs.axelar.dev/security]
+Security: Oracle Security — Pyth: Publisher-signed price aggregates with stake-weighted median; Chainlink: DONs with aggregated reports; both manipulatable only via publisher/validator collusion (HIGH) [Pyth security, https://docs.pyth.network/security; Chainlink security, https://blog.chain.link/chainlink-security-model]
+
+## Audit History
+
+Audit: Informal Systems — Sei Chain Core (Cosmos SDK Modules)
+Date: 2023-06 (pre-mainnet)
+Scope: Core consensus, staking, governance, IBC, tokenfactory, order matching modules; parallel execution engine
+Status: Completed; findings addressed pre-mainnet launch
+Source: [Informal Systems audit reports, https://informal.systems/audits; Sei launch blog mentions audit, https://sei.io/blog/sei-mainnet-launch]
+
+Audit: Halborn — Sei Smart Contracts (CosmWasm)
+Date: 2023-07 (pre-mainnet)
+Scope: Core CosmWasm contracts (token factory, staking helpers, governance proposals)
+Status: Completed
+Source: [Halborn audit portfolio, https://halborn.com/audits; Sei ecosystem references]
+
+Audit: Trail of Bits — Sei v2 EVM Integration (Geth Embedding)
+Date: 2024-06 (pre-Sei v2 mainnet)
+Scope: Geth embedding architecture, precompile contracts, EVM-CosmWasm interoperability, state sync via SeiDB
+Status: Completed; report published
+Source: [Trail of Bits publications, https://github.com/trailofbits/publications; Sei v2 blog references audit, https://sei.io/blog/introducing-sei-v2]
+
+Audit: Oak Security — SeiDB Storage Layer
+Date: 2024-07 (pre-Sei v2 mainnet)
+Scope: SeiDB state store (SS) and state commit log (SCL) design; parallel write correctness; fast sync verification; state bloat resistance
+Status: Completed
+Source: [Oak Security audits, https://oaksecurity.io/audits; SeiDB blog references, https://sei.io/blog/introducing-sei-db]
+
+Audit: Zellic — Sei v2 Precompile Contracts
+Date: 2024-07
+Scope: Native Go precompiles for bank, staking, IBC, tokenfactory, and Sei-specific operations; reentrancy, access control, gas correctness
+Status: Completed
+Source: [Zellic audit reports, https://zellic.io/audits; Sei v2 docs reference]
+
+Audit: Veridise — Parallel Execution Engine
+Date: 2023-05 (pre-mainnet)
+Scope: Optimistic concurrency control correctness; dependency detection; conflict resolution; determinism across validators
+Status: Completed
+Source: [Veridise audits, https://veridise.com/audits; Sei whitepaper references formal verification]
+
+Note: Additional audits for ecosystem applications (DragonSwap, Silo, Yei, Leviathan, Pallet) conducted by various firms but not part of core protocol audit history.
+
+## Technical Upgrade History
+
+Upgrade: Atlantic-1 Testnet Launch
+Date: 2022-03-15
+Description: First public testnet (chain-id: atlantic-1); v0.1.0 release; validator onboarding; parallel execution and order matching testing
+Status: Completed (deprecated post-mainnet)
+Source: [Sei testnet blog, https://sei.io/blog/introducing-sei-testnet; GitHub v0.1.0, https://github.com/sei-protocol/sei-chain/releases/tag/v0.1.0]
+
+Upgrade: Pacific-1 Mainnet Launch (Genesis)
+Date: 2023-08-15
+Description: Mainnet genesis (chain-id: pacific-1); TGE; native SEI (usei); CosmWasm, IBC, order matching, parallel execution live; validator set active
+Status: Completed
+Source: [Sei mainnet launch blog, https://sei.io/blog/sei-mainnet-launch]
+
+Upgrade: Sei v2 Announcement & Specification
+Date: 2024-04-23
+Description: Technical specification for EVM compatibility via embedded Geth; SeiDB storage layer; precompile design; interoperability model
+Status: Completed (spec published)
+Source: [Sei v2 blog, https://sei.io/blog/introducing-sei-v2; SeiDB blog, https://sei.io/blog/introducing-sei-db]
+
+Upgrade: Sei v2 Public Testnet (Pacific-2 / Devnet)
+Date: 2024-07
+Description: Public testnet for Sei v2; EVM RPC compatibility testing; Geth integration validation; Hardhat/Foundry tooling verification; precompile testing
+Status: Completed
+Source: [Sei docs testnet, https://docs.sei.io; Sei Discord announcements]
+
+Upgrade: Sei v2 Mainnet Upgrade (Pacific-1 → Sei v2)
+Date: 2024-08-15
+Description: On-chain governance proposal passed; mainnet upgrade to Sei v2; Geth embedded; EVM JSON-RPC live; SeiDB activated; precompiles deployed; MetaMask support enabled
+Status: Completed (live)
+Source: [Sei v2 blog, https://sei.io/blog/introducing-sei-v2; Seitrace upgrade block, https://seitrace.com]
+
+Upgrade: CosmWasm 2.0 / Wasmer Upgrade (Post v2)
+Date: 2024-Q4 (estimated)
+Description: Upgrade to CosmWasm 2.0 (Stargate) with improved performance, new features; Wasmer runtime update
+Status: Planned / In Progress
+Source: [Sei governance proposals; CosmWasm 2.0 release, https://github.com/CosmWasm/cosmwasm/releases]
+
+Upgrade: IBC-Go v8 / Interchain Accounts (ICA) Upgrade
+Date: 2024-Q4 (estimated)
+Description: Upgrade to ibc-go v8; enable Interchain Accounts for cross-chain composability
+Status: Planned
+Source: [IBC-Go releases, https://github.com/cosmos/ibc-go/releases; Sei governance forum]
+
+## Current Technical Stack
+
+Technology: Go 1.21+ — Core blockchain implementation (HIGH) [Sei chain go.mod, https://github.com/sei-protocol/sei-chain/blob/main/go.mod]
+Technology: Rust 1.75+ — CosmWasm contract development; Wasmer runtime (HIGH) [CosmWasm toolchain, https://docs.cosmwasm.com/docs/1.0/getting-started/installation]
+Technology: Solidity 0.8.20+ — EVM smart contracts on Sei v2 (HIGH) [Sei v2 docs, https://docs.sei.io/learn/sei-v2]
+Technology: Cosmos SDK v0.47.x — Application framework (HIGH) [Sei chain go.mod, https://github.com/sei-protocol/sei-chain/blob/main/go.mod]
+Technology: CometBFT (Tendermint) v0.38.x — Consensus engine (HIGH) [Sei chain go.mod, https://github.com/sei-protocol/sei-chain/blob/main/go.mod; CometBFT repo, https://github.com/cometbft/cometbft]
+Technology: Geth (go-ethereum) v1.13.x — Embedded EVM execution client for Sei v2 (HIGH) [Sei v2 blog, https://sei.io/blog/introducing-sei-v2]
+Technology: Wasmer 4.x — WebAssembly runtime for CosmWasm (HIGH) [Wasmer repo, https://github.com/wasmerio/wasmer; CosmWasm VM, https://github.com/CosmWasm/wasmer]
+Technology: SeiDB (Custom) — Parallelized storage layer (state store + commit log) (HIGH) [SeiDB repo, https://github.com/sei-protocol/sei-db]
+Technology: ibc-go v7.x — IBC protocol implementation (HIGH) [Sei chain go.mod, https://github.com/sei-protocol/sei-chain/blob/main/go.mod]
+Technology: Wormhole SDK / Core Bridge — Cross-chain messaging integration (HIGH) [Wormhole Sei integration, https://docs.wormhole.com/docs/build/sei]
+Technology: Axelar SDK / GMP — General message passing integration (HIGH) [Axelar Sei docs, https://docs.axelar.dev/dev/gmp/sei]
+Technology: Pyth Network Contract — On-chain price feed verification (HIGH) [Pyth Sei, https://docs.pyth.network/price-feeds/sei]
+Technology: Chainlink CCIP / Price Feeds / VRF — Oracle infrastructure (HIGH) [Chainlink Sei, https://blog.chain.link/chainlink-sei-integration]
+Technology: Docker — Containerized node deployment (HIGH) [Sei chain Dockerfile, https://github.com/sei-protocol/sei-chain/blob/main/Dockerfile; Sei docs run node, https://docs.sei.io/validators/run-node]
+Technology: Kubernetes / Helm — Production validator and RPC node orchestration (MEDIUM) [Sei validator guides, https://docs.sei.io/validators; community Helm charts]
+Technology: Prometheus / Grafana — Metrics and monitoring for validators (HIGH) [Sei validator monitoring, https://docs.sei.io/validators/monitoring]
+Technology: Jaeger / OpenTelemetry — Distributed tracing for RPC nodes (MEDIUM) [Sei RPC operator guides]
+Technology: NGINX / HAProxy — RPC load balancing and rate limiting (MEDIUM) [Sei RPC provider docs]
+Technology: PostgreSQL / TimescaleDB — Indexer and analytics backend (MEDIUM) [Sei indexer implementations]
+Technology: GraphQL (Apollo / Hasura) — Seitrace and custom indexer APIs (HIGH) [Seitrace GraphQL, https://seitrace.com/graphql]
+
+## Known Technical Limitations
+
+Limitation: Parallel Execution Conflict Rate — Under high contention (many txs touching same state), optimistic concurrency control aborts increase, reducing effective throughput; mitigated by Sei's order matching engine batching but not eliminated (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; parallel execution research]
+
+Limitation: SeiDB Fast Sync Trust Assumption — Fast sync via state commit log (SCL) requires trusting a recent checkpoint; full verification still requires replay from genesis or trusted snapshot (HIGH) [SeiDB blog, https://sei.io/blog/introducing-sei-db; SeiDB repo README, https://github.com/sei-protocol/sei-db]
+
+Limitation: EVM Precompile Gas Costs — Native Go precompiles have fixed gas costs that may not perfectly reflect actual computation cost; governance can adjust but requires on-chain proposal (HIGH) [Sei v2 docs precompiles, https://docs.sei.io/develop/evm/precompiles]
+
+Limitation: CosmWasm-EVM Interoperability Latency — Cross-VM calls (CosmWasm ↔ EVM) require precompile dispatch and state synchronization via SeiDB; adds ~1-2 block latency vs. intra-VM calls (HIGH) [Sei v2 docs interoperability, https://docs.sei.io/develop/evm/interoperability]
+
+Limitation: Validator Set Centralization Risk — Top validators by stake control consensus; delegation concentration can lead to <1/3 stake controlled by few entities; monitored but not protocol-enforced decentralization (HIGH) [Sei docs validators, https://docs.sei.io/learn/validators; staking explorer data]
+
+Limitation: Bridge Trust Assumptions (Wormhole/Axelar) — Cross-chain bridges rely on external validator/guardian sets; not secured by Sei consensus; bridge hacks affect bridged assets on Sei (HIGH) [Wormhole security, https://docs.wormhole.com/docs/security; Axelar security, https://docs.axelar.dev/security]
+
+Limitation: State Bloat Growth — Despite SeiDB improvements, state growth is unbounded with persistent contract deployments; no native state expiry / rent mechanism implemented (HIGH) [SeiDB blog, https://sei.io/blog/introducing-sei-db; Cosmos SDK state management]
+
+Limitation: IBC Packet Timeout Handling — Application-level timeout logic required; packets can expire if counterparty chain stalls; no automatic refund for all packet types (HIGH) [IBC spec, https://ibc.cosmos.network/main/ibc/tao.html]
+
+Limitation: Wasmer Determinism Across Architectures — WASM execution must produce identical results on all validator architectures (x86_64, ARM64); floating point and SIMD require careful handling (HIGH) [CosmWasm determinism, https://docs.cosmwasm.com/docs/1.0/smart-contracts/security#determinism]
+
+Limitation: Governance Upgrade Coordination — Major upgrades (e.g., Sei v2) require coordinated validator software upgrade; network halt risk if >1/3 validators fail to upgrade in time (HIGH) [Sei upgrade governance proposals; Tendermint upgrade process]
+
+## Official Technical Resources
+
+Documentation: https://docs.sei.io
+GitHub (Core): https://github.com/sei-protocol/sei-chain
+GitHub (SeiDB): https://github.com/sei-protocol/sei-db
+GitHub (Organization): https://github.com/sei-protocol
+Developer Docs (CosmWasm): https://docs.sei.io/develop/cosmwasm
+Developer Docs (EVM/Sei v2): https://docs.sei.io/learn/sei-v2
+Developer Docs (EVM Precompiles): https://docs.sei.io/develop/evm/precompiles
+Developer Docs (EVM Tooling): https://docs.sei.io/develop/evm/hardhat
+Developer Docs (Token Factory): https://docs.sei.io/develop/token-factory
+Developer Docs (RPC/API): https://docs.sei.io/develop/rpc
+Developer Docs (IBC): https://docs.sei.io/learn/architecture#ibc
+SDK (JavaScript/TypeScript): https://github.com/sei-protocol/sei.js
+SDK (TypeScript): https://github.com/sei-protocol/sei.ts
+SDK (Python Community): https://github.com/sei-protocol
+Whitepaper: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+Research Paper (Parallel Execution): Not separately published; technical details in whitepaper and blog
+Blog (Technical Announcements): https://sei.io/blog
+Explorer (Mainnet GraphQL): https://seitrace.com/graphql
+Explorer (Testnet GraphQL): https://testnet.seitrace.com/graphql
+Validator Docs: https://docs.sei.io/validators
+Staking Docs: https://docs.sei.io/learn/staking
+Wallet Integration Docs: https://docs.sei.io/learn/wallets
+
+## Ringkasan
+
+Architecture: Layer 1 (Cosmos SDK) with parallel execution, native order matching, dual VM (CosmWasm + EVM via Geth), modular storage (SeiDB), IBC native, external bridges (Wormhole, Axelar), dual oracle (Pyth, Chainlink)
+
+Core Components: 13 (Sei Chain, Tendermint, Parallel Execution Engine, Order Matching Engine, CosmWasm VM, Sei v2 EVM/Geth, Precompiles, SeiDB, IBC Module, Wormhole Bridge, Axelar Bridge, Pyth Oracle, Chainlink Oracle, Token Factory)
+
+Audit Count: 6 core protocol audits (Informal Systems, Halborn, Trail of Bits, Oak Security, Zellic, Veridise) + ecosystem audits
+
+Major Upgrade Count: 4 completed major upgrades (Atlantic-1 testnet, Pacific-1 mainnet, Sei v2 testnet, Sei v2 mainnet) + 3 planned/ongoing
+
+## Open Threads
+
+- Complete audit reports for all 6 core audits — some reports not publicly linked in official channels; need to verify publication status and access full findings
+- SeiDB fast sync security model — documentation mentions "trusted checkpoint" but exact trust assumptions and verification process not fully specified in public docs
+- CosmWasm 2.0 upgrade timeline — governance proposal not yet on-chain as of knowledge cutoff; exact activation block unknown
+- IBC-Go v8 / ICA upgrade status — planned but no governance proposal visible; dependency on Cosmos SDK upgrade path
+- Formal verification of parallel execution engine — Veridise audit referenced but full formal spec not published; property definitions (safety, liveness under contention) not public
+- SeiDB benchmark data — throughput, latency, state size comparisons vs. IAVDB under various workloads not published in reproducible format
+- EVM precompile gas schedule governance process — exact parameter change mechanism and timelock not documented in developer docs
+- Cross-VM reentrancy protection — CosmWasm → EVM → CosmWasm call frames; reentrancy guard implementation details not in public specs
+- Validator set decentralization metrics — real-time stake distribution, Nakamoto coefficient, entity concentration not published officially
+- Bridge risk framework — Sei's official stance on bridged asset risk, emergency pause mechanisms, or bridge-specific circuit breakers not documented
+- State expiry / rent roadmap — no EIP-4444 equivalent or state rent proposal visible in governance forum
+- Maximum validator count governance parameter — currently 100 but change process and rationale not in technical docs
+- Transaction fee market design — base fee, priority fee, EIP-1559 equivalence for Sei v2 EVM not fully specified
+- MEV protection at consensus layer — order matching engine batching provides some protection but proposer-based MEV (EVM) not addressed in technical docs

@@ -1,0 +1,156 @@
+PROJECT: Grass
+
+STATUS AIRDROP
+
+Sudah dilakukan — Grass mendistribusikan token GRASS kepada partisipan Epoch 1-7 (Juni 2023 – Oktober 2024) melalui klaim pada hari TGE 28 Oktober 2024, berdasarkan poin yang diperoleh dari kontribusi bandwidth terverifikasi (Phase 3 EV-012, Phase 6 Distribution, Phase 8 Adoption Metrics).
+
+AIRDROP EVENTS
+
+AD-001: Grass Epoch Points-to-Token Airdrop (Season 1 / Pre-TGE Epochs 1-7)
+Tanggal: 2024-10-28 (hari TGE, klaim dibuka simultan dengan listing)
+Tipe: Points-based / Retroactive
+Alokasi: Tidak ditemukan persentase pasti dari total supply untuk airdrop murni; Tokenomics menyebut "Community & Ecosystem: 30% (300M GRASS)" yang mencakup airdrop, ecosystem grants, dan insentif jangka panjang (Phase 6 Token Distribution) (HIGH) [Grass Blog Tokenomics, https://blog.grass.ai/grass-tokenomics/]
+Penerima: Tidak ditemukan jumlah alamat yang memenuhi syarat (eligible) vs yang mengklaim; Token Holders on-chain 120.000+ (Solscan Des 2024) mencakup pembeli pasar (Phase 8 Adoption Metrics) (HIGH) [Solscan Token Holders, https://solscan.io/token/GRASS...#holders]
+Nilai saat klaim: ~$1,00 USD per GRASS (estimasi tengah dari rentang FDV $1,5B-$3,5B dan circulating 240M → harga $1,67-$3,33; harga listing Binance Launchpool ~$0,80-$1,20 area) (MEDIUM) [CoinGecko Historical, https://www.coingecko.com/en/coins/grass] (MEDIUM) [Binance Launchpool Announcement, https://www.binance.com/en/support/announcement/grass-listing]
+Kriteria: Partisipasi minimal 1 Epoch (1-7), uptime & bandwidth terverifikasi oleh Coordinator, akun dashboard terverifikasi email, lolos filter anti-sybil (device fingerprint, IP reputation, referral graph) (HIGH) [Grass Blog Epoch Updates, https://blog.grass.ai/category/epoch-updates/] (HIGH) [Grass Docs Coordinator, https://docs.grass.ai/architecture/coordinator]
+Anti-sybil: Coordinator terpusat (Wynd Labs) menjalankan Proof of Bandwidth challenge-response, device fingerprinting, analisis graf referral, dan filter IP/residential proxy; jumlah alamat yang didiskualifikasi tidak dipublikasikan (HIGH) [Grass Blog Decentralization Roadmap, https://blog.grass.ai/decentralization-roadmap/] (MEDIUM) [Grass Docs Architecture, https://docs.grass.ai/architecture/coordinator]
+Terkait EV: EV-004 (Epoch System Launch), EV-006 (Mainnet), EV-012 (TGE & Claim), EV-013 (Staking Live) (HIGH) [Phase 3 Historical Events]
+Sitasi: (HIGH) [Grass Blog Token Launch, https://blog.grass.ai/grass-token-launch/] (HIGH) [Grass Dashboard Claim Page, https://app.getgrass.io/] (HIGH) [Phase 3 EV-012]
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Seed $3,5M (Jul 2023) + Strategic Round (Des 2023, jumlah tidak diungkap) — belum Series A publik; runway bergantung sisa dana VC + treasury token (Phase 5 Funding History) (HIGH)
+- Ukuran komunitas: 2,5M+ registered nodes (klaim Blog Okt 2024), Discord 500k+, X 600k+ (Phase 8 Adoption Metrics) (MEDIUM)
+- Kondisi pasar: Q4 2024 bull run awal (BTC $60k-$70k area), narasi DePIN & AI Data Layer puncak, Solana ecosystem strong (Phase 8 Narrative Position, Market Timeline) (HIGH)
+- Kompetitor terdekat: Masa (testnet incentivized), LayerZero (airdrop Juni 2024), zkSync (airdrop Juni 2024), EigenLayer (stakedrop Mei 2024) — semuanya points-based / retroactive dengan snapshot sebelum TGE (Phase 8 Competitor Landscape) (MEDIUM)
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Kesiapan TGE & listing multi-CEX (Binance Launchpool + 5 CEX lain) memerlukan distribusi token ke komunitas agar pasar tidak didominasi investor/team; komitmen "points-to-token" sejak Epoch 1 (Jun 2023) menciptakan ekspektasi kontraktual (Phase 3 EV-004, EV-012) (HIGH)
+Alternatif yang tidak diambil:
+- Public Sale / IDO: Ditolak — regulator risk, memilih Launchpool (farming gratis) + airdrop untuk distribusi retail (Phase 5 Fundraising Mechanism, Phase 6 Token Sale) (HIGH)
+- Distribusi bertahap (linear vesting claim): Tidak diambil — claim 100% liquid pada TGE (tidak ada cliff/vesting untuk airdrop) (Phase 6 Vesting: airdrop tidak memiliki vesting terpisah) (HIGH)
+- Snapshot tunggal akhir: Tidak diambil — sistem Epoch 7 kali memberikan multiple entry points & retention (Phase 3 EV-004) (HIGH)
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Reward early contributors who built the network" — mengakui kontribusi bandwidth & uptime sebelum token ada nilai ekonomi (Grass Blog Token Launch, https://blog.grass.ai/grass-token-launch/) (HIGH)
+- "Points are converted 1:1 to GRASS at TGE" — transparansi konversi sejak awal (Grass Blog Epoch 1, https://blog.grass.ai/epoch-1-launch/) (HIGH)
+- "Fair launch via Binance Launchpool + community airdrop" — tidak ada public sale, distribusi merata (Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing) (HIGH)
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Memenuhi syarat listing CEX tier-1 (Binance, Coinbase) yang memerlukan community distribution minimum & wide holder base — airdrop 120k+ holders langsung memenuhi metrik ini (HIPOTESIS, MEDIUM) [Phase 8 Exchange Ecosystem: Coinbase listing requires broad distribution]
+- Membuat likuiditas sell-side alami pada hari TGE agar order book tidak kosong & price discovery berfungsi — tanpa airdrop claim, hanya Launchpool 3% + MM provide liquidity (HIPOTESIS, MEDIUM) [Phase 8 Liquidity Sources: Wintermute/GSR need counterparty flow]
+- Mengurangi tekanan unlock investor/team (cliff/stream) dengan menyerbu circulating supply awal dari sisi community — investor unlock mulai TGE+cliff, community sell early absorbs (HIPOTESIS, LOW) [Phase 6 Vesting: investor 22% stream, team 22% stream]
+- Menghindari klasifikasi sekuritas (Howey test) dengan tidak menjual token ke publik — airdrop + Launchpool (farming) = non-sale distribution (HIPOTESIS, MEDIUM) [Phase 5 Financial Risk Regulatory, Phase 6 Token Sale Launchpool]
+
+OUTCOME PER POV
+
+POV Founder (Andrej Radonjic, Chris Nguyen / Wynd Labs): Sukses
+- Jangka pendek: TGE lancar, listing 6 CEX tier-1 simultan, $150M-$300M vol hari pertama, zero exploit, komunitas 2,5M node merasa terbayar — validasi model DePIN (Phase 3 EV-012, Phase 8 Trading Markets) (HIGH)
+- Jangka panjang: Token tersebar ke 120k+ holders, ekosistem DeFi aktif (staking, lending, perp), Foundation treasury funded, runway diperpanjang — tapi tekanan jual airdrop berkelanjutan (Phase 7 Major Integrations, Phase 5 Treasury) (HIGH)
+- Dasar: (HIGH) [Phase 3 EV-012, Phase 8 Trading Markets, Phase 7 Major Integrations, Phase 5 Treasury]
+
+POV VC (Polychain, Hack VC, Delphi Ventures, Brevan Howard Digital): Sebagian
+- Jangka pendek: Token liquid, listing tier-1, paper gains besar (entry valuation seed ~$3,5M untuk % supply signifikan vs FDV $1,5B+); tapi unlock streaming (Streamflow/Cliff) berarti sell pressure konstan (Phase 6 Vesting, Phase 7 Infrastructure Streamflow) (HIGH)
+- Jangka panjang: Perlu revenue protocol (data sales) materialisasi agar token fundamental value > spec value; exit liquidity bergantung pada retail & institution holding (Phase 5 Revenue Model, Phase 5 Financial Risk Revenue Uncertainty) (MEDIUM)
+- Dasar: (HIGH) [Phase 5 Funding History, Phase 6 Vesting, Phase 7 Infrastructure Streamflow] (MEDIUM) [Phase 5 Revenue Model]
+
+POV Retail (penerima airdrop Epoch 1-7): Sebagian
+- Jangka pendek: Claim gratis ~$50-$500+ per wallet (tergantung tier/epoch), banyak sell hari 1-7 (price drop dari ~$1,20 ke ~$0,80 area); gas fee Solana negligible (Phase 8 Trading Markets, CoinGecko Historical) (MEDIUM)
+- Jangka panjang: Holder yang diamond hand (stake/deposit DeFi) mendapat yield tambahan (staking ~8-15% APY, Kamino leverage, Drift perp funding); seller early miss upside jika rollup deliver (Phase 6 Staking Utility, Phase 7 DeFi Integrations) (MEDIUM)
+- Dasar: (MEDIUM) [CoinGecko GRASS Historical Oct-Nov 2024] (MEDIUM) [Phase 6 Staking, Phase 7 DeFi Integrations]
+
+POV Community (node operators, Discord/Telegram aktif): Sukses
+- Jangka pendek: Validasi "points have value", retensi node tinggi pasca-TGE (epoch 8+ lanjut), referal program masih aktif, sentiment positif di Discord/X (Phase 3 EV-015, Phase 8 Adoption Metrics Discord 500k+) (HIGH)
+- Jangka panjang: Ekspektasi Season 2 / ongoing rewards tinggi; risiko kekecewaan jika reward menurun tanpa revenue protocol (Phase 3 EV-015 Ecosystem Incentives, Phase 5 Revenue Model) (MEDIUM)
+- Dasar: (HIGH) [Phase 3 EV-015, Phase 8 Adoption Metrics] (MEDIUM) [Phase 5 Revenue Model]
+
+POV Developer (builder di Grass SDK/Rollup): Sukses
+- Jangka pendek: Grants Foundation tersedia (Superteam/Colosseum), SDK dokumentasi lengkap, hackathon bounty, rollup devnet target 2025 — timing bagus untuk early builder (Phase 7 Developer Ecosystem, Phase 3 EV-011) (HIGH)
+- Jangka panjang: Sovereign Data Rollup membuka use case baru (AI data provenance, ZK verified scraping) — tapi kompleksitas teknis tinggi, tooling masih minimal (Phase 4 Architecture Rollup, Phase 7 External Dependencies RISC Zero) (MEDIUM)
+- Dasar: (HIGH) [Phase 7 Developer Ecosystem, Phase 3 EV-011] (MEDIUM) [Phase 4 Architecture Rollup]
+
+POV Institution (Market Maker Wintermute/GSR, CEX, Fund): Sukses
+- Jangka pendek: Deep liquidity multi-venue (6 CEX + 2 DEX + perp), tight spread, healthy funding rates, borrow/lend market aktif (Kamino) — ideal untuk market making & basis trade (Phase 8 Liquidity Sources, Phase 7 Major Integrations Wintermute/GSR) (HIGH)
+- Jangka panjang: Perlu volume organik dari data sales & rollup fees, bukan hanya speculative flow; token concentration risk (top 10 holders >50% supply typical) — foundation/team/investor hold besar (Phase 5 Treasury Concentration Risk, Phase 6 Distribution) (MEDIUM)
+- Dasar: (HIGH) [Phase 8 Liquidity, Phase 7 Major Integrations] (MEDIUM) [Phase 5 Treasury, Phase 6 Distribution]
+
+POV Validator (Solana validators, Jito): Sebagian
+- Jangka pendek: GRASS staking native delegation ke validator (termasuk Jito) menambah stake & fee revenue; tapi volume delegasi GRASS masih kecil vs SOL native (Phase 3 EV-013 Staking, Phase 7 Major Integrations Jito) (MEDIUM)
+- Jangka panjang: Jika rollup butuh validator set sendiri / sequencer decentralized, validator Solana bisa jadi operator — tapi belum dikonfirmasi (Phase 4 Architecture Rollup, Phase 7 Jito Labs) (LOW)
+- Dasar: (MEDIUM) [Phase 3 EV-013, Phase 7 Jito Labs] (LOW) [Phase 4 Architecture Rollup]
+
+POV Builder (AI data buyers, enterprise): Tidak relevan (pada fase airdrop)
+- Jangka pendek: Airdrop tidak langsung mempengaruhi pembeli data; tapi token liquidity memungkinkan pembayaran data via GRASS di masa depan (Phase 5 Revenue Model Enterprise Data Sales) (MEDIUM)
+- Jangka panjang: Sovereign Rollup dengan ZK/TEE verification adalah value prop utama — airdrop hanya bootstrap supply side (Phase 3 EV-011, Phase 4 Architecture ZK/TEE) (MEDIUM)
+- Dasar: (MEDIUM) [Phase 5 Revenue Model, Phase 3 EV-011, Phase 4 Architecture]
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: $1,00 USD (2024-10-28) [CoinGecko Historical, https://www.coingecko.com/en/coins/grass] (MEDIUM)
+Harga +30 hari: $1,45 USD (2024-11-27) [CoinGecko Historical, https://www.coingecko.com/en/coins/grass] (MEDIUM)
+Harga +90 hari: $2,10 USD (2025-01-26) [CoinGecko Historical, https://www.coingecko.com/en/coins/grass] (MEDIUM)
+Harga puncak 12 bulan pertama: $3,89 USD (2024-12-08) [CoinGecko Historical, https://www.coingecko.com/en/coins/grass] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan TVL/Volume protokol sebelum vs sesudah distribusi: TVL agregat DeFi (Raydium+Orca+Kamino+Drift) ~$15M → ~$45M dalam 30 hari pasca-TGE (Phase 7 DeFi Integrations, DefiLlama Grass jika tersedia) (MEDIUM) [Phase 7 Major Integrations, DefiLlama https://defillama.com/]
+Jumlah alamat pemegang token (unique holders): 120.000+ (2024-12-15) [Solscan Token Holders, https://solscan.io/token/GRASS...#holders] (HIGH)
+Jumlah alamat aktif harian (token transfer/interact): Tidak ditemukan (tidak ada dashboard publik Dune/Flipside spesifik Grass daily active addresses) (MEDIUM)
+Konsentrasi kepemilikan: Top 10 holders ~55-65% supply (Foundation multisig, investor vesting contracts, team vesting, Binance/CEX cold wallets) — estimasi dari Solscan holder distribution (2024-12) (MEDIUM) [Solscan Token Holders Distribution, https://solscan.io/token/GRASS...#holders]
+Tingkat partisipasi staking: ~15-20% circulating supply di-stake (native staking + Jito delegation) per Des 2024 — estimasi dari Grass Dashboard staking page & Solscan staking program accounts (MEDIUM) [Grass Dashboard Staking, https://app.getgrass.io/staking] (MEDIUM) [Solscan Staking Program, https://solscan.io/account/...]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+- Kriteria kelayakan (uptime, bandwidth, referral) diketahui komunitas sejak Epoch 1 (Jun 2023) — memberikan waktu >12 bulan untuk farming (Phase 3 EV-004, Phase 8 Adoption Metrics) (HIGH)
+- Muncul perilaku: multi-device per user (Desktop + Extension + Mobile + Lite), VPS/residential proxy farming, referral ring (self-referral), node-as-a-service (NaaS) provider menjual "Grass node setup" (Phase 4 Known Limitations #1 Coordinator Centralized, Phase 7 Community) (MEDIUM)
+- Tim mengubah kriteria tengah jalan: Epoch 5-6 memperkenalkan "Quality Score" berbasis TLS fingerprint & IP reputation, menurunkan reward untuk node suspicious; Epoch 7 (pre-TGE) paling ketat — banyak node VPS/datacenter didiskualifikasi (Grass Blog Epoch Updates, https://blog.grass.ai/category/epoch-updates/) (MEDIUM)
+- Jumlah alamat yang didiskualifikasi total: Tidak dipublikasikan; estimasi komunitas 10-20% dari 2,5M registered nodes tidak lolos claim (Phase 8 Adoption Metrics 2.5M nodes vs 120k holders) (LOW)
+- Anti-sybil efektif sebagian: Coordinator terpusat bisa detect pattern tapi tidak sempurna; Rollup ZK/TEE masa depan dirancang untuk verifikasi trustless tanpa coordinator (Phase 4 Architecture Rollup, Phase 3 EV-011) (HIGH)
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Token live & liquid di multi-CEX/DEX (Phase 8 Trading Markets) (HIGH)
+- Foundation formed dengan treasury & grant program (Phase 3 EV-010, EV-015) (HIGH)
+- Rollup architecture announced & devnet target 2025 (Phase 3 EV-011) (HIGH)
+- Staking & DeFi utility active (Phase 3 EV-013, EV-014) (HIGH)
+
+Prasyarat yang belum:
+- Revenue protocol (enterprise data sales) terbukti skala signifikan & recurring (Phase 5 Revenue Model, Financial Risk Revenue Uncertainty) (HIGH)
+- Sovereign Data Rollup mainnet live dengan ZK/TEE verification menggantikan Coordinator (Phase 3 EV-011, Phase 4 Known Limitations #1 #7) (HIGH)
+- On-chain governance (DAO voting) aktif, bukan Foundation multisig (Phase 2 Entity DAO: tidak ada, Phase 6 Governance) (HIGH)
+- Treasury diversification ke stablecoin/yield-bearing asset (Phase 5 Treasury Composition, Financial Risk Concentration Risk) (MEDIUM)
+
+Sinyal yang biasanya mendahului airdrop Season 2 / ongoing rewards:
+- Pengumuman "Epoch 8" dengan struktur reward baru (token bukan points) (Phase 3 EV-004 pattern)
+- Deploy kontrak Distributor / MerkleDrop baru di GitHub wynd-network/contracts (Phase 4 Core Components Smart Contracts)
+- Snapshot announcement di Discord/X dengan tanggal pasti (Phase 7 Community channels)
+- Perekrutan "Growth/Community Lead" untuk airdrop campaign (Phase 2 Entity Wynd Labs hiring)
+
+Penilaian: Kemungkinan Season 2 / ongoing token incentives TINGGI (confidence: HIGH) karena: (1) model DePIN memerlukan insentif berkelanjutan untuk retensi node, (2) Foundation allocation 30%+ supply besar & belum terpakai penuh, (3) kompetitor (Masa, Grass peers) melakukan seasonal rewards, (4) rollup butuh node operator set untuk devnet/testnet. Risiko utama: jika revenue data sales belum materialisasi, insentif token bersifat inflasioner tanpa fundamental value — akan menciptakan sell pressure berkelanjutan. Key trigger perubahan: launch Rollup devnet dengan token incentive program spesifik builder/node operator.
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika kriteria kelayakan (uptime, bandwidth, referral)透明且可预测超过12个月 before snapshot (era 2023-2024, populasi hunter matang), jumlah registered nodes membengkak 10-50x dibanding pengguna nyata (2.5M nodes vs estimasi 100k-200k unique users) — akibatnya biaya airdrop naik, sybil resistance jadi perang tangan, dan retensi pasca-TGE menurun karena farmer sell immediate.
+- Ketika airdrop claim 100% liquid pada hari TGE bersamaan listing multi-CEX tier-1 (Binance, Coinbase, Bybit), price discovery efisien tapi sell pressure ekstrem hari 1-7 (price drop 30-50%) — alternate: linear claim vesting 3-6 bulan (seperti Arbitrum, Optimism) mengurangi dump tapi menambah kompleksitas UX & regulatory risk.
+- Ketika Coordinator terpusat menjadi single point of truth untuk eligibility (Proof of Bandwidth), anti-sybil hanya sebagus data & heuristic Coordinator — tidak ada on-chain verification sampai Rollup ZK/TEE live. Project dengan arsitektur serupa harus investasi ZK/TEE lebih awal atau accept centralization risk.
+- Ketika tokenomics allocate >30% supply ke Community/Ecosystem tapi tidak ada vesting untuk airdrop, circulating supply TGE naik tajam (24% → 30%+ dengan claim) — memerlukan MM professional & deep liquidity sejak hari 1 untuk mencegah crash. Grass berhasil karena Wintermute/GSR + 6 CEX + DeFi stack ready.
+- Ketika project memisahkan Dev Entity (Wynd Labs) dan Foundation (Governance/Treasury) SEBELUM TGE, legal wrapper offshore (BVI/Cayman) + Launchpool (non-sale) + airdrop menciptakan regulatory moat yang kuat — pattern ini bisa direplikasi DePIN lain menghindari SEC enforcement.
+
+OPEN THREADS
+
+- Alokasi pasti airdrop Season 1 (persen supply & jumlah token) — tidak dipecah dari "Community & Ecosystem 30%". Perlu on-chain analysis kontrak Distributor / MerkleRoot claim.
+- Jumlah unique eligible addresses vs claimed addresses vs holders 90 hari post-TGE — memerlukan Dune/Flipside query per claimer cohort.
+- Persentase airdrop recipients yang stake vs sell vs provide LP dalam 30 hari — tidak ada data publik.
+- Apakah Season 2 / ongoing incentives akan pakai token GRASS baru (inflation) atau dari Foundation treasury (recycling) — tidak diumumkan.
+- Detail Quality Score algorithm Epoch 5-7 (TLS fingerprint, IP reputation thresholds) — tidak dipublikasikan untuk mencegah gaming.
+- Geographic breakdown node operators (GDPR/EU risk) — tidak ada heatmap publik.
+- Revenue data sales first enterprise contract announcement — sinyal fundamental value.
+- Rollup devnet launch date & associated token incentive program — catalyst utama Season 2.

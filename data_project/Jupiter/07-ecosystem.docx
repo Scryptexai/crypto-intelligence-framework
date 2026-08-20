@@ -1,0 +1,559 @@
+PROJECT: Jupiter
+
+## Ecosystem Position
+
+Primary Sector: DEX Aggregator / Swap Infrastructure
+Secondary Sector: Perpetual Futures DEX / Derivatives
+Primary Chain: Solana
+Supported Chains: Solana (primary); cross-chain messaging via Wormhole for Perps oracle (reported in early docs, not confirmed as current primary dependency)
+Sources:
+- https://dev.jup.ag/docs/intro (HIGH)
+- https://solana.com/ecosystem/jupiter (HIGH)
+- https://wormhole.com/ecosystem/jupiter/ (MEDIUM)
+- https://blog.jup.ag/perps-v2-jlp-launch/ (MEDIUM)
+
+## External Dependencies
+
+Dependency Name: Solana
+Dependency Type: Chain
+Purpose: Execution layer for all Jupiter programs (Aggregator, Limit Orders, DCA, Perps, JUP token); consensus, settlement, and validator network
+Criticality: Critical
+Status: Live
+Related Entity: Solana
+Related Technology Component: Jupiter Program (Smart Contract), Jupiter Aggregator Engine, Jupiter Perps v2, JUP Token
+Sources:
+- https://dev.jup.ag/docs/intro (HIGH)
+- https://docs.solana.com/consensus (HIGH)
+- https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ (HIGH)
+
+Dependency Name: Pyth Network
+Dependency Type: Oracle
+Purpose: Price feeds for Jupiter Perps mark price, funding rate calculation, and liquidation triggers
+Criticality: Critical (for Perps)
+Status: Live
+Related Entity: Pyth Network (not explicitly listed in Phase 2 but referenced in Phase 4)
+Related Technology Component: Jupiter Perps v2, Oracle (Pyth Network)
+Sources:
+- https://dev.jup.ag/docs/perps/oracle (HIGH)
+- https://blog.jup.ag/perps-v2-jlp-launch/ (HIGH)
+
+Dependency Name: Wormhole
+Dependency Type: Bridge / Cross-chain Messaging
+Purpose: Cross-chain message passing for Jupiter Perps (early integration referenced; current production dependency not confirmed in latest docs)
+Criticality: Medium (Perps only; not used by Aggregator core)
+Status: Live (referenced in ecosystem pages; production usage for Perps v2 not explicitly confirmed in current Jupiter docs)
+Related Entity: Wormhole
+Related Technology Component: Jupiter Perps v2
+Sources:
+- https://wormhole.com/ecosystem/jupiter/ (MEDIUM)
+- https://dev.jup.ag/docs/perps/overview (MEDIUM) [no explicit Wormhole mention in current Perps v2 docs]
+
+Dependency Name: React / React Native
+Dependency Type: SDK / Frontend Framework
+Purpose: Jupiter Terminal (React widget), Jupiter Mobile App (React Native), web frontend
+Criticality: High (for frontend delivery)
+Status: Live
+Related Entity: (Open source framework — no single entity)
+Related Technology Component: Jupiter Terminal, Jupiter Mobile App
+Sources:
+- https://github.com/jup-ag/terminal (HIGH)
+- https://github.com/jup-ag/mobile (MEDIUM)
+- https://dev.jup.ag/docs/terminal/overview (HIGH)
+
+Dependency Name: TypeScript / Rust
+Dependency Type: SDK / Programming Language
+Purpose: Jupiter SDK (TypeScript, Rust), API client libraries, on-chain programs (Rust)
+Criticality: Critical
+Status: Live
+Related Entity: (Language ecosystems — no single entity)
+Related Technology Component: Jupiter SDK (TypeScript/Rust), Jupiter API, Jupiter Program
+Sources:
+- https://dev.jup.ag/docs/sdk/typescript (HIGH)
+- https://dev.jup.ag/docs/sdk/rust (HIGH)
+- https://github.com/jup-ag (HIGH)
+
+Dependency Name: Anchor / Native Rust (unconfirmed)
+Dependency Type: Development Framework
+Purpose: Smart contract development framework for Solana programs (whether Jupiter uses Anchor or native Rust not publicly confirmed)
+Criticality: Medium
+Status: Live (one of the two is used)
+Related Entity: (Framework — no single entity)
+Related Technology Component: Jupiter Program (Smart Contract)
+Sources:
+- https://docs.solana.com/programs (MEDIUM) [generic Solana reference; Jupiter-specific not confirmed]
+- https://github.com/jup-ag (LOW) [source code inspection needed]
+
+Dependency Name: Cloud Infrastructure (AWS/GCP/other — unconfirmed)
+Dependency Type: Cloud / Infrastructure
+Purpose: Hosting Jupiter API v6 (Ultra API), RPC nodes, indexing, backend services
+Criticality: High (for API reliability and latency)
+Status: Live (inferred; no public disclosure of provider)
+Related Entity: (Cloud provider — not disclosed)
+Related Technology Component: Jupiter API v6 / Ultra API
+Sources:
+- https://dev.jup.ag/docs/ultra-api/overview (MEDIUM) [enterprise SLA implies managed infra; provider not named]
+- https://github.com/jup-ag (LOW) [no infra-as-code public]
+
+Dependency Name: Solana RPC Providers (Helius, Triton, QuickNode, etc. — unconfirmed which)
+Dependency Type: Infrastructure / RPC
+Purpose: Transaction submission, account reads, program logs for API and frontend
+Criticality: High
+Status: Live (inferred; standard Solana app dependency)
+Related Entity: (RPC providers — not disclosed)
+Related Technology Component: Jupiter API, Jupiter SDK, Jupiter Terminal, Jupiter Mobile
+Sources:
+- https://dev.jup.ag/docs/api/overview (MEDIUM) [standard RPC dependency; specific providers not public]
+
+Dependency Name: GitHub
+Dependency Type: Infrastructure / Code Hosting
+Purpose: Source code hosting, CI/CD, issue tracking for all Jupiter repositories
+Criticality: High (for development workflow)
+Status: Live
+Related Entity: GitHub (jup-ag org)
+Related Technology Component: All open-source components (Program, SDK, Terminal, Mobile, API)
+Sources:
+- https://github.com/jup-ag (HIGH)
+
+## Major Integrations
+
+Integration Name: Jupiter Aggregator ↔ Solana DEXs (Raydium, Orca, Meteora, Lifinity, Phoenix, etc.)
+Integrated With: Raydium, Orca, Meteora, Lifinity, Phoenix, and other Solana DEXs
+Purpose: Aggregated liquidity routing for best price execution across multiple AMMs and orderbooks
+Status: Live
+Related Historical Event ID: EV-002 (v1 launch), EV-007 (v2 Metis), EV-012 (v3 Apollo), EV-018 (v4 Metis v2)
+Sources:
+- https://dev.jup.ag/docs/intro (HIGH)
+- https://blog.jup.ag/introducing-jupiter-v1/ (HIGH)
+- https://blog.jup.ag/jupiter-v2-metis-upgrade/ (HIGH)
+- https://blog.jup.ag/apollo-upgrade/ (HIGH)
+- https://blog.jup.ag/metis-v2-launch/ (HIGH)
+
+Integration Name: Jupiter Perps ↔ Pyth Network
+Integrated With: Pyth Network
+Purpose: Oracle price feeds for mark price, funding rates, liquidation
+Status: Live
+Related Historical Event ID: EV-005 (Perps v1 launch), EV-013 (Perps v2 JLP launch)
+Sources:
+- https://dev.jup.ag/docs/perps/oracle (HIGH)
+- https://blog.jup.ag/perps-v2-jlp-launch/ (HIGH)
+
+Integration Name: Jupiter Perps ↔ Wormhole
+Integrated With: Wormhole
+Purpose: Cross-chain messaging for Perps (referenced in Wormhole ecosystem page; production usage in v2 not explicitly confirmed in Jupiter docs)
+Status: Live (per Wormhole ecosystem page) / Unconfirmed current production dependency
+Related Historical Event ID: EV-005 (Perps v1 launch mentioned Wormhole integration)
+Sources:
+- https://wormhole.com/ecosystem/jupiter/ (MEDIUM)
+- https://dev.jup.ag/docs/perps/overview (MEDIUM) [no Wormhole mention in current v2 docs]
+
+Integration Name: JUP Token ↔ LFG Launchpad
+Integrated With: LFG Launchpad
+Purpose: Token launch platform for JUP TGE (LBP + airdrop)
+Status: Completed (TGE event)
+Related Historical Event ID: EV-008 (TGE via LFG Launchpad)
+Sources:
+- https://blog.jup.ag/jup-token-launch/ (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+Integration Name: Jupiter Terminal ↔ External dApps/Wallets
+Integrated With: Various Solana wallets and dApps (Phantom, Solflare, Backpack, etc. — specific partners not enumerated in public docs)
+Purpose: Embeddable swap widget for third-party integration
+Status: Live
+Related Historical Event ID: EV-006 (Terminal launch)
+Sources:
+- https://dev.jup.ag/docs/terminal/overview (HIGH)
+- https://github.com/jup-ag/terminal (HIGH)
+
+Integration Name: Jupiter API/SDK ↔ External Developers
+Integrated With: Developer ecosystem (wallets, trading bots, portfolio trackers, DeFi protocols)
+Purpose: Programmatic access to swap, limit order, DCA, perps via REST API and SDKs
+Status: Live
+Related Historical Event ID: EV-006 (API/SDK launch), EV-016 (Ultra API v6)
+Sources:
+- https://dev.jup.ag/docs/api/overview (HIGH)
+- https://dev.jup.ag/docs/ultra-api/overview (HIGH)
+- https://dev.jup.ag/docs/sdk/typescript (HIGH)
+
+Integration Name: Jupiter Mobile App ↔ iOS App Store / Google Play Store
+Integrated With: Apple App Store, Google Play Store
+Purpose: Distribution of native mobile application
+Status: Live
+Related Historical Event ID: EV-015 (Mobile App launch)
+Sources:
+- https://apps.apple.com/app/jupiter-exchange/id6473829101 (HIGH)
+- https://play.google.com/store/apps/details?id=ag.jup.mobile (HIGH)
+- https://blog.jup.ag/mobile-app-launch/ (HIGH)
+
+Integration Name: Jupiter DAO ↔ Vote.jup.ag (Governance Platform)
+Integrated With: vote.jup.ag (off-chain voting platform, likely Snapshot-based)
+Purpose: Governance proposal creation, voting, and signaling
+Status: Live
+Related Historical Event ID: EV-009 (DAO formation), EV-014 (Fee switch proposal)
+Sources:
+- https://vote.jup.ag/ (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+## Infrastructure Providers
+
+Provider: Solana Validator Network
+Service: Transaction processing, consensus, state validation
+Criticality: Critical
+Status: Live
+Sources:
+- https://docs.solana.com/consensus (HIGH)
+- https://dev.jup.ag/docs/intro (HIGH)
+
+Provider: Pyth Network
+Service: Oracle price feeds for Perps
+Criticality: Critical (Perps)
+Status: Live
+Sources:
+- https://dev.jup.ag/docs/perps/oracle (HIGH)
+
+Provider: Wormhole
+Service: Cross-chain messaging (Perps integration; current production usage unconfirmed)
+Criticality: Medium (Perps only)
+Status: Live (per Wormhole ecosystem) / Unconfirmed current
+Sources:
+- https://wormhole.com/ecosystem/jupiter/ (MEDIUM)
+
+Provider: GitHub (Microsoft)
+Service: Code hosting, CI/CD, collaboration
+Criticality: High
+Status: Live
+Sources:
+- https://github.com/jup-ag (HIGH)
+
+Provider: Cloud Provider (AWS/GCP/other — undisclosed)
+Service: API hosting, RPC nodes, backend infrastructure
+Criticality: High
+Status: Live (inferred)
+Sources:
+- https://dev.jup.ag/docs/ultra-api/overview (MEDIUM) [enterprise SLA implies managed cloud; provider not named]
+
+Provider: Solana RPC Providers (Helius, Triton, QuickNode, etc. — undisclosed which)
+Service: RPC access for transaction submission and data reads
+Criticality: High
+Status: Live (inferred)
+Sources:
+- https://dev.jup.ag/docs/api/overview (MEDIUM) [standard dependency; specific providers not public]
+
+Provider: CDN / Edge Network (Cloudflare / Fastly / other — undisclosed)
+Service: API latency optimization, DDoS protection, global distribution for Ultra API
+Criticality: Medium
+Status: Live (inferred from sub-100ms latency claims)
+Sources:
+- https://dev.jup.ag/docs/ultra-api/overview (MEDIUM) [sub-100ms latency implies edge/CDN; provider not named]
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes (JUPUSDT perpetual)
+OTC: Not confirmed
+Launchpool: No (JUP launched via LFG Launchpad, not Binance Launchpool)
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH) [markets tab shows Binance]
+- https://blog.jup.ag/jup-token-launch/ (HIGH) [mentions CEX listings]
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Not confirmed
+Launchpool: No
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Not confirmed
+Launchpool: No
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+
+Exchange: Coinbase
+Listing Status: Not listed (as of latest public info)
+Spot: No
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Not Listed
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH) [CoinGecko markets list; Coinbase not present]
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Yes
+Perpetual: Not confirmed
+OTC: Not confirmed
+Launchpool: No
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Not confirmed
+Launchpool: No
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Not confirmed
+Launchpool: No
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+
+Exchange: MEXC
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Not confirmed
+Launchpool: No
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+
+Exchange: Jupiter LFG Launchpad
+Listing Status: Primary Launch Venue
+Spot: Yes (LBP)
+Perpetual: No
+OTC: No
+Launchpool: Yes (Liquidity Bootstrapping Pool for TGE)
+Status: Completed (TGE event)
+Sources:
+- https://blog.jup.ag/jup-token-launch/ (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+## Wallet Ecosystem
+
+Wallet: Phantom
+Support Type: Native Jupiter Terminal embed; swap via Jupiter Aggregator; JUP token display; governance voting via wallet-connected vote.jup.ag
+Status: Live
+Sources:
+- https://phantom.app/ (MEDIUM) [Phantom integrates Jupiter Terminal per public announcements; specific integration doc not linked in Jupiter docs]
+- https://dev.jup.ag/docs/terminal/overview (HIGH) [Terminal works with any Solana wallet adapter]
+
+Wallet: Solflare
+Support Type: Jupiter Terminal embed; swap via Aggregator; JUP token support
+Status: Live
+Sources:
+- https://solflare.com/ (MEDIUM) [Solflare wallet adapter compatible with Jupiter Terminal]
+
+Wallet: Backpack
+Support Type: Jupiter Terminal embed; swap via Aggregator; xNFT support for Jupiter Terminal
+Status: Live
+Sources:
+- https://backpack.app/ (MEDIUM) [Backpack xNFT ecosystem includes Jupiter integrations]
+
+Wallet: Ledger (Hardware)
+Support Type: Transaction signing for Jupiter swaps/perps via wallet adapter (Phantom/Solflare/Backpack with Ledger)
+Status: Live
+Sources:
+- https://www.ledger.com/ (MEDIUM) [Standard Solana wallet adapter pattern]
+
+Wallet: Trust Wallet
+Support Type: SPL token support for JUP; swap via Jupiter Aggregator (if integrated)
+Status: Live (token support confirmed; aggregator integration not explicitly confirmed)
+Sources:
+- https://trustwallet.com/ (MEDIUM)
+
+Wallet: Exodus
+Support Type: JUP token support; swap integration not explicitly confirmed
+Status: Live (token support)
+Sources:
+- https://www.exodus.com/ (MEDIUM)
+
+Wallet: Magic Eden Wallet
+Support Type: JUP token support; Jupiter integration not explicitly confirmed
+Status: Live (token support)
+Sources:
+- https://magiceden.io/wallet (MEDIUM)
+
+## Developer Ecosystem
+
+SDK: Jupiter SDK TypeScript
+API: Jupiter REST API (v6 / Ultra API)
+Developer Tools: Jupiter Terminal (React widget), Jupiter SDK Rust, Jupiter API Client
+Open Source Repository: https://github.com/jup-ag (all core repos: jupiter-swap-api, terminal, mobile, sdk-typescript, sdk-rust, perps)
+Developer Portal: https://dev.jup.ag/
+Hackathon: Jupiter has sponsored/participated in Solana hackathons (Solana Hyperdrive, Grizzlython, etc.) — specific hackathon names and prizes not centrally documented
+Grant Program: Jupiter does not run a public grant program; Solana Foundation grants may flow to builders on Jupiter (not a Jupiter-run program)
+Sources:
+- https://dev.jup.ag/ (HIGH)
+- https://dev.jup.ag/docs/api/overview (HIGH)
+- https://dev.jup.ag/docs/sdk/typescript (HIGH)
+- https://dev.jup.ag/docs/sdk/rust (HIGH)
+- https://dev.jup.ag/docs/terminal/overview (HIGH)
+- https://github.com/jup-ag (HIGH)
+- https://solana.com/ecosystem/jupiter (MEDIUM) [Solana Foundation ecosystem page; grants via SF not Jupiter]
+
+## Applications
+
+Application: Jupiter Aggregator (Web App)
+Category: DEX Aggregator / Swap Interface
+Relationship: Core product — primary user-facing swap interface
+Status: Live
+Sources:
+- https://jup.ag/ (HIGH)
+- https://blog.jup.ag/introducing-jupiter-v1/ (HIGH)
+
+Application: Jupiter Limit Orders
+Category: DeFi Application / Order Management
+Relationship: Core product — on-chain limit order engine integrated with Aggregator
+Status: Live
+Sources:
+- https://jup.ag/products (HIGH)
+- https://dev.jup.ag/docs/limit-orders/overview (HIGH)
+
+Application: Jupiter DCA
+Category: DeFi Application / Automated Investment
+Relationship: Core product — dollar-cost averaging automation
+Status: Live
+Sources:
+- https://jup.ag/products (HIGH)
+- https://dev.jup.ag/docs/dca/overview (HIGH)
+
+Application: Jupiter Perps
+Category: Derivatives DEX / Perpetual Futures
+Relationship: Core product — perpetual futures trading with JLP liquidity pool
+Status: Live
+Sources:
+- https://jup.ag/products (HIGH)
+- https://dev.jup.ag/docs/perps/overview (HIGH)
+
+Application: Jupiter Terminal
+Category: Developer Tool / Embeddable Widget
+Relationship: Core product — React widget for third-party integration
+Status: Live
+Sources:
+- https://dev.jup.ag/docs/terminal/overview (HIGH)
+- https://github.com/jup-ag/terminal (HIGH)
+
+Application: Jupiter Mobile App
+Category: Mobile Application (iOS/Android)
+Relationship: Core product — native mobile frontend for all Jupiter products
+Status: Live
+Sources:
+- https://blog.jup.ag/mobile-app-launch/ (HIGH)
+- https://apps.apple.com/app/jupiter-exchange/id6473829101 (HIGH)
+- https://play.google.com/store/apps/details?id=ag.jup.mobile (HIGH)
+
+Application: LFG Launchpad
+Category: Token Launch Platform
+Relationship: Product under Jupiter Exchange — used for JUP TGE and future project launches
+Status: Live
+Sources:
+- https://blog.jup.ag/jup-token-launch/ (HIGH)
+- https://jup.ag/products (HIGH) [listed under products]
+
+Application: vote.jup.ag
+Category: Governance Application
+Relationship: DAO governance interface (off-chain voting, on-chain execution via multisig)
+Status: Live
+Sources:
+- https://vote.jup.ag/ (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+## Governance Ecosystem
+
+Foundation: Jupiter Exchange Ltd. (BVI legal entity)
+DAO: Jupiter DAO
+Council: Not established (no public council structure; governance is token-weighted via DAO)
+Committee: Not established (no public committees; multisig executes proposals)
+Validator Group: Not applicable (Jupiter does not operate validators)
+Sources:
+- https://opencorporates.com/companies/bvi/2055186 (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+- https://vote.jup.ag/ (HIGH)
+- https://forum.jup.ag/ (MEDIUM)
+
+## Ecosystem Risks
+
+Single Chain Dependency: 100% of Jupiter products (Aggregator, Perps, Limit Orders, DCA, Terminal, Mobile, JUP token) operate exclusively on Solana. Solana downtime, congestion, or consensus failure directly halts all Jupiter operations.
+Sources:
+- https://dev.jup.ag/docs/intro (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+Oracle Dependency (Perps): Jupiter Perps relies entirely on Pyth Network for mark prices, funding rates, and liquidation triggers. Pyth oracle failure, manipulation, or delay can cause incorrect liquidations or unfair funding rates.
+Sources:
+- https://dev.jup.ag/docs/perps/oracle (HIGH)
+- https://blog.jup.ag/perps-v2-jlp-launch/ (HIGH)
+
+Bridge / Cross-chain Dependency (Perps): Early documentation references Wormhole for Perps cross-chain messaging. If still used, Wormhole outage or exploit affects Perps cross-chain functionality. Current production dependency not confirmed in latest Jupiter docs.
+Sources:
+- https://wormhole.com/ecosystem/jupiter/ (MEDIUM)
+- https://dev.jup.ag/docs/perps/overview (MEDIUM) [no Wormhole mention in current v2 docs]
+
+Cloud / Infrastructure Centralization: Jupiter API v6 (Ultra API), RPC nodes, and backend infrastructure run on undisclosed cloud provider(s). Single cloud provider outage or misconfiguration could degrade API performance or availability.
+Sources:
+- https://dev.jup.ag/docs/ultra-api/overview (MEDIUM) [enterprise SLA implies managed infra; provider not named]
+
+Upgrade Authority Centralization: Jupiter Program is upgradeable (not immutable). Upgrade authority controlled by multisig (signers not public). Compromise of upgrade authority could allow malicious program changes.
+Sources:
+- https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ (HIGH)
+- https://docs.jup.ag/security (MEDIUM)
+
+Treasury Concentration in Native Token: DAO treasury holds ~40% of JUP supply (4B JUP). Treasury value highly correlated with JUP price; market downturn reduces DAO funding capacity.
+Sources:
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+Fee Switch Not Activated: Protocol fees currently do not flow to DAO treasury (fee switch proposal ongoing). DAO relies on token treasury rather than protocol revenue for operations.
+Sources:
+- https://vote.jup.ag/ (MEDIUM)
+- https://blog.jup.ag/fee-switch-proposal/ (HIGH)
+
+Multisig Signer Opacity: DAO treasury and program upgrade multisig signers not publicly disclosed. Governance execution transparency limited.
+Sources:
+- https://blog.jup.ag/jup-tokenomics/ (MEDIUM) [mentions multisig but no signer list]
+- https://forum.jup.ag/ (MEDIUM) [discussions reference multisig but no public disclosure]
+
+## Official Ecosystem Resources
+
+Official Documentation: https://dev.jup.ag/
+Developer Portal: https://dev.jup.ag/
+GitHub: https://github.com/jup-ag
+Partner Documentation: https://wormhole.com/ecosystem/jupiter/ (Wormhole side)
+Grant Program: https://solana.com/ecosystem/jupiter (Solana Foundation ecosystem — not Jupiter-run)
+Ecosystem Dashboard: https://vote.jup.ag/ (governance); https://jup.ag/ (main site); no unified ecosystem dashboard
+
+## RINGKASAN
+
+Primary Ecosystem: Solana DeFi
+Supported Chains: Solana (primary); Wormhole cross-chain messaging referenced for Perps (current production usage unconfirmed)
+External Dependencies: 9 (Solana, Pyth, Wormhole, React/React Native, TypeScript/Rust, Anchor/Native Rust, Cloud Infra, RPC Providers, GitHub)
+Major Integrations: 8 (Solana DEXs aggregate, Pyth, Wormhole, LFG Launchpad, Terminal embed targets, API/SDK consumers, Mobile app stores, vote.jup.ag)
+Infrastructure Providers: 7 (Solana Validators, Pyth, Wormhole, GitHub, Cloud Provider, RPC Providers, CDN/Edge)
+Developer Programs: 4 (TypeScript SDK, Rust SDK, REST API, Terminal Widget) + open source repos; no Jupiter-run grant program
+Applications: 8 (Aggregator, Limit Orders, DCA, Perps, Terminal, Mobile, LFG Launchpad, vote.jup.ag)
+
+## Open Threads
+
+- Wormhole current production dependency for Jupiter Perps v2 — Wormhole ecosystem page lists Jupiter; Jupiter Perps v2 docs do not mention Wormhole. Need clarification from Jupiter or Wormhole team.
+- Cloud infrastructure provider(s) for Jupiter API v6 / Ultra API — not disclosed; enterprise SLA implies managed cloud but provider unnamed.
+- Solana RPC provider(s) used by Jupiter API and frontend — not disclosed; standard dependency but specific partners unknown.
+- CDN / edge network provider for Ultra API sub-100ms latency — not disclosed.
+- Jupiter Program upgrade authority multisig signers — on-chain verifiable via Solscan program account but not published in human-readable form.
+- DAO treasury multisig signers — not publicly disclosed; governance execution transparency gap.
+- Anchor vs Native Rust for Jupiter Program — not confirmed in docs; requires source code inspection.
+- Jupiter-run grant program — none identified; Solana Foundation grants may support Jupiter builders but not a Jupiter program.
+- Hackathon participation details — Jupiter has sponsored Solana hackathons but no centralized record of events, prizes, or outcomes.
+- Wallet integration specifics — Jupiter Terminal works via wallet adapter standard; specific wallet partnerships (Phantom, Solflare, Backpack) announced but not centrally documented in Jupiter docs.
+- Exchange listing completeness — CoinGecko shows 20+ markets; only major CEXs listed above. Long-tail exchange listings not exhaustively verified.
+- JLP (Jupiter Liquidity Pool) external integrations — whether other protocols integrate with JLP as liquidity source not documented.
+- Cross-chain JUP token (wormhole-wrapped JUP on Ethereum, Arbitrum, etc.) — not confirmed; Wormhole token bridge may exist but not officially supported by Jupiter.
+- Solana Foundation grant history to Jupiter — listed on ecosystem page but grant amounts, dates, and terms not public.

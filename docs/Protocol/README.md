@@ -33,12 +33,17 @@ Every session (human or AI) that operates on the repository.
 ```
 Protocol/
 ├── SessionProtocol.md      # The baseline flow every session follows
+├── Lessons.md              # Failure classes already paid for + the rule each produced
 ├── Deep-Research-Brief.md  # Canonical 22-section research prompt + how it maps into CIF
 ├── Role-Ingest-Deep.md     # Runbook: one deep research report → deep case study
 ├── Role-Ingest-Batch.md    # Runbook: summary batch → many project profiles
 ├── Role-Tracking.md        # Runbook: follow a live project over time
 └── Role-Analysis.md        # Runbook: predict a new project via analogs
 ```
+
+**Read `Lessons.md` before changing pipeline code or a data contract.** It is the one file here that
+is not a runbook: it records what has already gone wrong and the rule that came out of it, so a fresh
+session does not re-derive the same mistake. Most entries happened twice before being written down.
 
 ## Workflow Position
 

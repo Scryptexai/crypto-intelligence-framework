@@ -1,0 +1,211 @@
+PROJECT: EigenLayer
+
+## Token Information
+
+Official Token Name: EIGEN
+Symbol: EIGEN
+Token Standard: ERC20
+Blockchain: Ethereum
+Contract Address: 0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9
+Decimals: 18
+Status: Live
+Sources: (HIGH) [Etherscan, https://etherscan.io/token/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9]; (HIGH) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+## Supply
+
+Maximum Supply: 1.673.333.333 EIGEN (fixed max supply per tokenomics) (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+Total Supply: 1.673.333.333 EIGEN (minted at TGE, no further minting except inflation for intersubjective work rewards) (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+Circulating Supply: ~186.000.000 EIGEN (approx 11.1% of max supply, as of 2024-10 per Season 1 unlock) (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/; CoinGecko, https://www.coingecko.com/en/coins/eigenlayer]
+Initial Supply: 1.673.333.333 EIGEN (fully minted at deployment) (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+Supply Type: Inflationary (intersubjective work rewards minted over time; max supply cap exists but inflation reduces effective scarcity) (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+## Distribution
+
+Community (Season 1 + Season 2 + Future Community): 45% (753.000.000 EIGEN) (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+Team (Core Contributors): 15% (251.000.000 EIGEN) (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+Investors (Series A, Series B, Seed/Strategic): 29.5% (493.633.333 EIGEN) (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+Foundation (Eigen Foundation Treasury): 10.5% (175.700.000 EIGEN) (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+Ecosystem (AVS Incentives, Operator Rewards, Grants): tidak terpisah sebagai kategori terpisah — termasak dalam Community/Foundation allocation per blog resmi (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+Advisors: tidak diungkap sebagai kategori terpisah; kemungkinan termasuk dalam Team atau Investors (LOW) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+Other: tidak diungkap (LOW) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/] — catatan: blog resmi menyebut "Season 1: 5% (83.6M), Season 2: 10% (167.3M), Future Community: 30% (502M)" = total 45% Community; "Core Contributors: 15%"; "Investors: 29.5%"; "Foundation: 10.5%". Persentase lain tidak terpisah.
+
+## Vesting Schedule
+
+Category: Community — Season 1
+Cliff: 0 bulan (TGE unlock)
+Vesting: Linear 12 bulan post-TGE
+Unlock Frequency: Bulanan (pro-rata)
+Current Status: Ongoing (dimulai 2024-10-01)
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+Category: Community — Season 2
+Cliff: 6 bulan post-TGE
+Vesting: Linear 18 bulan (total 24 bulan dari TGE)
+Unlock Frequency: Bulanan
+Current Status: Planned (cliff ends 2025-04)
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+Category: Community — Future Community (30%)
+Cliff: tidak diungkap (kemungkinan >1 tahun)
+Vesting: tidak diungkap (long-term emissions)
+Unlock Frequency: tidak diungkap
+Current Status: Planned
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+Category: Team (Core Contributors)
+Cliff: 12 bulan post-TGE
+Vesting: Linear 36 bulan (total 48 bulan dari TGE)
+Unlock Frequency: Bulanan
+Current Status: Locked (cliff ends 2025-10)
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+Category: Investors
+Cliff: 12 bulan post-TGE (untuk sebagian besar investor)
+Vesting: Linear 24-36 bulan (variasi per ronde)
+Unlock Frequency: Bulanan / Kuartalan
+Current Status: Locked (cliff ends 2025-10 untuk Series A/B)
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+Category: Foundation
+Cliff: tidak diungkap
+Vesting: tidak diungkap (dikelola oleh Eigen Foundation untuk ekosistem)
+Unlock Frequency: tidak diungkap
+Current Status: Managed by Foundation
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+## TGE
+
+TGE Date: 2024-10-01
+Initial Unlock: ~5% of max supply (83.666.667 EIGEN — Season 1 allocation)
+Unlocked Categories: Community Season 1 (5%); sebagian kecil Foundation untuk likuiditas awal (tidak diungkap persis)
+Launch Platform: Ethereum Mainnet (contract deployment); Listing simultan di Binance, Bybit, OKX, Gate.io, KuCoin, dll (CEX)
+Status: Completed
+Sources: (HIGH) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]; (HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/eigen-eigen-listing]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/eigenlayer]
+
+## Utility
+
+Utility: Governance
+Deskripsi: Staker EIGEN dapat berpartisipasi dalam governance protokol (parameter changes, AVS onboarding, treasury allocation) melalui voting on-chain / Snapshot
+Status: Live (staking untuk governance aktif sejak Season 2 launch 2024-10)
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]; (MEDIUM) [EigenLayer Docs Governance, https://docs.eigenlayer.xyz/docs/governance/overview]
+
+Utility: Intersubjective Work Staking (Security)
+Deskripsi: EIGEN di-stake untuk mengamankan "intersubjective work" — tugas yang tidak dapat diverifikasi secara objektif on-chain (misal: data availability withholding, oracle manipulation) melalui social consensus slashing
+Status: Live (mekanisme staking aktif; slashing intersubjective dalam pengembangan)
+Sources: (HIGH) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]; (HIGH) [EigenLayer Whitepaper, https://www.eigenlayer.xyz/eigenlayer-whitepaper.pdf]
+
+Utility: AVS Security (Universal Intersubjective Work Token)
+Deskripsi: EIGEN dapat digunakan oleh AVS manapun sebagai token staking untuk shared security, menggantikan kebutuhan native token AVS sendiri
+Status: Planned / Early Adoption (beberapa AVS merencanakan integrasi EIGEN staking)
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]; (MEDIUM) [EigenLayer Whitepaper, https://www.eigenlayer.xyz/eigenlayer-whitepaper.pdf]
+
+Utility: Fee Payment (EigenDA)
+Deskripsi: Rollup membayar fee EigenDA dalam ETH/ERC20; EIGEN tidak wajib untuk fee payment tapi bisa digunakan sebagai payment option di masa depan
+Status: Planned (tidak live pada 2024-10)
+Sources: (LOW) [EigenLayer Docs EigenDA, https://docs.eigenlayer.xyz/docs/eigenda/overview] — docs tidak eksplisit menyebut EIGEN sebagai fee token
+
+Utility: Operator Incentive / Reward
+Deskripsi: Operator yang mengamankan AVS menggunakan EIGEN staking mendapatkan reward dari emisi intersubjective work
+Status: Live (emisi reward dimulai post-TGE)
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+Utility: Collateral (Slashing)
+Deskripsi: EIGEN yang di-stake dapat di-slash jika operator/AVS melakukan misbehavior intersubjective (bukti sosial)
+Status: Live (smart contract deployed; slashing logic aktif)
+Sources: (HIGH) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]; (HIGH) [EigenLayer Contracts SlashingManager, https://github.com/Layr-Labs/eigenlayer-contracts]
+
+## Governance
+
+Governance Model: Token-weighted voting via EIGEN staking; Eigen Foundation multisig untuk emergency/upgrade hingga on-chain governance sepenuhnya live
+Voting System: On-chain voting melalui Governor contract (berbasis OpenZeppelin Governor) + Snapshot untuk signaling off-chain
+Voting Power: 1 EIGEN staked = 1 vote (delegatable ke operator/address lain)
+Delegation: Supported — staker dapat mendelegasikan voting power ke delegate (operator, komunitas, dll)
+Proposal System: Proposal dibuat via Governor contract; threshold quorum dan voting period dikonfigurasi on-chain; execution via timelock
+Treasury Governance: Eigen Foundation mengelola treasury (10.5% allocation); proposal komunitas dapat mengarahkan pengeluaran melalui governance
+Status: Partially Live (staking + delegation live; on-chain execution via timelock dalam transisi)
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]; (MEDIUM) [EigenLayer Docs Governance, https://docs.eigenlayer.xyz/docs/governance/overview]; (MEDIUM) [EigenLayer Contracts Governor, https://github.com/Layr-Labs/eigenlayer-contracts]
+
+## Inflation / Deflation
+
+Inflation Mechanism: Intersubjective work rewards — emisian token baru untuk staker EIGEN yang mengamankan intersubjective tasks (target ~5-10% APY awal, menurun seiring waktu)
+Emission Schedule: Tidak dipublikasikan sebagai kurva matematis pasti; "programmatic emissions" dikontrol oleh governance; total emissions tidak melebihi max supply cap
+Burn Mechanism: Tidak ada burn mechanism native (fee burn, buyback burn) pada 2024-10
+Buyback: Tidak ada program buyback resmi
+Supply Reduction: Tidak ada (max supply fixed, tapi inflation menambah circulating supply hingga cap)
+Status: Inflationary (emisi reward intersubjective work)
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]; (MEDIUM) [EigenLayer Whitepaper, https://www.eigenlayer.xyz/eigenlayer-whitepaper.pdf]
+
+## Holder Distribution
+
+Top Holder Concentration: Top 10 holder mengontrol ~65-70% supply (termasuk Foundation, Investor vesting contracts, Season 1/2 claim contracts, Binance hot wallet) per on-chain analysis 2024-10
+Foundation Holding: 10.5% (175.7M EIGEN) — di multisig Eigen Foundation / vesting contracts
+Investor Holding: 29.5% (493.6M EIGEN) — di investor vesting contracts (locked hingga 2025-10+)
+Treasury Holding: Termasuk dalam Foundation Holding (Eigen Foundation mengelola treasury)
+Community Holding: ~5% circulating (Season 1 unlocked); 15% additional locked (Season 2 + Future Community)
+Whale Concentration: Tinggi — investor + team + foundation = ~55% supply locked; CEX wallet (Binance) ~3-5% circulating
+Sources: (MEDIUM) [Etherscan Token Holders, https://etherscan.io/token/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9#balances]; (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+## Major Token Events
+
+Date: 2024-10-01
+Event: Token Generation Event (TGE) & Season 1 Claim
+Description: Kontrak EIGEN dideploy, 5% supply (Season 1) claimable oleh early restaker & kontributor; listing simultan di Binance & CEX lain
+Status: Completed
+Related Historical Event ID: EV-012, EV-013
+Sources: (HIGH) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]; (HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/eigen-eigen-listing]
+
+Date: 2024-10 (minggu ke-2)
+Event: Season 2 Distribution Launch & Governance Staking Activation
+Description: Season 2 claim dibuka (10% supply), EIGEN staking untuk governance dan intersubjective work rewards diaktifkan
+Status: Ongoing
+Related Historical Event ID: EV-014
+Sources: (HIGH) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+Date: 2025-04 (est)
+Event: Season 2 Cliff Ends — Linear Vesting Begins
+Description: Season 2 allocation (10%) mulai vesting linear 18 bulan
+Status: Planned
+Related Historical Event ID: (belum ada di Phase 3)
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+Date: 2025-10 (est)
+Event: Team & Investor Cliff Ends
+Description: Core Contributors (15%) dan Investors (29.5%) cliff 12 bulan berakhir, vesting linear dimulai
+Status: Planned
+Related Historical Event ID: (belum ada di Phase 3)
+Sources: (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+## Official Token Resources
+
+Official Documentation: https://docs.eigenlayer.xyz/
+Whitepaper: https://www.eigenlayer.xyz/eigenlayer-whitepaper.pdf
+Governance: https://docs.eigenlayer.xyz/docs/governance/overview, https://github.com/eigenfoundation
+Explorer: https://etherscan.io/token/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9
+Contract: https://etherscan.io/address/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9#code
+GitHub: https://github.com/Layr-Labs/eigenlayer-contracts, https://github.com/eigenfoundation
+Dashboard: tidak ada dashboard token resmi terpusat; gunakan Etherscan / CoinGecko / Token Terminal
+
+## RINGKASAN
+
+Status: Live (TGE 2024-10-01)
+Supply Type: Inflationary (intersubjective work rewards) dengan max supply cap 1.673.333.333 EIGEN
+Total Supply: 1.673.333.333 EIGEN
+Distribution Categories: Community 45% (Season 1 5%, Season 2 10%, Future 30%), Team 15%, Investors 29.5%, Foundation 10.5%
+Utility Count: 6 (Governance, Intersubjective Work Staking, AVS Security, Fee Payment planned, Operator Incentive, Collateral/Slashing)
+Governance: Token-weighted voting via staked EIGEN, delegation supported, on-chain execution via Governor + timelock, Foundation multisig transitional
+Major Token Events: TGE & Season 1 Claim (2024-10-01), Season 2 & Governance Staking (2024-10), Season 2 Vesting Start (2025-04 est), Team/Investor Cliff End (2025-10 est)
+
+## Open Threads
+
+- Kurva emisi (emission schedule) yang pasti untuk intersubjective work rewards — blog menyebut "programmatic emissions controlled by governance" tapi tidak mempublikasikan formula/k curve; perlu dokumen teknis terpisah atau proposal governance.
+- Persentase alokasi "Advisors" — tidak terpisah di blog resmi; apakah termasuk dalam Team (15%) atau Investors (29.5%)? Perlu klarifikasi dari Eigen Foundation.
+- Detail vesting per investor (Series A vs Series B vs Seed) — blog hanya menyebut "Investors 29.5% cliff 12 bulan vesting 24-36 bulan" tanpa breakdown per ronde; perlu cek vesting contracts on-chain atau legal docs.
+- Foundation treasury management — 10.5% allocation dikelola Eigen Foundation; tidak ada dashboard transparansi on-chain untuk tracking pengeluaran; perlu verifikasi multisig address dan spending history.
+- Apakah ada "fee switch" untuk EigenLayer core protocol yang mengarahkan fee ke EIGEN staker — blog tidak menyebut; EigenDA fees dibayar dalam ETH/ERC20 ke operator; perlu klarifikasi dari tim.
+- Mekanisme slashing intersubjective work yang pasti — whitepaper deskripsikan konsep tapi implementasi on-chain (bukti sosial, juri, appeal process) tidak sepenuhnya terdokumentasikan di SDK publik.
+- Cross-AVS slashing isolation — apakah EIGEN yang di-stake untuk AVS A terisolir dari slashing di AVS B? AllocationManager mengelola alokasi per AVS tapi EIGEN staking pool bersifat universal; perlu konfirmasi teknis.
+- Season 2 claim criteria detail — blog menyebut "based on activity" tapi tidak rinci; perlu cek merkle root / claim contract untuk kriteria pasti.
+- Tokenomics legal opinion / regulatory classification — tidak dipublikasikan; struktur Cayman Foundation + Delaware Corp + token utility kompleks memerlukan analisis legal terpisah.
+- Actual circulating supply real-time — Etherscan menunjukkan total supply 1.67B tapi circulating supply tergantung vesting contract unlock; tidak ada API resmi untuk circulating supply terverifikasi (CoinGecko/CoinMarketCap estimasi).

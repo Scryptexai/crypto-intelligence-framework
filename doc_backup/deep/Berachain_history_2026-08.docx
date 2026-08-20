@@ -1,0 +1,885 @@
+PROJECT: Berachain
+
+Event ID
+
+EV-001
+
+Date
+
+2022
+
+Event Name
+
+Konsep Proof-of-Liquidity dan Pendirian Proyek Berachain
+
+Event Type
+
+Founding
+
+Description
+
+Tim pendiri (Smokey the Bera, Dev Bear, Papa Bear) mulai mengembangkan konsep Proof-of-Liquidity sebagai konsensus baru untuk blockchain L1 EVM-compatible. Proyek dimulai secara pseudonim tanpa entity hukum formal pada tahap ini.
+
+Participants
+
+Smokey the Bera; Dev Bear; Papa Bear
+
+Location
+
+Global (tim terdistribusi)
+
+Status
+
+Completed
+
+Immediate Result
+
+Dasar teknis dan filosofis untuk protokol Berachain; arsitektur awal PoL dirancang.
+
+Sources
+
+https://berachain.com
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2023
+
+Event Name
+
+Pendirian Berachain Foundation di Cayman Islands
+
+Event Type
+
+Organization
+
+Description
+
+Berachain Foundation didirikan sebagai entitas hukum non-profit di Cayman Islands untuk mengelola pengembangan protokol, treasury, dan governance ekosistem Berachain.
+
+Participants
+
+Berachain Foundation; Cayman Islands Jurisdiction
+
+Location
+
+Cayman Islands
+
+Status
+
+Completed
+
+Immediate Result
+
+Struktur hukum formal untuk operasi protokol; fondasi menjadi pengelola treasury dan pengawas pengembangan.
+
+Sources
+
+https://berachain.com
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2023-01-12
+
+Event Name
+
+Peluncuran Artio Testnet v1
+
+Event Type
+
+Launch
+
+Description
+
+Testnet pertama Berachain (Artio v1) diluncurkan untuk memvalidasi arsitektur Proof-of-Liquidity, EVM compatibility, dan integrasi Cosmos SDK/CometBFT. Testnet bersifat permissioned/closed untuk validator early.
+
+Participants
+
+Berachain; Core Contributors (pseudonymous handles); Cosmos SDK; CometBFT
+
+Location
+
+Global (testnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi awal konsensus PoL; umpan balik teknis dari validator early; identifikasi bug konsensus dan EVM execution.
+
+Sources
+
+https://docs.berachain.com
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2023
+
+Event Name
+
+Pembuatan Repository GitHub Resmi Berachain
+
+Event Type
+
+Infrastructure
+
+Description
+
+Repository github.com/berachain dibuat sebagai pusat kode sumber terbuka untuk protokol inti, smart contracts, tooling, dan dokumentasi teknis.
+
+Participants
+
+Berachain; Core Contributors (pseudonymous handles); Berachain GitHub Repository
+
+Location
+
+GitHub (github.com/berachain)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Kode basis terbuka untuk kontribusi komunitas; transparansi pengembangan; CI/CD pipeline untuk testing.
+
+Sources
+
+https://github.com/berachain
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2023
+
+Event Name
+
+Peluncuran Komunitas Resmi: Discord, Twitter/X, Telegram
+
+Event Type
+
+Community
+
+Description
+
+Saluran komunitas resmi dibuka: Discord (discord.gg/berachain), Twitter/X (@berachain), dan Telegram (@berachainofficial) untuk koordinasi pengembang, validator, dan pengguna.
+
+Participants
+
+Berachain Discord Community; Berachain Twitter/X; Berachain Telegram
+
+Location
+
+Online
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Saluran komunikasi terpusat; onboarding validator dan kontributor; announcements protokol.
+
+Sources
+
+https://discord.gg/berachain
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2024-01-11
+
+Event Name
+
+Peluncuran Artio Testnet v2
+
+Event Type
+
+Launch
+
+Description
+
+Testnet Artio v2 diluncurkan dengan perbaikan signifikan pada konsensus PoL, EVM precompiles, dan integrasi IBC. Testnet lebih terbuka untuk partisipasi validator dan pengembang aplikasi.
+
+Participants
+
+Berachain; Core Contributors (pseudonymous handles); Cosmos SDK; CometBFT; IBC (Inter-Blockchain Communication)
+
+Location
+
+Global (testnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi IBC compatibility; stress test throughput; feedback untuk mainnet readiness.
+
+Sources
+
+https://docs.berachain.com
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2024-06-06
+
+Event Name
+
+Peluncuran Berachain Mainnet (Genesis)
+
+Event Type
+
+Launch
+
+Description
+
+Mainnet Berachain genesis diluncurkan pada blok 0 dengan Proof-of-Liquidity consensus live. Validator set awal diaktifkan; BGT (governance token) mulai di-emit melalui proof-of-liquidity; native apps (BEX, Bend, Berps) deployed.
+
+Participants
+
+Berachain; Berachain Foundation; Core Contributors (pseudonymous handles); BEX; Bend; Berps; BGT (Berachain Governance Token); HONEY; Cosmos SDK; CometBFT
+
+Location
+
+Global (mainnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Mainnet live; validator set aktif; emisi BGT dimulai; aplikasi native DeFi operational; IBC channels dibuka.
+
+Sources
+
+https://docs.berachain.com
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2024-06
+
+Event Name
+
+Deployment Aplikasi Native: BEX, Bend, Berps di Mainnet
+
+Event Type
+
+Product
+
+Description
+
+Tiga aplikasi DeFi native (BEX sebagai DEX, Bend sebagai lending, Berps sebagai perpetuals) dideploy dan operational di mainnet Berachain segera setelah genesis.
+
+Participants
+
+BEX; Bend; Berps; Berachain
+
+Location
+
+Berachain Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Liquidity dan trading infrastructure live; BGT emission melalui liquidity provision di BEX; HONEY stablecoin beredar.
+
+Sources
+
+https://docs.berachain.com
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2024-10
+
+Event Name
+
+Peluncuran Artio Testnet v3
+
+Event Type
+
+Launch
+
+Description
+
+Testnet Artio v3 diluncurkan sebagai final testnet sebelum TGE, fokus pada stress testing fee switch, BGT delegation mechanics, dan upgradeability framework.
+
+Participants
+
+Berachain; Core Contributors (pseudonymous handles); Cosmos SDK; CometBFT
+
+Location
+
+Global (testnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi fee switch mechanics; testing upgrade governance; persiapan TGE.
+
+Sources
+
+https://docs.berachain.com
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2024
+
+Event Name
+
+Peluncuran Berascan Block Explorer Resmi
+
+Event Type
+
+Infrastructure
+
+Description
+
+Berascan (berascan.com) diluncurkan sebagai block explorer resmi untuk mainnet Berachain, menyediakan pencarian transaksi, blok, token, validator, dan analytics on-chain.
+
+Participants
+
+Berascan; Berachain
+
+Location
+
+https://berascan.com
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Transparansi on-chain untuk pengguna dan pengembang; veriifkasi transaksi dan token; analytics ekosistem.
+
+Sources
+
+https://berascan.com
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2025-02-06
+
+Event Name
+
+Token Generation Event (TGE) BERA
+
+Event Type
+
+Token
+
+Description
+
+Token BERA (Berachain Gas Token) resmi diluncurkan melalui TGE. BERA menjadi native gas token, staking token untuk validator, dan base currency ekosistem. Distribusi ke komunitas, ekosistem, dan early contributors sesuai tokenomics.
+
+Participants
+
+BERA (Berachain Gas Token); Berachain Foundation; Berachain; Core Contributors (pseudonymous handles)
+
+Location
+
+Berachain Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+BERA transferable dan tradable; staking validator aktif; fee switch BGT dapat mengarahkan revenue ke staker BGT; listing di CEX/DEX dimulai.
+
+Sources
+
+https://berachain.com
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2025-02
+
+Event Name
+
+Listing BERA di Centralized Exchanges (CEX) dan DEX
+
+Event Type
+
+Market
+
+Description
+
+Token BERA mulai listing di berbagai centralized exchange dan decentralized exchange setelah TGE, menyediakan liquidity pasar dan price discovery.
+
+Participants
+
+BERA (Berachain Gas Token); BEX; Centralized Exchanges (tidak diketahui spesifik)
+
+Location
+
+Global (CEX/DEX)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Price discovery BERA; akses liquidity untuk pengguna baru; trading pairs BERA/USDT, BERA/ETH, dll.
+
+Sources
+
+https://berachain.com
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2023-2024
+
+Event Name
+
+Pengembangan Dokumentasi Teknis Resmi (docs.berachain.com)
+
+Event Type
+
+Infrastructure
+
+Description
+
+Dokumentasi teknis komprehensif dipublikasikan di docs.berachain.com mencakup arsitektur PoL, smart contract addresses, API references, validator guides, dan developer onboarding.
+
+Participants
+
+Berachain; Core Contributors (pseudonymous handles)
+
+Location
+
+https://docs.berachain.com
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Referensi teknis terpusat untuk pengembang, validator, dan integrator; onboarding ekosistem dipercepat.
+
+Sources
+
+https://docs.berachain.com
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2024
+
+Event Name
+
+Integrasi IBC (Inter-Blockchain Communication) di Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+Berachain mengaktifkan IBC channels di mainnet untuk interoperabilitas dengan chain Cosmos ecosystem lainnya (Osmosis, Celestia, dll), memungkinkan transfer aset cross-chain native.
+
+Participants
+
+Berachain; IBC (Inter-Blockchain Communication); Cosmos SDK
+
+Location
+
+Berachain Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Cross-chain asset transfer live; composability dengan ekosistem Cosmos; relayer infrastructure operational.
+
+Sources
+
+https://docs.berachain.com
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2024
+
+Event Name
+
+Peluncuran HONEY Stablecoin di Mainnet
+
+Event Type
+
+Product
+
+Description
+
+HONEY (stablecoin native soft-pegged ke USD) diluncurkan di mainnet sebagai medium of exchange dan collateral utama di ekosistem DeFi Berachain (BEX, Bend, Berps).
+
+Participants
+
+HONEY; BEX; Bend; Berps; Berachain
+
+Location
+
+Berachain Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Stablecoin beredar; digunakan sebagai base pair di BEX; collateral di Bend; settlement asset di Berps.
+
+Sources
+
+https://docs.berachain.com
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2024
+
+Event Name
+
+Aktivasi BGT (Berachain Governance Token) Emisi via Proof-of-Liquidity
+
+Event Type
+
+Token
+
+Description
+
+BGT (non-transferable governance token) mulai di-emit ke liquidity provider di BEX melalui mekanisme Proof-of-Liquidity. BGT digunakan untuk voting governance dan mengarahkan emisi reward.
+
+Participants
+
+BGT (Berachain Governance Token); BEX; Berachain
+
+Location
+
+Berachain Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Governance token terdistribusi ke LP; voting power terkumpul; emission direction mechanism aktif.
+
+Sources
+
+https://docs.berachain.com
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2024-2025
+
+Event Name
+
+Pertemuan Governance Komunitas dan Proposal Pertama
+
+Event Type
+
+Governance
+
+Description
+
+Komunitas memulai proses governance on-chain menggunakan BGT untuk proposal parameter protokol, fee switch activation, dan emission adjustments.
+
+Participants
+
+BGT (Berachain Governance Token); Berachain Foundation; Berachain Discord Community
+
+Location
+
+Berachain Mainnet / Discord
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Governance framework tested; proposal process established; komunitas berpartisipasi dalam keputusan protokol.
+
+Sources
+
+https://docs.berachain.com
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2023-2025
+
+Event Name
+
+Pertumbuhan Ekosistem: Integrasi Protokol Eksternal dan Tooling
+
+Event Type
+
+Ecosystem
+
+Description
+
+Berbagai protokol DeFi, infrastructure provider (oracle, indexer, wallet), dan tooling (Hardhat, Foundry, MetaMask support) mengintegrasikan dengan Berachain mainnet dan testnet.
+
+Participants
+
+Berachain; Ethereum (EVM compatibility); Infrastructure providers (tidak diketahui spesifik)
+
+Location
+
+Berachain Mainnet / Testnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Ekosistem tooling matang; developer experience setara Ethereum; integrasi wallet dan explorer luas.
+
+Sources
+
+https://docs.berachain.com
+
+---
+
+### KELOMPOKKAN BERDASARKAN TAHUN
+
+#### 2022
+- EV-001: Konsep Proof-of-Liquidity dan Pendirian Proyek Berachain
+
+#### 2023
+- EV-002: Pendirian Berachain Foundation di Cayman Islands
+- EV-003: Peluncuran Artio Testnet v1 (2023-01-12)
+- EV-004: Pembuatan Repository GitHub Resmi Berachain
+- EV-005: Peluncuran Komunitas Resmi: Discord, Twitter/X, Telegram
+- EV-013: Pengembangan Dokumentasi Teknis Resmi (docs.berachain.com) — dimulai 2023, ongoing
+
+#### 2024
+- EV-006: Peluncuran Artio Testnet v2 (2024-01-11)
+- EV-007: Peluncuran Berachain Mainnet (Genesis) (2024-06-06)
+- EV-008: Deployment Aplikasi Native: BEX, Bend, Berps di Mainnet
+- EV-009: Peluncuran Artio Testnet v3 (2024-10)
+- EV-010: Peluncuran Berascan Block Explorer Resmi
+- EV-014: Integrasi IBC (Inter-Blockchain Communication) di Mainnet
+- EV-015: Peluncuran HONEY Stablecoin di Mainnet
+- EV-016: Aktivasi BGT (Berachain Governance Token) Emisi via Proof-of-Liquidity
+- EV-017: Pertemuan Governance Komunitas dan Proposal Pertama — dimulai 2024, ongoing
+- EV-018: Pertumbuhan Ekosistem: Integrasi Protokol Eksternal dan Tooling — dimulai 2024, ongoing
+
+#### 2025
+- EV-011: Token Generation Event (TGE) BERA (2025-02-06)
+- EV-012: Listing BERA di Centralized Exchanges (CEX) dan DEX
+
+---
+
+### RINGKASAN
+
+Total Events
+
+18
+
+Founding
+
+1
+
+Funding
+
+0
+
+Launch
+
+5
+
+Technology
+
+3
+
+Governance
+
+1
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+0
+
+Integration
+
+1
+
+Token
+
+3
+
+Market
+
+1
+
+Organization
+
+1
+
+Infrastructure
+
+3
+
+Community
+
+1
+
+Product
+
+3
+
+Ecosystem
+
+1
+
+Security
+
+0
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti pendirian konsep (EV-001): hanya diketahui "2022" dari narasi umum; tidak ada announcement resmi dengan tanggal spesifik
+- Tanggal pasti pendirian Berachain Foundation (EV-002): hanya diketahui "2023"; perlu verifikasi dokumen incorporasi Cayman Islands
+- Detail funding rounds (VC, strategic angels, valuation): tidak ada informasi publik di fase 1-2; perlu cari announcement resmi atau filing
+- Tanggal pasti deployment masing-masing aplikasi native BEX/Bend/Berps (EV-008): apakah bersamaan dengan mainnet genesis 2024-06-06 atau berurutan beberapa hari/minggu setelahnya
+- Status IBC channels live (EV-014): docs mention IBC tapi tidak ada daftar channel/relayer aktif spesifik; perlu verifikasi on-chain via berascan atau mapofzones
+- Alamat kontrak token BERA/BGT/HONEY di mainnet (EV-011, EV-015, EV-016): Phase 1 mencatat placeholder addresses; perlu verifikasi on-chain aktual di berascan.com
+- Detail tokenomics TGE: persentase TGE allocation, vesting schedule team/investor/community — whitepaper vs announcement resmi Feb 2025
+- Status fee switch BGT (EV-017): apakah sudah diaktifkan via governance proposal; revenue flow ke staker BGT berapa persen
+- Auditor keamanan (smart contract audit firms) untuk protokol inti dan aplikasi native: tidak teridentifikasi di sumber publik
+- Investor/backer resmi: tidak ada daftar investor terpublikasi; perlu cari announcement funding atau portfolio VC
+- Artio testnet v3 tanggal pasti: Phase 1 bilang "Oct 2024" tapi tidak ada tanggal hari; perlu cari blog post resmi
+- Berapa validator di genesis set (EV-007) dan kriteria seleksi: tidak termuat di dokumentasi publik
+- Apakah ada security incident/exploit di testnet atau mainnet: tidak ditemukan di fase 1-2; perlu cari audit reports atau incident reports
+- Legal wrapper untuk DAO/governance terpisah dari Foundation: belum teridentifikasi
+- Enterprise partnerships (custody, node providers, oracle): tidak termuat di dokumentasi publik phase 1-2

@@ -1,0 +1,40 @@
+PROJECT: Curve
+
+## Market Timeline
+
+Milestone 2020-01: Pool stableswap pertama live — TVL tumbuh organik sebagai venue stablecoin utama (HIGH) [Curve whitepaper, https://curve.fi/whitepaper.pdf]
+Milestone 2020-08: TGE CRV + liquidity mining; DeFi Summer gelombang kedua; veCRV diluncurkan (HIGH) [Phase 6 — Token; Phase 3 — EV-002, EV-003]
+Milestone 2021: Curve Wars — akumulasi veCRV oleh Convex/Yearn/Frax; CRV mencapai area harga puncaknya (April 2021) (MEDIUM) [Phase 3 — EV-004; KuCoin CRV-USDT, https://www.kucoin.com/trade/CRV-USDT]
+Milestone 2022: Bear market; pool LST (stETH/ETH) menjadi kategori dominan; volatilitas depeg era Luna/celsius memengaruhi pool (MEDIUM) [Phase 2 — Entity]
+Milestone 2023-05: crvUSD launch (MEDIUM) [Phase 3 — EV-005]
+Milestone 2023-07/08: Eksploitasi Vyper + tekanan posisi CRV founder — harga tertekan signifikan (MEDIUM) [Phase 3 — EV-006]
+Milestone 2024-2026: Era crvUSD/Lend; pemulihan bertahap; emisi menurun sesuai kurva (MEDIUM) [Phase 3 — EV-007]
+
+## Adoption Metrics
+
+TVL: Curve secara historis salah satu TVL terbesar DeFi (puncak multi-miliar USD era 2021); angka per periode tidak dikutip di sumber sekunder riset ini — verifikasi DefiLlama diperlukan (LOW)
+Volume Swap: Volume harian stabil untuk kategori stablecoin/LST; angka tidak dikutip di sumber sekunder (LOW)
+Pengguna veCRV: Total CRV terkunci veCRV menjadi metrik kekuatan governance — angka terkini tidak dikutip (LOW)
+
+## Trading Markets
+
+CEX: Listing luas di exchange besar sejak 2020-2021 (KuCoin me-listing CRV-USDT selambatnya 21 Januari 2021 berdasarkan candle pertama yang terverifikasi) (MEDIUM) [KuCoin CRV-USDT, https://www.kucoin.com/trade/CRV-USDT]
+DEX: Likuiditas di Ethereum & deployment L2 (HIGH) [Curve docs, https://resources.curve.fi/]
+Pasangan utama: CRV/USDT, CRV/ETH di berbagai venue (MEDIUM)
+
+## Competitor Landscape
+
+Kompetitor langsung (stableswap/DEX): Uniswap v3 (stable pairs), Balancer, Ellipsis (BNB), Saber (Solana era), DEX native L2 (MEDIUM) [Curve docs, https://resources.curve.fi/]
+Kompetitor tidak langsung: venue internal stablecoin issuers, aggregators yang melewati Curve saat spread tipis (MEDIUM)
+Posisi: Curve tetap venue referensi stableswap dengan moat likuiditas & veCRV, namun pangsa relatif menurun terhadap DEX multi-chain generasi baru (MEDIUM) [Phase 8 — analisis internal riset ini]
+
+## Market Sentiment & Narrative
+
+Narrative 2020-2021: Pusat DeFi Summer kedua; veCRV sebagai "meta" yield governance (HIGH)
+Narrative 2023: Sentimen negatif pasca eksploitasi Vyper & OTC sale founder; pemulihan perlahan (MEDIUM) [Phase 3 — EV-006]
+Narrative 2024+: "Infrastruktur tua yang tetap penting" — crvUSD sebagai pertumbuhan baru; diskusi komunitas tentang value accrual fee vs emisi (MEDIUM)
+
+Open Threads
+- TVL & volume Curve terkini (2025-2026)
+- Total CRV terkunci veCRV & tren bribe market
+- Harga CRV pasca-2024 dari sumber exchange terverifikasi

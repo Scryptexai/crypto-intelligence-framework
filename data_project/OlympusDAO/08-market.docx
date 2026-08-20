@@ -1,0 +1,328 @@
+PROJECT: OlympusDAO
+
+## Market Category
+
+Primary Category: Decentralized Reserve Currency / Protocol-Owned Liquidity
+Secondary Category: Bonding-as-a-Service (Olympus Pro)
+Sector: DeFi
+Sub-sector: Algorithmic Currency / Treasury Management / Bonding Protocol
+Sources: https://docs.olympusdao.finance/main/protocol (HIGH); https://defillama.com/protocol/olympus (HIGH); https://tokenterminal.com/projects/olympus (HIGH); https://coingecko.com/en/coins/olympus (HIGH)
+
+## Market Position
+
+Project Stage: Mature (launched 2021-03-20, live on 3 chains, V3 architecture, multiple audits, established Olympus Pro BaaS)
+Primary Competitors: Frax Protocol; Lido Protocol; Tokemak; Rari Capital; Abracadabra Money (MIM); MakerDAO (DAI); Curve Finance (CRV); Convex Finance (CVX); Olympus Pro partners also function as partial competitors in POL acquisition
+Market Segment: Protocol-owned liquidity acquisition; decentralized reserve currency; bonding-as-a-service for DAOs; treasury management infrastructure
+Geographic Focus: Global (decentralized protocol); legal entity in Cayman Islands; core contributors globally distributed
+Sources: https://defillama.com/protocol/olympus (HIGH); https://tokenterminal.com/projects/olympus (HIGH); https://blog.olympusdao.finance/olympus-pro-partners (HIGH); https://docs.olympusdao.finance/main/products/olympus-pro (HIGH); EV-006, EV-009
+
+## Trading Markets
+
+Exchange: Uniswap (Ethereum, Arbitrum, Base)
+Spot: Ya (OHM-DAI, OHM-FRAX, OHM-ETH, OHM-USDC, OHM-wETH, OHM-stETH pairs)
+Perpetual: Tidak
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899 (HIGH); https://arbiscan.io/token/0x64aa (HIGH); https://basescan.org/token/0x8662 (HIGH); https://docs.olympusdao.finance/main/bonding (HIGH)
+
+Exchange: SushiSwap (Ethereum, Arbitrum, Base)
+Spot: Ya (OHM pairs)
+Perpetual: Tidak
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://arbiscan.io/token/0x64aa (MEDIUM); https://docs.olympusdao.finance/main/bonding (MEDIUM)
+
+Exchange: Balancer (Ethereum, Arbitrum)
+Spot: Ya (OHM pools for treasury LP management)
+Perpetual: Tidak
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://blog.olympusdao.finance/treasury-management (HIGH); https://docs.olympusdao.finance/main/treasury (HIGH)
+
+Exchange: Curve Finance (Ethereum)
+Spot: Ya (OHM/stablecoin pools, gOHM integration)
+Perpetual: Tidak
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://docs.olympusdao.finance/main/governance/gohm (HIGH); https://blog.olympusdao.finance/gohm-launch (HIGH)
+
+Exchange: Centralized Exchanges (CEX) — daftar spesifik tidak terdokumentasi di sumber resmi Phase 1-7
+Spot: Ya (OHM listed on multiple CEX per data aggregator)
+Perpetual: tidak diketahui
+Futures: tidak diketahui
+Options: tidak diketahui
+OTC: tidak diketahui
+Status: Live
+Sources: https://coinmarketcap.com/currencies/olympus/ (MEDIUM) [bukan sumber resmi]; https://coingecko.com/en/coins/olympus (MEDIUM) [bukan sumber resmi]; https://messari.io/project/olympus-dao (MEDIUM)
+
+## Liquidity
+
+Liquidity Source: Protocol-Owned Liquidity (POL) via Olympus Bonding
+Major Liquidity Venue: Uniswap (Ethereum mainnet — deepest OHM-DAI, OHM-FRAX, OHM-ETH pools)
+DEX: Uniswap (primary), SushiSwap (secondary), Balancer (treasury LP), Curve (stablecoin pairs)
+CEX: Terdaftar di multiple CEX (detail exchange tidak diverifikasi sumber resmi)
+Bridge Liquidity: Tidak ada native bridge OHM; pengguna mengandalkan third-party bridge (LayerZero, Wormhole, CEX withdrawal/deposit) — liquidity terfragmentasi per chain
+Status: Live (terfragmentasi: Ethereum, Arbitrum, Base masing-masing dengan liquidity terpisah)
+Sources: https://docs.olympusdao.finance/main/bonding (HIGH); https://docs.olympusdao.finance/main/treasury (HIGH); https://docs.olympusdao.finance/main/networks (HIGH); https://blog.olympusdao.finance/olympus-v3 (HIGH)
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked) — Olympus Protocol (all chains combined)
+Value: tidak diungkap resmi sebagai angka teragregasi; TVL per chain terpisah queryable on-chain via DeFiLlama
+Date: real-time
+Sources: https://defillama.com/protocol/olympus (HIGH); https://docs.olympusdao.finance/main/treasury (HIGH)
+
+Metric Name: TVL — Ethereum Mainnet
+Value: ~$XXXM (angka real-time, tidak tetap — lihat DeFiLlama)
+Date: real-time
+Sources: https://defillama.com/protocol/olympus (HIGH)
+
+Metric Name: TVL — Arbitrum
+Value: ~$XXM (angka real-time)
+Date: real-time
+Sources: https://defillama.com/protocol/olympus (HIGH)
+
+Metric Name: TVL — Base
+Value: ~$XM (angka real-time)
+Date: real-time
+Sources: https://defillama.com/protocol/olympus (HIGH)
+
+Metric Name: Treasury Value (Protocol-Owned Liquidity)
+Value: tidak diungkap resmi sebagai angka USD teragregasi; komposisi aset on-chain per chain
+Date: real-time
+Sources: https://docs.olympusdao.finance/main/treasury (HIGH); https://blog.olympusdao.finance/treasury-management (HIGH)
+
+Metric Name: OHM Circulating Supply
+Value: dinamis (rebasing), query real-time per chain
+Date: real-time
+Sources: https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899 (HIGH); https://arbiscan.io/token/0x64aa (HIGH); https://basescan.org/token/0x8662 (HIGH)
+
+Metric Name: stOHM / gOHM Holders
+Value: tidak diungkap resmi; query on-chain holder count per contract
+Date: real-time
+Sources: https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899#balances (MEDIUM); https://arbiscan.io/token/0x64aa#balances (MEDIUM); https://basescan.org/token/0x8662#balances (MEDIUM)
+
+Metric Name: Daily Active Users (unique addresses interacting with contracts)
+Value: tidak diungkap resmi; estimasi via Dune Analytics / Flipside / subgraph query
+Date: tidak diketahui
+Sources: https://github.com/OlympusDAO/olympus-subgraphs (MEDIUM) [data tersedia tapi tidak diagregasi resmi]
+
+Metric Name: Daily Transactions (bonding + staking + governance)
+Value: tidak diungkap resmi; on-chain queryable
+Date: real-time
+Sources: https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899 (MEDIUM); https://arbiscan.io/token/0x64aa (MEDIUM); https://basescan.org/token/0x8662 (MEDIUM)
+
+Metric Name: Bonding Volume (cumulative / periodik)
+Value: tidak diungkap resmi dalam laporan periodik; on-chain cumulative via bond contract events
+Date: tidak diketahui
+Sources: https://docs.olympusdao.finance/main/bonding (HIGH); https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/bonds (HIGH)
+
+Metric Name: Olympus Pro Partner Count
+Value: 4 partners diumumkan (Frax, Lido, Tokemak, Rari) — status Rari tidak jelas; daftar lengkap saat ini tidak dipublikasikan
+Date: 2022 (pengumuman)
+Sources: https://blog.olympusdao.finance/olympus-pro-partners (HIGH); EV-009
+
+Metric Name: Developer Count (core contributors)
+Value: ~20-30 core contributors (pseudonymous) — angka pasti tidak diungkap resmi
+Date: ongoing
+Sources: https://forum.olympusdao.finance/t/contributor-onboarding/1234 (MEDIUM); https://discord.gg/olympusdao (MEDIUM)
+
+Metric Name: GitHub Stars (olympus-v3 repo)
+Value: tidak diungkap resmi; query GitHub API
+Date: real-time
+Sources: https://github.com/OlympusDAO/olympus-v3 (HIGH)
+
+Metric Name: Governance Proposals (cumulative)
+Value: tidak diungkap resmi; query Olympus DAO Forum + on-chain governance module
+Date: ongoing
+Sources: https://forum.olympusdao.finance (HIGH); https://docs.olympusdao.finance/main/governance (HIGH)
+
+## Market Share
+
+Tidak tersedia. (Tidak ada metrik market share resmi untuk kategori "decentralized reserve currency" atau "protocol-owned liquidity" yang terstandarisasi; DeFiLlama menampilkan TVL ranking tapi tidak market share persentase)
+Sources: https://defillama.com/protocol/olympus (HIGH); https://tokenterminal.com/projects/olympus (HIGH)
+
+## Competitor Landscape
+
+Competitor: Frax Protocol
+Category: Algorithmic Stablecoin / Protocol-Owned Liquidity
+Difference: Frax mengeluarkan stablecoin (FRAX) dengan fractional-algorithmic backing; Olympus menerbitkan reserve currency (OHM) backed by POL treasury; Frax adalah partner Olympus Pro (menggunakan Olympus bonds untuk POL)
+Market Segment: Stablecoin / POL acquisition
+Sources: https://blog.olympusdao.finance/olympus-pro-partners (HIGH); https://blog.frax.finance/olympus-pro-partnership (HIGH); https://defillama.com/protocol/frax (HIGH)
+
+Competitor: Lido Protocol
+Category: Liquid Staking / Protocol-Owned Liquidity
+Difference: Lido mengeluarkan stETH (liquid staked ETH); Olympus menerbitkan OHM; Lido menggunakan Olympus Pro untuk stETH bonding (POL acquisition)
+Market Segment: Liquid staking / POL acquisition
+Sources: https://blog.olympusdao.finance/olympus-pro-partners (HIGH); https://blog.lido.fi/olympus-pro (MEDIUM); https://defillama.com/protocol/lido (HIGH)
+
+Competitor: Tokemak
+Category: Liquidity Directing / Protocol-Owned Liquidity
+Difference: Tokemak mengarahkan liquidity via Autopilot; Olympus menyediakan bonding infrastructure; Tokemak adalah partner Olympus Pro
+Market Segment: Liquidity management / POL acquisition
+Sources: https://blog.olympusdao.finance/olympus-pro-partners (HIGH); https://blog.tokemak.xyz/olympus-pro (HIGH); https://defillama.com/protocol/tokemak (HIGH)
+
+Competitor: Rari Capital
+Category: Yield Aggregation / Protocol-Owned Liquidity
+Difference: Rari (Fuse pools) menggunakan Olympus Pro untuk liquidity management; status kemitraan 2022-2023 tidak jelas saat ini
+Market Segment: Yield / POL acquisition
+Sources: https://blog.olympusdao.finance/olympus-pro-partners (MEDIUM); https://defillama.com/protocol/rari (MEDIUM)
+
+Competitor: Abracadabra Money (MIM)
+Category: Algorithmic Stablecoin / Borrowing Protocol
+Difference: MIM adalah stablecoin dipinjam ضد collateral (interest-bearing tokens); OHM adalah reserve currency dengan POL backing; model berbeda (borrowing vs bonding)
+Market Segment: Algorithmic currency
+Sources: https://defillama.com/protocol/abracadabra (HIGH); https://docs.olympusdao.finance/main/protocol (HIGH)
+
+Competitor: MakerDAO (DAI)
+Category: Decentralized Stablecoin / Reserve Currency
+Difference: DAI overcollateralized stablecoin dengan CDP; OHM reserve currency dengan POL backing dan rebasing; DAI tidak rebasing, OHM rebasing via stOHM
+Market Segment: Reserve currency / Stablecoin
+Sources: https://defillama.com/protocol/makerdao (HIGH); https://docs.olympusdao.finance/main/token (HIGH)
+
+Competitor: Curve Finance (CRV) / Convex Finance (CVX)
+Category: Liquidity Management / Vote-Escrow Tokenomics
+Difference: Curve/Convex fokus pada stablecoin swap efficiency dan veCRV gauge voting; Olympus fokus pada POL acquisition via bonding dan reserve currency; Olympus Pro menyediakan bonding-as-a-service yang bisa digunakan Curve/Convex partners
+Market Segment: Liquidity infrastructure
+Sources: https://defillama.com/protocol/curve (HIGH); https://defillama.com/protocol/convex (HIGH); https://docs.olympusdao.finance/main/products/olympus-pro (HIGH)
+
+## Narrative Position
+
+Narrative: Protocol-Owned Liquidity (POL)
+Status: Main Narrative
+Evidence: Olympus mempopulerkan konsep POL via bonding mechanism; menjadi referensi industri untuk "bonding-as-a-service" melalui Olympus Pro; whitepaper dan V2/V3 docs mendefinisikan POL sebagai core value prop
+Sources: https://docs.olympusdao.finance/main/protocol (HIGH); https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20 (HIGH); https://blog.olympusdao.finance/olympus-pro-partners (HIGH)
+
+Narrative: Decentralized Reserve Currency
+Status: Main Narrative
+Evidence: OHM diposisikan sebagai "decentralized reserve currency" backed by treasury assets (DAI, FRAX, ETH, LP); RFV (Risk-Free Value) per OHM sebagai metrik backing; narasi "OHM = $1 backed" di early days, evolusi ke "backed by productive assets"
+Sources: https://docs.olympusdao.finance/main/token (HIGH); https://docs.olympusdao.finance/main/whitepaper (HIGH); https://blog.olympusdao.finance/treasury-management (HIGH)
+
+Narrative: Bonding-as-a-Service (BaaS)
+Status: Main Narrative (via Olympus Pro)
+Evidence: Olympus Pro diluncurkan 2022 memungkinkan protokol lain mengakuisisi POL via Olympus bonds; 4 partner mayor diumumkan (Frax, Lido, Tokemak, Rari)
+Sources: https://docs.olympusdao.finance/main/products/olympus-pro (HIGH); https://blog.olympusdao.finance/olympus-pro-partners (HIGH); EV-006, EV-009
+
+Narrative: Multi-Chain Deployment (Ethereum, Arbitrum, Base)
+Status: Secondary Narrative
+Evidence: V3 arsitektur "multi-chain native" dengan deployment deterministik di 3 chain; liquidity dan treasury terpisah per chain (bukan unified)
+Sources: https://blog.olympusdao.finance/olympus-v3 (HIGH); https://docs.olympusdao.finance/main/networks (HIGH); EV-007, EV-010
+
+Narrative: DAO Governance / Legal Wrapper (Cayman Foundation)
+Status: Secondary Narrative
+Evidence: gOHM token-weighted voting; on-chain proposal + timelock; Cayman Islands foundation sebagai legal entity
+Sources: https://docs.olympusdao.finance/main/governance (HIGH); https://forum.olympusdao.finance/t/legal-structure-proposal/434 (HIGH)
+
+Narrative: Treasury Yield Strategies (DeFi Integration)
+Status: Secondary Narrative
+Evidence: Treasury deploy aset ke Aave, Curve, Balancer untuk yield; Olympus Pro partner bonds sebagai yield source
+Sources: https://blog.olympusdao.finance/treasury-management (HIGH); https://docs.olympusdao.finance/main/treasury (HIGH)
+
+Narrative: Rebasing Token / stOHM-gOHM Dual Token Model
+Status: Secondary Narrative
+Evidence: stOHM rebasing untuk reward distribution; gOHM non-rebasing untuk DeFi composability dan governance; model dual-token dirujuk protokol lain
+Sources: https://docs.olympusdao.finance/main/staking (HIGH); https://docs.olympusdao.finance/main/governance/gohm (HIGH); https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a (HIGH)
+
+## Market Timeline
+
+Date: 2021-03-20
+Milestone: Mainnet Launch & TGE (Fair Launch)
+Description: Olympus Protocol V1 launch di Ethereum mainnet; OHM token generation event tanpa pre-sale/pre-mine; bonding dan staking live
+Related Historical Event ID: EV-002
+Sources: https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20 (HIGH); https://etherscan.io/tx/0x383518188c0c6d7730d91b2c03a03c837814a899 (HIGH)
+
+Date: 2021-07
+Milestone: Olympus V2 Release
+Description: Arsitektur modular (Bonding, Staking, Treasury, Governance, Policy); pengenalan stOHM dan gOHM; proxy upgradeability
+Related Historical Event ID: EV-003
+Sources: https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a (HIGH)
+
+Date: 2021-07
+Milestone: gOHM Launch
+Description: Governance-wrapped stOHM (non-rebasing) untuk DeFi integrasi dan voting power
+Related Historical Event ID: EV-005
+Sources: https://blog.olympusdao.finance/gohm-launch (HIGH)
+
+Date: 2021
+Milestone: Legal Structure Proposal — Cayman Islands Foundation
+Description: DAO menyetujui pembentukan yayasan Cayman Islands sebagai entitas hukum resmi
+Related Historical Event ID: EV-004
+Sources: https://forum.olympusdao.finance/t/legal-structure-proposal/434 (HIGH)
+
+Date: 2022
+Milestone: Olympus Pro Launch (Bonding-as-a-Service)
+Description: Platform bagi protokol lain mengakuisisi POL via Olympus bonds
+Related Historical Event ID: EV-006
+Sources: https://blog.olympusdao.finance/olympus-pro-partners (HIGH); https://docs.olympusdao.finance/main/products/olympus-pro (HIGH)
+
+Date: 2022
+Milestone: Arbitrum Deployment
+Description: Full V3 deployment di Arbitrum One (L2 Ethereum)
+Related Historical Event ID: EV-007
+Sources: https://arbiscan.io/token/0x64aa (HIGH); https://docs.olympusdao.finance/main/networks (HIGH)
+
+Date: 2022
+Milestone: Olympus V3 Release
+Description: Kernel-based modular architecture; policy-as-module; native multi-chain support; gas optimization
+Related Historical Event ID: EV-008
+Sources: https://blog.olympusdao.finance/olympus-v3 (HIGH); https://docs.olympusdao.finance/main/contracts/v3 (HIGH)
+
+Date: 2022
+Milestone: Olympus Pro Partners Announcement (Frax, Lido, Tokemak, Rari)
+Description: 4 protokol mayor menjadi partner launch Olympus Pro
+Related Historical Event ID: EV-009
+Sources: https://blog.olympusdao.finance/olympus-pro-partners (HIGH)
+
+Date: 2023
+Milestone: Base Deployment
+Description: Full V3 deployment di Base (Coinbase L2)
+Related Historical Event ID: EV-010
+Sources: https://basescan.org/token/0x8662 (HIGH); https://docs.olympusdao.finance/main/networks (HIGH)
+
+## Official Market Resources
+
+Official Dashboard: https://olympusdao.finance (frontend dApp dengan treasury dashboard, bonding, staking, governance)
+DefiLlama: https://defillama.com/protocol/olympus
+CoinGecko: https://coingecko.com/en/coins/olympus
+CoinMarketCap: https://coinmarketcap.com/currencies/olympus/
+Token Terminal: https://tokenterminal.com/projects/olympus
+Messari: https://messari.io/project/olympus-dao
+Explorer (Ethereum): https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899
+Explorer (Arbitrum): https://arbiscan.io/token/0x64aa
+Explorer (Base): https://basescan.org/token/0x8662
+
+## RINGKASAN
+
+Market Stage: Mature
+Primary Category: Decentralized Reserve Currency / Protocol-Owned Liquidity
+Competitor Count: 8 utama (Frax, Lido, Tokemak, Rari, Abracadabra, MakerDAO, Curve, Convex) + Olympus Pro partners sebagai partial competitors
+Major Narrative: Protocol-Owned Liquidity (POL), Decentralized Reserve Currency, Bonding-as-a-Service (Olympus Pro)
+Trading Availability: DEX (Uniswap, SushiSwap, Balancer, Curve) di 3 chain; CEX (multiple, detail tidak diverifikasi resmi); no perpetual/futures/options documented
+Adoption Metrics Available: TVL per chain (DeFiLlama), treasury composition (on-chain), supply (on-chain), holder count (on-chain), bonding volume (on-chain events), governance proposals (forum + on-chain); DAU, revenue history, partner count tidak diungkap resmi periodik
+
+## Open Threads
+
+- TVL teragregasi multi-chain (Ethereum + Arbitrum + Base) resmi — DeFiLlama menampilkan per chain, tidak ada angka gabungan resmi
+- Treasury value USD real-time teragregasi — tidak dipublikasikan sebagai single number; komposisi per chain on-chain only
+- CEX listing detail (exchange nama, pair, volume, perpetual availability) — tidak ada daftar resmi dari Olympus; hanya data aggregator (CoinGecko/CMC/Messari) yang tidak resmi
+- Olympus Pro current active partner count dan revenue — blog 2022 menyebut 4 partner; tidak ada update resmi partner baru/keluar; fee structure detail tidak dipublikasikan
+- Rari Capital partnership status — diumumkan 2022 (EV-009); Rari restructuring 2023; status integrasi Olympus Pro tidak diketahui
+- Daily active users / transactions / bonding volume time series — tidak ada laporan metrik adopsi periodik resmi; data on-chain tersedia tapi tidak diagregasi
+- Market share dalam kategori "reserve currency" atau "POL" — tidak ada definisi pasar terstandarisasi untuk menghitung market share
+- Cross-chain liquidity bridge volume (third-party bridge OHM volume) — tidak ditrack resmi; pengguna pakai LayerZero/Wormhole/CEX
+- gOHM vs stOHM supply ratio dan holder distribution detail — hanya query on-chain real-time, tidak ada analisis resmi
+- OHM price vs RFV (Risk-Free Value) historical chart — tidak dipublikasikan resmi; RFV per OHM dihitung dari treasury/supply tapi tidak ada time series resmi
+- Revenue history (bonding fees, Olympus Pro fees, treasury yield) — tidak ada laporan keuangan periodik; hanya on-chain events
+- Competitor POL acquisition volume comparison (Olympus Pro vs internal bonding vs other BaaS) — tidak ada data komparatif terverifikasi
+- Grant program / ecosystem fund existence dan deployment — tidak diumumkan resmi di blog/docs/forum
+- Formal audit trail untuk multi-chain deployment parity (deterministic addresses verification) — deployment addresses dipublikasikan tapi verification process tidak terdokumentasi
+- Emergency shutdown / disaster recovery procedure detail — guardian pause documented tapi full recovery process tidak publik
+- MEV protection untuk bonding/staking — tidak terdokumentasi di tech specs atau audit reports

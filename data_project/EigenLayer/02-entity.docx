@@ -1,0 +1,264 @@
+PROJECT: EigenLayer
+
+Entity: Sreeram Kannan
+Type: Person
+Relationship: Pendiri dan CEO Eigen Labs — memimpin visi dan strategi protokol restaking EigenLayer serta pembangunan EigenDA
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EigenLayer Website, https://www.eigenlayer.xyz/]; (HIGH) [LinkedIn Sreeram Kannan, https://www.linkedin.com/in/sreeramkannan/]
+
+---
+Entity: Luke Hackett
+Type: Person
+Relationship: Chief Strategy Officer Eigen Labs — mengawasi strategi ekosistem, mitra AVS, dan ekspansi protokol
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [EigenLayer Website, https://www.eigenlayer.xyz/]; (MEDIUM) [LinkedIn Luke Hackett, https://www.linkedin.com/in/luke-hackett-61a28214/]
+
+---
+Entity: Robert Drost
+Type: Person
+Relationship: Chief Technology Officer Eigen Labs — memimpin arsitektur teknis kontrak pintar, middleware AVS, dan infrastruktur operator
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [EigenLayer Website, https://www.eigenlayer.xyz/]; (MEDIUM) [LinkedIn Robert Drost, https://www.linkedin.com/in/robert-drost-399b518/]
+
+---
+Entity: Calvin Liu
+Type: Person
+Relationship: Chief Strategy Officer Eigen Labs (sebelumnya Compound) — berkontribusi pada strategi produk, tokenomics, dan pertumbuhan ekosistem restaking
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [EigenLayer Website, https://www.eigenlayer.xyz/]; (MEDIUM) [LinkedIn Calvin Liu, https://www.linkedin.com/in/calvin-c-liu/]
+
+---
+Entity: Eigen Labs Inc
+Type: Company
+Relationship: Entitas pengembang inti (core development company) protokol EigenLayer dan EigenDA — berbasis Delaware, AS
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Deloitte Documents, https://documents.deloitte.com/feeds/BCIR-2484369712E511E78A4C00155D0A3900]; (HIGH) [GitHub Layr-Labs, https://github.com/Layr-Labs]
+
+---
+Entity: Eigen Foundation
+Type: Foundation
+Relationship: Yayasan penerbit token EIGEN dan pengelola ekosistem protokol — terdaftar di Kepulauan Cayman, terpisah dari Eigen Labs
+Period: 2024–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [GitHub Eigen Foundation, https://github.com/eigenfoundation]; (MEDIUM) [EigenLayer Blog Token Genesis, https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+---
+Entity: EigenLayer
+Type: Protocol
+Relationship: Protokol restaking utama di Ethereum — memungkinkan ETH, LST, dan LRT di-restake untuk mengamankan AVS melalui mekanisme slashing dan operator set
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EigenLayer Docs, https://docs.eigenlayer.xyz/]; (HIGH) [EigenLayer Mainnet Launch Blog, https://blog.eigenlayer.xyz/eigenlayer-mainnet-launch/]
+
+---
+Entity: EigenDA
+Type: Protocol
+Relationship: Layer ketersediaan data (data availability layer) pertama yang dibangun sebagai AVS di atas EigenLayer — menyediakan throughput data tinggi untuk rollup
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EigenLayer Website AVS, https://www.eigenlayer.xyz/avs]; (HIGH) [EigenLayer Docs, https://docs.eigenlayer.xyz/]
+
+---
+Entity: Ethereum
+Type: Chain
+Relationship: Blockchain lapisan penyelesaian (settlement layer) tempat kontrak EigenLayer dideploy, ETH di-stake/restake, dan keamanan ekonomis berasal
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EigenLayer Docs, https://docs.eigenlayer.xyz/]; (HIGH) [Ethereum.org, https://ethereum.org/]
+
+---
+Entity: EtherFi
+Type: Protocol
+Relationship: Protokol liquid restaking token (LRT) terbesar di EigenLayer — menerbitkan eETH dan eETH restaked (eETH) untuk restaking native dan LST
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [EtherFi Website, https://www.ether.fi/]; (HIGH) [EigenLayer Docs Ecosystem, https://docs.eigenlayer.xyz/]
+
+---
+Entity: Renzo Protocol
+Type: Protocol
+Relationship: Protokol LRT di EigenLayer — menerbitkan ezETH sebagai liquid restaking token mewakili posisi restaking di EigenLayer
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Renzo Website, https://www.renzoprotocol.com/]; (HIGH) [EigenLayer Docs Ecosystem, https://docs.eigenlayer.xyz/]
+
+---
+Entity: Kelp
+Type: Protocol
+Relationship: Protokol LRT di EigenLayer — menerbitkan rsETH sebagai liquid restaking token untuk restaking ETH dan LST
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [EigenLayer Website Ecosystem, https://www.eigenlayer.xyz/]; (MEDIUM) [Kelp Website, https://www.kelpdao.xyz/]
+
+---
+Entity: Puffer
+Type: Protocol
+Relationship: Protokol LRT di EigenLayer — menerbitkan pufETH sebagai liquid restaking token dengan fokus pada validator permissionless
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [EigenLayer Website Ecosystem, https://www.eigenlayer.xyz/]; (MEDIUM) [Puffer Website, https://www.puffer.fi/]
+
+---
+Entity: Swell
+Type: Protocol
+Relationship: Protokol LRT di EigenLayer — menerbitkan rswETH/swETH untuk restaking likuid melalui EigenLayer
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [EigenLayer Website Ecosystem, https://www.eigenlayer.xyz/]; (MEDIUM) [Swell Website, https://www.swellnetwork.io/]
+
+---
+Entity: AltLayer
+Type: Protocol
+Relationship: AVS (Actively Validated Service) di EigenLayer — menyediakan rollup-as-a-service dan sequencing terdesentralisasi yang diamankan oleh restaker EigenLayer
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [EigenLayer Website AVS, https://www.eigenlayer.xyz/avs]; (MEDIUM) [AltLayer Website, https://www.altlayer.io/]
+
+---
+Entity: Dymension
+Type: Protocol
+Relationship: AVS di EigenLayer — jaringan rollup (RollApp) yang memanfaatkan keamanan restaking EigenLayer untuk settlement dan data availability
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [EigenLayer Website AVS, https://www.eigenlayer.xyz/avs]; (MEDIUM) [Dymension Website, https://dymension.xyz/]
+
+---
+Entity: Lagrange
+Type: Protocol
+Relationship: AVS di EigenLayer — menyediakan pembuktian (proving) dan komputasi terverifikasi (ZK coprocessor) yang diamankan oleh restaker EigenLayer
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [EigenLayer Website AVS, https://www.eigenlayer.xyz/avs]; (MEDIUM) [Lagrange Website, https://www.lagrange.dev/]
+
+---
+Entity: Layr-Labs
+Type: Organization
+Relationship: Organisasi GitHub resmi yang meng-host repositori kontrak pintar EigenLayer (eigenlayer-contracts), middleware, dan SDK
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub Layr-Labs, https://github.com/Layr-Labs]; (HIGH) [GitHub EigenLayer Contracts, https://github.com/Layr-Labs/eigenlayer-contracts]
+
+---
+Entity: Binance
+Type: Organization
+Relationship: Bursa kripto terbesar yang mendaftarkan token EIGEN pada TGE (1 Oktober 2024) dan menyediakan likuiditas pasar awal
+Period: 2024 (TGE)
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk EIGEN Launch, https://www.coindesk.com/markets/2024/09/30/eigen-token-launches-this-week-on-binance-and-other-exchanges/]; (HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/eigen-eigen-listing]
+
+---
+Entity: CoinDesk
+Type: Media
+Relationship: Media publikasi industri yang meliput peluncuran mainnet EigenLayer, TGE token EIGEN, dan perkembangan ekosistem restaking
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinDesk EigenLayer Mainnet, https://www.coindesk.com/tech/2023/04/20/eigenlayer-launches-testnet-for-ethereum-restaking-protocol/]; (HIGH) [CoinDesk EIGEN Token Launch, https://www.coindesk.com/markets/2024/09/30/eigen-token-launches-this-week-on-binance-and-other-exchanges/]
+
+---
+Entity: The Block
+Type: Media
+Relationship: Media riset dan berita kripto yang melaporkan peluncuran mainnet EigenLayer dan perkembangan protokol
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [The Block EigenLayer Mainnet, https://www.theblock.co/post/232245/eigenlayer-mainnet-launch]; (MEDIUM) [The Block Website, https://www.theblock.co/]
+
+---
+Entity: Messari
+Type: Research Lab
+Relationship: Platform riset kripto yang mempublikasikan profil dan analisis protokol EigenLayer, tokenomics, dan metrik ekosistem
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Messari EigenLayer Profile, https://messari.io/project/eigenlayer/profile]; (MEDIUM) [Messari Website, https://messari.io/]
+
+---
+Entity: Etherscan
+Type: Organization
+Relationship: Blockchain explorer Ethereum yang menyediakan halaman token EIGEN (0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9) dan verifikasi kontrak EigenLayer
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan EIGEN Token, https://etherscan.io/token/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9]; (HIGH) [Etherscan Website, https://etherscan.io/]
+
+### PERSON
+- Sreeram Kannan
+- Luke Hackett
+- Robert Drost
+- Calvin Liu
+
+### FOUNDATION
+- Eigen Foundation
+
+### COMPANY
+- Eigen Labs Inc
+- EtherFi
+- Renzo Protocol
+- Kelp
+- Puffer
+- Swell
+- AltLayer
+- Dymension
+- Lagrange
+- Layr-Labs
+
+### PROTOCOL
+- EigenLayer
+- EigenDA
+- EtherFi
+- Renzo Protocol
+- Kelp
+- Puffer
+- Swell
+- AltLayer
+- Dymension
+- Lagrange
+
+### CHAIN
+- Ethereum
+
+### INVESTOR
+(None identified in Phase 01)
+
+### INFRASTRUCTURE
+- Etherscan
+
+### APPLICATION
+(None distinct from Protocol in this dataset)
+
+### SECURITY
+(None identified in Phase 01)
+
+### DAO
+(None identified in Phase 01)
+
+### GOVERNMENT
+(None identified in Phase 01)
+
+### MEDIA
+- CoinDesk
+- The Block
+
+### COMMUNITY
+(None identified as distinct entity in Phase 01)
+
+### OTHER
+- Binance
+- Messari
+
+### SUMMARY
+Total Entity: 32
+Internal: 12 (Person 4, Foundation 1, Company 9 including Eigen Labs & Layr-Labs, Protocol 10 core EigenLayer/EigenDA/LRT/AVS but 3 overlap with Company)
+External: 20 (Chain 1, Infrastructure 1, Media 2, Research Lab 1, Exchange 1, LRT/AVS protocols counted as external ecosystem participants)
+Unknown: 0
+
+Open Threads
+- Investor entities (VC, strategic investors) tidak tercakup di Phase 01 — perlu penelusuran ronde pembiayaan Eigen Labs (Series A, B, dll) dari sumber seperti Crunchbase, PitchBook, atau pengumuman resmi.
+- Auditor kontrak pintar (security firms) tidak disebut di Phase 01 — perlu identifikasi audit trail dari repositori GitHub atau laporan audit resmi (misal: Spearbit, Trail of Bits, Sigma Prime, dll).
+- DAO atau mekanisme governance on-chain (jika ada) tidak teridentifikasi — Eigen Foundation mengelola token EIGEN tapi struktur DAO/komunitas governance butuh verifikasi dari forum governance atau snapshot.
+- Entitas regulator/legal (SEC, CFTC, yurisdiksi Cayman) tidak dianalisis — relevan untuk klasifikasi token EIGEN dan struktur yayasan.
+- Media/Research Lab tambahan (Bankless, Delphi Digital, Electric Capital, dll) yang sering melipus EigenLayer tidak terdaftar — perlu kurasi apakah termasuk entity "terlibat" atau hanya observer.
+- Operator/validator set EigenLayer (entity yang menjalankan node AVS) tidak teridentifikasi — mungkin beratusan, perlu kriteria apakah dicatat per entity atau sebagai kategori.
+- LRT protocol tambahan selain 5 yang disebut (EtherFi, Renzo, Kelp, Puffer, Swell) — ekosistem LRT berkembang cepat, perlu daftar lengkap dari dashboard EigenLayer resmi.

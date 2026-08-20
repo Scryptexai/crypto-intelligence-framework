@@ -1,0 +1,430 @@
+PROJECT: Injective
+
+Entity: Eric Chen
+Type: Person
+Relationship: CEO dan Co-founder Injective Labs — memimpin visi strategis, pengembangan produk, dan eksekusi bisnis protokol Injective
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Forbes 30 Under 30 Profile, https://www.forbes.com/profile/eric-chen/]; (HIGH) [Injective Team Page, https://injective.com/team/]
+
+---
+Entity: Albert Chon
+Type: Person
+Relationship: CTO dan Co-founder Injective Labs — mengarah arsitektur teknis, pengembangan chain, dan infrastruktur protokol
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Team Page, https://injective.com/team/]; (MEDIUM) [Crunchbase Injective Labs, https://www.crunchbase.com/organization/injective-labs]
+
+---
+Entity: Aiden Kehoe
+Type: Person
+Relationship: Head of Growth Injective Labs — memimpin strategi pertumbuhan ekosistem, akuisisi pengguna, dan ekspansi pasar
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [LinkedIn Injective Labs, https://www.linkedin.com/company/injective-labs/]; (MEDIUM) [Injective Blog team posts, https://blog.injective.com/]
+
+---
+Entity: Nick Olon
+Type: Person
+Relationship: Head of Business Development Injective Labs — mengelola kemitraan strategis, integrasi ekosistem, dan pengembangan bisnis
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [LinkedIn Injective Labs, https://www.linkedin.com/company/injective-labs/]; (MEDIUM) [Injective Blog team posts, https://blog.injective.com/]
+
+---
+Entity: Injective Labs Inc.
+Type: Company
+Relationship: Entitas pengembang inti (core development company) — membangun dan mengelola Injective Chain, Injective Exchange, dan produk-produk protokol; terdaftar di British Virgin Islands
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Crunchbase Injective Labs, https://www.crunchbase.com/organization/injective-labs]; (HIGH) [Injective Blog, https://blog.injective.com/]
+
+---
+Entity: Binance
+Type: Company
+Relationship: Investor utama melalui Binance Launchpad IEO (Oktober 2020) — menyediakan distribusi token awal, likuiditas, dan validasi pasar
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Binance Launchpad Announcement, https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad]; (HIGH) [Injective Blog TGE, https://blog.injective.com/injective-protocol-inj-token-sale-on-binance-launchpad/]
+
+---
+Entity: Pantera Capital
+Type: Company
+Relationship: Investor institusional — berpartisipasi dalam ronde pendanaan awal dan mendukung pengembangan ekosistem
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Injective Blog Ecosystem Fund, https://blog.injective.com/injective-ecosystem-fund/]; (MEDIUM) [Pantera Portfolio, https://www.panteracapital.com/portfolio/]
+
+---
+Entity: Jump Crypto
+Type: Company
+Relationship: Investor dan market maker — menyediakan likuiditas, dukungan trading, dan kontribusi teknis ke ekosistem
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Injective Blog Ecosystem Fund, https://blog.injective.com/injective-ecosystem-fund/]; (MEDIUM) [Jump Crypto Portfolio, https://jumpcrypto.com/portfolio/]
+
+---
+Entity: Mark Cuban
+Type: Person
+Relationship: Investor individu — berpartisipasi dalam pendanaan awal dan memberikan validasi pasar serta jaringan
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Injective Blog Ecosystem Fund, https://blog.injective.com/injective-ecosystem-fund/]; (MEDIUM) [Mark Cuban Investments, https://blog.marcuban.com/]
+
+---
+Entity: Delphi Digital
+Type: Company
+Relationship: Investor dan penelitian — menyediakan analisis pasar, dukungan strategis, dan partisipasi ekosistem
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Injective Blog Ecosystem Fund, https://blog.injective.com/injective-ecosystem-fund/]; (MEDIUM) [Delphi Digital Portfolio, https://delphidigital.io/portfolio/]
+
+---
+Entity: Injective Protocol
+Type: Protocol
+Relationship: Protokol utama Layer-1 untuk DeFi dan bursa derivatif cross-chain — mencakup chain, exchange, bridge, dan lapisan aplikasi
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Documentation, https://docs.injective.network/]; (HIGH) [Injective Official Website, https://injective.com/]
+
+---
+Entity: Injective Chain
+Type: Chain
+Relationship: Blockchain Layer-1 berbasis Cosmos SDK — lapisan konsensus dan eksekusi native untuk seluruh protokol Injective
+Period: 2021-11-16–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/]; (HIGH) [Injective Blog Mainnet Launch, https://blog.injective.com/injective-mainnet-launch/]
+
+---
+Entity: Ethereum
+Type: Chain
+Relationship: Chain tujuan bridge ERC-20 — INJ bereksistensi sebagai token ERC-20 (0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) di Ethereum sebelum dan bersamaan dengan native chain
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [CoinGecko Contract Info, https://www.coingecko.com/en/coins/injective#info]; (HIGH) [Etherscan INJ Token, https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30]
+
+---
+Entity: Cosmos
+Type: Protocol
+Relationship: Ekosistem IBC — Injective terhubung via IBC ke rantai Cosmos lain (Osmosis, Celestia, Neutron, dll.) untuk interoperabilitas
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/]
+
+---
+Entity: Osmosis
+Type: Chain
+Relationship: DEX AMM terkemuka di ekosistem Cosmos — partner IBC utama untuk likuiditas cross-chain dan routing perdagangan
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Osmosis Zone, https://osmosis.zone/]
+
+---
+Entity: Celestia
+Type: Chain
+Relationship: Modular data availability layer — partner IBC untuk ketersediaan data dan skalabilitas rollup di ekosistem Cosmos
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Celestia Blog, https://blog.celestia.org/]
+
+---
+Entity: Neutron
+Type: Chain
+Relationship: Smart contract platform cross-chain di Cosmos — partner IBC untuk interoperabilitas kontrak pintar dan DeFi komposabel
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Neutron Blog, https://blog.neutron.org/]
+
+---
+Entity: Injective Exchange
+Type: Application
+Relationship: On-chain orderbook DEX native — mesin pencocokan pesanan terdesentralisasi sepenuhnya di atas Injective Chain
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Products, https://docs.injective.network/learn/products/]; (HIGH) [Injective Exchange Docs, https://docs.injective.network/learn/exchange/]
+
+---
+Entity: Helix
+Type: Application
+Relationship: Frontend DEX berbasis konsumen — antarmuka pengguna utama untuk trading di Injective Exchange, dikembangkan oleh tim Injective
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Products, https://docs.injective.network/learn/products/]; (HIGH) [Helix App, https://helixapp.com/]
+
+---
+Entity: Injective Hub
+Type: Application
+Relationship: Portal staking dan governance — antarmuka untuk delegasi token, voting proposals, dan manajemen validator
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Products, https://docs.injective.network/learn/products/]; (HIGH) [Injective Hub, https://hub.injective.network/]
+
+---
+Entity: Injective Bridge
+Type: Infrastructure
+Relationship: Jembatan cross-chain — menghubungkan Injective Chain dengan Ethereum (ERC-20) dan rantai IBC untuk transfer aset
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Bridge, https://docs.injective.network/learn/bridge/]; (HIGH) [Injective Bridge UI, https://bridge.injective.network/]
+
+---
+Entity: iAssets
+Type: Protocol
+Relationship: Protokol aset sintetis — memungkinkan pembuatan dan perdagangan aset tertokenisasi (saham, komoditas, forex) di Injective
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Products, https://docs.injective.network/learn/products/]; (MEDIUM) [Injective Blog iAssets, https://blog.injective.com/]
+
+---
+Entity: Talis
+Type: Application
+Relationship: Marketplace NFT di ekosistem Injective — platform minting, trading, dan manajemen NFT terdesentralisasi
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Talis Protocol, https://talis.art/]
+
+---
+Entity: Frontrunner
+Type: Application
+Relationship: Platform trading sosial/kopi-trading — memungkinkan pengguna menyalin strategi trader teratas di Injective
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Frontrunner App, https://frontrunner.xyz/]
+
+---
+Entity: Hydro
+Type: Protocol
+Relationship: Protokol lending/borrowing — pasar uang terdesentralisasi untuk pinjaman dan pendapatan yield di Injective
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Hydro Protocol, https://hydroprotocol.io/]
+
+---
+Entity: Mito
+Type: Application
+Relationship: Platform manajemen aset dan vault — strategi yield otomatis dan manajemen portofolio terdesentralisasi
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Mito Finance, https://mito.finance/]
+
+---
+Entity: Black Panther
+Type: Application
+Relationship: Aggregator DEX dan router perdagangan — mengoptimalkan eksekusi order di seluruh likuiditas Injective
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Black Panther Trade, https://blackpanther.trade/]
+
+---
+Entity: Injective Explorer
+Type: Infrastructure
+Relationship: Block explorer mainnet — antarmuka pencarian blok, transaksi, akun, dan validator resmi Injective Chain
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Explorer Mainnet, https://explorer.injective.network/]; (HIGH) [Injective Docs, https://docs.injective.network/]
+
+---
+Entity: Testnet Explorer
+Type: Infrastructure
+Relationship: Block explorer testnet — antarmuka pengujian dan debugging untuk pengembang di jaringan uji coba Injective
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Testnet Explorer, https://testnet.explorer.injective.network/]; (MEDIUM) [Injective Blog Testnet, https://blog.injective.com/injective-testnet-launch/]
+
+---
+Entity: Etherscan
+Type: Infrastructure
+Relationship: Block explorer Ethereum — digunakan untuk verifikasi kontrak ERC-20 INJ (0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) dan aktivitas bridge
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan INJ Token, https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30]; (HIGH) [Etherscan Website, https://etherscan.io/]
+
+---
+Entity: CoinGecko
+Type: Media
+Relationship: Penyedia data pasar — melacak harga, volume, supply, dan metadata token INJ di seluruh exchange
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinGecko INJ Page, https://www.coingecko.com/en/coins/injective]; (HIGH) [CoinGecko Website, https://www.coingecko.com/]
+
+---
+Entity: Crunchbase
+Type: Media
+Relationship: Database profil perusahaan — menyediakan informasi entitas hukum, pendanaan, dan tim Injective Labs
+Period: 2018–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Crunchbase Injective Labs, https://www.crunchbase.com/organization/injective-labs]; (HIGH) [Crunchbase Website, https://www.crunchbase.com/]
+
+---
+Entity: Forbes
+Type: Media
+Relationship: Penerbit profil pendiri — mencantumkan Eric Chen dalam 30 Under 30 dan meliputi narasi pendirian Injective
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Forbes Eric Chen Profile, https://www.forbes.com/profile/eric-chen/]; (HIGH) [Forbes Website, https://www.forbes.com/]
+
+---
+Entity: LinkedIn
+Type: Media
+Relationship: Platform jaringan profesional — sumber identifikasi peran tim inti (Head of Growth, Head of BD) di Injective Labs
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [LinkedIn Injective Labs, https://www.linkedin.com/company/injective-labs/]; (HIGH) [LinkedIn Website, https://www.linkedin.com/]
+
+---
+Entity: Binance Blog
+Type: Media
+Relationship: Saluran resmi pengumuman Binance — mempublikasikan detail IEO INJ di Launchpad Oktober 2020
+Period: 2020
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Binance Launchpad Announcement, https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad]; (HIGH) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: Injective Blog
+Type: Media
+Relationship: Saluran komunikasi resmi — mengumumkan mainnet launch, testnet launch, ecosystem fund, dan update produk
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Injective Blog Mainnet, https://blog.injective.com/injective-mainnet-launch/]; (HIGH) [Injective Blog Testnet, https://blog.injective.com/injective-testnet-launch/]; (HIGH) [Injective Blog Ecosystem, https://blog.injective.com/injective-ecosystem-fund/]
+
+---
+Entity: Injective Discord
+Type: Community
+Relationship: Komunitas diskusi resmi — forum utama untuk pengguna, pengembang, validator, dan kontributor ekosistem
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Injective Website Footer, https://injective.com/]; (HIGH) [Discord Invite, https://discord.gg/injective]
+
+---
+Entity: Injective Telegram
+Type: Community
+Relationship: Saluran komunitas real-time — pengumuman cepat, dukungan pengguna, dan koordinasi validator/relayer
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Injective Website Footer, https://injective.com/]; (HIGH) [Telegram Channel, https://t.me/injectiveofficial]
+
+---
+Entity: Injective Twitter/X
+Type: Community
+Relationship: Media sosial resmi — distribusi berita, update produk, dan interaksi komunitas @InjectiveLabs
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [X Profile InjectiveLabs, https://x.com/InjectiveLabs]; (HIGH) [X Website, https://x.com/]
+
+---
+Entity: British Virgin Islands
+Type: Government
+Relationship: Yurisdiksi hukum pendirian — Injective Labs Inc. terdaftar sebagai entitas hukum di BVI
+Period: 2018–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Crunchbase Injective Labs, https://www.crunchbase.com/organization/injective-labs]; (MEDIUM) [BVI Business Registry, https://www.bvifsc.vg/]
+
+---
+Entity: Injective Ecosystem Fund
+Type: Other
+Relationship: Dana ekosistem — pool dana untuk hibah, insentif likuiditas, dan dukungan proyek membangun di Injective (dikelola Injective Labs dengan mitra VC)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Injective Blog Ecosystem Fund, https://blog.injective.com/injective-ecosystem-fund/]; (MEDIUM) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]
+
+---
+Entity: Injective Documentation
+Type: Media
+Relationship: Dokumentasi teknis resmi — referensi arsitektur, produk, API, dan panduan pengembang untuk seluruh stack Injective
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective Docs, https://docs.injective.network/]; (HIGH) [Injective Website, https://injective.com/]
+
+=== PERSON ===
+Eric Chen
+Albert Chon
+Aiden Kehoe
+Nick Olon
+Mark Cuban
+
+=== COMPANY ===
+Injective Labs Inc.
+Binance
+Pantera Capital
+Jump Crypto
+Delphi Digital
+
+=== FOUNDATION ===
+(tidak ada entitas foundation teridentifikasi)
+
+=== PROTOCOL ===
+Injective Protocol
+Cosmos
+iAssets
+Hydro
+
+=== CHAIN ===
+Injective Chain
+Ethereum
+Osmosis
+Celestia
+Neutron
+
+=== INVESTOR ===
+Binance
+Pantera Capital
+Jump Crypto
+Mark Cuban
+Delphi Digital
+
+=== INFRASTRUCTURE ===
+Injective Bridge
+Injective Explorer
+Testnet Explorer
+Etherscan
+
+=== APPLICATION ===
+Injective Exchange
+Helix
+Injective Hub
+Talis
+Frontrunner
+Mito
+Black Panther
+
+=== SECURITY ===
+(tidak ada entitas security/auditor teridentifikasi)
+
+=== DAO ===
+(tidak ada entitas DAO teridentifikasi)
+
+=== GOVERNMENT ===
+British Virgin Islands
+
+=== MEDIA ===
+CoinGecko
+Crunchbase
+Forbes
+LinkedIn
+Binance Blog
+Injective Blog
+Injective Documentation
+
+=== COMMUNITY ===
+Injective Discord
+Injective Telegram
+Injective Twitter/X
+
+=== OTHER ===
+Injective Ecosystem Fund
+
+=== RINGKASAN ===
+Total Entity: 44
+Internal: 8 (Injective Labs Inc., Eric Chen, Albert Chon, Aiden Kehoe, Nick Olon, Injective Protocol, Injective Chain, Injective Documentation)
+External: 36
+Unknown: 0
+
+Open Threads
+- Exact core team headcount dan full named roster — hanya leadership names terkonfirmasi publik
+- Current token contract upgrade status (apakah migrasi dari ERC-20 ke native only?) — info konflik apakah ERC-20 masih aktif digunakan
+- Precise TGE unlock schedule breakdown (team/investors/community percentages) — blog menyebut "progressive unlock" tapi exact cliffs tidak di single verified source
+- Legal entity structure beyond "Injective Labs Inc. BVI" — apakah ada foundation, DAO LLC, atau Swiss entity?
+- Auditor/security firm yang pernah audit smart contract Injective — tidak tercantum di sumber publik
+- Validator set composition dan identitas validator utama — tidak teridentifikasi di fase ini
+- Relayer/operator bridge identity untuk Injective Bridge — tidak teridentifikasi di fase ini
+- Injective Ecosystem Fund legal structure dan governance — apakah terpisah dari Injective Labs Inc.?

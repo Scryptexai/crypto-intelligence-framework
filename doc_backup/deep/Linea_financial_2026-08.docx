@@ -1,0 +1,132 @@
+PROJECT: Linea
+
+## Funding History
+
+Funding Round: Linea-specific external funding
+Date: tidak ada
+Amount: $0 (tidak ada fundraising eksternal khusus Linea)
+Currency: USD
+Lead Investor: tidak ada
+Participating Investors: tidak ada — Linea didanai penuh secara internal oleh ConsenSys; tokenomics TGE 2025 secara eksplisit menyatakan tidak ada alokasi untuk investor eksternal
+Valuation: tidak berlaku (bukan equity round)
+Funding Type: Internal corporate funding (ConsenSys)
+Status: Confirmed
+Sources: https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage (HIGH)
+Sources: https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/ (MEDIUM)
+
+Funding Round: ConsenSys Series D (pendanaan induk yang membiayai Linea)
+Date: 2022-03-15
+Amount: $450,000,000
+Currency: USD
+Lead Investor: ParaFi Capital
+Participating Investors: Temasek, SoftBank Vision Fund 2, Microsoft, Anthos Capital, Sound Ventures, C Ventures, Third Point, Marshall Wace, TRUE Capital Management, UTA VC
+Valuation: >$7,000,000,000 (valuasi ConsenSys, bukan Linea)
+Funding Type: Series D equity
+Status: Completed
+Sources: https://www.privateequitywire.co.uk/consensys-raises-usd450m-series-d-funding-round-led-parafi-capital/ (HIGH)
+
+Funding Round: ConsenSys Series C
+Date: 2021-11-17
+Amount: $200,000,000
+Currency: USD
+Lead Investor: ParaFi Capital
+Participating Investors: Animoca Brands, Coinbase Ventures, Dragonfly Capital, Electric Capital, HSBC, Spartan Group, DeFiance Capital, Think Investments, Daniel Loeb
+Valuation: $3,200,000,000 (valuasi ConsenSys per laporan media era round; angka ini tidak disebut di sumber primer yang diakses — MEDIUM)
+Funding Type: Series C equity
+Status: Completed
+Sources: https://startupintros.com/orgs/consensys (MEDIUM)
+Sources: https://www.privateequitywire.co.uk/consensys-raises-usd450m-series-d-funding-round-led-parafi-capital/ (HIGH — konfirmasi partisipasi ParaFi di Series C)
+
+Funding Round: ConsenSys Venture Round April 2021
+Date: 2021-04-13
+Amount: $65,000,000
+Currency: USD
+Lead Investor: tidak diungkap
+Participating Investors: Alameda Research, Fenbushi Capital, J.P. Morgan, MakerDAO, The LAO, Juan Benet, Greater BAY Area Homeland Development Fund
+Valuation: tidak diungkap
+Funding Type: Venture equity
+Status: Completed
+Sources: https://startupintros.com/orgs/consensys (MEDIUM)
+
+Funding Round: ConsenSys Venture Round Juli 2019
+Date: 2019-07-02
+Amount: $10,000,000
+Currency: USD
+Lead Investor: TAE WON (Tony) Chey
+Participating Investors: tidak dirinci
+Valuation: tidak diungkap
+Funding Type: Venture equity
+Status: Completed
+Sources: https://startupintros.com/orgs/consensys (MEDIUM)
+
+Total Funding Raised (induk ConsenSys): ~$725,000,000 (MEDIUM) [Texau ConsenSys profile, https://www.texau.com/profiles/consensys]; [StartupIntros, https://startupintros.com/orgs/consensys]
+
+## Treasury
+
+Current Treasury Size: Linea Consortium Ecosystem Fund memegang 75% total supply (~54 miliar LINEA dari 72 miliar) dengan mekanisme pencairan bertahap 10 tahun; nilai USD bergantung harga pasar dan jadwal release (HIGH) [Bitrue LINEA Tokenomics, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]; [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+Treasury Composition: Mayoritas token LINEA (ekosistem fund); kas fiat/ETH ConsenSys untuk operasional Linea tidak dipublikasikan terpisah
+Stablecoin Holdings: tidak diungkap
+Native Token Holdings: 54 miliar LINEA (ekosistem fund, 10 tahun) + 10,8 miliar LINEA alokasi ConsenSys (5 tahun lock) (HIGH) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+Other Assets: Token airdrop yang tidak diklaim setelah 9 Desember 2025 dikembalikan ke Linea Consortium Ecosystem Fund (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]
+Treasury Custodian: Linea Consortium (ConsenSys, Eigen Labs, ENS Labs, SharpLink, Status) untuk ekosistem fund; multisig/wallet spesifik tidak dipublikasikan (MEDIUM) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+
+## Revenue Model
+
+Primary Revenue Source: Sequencer fees — seluruh gas fee transaksi Linea dibayar dalam ETH dan diterima sequencer (dioperasikan ConsenSys pada era ini); selisih biaya posting data ke L1 vs fee pengguna adalah margin rollup (HIGH) [eco.com, https://eco.com/support/en/articles/15183705-what-is-linea-consensys-zkevm-l2-in-2026]
+Secondary Revenue Source: Integrasi produk ConsenSys (MetaMask swaps/bridges, Infura RPC monetization) yang mendapat keuntungan tidak langsung dari volume Linea (MEDIUM) [Phemex Academy, https://phemex.com/academy/what-is-linea-zkevm-scaling-solution]
+Token Revenue: LINEA bukan gas token dan tidak menerima protocol fee langsung pada TGE — value capture token berbasis governance + mekanisme dual-burn (pembakaran sebagian fee aktivitas jaringan), bukan pembagian pendapatan (HIGH) [Phemex Academy, https://phemex.com/academy/what-is-linea-zkevm-scaling-solution]; [eco.com, https://eco.com/support/en/articles/15183705-what-is-linea-consensys-zkevm-l2-in-2026]
+Revenue Currency: ETH (gas); LINEA untuk mekanisme burn bertahap
+
+## Revenue History
+
+Metric: TVL Linea
+Date: 2023-11
+Value: >$258,000,000 (terbesar ketiga di antara ZK-rollup saat itu, di bawah zkSync Era dan dYdX v3)
+Source: https://coinmarketcap.com/academy/article/linea-network-defi-voyage (MEDIUM)
+
+Metric: TVL Linea
+Date: 2025-09 (pra-TGE)
+Value: >$1,300,000,000; 283 juta+ transaksi kumulatif; 7 juta+ wallet
+Source: https://bingx.com/en/learn/article/what-is-linea-tokenomics-and-listing-price-prediction (MEDIUM)
+
+Metric: Sequencer revenue (ETH)
+Date: 2023–2026
+Value: tidak dipublikasikan resmi — margin sequencer tidak dibuka ke publik; estimasi pihak ketiga (mis. L2BEAT/GrowthEpisod) tidak diakses dalam riset ini
+Source: tidak ditemukan (LOW)
+
+## Fundraising Mechanism
+
+Public Sale: tidak ada — LINEA didistribusikan via airdrop TGE (tanpa penjualan publik) (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]
+Token Airdrop: 9.360.000.000 LINEA (13% dari 72 miliar supply) ke ~749.000–750.000 wallet eligible; snapshot 30 Juli 2025; checker live 3 September 2025; klaim 10 September – 9 Desember 2025 (90 hari); syarat klaim dari alamat yang memegang LXP/LXP-L; unclaimed kembali ke Ecosystem Fund (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]; [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]; [CoinGape, https://coingape.com/trending/linea-airdrop-goes-live-september-10-what-to-expect-from-its-launch-price/]
+Circulating at Launch: ~15,8 miliar LINEA (~22% dari 72 miliar supply) termasuk airdrop dan porsi likuid awal (MEDIUM) [BingX, https://bingx.com/en/learn/article/what-is-linea-tokenomics-and-listing-price-prediction]
+Launchpad: tidak ada launchpool resmi; listing CEX serentak pada TGE (MEDIUM) [CoinGape, https://coingape.com/trending/linea-airdrop-goes-live-september-10-what-to-expect-from-its-launch-price/]
+
+## Token Sale
+
+Private Sale Token: tidak ada — tokenomics LINEA secara eksplisit tanpa alokasi investor eksternal ("No tokens allocated to external investors or the broader Linea team other than ConsenSys") (HIGH) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+Equity vs Token: Investor equity ConsenSys (Series A–D) memegang saham perusahaan, bukan alokasi token LINEA — pemisahan yang jarang di industri (HIGH) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+
+## Financial Dependencies
+
+Dependency 1: Pendanaan operasional Linea bergantung penuh pada kas ConsenSys (hasil fundraising $725M + pendapatan MetaMask/Infura) — tidak ada treasury independen Linea di luar token fund (HIGH)
+Dependency 2: Insentif ekosistem bergantung pada jadwal release Ecosystem Fund (10 tahun) yang dikelola Linea Consortium (HIGH) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+Dependency 3: Biaya proof generation (prover compute) menekan margin sequencer selama volume rendah — profitabilitas rollup bergantung skala transaksi (MEDIUM) [eco.com, https://eco.com/support/en/articles/15183705-what-is-linea-consensys-zkevm-l2-in-2026]
+
+## Financial Risk
+
+Risk 1: Unlock overhang — 78% supply tidak beredar saat TGE; release bertahap ekosistem fund (10 tahun) dan alokasi ConsenSys (5 tahun) menciptakan tekanan jual struktural jangka panjang (HIGH) [CoinGape, https://coingape.com/trending/linea-airdrop-goes-live-september-10-what-to-expect-from-its-launch-price/]
+Risk 2: Ketergantungan pada kesehatan finansial ConsenSys — pemangkasan tenaga kerja atau tekanan bisnis induk (era 2023-2024 crypto winter) berdampak langsung pada pengembangan Linea (MEDIUM) [Texau, https://www.texau.com/profiles/consensys]
+Risk 3: Ketiadaan revenue share untuk pemegang LINEA — tanpa fee-sharing, nilai token bergantung pada mekanisme burn dan apresiasi harga, bukan arus kas protokol (HIGH) [Phemex Academy, https://phemex.com/academy/what-is-linea-zkevm-scaling-solution]
+Risk 4: Gangguan operasional saat TGE — network outage singkat terjadi tepat sebelum airdrop dibuka (risis reputasi & keandalan) (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]
+
+## Official Financial Resources
+
+- https://linea.build (HIGH)
+- https://docs.linea.build — tokenomics & governance documentation (HIGH)
+- Linea Association announcements (Swiss nonprofit) — kanal resmi governance token (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]
+
+Open Threads
+- Valuasi ConsenSys pada Series C November 2021 (angka $3,2B beredar di media sekunder; sumber primer tidak diakses)
+- Rincian jadwal release bulanan/tahunan Ecosystem Fund 10 tahun (dokumentasi Linea Association)
+- Jumlah final LINEA tidak diklaim yang kembali ke Ecosystem Fund setelah 9 Desember 2025
+- Pendapatan sequencer aktual (ETH) per periode — tidak dipublikasikan

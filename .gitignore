@@ -1,3 +1,12 @@
 __pycache__/
 *.pyc
 .env
+reset/stage_attempts.log
+reset/.pipeline_stages.lock
+reset/runlogs/
+reset/tmp_test/
+*.docx.bak
+data_project/*/09-stage-*.tmp
+reset/cost_report.json
+reset/phase12_redo.log
+reset/*.log.bak

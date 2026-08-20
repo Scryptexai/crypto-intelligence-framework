@@ -1,0 +1,488 @@
+PROJECT: Polkadot
+
+Strategic Objectives
+
+1. Menjadi Layer-0 Infrastructure untuk Heterogeneous Multi-Chain Network
+· Evidence: Whitepaper Polkadot (2016) mengusulkan arsitektur Relay Chain + parachains dengan shared security sebagai fondasi teknis (Phase 3 EV-001); situs resmi menegaskan "Polkadot is a heterogeneous multi-chain network" (Phase 1, Phase 4 System Architecture)
+· Supporting Dataset: Phase 3 EV-001, Phase 1, Phase 4 System Architecture
+
+2. Menyediakan Shared Security sehingga Parachain tidak Perlu Bootstrap Validator Sendiri
+· Evidence: Model shared security terdokumentasi sebagai core differentiator — validator Relay Chain mengamankan semua parachain (Phase 4 Consensus Mechanism, Security Model); naratif "Shared Security" adalah naratif utama di market positioning (Phase 8 Narrative Position)
+· Supporting Dataset: Phase 4 Consensus Mechanism, Phase 4 Security Model, Phase 8 Narrative Position
+
+3. Mengaktifkan Interoperabilitas Native antar Chain melalui XCM
+· Evidence: XCM v1→v2→v3 dirilis bertahap (EV-018, EV-025) mengaktifkan asset transfer, remote execution, programmable transfers, fee abstraction (Phase 3 EV-018, EV-025; Phase 4 Technical Upgrade History); XCM adalah protokol native, bukan bridge eksternal (Phase 4 Core Components)
+· Supporting Dataset: Phase 3 EV-018, EV-025, Phase 4 Technical Upgrade History, Phase 4 Core Components
+
+4. Membangun Developer Platform Modular via Substrate/FRAME/Polkadot SDK
+· Evidence: Substrate dirilis 2018 (EV-005), FRAME menyediakan pallet modular, Polkadot SDK v1.0 (EV-021) menggabungkan stack terpadu; developer count ~650 monthly active (Electric Capital 2024) (Phase 3 EV-005, EV-021; Phase 4 Development Framework; Phase 8 Adoption Metrics)
+· Supporting Dataset: Phase 3 EV-005, EV-021, Phase 4 Development Framework, Phase 8 Adoption Metrics
+
+5. Transisi ke Governance Fully Decentralized via OpenGov
+· Evidence: OpenGov (EV-020) menggantikan Council + Technical Committee dengan referenda langsung, tracks, conviction voting, delegation (Phase 3 EV-020; Phase 4 Technical Upgrade History; Phase 6 Governance)
+· Supporting Dataset: Phase 3 EV-020, Phase 4 Technical Upgrade History, Phase 6 Governance
+
+6. Membuat Blockspace Menjadi Komoditas yang Dapat Dibeli (Agile Coretime)
+· Evidence: Agile Coretime (EV-024) menggantikan slot auction tetap dengan coretime bulk 28 hari + on-demand; naratif "Chain Abstraction / Coretime" sebagai naratif emerging (Phase 3 EV-022, EV-024; Phase 8 Narrative Position)
+· Supporting Dataset: Phase 3 EV-022, EV-024, Phase 8 Narrative Position
+
+7. Meneliti Arsitektur Generasi Berikutnya (JAM / Polkadot 2.0)
+· Evidence: JAM Gray Paper (EV-026) mengusulkan permissionless, in-core execution, general-purpose compute; testnet Toaster/JamNP live (EV-027) (Phase 3 EV-026, EV-027; Phase 8 Narrative Position)
+· Supporting Dataset: Phase 3 EV-026, EV-027, Phase 8 Narrative Position
+
+Decision Timeline
+
+Keputusan: Publikasi Whitepaper Polkadot (2016)
+· Trigger: Gavin Wood mengusulkan arsitektur multi-chain heterogeneous setelah meninggalkan Ethereum; kebutuhan interoperabilitas dan shared security tidak terpenuhi oleh arsitektur single-chain
+· Evidence: Whitepaper Polkadot 2016 mengusulkan Relay Chain + parachains + shared security (Phase 3 EV-001)
+· Decision: Menerbitkan whitepaper sebagai fondasi teknis dan visi arsitektur
+· Immediate Result: Dasar teknis untuk pendirian Web3 Foundation dan pengembangan Substrate
+· Long-term Impact: Menjadi blueprint arsitektur seluruh ekosistem Polkadot hingga JAM
+· Supporting Dataset: Phase 3 EV-001
+
+Keputusan: Pendirian Web3 Foundation di Zug, Swiss (2017)
+· Trigger: Butuh entitas hukum nirlaba untuk mengelola treasury ICO, grant, dan stewardship protokol
+· Evidence: Web3 Foundation didirikan 2017 di Zug (Phase 3 EV-002); mengelola grant >$100M dan Decentralized Futures $20M (Phase 5 Funding History)
+· Decision: Membentuk yayasan Swiss sebagai legal wrapper dan treasury custodian
+· Immediate Result: Entitas hukum untuk token sale, grant program, trademark holder
+· Long-term Impact: Pusat keputusan off-chain (treasury, grant, strategi) terkonsentrasi di satu entitas Swiss
+· Supporting Dataset: Phase 3 EV-002, Phase 5 Funding History
+
+Keputusan: Polkadot ICO Public Sale (2017-10-15)
+· Trigger: Butuh dana pengembangan ~$145M; pilihan public sale tanpa private sale/VC token allocation
+· Evidence: ICO mengumpulkan 144,640.65 ETH dari 5,500+ kontributor, cap 20 ETH/kontributor (Phase 3 EV-003; Phase 5 Token Sale)
+· Decision: Public sale tunggal, fair launch, tanpa whitelist/KYC di bawah cap
+· Immediate Result: Dana ~$145M terkumpul; 66% dana terkunci akibat Parity hack Nov 2017 (EV-004)
+· Long-term Impact: Distribusi token awal ke komunitas luas; tidak ada investor VC dengan token allocation — beda dengan proyek lain
+· Supporting Dataset: Phase 3 EV-003, EV-004, Phase 5 Token Sale, Phase 5 Funding History
+
+Keputusan: Peluncuran Substrate Framework (2018)
+· Trigger: Butuh framework modular untuk membangun Relay Chain, parachains, dan chain mandiri secara efisien
+· Evidence: Substrate dirilis 2018 oleh Parity Technologies (Phase 3 EV-005); menjadi fondasi Polkadot, Kusama, ratusan chain lain (Phase 4 Core Components)
+· Decision: Membangun dan open-source Substrate sebagai framework pembangun chain
+· Immediate Result: Mempercepat pengembangan Polkadot Relay Chain; menarik developer eksternal
+· Long-term Impact: Substrate menjadi de facto standard untuk app-chain di ekosistem Polkadot; Polkadot SDK v1.0 (EV-021) mengonsolidasikan stack
+· Supporting Dataset: Phase 3 EV-005, EV-021, Phase 4 Core Components, Phase 4 Development Framework
+
+Keputusan: Peluncuran Kusama sebagai Canary Network (2019-08-13)
+· Trigger: Butuh lingkungan produksi dengan nilai ekonomi nyata untuk menguji fitur sebelum deploy ke Polkadot
+· Evidence: Kusama mainnet genesis EV-008; "canary network" dengan token bernilai ekonomis (Phase 3 EV-008; Phase 4 System Architecture)
+· Decision: Meluncurkan jaringan terpisah (bukan testnet) dengan ekonomi nyata sebagai staging ground
+· Immediate Result: Validasi staking, governance, parachain, XCM di produksi sebelum Polkadot
+· Long-term Impact: Model "canary network" menjadi referensi industri; parachain pertama (Karura, Moonriver, Shiden) debut di Kusama
+· Supporting Dataset: Phase 3 EV-008, Phase 4 System Architecture, Phase 7 Major Integrations
+
+Keputusan: Mainnet Genesis Polkadot Relay Chain (2020-05-26)
+· Trigger: Substrate, Kusama, testnet (PoC-3/4/5) sudah matang; siap produksi
+· Evidence: Genesis block EV-010; mode Proof-of-Authority awal dikelola Web3 Foundation (Phase 3 EV-010)
+· Decision: Meluncurkan mainnet dengan PoA sementara, transisi ke NPoS kemudian
+· Immediate Result: Relay Chain live, DOT native token aktif, transfer disabled
+· Long-term Impact: Fondasi seluruh ekosistem parachain, staking, governance, XCM
+· Supporting Dataset: Phase 3 EV-010
+
+Keputusan: Transisi ke NPoS & Validasi Komunitas (2020-06-18)
+· Trigger: Desentralisasi validasi dari Web3 Foundation ke komunitas
+· Evidence: EV-011 mengaktifkan NPoS, validator dipilih via nominasi, governance on-chain diaktifkan (Phase 3 EV-011)
+· Decision: Beralih dari PoA ke NPoS dengan validator set komunitas
+· Immediate Result: Validator komunitas memproduksi blok; inflasi staking reward mulai berjalan
+· Long-term Impact: Keamanan jaringan didistribusikan ke ~297 validator + ~25-30k nominator; model ekonomi staking aktif
+· Supporting Dataset: Phase 3 EV-011, Phase 4 Consensus Mechanism
+
+Keputusan: Redenomination DOT 1:100 (2020-08-18)
+· Trigger: Supply 10M DOT (0 decimals) tidak praktis untuk UX, granularitas fee, dan perhitungan staking
+· Evidence: Referendum melewatkan redenom 1 DOT lama = 100 DOT baru, supply 10M → 1B (Phase 3 EV-012; Phase 6 Token Information)
+· Decision: Melakukan redenomination 1:100 via governance
+· Immediate Result: Supply 1B DOT, harga per token turun ~100x, proporsi kepemilikan tidak berubah
+· Long-term Impact: UX token diperbaiki; decimals 10 standar; tidak ada dampak ekonomi fundamental
+· Supporting Dataset: Phase 3 EV-012, Phase 6 Token Information
+
+Keputusan: Aktivasi Transfer DOT & Governance Penuh (2020-12-18)
+· Trigger: Network stabil, komunitas siap untuk governance mandiri
+· Evidence: Transfer diaktifkan via referendum; governance penuh (referenda, council, tech committee) beroperasi (Phase 3 EV-013)
+· Decision: Membuka transfer token dan mengaktifkan governance on-chain penuh
+· Immediate Result: DOT fully liquid; governance v1 (Council + Technical Committee) live
+· Long-term Impact: Mulai era governance komunitas; Council kemudian diganti OpenGov (EV-020)
+· Supporting Dataset: Phase 3 EV-013, Phase 6 Governance
+
+Keputusan: Peluncuran Parachain Slot Auction (2021-11-11)
+· Trigger: Relay Chain stabil, XCM/HRMP siap, komunitas parachain siap onboarding
+· Evidence: Slot auction pertama di Polkadot EV-016; candle auction mechanism; Acala menang slot pertama (Phase 3 EV-016)
+· Decision: Mengaktifkan mekanisme parachain slot auction berbasis candle auction
+· Immediate Result: 5 parachain pertama live (EV-017); DOT bonding untuk slot mulai beroperasi
+· Long-term Impact: Model ekonomi blockspace terbentuk; kemudian diganti Agile Coretime (EV-024)
+· Supporting Dataset: Phase 3 EV-016, EV-017, Phase 6 Utility (Parachain Bonding)
+
+Keputusan: Peluncuran XCM v2 (2022-04)
+· Trigger: Parachain live tapi belum bisa komunikasi cross-chain native
+· Evidence: XCM v2 mengaktifkan asset transfer, remote execution, programmable cross-chain (Phase 3 EV-018; Phase 4 Core Components)
+· Decision: Merilis XCM v2 sebagai standar cross-consensus messaging lengkap
+· Immediate Result: Interoperabilitas native antar parachain aktif; fondasi DeFi cross-chain
+· Long-term Impact: XCM v3 (EV-025) memperluas ke programmable transfers, remote locking, fee abstraction
+· Supporting Dataset: Phase 3 EV-018, EV-025, Phase 4 Core Components
+
+Keputusan: Peluncuran OpenGov (Governance v2) (2022-11)
+· Trigger: Governance v1 (Council + Technical Committee) dikritik terlalu terpusat; butuh desentralisasi penuh
+· Evidence: OpenGov menggantikan Council dengan referenda langsung, tracks, conviction voting, delegation (Phase 3 EV-020; Phase 6 Governance)
+· Decision: Migrasi ke sistem referenda langsung tanpa Council
+· Immediate Result: Siapa pun bisa ajukan proposal; delegation per track; treasury spends via referendum
+· Long-term Impact: Governance lebih terdesentralisasi; tapi kompleksitas partisipasi meningkat
+· Supporting Dataset: Phase 3 EV-020, Phase 6 Governance
+
+Keputusan: Rilis Polkadot SDK v1.0 (2023-04)
+· Trigger: Repositori terpisah (Substrate, FRAME, Cumulus) mempersulit developer experience dan koordinasi rilis
+· Evidence: SDK v1.0 menggabungkan Substrate, FRAME, Cumulus, tooling ke repo tunggal (Phase 3 EV-021; Phase 4 Development Framework)
+· Decision: Mengonsolidasikan stack development ke Polkadot SDK monorepo
+· Immediate Result: Developer experience terpadu; rilis terkoordinasi
+· Long-term Impact: Mempermudah kontribusi eksternal; standarisasi versioning
+· Supporting Dataset: Phase 3 EV-021, Phase 4 Development Framework
+
+Keputusan: Aktivasi Asynchronous Backing (2024-03)
+· Trigger: Throughput parachain terbatas (~1000-1500 TPS teoritis); butuh scaling tanpa mengorbankan keamanan
+· Evidence: Async backing memungkinkan validator mempersiapkan blok berikutnya sebelum finality, throughput naik 2-8x (Phase 3 EV-023; Phase 4 Technical Upgrade History)
+· Decision: Mengaktifkan asynchronous backing di Relay Chain
+· Immediate Result: Throughput parachain meningkat signifikan; latency blok turun
+· Long-term Impact: Kapasitas ekosistem diperluas; fondasi untuk scaling lebih lanjut (JAM)
+· Supporting Dataset: Phase 3 EV-023, Phase 4 Technical Upgrade History
+
+Keputusan: Peluncuran Agile Coretime (2024-05)
+· Trigger: Slot auction model (bonding 6-24 bulan) menciptakan barrier to entry tinggi; butuh fleksibilitas blockspace
+· Evidence: Coretime dijual bulk 28 hari via lelang + on-demand; parachain tidak lagi terkunci slot lama (Phase 3 EV-022, EV-024; Phase 8 Narrative Position)
+· Decision: Migrasi dari slot auction tetap ke marketplace coretime
+· Immediate Result: Barrier to entry parachain turun; pasar coretime sekunder muncul; revenue treasury dari coretime sales
+· Long-term Impact: Blockspace sebagai komoditas; naratif "Chain Abstraction" berkembang
+· Supporting Dataset: Phase 3 EV-022, EV-024, Phase 8 Narrative Position
+
+Keputusan: Publikasi JAM Gray Paper (2024-10)
+· Trigger: Arsitektur Relay Chain + parachain memiliki batasan (permissioned parachain, fixed validator set); butuh generasi berikutnya
+· Evidence: JAM Gray Paper mengusulkan permissionless, in-core execution, general-purpose compute (Phase 3 EV-026; Phase 8 Narrative Position)
+· Decision: Menerbitkan spesifikasi arsitektur Polkadot 2.0 (JAM)
+· Immediate Result: Riset dan spesifikasi baru; implementasi testnet dimulai (EV-027)
+· Long-term Impact: Potensi migrasi fundamental arsitektur; belum ada migration path resmi
+· Supporting Dataset: Phase 3 EV-026, EV-027, Phase 8 Narrative Position
+
+Evolution Pattern
+
+Perubahan Strategi: Dari "Parachain Platform" ke "Blockspace Marketplace" ke "General-Purpose Compute (JAM)"
+· Evidence: Fase 1 (2016-2021): Fokus membangun Relay Chain + parachain slot auction (EV-010 → EV-017). Fase 2 (2022-2024): XCM interoperabilitas + OpenGov governance + Async Backing scaling (EV-018 → EV-023). Fase 3 (2024+): Agile Coretime sebagai blockspace marketplace (EV-024) → JAM sebagai permissionless compute platform (EV-026, EV-027). Setiap fase menambah lapisan abstraksi dan fleksibilitas.
+· Supporting Dataset: Phase 3 EV-010 through EV-027, Phase 8 Narrative Position
+
+Perubahan Teknologi: Dari Fixed Validator Set + Slot Auction → Flexible Coretime → Permissionless In-Core Execution (JAM)
+· Evidence: Konsensus NPoS dengan validator set tetap ~297 (Phase 4 Consensus Mechanism). Slot auction bonding DOT 6-24 bulan (Phase 6 Utility). Agile Coretime: coretime 28 hari bulk + on-demand, tidak bonding (Phase 3 EV-024). JAM: work packages, guarantors, in-core execution, permissionless (Phase 3 EV-026). Setiap iterasi mengurangi permissioning dan meningkatkan fleksibilitas resource allocation.
+· Supporting Dataset: Phase 3 EV-024, EV-026, Phase 4 Consensus Mechanism, Phase 6 Utility
+
+Perubahan Tokenomics: Dari Fixed Supply (pre-redenom) → Inflationary Staking Rewards → Coretime Revenue → Potential JAM Tokenomics
+· Evidence: ICO 10M DOT (0 decimals) → redenom 1B DOT (10 decimals) (EV-012). Inflation ~10%/tahun untuk staking rewards (Phase 6 Inflation). Coretime sales revenue ke treasury (Phase 5 Revenue Model). JAM tokenomics belum ditentukan (Phase 3 EV-026). Token utility berkembang: governance → staking → parachain bonding → coretime → XCM fees → potential JAM utility.
+· Supporting Dataset: Phase 3 EV-012, Phase 5 Revenue Model, Phase 6 Inflation, Phase 6 Utility
+
+Perubahan Governance: Dari Web3 Foundation Controlled → Council + Tech Committee (Gov v1) → OpenGov Direct Referenda (Gov v2) → Potential JAM Governance
+· Evidence: Awal: Web3 Foundation mengelola PoA validator (EV-010). Gov v1: Council 13 orang + Technical Committee (EV-011, EV-013). Gov v2 OpenGov: referenda langsung, tracks, conviction voting, delegation, no Council (EV-020). JAM governance belum dirancang (EV-026). Tren: semakin terdesentralisasi, semakin kompleks partisipasi.
+· Supporting Dataset: Phase 3 EV-010, EV-011, EV-013, EV-020, EV-026, Phase 6 Governance
+
+Perubahan Ekosistem: Dari Core Protocol Only → Parachain Ecosystem (50+) → Bridge Integration (Snowbridge, Interlay) → JAM Ecosystem (Future)
+· Evidence: 2021: 5 parachain pertama (EV-017). 2024: 52 parachain termasuk common-good (Phase 8 Adoption Metrics). Bridge: Snowbridge (Ethereum), Interlay (Bitcoin), Wormhole (multi-chain) (Phase 7 External Dependencies). JAM: arsitektur baru untuk ekosistem generasi berikutnya (EV-026). Ekosistem berkembang dari vertical (parachain) ke horizontal (cross-chain bridges) ke generasi baru.
+· Supporting Dataset: Phase 3 EV-017, EV-026, Phase 7 Major Integrations, Phase 8 Adoption Metrics
+
+Technical Decision Pattern
+
+Pola 1: Modular Architecture dengan Separation of Concerns (Relay Chain vs Parachain vs Runtime)
+· Decision Pattern: Memisahkan konsensus/keamanan (Relay Chain) dari eksekusi aplikasi (parachain) dan logika state transition (Wasm runtime) — masing-masing layer bisa diupgrade independen
+· Evidence: Relay Chain tidak punya smart contract, hanya koordinasi (Phase 4 System Architecture); parachain punya runtime sendiri via Substrate/FRAME (Phase 4 Core Components); runtime upgradeable via governance tanpa hard fork (Phase 4 Execution Environment); Polkadot SDK memisahkan Substrate, FRAME, Cumulus (Phase 4 Development Framework)
+· Supporting Dataset: Phase 4 System Architecture, Core Components, Execution Environment, Development Framework
+
+Pola 2: Canary Network (Kusama) untuk Validasi Produksi Sebelum Mainnet
+· Decision Pattern: Meluncurkan jaringan terpisah dengan ekonomi nyata (bukan testnet) untuk menguji fitur konsensus, governance, parachain, XCM sebelum deploy ke Polkadot
+· Evidence: Kusama mainnet EV-008 (2019) — 1 tahun sebelum Polkadot mainnet EV-010 (2020); parachain pertama (Karura, Moonriver, Shiden) debut di Kusama (Phase 7 Major Integrations); async backing, XCM v3, OpenGov sering test di Kusama dulu
+· Supporting Dataset: Phase 3 EV-008, Phase 7 Major Integrations, Phase 4 System Architecture
+
+Pola 3: Upgrade Bertahap dengan Pengujian Ekstensif via Testnet Bertingkat (PoC → Kusama → Polkadot)
+· Decision Pattern: Setiap upgrade mayor melewati testnet publik (PoC series, Rococo), lalu Kusama, lalu Polkadot — dengan audit keamanan di setiap tahap
+· Evidence: PoC-3 Krumme Lanke (EV-006), PoC-4 Alexander (EV-007), PoC-5 Rococo (EV-009) → Kusama (EV-008) → Polkadot (EV-010); Audit Trail of Bits SDK v1.0 (EV-030); Audit Quarkslab BABE/GRANDPA; Bug bounty Immunefi ongoing (Phase 4 Audit History)
+· Supporting Dataset: Phase 3 EV-006 through EV-010, EV-030, Phase 4 Audit History
+
+Pola 4: Shared Security via NPoS Validator Set — Tidak Ada Validator Per-Parachain
+· Decision Pattern: Semua parachain menggunakan validator Relay Chain yang sama; collator hanya menghasilkan blok kandidat, validator memvalidasi dan menandatangani via GRANDPA
+· Evidence: NPoS validator set ~297 (Phase 4 Consensus Mechanism); collator role terpisah (Phase 4 Core Components); slashing berlaku untuk validator yang gagal memvalidasi parachain (Phase 4 Security Model); parachain tidak bootstrap validator sendiri
+· Supporting Dataset: Phase 4 Consensus Mechanism, Core Components, Security Model
+
+Pola 5: Wasm Runtime Upgradeable On-Chain via Governance
+· Decision Pattern: Runtime dikompilasi ke Wasm, disimpan on-chain, diupgrade via referendum tanpa hard fork — memisahkan logika bisnis dari konsensus
+· Evidence: Wasm execution environment (Phase 4 Execution Environment); runtime upgradeable via governance (Phase 4 Execution Environment); OpenGov tracks untuk runtime upgrade (Phase 6 Governance); Substrate FRAME pallet-based runtime (Phase 4 Development Framework)
+· Supporting Dataset: Phase 4 Execution Environment, Development Framework, Phase 6 Governance
+
+Pola 6: XCM sebagai Native Cross-Consensus Messaging (Bukan Bridge)
+· Decision Pattern: Mengembangkan protokol messaging native (XCM) yang diverifikasi oleh Relay Chain validators, bukan mengandalkan bridge eksternal dengan trust assumptions berbeda
+· Evidence: XCM v1→v2→v3 (EV-018, EV-025); XCM diverifikasi oleh Relay Chain consensus (Phase 4 Core Components); bridge eksternal (Snowbridge, Interlay, Wormhole) sebagai complement, bukan primary (Phase 7 External Dependencies); Wormhole exploit (EV-029) mempercepat adopsi XCM native
+· Supporting Dataset: Phase 3 EV-018, EV-025, EV-029, Phase 4 Core Components, Phase 7 External Dependencies
+
+Pola 7: Asynchronous Backing untuk Scaling Throughput Tanpa Mengubah Konsensus
+· Decision Pattern: Memisahkan block production (BABE) dari parachain backing — validator mempersiapkan blok berikutnya sebelum finality, meningkatkan throughput 2-8x tanpa mengubah NPoS/GRANDPA
+· Evidence: Async backing EV-023; BABE + GRANDPA tetap tidak berubah (Phase 4 Consensus Mechanism); throughput parachain naik signifikan (Phase 3 EV-023); fondasi untuk JAM in-core execution
+· Supporting Dataset: Phase 3 EV-023, Phase 4 Consensus Mechanism
+
+Financial Decision Pattern
+
+Pola 1: Public Sale Tunggal (ICO) Tanpa Private Sale / VC Token Allocation
+· Decision Pattern: Hanya satu public sale (ICO 2017) dengan cap per kontributor; tidak ada private sale, SAFT, atau alokasi token untuk VC — beda dengan mayoritas proyek L1 lain
+· Evidence: ICO 144,640.65 ETH dari 5,500+ kontributor, cap 20 ETH (Phase 3 EV-003, Phase 5 Token Sale); "tidak ada investor VC tradisional dengan alokasi token" (Phase 6 Distribution); Parity Technologies funding via Series A/B equity, bukan token (Phase 5 Funding History)
+· Supporting Dataset: Phase 3 EV-003, Phase 5 Token Sale, Phase 5 Funding History, Phase 6 Distribution
+
+Pola 2: Dual Treasury Model — On-Chain (Protocol) + Off-Chain (Foundation)
+· Decision Pattern: Dua treasury terpisah: on-chain treasury (dikelola OpenGov, revenue dari fee/slashing/coretime) dan off-chain Web3 Foundation treasury (dari ICO proceeds, mengelola grant/operasi)
+· Evidence: On-chain treasury ~24.4M DOT, kelola via OpenGov referendum (Phase 5 Treasury, Phase 6 Governance); Web3 Foundation off-chain treasury tidak diungkap komposisi, dana grant >$100M + Decentralized Futures $20M (Phase 5 Treasury, Phase 5 Funding History)
+· Supporting Dataset: Phase 5 Treasury, Phase 5 Funding History, Phase 6 Governance
+
+Pola 3: VC Funding ke Parity Technologies (Equity), Bukan ke Protokol (Token)
+· Decision Pattern: Parity Technologies (pengembang inti) mendanai Series A $80M (2019) dan Series B $200M (2021) dari VC via equity; protokol Polkadot tidak menerima funding VC langsung
+· Evidence: Series A a16z Crypto lead (Phase 5 Funding History); Series B Bessemer Venture Partners lead (Phase 5 Funding History); Parity adalah perusahaan privat, tidak mempublikasikan laporan keuangan (Phase 5 Financial Risk)
+· Supporting Dataset: Phase 5 Funding History, Phase 5 Financial Risk
+
+Pola 4: Grant Program sebagai Mekanisme Distribusi Treasury Utama
+· Decision Pattern: Web3 Foundation Grants (>$100M) dan Decentralized Futures ($20M) sebagai saluran utama mendanai ekosistem; on-chain treasury spends via OpenGov referendum untuk grant operasional
+· Evidence: Grants program since 2018 (Phase 5 Funding History); Decentralized Futures 2023 (Phase 5 Funding History); OpenGov treasury spends tracks (Phase 6 Governance); tidak ada ecosystem fund VC-style
+· Supporting Dataset: Phase 5 Funding History, Phase 6 Governance
+
+Pola 5: Revenue Protocol Transparan On-Chain (Fee, Slashing, Coretime) — Tidak Ada Fee Switch / Buyback
+· Decision Pattern: Semua revenue protocol (80% tx fee, slashing, coretime sales) masuk on-chain treasury transparan; tidak ada fee switch, buyback, atau burn mechanism sistematis
+· Evidence: Fee split 80/20 (Phase 5 Revenue Model); slashing ke treasury (Phase 5 Revenue Model); coretime sales revenue (Phase 5 Revenue Model); "tidak ada burn mechanism sistematis, tidak ada buyback" (Phase 6 Inflation/Deflation)
+· Supporting Dataset: Phase 5 Revenue Model, Phase 6 Inflation/Deflation
+
+Pola 6: Inflationary Tokenomics dengan Staking Rewards ~10% Target
+· Decision Pattern: Supply tidak dibatasi (no max supply); inflasi ~10%/tahun dialokasikan ke staking rewards; participation rate menentukan inflasi aktual; tidak ada halving atau supply cap
+· Evidence: "Supply Type: Inflationary, no max supply" (Phase 6 Supply); target ~10% annual inflation untuk staking (Phase 6 Inflation); emission per era berdasarkan participation rate (Phase 6 Inflation); redenom tidak mengubah ekonomi (Phase 3 EV-012)
+· Supporting Dataset: Phase 6 Supply, Phase 6 Inflation, Phase 3 EV-012
+
+Ecosystem Decision Pattern
+
+Pola 1: Parachain Onboarding via Slot Auction → Migrasi ke Coretime Marketplace
+· Decision Pattern: Mulai dengan slot auction kompetitif (candle auction, bonding DOT 6-24 bulan) untuk kurasi parachain berkualitas; kemudian buka akses via Agile Coretime (bulk 28 hari + on-demand) untuk menurunkan barrier to entry
+· Evidence: Slot auction pertama EV-016 (2021), 5 parachain pertama EV-017; Agile Coretime EV-024 (2024) menggantikan slot auction; "barrier to entry parachain turun" (Phase 3 EV-024); 52 parachain connected per 2025 (Phase 8 Adoption Metrics)
+· Supporting Dataset: Phase 3 EV-016, EV-017, EV-024, Phase 8 Adoption Metrics
+
+Pola 2: Integrasi Bridge Eksternal (Snowbridge, Interlay) sebagai Complement XCM Native
+· Decision Pattern: XCM native untuk interoperabilitas intra-ekosistem (parachain ↔ parachain); bridge trust-minimized (Snowbridge Ethereum, Interlay Bitcoin) untuk koneksi ke ekosistem luar; tidak membangun bridge sendiri tapi mendukung via common-good parachain / grant
+· Evidence: XCM v2/v3 untuk cross-parachain (EV-018, EV-025); Snowbridge system parachain / common-good (Phase 7 Major Integrations); Interlay parachain untuk Bitcoin (Phase 7 Major Integrations); Wormhole sebagai bridge generik tapi exploit EV-029 mempercepat fokus XCM native
+· Supporting Dataset: Phase 3 EV-018, EV-025, EV-029, Phase 7 Major Integrations, Phase 7 External Dependencies
+
+Pola 3: Kusama Sebagai Testing Ground untuk Semua Fitur Mayor Sebelum Polkadot
+· Decision Pattern: Setiap fitur mayor (parachain, XCM, governance, async backing, coretime) dideploy ke Kusama dulu dengan ekonomi nyata, lalu ke Polkadot setelah validasi
+· Evidence: Karura/Moonriver/Shiden debut di Kusama (Phase 7 Major Integrations); OpenGov, async backing, XCM v3 sering test di Kusama dulu; "canary network dengan token bernilai ekonomis" (Phase 3 EV-008)
+· Supporting Dataset: Phase 3 EV-008, Phase 7 Major Integrations
+
+Pola 4: Grant-Driven Ecosystem Growth (Web3 Foundation Grants + Decentralized Futures + On-Chain Treasury)
+· Decision Pattern: Tidak ada ecosystem fund VC-style; pertumbuhan didorong grant program terstruktur: W3F Grants (general), Decentralized Futures (strategic), OpenGov Treasury (community-directed)
+· Evidence: W3F Grants >$100M since 2018 (Phase 5 Funding History); Decentralized Futures $20M (2023) (Phase 5 Funding History); OpenGov treasury spends via referendum (Phase 6 Governance); Polkadot SDK external contributors via grant
+· Supporting Dataset: Phase 5 Funding History, Phase 6 Governance
+
+Pola 5: Common-Good Parachain untuk Infrastructure Shared (Asset Hub, Bridge Hub, Coretime Chain, Collectives, People Chain)
+· Decision Pattern: Beberapa parachain ditetapkan sebagai "common-good" — tidak perlu slot auction, dibiayai treasury, menyediakan infrastruktur shared (asset minting, bridging, coretime, identity, governance)
+· Evidence: Statemint/Asset Hub, Bridge Hub, Coretime Chain, Collectives, People Chain (Phase 7 Applications); "common-good parachain tidak perlu slot auction" (Phase 7 Applications); 52 parachain total termasuk common-good (Phase 8 Adoption Metrics)
+· Supporting Dataset: Phase 7 Applications, Phase 8 Adoption Metrics
+
+Pola 6: Developer Tooling Konsolidasi ke Polkadot SDK Monorepo
+· Decision Pattern: Dari repositori terpisah (Substrate, FRAME, Cumulus, polkadot) → Polkadot SDK v1.0 monorepo untuk DX terpadu, rilis terkoordinasi, kontribusi eksternal lebih mudah
+· Evidence: Polkadot SDK v1.0 EV-021 (2023); "penggabungan Substrate, FRAME, Cumulus, tooling" (Phase 3 EV-021); GitHub paritytech/polkadot-sdk sebagai single repo (Phase 4 Development Framework)
+· Supporting Dataset: Phase 3 EV-021, Phase 4 Development Framework
+
+Governance Decision Pattern
+
+Pola 1: Progressive Decentralization — Dari Foundation Control → Council → OpenGov Direct Democracy
+· Decision Pattern: Bertahap: Genesis PoA (Web3 Foundation control) → NPoS + Gov v1 (Council 13 + Tech Committee) → Gov v2 OpenGov (referenda langsung, tracks, conviction voting, no Council)
+· Evidence: EV-010 PoA by W3F; EV-011 NPoS + Gov v1; EV-013 full Gov v1; EV-020 OpenGov launch menggantikan Council (Phase 3 EV-010, EV-011, EV-013, EV-020); Phase 6 Governance detail OpenGov
+· Supporting Dataset: Phase 3 EV-010, EV-011, EV-013, EV-020, Phase 6 Governance
+
+Pola 2: Conviction Voting dengan Delegation Per Track untuk Menyeimbangkan Partisipasi dan Keahlian
+· Decision Pattern: Voting power = DOT × conviction multiplier (0-6x berdasarkan lock 0-32 hari); delegation per track (Root ke technical expert, Treasury ke komunitas) — memungkinkan holder mendelegasikan keahlian spesifik
+· Evidence: OpenGov conviction voting (Phase 6 Governance); delegation per track (Phase 6 Governance); tracks: Root, Whitelisted, General, Emergency, Fellowship, dll. (Phase 6 Governance)
+· Supporting Dataset: Phase 6 Governance
+
+Pola 3: Treasury Spending Hanya Via Referendum (OpenGov Tracks) — Tidak Ada Multisig / Committee Spending
+· Decision Pattern: Semua pengeluaran treasury (on-chain) harus lewat referendum di track sesuai besarnya (Small Tipper, Big Tipper, Small Spender, Big Spender, Treasury Spend) — tidak ada committee yang bisa belanja tanpa voting
+· Evidence: OpenGov treasury tracks (Phase 6 Governance); "Treasury spends melalui OpenGov tracks... membutuhkan referendum approval" (Phase 6 Utility Treasury Funding); on-chain treasury ~24.4M DOT (Phase 5 Treasury)
+· Supporting Dataset: Phase 5 Treasury, Phase 6 Governance, Phase 6 Utility
+
+Pola 4: Polkadot Fellowship sebagai Expert Body untuk Technical Referenda (Whitelisted Caller Track)
+· Decision Pattern: Fellowship menggantikan Technical Committee — badan berbasis merit/keahlian yang mereview proposal teknis (runtime upgrade, parameter change) di Whitelisted Caller track
+· Evidence: Fellowship di OpenGov tracks (Phase 6 Governance); "Expert body untuk technical referenda (Whitelisted Caller track), runtime upgrade reviews" (Phase 7 Governance Ecosystem)
+· Supporting Dataset: Phase 6 Governance, Phase 7 Governance Ecosystem
+
+Pola 5: Runtime Upgrade via Governance Referendum — Tidak Ada Hard Fork
+· Decision Pattern: Semua upgrade runtime (Wasm blob) diajukan sebagai proposal, divoting via referendum, dieksekusi on-chain — tidak ada koordinasi hard fork off-chain
+· Evidence: Wasm runtime upgradeable via governance (Phase 4 Execution Environment); OpenGov tracks untuk runtime upgrade (Phase 6 Governance); history upgrade via referendum (Phase 3 EV-011, EV-012, EV-013, EV-020, EV-023, EV-024, EV-025)
+· Supporting Dataset: Phase 3 EV-011, EV-012, EV-013, EV-020, EV-023, EV-024, EV-025, Phase 4 Execution Environment, Phase 6 Governance
+
+Risk Response Pattern
+
+Pola 1: Respons terhadap Parity Multisig Hack (2017-11) — Tetap Lanjutkan Pengembangan dengan Dana Tersisa
+· Decision Pattern: Hack mengunci ~66% dana ICO (~153k ETH); tidak ada hard fork atau recovery; Web3 Foundation melanjutkan pengembangan dengan dana tersisa (~1/3) dan Series A funding Parity
+· Trigger: Kerentanan Parity multisig library self-destruct mengunci dana ICO
+· Evidence: EV-004 detail hack; "Web3 Foundation tetap melanjutkan pengembangan dengan dana tersisa" (Phase 3 EV-004); Series A Parity 2019 $80M (Phase 5 Funding History)
+· Response: Tidak mengubah protokol; fokus pada pengembangan Substrate dan mainnet launch; transparansi via post-mortem Parity
+· Result: Mainnet tetap launch 2020; dana terkunci permanen; Web3 Foundation treasury lebih kecil dari rencana awal
+· Supporting Dataset: Phase 3 EV-004, Phase 5 Funding History
+
+Pola 2: Respons terhadap Wormhole Bridge Exploit (2022-02) — Mempercepat Adopsi XCM Native dan Bridge Trust-Minimized
+· Decision Pattern: Exploit bridge eksternal ($320M) tidak langsung menyerang Polkadot tapi menyoroti risiko bridge; ekosistem mempercepat XCM native development dan mendukung bridge trust-minimized (Snowbridge, Interlay)
+· Trigger: Wormhole exploit Feb 2022 (EV-029)
+· Evidence: EV-029 "Fokus ekosistem bergeser ke interoperabilitas native (XCM) dan bridge trust-minimized"; Snowbridge launch 2023-2024; Interlay live; XCM v2 (EV-018) dan v3 (EV-025) development continues
+· Response: Prioritaskan XCM native messaging; support trust-minimized bridge via common-good parachain/grant; tidak mengandalkan bridge generik single-point-of-failure
+· Result: XCM v2/v3 live; Snowbridge/Interlay operational; bridge risk terdistribusi
+· Supporting Dataset: Phase 3 EV-029, Phase 7 Major Integrations, Phase 7 External Dependencies
+
+Pola 3: Respons terhadap Kritik Governance Terpusat (Council) — Migrasi ke OpenGov Direct Referenda
+· Decision Pattern: Governance v1 (Council 13 orang + Tech Committee) dikritik terlalu terpusat, tidak representatif; migrasi ke OpenGov dengan referenda langsung, tracks, delegation
+· Trigger: Komunitas dan observer mengkritik Council sebagai "plutocracy" / terpusat
+· Evidence: EV-020 OpenGov launch "menggantikan sistem Council + Technical Committee dengan referenda langsung"; OpenGov tracks, conviction voting, delegation (Phase 3 EV-020; Phase 6 Governance)
+· Response: Desain OpenGov dengan tracks berbasis origin, conviction voting, delegation per track, no Council
+· Result: Governance lebih terdesentralisasi; kompleksitas partisipasi meningkat; treasury spends semua via referendum
+· Supporting Dataset: Phase 3 EV-020, Phase 6 Governance
+
+Pola 4: Respons terhadap Barrier to Entry Parachain (Slot Auction Mahal) — Agile Coretime Marketplace
+· Decision Pattern: Slot auction memerlukan bonding DOT 6-24 juta (miliaran USD) untuk 6-24 bulan — mencegah chain kecil; solusi: coretime 28 hari bulk + on-demand, pay-as-you-go
+· Trigger: Komplain parachain team dan komunitas tentang biaya opportunity cost bonding DOT besar
+· Evidence: EV-022 persiapan Agile Coretime; EV-024 launch "coretime dijual sebagai bulk 28 hari via lelang dan pasar sekunder; parachain tidak lagi terkunci slot 6-24 bulan" (Phase 3 EV-024); "barrier to entry parachain turun" (Phase 3 EV-024)
+· Response: Rancang Agile Coretime sebagai marketplace blockspace; migrasi dari slot auction
+· Result: Coretime sales revenue ke treasury; on-demand coretime tersedia; parachain kecil bisa eksperimen
+· Supporting Dataset: Phase 3 EV-022, EV-024, Phase 8 Narrative Position
+
+Pola 5: Respons terhadap Scaling Limitation (Throughput Parachain Terbatas) — Asynchronous Backing → JAM In-Core Execution
+· Decision Pattern: Throughput terbatas oleh synchronous backing; solusi bertahap: async backing (pipelining, 2-8x) → JAM (permissionless in-core execution, fundamental redesign)
+· Trigger: Kebutuhan scaling untuk DeFi, gaming, high-throughput apps di parachain
+· Evidence: EV-019 fondasi async backing; EV-023 async backing activation "throughput naik 2-8x"; EV-026 JAM Gray Paper "permissionless, general-purpose compute, in-core execution"; EV-027 JAM testnet
+· Response: Async backing sebagai incremental; JAM sebagai generasi berikutnya arsitektur
+· Result: Async backing live 2024; JAM testnet Dec 2024; migration path belum jelas
+· Supporting Dataset: Phase 3 EV-019, EV-023, EV-026, EV-027
+
+Recurring Behavioral Pattern
+
+Pola 1: Selalu Menggunakan Kusama Sebagai Staging Ground Sebelum Polkadot Mainnet
+· Evidence: Setiap fitur mayor: parachain (Karura/Moonriver/Shiden di Kusama EV-014, EV-015 sebelum Polkadot EV-016, EV-017), XCM, governance, async backing, coretime — semuanya test di Kusama dulu. "Canary network dengan token bernilai ekonomis" (Phase 3 EV-008). Pola konsisten sejak 2019.
+· Supporting Dataset: Phase 3 EV-008, EV-014, EV-015, EV-016, EV-017, Phase 7 Major Integrations
+
+Pola 2: Selalu Merilis Upgrade Mayor via Governance Referendum On-Chain (Tidak Ada Hard Fork Koordinasi Off-Chain)
+· Evidence: Semua upgrade: NPoS activation (EV-011), redenom (EV-012), transfer enable (EV-013), XCM v2 (EV-018), OpenGov (EV-020), async backing (EV-023), Agile Coretime (EV-024), XCM v3 (EV-025) — semuanya via referendum on-chain. Wasm runtime upgradeable via governance (Phase 4 Execution Environment). Tidak pernah ada hard fork kontroversial.
+· Supporting Dataset: Phase 3 EV-011, EV-012, EV-013, EV-018, EV-020, EV-023, EV-024, EV-025, Phase 4 Execution Environment
+
+Pola 3: Selalu Mengkonsolidasikan Tooling/Framework ke Monorepo/SDK Terpadu
+· Evidence: Substrate (2018) → FRAME + Cumulus (terpisah) → Polkadot SDK v1.0 monorepo (EV-021 2023). "Developer experience terpadu; rilis terkoordinasi" (Phase 3 EV-021). Pola: mulai modular terpisah, lalu konsolidasi saat kompleksitas naik.
+· Supporting Dataset: Phase 3 EV-005, EV-021, Phase 4 Development Framework
+
+Pola 4: Selalu Memisahkan Konsensus/Keamanan (Relay Chain) dari Eksekusi Aplikasi (Parachain)
+· Evidence: Arsitektur sejak whitepaper 2016 (EV-001): Relay Chain hanya koordinasi + shared security; parachain untuk aplikasi. Dipertahankan di async backing, Agile Coretime, JAM (EV-026 masih punya validator set shared). Tidak pernah mencoba "semua di satu chain" seperti Ethereum L1.
+· Supporting Dataset: Phase 3 EV-001, EV-023, EV-024, EV-026, Phase 4 System Architecture
+
+Pola 5: Selalu Mendanai Ekosistem via Grant Program (Tidak Ada Ecosystem Fund VC-Style)
+· Evidence: W3F Grants sejak 2018 (>$100M), Decentralized Futures 2023 ($20M), OpenGov Treasury spends. Tidak ada "Polkadot Ecosystem Fund" berupa VC yang invest token/equity. Parity Technologies funding via equity VC (Series A/B), bukan grant ke ekosistem.
+· Supporting Dataset: Phase 5 Funding History, Phase 7 Governance Ecosystem
+
+Pola 6: Selalu Merespons Security Incident Eksternal dengan Memperkuat Native Solution
+· Evidence: Wormhole exploit (EV-029) → percepat XCM native + trust-minimized bridge (Snowbridge, Interlay). Parity multisig hack (EV-004) → perbaikan Substrate/Wasm tooling, audit lebih ketat (Trail of Bits EV-030). Pola: jangan blame eksternal, bangun native yang lebih aman.
+· Supporting Dataset: Phase 3 EV-004, EV-029, EV-030, Phase 4 Audit History, Phase 7 External Dependencies
+
+Strategic Trade-offs
+
+Trade-off 1: Shared Security vs Parachain Sovereignty
+· Decision: Semua parachain menggunakan validator Relay Chain yang sama (shared security) — parachain tidak bisa pilih validator sendiri atau konsensus sendiri
+· Trade-off: Keamanan kuat dari day one (tidak perlu bootstrap validator) tapi kehilangan sovreinitas konsensus; parachain terikat aturan Relay Chain (slot/coretime, XCM format, upgrade schedule)
+· Evidence: NPoS validator set ~297 shared (Phase 4 Consensus Mechanism); "shared security model" sebagai core differentiator (Phase 8 Narrative Position); parachain tidak punya validator sendiri (Phase 4 Core Components); JAM mengusulkan permissionless tapi masih shared security (Phase 3 EV-026)
+· Supporting Dataset: Phase 3 EV-026, Phase 4 Consensus Mechanism, Phase 4 Core Components, Phase 8 Narrative Position
+
+Trade-off 2: Desentralisasi Governance vs Efisiensi Keputusan
+· Decision: OpenGov referenda langsung tanpa Council — siapa pun bisa propose, semua spend via referendum
+· Trade-off: Lebih terdesentralisasi dan censorship-resistant tapi lebih lambat, kompleks, dan rentan "governance fatigue"; proposal teknis butuh review Fellowship (Whitelisted Caller track) yang menambah latensi
+· Evidence: OpenGov EV-020 "menggantikan Council dengan referenda langsung"; tracks, conviction voting, delegation (Phase 3 EV-020; Phase 6 Governance); Fellowship sebagai expert body (Phase 7 Governance Ecosystem)
+· Supporting Dataset: Phase 3 EV-020, Phase 6 Governance, Phase 7 Governance Ecosystem
+
+Trade-off 3: Slot Auction (Capital Lockup) vs Coretime (Pay-as-you-go) — Ekonomi Blockspace
+· Decision: Migrasi dari slot auction (bonding DOT 6-24 bulan, opportunity cost tinggi) ke Agile Coretime (bulk 28 hari + on-demand)
+· Trade-off: Menurunkan barrier to entry dan membuka akses ke chain kecil tapi mengurangi komitmen jangka panjang parachain; revenue treasury lebih variatif (tergantung pasar coretime) vs slot auction yang memastikan bonding DOT terjaga lama
+· Evidence: EV-024 "parachain tidak lagi terkunci slot 6-24 bulan"; "barrier to entry parachain turun"; coretime sales revenue ke treasury (Phase 3 EV-024; Phase 5 Revenue Model); "coretime economic uncertainty" sebagai risk (Phase 7 Ecosystem Risks)
+· Supporting Dataset: Phase 3 EV-024, Phase 5 Revenue Model, Phase 7 Ecosystem Risks
+
+Trade-off 4: Inflationary Tokenomics (Staking Rewards) vs Token Holder Dilution
+· Decision: Target inflasi ~10%/tahun untuk staking rewards; tidak ada max supply, tidak ada burn sistematis
+· Trade-off: Menginsentivkan keamanan jaringan (staking participation ~50-55%) tapi melonggarkan token holder non-staking; real yield bergantung pada price appreciation vs inflation; tidak ada fee burn seperti EIP-1559
+· Evidence: "Supply Type: Inflationary, no max supply" (Phase 6 Supply); target ~10% inflation (Phase 6 Inflation); staking participation ~50-55% (Phase 8 Adoption Metrics); "tidak ada burn mechanism sistematis" (Phase 6 Inflation/Deflation)
+· Supporting Dataset: Phase 6 Supply, Phase 6 Inflation, Phase 8 Adoption Metrics, Phase 6 Inflation/Deflation
+
+Trade-off 5: Modular Architecture (Substrate/FRAME) vs Complexity untuk Developer Baru
+· Decision: Substrate/FRAME/Polkadot SDK modular, pallet-based, Rust/Wasm — powerful tapi learning curve curam
+· Trade-off: Fleksibilitas maksimal untuk app-chain custom tapi barrier to entry developer tinggi; butuh pengetahuan Rust, Wasm, FRAME pallet, Substrate internals; ink! smart contract lebih mudah tapi kurang powerful
+· Evidence: Substrate/FRAME modular (Phase 4 Development Framework); Rust primary language (Phase 4 Programming Languages); ink! untuk smart contract (Phase 4 Programming Languages); developer count ~650 (Phase 8 Adoption Metrics) — lebih rendah vs Ethereum/Solana
+· Supporting Dataset: Phase 4 Development Framework, Phase 4 Programming Languages, Phase 8 Adoption Metrics
+
+Trade-off 6: XCM Native Messaging vs Bridge Interoperability — Trust Assumptions
+· Decision: Prioritaskan XCM native (diverifikasi Relay Chain validators) untuk intra-ekosistem; bridge trust-minimized (Snowbridge, Interlay) untuk cross-ekosistem
+· Trade-off: XCM aman dan trust-minimized di dalam ekosistem tapi tidak bekerja ke chain non-Substrate (Ethereum, Bitcoin, Solana) tanpa bridge; bridge menambah trust assumptions (guardian, light client, MPC) dan attack surface (Wormhole exploit EV-029)
+· Evidence: XCM v2/v3 native (EV-018, EV-025); Snowbridge/Interlay trust-minimized (Phase 7 Major Integrations); Wormhole exploit (EV-029) "mempercepat adopsi XCM native dan bridge trust-minimized"
+· Supporting Dataset: Phase 3 EV-018, EV-025, EV-029, Phase 7 Major Integrations, Phase 7 External Dependencies
+
+Trade-off 7: Parity Technologies sebagai Core Dev Tunggal vs Desentralisasi Pengembangan
+· Decision: Overwhelming majority Polkadot SDK development oleh Parity employees; external contributors via grant tapi minoritas
+· Trade-off: Koordinasi cepat, vision konsisten, quality control tinggi tapi bus factor tinggi, centralized technical direction, external contributor onboarding sulit
+· Evidence: "Parity Technologies: core development team Polkadot" (Phase 2 Entity); GitHub contributors dominated by Parity (Phase 7 Ecosystem Risks); "Single Core Development Entity Dependency" sebagai risk (Phase 7 Ecosystem Risks); W3F Grants untuk external dev tapi tidak mengubah dominasi Parity
+· Supporting Dataset: Phase 2 Entity, Phase 7 Ecosystem Risks, Phase 5 Funding History
+
+Behavioral Summary
+
+Prioritas Utama Proyek
+1. Shared Security sebagai Differentiator Utama — Seluruh arsitektur dibangun di sekitar validator set Relay Chain yang mengamankan semua parachain (Phase 4, Phase 8).
+2. Interoperabilitas Native (XCM) — Mengembangkan protokol messaging sendiri bukan mengandalkan bridge eksternal (Phase 3, Phase 4, Phase 7).
+3. Progressive Desentralisasi — Dari Foundation control → Council → OpenGov direct democracy, setiap step lebih terdesentralisasi (Phase 3, Phase 6).
+4. Blockspace sebagai Komoditas (Agile Coretime) — Migrasi dari slot auction kapital-intensif ke marketplace fleksibel (Phase 3, Phase 8).
+5. Developer Platform Modular (Substrate/SDK) — Menyediakan tooling lengkap untuk sovereign app-chain (Phase 4, Phase 7).
+
+Cara Mengambil Keputusan
+- Teknis: Upgrade via governance referendum on-chain (Wasm runtime), test di Kusama dulu, audit keamanan bertahap (Phase 3, Phase 4).
+- Finansial: Treasury on-chain transparan, grant program terstruktur, tidak ada VC token allocation, inflation untuk security (Phase 5, Phase 6).
+- Ekosistem: Parachain onboarding via auction → coretime; bridge trust-minimized; common-good parachain untuk infrastructure shared (Phase 3, Phase 7).
+- Governance: Referenda langsung dengan conviction voting, delegation per track, fellowship untuk technical review (Phase 6).
+
+Faktor Paling Sering Mempengaruhi Keputusan
+1. Keamanan Jaringan (Shared Security Model) — Semua keputusan teknis dievaluasi terhadap impact ke validator set dan slashing (Phase 4).
+2. Desentralisasi Progresif — Setiap major shift (governance, coretime, JAM) bertujuan mengurangi centralization (Phase 3, Phase 6, Phase 8).
+3. Developer Experience & Adoption — Konsolidasi SDK, grant program, coretime pricing semua bertujuan menurunkan barrier to entry (Phase 4, Phase 5, Phase 7).
+4. Interoperabilitas Native — XCM development diprioritaskan over bridge dependency (Phase 3, Phase 4, Phase 7).
+5. Long-term Vision (JAM) — Keputusan arsitektur saat ini mempertimbangkan migration path ke JAM (Phase 3, Phase 8).
+
+Pola Evolusi
+- Fase 1 (2016-2020): Fondasi — Whitepaper, Substrate, Kusama, Mainnet Genesis, NPoS.
+- Fase 2 (2020-2022): Parachain & Interoperabilitas — Slot auction, XCM v2, 50+ parachain.
+- Fase 3 (2022-2024): Governance & Scaling — OpenGov, Async Backing, SDK v1.0.
+- Fase 4 (2024+): Blockspace Marketplace & Next-Gen — Agile Coretime, XCM v3, JAM Gray Paper.
+Pola: Setiap fase menambah lapisan abstraksi (security → messaging → governance → resource allocation → compute model).
+
+Kekuatan Utama
+1. Shared Security Model — Parachain aman dari day one tanpa bootstrap validator (Phase 4, Phase 8).
+2. XCM Native Interoperabilitas — Cross-chain messaging trust-minimized di dalam ekosistem (Phase 4, Phase 7).
+3. Modular Developer Platform (Substrate/FRAME/SDK) — Fleksibilitas maksimal untuk app-chain custom (Phase 4, Phase 7).
+4. Progressive Decentralization Track Record — Nyata bergerak dari Foundation → Council → OpenGov (Phase 3, Phase 6).
+5. Canary Network (Kusama) — Validasi produksi nyata sebelum mainnet, unik di industri (Phase 3, Phase 7).
+6. Transparansi Treasury On-Chain — Semua revenue/spending visible dan auditable (Phase 5, Phase 6).
+
+Kelemahan Utama
+1. Single Core Dev Dependency (Parity Technologies) — Bus factor tinggi, external contributor minoritas (Phase 7 Ecosystem Risks).
+2. Web3 Foundation Treasury Opacity — Off-chain treasury komposisi/ukuran tidak diungkap, single entity custodial risk (Phase 5, Phase 7).
+3. XCM Complexity & Upgrade Coordination — Upgrade XCM butuh koordinasi 52+ parachain, failure risk tinggi (Phase 7 Ecosystem Risks).
+4. Agile Coretime Economic Uncertainty — Model baru (Mei 2024), revenue treasury dan adoption belum terbukti jangka panjang (Phase 7 Ecosystem Risks).
+5. JAM Migration Uncertainty — Arsitektur generasi berikutnya fundamental berbeda, migration path belum ada (Phase 3, Phase 7, Phase 8).
+6. High Developer Barrier — Rust/Substrate/FRAME learning curve curam, developer count ~650 vs kompetitor (Phase 4, Phase 8).
+7. Regulatory Classification Uncertainty — DOT status (security/utility/payment) belum jelas di jurisdiksi utama (Phase 5, Phase 7).
+
+Open Threads
+
+- Web3 Foundation Off-Chain Treasury: Ukuran, komposisi (ETH, DOT, stablecoin, fiat), management policy, dan deployment rate tidak diungkap — tidak bisa diverifikasi financial health foundation (Phase 5 Treasury, Phase 7 Ecosystem Risks).
+- Parity Technologies Contributor Breakdown: Rasio karyawan vs kontributor eksternal di Polkadot SDK tidak diverifikasi — GitHub graphs menunjukkan dominasi Parity tapi exact percentage tidak diketahui (Phase 7 Ecosystem Risks).
+- JAM Migration Path: Gray Paper (EV-026) dan testnet (EV-027) ada tapi tidak ada migration roadmap resmi dari Relay Chain + parachain ke JAM — impact ke parachain existing, tokenomics DOT, governance tidak diketahui (Phase 3 EV-026, EV-027, Phase 8 Narrative Position).
+- Agile Coretime Adoption Metrics: Launch Mei 2024, data coretime sales volume, pricing trends, parachain migration rate dari slot auction ke coretime tidak tersedia di dashboard publik terpusat (Phase 3 EV-024, Phase 8 Adoption Metrics).
+- XCM v3 Upgrade Completion Rate: 52 parachain perlu upgrade ke XCM v3; koordinasi status tidak di-track di registry pusat — berapa % sudah upgrade, berapa % masih v2, impact ke cross-chain messaging tidak diketahui (Phase 3 EV-025, Phase 7 Ecosystem Risks).
+- Regulatory Classification DOT: FINMA (Swiss), SEC (US), MiCA (EU) klasifikasi tidak dikonfirmasi resmi — mempengaruhi treasury operations, exchange listing, grant distribution (Phase 5 Financial Risk, Phase 7 Ecosystem Risks, Phase 8 Market).
+- Validator Hosting Centralization: Distribusi validator across cloud providers (AWS/GCP/Azure) vs bare metal tidak ada census resmi — inferred dari industry patterns only (Phase 7 Ecosystem Risks, Phase 7 Infrastructure Providers).
+- Polkadot SDK External Contributor Onboarding: Proses kontribusi eksternal, RFC governance, maintainership model tidak terdokumentasi di single location — barrier untuk diversifikasi core dev (Phase 7 Ecosystem Risks, Phase 4 Development Framework).
+- Bridge TVL Accuracy: Snowbridge/Interlay TVL di DefiLlama bisa double-count (aset locked both sides) — real bridge usage dan risk exposure tidak akurat (Phase 7 External Dependencies, Phase 8 Liquidity).
+- Staking Real Yield: Nominal ~10-14% APY tapi real yield (adjusted for inflation ~10% + price change) tidak distandardkan di market data providers — investor tidak punya metric bersih (Phase 6 Inflation, Phase 8 Adoption Metrics).
+- Parachain Lease Expiration Schedule: 52 parachain lease expiration dates dan coretime migration plan tidak ada unified public calendar — risk mass exit atau migration rush tidak teramati (Phase 3 EV-017, Phase 7 Applications).
+- Wormhole Post-Exploit Usage on Polkadot: EV-029 terjadi 2022-02, tapi impact assessment pada parachain yang masih pakai Wormhole vs yang migrasi ke XCM/Snowbridge tidak dipublikasikan (Phase 3 EV-029, Phase 7 External Dependencies).
+- Trail of Bits Audit Scope Completeness: Hanya advisories yang publik, full report tidak dirilis — tidak bisa verifikasi apakah seluruh critical path Polkadot SDK v1.0 sudah audit lengkap (Phase 4 Audit History).
+- Decentralized Futures Program Recipients: Program launch Juni 2023 ($20M), recipient list dan deployment status tidak fully public — tidak bisa evaluate effectiveness (Phase 5 Funding History, Phase 7 Governance Ecosystem).
+- Nakamoto Coefficient Validator Set Over Time: Metrik desentralisasi validator tidak dipublikasikan resmi — tidak bisa track apakah semakin terdesentralisasi atau terpusat (Phase 7 Ecosystem Risks, Phase 8 Adoption Metrics).
+- RWA Tokenization Volume: Centrifuge dan parachain RWA lain volume tokenisasi real-world asset tidak teragregasi di DefiLlama Polkadot page — naratif RWA tidak backed hard metrics (Phase 7 Applications, Phase 8 Narrative Position).

@@ -1,0 +1,1324 @@
+PROJECT: EtherFi
+
+Event ID
+
+EV-001
+
+Date
+
+2023
+
+Event Name
+
+Pendirian EtherFi oleh Mike Silagadze dan Rok Kukovec
+
+Event Type
+
+Founding
+
+Description
+
+Mike Silagadze (CEO) dan Rok Kukovec (CTO) mendirikan EtherFi untuk membangun protokol liquid staking dan restaking non-kustodial di Ethereum.
+
+Participants
+
+Mike Silagadze, Rok Kukovec, EtherFi Protocol
+
+Location
+
+Tidak diketahui
+
+Status
+
+Completed
+
+Immediate Result
+
+Tim pendiri dibentuk; pengembangan protokol dimulai.
+
+Sources
+
+https://x.com/mike_etherfi, https://x.com/rok_etherfi, https://blog.ether.fi/etherfi-v2-liquid-restaking/
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2023
+
+Event Name
+
+Pembukaan Repositori GitHub Resmi etherfi-protocol
+
+Event Type
+
+Infrastructure
+
+Description
+
+Repositori GitHub resmi etherfi-protocol dipublikasikan untuk smart contract, frontend, SDK, dan dokumentasi teknis EtherFi.
+
+Participants
+
+EtherFi Protocol, GitHub (etherfi-protocol)
+
+Location
+
+https://github.com/etherfi-protocol
+
+Status
+
+Completed
+
+Immediate Result
+
+Kode sumber terbuka dipublikasikan; kontribusi komunitas dimungkinkan.
+
+Sources
+
+https://github.com/etherfi-protocol
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2023
+
+Event Name
+
+Ronde Pendanaan Seed / Private oleh Binance Labs, Coinbase Ventures, OKX Ventures
+
+Event Type
+
+Funding
+
+Description
+
+EtherFi mengumpulkan pendanaan strategis dari Binance Labs, Coinbase Ventures, dan OKX Ventures untuk pengembangan protokol liquid restaking.
+
+Participants
+
+EtherFi Protocol, Binance Labs, Coinbase Ventures, OKX Ventures
+
+Location
+
+Tidak diketahui
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana pengembangan terkumpul; investor strategis bergabung.
+
+Sources
+
+https://labs.binance.com/portfolio, https://research.binance.com/en/projects/etherfi, https://www.coinbase.com/ventures/portfolio, https://www.okx.com/ventures
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2023
+
+Event Name
+
+Peluncuran Testnet EtherFi
+
+Event Type
+
+Technology
+
+Description
+
+Testnet EtherFi diluncurkan untuk pengujian staking ETH ke eETH dan integrasi awal dengan EigenLayer sebelum mainnet.
+
+Participants
+
+EtherFi Protocol, EigenLayer
+
+Location
+
+Tidak diketahui (testnet internal/publik)
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengujian staking dan restaking berhasil; feedback komunitas terkumpul.
+
+Sources
+
+https://docs.ether.fi, https://blog.ether.fi
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2023-06
+
+Event Name
+
+Peluncuran Mainnet V1 — eETH Staking di Ethereum Mainnet
+
+Event Type
+
+Launch
+
+Event Type
+
+Launch
+
+Description
+
+Protokol EtherFi V1 diluncurkan di Ethereum mainnet — pengguna dapat men-staking ETH ke eETH (LST rebasing) melalui EtherFi Staking interface.
+
+Participants
+
+EtherFi Protocol, Ethereum, eETH, EtherFi Staking
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+eETH live di mainnet; staking ETH non-kustodial mulai beroperasi.
+
+Sources
+
+https://docs.ether.fi/tokens/eeth, https://etherscan.io/token/0x35fA164735182de50811E8e2E824cFb9B6118ac2, https://app.ether.fi
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2023-07
+
+Event Name
+
+Peluncuran weETH (Wrapped eETH) di Ethereum Mainnet
+
+Event Type
+
+Product
+
+Description
+
+weETH (wrapped eETH, ERC-20 non-rebasing) dideploy di Ethereum mainnet untuk kompatibilitas DeFi composability dan bridging cross-chain.
+
+Participants
+
+EtherFi Protocol, Ethereum, weETH
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+weETH live; kompatibel dengan DeFi protocols dan bridging ke L2.
+
+Sources
+
+https://docs.ether.fi/tokens/weeth, https://etherscan.io/token/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2023-08
+
+Event Name
+
+Integrasi Resmi dengan EigenLayer Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+EtherFi mengintegrasikan eETH dan weETH dengan EigenLayer mainnet — memungkinkan restaking ke Actively Validated Services (AVS) EigenLayer.
+
+Participants
+
+EtherFi Protocol, EigenLayer, eETH, weETH
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Restaking eETH/weETH ke EigenLayer AVS live; yield tambahan untuk staker.
+
+Sources
+
+https://docs.eigenlayer.xyz, https://docs.ether.fi, https://blog.ether.fi
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2023-11
+
+Event Name
+
+Peluncuran EtherFi V2 — Liquid Restaking Protocol
+
+Event Type
+
+Launch
+
+Description
+
+EtherFi V2 diluncurkan — mengupgrade protokol menjadi liquid restaking protocol penuh dengan integrasi EigenLayer native, restaking rewards otomatis, dan arsitektur modular untuk multi-AVS.
+
+Participants
+
+EtherFi Protocol, EigenLayer, eETH, weETH, EtherFi Protocol
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+V2 live; liquid restaking native EigenLayer aktif; arsitektur siap multi-AVS.
+
+Sources
+
+https://blog.ether.fi/etherfi-v2-liquid-restaking/, https://docs.ether.fi, https://blog.ether.fi
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2023-12
+
+Event Name
+
+Publikasi Dokumentasi Resmi docs.ether.fi
+
+Event Type
+
+Infrastructure
+
+Description
+
+Dokumentasi teknis resmi EtherFi dipublikasikan di docs.ether.fi mencakup arsitektur, tokenomics, integrasi, dan panduan developer.
+
+Participants
+
+EtherFi Protocol
+
+Location
+
+https://docs.ether.fi
+
+Status
+
+Completed
+
+Immediate Result
+
+Dokumentasi teknis resmi tersedia publik untuk developer dan komunitas.
+
+Sources
+
+https://docs.ether.fi
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2024-01
+
+Event Name
+
+Peluncuran EtherFi Cash — Kartu Kredit Non-Kustodial Didukung Restaked ETH
+
+Event Type
+
+Product
+
+Description
+
+EtherFi Cash diumumkan/diluncurkan — kartu kredit/dompet non-kustodial yang memungkinkan spending yield dari restaked ETH dan stablecoin di dunia nyata.
+
+Participants
+
+EtherFi Protocol, EtherFi Cash
+
+Location
+
+https://cash.ether.fi
+
+Status
+
+Completed
+
+Immediate Result
+
+Produk bridging DeFi ke real-world spending diluncurkan.
+
+Sources
+
+https://cash.ether.fi, https://blog.ether.fi
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2024-02
+
+Event Name
+
+Peluncuran EtherFi Vaults — Vault Restaking Institutional-Grade
+
+Event Type
+
+Product
+
+Description
+
+EtherFi Vaults diluncurkan — vault restaking institutional-grade dengan alokasi otomatis ke multi-AVS dan risk management terintegrasi.
+
+Participants
+
+EtherFi Protocol, EtherFi Vaults, EigenLayer, Symbiotic
+
+Location
+
+https://docs.ether.fi/vaults
+
+Status
+
+Completed
+
+Immediate Result
+
+Produk restaking institusional live; manajemen risiko multi-AVS otomatis.
+
+Sources
+
+https://docs.ether.fi/vaults, https://blog.ether.fi
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2024-02
+
+Event Name
+
+Peluncuran Ultra Light Node (ULN) — Marketplace Operator Node Permissionless
+
+Event Type
+
+Product
+
+Description
+
+Ultra Light Node diluncurkan — marketplace permissionless untuk operator node menjalankan validator EtherFi dan menerima delegasi stake.
+
+Participants
+
+EtherFi Protocol, Ultra Light Node, Node Operators (Permissionless Set)
+
+Location
+
+https://docs.ether.fi/ultra-light-node
+
+Status
+
+Completed
+
+Immediate Result
+
+Marketplace operator permissionless live; desentralisasi validator set dimulai.
+
+Sources
+
+https://docs.ether.fi/ultra-light-node, https://blog.ether.fi
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2024-03
+
+Event Name
+
+Integrasi Symbiotic — Restaking Alternatif
+
+Event Type
+
+Integration
+
+Description
+
+EtherFi mengintegrasikan Symbiotic sebagai lapisan restaking alternatif selain EigenLayer — memperluas opsi AVS untuk eETH/weETH holder.
+
+Participants
+
+EtherFi Protocol, Symbiotic, eETH, weETH
+
+Location
+
+Ethereum Mainnet, multi-chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Restaking ke Symbiotic AVS live; diversifikasi risiko restaking.
+
+Sources
+
+https://docs.symbiotic.fi, https://docs.ether.fi, https://blog.ether.fi
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2024-03
+
+Event Name
+
+Integrasi Pendle — Yield Trading eETH/weETH
+
+Event Type
+
+Integration
+
+Description
+
+Integrasi dengan Pendle Finance live — memungkinkan trading yield eETH/weETH melalui Principal Tokens (PT) dan Yield Tokens (YT) di Pendle markets.
+
+Participants
+
+EtherFi Protocol, Pendle, eETH, weETH
+
+Location
+
+Ethereum Mainnet, multi-chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Yield trading eETH/weETH live di Pendle; fixed yield dan speculation yield tersedia.
+
+Sources
+
+https://docs.pendle.finance, https://blog.ether.fi
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2024-03-18
+
+Event Name
+
+Token Generation Event (TGE) ETHFI Token
+
+Event Type
+
+Token
+
+Description
+
+Token Generation Event untuk ETHFI governance token dilaksanakan — token tersedia untuk klaim, trading, dan governance.
+
+Participants
+
+EtherFi Protocol, ETHFI Token, EtherFi DAO, Binance Exchange, Coinbase Exchange, OKX Exchange, Bybit Exchange, Gate.io Exchange, KuCoin Exchange
+
+Location
+
+Ethereum Mainnet, CEXs
+
+Status
+
+Completed
+
+Immediate Result
+
+ETHFI token live; trading dimulai di CEX utama; governance DAO aktif.
+
+Sources
+
+https://coinmarketcap.com/currencies/etherfi/, https://research.binance.com/en/projects/etherfi, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2024-03-18
+
+Event Name
+
+Listing ETHFI di Binance, Coinbase, OKX, Bybit, Gate.io, KuCoin
+
+Event Type
+
+Market
+
+Description
+
+ETHFI token tersenarai di Binance, Coinbase, OKX, Bybit, Gate.io, dan KuCoin secara bersamaan saat TGE — liquidity pasar primer tersedia.
+
+Participants
+
+ETHFI Token, Binance Exchange, Coinbase Exchange, OKX Exchange, Bybit Exchange, Gate.io Exchange, KuCoin Exchange
+
+Location
+
+Global CEXs
+
+Status
+
+Completed
+
+Immediate Result
+
+Liquidity pasar primer tersedia; akses retail global terbuka.
+
+Sources
+
+https://www.binance.com/en/trade/ETHFI_USDT, https://www.coinbase.com/price/etherfi, https://www.okx.com/trade/ETHFI-USDT, https://www.bybit.com/trade/spot/ETHFI/USDT, https://www.gate.io/trade/ETHFI_USDT, https://www.kucoin.com/trade/ETHFI-USDT
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2024-03
+
+Event Name
+
+Pembentukan EtherFi DAO dan Governance On-Chain
+
+Event Type
+
+Governance
+
+Description
+
+EtherFi DAO dibentuk — governance on-chain melalui token ETHFI diaktifkan untuk voting parameter protokol, treasury, dan upgrade.
+
+Participants
+
+EtherFi DAO, ETHFI Token, EtherFi Protocol
+
+Location
+
+Ethereum Mainnet, Snapshot
+
+Status
+
+Completed
+
+Immediate Result
+
+Governance terdesentralisasi aktif; komunitas dapat vote proposal.
+
+Sources
+
+https://docs.ether.fi/governance, https://snapshot.org/#/etherfi.eth
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2024-04
+
+Event Name
+
+Ekspansi Multi-Chain weETH — Arbitrum, Optimism, Base, Mode, Blast, Linea, Scroll, zkSync, Mantle, BNB Chain
+
+Event Type
+
+Ecosystem
+
+Description
+
+weETH di-deploy dan didukung di 10+ chain L2/L1: Arbitrum, Optimism, Base, Mode, Blast, Linea, Scroll, zkSync Era, Mantle, BNB Chain — memperluas akses restaking cross-chain.
+
+Participants
+
+EtherFi Protocol, weETH, Arbitrum, Optimism, Base, Mode, Blast, Linea, Scroll, zkSync Era, Mantle, BNB Chain
+
+Location
+
+Multi-chain
+
+Status
+
+Completed
+
+Immediate Result
+
+weETH tersedia di 10+ ekosistem L2/L1; composability DeFi cross-chain maksimal.
+
+Sources
+
+https://docs.ether.fi, https://arbiscan.io, https://optimistic.etherscan.io, https://basescan.org, https://docs.ether.fi
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2024-05
+
+Event Name
+
+Publikasi Laporan Audit Keamanan Smart Contract oleh Multiple Firms
+
+Event Type
+
+Security
+
+Description
+
+Laporan audit keamanan smart contract EtherFi (eETH, weETH, Vaults, ULN) dipublikasikan oleh multiple audit firms — memverifikasi keamanan kode sebelum/ setelah deployment.
+
+Participants
+
+Auditors (Multiple Firms), EtherFi Protocol, eETH, weETH, EtherFi Vaults, Ultra Light Node
+
+Location
+
+https://docs.ether.fi/security/audits, https://github.com/etherfi-protocol/audits
+
+Status
+
+Completed
+
+Immediate Result
+
+Verifikasi keamanan kode publik; transparansi risiko teknis.
+
+Sources
+
+https://docs.ether.fi/security/audits, https://github.com/etherfi-protocol/audits
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2024-06
+
+Event Name
+
+Proposal Governance Pertama EtherFi DAO — Parameter Protocol / Treasury
+
+Event Type
+
+Governance
+
+Description
+
+Proposal governance pertama EtherFi DAO diajukan dan divote — mengatur parameter protokol, alokasi treasury, atau upgrade protokol.
+
+Participants
+
+EtherFi DAO, ETHFI Token, EtherFi Protocol
+
+Location
+
+https://snapshot.org/#/etherfi.eth
+
+Status
+
+Completed
+
+Immediate Result
+
+Keputusan governance pertama dieksekusi on-chain.
+
+Sources
+
+https://snapshot.org/#/etherfi.eth, https://docs.ether.fi/governance
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2024-07
+
+Event Name
+
+Integrasi EtherFi dengan EigenLayer AVS Spesifik (EigenDA, dll)
+
+Event Type
+
+Integration
+
+Description
+
+EtherFi mengaktifkan delegasi restaking ke AVS spesifik EigenLayer (seperti EigenDA) — memperluas yield sources untuk eETH/weETH staker.
+
+Participants
+
+EtherFi Protocol, EigenLayer, eETH, weETH, Node Operators (Permissionless Set)
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Restaking ke AVS spesifik live; yield tambahan dari data availability services.
+
+Sources
+
+https://docs.eigenlayer.xyz, https://docs.ether.fi, https://blog.ether.fi
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2024-08
+
+Event Name
+
+Peluncuran EtherFi Staking Interface v2 / Dashboard Baru
+
+Event Type
+
+Product
+
+Description
+
+Interface staking EtherFi (app.ether.fi) diperbarui dengan dashboard baru, analytics yield, dan UX yang diperbaiki untuk retail dan institusi.
+
+Participants
+
+EtherFi Protocol, EtherFi Staking
+
+Location
+
+https://app.ether.fi
+
+Status
+
+Completed
+
+Immediate Result
+
+UX staking diperbaiki; analytics yield real-time tersedia.
+
+Sources
+
+https://app.ether.fi, https://blog.ether.fi
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2024-09
+
+Event Name
+
+Ekspansi EtherFi Cash ke Region/Produk Baru (Virtual Card, APAC Expansion)
+
+Event Type
+
+Product
+
+Description
+
+EtherFi Cash memperluas jangkauan — virtual card diluncurkan, ekspansi ke pasar APAC, dan integrasi stablecoin yield spending diperluas.
+
+Participants
+
+EtherFi Protocol, EtherFi Cash
+
+Location
+
+Global / APAC
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Produk real-world spending tersedia di lebih banyak region.
+
+Sources
+
+https://cash.ether.fi, https://blog.ether.fi
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2024-10
+
+Event Name
+
+Proposal Governance EtherFi DAO — Fee Switch / Revenue Sharing
+
+Event Type
+
+Governance
+
+Description
+
+Proposal governance mengenai fee switch / revenue sharing untuk ETHFI token holder diajukan dan divote — mengaktifkan value accrual ke token.
+
+Participants
+
+EtherFi DAO, ETHFI Token, EtherFi Protocol
+
+Location
+
+https://snapshot.org/#/etherfi.eth
+
+Status
+
+Completed
+
+Immediate Result
+
+Fee switch diaktifkan/ditolak; value accrual model token dikonfirmasi.
+
+Sources
+
+https://snapshot.org/#/etherfi.eth, https://docs.ether.fi/governance
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2024-11
+
+Event Name
+
+Anniversary 1 Tahun EtherFi V2 — Milestone TVL dan Metrik Protokol
+
+Event Type
+
+Ecosystem
+
+Description
+
+EtherFi merayakan 1 tahun V2 — milestone TVL, jumlah staker, yield terdistribusi, dan ekspansi ekosistem dipublikasikan.
+
+Participants
+
+EtherFi Protocol, eETH, weETH, EtherFi DAO, EigenLayer, Symbiotic
+
+Location
+
+Global / On-chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Metrik protokol dipublikasikan; transparansi pertumbuhan ekosistem.
+
+Sources
+
+https://blog.ether.fi, https://defillama.com/protocol/etherfi, https://dune.com
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2024-12
+
+Event Name
+
+Peluncuran EtherFi Vaults v2 / Strategi Restaking Baru
+
+Event Type
+
+Product
+
+Description
+
+EtherFi Vaults v2 diluncurkan dengan strategi restaking baru, risk management yang ditingkatkan, dan dukungan AVS tambahan dari EigenLayer dan Symbiotic.
+
+Participants
+
+EtherFi Protocol, EtherFi Vaults, EigenLayer, Symbiotic
+
+Location
+
+https://docs.ether.fi/vaults
+
+Status
+
+Completed
+
+Immediate Result
+
+Vault strategi baru live; manajemen risiko multi-AVS ditingkatkan.
+
+Sources
+
+https://docs.ether.fi/vaults, https://blog.ether.fi
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2025-01
+
+Event Name
+
+Integrasi Baru / Ekspansi Chain Baru (Jika Ada) — Monitoring Ongoing
+
+Event Type
+
+Ecosystem
+
+Description
+
+Monitoring ekspansi chain baru, integrasi AVS baru, atau produk baru EtherFi di awal 2025 — event ini placeholder untuk tracking ongoing development.
+
+Participants
+
+EtherFi Protocol, EigenLayer, Symbiotic, New Chains (if any)
+
+Location
+
+Multi-chain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pengembangan berkelanjutan; ekspansi ekosistem terus berlanjut.
+
+Sources
+
+https://blog.ether.fi, https://docs.ether.fi, https://x.com/ether_fi
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2025-03-18
+
+Event Name
+
+Anniversary 1 Tahun TGE ETHFI — Tokenomics Review dan Vesting Unlock
+
+Event Type
+
+Token
+
+Description
+
+1 tahun TGE ETHFI — review tokenomics, vesting unlock schedule untuk team/investor, dan proposal governance terkait supply management.
+
+Participants
+
+ETHFI Token, EtherFi DAO, EtherFi Protocol, Binance Labs, Coinbase Ventures, OKX Ventures
+
+Location
+
+Ethereum Mainnet, Governance
+
+Status
+
+Upcoming
+
+Immediate Result
+
+Tokenomics review; vesting unlock berlangsung per jadwal.
+
+Sources
+
+https://coinmarketcap.com/currencies/etherfi/, https://docs.ether.fi/token/ethfi, https://snapshot.org/#/etherfi.eth
+
+---
+
+### Kelompokkan Berdasarkan Tahun
+
+#### 2023
+- EV-001: Pendirian EtherFi
+- EV-002: GitHub Repository Launch
+- EV-003: Seed/Private Funding Round
+- EV-004: Testnet Launch
+- EV-005: Mainnet V1 Launch (eETH)
+- EV-006: weETH Launch
+- EV-007: EigenLayer Mainnet Integration
+- EV-008: V2 Liquid Restaking Launch
+- EV-009: Official Documentation Launch
+
+#### 2024
+- EV-010: EtherFi Cash Launch
+- EV-011: EtherFi Vaults Launch
+- EV-012: Ultra Light Node Launch
+- EV-013: Symbiotic Integration
+- EV-014: Pendle Integration
+- EV-015: ETHFI TGE
+- EV-016: Multi-CEX Listing
+- EV-017: EtherFi DAO Formation
+- EV-018: Multi-Chain Expansion (10+ chains)
+- EV-019: Security Audits Published
+- EV-020: First DAO Governance Proposal
+- EV-021: EigenLayer Specific AVS Integration
+- EV-022: Staking Interface v2 Launch
+- EV-023: EtherFi Cash Expansion
+- EV-024: Fee Switch Governance Proposal
+- EV-025: V2 1-Year Anniversary Milestone
+- EV-026: EtherFi Vaults v2 Launch
+
+#### 2025
+- EV-027: Ongoing Ecosystem Expansion (Placeholder)
+- EV-028: 1-Year TGE Anniversary (Upcoming)
+
+---
+
+### RINGKASAN
+
+Total Events
+
+28
+
+Founding
+
+1
+
+Funding
+
+1
+
+Launch
+
+3
+
+Technology
+
+4
+
+Governance
+
+4
+
+Security
+
+1
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+0
+
+Integration
+
+5
+
+Token
+
+2
+
+Market
+
+1
+
+Organization
+
+1
+
+Infrastructure
+
+2
+
+Community
+
+0
+
+Product
+
+5
+
+Ecosystem
+
+3
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti founding company (hari/bulan) tidak diketahui — hanya tahun 2023 yang terkonfirmasi
+- Tanggal pasti testnet launch tidak diketahui — hanya "2023" yang terkonfirmasi
+- Tanggal pasti Mainnet V1 launch (eETH) — hanya "2023-06" yang diestimasi dari kontrak deployment; perlu verifikasi exact date dari blog resmi
+- Tanggal pasti weETH deployment — hanya "2023-07" yang diestimasi; perlu verifikasi exact date
+- Tanggal pasti EigenLayer integration — hanya "2023-08" yang diestimasi; perlu verifikasi exact date announcement
+- Tanggal pasti V2 launch November 2023 — blog post "EtherFi V2 Liquid Restaking" tidak mencantumkan tanggal hari exact; perlu verifikasi
+- Detail ronde pendanaan (jumlah, valuation, struktur) tidak dipublikasikan secara detail — hanya investor names yang terkonfirmasi
+- Daftar auditor spesifik (nama firma, tanggal audit, scope) — docs.ether.fi/security/audits perlu dicek detail per-report
+- Tanggal pasti EtherFi Cash launch — "2024-01" diestimasi; perlu verifikasi exact date dari blog/announcement
+- Tanggal pasti EtherFi Vaults launch — "2024-02" diestimasi; perlu verifikasi exact date
+- Tanggal pasti Ultra Light Node launch — "2024-02" diestimasi; perlu verifikasi exact date
+- Tanggal pasti Symbiotic integration — "2024-03" diestimasi; perlu verifikasi exact date announcement
+- Tanggal pasti Pendle integration — "2024-03" diestimasi; perlu verifikasi exact date
+- Detail proposal governance pertama (EV-020) — snapshot.org/#/etherfi.eth perlu dicek proposal ID dan tanggal exact
+- Detail proposal fee switch (EV-024) — snapshot.org/#/etherfi.eth perlu dicek proposal ID, tanggal, dan outcome
+- Tanggal pasti multi-chain deployment per chain — EV-018 menggabungkan 10+ chain; perlu breakdown per-chain deployment date
+- Status legal entity / foundation — apakah EtherFi Foundation terdaftar sebagai yayasan/perusahaan di yurisdiksi tertentu belum diverifikasi
+- Regulatory engagement — apakah ada komunikasi dengan SEC, CFTC, atau regulator EU (MiCA) belum teridentifikasi
+- Team size aktual — hanya 2 founder publik; ukuran tim engineering, BD, ops, legal tidak diketahui
+- Tokenomics detail vesting schedule — CoinMarketCap/Binance Research menunjukkan TGE 18 Mar 2024 tapi schedule unlock team/investor tidak diverifikasi lengkap
+- TVL historical data points — DefiLlama memiliki data tapi exact milestone dates perlu cross-check
+- Security incident/exploit history — tidak ditemukan laporan exploit major; perlu verifikasi apakah ada incident minor yang tidak dipublikasikan

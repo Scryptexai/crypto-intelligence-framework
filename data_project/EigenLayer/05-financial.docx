@@ -1,0 +1,216 @@
+PROJECT: EigenLayer
+
+## Funding History
+
+### Funding Round: Series A
+Date: 2023-02
+Amount: $50M
+Currency: USD
+Lead Investor: Blockchain Capital
+Participating Investors: Coinbase Ventures, Polychain Capital
+Valuation: tidak diungkap
+Funding Type: Series A
+Status: Completed
+Sources: https://www.theblock.co/post/214073/eigenlayer-raises-50-million-series-a-blockchain-capital
+
+### Funding Round: Series B
+Date: 2024-02
+Amount: $100M
+Currency: USD
+Lead Investor: Andreessen Horowitz (a16z crypto)
+Participating Investors: tidak diungkap
+Valuation: $1B (unicorn valuation per laporan)
+Funding Type: Series B
+Status: Completed
+Sources: https://www.theblock.co/post/277456/eigenlayer-raises-100-million-series-b-a16z
+
+### Funding Round: Seed / Pre-Seed
+Date: tidak diungkap
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: tidak diungkap
+Participating Investors: tidak diungkap
+Valuation: tidak diungkap
+Funding Type: Seed
+Status: tidak diungkap
+Sources: tidak ada sumber terverifikasi untuk ronde seed
+
+### Funding Round: Strategic / Private Sale (Token)
+Date: tidak diungkap
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: tidak diungkap
+Participating Investors: tidak diungkap
+Valuation: tidak diungkap
+Funding Type: Private Sale
+Status: tidak diungkap
+Sources: tidak ada sumber terverifikasi untuk private sale token
+
+---
+
+## Treasury
+
+Current Treasury Size: tidak diungkap
+Treasury Composition: tidak diungkap
+Stablecoin Holdings: tidak diungkap
+Native Token Holdings: tidak diungkap
+Other Assets: tidak diungkap
+Treasury Custodian: Eigen Foundation (per struktur governance token EIGEN)
+Sources: https://blog.eigenlayer.xyz/eigen-token-genesis/, https://github.com/eigenfoundation
+
+---
+
+## Revenue Model
+
+### Revenue Stream: Protocol Fees (Restaking Fees)
+Status: Planned / Not Live
+Description: EigenLayer core protocol belum mengaktifkan fee switch untuk staker/operator; fee model untuk AVS masih dalam desain
+Sources: https://docs.eigenlayer.xyz/docs/overview/introduction, https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+### Revenue Stream: EigenDA Service Fees
+Status: Live (since 2024-04)
+Description: Rollup membayar fee ke EigenDA disperser untuk data availability; fee dibagikan ke operator dan protokol
+Sources: https://docs.eigenlayer.xyz/docs/eigenda/overview, https://www.eigenlayer.xyz/avs
+
+### Revenue Stream: AVS Service Fees (Other AVS)
+Status: Live (per AVS basis)
+Description: Setiap AVS (AltLayer, Dymension, Lagrange, dll) menentukan model fee sendiri; EigenLayer core tidak mengambil cut dari AVS fees
+Sources: https://docs.eigenlayer.xyz/docs/avs/overview, https://www.eigenlayer.xyz/avs
+
+### Revenue Stream: Operator Rewards / Restaking Yield
+Status: Live
+Description: Operator mendapatkan reward dari AVS yang diamankan; bukan revenue protokol tapi revenue operator
+Sources: https://docs.eigenlayer.xyz/docs/operators/overview
+
+### Revenue Stream: EIGEN Token Staking Rewards (Intersubjective Work)
+Status: Live (since 2024-10)
+Description: Staker EIGEN mendapatkan reward untuk mengamankan intersubjective work; berasal dari inflation/emisi token
+Sources: https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+### Revenue Stream: Grant / Ecosystem Fund
+Status: Ongoing
+Description: Eigen Foundation mengelola ekosistem fund untuk grant AVS, riset, dan pengembangan; bukan revenue operasional
+Sources: https://github.com/eigenfoundation, https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+---
+
+## Revenue History
+
+Tidak diungkap.
+Sources: tidak ada laporan revenue resmi (transparency report, token terminal, DefiLlama) yang mempublikasikan revenue historis EigenLayer core protocol per 2024-10
+
+---
+
+## Fundraising Mechanism
+
+- VC Funding: Series A ($50M, Blockchain Capital), Series B ($100M, a16z crypto)
+- Foundation: Eigen Foundation mengelola treasury token EIGEN untuk ekosistem
+- Protocol Revenue: EigenDA fees (live), AVS fees (per AVS), EIGEN staking rewards (inflationary)
+- Grant: Eigen Foundation ecosystem grants
+- Public Sale: Tidak ada public sale token EIGEN (TGE via Season 1/2 claim dan listing CEX)
+- Bootstrapping: Tidak berlaku (venture-backed)
+
+Sources: https://www.theblock.co/post/214073/eigenlayer-raises-50-million-series-a-blockchain-capital, https://www.theblock.co/post/277456/eigenlayer-raises-100-million-series-b-a16z, https://blog.eigenlayer.xyz/eigen-token-genesis/, https://github.com/eigenfoundation
+
+---
+
+## Token Sale
+
+### Token Sale: Private Sale (Investor Allocation)
+Date: tidak diungkap (pre-TGE)
+Status: Completed (vesting berlaku)
+Notes: Alokasi investor dari Series A/B termasuk token allocation; detail harga, jumlah, dan vesting tidak dipublikasikan resmi
+Sources: https://blog.eigenlayer.xyz/eigen-token-genesis/ (menyebut Season 1 & 2 sale tapi tidak detail private sale)
+
+### Token Sale: Community Sale / Season 1
+Date: 2024-10-01 (TGE)
+Status: Completed
+Notes: Season 1 claim untuk early restaker dan kontributor; bukan public sale tradisional
+Sources: https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+### Token Sale: Community Sale / Season 2
+Date: 2024-10 (post-TGE)
+Status: Ongoing
+Notes: Season 2 distribution untuk ekosistem luas; mekanisme claim berbasis aktivitas
+Sources: https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+### Token Sale: Public Sale / Launchpad / Auction
+Date: N/A
+Status: N/A
+Notes: Tidak ada public sale, launchpad, atau auction untuk token EIGEN
+Sources: https://blog.eigenlayer.xyz/eigen-token-genesis/, https://www.binance.com/en/support/announcement/eigen-eigen-listing
+
+---
+
+## Financial Dependencies
+
+- VC: Blockchain Capital (Series A lead), Andreessen Horowitz a16z crypto (Series B lead), Coinbase Ventures, Polychain Capital (Series A participants)
+- Foundation: Eigen Foundation (token treasury, ecosystem fund, governance)
+- Protocol Revenue: EigenDA service fees (primary live revenue), AVS fees (indirect via operator ecosystem)
+- Grant: Eigen Foundation ecosystem grants
+- DAO: Belum sepenuhnya aktif; governance on-chain direncanakan via EIGEN staking
+
+Sources: https://www.theblock.co/post/214073/eigenlayer-raises-50-million-series-a-blockchain-capital, https://www.theblock.co/post/277456/eigenlayer-raises-100-million-series-b-a16z, https://blog.eigenlayer.xyz/eigen-token-genesis/, https://github.com/eigenfoundation, https://docs.eigenlayer.xyz/docs/eigenda/overview
+
+---
+
+## Financial Risk
+
+### Risk: Treasury Concentration
+Description: Treasury sebagian besar dalam token EIGEN (native token); exposed ke volatilitas harga token
+Source: https://blog.eigenlayer.xyz/eigen-token-genesis/ (struktur tokenomics implication), https://github.com/eigenfoundation
+
+### Risk: Funding Dependency
+Description: Operasional Eigen Labs bergantung pada venture funding (Series A/B); belum ada revenue protokol yang signifikan untuk cover burn rate
+Source: https://www.theblock.co/post/214073/eigenlayer-raises-50-million-series-a-blockchain-capital, https://www.theblock.co/post/277456/eigenlayer-raises-100-million-series-b-a16z
+
+### Risk: Revenue Uncertainty
+Description: EigenDA fee revenue baru mulai 2024-04; volume bergantung pada adopsi rollup; AVS fees tidak langsung ke protokol core
+Source: https://docs.eigenlayer.xyz/docs/eigenda/overview, https://docs.eigenlayer.xyz/docs/avs/overview
+
+### Risk: Regulatory Financial Risk
+Description: Klasifikasi token EIGEN (security vs utility) belum final; struktur Eigen Foundation di Cayman vs Eigen Labs di Delaware menciptakan kompleksitas regulasi
+Source: https://blog.eigenlayer.xyz/eigen-token-genesis/, https://documents.deloitte.com/feeds/BCIR-2484369712E511E78A4C00155D0A3900
+
+### Risk: Slashing Financial Exposure
+Description: Restaker dan operator exposed ke slashing loss; tidak ada insurance fund protokol untuk cover slashing events
+Source: https://docs.eigenlayer.xyz/docs/core-contracts/slashingmanager, https://docs.eigenlayer.xyz/docs/operators/overview
+
+---
+
+## Official Financial Resources
+
+Official Blog: https://blog.eigenlayer.xyz/
+Transparency Report: tidak diungkap (tidak ada transparency report berkala yang dipublikasikan)
+Treasury Dashboard: tidak diungkap (tidak ada dashboard treasury publik)
+Governance: https://github.com/eigenfoundation, https://www.eigenlayer.xyz/governance (jika ada)
+Messari: https://messari.io/project/eigenlayer/profile
+Token Terminal: https://tokenterminal.com/terminal/projects/eigenlayer (jika tersedia)
+DefiLlama: https://defillama.com/protocol/eigenlayer
+CryptoRank: https://cryptorank.io/price/eigenlayer
+Whitepaper: https://www.eigenlayer.xyz/eigenlayer-whitepaper.pdf
+
+---
+
+## RINGKASAN
+
+Total Funding Raised: $150M (Series A $50M + Series B $100M) — tidak termasuk seed/private sale token yang tidak diungkap
+Funding Rounds: 2 ronde terverifikasi (Series A Feb 2023, Series B Feb 2024)
+Treasury Status: Tidak diungkap (ukuran, komposisi, custodian detail tidak transparan)
+Revenue Sources: EigenDA service fees (live), AVS fees (indirect), EIGEN staking rewards (inflationary), Ecosystem grants
+Revenue Availability: Tidak diungkap (tidak ada laporan revenue historis/publik)
+
+---
+
+## Open Threads
+
+- Seed round / pre-seed funding details: amount, investors, valuation — tidak ada sumber terverifikasi
+- Private sale token allocation: harga, jumlah token, vesting schedule untuk investor Series A/B — tidak dipublikasikan resmi
+- Eigen Foundation treasury size dan komposisi on-chain — tidak ada dashboard atau laporan transparansi
+- EigenDA actual revenue numbers (bulanan/tahunan) — tidak dipublikasikan
+- Eigen Labs burn rate dan runway — tidak diungkap
+- Tokenomics detail: persentase alokasi token (komunitas, investor, tim, foundation, ekosistem) — hanya disebut "Season 1 & 2" tanpa breakdown persentase resmi
+- Apakah ada fee switch untuk EigenLayer core protocol (non-EigenDA) — docs tidak jelas, perlu klarifikasi dari tim
+- Financial audit / financial statements Eigen Labs Inc — tidak publik (private company)
+- Eigen Foundation legal structure financial implications (Cayman foundation vs Delaware corp) — perlu analisis legal terpisah
+- Operator revenue data (agg) dari AVS — tidak teragregasi oleh protokol core

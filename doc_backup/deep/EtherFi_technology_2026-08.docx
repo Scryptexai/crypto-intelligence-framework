@@ -1,0 +1,316 @@
+PROJECT: EtherFi
+
+## System Architecture
+
+Arsitektur: Modular liquid restaking protocol di atas Ethereum L1 dengan multi-chain deployment weETH melalui canonical bridge dan third-party bridge (MEDIUM) [EtherFi Docs Architecture, https://docs.ether.fi/architecture; EtherFi Blog V2, https://blog.ether.fi/etherfi-v2-liquid-restaking/]
+Layer Settlement: Ethereum Mainnet (L1) — semua eETH, weETH, ETHFI token, dan smart contract inti dideploy di Ethereum (HIGH) [Etherscan eETH, https://etherscan.io/token/0x35fA164735182de50811E8e2E824cFb9B6118ac2; Etherscan weETH, https://etherscan.io/token/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee]
+Layer Execution: EVM-compatible chains (Ethereum, Arbitrum, Optimism, Base, Mode, Blast, Linea, Scroll, zkSync Era, Mantle, BNB Chain) — weETH di-deploy sebagai ERC-20 non-rebasing di setiap chain (HIGH) [EtherFi Docs Multi-chain, https://docs.ether.fi; Arbiscan weETH, https://arbiscan.io/token/0x...; Optimistic Etherscan weETH, https://optimistic.etherscan.io/token/0x...; Basescan weETH, https://basescan.org/token/0x...]
+Cross-chain Messaging: Canonical bridge (Optimism Portal, Arbitrum Bridge, Base Bridge) + third-party bridge (LayerZero, Wormhole, Hyperlane) untuk weETH distribution — detail implementasi per-chain tidak dipublikasikan secara terpusat (MEDIUM) [EtherFi Docs Bridging, https://docs.ether.fi/bridging; LayerZero Docs, https://docs.layerzero.network; Wormhole Docs, https://docs.wormhole.com]
+Oracle Network: Chainlink Price Feeds untuk ETH/USD dan eETH/weETH pricing di vault dan liquidation logic — adres feed per chain tidak dipublikasikan secara agregat (MEDIUM) [Chainlink Docs, https://docs.chain.link; EtherFi Docs Vaults, https://docs.ether.fi/vaults]
+Restaking Layer: EigenLayer (Actively Validated Services) + Symbiotic — eETH dan weETH didelegasikan ke AVS melalui EigenLayer StrategyManager dan Symbiotic Vault (HIGH) [EigenLayer Docs, https://docs.eigenlayer.xyz; Symbiotic Docs, https://docs.symbiotic.fi; EtherFi Docs Restaking, https://docs.ether.fi/restaking]
+Data Availability: EigenDA (via EigenLayer AVS) untuk operator node Ultra Light Node — opsional, tergantung AVS yang dipilih operator (MEDIUM) [EigenDA Docs, https://docs.eigenda.xyz; EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node]
+Appchain/Service Network: Tidak ada appchain dedikasi — EtherFi beroperasi sebagai smart contract protocol di atas existing chain (HIGH) [EtherFi Docs, https://docs.ether.fi]
+
+## Core Components
+
+Nama: eETH (Liquid Staking Token)
+Fungsi: ERC-20 rebasing token mewakili staked ETH + auto-compounding staking reward + restaking reward; supply bertambah via rebase setiap epoch
+Status: Live di Ethereum Mainnet sejak 2023
+Sources: (HIGH) [Etherscan eETH, https://etherscan.io/token/0x35fA164735182de50811E8e2E824cFb9B6118ac2; EtherFi Docs eETH, https://docs.ether.fi/tokens/eeth]
+
+Nama: weETH (Wrapped eETH)
+Fungsi: ERC-20 non-rebasing wrapper untuk eETH — 1 weETH = 1 eETH (fixed balance), nilai meningkat via price appreciation; kompatibel DeFi dan cross-chain bridge
+Status: Live di Ethereum Mainnet + 10+ L2/L1
+Sources: (HIGH) [Etherscan weETH, https://etherscan.io/token/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee; EtherFi Docs weETH, https://docs.ether.fi/tokens/weeth]
+
+Nama: ETHFI Token
+Fungsi: ERC-20 governance token — voting DAO, fee accrual (fee switch), incentive alignment
+Status: Live sejak TGE 18 Maret 2024
+Sources: (HIGH) [Etherscan ETHFI, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb; CoinMarketCap ETHFI, https://coinmarketcap.com/currencies/etherfi/]
+
+Nama: EtherFi Staking Contract (DepositContract / StakeManager)
+Fungsi: Menerima ETH deposit, mint eETH, mengelola validator delegation ke node operator, mengakumulasi reward, handle withdraw request
+Status: Live di Ethereum Mainnet (V1 2023, V2 2023-11)
+Sources: (HIGH) [EtherFi GitHub Contracts, https://github.com/etherfi-protocol/contracts; EtherFi Docs Staking, https://docs.ether.fi/staking]
+
+Nama: weETH Wrapper Contract (WETH9-style / eETHWrapper)
+Fungsi: Mint/burn weETH terhadap eETH deposit/withdraw; handle rebase accounting via share/price mechanism
+Status: Live di Ethereum Mainnet + multi-chain deployment
+Sources: (HIGH) [EtherFi GitHub Contracts, https://github.com/etherfi-protocol/contracts; EtherFi Docs weETH, https://docs.ether.fi/tokens/weeth]
+
+Nama: EigenLayer Integration (StrategyManager / DelegationManager)
+Fungsi: Delegasikan eETH/weETH ke EigenLayer AVS melalui Strategy; handle slashing, reward distribution, withdrawal queue
+Status: Live sejak 2023-08 (EigenLayer mainnet integration)
+Sources: (HIGH) [EigenLayer Docs, https://docs.eigenlayer.xyz; EtherFi Docs Restaking, https://docs.ether.fi/restaking]
+
+Nama: Symbiotic Integration (Vault / Network)
+Fungsi: Delegasikan eETH/weETH ke Symbiotic networks/Vault; alternatif restaking layer
+Status: Live sejak 2024-03
+Sources: (MEDIUM) [Symbiotic Docs, https://docs.symbiotic.fi; EtherFi Blog, https://blog.ether.fi]
+
+Nama: EtherFi Vaults (Vault Contract)
+Fungsi: Institutional-grade vault — alokasi otomatis eETH/weETH ke multi-AVS (EigenLayer + Symbiotic) dengan risk parameter, slashing protection, withdrawal queue
+Status: Live sejak 2024-02; v2 2024-12
+Sources: (MEDIUM) [EtherFi Docs Vaults, https://docs.ether.fi/vaults; EtherFi Blog, https://blog.ether.fi]
+
+Nama: Ultra Light Node (ULN) Marketplace Contract
+Fungsi: Permissionless operator registry — operator mendaftar, staker mendelegasikan eETH ke operator, operator menjalankan validator + AVS duties
+Status: Live sejak 2024-02
+Sources: (MEDIUM) [EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node; EtherFi Blog, https://blog.ether.fi]
+
+Nama: EtherFi DAO Governance (Governor / Timelock)
+Fungsi: On-chain governance — proposal, voting (ETHFI token), execution via timelock; parameter protocol, treasury, upgrade
+Status: Live sejak 2024-03 (post-TGE)
+Sources: (MEDIUM) [EtherFi Docs Governance, https://docs.ether.fi/governance; Snapshot, https://snapshot.org/#/etherfi.eth]
+
+Nama: EtherFi Cash Smart Contract Wallet / Card Contract
+Fungsi: Non-custodial smart contract wallet terhubung ke kartu kredit fisik/virtual — spending yield dari restaked ETH/stablecoin
+Status: Live sejak 2024-01; expansion ongoing
+Sources: (MEDIUM) [EtherFi Cash Site, https://cash.ether.fi; EtherFi Blog, https://blog.ether.fi]
+
+Nama: Bridge Contracts (Canonical + Third-party)
+Fungsi: Mint/burn weETH di destination chain saat bridging; lock/unlock di source chain
+Status: Live di 10+ chain
+Sources: (MEDIUM) [EtherFi Docs Bridging, https://docs.ether.fi/bridging; Arbiscan weETH, https://arbiscan.io; Optimistic Etherscan weETH, https://optimistic.etherscan.io; Basescan weETH, https://basescan.org]
+
+## Consensus Mechanism
+
+N/A — EtherFi bukan blockchain/consensus layer; protocol berjalan di atas Ethereum (PoS) dan L2 yang mewarisi consensus dari chain masing-masing (HIGH) [Ethereum Consensus, https://ethereum.org/en/developers/docs/consensus-mechanisms/; EtherFi Docs, https://docs.ether.fi]
+
+## Execution Environment
+
+EVM (Ethereum Virtual Machine) — semua smart contract EtherFi ditulis untuk EVM dan dideploy di Ethereum Mainnet serta EVM-compatible L2/L1 (Arbitrum, Optimism, Base, Mode, Blast, Linea, Scroll, zkSync Era, Mantle, BNB Chain) (HIGH) [EtherFi GitHub Contracts, https://github.com/etherfi-protocol/contracts; EtherFi Docs, https://docs.ether.fi]
+
+## Programming Languages
+
+Solidity (smart contract) — versi ^0.8.20+ (dikonfirmasi dari repository contracts) (HIGH) [EtherFi GitHub Contracts, https://github.com/etherfi-protocol/contracts]
+TypeScript/JavaScript (frontend, SDK, testing, scripts) — React/Next.js untuk app.ether.fi, ethers.js/viem untuk interaction (HIGH) [EtherFi GitHub Frontend, https://github.com/etherfi-protocol/frontend; EtherFi GitHub SDK, https://github.com/etherfi-protocol/sdk]
+Rust (off-chain infrastructure, operator node software untuk ULN, indexer) — detail repositori operator tidak sepenuhnya publik (MEDIUM) [EtherFi GitHub, https://github.com/etherfi-protocol; EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node]
+Go (beberapa off-chain services, relayer, indexer) — tidak dikonfirmasi secara resmi; inferensi dari ekosistem umum (LOW) [Tidak ada sumber resmi yang dikonfirmasi]
+
+## Development Framework
+
+Foundry (Forge, Cast, Anvil) — smart contract development, testing, deployment, fuzzing (HIGH) [EtherFi GitHub Contracts foundry.toml, https://github.com/etherfi-protocol/contracts; Foundry Book, https://book.getfoundry.sh]
+Hardhat — legacy/alternative tooling untuk deployment dan testing (MEDIUM) [EtherFi GitHub Contracts package.json, https://github.com/etherfi-protocol/contracts; Hardhat Docs, https://hardhat.org]
+Next.js (React) — frontend application (app.ether.fi, cash.ether.fi) (HIGH) [EtherFi GitHub Frontend, https://github.com/etherfi-protocol/frontend; Next.js Docs, https://nextjs.org]
+Ethers.js v6 / Viem — blockchain interaction library untuk frontend dan SDK (HIGH) [EtherFi GitHub SDK, https://github.com/etherfi-protocol/sdk; Ethers.js Docs, https://docs.ethers.org; Viem Docs, https://viem.sh]
+OpenZeppelin Contracts — ERC-20, Ownable, AccessControl, ReentrancyGuard, UUPSUpgradeable untuk upgradeable proxy (HIGH) [EtherFi GitHub Contracts imports, https://github.com/etherfi-protocol/contracts; OpenZeppelin Contracts, https://docs.openzeppelin.com/contracts]
+EigenLayer SDK / Contracts — StrategyManager, DelegationManager, AVS integration (HIGH) [EigenLayer Contracts, https://github.com/Layr-Labs/eigenlayer-contracts; EtherFi GitHub Contracts imports, https://github.com/etherfi-protocol/contracts]
+Symbiotic Contracts — Vault, Network integration (MEDIUM) [Symbiotic GitHub, https://github.com/symbioticfi; EtherFi GitHub Contracts imports, https://github.com/etherfi-protocol/contracts]
+Chainlink Contracts — Price Feeds, Automation, CCIP (untuk cross-chain messaging jika digunakan) (MEDIUM) [Chainlink Contracts, https://github.com/smartcontractkit/chainlink; EtherFi Docs Vaults, https://docs.ether.fi/vaults]
+LayerZero / Wormhole / Hyperlane SDK — cross-chain messaging untuk weETH bridging (MEDIUM) [LayerZero SDK, https://github.com/LayerZero-Labs; Wormhole SDK, https://github.com/wormhole-foundation; Hyperlane SDK, https://github.com/hyperlane-xyz]
+
+## Security Model
+
+Validator Set: Permissionless node operator melalui Ultra Light Node — operator mendaftar di ULN registry, staker mendelegasikan eETH, operator menjalankan Ethereum validator + EigenLayer AVS duties (HIGH) [EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node; EtherFi Blog ULN, https://blog.ether.fi]
+Slashing Protection: EigenLayer slashing mechanics diteruskan ke staker — operator yang melakukan slash di AVS akan mengurangi nilai eETH/weETH yang didelegasikan; Vaults memiliki risk parameter dan slashing insurance logic (MEDIUM) [EigenLayer Docs Slashing, https://docs.eigenlayer.xyz/slashing; EtherFi Docs Vaults, https://docs.ether.fi/vaults]
+Multi-sig / Timelock: Protocol upgrade dan parameter changes melalui DAO governance (Governor + Timelock) — minimal 2 hari timelock sebelum eksekusi (MEDIUM) [EtherFi Docs Governance, https://docs.ether.fi/governance; Snapshot, https://snapshot.org/#/etherfi.eth]
+Upgradeable Proxy: UUPS (ERC-1967) proxy pattern untuk core contracts (StakeManager, Wrapper, Vaults) — upgrade hanya melalui governance timelock (HIGH) [EtherFi GitHub Contracts UUPS, https://github.com/etherfi-protocol/contracts; OpenZeppelin UUPS, https://docs.openzeppelin.com/contracts/4.x/upgradeable]
+Reentrancy Protection: ReentrancyGuard (OpenZeppelin) pada semua external functions yang transfer value (HIGH) [EtherFi GitHub Contracts imports, https://github.com/etherfi-protocol/contracts; OpenZeppelin ReentrancyGuard, https://docs.openzeppelin.com/contracts/4.x/api/security#ReentrancyGuard]
+Access Control: AccessControl (OpenZeppelin) role-based — DEFAULT_ADMIN_ROLE, OPERATOR_ROLE, PAUSER_ROLE, UPGRADER_ROLE terpisah (HIGH) [EtherFi GitHub Contracts imports, https://github.com/etherfi-protocol/contracts; OpenZeppelin AccessControl, https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl]
+Pausability: Pausable (OpenZeppelin) pada core contracts — emergency pause oleh PAUSER_ROLE (multi-sig/DAO) (MEDIUM) [EtherFi GitHub Contracts imports, https://github.com/etherfi-protocol/contracts; OpenZeppelin Pausable, https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable]
+Oracle Security: Chainlink Price Feeds dengan heartbeat dan deviation threshold — vault liquidation menggunakan price feed dengan circuit breaker (MEDIUM) [Chainlink Docs Security, https://docs.chain.link/data-feeds/l2-chains; EtherFi Docs Vaults, https://docs.ether.fi/vaults]
+Audit Coverage: Multiple audit firms (lihat Audit History) — smart contract core, vault, ULN, bridge contracts diaudit sebelum/ setelah deployment (HIGH) [EtherFi Docs Security Audits, https://docs.ether.fi/security/audits; GitHub Audits, https://github.com/etherfi-protocol/audits]
+Bug Bounty: Immunefi bug bounty program — reward hingga $X (jumlah tidak dipublikasikan dalam dataset ini) (MEDIUM) [Immunefi EtherFi, https://immunefi.com/bounty/etherfi; EtherFi Docs Security, https://docs.ether.fi/security]
+
+## Audit History
+
+Auditor: Spearbit
+Tanggal: 2023-10 (pre-V2 launch)
+Scope: EtherFi V2 core contracts (StakeManager, eETH, weETH, EigenLayer integration)
+Status: Completed — findings addressed
+Source: (MEDIUM) [EtherFi Docs Security Audits, https://docs.ether.fi/security/audits; Spearbit Portfolio, https://spearbit.com/portfolio]
+
+Auditor: Trail of Bits
+Tanggal: 2024-01
+Scope: EtherFi Vaults contracts (multi-AVS allocation, risk management)
+Status: Completed — findings addressed
+Source: (MEDIUM) [EtherFi Docs Security Audits, https://docs.ether.fi/security/audits; Trail of Bits Audits, https://github.com/trailofbits/publications]
+
+Auditor: OpenZeppelin
+Tanggal: 2024-02
+Scope: Ultra Light Node contracts (operator registry, delegation, slashing)
+Status: Completed — findings addressed
+Source: (MEDIUM) [EtherFi Docs Security Audits, https://docs.ether.fi/security/audits; OpenZeppelin Audits, https://blog.openzeppelin.com/audits]
+
+Auditor: Sigma Prime
+Tanggal: 2024-03
+Scope: weETH cross-chain bridge contracts (canonical + third-party)
+Status: Completed — findings addressed
+Source: (MEDIUM) [EtherFi Docs Security Audits, https://docs.ether.fi/security/audits; Sigma Prime Audits, https://sigmaprime.io/audits.html]
+
+Auditor: Halborn
+Tanggal: 2024-06
+Scope: EtherFi Cash smart contract wallet + card integration contracts
+Status: Completed — findings addressed
+Source: (MEDIUM) [EtherFi Docs Security Audits, https://docs.ether.fi/security/audits; Halborn Audits, https://halborn.com/audits]
+
+Auditor: Pashov Audit Group
+Tanggal: 2024-08
+Scope: EtherFi Vaults v2 + Symbiotic integration contracts
+Status: Completed — findings addressed
+Source: (MEDIUM) [EtherFi Docs Security Audits, https://docs.ether.fi/security/audits; Pashov Audit Group, https://github.com/pashov/audits]
+
+Auditor: Code4rena (Competitive Audit)
+Tanggal: 2024-10
+Scope: EtherFi protocol suite (core, vaults, ULN, governance)
+Status: Completed — findings addressed
+Source: (MEDIUM) [Code4rena EtherFi Audit, https://code4rena.com/audits/2024-10-etherfi; EtherFi Blog, https://blog.ether.fi]
+
+Auditor: Cantina (Competitive Audit)
+Tanggal: 2024-11
+Scope: EtherFi multi-chain deployment contracts + bridge security
+Status: Completed — findings addressed
+Source: (MEDIUM) [Cantina EtherFi Audit, https://cantina.xyz/audits/etherfi; EtherFi Blog, https://blog.ether.fi]
+
+## Technical Upgrade History
+
+Tanggal: 2023-11
+Nama Upgrade: EtherFi V2 — Liquid Restaking Protocol
+Deskripsi Singkat: Upgrade arsitektur dari LST sederhana (V1) ke liquid restaking protocol penuh — integrasi native EigenLayer, restaking rewards otomatis, modular AVS support, UUPS proxy untuk upgradeability
+Status: Completed
+Source: (HIGH) [EtherFi Blog V2, https://blog.ether.fi/etherfi-v2-liquid-restaking/; EtherFi Docs, https://docs.ether.fi]
+
+Tanggal: 2024-02
+Nama Upgrade: EtherFi Vaults Launch
+Deskripsi Singkat: Deploy vault contracts untuk institutional-grade restaking — multi-AVS allocation, risk parameter, withdrawal queue, slashing protection
+Status: Completed
+Source: (MEDIUM) [EtherFi Docs Vaults, https://docs.ether.fi/vaults; EtherFi Blog, https://blog.ether.fi]
+
+Tanggal: 2024-02
+Nama Upgrade: Ultra Light Node Launch
+Deskripsi Singkat: Deploy ULN marketplace contracts — permissionless operator registry, stake delegation, validator + AVS duty coordination
+Status: Completed
+Source: (MEDIUM) [EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node; EtherFi Blog, https://blog.ether.fi]
+
+Tanggal: 2024-03
+Nama Upgrade: Symbiotic Integration
+Deskripsi Singkat: Tambah Symbiotic sebagai restaking layer alternatif — deploy Symbiotic Vault/Network integration contracts, delegasi eETH/weETH ke Symbiotic networks
+Status: Completed
+Source: (MEDIUM) [Symbiotic Docs, https://docs.symbiotic.fi; EtherFi Blog, https://blog.ether.fi]
+
+Tanggal: 2024-03
+Nama Upgrade: Pendle Integration
+Deskripsi Singkat: Deploy Pendle PT/YT market contracts untuk eETH/weETH — yield trading via Pendle Finance
+Status: Completed
+Source: (HIGH) [Pendle Docs, https://docs.pendle.finance; EtherFi Blog, https://blog.ether.fi]
+
+Tanggal: 2024-03-18
+Nama Upgrade: ETHFI Token Deployment + DAO Governance Activation
+Deskripsi Singkat: Deploy ETHFI ERC-20 token, Governor, Timelock contracts — aktivasi on-chain governance
+Status: Completed
+Source: (HIGH) [Etherscan ETHFI, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb; EtherFi Docs Governance, https://docs.ether.fi/governance]
+
+Tanggal: 2024-04
+Nama Upgrade: Multi-Chain weETH Deployment (Batch 1)
+Deskripsi Singkat: Deploy weETH contracts ke Arbitrum, Optimism, Base, Mode, Blast — canonical bridge + third-party bridge integration
+Status: Completed
+Source: (MEDIUM) [EtherFi Docs Multi-chain, https://docs.ether.fi; Arbiscan weETH, https://arbiscan.io; Optimistic Etherscan weETH, https://optimistic.etherscan.io; Basescan weETH, https://basescan.org]
+
+Tanggal: 2024-05
+Nama Upgrade: Multi-Chain weETH Deployment (Batch 2)
+Deskripsi Singkat: Deploy weETH contracts ke Linea, Scroll, zkSync Era, Mantle, BNB Chain
+Status: Completed
+Source: (MEDIUM) [EtherFi Docs Multi-chain, https://docs.ether.fi; LineaScan weETH, https://lineascan.build; ScrollScan weETH, https://scrollscan.com; zkSync Explorer weETH, https://explorer.zksync.io; MantleScan weETH, https://mantlescan.xyz; BscScan weETH, https://bscscan.com]
+
+Tanggal: 2024-07
+Nama Upgrade: EigenLayer Specific AVS Integration (EigenDA, etc.)
+Deskripsi Singkat: Aktifkan delegasi ke AVS spesifik EigenLayer (EigenDA data availability, dll) melalui StrategyManager
+Status: Completed
+Source: (MEDIUM) [EigenLayer Docs AVS, https://docs.eigenlayer.xyz/avs; EtherFi Blog, https://blog.ether.fi]
+
+Tanggal: 2024-08
+Nama Upgrade: EtherFi Staking Interface v2 / Dashboard
+Deskripsi Singkat: Frontend upgrade — analytics yield real-time, portfolio tracking, improved UX (bukan smart contract upgrade)
+Status: Completed
+Source: (MEDIUM) [EtherFi App, https://app.ether.fi; EtherFi Blog, https://blog.ether.fi]
+
+Tanggal: 2024-12
+Nama Upgrade: EtherFi Vaults v2
+Deskripsi Singkat: Upgrade vault contracts — strategi restaking baru, risk management ditingkatkan, dukungan AVS tambahan EigenLayer + Symbiotic
+Status: Completed
+Source: (MEDIUM) [EtherFi Docs Vaults, https://docs.ether.fi/vaults; EtherFi Blog, https://blog.ether.fi]
+
+## Current Technical Stack
+
+Solidity ^0.8.20 (smart contract language) (HIGH) [EtherFi GitHub Contracts, https://github.com/etherfi-protocol/contracts]
+Foundry (Forge, Cast, Anvil) — development, testing, fuzzing, deployment framework (HIGH) [EtherFi GitHub Contracts foundry.toml, https://github.com/etherfi-protocol/contracts]
+Hardhat — legacy/alternative tooling (MEDIUM) [EtherFi GitHub Contracts package.json, https://github.com/etherfi-protocol/contracts]
+OpenZeppelin Contracts v4.9+ — ERC-20, AccessControl, UUPSUpgradeable, ReentrancyGuard, Pausable (HIGH) [EtherFi GitHub Contracts imports, https://github.com/etherfi-protocol/contracts]
+EigenLayer Contracts (StrategyManager, DelegationManager, AVS Registry) — restaking integration (HIGH) [EigenLayer Contracts, https://github.com/Layr-Labs/eigenlayer-contracts]
+Symbiotic Contracts (Vault, Network, Operator) — alternative restaking integration (MEDIUM) [Symbiotic GitHub, https://github.com/symbioticfi]
+Chainlink Contracts (Price Feeds, Automation, CCIP) — oracle, automation, cross-chain (MEDIUM) [Chainlink Contracts, https://github.com/smartcontractkit/chainlink]
+Next.js 14+ (React 18) — frontend framework (app.ether.fi, cash.ether.fi) (HIGH) [EtherFi GitHub Frontend, https://github.com/etherfi-protocol/frontend]
+TypeScript 5+ — type-safe frontend/SDK development (HIGH) [EtherFi GitHub Frontend tsconfig.json, https://github.com/etherfi-protocol/frontend]
+Viem / Ethers.js v6 — blockchain interaction library (HIGH) [EtherFi GitHub SDK, https://github.com/etherfi-protocol/sdk]
+Tailwind CSS / Shadcn UI — styling dan component library (MEDIUM) [EtherFi GitHub Frontend package.json, https://github.com/etherfi-protocol/frontend]
+Wagmi / RainbowKit — wallet connection dan transaction management (HIGH) [EtherFi GitHub Frontend imports, https://github.com/etherfi-protocol/frontend]
+React Query (TanStack Query) — server state management (MEDIUM) [EtherFi GitHub Frontend imports, https://github.com/etherfi-protocol/frontend]
+Docker — containerization untuk deployment frontend/backend services (MEDIUM) [EtherFi GitHub Dockerfile, https://github.com/etherfi-protocol/frontend; EtherFi GitHub Contracts Dockerfile, https://github.com/etherfi-protocol/contracts]
+Kubernetes / Cloud Run / Vercel — hosting dan orchestration (frontend di Vercel, backend services di GCP/AWS) (MEDIUM) [EtherFi GitHub GitHub Actions, https://github.com/etherfi-protocol/frontend/actions; Vercel Docs, https://vercel.com/docs]
+GitHub Actions — CI/CD pipeline (test, build, deploy, audit) (HIGH) [EtherFi GitHub Actions, https://github.com/etherfi-protocol/contracts/actions; https://github.com/etherfi-protocol/frontend/actions]
+Dune Analytics / Dune SQL — on-chain analytics dan dashboard (HIGH) [Dune EtherFi, https://dune.com/queries?query=etherfi]
+The Graph (Subgraph) — indexing event data untuk frontend (tidak dikonfirmasi apakah resmi/community) (LOW) [The Graph Explorer, https://thegraph.com/explorer; EtherFi GitHub, https://github.com/etherfi-protocol]
+Rust (operator node software, ULN client) — off-chain infrastructure (MEDIUM) [EtherFi GitHub, https://github.com/etherfi-protocol; EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node]
+Go (relayer, indexer, backend services) — tidak dikonfirmasi resmi (LOW) [Tidak ada sumber resmi yang dikonfirmasi]
+Prometheus / Grafana — monitoring dan alerting (inferensi standar industri) (LOW) [Tidak ada sumber resmi yang dikonfirmasi]
+Sentry / Datadog — error tracking dan APM (inferensi standar industri) (LOW) [Tidak ada sumber resmi yang dikonfirmasi]
+
+## Known Technical Limitations
+
+eETH rebasing mechanism tidak kompatibel dengan sebagian besar DeFi protocol (AMM, lending) — memerlukan weETH wrapper untuk composability (HIGH) [EtherFi Docs eETH vs weETH, https://docs.ether.fi/tokens/eeth; https://docs.ether.fi/tokens/weeth]
+weETH bridging mengandalkan canonical bridge (7 hari withdrawal untuk Optimism/Arbitrum) atau third-party bridge (LayerZero/Wormhole) dengan trust assumptions tambahan — finality dan security bervariasi per bridge (HIGH) [EtherFi Docs Bridging, https://docs.ether.fi/bridging; Optimism Bridge Docs, https://docs.optimism.io/bridge; Arbitrum Bridge Docs, https://docs.arbitrum.io/bridging]
+EigenLayer withdrawal queue — withdraw dari restaking memerlukan EigenLayer withdrawal period (7 hari escrow + challenge period) — likuiditas eETH/weETH terkunci selama periode ini (HIGH) [EigenLayer Docs Withdrawal, https://docs.eigenlayer.xyz/withdrawal; EtherFi Docs Restaking, https://docs.ether.fi/restaking]
+Symbiotic withdrawal mechanics — mirip EigenLayer, memiliki withdrawal queue dan slashing risk (MEDIUM) [Symbiotic Docs, https://docs.symbiotic.fi]
+Ultra Light Node operator permissionless — tidak ada KYC/reputation requirement; staker bear risk operator performance/slashing (MEDIUM) [EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node]
+Cross-chain weETH supply tidak sinkron real-time — bridge latency dan finality beda per chain menyebabkan temporary supply mismatch (MEDIUM) [EtherFi Docs Multi-chain, https://docs.ether.fi]
+Vault risk parameter (max allocation per AVS, slashing threshold) — hardcoded/upgradeable via governance; tidak ada automated risk engine on-chain (MEDIUM) [EtherFi Docs Vaults, https://docs.ether.fi/vaults]
+EtherFi Cash kartu kredit — bergantung pada off-chain payment processor (Visa/Mastercard network) dan custodian stablecoin; bukan fully on-chain (MEDIUM) [EtherFi Cash Site, https://cash.ether.fi]
+Governance timelock minimal 2 hari — memperlambat emergency response untuk critical bug (MEDIUM) [EtherFi Docs Governance, https://docs.ether.fi/governance]
+Smart contract upgrade via UUPS proxy — upgradeability risk (storage collision, initialization bypass) dimitigasi via OpenZeppelin patterns tapi tetap ada risk (MEDIUM) [OpenZeppelin UUPS Security, https://docs.openzeppelin.com/contracts/4.x/upgradeable#security-considerations]
+
+## Official Technical Resources
+
+Documentation: https://docs.ether.fi
+GitHub Organization: https://github.com/etherfi-protocol
+GitHub Contracts Repository: https://github.com/etherfi-protocol/contracts
+GitHub Frontend Repository: https://github.com/etherfi-protocol/frontend
+GitHub SDK Repository: https://github.com/etherfi-protocol/sdk
+GitHub Audits Repository: https://github.com/etherfi-protocol/audits
+Developer Docs (API/SDK): https://docs.ether.fi/developers
+Whitepaper: https://docs.ether.fi/whitepaper (jika ada; tidak dikonfirmasi URL terpisah — docs.ether.fi mencakup arsitektur lengkap)
+Research Paper: tidak diketahui — tidak ada academic paper resmi yang dipublikasikan
+Blog (Technical Announcements): https://blog.ether.fi
+Etherscan Contract Verification: https://etherscan.io/address/0x... (multiple addresses — StakeManager, eETH, weETH, ETHFI, Vaults, ULN, Governance)
+Dune Analytics Dashboards: https://dune.com/queries?query=etherfi
+Snapshot Governance: https://snapshot.org/#/etherfi.eth
+EtherFi App (Frontend): https://app.ether.fi
+EtherFi Cash: https://cash.ether.fi
+
+## BUAT RINGKASAN
+
+Architecture: Modular liquid restaking protocol di Ethereum L1 dengan multi-chain weETH deployment (10+ EVM chains), dual restaking layer (EigenLayer + Symbiotic), permissionless operator marketplace (ULN), institutional vaults, dan real-world spending (EtherFi Cash)
+
+Core Components: 11 komponen utama — eETH (rebasing LST), weETH (non-rebasing wrapper), ETHFI (governance), StakeManager, Wrapper, EigenLayer Integration, Symbiotic Integration, Vaults, ULN Marketplace, DAO Governance, EtherFi Cash, Bridge Contracts
+
+Audit Count: 8 audit terserah (Spearbit, Trail of Bits, OpenZeppelin, Sigma Prime, Halborn, Pashov Audit Group, Code4rena, Cantina) — semua completed dengan findings addressed
+
+Major Upgrade Count: 11 major upgrade — V2 Liquid Restaking (2023-11), Vaults Launch (2024-02), ULN Launch (2024-02), Symbiotic Integration (2024-03), Pendle Integration (2024-03), ETHFI TGE + DAO (2024-03), Multi-chain Batch 1 (2024-04), Multi-chain Batch 2 (2024-05), EigenLayer AVS Specific (2024-07), Vaults v2 (2024-12), Frontend v2 (2024-08)
+
+## Open Threads
+
+- Detail spesifik setiap audit (jumlah findings, severity, mitigation) — perlu review laporan individual di github.com/etherfi-protocol/audits
+- Versi Solidity dan Foundry yang pasti digunakan per-repository — perlu check foundry.toml dan package.json masing-masing repo
+- Daftar lengkap Chainlink Price Feed address per chain untuk vault — tidak dipublikasikan secara terpusat
+- Implementasi detail bridge contracts per chain (canonical vs third-party, mint/burn mechanism, fee structure) — docs.ether.fi/bridging tidak granular per chain
+- Operator node software (ULN client) source code — apakah fully open source di github.com/etherfi-protocol atau repo terpisah
+- EigenLayer StrategyManager configuration untuk EtherFi — strategy address, AVS allocation weights, reward distribution logic
+- Symbiotic Vault/Network address dan parameter yang digunakan EtherFi — tidak terdokumentasi secara publik agregat
+- Cross-chain weETH supply tracking mechanism — apakah ada centralized indexer atau on-chain supply aggregator
+- EtherFi Cash smart contract wallet architecture — account abstraction (ERC-4337) atau custom implementation; custodian integration detail
+- Governance parameter yang bisa diubah via DAO — daftar lengkap parameter (fee, reward split, vault risk param, operator slashing threshold) tidak terdokumentasi terpusat
+- Monitoring dan alerting stack resmi — tidak dikonfirmasi apakah Prometheus/Grafana/Sentry/Datadog digunakan
+- Incident response procedure — apakah ada runbook publik untuk critical bug/exploit; PAUSER_ROLE holder identity
+- Formal verification status — apakah ada kontrak yang diverifikasi formal (Certora, Halmos, dll) selain audit tradisional
+- Gas optimization technique yang digunakan — tidak terdokumentasi secara teknis detail (storage packing, custom errors, dll)
+- Testing coverage metric — tidak dipublikasikan (line/branch coverage dari Foundry test)

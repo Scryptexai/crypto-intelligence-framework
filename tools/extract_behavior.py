@@ -47,11 +47,17 @@ SECTION_HEADERS = [
     "Ecosystem Decision Pattern", "Governance Decision Pattern",
     "Risk Response Pattern", "Recurring Behavioral Pattern", "Strategic Trade-offs",
 ]
-DECISION_PATTERN_SECTIONS = {
+# A tuple, not a set, and the order is the docstring's order above. As a set this was iterated
+# at line ~113 to concatenate five sections into decisionPatterns, so the output order followed
+# set iteration order -- which varies per process with PYTHONHASHSEED. Two consecutive
+# `./run.sh build` runs over identical dossiers produced different poc/behavior.json files:
+# same items, same counts (verified across three runs), shuffled order. That meant a spurious
+# ~80-line diff on every build, and a Supabase column rewritten for no reason on every sync.
+DECISION_PATTERN_SECTIONS = (
     "Technical Decision Pattern", "Financial Decision Pattern",
     "Ecosystem Decision Pattern", "Governance Decision Pattern",
     "Recurring Behavioral Pattern",
-}
+)
 
 _header_alt = "|".join(re.escape(h) for h in SECTION_HEADERS)
 

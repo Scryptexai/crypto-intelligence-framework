@@ -1,0 +1,127 @@
+PROJECT: Curve
+
+Strategic Objectives
+
+1. Mempertahankan dominasi likuiditas stableswap lintas chain
+Curve memposisikan diri sebagai lapisan wholesale liquidity untuk stablecoin, LST, dan wrapped assets — pool kanonik (3pool, stETH/ETH) menjadi venue referensi yang dirutekan agregator.
+Evidence: Pool stableswap Curve menjadi venue utama era 2020-2023【Phase 8 — Market Timeline】; integrasi agregator DEX luas【Phase 7 — Key Integrations】 (HIGH)
+Sources: Phase 7 Ecosystem; Phase 8 Market
+
+2. Memperluas value capture melalui crvUSD dan Curve Lend
+Ekspansi dari DEX menjadi issuer stablecoin + lending untuk menambah basis fee di luar swap.
+Evidence: crvUSD launch Mei 2023 dengan mekanisme LLAMMA【Phase 3 — EV-005】; Curve Lend era 2024+【Phase 3 — EV-007】 (MEDIUM)
+Sources: Phase 3 EV-005, EV-007
+
+3. Menjaga relevansi governance CRV pasca-Curve-Wars
+Gauge voting dan fee share ke veCRV dipertahankan sebagai inti utilitas ketika meta-layer agregasi (Convex) mendingin.
+Evidence: Mekanisme veCRV tetap beroperasi penuh; diskusi value accrual komunitas【Phase 6 — Utility; Phase 3 — EV-004】 (MEDIUM)
+Sources: Phase 6 Utility; Phase 3 EV-004
+
+Decision Timeline
+
+Keputusan: Fokus pada invariant StableSwap khusus aset serupa (2019-2020)
+· Trigger: Slippage AMM umum terlalu besar untuk stablecoin dan aset bernilai serupa
+· Evidence: StableSwap whitepaper menjelaskan motivasi invariant khusus (HIGH) [https://curve.fi/whitepaper.pdf]
+· Decision: Membangun AMM dengan invariant khusus kelas aset homogen alih-alih fork AMM umum
+· Immediate Result: Pool stableswap dengan slippage terendah di kelasnya; adopsi venue stablecoin cepat
+· Long-term Impact: Moat likuiditas stablecoin bertahun-tahun; template desain untuk kategori aset homogen lain
+· Supporting Dataset: Phase 1 Foundation; Phase 4 Technology
+
+Keputusan: Distribusi CRV via gauge emission + vesting tanpa public sale (2020-08-14)
+· Trigger: Perang insentif DeFi Summer; kebutuhan mengunci likuiditas LP yang sudah besar
+· Evidence: TGE CRV 14 Agustus 2020 dengan liquidity mining gauge (HIGH)【Phase 6 — Token; Phase 3 — EV-002】
+· Decision: Emisi 62% komunitas via gauge; sisa alokasi vesting kategori internal; tanpa ICO/public sale
+· Immediate Result: TVL melonjak; CRV menjadi pusat narasi DeFi Summer gelombang kedua
+· Long-term Impact: Nilai CRV bergantung permintaan gauge voting; komposisi per kategori menjadi konflik data (C-001 Phase 11)
+· Supporting Dataset: Phase 6 Distribution, Vesting Schedule; Phase 3 EV-002
+
+Keputusan: Mekanisme vote-escrow veCRV (2020-08/09)
+· Trigger: Butuh komitmen jangka panjang pemegang token dan kualitas governance
+· Evidence: veCRV dengan lock hingga 4 tahun, boost 2.5x, fee share, gauge voting (HIGH)【Phase 6 — Utility; Phase 3 — EV-003】
+· Decision: Lock CRV untuk hak governance & ekonomi; bukan staking sederhana
+· Immediate Result: Lock skala besar; lahirnya Curve Wars dan meta-layer (Convex, Votium)
+· Long-term Impact: Template ve-token diadopsi industri; konsentrasi pengaruh di agregator menjadi risiko terpusat
+· Supporting Dataset: Phase 3 EV-003, EV-004; Phase 7 Ecosystem Risks
+
+Keputusan: Respons krisis eksploitasi Vyper dan posisi founder (2023-07/08)
+· Trigger: Bug reentrancy Vyper pada pool Curve + posisi pinjaman founder berkolateral CRV dalam tekanan likuidasi
+· Evidence: Eksploitasi pool era Agustus 2023 dan penjualan OTC CRV oleh founder (MEDIUM)【Phase 3 — EV-006】
+· Decision: Patch/audit cepat, penanganan pool terdampak, dan penjualan CRV via OTC (bukan pasar terbuka) untuk mengamankan posisi pribadi founder
+· Immediate Result: Pool terdampak ditangani; harga tetap tertekan; kontroversi OTC
+· Long-term Impact: Pelajaran keamanan tooling; pengawasan komunitas atas posisi tokoh kunci
+· Supporting Dataset: Phase 3 EV-006; Phase 10 K-006, K-007
+
+Technical Decision Pattern
+
+Pola 1: Spesialisasi invariant per kelas aset (StableSwap vs Crypto pools) bukan satu AMM umum
+Spesialisasi memberi slippage optimal per kategori dengan kontrak terpisah yang lebih sederhana diaudit per kelas.
+Evidence: StableSwap pools untuk aset serupa; Crypto pools untuk pasangan volatil【Phase 4 — Technology】 (HIGH)
+
+Pola 2: Factory pools permissionless untuk ekspansi venue tanpa bottleneck governance
+Template aman memungkinkan listing venue baru cepat lintas aset dan chain.
+Evidence: Factory deployments multi-chain【Phase 7 — Chain Deployments; Phase 4 — Technology】 (MEDIUM)
+
+Pola 3: crvUSD dengan likuidasi gradual LLAMAA alih-alih hard liquidation
+Mekanisme halus mengurangi risiko death-spiral stablecoin dibanding desain likuidasi seketika.
+Evidence: crvUSD launch 2023-05【Phase 3 — EV-005; Phase 10 — K-005】 (MEDIUM)
+
+Financial Decision Pattern
+
+Pola 1: Value accrual via fee share ke veCRV (bukan buyback/burn)
+Arus kas riil ke pemegang yang mengunci token; ketergantungan pada volume swap sebagai basis nilai.
+Evidence: Fee distribution whitepaper【Curve whitepaper, https://curve.fi/whitepaper.pdf; Phase 6 — Utility】 (HIGH)
+
+Pola 2: Emisi menurun bertahap hingga max supply 3,03 miliar CRV
+Kelangkaan dibangun via kurva emisi, bukan fixed supply awal — kontras model fair-launch.
+Evidence: Supply model Phase 6【Phase 6 — Supply】 (HIGH)
+
+Pola 3: Tanpa public sale; pendanaan awal via alokasi token vesting
+Menghindari kewajiban publik ICO namun menciptakan opasitas komposisi (konflik C-001).
+Evidence: Phase 5 Fundraising Mechanism; Phase 6 Distribution (MEDIUM)
+
+Ecosystem Decision Pattern
+
+Pola 1: Membiarkan meta-layer (Convex/bribe market) tumbuh tanpa intervensi
+Curve Wars menciptakan permintaan tambahan atas CRV tanpa Curve harus membangun agregator sendiri.
+Evidence: Convex menjadi agregator veCRV terbesar【Phase 3 — EV-004; Phase 7 — Key Integrations】 (MEDIUM)
+
+Pola 2: Deployment mengikuti likuiditas ke chain baru (Arbitrum, Optimism, Polygon, dll.)
+First-mover venue stableswap per chain memberi posisi default.
+Evidence: Multi-chain deployments【Phase 7 — Chain Deployments】 (MEDIUM)
+
+Governance Decision Pattern
+
+Pola 1: Gauge voting sebagai alokasi sumber daya publik (emisi)
+Menciptakan pasar politik internal (bribe) yang menjadi fitur retensi likuiditas, bukan bug.
+Evidence: Gauge weight voting veCRV【Phase 6 — Utility; Phase 3 — EV-004】 (HIGH)
+
+Risk Response Pattern
+
+Pola 1: Respons teknis cepat dengan komunikasi publik terbatas saat krisis
+Terlihat pada eksploitasi Vyper 2023: patch dan penanganan pool cepat, namun narasi publik minimal — memperpanjang periode ketidakpastian pasar.
+Evidence: Krisis 2023-07/08【Phase 3 — EV-006】 (MEDIUM)
+
+Pola 2: Penanganan posisi tokoh kunci via jalur OTC untuk menghindari tekanan harga spot
+Keputusan OTC founder mengurangi crash langsung namun menciptakan kontroversi transparansi.
+Evidence: OTC sale CRV 2023【Phase 3 — EV-006; Phase 10 — K-007】 (MEDIUM)
+
+Recurring Behavioral Pattern
+
+Pola 1: Iterasi produk bertahap (Earn-era pools → veCRV → factory → crvUSD → Lend) tanpa grand relaunch
+Ekspansi kapabilitas dilakukan aditif sambil menjaga pool lama tetap berjalan.
+Evidence: Timeline produk Phase 3【Phase 3 — Events】 (HIGH)
+
+Strategic Trade-offs
+
+Trade-off 1: Emisi besar untuk likuiditas vs tekanan inflasi CRV jangka panjang
+Insentif gauge efektif mengunci TVL namun menciptakan pasokan berkelanjutan yang harus diserap permintaan lock/fee.
+
+Trade-off 2: Membiarkan konsentrasi veCRV di Convex vs risiko ketergantungan satu agregator
+Efisiensi governance tinggi tetapi perubahan strategi satu entitas memengaruhi seluruh insentif emisi.
+
+Trade-off 3: crvUSD menambah produk dan fee vs menambah risiko sistemik stablecoin ke protokol
+Diversifikasi pendapatan datang bersama eksposur mekanisme likuidasi dan kepercayaan stablecoin.
+
+Open Threads
+- Motivasi detail keputusan OTC founder 2023 (pernyataan langsung)
+- Arah strategis gauge era post-Curve-Wars (proposal terkait)
