@@ -6443,5 +6443,133 @@
       "assessment": "Airdrop ZK adalah contoh distribusi besar yang sukses secara operasional namun merugikan secara naratif — desain kriteria dan opacity treasury mengubah windfall komunitas menjadi krisis kepercayaan (MEDIUM)"
     },
     "lessons": []
+  },
+  "Yearn Finance": {
+    "projectSlug": "yearn-finance",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Fair Launch Distribution (3 Liquidity Pools)",
+        "date": "2020-07 (minggu ketiga; distribusi berlangsung ~1 minggu)",
+        "type": "Liquidity-provision based fair launch (bukan retroactive, bukan claim portal)",
+        "allocation": "30.000 YFI (100% supply awal) — dibagi proporsional ke penyedia likuiditas di 3 pool: Curve yPool, YFI/DAI Balancer, YFI/yPool-LP Balancer (HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]",
+        "recipients": "Liquidity provider yang menyetor aset ke ketiga pool selama periode distribusi; jumlah penerima unik tidak dipublikasikan resmi (LOW)",
+        "valueAtClaim": "Tidak berlaku dalam bentuk klaim satu kali — YFI mengalir (accrue) ke LP selama periode distribusi; harga pasar terbentuk bersamaan di DEX/CEX (lihat HARGA PASCA-DISTRIBUSI untuk titik terverifikasi terdekat)",
+        "criteria": "Menyediakan likuiditas di pool eligible selama window distribusi — tidak ada syarat lain, tidak ada pendaftaran (HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]",
+        "antiSybil": "Tidak diperlukan — distribusi berbasis kontribusi likuiditas riil (dana nyata harus disetor); farming modal besar mungkin namun berbiaya nyata (HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]",
+        "relatedEvent": "EV-002 (Fair launch YFI)",
+        "citation": "Phase 3 EV-002; Phase 6 Distribution (HIGH)"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "Andre Cronje",
+        "shortTerm": "Deposit platform melonjak dari ~$8 juta ke ~$300 juta pasca pengumuman token; Yearn menjadi pusat atensi DeFi Summer (HIGH) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]",
+        "longTerm": "Status kultus dan kredibilitas abadi sebagai arsitek fair launch; namun Cronje tidak memiliki YFI secara alokasi dan kemudian mengurangi keterlibatan (2021) — imbal hasil baginya reputasional, bukan finansial langsung dari distribusi (HIGH) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]",
+        "basis": "Phase 3 EV-002, EV-004 (HIGH)"
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "retail": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "LP penerima distribusi",
+        "shortTerm": "LP menerima YFI dengan basis biaya oportunitas likuiditas (bukan pembelian) — harga naik dari kisaran puluhan USD saat distribusi ke ~$39.754 pada 14 September 2020 (candle terverifikasi terdekat; KuCoin baru listing 14 Sep 2020) — apresiasi >100x dalam ~2 bulan bagi yang memegang (MEDIUM) [KuCoin YFI-USDT, https://www.kucoin.com/trade/YFI-USDT]",
+        "longTerm": "Pemegang hingga Mei 2021 melihat high $94.899 (wick KuCoin 12 Mei 2021); volatilitas ekstrem sepanjang perjalanan (MEDIUM) [KuCoin YFI-USDT, https://www.kucoin.com/trade/YFI-USDT]",
+        "basis": "KuCoin price history (MEDIUM)"
+      },
+      "community": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "Pengguna & governance awal",
+        "shortTerm": "Komunitas pemilik token terbentuk instan; governance YFI aktif sejak awal (HIGH) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]",
+        "longTerm": "DAO terbukti mampu bertahan tanpa founder penuh (transisi 2021) dan menyelesaikan keputusan sulit (minting 6.666 YFI, anggaran) — model governance matang (MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]",
+        "basis": "Phase 3 EV-004, EV-005 (HIGH/MEDIUM)"
+      },
+      "developer": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Engineer & strategist ekosistem",
+        "shortTerm": "Tidak ada program grants formal saat fair launch; developer bergabung organik (MEDIUM)",
+        "longTerm": "Pendanaan kontributor baru tersedia setelah minting 2021; era v3 membuka strategi permissionless bagi pihak ketiga (MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]",
+        "basis": "Phase 3 EV-005, EV-007 (MEDIUM)"
+      },
+      "institution": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Exchange & fund awal",
+        "shortTerm": "Listing cepat di CEX besar (termasuk Binance) memberi fee volume tinggi dari volatilitas YFI (MEDIUM) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]",
+        "longTerm": "YFI menjadi aset prestise ultra-low-supply di portofolio DeFi; namun tanpa revenue share ke holder, kasus institusional jangka panjang terbatas (MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]",
+        "basis": "Phase 8 Trading Markets (MEDIUM)"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "builder": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Protokol yang berintegrasi dengan vault Yearn",
+        "shortTerm": "Integrasi vault memberi protokol target (Curve, Aave, dll.) likuiditas tambahan otomatis (MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]",
+        "longTerm": "Hubungan simbiosis (terutama Curve Wars via Convex/Votium) bertahan lintas siklus (MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]",
+        "basis": "Phase 2 Entities (MEDIUM)"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": 39753.87,
+        "date": "2020-09-14",
+        "source": "KuCoin YFI-USDT daily candle close — candle terverifikasi terdekat; KuCoin baru me-listing YFI 14 Sep 2020, sementara distribusi fair launch terjadi minggu ketiga Juli 2020 dengan harga awal kisaran puluhan USD yang tidak tercakup candle exchange ini, https://www.kucoin.com/trade/YFI-USDT",
+        "evidence": "MEDIUM",
+        "raw": "39753.87 USD (2020-09-14) [KuCoin YFI-USDT daily candle close — candle terverifikasi terdekat; KuCoin baru me-listing YFI 14 Sep 2020, sementara distribusi fair launch terjadi minggu ketiga Juli 2020 dengan harga awal kisaran puluhan USD yang tidak tercakup candle exchange ini, https://www.kucoin.com/trade/YFI-USDT] (MEDIUM)"
+      },
+      "day30": {
+        "usd": 39753.87,
+        "date": "2020-09-14",
+        "source": "KuCoin YFI-USDT daily candle close — titik +30 hari sesungguhnya (pertengahan Agustus 2020) jatuh sebelum listing KuCoin; candle terverifikasi terdekat dipakai, https://www.kucoin.com/trade/YFI-USDT",
+        "evidence": "MEDIUM",
+        "raw": "39753.87 USD (2020-09-14) [KuCoin YFI-USDT daily candle close — titik +30 hari sesungguhnya (pertengahan Agustus 2020) jatuh sebelum listing KuCoin; candle terverifikasi terdekat dipakai, https://www.kucoin.com/trade/YFI-USDT] (MEDIUM)"
+      },
+      "day90": {
+        "usd": 14047.26,
+        "date": "2020-10-17",
+        "source": "KuCoin YFI-USDT daily candle close, https://www.kucoin.com/trade/YFI-USDT",
+        "evidence": "MEDIUM",
+        "raw": "14047.26 USD (2020-10-17) [KuCoin YFI-USDT daily candle close, https://www.kucoin.com/trade/YFI-USDT] (MEDIUM)"
+      },
+      "peak12m": {
+        "usd": 94899.4,
+        "date": "2021-05-12",
+        "source": "KuCoin YFI-USDT daily candle high (volatilitas ekstrem Mei 2021; volume hari itu 183 YFI — catat sebagai wick exchange-specific; agregator umum menyebut ATH ~$43-44k Sep 2020 dari data lintas-venue yang berbeda), https://www.kucoin.com/trade/YFI-USDT",
+        "evidence": "MEDIUM",
+        "raw": "94899.40 USD (2021-05-12) [KuCoin YFI-USDT daily candle high (volatilitas ekstrem Mei 2021; volume hari itu 183 YFI — catat sebagai wick exchange-specific; agregator umum menyebut ATH ~$43-44k Sep 2020 dari data lintas-venue yang berbeda), https://www.kucoin.com/trade/YFI-USDT] (MEDIUM)"
+      }
+    },
+    "retention": [],
+    "gaps": [
+      "Cohort penerima: distribusi via LP pool tanpa daftar penerima publik — analisis per-alamat memerlukan rekonstruksi on-chain transfer YFI minggu Juli 2020.",
+      "Harga hari-hari pertama fair launch (Juli 2020) tidak tercakup exchange yang datanya diakses riset ini (KuCoin listing 14 Sep 2020).",
+      "INKONSISTENSI rekor harga: ~$43k Sep 2020 (agregator umum) vs $94.899 Mei 2021 (KuCoin, volume kecil) — keduanya dicatat di Conflict Register C-003."
+    ],
+    "prospect": {
+      "met": null,
+      "unmet": null,
+      "signals": null,
+      "assessment": "Fair launch YFI adalah distribusi paling bersih secara prinsip di dataset ini — outcome LP spektakuler, founder nol-kepemilikan namun reputasi maksimal — dengan satu kelemahan struktural: tanpa rencana pendanaan tim, DAO harus memilih minting (mengubah prinsip fixed supply) dua belas bulan kemudian (MEDIUM)"
+    },
+    "lessons": []
   }
 }

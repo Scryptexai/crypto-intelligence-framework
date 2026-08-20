@@ -2,9 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-20 03:52 UTC",
-    "projects": 58,
-    "deep": 58,
+    "generated": "2026-08-20 04:01 UTC",
+    "projects": 59,
+    "deep": 59,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -645,6 +645,17 @@ window.CIF = {
       "tags": [
         "airdrop",
         "bridge"
+      ]
+    },
+    {
+      "n": "Yearn Finance",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Yearn Finance.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "governance"
       ]
     },
     {

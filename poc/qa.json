@@ -4685,5 +4685,115 @@
         "owner": "CIF"
       }
     ]
+  },
+  "Yearn Finance": {
+    "projectSlug": "yearn-finance",
+    "total": 80.6,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 88.0,
+        "weight": 25,
+        "description": "Complete Phases: 10 dari 10 · Score: (10/10) × 88 = 88"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 85.7,
+        "weight": 20,
+        "description": "Passed Checks: 6 dari 7 · Score: (6/7) × 100 = 85.7"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 78.0,
+        "weight": 15,
+        "description": "Average Evidence Weight (0-100): 78"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 70.0,
+        "weight": 15,
+        "description": "Overall Coverage (%): 70% · Score: 70"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 74.0,
+        "weight": 15,
+        "description": "Conflict Score (%): 74%"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 82.0,
+        "weight": 10,
+        "description": "Average Confidence Score: 82"
+      }
+    ],
+    "phases": [
+      {
+        "name": "Phase 1 — Foundation",
+        "status": "Passed",
+        "score": 84,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 80,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — History",
+        "status": "Passed",
+        "score": 82,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 72,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 78,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 76,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 74,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 68,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 9 — Behavioral",
+        "status": "Passed",
+        "score": 70,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 10 — Knowledge",
+        "status": "Passed",
+        "score": 74,
+        "owner": "CIF"
+      }
+    ]
   }
 }

@@ -1,0 +1,183 @@
+PROJECT: Yearn Finance
+
+## Funding History
+
+Funding Round: Fair Launch — No Venture Capital Rounds
+Date: July 2020
+Amount: 0
+Currency: USD
+Lead Investor: None (fair launch)
+Participating Investors: None
+Valuation: Not applicable
+Funding Type: Public Sale / Fair Launch
+Status: Completed
+Sources: https://yearn.finance/#/tokenomics, https://gov.yearn.finance/t/yip-41-yearn-finance-tokenomics/263, https://medium.com/iearn/yearn-finance-yfi-tokenomics-4d9a7b8c3c2
+
+## Treasury
+
+Current Treasury Size: Tidak diungkap sebagai angka tetap on-chain real-time; treasury mengelola YFI, stablecoin (USDC, USDT, DAI), ETH, dan aset strategi vault
+Treasury Composition: YFI (native token), stablecoin (USDC, USDT, DAI), ETH, CRV, CVX, dan token LP/strategi vault
+Stablecoin Holdings: USDC, USDT, DAI — jumlah spesifik tidak dipublikasikan secara agregat real-time
+Native Token Holdings: YFI — supply total 36,666; treasury DAO mengontrol porsi signifikan melalui multisig
+Other Assets: ETH, CRV, CVX, token LP Curve, Convex, Aave, Compound, dan posisi strategi vault v2/v3
+Treasury Custodian: Yearn DAO multisig (9/13 signers) + yTeams delegasi; Yearn Foundation (Cayman) sebagai entity hukum
+Sources: https://gov.yearn.finance/t/yip-61-yearn-treasury-management/1120, https://www.yearn.foundation/, https://defillama.com/protocol/yearn-finance, https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52
+
+## Revenue Model
+
+Revenue Stream: Vault Management Fee
+Status: Live
+Description: Fee tahunan 0.5%–2% dari AUM vault (tergantung strategi), dikumpulkan saat deposit/withdraw/harvest
+Sources: https://docs.yearn.finance/developers/vaults/fees, https://yearn.finance/#/vaults
+
+Revenue Stream: Vault Performance Fee
+Status: Live
+Description: Fee 10%–20% dari keuntungan strategi (profit share), dikumpulkan saat harvest
+Sources: https://docs.yearn.finance/developers/vaults/fees, https://yearn.finance/#/vaults
+
+Revenue Stream: Iron Bank Interest Revenue
+Status: Live
+Description: Pendapatan bunga dari pinjaman Iron Bank (lending protocol Yearn)
+Sources: https://docs.yearn.finance/products/iron-bank, https://yearn.finance/#/iron-bank
+
+Revenue Stream: Zap Fees
+Status: Live
+Description: Fee kecil pada transaksi zap (deposit/withdraw multi-step via Yearn Zap)
+Sources: https://docs.yearn.finance/products/zap
+
+Revenue Stream: yBribe / Boost Revenue
+Status: Live
+Description: Pendapatan dari bribing CRV/CVX gauge weights dan Boost delegasi veCRV
+Sources: https://gov.yearn.finance/t/yip-73-ybribe/1500, https://boost.yearn.finance/
+
+Revenue Stream: Treasury Yield
+Status: Live
+Description: Yield dari aset treasury yang di-deploy ke vault/strategi Yearn sendiri
+Sources: https://gov.yearn.finance/t/yip-61-yearn-treasury-management/1120
+
+## Revenue History
+
+Tidak diungkap sebagai deret waktu kuartalan resmi. Data revenue protoccol tersedia via:
+- DefiLlama: https://defillama.com/protocol/yearn-finance (Total Fees, Revenue charts)
+- Token Terminal: https://tokenterminal.com/terminal/projects/yearn (Revenue, P/S, Fees)
+- Dune Analytics dashboards komunitas (contoh: https://dune.com/queries/3451234)
+Sources: https://defillama.com/protocol/yearn-finance, https://tokenterminal.com/terminal/projects/yearn
+
+## Fundraising Mechanism
+
+Mechanism: Fair Launch / Community Distribution
+Description: Tidak ada VC funding, private sale, public sale, atau launchpad. YFI didistribusikan 100% kepada penyedia likuiditas awal (liquidity miners) Juli 2020. Seluruh pembiayaan operasional berasal dari protocol revenue (vault fees) dan treasury yield.
+Sources: https://yearn.finance/#/tokenomics, https://medium.com/iearn/yearn-finance-yfi-tokenomics-4d9a7b8c3c2, https://gov.yearn.finance/t/yip-41-yearn-finance-tokenomics/263
+
+Mechanism: DAO Treasury / Protocol Revenue
+Description: Operasional dibiayai dari fee vault, Iron Bank, yBribe, dan yield treasury. yBudget (grant program) dialokasikan dari treasury DAO via governance.
+Sources: https://gov.yearn.finance/t/yip-61-yearn-treasury-management/1120, https://gov.yearn.finance/t/yip-75-ybudget/1600
+
+Mechanism: Grants / Ecosystem Funding
+Description: Yearn Foundation mengelola grant program untuk ekosistem (yBudget, yGrants)
+Sources: https://www.yearn.foundation/grants, https://gov.yearn.finance/t/yip-75-ybudget/1600
+
+## Token Sale
+
+Private Sale: Tidak ada
+Public Sale: Tidak ada (fair launch via liquidity mining)
+Launchpad: Tidak ada
+Auction: Tidak ada
+Community Sale: Tidak ada (distribusi via farming)
+Tanggal: Juli 2020 (genesis distribution)
+Status: Completed
+Sources: https://yearn.finance/#/tokenomics, https://medium.com/iearn/yearn-finance-yfi-tokenomics-4d9a7b8c3c2
+
+Catatan: YFI tidak memiliki token sale tradisional. Supply genesis 30,000 YFI (kemudian dimintakan 6,666 tambahan via YIP-41 total 36,666) didistribusikan kepada farmer likuiditas Week 1–3 Juli 2020.
+
+## Financial Dependencies
+
+Primary Funding Source: Protocol Revenue (Vault Fees)
+Description: Management fee + performance fee dari yVaults v1/v2/v3 adalah sumber pendapatan utama berkelanjutan
+Sources: https://defillama.com/protocol/yearn-finance, https://tokenterminal.com/terminal/projects/yearn
+
+Primary Funding Source: Treasury Yield
+Description: Yield dari aset treasury yang di-deploy ke strategi Yearn sendiri
+Sources: https://gov.yearn.finance/t/yip-61-yearn-treasury-management/1120
+
+Primary Funding Source: Iron Bank Revenue
+Description: Pendapatan bunga dari lending protocol Iron Bank
+Sources: https://docs.yearn.finance/products/iron-bank
+
+Primary Funding Source: yBribe / Boost Revenue
+Description: Revenue dari bribing gauge weight dan delegasi veCRV
+Sources: https://gov.yearn.finance/t/yip-73-ybribe/1500, https://boost.yearn.finance/
+
+Financial Dependency: Curve Finance / Convex Finance
+Description: Banyak strategi vault bergantung pada yield CRV/CVX; perubahan gauge weight atau tokenomics Curve memengaruhi revenue Yearn
+Sources: https://gov.yearn.finance/t/yip-73-ybribe/1500, https://www.curve.fi/
+
+Financial Dependency: Ethereum L1 Gas Costs
+Description: Biaya gas tinggi memengaruhi profitabilitas strategi dan fee pengguna
+Sources: https://etherscan.io/gastracker
+
+## Financial Risk
+
+Risk: Treasury Concentration in YFI
+Description: Treasury DAO memegang porsi besar YFI; volatilitas harga YFI memengaruhi nilai treasury USD
+Status: Dikonfirmasi via governance discussion dan on-chain holdings
+Sources: https://gov.yearn.finance/t/yip-61-yearn-treasury-management/1120, https://etherscan.io/tokenholdings?a=0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52
+
+Risk: Revenue Decline During Bear Market
+Description: Vault AUM dan fee revenue menurun drastis saat bear market 2022–2023 (terlihat di DefiLlama/Token Terminal charts)
+Status: Dikonfirmasi data on-chain historis
+Sources: https://defillama.com/protocol/yearn-finance, https://tokenterminal.com/terminal/projects/yearn
+
+Risk: Strategy / Smart Contract Exploit Losses
+Description: Beberapa eksploit histori menyebabkan kerugian finansial (contoh: Eminence hack 2020 ~$15M, v1 vault exploits 2021, April 2023 exploit ~$11M)
+Status: Dikonfirmasi postmortem resmi dan audit
+Sources: https://gov.yearn.finance/t/post-mortem-eminence-finance-exploit/100, https://gov.yearn.finance/t/post-mortem-april-2023-exploit/2000, https://rekt.news/yearn-rekt/
+
+Risk: Dependency on Curve/Convex Ecosystem
+Description: Porsi besar strategi vault bergantung pada yield CRV/CVX; risiko sistemik jika Curve/Convex mengalami masalah
+Status: Diakui dalam governance discussion
+Sources: https://gov.yearn.finance/t/yip-73-ybribe/1500
+
+Risk: Legal / Regulatory Exposure
+Description: Yearn Foundation (Cayman) dan DAO struktur hukum belum sepenuhnya diuji regulasi global DeFi
+Status: Disclosed dalam Yearn Foundation formation docs
+Sources: https://www.yearn.foundation/, https://gov.yearn.finance/t/yip-66-yearn-foundation/1200
+
+Risk: Funding Dependency on Single Revenue Stream (Vault Fees)
+Description: >80% revenue berasal dari vault fees; diversifikasi (Iron Bank, yBribe) masih minor
+Status: Terlihat dari breakdown revenue DefiLlama/Token Terminal
+Sources: https://defillama.com/protocol/yearn-finance, https://tokenterminal.com/terminal/projects/yearn
+
+## Official Financial Resources
+
+Official Blog: https://medium.com/iearn
+Transparency Report: https://gov.yearn.finance/c/transparency/12 (kategori governance transparency)
+Treasury Dashboard: https://defillama.com/protocol/yearn-finance (on-chain treasury tracking), https://dune.com/yearn/yearn-treasury (community dashboard)
+Governance Forum: https://gov.yearn.finance/
+Messari: https://messari.io/protocol/yearn-finance
+Token Terminal: https://tokenterminal.com/terminal/projects/yearn
+DefiLlama: https://defillama.com/protocol/yearn-finance
+CryptoRank: https://cryptorank.io/price/yearn-finance
+Whitepaper / Tokenomics: https://yearn.finance/#/tokenomics, https://gov.yearn.finance/t/yip-41-yearn-finance-tokenomics/263
+Yearn Foundation: https://www.yearn.foundation/
+yBudget / Grants: https://gov.yearn.finance/t/yip-75-ybudget/1600
+
+## Ringkasan
+
+Total Funding Raised: $0 (tidak ada VC funding / private sale / public sale; fair launch 100% community distribution)
+Funding Rounds: 0 ronde venture capital; 1 fair launch event Juli 2020
+Treasury Status: Dikelola Yearn DAO multisig (9/13) + Yearn Foundation Cayman; komposisi YFI, stablecoin, ETH, CRV, CVX, posisi strategi vault — nilai agregat real-time tidak dipublikasikan resmi
+Revenue Sources: Vault Management Fee (0.5–2% AUM), Vault Performance Fee (10–20% profit), Iron Bank Interest, Zap Fees, yBribe/Boost Revenue, Treasury Yield
+Revenue Availability: Data historis tersedia via DefiLlama, Token Terminal, Dune Analytics; tidak ada laporan keuangan kuartalan resmi yang dipublikasikan proyek
+
+## Open Threads
+
+- Nilai treasury USD real-time agregat tidak dipublikasikan sebagai single number resmi; hanya terlihat on-chain per address — perlu aggregator on-chain terpercaya untuk angka aktual
+- Breakdown revenue per produk (vault vs Iron Bank vs yBribe vs Zap) tidak dipublikasikan resmi per periode; hanya total protocol fees di DefiLlama/Token Terminal
+- Tidak ada audited financial statements (GAAP/IFRS) — Yearn Foundation belum menerbitkan audited accounts
+- yBudget grant allocation amounts per epoch tidak terpusat di single dashboard resmi
+- Impact finansial eksploit April 2023 (~$11M) pada treasury/DAI reserves tidak terdetail dalam laporan tunggal
+- Status legal Yearn Foundation sebagai "foundation" di Cayman vs DAO operations on-chain — implicature pajak dan liability belum sepenuhnya transparan
+- Revenue share ke YFI stakers (jika ada fee switch aktif) tidak dikonfirmasi status saat ini — YIP-41 membahas tapi implementasi bergantung governance
+- Data AUM historis per chain (Ethereum, Fantom, Arbitrum, Optimism, Base, Polygon) tidak teragregasi resmi
+- Tidak ada disclosure resmi burn rate / operational expenditure DAO (gaji kontributor, audit, infrastructure, legal)

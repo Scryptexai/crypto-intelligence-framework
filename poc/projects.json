@@ -636,6 +636,17 @@
     ]
   },
   {
+    "n": "Yearn Finance",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Yearn Finance.md",
+    "cat": "",
+    "era": "",
+    "tags": [
+      "airdrop",
+      "governance"
+    ]
+  },
+  {
     "n": "dYdX",
     "tier": "Deep",
     "file": "examples/CaseStudies/dYdX.md",

@@ -44722,5 +44722,194 @@
         "evidence": "(HIGH) [zkSync TGE announcement, https://blog.matterlabs.dev/zksync-token-launch-17-june-2024-9f8e7d6c5b4a]; (HIGH) [Etherscan ZK token, https://etherscan.io/token/0x5A7d6b2F92C77FAD6CcA6d7a03359b8a6D9f4a4c]"
       }
     }
+  ],
+  "Yearn Finance": [
+    {
+      "id": "yearn-finance-ENT-001",
+      "projectSlug": "yearn-finance",
+      "name": "Andre Cronje",
+      "type": "Person",
+      "status": null,
+      "description": "Founder & arsitek awal Yearn; merilis YFI via fair launch Juli 2020 tanpa mengambil alokasi untuk dirinya; mengumumkan pengurangan keterlibatan awal 2021 (fokus Fantom) dan kemudian terlibat parsial kembali di ekosistem",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang (intensitas berubah)",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Bitstamp Andre Cronje profile, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]; (HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]"
+      }
+    },
+    {
+      "id": "yearn-finance-ENT-002",
+      "projectSlug": "yearn-finance",
+      "name": "Yearn DAO",
+      "type": "DAO",
+      "status": null,
+      "description": "Entitas governance pemegang arah protokol dan treasury (YFI + aset lain); keputusan via voting pemegang YFI/veYFI termasuk minting 6.666 YFI untuk pendanaan tim (2021) dan berbagai proposal kompensasi",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Cryptohopper YFI overview, https://www.cryptohopper.com/currencies/detail?currency=YFI]; (HIGH) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]"
+      }
+    },
+    {
+      "id": "yearn-finance-ENT-003",
+      "projectSlug": "yearn-finance",
+      "name": "Curve Finance",
+      "type": "Protocol",
+      "status": null,
+      "description": "Dependensi strategis terbesar Yearn — vault yPool berbasis Curve; YFI fair launch memakai Curve yPool sebagai salah satu dari 3 pool distribusi; Yearn menjadi salah satu pemegang veCRV terbesar melalui ekosistem Convex/Votium (Curve Wars)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]"
+      }
+    },
+    {
+      "id": "yearn-finance-ENT-004",
+      "projectSlug": "yearn-finance",
+      "name": "Balancer",
+      "type": "Protocol",
+      "status": null,
+      "description": "Venue distribusi YFI pada fair launch — 2 dari 3 pool distribusi adalah pool Balancer (YFI/DAI dan YFI/yPool-LP)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020 (distribusi); integrasi lanjutan sebagai venue strategi",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]"
+      }
+    },
+    {
+      "id": "yearn-finance-ENT-005",
+      "projectSlug": "yearn-finance",
+      "name": "Fantom Foundation",
+      "type": "Company",
+      "status": null,
+      "description": "Ekosistem tempat Andre Cronje memfokuskan diri setelah mengumumkan pengurangan keterlibatan di Yearn awal 2021; vault Yearn juga dideploy ke Fantom pada era multi-chain",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]"
+      }
+    },
+    {
+      "id": "yearn-finance-ENT-006",
+      "projectSlug": "yearn-finance",
+      "name": "Convex Finance",
+      "type": "Protocol",
+      "status": null,
+      "description": "Ekosistem turunan Curve Wars — Yearn memakai Convex untuk memaksimalkan yield veCRV dari posisi Curve-nya; hubungan simbiosis yield governance",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]"
+      }
+    },
+    {
+      "id": "yearn-finance-ENT-007",
+      "projectSlug": "yearn-finance",
+      "name": "Votium",
+      "type": "Protocol",
+      "status": null,
+      "description": "Pasar bribe/insentif governance Curve yang berinteraksi dengan posisi Yearn di ekosistem veCRV (Curve Wars)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]"
+      }
+    },
+    {
+      "id": "yearn-finance-ENT-008",
+      "projectSlug": "yearn-finance",
+      "name": "Ethereum",
+      "type": "Protocol",
+      "status": null,
+      "description": "Chain utama seluruh kontrak Yearn (vault, token YFI, governance); keamanan dan biaya gas Ethereum memengaruhi desain produk (migrasi vault ke L2/chain lain untuk biaya)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]"
+      }
+    },
+    {
+      "id": "yearn-finance-ENT-009",
+      "projectSlug": "yearn-finance",
+      "name": "Binance",
+      "type": "Company",
+      "status": null,
+      "description": "Exchange besar yang me-listing YFI pada/sekitar fair launch Juli 2020 — likuiditas utama token sejak minggu pertama",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]"
+      }
+    },
+    {
+      "id": "yearn-finance-ENT-010",
+      "projectSlug": "yearn-finance",
+      "name": "Aave",
+      "type": "Protocol",
+      "status": null,
+      "description": "Salah satu protokol sumber yield untuk strategi vault Yearn (lending optimization lintas Aave/Compound/dYdX era Earn v1)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]"
+      }
+    },
+    {
+      "id": "yearn-finance-ENT-011",
+      "projectSlug": "yearn-finance",
+      "name": "Compound",
+      "type": "Protocol",
+      "status": null,
+      "description": "Sumber yield lending untuk strategi awal vault Yearn (era Earn)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]"
+      }
+    }
   ]
 }

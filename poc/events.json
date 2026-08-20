@@ -27184,5 +27184,137 @@
       "_location": "zkSync Lite & Era mainnet",
       "_status": "Ongoing"
     }
+  ],
+  "Yearn Finance": [
+    {
+      "id": "yearn-finance-EV-001",
+      "projectSlug": "yearn-finance",
+      "name": "Publikasi konsep yEarn dan iterasi vault awal oleh Andre Cronje",
+      "date": "2020-02 hingga 2020-06",
+      "type": "Product Announcement",
+      "participants": [
+        "Andre Cronje",
+        "pengguna awal DeFi Ethereum"
+      ],
+      "description": "Andre Cronje mempublikasikan artikel dan eksperimen \"yEarn\" — kontrak yang mengotomasi pemindahan dana antar protokol lending (Compound, dYdX, Aave, Fulcrum) untuk memaksimalkan yield; vault pertama (yTokens) mulai dipakai komunitas sebelum ada token.",
+      "result": "Konsep yield aggregator tervalidasi; TVL awal kecil namun tumbuh organik tanpa insentif token.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.bitstamp.net/learn/people-profiles/andre-cronje/ (MEDIUM)",
+      "affectedKnowledge": [],
+      "_location": "Ethereum mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "yearn-finance-EV-002",
+      "projectSlug": "yearn-finance",
+      "name": "Fair launch YFI — distribusi 30.000 YFI tanpa premine",
+      "date": "2020-07 (minggu ketiga)",
+      "type": "TGE",
+      "participants": [
+        "Andre Cronje",
+        "liquidity providers Ethereum",
+        "komunitas DeFi"
+      ],
+      "description": "Seluruh 30.000 YFI didistribusikan selama ~1 minggu melalui 3 liquidity pool (Curve yPool, YFI/DAI Balancer, YFI/yPool-LP Balancer) — tanpa premine, tanpa alokasi tim/founder, tanpa VC, tanpa ICO; Cronje tidak mengambil satu token pun meski berwenang.",
+      "result": "Deposit platform melonjak dari ~$8 juta ke ~$300 juta pasca pengumuman token; YFI menjadi simbol fair launch DeFi.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.bitstamp.net/learn/people-profiles/andre-cronje/ (HIGH); https://financefeeds.com/what-is-a-crypto-fair-launch/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Ethereum mainnet (Curve + Balancer pools)",
+      "_status": "Completed"
+    },
+    {
+      "id": "yearn-finance-EV-003",
+      "projectSlug": "yearn-finance",
+      "name": "YFI melampaui harga Bitcoin per token",
+      "date": "2020-09",
+      "type": "Market Event",
+      "participants": [
+        "Trader global",
+        "exchange CEX/DEX"
+      ],
+      "description": "Dengan supply hanya 30.000 token dan permintaan spekulatif + utilitas governance, harga YFI menembus harga 1 BTC (~$40k+) pada September 2020 — menjadikannya token termahal per unit pada masanya dan menarik atensi media global.",
+      "result": "Atensi masif terhadap Yearn dan narasi \"ultra-low supply\"; volatilitas ekstrem.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.cryptohopper.com/currencies/detail?currency=YFI (MEDIUM); https://www.bitstamp.net/learn/people-profiles/andre-cronje/ (MEDIUM)",
+      "affectedKnowledge": [],
+      "_location": "Pasar global",
+      "_status": "Completed"
+    },
+    {
+      "id": "yearn-finance-EV-004",
+      "projectSlug": "yearn-finance",
+      "name": "Andre Cronje mengumumkan pengurangan keterlibatan (fokus Fantom)",
+      "date": "2021-01",
+      "type": "Leadership Change",
+      "participants": [
+        "Andre Cronje",
+        "Yearn DAO",
+        "komunitas"
+      ],
+      "description": "Cronje mengumumkan secara publik pengurangan perannya di Yearn untuk fokus pada Fantom Foundation — memicu diskusi governance tentang keberlanjutan proyek tanpa founder dan percepatan struktur kontribusi berbasis DAO.",
+      "result": "Transisi menuju organisasi kontributor multipihak; harga YFI volatil pada pengumuman.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.bitstamp.net/learn/people-profiles/andre-cronje/ (MEDIUM)",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "yearn-finance-EV-005",
+      "projectSlug": "yearn-finance",
+      "name": "Minting 6.666 YFI untuk pendanaan tim & pengembangan",
+      "date": "2021",
+      "type": "Governance Decision",
+      "participants": [
+        "Yearn DAO",
+        "pemegang YFI",
+        "kontributor inti"
+      ],
+      "description": "Yearn DAO menyetujui minting 6.666 YFI tambahan (menambah supply dari 30.000 menjadi 36.666) untuk mendanai kontributor inti, pengembangan, dan kemitraan — keputusan kontroversial karena mengubah prinsip \"fixed supply\" fair launch namun disetujui governance.",
+      "result": "Total supply menjadi 36.666 YFI; pendanaan operasional DAO terjamin; preseden bahwa supply dapat berubah via governance.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.cryptohopper.com/currencies/detail?currency=YFI (MEDIUM)",
+      "affectedKnowledge": [],
+      "_location": "Ethereum (governance on-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "yearn-finance-EV-006",
+      "projectSlug": "yearn-finance",
+      "name": "Peluncuran yLockers / veYFI",
+      "date": "2022",
+      "type": "Product Launch",
+      "participants": [
+        "Yearn DAO",
+        "pemegang YFI"
+      ],
+      "description": "Yearn memperkenalkan mekanisme lock YFI (veYFI/yLockers) untuk memperkuat governance dan memberi boost reward vault — mengadopsi pola vote-escrow Curve ke ekosistem Yearn.",
+      "result": "Mekanisme komitmen jangka panjang pemegang YFI; interaksi dengan ekosistem Curve Wars (Votium/Convex) menguat.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.cryptohopper.com/currencies/detail?currency=YFI (MEDIUM)",
+      "affectedKnowledge": [],
+      "_location": "Ethereum",
+      "_status": "Completed"
+    },
+    {
+      "id": "yearn-finance-EV-007",
+      "projectSlug": "yearn-finance",
+      "name": "Vaults v3 dan kontroversi anggaran governance",
+      "date": "2023",
+      "type": "Product Launch",
+      "participants": [
+        "Yearn DAO",
+        "kontributor inti",
+        "komunitas"
+      ],
+      "description": "Yearn merilis arsitektur Vaults v3 (strategi permissionless, tokenized vaults) sementara DAO menghadapi perdebatan publik soal kompensasi kontributor/anggaran — ujian kematangan governance tanpa founder penuh.",
+      "result": "Platform teknis generasi ketiga live; governance terbukti mampu menyelesaikan konflik anggaran secara on-chain.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.cryptohopper.com/currencies/detail?currency=YFI (MEDIUM)",
+      "affectedKnowledge": [],
+      "_location": "Ethereum",
+      "_status": "Completed"
+    }
   ]
 }
