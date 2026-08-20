@@ -291,6 +291,58 @@
   ],
   "Terra": [
     {
+      "id": "C-003",
+      "projectSlug": "terra",
+      "category": "Token",
+      "title": "LUNC total supply (~6.1T CoinGecko vs ~6.5T burn tracker)",
+      "description": "CoinGecko melaporkan total supply ~6.1T LUNC (circulating ~5.8T); Lunc Burn tracker melaporkan ~6.5T. Perbedaan besar karena metodologi pelaporan (apakah supply pra-burn dihitung).",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "CoinGecko",
+        "value": "~6.1T LUNC total (circulating ~5.8T)",
+        "date": "",
+        "url": "https://www.coingecko.com/",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Lunc Burn tracker",
+        "value": "~6.5T LUNC",
+        "date": "",
+        "url": "",
+        "evidence": "Komunitas burn tracker"
+      },
+      "resolution": "Perbedaan metodologi pelaporan (supply pra-burn vs pasca-burn). Tidak resolved.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 6"
+    },
+    {
+      "id": "C-014",
+      "projectSlug": "terra",
+      "category": "Token",
+      "title": "LUNA total=circulating 1,170,305,141 vs 200M community pool belum ter-spend",
+      "description": "Phase 6 menulis total supply dan circulating supply sama (1,170,305,141 LUNA), padahal ada ~200M LUNA di community pool yang belum ter-spend — circulating efektif seharusnya lebih rendah.",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Phase 6 dataset",
+        "value": "Total = circulating = 1,170,305,141 LUNA",
+        "date": "",
+        "url": "",
+        "evidence": "Internal dataset"
+      },
+      "versionB": {
+        "source": "On-chain community pool",
+        "value": "~200,000,000 LUNA di community pool belum ter-spend",
+        "date": "",
+        "url": "",
+        "evidence": "Catatan on-chain Terra 2.0"
+      },
+      "resolution": "Keduanya dipertahankan; circulating efektif bergantung pada apakah community pool dihitung. Tidak resolved.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 6"
+    },
+    {
       "id": "C-002",
       "projectSlug": "terra",
       "category": "Jumlah BTC LFG Puncak",
@@ -317,6 +369,116 @@
         "K-006"
       ],
       "affectedPhase": "Phase 3, Phase 5"
+    }
+  ],
+  "Cardano": [
+    {
+      "id": "C-001",
+      "projectSlug": "cardano",
+      "category": "Timeline",
+      "title": "Definisi TGE ADA (akhir voucher Jan 2017 vs mainnet 29 Sep 2017)",
+      "description": "Sumber berbeda mendefinisikan TGE ADA berbeda: akhir penjualan voucher Januari 2017, snapshot distribusi ke voucher holder, atau mainnet live 29 September 2017.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Sumber penjualan voucher",
+        "value": "TGE = akhir penjualan voucher, Januari 2017",
+        "date": "2017-01",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Sumber mainnet",
+        "value": "TGE = mainnet live, 29 September 2017",
+        "date": "2017-09-29",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Kedua tanggal sahih untuk definisi berbeda (penjualan vs mainnet). Dataset memakai mainnet 2017-09-29 sebagai launch kanonikal; ambiguitas dicatat.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 1"
+    },
+    {
+      "id": "C-003",
+      "projectSlug": "cardano",
+      "category": "Token",
+      "title": "Jumlah ADA terjual (~25.9B Messari vs ~26.9B sumber lain)",
+      "description": "Messari melaporkan ~25.9B ADA terjual selama penjualan; beberapa sumber lain menyebut ~26.9B termasuk alokasi tim/foundation.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Messari",
+        "value": "~25.9B ADA terjual",
+        "date": "",
+        "url": "https://messari.io/",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Sumber lain (termasuk alokasi tim/foundation)",
+        "value": "~26.9B ADA",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Perbedaan cakupan (penjualan publik saja vs termasuk alokasi tim/foundation). Tidak resolved.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 5"
+    }
+  ],
+  "SushiSwap": [
+    {
+      "id": "C-001",
+      "projectSlug": "sushiswap",
+      "category": "Token",
+      "title": "Circulating supply SUSHI (~262M CoinGecko vs hard cap 250M)",
+      "description": "CoinGecko melaporkan circulating supply ~262M SUSHI sementara max supply hard cap 250M SUSHI; Etherscan total supply menunjukkan ~249.9M. Angka circulating melampaui hard cap adalah anomali definisi.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "CoinGecko",
+        "value": "Circulating ~262M SUSHI",
+        "date": "",
+        "url": "https://www.coingecko.com/",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Etherscan",
+        "value": "Total supply ~249.9M SUSHI (hard cap 250M)",
+        "date": "",
+        "url": "https://etherscan.io/",
+        "evidence": ""
+      },
+      "resolution": "Anomali kemungkinan karena metodologi 'circulating' agregator (termasuk token yang secara teknis belum beredar). Tidak resolved.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 6"
+    }
+  ],
+  "Uniswap": [
+    {
+      "id": "C-003",
+      "projectSlug": "uniswap",
+      "category": "Financial",
+      "title": "Seed round amount (~$1M vs ~$2M)",
+      "description": "Jumlah seed round tidak diungkap resmi; laporan media bervariasi antara ~$1M dan ~$2M.",
+      "severity": "Low",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Laporan media (sebagian)",
+        "value": "~$1M",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Laporan media (sebagian lain)",
+        "value": "~$2M",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Tidak ada disclosure resmi; dataset menulis '~$1M-$2M'. Tidak resolved.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 5"
     }
   ]
 }
