@@ -111,5 +111,242 @@
       ],
       "affectedPhase": "Phase 6"
     }
+  ],
+  "Axie Infinity": [
+    {
+      "id": "C-008",
+      "projectSlug": "axie-infinity",
+      "category": "RON Token Launch Distribution",
+      "title": "Phase 3 EV-023: \"Distribusi: Community rewards (25%), Sky Mavis (30%), Ecosystem Fund (25%",
+      "description": "Phase 3 EV-023: \"Distribusi: Community rewards (25%), Sky Mavis (30%), Ecosystem Fund (25%), Validator rewards (20%)\". Phase 6 Distribution RON: \"Community: 25% Community Rewards (250M) + 20% Validator Rewards (200M) = 450M (45%); Team: 30% Sky Mavis (300M); Foundation: 25% Ecosystem Fund (250M)\". Phase 6 Vesting RON: \"Sky Mavis 30% cliff 12 bulan vesting 36 bulan; Ecosystem Fund 25% no cliff; Community Rewards 25% no cliff; Validator Rewards 20% no cliff\". Konsisten angka tapi kategori labeling berbeda (Phase 3: 4 kategori; Phase 6: 4 kategori tapi Community+Validator digabung).",
+      "severity": "Low",
+      "status": "",
+      "versionA": {
+        "source": "(30%), Ecosystem Fund (25%), Validator rewards (20%)\". Phase 6 Distribution RON",
+        "value": "\"Community: 25% Community Rewards (250M) + 20% Validator Rewards (200M) = 450M (45%)",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Team",
+        "value": "30% Sky Mavis (300M); Foundation: 25% Ecosystem Fund (250M)\"",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Labeling kategori berbeda tapi angka allocation identik. Status: Resolved.",
+      "affectedKnowledge": [
+        "K-002"
+      ],
+      "affectedPhase": "Phase 3, Phase 6"
+    }
+  ],
+  "Curve": [
+    {
+      "id": "C-001",
+      "projectSlug": "curve",
+      "category": "Tokenomics",
+      "title": "Komposisi distribusi non-komunitas (Team 30% vs shareholders 30%)",
+      "description": "Phase 6 dataset mencatat Team 30%/Investors 3%/Foundation 3%/Employees 2%; sumber publik umum menyebut shareholders 30%/team 3%/early users 5%. Atribusi 30% supply berbeda penerimanya.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Phase 6 dataset (pipeline)",
+        "value": "Community 62%, Team 30% (2y vesting), Investors 3% (2y), Foundation 3% (4y), Employees 2% (2y)",
+        "date": "",
+        "url": "",
+        "evidence": "Internal dataset"
+      },
+      "versionB": {
+        "source": "Sumber publik umum (liputan pengumuman CRV Agu 2020)",
+        "value": "Community 62%, shareholders 30%, team 3%, early users 5%",
+        "date": "2020-08",
+        "url": "",
+        "evidence": "Tidak primer; agregasi liputan publik"
+      },
+      "resolution": "Keduanya dipertahankan; verifikasi dokumen primer Agustus 2020 diperlukan sebelum memilih.",
+      "affectedKnowledge": [
+        "K-002"
+      ],
+      "affectedPhase": "Phase 6"
+    }
+  ],
+  "Lido": [
+    {
+      "id": "C-001",
+      "projectSlug": "lido",
+      "category": "",
+      "title": "Category: Tokenomics / Fee Switch",
+      "description": "Phase 5 mencatat \"fee switch activated 10%\" dan Phase 6 mencatat \"fee switch 5% (2020-2024), 10% (Februari 2024)\" namun Phase 5 juga menyebut \"sebelum fee switch: 5% operator + 5% DAO; setelah fee switch: 5% operator + 10% DAO = 15% total fee\". Terdapat inkonsistensi kecil pada interpretasi total fee: 10% vs 15% (apakah DAO fee 10% dari total rewards atau 10% + 5% operator = 15%).",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "10% (Februari 2024)\" namun Phase 5 juga menyebut \"sebelum fee switch",
+        "value": "5% operator + 5% DAO",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "setelah fee switch",
+        "value": "5% operator + 10% DAO = 15% total fee\"",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Tidak ditemukan bukti on-chain yang memastikan apakah total fee 10% (DAO only) atau 15% (DAO + operator) dalam satu entitas. Masing-masing fase menggunakan interpretasi berbeda.",
+      "affectedKnowledge": [
+        "K-005",
+        "K-008"
+      ],
+      "affectedPhase": "Phase 5, Phase 6"
+    }
+  ],
+  "Linea": [
+    {
+      "id": "C-002",
+      "projectSlug": "linea",
+      "category": "Timeline",
+      "title": "Tanggal TGE LINEA (akhir Juli 2025 vs 10 September 2025)",
+      "description": "Sumber pra-launch menyebut TGE akhir Juli 2025; realisasi pelaksanaan adalah 10 September 2025.",
+      "severity": "Medium",
+      "status": "Resolved",
+      "versionA": {
+        "source": "Bitrue (pra-launch)",
+        "value": "TGE akhir Juli 2025",
+        "date": "2025-07-15",
+        "url": "https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility",
+        "evidence": "Artikel pra-launch"
+      },
+      "versionB": {
+        "source": "The Block (pelaksanaan)",
+        "value": "TGE 10 September 2025",
+        "date": "2025-09-10",
+        "url": "https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage",
+        "evidence": "Liputan eksekusi"
+      },
+      "resolution": "Tanggal pelaksanaan 2025-09-10 dipakai (sumber eksekusi); laporan pra-launch dicatat sebagai ekspektasi yang meleset.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 1"
+    }
+  ],
+  "Walrus": [
+    {
+      "id": "C-001",
+      "projectSlug": "walrus",
+      "category": "Tokenomics",
+      "title": "Breakdown distribusi komunitas (43% reserve vs 10% airdrop)",
+      "description": "Altcoin Buzz menyebut Community Reserve 43% dengan 690 juta token available at launch; Backpack Exchange memecah 10% community airdrop (4% pre-mainnet + 6% post-mainnet). Keduanya dapat konsisten namun tidak dikonfirmasi dokumen resmi.",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Altcoin Buzz",
+        "value": "Community Reserve 43% (690 juta available at launch, linear unlock hingga Mar 2033)",
+        "date": "2025-03",
+        "url": "https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Backpack Exchange Learn",
+        "value": "Community airdrop 10% (4% pre-mainnet + 6% post-mainnet)",
+        "date": "2025-05",
+        "url": "https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network",
+        "evidence": ""
+      },
+      "resolution": "Keduanya dipertahankan dengan flag INKONSISTENSI; dokumen tokenomics resmi Walrus diperlukan.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 6"
+    }
+  ],
+  "BNB Chain": [
+    {
+      "id": "C-007",
+      "projectSlug": "bnb-chain",
+      "category": "",
+      "title": "Category: TVL — BSC Puncak",
+      "description": "Beberapa sumber menyebut TVL BSC puncak $40M, sumber lain menyebut $40B (perbedaan besaran).",
+      "severity": "Medium",
+      "status": "Resolved",
+      "versionA": {
+        "source": "Beberapa sumber",
+        "value": "TVL BSC puncak $40M",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "sumber lain",
+        "value": "$40B (perbedaan besaran)",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Diselesaikan — puncak TVL adalah $40 miliar (bukan $40 juta); sumber resmi DefiLlama digunakan.",
+      "affectedKnowledge": [
+        "K-01 (Kompatibilitas EVM)"
+      ],
+      "affectedPhase": "Phase 3, Phase 8"
+    }
+  ],
+  "Polkadot": [
+    {
+      "id": "C-001",
+      "projectSlug": "polkadot",
+      "category": "",
+      "title": "Category: Tokenomics (Redenomination)",
+      "description": "Tanggal redenominasi DOT tercatat berbeda antar sumber — Phase 3 (EV-012) menyebut 2020-08-18, beberapa sumber lain menyebut 2020-08-21.",
+      "severity": "Low",
+      "status": "Resolved",
+      "versionA": {
+        "source": "Phase 3 (EV-012)",
+        "value": "2020-08-18",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "beberapa sumber lain",
+        "value": "2020-08-21",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Tanggal referendum eksekusi on-chain (2020-08-18) digunakan; perbedaan 3 hari dianggap zona waktu/latency node. Tidak mempengaruhi kesimpulan.",
+      "affectedKnowledge": [
+        "K-010 (Tokenomics Inflationary)"
+      ],
+      "affectedPhase": "Phase 3"
+    }
+  ],
+  "Terra": [
+    {
+      "id": "C-002",
+      "projectSlug": "terra",
+      "category": "Jumlah BTC LFG Puncak",
+      "title": "Bervariasi antara 80,000 BTC (Nansen) dan 80,394 BTC (Blockchain.com/dashboard LFG). Perbe",
+      "description": "Bervariasi antara 80,000 BTC (Nansen) dan 80,394 BTC (Blockchain.com/dashboard LFG). Perbedaan 394 BTC (0.4%).",
+      "severity": "Medium",
+      "status": "Unresolved (Low impact)",
+      "versionA": {
+        "source": "Nansen",
+        "value": "80,000 BTC",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Blockchain.com/dashboard LFG",
+        "value": "80,394 BTC",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Tidak dapat diselesaikan tanpa akses on-chain penuh; perbedaan kecil, tidak mengubah kesimpulan (jumlah besar habis Mei 2022).",
+      "affectedKnowledge": [
+        "K-006"
+      ],
+      "affectedPhase": "Phase 3, Phase 5"
+    }
   ]
 }

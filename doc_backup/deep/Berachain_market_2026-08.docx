@@ -1,0 +1,344 @@
+PROJECT: Berachain
+
+## Market Category
+
+Primary Category: Layer 1 Blockchain
+Secondary Category: DeFi Infrastructure
+Sector: Blockchain Infrastructure
+Sub-sector: Proof-of-Liquidity Consensus / EVM-equivalent Cosmos Chain
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/architecture]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Phase 1 Foundation Data]; (HIGH) [Phase 4 Technology Architecture]
+
+## Market Position
+
+Project Stage: Early (Mainnet live 2024-06-06, TGE 2025-02-06, native DeFi apps operational, ecosystem building phase)
+Primary Competitors: Monad; Sei; Ethereum; BNB Chain; Polygon; Avalanche; Cosmos Hub; Osmosis; Celestia; Injective
+Market Segment: High-throughput EVM-compatible L1 with novel consensus (Proof-of-Liquidity) targeting DeFi-native liquidity flywheel
+Geographic Focus: Global (distributed team, Cayman Islands Foundation, no geographic restriction)
+Sources: (HIGH) [Phase 3 EV-007 Mainnet Genesis 2024-06-06]; (HIGH) [Phase 3 EV-011 TGE 2025-02-06]; (HIGH) [Phase 4 Technology Architecture]; (HIGH) [Phase 7 Ecosystem Position]; (MEDIUM) [DefiLlama, https://defillama.com/chain/Berachain] — chain page exists but native apps (BEX, Bend, Berps) not fully integrated per Phase 5; (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/berachain] — BERA token page exists post-TGE
+
+## Trading Markets
+
+Exchange: BEX (Native DEX)
+Spot: Yes (BERA, BGT, HONEY, wrapped assets, IBC assets)
+Perpetual: No
+Futures: No
+Options: No
+OTC: tidak diketahui
+Status: Live
+Sources: (HIGH) [BEX App, https://bex.berachain.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bex]; (HIGH) [Phase 3 EV-008, EV-012]
+
+Exchange: Berps (Native Perpetuals Exchange)
+Spot: No
+Perpetual: Yes (BTC, ETH, BERA, HONEY pairs dengan leverage hingga 50x)
+Futures: No
+Options: No
+OTC: tidak diketahui
+Status: Live
+Sources: (HIGH) [Berps App, https://berps.berachain.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/berps]; (HIGH) [Phase 3 EV-008]
+
+Exchange: Centralized Exchanges (CEX) — Specific Names Unidentified
+Spot: Yes (BERA trading pairs per TGE announcement)
+Perpetual: tidak diketahui
+Futures: tidak diketahui
+Options: tidak diketahui
+OTC: tidak diketahui
+Status: Ongoing (post-TGE 2025-02-06)
+Sources: (HIGH) [Phase 3 EV-012 Listing BERA di CEX dan DEX]; (HIGH) [Berachain Official Website, https://berachain.com] — TGE announcement mentions CEX listing but does not name specific exchanges; (LOW) [CoinGecko, https://www.coingecko.com/en/coins/berachain] — markets tab shows exchanges post-TGE; (LOW) [CoinMarketCap, https://coinmarketcap.com/currencies/berachain/] — markets tab shows exchanges post-TGE
+
+## Liquidity
+
+Liquidity Source: BEX (Native DEX AMM)
+Major Liquidity Venue: BEX (Primary DEX for BERA, HONEY, BGT, IBC assets)
+DEX: BEX (Concentrated Liquidity MM + Stable Swap)
+CEX: Unidentified specific exchanges (post-TGE listings announced but not named)
+Bridge Liquidity: IBC channels to Osmosis, Celestia, other Cosmos chains (relayer-dependent)
+Status: Live (BEX, IBC); Ongoing (CEX listings)
+Sources: (HIGH) [BEX App, https://bex.berachain.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bex]; (HIGH) [Phase 3 EV-014 IBC Integration]; (MEDIUM) [IBC Protocol, https://ibc.cosmos.network]; (LOW) [Map of Zones, https://mapofzones.com] — for IBC channel verification
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked)
+Value: tidak diketahui (tidak ada dashboard resmi terverifikasi; DefiLlama chain page exists but native apps not fully integrated per Phase 5)
+Date: N/A
+Sources: (LOW) [DefiLlama, https://defillama.com/chain/Berachain]; (LOW) [Phase 5 Financial - Revenue History: "Berachain protocols (BEX, Bend, Berps) belum terintegrasi ke DefiLlama per penelusuran ini"]
+
+Metric Name: Daily Active Users
+Value: tidak diketahui
+Date: N/A
+Sources: (LOW) [Berascan, https://berascan.com] — explorer shows transactions but no aggregated DAU metric; (LOW) [Phase 4 Technology - Berascan]
+
+Metric Name: Daily Transactions
+Value: tidak diketahui (on-chain data available via Berascan but no aggregated public dashboard)
+Date: N/A
+Sources: (LOW) [Berascan, https://berascan.com]; (LOW) [Phase 4 Technology - Berascan]
+
+Metric Name: Unique Wallets / Addresses
+Value: tidak diketahui
+Date: N/A
+Sources: (LOW) [Berascan, https://berascan.com]; (LOW) [Phase 4 Technology - Berascan]
+
+Metric Name: Developer Count
+Value: tidak diketahui (GitHub contributors visible but no aggregated metric)
+Date: N/A
+Sources: (LOW) [Berachain GitHub, https://github.com/berachain/bera/graphs/contributors]; (MEDIUM) [Phase 2 Entity - Core Contributors ~20 named pseudonymous + ~50 total]
+
+Metric Name: 24h Trading Volume (BEX)
+Value: tidak diketahui (BEX app shows pools but no aggregated volume dashboard visible)
+Date: N/A
+Sources: (LOW) [BEX App, https://bex.berachain.com]; (LOW) [Phase 7 Applications - BEX]
+
+Metric Name: Bridge Volume (IBC)
+Value: tidak diketahui
+Date: N/A
+Sources: (LOW) [Map of Zones, https://mapofzones.com]; (MEDIUM) [Phase 7 External Dependencies - IBC]
+
+Metric Name: IBC Messages / Packets
+Value: tidak diketahui
+Date: N/A
+Sources: (LOW) [Map of Zones, https://mapofzones.com]; (MEDIUM) [Phase 7 External Dependencies - IBC]
+
+Metric Name: Validator Count
+Value: 100 (active validator set at mainnet genesis per documentation)
+Date: 2024-06-06 (genesis)
+Sources: (MEDIUM) [Berachain Documentation, https://docs.berachain.com/validators]; (HIGH) [Phase 3 EV-007]; (HIGH) [Phase 4 Technology Consensus Mechanism]
+
+Metric Name: BGT Holders (Delegators)
+Value: tidak diketahui
+Date: N/A
+Sources: (LOW) [Berascan, https://berascan.com/token/0x5C47122b4A7382E429586A7D4DdC5b2E1d8F8a6a]; (HIGH) [Phase 6 Token - BGT Contract]
+
+## Market Share
+
+Metric: L1 Market Share (by TVL / Volume / Users)
+Value: Tidak tersedia.
+Sources: (LOW) [DefiLlama, https://defillama.com/chains] — Berachain not ranked in top L1s by TVL at time of research; (LOW) [Token Terminal, https://tokenterminal.com] — no verified Berachain project page with market share data
+
+Metric: DEX Market Share (BEX vs competitors)
+Value: Tidak tersedia.
+Sources: (LOW) [DefiLlama DEX Overview, https://defillama.com/dexs] — BEX not listed separately
+
+Metric: Stablecoin Market Share (HONEY)
+Value: Tidak tersedia.
+Sources: (LOW) [DefiLlama Stablecoins, https://defillama.com/stablecoins] — HONEY not ranked in major stablecoin listings
+
+## Competitor Landscape
+
+Competitor: Monad
+Category: Parallel EVM L1
+Difference: Monad focuses on parallel execution optimization (10k+ TPS target) with MonadBFT consensus; Berachain uses Proof-of-Liquidity tying validator weight to DeFi liquidity via BGT delegation; different consensus philosophy (performance vs liquidity alignment)
+Market Segment: High-throughput EVM L1
+Sources: (MEDIUM) [Monad Documentation, https://docs.monad.xyz]; (HIGH) [Phase 4 Technology Consensus Mechanism - PoL unique to Berachain]
+
+Competitor: Sei
+Category: Parallel EVM L1 / Sector-specific (Trading)
+Difference: Sei v2 introduces parallel EVM with SeiDB; sector-focused on trading (orderbook + AMM); Berachain is general-purpose DeFi L1 with PoL consensus integrating native DeFi apps (BEX, Bend, Berps) at protocol level
+Market Segment: High-throughput EVM L1 / Trading-focused
+Sources: (MEDIUM) [Sei Documentation, https://docs.sei.io]; (HIGH) [Phase 7 Applications - Native DeFi primitives]
+
+Competitor: Ethereum
+Category: L1 / Settlement Layer
+Difference: Ethereum uses PoS (validator stake = ETH); Berachain uses PoL (validator weight = BERA stake + delegated BGT from LPs); Berachain is EVM-equivalent execution on Cosmos SDK/CometBFT with native DeFi integration
+Market Segment: General-purpose smart contract platform
+Sources: (HIGH) [Ethereum Foundation, https://ethereum.org]; (HIGH) [Phase 4 Technology Architecture - EVM-equivalent on Cosmos SDK]
+
+Competitor: BNB Chain
+Category: EVM L1 (Cosmos SDK fork historically)
+Difference: BNB Chain uses PoSA (Proof-of-Staked Authority) with 21 active validators; Berachain uses CometBFT BFT with 100 validators + PoL; BNB Chain has larger established ecosystem; Berachain is newer with novel consensus
+Market Segment: EVM-compatible L1
+Sources: (MEDIUM) [BNB Chain Documentation, https://docs.bnbchain.org]; (HIGH) [Phase 4 Technology Consensus Mechanism]
+
+Competitor: Polygon
+Category: L2 / Sidechain / AggLayer
+Difference: Polygon is primarily L2 scaling for Ethereum (Polygon PoS, zkEVM, AggLayer); Berachain is sovereign L1 with own validator set and consensus; different trust assumptions
+Market Segment: Ethereum scaling / L1
+Sources: (MEDIUM) [Polygon Documentation, https://polygon.technology]; (HIGH) [Phase 1 Foundation - Category: Layer 1 blockchain]
+
+Competitor: Avalanche
+Category: L1 (Subnet architecture)
+Difference: Avalanche uses Snowman consensus with subnets; Berachain uses CometBFT + PoL single chain; Avalanche has established DeFi ecosystem; Berachain integrates DeFi at protocol level via PoL
+Market Segment: High-throughput L1
+Sources: (MEDIUM) [Avalanche Documentation, https://docs.avax.network]; (HIGH) [Phase 4 Technology Architecture]
+
+Competitor: Cosmos Hub
+Category: L0 / Hub (Cosmos SDK)
+Difference: Cosmos Hub (ATOM) is IBC hub with Interchain Security; Berachain is consumer chain with own validator set + PoL; Berachain is EVM-equivalent; Cosmos Hub is CosmWasm/WASM native
+Market Segment: Cosmos Ecosystem
+Sources: (HIGH) [Cosmos SDK Documentation, https://docs.cosmos.network]; (HIGH) [Phase 4 Technology Core Components - Cosmos SDK, IBC]
+
+Competitor: Osmosis
+Category: DEX Chain (Cosmos SDK)
+Difference: Osmosis is app-chain DEX with concentrated liquidity; Berachain is general-purpose L1 with native DEX (BEX) as one component; Osmosis uses PoS; Berachain uses PoL
+Market Segment: Cosmos DeFi
+Sources: (MEDIUM) [Osmosis Documentation, https://docs.osmosis.zone]; (HIGH) [Phase 7 Major Integrations - IBC Channels to Osmosis]
+
+Competitor: Celestia
+Category: Modular DA Layer
+Difference: Celestia provides data availability + consensus for rollups; Berachain is execution-focused L1 with own consensus (CometBFT) and DA; different modular stack position
+Market Segment: Modular blockchain stack
+Sources: (MEDIUM) [Celestia Documentation, https://docs.celestia.org]; (HIGH) [Phase 7 Major Integrations - IBC Channels to Celestia]
+
+Competitor: Injective
+Category: Exchange-focused L1 (Cosmos SDK)
+Difference: Injective focuses on orderbook DEX + derivatives with CosmWasm; Berachain is EVM-equivalent with AMM (BEX) + native perps (Berps) + lending (Bend); different VM and app focus
+Market Segment: Cosmos DeFi / Derivatives
+Sources: (MEDIUM) [Injective Documentation, https://docs.injective.network]; (HIGH) [Phase 7 Applications - Native DeFi primitives]
+
+## Narrative Position
+
+Narrative: Proof-of-Liquidity (Novel Consensus)
+Status: Main Narrative
+Evidence: Whitepaper and all documentation center PoL as core innovation — validator weight tied to DeFi liquidity via BGT delegation; "liquidity as security" model
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity]; (HIGH) [Phase 4 Technology Consensus Mechanism]
+
+Narrative: EVM-equivalent on Cosmos SDK
+Status: Main Narrative
+Evidence: Execution layer is EVM-equivalent (not just compatible) via custom EVM module on Cosmos SDK; supports Hardhat, Foundry, MetaMask natively
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/evm]; (HIGH) [Phase 4 Technology Execution Environment]; (HIGH) [Phase 7 Major Integrations - Hardhat/Foundry/MetaMask]
+
+Narrative: Native DeFi Primitives (BEX, Bend, Berps, HONEY)
+Status: Main Narrative
+Evidence: Three core DeFi apps + stablecoin launched at/near mainnet genesis; BGT emission flows through BEX LP positions; protocol-level integration
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps]; (HIGH) [Phase 3 EV-008, EV-015, EV-016]; (HIGH) [Phase 7 Applications]
+
+Narrative: IBC Interoperability / Cosmos Ecosystem
+Status: Secondary Narrative
+Evidence: IBC enabled at mainnet; channels to Osmosis, Celestia; Cosmos SDK base; but marketing emphasizes EVM/PoL over Cosmos-native identity
+Sources: (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/ibc]; (HIGH) [Phase 3 EV-014]; (HIGH) [Phase 7 External Dependencies - IBC]
+
+Narrative: Modular Blockchain (Execution Layer)
+Status: Secondary Narrative
+Evidence: Uses Cosmos SDK (application framework) + CometBFT (consensus) + custom EVM (execution) — modular stack but sovereign L1 not rollup
+Sources: (MEDIUM) [Celestia Blog on Modular Stack, https://celestia.org/blog]; (HIGH) [Phase 4 Technology Architecture]
+
+Narrative: DeFi-Native L1 / Liquidity Flywheel
+Status: Main Narrative
+Evidence: PoL creates direct incentive loop: LP → BGT → validator weight → emission direction → more LP incentives; fee switch to BGT stakers
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Phase 6 Token Utility - BGT Emission Direction, Fee Switch]
+
+Narrative: Soulbound Governance Token (BGT)
+Status: Secondary Narrative
+Evidence: BGT non-transferable, earned only via LP; prevents vote buying; unique in L1 governance design
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]; (HIGH) [Phase 6 Token - BGT Distribution 100% to LPs]
+
+Narrative: Restaking / EigenLayer-style
+Status: Not Applicable
+Evidence: Berachain does not implement restaking; PoL is distinct mechanism (liquidity delegation vs stake delegation)
+Sources: (HIGH) [Phase 4 Technology Consensus Mechanism - PoL vs Restaking distinction]
+
+Narrative: Chain Abstraction
+Status: Not Applicable
+Evidence: No chain abstraction protocol (like Particle Network, NEAR chain abstraction) implemented at protocol level; standard IBC + EVM wallet support
+Sources: (HIGH) [Phase 7 Wallet Ecosystem - Standard MetaMask/Keplr support]
+
+Narrative: RWA (Real World Assets)
+Status: Not Applicable
+Evidence: No RWA-specific infrastructure or partnerships announced in Phases 1-7
+Sources: (LOW) [Berachain Documentation, https://docs.berachain.com] — no RWA section
+
+Narrative: DePIN (Decentralized Physical Infrastructure)
+Status: Not Applicable
+Evidence: No DePIN focus in documentation or applications
+Sources: (LOW) [Berachain Documentation, https://docs.berachain.com]
+
+Narrative: Gaming
+Status: Not Applicable
+Evidence: No gaming-specific infrastructure or partnerships announced
+Sources: (LOW) [Berachain Documentation, https://docs.berachain.com]
+
+Narrative: AI / AI-Agent Infrastructure
+Status: Not Applicable
+Evidence: No AI-specific narrative in documentation
+Sources: (LOW) [Berachain Documentation, https://docs.berachain.com]
+
+## Market Timeline
+
+Date: 2024-06-06
+Milestone: Mainnet Genesis Launch
+Description: Berachain mainnet live with Proof-of-Liquidity consensus, EVM execution, native apps (BEX, Bend, Berps), BGT emission, HONEY stablecoin, IBC enabled
+Related Historical Event ID: EV-007
+Sources: (HIGH) [Phase 3 EV-007]; (HIGH) [Berachain Blog, https://berachain.com/blog/mainnet-launch]
+
+Date: 2024-06 (eksak tanggal tidak diketahui)
+Milestone: Native DeFi Apps Deployment (BEX, Bend, Berps)
+Description: BEX (DEX), Bend (Lending), Berps (Perpetuals) deployed and operational on mainnet
+Related Historical Event ID: EV-008
+Sources: (HIGH) [Phase 3 EV-008]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps]
+
+Date: 2024-10 (estimasi)
+Milestone: Artio Testnet v3 / Pre-TGE Upgrade
+Description: Testnet upgrade validating fee switch, BGT delegation mechanics, upgradeability framework before TGE
+Related Historical Event ID: EV-009
+Sources: (MEDIUM) [Phase 3 EV-009]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com]
+
+Date: 2024 (eksak tanggal tidak diketahui)
+Milestone: HONEY Stablecoin Launch
+Description: HONEY soft-pegged USD stablecoin minting activated via Bend collateral and BEX arbitrage
+Related Historical Event ID: EV-015
+Sources: (HIGH) [Phase 3 EV-015]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]
+
+Date: 2024 (eksak tanggal tidak diketahui)
+Milestone: IBC Channels Activated
+Description: Cross-chain IBC channels live to Osmosis, Celestia, other Cosmos chains
+Related Historical Event ID: EV-014
+Sources: (MEDIUM) [Phase 3 EV-014]; (HIGH) [IBC Protocol, https://ibc.cosmos.network]
+
+Date: 2025-02-06
+Milestone: BERA Token Generation Event (TGE)
+Description: BERA becomes transferable; trading starts on BEX and CEX; validator staking active; vesting cliffs begin for Team/Investors/Foundation/Advisors/Ecosystem
+Related Historical Event ID: EV-011
+Sources: (HIGH) [Phase 3 EV-011]; (HIGH) [Berachain Official Website, https://berachain.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bera]
+
+Date: 2025-02 (eksak tanggal tidak diketahui)
+Milestone: BERA CEX/DEX Listings
+Description: BERA listed on centralized exchanges (specific names not disclosed) and native DEX BEX; price discovery begins
+Related Historical Event ID: EV-012
+Sources: (HIGH) [Phase 3 EV-012]; (HIGH) [BEX App, https://bex.berachain.com]
+
+Date: 2024-2025 (ongoing)
+Milestone: On-Chain Governance Proposals Active
+Description: BGT holders submitting and voting on proposals (parameter changes, fee switch, emission rates, software upgrades)
+Related Historical Event ID: EV-017
+Sources: (HIGH) [Phase 3 EV-017]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/governance]
+
+## Official Market Resources
+
+Official Dashboard: https://berascan.com (block explorer + basic analytics)
+DefiLlama: https://defillama.com/chain/Berachain
+CoinGecko: https://www.coingecko.com/en/coins/berachain
+CoinMarketCap: https://coinmarketcap.com/currencies/berachain/
+Token Terminal: https://tokenterminal.com/terminal/projects/berachain (may not have verified project page)
+Messari: https://messari.io/asset/berachain (may not have verified asset page)
+Explorer: https://berascan.com
+BEX Analytics: https://bex.berachain.com
+Bend Analytics: https://bend.berachain.com
+Berps Analytics: https://berps.berachain.com
+
+## RINGKASAN
+
+Market Stage: Early (Mainnet 2024-06-06, TGE 2025-02-06, native DeFi live, ecosystem building)
+Primary Category: Layer 1 Blockchain / DeFi Infrastructure
+Competitor Count: 10 identified (Monad, Sei, Ethereum, BNB Chain, Polygon, Avalanche, Cosmos Hub, Osmosis, Celestia, Injective)
+Major Narrative: Proof-of-Liquidity Consensus; EVM-equivalent on Cosmos SDK; Native DeFi Primitives; DeFi-Native Liquidity Flywheel
+Trading Availability: Native DEX (BEX) live; Native Perps (Berps) live; CEX listings announced post-TGE (specific exchanges unnamed)
+Adoption Metrics Available: Validator count (100 at genesis); Contract addresses verified on Berascan; TVL/Volume/Users/DAU not aggregated on public dashboards (DefiLlama integration incomplete per Phase 5)
+
+## Open Threads
+
+- TVL data for Berachain native apps (BEX, Bend, Berps) — DefiLlama chain page exists but native protocols not fully integrated per Phase 5; need official TVL dashboard or DefiLlama integration completion
+- CEX listing specifics — Phase 3 EV-012 and TGE announcement mention CEX listings but do not name exchanges; need CoinGecko/CoinMarketCap markets tab verification post-TGE
+- Daily active users / transaction count / unique wallets — Berascan shows raw data but no aggregated metrics dashboard; need Dune Analytics dashboard or official metrics page
+- Developer count — GitHub contributors visible (~20 named pseudonymous + ~50 total per Phase 2) but no standardized developer activity metric (Electric Capital, etc.)
+- BEX 24h volume / liquidity depth — BEX app shows individual pools but no aggregated volume/TVL dashboard visible
+- IBC bridge volume / packet count — Map of Zones may have data but not verified; need on-chain query
+- BGT holder / delegator count — BGT contract on Berascan but no holder analytics dashboard
+- Market share metrics — No L1 market share data (TVL/volume/users) available from DefiLlama, Token Terminal, or Messari for Berachain
+- Fee switch activation status — Governance-gated feature mentioned in whitepaper/docs; on-chain proposal status not verified
+- Oracle provider for Bend/Berps/HONEY — Critical infrastructure dependency unidentified in all phases; need audit reports or contract verification
+- Grants program / hackathon history — Not found in Phases 1-7; need official announcement or blog post search
+- Non-IBC bridge integrations (Wormhole, LayerZero, Axelar, etc.) — Not documented; need partnership announcements
+- Legal wrapper for DAO/governance separate from Foundation — Phase 2 shows no DAO entity; Phase 6 governance is on-chain only
+- BERA circulating supply real-time — No official dashboard; CoinGecko/CoinMarketCap may show post-TGE but methodology unclear
+- HONEY peg stability metrics — Historical depeg events, max deviation, recovery time not published
+- Validator set transparency — Geographic distribution, entity identity, commission rates not public; only "100 validators at genesis" documented
+- MEV protection status — No PBS, encrypted mempool, or MEV mitigation documented in Phase 4
+- Cross-chain BERA/BGT/HONEY representations (wrapped on Ethereum, Solana, etc.) — Not documented

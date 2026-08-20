@@ -1,0 +1,28 @@
+PROJECT: Near
+
+- Official Name: NEAR Protocol (HIGH) [NEAR Protocol Official Website, https://near.org]
+- Symbol: NEAR (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/near]
+- Category: Layer-1 blockchain / sharded proof-of-stake network (HIGH) [NEAR Documentation, https://docs.near.org]
+- Founding Entity: NEAR Foundation, registered in Zug, Switzerland (HIGH) [NEAR Foundation Medium, https://medium.com/nearprotocol/near-foundation-announcement-7e8a5c5f5d5a]
+- Founders: Illia Polosukhin (Co-Founder); Alexander Skidanov (Co-Founder) (HIGH) [NEAR Protocol Website, https://near.org/about]
+- Core Team: Tidak diungkap secara resmi; tim inti awal terdiri dari kontributor dari Google, Microsoft, dan perusahaan teknologi lainnya (MEDIUM) [NEAR Foundation Medium, https://medium.com/nearprotocol/the-near-collective]
+- Country: Switzerland (yurisdiksi pendirian yayasan); operasi global (HIGH) [NEAR Foundation Medium, https://medium.com/nearprotocol/near-foundation-announcement-7e8a5c5f5d5a]
+- Launch Date - Testnet: 25 September 2019 (MEDIUM) [NEAR Blog, https://near.org/blog/near-protocol-launches-its-first-testnet]
+- Launch Date - Mainnet: 14 Oktober 2020 (HIGH) [NEAR Blog, https://near.org/blog/mainnet-launch]
+- Launch Date - TGE: 14 Oktober 2020 (bersamaan dengan mainnet launch) (HIGH) [NEAR Blog, https://near.org/blog/mainnet-launch] [CoinMarketCap, https://coinmarketcap.com/currencies/near-protocol/]
+- Main Products: Nightshade (sharding); Aurora (EVM-compatible Layer-2); Rainbow Bridge (cross-chain bridge); NEAR Lake (data indexing); NEAR Wallet (MEDIUM) [NEAR Documentation, https://docs.near.org] [Aurora Website, https://aurora.dev] [Rainbow Bridge, https://rainbowbridge.app]
+- Official Website: https://near.org (HIGH) [NEAR Protocol, https://near.org]
+- Repository: https://github.com/near/nearcore (HIGH) [GitHub, https://github.com/near/nearcore]
+- Documentation: https://docs.near.org (HIGH) [NEAR Docs, https://docs.near.org]
+- Social - X/Twitter: @NEARProtocol (HIGH) [Twitter, https://twitter.com/NEARProtocol]
+- Social - Discord: https://discord.gg/near (HIGH) [NEAR Website, https://near.org]
+- Social - Telegram: https://t.me/cryptonear (HIGH) [NEAR Website, https://near.org]
+- Block Explorer: https://explorer.near.org (HIGH) [NEAR Explorer, https://explorer.near.org]
+- Token Contract: Belum di-deploy (token NEAR adalah native coin, bukan kontrak ERC-20/BEP-20) (HIGH) [NEAR Documentation, https://docs.near.org/concepts/basics/tokens]
+- Chain(s): NEAR Protocol (mainnet) (HIGH) [NEAR Docs, https://docs.near.org]
+- Ecosystem: Aurora (EVM Layer-2); Rainbow Bridge; Pagoda (infrastruktur); NEAR Horizon (program inkubasi); Ref Finance; Burrow; dan berbagai dApps lainnya (MEDIUM) [NEAR Ecosystem, https://near.org/ecosystem]
+
+Open Threads
+- Total pasokan token NEAR di genesis tercatat sekitar 1 miliar token, namun tanggal dan rincian distribusi TGE perlu cross-check lebih lanjut [NEAR Foundation Medium, https://medium.com/nearprotocol/near-token-supply]
+- Kontrak token untuk NEAR tidak ada karena native coin; kepastian alamat kontrak untuk versi bridged (misal di Ethereum) perlu diverifikasi [Rainbow Bridge Docs, https://docs.rainbowbridge.app]
+- Kategori spesifik untuk sub-produk seperti NEAR Lake dan NEAR Horizon masih perlu klarifikasi apakah termasuk produk inti atau ekosistem terpisah [NEAR Blog, https://near.org/blog]

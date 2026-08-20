@@ -16,7 +16,30 @@ import urllib.error
 import urllib.request
 
 from . import config
+from . import costs
 from .logs import log
+
+
+def _reject_truncated(finish_reason, text: str) -> None:
+    """Raise when the model stopped because it ran out of output budget, not because it was
+    done.
+
+    Nothing used to look at finish_reason at all, which made a max_tokens cut completely
+    invisible: the client received a shorter string and treated it as a finished answer.
+    Phase 11 is where that hurt most -- its prompt puts CIF SCORE CALCULATION at the very END
+    of the report, so the budget runs out precisely on the one section extract_qa.py needs,
+    and the failure surfaces as "no CIF Score Calculation block" rather than "the answer was
+    cut off". Two self-repair attempts then regenerate a report that gets cut in the same
+    place, at ~8 minutes each.
+
+    Raising here routes it into call_with_retries' normal handling and puts the real cause in
+    the log, where raising RESET_PHASE11_MAX_TOKENS is an obvious next step.
+    """
+    if finish_reason in ("length", "max_tokens"):
+        raise RuntimeError(
+            f"response truncated by the output-token limit (finish_reason={finish_reason!r}, "
+            f"got {len(text)} chars). The answer is incomplete, not wrong -- raise "
+            f"RESET_MAX_TOKENS (or RESET_PHASE11_MAX_TOKENS for phase 11) and retry.")
 
 
 def extract_text(body: dict) -> str:
@@ -43,6 +66,7 @@ def extract_text(body: dict) -> str:
         msg = choices[0].get("message", {}) if isinstance(choices[0], dict) else {}
         text = msg.get("content", "")
         if isinstance(text, str) and text.strip():
+            _reject_truncated(choices[0].get("finish_reason"), text)
             return text
     raise ValueError(f"unrecognized response shape, no text found: {json.dumps(body)[:800]}")
 
@@ -56,6 +80,9 @@ def _read_sse_stream(resp) -> str:
     the final chunk instead, so both are accepted.
     """
     parts = []
+    finish_reason = None
+    saw_done = False
+    usage = None
     for raw_line in resp:
         line = raw_line.decode("utf-8", errors="replace").strip()
         if not line or line.startswith(":"):
@@ -64,25 +91,48 @@ def _read_sse_stream(resp) -> str:
             continue
         payload = line[5:].strip()
         if payload == "[DONE]":
+            saw_done = True
             break
         try:
             chunk = json.loads(payload)
         except json.JSONDecodeError:
             continue  # a partial/garbled frame must not abort a completed generation
+        # Sent on the final chunk when stream_options.include_usage is honoured. This is the
+        # only way to get exact token counts out of a streamed call, and exact counts are the
+        # whole basis of the cost report -- a length-derived estimate is a fallback, not a
+        # measurement.
+        if chunk.get("usage"):
+            usage = chunk["usage"]
         for choice in chunk.get("choices") or []:
             piece = (choice.get("delta") or {}).get("content")
             if piece is None:
                 piece = (choice.get("message") or {}).get("content")
             if piece:
                 parts.append(piece)
+            if choice.get("finish_reason"):
+                finish_reason = choice["finish_reason"]
     text = "".join(parts)
     if not text.strip():
         raise RuntimeError("stream ended with no content (no data: chunks carried text)")
-    return text
+    # A well-behaved SSE completion ends with `data: [DONE]`. Reaching the end of the response
+    # body without it means the connection died mid-generation, and the caller would otherwise
+    # receive a partial answer with no indication anything was missing.
+    #
+    # Measured on Aave, 2026-08-09: a 30,707-char Phase 11 that stops at "Knowledge K-024 —",
+    # mid-item. That is only ~9,300 tokens against a 16,000 cap, so it was not the budget; the
+    # stream was cut. finish_reason did not catch it because this gateway never sends the
+    # field -- which is also why the guard added the day before stayed silent.
+    if not saw_done and finish_reason is None:
+        raise RuntimeError(
+            f"stream ended without a terminating [DONE] and without finish_reason after "
+            f"{len(text)} chars -- the connection dropped mid-generation, so this answer is "
+            f"incomplete. Retrying.")
+    _reject_truncated(finish_reason, text)
+    return text, usage
 
 
 def call_model(messages: list, base_url: str, token: str, model: str,
-               max_tokens: int = None, stream: bool = None) -> str:
+               max_tokens: int = None, stream: bool = None) -> tuple:
     """POST to {base_url}/v1/chat/completions (OpenAI-compatible -- see extract_text's
     docstring for how this was confirmed against the real endpoint, 2026-08-05). Raises on
     any failure (network, timeout, non-200, unparseable body) -- caller handles retry.
@@ -104,6 +154,10 @@ def call_model(messages: list, base_url: str, token: str, model: str,
     url = base_url.rstrip("/") + "/v1/chat/completions"
     payload = {"model": model, "max_tokens": max_tokens or config.MAX_TOKENS,
                "messages": messages, "stream": bool(stream)}
+    if stream:
+        # Ask for the token counts on the final chunk. Providers that don't support it ignore
+        # the field; costs.record() then falls back to a length estimate and says so.
+        payload["stream_options"] = {"include_usage": True}
     data = json.dumps(payload).encode("utf-8")
     # Debug aid, 2026-08-05: a UA-spoofed Python request to this same URL still got the
     # gateway's fallback HTML back while an equivalent curl succeeded -- dumping the EXACT
@@ -150,7 +204,7 @@ def call_model(messages: list, base_url: str, token: str, model: str,
             f"HTTP {status} but response body is not valid JSON ({e}); "
             f"body length={len(raw)} chars, first 500 chars: {snippet!r}"
         ) from e
-    return extract_text(body)
+    return extract_text(body), body.get("usage")
 
 
 # Failures that mean "this endpoint cannot handle a request this big", as opposed to "try
@@ -168,6 +222,19 @@ _CAPACITY_FAILURE_RE = re.compile(
 
 def is_capacity_failure(err: Exception) -> bool:
     return bool(_CAPACITY_FAILURE_RE.search(str(err)))
+
+
+_TRUNCATION_RE = re.compile(r"truncated by the output-token limit", re.I)
+
+
+def is_output_truncation(err: Exception) -> bool:
+    """The model ran out of output budget -- fixable by asking for a bigger one.
+
+    Distinct from is_capacity_failure, which means the request itself is too big for the
+    endpoint and no retry will help. This is the opposite: the request was fine and the
+    ANSWER did not fit, so the same request with a larger budget is exactly the right retry.
+    """
+    return bool(_TRUNCATION_RE.search(str(err)))
 
 
 # Providers that have already proven, in THIS run, that they cannot carry a heavy phase.
@@ -209,16 +276,33 @@ def call_with_retries(messages: list, providers, phase_label: str,
 
     last_err = None
 
+    # Escalates on truncation, so it is per-call state rather than the caller's fixed value.
+    budget = max_tokens or config.MAX_TOKENS
+
     for idx, prov in enumerate(providers):
         is_last_provider = idx == len(providers) - 1
         for attempt in range(1, config.MAX_PHASE_RETRIES + 1):
             try:
-                return call_model(messages, prov.base_url, prov.token, prov.model,
-                                  max_tokens=max_tokens)
+                text, usage = call_model(messages, prov.base_url, prov.token, prov.model,
+                                         max_tokens=budget)
+                costs.record(prov.name, prov.model, phase_label, usage, len(text))
+                return text
             except Exception as e:  # noqa: BLE001 -- any failure is retryable or rotatable
                 last_err = e
                 log(f"  ✗ {phase_label} [{prov.name}] attempt "
                     f"{attempt}/{config.MAX_PHASE_RETRIES} failed: {e}")
+
+                # A truncated answer retried at the SAME budget produces the same truncation.
+                # Observed on Blur, 2026-08-09: three attempts, ~26 minutes, cut at 70,499 and
+                # then 43,161 chars, and the project was given up on -- having twice proven a
+                # fact the first attempt already established. Raise the budget instead, and
+                # skip the congestion backoff: nothing here is overloaded, the answer simply
+                # needs more room.
+                if is_output_truncation(e) and budget < config.MAX_TOKENS_CEILING:
+                    budget = min(int(budget * 1.5), config.MAX_TOKENS_CEILING)
+                    log(f"  ↑ {phase_label}: answer didn't fit -- retrying immediately with "
+                        f"max_tokens={budget}")
+                    continue
 
                 if is_capacity_failure(e) and not is_last_provider:
                     nxt = providers[idx + 1]

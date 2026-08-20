@@ -1,0 +1,35 @@
+PROJECT: Sui
+Official Name: Sui
+Symbol: SUI
+Category: Layer 1 blockchain / smart contract platform
+Founding Entity: Mysten Labs Inc., United States (Delaware corporation)
+Founders: Evan Cheng (CEO); Adeniyi Abiodun (CPO); Sam Blackshear (CTO); George Danezis (Chief Scientist); Kostas Chalkias (Chief Cryptographer)
+Core Team: 100+ employees at Mysten Labs (verifiable via LinkedIn/company page); additional contributors via Sui Foundation grants
+Country: United States (headquarters in Palo Alto, California)
+Launch Date - Testnet: 2022-08-16 (Incentivized Testnet "Testnet Wave 1" began) [MEDIUM] [Sui Blog, https://blog.sui.io/introducing-sui-testnet-wave-1/]
+Launch Date - Testnet: 2022-10-20 (Testnet Wave 2) [MEDIUM] [Sui Blog, https://blog.sui.io/sui-testnet-wave-2/]
+Launch Date - Testnet: 2023-01-18 (Testnet Wave 3) [MEDIUM] [Sui Blog, https://blog.sui.io/sui-testnet-wave-3/]
+Launch Date - Mainnet: 2023-05-03 (Mainnet launch) [HIGH] [Sui Blog, https://blog.sui.io/sui-mainnet-launch/; CoinDesk, https://www.coindesk.com/tech/2023/05/03/sui-mainnet-launches/]
+Launch Date - TGE: 2023-05-03 (Token Generation Event coincided with mainnet launch) [HIGH] [Sui Blog, https://blog.sui.io/sui-tokenomics/; Sui Foundation, https://www.suifoundation.org/sui-tokenomics]
+Main Products: Sui blockchain (Layer 1); Move programming language (smart contract language); Sui Wallet (official wallet); Sui Explorer (block explorer); Sui SDKs (TypeScript, Rust, Python); Mysten Labs developer tools (zktx, Narwhal/Bullshark consensus); SuiNS (naming service); DeepBook (native DEX/CLob); Sui Play0x1 (handheld gaming device, announced)
+Official Website: https://sui.io
+Repository: https://github.com/MystenLabs/sui
+Documentation: https://docs.sui.io
+Social - X/Twitter: @SuiNetwork
+Social - Discord: https://discord.gg/sui
+Social - Telegram: @SuiNetwork
+Block Explorer: https://suiexplorer.com (official); https://suiscan.xyz (community)
+Token Contract: Native token (not a contract) — SUI is the native gas/staking token on Sui mainnet; no ERC-20 equivalent on Ethereum (wrapped versions exist via bridges e.g., Wormhole)
+Chain(s): Sui (native); also bridged to Ethereum, Solana, BSC, Polygon, Arbitrum, Optimism via Wormhole, LayerZero, and other bridges
+Ecosystem: Move ecosystem (shared with Aptos); DeFi (DeepBook, Cetus, Turbos, Aftermath, Kriya); Gaming (Sui 8192, Run Legends, Bushi); NFTs (Tradeport, Souffl3, Bluemove); Infrastructure (Shinami, Mysten Labs, Poki); Wallets (Sui Wallet, Suiet, Martian, Ethos, Glass); Bridges (Wormhole, LayerZero, Celer, Allbridge)
+
+Open Threads
+- Exact founding date of Mysten Labs Inc. (incorporation date) — not fully verified
+- Complete list of all seed/Series A/B investors with confirmed allocation percentages — partial data available, full cap table not public
+- Current circulating supply vs. total supply breakdown with unlock schedule per investor tranche — on-chain data exists but requires parsing
+- Sui Foundation treasury size and multisig signers — not fully disclosed
+- Exact TGE unlock percentage for community/early contributors — conflicting reports (some say 14%, others 12.5%)
+- Whether SUI token has any fee-switch mechanism or value accrual to stakers beyond gas fees — documentation suggests staking rewards only
+- Verified team/advisor token allocation and vesting schedules — not fully public
+- Current Mysten Labs headcount — "100+" is company claim, not independently audited
+- Sui Play0x1 shipping date and production status — announced 2024, delivery timeline unclear

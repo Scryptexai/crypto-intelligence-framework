@@ -142,6 +142,24 @@ production database. `relationships`/`events`/`conflicts`/`notes`/`saved_views`/
 no row builder yet — no extractor produces that data (see `extract_entities.py`'s "known gap"
 note on Relationships; Conflicts/Events extractors are not yet built at all).
 
+### Database security posture
+
+One write path, everything else read-only. This script holds the `service_role` key (env only,
+never a tracked file); every client-facing table has RLS on and grants `SELECT` to `anon` and
+`authenticated` and nothing more. `notes`/`saved_views`/`users` belong to the frontend and are
+deliberately RLS-on-with-no-policy, which means closed — the advisor reports those three as INFO
+and that is the intended state, not a backlog item.
+
+Run `get_advisors(type="security")` after any schema change. Cleared so far:
+
+- **2026-08-11** — `rls_auto_enable()`, the event-trigger function that turns RLS on for each new
+  table in `public`, was `SECURITY DEFINER` and reachable by `anon`/`authenticated` through
+  `/rest/v1/rpc/`. `EXECUTE` revoked from `anon`, `authenticated` and `public`. Nothing
+  legitimate called it: Postgres does not check `EXECUTE` when firing a trigger, so the privilege
+  only ever governed direct REST calls. Verified after the revoke by creating a table inside a
+  transaction — RLS was still enabled automatically — and by `has_function_privilege`, which now
+  reads false/false/true for anon/authenticated/service_role.
+
 ## `extract_decision_events.py` — Behavioral Intelligence phase → structured Decision Events
 
 ```
@@ -238,3 +256,33 @@ upserts `qa.json` into the real schema's `qa_dimensions`/`qa_phases` tables (one
 dimension/phase per project, plus `projects.cif_score`), `behavior.json` into `behavior_profiles`
 (one row per project, PK = `project_slug`), and `knowledge.json` into `knowledge_items` (+
 `evidence_items` for the raw Evidence text — see `extract_knowledge.py`'s note above).
+
+### Phase 12 — Airdrop Intelligence
+
+`extract_airdrop.py` parses the Phase 12 section (`reset/phase_12_airdrop.txt`) into
+`poc/airdrop.json`, which `sync_supabase.py` fans out across five tables. Nothing here is
+computed: there is no success score and no cross-project comparison, because an airdrop
+succeeds for the founder and fails for retail in the same month and collapsing that into one
+number is the mistake the phase exists to prevent.
+
+| Table | Grain | Notes |
+|---|---|---|
+| `airdrop_profiles` | one row per project, PK `project_slug` | status + the four PROSPEK fields |
+| `airdrop_events` | one row per distribution wave | `id` is `<slug>-AD-001`; AD ids restart per project |
+| `airdrop_pov_outcomes` | eight rows per project | `verdict` is one of five canonical values, `verdict_raw` keeps the model's own words |
+| `airdrop_retention` | one row per metric line | TVL/volume, holders, active addresses, concentration, staking retention |
+| `airdrop_price_points` | up to four rows per project | the post-distribution trajectory |
+
+`airdrop_price_points` (created 2026-08-11) is the only typed table of the five: `usd numeric`,
+`observed_on date`, `evidence` constrained to HIGH/MEDIUM/LOW, `point` constrained to
+`at_claim`/`day_30`/`day_90`/`peak_12m` with a `seq` so a chart sorts without a CASE. The
+siblings stay text because their reports genuinely contain ranges and qualifications
+("2023-05 hingga 2023-11"); this one does not, because the prompt demands one figure and one
+ISO date per line and the parser only fills the typed columns when it matched exactly that.
+`usd` null with `raw` present means the report said `Tidak berlaku` — no listing, or a
+continuous distribution with no single claim date.
+
+The price block replaced the recipient-cohort questions Phase 12 used to ask ("what share sold
+within 7 days"). Those returned nothing on 13 of 13 projects: it needs per-address on-chain
+tracking that no public source publishes. Price at claim vs +30/+90 days answers the same
+question from CoinGecko's daily history — see `docs/Protocol/Lessons.md` L12.

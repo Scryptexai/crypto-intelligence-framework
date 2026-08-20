@@ -9,7 +9,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-from . import config, phases as phases_mod, pipeline, prompts, validate
+from . import config, costs, phases as phases_mod, pipeline, prompts, validate
 from .logs import log, log_failure, log_needs_review, project_logger
 
 
@@ -25,6 +25,7 @@ def run_project(name: str, providers, dry_run: bool,
     proj_dir.mkdir(parents=True, exist_ok=True)
     messages: list = []  # running chat history -- Track C's "one continuous chat" methodology
     unresolved: dict = {}  # phase label -> failed check names that survived self-repair
+    generated_any = False  # did THIS run actually generate at least one phase?
 
     todo = config.PHASES[:phases_limit] if phases_limit else config.PHASES
 
@@ -43,10 +44,33 @@ def run_project(name: str, providers, dry_run: bool,
                              "content": out_path.read_text(encoding="utf-8")})
             continue
 
-        if num == 11:
+        # Phase 11 as FOUR sequential stages -- last resort only, same gate as Phase 9's split
+        # (phases.run_phase). Reached when streaming has been turned off and no heavy-capable
+        # provider is configured, i.e. the request would go out in the exact shape that hits
+        # the gateway's ~300s non-streaming ceiling.
+        #
+        # Off by default since 2026-08-09. The split's justification was a measured 504 on
+        # stage 11a, but that measurement predates the streaming fix -- the ceiling was an
+        # artifact of sending a non-streaming request that returns no bytes until generation
+        # finishes, not of Phase 11 being too large.
+        #
+        # Splitting is also unsound for this phase specifically, for a reason beyond timing:
+        # 11d's own prompt instructs the model to "GABUNGKAN dengan seluruh temuan sebelumnya"
+        # -- merge everything the earlier stages found. A model asked to restate prior findings
+        # re-emits them in slightly different words, and a validation report is exactly where a
+        # near-duplicate finding is indistinguishable from a second real one. An audit that
+        # invents or double-counts its own findings is worse than no audit, because it reads
+        # authoritative. The single-prompt path has no seam for that to happen at.
+        #
+        # And it is the empirically proven path: reset/phase_11_conflict.txt is the prompt that
+        # produced data_project/Arbitrum/11-conflict.docx -- the only Phase 11 extract_qa.py has
+        # ever parsed (total=81.6, 6 dimensions, 7 phases), with zero '## ' sub-headers to trip
+        # that parser's section boundary. The staged path has never produced a parseable one.
+        if num == 11 and not config.STREAM_RESPONSES and not phases_mod.has_heavy_provider(providers):
             stage_names = ", ".join(s[0] for s in config.PHASE11_STAGES)
-            plog(f"phase 11-conflict: sending as {len(config.PHASE11_STAGES)} smaller sequential "
-                 f"stages ({stage_names}) -- see run_phase_11()'s docstring for why...")
+            plog(f"phase 11-conflict: streaming off and no heavy provider -- falling back to "
+                 f"{len(config.PHASE11_STAGES)} sequential stages ({stage_names}), which risks "
+                 f"duplicated findings; prefer leaving streaming on...")
             if dry_run:
                 out_path.write_text(
                     f"PROJECT: {name}\n\n[DRY RUN -- Phase 11 placeholder, "
@@ -61,6 +85,7 @@ def run_project(name: str, providers, dry_run: bool,
                 plog("(re-run this script later and it will resume from here)")
                 return False
             out_path.write_text(text, encoding="utf-8")
+            generated_any = True
             plog(f"phase 11-conflict: done ({len(text)} chars, "
                  f"{len(config.PHASE11_STAGES)}-stage split) -> {out_path}")
             continue
@@ -82,6 +107,7 @@ def run_project(name: str, providers, dry_run: bool,
                 plog(f"(later phases for {name} need this one's output, so skipping the rest "
                      f"of {name} -- re-run this script later and it will resume from here)")
                 return False
+            generated_any = True
             if failures:
                 unresolved[f"{num:02d}-{key}"] = [c.name for c, _ in failures]
 
@@ -93,11 +119,25 @@ def run_project(name: str, providers, dry_run: bool,
         plog(f"⚠ phases saved with unresolved spec checks: {unresolved} "
              f"(see reset/repairs.log -- a check failing across many projects is a prompt bug)")
 
-    # --phases-limit 10 is the explicit signal that Phase 11 is being deliberately deferred:
-    # run every project through 1-10 first, do Phase 11 per-project later. Run the real
-    # quality gate and auto-promote on a pass.
-    if phases_limit == 10 and not dry_run:
-        _finalise(name, proj_dir, output_root, auto_sync, plog)
+    # Finalise whenever the run actually covered phases 1-10, which is the input the quality
+    # gate and every extractor read:
+    #   10 -- Phase 11 deliberately deferred (the bulk-repair mode)
+    #   11 -- the later per-project Phase 11 pass over an already-clean project
+    #    0 -- an ordinary full run, all 11 phases in one go
+    # A smaller --phases-limit is a partial/test run and is left alone: verify_10_phases would
+    # fail on phases that were never asked for.
+    #
+    # 11 and 0 were added 2026-08-08. Without them a Phase 11 pass wrote 11-conflict.docx and
+    # stopped -- the dossier was never rebuilt, so extract_qa.py kept parsing a dossier with no
+    # Phase 11 in it and poc/qa.json stayed at one project no matter how many audits ran.
+    if phases_limit in (0, 10, 11) and not dry_run:
+        dossier = config.ROOT / "examples" / "CaseStudies" / f"{name}.md"
+        if not generated_any and dossier.exists():
+            plog(f"nothing generated this run (every requested phase resumed from disk) and "
+                 f"{dossier.relative_to(config.ROOT)} is present -- skipping verify/ingest/"
+                 f"extract/sync.")
+        else:
+            _finalise(name, proj_dir, output_root, auto_sync, plog)
     return True
 
 
@@ -128,7 +168,41 @@ def _finalise(name: str, proj_dir: Path, output_root: Path, auto_sync: bool, plo
 
 
 def run_queue(projects: list, providers, dry_run: bool,
-              phases_limit: int, output_root: Path, auto_sync: bool, parallel: int) -> None:
+              phases_limit: int, output_root: Path, auto_sync: bool, parallel: int) -> int:
+    """Returns how many projects failed, so the caller can exit non-zero.
+
+    It used to return nothing and the process exited 0 whatever happened, which meant a
+    driver script could not tell a completed project from a failed one. That matters when the
+    gateway is having a bad hour: reset/run_pipeline_stages.sh uses the exit status to stop
+    after a few consecutive failures instead of grinding through 25 projects that are all
+    going to fail the same way.
+    """
+    # Pre-skip projects that are already complete on disk (added 2026-08-12). Without this, a
+    # queue continuation resumed every finished project at zero API cost but still paid the
+    # inter-project sleep for each one -- 28 clean projects x 300s ~= 140 minutes before the
+    # run reached the first not-started one, on every restart. A project is skippable when
+    # every requested phase passes existing_phase_ok AND, when the run would finalise, the
+    # dossier already exists (a missing dossier falls through to run_project so the chain
+    # heals it). --redo-phases is unaffected: cli.main sets the named phases aside BEFORE
+    # this point, so they no longer pass existing_phase_ok and the project is processed.
+    # dry_run keeps its full control flow so it stays a faithful test of the loop.
+    if not dry_run:
+        todo = config.PHASES[:phases_limit] if phases_limit else config.PHASES
+        would_finalise = phases_limit in (0, 10, 11)
+        remaining, skipped = [], []
+        for name in projects:
+            proj_dir = output_root / name
+            phases_ok = all(phases_mod.existing_phase_ok(proj_dir / f"{num:02d}-{key}.docx")
+                            for num, key in todo)
+            dossier_ok = (not would_finalise
+                          or (config.ROOT / "examples" / "CaseStudies" / f"{name}.md").exists())
+            (skipped if phases_ok and dossier_ok else remaining).append(name)
+        if skipped:
+            log(f"skipping {len(skipped)} project(s) already complete on disk -- nothing to "
+                f"generate, nothing to rebuild or sync: {', '.join(skipped)}")
+        projects = remaining
+
+    failed = 0
     if parallel > 1:
         with ThreadPoolExecutor(max_workers=parallel) as pool:
             futures = {}
@@ -141,14 +215,21 @@ def run_queue(projects: list, providers, dry_run: bool,
             for fut in as_completed(futures):
                 name = futures[fut]
                 try:
-                    fut.result()
+                    if not fut.result():
+                        failed += 1
                 except Exception as e:  # noqa: BLE001 -- one thread crashing must not kill others
                     log(f"[{name}] ✗✗ unexpected exception, this project's thread crashed: {e}")
+                    failed += 1
     else:
         for i, name in enumerate(projects):
-            run_project(name, providers, dry_run, phases_limit, output_root, auto_sync)
+            if not run_project(name, providers, dry_run, phases_limit, output_root, auto_sync):
+                failed += 1
             if i < len(projects) - 1:
                 log(f"sleeping {config.PROJECT_SLEEP_SECONDS}s before next project...")
                 time.sleep(config.PROJECT_SLEEP_SECONDS)
 
-    log("All projects processed. Check reset/failures.log for anything that needs a manual re-run.")
+    log(f"All projects processed ({failed} failed). Check reset/failures.log for anything "
+        f"that needs a manual re-run.")
+    if not dry_run:
+        log(costs.format_summary(costs.write_report()))
+    return failed

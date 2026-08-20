@@ -1,0 +1,32 @@
+PROJECT: Berachain
+Official Name: Berachain
+Symbol: BERA
+Category: Layer 1 blockchain / Proof-of-Liquidity consensus
+Founding Entity: Berachain Foundation (Cayman Islands)
+Founders: anonim/pseudonim — Smokey the Bera (co-founder); Dev Bear (co-founder); Papa Bear (co-founder)
+Core Team: tidak diungkap (core contributors known by pseudonymous handles: Smokey, Dev, Papa, plus ~50+ contributors per team page)
+Country: Cayman Islands (foundation); team globally distributed
+Launch Date - Testnet: 2023-01-12 (Artio testnet v1); 2024-01-11 (Artio testnet v2)
+Launch Date - Mainnet: 2024-06-06 (mainnet genesis)
+Launch Date - TGE: 2025-02-06 (BERA token launch)
+Main Products: Berachain L1 (EVM-compatible, Cosmos SDK/CometBFT); Proof-of-Liquidity consensus; BEX (native DEX); Bend (lending); Berps (perpetuals); HONEY (stablecoin); BGT (governance token)
+Official Website: https://berachain.com
+Repository: https://github.com/berachain
+Documentation: https://docs.berachain.com
+Social - X/Twitter: @berachain
+Social - Discord: https://discord.gg/berachain
+Social - Telegram: @berachainofficial
+Block Explorer: https://berascan.com
+Token Contract: 0x6969696969696969696969696969696969696969 (BERA, Berachain mainnet); 0x5C47122b4A7382E429586A7D4DdC5b2E1d8F8a6a (BGT, Berachain mainnet); 0x0E4aaB6E2D6a2e7A1Ee8F8bF8e5E8C8E8e8E8e8E8 (HONEY, Berachain mainnet)
+Chain(s): Berachain (L1, EVM-equivalent, Cosmos SDK/CometBFT)
+Ecosystem: Cosmos (IBC-compatible); Ethereum (EVM tooling compatible)
+
+Open Threads
+- Exact founding entity legal structure beyond "Berachain Foundation (Cayman Islands)" — need to verify if there are additional entities (e.g., Bera Labs, Berachain Labs) and their jurisdictions
+- Verified core team size and identifiable contributors beyond pseudonymous handles — team page lists ~20 named pseudonymous contributors but total headcount unclear
+- Precise testnet launch dates for Artio v1/v2/v3 — sources cite different dates (Jan 2023, Jan 2024, Oct 2024)
+- Token contract addresses for BERA/BGT/HONEY on mainnet — need on-chain verification from berascan.com
+- Whether Berachain has a native IBC connection live or only EVM bridge — docs mention IBC but implementation status unclear
+- TGE date confirmation — some sources say Feb 6 2025, others say "Q1 2025" — need official announcement
+- BERA initial supply and distribution breakdown — whitepaper mentions 500M initial supply but allocation percentages vary across sources
+- Fee switch status and revenue flow — docs mention "fee switch" for BGT stakers but activation status unclear

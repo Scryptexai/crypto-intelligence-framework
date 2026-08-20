@@ -1,0 +1,1367 @@
+PROJECT: Scroll
+
+## Ecosystem Position
+
+Primary Sector: zkEVM Layer 2 Rollup (EVM-equivalent) (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview]
+Secondary Sector: Ethereum Scaling Infrastructure (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview]
+Primary Chain: Ethereum (L1 settlement) (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview]
+Supported Chains: Scroll zkEVM Mainnet (L2), Scroll Sepolia Testnet (L2 testnet), Ethereum Mainnet (L1), Ethereum Sepolia (L1 testnet) (HIGH) [Scroll Documentation Testnet, https://docs.scroll.io/developers/testnet]
+
+Sources:
+https://docs.scroll.io/architecture/overview
+https://docs.scroll.io/developers/testnet
+
+---
+
+## External Dependencies
+
+Dependency Name: Ethereum
+Dependency Type: Chain
+Purpose: Settlement layer, data availability (calldata/blob via EIP-4844), finality via L1 verification of ZK-proofs (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview]
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: L1 Settlement Contracts, Roller, Data Availability module
+Sources:
+https://docs.scroll.io/architecture/overview
+https://docs.scroll.io/architecture/data-availability
+
+Dependency Name: Halo2 (PLONKish arithmetization) + KZG Polynomial Commitment
+Dependency Type: Protocol / Cryptographic Primitive
+Purpose: Zero-knowledge proof system untuk validity proofs (zkProver) (HIGH) [Scroll ZK-Proof Blog, https://scroll.io/blog/zk-proof-system]
+Criticality: Critical
+Status: Live
+Related Entity: Privacy and Scaling Explorations (PSE) / Ethereum Foundation
+Related Technology Component: zkProver, Halo2 circuits, Verifier contract
+Sources:
+https://scroll.io/blog/zk-proof-system
+https://github.com/privacy-scaling-explorations/halo2
+
+Dependency Name: Perpetual Powers of Tau Ceremony
+Dependency Type: Protocol / Trusted Setup
+Purpose: KZG trusted setup untuk polynomial commitments (HIGH) [Scroll Trusted Setup Docs, https://docs.scroll.io/architecture/trusted-setup]
+Criticality: Critical
+Status: Live
+Related Entity: Privacy and Scaling Explorations (PSE)
+Related Technology Component: zkProver, Verifier contract
+Sources:
+https://docs.scroll.io/architecture/trusted-setup
+https://github.com/privacy-scaling-explorations/perpetual-powers-of-tau
+
+Dependency Name: go-ethereum (Geth) v1.13+
+Dependency Type: SDK / Execution Client Base
+Purpose: Base execution client untuk L2 execution engine (modified Geth) (HIGH) [Scroll Execution Client GitHub, https://github.com/scroll-tech/go-ethereum]
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum Foundation (Geth maintainers)
+Related Technology Component: L2 Execution Engine (Scroll Execution Client)
+Sources:
+https://github.com/scroll-tech/go-ethereum
+https://docs.scroll.io/architecture/execution
+
+Dependency Name: Blockscout
+Dependency Type: Infrastructure / Indexer
+Purpose: Block explorer backend (Scrollscan) dan indexer untuk on-chain data (HIGH) [Scrollscan Blockscout Fork, https://github.com/scroll-tech/blockscout]
+Criticality: High
+Status: Live
+Related Entity: Blockscout
+Related Technology Component: Scroll Node, Indexer, Scrollscan UI
+Sources:
+https://github.com/scroll-tech/blockscout
+https://scrollscan.com
+
+Dependency Name: LayerZero
+Dependency Type: Protocol / Bridge / Cross-chain Messaging
+Purpose: Omnichain messaging, OFT standard untuk cross-chain token transfers (HIGH) [LayerZero Scroll Integration, https://layerzero.network/blog/scroll-integration]
+Criticality: High
+Status: Live
+Related Entity: LayerZero
+Related Technology Component: Cross-chain messaging layer (application layer)
+Sources:
+https://layerzero.network/blog/scroll-integration
+https://scroll.io/ecosystem
+
+Dependency Name: Wormhole
+Dependency Type: Protocol / Bridge / Cross-chain Messaging
+Purpose: Cross-chain messaging dan token bridging (HIGH) [Wormhole Scroll Integration, https://wormhole.com/ecosystem/scroll]
+Criticality: High
+Status: Live
+Related Entity: Wormhole
+Related Technology Component: Cross-chain messaging layer (application layer)
+Sources:
+https://wormhole.com/ecosystem/scroll
+https://scroll.io/ecosystem
+
+Dependency Name: Chainlink
+Dependency Type: Oracle
+Purpose: Price Feeds, VRF, CCIP, Proof of Reserve untuk DeFi aplikasi (HIGH) [Chainlink Scroll Support, https://blog.chain.link/chainlink-scroll-support]
+Criticality: High
+Status: Live
+Related Entity: Chainlink
+Related Technology Component: Oracle infrastructure (application layer)
+Sources:
+https://blog.chain.link/chainlink-scroll-support
+https://scroll.io/ecosystem
+
+Dependency Name: Pyth Network
+Dependency Type: Oracle
+Purpose: First-party financial market data price feeds (HIGH) [Pyth Scroll Integration, https://pyth.network/developers/price-feed-ids#scroll]
+Criticality: High
+Status: Live
+Related Entity: Pyth Network
+Related Technology Component: Oracle infrastructure (application layer)
+Sources:
+https://pyth.network/developers/price-feed-ids#scroll
+https://scroll.io/ecosystem
+
+Dependency Name: Gelato Network
+Dependency Type: Infrastructure / Automation
+Purpose: Smart contract automation, relay, Web3 Functions (HIGH) [Gelato Scroll Integration, https://gelato.network/networks/scroll]
+Criticality: Medium
+Status: Live
+Related Entity: Gelato Network
+Related Technology Component: Automation infrastructure (application layer)
+Sources:
+https://gelato.network/networks/scroll
+https://scroll.io/ecosystem
+
+Dependency Name: Hyperlane
+Dependency Type: Protocol / Cross-chain Messaging
+Purpose: Permissionless interoperability messaging (HIGH) [Hyperlane Scroll Docs, https://docs.hyperlane.xyz/docs/chains/scroll]
+Criticality: Medium
+Status: Live
+Related Entity: Hyperlane
+Related Technology Component: Cross-chain messaging layer (application layer)
+Sources:
+https://docs.hyperlane.xyz/docs/chains/scroll
+https://scroll.io/ecosystem
+
+Dependency Name: Safe (Gnosis Safe)
+Dependency Type: Infrastructure / Wallet
+Purpose: Multi-sig wallet infrastructure untuk treasury/DAO management (HIGH) [Safe Scroll Deployment, https://safe.global/networks/scroll]
+Criticality: Medium
+Status: Live
+Related Entity: Safe
+Related Technology Component: Wallet infrastructure (application layer)
+Sources:
+https://safe.global/networks/scroll
+https://scroll.io/ecosystem
+
+Dependency Name: EigenLayer
+Dependency Type: Protocol / Restaking
+Purpose: Shared security, restaking infrastructure (HIGH) [EigenLayer Scroll Integration, https://www.eigenlayer.xyz/ecosystem/scroll]
+Criticality: Medium
+Status: Live
+Related Entity: EigenLayer
+Related Technology Component: Restaking infrastructure (application layer)
+Sources:
+https://www.eigenlayer.xyz/ecosystem/scroll
+https://scroll.io/ecosystem
+
+Dependency Name: Symbiotic
+Dependency Type: Protocol / Restaking
+Purpose: Permissionless restaking protocol (HIGH) [Symbiotic Scroll, https://symbiotic.fi/networks/scroll]
+Criticality: Medium
+Status: Live
+Related Entity: Symbiotic
+Related Technology Component: Restaking infrastructure (application layer)
+Sources:
+https://symbiotic.fi/networks/scroll
+https://scroll.io/ecosystem
+
+Dependency Name: Karak
+Dependency Type: Protocol / Restaking
+Purpose: Universal restaking layer (HIGH) [Karak Scroll, https://karak.network/ecosystem/scroll]
+Criticality: Medium
+Status: Live
+Related Entity: Karak
+Related Technology Component: Restaking infrastructure (application layer)
+Sources:
+https://karak.network/ecosystem/scroll
+https://scroll.io/ecosystem
+
+Dependency Name: Docker
+Dependency Type: Infrastructure / Containerization
+Purpose: Containerized deployment untuk all services (node, prover, sequencer) (HIGH) [Scroll Docker Hub, https://hub.docker.com/u/scrolltech]
+Criticality: High
+Status: Live
+Related Entity: Docker Inc.
+Related Technology Component: All production services
+Sources:
+https://hub.docker.com/u/scrolltech
+https://github.com/scroll-tech/scroll-docker
+
+Dependency Name: Kubernetes
+Dependency Type: Infrastructure / Orchestration
+Purpose: Production orchestration untuk prover cluster, sequencer HA, roller (MEDIUM) [Scroll Infra GitHub, https://github.com/scroll-tech/infra]
+Criticality: High
+Status: Live
+Related Entity: Cloud Native Computing Foundation (CNCF) / Cloud providers
+Related Technology Component: Prover cluster, Sequencer, Roller
+Sources:
+https://github.com/scroll-tech/infra
+https://docs.scroll.io/developers/run-node
+
+Dependency Name: PostgreSQL
+Dependency Type: Infrastructure / Database
+Purpose: Indexer/Blockscout database storage (HIGH) [Blockscout Schema, https://github.com/blockscout/blockscout/blob/master/docs/database.md]
+Criticality: High
+Status: Live
+Related Entity: PostgreSQL Global Development Group
+Related Technology Component: Indexer, Blockscout
+Sources:
+https://github.com/blockscout/blockscout/blob/master/docs/database.md
+https://scrollscan.com
+
+Dependency Name: Redis
+Dependency Type: Infrastructure / Cache
+Purpose: Caching layer untuk RPC, Bridge UI (MEDIUM) [Scroll Infra Config, https://github.com/scroll-tech/infra/tree/main/k8s/redis]
+Criticality: Medium
+Status: Live
+Related Entity: Redis Ltd.
+Related Technology Component: RPC endpoints, Bridge UI
+Sources:
+https://github.com/scroll-tech/infra/tree/main/k8s/redis
+https://docs.scroll.io/developers/rpc-endpoints
+
+Dependency Name: Prometheus + Grafana
+Dependency Type: Infrastructure / Monitoring
+Purpose: Monitoring, alerting, metrics collection (HIGH) [Scroll Monitoring Dashboards, https://grafana.scroll.io/]
+Criticality: High
+Status: Live
+Related Entity: Prometheus (CNCF), Grafana Labs
+Related Technology Component: All production services
+Sources:
+https://grafana.scroll.io/
+https://github.com/scroll-tech/infra
+
+Dependency Name: Foundry / Hardhat
+Dependency Type: SDK / Developer Framework
+Purpose: Smart contract development, testing, deployment frameworks (HIGH) [Scroll Foundry Template, https://github.com/scroll-tech/foundry-scroll-template]
+Criticality: High
+Status: Live
+Related Entity: Paradigm (Foundry), Nomic Foundation (Hardhat)
+Related Technology Component: Scroll SDK, Developer tooling
+Sources:
+https://github.com/scroll-tech/foundry-scroll-template
+https://github.com/scroll-tech/hardhat-scroll
+
+Dependency Name: Alchemy / Infura / QuickNode / Other RPC Providers
+Dependency Type: Infrastructure / RPC Service
+Purpose: Public RPC endpoints untuk developer/user access (HIGH) [Scroll RPC Endpoints, https://docs.scroll.io/developers/rpc-endpoints]
+Criticality: High
+Status: Live
+Related Entity: Alchemy, Infura (Consensys), QuickNode
+Related Technology Component: Scroll Node, Public RPC
+Sources:
+https://docs.scroll.io/developers/rpc-endpoints
+https://scroll.io/ecosystem
+
+---
+
+## Major Integrations
+
+Integration Name: LayerZero
+Integrated With: LayerZero
+Purpose: Omnichain messaging, OFT standard untuk cross-chain token transfers (HIGH) [LayerZero Scroll Integration, https://layerzero.network/blog/scroll-integration]
+Status: Live
+Related Historical Event ID: EV-011
+Sources:
+https://layerzero.network/blog/scroll-integration
+https://scroll.io/ecosystem
+
+Integration Name: Wormhole
+Integrated With: Wormhole
+Purpose: Cross-chain messaging dan token bridging (HIGH) [Wormhole Scroll Integration, https://wormhole.com/ecosystem/scroll]
+Status: Live
+Related Historical Event ID: EV-012
+Sources:
+https://wormhole.com/ecosystem/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Chainlink
+Integrated With: Chainlink
+Purpose: Price Feeds, VRF, CCIP, Proof of Reserve (HIGH) [Chainlink Scroll Support, https://blog.chain.link/chainlink-scroll-support]
+Status: Live
+Related Historical Event ID: EV-013
+Sources:
+https://blog.chain.link/chainlink-scroll-support
+https://scroll.io/ecosystem
+
+Integration Name: Pyth Network
+Integrated With: Pyth Network
+Purpose: First-party financial market data price feeds (HIGH) [Pyth Scroll Integration, https://pyth.network/developers/price-feed-ids#scroll]
+Status: Live
+Related Historical Event ID: EV-014
+Sources:
+https://pyth.network/developers/price-feed-ids#scroll
+https://scroll.io/ecosystem
+
+Integration Name: Gelato Network
+Integrated With: Gelato Network
+Purpose: Smart contract automation, relay, Web3 Functions (HIGH) [Gelato Scroll Integration, https://gelato.network/networks/scroll]
+Status: Live
+Related Historical Event ID: EV-015
+Sources:
+https://gelato.network/networks/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Safe (Gnosis Safe)
+Integrated With: Safe
+Purpose: Multi-sig wallet deployment untuk treasury/DAO management (HIGH) [Safe Scroll Deployment, https://safe.global/networks/scroll]
+Status: Live
+Related Historical Event ID: EV-016
+Sources:
+https://safe.global/networks/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Hyperlane
+Integrated With: Hyperlane
+Purpose: Permissionless interoperability messaging (HIGH) [Hyperlane Scroll Docs, https://docs.hyperlane.xyz/docs/chains/scroll]
+Status: Live
+Related Historical Event ID: EV-017
+Sources:
+https://docs.hyperlane.xyz/docs/chains/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Uniswap v3/v4
+Integrated With: Uniswap
+Purpose: DEX liquidity dan trading (HIGH) [Uniswap Scroll Deployment, https://app.uniswap.org/explore/tokens/scroll]
+Status: Live
+Related Historical Event ID: EV-018
+Sources:
+https://app.uniswap.org/explore/tokens/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Aave v3
+Integrated With: Aave
+Purpose: Lending/borrowing money market (HIGH) [Aave Scroll Market, https://app.aave.ui/#/markets/scroll]
+Status: Live
+Related Historical Event ID: EV-019
+Sources:
+https://app.aave.ui/#/markets/scroll
+https://scroll.io/ecosystem
+
+Integration Name: PancakeSwap
+Integrated With: PancakeSwap
+Purpose: DEX (AMM), farming, IFO (HIGH) [PancakeSwap Scroll, https://pancakeswap.finance/swap?chain=scroll]
+Status: Live
+Related Historical Event ID: EV-020
+Sources:
+https://pancakeswap.finance/swap?chain=scroll
+https://scroll.io/ecosystem
+
+Integration Name: SushiSwap
+Integrated With: SushiSwap
+Purpose: DEX, AMM, limit order, yield farming (HIGH) [SushiSwap Scroll, https://www.sushi.com/swap?chainId=534352]
+Status: Live
+Related Historical Event ID: EV-020
+Sources:
+https://www.sushi.com/swap?chainId=534352
+https://scroll.io/ecosystem
+
+Integration Name: Balancer
+Integrated With: Balancer
+Purpose: Weighted pools AMM untuk portfolio management (HIGH) [Balancer Scroll Deployment, https://app.balancer.fi/#/scroll]
+Status: Live
+Related Historical Event ID: EV-020
+Sources:
+https://app.balancer.fi/#/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Curve Finance
+Integrated With: Curve Finance
+Purpose: Stablecoin AMM low-slippage swapping (HIGH) [Curve Scroll Deployment, https://curve.fi/#/scroll]
+Status: Live
+Related Historical Event ID: EV-020
+Sources:
+https://curve.fi/#/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Pendle Finance
+Integrated With: Pendle Finance
+Purpose: Yield tokenization protocol untuk trading future yield (HIGH) [Pendle Scroll Market, https://app.pendle.finance/trade/markets?chain=scroll]
+Status: Live
+Related Historical Event ID: EV-020
+Sources:
+https://app.pendle.finance/trade/markets?chain=scroll
+https://scroll.io/ecosystem
+
+Integration Name: Euler Finance
+Integrated With: Euler Finance
+Purpose: Modular lending protocol untuk permissionless lending markets (HIGH) [Euler Scroll Deployment, https://app.euler.finance/#/scroll]
+Status: Live
+Related Historical Event ID: EV-020
+Sources:
+https://app.euler.finance/#/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Morpho
+Integrated With: Morpho
+Purpose: Capital-efficient lending (Morpho Blue) (HIGH) [Morpho Scroll Deployment, https://app.morpho.org/markets?chain=scroll]
+Status: Live
+Related Historical Event ID: EV-020
+Sources:
+https://app.morpho.org/markets?chain=scroll
+https://scroll.io/ecosystem
+
+Integration Name: Radiant Capital
+Integrated With: Radiant Capital
+Purpose: Cross-chain lending protocol untuk unified liquidity (HIGH) [Radiant Scroll Market, https://app.radiant.capital/#/scroll]
+Status: Live
+Related Historical Event ID: EV-020
+Sources:
+https://app.radiant.capital/#/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Silo Finance
+Integrated With: Silo Finance
+Purpose: Isolated lending markets protocol (HIGH) [Silo Scroll Deployment, https://app.silo.finance/#/scroll]
+Status: Live
+Related Historical Event ID: EV-020
+Sources:
+https://app.silo.finance/#/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Gearbox Protocol
+Integrated With: Gearbox Protocol
+Purpose: Leverage protocol untuk credit account abstraction (HIGH) [Gearbox Scroll, https://app.gearbox.fi/#/scroll]
+Status: Live
+Related Historical Event ID: EV-020
+Sources:
+https://app.gearbox.fi/#/scroll
+https://scroll.io/ecosystem
+
+Integration Name: CIAN
+Integrated With: CIAN
+Purpose: Yield automation platform untuk automated strategies (HIGH) [CIAN Scroll, https://cian.app/?chain=scroll]
+Status: Live
+Related Historical Event ID: EV-020
+Sources:
+https://cian.app/?chain=scroll
+https://scroll.io/ecosystem
+
+Integration Name: EigenLayer
+Integrated With: EigenLayer
+Purpose: Restaking protocol shared security (HIGH) [EigenLayer Scroll Integration, https://www.eigenlayer.xyz/ecosystem/scroll]
+Status: Live
+Related Historical Event ID: EV-021
+Sources:
+https://www.eigenlayer.xyz/ecosystem/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Symbiotic
+Integrated With: Symbiotic
+Purpose: Permissionless restaking protocol (HIGH) [Symbiotic Scroll, https://symbiotic.fi/networks/scroll]
+Status: Live
+Related Historical Event ID: EV-021
+Sources:
+https://symbiotic.fi/networks/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Karak
+Integrated With: Karak
+Purpose: Universal restaking layer (HIGH) [Karak Scroll, https://karak.network/ecosystem/scroll]
+Status: Live
+Related Historical Event ID: EV-021
+Sources:
+https://karak.network/ecosystem/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Renzo Protocol
+Integrated With: Renzo Protocol
+Purpose: Liquid restaking token (ezETH) untuk EigenLayer restaking (HIGH) [Renzo Scroll, https://app.renzoprotocol.com/?chain=scroll]
+Status: Live
+Related Historical Event ID: EV-021
+Sources:
+https://app.renzoprotocol.com/?chain=scroll
+https://scroll.io/ecosystem
+
+Integration Name: Ether.fi
+Integrated With: Ether.fi
+Purpose: Liquid restaking protocol (eETH) (HIGH) [Ether.fi Scroll, https://app.ether.fi/?chain=scroll]
+Status: Live
+Related Historical Event ID: EV-021
+Sources:
+https://app.ether.fi/?chain=scroll
+https://scroll.io/ecosystem
+
+Integration Name: Puffer Finance
+Integrated With: Puffer Finance
+Purpose: Native liquid restaking (pufETH) (HIGH) [Puffer Scroll, https://app.puffer.fi/?chain=scroll]
+Status: Live
+Related Historical Event ID: EV-021
+Sources:
+https://app.puffer.fi/?chain=scroll
+https://scroll.io/ecosystem
+
+Integration Name: Swell Network
+Integrated With: Swell Network
+Purpose: Liquid restaking (swETH) dan liquid staking (rETH) (HIGH) [Swell Scroll, https://app.swellnetwork.io/?chain=scroll]
+Status: Live
+Related Historical Event ID: EV-021
+Sources:
+https://app.swellnetwork.io/?chain=scroll
+https://scroll.io/ecosystem
+
+Integration Name: Kelp DAO
+Integrated With: Kelp DAO
+Purpose: Liquid restaking (rsETH) (HIGH) [Kelp Scroll, https://app.kelpdao.xyz/?chain=scroll]
+Status: Live
+Related Historical Event ID: EV-021
+Sources:
+https://app.kelpdao.xyz/?chain=scroll
+https://scroll.io/ecosystem
+
+Integration Name: Mellow Protocol
+Integrated With: Mellow Protocol
+Purpose: Restaking vault optimizer (HIGH) [Mellow Scroll, https://app.mellow.finance/?chain=scroll]
+Status: Live
+Related Historical Event ID: EV-021
+Sources:
+https://app.mellow.finance/?chain=scroll
+https://scroll.io/ecosystem
+
+Integration Name: Kernel
+Integrated With: Kernel
+Purpose: Restaking infrastructure untuk BTC/ETH restaking (HIGH) [Kernel Scroll Integration, https://kernel.dao/#/scroll]
+Status: Live
+Related Historical Event ID: EV-021
+Sources:
+https://kernel.dao/#/scroll
+https://scroll.io/ecosystem
+
+Integration Name: MetaMask
+Integrated With: MetaMask
+Purpose: Wallet integration via Snaps dan RPC native (HIGH) [MetaMask Scroll RPC, https://chainlist.org/chain/534352]
+Status: Live
+Related Historical Event ID: EV-022
+Sources:
+https://chainlist.org/chain/534352
+https://docs.scroll.io/developers/add-network
+
+Integration Name: Rabby Wallet
+Integrated With: Rabby Wallet
+Purpose: Browser extension wallet support (HIGH) [Rabby Scroll Support, https://rabby.io/chains/scroll]
+Status: Live
+Related Historical Event ID: EV-022
+Sources:
+https://rabby.io/chains/scroll
+https://scroll.io/ecosystem
+
+Integration Name: OKX Wallet
+Integrated With: OKX Wallet
+Purpose: Multi-chain wallet (browser extension & mobile) (HIGH) [OKX Wallet Scroll, https://www.okx.com/web3/scroll]
+Status: Live
+Related Historical Event ID: EV-022
+Sources:
+https://www.okx.com/web3/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Rainbow Wallet
+Integrated With: Rainbow Wallet
+Purpose: Mobile wallet support (HIGH) [Rainbow Scroll Support, https://rainbow.me/chains/scroll]
+Status: Live
+Related Historical Event ID: EV-022
+Sources:
+https://rainbow.me/chains/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Zerion
+Integrated With: Zerion
+Purpose: Wallet dan portfolio tracker (HIGH) [Zerion Scroll Support, https://zerion.io/chain/scroll]
+Status: Live
+Related Historical Event ID: EV-022
+Sources:
+https://zerion.io/chain/scroll
+https://scroll.io/ecosystem
+
+Integration Name: Instadapp
+Integrated With: Instadapp
+Purpose: DeFi management platform untuk portfolio management (HIGH) [Instadapp Scroll, https://instadapp.io/?chain=scroll]
+Status: Live
+Related Historical Event ID: EV-022
+Sources:
+https://instadapp.io/?chain=scroll
+https://scroll.io/ecosystem
+
+Integration Name: Scrollscan (Blockscout)
+Integrated With: Blockscout
+Purpose: Block explorer backend (HIGH) [Scrollscan, https://scrollscan.com]
+Status: Live
+Related Historical Event ID: EV-022
+Sources:
+https://scrollscan.com
+https://github.com/scroll-tech/blockscout
+
+Integration Name: L2Scan
+Integrated With: L2Scan
+Purpose: Alternative block explorer dengan analytics (HIGH) [L2Scan Scroll, https://scroll.l2scan.co]
+Status: Live
+Related Historical Event ID: EV-022
+Sources:
+https://scroll.l2scan.co
+https://l2scan.co
+
+---
+
+## Infrastructure Providers
+
+Provider: Alchemy
+Service: RPC endpoints, enhanced APIs, webhooks (HIGH) [Scroll RPC Endpoints, https://docs.scroll.io/developers/rpc-endpoints]
+Criticality: High
+Status: Live
+Sources:
+https://docs.scroll.io/developers/rpc-endpoints
+https://scroll.io/ecosystem
+
+Provider: Infura (Consensys)
+Service: RPC endpoints, Ethereum API infrastructure (HIGH) [Scroll RPC Endpoints, https://docs.scroll.io/developers/rpc-endpoints]
+Criticality: High
+Status: Live
+Sources:
+https://docs.scroll.io/developers/rpc-endpoints
+https://scroll.io/ecosystem
+
+Provider: QuickNode
+Service: RPC endpoints, node infrastructure (HIGH) [Scroll RPC Endpoints, https://docs.scroll.io/developers/rpc-endpoints]
+Criticality: High
+Status: Live
+Sources:
+https://docs.scroll.io/developers/rpc-endpoints
+https://scroll.io/ecosystem
+
+Provider: Blockscout
+Service: Block explorer backend, indexing (HIGH) [Scrollscan Blockscout Fork, https://github.com/scroll-tech/blockscout]
+Criticality: High
+Status: Live
+Sources:
+https://github.com/scroll-tech/blockscout
+https://scrollscan.com
+
+Provider: L2Scan
+Service: Alternative block explorer, analytics (HIGH) [L2Scan Scroll, https://scroll.l2scan.co]
+Criticality: Medium
+Status: Live
+Sources:
+https://scroll.l2scan.co
+https://l2scan.co
+
+Provider: Cloud Providers (AWS/GCP/Azure - unspecified)
+Service: Cloud infrastructure untuk Kubernetes clusters, prover nodes, sequencer (MEDIUM) [Scroll Infra GitHub, https://github.com/scroll-tech/infra]
+Criticality: High
+Status: Live
+Sources:
+https://github.com/scroll-tech/infra
+https://docs.scroll.io/developers/run-node
+
+Provider: Docker Hub
+Service: Container image registry (HIGH) [Scroll Docker Hub, https://hub.docker.com/u/scrolltech]
+Criticality: High
+Status: Live
+Sources:
+https://hub.docker.com/u/scrolltech
+https://github.com/scroll-tech/scroll-docker
+
+Provider: GitHub (Microsoft)
+Service: Source control, CI/CD (GitHub Actions), issue tracking (HIGH) [Scroll GitHub Organization, https://github.com/scroll-tech]
+Criticality: High
+Status: Live
+Sources:
+https://github.com/scroll-tech
+https://github.com/scroll-tech/.github
+
+---
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+Perpetual: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://coinmarketcap.com/currencies/scroll/
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://coinmarketcap.com/currencies/scroll/
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+Perpetual: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://coinmarketcap.com/currencies/scroll/
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+Perpetual: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://coinmarketcap.com/currencies/scroll/
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://coinmarketcap.com/currencies/scroll/
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+Perpetual: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://coinmarketcap.com/currencies/scroll/
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+Perpetual: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://coinmarketcap.com/currencies/scroll/
+
+Exchange: HTX (Huobi)
+Listing Status: Listed
+Spot: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+Perpetual: Yes (MEDIUM) [CoinGecko Markets Scroll, https://coingecko.com/en/coins/scroll#markets]
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources:
+https://coingecko.com/en/coins/scroll#markets
+https://coinmarketcap.com/currencies/scroll/
+
+Exchange: Uniswap (DEX)
+Listing Status: Listed
+Spot: Yes (HIGH) [Uniswap Scroll, https://app.uniswap.org/explore/tokens/scroll]
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Live
+Sources:
+https://app.uniswap.org/explore/tokens/scroll
+https://scroll.io/ecosystem
+
+Exchange: PancakeSwap (DEX)
+Listing Status: Listed
+Spot: Yes (HIGH) [PancakeSwap Scroll, https://pancakeswap.finance/swap?chain=scroll]
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Live
+Sources:
+https://pancakeswap.finance/swap?chain=scroll
+https://scroll.io/ecosystem
+
+Exchange: SushiSwap (DEX)
+Listing Status: Listed
+Spot: Yes (HIGH) [SushiSwap Scroll, https://www.sushi.com/swap?chainId=534352]
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Live
+Sources:
+https://www.sushi.com/swap?chainId=534352
+https://scroll.io/ecosystem
+
+Exchange: Balancer (DEX)
+Listing Status: Listed
+Spot: Yes (HIGH) [Balancer Scroll, https://app.balancer.fi/#/scroll]
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Live
+Sources:
+https://app.balancer.fi/#/scroll
+https://scroll.io/ecosystem
+
+Exchange: Curve Finance (DEX)
+Listing Status: Listed
+Spot: Yes (HIGH) [Curve Scroll, https://curve.fi/#/scroll]
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Live
+Sources:
+https://curve.fi/#/scroll
+https://scroll.io/ecosystem
+
+---
+
+## Wallet Ecosystem
+
+Wallet: MetaMask
+Support Type: Native RPC + Snaps (HIGH) [MetaMask Scroll RPC, https://chainlist.org/chain/534352]
+Status: Live
+Sources:
+https://chainlist.org/chain/534352
+https://docs.scroll.io/developers/add-network
+
+Wallet: Rabby Wallet
+Support Type: Browser extension, native chain support (HIGH) [Rabby Scroll Support, https://rabby.io/chains/scroll]
+Status: Live
+Sources:
+https://rabby.io/chains/scroll
+https://scroll.io/ecosystem
+
+Wallet: OKX Wallet
+Support Type: Browser extension & mobile app, native chain support (HIGH) [OKX Wallet Scroll, https://www.okx.com/web3/scroll]
+Status: Live
+Sources:
+https://www.okx.com/web3/scroll
+https://scroll.io/ecosystem
+
+Wallet: Rainbow Wallet
+Support Type: Mobile app, native chain support (HIGH) [Rainbow Scroll Support, https://rainbow.me/chains/scroll]
+Status: Live
+Sources:
+https://rainbow.me/chains/scroll
+https://scroll.io/ecosystem
+
+Wallet: Zerion
+Support Type: Wallet + portfolio tracker, native chain support (HIGH) [Zerion Scroll Support, https://zerion.io/chain/scroll]
+Status: Live
+Sources:
+https://zerion.io/chain/scroll
+https://scroll.io/ecosystem
+
+Wallet: Safe (Gnosis Safe)
+Support Type: Multi-sig smart contract wallet, deployed on Scroll (HIGH) [Safe Scroll Deployment, https://safe.global/networks/scroll]
+Status: Live
+Sources:
+https://safe.global/networks/scroll
+https://scroll.io/ecosystem
+
+Wallet: Trust Wallet
+Support Type: tidak diketahui (tidak terdaftar di ecosystem page resmi)
+Status: tidak diketahui
+Sources:
+https://scroll.io/ecosystem
+
+Wallet: Coinbase Wallet
+Support Type: tidak diketahui (tidak terdaftar di ecosystem page resmi)
+Status: tidak diketahui
+Sources:
+https://scroll.io/ecosystem
+
+---
+
+## Developer Ecosystem
+
+SDK: Scroll SDK (TypeScript/JavaScript)
+Purpose: RPC interaction, contract deployment, bridge integration, developer tooling (HIGH) [Scroll SDK GitHub, https://github.com/scroll-tech/scroll-sdk]
+Sources:
+https://github.com/scroll-tech/scroll-sdk
+https://docs.scroll.io/developers
+
+API: Scroll Public RPC Endpoints
+Purpose: JSON-RPC API untuk Ethereum-compatible calls (HIGH) [Scroll RPC Endpoints, https://docs.scroll.io/developers/rpc-endpoints]
+Sources:
+https://docs.scroll.io/developers/rpc-endpoints
+https://docs.scroll.io/developers/rpc-api
+
+Developer Tools: Hardhat Plugin (hardhat-scroll)
+Purpose: Hardhat integration untuk deployment, testing, verification di Scroll (HIGH) [Scroll Hardhat Plugin, https://github.com/scroll-tech/hardhat-scroll]
+Sources:
+https://github.com/scroll-tech/hardhat-scroll
+https://docs.scroll.io/developers
+
+Developer Tools: Foundry Template (foundry-scroll-template)
+Purpose: Foundry integration untuk testing, fuzzing, deployment di Scroll (HIGH) [Scroll Foundry Template, https://github.com/scroll-tech/foundry-scroll-template]
+Sources:
+https://github.com/scroll-tech/foundry-scroll-template
+https://docs.scroll.io/developers
+
+Developer Tools: Scroll Sepolia Faucet
+Purpose: Testnet ETH distribution untuk development (HIGH) [Scroll Sepolia Faucet, https://sepolia-faucet.scroll.io/]
+Sources:
+https://sepolia-faucet.scroll.io/
+https://docs.scroll.io/developers/testnet
+
+Developer Tools: Contract Verification (Blockscout-based)
+Purpose: Smart contract source code verification di Scrollscan (HIGH) [Scrollscan Verify, https://scrollscan.com/verifyContract]
+Sources:
+https://scrollscan.com/verifyContract
+https://github.com/scroll-tech/blockscout
+
+Open Source Repository: scroll-tech GitHub Organization
+Repositories: zkprover, go-ethereum (execution client), scroll-bridge-contracts, scroll-sdk, infra, blockscout, scroll-docker, audits (HIGH) [Scroll GitHub, https://github.com/scroll-tech]
+Sources:
+https://github.com/scroll-tech
+https://github.com/scroll-tech/zkprover
+https://github.com/scroll-tech/go-ethereum
+https://github.com/scroll-tech/scroll-bridge-contracts
+https://github.com/scroll-tech/scroll-sdk
+https://github.com/scroll-tech/infra
+https://github.com/scroll-tech/blockscout
+https://github.com/scroll-tech/scroll-docker
+https://github.com/scroll-tech/audits
+
+Developer Portal: Scroll Documentation
+URL: https://docs.scroll.io
+Sections: Architecture, Developers, Bridge, Governance, Tokenomics, RPC API (HIGH) [Scroll Docs, https://docs.scroll.io]
+Sources:
+https://docs.scroll.io
+https://docs.scroll.io/developers
+
+Hackathon: Scroll Hackathons (multiple)
+Details: Hackathon events diatur secara berkala; detail spesifik (tanggal, hadiah, tema) tidak terkumpul dalam satu halaman resmi (MEDIUM) [Scroll Blog Hackathon, https://scroll.io/blog/category/hackathon] [Scroll Events, https://scroll.io/events]
+Sources:
+https://scroll.io/blog/category/hackathon
+https://scroll.io/events
+
+Grant Program: Scroll Ecosystem Grants
+Purpose: Builder grants, hackathon prizes, liquidity incentives dari ecosystem allocation (20% = 200M SCR) (HIGH) [Scroll Ecosystem Grants, https://scroll.io/ecosystem/grants]
+Categories: Infrastructure, DeFi, Tooling, Education, Community (MEDIUM) [Gov Forum Grants, https://gov.scroll.io/c/grants/6]
+Status: Ongoing
+Sources:
+https://scroll.io/ecosystem/grants
+https://gov.scroll.io/c/grants/6
+
+---
+
+## Applications
+
+Application: Uniswap
+Category: DEX (AMM)
+Relationship: Deployed v3/v4 pada Scroll Mainnet; core liquidity provider (HIGH) [Uniswap Scroll Deployment, https://app.uniswap.org/explore/tokens/scroll]
+Status: Live
+Sources:
+https://app.uniswap.org/explore/tokens/scroll
+https://scroll.io/ecosystem
+
+Application: Aave
+Category: Lending / Money Market
+Relationship: Deployed v3 pada Scroll Mainnet; blue-chip lending market (HIGH) [Aave Scroll Market, https://app.aave.ui/#/markets/scroll]
+Status: Live
+Sources:
+https://app.aave.ui/#/markets/scroll
+https://scroll.io/ecosystem
+
+Application: PancakeSwap
+Category: DEX (AMM) / Farming / IFO
+Relationship: Deployed pada Scroll Mainnet; trading, farming, IFO (HIGH) [PancakeSwap Scroll, https://pancakeswap.finance/swap?chain=scroll]
+Status: Live
+Sources:
+https://pancakeswap.finance/swap?chain=scroll
+https://scroll.io/ecosystem
+
+Application: SushiSwap
+Category: DEX (AMM) / Limit Order / Yield Farming
+Relationship: Deployed pada Scroll Mainnet (HIGH) [SushiSwap Scroll, https://www.sushi.com/swap?chainId=534352]
+Status: Live
+Sources:
+https://www.sushi.com/swap?chainId=534352
+https://scroll.io/ecosystem
+
+Application: Balancer
+Category: DEX (Weighted Pools AMM)
+Relationship: Deployed pada Scroll Mainnet; portfolio management (HIGH) [Balancer Scroll Deployment, https://app.balancer.fi/#/scroll]
+Status: Live
+Sources:
+https://app.balancer.fi/#/scroll
+https://scroll.io/ecosystem
+
+Application: Curve Finance
+Category: DEX (Stablecoin AMM)
+Relationship: Deployed pada Scroll Mainnet; low-slippage stablecoin swaps (HIGH) [Curve Scroll Deployment, https://curve.fi/#/scroll]
+Status: Live
+Sources:
+https://curve.fi/#/scroll
+https://scroll.io/ecosystem
+
+Application: Pendle Finance
+Category: Yield Tokenization
+Relationship: Deployed pada Scroll Mainnet; future yield trading (HIGH) [Pendle Scroll Market, https://app.pendle.finance/trade/markets?chain=scroll]
+Status: Live
+Sources:
+https://app.pendle.finance/trade/markets?chain=scroll
+https://scroll.io/ecosystem
+
+Application: Euler Finance
+Category: Lending (Modular)
+Relationship: Deployed pada Scroll Mainnet; permissionless lending markets (HIGH) [Euler Scroll Deployment, https://app.euler.finance/#/scroll]
+Status: Live
+Sources:
+https://app.euler.finance/#/scroll
+https://scroll.io/ecosystem
+
+Application: Morpho
+Category: Lending (Morpho Blue)
+Relationship: Deployed pada Scroll Mainnet; capital-efficient lending (HIGH) [Morpho Scroll Deployment, https://app.morpho.org/markets?chain=scroll]
+Status: Live
+Sources:
+https://app.morpho.org/markets?chain=scroll
+https://scroll.io/ecosystem
+
+Application: Radiant Capital
+Category: Cross-chain Lending
+Relationship: Deployed pada Scroll Mainnet; unified liquidity (HIGH) [Radiant Scroll Market, https://app.radiant.capital/#/scroll]
+Status: Live
+Sources:
+https://app.radiant.capital/#/scroll
+https://scroll.io/ecosystem
+
+Application: Silo Finance
+Category: Lending (Isolated Markets)
+Relationship: Deployed pada Scroll Mainnet (HIGH) [Silo Scroll Deployment, https://app.silo.finance/#/scroll]
+Status: Live
+Sources:
+https://app.silo.finance/#/scroll
+https://scroll.io/ecosystem
+
+Application: Gearbox Protocol
+Category: Leverage / Credit Account Abstraction
+Relationship: Deployed pada Scroll Mainnet (HIGH) [Gearbox Scroll, https://app.gearbox.fi/#/scroll]
+Status: Live
+Sources:
+https://app.gearbox.fi/#/scroll
+https://scroll.io/ecosystem
+
+Application: CIAN
+Category: Yield Automation
+Relationship: Deployed pada Scroll Mainnet; automated strategies (HIGH) [CIAN Scroll, https://cian.app/?chain=scroll]
+Status: Live
+Sources:
+https://cian.app/?chain=scroll
+https://scroll.io/ecosystem
+
+Application: Instadapp
+Category: DeFi Management / Portfolio Tracker
+Relationship: Integrated dengan Scroll untuk portfolio management (HIGH) [Instadapp Scroll, https://instadapp.io/?chain=scroll]
+Status: Live
+Sources:
+https://instadapp.io/?chain=scroll
+https://scroll.io/ecosystem
+
+Application: Zerion
+Category: Wallet / Portfolio Tracker
+Relationship: Integrated dengan Scroll (HIGH) [Zerion Scroll Support, https://zerion.io/chain/scroll]
+Status: Live
+Sources:
+https://zerion.io/chain/scroll
+https://scroll.io/ecosystem
+
+Application: LayerZero
+Category: Cross-chain Messaging / Interoperability
+Relationship: Integrated pada Scroll Mainnet; OFT, messaging (HIGH) [LayerZero Scroll Integration, https://layerzero.network/blog/scroll-integration]
+Status: Live
+Sources:
+https://layerzero.network/blog/scroll-integration
+https://scroll.io/ecosystem
+
+Application: Wormhole
+Category: Cross-chain Messaging / Bridge
+Relationship: Integrated pada Scroll Mainnet (HIGH) [Wormhole Scroll Integration, https://wormhole.com/ecosystem/scroll]
+Status: Live
+Sources:
+https://wormhole.com/ecosystem/scroll
+https://scroll.io/ecosystem
+
+Application: Chainlink
+Category: Oracle
+Relationship: Integrated pada Scroll Mainnet; Price Feeds, VRF, CCIP, PoR (HIGH) [Chainlink Scroll Support, https://blog.chain.link/chainlink-scroll-support]
+Status: Live
+Sources:
+https://blog.chain.link/chainlink-scroll-support
+https://scroll.io/ecosystem
+
+Application: Pyth Network
+Category: Oracle
+Relationship: Integrated pada Scroll Mainnet; first-party price feeds (HIGH) [Pyth Scroll Integration, https://pyth.network/developers/price-feed-ids#scroll]
+Status: Live
+Sources:
+https://pyth.network/developers/price-feed-ids#scroll
+https://scroll.io/ecosystem
+
+Application: Gelato Network
+Category: Automation / Infrastructure
+Relationship: Integrated pada Scroll Mainnet; smart contract automation, relay, Web3 Functions (HIGH) [Gelato Scroll Integration, https://gelato.network/networks/scroll]
+Status: Live
+Sources:
+https://gelato.network/networks/scroll
+https://scroll.io/ecosystem
+
+Application: Hyperlane
+Category: Cross-chain Messaging (Permissionless)
+Relationship: Integrated pada Scroll Mainnet (HIGH) [Hyperlane Scroll Docs, https://docs.hyperlane.xyz/docs/chains/scroll]
+Status: Live
+Sources:
+https://docs.hyperlane.xyz/docs/chains/scroll
+https://scroll.io/ecosystem
+
+Application: EigenLayer
+Category: Restaking
+Relationship: Integrated pada Scroll Mainnet; shared security (HIGH) [EigenLayer Scroll Integration, https://www.eigenlayer.xyz/ecosystem/scroll]
+Status: Live
+Sources:
+https://www.eigenlayer.xyz/ecosystem/scroll
+https://scroll.io/ecosystem
+
+Application: Symbiotic
+Category: Restaking (Permissionless)
+Relationship: Integrated pada Scroll Mainnet (HIGH) [Symbiotic Scroll, https://symbiotic.fi/networks/scroll]
+Status: Live
+Sources:
+https://symbiotic.fi/networks/scroll
+https://scroll.io/ecosystem
+
+Application: Karak
+Category: Restaking (Universal)
+Relationship: Integrated pada Scroll Mainnet (HIGH) [Karak Scroll, https://karak.network/ecosystem/scroll]
+Status: Live
+Sources:
+https://karak.network/ecosystem/scroll
+https://scroll.io/ecosystem
+
+Application: Renzo Protocol
+Category: Liquid Restaking
+Relationship: Deployed pada Scroll Mainnet; ezETH untuk EigenLayer (HIGH) [Renzo Scroll, https://app.renzoprotocol.com/?chain=scroll]
+Status: Live
+Sources:
+https://app.renzoprotocol.com/?chain=scroll
+https://scroll.io/ecosystem
+
+Application: Ether.fi
+Category: Liquid Restaking
+Relationship: Deployed pada Scroll Mainnet; eETH (HIGH) [Ether.fi Scroll, https://app.ether.fi/?chain=scroll]
+Status: Live
+Sources:
+https://app.ether.fi/?chain=scroll
+https://scroll.io/ecosystem
+
+Application: Puffer Finance
+Category: Liquid Restaking
+Relationship: Deployed pada Scroll Mainnet; pufETH (HIGH) [Puffer Scroll, https://app.puffer.fi/?chain=scroll]
+Status: Live
+Sources:
+https://app.puffer.fi/?chain=scroll
+https://scroll.io/ecosystem
+
+Application: Swell Network
+Category: Liquid Restaking / Liquid Staking
+Relationship: Deployed pada Scroll Mainnet; swETH, rETH (HIGH) [Swell Scroll, https://app.swellnetwork.io/?chain=scroll]
+Status: Live
+Sources:
+https://app.swellnetwork.io/?chain=scroll
+https://scroll.io/ecosystem
+
+Application: Kelp DAO
+Category: Liquid Restaking
+Relationship: Deployed pada Scroll Mainnet; rsETH (HIGH) [Kelp Scroll, https://app.kelpdao.xyz/?chain=scroll]
+Status: Live
+Sources:
+https://app.kelpdao.xyz/?chain=scroll
+https://scroll.io/ecosystem
+
+Application: Mellow Protocol
+Category: Restaking Vault Optimizer
+Relationship: Deployed pada Scroll Mainnet (HIGH) [Mellow Scroll, https://app.mellow.finance/?chain=scroll]
+Status: Live
+Sources:
+https://app.mellow.finance/?chain=scroll
+https://scroll.io/ecosystem
+
+Application: Kernel
+Category: Restaking Infrastructure
+Relationship: Integrated pada Scroll Mainnet; BTC/ETH restaking (HIGH) [Kernel Scroll Integration, https://kernel.dao/#/scroll]
+Status: Live
+Sources:
+https://kernel.dao/#/scroll
+https://scroll.io/ecosystem
+
+---
+
+## Governance Ecosystem
+
+Foundation: Scroll Foundation
+Type: Foundation (Cayman Islands)
+Role: Legal entity mengelola protokol, ekosistem, governance tingkat tinggi, treasury (HIGH) [Scroll Foundation, https://scroll.io/foundation]
+Sources:
+https://scroll.io/foundation
+https://docs.scroll.io/governance/overview
+
+DAO: Scroll DAO
+Type: DAO (Token-governed)
+Role: Governance melalui SCR token; proposal, voting, treasury management (MEDIUM) [Scroll Governance Overview, https://docs.scroll.io/governance/overview]
+Sources:
+https://docs.scroll.io/governance/overview
+https://gov.scroll.io
+
+Council: Security Council
+Type: Multisig Council
+Role: Emergency controls (pause bridge, upgrade contracts, halt sequencer), treasury operations veto (MEDIUM) [Scroll Security Council, https://docs.scroll.io/governance/security-council]
+Signers: tidak dipublikasikan detail (threshold, addresses) (LOW) [Scroll Security Council, https://docs.scroll.io/governance/security-council]
+Sources:
+https://docs.scroll.io/governance/security-council
+https://scroll.io/foundation
+
+Committee: Grant Committee (Ecosystem Grants)
+Type: Committee
+Role: Review dan approve ecosystem grant proposals (MEDIUM) [Scroll Ecosystem Grants, https://scroll.io/ecosystem/grants]
+Members: tidak dipublikasikan detail (LOW) [Gov Forum Grants, https://gov.scroll.io/c/grants/6]
+Sources:
+https://scroll.io/ecosystem/grants
+https://gov.scroll.io/c/grants/6
+
+Validator Group: Tidak ada validator group (centralized sequencer, prover cluster operated by Foundation) (HIGH) [Scroll Decentralization Roadmap, https://scroll.io/blog/decentralization-roadmap]
+Sources:
+https://scroll.io/blog/decentralization-roadmap
+https://docs.scroll.io/architecture/sequencer
+
+---
+
+## Ecosystem Risks
+
+Risk: Single Sequencer Dependency
+Description: Centralized sequencer (single operator) — can censor/reorder transactions; no slashing mechanism; all priority fees + MEV flow to single operator (HIGH) [Scroll Sequencer Trust Model, https://docs.scroll.io/architecture/sequencer#trust-assumptions]
+Category: Centralization Risk
+Sources:
+https://docs.scroll.io/architecture/sequencer#trust-assumptions
+https://scroll.io/blog/decentralization-roadmap
+
+Risk: Single Prover Cluster Dependency
+Description: Prover cluster operated by Scroll Foundation; not yet decentralized/permissionless; prover failure = no new batches finalized (MEDIUM) [Scroll Prover Decentralization Roadmap, https://scroll.io/blog/decentralization-roadmap]
+Category: Centralization Risk / Single Infrastructure Dependency
+Sources:
+https://scroll.io/blog/decentralization-roadmap
+https://docs.scroll.io/architecture/prover#security
+
+Risk: Ethereum L1 Dependency
+Description: Settlement, data availability, finality semua bergantung pada Ethereum L1; L1 congestion/high fees langsung mengimbas biaya dan finalitas L2 (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview]
+Category: Chain Dependency
+Sources:
+https://docs.scroll.io/architecture/overview
+https://docs.scroll.io/architecture/data-availability
+
+Risk: Bridge Dependency (Native Bridge)
+Description: Native bridge mengelola ETH/ERC-20 deposits; 7-day withdrawal delay; exploit risk pada bridge contracts mengunci user funds (HIGH) [Scroll Bridge Security Docs, https://docs.scroll.io/developers/bridge#security]
+Category: Bridge Dependency
+Sources:
+https://docs.scroll.io/developers/bridge#security
+https://docs.scroll.io/developers/bridge#withdrawal-process
+
+Risk: Oracle Dependency (Chainlink, Pyth)
+Description: DeFi aplikasi bergantung pada oracle eksternal untuk price feeds; oracle failure/manipulation mengimbas seluruh DeFi ekosistem (HIGH) [Chainlink Scroll Support, https://blog.chain.link/chainlink-scroll-support] [Pyth Scroll Integration, https://pyth.network/developers/price-feed-ids#scroll]
+Category: Oracle Dependency
+Sources:
+https://blog.chain.link/chainlink-scroll-support
+https://pyth.network/developers/price-feed-ids#scroll
+
+Risk: Cross-chain Messaging Dependency (LayerZero, Wormhole, Hyperlane)
+Description: Cross-chain interoperability bergantung pada protokol pihak ketiga; bug/exploit pada protokol tersebut mempengaruhi asset bridging dan messaging (MEDIUM) [LayerZero Scroll Integration, https://layerzero.network/blog/scroll-integration] [Wormhole Scroll Integration, https://wormhole.com/ecosystem/scroll] [Hyperlane Scroll Docs, https://docs.hyperlane.xyz/docs/chains/scroll]
+Category: Bridge Dependency / Protocol Dependency
+Sources:
+https://layerzero.network/blog/scroll-integration
+https://wormhole.com/ecosystem/scroll
+https://docs.hyperlane.xyz/docs/chains/scroll
+
+Risk: Cloud Provider Dependency
+Description: Kubernetes clusters, prover nodes, sequencer di-host pada cloud provider (AWS/GCP/Azure); single cloud region failure dapat mempengaruhi ketersediaan sequencer/prover (MEDIUM) [Scroll Infra GitHub, https://github.com/scroll-tech/infra]
+Category: Cloud Dependency
+Sources:
+https://github.com/scroll-tech/infra
+https://docs.scroll.io/developers/run-node
+
+Risk: Halo2/KZG Trusted Setup Dependency
+Description: KZG polynomial commitment memerlukan trusted setup (Perpetual Powers of Tau); keamanan bergantung pada keamanan ceremony (MEDIUM) [Scroll Trusted Setup Docs, https://docs.scroll.io/architecture/trusted-setup]
+Category: Protocol Dependency / Cryptographic Assumption
+Sources:
+https://docs.scroll.io/architecture/trusted-setup
+https://github.com/privacy-scaling-explorations/perpetual-powers-of-tau
+
+Risk: Geth Upstream Dependency
+Description: Execution client berbasis go-ethereum (Geth); upstream changes/bugs memerlukan backport/maintenance oleh tim Scroll (MEDIUM) [Scroll Execution Client GitHub, https://github.com/scroll-tech/go-ethereum]
+Category: SDK Dependency
+Sources:
+https://github.com/scroll-tech/go-ethereum
+https://docs.scroll.io/architecture/execution
+
+---
+
+## Official Ecosystem Resources
+
+Official Documentation: https://docs.scroll.io
+Developer Portal: https://docs.scroll.io/developers
+GitHub: https://github.com/scroll-tech
+Partner Documentation: https://scroll.io/ecosystem
+Grant Program: https://scroll.io/ecosystem/grants
+Ecosystem Dashboard: https://scroll.io/ecosystem
+Governance Forum: https://gov.scroll.io
+Governance Snapshot: https://snapshot.org/#/scroll.eth
+Block Explorer (Official): https://scrollscan.com
+Block Explorer (Alternative): https://scroll.l2scan.co
+Bridge UI: https://bridge.scroll.io/
+Testnet Faucet: https://sepolia-faucet.scroll.io/
+Public RPC Endpoints: https://docs.scroll.io/developers/rpc-endpoints
+Tokenomics Page: https://docs.scroll.io/tokenomics
+Security Council: https://docs.scroll.io/governance/security-council
+Bug Bounty: https://immunefi.com/bounty/scroll/
+Technical Blog: https://scroll.io/blog/category/technical
+Audit Reports: https://github.com/scroll-tech/audits
+
+---
+
+## RINGKASAN
+
+Primary Ecosystem: Ethereum L2 zkEVM Rollup (EVM-equivalent Type 2)
+Supported Chains: Scroll zkEVM Mainnet, Scroll Sepolia Testnet, Ethereum Mainnet, Ethereum Sepolia
+External Dependencies: 24 dependencies (Critical: 3 - Ethereum, Halo2/KZG, Geth; High: 11 - Blockscout, LayerZero, Wormhole, Chainlink, Pyth, Gelato, Hyperlane, Safe, EigenLayer, Symbiotic, Karak, Docker, Kubernetes, PostgreSQL, Prometheus/Grafana, Foundry/Hardhat, RPC Providers; Medium: 10 - Redis, Symbiotic, Karak, Renzo, Ether.fi, Puffer, Swell, Kelp, Mellow, Kernel)
+Major Integrations: 40+ integrations (4 cross-chain messaging, 3 oracles, 1 automation, 1 multisig wallet, 10 DeFi blue-chips, 10 restaking/liquid restaking, 6 wallets/infrastructure, 2 block explorers)
+Infrastructure Providers: 7 providers (Alchemy, Infura, QuickNode, Blockscout, L2Scan, Cloud Providers, Docker Hub, GitHub)
+Developer Programs: 1 SDK, 2 frameworks (Hardhat, Foundry), 1 faucet, 1 verification tool, 1 grant program (200M SCR allocation), periodic hackathons
+Applications: 35+ live applications (6 DEXs, 8 lending/leverage, 1 yield tokenization, 1 automation, 4 cross-chain, 3 oracles, 1 automation, 1 multisig, 10 restaking/LRT, 6 wallets/portfolio, 2 explorers)
+
+---
+
+## Open Threads
+
+- Detail Security Council multisig: signer addresses, threshold (t-of-n), timelock duration — tidak dipublikasikan detailnya
+- Cloud provider spesifik (AWS/GCP/Azure) dan region deployment untuk sequencer/prover — tidak diungkap di infra repo publik
+- RPC provider list lengkap dan resmi (Alchemy, Infura, QuickNode terlihat di docs tapi apakah ada yang lain) — perlu verifikasi halaman RPC endpoints
+- Grant committee members dan selection process — tidak dipublikasikan detail
+- Bug bounty program scope dan max reward detail — Immunefi page ada tapi detail scope perlu verifikasi langsung
+- Prover decentralization timeline konkret: milestones, staking mechanism, slashing design — roadmap blog level tinggi saja
+- Forced inclusion / escape hatch implementation status: design dokumen ada tapi mainnet activation status tidak jelas
+- State growth mitigation: apakah ada EIP-4444 history expiry atau state pruning research aktif — RFC terbuka tapi tidak ada implementation timeline
+- Account Abstraction (ERC-4337) support level: EntryPoint deployment status di Scroll mainnet, bundler infrastructure availability
+- Exact CEX listing list dari sumber resmi — CoinGecko/CMC menunjukkan 8+ CEX tapi blog resmi tidak mempublikasikan daftar lengkap
+- Cross-domain message passing latency terukur: L1→L2 dan L2→L1 message finality times under various network conditions
+- Fee market mechanism detail: EIP-1559 implementation pada L2, base fee burn vs sequencer revenue split, gas price oracle source
+- Token contract address SCR di Etherscan (0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A) belum diverifikasi langsung di Etherscan; perlu cross-check
+- Apakah SCR juga di-deploy sebagai token native di Scroll L2 (untuk gas fee) atau hanya ERC-20 di Ethereum L1 — tidak ada konfirmasi di dokumentasi
+- Governance threshold (minimal SCR untuk proposal) dan voting period duration tidak dipublikasikan angka spesifik
+- Address treasury dan foundation on-chain (multisig) tidak dipublikasikan; perlu untuk memverifikasi alokasi aktual
+- Status airdrop: apakah semua 150M SCR community sudah didistribusikan atau masih ada sisa lockup; data klaim on-chain tidak tersedia

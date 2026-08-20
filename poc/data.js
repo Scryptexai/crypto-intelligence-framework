@@ -2,9 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-08 22:38 UTC",
-    "projects": 27,
-    "deep": 27,
+    "generated": "2026-08-20 04:54 UTC",
+    "projects": 60,
+    "deep": 60,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -28,6 +28,7 @@ window.CIF = {
       "cat": "Layer-2 scaling solution (Optimistic Rollup)",
       "era": "2018–",
       "tags": [
+        "airdrop",
         "l2"
       ]
     },
@@ -38,7 +39,8 @@ window.CIF = {
       "cat": "DeFi lending (money market)",
       "era": "2017–",
       "tags": [
-        "defi"
+        "defi",
+        "airdrop"
       ]
     },
     {
@@ -48,6 +50,7 @@ window.CIF = {
       "cat": "Layer-1 (heterogeneous multi-chain/Subnet)",
       "era": "2020–",
       "tags": [
+        "airdrop",
         "l1"
       ]
     },
@@ -59,6 +62,7 @@ window.CIF = {
       "era": "2017–",
       "tags": [
         "defi",
+        "airdrop",
         "amm"
       ]
     },
@@ -69,6 +73,7 @@ window.CIF = {
       "cat": "NFT marketplace + lending (Blend)",
       "era": "2022–",
       "tags": [
+        "airdrop",
         "nft-community"
       ]
     },
@@ -79,6 +84,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "testnet-incentive",
         "l1"
       ]
@@ -90,8 +96,31 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "nft-community",
         "governance"
+      ]
+    },
+    {
+      "n": "BNB Chain",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/BNB Chain.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "pivot",
+        "l1"
+      ]
+    },
+    {
+      "n": "Berachain",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Berachain.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop"
       ]
     },
     {
@@ -101,7 +130,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
-        "points",
+        "airdrop",
         "l2"
       ]
     },
@@ -112,6 +141,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l1"
       ]
     },
@@ -122,6 +152,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "modular"
       ]
     },
@@ -132,6 +163,33 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
+        "mining"
+      ]
+    },
+    {
+      "n": "Cosmos",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Cosmos.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "modular",
+        "bridge"
+      ]
+    },
+    {
+      "n": "Curve",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Curve.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "liquid-staking",
+        "amm",
+        "stablecoin",
         "governance"
       ]
     },
@@ -142,7 +200,24 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l1"
+      ]
+    },
+    {
+      "n": "EigenLayer",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/EigenLayer.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "lrt",
+        "liquid-restaking",
+        "restaking",
+        "liquid-staking",
+        "modular",
+        "shared-security"
       ]
     },
     {
@@ -152,8 +227,35 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "stablecoin",
         "synthetic"
+      ]
+    },
+    {
+      "n": "EtherFi",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/EtherFi.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "lrt",
+        "liquid-restaking",
+        "restaking",
+        "liquid-staking",
+        "shared-security"
+      ]
+    },
+    {
+      "n": "Ethereum",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Ethereum.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "l1"
       ]
     },
     {
@@ -162,7 +264,9 @@ window.CIF = {
       "file": "examples/CaseStudies/Friend.tech.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "Grass",
@@ -170,7 +274,9 @@ window.CIF = {
       "file": "examples/CaseStudies/Grass.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "Helium",
@@ -179,6 +285,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "depin"
       ]
     },
@@ -189,8 +296,20 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "perps",
         "l1"
+      ]
+    },
+    {
+      "n": "Injective",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Injective.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "bridge"
       ]
     },
     {
@@ -200,6 +319,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "testnet-incentive",
         "l1"
       ]
@@ -217,12 +337,23 @@ window.CIF = {
       ]
     },
     {
+      "n": "Jupiter",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Jupiter.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop"
+      ]
+    },
+    {
       "n": "Kamino",
       "tier": "Deep",
       "file": "examples/CaseStudies/Kamino.md",
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "points"
       ]
     },
@@ -233,9 +364,23 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "liquid-staking",
         "oracle",
         "governance"
+      ]
+    },
+    {
+      "n": "Linea",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Linea.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "governance",
+        "l2",
+        "l1"
       ]
     },
     {
@@ -245,6 +390,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "stablecoin",
         "governance"
       ]
@@ -256,6 +402,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l2"
       ]
     },
@@ -266,6 +413,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l1"
       ]
     },
@@ -276,8 +424,19 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "modular",
         "l2"
+      ]
+    },
+    {
+      "n": "Near",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Near.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop"
       ]
     },
     {
@@ -286,7 +445,255 @@ window.CIF = {
       "file": "examples/CaseStudies/Notcoin.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
+    },
+    {
+      "n": "OlympusDAO",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/OlympusDAO.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "governance"
+      ]
+    },
+    {
+      "n": "Optimism",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Optimism.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "l2"
+      ]
+    },
+    {
+      "n": "Polkadot",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Polkadot.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "bridge"
+      ]
+    },
+    {
+      "n": "Polygon",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Polygon.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "l2"
+      ]
+    },
+    {
+      "n": "Polymarket",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Polymarket.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "points"
+      ]
+    },
+    {
+      "n": "Pump.fun",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Pump.fun.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Pyth",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Pyth.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "oracle",
+        "bridge"
+      ]
+    },
+    {
+      "n": "Render",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Render.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Scroll",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Scroll.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "l2"
+      ]
+    },
+    {
+      "n": "Sei",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Sei.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "modular",
+        "l1"
+      ]
+    },
+    {
+      "n": "Solana",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Solana.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Starknet",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Starknet.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "l2"
+      ]
+    },
+    {
+      "n": "Sui",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Sui.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "testnet-incentive",
+        "l1"
+      ]
+    },
+    {
+      "n": "SushiSwap",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/SushiSwap.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "amm",
+        "bridge",
+        "governance"
+      ]
+    },
+    {
+      "n": "Terra",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Terra.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "stablecoin",
+        "synthetic",
+        "l1"
+      ]
+    },
+    {
+      "n": "Uniswap",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Uniswap.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "amm"
+      ]
+    },
+    {
+      "n": "Vana",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Vana.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "governance"
+      ]
+    },
+    {
+      "n": "Walrus",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Walrus.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "modular"
+      ]
+    },
+    {
+      "n": "Wormhole",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Wormhole.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "bridge"
+      ]
+    },
+    {
+      "n": "Yearn Finance",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Yearn Finance.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "governance"
+      ]
+    },
+    {
+      "n": "dYdX",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/dYdX.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "perps"
+      ]
+    },
+    {
+      "n": "zkSync",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/zkSync.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "l2"
+      ]
     }
   ],
   "patterns": [

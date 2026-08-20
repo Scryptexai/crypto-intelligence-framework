@@ -1,0 +1,367 @@
+PROJECT: EigenLayer
+
+## Market Category
+
+Primary Category: Restaking / Shared Security Infrastructure
+Secondary Category: Data Availability (EigenDA) / Middleware (AVS Framework)
+Sector: Infrastructure
+Sub-sector: Restaking Protocol, Data Availability Layer, Actively Validated Services (AVS) Framework
+Sources: https://docs.eigenlayer.xyz/docs/overview/introduction, https://www.eigenlayer.xyz/, https://defillama.com/protocol/eigenlayer
+
+## Market Position
+
+Project Stage: Growth (Mainnet live since 2023-06-14, TGE 2024-10-01, multiple AVS live, $150M+ funding) (HIGH) [https://blog.eigenlayer.xyz/eigenlayer-mainnet-launch/, https://www.theblock.co/post/277456/eigenlayer-raises-100-million-series-b-a16z, https://defillama.com/protocol/eigenlayer]
+Primary Competitors: 
+- Babylon (Bitcoin restaking / shared security) (MEDIUM) [https://babylonlabs.io/]
+- Symbiotic (Restaking protocol on Ethereum, launched 2024) (MEDIUM) [https://symbiotic.fi/]
+- Karak (Universal restaking layer, multi-chain) (MEDIUM) [https://karak.network/]
+- Ethereum Native Staking (Direct validator staking, no restaking) (HIGH) [https://ethereum.org/en/staking/]
+- Liquid Staking Protocols (Lido stETH, Rocket Pool rETH, Coinbase cbETH) — compete for ETH capital but also supply LST to EigenLayer (HIGH) [https://lido.fi/, https://rocketpool.net/, https://www.coinbase.com/cloud/liquid-staking]
+Market Segment: Institutional & retail ETH stakers seeking additional yield; AVS developers needing shared security; Rollups needing data availability (EigenDA)
+Geographic Focus: Global (protocol permissionless); Core team and Eigen Labs Inc. based in United States (Delaware); Eigen Foundation in Cayman Islands
+Sources: https://www.eigenlayer.xyz/, https://documents.deloitte.com/feeds/BCIR-2484369712E511E78A4C00155D0A3900, https://github.com/eigenfoundation
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Yes (EIGEN/USDT, EIGEN/BNB, EIGEN/FDUSD, EIGEN/TRY)
+Perpetual: No (as of 2024-10)
+Futures: No
+Options: No
+OTC: Not confirmed
+Status: Live (since 2024-10-01, EV-013)
+Sources: https://www.binance.com/en/support/announcement/eigen-eigen-listing, https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+Exchange: Bybit
+Spot: Yes (EIGEN/USDT)
+Perpetual: Not confirmed
+Futures: No
+Options: No
+OTC: Not confirmed
+Status: Live (since 2024-10)
+Sources: https://www.bybit.com/en-US/trade/spot/EIGEN/USDT, https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+Exchange: OKX
+Spot: Yes (EIGEN/USDT)
+Perpetual: Not confirmed
+Futures: No
+Options: No
+OTC: Not confirmed
+Status: Live (since 2024-10)
+Sources: https://www.okx.com/trade/EIGEN-USDT, https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+Exchange: Gate.io
+Spot: Yes (EIGEN/USDT)
+Perpetual: Not confirmed
+Futures: No
+Options: No
+OTC: Not confirmed
+Status: Live (since 2024-10)
+Sources: https://www.gate.io/trade/EIGEN_USDT, https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+Exchange: KuCoin
+Spot: Yes (EIGEN/USDT)
+Perpetual: Not confirmed
+Futures: No
+Options: No
+OTC: Not confirmed
+Status: Live (since 2024-10)
+Sources: https://www.kucoin.com/trade/EIGEN-USDT, https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+Exchange: Coinbase
+Spot: No
+Perpetual: No
+Futures: No
+Options: No
+OTC: Not applicable
+Status: Not Listed (as of 2024-10, price tracking only)
+Sources: https://www.coinbase.com/price/eigenlayer
+
+Exchange: Kraken
+Spot: No
+Perpetual: No
+Futures: No
+Options: No
+OTC: Not applicable
+Status: Not Listed (as of 2024-10, educational content only)
+Sources: https://kraken.com/learn/eigenlayer-eigen
+
+## Liquidity
+
+Liquidity Source: CEX (Centralized Exchanges)
+Major Liquidity Venue: Binance (primary listing at TGE, multiple trading pairs)
+DEX: Uniswap V3 (EIGEN/WETH, EIGEN/USDC pools exist post-TGE) (MEDIUM) [https://app.uniswap.org/explore/tokens/ethereum/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9]
+DEX: Curve (No dedicated EIGEN pool as of 2024-10) (MEDIUM) [https://curve.fi/]
+Bridge Liquidity: Not applicable (EIGEN native to Ethereum mainnet; no official bridge)
+Status: Live (CEX liquidity dominant; DEX liquidity emerging)
+Sources: https://www.binance.com/en/support/announcement/eigen-eigen-listing, https://app.uniswap.org/explore/tokens/ethereum/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9, https://curve.fi/
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked)
+Value: ~$18.5B (peak ~$20B+ mid-2024; ~$18.5B as of 2024-10 per DefiLlama)
+Date: 2024-10
+Sources: https://defillama.com/protocol/eigenlayer
+
+Metric Name: Restaked ETH (Native + LST + LRT)
+Value: ~4.8M ETH equivalent (native ETH + stETH + rETH + cbETH + LRT tokens)
+Date: 2024-10
+Sources: https://defillama.com/protocol/eigenlayer, https://www.eigenlayer.xyz/ (dashboard)
+
+Metric Name: Unique Stakers (Addresses with delegated stake)
+Value: ~180,000 unique addresses (cumulative since mainnet launch)
+Date: 2024-10
+Sources: https://dune.com/eigenlayer (community dashboard), https://www.eigenlayer.xyz/
+
+Metric Name: Daily Active Stakers (Delegation interactions)
+Value: ~2,000-5,000 daily active addresses (varies by period)
+Date: 2024-10
+Sources: https://dune.com/eigenlayer (community dashboard)
+
+Metric Name: Operator Count (Registered operators)
+Value: ~1,200 registered operators (cumulative)
+Date: 2024-10
+Sources: https://www.eigenlayer.xyz/ (operator dashboard), https://docs.eigenlayer.xyz/docs/operators/overview
+
+Metric Name: Active AVS Count
+Value: 3 live AVS on mainnet (EigenDA, AltLayer, Dymension, Lagrange) — 4 total including EigenDA
+Date: 2024-10
+Sources: https://www.eigenlayer.xyz/avs, https://docs.eigenlayer.xyz/docs/core-contracts/avsregistry
+
+Metric Name: EigenDA Data Throughput
+Value: ~10-50 MB/s sustained (permissioned rollup integration phase)
+Date: 2024-10
+Sources: https://docs.eigenlayer.xyz/docs/eigenda/overview, https://www.eigenlayer.xyz/avs
+
+Metric Name: Developer Count (Active contributors to EigenLayer repos)
+Value: ~50-100 active monthly contributors across Layr-Labs org (core contracts, EigenDA, CLI, SDK)
+Date: 2024-10
+Sources: https://github.com/Layr-Labs, https://github.com/Layr-Labs/eigenlayer-contracts/graphs/contributors
+
+Metric Name: GitHub Stars (EigenLayer Core Contracts)
+Value: ~2,500 stars (eigenlayer-contracts repo)
+Date: 2024-10
+Sources: https://github.com/Layr-Labs/eigenlayer-contracts
+
+Metric Name: EIGEN Token Holders
+Value: ~45,000 unique holders (post-TGE, includes vesting contract beneficiaries)
+Date: 2024-10
+Sources: https://etherscan.io/token/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9#balances
+
+Metric Name: EIGEN Staked for Governance
+Value: ~50M EIGEN staked (Season 2 + early stakers)
+Date: 2024-10
+Sources: https://www.eigenlayer.xyz/ (staking dashboard), https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+## Market Share
+
+Metric: Restaking TVL Market Share (Ethereum)
+Value: ~85-90% of total restaking TVL (EigenLayer dominant; Symbiotic, Karak smaller)
+Date: 2024-10
+Sources: https://defillama.com/category/restaking, https://defillama.com/protocol/eigenlayer
+
+Metric: Data Availability Market Share (EigenDA vs Celestia, Avail, etc.)
+Value: Not available (EigenDA recently launched; rollup adoption in early stages; no standardized market share metric)
+Date: 2024-10
+Sources: https://docs.eigenlayer.xyz/docs/eigenda/overview
+
+Metric: LRT Market Share (via EigenLayer)
+Value: EtherFi (~50% of LRT TVL), Renzo (~25%), Kelp/Puffer/Swell (~25% combined) — approximate
+Date: 2024-10
+Sources: https://defillama.com/protocol/eigenlayer (TVL breakdown by protocol)
+
+## Competitor Landscape
+
+Competitor: Babylon
+Category: Restaking / Shared Security (Bitcoin-focused)
+Difference: Babylon enables Bitcoin staking to secure PoS chains; EigenLayer uses Ethereum ETH/LST/LRT. Different base asset, different trust assumptions. Babylon mainnet 2024; EigenLayer mainnet 2023.
+Market Segment: Bitcoin holders seeking yield; PoS chains seeking Bitcoin security
+Sources: https://babylonlabs.io/, https://docs.eigenlayer.xyz/docs/overview/introduction
+
+Competitor: Symbiotic
+Category: Restaking Protocol (Ethereum)
+Difference: Symbiotic launched 2024 as permissionless restaking protocol; modular design with customizable vaults and operators; no native token at launch. EigenLayer first-mover, larger TVL, live AVS ecosystem, EIGEN token live.
+Market Segment: ETH stakers seeking alternative restaking; AVS developers wanting permissionless framework
+Sources: https://symbiotic.fi/, https://defillama.com/protocol/symbiotic
+
+Competitor: Karak
+Category: Universal Restaking Layer (Multi-chain)
+Difference: Karak supports restaking of multiple assets (ETH, BTC, stablecoins) across chains; universal design vs EigenLayer Ethereum-only. Earlier stage, smaller TVL.
+Market Segment: Multi-asset restakers; cross-chain AVS developers
+Sources: https://karak.network/, https://defillama.com/protocol/karak
+
+Competitor: Ethereum Native Staking
+Category: Base Staking (No Restaking)
+Difference: Direct validator staking (32 ETH) or liquid staking (LST) without additional slashing risk. Lower yield but simpler risk profile. Competes for same ETH capital.
+Market Segment: Risk-averse ETH holders; solo stakers; institutions preferring native staking
+Sources: https://ethereum.org/en/staking/, https://lido.fi/, https://rocketpool.net/
+
+Competitor: Liquid Staking Protocols (Lido, Rocket Pool, Coinbase)
+Category: Liquid Staking (LST Providers)
+Difference: Provide LST (stETH, rETH, cbETH) that can be restaked on EigenLayer. Both competitors (for ETH capital) and suppliers (LST flow into EigenLayer). Symbiotic relationship.
+Market Segment: ETH holders wanting liquidity + staking yield; feed into restaking ecosystem
+Sources: https://lido.fi/, https://rocketpool.net/, https://www.coinbase.com/cloud/liquid-staking, https://docs.eigenlayer.xyz/docs/core-contracts/strategymanager
+
+Competitor: Celestia
+Category: Data Availability Layer
+Difference: Celestia is sovereign DA chain with own validator set; EigenDA is AVS on EigenLayer secured by restaked ETH. Different security model (sovereign vs shared security). Celestia longer track record, more rollup integrations.
+Market Segment: Rollups needing DA; developers choosing DA layer
+Sources: https://celestia.org/, https://docs.eigenlayer.xyz/docs/eigenda/overview
+
+Competitor: Avail
+Category: Data Availability Layer
+Difference: Avail uses own validator set (Nominated PoS); EigenDA uses EigenLayer restakers. Different trust assumptions. Avail mainnet 2024.
+Market Segment: Rollups needing DA; Polygon ecosystem alignment
+Sources: https://www.availproject.org/, https://docs.eigenlayer.xyz/docs/eigenda/overview
+
+## Narrative Position
+
+Narrative: Restaking
+Status: Main Narrative (EigenLayer is the pioneer and market leader in restaking category)
+Evidence: Coined/term popularized "restaking"; first mainnet (2023-06-14); largest TVL; $150M+ funding; EV-003, EV-005, EV-008
+Sources: https://www.eigenlayer.xyz/, https://blog.eigenlayer.xyz/eigenlayer-mainnet-launch/, https://www.theblock.co/post/214073/eigenlayer-raises-50-million-series-a-blockchain-capital, https://defillama.com/category/restaking
+
+Narrative: Shared Security
+Status: Main Narrative (Core value proposition: shared security via restaking for AVS)
+Evidence: AVS framework (EigenDA, AltLayer, Dymension, Lagrange live); EV-009, EV-010; whitepaper
+Sources: https://www.eigenlayer.xyz/avs, https://www.eigenlayer.xyz/eigenlayer-whitepaper.pdf, https://docs.eigenlayer.xyz/docs/overview/introduction
+
+Narrative: Modular Blockchain
+Status: Secondary Narrative (EigenDA as modular DA layer; EigenLayer as modular security layer)
+Evidence: EigenDA mainnet 2024-04; rollup integration; modular thesis alignment (Celestia, EigenDA, Avail)
+Sources: https://docs.eigenlayer.xyz/docs/eigenda/overview, https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+Narrative: Data Availability (EigenDA)
+Status: Secondary Narrative (EigenDA as first AVS and DA product)
+Evidence: EigenDA mainnet launch EV-009; disperser/retriever architecture; rollup partnerships
+Sources: https://www.eigenlayer.xyz/avs, https://docs.eigenlayer.xyz/docs/eigenda/overview
+
+Narrative: Interoperability / Cross-chain (AVS enabling)
+Status: Secondary Narrative (AVS like AltLayer, Dymension enable cross-chain rollups secured by EigenLayer)
+Evidence: AltLayer, Dymension live as AVS EV-010; not native cross-chain messaging in core protocol
+Sources: https://www.altlayer.io/, https://dymension.xyz/, https://www.eigenlayer.xyz/avs
+
+Narrative: DePIN (via AVS)
+Status: Emerging Narrative (Potential for AVS to secure DePIN networks; no major DePIN AVS live yet)
+Evidence: AVS framework supports arbitrary services; blog mentions DePIN as future AVS category
+Sources: https://docs.eigenlayer.xyz/docs/avs/overview, https://blog.eigenlayer.xyz/
+
+Narrative: AI / ZK Compute (via Lagrange AVS)
+Status: Emerging Narrative (Lagrange AVS provides ZK coprocessor secured by restakers)
+Evidence: Lagrange live AVS EV-010; ZK proving as service
+Sources: https://www.lagrange.dev/, https://www.eigenlayer.xyz/avs
+
+Narrative: Intent / Chain Abstraction
+Status: Not Primary (EigenLayer does not directly address intent/chain abstraction; AVS could build on top)
+Evidence: No core protocol feature for intents; AVS framework could support
+Sources: https://docs.eigenlayer.xyz/docs/avs/overview
+
+Narrative: RWA (Real World Assets)
+Status: Not Primary (No RWA-specific AVS live; framework could support)
+Evidence: AVS framework generic; no announced RWA AVS as of 2024-10
+Sources: https://www.eigenlayer.xyz/avs
+
+## Market Timeline
+
+Date: 2023-02
+Milestone: Series A Funding ($50M led by Blockchain Capital)
+Description: $50M Series A enables core protocol development and team expansion
+Related Historical Event ID: EV-003
+Sources: https://www.theblock.co/post/214073/eigenlayer-raises-50-million-series-a-blockchain-capital
+
+Date: 2023-04-20
+Milestone: Public Testnet "Mango" Launch
+Description: First public testnet for restaking ETH native and LST
+Related Historical Event ID: EV-004
+Sources: https://www.coindesk.com/tech/2023/04/20/eigenlayer-launches-testnet-for-ethereum-restaking-protocol/
+
+Date: 2023-06-14
+Milestone: Mainnet Phase 1 Launch (Native ETH Restaking)
+Description: Core contracts live on Ethereum mainnet; native ETH restaking enabled
+Related Historical Event ID: EV-005
+Sources: https://blog.eigenlayer.xyz/eigenlayer-mainnet-launch/
+
+Date: 2023-07
+Milestone: EtherFi eETH Integration (First LRT)
+Description: EtherFi launches eETH, first liquid restaking token on EigenLayer
+Related Historical Event ID: EV-006
+Sources: https://www.ether.fi/, https://docs.eigenlayer.xyz/docs/core-contracts/strategymanager
+
+Date: 2023-12
+Milestone: Multi-LRT Integration (Renzo, Kelp, Puffer, Swell)
+Description: Four additional LRT protocols launch tokens integrated with EigenLayer
+Related Historical Event ID: EV-007
+Sources: https://www.eigenlayer.xyz/
+
+Date: 2024-02
+Milestone: Series B Funding ($100M led by a16z crypto, $1B valuation)
+Description: $100M Series B at unicorn valuation for AVS ecosystem expansion
+Related Historical Event ID: EV-008
+Sources: https://www.theblock.co/post/277456/eigenlayer-raises-100-million-series-b-a16z
+
+Date: 2024-04
+Milestone: EigenDA Mainnet Launch
+Description: First AVS (data availability layer) launches on EigenLayer mainnet
+Related Historical Event ID: EV-009
+Sources: https://www.eigenlayer.xyz/avs
+
+Date: 2024-04
+Milestone: First Third-Party AVS Live (AltLayer, Dymension, Lagrange)
+Description: Three AVS launch on EigenLayer mainnet demonstrating shared security model
+Related Historical Event ID: EV-010
+Sources: https://www.eigenlayer.xyz/avs
+
+Date: 2024-07
+Milestone: Eigen Foundation Formation
+Description: Foundation established in Cayman Islands for token governance and treasury
+Related Historical Event ID: EV-011
+Sources: https://github.com/eigenfoundation
+
+Date: 2024-10-01
+Milestone: Token Generation Event (TGE) — EIGEN Token Launch
+Description: EIGEN token deployed, Season 1 claim opens, simultaneous CEX listings
+Related Historical Event ID: EV-012, EV-013
+Sources: https://blog.eigenlayer.xyz/eigen-token-genesis/, https://www.binance.com/en/support/announcement/eigen-eigen-listing
+
+Date: 2024-10
+Milestone: Season 2 Distribution & Governance Staking Activation
+Description: Season 2 claim opens, EIGEN staking for governance and intersubjective rewards live
+Related Historical Event ID: EV-014
+Sources: https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+## Official Market Resources
+
+Official Dashboard: https://www.eigenlayer.xyz/
+DefiLlama: https://defillama.com/protocol/eigenlayer
+CoinGecko: https://www.coingecko.com/en/coins/eigenlayer
+CoinMarketCap: https://coinmarketcap.com/currencies/eigenlayer/
+Token Terminal: https://tokenterminal.com/terminal/projects/eigenlayer
+Messari: https://messari.io/project/eigenlayer/profile
+Explorer: https://etherscan.io/token/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9
+
+## RINGKASAN
+
+Market Stage: Growth
+Primary Category: Restaking / Shared Security Infrastructure
+Competitor Count: 7 direct competitors identified (Babylon, Symbiotic, Karak, Ethereum Native Staking, Lido, Celestia, Avail)
+Major Narrative: Restaking (Main), Shared Security (Main), Modular Blockchain (Secondary), Data Availability (Secondary)
+Trading Availability: 5 CEX (Binance, Bybit, OKX, Gate.io, KuCoin) + DEX (Uniswap V3); No perpetuals/futures/options
+Adoption Metrics Available: TVL (~$18.5B), Restaked ETH (~4.8M), Unique Stakers (~180K), Operators (~1,200), AVS (4 live), EigenDA Throughput, Developer Count, Token Holders (~45K), Staked EIGEN (~50M)
+
+## Open Threads
+
+- Exact EigenDA rollup integration count and names (which rollups are live on EigenDA vs testnet) — not publicly enumerated in official docs
+- Symbiotic and Karak TVL comparison at same date — DefiLlama category page shows aggregate but per-protocol historical TVL needs verification
+- EIGEN token perpetual/futures listing status on major derivatives exchanges (Bybit, Binance Futures, OKX Futures) — not confirmed as of 2024-10
+- Official EigenLayer revenue numbers (EigenDA fees, protocol fees) — not published in transparency report
+- Eigen Foundation treasury on-chain address and composition — not publicly disclosed
+- Circulating supply methodology discrepancy between CoinGecko, CoinMarketCap, and on-chain vesting contract unlocks
+- AVS pipeline: number of AVS in testnet vs mainnet — official dashboard shows more than 4 but not all named
+- Operator revenue data aggregated across AVS — not published by protocol
+- Slashing events history (if any) on mainnet AVS — no public incidents reported but not confirmed zero
+- EigenLayer bug bounty program details (Immunefi or similar) — not found in official docs
+- Cross-chain restaking roadmap timeline — whitepaper mentions but no concrete dates
+- Permissionless operator registration criteria and timeline for EigenDA — "progressive decentralization" mentioned without specifics
+- Regulatory classification of EIGEN token (security vs utility) in major jurisdictions — no legal opinion published
+- Actual daily active users (unique addresses transacting) vs staker count — Dune dashboards vary in methodology
+- LRT protocol TVL breakdown on EigenLayer specifically (vs total LRT TVL including non-restaked) — DefiLlama shows aggregate

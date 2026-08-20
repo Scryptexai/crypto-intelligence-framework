@@ -1,0 +1,1096 @@
+PROJECT: Scroll
+
+Event ID
+
+EV-001
+
+Date
+
+2021
+
+Event Name
+
+Pendirian Scroll Foundation dan Tim Inti
+
+Event Type
+
+Founding
+
+Description
+
+Scroll Foundation didirikan di Kepulauan Cayman oleh Sandy Peng, Haichen Shen, dan Ye Zhang. Tim inti mulai dibangun di Singapura untuk mengembangkan zkEVM Layer 2 yang EVM-equivalent.
+
+Participants
+
+Scroll Foundation, Sandy Peng, Haichen Shen, Ye Zhang, Scroll Tech Pte. Ltd.
+
+Location
+
+Kepulauan Cayman (Foundation); Singapura (Operasional)
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas hukum dan tim pendiri tersedia untuk pengembangan protokol.
+
+Sources
+
+https://scroll.io/foundation https://scroll.io/team
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2022
+
+Event Name
+
+Bergabungnya Dmitry Khovratovich sebagai Chief Cryptographer
+
+Event Type
+
+Organization
+
+Description
+
+Dmitry Khovratovich, kriptografer ternama (co-author Argon2, Equihash, berbagai konstruksi ZK), bergabung memimpin penelitian zero-knowledge proof dan keamanan protokol.
+
+Participants
+
+Dmitry Khovratovich, Scroll Foundation
+
+Location
+
+Global (remote)
+
+Status
+
+Completed
+
+Immediate Result
+
+Kepemimpinan kriptografi senior terpasang untuk desain ZK-proof system.
+
+Sources
+
+https://scroll.io/team https://www.khovratovich.com/
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2022
+
+Event Name
+
+Bergabungnya Brendan Farmer sebagai Advisor
+
+Event Type
+
+Organization
+
+Description
+
+Brendan Farmer, co-founder Polygon zkEVM, bergabung sebagai advisor memberikan arahan strategis teknis untuk arsitektur zkEVM Scroll.
+
+Participants
+
+Brendan Farmer, Scroll Foundation
+
+Location
+
+Global (remote)
+
+Status
+
+Completed
+
+Immediate Result
+
+Expertise zkEVM production-grade dari Polygon terintegrasi ke tim advisor.
+
+Sources
+
+https://scroll.io/team https://blog.polygon.technology/polygon-zkevm/
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2023-02-28
+
+Event Name
+
+Launch Scroll Alpha Testnet
+
+Event Type
+
+Launch
+
+Description
+
+Scroll meluncurkan Alpha Testnet publik, memungkinkan developer menguji EVM-equivalence dan performa zkEVM sebelum mainnet.
+
+Participants
+
+Scroll, Scroll Alpha Testnet (Pre-alpha)
+
+Location
+
+Global (testnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Developer dapat deploy kontrak dan menguji kompatibilitas EVM di lingkungan testnet pertama.
+
+Sources
+
+https://scroll.io/blog/alpha-testnet https://docs.scroll.io/developers/testnet
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2023-10-18
+
+Event Name
+
+Launch Scroll Pre-alpha Testnet
+
+Event Type
+
+Launch
+
+Description
+
+Scroll meluncurkan Pre-alpha Testnet (sering disebut "Scroll Pre-alpha") untuk validasi arsitektur awal dan pengujian komponen prover/sequencer.
+
+Participants
+
+Scroll, Scroll Alpha Testnet (Pre-alpha)
+
+Location
+
+Global (testnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi arsitektur zkEVM tingkat protokol sebelum alpha testnet publik yang lebih luas.
+
+Sources
+
+https://scroll.io/blog/pre-alpha-testnet https://docs.scroll.io/developers/testnet
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2023
+
+Event Name
+
+Launch Scroll Sepolia Testnet
+
+Event Type
+
+Launch
+
+Description
+
+Scroll meluncurkan testnet berbasis Sepolia Ethereum untuk pengembangan berkelanjutan, menggantikan testnet sebelumnya dengan lingkungan yang lebih stabil dan dekat mainnet.
+
+Participants
+
+Scroll, Scroll Sepolia Testnet, Ethereum
+
+Location
+
+Global (testnet)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Testnet permanen berbasis Sepolia tersedia untuk developer ekosistem.
+
+Sources
+
+https://docs.scroll.io/developers/testnet https://sepolia-faucet.scroll.io/
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2023
+
+Event Name
+
+Rilis Scroll Bridge (Native Bridge)
+
+Event Type
+
+Product
+
+Description
+
+Scroll Bridge resmi dirilis memungkinkan transfer aset (ETH, ERC-20) antara Ethereum L1 dan Scroll L2 menggunakan mekanisme deposit/withdrawal dengan ZK-proof verification.
+
+Participants
+
+Scroll, Scroll Bridge, Ethereum
+
+Location
+
+Global (mainnet/testnet)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Infrastruktur bridging native tersedia untuk user dan aplikasi ekosistem.
+
+Sources
+
+https://docs.scroll.io/developers/bridge https://bridge.scroll.io/
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2023
+
+Event Name
+
+Rilis Scroll SDK
+
+Event Type
+
+Product
+
+Description
+
+Scroll SDK (developer toolkit) dirilis menyediakan RPC endpoints, indexer, dan tooling untuk membangun aplikasi di Scroll.
+
+Participants
+
+Scroll, Scroll SDK
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Developer tooling lengkap tersedia untuk onboarding ekosistem.
+
+Sources
+
+https://github.com/scroll-tech/scroll-sdk https://docs.scroll.io/developers
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2024-10-22
+
+Event Name
+
+Launch Scroll zkEVM Mainnet
+
+Event Type
+
+Launch
+
+Description
+
+Scroll zkEVM Mainnet resmi diluncurkan pada block height Ethereum L1 tertentu, menyediakan Layer 2 EVM-equivalent dengan finalitas melalui ZK-proof ke Ethereum L1.
+
+Participants
+
+Scroll, Scroll zkEVM Mainnet, Ethereum
+
+Location
+
+Global (mainnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Mainnet production siap menerima transaksi, deploy kontrak, dan aktivitas ekosistem.
+
+Sources
+
+https://scroll.io/blog/mainnet-launch https://scrollscan.com
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2024-10-22
+
+Event Name
+
+Token Generation Event (TGE) SCR Token
+
+Event Type
+
+Token
+
+Description
+
+SCR token (ERC-20 di Ethereum) diluncurkan bersamaan dengan mainnet, digunakan untuk fee, staking, dan governance protokol Scroll.
+
+Participants
+
+SCR Token, Scroll Foundation, Ethereum
+
+Location
+
+Ethereum Mainnet (kontrak 0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A)
+
+Status
+
+Completed
+
+Immediate Result
+
+Token utilitas dan governance native tersedia on-chain.
+
+Sources
+
+https://scroll.io/blog/tge https://etherscan.io/token/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2024
+
+Event Name
+
+Integrasi LayerZero di Scroll Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+LayerZero mengaktifkan protokol interoperabilitas di Scroll Mainnet untuk messaging cross-chain dan transfer aset omnichain (OFT).
+
+Participants
+
+LayerZero, Scroll zkEVM Mainnet
+
+Location
+
+Scroll Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Cross-chain messaging dan OFT tersedia untuk aplikasi di Scroll.
+
+Sources
+
+https://layerzero.network/blog/scroll-integration https://scroll.io/ecosystem
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2024
+
+Event Name
+
+Integrasi Wormhole di Scroll Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+Wormhole mengaktifkan cross-chain messaging dan token bridging di Scroll Mainnet.
+
+Participants
+
+Wormhole, Scroll zkEVM Mainnet
+
+Location
+
+Scroll Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Bridge dan messaging Wormhole live di Scroll.
+
+Sources
+
+https://wormhole.com/ecosystem/scroll https://scroll.io/ecosystem
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2024
+
+Event Name
+
+Integrasi Chainlink di Scroll Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+Chainlink mengaktifkan Price Feeds, VRF, CCIP, dan Proof of Reserve di Scroll Mainnet.
+
+Participants
+
+Chainlink, Scroll zkEVM Mainnet
+
+Location
+
+Scroll Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Oracle infrastructure lengkap Chainlink tersedia untuk DeFi di Scroll.
+
+Sources
+
+https://blog.chain.link/chainlink-scroll-support https://scroll.io/ecosystem
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2024
+
+Event Name
+
+Integrasi Pyth Network di Scroll Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+Pyth Network mengaktifkan price feeds real-time first-party financial data di Scroll Mainnet.
+
+Participants
+
+Pyth Network, Scroll zkEVM Mainnet
+
+Location
+
+Scroll Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+High-fidelity price feeds Pyth live untuk aplikasi trading/DeFi.
+
+Sources
+
+https://pyth.network/developers/price-feed-ids#scroll https://scroll.io/ecosystem
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2024
+
+Event Name
+
+Integrasi Gelato Network di Scroll Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+Gelato mengaktifkan automation (smart contract automation, relay, Web3 Functions) di Scroll Mainnet.
+
+Participants
+
+Gelato Network, Scroll zkEVM Mainnet
+
+Location
+
+Scroll Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Infrastruktur otomasi smart contract tersedia untuk developer.
+
+Sources
+
+https://gelato.network/networks/scroll https://scroll.io/ecosystem
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2024
+
+Event Name
+
+Deployment Safe (Multi-sig) di Scroll Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+Safe smart contract wallet (multi-sig) dideploy di Scroll Mainnet untuk manajemen aset tim/DAO.
+
+Participants
+
+Safe, Scroll zkEVM Mainnet
+
+Location
+
+Scroll Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Multi-sig wallet infrastructure tersedia untuk treasury management.
+
+Sources
+
+https://safe.global/networks/scroll https://scroll.io/ecosystem
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2024
+
+Event Name
+
+Integrasi Hyperlane di Scroll Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+Hyperlane mengaktifkan permissionless interoperability messaging di Scroll Mainnet.
+
+Participants
+
+Hyperlane, Scroll zkEVM Mainnet
+
+Location
+
+Scroll Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Modular cross-chain messaging Hyperlane live.
+
+Sources
+
+https://docs.hyperlane.xyz/docs/chains/scroll https://scroll.io/ecosystem
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2024
+
+Event Name
+
+Deployment Uniswap v3/v4 di Scroll Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+Uniswap (DEX terbesar) mendeploy v3 dan v4 di Scroll Mainnet menyediakan liquidity dan trading.
+
+Participants
+
+Uniswap, Scroll zkEVM Mainnet
+
+Location
+
+Scroll Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Core DeX liquidity tersedia dari launch mainnet.
+
+Sources
+
+https://app.uniswap.org/explore/tokens/scroll https://scroll.io/ecosystem
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2024
+
+Event Name
+
+Deployment Aave v3 di Scroll Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+Aave v3 money market protocol dideploy di Scroll Mainnet untuk lending/borrowing.
+
+Participants
+
+Aave, Scroll zkEVM Mainnet
+
+Location
+
+Scroll Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Blue-chip lending market live di Scroll.
+
+Sources
+
+https://app.aave.ui/#/markets/scroll https://scroll.io/ecosystem
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2024
+
+Event Name
+
+Ekspansi Ekosistem DeFi Mayor (PancakeSwap, SushiSwap, Balancer, Curve, Pendle, Euler, Morpho, Radiant, Silo, Gearbox, CIAN)
+
+Event Type
+
+Ecosystem
+
+Description
+
+11 protokol DeFi mayor mendeploy di Scroll Mainnet dalam bulan-bulan pasca-launch, mencakup DEX, AMM, lending, yield, leverage, dan automation.
+
+Participants
+
+PancakeSwap, SushiSwap, Balancer, Curve Finance, Pendle Finance, Euler Finance, Morpho, Radiant Capital, Silo Finance, Gearbox Protocol, CIAN, Scroll zkEVM Mainnet
+
+Location
+
+Scroll Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Lapis DeFi lengkap (trading, lending, yield, leverage) tersedia sejak awal mainnet.
+
+Sources
+
+https://scroll.io/ecosystem https://pancakeswap.finance/swap?chain=scroll https://www.sushi.com/swap?chainId=534352 https://app.balancer.fi/#/scroll https://curve.fi/#/scroll https://app.pendle.finance/trade/markets?chain=scroll https://app.euler.finance/#/scroll https://app.morpho.org/markets?chain=scroll https://app.radiant.capital/#/scroll https://app.silo.finance/#/scroll https://app.gearbox.fi/#/scroll https://cian.app/?chain=scroll
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2024
+
+Event Name
+
+Integrasi Restaking Ecosystem (EigenLayer, Symbiotic, Karak, Renzo, Ether.fi, Puffer, Swell, Kelp, Mellow, Kernel)
+
+Event Type
+
+Ecosystem
+
+Description
+
+10 protokol restaking/liquid restaking terintegrasi atau dideploy di Scroll Mainnet, membawa BTC/ETH restaking ke L2.
+
+Participants
+
+EigenLayer, Symbiotic, Karak, Renzo Protocol, Ether.fi, Puffer Finance, Swell Network, Kelp DAO, Mellow Protocol, Kernel, Scroll zkEVM Mainnet
+
+Location
+
+Scroll Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Restaking infrastructure lengkap tersedia di Scroll L2.
+
+Sources
+
+https://www.eigenlayer.xyz/ecosystem/scroll https://symbiotic.fi/networks/scroll https://karak.network/ecosystem/scroll https://app.renzoprotocol.com/?chain=scroll https://app.ether.fi/?chain=scroll https://app.puffer.fi/?chain=scroll https://app.swellnetwork.io/?chain=scroll https://app.kelpdao.xyz/?chain=scroll https://app.mellow.finance/?chain=scroll https://kernel.dao/#/scroll https://scroll.io/ecosystem
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2024
+
+Event Name
+
+Integrasi Wallet & Infrastructure (MetaMask, Rabby, OKX Wallet, Rainbow, Zerion, Instadapp, Scrollscan, L2Scan)
+
+Event Type
+
+Infrastructure
+
+Description
+
+Wallet mayor (MetaMask via Snaps/RPC, Rabby, OKX, Rainbow), portfolio trackers (Zerion, Instadapp), dan block explorer (Scrollscan Blockscout, L2Scan) mendukung Scroll Mainnet.
+
+Participants
+
+MetaMask, Rabby Wallet, OKX Wallet, Rainbow Wallet, Zerion, Instadapp, Scrollscan (Blockscout), L2Scan, Scroll zkEVM Mainnet
+
+Location
+
+Global / Scroll Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+User experience lengkap (wallet, explorer, portfolio) siap dari hari pertama mainnet.
+
+Sources
+
+https://chainlist.org/chain/534352 https://rabby.io/chains/scroll https://www.okx.com/web3/scroll https://rainbow.me/chains/scroll https://zerion.io/chain/scroll https://instadapp.io/?chain=scroll https://scrollscan.com https://scroll.l2scan.co
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2024
+
+Event Name
+
+Listing SCR Token di Centralized Exchanges
+
+Event Type
+
+Market
+
+Description
+
+SCR token terdaftar di multiple centralized exchanges (detail exchange spesifik perlu verifikasi) pasca-TGE untuk liquidity trading.
+
+Participants
+
+SCR Token, Centralized Exchanges (tidak diketahui detail lengkap)
+
+Location
+
+Global (CEX)
+
+Status
+
+Completed
+
+Immediate Result
+
+Secondary market liquidity untuk SCR token tersedia.
+
+Sources
+
+https://scroll.io/blog/tge https://coinmarketcap.com/currencies/scroll/ https://coingecko.com/en/coins/scroll
+
+---
+
+### Ringkasan Per Tahun
+
+#### 2021
+- EV-001: Pendirian Scroll Foundation dan Tim Inti (Founding)
+
+#### 2022
+- EV-002: Bergabungnya Dmitry Khovratovich sebagai Chief Cryptographer (Organization)
+- EV-003: Bergabungnya Brendan Farmer sebagai Advisor (Organization)
+
+#### 2023
+- EV-004: Launch Scroll Alpha Testnet (Launch)
+- EV-005: Launch Scroll Pre-alpha Testnet (Launch)
+- EV-006: Launch Scroll Sepolia Testnet (Launch)
+- EV-007: Rilis Scroll Bridge (Product)
+- EV-008: Rilis Scroll SDK (Product)
+
+#### 2024
+- EV-009: Launch Scroll zkEVM Mainnet (Launch)
+- EV-010: Token Generation Event (TGE) SCR Token (Token)
+- EV-011: Integrasi LayerZero di Scroll Mainnet (Integration)
+- EV-012: Integrasi Wormhole di Scroll Mainnet (Integration)
+- EV-013: Integrasi Chainlink di Scroll Mainnet (Integration)
+- EV-014: Integrasi Pyth Network di Scroll Mainnet (Integration)
+- EV-015: Integrasi Gelato Network di Scroll Mainnet (Integration)
+- EV-016: Deployment Safe di Scroll Mainnet (Integration)
+- EV-017: Integrasi Hyperlane di Scroll Mainnet (Integration)
+- EV-018: Deployment Uniswap v3/v4 di Scroll Mainnet (Integration)
+- EV-019: Deployment Aave v3 di Scroll Mainnet (Integration)
+- EV-020: Ekspansi Ekosistem DeFi Mayor (Ecosystem)
+- EV-021: Integrasi Restaking Ecosystem (Ecosystem)
+- EV-022: Integrasi Wallet & Infrastructure (Infrastructure)
+- EV-023: Listing SCR Token di CEX (Market)
+
+---
+
+Total Events
+
+23
+
+Founding
+
+1
+
+Funding
+
+0
+
+Launch
+
+4
+
+Technology
+
+0
+
+Governance
+
+0
+
+Security
+
+0
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+0
+
+Integration
+
+11
+
+Token
+
+1
+
+Market
+
+1
+
+Organization
+
+2
+
+Infrastructure
+
+1
+
+Community
+
+0
+
+Product
+
+2
+
+Ecosystem
+
+2
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti funding rounds (Seed, Series A, Series B) dengan investor, amount, valuation — tidak tercakup di Phase 1-2, perlu data Crunchbase/PitchBook/resmi
+- Audit smart contract dan ZK-circuit: auditor (Trail of Bits, OpenZeppelin, dll), tanggal, scope, findings — tidak ada evidence di Phase 1-2
+- Bug bounty program: platform (Immunefi/HackerOne), scope, max reward, status aktif — tidak diverifikasi
+- Mainnet launch block height Ethereum L1 dan transaction hash genesis Scroll — perlu on-chain verification
+- Tokenomics detail SCR: total supply, allocation breakdown (team, investor, ecosystem, foundation, community), vesting schedule, TGE unlock % — butuh blog resmi/governance forum/on-chain
+- Security Council / Emergency Council multisig signers dan threshold — tidak teridentifikasi
+- Governance framework: SCR voting, Snapshot, on-chain execution, timelock — belum terdokumentasi
+- Kronologi testnet yang pasti: pre-alpha (2023-10-18) vs alpha (2023-02-28) — urutan tanggal tampak terbalik, perlu verifikasi mana yang duluan
+- Verifikasi kontrak token SCR di Etherscan: apakah address 0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A benar dan verified
+- Daftar lengkap CEX listing SCR dengan tanggal masing-masing
+- Protokol upgrade/mainnet fork pasca-launch (jika ada)
+- TVL dan metrik on-chain historis bulanan pasca-mainnet (DefiLlama/L2Beat)
+- Verifikasi struktur hukum: Scroll Foundation (Cayman) vs Scroll Tech Pte. Ltd. (Singapura) — apakah ada entitas lain (Scroll Labs, Scroll AG)

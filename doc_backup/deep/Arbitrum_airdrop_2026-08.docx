@@ -1,0 +1,126 @@
+PROJECT: Arbitrum
+
+STATUS AIRDROP
+
+Sudah dilakukan. Arbitrum (Offchain Labs/Arbitrum DAO) melaksanakan airdrop ARB pada 23 Maret 2023 — 1,16 miliar ARB didistribusikan ke pengguna yang eligible (pengumuman resmi 16 Maret 2023), dengan listing serentak di Binance, Coinbase, BitMEX, Bitfinex, Kraken, dan Uniswap; DAO Treasury memegang 42,78% (4,278 miliar ARB) dari total supply 10 miliar sebagai pendanaan ekosistem jangka panjang. (HIGH) [Phase 3 — EV-025 Airdrop ARB; Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained; Uphold, https://uphold.com/en-eu/prices/crypto/arbitrum]
+
+AIRDROP EVENTS
+
+AD-001: Airdrop ARB (Distribusi Utama)
+Tanggal: 2023-03-23 (pengumuman 2023-03-16)
+Tipe: Retroactive activity-based airdrop
+Alokasi: 1.160.000.000 ARB (11,6% dari total supply 10 miliar) ke pengguna eligible; DAO Treasury 42,78% (4,278 miliar ARB) sebagai cadangan ekosistem (HIGH) [Phase 3 — EV-025; Phase 6 — DAO Treasury]
+Penerima: Pengguna aktif Arbitrum One/Nova (aktivitas transaksi, bridging, governance awal, program ekosistem); kriteria lengkap per tier aktivitas tidak dikutip penuh di sumber sekunder (LOW)
+Nilai saat klaim: 1.32 USD per ARB (close hari TGE 2023-03-23; intraday range ekstrem 0.12-11.64 — wick price discovery hari pertama) [KuCoin ARB-USDT daily candle, https://www.kucoin.com/trade/ARB-USDT] (MEDIUM)
+Kriteria: Aktivitas historis di Arbitrum One/Nova + kontribusi ekosistem (tiering detail tidak dirinci di sumber sekunder riset ini) (LOW)
+Anti-sybil: Filter sybil diterapkan (kriteria tidak dipublikasikan penuh) — sebagian klaim ditolak pada pelaksanaan (LOW)
+Terkait EV: EV-025 (Airdrop ARB dan Listing di Exchange)
+Sitasi: Phase 3 EV-025; Phase 6 Token Sale (HIGH)
+
+CONTEXT SAAT KEPUTUSAN
+
+Kondisi saat keputusan airdrop ARB (Maret 2023):
+- Kondisi pasar: Awal 2023 — bear market namun kompetisi L2 memanas (Optimism telah airdrop dua kali 2022; zkSync Era menyiapkan token); "poin/airdrop" menjadi mekanisme akuisisi standar L2 (MEDIUM) [Phase 8 — Competitor Landscape]
+- Posisi project: Arbitrum One adalah L2 dengan TVL terbesar saat itu; token governance dibutuhkan untuk DAO & ekosistem Orbit (HIGH) [Phase 3 — Events]
+- Kompetitor terdekat: Optimism (OP, dua airdrop sebelumnya), zkSync Era, Base (tanpa token) — tekanan untuk tidak tertinggal dalam mekanisme distribusi (MEDIUM) [Phase 8 — Competitor Landscape]
+
+TRIGGER DAN ALTERNATIF
+
+Trigger utama: Aktivasi Arbitrum DAO dengan treasury besar + kebutuhan legitimasi komunitas & retensi pengguna di tengah perang L2 (HIGH) [Phase 3 — EV-025].
+Alternatif tidak diambil:
+- Public sale: tidak dilakukan — distribusi via airdrop + treasury DAO (HIGH) [Phase 6 — Token Sale]
+- Airdrop bertahap bergelombang (model Optimism): tidak dipilih untuk gelombang pertama — satu distribusi besar sekaligus (MEDIUM) [Phase 3 — EV-025]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Memberdayakan komunitas melalui governance DAO dengan treasury 42,78% untuk grants & insentif (HIGH) [Phase 6 — DAO Treasury]
+- Menghargai pengguna awal Arbitrum One/Nova (HIGH) [Phase 3 — EV-025]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Airdrop sekaligus mengunci posisi kompetitif terhadap Optimism/zkSync dalam perebutan pengguna & developer — HIPOTESIS (MEDIUM)
+- Offchain Labs mempertahankan pengaruh via sequencer & alokasi tim/investor yang vested — HIPOTESIS (LOW)
+
+OUTCOME PER POV
+
+POV Founder (Offchain Labs — Ed Felten, Steven Goldfeder, Harry Kalodner): Sukses
+- Jangka pendek: TGE & listing serentak di exchange besar berjalan tanpa insiden; DAO aktif dengan treasury besar (HIGH) [Phase 3 — EV-025]
+- Jangka panjang: Arbitrum tetap L2 terbesar; transisi menuju DAO governance berlanjut; Robinhood Chain memilih Orbit (2026) dengan revenue share ke DAO (HIGH) [Phase 3 — Robinhood event]
+- Dasar: Phase 3 Events (HIGH)
+
+POV VC (Investor awal Offchain Labs): Sebagian
+- Jangka pendek: Harga TGE 1.32 USD memberi paper position; alokasi investor dengan vesting (MEDIUM) [Phase 6 — Vesting Schedule]
+- Jangka panjang: Harga turun ke 1.14 USD pada +90 hari dan sempat mendekati 0.78 USD (Sep 2023) sebelum pulih 2024; unlock bertahap menciptakan tekanan jual periodik (MEDIUM) [KuCoin ARB-USDT, https://www.kucoin.com/trade/ARB-USDT]
+- Dasar: KuCoin price history; Phase 6 Vesting (MEDIUM)
+
+POV Retail (Penerima airdrop): Sebagian
+- Jangka pendek: Klaim 1.32 USD per ARB; penjual hari pertama menghindari penurunan -13% dalam 90 hari; wick 11.64 USD di jam pertama memberi windfall bagi penjual sangat awal (namun sebagian besar adalah anomali order book, bukan harga riil yang dapat diakses luas) (MEDIUM) [KuCoin ARB-USDT, https://www.kucoin.com/trade/ARB-USDT]
+- Jangka panjang: Pemegang pasif mengalami pelemahan sepanjang 2023 sebelum pemulihan parsial 2024 (puncak ~2.4 USD area awal 2024); tanpa fee share, imbal hasil bergantung apresiasi harga (MEDIUM) [KuCoin ARB-USDT, https://www.kucoin.com/trade/ARB-USDT]
+- Dasar: KuCoin price history (MEDIUM)
+
+POV Community (Pengguna & DAO participants): Sebagian
+- Jangka pendek: Basis holder terbentuk instan; governance DAO dengan treasury 42,78% memberi kapasitas program besar (HIGH) [Phase 6 — DAO Treasury]
+- Jangka panjang: Kontroversi unlock (tim/investor) sempat memicu sentimen negatif; program grants & STIP berjalan (MEDIUM) [Phase 3 — Events]
+- Dasar: Phase 3; Phase 6 (HIGH/MEDIUM)
+
+POV Developer (Builder Orbit & dApps): Sukses
+- Jangka pendek: Ekosistem grants DAO + likuiditas ARB mendukung pembangunan (HIGH) [Phase 7 — Ecosystem]
+- Jangka panjang: Arbitrum Orbit menjadi pilihan L3/app-chain (termasuk Robinhood Chain 2026) — outcome strategis terbesar (HIGH) [Phase 3 — Robinhood event]
+- Dasar: Phase 3; Phase 7 (HIGH)
+
+POV Institution (Exchange, fund): Sebagian
+- Jangka pendek: Listing serentak exchange besar — likuiditas instan (HIGH) [Phase 3 — EV-025]
+- Jangka panjang: Struktur sequencer terpusat & unlock schedule menjadi catatan due-diligence (MEDIUM) [Phase 4 — Technology]
+- Dasar: Phase 3; Phase 4 (HIGH/MEDIUM)
+
+POV Validator: Tidak relevan
+- Arbitrum adalah optimistic rollup dengan sequencer (Offchain Labs pada era TGE) — tidak ada validator set publik; keamanan akhir dari Ethereum L1 (HIGH) [Phase 4 — Technology]
+
+POV Builder (Protokol di Arbitrum): Sebagian
+- Jangka pendek: Insentif likuiditas STIP & grants tersedia (MEDIUM) [Phase 3 — Events]
+- Jangka panjang: TVL & pengguna Arbitrum One menjadi daya tarik utama (HIGH) [Phase 8 — Market]
+- Dasar: Phase 3; Phase 8 (MEDIUM/HIGH)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 1.32 USD (2023-03-23) [KuCoin ARB-USDT daily candle close (hari TGE; intraday high 11.64 adalah wick price discovery dengan order book tipis — jangan dipakai sebagai harga klaim), https://www.kucoin.com/trade/ARB-USDT] (MEDIUM)
+Harga +30 hari: 1.47 USD (2023-04-22) [KuCoin ARB-USDT daily candle close, https://www.kucoin.com/trade/ARB-USDT] (MEDIUM)
+Harga +90 hari: 1.14 USD (2023-06-21) [KuCoin ARB-USDT daily candle close, https://www.kucoin.com/trade/ARB-USDT] (MEDIUM)
+Harga puncak 12 bulan pertama: 11.64 USD (2023-03-23) [KuCoin ARB-USDT TGE-day high — wick extreme dengan volume order book tipis di menit-menit pertama listing; puncak harga perdagangan normal pada jendela 12 bulan berada di area ~2.4 USD (awal 2024), https://www.kucoin.com/trade/ARB-USDT] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan TVL sebelum vs sesudah distribusi: Arbitrum One mempertahankan posisi L2 TVL terbesar pasca-airdrop; angka per tanggal tidak dikutip di sumber sekunder riset ini (LOW)
+Jumlah alamat pemegang token (unique holders): Tidak ditemukan di sumber sekunder riset ini (LOW)
+Jumlah alamat aktif harian sebelum vs sesudah: Tidak ditemukan (LOW)
+Konsentrasi kepemilikan: DAO Treasury 42,78% + alokasi tim/investor vested — sirkulasi awal ~11,6% dari supply; konsentrasi struktural tinggi pada entitas terkelola (HIGH) [Phase 6 — DAO Treasury]
+Tingkat partisipasi staking: Tidak berlaku (ARB adalah token governance tanpa staking keamanan; sequencer dioperasikan Offchain Labs era ini) (HIGH) [Phase 4 — Technology]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: distribusi per tier aktivitas tidak dipublikasikan detailnya — analisis on-chain diperlukan.
+Klaim yang ditolak filter sybil: jumlah tidak dipublikasikan.
+INKONSISTENSI umum di publik "1,275 miliar ARB (12,75%)" vs angka dossier 1,16 miliar — dataset mengikuti angka dossier (Phase 3 EV-025); verifikasi dokumen airdrop resmi diperlukan untuk resolusi.
+
+FARMING DAN SYBIL
+
+Airdrop retroactive dengan filter sybil yang tidak dipublikasikan penuh — pola farming aktivitas L2 era 2022 (multi-wallet, volume kecil berulang) mungkin terjadi; sebagian klaim ditolak saat pelaksanaan menunjukkan filter bekerja setidaknya parsial (LOW) [Phase 3 — EV-025]
+
+PROSPEK
+
+Metrik yang terpenuhi: Eksekusi airdrop skala besar tanpa insiden; DAO dengan treasury terbesar di antara L2; posisi L2 TVL teratas bertahan (HIGH)
+Metrik yang tidak terpenuhi: Retensi harga jangka pendek (-13% dalam 90 hari); kontroversi unlock menurunkan kepercayaan sebagian komunitas (MEDIUM)
+Sinyal ke depan: Keputusan fee capture DAO; adopsi Orbit (momentum Robinhood Chain 2026); jadwal unlock sisa (MEDIUM)
+Penilaian: Airdrop ARB adalah distribusi L2 skala besar dengan eksekusi teknis mulus dan struktur treasury kuat, namun tanpa value capture langsung ke holder dan dengan unlock overhang — outcome harga penerima bergantung penuh pada siklus, bukan mekanisme token (MEDIUM)
+
+PELAJARAN LINTAS PROJECT
+
+Treasury DAO besar (42,78%) memberi kapasitas program jangka panjang tetapi tidak menahan depresiasi harga penerima airdrop — distribusi dan value capture adalah dua masalah terpisah.
+Wick price discovery hari pertama (0.12 → 11.64) pada listing serentak adalah artefak order book tipis — data titik klaim harus memakai close/settlement, bukan high intraday.
+Pengumuman airdrop 7 hari sebelum eksekusi (16 → 23 Maret) membatasi window farming menit-terakhir tetapi juga membatasi persiapan klaim pengguna sah — trade-off desain announcement-to-claim.
+
+OPEN THREADS
+
+- Verifikasi angka airdrop final (1,16 miliar vs 1,275 miliar di sumber publik lain)
+- Jumlah klaim ditolak filter sybil
+- Total ARB terklaim vs unclaimed pasca-deadline

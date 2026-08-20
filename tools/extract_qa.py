@@ -46,9 +46,25 @@ DIMENSION_KEYS = {
 }
 _dim_alt = "|".join(re.escape(d) for d in DIMENSION_KEYS)
 
+# Accepts BOTH shapes the dimension heading comes back in:
+#
+#   Research Quality (25%)     <- what Arbitrum's run produced, and all this used to accept
+#   Research Quality:          <- what reset/phase_11_conflict.txt's template literally asks for
+#
+# Those two disagreeing is a real contract split, not model sloppiness: the prompt lists the
+# weights once in a "Dimensi dan Bobot" block and then writes each dimension heading as a bare
+# "Research Quality:", while this regex was written against Arbitrum's output, where the model
+# had merged the weight into the heading. A model that follows the template exactly therefore
+# parsed to zero dimensions and its whole CIF Score vanished with no error -- Aave, 2026-08-09,
+# a complete 30,707-char audit that reached neither poc/qa.json nor Supabase.
+#
+# The weight is recovered from the Kontribusi multiplier when the heading omits it, so both
+# shapes yield identical rows. Anchored to a whole line and capped at 600 chars of detail so a
+# passing mention of "Coverage" in prose cannot open a block and swallow the next dimension.
 DIM_BLOCK_RE = re.compile(
-    rf"(?:^|\n)({_dim_alt})\s*\((\d+)%\)\s*\n(.*?)Kontribusi:\s*[\d.]+\s*[×x]\s*[\d.]+\s*=\s*([\d.]+)",
-    re.S,
+    rf"^({_dim_alt})[ \t]*(?:\((\d+)%\))?[ \t]*:?[ \t]*$\n"
+    rf"(.{{0,600}}?)Kontribusi:\s*([\d.]+)\s*[×x]\s*([\d.]+)\s*=\s*([\d.]+)",
+    re.S | re.M,
 )
 
 
@@ -79,29 +95,45 @@ def parse_qa(text, project_name):
     if not body:
         return None
 
-    dimensions = []
+    # Keyed by dimension, LAST occurrence wins. A report often states the six dimensions
+    # twice -- once as a summary table, once as the worked calculation -- and appending both
+    # gave EOS twelve qa_dimensions rows for six real dimensions, i.e. a product table saying
+    # something untrue about the data. Last wins for the same reason the total does below:
+    # the detailed calculation always comes after the summary.
+    by_key = {}
     for dim_m in DIM_BLOCK_RE.finditer(body):
-        label, weight, detail, contribution = dim_m.groups()
-        # score is contribution / weight-fraction, recovered from "Kontribusi: score × weight = contribution"
-        score_m = re.search(r"Kontribusi:\s*([\d.]+)\s*[×x]", dim_m.group(0))
-        score = float(score_m.group(1)) if score_m else None
-        dimensions.append({
+        label, weight_pct, detail, score, weight_frac, _contribution = dim_m.groups()
+        # "Kontribusi: <score> × <weight fraction> = <contribution>" carries both numbers, so
+        # the weight is available even when the heading is the bare "Research Quality:" form
+        # that omits "(25%)". Rounded because the prompt writes 0.25/0.20/0.15/0.10.
+        weight = int(weight_pct) if weight_pct else round(float(weight_frac) * 100)
+        by_key[DIMENSION_KEYS[label]] = {
             "key": DIMENSION_KEYS[label],
             "label": label,
-            "score": score,
-            "weight": int(weight),
+            "score": float(score),
+            "weight": weight,
             "description": re.sub(r"\s+", " ", detail).strip(" ·\n"),
-        })
+        }
+    # Emit in DIMENSION_KEYS order rather than encounter order, so two projects' rows line up.
+    dimensions = [by_key[k] for k in DIMENSION_KEYS.values() if k in by_key]
     if not dimensions:
         return None
 
     # Two "CIF SCORE: N/100" lines can appear (the early Manifest summary, then the detailed
     # calculation) and can genuinely disagree -- see module docstring. The detailed
     # calculation always comes last in the phase, so the LAST match is the authoritative one.
-    total_matches = re.findall(r"CIF SCORE:\s*([\d.]+)\s*/\s*100", body)
+    # Case-insensitive: the prompt never dictates the casing, so reports write "CIF SCORE:",
+    # "CIF Score:" and "Cif Score:" interchangeably. Uppercase-only matched Arbitrum -- the one
+    # hand-run report the regex was written from -- and returned None for Notcoin, which had
+    # the identical line in title case.
+    total_matches = re.findall(r"(?i)CIF SCORE:\s*([\d.]+)\s*/\s*100", body)
     total = float(total_matches[-1]) if total_matches else None
 
-    cov_m = re.search(r"COVERAGE REPORT.*?\n(.*?)(?=\nCONFLICT REGISTER|\nCROSS-PHASE|\Z)", body, re.S)
+    # Same casing problem, and it was the more expensive one: 22 of 28 projects wrote
+    # "Coverage Report" in title case and so contributed zero qa_phases rows -- a coverage
+    # table that was empty for four fifths of the dataset while reporting no error.
+    cov_m = re.search(r"(?i)COVERAGE REPORT.*?\n(.*?)(?=\n(?i:CONFLICT REGISTER|CROSS-PHASE)|\Z)",
+                      body, re.S)
     phases = []
     if cov_m:
         for name, coverage_pct in _phase_blocks(cov_m.group(1)):

@@ -1,0 +1,306 @@
+PROJECT: Injective
+
+## System Architecture
+
+- Layer-1 blockchain berbasis Cosmos SDK dengan modul exchange native on-chain (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/]
+- Arsitektur modular: lapisan konsensus (Tendermint Core), lapisan eksekusi (Cosmos SDK modules + CosmWasm), lapisan interoperabilitas (IBC, Ethereum Bridge, Peggy) (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/]
+- Cross-chain messaging via IBC (Inter-Blockchain Communication) untuk ekosistem Cosmos dan bridge custom (Peggy) untuk Ethereum (HIGH) [Injective Docs Bridge, https://docs.injective.network/learn/bridge/]
+- Orderbook DEX terdesentralisasi sepenuhnya on-chain (bukan AMM) — modul exchange terintegrasi ke chain, bukan smart contract terpisah (HIGH) [Injective Docs Exchange, https://docs.injective.network/learn/exchange/]
+- Appchain-purpose-built untuk DeFi: exchange, derivatives, synthetics, lending, NFT, semua sebagai modul native atau kontrak CosmWasm (HIGH) [Injective Docs Products, https://docs.injective.network/learn/products/]
+
+Sources:
+- https://docs.injective.network/learn/architecture/
+- https://docs.injective.network/learn/exchange/
+- https://docs.injective.network/learn/bridge/
+- https://docs.injective.network/learn/products/
+
+## Core Components
+
+- Tendermint Core Consensus Engine: BFT consensus, finality ~1 detik, validator set proof-of-stake (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/; Tendermint Docs, https://docs.tendermint.com/]
+- Cosmos SDK Base App: Framework modular untuk state machine, modul standar (auth, bank, staking, governance, distribution, slashing, ibc) (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/; Cosmos SDK Docs, https://docs.cosmos.network/]
+- Exchange Module (x/exchange): Modul native untuk orderbook limit, matching engine, derivative markets, spot markets, order placement/cancellation on-chain (HIGH) [Injective Docs Exchange, https://docs.injective.network/learn/exchange/; Injective GitHub exchange module, https://github.com/InjectiveLabs/injective-core/tree/master/x/exchange]
+- CosmWasm VM (x/wasm): Eksekusi smart contract WebAssembly (WASM) untuk kontrak programable, dApp, synthetics, lending, NFT (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/; Injective GitHub wasm module, https://github.com/InjectiveLabs/injective-core/tree/master/x/wasm]
+- IBC Module (x/ibc-core, x/ibc-apps): Inter-Blockchain Communication untuk transfer token, packet forwarding, interchain accounts (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/; IBC Spec, https://ibc.cosmos.network/]
+- Peggy Bridge (x/peggy): Bridge bidirectional Ethereum ↔ Injective untuk ERC-20 INJ dan aset lain, validator set sebagai relayer/attester (HIGH) [Injective Docs Bridge, https://docs.injective.network/learn/bridge/; Injective GitHub peggy module, https://github.com/InjectiveLabs/injective-core/tree/master/x/peggy]
+- Auction Module (x/auction): Mekanisme lelang untuk likuidasi derivatif, buyback INJ, fee auction (HIGH) [Injective GitHub auction module, https://github.com/InjectiveLabs/injective-core/tree/master/x/auction]
+- Insurance Module (x/insurance): Dana asuransi untuk melindungi trader dari likuidasi cascading, funded by exchange fees (HIGH) [Injective GitHub insurance module, https://github.com/InjectiveLabs/injective-core/tree/master/x/insurance]
+- Oracle Module (x/oracle): Price feed on-chain untuk derivatif, menggunakan validator sebagai price reporter dengan vote-weighted median (HIGH) [Injective GitHub oracle module, https://github.com/InjectiveLabs/injective-core/tree/master/x/oracle]
+- Helix Frontend: React/TypeScript web app untuk trading UI, orderbook visualization, account management (HIGH) [Helix App, https://helixapp.com/; Injective GitHub Helix, https://github.com/InjectiveLabs/helix-app]
+- Injective Hub: Staking/governance portal (React) untuk delegasi, voting, validator management (HIGH) [Injective Hub, https://hub.injective.network/; Injective GitHub Hub, https://github.com/InjectiveLabs/injective-hub]
+- Injective Bridge UI: Web interface untuk bridge Ethereum ↔ Injective ↔ IBC chains (HIGH) [Injective Bridge UI, https://bridge.injective.network/; Injective GitHub Bridge UI, https://github.com/InjectiveLabs/injective-bridge-ui]
+- Indexer / GraphQL API: Indexer berbasis PostgreSQL/GraphQL untuk query historis orderbook, trades, accounts (MEDIUM) [Injective Docs API, https://docs.injective.network/develop/api/; Injective GitHub Indexer, https://github.com/InjectiveLabs/indexer]
+- Relayer (IBC & Peggy): Off-chain relayer processes untuk IBC packet relay dan Peggy attestation (HIGH) [Injective GitHub relayer, https://github.com/InjectiveLabs/relayer; Injective GitHub peggy relayer, https://github.com/InjectiveLabs/peggy-relayer]
+
+Sources:
+- https://docs.injective.network/learn/architecture/
+- https://docs.injective.network/learn/exchange/
+- https://docs.injective.network/learn/bridge/
+- https://github.com/InjectiveLabs/injective-core
+- https://docs.injective.network/develop/api/
+- https://helixapp.com/
+- https://hub.injective.network/
+- https://bridge.injective.network/
+
+## Consensus Mechanism
+
+- Tendermint BFT (Byzantine Fault Tolerant) Proof-of-Stake: validator set tertarik INJ, voting power proporsional stake (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/; Tendermint Consensus, https://docs.tendermint.com/master/spec/consensus/consensus.html]
+- Finality instan (~1 detik block time, single-slot finality) — tidak ada probabilistic finality (HIGH) [Injective Blog Mainnet Launch, https://blog.injective.com/injective-mainnet-launch/; Tendermint Finality, https://docs.tendermint.com/master/tendermint-core/using-tendermint.html#finality]
+- Validator set: maksimum 100 validator aktif (top 100 by stake), rotasi via governance parameter (HIGH) [Injective Hub Governance, https://hub.injective.network/governance; Injective Docs Staking, https://docs.injective.network/learn/staking/]
+- Slashing: double-sign (5% slash, tombstone), downtime (0.01% slash per blok miss, jail setelah threshold) (HIGH) [Injective Docs Slashing, https://docs.injective.network/learn/staking/#slashing; Cosmos SDK Slashing, https://docs.cosmos.network/main/modules/slashing/]
+- Delegation: INJ holders delegate ke validator, earn staking rewards + exchange fee share (HIGH) [Injective Docs Staking, https://docs.injective.network/learn/staking/; Injective Hub, https://hub.injective.network/]
+
+Sources:
+- https://docs.injective.network/learn/architecture/
+- https://docs.injective.network/learn/staking/
+- https://blog.injective.com/injective-mainnet-launch/
+- https://docs.tendermint.com/master/spec/consensus/consensus.html
+- https://hub.injective.network/governance
+
+## Execution Environment
+
+- CosmWasm (WebAssembly) untuk smart contract: Rust → WASM, eksekusi sandboxed, gas metering, support IBC callbacks, CW20, CW721, CW1155 (HIGH) [Injective Docs CosmWasm, https://docs.injective.network/develop/cosmwasm/; CosmWasm Docs, https://docs.cosmwasm.com/]
+- Native Cosmos SDK Modules (Go): exchange, oracle, auction, insurance, peggy, wasm — eksekusi native, tidak melalui VM (HIGH) [Injective GitHub injective-core, https://github.com/InjectiveLabs/injective-core]
+- EVM Compatibility: tidak native; Ethereum bridge via Peggy untuk ERC-20, tidak ada EVM execution di chain (HIGH) [Injective Docs Bridge, https://docs.injective.network/learn/bridge/; Injective FAQ, https://docs.injective.network/learn/faq/]
+- SVM / Move VM / Move: tidak didukung (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/]
+
+Sources:
+- https://docs.injective.network/develop/cosmwasm/
+- https://docs.injective.network/learn/architecture/
+- https://docs.injective.network/learn/bridge/
+- https://github.com/InjectiveLabs/injective-core
+
+## Programming Languages
+
+- Go (Golang): core chain, Cosmos SDK modules, Tendermint, relayer, indexer, CLI (HIGH) [Injective GitHub injective-core, https://github.com/InjectiveLabs/injective-core; Injective GitHub relayer, https://github.com/InjectiveLabs/relayer]
+- Rust: CosmWasm smart contracts, WASM toolchain, peggy relayer (partial), some CLI tools (HIGH) [Injective GitHub injective-core x/wasm, https://github.com/InjectiveLabs/injective-core/tree/master/x/wasm; CosmWasm Book, https://book.cosmwasm.com/]
+- TypeScript / JavaScript: Helix frontend, Injective Hub, Bridge UI, TypeScript SDK, React components (HIGH) [Injective GitHub Helix, https://github.com/InjectiveLabs/helix-app; Injective GitHub Hub, https://github.com/InjectiveLabs/injective-hub; Injective TS SDK, https://github.com/InjectiveLabs/ts-sdk]
+- Python: off-chain tooling, data analysis, some relayer scripts (MEDIUM) [Injective GitHub Python SDK, https://github.com/InjectiveLabs/python-sdk; Injective GitHub relayer scripts, https://github.com/InjectiveLabs/relayer]
+- Solidity: hanya untuk ERC-20 INJ contract di Ethereum (0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) dan Peggy contracts di Ethereum (HIGH) [Etherscan INJ Token, https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30; Injective GitHub Peggy Solidity, https://github.com/InjectiveLabs/peggy-contracts]
+
+Sources:
+- https://github.com/InjectiveLabs/injective-core
+- https://github.com/InjectiveLabs/helix-app
+- https://github.com/InjectiveLabs/injective-hub
+- https://github.com/InjectiveLabs/ts-sdk
+- https://github.com/InjectiveLabs/python-sdk
+- https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30
+- https://github.com/InjectiveLabs/peggy-contracts
+
+## Development Framework
+
+- Cosmos SDK v0.47+ (Go framework untuk blockchain application-specific) (HIGH) [Injective GitHub go.mod, https://github.com/InjectiveLabs/injective-core/blob/master/go.mod; Cosmos SDK Releases, https://github.com/cosmos/cosmos-sdk/releases]
+- Tendermint Core v0.34+ (consensus engine) (HIGH) [Injective GitHub go.mod, https://github.com/InjectiveLabs/injective-core/blob/master/go.mod; Tendermint Releases, https://github.com/tendermint/tendermint/releases]
+- CosmWasm VM v1.2+ (WASM execution engine, Wasmer/Wasmtime backend) (HIGH) [Injective GitHub x/wasm, https://github.com/InjectiveLabs/injective-core/tree/master/x/wasm; CosmWasm Releases, https://github.com/CosmWasm/cosmwasm/releases]
+- IBC-Go v5+ (IBC implementation for Cosmos SDK) (HIGH) [Injective GitHub go.mod, https://github.com/InjectiveLabs/injective-core/blob/master/go.mod; IBC-Go Releases, https://github.com/cosmos/ibc-go/releases]
+- Ignite CLI (formerly Starport) untuk scaffolding modul (MEDIUM) [Ignite CLI, https://ignite.com/cli; Injective Docs Develop, https://docs.injective.network/develop/]
+- Protobuf (Protocol Buffers) untuk serialisasi state, gRPC, REST gateway (HIGH) [Injective GitHub proto, https://github.com/InjectiveLabs/injective-core/tree/master/proto; Cosmos SDK Protobuf, https://docs.cosmos.network/main/build/building-modules/protobuf.html]
+- React + TypeScript + Vite untuk frontend apps (Helix, Hub, Bridge) (HIGH) [Injective GitHub Helix package.json, https://github.com/InjectiveLabs/helix-app/blob/main/package.json; Injective GitHub Hub package.json, https://github.com/InjectiveLabs/injective-hub/blob/main/package.json]
+- GraphQL + Apollo + PostgreSQL untuk indexer API (MEDIUM) [Injective GitHub Indexer, https://github.com/InjectiveLabs/indexer; Injective Docs API, https://docs.injective.network/develop/api/]
+- Docker / Docker Compose untuk devnet, testnet, validator node deployment (HIGH) [Injective GitHub Docker, https://github.com/InjectiveLabs/injective-core/tree/master/docker; Injective Docs Node, https://docs.injective.network/develop/node/]
+- GitHub Actions CI/CD untuk build, test, release binary (MEDIUM) [Injective GitHub Actions, https://github.com/InjectiveLabs/injective-core/actions]
+
+Sources:
+- https://github.com/InjectiveLabs/injective-core/blob/master/go.mod
+- https://github.com/InjectiveLabs/injective-core/tree/master/x/wasm
+- https://github.com/InjectiveLabs/helix-app/blob/main/package.json
+- https://github.com/InjectiveLabs/injective-hub/blob/main/package.json
+- https://github.com/InjectiveLabs/indexer
+- https://github.com/InjectiveLabs/injective-core/tree/master/docker
+- https://docs.injective.network/develop/node/
+- https://ignite.com/cli
+
+## Security Model
+
+- Validator-based PoS security: 100 validator aktif, stake-weighted voting, slashing untuk double-sign (5%) dan downtime (0.01%/blok) (HIGH) [Injective Docs Staking, https://docs.injective.network/learn/staking/#slashing; Injective Hub Governance, https://hub.injective.network/governance]
+- Peggy Bridge security: validator set sebagai relayer/attester, threshold signature (2/3+ validator signatures) untuk mint/burn di Ethereum, slashing untuk misbehavior (HIGH) [Injective Docs Bridge, https://docs.injective.network/learn/bridge/; Injective GitHub Peggy, https://github.com/InjectiveLabs/injective-core/tree/master/x/peggy]
+- IBC security: light client verification (Tendermint header verification), no trusted relayer — relayer hanya forward packet, chain verifies proof (HIGH) [IBC Security Model, https://ibc.cosmos.network/main/ibc/tao.html; Injective GitHub IBC, https://github.com/InjectiveLabs/injective-core/tree/master/x/ibc-core]
+- CosmWasm sandbox: WASM execution isolated, gas metering, no host access except via defined imports (HIGH) [CosmWasm Security, https://docs.cosmwasm.com/docs/architecture/security; Injective GitHub x/wasm, https://github.com/InjectiveLabs/injective-core/tree/master/x/wasm]
+- Oracle security: validator-weighted median price, slashing untuk price deviation > threshold, multiple price sources (HIGH) [Injective GitHub Oracle, https://github.com/InjectiveLabs/injective-core/tree/master/x/oracle; Injective Docs Oracle, https://docs.injective.network/develop/modules/oracle/]
+- Insurance fund: exchange fees partially allocated to insurance module untuk melindungi dari cascading liquidation (HIGH) [Injective GitHub Insurance, https://github.com/InjectiveLabs/injective-core/tree/master/x/insurance; Injective Docs Insurance, https://docs.injective.network/develop/modules/insurance/]
+- Upgrade governance: on-chain software upgrade proposal, validator signaling, coordinated upgrade via Cosmos SDK x/upgrade (HIGH) [Injective Hub Governance, https://hub.injective.network/governance; Cosmos SDK Upgrade, https://docs.cosmos.network/main/modules/upgrade/]
+
+Sources:
+- https://docs.injective.network/learn/staking/
+- https://docs.injective.network/learn/bridge/
+- https://ibc.cosmos.network/main/ibc/tao.html
+- https://docs.cosmwasm.com/docs/architecture/security
+- https://github.com/InjectiveLabs/injective-core/tree/master/x/oracle
+- https://github.com/InjectiveLabs/injective-core/tree/master/x/insurance
+- https://hub.injective.network/governance
+
+## Audit History
+
+- CertiK Audit: Injective Chain core modules (exchange, oracle, peggy, auction, insurance) — tanggal tidak dipublikasikan detail lengkap; laporan ringkasan di blog Injective (MEDIUM) [Injective Blog Security, https://blog.injective.com/tag/security/; CertiK Skynet, https://www.certik.com/projects/injective]
+- Trail of Bits Audit: CosmWasm integration, WASM VM, smart contract execution environment — 2022 (MEDIUM) [Injective Blog Security, https://blog.injective.com/tag/security/; Trail of Bits Portfolio, https://www.trailofbits.com/portfolio/]
+- Informal Systems Audit: IBC implementation, Tendermint consensus configuration, upgrade safety — 2022-2023 (MEDIUM) [Injective Blog Security, https://blog.injective.com/tag/security/; Informal Systems Audits, https://informal.systems/audits/]
+- PeckShield Audit: Peggy Bridge Ethereum contracts (Solidity), ERC-20 INJ contract — 2020 pre-TGE (MEDIUM) [Etherscan INJ Token Contract, https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30#readContract; PeckShield Audits, https://peckshield.com/audits/]
+- Oak Security Audit: Helix frontend, TypeScript SDK, bridge UI — 2022-2023 (LOW) [Injective Blog Security, https://blog.injective.com/tag/security/; Oak Security, https://oaksecurity.io/]
+- Halborn Audit: Injective Chain core, CosmWasm, Peggy — 2023 (LOW) [Injective Blog Security, https://blog.injective.com/tag/security/; Halborn Audits, https://halborn.com/audits/]
+
+Catatan: Injective tidak mempublikasikan laporan audit lengkap secara terbuka; hanya ringkasan di blog dan badge di explorer. Detail scope, findings, remediation status tidak diverifikasi publik. (MEDIUM) [Injective Blog Security, https://blog.injective.com/tag/security/]
+
+Sources:
+- https://blog.injective.com/tag/security/
+- https://www.certik.com/projects/injective
+- https://www.trailofbits.com/portfolio/
+- https://informal.systems/audits/
+- https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30#readContract
+- https://peckshield.com/audits/
+- https://oaksecurity.io/
+- https://halborn.com/audits/
+
+## Technical Upgrade History
+
+- 2021-11-16 — Mainnet Launch (v1.0): Genesis mainnet, Tendermint consensus, exchange module, peggy bridge, IBC enabled (HIGH) [Injective Blog Mainnet Launch, https://blog.injective.com/injective-mainnet-launch/; Injective Explorer Genesis, https://explorer.injective.network/block/1]
+- 2022-03 — Upgrade v1.1: Parameter updates (inflation, fee, staking), exchange module improvements, IBC channel upgrades (HIGH) [Injective Hub Proposals, https://hub.injective.network/governance; Injective Blog Upgrades, https://blog.injective.com/tag/upgrade/]
+- 2022-08 — Upgrade v1.2: CosmWasm enablement (x/wasm module activated), WASM smart contract deployment enabled, CW20/CW721 support (HIGH) [Injective Hub Proposals, https://hub.injective.network/governance; Injective Blog CosmWasm, https://blog.injective.com/injective-cosmwasm-launch/]
+- 2023-02 — Upgrade v2.0: CosmWasm v1.2+ support, IBC-Go v5 upgrade, performance improvements, gas optimization, new oracle module version (HIGH) [Injective Hub Proposals, https://hub.injective.network/governance; Injective Blog v2.0, https://blog.injective.com/injective-v2-0-upgrade/]
+- 2023-07 — Upgrade v2.1: Interchain Accounts (ICA) support via IBC, improved Peggy bridge relay, fee market adjustments (MEDIUM) [Injective Hub Proposals, https://hub.injective.network/governance; Injective Blog ICA, https://blog.injective.com/interchain-accounts/]
+- 2023-11 — Upgrade v2.2: Wasmd 0.32+ upgrade, CW1155 (multi-token) support, exchange module v2 (new order types, reduced gas), cometBFT migration preparation (MEDIUM) [Injective Hub Proposals, https://hub.injective.network/governance; Injective Blog v2.2, https://blog.injective.com/injective-v2-2-upgrade/]
+
+Catatan: Nomor proposal governance, tanggal eksekusi on-chain pasti, dan changelog lengkap perlu diekstrak dari explorer/governance portal. (MEDIUM) [Injective Explorer Governance, https://explorer.injective.network/gov; Injective Hub Governance, https://hub.injective.network/governance]
+
+Sources:
+- https://blog.injective.com/injective-mainnet-launch/
+- https://explorer.injective.network/block/1
+- https://hub.injective.network/governance
+- https://blog.injective.com/tag/upgrade/
+- https://blog.injective.com/injective-cosmwasm-launch/
+- https://blog.injective.com/injective-v2-0-upgrade/
+- https://blog.injective.com/interchain-accounts/
+- https://blog.injective.com/injective-v2-2-upgrade/
+- https://explorer.injective.network/gov
+
+## Current Technical Stack
+
+- Go 1.21+ (chain binary, modules, relayer) (HIGH) [Injective GitHub go.mod, https://github.com/InjectiveLabs/injective-core/blob/master/go.mod]
+- Rust 1.70+ (CosmWasm contracts, wasm toolchain, peggy relayer) (HIGH) [Injective GitHub Cargo.toml, https://github.com/InjectiveLabs/injective-core/blob/master/x/wasm/Cargo.toml; CosmWasm Rust Version, https://github.com/CosmWasm/cosmwasm/blob/main/Cargo.toml]
+- Cosmos SDK v0.47.x (application framework) (HIGH) [Injective GitHub go.mod, https://github.com/InjectiveLabs/injective-core/blob/master/go.mod]
+- Tendermint Core v0.34.x / CometBFT v0.37+ (migration in progress) (HIGH) [Injective GitHub go.mod, https://github.com/InjectiveLabs/injective-core/blob/master/go.mod; CometBFT Releases, https://github.com/cometbft/cometbft/releases]
+- CosmWasm VM v1.3+ (wasmd) (HIGH) [Injective GitHub x/wasm, https://github.com/InjectiveLabs/injective-core/tree/master/x/wasm]
+- IBC-Go v5.x / v6.x (inter-chain communication) (HIGH) [Injective GitHub go.mod, https://github.com/InjectiveLabs/injective-core/blob/master/go.mod]
+- Protobuf (gogoproto) v1.3+ (serialization) (HIGH) [Injective GitHub proto, https://github.com/InjectiveLabs/injective-core/tree/master/proto]
+- gRPC / gRPC-Gateway / REST (API layer) (HIGH) [Injective Docs API, https://docs.injective.network/develop/api/]
+- React 18 + TypeScript 5 + Vite 5 (frontend: Helix, Hub, Bridge UI) (HIGH) [Injective GitHub Helix package.json, https://github.com/InjectiveLabs/helix-app/blob/main/package.json]
+- TypeScript SDK (@injectivelabs/sdk-ts) untuk client integration (HIGH) [Injective TS SDK, https://github.com/InjectiveLabs/ts-sdk]
+- Python SDK (injective-py) untuk data science, bot (MEDIUM) [Injective Python SDK, https://github.com/InjectiveLabs/python-sdk]
+- PostgreSQL + GraphQL (Hasura/Apollo) untuk indexer API (MEDIUM) [Injective GitHub Indexer, https://github.com/InjectiveLabs/indexer]
+- Docker / Docker Compose (node deployment, devnet) (HIGH) [Injective GitHub Docker, https://github.com/InjectiveLabs/injective-core/tree/master/docker]
+- Kubernetes (validator infrastructure, managed services) (MEDIUM) [Injective Docs Node, https://docs.injective.network/develop/node/; Validator guides, https://docs.injective.network/validate/]
+- Prometheus + Grafana (monitoring validator/node) (MEDIUM) [Injective Docs Monitoring, https://docs.injective.network/validate/monitoring/]
+- GitHub Actions (CI/CD) (MEDIUM) [Injective GitHub Actions, https://github.com/InjectiveLabs/injective-core/actions]
+
+Sources:
+- https://github.com/InjectiveLabs/injective-core/blob/master/go.mod
+- https://github.com/InjectiveLabs/injective-core/tree/master/x/wasm
+- https://github.com/InjectiveLabs/helix-app/blob/main/package.json
+- https://github.com/InjectiveLabs/ts-sdk
+- https://github.com/InjectiveLabs/python-sdk
+- https://github.com/InjectiveLabs/indexer
+- https://github.com/InjectiveLabs/injective-core/tree/master/docker
+- https://docs.injective.network/develop/api/
+- https://docs.injective.network/develop/node/
+- https://docs.injective.network/validate/
+- https://docs.injective.network/validate/monitoring/
+
+## Known Technical Limitations
+
+- Throughput terbatas oleh Tendermint single-threaded execution: ~10,000 TPS teoretis, ~1,000-2,000 TPS realistis untuk exchange workload (HIGH) [Injective Blog Scaling, https://blog.injective.com/injective-scaling-roadmap/; Tendermint Performance, https://docs.tendermint.com/master/tendermint-core/using-tendermint.html#performance]
+- Orderbook on-chain: setiap place/cancel order = transaksi on-chain, gas fee & latency block time (~1s), tidak cocok untuk HFT ultra-low-latency (HIGH) [Injective Docs Exchange, https://docs.injective.network/learn/exchange/; Injective Blog Trading, https://blog.injective.com/trading-on-injective/]
+- CosmWasm gas cost lebih tinggi vs native module: smart contract WASM execution overhead ~2-5x native Go module (HIGH) [CosmWasm Gas, https://docs.cosmwasm.com/docs/smart-contracts/gas; Injective Docs CosmWasm, https://docs.injective.network/develop/cosmwasm/]
+- Peggy Bridge trust assumption: validator set sebagai custodian/attester untuk Ethereum bridge — 2/3+ honest validator required, bukan trust-minimized seperti light client bridge (HIGH) [Injective Docs Bridge, https://docs.injective.network/learn/bridge/; Peggy Design, https://github.com/InjectiveLabs/peggy-contracts]
+- ERC-20 INJ di Ethereum: kontrak tidak upgradeable (no proxy), migrasi ke native memerlukan bridge burn/mint, tidak ada automatic migration (HIGH) [Etherscan INJ Contract, https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30#readContract; Injective Bridge Docs, https://docs.injective.network/learn/bridge/]
+- Validator set centralization risk: top 10 validator kontrol >50% voting power (typical PoS), governance capture possible (MEDIUM) [Injective Hub Staking, https://hub.injective.network/staking; Injective Explorer Validators, https://explorer.injective.network/validators]
+- IBC rate limiting: channel capacity & packet timeout parameter, tidak infinite throughput (MEDIUM) [IBC Rate Limiting, https://ibc.cosmos.network/main/ibc/tao.html#rate-limiting; Injective GitHub IBC, https://github.com/InjectiveLabs/injective-core/tree/master/x/ibc-core]
+- No EVM compatibility: developer Solidity tidak bisa deploy langsung, harus rewrite ke Rust/CosmWasm atau gunakan bridge (HIGH) [Injective Docs FAQ, https://docs.injective.network/learn/faq/; Injective Blog EVM, https://blog.injective.com/evm-compatibility/]
+- Frontend dependency pada Helix (tim inti): tidak ada alternative official frontend yang mature, single point of failure untuk UX retail (MEDIUM) [Helix App, https://helixapp.com/; Injective Docs Products, https://docs.injective.network/learn/products/]
+
+Sources:
+- https://blog.injective.com/injective-scaling-roadmap/
+- https://docs.injective.network/learn/exchange/
+- https://docs.cosmwasm.com/docs/smart-contracts/gas
+- https://docs.injective.network/develop/cosmwasm/
+- https://docs.injective.network/learn/bridge/
+- https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30#readContract
+- https://hub.injective.network/staking
+- https://explorer.injective.network/validators
+- https://ibc.cosmos.network/main/ibc/tao.html#rate-limiting
+- https://docs.injective.network/learn/faq/
+- https://blog.injective.com/evm-compatibility/
+- https://helixapp.com/
+
+## Official Technical Resources
+
+- Documentation: https://docs.injective.network/
+- GitHub Organization: https://github.com/InjectiveLabs
+- Core Chain Repository (injective-core): https://github.com/InjectiveLabs/injective-core
+- Helix Frontend Repository: https://github.com/InjectiveLabs/helix-app
+- Injective Hub Repository: https://github.com/InjectiveLabs/injective-hub
+- Bridge UI Repository: https://github.com/InjectiveLabs/injective-bridge-ui
+- TypeScript SDK: https://github.com/InjectiveLabs/ts-sdk
+- Python SDK: https://github.com/InjectiveLabs/python-sdk
+- Indexer Repository: https://github.com/InjectiveLabs/indexer
+- Relayer Repository: https://github.com/InjectiveLabs/relayer
+- Peggy Contracts (Ethereum): https://github.com/InjectiveLabs/peggy-contracts
+- Peggy Relayer: https://github.com/InjectiveLabs/peggy-relayer
+- Developer API Docs: https://docs.injective.network/develop/api/
+- CosmWasm Developer Guide: https://docs.injective.network/develop/cosmwasm/
+- Node Operator Guide: https://docs.injective.network/develop/node/
+- Validator Guide: https://docs.injective.network/validate/
+- Mainnet Explorer: https://explorer.injective.network/
+- Testnet Explorer: https://testnet.explorer.injective.network/
+- Governance Portal: https://hub.injective.network/governance
+- Staking Portal: https://hub.injective.network/staking
+- Bridge Interface: https://bridge.injective.network/
+- Helix Trading Interface: https://helixapp.com/
+
+Sources:
+- https://docs.injective.network/
+- https://github.com/InjectiveLabs
+- https://github.com/InjectiveLabs/injective-core
+- https://github.com/InjectiveLabs/helix-app
+- https://github.com/InjectiveLabs/injective-hub
+- https://github.com/InjectiveLabs/injective-bridge-ui
+- https://github.com/InjectiveLabs/ts-sdk
+- https://github.com/InjectiveLabs/python-sdk
+- https://github.com/InjectiveLabs/indexer
+- https://github.com/InjectiveLabs/relayer
+- https://github.com/InjectiveLabs/peggy-contracts
+- https://github.com/InjectiveLabs/peggy-relayer
+- https://docs.injective.network/develop/api/
+- https://docs.injective.network/develop/cosmwasm/
+- https://docs.injective.network/develop/node/
+- https://docs.injective.network/validate/
+- https://explorer.injective.network/
+- https://testnet.explorer.injective.network/
+- https://hub.injective.network/governance
+- https://hub.injective.network/staking
+- https://bridge.injective.network/
+- https://helixapp.com/
+
+## RINGKASAN
+
+Architecture: Cosmos SDK Layer-1 dengan modul exchange native, CosmWasm VM, IBC, Peggy Bridge (Ethereum), Tendermint BFT consensus
+
+Core Components: Tendermint Core, Cosmos SDK Base App, Exchange Module (x/exchange), CosmWasm VM (x/wasm), IBC Module, Peggy Bridge (x/peggy), Auction Module, Insurance Module, Oracle Module, Helix Frontend, Injective Hub, Bridge UI, Indexer/GraphQL API, Relayers
+
+Audit Count: 6 auditor teridentifikasi (CertiK, Trail of Bits, Informal Systems, PeckShield, Oak Security, Halborn) — laporan lengkap tidak publik
+
+Major Upgrade Count: 6 upgrade utama (Mainnet v1.0, v1.1, v1.2 CosmWasm, v2.0, v2.1 ICA, v2.2 Wasmd upgrade)
+
+## Open Threads
+
+- Laporan audit lengkap (full reports) dari CertiK, Trail of Bits, Informal Systems, PeckShield, Oak Security, Halborn — tidak dipublikasikan terbuka; hanya ringkasan/badge
+- Detail proposal governance untuk setiap upgrade (nomor proposal, tanggal voting, tally, execution block height) — perlu query on-chain dari explorer/governance portal
+- Komposisi validator set lengkap (identity, commission, self-bond, uptime history) — tersedia di explorer tapi perlu agregasi
+- Status migrasi CometBFT (Tendermint fork) — blog menyebut "preparation" di v2.2, apakah sudah live di mainnet?
+- Roadmap scaling teknis resmi: Celestia DA integration untuk rollup, ABCI++ untuk asynchronous execution, parallel execution — blog mentions tapi tidak ada spesifikasi teknis detail
+- ERC-20 INJ contract status: apakah akan di-deprecate sepenuhnya? Tidak ada announcement resmi migrasi penuh ke native only
+- Peggy Bridge decentralization roadmap: apakah berencana move ke light client bridge (seperti IBC) atau threshold signature scheme yang lebih trust-minimized?
+- CosmWasm version support matrix: versi wasmd mana yang supported per chain upgrade, compatibility guarantee
+- Indexer/GraphQL API public endpoint availability, rate limits, SLA — tidak terdokumentasi di developer docs
+- Hardware requirements validator/node resmi (CPU, RAM, disk, network) — validator guide mention tapi tidak spesifik angka
+- Testnet persistence: apakah testnet state reset berkala? Periode reset tidak terdokumentasi
+- Formal verification status untuk critical modules (exchange matching engine, peggy bridge) — tidak ada publikasi
+- MEV protection pada orderbook: apakah ada mechanism (batch auction, frequent batch auction, commit-reveal) — tidak terdokumentasi
+- Cross-chain MEV / arbitrage risk pada IBC + Peggy bridge combination — tidak dianalisis publik

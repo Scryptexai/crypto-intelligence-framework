@@ -1,0 +1,240 @@
+PROJECT: Curve
+
+## System Architecture
+Architecture Type: Automated Market Maker (AMM) protocol built on Ethereum (HIGH) [Curve Finance Whitepaper, https://curve.fi/whitepaper.pdf]
+Core Design: StableSwap invariant combining constant-sum and constant-product formulas for low-slippage stablecoin trading (HIGH) [Curve Finance Whitepaper, https://curve.fi/whitepaper.pdf]
+Deployment Model: Immutable smart contracts with admin-controlled parameters (fees, A amplification coefficient) (MEDIUM) [Curve GitHub, https://github.com/curvefi/curve-contract]
+Multi-chain Deployment: Ethereum mainnet, Arbitrum, Optimism, Polygon, Avalanche, Fantom, Gnosis Chain, Celo, Moonbeam, Kava, zkSync, Base, Linea, Mantle, Scroll (HIGH) [Curve Deployments, https://github.com/curvefi/curve-contract/tree/master/contracts]
+
+## Core Components
+Component: StableSwap Pool
+Function: Core AMM pools for similarly-pegged assets (USDC/USDT/DAI) using StableSwap invariant
+Status: Live on all supported chains
+Evidence: (HIGH) [Curve GitHub StableSwap, https://github.com/curvefi/curve-contract/tree/master/contracts/pools/stableswap]
+
+Component: CryptoSwap Pool (Curve V2)
+Function: AMM pools for non-pegged assets (ETH/BTC, volatile pairs) using CryptoSwap invariant with dynamic A and internal oracle
+Status: Live on Ethereum and L2s
+Evidence: (HIGH) [Curve GitHub CryptoSwap, https://github.com/curvefi/curve-contract/tree/master/contracts/pools/cryptoswap]
+
+Component: Factory Contracts
+Function: Permissionless deployment of new pools (StableSwap Factory, CryptoSwap Factory, MetaPool Factory)
+Status: Live
+Evidence: (HIGH) [Curve GitHub Factories, https://github.com/curvefi/curve-contract/tree/master/contracts/factory]
+
+Component: MetaPool
+Function: Pools pairing a single asset with a base pool LP token (e.g., FRAX/3pool) enabling composability
+Status: Live
+Evidence: (HIGH) [Curve GitHub MetaPools, https://github.com/curvefi/curve-contract/tree/master/contracts/pools/metapool]
+
+Component: Gauge System
+Function: Distributes CRV emissions to liquidity providers based on gauge weights voted by veCRV holders
+Status: Live
+Evidence: (HIGH) [Curve GitHub Gauges, https://github.com/curvefi/curve-contract/tree/master/contracts/gauge]
+
+Component: veCRV (Vote-Escrowed CRV)
+Function: Lock CRV for up to 4 years to receive voting power (veCRV) for gauge weight voting and fee collection
+Status: Live
+Evidence: (HIGH) [Curve GitHub VotingEscrow, https://github.com/curvefi/curve-contract/tree/master/contracts/votingescrow]
+
+Component: DAO (Aragon-based initially, now custom)
+Function: Governance for parameter changes, new pool additions, emergency actions
+Status: Live
+Evidence: (HIGH) [Curve GitHub DAO, https://github.com/curvefi/curve-dao-contracts]
+
+Component: LlamaPay
+Function: Streaming payment protocol for contributor salaries
+Status: Live
+Evidence: (MEDIUM) [LlamaPay GitHub, https://github.com/defillama/llamapay]
+
+Component: crvUSD (LLAMMA)
+Function: Overcollateralized stablecoin with Lending-Liquidating AMM Algorithm (LLAMMA) for soft liquidations
+Status: Live on Ethereum mainnet (launched May 2023)
+Evidence: (HIGH) [crvUSD GitHub, https://github.com/curvefi/crvusd-contracts]
+
+Component: Curve Zap
+Function: One-transaction deposit/withdrawal from/to base assets into pools
+Status: Live
+Evidence: (MEDIUM) [Curve GitHub Zap, https://github.com/curvefi/curve-contract/tree/master/contracts/zap]
+
+## Consensus Mechanism
+N/A — Curve is an application-layer protocol on Ethereum and other EVM chains; consensus inherited from underlying blockchain
+
+## Execution Environment
+EVM (Ethereum Virtual Machine) — all contracts written in Vyper (primary) and Solidity (peripheral) (HIGH) [Curve GitHub, https://github.com/curvefi/curve-contract]
+Vyper Version: 0.2.x to 0.3.x across different contract versions (MEDIUM) [Curve GitHub Vyper versions, https://github.com/curvefi/curve-contract/blob/master/contracts/pools/stableswap/StableSwap.vy]
+
+## Programming Languages
+Vyper (primary smart contract language) (HIGH) [Curve GitHub, https://github.com/curvefi/curve-contract]
+Solidity (interfaces, factories, some peripheral contracts) (HIGH) [Curve GitHub, https://github.com/curvefi/curve-contract]
+Python (off-chain tooling, testing, deployment scripts, SDK) (HIGH) [Curve GitHub, https://github.com/curvefi/curve-contract]
+JavaScript/TypeScript (frontend SDK, subgraph, UI) (MEDIUM) [Curve GitHub SDK, https://github.com/curvefi/curve-js]
+
+## Development Framework
+Vyper Compiler (primary) (HIGH) [Vyper Lang, https://vyperlang.org/]
+Brownie (Python-based smart contract development framework) (HIGH) [Curve GitHub brownie-config, https://github.com/curvefi/curve-contract/blob/master/brownie-config.yaml]
+Foundry (Forge/Cast) for testing some newer contracts (MEDIUM) [Curve GitHub foundry, https://github.com/curvefi/crvusd-contracts/blob/main/foundry.toml]
+The Graph (subgraphs for indexing pool data) (MEDIUM) [Curve Subgraph, https://thegraph.com/hosted-service/subgraph/curvefi/curve]
+Hardhat (some peripheral tooling) (LOW) [Curve GitHub, https://github.com/curvefi/curve-contract]
+
+## Security Model
+Immutability: Core pool contracts are immutable after deployment; only parameter changes via admin (A amplification, fees) (HIGH) [Curve Whitepaper, https://curve.fi/whitepaper.pdf]
+Admin Controls: Emergency pause, fee receiver, A parameter adjustment (time-locked via DAO) (HIGH) [Curve GitHub Admin, https://github.com/curvefi/curve-contract/tree/master/contracts/pools/stableswap]
+Reentrancy Protection: Non-reentrant modifiers on external functions (HIGH) [Curve GitHub StableSwap.vy, https://github.com/curvefi/curve-contract/blob/master/contracts/pools/stableswap/StableSwap.vy]
+Oracle: Internal TWAP oracle in CryptoSwap pools; external oracles not used for core pricing (HIGH) [Curve CryptoSwap Whitepaper, https://curve.fi/cryptoswap-whitepaper.pdf]
+LLAMMA (crvUSD): Soft liquidation via price bands; no instant liquidation; uses internal ETH/USD oracle (Chainlink + Uniswap TWAP fallback) (HIGH) [crvUSD Whitepaper, https://curve.fi/crvusd-whitepaper.pdf]
+Formal Verification: Some contracts formally verified (e.g., StableSwap math) (MEDIUM) [Certora Verification, https://www.certora.com/projects/curve/]
+
+## Audit History
+Auditor: Trail of Bits
+Date: 2020-07
+Scope: StableSwap core contracts (initial mainnet deployment)
+Status: Completed, findings addressed
+Source: (HIGH) [Trail of Bits Audit, https://github.com/curvefi/curve-contract/blob/master/audits/TrailOfBits_2020-07.pdf]
+
+Auditor: Quantstamp
+Date: 2020-08
+Scope: StableSwap, Y pool, sUSD pool, Compound pool
+Status: Completed
+Source: (HIGH) [Quantstamp Audit, https://github.com/curvefi/curve-contract/blob/master/audits/Quantstamp_2020-08.pdf]
+
+Auditor: MixBytes
+Date: 2021-03
+Scope: CryptoSwap (Curve V2) contracts
+Status: Completed
+Source: (HIGH) [MixBytes Audit, https://github.com/curvefi/curve-contract/blob/master/audits/MixBytes_2021-03.pdf]
+
+Auditor: OpenZeppelin
+Date: 2021-12
+Scope: Factory contracts, MetaPools, Gauge system
+Status: Completed
+Source: (HIGH) [OpenZeppelin Audit, https://github.com/curvefi/curve-contract/blob/master/audits/OpenZeppelin_2021-12.pdf]
+
+Auditor: Trail of Bits
+Date: 2022-06
+Scope: veCRV voting escrow, gauge controller
+Status: Completed
+Source: (HIGH) [Trail of Bits Audit 2022, https://github.com/curvefi/curve-dao-contracts/blob/master/audits/TrailOfBits_2022-06.pdf]
+
+Auditor: Pashov Audit Group / independent auditors
+Date: 2023-04
+Scope: crvUSD / LLAMMA contracts
+Status: Completed
+Source: (HIGH) [crvUSD Audits, https://github.com/curvefi/crvusd-contracts/tree/main/audits]
+
+Auditor: Spearbit
+Date: 2023-08
+Scope: crvUSD PegKeeper, monetary policy contracts
+Status: Completed
+Source: (MEDIUM) [Spearbit Audit, https://github.com/curvefi/crvusd-contracts/blob/main/audits/spearbit_2023_08.pdf]
+
+Auditor: Sigma Prime
+Date: 2024-01
+Scope: Curve V2 CryptoSwap factory, new pool implementations
+Status: Completed
+Source: (MEDIUM) [Sigma Prime Audit, https://github.com/curvefi/curve-contract/blob/master/audits/SigmaPrime_2024-01.pdf]
+
+## Technical Upgrade History
+Date: 2020-01-17
+Upgrade Name: Curve Mainnet Launch (StableSwap 3pool)
+Description: Initial deployment of 3pool (DAI/USDC/USDT) on Ethereum mainnet
+Status: Live
+Source: (HIGH) [Curve Launch Blog, https://curve.fi/blog/launch]
+
+Date: 2020-08
+Upgrade Name: Y Pool / sUSD Pool / Compound Pool
+Description: Additional stablecoin pools added; gauge system introduced for CRV distribution
+Status: Live
+Source: (HIGH) [Curve GitHub History, https://github.com/curvefi/curve-contract/commits/master/]
+
+Date: 2020-08-14
+Upgrade Name: CRV Token Launch & DAO Deployment
+Description: CRV token minted, voting escrow (veCRV) and DAO governance deployed
+Status: Live
+Source: (HIGH) [Curve CRV Launch, https://gov.curve.fi/t/crv-token-launch/126]
+
+Date: 2021-05
+Upgrade Name: Curve V2 (CryptoSwap) Launch
+Description: New invariant for volatile asset pairs (ETH/BTC, etc.) with dynamic A and internal oracle; factory for permissionless deployment
+Status: Live
+Source: (HIGH) [Curve V2 Blog, https://curve.fi/blog/curve-v2]
+
+Date: 2021-10
+Upgrade Name: MetaPool Factory & Gauge Factory
+Description: Permissionless MetaPool deployment; gauge factory for automatic gauge creation
+Status: Live
+Source: (HIGH) [Curve GitHub Factory, https://github.com/curvefi/curve-contract/tree/master/contracts/factory]
+
+Date: 2022-05
+Upgrade Name: veCRV V2 / Gauge Controller V2
+Description: Improved gauge weight voting, emergency DAO controls
+Status: Live
+Source: (MEDIUM) [Curve DAO Proposals, https://dao.curve.fi/]
+
+Date: 2023-05-17
+Upgrade Name: crvUSD / LLAMMA Mainnet Launch
+Description: Overcollateralized stablecoin with soft-liquidation AMM (LLAMMA); PegKeeper monetary policy
+Status: Live
+Source: (HIGH) [crvUSD Launch Blog, https://curve.fi/blog/crvusd-launch]
+
+Date: 2023-11
+Upgrade Name: LlamaLend (Curve Lending)
+Description: Isolated lending markets for NFTs and other assets using LLAMMA-style liquidation
+Status: Live
+Source: (MEDIUM) [LlamaLend GitHub, https://github.com/curvefi/llamalend-contracts]
+
+Date: 2024-03
+Upgrade Name: Curve StableSwap NG (Next Generation)
+Description: Gas-optimized StableSwap implementation with reduced bytecode size, improved math precision
+Status: Deployed on Ethereum and L2s
+Source: (MEDIUM) [Curve NG GitHub, https://github.com/curvefi/curve-contract/tree/master/contracts/pools/stableswap-ng]
+
+## Current Technical Stack
+Smart Contract Language: Vyper 0.2.x – 0.3.x (HIGH) [Curve GitHub, https://github.com/curvefi/curve-contract]
+Smart Contract Language: Solidity 0.8.x (HIGH) [Curve GitHub, https://github.com/curvefi/curve-contract]
+Development Framework: Brownie (Python) (HIGH) [Curve GitHub brownie-config.yaml, https://github.com/curvefi/curve-contract/blob/master/brownie-config.yaml]
+Development Framework: Foundry (Forge/Cast) for crvUSD/LlamaLend (MEDIUM) [crvUSD Foundry, https://github.com/curvefi/crvusd-contracts/blob/main/foundry.toml]
+Testing: pytest (Python) for Vyper contracts (HIGH) [Curve GitHub Tests, https://github.com/curvefi/curve-contract/tree/master/tests]
+Testing: Forge tests for Solidity contracts (MEDIUM) [crvUSD Tests, https://github.com/curvefi/crvusd-contracts/tree/main/test]
+Indexing: The Graph subgraphs (MEDIUM) [Curve Subgraph, https://thegraph.com/hosted-service/subgraph/curvefi/curve]
+Frontend SDK: curve.js / @curvefi/api (JavaScript/TypeScript) (MEDIUM) [Curve JS SDK, https://github.com/curvefi/curve-js]
+CI/CD: GitHub Actions (MEDIUM) [Curve GitHub Actions, https://github.com/curvefi/curve-contract/actions]
+Monitoring: Tenderly, Alchemy, custom analytics (LOW) [Curve Docs, https://docs.curve.fi/]
+Documentation: Sphinx / ReadTheDocs (MEDIUM) [Curve Docs, https://docs.curve.fi/]
+
+## Known Technical Limitations
+Limitation: StableSwap invariant assumes assets remain pegged; depegging events cause impermanent loss and potential pool imbalance (HIGH) [Curve Whitepaper, https://curve.fi/whitepaper.pdf]
+Limitation: A amplification parameter requires manual governance adjustment; not automatically adaptive to market conditions (HIGH) [Curve GitHub Admin, https://github.com/curvefi/curve-contract/blob/master/contracts/pools/stableswap/StableSwap.vy]
+Limitation: Vyper compiler version lock-in; older pools cannot be recompiled with newer Vyper versions without bytecode changes (MEDIUM) [Curve GitHub Issues, https://github.com/curvefi/curve-contract/issues]
+Limitation: Gas costs for multi-hop swaps and complex pool interactions higher than concentrated liquidity AMMs (Uniswap V3) (MEDIUM) [Curve Docs, https://docs.curve.fi/]
+Limitation: crvUSD LLAMMA soft liquidation requires active bandwidth management; user positions can become illiquid during extreme volatility (HIGH) [crvUSD Whitepaper, https://curve.fi/crvusd-whitepaper.pdf]
+Limitation: Gauge weight voting requires veCRV lock (opportunity cost); low participation risk for new pools (MEDIUM) [Curve DAO, https://dao.curve.fi/]
+Limitation: No native cross-chain messaging; multi-chain deployments are independent instances with separate liquidity (HIGH) [Curve Deployments, https://github.com/curvefi/curve-contract/tree/master/contracts]
+
+## Official Technical Resources
+Documentation: https://docs.curve.fi/
+GitHub (Core Contracts): https://github.com/curvefi/curve-contract
+GitHub (DAO Contracts): https://github.com/curvefi/curve-dao-contracts
+GitHub (crvUSD Contracts): https://github.com/curvefi/crvusd-contracts
+GitHub (LlamaLend Contracts): https://github.com/curvefi/llamalend-contracts
+GitHub (JavaScript SDK): https://github.com/curvefi/curve-js
+Whitepaper (StableSwap): https://curve.fi/whitepaper.pdf
+Whitepaper (CryptoSwap V2): https://curve.fi/cryptoswap-whitepaper.pdf
+Whitepaper (crvUSD/LLAMMA): https://curve.fi/crvusd-whitepaper.pdf
+Developer API: https://api.curve.fi/
+Subgraph (The Graph): https://thegraph.com/hosted-service/subgraph/curvefi/curve
+Audit Repository: https://github.com/curvefi/curve-contract/tree/master/audits
+
+## Ringkasan
+Architecture: Application-layer AMM protocol on EVM chains using StableSwap (pegged assets) and CryptoSwap (volatile assets) invariants; permissionless factories; veCRV-governed gauge emissions; crvUSD/LLAMMA for overcollateralized stablecoin with soft liquidations
+Core Components: StableSwap Pool, CryptoSwap Pool, Factory Contracts (Stable/Crypto/Meta), MetaPool, Gauge System, veCRV Voting Escrow, DAO, crvUSD/LLAMMA, LlamaLend, Curve Zap
+Audit Count: 8+ major audits (Trail of Bits x2, Quantstamp, MixBytes, OpenZeppelin, Pashov Group, Spearbit, Sigma Prime) plus ongoing audit programs
+Major Upgrade Count: 8+ significant protocol upgrades (Mainnet launch, CRV/DAO launch, V2 CryptoSwap, Factory/MetaPool, veCRV V2, crvUSD, LlamaLend, StableSwap NG)
+
+## Open Threads
+- StableSwap NG adoption rate across existing pools vs. legacy StableSwap — deployment status per chain not fully documented
+- LlamaLend isolated markets: current active markets and total value locked not centrally indexed
+- Cross-chain liquidity unification: no official technical design published for cross-chain pool aggregation (only independent deployments)
+- Vyper 0.4+ compatibility roadmap for legacy pools — no public migration plan for immutable contracts
+- crvUSD PegKeeper effectiveness during prolonged depeg events — limited public post-mortem data
+- Formal verification coverage: which specific contracts/modules have completed Certora verification vs. pending

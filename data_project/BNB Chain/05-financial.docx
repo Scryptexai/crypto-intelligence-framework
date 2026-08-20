@@ -1,0 +1,344 @@
+PROJECT: BNB Chain
+
+## Funding History
+
+Funding Round: Initial Coin Offering (ICO)
+- Date: 2017-07 (July 2017)
+- Amount: 100.000.000 BNB (setara ~$15.000.000 USD pada harga ICO)
+- Currency: ETH (diterima dalam Ethereum)
+- Lead Investor: Tidak ada (public sale)
+- Participating Investors: Publik (tidak dibatasi whitelist spesifik)
+- Valuation: Tidak diungkapkan
+- Funding Type: Public Sale
+- Status: Completed
+- Sources: https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf
+
+---
+
+Funding Round: Binance Series A
+- Date: 2018-07-23
+- Amount: $10.000.000
+- Currency: USD
+- Lead Investor: Sequoia Capital
+- Participating Investors: IDG Capital, Vertex Ventures (dikonfirmasi oleh TechCrunch)
+- Valuation: Tidak diungkapkan (TechCrunch menyebut "valuasi tidak diungkapkan")
+- Funding Type: Series A
+- Status: Completed
+- Sources: https://techcrunch.com/2018/07/23/binance-raises-10m-sequoia/
+
+---
+
+Funding Round: Binance Holdings Penyelesaian Regulator (DOJ/FinCEN/OFAC)
+- Date: 2023-11-21
+- Amount: $4.300.000.000 (total penyelesaian)
+- Currency: USD
+- Lead Investor: Tidak ada (ini bukan ronde pendanaan; penyelesaian hukum)
+- Participating Investors: Tidak ada
+- Valuation: Tidak ada
+- Funding Type: Lainnya (penalti regulator / settlement, bukan ekuitas)
+- Status: Completed (kesepakatan diumumkan; pembayaran dijadwalkan per persetujuan pengadilan)
+- Sources: https://www.justice.gov/opa/pr/binance-holdings-ltd-and-changpeng-zhao-plead-guilty-federal-charges
+
+---
+
+Funding Round: BNB Chain Grant Program (Ekosistem)
+- Date: 2021-11 (resmi diluncurkan) hingga sekarang
+- Amount: Tidak diungkapkan secara agregat (grant per-proposal bervariasi; tidak ada total dana dipublikasikan)
+- Currency: BNB (token native)
+- Lead Investor: BNB Chain Foundation
+- Participating Investors: Dana ekosistem BNB Chain (treasury)
+- Valuation: Tidak ada
+- Funding Type: Grant
+- Status: Ongoing
+- Sources: https://forum.bnbchain.org/c/grants
+
+---
+
+Funding Round: BNB Chain MVP Builder Program
+- Date: 2022-03 hingga sekarang
+- Amount: Tidak diungkapkan (program inkubasi; funding per-proyek bervariasi)
+- Currency: BNB
+- Lead Investor: BNB Chain Foundation
+- Participating Investors: Tidak diungkapkan (kemungkinan Binance Labs terlibat)
+- Valuation: Tidak ada
+- Funding Type: Grant / Inkubasi
+- Status: Ongoing
+- Sources: https://www.bnbchain.org/en/blog
+
+---
+
+Funding Round: BNB Chain Hackathon Series (Prize Pools)
+- Date: 2022-10 hingga sekarang (berkala)
+- Amount: Bervariasi per event (contoh: BUIDL 2024 prize pool >$500.000)
+- Currency: USD (diklaim) / BNB
+- Lead Investor: BNB Chain Foundation
+- Participating Investors: DoraHacks, ETHGlobal, Binance Labs
+- Valuation: Tidak ada
+- Funding Type: Grant / Reward
+- Status: Ongoing
+- Sources: https://dorahacks.io/hackathon/bnb-chain-buidl-2024
+
+---
+
+## Treasury
+
+Current Treasury Size
+- Tidak diungkapkan untuk BNB Chain Foundation (entitas resmi tidak mempublikasikan laporan treasury)
+- Binance Holdings Ltd (entitas induk) menyelesaikan penalti $4,3 miliar pada 2023; tidak ada laporan treasury publik pasca-penyelesaian
+- BNB Chain Foundation mengelola dana ekosistem (grant, hackathon, MVP program) namun tidak mempublikasikan ukuran total aset (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+Treasury Composition
+- Tidak diungkapkan
+- BNB Chain Foundation tidak merilis rincian aset (stablecoin, token, dll.)
+
+Stablecoin Holdings
+- Tidak diungkapkan
+- BNB Chain Foundation tidak mempublikasikan kepemilikan stablecoin
+
+Native Token Holdings
+- Tidak diungkapkan untuk treasury Foundation
+- BNB total supply 200.000.000; burned >50.000.000 per 2024 (via BEP-95 + auto-burn) (HIGH) [BNB Chain Burn, https://www.bnbchain.org/en/burn]
+- Sisa BNB yang tidak beredar (jika ada) tidak dipublikasikan sebagai treasury
+
+Other Assets
+- Tidak diungkapkan
+
+Treasury Custodian
+- BNB Chain Foundation (entity tidak jelas yurisdiksi pastinya — open thread)
+- Binance Holdings Ltd (Cayman) sebagai pemegang saham/entitas induk (HIGH) [DOJ Press, https://www.justice.gov/opa/pr/binance-holdings-ltd-and-changpeng-zhao-plead-guilty-federal-charges]
+- Tidak ada laporan independen tentang custodian treasury BNB Chain Foundation
+
+Sources:
+- https://www.bnbchain.org/en/burn
+- https://www.justice.gov/opa/pr/binance-holdings-ltd-and-changpeng-zhao-plead-guilty-federal-charges
+
+---
+
+## Revenue Model
+
+Nama: Gas Fees (BNB Smart Chain)
+- Status: Live
+- Deskripsi: Pengguna membayar gas fee dalam BNB untuk transaksi di BSC; sebagian base fee dibakar via BEP-95 (real-time burn); validator menerima priority fee & sebagian gas
+- Sumber: BEP-95 burn mechanism aktif sejak Okt 2021 (HIGH) [BNB Chain Docs Burn, https://docs.bnbchain.org/docs/burn]
+
+Nama: Staking & Validator Rewards (BNB Beacon Chain)
+- Status: Live
+- Deskripsi: Validator dan delegator menerima reward BNB untuk mengamankan Beacon Chain (Tendermint) dan BSC (PoSA)
+- Sumber: Staking reward mekanisme standar Beacon Chain (HIGH) [BNB Chain Docs Staking, https://docs.bnbchain.org/docs/staking]
+
+Nama: BNB Greenfield Storage Fees
+- Status: Live
+- Deskripsi: Pengguna membayar BNB ke Storage Providers untuk penyimpanan data (pay-per-use, subscription, SLA)
+- Sumber: Greenfield v1.1 upgrade memperkenalkan model pembayaran resmi (HIGH) [Greenfield Releases, https://github.com/bnb-chain/greenfield/releases]
+
+Nama: opBNB Transaction Fees
+- Status: Live
+- Deskripsi: Pengguna membayar gas fee dalam BNB untuk transaksi di opBNB; sequencer menerima fee; sebagian masuk ke BSC untuk settlement
+- Sumber: opBNB docs (HIGH) [opBNB Docs, https://docs.opbnb.io]
+
+Nama: BNB Bridge Fees (Native Bridge)
+- Status: Live
+- Deskripsi: BNB Bridge membebankan fee untuk cross-chain transfer (BEP-2 ↔ BEP-20), meskipun detail fee rate tidak dipublikasikan secara terpusat
+- Sumber: BNB Bridge resmi (MEDIUM) [BNB Bridge, https://www.bnbchain.org/en/bridge]
+
+Nama: Binance Exchange (Centralized) — Terkait Ekosistem BNB
+- Status: Live
+- Deskripsi: Binance Exchange (entitas terpisah dari BNB Chain) menghasilkan revenue dari trading fee, listing fee, dan produk lain; BNB digunakan sebagai fee discount token di Binance
+- Sumber: Binance tidak mempublikasikan laporan revenue publik (MEDIUM) [Binance, https://www.binance.com]
+
+Nama: BNB Chain Grant Program — Pengeluaran (Bukan Revenue)
+- Status: Live
+- Deskripsi: BNB Chain Foundation mengeluarkan dana untuk grant, bukan menerima revenue; ini adalah alokasi treasury
+- Sumber: (HIGH) [BNB Chain Forum Grants, https://forum.bnbchain.org/c/grants]
+
+---
+
+## Revenue History
+
+Tidak diungkapkan.
+
+Tidak ada laporan revenue publik untuk BNB Chain (Foundation atau Core Contributors) yang menyajikan angka pendapatan periodik (bulanan, kuartalan, tahunan).
+
+Data transparan yang tersedia:
+- BNB burn total >50.000.000 BNB per 2024 (via BEP-95 + auto-burn), yang mencerminkan aktivitas jaringan namun bukan laporan revenue formal (HIGH) [BNB Chain Burn, https://www.bnbchain.org/en/burn]
+- DefiLlama menampilkan fee & revenue BSC secara on-chain, namun ini bukan laporan resmi BNB Chain Foundation (HIGH) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+
+## Fundraising Mechanism
+
+Bootstrapping Awal:
+- Binance didanai dari hasil ICO BNB (Juli 2017) dan revenue exchange (trading fee) (HIGH) [Binance Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+
+VC Funding:
+- Binance Series A $10M dari Sequoia Capital, IDG Capital, Vertex Ventures (Juli 2018) (HIGH) [TechCrunch, https://techcrunch.com/2018/07/23/binance-raises-10m-sequoia/]
+
+Public Sale (ICO):
+- BNB ICO publik pada Ethereum (Juli 2017) (HIGH) [Binance Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+
+Grant Mechanism:
+- BNB Chain Grant Program (sejak 2021) — mendanai proyek ekosistem dengan BNB (HIGH) [BNB Chain Forum, https://forum.bnbchain.org/c/grants]
+- BNB Chain MVP Builder Program (sejak 2022) — inkubasi dengan funding (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+Treasury Injection:
+- BNB Chain Foundation mengalokasikan dana dari treasury ekosistem (tidak diungkapkan ukurannya) untuk inisiatif seperti hackathon, grant, dan program builder (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+Tidak Ada Bukti:
+- Tidak ada sumber yang menunjukkan BNB Chain Foundation melakukan ronde VC eksternal untuk dirinya sendiri (sebagai lawan Binance)
+- Tidak ada data bootstrapping untuk BNB Chain Foundation (berbeda dari Binance exchange)
+
+---
+
+## Token Sale
+
+Private Sale:
+- Tidak ada private sale BNB yang dikonfirmasi publik selain ICO; 20.000.000 BNB dialokasikan untuk angel investors dalam ICO (HIGH) [Binance Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+
+Public Sale (ICO):
+- Tanggal: Juli 2017
+- Status: Completed
+- Rincian: 100.000.000 BNB dijual publik pada harga 1 ETH = 2.700 BNB (~$0,15/BNB)
+- Sumber: https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf
+
+Launchpad:
+- Tidak ada BNB Chain Launchpad khusus untuk token BNB sendiri; Binance Launchpad adalah platform Binance untuk proyek lain, bukan untuk BNB
+
+Auction:
+- Tidak ada auction untuk BNB
+
+Community Sale:
+- Tidak ada community sale terpisah setelah ICO
+
+---
+
+## Financial Dependencies
+
+BNB Chain Foundation:
+- Sumber pendanaan utama untuk ekosistem (grant, hackathon, program builder) (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+Binance Holdings Ltd (Cayman):
+- Pemegang kendali historis BNB Chain; menyediakan awal infrastruktur dan likuiditas (HIGH) [BNB Chain Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+
+Binance Labs:
+- Arm investasi yang mendanai proyek ekosistem BNB Chain (HIGH) [Binance Labs, https://www.binancelabs.co]
+
+Binance Exchange:
+- Likuiditas utama dan on/off-ramp untuk BNB; trading fee discount memakai BNB (HIGH) [Binance, https://www.binance.com]
+
+Institutional Validator (melalui staking):
+- Pendanaan operasional validator bergantung pada staking rewards BNB (HIGH) [BNB Chain Docs, https://docs.bnbchain.org/docs/staking]
+
+---
+
+## Financial Risk
+
+Treasury Concentration:
+- Tidak ada laporan resmi BNB Chain Foundation mengenai konsentrasi treasury; risiko tidak dapat dinilai dari sumber publik (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog] — tidak ada data untuk konfirmasi
+
+Revenue Dependency pada Aktivitas Jaringan:
+- BNB Chain (Foundation) tidak mempublikasikan laporan revenue; inkonsistensi transparansi finansial (HIGH) [BNB Chain Foundation tidak punya laporan tahunan publik yang ditemukan]
+
+Funding Dependency pada Binance:
+- BNB Chain Foundation entitas legal tidak jelas; pendanaan awal dan ongoing heavily tied ke Binance group (sebagai founding entity) — risiko konsentrasi struktural (HIGH) [DOJ Press, https://www.justice.gov/opa/pr/binance-holdings-ltd-and-changpeng-zhao-plead-guilty-federal-charges]
+
+Legal Financial Risk:
+- Penyelesaian DOJ $4,3 miliar (Nov 2023) — dampak finansial signifikan pada Binance Holdings, tidak langsung pada BNB Chain Foundation tetapi bercampur entitas (HIGH) [DOJ Press, https://www.justice.gov/opa/pr/binance-holdings-ltd-and-changpeng-zhao-plead-guilty-federal-charges]
+- Gugatan SEC (Juni 2023) mengklaim BNB sebagai security; jika pengadilan setuju, implikasi finansial besar untuk BNB dan ekosistem (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2023-131.pdf]
+- Kasus CFTC (Maret 2023) dan penyelesaian terkait — potensi denda tambahan (HIGH) [CFTC Press, https://www.cftc.gov/PressRoom/PressReleases/8674-23]
+
+Burn Mechanism Deflasioner:
+- BEP-95 dan auto-burn mengurangi supply BNB secara permanen; memengaruhi staking economics dan treasury planning, namun bukan risiko langsung yang dikonfirmasi oleh laporan resmi (HIGH) [BNB Chain Burn, https://www.bnbchain.org/en/burn]
+
+---
+
+## Official Financial Resources
+
+Official Website: https://www.bnbchain.org
+- Tidak ada halaman treasury/keuangan spesifik
+
+Official Blog: https://www.bnbchain.org/en/blog
+- Termasuk pengumuman grant dan program
+
+Governance Forum (untuk proposal grant): https://forum.bnbchain.org/c/grants
+
+Transparency Report: Tidak ditemukan
+
+Treasury Dashboard: Tidak ditemukan
+
+Whitepaper (BNB ICO): https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf
+
+BNB Chain Burn Dashboard: https://www.bnbchain.org/en/burn
+
+BNB Chain Whitepaper/Overview: https://docs.bnbchain.org/docs/overview
+
+DefiLlama (Data On-chain BSC): https://defillama.com/chain/BSC
+
+Messari (Riset BNB Chain): https://messari.io/project/bnb-chain
+
+Token Terminal (Data BSC): https://tokenterminal.com/terminal/chains/bnb-chain
+
+CryptoRank (Funding/ICO): https://cryptorank.io/ico/bnb
+
+Binance Labs Portfolio: https://www.binancelabs.co/portfolio
+
+---
+
+## Ringkasan
+
+Total Funding Raised
+- BNB ICO: ~$15.000.000 (100M BNB public sale)
+- Binance Series A: $10.000.000 (untuk Binance, bukan BNB Chain Foundation)
+- Penyelesaian DOJ: $4.300.000.000 (pengeluaran, bukan pendanaan)
+- Grant/hackathon: jumlah total tidak diungkapkan
+- BNB Chain Foundation tidak mengumpulkan dana eksternal sebagai entitas terpisah
+
+Funding Rounds
+- 1 ronde ICO (BNB, 2017)
+- 1 ronde Series A (Binance, 2018)
+- Penyelesaian hukum (2023, bukan pendanaan)
+- 2 mekanisme grant berkelanjutan (BNB Chain Grant Program, MVP Builder Program)
+- Hackathon berkala (prize pool bervariasi)
+
+Treasury Status
+- Ukuran treasury BNB Chain Foundation: tidak diungkapkan
+- Komposisi treasury: tidak diungkapkan
+- Custodian: BNB Chain Foundation (legal entity tidak jelas) + Binance Holdings (Cayman)
+- Burn total >50M BNB per 2024 (bukan treasury, tapi mengurangi supply)
+
+Revenue Sources
+- Gas fees BSC (BEP-95 burn + validator fee)
+- Staking rewards Beacon Chain
+- Greenfield storage fees
+- opBNB transaction fees
+- BNB Bridge fees
+- Binance Exchange revenue (terkait, entitas terpisah)
+
+Revenue Availability
+- Tidak tersedia dalam bentuk laporan resmi
+- Hanya data on-chain (DefiLlama, Dune) yang menampilkan fee/gas
+
+---
+
+## Open Threads
+
+- Ukuran dan komposisi treasury BNB Chain Foundation tidak pernah diungkapkan secara resmi — satu-satunya angka adalah total burn BNB on-chain, bukan neraca treasury.
+
+- Legal entity "BNB Chain Foundation" tidak memiliki dokumen resmi yang ditemukan (yurisdiksi, nomor registrasi, laporan keuangan) — semua klaim "Foundation" hanya disebut di blog/forum, tidak ada filing hukum.
+
+- Apakah Binance Labs memiliki mandat terpisah untuk mendanai ekosistem BNB Chain atau hanya model VC umum — tidak ada batasan dana yang dipublikasikan.
+
+- Revenue BNB Chain tidak pernah dipublikasikan oleh tim; data DefiLlama (fee/revenue) adalah estimasi dari aktivitas on-chain, bukan laporan resmi.
+
+- Status kasus SEC vs Binance (BNB sebagai security) masih berlangsung — dampak finansial final belum diketahui.
+
+- Apakah Binance (entitas) menyuntik dana ke BNB Chain Foundation secara berkala untuk operasional (misal server, events, grants) — tidak ada transparansi.
+
+- BNB Bridge fee schedule detail tidak pernah dipublikasikan sebagai struktur tarif resmi.
+
+- Jumlah total BNB yang dialokasikan untuk grant/hackathon sejak 2021 tidak diagregasi publik; hanya tersebar di forum per proposal.
+
+- Apakah BNB Chain Foundation menerima "staking rewards" dari BNB yang di-stake (jika Foundation memegang BNB) — tidak diungkapkan.
+
+- Nilai tukar BNB terhadap USD saat ICO ($0,15) adalah harga pasar historis; tidak ada angka resmi Binance untuk "nilai ICO" setelah 2017.
+
+- Penalty DOJ $4,3 miliar: apakah ini dibayar sekaligus atau dicicil, dan apakah memengaruhi treasury BNB Chain Foundation (entitas berbeda tapi bercampur) — detail pembayaran tidak dipublikasikan penuh.

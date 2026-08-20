@@ -47,7 +47,7 @@ is plain text, no DB-level enum constraint.
 Usage:  python3 tools/extract_conflicts.py Arbitrum
 Output: poc/conflicts.json  (merges/replaces entries for the parsed project)
 """
-import json, sys
+import json, os, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -114,6 +114,55 @@ CONFLICTS = {
             "affectedPhase": "Phase 6",
         },
     ],
+
+    "Curve": [
+        {
+            "id": "C-001",
+            "projectSlug": "curve",
+            "category": "Tokenomics",
+            "title": "Komposisi distribusi non-komunitas (Team 30% vs shareholders 30%)",
+            "description": "Phase 6 dataset mencatat Team 30%/Investors 3%/Foundation 3%/Employees 2%; sumber publik umum menyebut shareholders 30%/team 3%/early users 5%. Atribusi 30% supply berbeda penerimanya.",
+            "severity": "High",
+            "status": "Unresolved",
+            "versionA": {"source": "Phase 6 dataset (pipeline)", "value": "Community 62%, Team 30% (2y vesting), Investors 3% (2y), Foundation 3% (4y), Employees 2% (2y)", "date": "", "url": "", "evidence": "Internal dataset"},
+            "versionB": {"source": "Sumber publik umum (liputan pengumuman CRV Agu 2020)", "value": "Community 62%, shareholders 30%, team 3%, early users 5%", "date": "2020-08", "url": "", "evidence": "Tidak primer; agregasi liputan publik"},
+            "resolution": "Keduanya dipertahankan; verifikasi dokumen primer Agustus 2020 diperlukan sebelum memilih.",
+            "affectedKnowledge": ["K-002"],
+            "affectedPhase": "Phase 6",
+        },
+    ],
+    "Walrus": [
+        {
+            "id": "C-001",
+            "projectSlug": "walrus",
+            "category": "Tokenomics",
+            "title": "Breakdown distribusi komunitas (43% reserve vs 10% airdrop)",
+            "description": "Altcoin Buzz menyebut Community Reserve 43% dengan 690 juta token available at launch; Backpack Exchange memecah 10% community airdrop (4% pre-mainnet + 6% post-mainnet). Keduanya dapat konsisten namun tidak dikonfirmasi dokumen resmi.",
+            "severity": "Medium",
+            "status": "Unresolved",
+            "versionA": {"source": "Altcoin Buzz", "value": "Community Reserve 43% (690 juta available at launch, linear unlock hingga Mar 2033)", "date": "2025-03", "url": "https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/", "evidence": ""},
+            "versionB": {"source": "Backpack Exchange Learn", "value": "Community airdrop 10% (4% pre-mainnet + 6% post-mainnet)", "date": "2025-05", "url": "https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network", "evidence": ""},
+            "resolution": "Keduanya dipertahankan dengan flag INKONSISTENSI; dokumen tokenomics resmi Walrus diperlukan.",
+            "affectedKnowledge": [],
+            "affectedPhase": "Phase 6",
+        },
+    ],
+    "Linea": [
+        {
+            "id": "C-002",
+            "projectSlug": "linea",
+            "category": "Timeline",
+            "title": "Tanggal TGE LINEA (akhir Juli 2025 vs 10 September 2025)",
+            "description": "Sumber pra-launch menyebut TGE akhir Juli 2025; realisasi pelaksanaan adalah 10 September 2025.",
+            "severity": "Medium",
+            "status": "Resolved",
+            "versionA": {"source": "Bitrue (pra-launch)", "value": "TGE akhir Juli 2025", "date": "2025-07-15", "url": "https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility", "evidence": "Artikel pra-launch"},
+            "versionB": {"source": "The Block (pelaksanaan)", "value": "TGE 10 September 2025", "date": "2025-09-10", "url": "https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage", "evidence": "Liputan eksekusi"},
+            "resolution": "Tanggal pelaksanaan 2025-09-10 dipakai (sumber eksekusi); laporan pra-launch dicatat sebagai ekspektasi yang meleset.",
+            "affectedKnowledge": [],
+            "affectedPhase": "Phase 1",
+        },
+    ],
 }
 
 SKIPPED = {
@@ -121,22 +170,158 @@ SKIPPED = {
 }
 
 
+# ---------------------------------------------------------------------------
+# Conservative uniform-format parser (added 2026-08-20)
+#
+# The Track C pipeline produced uniform Conflict Register blocks across most
+# dossiers:  "Conflict C-NNN" + Category/Description/Severity/Status/
+# Resolution/Affected Knowledge/Affected Phase/Sources lines (bare or '- '
+# bulleted). The structured fields parse reliably; the ONLY unreliable part is
+# pairing versionA/versionB from the free-text Description. So this parser
+# emits a conflict row ONLY when the Description matches one of two strict
+# two-side patterns AND both sides carry a figure -- everything else is
+# skipped with a logged reason, exactly per the module docstring's rule
+# against inventing source<->value mappings.
+# ---------------------------------------------------------------------------
+import re
+
+_FIELD_NAMES = ["Category", "Description", "Severity", "Affected Knowledge",
+                "Impact", "Affected Phase", "Evidence", "Sources", "Resolution", "Status"]
+
+
+def _parse_fields(block: str) -> dict:
+    out = {}
+    for name in _FIELD_NAMES:
+        m = re.search(rf"^[- ]*{re.escape(name)}:\s*(.+?)\s*$", block, re.M)
+        if m:
+            out[name.lower().replace(" ", "_")] = m.group(1).strip()
+    return out
+
+
+_PAIR_PATTERNS = [
+    # "X melaporkan A, sementara Y melaporkan B"
+    re.compile(r"(.{2,80}?)\s+(?:melaporkan|mencatat|menyebut|mengatakan)\s+(.{3,100}?),\s+"
+               r"sementara\s+(.{2,80}?)\s+(?:melaporkan|mencatat|menyebut|mengatakan)\s+(.{3,100}?)(?:\.|$)"),
+    # "X: A; Y: B"
+    re.compile(r"(.{2,80}?):\s+(.{3,100}?);\s+(.{2,80}?):\s+(.{3,100}?)(?:\.|$)"),
+    # "80,000 BTC (Nansen) dan 80,394 BTC (Blockchain.com)" -- values lead, sources in parens
+    re.compile(r"([\d][\d.,]*\s*%?[^(),]{0,20}?)\s*\((.{2,60}?)\)\s*(?:dan|vs\.?|,)\s+"
+               r"([\d][\d.,]*\s*%?[^(),]{0,20}?)\s*\((.{2,60}?)\)"),
+    # "X menyebut A, beberapa sumber lain menyebut B"
+    re.compile(r"(.{2,80}?)\s+menyebut\s+(.{3,60}?),\s+((?:beberapa sumber lain|sumber lain|sumber lainnya)[^,.]{0,40}?)"
+               r"\s+menyebut\s+(.{3,60}?)(?:\.|$)"),
+]
+
+# Track C registers also AUDIT consistency -- blocks that conclude "no real conflict"
+# ("Konsisten", "tidak ada konflik") are audit notes, not conflicts, and must not enter
+# the table even when a pattern happens to match their wording.
+_NOT_A_CONFLICT_RE = re.compile(r"\b(?:konsisten|tidak ada konflik|bukan konflik|no conflict)\b", re.I)
+
+
+def _try_pair(description: str):
+    """(versionA, versionB) when a strict two-side split exists, else None."""
+    for idx, pat in enumerate(_PAIR_PATTERNS):
+        m = pat.search(description)
+        if not m:
+            continue
+        g = tuple(x.strip() for x in m.groups())
+        if idx == 2:
+            # values lead, sources in parentheses: (valueA, sourceA, valueB, sourceB)
+            va, sa, vb, sb = g
+        else:
+            sa, va, sb, vb = g
+        # Source captures can swallow leading prose ("...tercatat berbeda antar sumber —
+        # Phase 3 (EV-012)"); keep only the tail after the last dash/comma when long.
+        def _clean_source(s: str) -> str:
+            if len(s) > 40:
+                for sep in ("—", "–", ",", ":"):
+                    if sep in s:
+                        tail = s.rsplit(sep, 1)[1].strip()
+                        if tail:
+                            s = tail
+            return s
+        sa, sb = _clean_source(sa), _clean_source(sb)
+        # Both VALUES must carry a figure, otherwise the "pair" is qualitative
+        # prose and the mapping would be a guess.
+        if re.search(r"\d", va) and re.search(r"\d", vb):
+            return ({"source": sa, "value": va, "date": "", "url": "", "evidence": ""},
+                    {"source": sb, "value": vb, "date": "", "url": "", "evidence": ""})
+    return None
+
+
+def parse_dossier_conflicts(project: str):
+    """(rows, skipped) from a dossier's Conflict Register -- pairing-only extraction."""
+    path = ROOT / "examples" / "CaseStudies" / f"{project}.md"
+    if not path.exists():
+        return [], []
+    text = path.read_text(encoding="utf-8")
+    # Heading shapes: "Conflict C-001" and "Conflict C-001 — <title>"
+    parts = re.split(r"^Conflict (C-\d+)(?:\s*[—–-]\s*(.*?))?\s*$", text, flags=re.M)
+    rows, skipped = [], []
+    for i in range(1, len(parts), 3):
+        cid, title_hint, body = parts[i], (parts[i + 1] or "").strip(), parts[i + 2]
+        body = body.split("\n## ")[0]  # don't run past the next dossier section
+        f = _parse_fields(body)
+        if not f.get("description"):
+            skipped.append((cid, "no parseable Description"))
+            continue
+        if _NOT_A_CONFLICT_RE.search(f["description"]):
+            skipped.append((cid, "audit note: explicitly consistent, not a conflict"))
+            continue
+        pair = _try_pair(f["description"])
+        if pair is None:
+            skipped.append((cid, "no unambiguous two-side source<->value pairing"))
+            continue
+        title = title_hint or f["description"][:90]
+        ak = [k.strip() for k in f.get("affected_knowledge", "").split(",") if k.strip()]
+        rows.append({
+            "id": cid,
+            "projectSlug": re.sub(r"[^a-z0-9]+", "-", project.lower()).strip("-"),
+            "category": f.get("category", ""),
+            "title": title,
+            "description": f["description"],
+            "severity": f.get("severity", ""),
+            "status": f.get("status", ""),
+            "versionA": pair[0],
+            "versionB": pair[1],
+            "resolution": f.get("resolution", ""),
+            "affectedKnowledge": ak,
+            "affectedPhase": f.get("affected_phase", ""),
+        })
+    return rows, skipped
+
+
 def main():
     if len(sys.argv) != 2:
-        sys.exit("usage: python3 tools/extract_conflicts.py <ProjectName>  (must be a key in CONFLICTS)")
-    project = sys.argv[1]
-    if project not in CONFLICTS:
-        sys.exit(f"no hand-curated conflicts for {project!r} -- see this file's module docstring "
-                  f"for why this isn't a general regex extractor yet.")
+        sys.exit("usage: python3 tools/extract_conflicts.py <ProjectName|--all>")
+    target = sys.argv[1]
+
+    if target == "--all":
+        projects = sorted(f[:-3] for f in os.listdir(ROOT / "examples" / "CaseStudies")
+                          if f.endswith(".md") and f != "README.md")
+    else:
+        projects = [target]
 
     data = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
-    data[project] = CONFLICTS[project]
+    total_written = total_skipped = 0
+    for project in projects:
+        rows = list(CONFLICTS.get(project, []))  # hand-curated always wins
+        hand_ids = {r["id"] for r in rows}
+        parsed, skipped = parse_dossier_conflicts(project)
+        rows += [r for r in parsed if r["id"] not in hand_ids]
+        skipped = [s for s in skipped if s[0] not in hand_ids]
+        skipped += [(cid, "ambiguous (hand-skip list)") for cid in SKIPPED.get(project, [])]
+        if rows:
+            data[project] = rows
+            total_written += len(rows)
+        total_skipped += len(skipped)
+        if target != "--all" or rows:
+            print(f"{project}: wrote {len(rows)} conflict(s)"
+                  + (f" ({len(CONFLICTS.get(project, []))} hand-curated)" if CONFLICTS.get(project) else "")
+                  + f", skipped {len(skipped)} ambiguous")
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    skipped = SKIPPED.get(project, [])
-    print(f"✅ wrote {len(CONFLICTS[project])} conflict(s) for {project} -> {OUT}")
-    if skipped:
-        print(f"⚠️  skipped {len(skipped)} multi-source conflict(s) (ambiguous source->value mapping): "
-              f"{', '.join(skipped)}")
+    print(f"✅ total: {total_written} conflicts across {sum(1 for p in projects if p in data)} project(s) -> {OUT}; "
+          f"{total_skipped} skipped (ambiguous pairing)")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,264 @@
+PROJECT: Cosmos
+
+## Token Information
+
+Official Token Name: ATOM (HIGH) [Cosmos Network, https://cosmos.network/]
+Symbol: ATOM (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/cosmos]
+Token Standard: Native Cosmos SDK coin (Cosmos Hub); Wrapped ERC-20 on Ethereum (0x0eb3a705fc54725037cc9e008bdede697f62f337) dan chain lain via bridge (HIGH) [Etherscan, https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337]
+Blockchain: Cosmos Hub (native); Ethereum (wrapped ERC-20); chain lain via IBC/bridge (HIGH) [Cosmos Hub, https://hub.cosmos.network/]
+Decimals: 6 (native ATOM); 18 (wrapped ERC-20) (HIGH) [Cosmos SDK Bank Module, https://github.com/cosmos/cosmos-sdk/tree/main/x/bank; Etherscan, https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337]
+Status: Live (HIGH) [Cosmos Hub Mainnet Launch, https://blog.cosmos.network/cosmos-hub-mainnet-launch/]
+Sources: https://cosmos.network/; https://www.coingecko.com/en/coins/cosmos; https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337
+
+## Supply
+
+Maximum Supply: Tidak ada (inflationary, no hard cap) (HIGH) [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]
+Total Supply: Dinamis (berubah setiap block melalui inflation); per 2024-06 sekitar 390M+ ATOM (estimasi on-chain) (MEDIUM) [Mintscan, https://www.mintscan.io/cosmos; CoinGecko, https://www.coingecko.com/en/coins/cosmos]
+Circulating Supply: Sama dengan Total Supply (semua ATOM minted sudah circulating; tidak ada vesting kontrak on-chain untuk supply tersisa) (HIGH) [Cosmos Hub Genesis, https://github.com/cosmos/gaia/blob/main/genesis/genesis.json; Mintscan, https://www.mintscan.io/cosmos]
+Initial Supply: 236.198.958 ATOM (genesis allocation pada mainnet launch 2019-03-13) (HIGH) [Cosmos Hub Genesis, https://github.com/cosmos/gaia/blob/main/genesis/genesis.json; ICF Fundraiser Terms, https://cosmos.network/icf-fundraiser]
+Supply Type: Inflationary (dynamic inflation rate berbasis staking ratio target) (HIGH) [Cosmos SDK Mint Module, https://github.com/cosmos/cosmos-sdk/tree/main/x/mint]
+Sources: https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md; https://github.com/cosmos/gaia/blob/main/genesis/genesis.json; https://cosmos.network/icf-fundraiser; https://www.mintscan.io/cosmos
+
+## Distribution
+
+Community (Public Fundraiser): 168.475.963 ATOM (71.3% dari initial supply) — dijual pada ICF Fundraiser 2017-04-06 (HIGH) [ICF Fundraiser, https://cosmos.network/icf-fundraiser]
+Team (Tendermint Inc / All in Bits): 23.619.896 ATOM (10% dari initial supply) — alokasi untuk pengembang inti awal (HIGH) [ICF Fundraiser, https://cosmos.network/icf-fundraiser]
+Investors (Strategic/Private): Tidak ada alokasi investor terpisah di genesis; fundraiser publik saja (HIGH) [ICF Fundraiser, https://cosmos.network/icf-fundraiser]
+Foundation (Interchain Foundation): 23.619.896 ATOM (10% dari initial supply) — untuk pengembangan ekosistem, grants, operasi (HIGH) [ICF Fundraiser, https://cosmos.network/icf-fundraiser]
+Treasury (Community Pool): 0 ATOM di genesis; community pool terbentuk dari transaction fees dan inflation seiring waktu (HIGH) [Cosmos SDK Distribution Module, https://github.com/cosmos/cosmos-sdk/tree/main/x/distribution]
+Ecosystem: 20.483.203 ATOM (8.7% dari initial supply) — "Seed Allocation" untuk early contributors, advisors, dst (HIGH) [ICF Fundraiser, https://cosmos.network/icf-fundraiser]
+Advisors: Termasuk dalam kategori "Seed Allocation" / Ecosystem di atas; tidak terpisah di dokumen resmi (HIGH) [ICF Fundraiser, https://cosmos.network/icf-fundraiser]
+Other: Tidak ada kategori lain di genesis (HIGH) [ICF Fundraiser, https://cosmos.network/icf-fundraiser]
+Sources: https://cosmos.network/icf-fundraiser; https://github.com/cosmos/gaia/blob/main/genesis/genesis.json
+
+## Vesting Schedule
+
+Category: Community (Public Fundraiser)
+Cliff: 0 bulan (token transferable sejak mainnet launch 2019-03-13) (HIGH) [ICF Fundraiser, https://cosmos.network/icf-fundraiser]
+Vesting: Tidak ada vesting on-chain; kontributor menerima ATOM transferable penuh saat mainnet (HIGH) [Cosmos Hub Genesis, https://github.com/cosmos/gaia/blob/main/genesis/genesis.json]
+Unlock Frequency: N/A (instant unlock at genesis) (HIGH)
+Current Status: Fully unlocked (HIGH)
+Sources: https://cosmos.network/icf-fundraiser; https://github.com/cosmos/gaia/blob/main/genesis/genesis.json
+
+Category: Team (Tendermint Inc / All in Bits)
+Cliff: Tidak diungkap secara detail di sumber publik resmi; whitepaper menyebut "vesting over 2 years" tapi implementasi on-chain tidak terlihat di genesis (MEDIUM) [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]
+Vesting: Whitepaper: 2 tahun vesting; tapi genesis allocation menunjukkan full amount tanpa vesting module (vesting account tidak digunakan di genesis) (MEDIUM) [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md; Genesis, https://github.com/cosmos/gaia/blob/main/genesis/genesis.json]
+Unlock Frequency: Tidak dapat diverifikasi on-chain (LOW)
+Current Status: Diasumsikan fully unlocked (tidak ada vesting account aktif untuk team di explorer) (LOW)
+Sources: https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md; https://www.mintscan.io/cosmos
+
+Category: Foundation (Interchain Foundation)
+Cliff: Tidak ada cliff (alokasi genesis langsung tersedia) (HIGH) [ICF Fundraiser, https://cosmos.network/icf-fundraiser]
+Vesting: Tidak ada vesting on-chain; ICF mengelola treasury off-chain (HIGH) [Interchain Foundation, https://interchain.io/]
+Unlock Frequency: N/A (HIGH)
+Current Status: Fully accessible (managed by ICF) (HIGH)
+Sources: https://cosmos.network/icf-fundraiser; https://interchain.io/
+
+Category: Ecosystem / Seed Allocation
+Cliff: Tidak diungkap detail per recipient (MEDIUM)
+Vesting: Whitepaper menyebut vesting untuk early contributors; implementasi on-chain tidak terverifikasi (MEDIUM) [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]
+Unlock Frequency: Tidak dapat diverifikasi (LOW)
+Current Status: Diasumsikan mostly unlocked (LOW)
+Sources: https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md; https://www.mintscan.io/cosmos
+
+Category: Investors
+Cliff: N/A (tidak ada investor allocation terpisah) (HIGH)
+Vesting: N/A (HIGH)
+Unlock Frequency: N/A (HIGH)
+Current Status: N/A (HIGH)
+Sources: https://cosmos.network/icf-fundraiser
+
+## TGE
+
+TGE Date: 2017-04-06 (ICF Fundraiser / token sale) — token creation event; 2019-03-13 (Mainnet Genesis / token distribution & transferability) (HIGH) [ICF Fundraiser, https://cosmos.network/icf-fundraiser; Cosmos Hub Launch, https://blog.cosmos.network/cosmos-hub-mainnet-launch/]
+Initial Unlock: 100% untuk fundraiser kontributor (transferable sejak mainnet launch); 100% untuk team/foundation/ecosystem di genesis (tidak ada vesting on-chain terverifikasi) (HIGH) [Genesis, https://github.com/cosmos/gaia/blob/main/genesis/genesis.json]
+Unlocked Categories: Semua kategori (Community, Team, Foundation, Ecosystem) — full amount di genesis accounts (HIGH) [Genesis, https://github.com/cosmos/gaia/blob/main/genesis/genesis.json]
+Launch Platform: ICF Fundraiser website (2017); Cosmos Hub Mainnet / Gaia (2019) (HIGH) [ICF Fundraiser, https://cosmos.network/icf-fundraiser; Gaia, https://github.com/cosmos/gaia]
+Status: Completed (HIGH)
+Sources: https://cosmos.network/icf-fundraiser; https://blog.cosmos.network/cosmos-hub-mainnet-launch/; https://github.com/cosmos/gaia/blob/main/genesis/genesis.json
+
+## Utility
+
+Utility: Governance
+Deskripsi: ATOM holder berpartisipasi on-chain governance (submit proposal, vote, deposit); 1 ATOM = 1 vote power (delegated ke validator atau self-vote) (HIGH)
+Status: Live (since mainnet 2019-03-13) (HIGH)
+Sources: https://github.com/cosmos/cosmos-sdk/tree/main/x/gov; https://www.mintscan.io/cosmos/proposals
+
+Utility: Staking
+Deskripsi: ATOM di-bond ke validator untuk mengamankan Cosmos Hub; delegator earn staking rewards (inflation + fees); slashing risk (double-sign 5%, downtime 0.01%) (HIGH)
+Status: Live (since mainnet 2019-03-13) (HIGH)
+Sources: https://github.com/cosmos/cosmos-sdk/tree/main/x/staking; https://www.mintscan.io/cosmos/validators
+
+Utility: Gas / Transaction Fee
+Deskripsi: ATOM digunakan membayar gas fee transaksi di Cosmos Hub; fee didistribusikan ke validator dan community pool (HIGH)
+Status: Live (since mainnet 2019-03-13) (HIGH)
+Sources: https://github.com/cosmos/cosmos-sdk/tree/main/x/auth; https://www.mintscan.io/cosmos
+
+Utility: Validator Bond
+Deskripsi: Validator harus self-bond ATOM dan menerima delegasi untuk masuk active set (top 180 by voting power); bonding menentukan voting power di consensus (HIGH)
+Status: Live (since mainnet 2019-03-13) (HIGH)
+Sources: https://github.com/cosmos/cosmos-sdk/tree/main/x/staking; https://docs.cosmos.network/main/run-node/validator-setup
+
+Utility: Security (Interchain Security Provider)
+Deskripsi: Cosmos Hub validator set (bonded ATOM) mengamankan consumer chain via Replicated Security; validator earn provider revenue dari consumer chain; slashing risk extended ke consumer chain faults (HIGH)
+Status: Live (since Jul 2023, Cosmos Hub v12) (HIGH)
+Sources: https://github.com/cosmos/interchain-security; https://blog.cosmos.network/interchain-security-launch/
+
+Utility: Liquid Staking (LSM)
+Deskripsi: Liquid Staking Module memungkinkan ATOM staked dileveraged jadi liquid staking token (stATOM, dll) native tanpa smart contract eksternal; rate limiting, validator bonding requirement, 25% cap (HIGH)
+Status: Live (since Nov 2023, Proposal #848) (HIGH)
+Sources: https://www.mintscan.io/cosmos/proposals/848; https://blog.stride.zone/cosmos-hub-lsm/
+
+Utility: Interchain Accounts (ICA) Controller
+Deskripsi: ATOM holder (via wallet/contract) dapat mengontrol account di chain lain via IBC ICA; digunakan untuk cross-chain staking, voting, DeFi (HIGH)
+Status: Live (Cosmos SDK v0.47+, digunakan Neutron, Osmosis, Stride) (HIGH)
+Sources: https://github.com/cosmos/cosmos-sdk/tree/main/x/ibc/applications/interchain-accounts; https://docs.cosmos.network/main/ibc/ica
+
+Utility: IBC Relay / Packet Fee (PFM)
+Deskripsi: Packet Forward Middleware (IBC v7) memungkinkan fee market untuk multi-hop routing; relayer earn fee dalam ATOM (di corridor yang menggunakan ATOM sebagai fee token) (HIGH)
+Status: Live (since Jun 2024, Gaia v19) (HIGH)
+Sources: https://github.com/cosmos/ibc-go/releases/tag/v7.0.0; https://github.com/cosmos/gaia/releases/tag/v19.0.0
+
+Utility: Collateral (DeFi cross-chain)
+Deskripsi: ATOM (dan liquid staked ATOM) digunakan sebagai collateral di lending/borrowing protocol cross-chain (Osmosis, Mars, Umee, Neutron, dll) via IBC (HIGH)
+Status: Live (ecosystem-wide) (HIGH)
+Sources: https://osmosis.zone/; https://neutron.org/; https://mapofzones.com/
+
+Utility: Liquidity Provision
+Deskripsi: ATOM dipasangkan di AMM pools (Osmosis, Astroport, dll) untuk liquidity trading pairs cross-chain; LP earn swap fees + incentives (HIGH)
+Status: Live (ecosystem-wide) (HIGH)
+Sources: https://osmosis.zone/; https://mapofzones.com/
+
+Sources: https://github.com/cosmos/cosmos-sdk/tree/main/x/gov; https://github.com/cosmos/cosmos-sdk/tree/main/x/staking; https://github.com/cosmos/interchain-security; https://www.mintscan.io/cosmos/proposals/848; https://github.com/cosmos/ibc-go/releases/tag/v7.0.0
+
+## Governance
+
+Governance Model: On-chain governance (coin-weighted voting) — proposal lifecycle: submit → deposit period → voting period → tally → execution (HIGH) [Cosmos SDK Gov Module, https://github.com/cosmos/cosmos-sdk/tree/main/x/gov]
+Voting System: 1 ATOM = 1 vote (bonded ATOM); delegator vote overrides validator vote jika delegator vote sendiri; abstain / yes / no / nowithveto (HIGH) [Cosmos SDK Gov, https://docs.cosmos.network/main/build/modules/gov]
+Voting Power: Berdasarkan bonded ATOM (staked ke validator aktif); unbonded ATOM tidak memiliki voting power (HIGH) [Cosmos SDK Staking, https://github.com/cosmos/cosmos-sdk/tree/main/x/staking]
+Delegation: Delegator dapat mendelegasikan voting power ke validator; validator vote atas nama delegator kecuali delegator override (HIGH) [Cosmos SDK Gov, https://docs.cosmos.network/main/build/modules/gov]
+Proposal System: Parameter change, software upgrade, community pool spend, text proposal, IBC client update, dll; minimum deposit (governance param) untuk masuk voting period; quorum 33.4%, threshold 50%, veto 33.4% (HIGH) [Mintscan Proposals, https://www.mintscan.io/cosmos/proposals]
+Treasury Governance: Community Pool (funded by 2% tax pada staking rewards + transaction fees) dikelola via governance proposal (community pool spend); ICF treasury terpisah, off-chain (HIGH) [Cosmos SDK Distribution, https://github.com/cosmos/cosmos-sdk/tree/main/x/distribution]
+Status: Live (ongoing, 900+ proposals seit mainnet) (HIGH)
+Sources: https://github.com/cosmos/cosmos-sdk/tree/main/x/gov; https://www.mintscan.io/cosmos/proposals; https://docs.cosmos.network/main/build/modules/gov
+
+## Inflation / Deflation
+
+Inflation Mechanism: Dynamic inflation (mint module) — target bonded ratio 67% (default); inflation rate berubah 7%-20% per tahun: jika bonded ratio < target → inflation naik (maks 20%); jika bonded ratio > target → inflation turun (min 7%) (HIGH) [Cosmos SDK Mint Module, https://github.com/cosmos/cosmos-sdk/tree/main/x/mint]
+Emission Schedule: Per block minting; inflation rate diperbarui per block berdasarkan bonded ratio terkini; tahun 2024 inflation rate ~10-14% (tergantung bonded ratio ~60-65%) (MEDIUM) [Mintscan, https://www.mintscan.io/cosmos; Mint Module Params, https://www.mintscan.io/cosmos/parameters]
+Burn Mechanism: Tidak ada native burn mechanism di protokol inti; fee tidak di-burn tapi didistribusikan ke validator + community pool (HIGH) [Cosmos SDK Distribution, https://github.com/cosmos/cosmos-sdk/tree/main/x/distribution]
+Buyback: Tidak ada buyback program protokol; ICF bisa melakukan market operations off-chain tapi tidak diungkap (LOW) [Interchain Foundation, https://interchain.io/]
+Supply Reduction: Tidak ada supply reduction mechanism; supply monotonically increasing melalui inflation (HIGH) [Mint Module, https://github.com/cosmos/cosmos-sdk/tree/main/x/mint]
+Status: Live (ongoing) (HIGH)
+Sources: https://github.com/cosmos/cosmos-sdk/tree/main/x/mint; https://www.mintscan.io/cosmos; https://github.com/cosmos/cosmos-sdk/tree/main/x/distribution
+
+## Holder Distribution
+
+Top Holder Concentration: Top 10 address ~25-30% supply (termasuk validator operator addresses, exchange custody, ICF treasury, community pool) — estimasi on-chain (MEDIUM) [Mintscan Rich List, https://www.mintscan.io/cosmos/rich-list; ATOM Scan, https://atomscan.com/rich-list]
+Foundation Holding: ICF treasury address(es) memegang ~23.6M ATOM (genesis allocation) + accumulated grants returns; exact current balance tidak dipublikasikan real-time (MEDIUM) [ICF Fundraiser, https://cosmos.network/icf-fundraiser; Mintscan, https://www.mintscan.io/cosmos]
+Investor Holding: Tidak ada investor allocation terpisah di genesis; early fundraiser kontributor termasuk dalam "Community" (HIGH) [ICF Fundraiser, https://cosmos.network/icf-fundraiser]
+Treasury Holding: Community Pool (on-chain) ~10-15M ATOM (fluktuatif); ICF Treasury (off-chain) tidak diungkap (MEDIUM) [Mintscan Community Pool, https://www.mintscan.io/cosmos; Interchain Foundation, https://interchain.io/]
+Community Holding: Sisa supply (~60-70%) tersebar di delegator individu, validator self-bond, liquid staking protocols (Stride, pSTAKE, dll), DeFi protocols, exchange custody (MEDIUM) [Mintscan, https://www.mintscan.io/cosmos; Map of Zones, https://mapofzones.com/]
+Whale Concentration: Validator operator addresses (top 10 validator ~30-40% bonded stake) + exchange custody addresses (Binance, Kraken, Coinbase, dll) + liquid staking module accounts — concentration tinggi pada staking derivatives dan exchange (MEDIUM) [Mintscan Validators, https://www.mintscan.io/cosmos/validators; LSM Proposal, https://www.mintscan.io/cosmos/proposals/848]
+Sources: https://www.mintscan.io/cosmos/rich-list; https://www.mintscan.io/cosmos/validators; https://www.mintscan.io/cosmos/proposals/848; https://cosmos.network/icf-fundraiser
+
+## Major Token Events
+
+Date: 2017-04-06
+Event: ICF Fundraiser / Public Sale (ICO)
+Description: 168.475.963 ATOM dijual mengumpulkan ~$17M BTC/ETH; token creation event
+Status: Completed
+Related Historical Event ID: EV-004
+Sources: https://cosmos.network/icf-fundraiser
+
+Date: 2019-03-13
+Event: Cosmos Hub Mainnet Genesis / Token Distribution
+Description: Genesis block mint 236.198.958 ATOM ke alokasi fundraiser, team, foundation, ecosystem; ATOM menjadi transferable
+Status: Completed
+Related Historical Event ID: EV-010
+Sources: https://blog.cosmos.network/cosmos-hub-mainnet-launch/; https://github.com/cosmos/gaia/blob/main/genesis/genesis.json
+
+Date: 2019-03
+Event: ATOM Exchange Listing (Binance, Kraken, Huobi, OKEx)
+Description: ATOM mulai trading di exchange terpusat utama; price discovery dimulai
+Status: Completed
+Related Historical Event ID: EV-011
+Sources: https://www.coingecko.com/en/coins/cosmos
+
+Date: 2021-02-18
+Event: Stargate Upgrade (IBC Enabled)
+Description: IBC activated; ATOM dapat transfer cross-chain ke zone lain; utility cross-chain dimulai
+Status: Completed
+Related Historical Event ID: EV-015
+Sources: https://blog.cosmos.network/stargate-upgrade/
+
+Date: 2023-07
+Event: Interchain Security Launch (Cosmos Hub v12)
+Description: ATOM staked validator set mulai mengamankan consumer chain (Neutron pertama); provider revenue stream baru
+Status: Completed
+Related Historical Event ID: EV-025
+Sources: https://blog.cosmos.network/interchain-security-launch/
+
+Date: 2023-11
+Event: Liquid Staking Module (LSM) Activation (Proposal #848)
+Description: Native liquid staking untuk ATOM live; 25% cap liquid staked ATOM; stATOM integration native
+Status: Completed
+Related Historical Event ID: EV-027
+Sources: https://www.mintscan.io/cosmos/proposals/848; https://blog.stride.zone/cosmos-hub-lsm/
+
+Date: 2024-03-14
+Event: Cosmos Hub Upgrade v18 (Lambda) — Tokenomics Changes
+Description: Governance proposal mengubah parameter inflation, community pool allocation, staking rewards
+Status: Completed
+Related Historical Event ID: EV-029
+Sources: https://github.com/cosmos/gaia/releases/tag/v18.0.0
+
+Date: 2024-06-25
+Event: Cosmos Hub Upgrade v19 (Mu) — IBC v7 / Packet Forward Middleware
+Description: Multi-hop routing native; fee market untuk relay; ATOM sebagai fee token di corridor tertentu
+Status: Completed
+Related Historical Event ID: EV-030
+Sources: https://github.com/cosmos/gaia/releases/tag/v19.0.0
+
+Date: 2023-2024 (Ongoing)
+Event: SEC Enforcement Actions vs Exchange — ATOM Delisting Risk
+Description: SEC menuduh ATOM sebagai unregistered security; delisting dari Robinhood, dll; liquidity US tertutup
+Status: Ongoing
+Related Historical Event ID: EV-034
+Sources: https://www.sec.gov/litigation/complaints/2023-128.pdf; https://www.sec.gov/litigation/complaints/2023-132.pdf
+
+Sources: https://cosmos.network/icf-fundraiser; https://blog.cosmos.network/cosmos-hub-mainnet-launch/; https://blog.cosmos.network/stargate-upgrade/; https://blog.cosmos.network/interchain-security-launch/; https://www.mintscan.io/cosmos/proposals/848; https://github.com/cosmos/gaia/releases/tag/v18.0.0; https://github.com/cosmos/gaia/releases/tag/v19.0.0; https://www.sec.gov/litigation/complaints/2023-128.pdf
+
+## Official Token Resources
+
+Official Documentation: https://docs.cosmos.network/
+Whitepaper: https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md
+Governance: https://www.mintscan.io/cosmos/proposals
+Explorer: https://www.mintscan.io/cosmos (primary); https://explorer.cosmos.network/
+Contract (Native): Native Cosmos SDK coin (no contract address); bank module: https://github.com/cosmos/cosmos-sdk/tree/main/x/bank
+Contract (Wrapped ERC-20): https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337
+GitHub: https://github.com/cosmos/gaia (Cosmos Hub); https://github.com/cosmos/cosmos-sdk (SDK)
+Dashboard: https://mapofzones.com/ (IBC analytics); https://www.mintscan.io/cosmos (on-chain analytics)
+
+## Summary
+
+Status: Live
+Supply Type: Inflationary (dynamic 7-20% APY berbasis bonded ratio target 67%)
+Total Supply: Dinamis (~390M+ ATOM per 2024-06, terus bertambah via inflation)
+Distribution Categories: Community/Public Fundraiser (71.3%), Team (10%), Foundation/ICF (10%), Ecosystem/Seed (8.7%)
+Utility Count: 10 (Governance, Staking, Gas/Fee, Validator Bond, Interchain Security Provider, Liquid Staking/LSM, Interchain Accounts, IBC Relay/PFM Fee, Collateral DeFi, Liquidity Provision)
+Governance: On-chain coin-weighted (1 ATOM = 1 vote), delegation enabled, community pool treasury governance
+Major Token Events: 9 (ICO 2017, Mainnet Genesis 2019, Exchange Listing 2019, Stargate/IBC 2021, Interchain Security 2023, LSM 2023, v18 Tokenomics 2024, v19 IBC v7/PFM 2024, SEC Enforcement 2023-ongoing)
+
+## Open Threads
+
+- Persentase tepat vesting schedule untuk Team (Tendermint Inc/All in Bits) dan Ecosystem/Seed allocation — whitepaper menyebut 2 tahun vesting tapi genesis accounts tidak menggunakan vesting module; implementasi aktual tidak diverifikasi on-chain
+- Alamat treasury ICF (Interchain Foundation) yang pasti dan balance terkini — tidak dipublikasikan real-time; hanya genesis allocation diketahui (23.6M ATOM)
+- Parameter inflation terkini on-chain (inflation rate, inflation max/min, goal bonded, blocks per year) pasca-upgrade v18 — butuh query mint module params langsung
+- Distribusi holder detail per kategori (individual delegator vs validator operator vs exchange custody vs liquid staking module vs DeFi protocol) — data on-chain tersebar, tidak ada analisis terpusat resmi
+- Community Pool balance history dan spending proposal track record — data tersedia di Mintscan tapi tidak dikonsolidasikan menjadi laporan berkala
+- Status hukum kasus SEC vs Binance/Kraken/Coinbase terkait klasifikasi ATOM — ongoing, outcome belum pasti, dampak pada utility/regulatory status tidak dapat diprediksi
+- Apakah ada token burn mechanism yang diusulkan/akan datang via governance — tidak ada proposal burn tercatat di proposal history
+- Detail alokasi "Seed Allocation" (8.7%) per recipient (early contributor, advisor, dll) dan vesting masing-masing — tidak diungkap detail di sumber publik
+- Wrapped ATOM supply di Ethereum dan chain lain (bridge custody) vs native supply — bridge contract balances fluktuatif, tidak ada dashboard terpusat resmi
+- Interchain Security provider revenue actuals (ATOM diterima dari Neutron/consumer chain lain) — on-chain tersedia via distribution module tapi tidak diagregasikan publik

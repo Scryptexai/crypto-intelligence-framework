@@ -1,0 +1,149 @@
+PROJECT: Linea
+
+STATUS AIRDROP
+
+Sudah dilakukan. Linea (ConsenSys) mendistribusikan 9.360.000.000 LINEA (~13% dari 72 miliar total supply) melalui airdrop TGE dengan window klaim 90 hari (10 September – 9 Desember 2025) ke ~749.000-750.000 wallet eligible berbasis saldo LXP/LXP-L (snapshot 30 Juli 2025); token yang tidak diklaim dikembalikan ke Linea Consortium Ecosystem Fund (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]; (MEDIUM) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]; [CoinGape, https://coingape.com/trending/linea-airdrop-goes-live-september-10-what-to-expect-from-its-launch-price/]
+
+AIRDROP EVENTS
+
+AD-001: TGE Airdrop LINEA (Distribusi Utama)
+Tanggal: 2025-09-10 (klaim dibuka; window hingga 2025-12-09; snapshot 2025-07-30; eligibility checker live 2025-09-03 via Linea Hub)
+Tipe: Retroactive points-based (LXP/LXP-L) dengan window klaim 90 hari
+Alokasi: 9.360.000.000 LINEA (~13% dari 72 miliar supply) (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]; [CoinGape, https://coingape.com/trending/linea-airdrop-goes-live-september-10-what-to-expect-from-its-launch-price/]
+Penerima: ~749.000-750.000 wallet yang memegang LXP/LXP-L pada snapshot; klaim wajib dari alamat yang sama dengan saldo poin (HIGH) [CoinGape, https://coingape.com/trending/linea-airdrop-goes-live-september-10-what-to-expect-from-its-launch-price/]; [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]
+Nilai saat klaim: 0.0232 USD per LINEA (close hari TGE 2025-09-10; intraday range 0.005-0.047479) [KuCoin LINEA-USDT daily candle, https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)
+Kriteria: Akumulasi LXP/LXP-L melalui aktivitas ekosistem Linea (testnet, DeFi Voyage/Surge campaigns, penggunaan dApp) sebelum snapshot 30 Juli 2025 (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]; [BingX, https://bingx.com/en/learn/article/what-is-linea-tokenomics-and-listing-price-prediction]
+Anti-sybil: Snapshot berbasis saldo poin yang terakumulasi dari aktivitas nyata lintas kampanye panjang (2023-2025); mekanisme detail anti-sybil tidak dipublikasikan penuh (LOW)
+Terkait EV: EV TGE LINEA 2025-09-10
+Sitasi: Phase 1 TGE; Phase 5 Fundraising Mechanism (HIGH/MEDIUM)
+
+AD-002: Program Poin LXP/LXP-L (Basis Eligibility Pra-TGE)
+Tanggal: 2023–2025 (berakhir pada snapshot 2025-07-30)
+Tipe: Points program (non-token) sebagai mekanisme kualifikasi airdrop
+Alokasi: Tidak ada alokasi token langsung — poin dikonversi menjadi eligibility airdrop TGE (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]
+Penerima: Pengguna aktif ekosistem Linea selama era kampanye (Linea Voyage, Surge, DeFi Voyage dengan MetaMask & Intract) (MEDIUM) [CoinMarketCap Academy, https://coinmarketcap.com/academy/article/linea-network-defi-voyage]
+Nilai saat klaim: Tidak berlaku (poin bukan token; nilai terealisasi saat konversi eligibility airdrop)
+Kriteria: Aktivitas on-chain dan kampanye yang diakui sistem LXP/LXP-L (MEDIUM)
+Anti-sybil: Akumulasi poin berbasis aktivitas multi-tahun; detail filter sybil tidak dipublikasikan penuh (LOW)
+Terkait EV: Program insentif pra-TGE
+Sitasi: Phase 3 Events; Phase 6 Token (MEDIUM)
+
+AD-003: Linea Consortium Ecosystem Fund (Distribusi Masa Depan 75% Supply)
+Tanggal: 2025 mulai — horizon 10 tahun
+Tipe: Program distribusi ekosistem jangka panjang (bukan airdrop satu kali)
+Alokasi: 75% total supply (~54 miliar LINEA) terkunci dengan pencairan bertahap 10 tahun, dikelola Linea Consortium (ConsenSys, Eigen Labs, ENS Labs, SharpLink, Status); unclaimed airdrop TGE juga mengalir ke fund ini (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]; [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+Penerima: Ekosistem Linea dan Ethereum (public goods, grants, insentif) sesuai governance Linea Association (MEDIUM) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]
+Nilai saat klaim: Tidak berlaku (distribusi bertahap multi-tahun)
+Kriteria: Keputusan governance Linea Association/Consortium per program (MEDIUM)
+Anti-sybil: Tidak relevan (distribusi programatik, bukan klaim terbuka)
+Terkait EV: Tokenomics LINEA
+Sitasi: Phase 5 Treasury; Phase 6 Distribution (MEDIUM)
+
+CONTEXT SAAT KEPUTUSAN
+
+Kondisi saat keputusan airdrop/TGE (Q3 2025):
+- Kondisi pasar: Pertengahan-akhir 2025 — musim airdrop L2/Ethereum ekosistem; ekspektasi komunitas setelah dua tahun program poin LXP (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]
+- Posisi project: Jaringan beroperasi sejak Juli 2023; 283 juta+ transaksi dan 7 juta+ wallet; TVL >$1,3 miliar pra-TGE; zkEVM dengan integrasi MetaMask/Infura sebagai keunggulan distribusi (MEDIUM) [BingX, https://bingx.com/en/learn/article/what-is-linea-tokenomics-and-listing-price-prediction]
+- Kompetitor terdekat: zkSync Era (airdrop Juni 2024), Scroll, Starknet, Base (tanpa token) — semua L2 bersaing memperebutkan likuiditas dan pengguna (MEDIUM) [eco.com, https://eco.com/support/en/articles/15183705-what-is-linea-consensys-zkevm-l2-in-2026]
+- Trigger: Eksekusi TGE setelah dua kali meleset dari ekspektasi publik ("akhir Juli" → realisasi 10 September) — momentum harus dieksekusi sebelum pendinginan lebih lanjut (HIGH — resolusi konflik C-001 Phase 11) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]
+
+TRIGGER DAN ALTERNATIF
+
+Trigger utama: Konversi program poin LXP/LXP-L menjadi lapisan ekonomis; pendanaan jangka panjang ekosistem via Consortium Fund; positioning institusional ("neutral allocation" untuk risk-adjusted yield DeFi, per pernyataan Ian Wallis/Linea BD) (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage].
+Alternatif tidak diambil:
+- Alokasi investor eksternal: tidak dilakukan — tokenomics secara eksplisit tanpa token untuk investor luar (keputusan langka di industri) (HIGH) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+- LINEA sebagai gas token: tidak dipilih — gas tetap ETH, selaras model fee Ethereum-native (HIGH) [eco.com, https://eco.com/support/en/articles/15183705-what-is-linea-consensys-zkevm-l2-in-2026]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Menghargai kontributor dan mendanai public goods selaras Ethereum (per Ian Wallis, Head of BD) (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]
+- Alokasi netral (tanpa investor eksternal) dirancang menarik bagi institusi pencari risk-adjusted yield di DeFi (HIGH) [sumber sama】
+- Mekanisme dual-burn untuk sifat deflasioner (MEDIUM) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Konsentrasi 75% supply di Consortium Fund (horizon 10 tahun) mempertahankan pengaruh ConsenSys atas arah ekosistem pasca-"desentralisasi" — HIPOTESIS (MEDIUM)
+- Penundaan TGE dari Juli ke September mengindikasikan kesiapan teknis/listing sebagai constraint dominan — HIPOTESIS (LOW)
+
+OUTCOME PER POV
+
+POV Founder (ConsenSys / Linea Association): Sukses
+- Jangka pendek: TGE terlaksana 10 September 2025 (setelah outage singkat yang berhasil diatasi); klaim 90 hari berjalan; listing CEX luas (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]
+- Jangka panjang: Linea Association (Swiss) memegang kendali governance; 90% supply tetap di luar sirkulasi (locked/bertahap) — kontrol struktural jangka panjang terjaga (MEDIUM) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+- Dasar: Phase 3 TGE event; Phase 6 Distribution (HIGH/MEDIUM)
+
+POV VC: Tidak relevan
+- Tokenomics LINEA secara eksplisit tanpa alokasi investor eksternal; investor equity ConsenSys (Series A-D) memegang saham perusahaan, bukan token — verdict Tidak relevan untuk POV VC pada distribusi ini (HIGH) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+
+POV Retail (Penerima airdrop LXP): Gagal
+- Jangka pendek: Klaim dibuka dari close TGE 0.0232 USD (high hari pertama 0.047479) — penjual hari pertama merealisasi nilai dari poin yang dikumpulkan 2023-2025 (MEDIUM) [KuCoin LINEA-USDT, https://www.kucoin.com/trade/LINEA-USDT]
+- Jangka panjang: Harga turun ke 0.0177 pada +30 hari (-24%), 0.0081 pada +90 hari (-65%), dan ~0.0022 pada Agustus 2026 (-90% dari close TGE); pemegang pasif mengalami depresiasi ekstrem tanpa mekanisme penahan nilai (fee share tidak ada; gas tetap ETH) (MEDIUM) [KuCoin LINEA-USDT, https://www.kucoin.com/trade/LINEA-USDT]
+- Dasar: KuCoin price history (MEDIUM)
+
+POV Community (Pemegang LXP/LXP-L & pengguna ekosistem): Sebagian
+- Jangka pendek: ~750k wallet menerima distribusi; klaim via Linea Hub berjalan (dengan outage singkat pra-klaim yang diatasi) (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]
+- Jangka panjang: Nilai per token menurun tajam; mekanisme governance (Linea Association) masih terpusat pada konsorsium — kekuatan komunitas riil belum teruji (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]
+- Dasar: Phase 3 TGE; Phase 6 Governance (HIGH/MEDIUM)
+
+POV Developer (Builder ekosistem Linea): Sebagian
+- Jangka pendek: Ecosystem Fund 75% (10 tahun) menjanjikan pendanaan jangka panjang; tooling MetaMask/Infura native (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]
+- Jangka panjang: Realisasi grants/insentif bergantung keputusan Linea Association; tanpa revenue share langsung, monetisasi builder bergantung adopsi aplikasi (LOW)
+- Dasar: Phase 7 Ecosystem (MEDIUM/LOW)
+
+POV Institution (Exchange, fund, mitra konsorsium): Sebagian
+- Jangka pendek: Listing CEX besar serentak; struktur "tanpa investor eksternal" dipasarkan sebagai alokasi netral untuk institusi (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]
+- Jangka panjang: Depresiasi -90% dalam ~11 bulan menjadikan LINEA aset berkinerja buruk untuk pemegang institusional awal; unlock ConsenSys 15% (5 tahun) dan Consortium Fund (10 tahun) menjadi overhang jangka panjang (MEDIUM) [KuCoin LINEA-USDT, https://www.kucoin.com/trade/LINEA-USDT]; [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+- Dasar: Phase 5 Token Sale; KuCoin price history (HIGH/MEDIUM)
+
+POV Validator: Tidak relevan
+- Linea adalah zkEVM rollup dengan sequencer dan prover yang dioperasikan ConsenSys pada era TGE — tidak ada validator set independen; keamanan diturunkan dari Ethereum L1 (HIGH) [eco.com, https://eco.com/support/en/articles/15183705-what-is-linea-consensys-zkevm-l2-in-2026]
+
+POV Builder (Aplikasi & protokol di Linea): Sebagian
+- Jangka pendek: Akses ke basis pengguna MetaMask + likuiditas TGE; kampanye ekosistem berlanjut (MEDIUM) [BingX, https://bingx.com/en/learn/article/what-is-linea-tokenomics-and-listing-price-prediction]
+- Jangka panjang: Insentif masa depan dari Consortium Fund belum terinci per program; adopsi riil pasca-airdrop belum terverifikasi kuat di sumber publik (LOW)
+- Dasar: Phase 7 Ecosystem (MEDIUM/LOW)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 0.0232 USD (2025-09-10) [KuCoin LINEA-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)
+Harga +30 hari: 0.0177 USD (2025-10-10) [KuCoin LINEA-USDT daily candle close, https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)
+Harga +90 hari: 0.0081 USD (2025-12-09) [KuCoin LINEA-USDT daily candle close, https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)
+Harga puncak 12 bulan pertama: 0.0475 USD (2025-09-10) [KuCoin LINEA-USDT TGE-day high; scan mingguan Sep 2025-Agu 2026 tidak menemukan high lebih tinggi (tertinggi berikutnya 0.0353 minggu Sep 2025). Catatan: window 12 bulan penuh berakhir 2026-09-09 (belum selesai saat laporan ini ditulis; data hingga 2026-08-20), https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan TVL sebelum vs sesudah distribusi: TVL >$1,3 miliar pra-TGE (Sep 2025); angka pasca-TGE tidak tersedia di sumber yang diakses riset ini (LOW) [BingX, https://bingx.com/en/learn/article/what-is-linea-tokenomics-and-listing-price-prediction]
+Jumlah alamat pemegang token (unique holders): Basis awal ~749.000-750.000 wallet klaim airdrop; jumlah holder on-chain pasca-TGE tidak dipublikasikan di sumber yang diakses (MEDIUM) [CoinGape, https://coingape.com/trending/linea-airdrop-goes-live-september-10-what-to-expect-from-its-launch-price/]
+Jumlah alamat aktif harian sebelum vs sesudah: 7 juta+ wallet kumulatif pra-TGE (283 juta+ transaksi); metrik harian pre/post tidak dipublikasikan (LOW) [BingX, https://bingx.com/en/learn/article/what-is-linea-tokenomics-and-listing-price-prediction]
+Konsentrasi kepemilikan: ~78% supply tidak beredar saat TGE (hanya ~22% float awal ~15,8 miliar LINEA); 75% di Consortium Fund 10 tahun + 15% ConsenSys 5 tahun — konsentrasi struktural ekstrem pada entitas konsorsium (HIGH) [BingX, https://bingx.com/en/learn/article/what-is-linea-tokenomics-and-listing-price-prediction]; [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+Tingkat partisipasi staking: Tidak berlaku (LINEA bukan gas token dan tidak memiliki staking keamanan rollup; utilitas governance + burn) (HIGH) [eco.com, https://eco.com/support/en/articles/15183705-what-is-linea-consensys-zkevm-l2-in-2026]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat (klaim vs jual 7/30 hari), tidak tersedia di sumber publik.
+Jumlah final token tidak diklaim yang kembali ke Ecosystem Fund setelah 9 Desember 2025 belum dipublikasikan.
+TVL dan aktivitas jaringan pasca-TGE (Q4 2025 - 2026) belum tersedia di sumber yang diakses.
+
+FARMING DAN SYBIL
+
+Program poin LXP/LXP-L berjalan multi-tahun (2023-2025) dengan kampanye publik (Voyage, Surge, DeFi Voyage) — window farming panjang dan terumumkan, sehingga akumulasi poin strategis (termasuk multi-wallet) mungkin terjadi; snapshot 30 Juli 2025 diumumkan setelah akumulasi berjalan; mekanisme anti-sybil detail tidak dipublikasikan — risiko farming berbasis kampanye tetap ada sebagaimana pola airdrop poin era 2023-2025 (LOW) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]; [CoinMarketCap Academy, https://coinmarketcap.com/academy/article/linea-network-defi-voyage]
+
+PROSPEK
+
+Metrik yang terpenuhi: Eksekusi TGE + klaim 90 hari berjalan; tokenomics tanpa investor eksternal terwujud; Linea Association terbentuk (HIGH)
+Metrik yang tidak terpenuhi: Retensi nilai (-90% dalam ~11 bulan dari close TGE); utilitas token terbatas (governance + burn, tanpa fee share; gas tetap ETH) (HIGH)
+Sinyal ke depan: Realisasi distribusi Consortium Fund 10 tahun; mekanisme dual-burn vs emisi; adopsi/TVL pasca-TGE; nasib token tidak diklaim (MEDIUM)
+Penilaian: Airdrop LINEA adalah distribusi dengan positioning institusional yang rapi (tanpa investor eksternal, konsorsium pengelola) namun menghasilkan outcome retail terburuk di cohort-nya: -90% dalam 11 bulan — kombinasi float kecil, utilitas tanpa arus kas, dan overhang 10 tahun (MEDIUM)
+
+PELAJARAN LINTAS PROJECT
+
+Struktur "tanpa investor eksternal" tidak otomatis melindungi harga retail: tanpa value capture (fee share) dan dengan 78% supply terkunci di entitas konsorsium, tekanan jual airdrop bertemu permintaan organik yang tipis — pola yang sama dengan Vana (cohort TGE akhir 2024/2025).
+Program poin multi-tahun menciptakan ekspektasi besar yang sulit dipenuhi token dengan utilitas governance-only — konversi LXP→LINEA menjadi exit event, bukan retention event.
+Outage teknis tepat sebelum klaim (walau teratasi) menunjukkan risiko eksekusi TGE skala besar — checklist keandalan harus menjadi bagian QA TGE.
+
+OPEN THREADS
+
+- Jumlah final LINEA tidak diklaim yang kembali ke Ecosystem Fund (pasca 9 Desember 2025)
+- TVL/aktivitas jaringan Linea 2026 (perlu data DefiLlama terkini)
+- Realisasi mekanisme dual-burn: berapa LINEA terbakar per kuartal
+- Program distribusi Consortium Fund pertama (penerima, mekanisme)

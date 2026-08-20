@@ -1,0 +1,135 @@
+PROJECT: Monad
+
+STATUS AIRDROP
+
+Belum ada — Token MON belum mengalami Token Generation Event (TGE), mainnet belum diluncurkan, dan tidak ada pengumuman resmi tentang airdrop, points program, atau distribusi retroaktif dari Monad Labs atau entitas terkait【Phase 1 — Launch Date - TGE: Pre-TGE】【Phase 6 — TGE Status: Pre-TGE】【Phase 3 — EV-013: Konfirmasi Status Pre-TGE】.
+
+AIRDROP EVENTS
+
+Tidak ada event airdrop yang tercatat. Token MON belum TGE, tidak ada kontrak token, tidak ada snapshot, tidak ada points program, tidak ada distribusi retroaktif【Phase 6 — all sections】【Phase 3 — all EV】.
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Series A $225M equity (April 2024) — satu-satunya ronde terverifikasi; tidak ada seed/token sale terverifikasi【Phase 5 — Funding History】.
+- Ukuran komunitas: >100 proyek ekosistem testnet (organik, tanpa incentive); Discord/Twitter aktif tapi jumlah member tidak diungkapkan resmi【Phase 7 — Applications】【Phase 8 — Adoption Metrics】.
+- Kondisi pasar: Pre-mainnet, kategori Parallel EVM kompetitif (Sei, MegaETH, Monad); narasi utama "Parallel EVM", "High-throughput L1", "EVM Compatibility"【Phase 8 — Market Position, Narrative Position】.
+- Aktivitas kompetitor: Sei (mainnet 2023, airdrop Season 1 2024), MegaETH (testnet 2024, points program), Monad (testnet Feb 2025, tanpa incentive)【Phase 8 — Competitor Landscape】.
+- Runway: Dana Series A $225M diperkirakan cukup 18-24+ bulan dari April 2024 tanpa revenue; burn rate tidak diungkapkan【Phase 5 — Financial Risk】【Phase 9 — Factor 2】.
+
+TRIGGER DAN ALTERNATIF
+
+Trigger potensial untuk airdrop masa depan: peluncuran mainnet (target Q3 2025), TGE token MON, kebutuhan mendesentralisasi validator set, atau tekanan komunitas/exchange untuk likuiditas awal【Phase 3 — EV-012: Target Mainnet Q3 2025】【Phase 6 — TGE: Belum diumumkan】.
+Alternatif yang tidak diambil (saat ini): tidak ada airdrop, tidak ada points program, tidak ada incentivized testnet, tidak ada public sale/launchpad diumumkan【Phase 7 — Developer Ecosystem: No grant program】【Phase 9 — Pola 3: Testnet Tanpa Incentive】.
+Catatan: Alternatif internal tidak terdokumentasi; tidak ada blog/postmortem tim yang membahas pertimbangan airdrop vs equity-only.
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Tidak ada alasan resmi tentang airdrop karena tidak ada pengumuman airdrop sama sekali. FAQ hanya menegaskan "token MON belum TGE" dan memperingatkan scam token palsu【Phase 6 — Major Token Events: EV-013】【Phase 3 — EV-013】.
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Equity-only funding ($225M Series A) menghilangkan tekanan untuk distribusi token cepat guna fundraising — investor aligned via equity, bukan token unlock【Phase 5 — Fundraising Mechanism: Equity only】【Phase 9 — Pola 1: Single Large Equity Round】 (MEDIUM) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a].
+- Tim mengoptimalkan technical delivery (mainnet Q3 2025) dan menunda semua keputusan tokenomics/governance/foundation hingga pasca-mainnet — airdrop memerlukan tokenomics dan governance yang sudah jelas【Phase 6 — all tokenomics "tidak dipublikasikan"】【Phase 9 — Principle 1: Technical Excellence Over Community Distribution】 (HIGH) [Monad Docs, https://docs.monad.xyz/faq].
+- Testnet "Monad Madness" dirancang sebagai validasi teknis murni tanpa noise sybil/airdrop farmer — >100 proyek join organik membuktikan product-market fit teknis tanpa incentive ekonomi【Phase 9 — Pola 3: Testnet Publik Tanpa Incentive】 (HIGH) [Monad Blog, https://monad.xyz/blog/testnet-launch].
+- Tidak ada foundation/DAO/entity hukum untuk token issuance — airdrop memerlukan legal wrapper (foundation Cayman/BVI/Singapore) yang belum terbentuk/terverifikasi【Phase 2 — Foundation: none, DAO: none】【Phase 7 — Governance Ecosystem: none】 (MEDIUM) [Monad Docs, https://docs.monad.xyz/faq].
+- Menghindari klasifikasi sekuritas: airdrop pre-mainnet tanpa utility jelas (gas, staking, governance) berisiko dianggap distribusi sekuritas di yurisdiksi AS (Delaware incorporation)【Phase 2 — Monad Labs Inc. Delaware】【Phase 5 — Financial Risk: Token Launch Regulatory Risk】 (LOW) [OpenCorporates, https://opencorporates.com/companies/us_de/7849212].
+
+OUTCOME PER POV
+
+POV Founder (Monad Labs Inc., Keone Hon/James Hunsaker/Eunice Giarta): Tidak relevan
+- Jangka pendek: Tidak ada airdrop = tidak ada biaya distribusi, tidak ada tekanan harga, tidak ada sybil noise di testnet; fokus 100% pada engineering delivery.
+- Jangka panjang: Fleksibilitas tokenomics penuh terjaga hingga mainnet; bisa desain airdrop yang aligned dengan validator economics dan governance pasca-launch.
+- Dasar: Phase 9 Principle 1, Pola 3, Pola 5 (HIGH) [Phase 9 Behavioral Summary].
+
+POV VC (Series A Investors — nama tidak diungkapkan): Tidak relevan
+- Jangka pendek: Tidak ada token = tidak ada mark-to-market volatility, tidak ada unlock schedule pressure; equity value terikat pada technical milestone (mainnet launch).
+- Jangka panjang: Jika airdrop dilakukan pasca-mainnet, dilution terhadap equity holder minimal karena investor memegang equity Monad Labs Inc., bukan token allocation (kecuali ada SAFT tersembunyi — tidak terverifikasi).
+- Dasar: Phase 5 Funding History (equity only), Phase 9 Pola 1 (HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a].
+
+POV Retail (pengguna testnet, calon penerima airdrop masa depan): Tidak diketahui
+- Jangka pendek: Tidak ada airdrop = tidak ada "free money", tidak ada FOMO, tidak ada sybil farming; testnet participation murni untuk technical validation/early access.
+- Jangka panjang: Jika airdrop datang, kriteria akan berbasis kontribusi nyata (deploy contract, provide liquidity, run validator) bukan wallet activity farming — karena testnet tidak mengincentivasi volume.
+- Dasar: Phase 9 Pola 3 (no incentivized testnet), Phase 8 Adoption Metrics (organic >100 projects) (MEDIUM) [Monad Ecosystem, https://monad.xyz/ecosystem].
+
+POV Community (Discord/Twitter/Telegram members): Tidak diketahui
+- Jangka pendek: Komunitas fokus pada technical discussion, bug reporting, tooling build — bukan "wen airdrop" discourse.
+- Jangka panjang: Community health lebih bersih tanpa airdrop expectation; tapi risiko disengagement jika mainnet delay dan tidak ada incentive bridge.
+- Dasar: Phase 7 Community (active technical discourse), Phase 9 Pola 3 (MEDIUM) [Discord, https://discord.gg/monad].
+
+POV Developer (builder di testnet): Sebagian (positif)
+- Jangka pendek: Zero switching cost (EVM compatible), tidak perlu optimize untuk points/airdrop criteria — bangun produk yang butuh parallel execution.
+- Jangka panjang: Jika airdrop berbasis technical contribution (contract deployment, TVL, volume), developer early adopter mendapat reward alami; jika berbasis social/farming, misalignment.
+- Dasar: Phase 7 Major Integrations (Hardhat/Foundry/ethers.js work out-of-box), Phase 9 Playbook 1 (HIGH) [Monad Docs, https://docs.monad.xyz/developers/getting-started].
+
+POV Institution (exchange, market maker, custodian): Tidak relevan
+- Jangka pendek: Tidak ada token = tidak ada listing discussion, tidak ada market making agreement, tidak ada custody need.
+- Jangka panjang: Airdrop pasca-mainnet akan menciptakan initial liquidity event — exchange butuh tokenomics clarity, unlock schedule, jurisdictional clarity sebelum listing.
+- Dasar: Phase 8 Trading Markets (none listed), Phase 6 TGE (not announced) (MEDIUM) [CoinGecko, https://www.coingecko.com].
+
+POV Validator (calon validator mainnet): Tidak relevan
+- Jangka pendek: Testnet validator berjalan tanpa token reward (testnet token tidak bernilai); operator test infrastructure untuk technical readiness.
+- Jangka panjang: Airdrop/token allocation untuk validator set penting untuk bootstrapping security — namun validator economics (staking min, reward curve, slashing) belum dipublikasikan.
+- Dasar: Phase 4 Consensus Mechanism (slashing planned not parameterized), Phase 7 Infrastructure Providers (validator operators) (MEDIUM) [Monad Docs, https://docs.monad.xyz/validators].
+
+POV Builder (ecosystem project founder): Sebagian (positif)
+- Jangka pendek: Bangun di testnet tanpa biaya opportunity cost farming airdrop chain lain; tooling familiar = faster iteration.
+- Jangka panjang: Jika airdrop allocation ada untuk ecosystem projects (bukan individual wallet), builder early adopter benefit; jika hanya retail airdrop, builder tidak mendapat allocation khusus.
+- Dasar: Phase 7 Applications (>100 projects organic), Phase 9 Pola 2 (Ethereum Alignment First) (HIGH) [Monad Ecosystem, https://monad.xyz/ecosystem].
+
+METRIK RETENSI
+
+Tidak ditemukan — tidak ada airdrop, tidak ada token, tidak ada penerima, tidak ada data retensi【Phase 6 — all sections】【Phase 3 — all EV】.
+
+FARMING DAN SYBIL
+
+Tidak ada farming/sybil terkait airdrop karena tidak ada airdrop dan testnet tidak memiliki incentive program. Populasi hunter tidak tertarik karena tidak ada points/airdrop criteria untuk ditebak. >100 proyek join organik untuk technical validation, bukan farming【Phase 9 — Pola 3: Testnet Publik Tanpa Incentive】【Phase 3 — EV-011】.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Mainnet target timeline dipublikasikan (Q3 2025)【Phase 3 — EV-012】 (HIGH) [Monad Docs, https://docs.monad.xyz/roadmap].
+- Testnet live dengan full stack (consensus, execution, storage, RPC, explorer)【Phase 3 — EV-009, EV-010】 (HIGH) [Monad Blog, https://monad.xyz/blog/testnet-launch].
+- Ekosistem >100 proyek onboard organik【Phase 3 — EV-011】 (MEDIUM) [Monad Ecosystem, https://monad.xyz/ecosystem].
+- Series A funding $225M secured — runway untuk mainnet tanpa token pressure【Phase 5 — Funding History】 (HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a].
+- EVM compatibility full — developer onboarding ready【Phase 4 — Execution Environment】 (HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper].
+
+Prasyarat yang belum:
+- Token MON TGE belum terjadi; supply, allocation, vesting, governance, inflation — semua "tidak dipublikasikan"【Phase 6 — all sections】 (HIGH) [Monad Docs, https://docs.monad.xyz/faq].
+- Foundation/DAO entity hukum untuk token issuance tidak terverifikasi/terbentuk【Phase 2 — Foundation: none, DAO: none】 (HIGH) [Monad Docs, https://docs.monad.xyz/faq].
+- Yurisdiksi hukum token issuance (BVI/Cayman/Delaware/Singapore) tidak dikonfirmasi【Phase 5 — Financial Risk: Token Launch Regulatory Risk】 (HIGH) [Monad Docs, https://docs.monad.xyz/faq].
+- Validator economics (staking min, delegation, slashing, reward curve) tidak dipublikasikan【Phase 4 — Consensus Mechanism】 (HIGH) [Monad Docs, https://docs.monad.xyz/architecture].
+- Audit keamanan publik untuk MonadBFT, Execution Engine, MonadDb belum ada【Phase 4 — Audit History】 (HIGH) [Monad Docs, https://docs.monad.xyz/faq].
+- Bridge/oracle native atau partnership resmi tidak diumumkan【Phase 7 — Ecosystem Risks】 (MEDIUM) [Monad Ecosystem, https://monad.xyz/ecosystem].
+- Upgrade governance mechanism tidak terdokumentasi【Phase 4 — Known Technical Limitations】 (HIGH) [Monad FAQ, https://docs.monad.xyz/faq].
+
+Sinyal yang biasanya mendahului:
+- Pembentukan Monad Foundation (Cayman/BVI/Singapore) terpisah dari Monad Labs Inc. — terlihat di filing perusahaan atau pengumuman blog.
+- Publikasi tokenomics draft (blog/governance forum) dengan alokasi community/airdrop, vesting schedule, TGE date.
+- Deploy kontrak token MON di testnet/mainnet (verifiable on-chain) — muncul di block explorer.
+- Pengumuman snapshot date atau "Season 0" eligibility criteria (testnet activity, contract deployment, validator operation).
+- Perekrutan legal/compliance/token launch team di Monad Labs (LinkedIn/job board).
+- Partnership dengan launchpad (CoinList, Binance Launchpad, dll.) atau market maker (Wintermute, GSR, dll.) diumumkan.
+- Audit report publik dirilis untuk core components.
+
+Penilaian: Airdrop MON sangat mungkin (keyakinan: TINGGI) karena: (1) Parallel EVM competitors (Sei, MegaETH) menggunakan airdrop/points untuk bootstrap community dan liquidity, (2) Validator set membutuhkan token incentive untuk security budget, (3) Community ownership narrative standar untuk L1 modern. Namun timing TIDAK AKAN sebelum mainnet launch dan foundation formation — Monad mengikuti pola "Technical Excellence Over Community Distribution" (Phase 9 Principle 1). Airdrop kemungkinan besar terjadi pasca-mainnet (Q3 2025 atau Q4 2025) sebagai bagian dari TGE atau segera setelahnya, dengan kriteria berbasis on-chain contribution (deploy, volume, validator uptime) bukan social farming, konsisten dengan testnet organic growth pattern. Faktor yang bisa mengubah: regulatory delay (SEC guidance), mainnet slip, atau keputusan tim untuk skip airdrop sepenuhnya dan gunakan liquidity bootstrapping pool / public sale saja.
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika project melakukan single large equity round ($100M+) pre-mainnet tanpa token sale, airdrop cenderung ditunda hingga pasca-mainnet karena tidak ada tekanan fundraising via token — investor aligned via equity, bukan token unlock (era 2023-2025, deep tech L1: Monad, Berachain pre-launch).
+- Ketika testnet diluncurkan production-grade full-stack tanpa incentive program, ekosistem yang berkembang organik (>100 proyek) menciptakan baseline kontribusi nyata yang bisa jadi basis airdrop yang lebih fair dan anti-sybil dibanding points farming (era 2024-2025: Monad testnet vs Sei/MegaETH incentivized testnet).
+- Ketika tim menunda SEMUA tokenomics/governance/foundation hingga mainnet dekat, airdrop allocation dan criteria menjadi "blank slate" — memungkinkan desain optimal tapi menciptakan ketidakpastian besar untuk komunitas dan exchange (era 2024-2025: Monad, MegaETH).
+- Ketika project memilih full EVM compatibility (bukan EVM-equivalent dengan modifikasi), airdrop criteria berbasis "EVM-native activity" (contract deploy, ERC-20 interaction, gas usage) lebih natural dan verifiable on-chain dibanding criteria proprietary chain (era 2023-2025: Monad, Sei v2, MegaETH).
+- Ketika tidak ada foundation/DAO entity terverifikasi 6 bulan sebelum mainnet target, airdrop legal wrapper belum siap — sinyal foundation formation adalah leading indicator yang lebih reliable dari "wen airdrop" speculation (era 2024-2025: Monad, Berachain, Movement).
+
+OPEN THREADS
+
+- Apakah Series A investor memiliki SAFT/token warrant tersembunyi yang akan mendapat alokasi token MON? (Phase 5 Financial Risk vs Phase 6 Distribution — konflik potensial) — tidak terverifikasi.
+- Kapan Monad Foundation akan dibentuk, di yurisdiksi mana, dan apakah akan menjadi entity penerbit token MON? — tidak ada sinyal.
+- Apa alokasi persentase untuk community/airdrop/ecosystem di tokenomics MON? — tidak dipublikasikan.
+- Apakah airdrop akan berbasis retroactive (testnet activity) atau forward-looking (mainnet activity pasca-TGE)? — tidak diumumkan.
+- Apakah akan ada "Season 0" points program di testnet sebelum mainnet? — saat ini tidak, tapi bisa berubah.
+- Bagaimana validator economics (staking reward, slashing) akan mempengaruhi airdrop allocation untuk validator vs retail? — tidak dipublikasikan.
+- Apakah Monad akan melakukan public sale/launchpad BERSAMA airdrop, atau airdrop saja? — tidak diumumkan.
+- Bagaimana regulatory risk (SEC, CFTC) mempengaruhi struktur airdrop (US persons excluded? geo-blocking?) — tidak diketahui.
+- Apakah audit publik akan dirilis SEBELUM mainnet/TGE/airdrop? — FAQ bilang belum ada, tapi bisa private audit.
+- Berapa burn rate Monad Labs Inc. dan runway exact dari $225M? — mempengaruhi urgensi mainnet/TGE/airdrop timeline.

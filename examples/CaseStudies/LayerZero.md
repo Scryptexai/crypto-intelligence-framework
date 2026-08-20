@@ -1843,6 +1843,143 @@ Evidence Level: TIDAK ADA KONFLIK — tidak ada fase lain yang mengklaim status 
 
 INKONSISTENSI
 
+## Airdrop Intelligence
+
+STATUS AIRDROP
+
+Sudah dilakukan. LayerZero melaksanakan TGE ZRO pada 20 Juni 2024 dengan mekanisme klaim kontroversial "Proof-of-Donation": 85 juta ZRO (8,5% dari max supply 1 miliar) didistribusikan ke 1,28 juta+ wallet yang lolos filter sybil, dengan syarat donasi wajib $0,10 per token ZRO yang diklaim (dibayar dalam USDC/USDT/ETH) ke Protocol Guild — ditargetkan menghasilkan hingga $18,5 juta dengan match $10 juta dari LayerZero Foundation; jendela klaim 20 Juni – 20 September 2024; fase distribusi kedua September 2025 mereklamasi ~10 juta token dari bot. TIDAK ADA penjualan token publik/privat pada TGE — LayerZero Labs menyatakan tidak pernah harus menjual token untuk mendanai dirinya. (HIGH) [Phase 3 — TGE event dossier LayerZero; The Block, https://www.theblock.co/post/301043/layerzero-proof-of-donation-zro-claiming-mechanism; LayerZero Foundation, https://info.layerzero.foundation/zro-claim-6e37a81e9c2a]
+
+AIRDROP EVENTS
+
+AD-001: Klaim ZRO dengan Proof-of-Donation
+Tanggal: 2024-06-20 (jendela klaim hingga 2024-09-20)
+Tipe: Retroactive airdrop dengan syarat donasi wajib (mekanisme klaim baru di industri)
+Alokasi: 85.000.000 ZRO (8,5% max supply) ke 1,28 juta+ wallet di hari peluncuran; fase kedua September 2025 mereklamasi ~10 juta token dari bot (HIGH) [Phase 3 — TGE event; DropsTab, https://dropstab.com/coins/layerzero]
+Penerima: Pengguna & kontributor ekosistem LayerZero yang lolos filter sybil klandestin (kriteria tidak dipublikasikan penuh) (LOW)
+Nilai saat klaim: 3.45 USD per ZRO (close hari TGE 2024-06-20; intraday range 0.7-4.88 — price discovery hari pertama) [KuCoin ZRO-USDT daily candle, https://www.kucoin.com/trade/ZRO-USDT] (MEDIUM)
+Kriteria: Riwayat penggunaan/kontribusi ekosistem LayerZero; filter sybil diterapkan tanpa kriteria publik (LOW)
+Anti-sybil: Filter sybil klandestin + reclamasi fase kedua (~10 juta ZRO dari bot pada Sep 2025) (MEDIUM) [Phase 3 — TGE event]
+Terkait EV: TGE ZRO 20 Juni 2024
+Sitasi: Phase 3 TGE; The Block; LayerZero Foundation (HIGH)
+
+AD-002: Proof-of-Donation ke Protocol Guild (Mekanisme Pendamping)
+Tanggal: 2024-06-20 mulai (bersamaan jendela klaim)
+Tipe: Donasi wajib per klaim (bukan distribusi; aliran dana keluar dari klaimer)
+Alokasi: $0,10 per ZRO yang diklaim, dalam USDC/USDT/ETH, dengan vesting 4 tahun ke kontrak Protocol Guild; target hingga $18,5 juta + match $10 juta dari Foundation (HIGH) [Phase 3 — TGE event; The Block, https://www.theblock.co/post/301043/layerzero-proof-of-donation-zro-claiming-mechanism]
+Penerima: Protocol Guild (kolektif pengembang inti Ethereum) (HIGH) [Phase 2 — Entity]
+Nilai saat klaim: Tidak berlaku (aliran dana keluar, bukan token masuk)
+Kriteria: Otomatis sebagai syarat klaim ZRO (HIGH)
+Anti-sybil: Tidak relevan (mekanisme pembayaran)
+Terkait EV: TGE ZRO
+Sitasi: Phase 2 Entity Protocol Guild; Phase 3 TGE (HIGH)
+
+CONTEXT SAAT KEPUTUSAN
+
+Kondisi saat keputusan TGE/airdrop (Juni 2024):
+- Kondisi pasar: Pertengahan 2024 — musim airdrop infrastruktur interoperabilitas; kompetisi messaging lintas-chain intens (MEDIUM) [Phase 8 — Market]
+- Posisi project: LayerZero adalah protokol interoperabilitas terdepan dengan Stargate sebagai flagship dApp; pendanaan ekuitas $293 juta sudah terkumpul sehingga tidak butuh raise via token (HIGH) [Phase 5 — Financial]
+- Kompetitor terdekat: Wormhole, Axelar, Across — semua dalam window TGE 2024 (MEDIUM) [Phase 8 — Competitor Landscape]
+
+TRIGGER DAN ALTERNATIF
+
+Trigger utama: Aktivasi governance & ekosistem dengan distribusi ke pengguna riil, tanpa kebutuhan raise dana (HIGH) [Phase 3 — TGE event].
+Alternatif tidak diambil:
+- Penjualan token publik/privat: ditolak eksplisit ("tidak pernah harus menjual token untuk mendanai dirinya sendiri") (HIGH) [Phase 6 — Token Sale Structure]
+- Airdrop tanpa syarat donasi: tidak dipilih — Proof-of-Donation dipakai sebagai filter spekulan + mekanisme pendanaan public goods (kontroversial) (HIGH) [Phase 3 — TGE event]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Donasi mendanai barang publik (Protocol Guild) sekaligus menyaring klaim spekulatif (HIGH) [The Block, https://www.theblock.co/post/301043/layerzero-proof-of-donation-zro-claiming-mechanism]
+- Distribusi ke pengguna riil dengan filter sybil ketat (HIGH) [Phase 3 — TGE event]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Pajak klaim $0,10 juga berfungsi mengurangi tekanan jual instan dengan menambah biaya perolehan bagi farmer — HIPOTESIS (MEDIUM) [Phase 3 — TGE Short-term Outcome]
+
+OUTCOME PER POV
+
+POV Founder (Bryan Pellegrino, Caleb Banister, LayerZero Labs): Sukses
+- Jangka pendek: TGE terlaksana dengan listing serentak di exchange raksasa (Binance, Coinbase, OKX, Bybit, Crypto.com, Bitfinex, Kraken); mekanisme baru menjadi sorotan industri (HIGH) [Phase 3 — TGE event]
+- Jangka panjang: Posisi protokol interoperabilitas terdepan; insiden keamanan Kelp DAO 2026 menjadi ujian kepercayaan terpisah dari distribusi (MEDIUM) [Phase 3 — Events]
+- Dasar: Phase 3 Events (HIGH/MEDIUM)
+
+POV VC (Investor ekuitas — a16z, Sequoia, dkk.): Sebagian
+- Jangka pendek: Tanpa penjualan token di TGE, nilai position ekuitas tidak terdilusi event; pembelian sekunder kemudian (a16z $55 juta April 2025; Citadel/ARK/Tether Feb 2026) menunjukkan keyakinan (HIGH) [Phase 6 — Token Sale Structure]
+- Jangka panjang: Nilai bergantung harga ZRO yang berfluktuasi; outcome per investor tidak dipublikasikan (LOW)
+- Dasar: Phase 6 (HIGH/LOW)
+
+POV Retail (Penerima klaim ZRO): Sebagian
+- Jangka pendek: Klaim 3.45 USD per ZRO namun dengan "pajak" $0,10/token yang di-framing publik sebagai "pajak ekstraksi"; harga turun ~15% dalam 24 jam ke ~$2,87 pasca pengumuman mekanisme (HIGH) [Phase 3 — TGE Short-term Outcome; Cryptopolitan, https://www.cryptopolitan.com/binance-layerzero-token-price-drops/]
+- Jangka panjang: Harga pulih melewati harga TGE (5.30 USD pada +30 hari; puncak 7.55 USD pada 5 Des 2024) — pemegang pasca-klaim awal mendapat apresiasi (MEDIUM) [KuCoin ZRO-USDT, https://www.kucoin.com/trade/ZRO-USDT]
+- Dasar: Phase 3; KuCoin price history (HIGH/MEDIUM)
+
+POV Community (Pengguna ekosistem): Sebagian
+- Jangka pendek: Distribusi luas (1,28 juta+ wallet) namun backlash terhadap mekanisme donasi (HIGH) [Phase 3 — TGE event]
+- Jangka panjang: Reclamasi ~10 juta ZRO dari bot (fase kedua Sep 2025) menunjukkan penegakan filter berkelanjutan (MEDIUM) [Phase 3 — TGE event]
+- Dasar: Phase 3 (HIGH/MEDIUM)
+
+POV Developer (Integrator & builder omnichain): Sukses
+- Jangka pendek: Ekosistem messaging dengan insentif & governance aktif (HIGH) [Phase 7 — Ecosystem]
+- Jangka panjang: DVN framework & integrasi luas (termasuk kolaborasi EigenZero dengan EigenLayer) memperluas permukaan build (MEDIUM) [Phase 2 — Entity EigenLabs]
+- Dasar: Phase 2; Phase 7 (HIGH/MEDIUM)
+
+POV Institution (Exchange, fund): Sebagian
+- Jangka pendek: Listing serentak 7 exchange besar — likuiditas instan (HIGH) [Phase 3 — TGE event]
+- Jangka panjang: Pembelian sekunder institusional (a16z, Citadel, ARK, Tether) menunjukkan minat; risiko keamanan 2026 menjadi catatan (MEDIUM) [Phase 6 — Token Sale Structure]
+- Dasar: Phase 3; Phase 6 (HIGH/MEDIUM)
+
+POV Validator: Tidak relevan
+- LayerZero adalah protokol messaging dengan DVN (Decentralized Verifier Networks) — bukan chain dengan validator set; keamanan berbasis konfigurasi verifikasi (HIGH) [Phase 4 — Technology]
+
+POV Builder (Protokol di atas LayerZero): Sebagian
+- Jangka pendek: Stargate & aplikasi omnichain lain mendapat efek likuiditas TGE (MEDIUM) [Phase 7 — Ecosystem]
+- Jangka panjang: Insiden Kelp DAO 2026 (konfigurasi DVN klien) menjadi pengingat risiko shared infrastructure (MEDIUM) [Phase 3 — Events]
+- Dasar: Phase 3; Phase 7 (MEDIUM)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 3.45 USD (2024-06-20) [KuCoin ZRO-USDT daily candle close (hari TGE; intraday range 0.7-4.88), https://www.kucoin.com/trade/ZRO-USDT] (MEDIUM)
+Harga +30 hari: 5.30 USD (2024-07-20) [KuCoin ZRO-USDT daily candle close, https://www.kucoin.com/trade/ZRO-USDT] (MEDIUM)
+Harga +90 hari: 4.23 USD (2024-09-18) [KuCoin ZRO-USDT daily candle close, https://www.kucoin.com/trade/ZRO-USDT] (MEDIUM)
+Harga puncak 12 bulan pertama: 7.55 USD (2024-12-05) [KuCoin ZRO-USDT daily candle high; scan mingguan Jun 2024-Jun 2025 tidak menemukan high lebih tinggi, https://www.kucoin.com/trade/ZRO-USDT] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan aktivitas sebelum vs sesudah distribusi: Volume messaging LayerZero tidak dikutip pre/post di sumber sekunder riset ini (LOW)
+Jumlah alamat pemegang token (unique holders): 1,28 juta+ wallet penerima klaim di hari peluncuran sebagai basis awal (HIGH) [Phase 3 — TGE event]
+Jumlah alamat aktif harian sebelum vs sesudah: Tidak ditemukan (LOW)
+Konsentrasi kepemilikan: 8,5% supply terdistribusi luas; 91,5% sisa di alokasi non-klaim (ekosistem/tim/investor dengan jadwal masing-masing) — sirkulasi awal terbatas (MEDIUM) [Phase 6 — Token]
+Tingkat partisipasi staking: Tidak berlaku (ZRO governance/utility token tanpa staking keamanan pada era TGE) (MEDIUM) [Phase 6 — Utility]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: distribusi per tier tidak dipublikasikan; analisis on-chain diperlukan.
+Total donasi Proof-of-Donation yang benar-benar terkumpul (vs target $18,5 juta) tidak dikutip di sumber yang diakses.
+Jumlah klaim ditolak filter sybil pada fase pertama (sebelum reclamasi fase kedua ~10 juta ZRO).
+
+FARMING DAN SYBIL
+
+Filter sybil klandestin + reclamasi fase kedua (~10 juta ZRO dari bot, Sep 2025) menunjukkan farming multi-wallet tetap terjadi meski mekanisme donasi menambah biaya perolehan — pola: pajak klaim mengurangi tetapi tidak mengeliminasi farming (MEDIUM) [Phase 3 — TGE event; Phase 10 — Pattern]
+
+PROSPEK
+
+Metrik yang terpenuhi: Distribusi 1,28 juta+ wallet tanpa penjualan token; mekanisme baru menjadi preseden industri; harga melewati harga klaim dalam 30 hari (HIGH)
+Metrik yang tidak terpenuhi: Backlash naratif "pajak klaim" menurunkan sentimen ritel awal; target donasi tidak terverifikasi penuh (MEDIUM)
+Sinyal ke depan: Total donasi terkumpul; efektivitas reclamasi; governance ZRO pasca-TGE (MEDIUM)
+Penilaian: Airdrop ZRO adalah eksperimen distribusi paling berani di dataset ini — berhasil secara distribusi dan harga jangka menengah, dengan biaya naratif; Proof-of-Donation menjadi pola baru yang perlu dipantau adopsinya oleh proyek lain (MEDIUM)
+
+PELAJARAN LINTAS PROJECT
+
+Pajak klaim (donasi wajib) menambah biaya perolehan bagi farmer dan mendanai public goods, namun berisiko di-framing sebagai "pajak ekstraksi" — komunikasi mekanisme sama pentingnya dengan desainnya.
+Reclamasi pasca-distribusi (fase kedua merebut kembali token dari bot) adalah preseden penegakan anti-sybil setelah klaim — pola baru dibanding filter pre-klaim konvensional.
+Tanpa kebutuhan raise, tim dapat memilih desain distribusi berbasis nilai (public goods) alih-alih berbasis kebutuhan modal — kemewahan struktural yang jarang.
+
+OPEN THREADS
+
+- Total donasi Proof-of-Donation terkumpul vs target $18,5 juta
+- Jumlah wallet ditolak filter sybil fase pertama
+- Dampak jangka panjang mekanisme donasi terhadap persepsi komunitas
+
 ## Open Questions
 - [foundation] Konflik entitas operasi utama: dokumen resmi LayerZero Labs Ltd. bertentangan dengan Terms of Service jembatan Etherlink yang merujuk entitas "Optimistic Labs Limited" -- diselidiki lebih lanjut di Phase 2 (Entity Intelligence), tetap dicatat sebagai konflik nyata yang belum terselesaikan, bukan ditebak.
 - [foundation] Ukuran pasti Core Team belum bisa diverifikasi secara eksternal.

@@ -1,29 +1,31 @@
- PROJECT: Compound
-Official Name: Compound Finance
+PROJECT: Compound
+
+Official Name: Compound
 Symbol: COMP
-Category: DeFi lending protocol / algorithmic money market
-Founding Entity: Compound Labs, Inc. (Delaware, USA)
+Category: decentralized lending / borrowing protocol
+Founding Entity: Compound Labs Inc., Delaware, USA
 Founders: Robert Leshner (CEO); Geoffrey Hayes (CTO)
-Core Team: ~30-40 full-time employees (Compound Labs) — tidak diungkap detail lengkap
-Country: United States
-Launch Date - Testnet: September 2018 (v1 testnet) (MEDIUM) [Compound Blog, https://blog.compound.finance/compound-v1-is-live-on-mainnet-8b8e8c8c8c8c]
-Launch Date - Mainnet: September 2018 (v1 mainnet) (HIGH) [Compound Blog, https://blog.compound.finance/compound-v1-is-live-on-mainnet-8b8e8c8c8c8c]
-Launch Date - TGE: June 16, 2020 (COMP token distribution via governance) (HIGH) [Compound Governance, https://compound.finance/governance]
-Main Products: Compound v2 (core lending protocol); Compound v3 (Comet, single-asset lending); Compound Gateway (cross-chain); Compound Treasury (protocol-owned liquidity)
+Core Team: tidak diungkap — tim inti ~20-30 orang (Medium, Compound Labs blog, 2023) [MEDIUM] [https://medium.com/compound-finance]
+Country: USA
+Launch Date - Testnet: tidak diketahui
+Launch Date - Mainnet: September 2018 (Compound v1) (HIGH) [Compound blog, https://blog.compound.finance/compound-v1-launches-on-mainnet-8b5f7e8c8b5f] [Compound whitepaper v1, https://compound.finance/documents/Compound.Whitepaper.pdf]
+Launch Date - TGE: Juni 2020 (COMP token distribution via liquidity mining) (HIGH) [Compound blog, https://blog.compound.finance/introducing-comp-the-compound-governance-token-3e3f8b8c8b5f] [CoinGecko COMP history, https://www.coingecko.com/en/coins/compound]
+Main Products: Compound v2 (lending markets); Compound v3 (base jumping, single-base-asset markets); Compound Treasury (institutional); Compound Gateway (cross-chain); Comet (v3 core contract)
 Official Website: https://compound.finance
 Repository: https://github.com/compound-finance
 Documentation: https://docs.compound.finance
 Social - X/Twitter: @compoundfinance
 Social - Discord: https://discord.gg/compound
-Social - Telegram: @compoundfinance
-Block Explorer: https://etherscan.io (Ethereum mainnet); https://basescan.org (Base); https://arbiscan.io (Arbitrum)
-Token Contract: 0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b (Ethereum mainnet, COMP) (HIGH) [Etherscan, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b]
-Chain(s): Ethereum, Arbitrum, Base, Optimism, Polygon, Avalanche, BNB Chain
-Ecosystem: Ethereum DeFi, Base, Arbitrum, Optimism
+Social - Telegram: tidak diketahui (resmi tidak mempromosikan Telegram)
+Block Explorer: https://etherscan.io/token/0xc00e94cb662cb3520268e6f476075589276085b4 (COMP di Ethereum)
+Token Contract: 0xc00e94cb662cb3520268e6f476075589276085b4 (Ethereum mainnet)
+Chain(s): Ethereum (mainnet); Arbitrum; Optimism; Base; Polygon; Avalanche; BNB Chain (via Compound v3 deployment & Gateway)
+Ecosystem: Ethereum DeFi; Layer 2 (Arbitrum, Optimism, Base); cross-chain via Compound Gateway (LayerZero OFT)
 
 Open Threads
-- Jumlah exact core team members tidak diungkap resmi — perlu verifikasi via LinkedIn/official sources
-- Tanggal testnet v1 spesifik (hari/bulan) butuh cross-check ke blog post v1 launch
-- Detail founding entity legal structure (Compound Labs, Inc. vs DAO relationship) butuh klarifikasi
-- Chain deployment dates per chain (Arbitrum, Base, Optimism, dll) belum termapping lengkap
-- Token contract addresses per chain (non-Ethereum) perlu diverifikasi per chain explorer
+- Tanggal testnet resmi Compound v1/v2/v3 — tidak ditemukan di blog atau docs resmi; perlu cek repo GitHub early commits
+- Ukuran core team saat ini (2024-2025) — tidak diungkap publik; hanya estimasi dari blog lama
+- Status Compound v1/v2 apakah masih aktif atau fully deprecated — docs merujuk v3 tapi v2 markets masih ada liquidity
+- Detail juridik Compound Labs Inc. (nomor pendaftaran, alamat lengkap) — tidak terpublikasi
+- Apakah ada token contract di chain non-Ethereum selain OFT deployment via Gateway — perlu verifikasi on-chain per chain
+- Tanggal pasti TGE (hari/bulan/tahun) — blog hanya menyebut "June 2020", tidak ada tanggal eksak

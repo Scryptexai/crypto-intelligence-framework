@@ -1,0 +1,92 @@
+PROJECT: Curve
+
+Core Insights
+
+Insight 1: StableSwap invariant adalah fondasi moat Curve
+Explanation: Invariant khusus aset bernilai serupa (stablecoin, LST, wrapped assets) menghasilkan slippage jauh lebih rendah dari AMM umum — menjadikan Curve venue kanonik yang dirutekan agregator dan dipilih issuer stablecoin selama bertahun-tahun.
+Evidence: StableSwap whitepaper mendefinisikan invariant dan motivasinya【Phase 1 — Foundation】; pool 3pool/stETH menjadi venue referensi era 2020-2023【Phase 8 — Market Timeline】.
+Supporting Dataset: Phase 1, Phase 4, Phase 8
+Confidence: HIGH
+
+Insight 2: Distribusi CRV via gauge emission mengunci likuiditas lebih lama daripada airdrop — dengan konsekuensi ketergantungan pada permintaan politik internal
+Explanation: 62% supply diemisikan via gauge dengan bobot yang ditentukan vote veCRV; LP bertahan selama emisi menguntungkan. Ketika meta-layer (Convex/bribe) mendingin, permintaan struktural atas CRV ikut turun — nilai token menjadi fungsi arus fee vs emisi, bukan kelangkaan.
+Evidence: Mekanisme gauge & emisi 62%【Phase 6 — Distribution】; Curve Wars & konsentrasi Convex【Phase 3 — EV-004; Phase 7 — Key Integrations】; supply inflasioner max 3,03B【Phase 6 — Supply】.
+Supporting Dataset: Phase 3, Phase 6, Phase 9 Financial Decision Pattern
+Confidence: HIGH
+
+Insight 3: veCRV vote-escrow menjadi template industri (lock 4 tahun, boost 2.5x, fee share, gauge voting)
+Explanation: Mekanisme lock jangka panjang dengan hak ekonomi + governance ditiru lintas industri (Convex vlCVX dan banyak vl-token lain) — Curve mengekspor pola desain governance token.
+Evidence: Utilitas veCRV lengkap【Phase 6 — Utility; Phase 3 — EV-003】; adopsi pola oleh Convex dkk.【Phase 7 — Key Integrations】.
+Supporting Dataset: Phase 3, Phase 6, Phase 7
+Confidence: HIGH
+
+Insight 4: Komposisi distribusi per kategori non-komunitas adalah konflik data yang belum terpecahkan
+Explanation: Dataset ini mencatat Team 30% / Investors 3% / Foundation 3% / Employees 2%, sementara sumber publik umum menyebut shareholders 30% / team 3% / early users 5% — atribusi 30% supply berbeda (team vs shareholders), mengubah analisis sentralisasi; verifikasi dokumen primer Agustus 2020 diperlukan.
+Evidence: Phase 6 Distribution dataset vs sumber publik umum【Phase 11 — Conflict C-001】.
+Supporting Dataset: Phase 6, Phase 11 Conflict Register
+Confidence: HIGH (bahwa konfliknya nyata) — resolusi masih terbuka
+
+Insight 5: Krisis Vyper 2023 menunjukkan risiko dependensi tooling pihak ketiga
+Explanation: Bug reentrancy pada versi lama kompilator Vyper berdampak pada pool Curve yang memakai Vyper — audit kontrak saja tidak cukup; rantai tooling (kompilator, framework) adalah permukaan serangan nyata.
+Evidence: Eksploitasi pool Curve era 2023-07/08 via bug Vyper【Phase 3 — EV-006】.
+Supporting Dataset: Phase 3, Phase 4 Technology, Phase 9 Risk Response Pattern
+Confidence: HIGH
+
+Insight 6: Posisi leverage pribadi founder adalah risiko sistemik proyek bertoken
+Explanation: Posisi pinjaman Michael Egorov berkolateral CRV memaksa penjualan OTC saat krisis 2023 — keputusan pribadi tokoh kunci berdampak pada harga dan kepercayaan seluruh ekosistem.
+Evidence: Tekanan posisi & OTC sale 2023【Phase 3 — EV-006】.
+Supporting Dataset: Phase 3, Phase 9 Risk Response Pattern
+Confidence: MEDIUM
+
+Insight 7: Fee share ke veCRV adalah value accrual berbasis arus kas, bukan kelangkaan
+Explanation: Berbeda dengan model buyback/burn, pemegang veCRV menerima bagian fee swap — nilai token terkait langsung volume protokol; saat volume turun relatif, tesis nilai melemah tanpa mekanisme penahan lain.
+Evidence: Fee distribution whitepaper【Curve whitepaper Fee Distribution】; utilitas veCRV【Phase 6 — Utility】.
+Supporting Dataset: Phase 5 Revenue Model, Phase 6 Utility
+Confidence: HIGH
+
+Insight 8: crvUSD memperluas basis produk dengan mekanisme likuidasi gradual (LLAMMA)
+Explanation: Ekspansi dari DEX menjadi issuer stablecoin + lending menambah sumber fee sekaligus menambah risiko sistemik baru — trade-off yang dikelola desain likuidasi halus.
+Evidence: crvUSD launch 2023-05【Phase 3 — EV-005】; era Lend【Phase 3 — EV-007】.
+Supporting Dataset: Phase 3, Phase 9 Strategic Trade-offs
+Confidence: MEDIUM
+
+Insight 9: Factory permissionless mempercepat ekspansi venue tanpa bottleneck governance
+Explanation: Template pool aman yang dapat dibuat tanpa vote memungkinkan Curve mengikuti likuiditas ke aset/chain baru dengan cepat — pola ekspansi aditif tanpa grand relaunch.
+Evidence: Factory deployments multi-chain【Phase 7 — Chain Deployments; Phase 4 — Technology】.
+Supporting Dataset: Phase 4, Phase 7, Phase 9 Recurring Behavioral Pattern
+Confidence: MEDIUM
+
+Insight 10: Komunikasi krisis yang terbatas memperpanjang hilangnya kepercayaan
+Explanation: Respons teknis cepat pada krisis 2023 tidak diimbangi komunikasi publik yang memadai — pasar mengisi kekosongan narasi dengan spekulasi, memperpanjang tekanan harga di luar dampak teknis insiden.
+Evidence: Pola respons krisis 2023【Phase 3 — EV-006; Phase 9 — Risk Response Pattern】.
+Supporting Dataset: Phase 3, Phase 9
+Confidence: MEDIUM
+
+Pattern Candidates
+
+Pola 1: Konsentrasi meta-layer governance menciptakan single point of influence
+Kategori: Governance
+Bukti: Convex menguasai porsi veCRV terbesar; perubahan strateginya memengaruhi seluruh insentif emisi【Phase 3 — EV-004; Phase 7 — Ecosystem Risks】
+Confidence: MEDIUM (teramati kuat di Curve; analogi lintas ve-token lain perlu verifikasi)
+
+Pola 2: Emisi gauge tanpa value accrual kuat → ketergantungan nilai pada permintaan politik internal
+Kategori: Token
+Bukti: Fase nilai CRV mengikuti intensitas Curve Wars【Phase 3 — EV-004; Phase 8 — Market Timeline】
+Confidence: MEDIUM
+
+Pola 3: Krisis tooling pihak ketiga menular ke semua proyek yang memakai tooling sama
+Kategori: Security
+Bukti: Vyper 2023 berdampak lintas pool/proyek pengguna Vyper【Phase 3 — EV-006】
+Confidence: HIGH
+
+Reasoning Candidates
+
+Rule: Pool stableswap dominan cenderung tetap menjadi venue default stablecoin baru sampai ada perubahan struktural (biaya, insentif, keamanan)
+Context range: Era DeFi 2020-2023 di Ethereum; dapat berbeda di chain dengan DEX native kuat
+
+Rule: Lock-up panjang (ve) menurunkan tekanan jual emisi tetapi memindahkan risiko ke pasar sekunder lock/bribe
+Context range: Berlaku pada token dengan emisi + alokasi sumber daya via governance
+
+Open Threads
+- Kuantifikasi efek bribe market terhadap distribusi emisi (data historis Votium)
+- Studi komparatif fee share CRV vs mekanisme buyback token lain

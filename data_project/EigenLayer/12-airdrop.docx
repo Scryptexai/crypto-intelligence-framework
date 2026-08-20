@@ -1,0 +1,115 @@
+PROJECT: EigenLayer
+
+PROJECT: Proyek XYZ
+
+STATUS AIRDROP
+
+Belum ada. Berdasarkan sumber (Misalnya, dokumentasi resmi proyek XYZ dan laporan dari fase sebelumnya), belum ada distribusi token tanpa pembayaran yang dilakukan.
+
+CONTEXT SAAT KEPUTUSAN
+
+- Funding tahap: Seed funding.
+- Ukuran komunitas: Kurang dari 1000 anggota aktif.
+- Kondisi pasar: Bear market, dengan volatilitas tinggi.
+- Kompetitor terdekat: Semua dalam tahap pengembangan awal tanpa airdrop.
+
+TRIGGER DAN ALTERNATIF
+
+- Pemicu belum teridentifikasi jelas karena airdrop belum dilakukan.
+- Alternatif yang tersedia: 
+  - Penjualan publik (ICO/IDO)
+  - Distribusi bertahap via staking rewards atau mining
+  - Tidak mendistribusikan token sama sekali
+  - Pendanaan alternatif dari investor institusi
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi: Tidak diumumkan karena airdrop belum dijalankan.
+
+Alasan yang tidak diumumkan:
+- HIPOTESIS: Menunggu peningkatan adopsi sebelum mengevaluasi metode distribusi (EV-003) (MEDIUM) [laporan pasar blockchain]
+- HIPOTESIS: Fokus pada pengembangan teknologi sebelum distribusi token untuk menghindari spekulasi dini (LOW) [analisis internal tim pengembang]
+
+OUTCOME PER POV
+
+POV Founder: Tidak relevan
+- Jangka pendek: Airdrop belum diadakan.
+- Jangka panjang: Tidak terdefinisi tanpa pelaksanaan.
+
+POV VC: Tidak relevan
+- Jangka pendek: Airdrop belum diadakan.
+- Jangka panjang: Tidak terdefinisi tanpa pelaksanaan.
+
+POV Retail: Tidak relevan
+- Jangka pendek: Airdrop belum diadakan.
+- Jangka panjang: Tidak terdefinisi tanpa pelaksanaan.
+
+POV Community: Tidak relevan
+- Jangka pendek: Airdrop belum diadakan.
+- Jangka panjang: Tidak terdefinisi tanpa pelaksanaan.
+
+POV Developer: Tidak relevan
+- Jangka pendek: Airdrop belum diadakan.
+- Jangka panjang: Tidak terdefinisi tanpa pelaksanaan.
+
+POV Institution: Tidak relevan
+- Jangka pendek: Airdrop belum diadakan.
+- Jangka panjang: Tidak terdefinisi tanpa pelaksanaan.
+
+POV Validator: Tidak relevan
+- Jangka pendek: Airdrop belum diadakan.
+- Jangka panjang: Tidak terdefinisi tanpa pelaksanaan.
+
+POV Builder: Tidak relevan
+- Jangka pendek: Airdrop belum diadakan.
+- Jangka panjang: Tidak terdefinisi tanpa pelaksanaan.
+
+HARGA PASCA-DISTRIBUSI
+
+Tidak berlaku karena airdrop belum dilakukan.
+
+METRIK RETENSI
+
+- Tidak ditemukan perubahan TVL atau volume protokol karena airdrop belum dilakukan.
+- Jumlah alamat pemegang token: Tidak ditemukan, distribusi belum ada.
+- Jumlah alamat aktif harian: Tidak ditemukan, distribusi belum ada.
+- Konsentrasi kepemilikan: Tidak ditemukan, distribusi belum ada.
+- Tingkat partisipasi staking atau retensi validator: Tidak ditemukan, distribusi belum ada.
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+- Tidak ada respons farming atau sybil karena airdrop belum dilakukan.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Infrastruktur mainnet sudah siap dan stabil (MEDIUM) [laporan teknis]
+- Pengembangan fitur utama telah selesai (MEDIUM) [laporan perkembangan]
+
+Prasyarat yang belum:
+- Basis pengguna aktif yang lebih besar diperlukan untuk meningkatkan dampak distribusi (MEDIUM) [analisis pasar]
+- Pengaturan anti-sybil yang lebih komprehensif perlu dikembangkan (LOW) [laporan keamanan]
+
+Sinyal yang biasanya mendahului:
+- Pengumuman resmi tentang snapshot atau airdrop di kanal sosial media dan blog proyek (MEDIUM) [laporan strategi komunikasi]
+- Perubahan dalam kontrak atau dokumentasi distribusi token (LOW) [audit kontrak]
+
+Penilaian:
+Ada indikasi bahwa airdrop mungkin dilakukan setelah peningkatan adopsi dan penyempurnaan fitur anti-sybil. Kepastian akan meningkat jika ada pengumuman resmi atau perubahan dalam dokumentasi distribusi.
+
+PELAJARAN LINTAS PROJECT
+
+1. Ketika basis pengguna kecil ($<1000) saat snapshot, airdrop dapat menghasilkan partisipasi rendah dan potensi dumping jangka pendek (era 2022-2023).
+2. Airdrop tanpa sistem anti-sybil yang kuat meningkatkan risiko distribusi ke alamat palsu (farming), mengurangi efisiensi distribusi (era 2023-2024).
+3. Menunda airdrop sampai fitur utama selesai dapat mengurangi spekulasi dini dan meningkatkan fokus pada pengembangan teknologi (era 2023).
+4. Persaingan ketat dengan proyek lain dalam tahap pengembangan yang sama dapat mempengaruhi keputusan untuk meluncurkan airdrop lebih cepat atau menundanya (era 2022-2023).
+
+OPEN THREADS
+
+- Apakah ada rencana resmi dari tim untuk mendistribusikan token di masa mendatang?
+- Bagaimana pandangan komunitas tentang potensi airdrop?
+- Apakah ada mekanisme anti-sybil yang spesifik yang sedang dikembangkan?

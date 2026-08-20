@@ -30,14 +30,24 @@ if str(ROOT / "tools") not in sys.path:
 PHASES = [
     (1, "foundation"), (2, "entity"), (3, "history"), (4, "technology"),
     (5, "financial"), (6, "token"), (7, "ecosystem"), (8, "market"),
-    (9, "behavioral"), (10, "knowledge"), (11, "conflict"),
+    (9, "behavioral"), (10, "knowledge"), (11, "conflict"), (12, "airdrop"),
 ]
 
-# Phase 11 (Validation & QA) is handled as four smaller, sequential API calls instead of
-# appending to the full 10-phase running conversation -- see phases.run_phase_11()'s
-# docstring for the full rationale (started as 2 calls, but even the smaller of those two
-# still hit gateway-side 504 timeouts -- the bottleneck is generation TIME on a slow
-# backend, not request size, so each stage's ASK needed to shrink too, not just its input).
+# Phase 12 runs AFTER the Phase 11 audit, which means the audit does not cover it. That is a
+# real gap, accepted deliberately: renumbering would rename 11-conflict.docx in 29 projects
+# and invalidate every dossier already assembled. Phase 11's coverage report should be
+# extended to reach phase 12 once the airdrop phase has run on enough projects to be worth
+# auditing.
+
+# FALLBACK ONLY since 2026-08-09. Phase 11 normally goes out as ONE prompt
+# (reset/phase_11_conflict.txt) like every other phase; these four stages are reached only
+# when streaming is off and no heavy-capable provider is configured -- see the gate comment
+# in runner.run_project.
+#
+# The split was built for gateway 504s that turned out to be an artifact of non-streaming
+# requests, and it carries a cost the timing argument never accounted for: stage 11d is told
+# to merge every earlier stage's findings, and a model restating prior findings rewords them.
+# In a validation report a reworded finding is indistinguishable from a second real one.
 PHASE11_STAGES = [
     ("11a", "phase_11a_audit.txt", [(1, "foundation"), (2, "entity"), (3, "history")]),
     ("11b", "phase_11b_audit.txt", [(4, "technology"), (5, "financial")]),
@@ -78,12 +88,44 @@ PHASE9_STAGES = [
 # client's REQUEST_TIMEOUT_SECONDS. Set RESET_NO_STREAM=1 to reproduce the old behaviour.
 STREAM_RESPONSES = os.environ.get("RESET_NO_STREAM", "") != "1"
 
-MAX_TOKENS = int(os.environ.get("RESET_MAX_TOKENS", "14000"))
+MAX_TOKENS = int(os.environ.get("RESET_MAX_TOKENS", "32000"))
+# 32000 since 2026-08-12 (was 14000). A ceiling costs nothing when unused -- generation stops
+# when the model is done, not when the budget runs out -- and 32000 is verified accepted by
+# this gateway (probed 8000/16000/24000/32000, all fine, 2026-08-09). The old 14000 default
+# made every verbose phase pay the truncation escalation instead: Berachain phase 07
+# (2026-08-11) cut off at 14000, regenerated, cut off again at 21000 (91,761 chars), and only
+# completed at 31500 -- two full throwaway generations (~13 min plus their tokens) for one
+# phase, on a queue where most projects have at least one verbose phase. The escalation in
+# api.call_with_retries stays as the safety net for answers that outrun even 32000.
 # Phase 11b alone carries almost everything the old single-call Phase 11 produced (the real
 # Arbitrum Phase 11 section is ~38.9k chars, ~9.7k tokens estimated -- already over the old
-# 8192 default). Its own constant so phases 1-10 aren't forced to allow bigger (and
-# slower/costlier) completions than they need.
-PHASE11_MAX_TOKENS = int(os.environ.get("RESET_PHASE11_MAX_TOKENS", "16000"))
+# 8192 default). Kept as its own constant so Phase 11's budget can move independently of the
+# phases 1-10 default (both are 32000 now; the split predates that convergence).
+# 32000, arrived at in two steps on 2026-08-09 as real sizes came in. Measured Phase 11
+# output, at ~3.3 chars/token:
+#
+#   Aave           30,707 chars   ~9,300 tok    39% of 24000
+#   Arbitrum       38,900 chars  ~11,800 tok    49%
+#   Aptos          53,164 chars  ~16,100 tok    67%   -- truncated under the original 16000
+#   Axie Infinity  72,441 chars  ~22,000 tok    92%   -- first clean pass, but only just
+#
+# 16000 was the original and Aptos ran straight past it, stopping mid-field at "Evidence
+# Count: 8" before CIF SCORE CALCULATION, which the prompt places at the very end. 24000 then
+# let Axie Infinity through -- while consuming 92% of the budget. Reports vary 2.4x in length
+# across four projects with no relationship to project size, so betting the next one stays
+# under 24000 is a bet with 23 more chances to lose.
+#
+# A ceiling costs nothing when unused: generation stops when the model is done, not when the
+# budget runs out. 32000 was verified accepted by this gateway (probed alongside 8000/16000/
+# 24000, all four fine), so the higher value is free headroom rather than a guess.
+PHASE11_MAX_TOKENS = int(os.environ.get("RESET_PHASE11_MAX_TOKENS", "32000"))
+# Hard stop for api.call_with_retries' truncation escalation: a cut-off answer is retried
+# with 1.5x the budget rather than the same one, but never past this. 48000 is one escalation
+# step above the Phase 11 default of 32000 and 1.5x the largest value the gateway was probed
+# with successfully (8000/16000/24000/32000 all accepted, 2026-08-09) -- far enough to rescue
+# a long report, close enough that an endpoint which silently caps lower still gets a value
+# it recognises.
+MAX_TOKENS_CEILING = int(os.environ.get("RESET_MAX_TOKENS_CEILING", "48000"))
 REQUEST_TIMEOUT_SECONDS = int(os.environ.get("RESET_REQUEST_TIMEOUT_SECS", "900"))
 PHASE_SLEEP_SECONDS = int(os.environ.get("RESET_PHASE_SLEEP_SECS", "60"))
 PROJECT_SLEEP_SECONDS = int(os.environ.get("RESET_PROJECT_SLEEP_SECS", "300"))
@@ -171,6 +213,44 @@ def load_providers() -> list:
             heavy_capable=True,
         ))
     return providers
+
+
+# Which provider leads for a given phase. The shared gateway is free but slow and unstable
+# (measured 2026-08-09: 62s for a one-word completion, connection aborts mid-generation), so
+# the paid endpoint earns its place on the phases where a dropped connection is most
+# expensive -- Phase 11 costs 6-17 minutes of generation to lose.
+#
+#   RESET_PAID_PHASES=11        (default) paid provider leads on Phase 11 only
+#   RESET_PAID_PHASES=all       every phase -- what a cost-measurement run wants
+#   RESET_PAID_PHASES=none      never; paid stays a capacity-failure fallback as before
+#
+# Only takes effect when DEEPSEEK_API_KEY is set. The other provider always remains in the
+# chain as a fallback, so a lead provider failing still rotates rather than ending the phase.
+PAID_PHASES = os.environ.get("RESET_PAID_PHASES", "11").strip().lower()
+
+
+def providers_for_phase(num: int, providers: list) -> list:
+    """The provider chain for one phase, most-preferred first.
+
+    Reorders rather than filters: whichever provider does not lead is still available as a
+    fallback. That matters because the two fail in different ways -- the free gateway drops
+    connections, and a paid endpoint can run out of credit -- and neither should be able to
+    end a phase on its own while the other is reachable.
+    """
+    if len(providers) < 2 or PAID_PHASES == "none":
+        return providers
+    if PAID_PHASES == "all":
+        wanted = True
+    else:
+        try:
+            wanted = num in {int(p) for p in PAID_PHASES.split(",") if p.strip()}
+        except ValueError:
+            wanted = False
+    if not wanted:
+        return providers
+    paid = [p for p in providers if p.name != "gateway"]
+    free = [p for p in providers if p.name == "gateway"]
+    return paid + free if paid else providers
 
 
 def load_projects(path: Path = None) -> list:

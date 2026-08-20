@@ -1,224 +1,322 @@
 PROJECT: Avalanche
 
-1. Menjadi platform Layer 1 multi-chain yang mengutamakan sovranitas aplikasi melalui arsitektur Subnet
+Strategic Objectives
 
-· Evidence: Arsitektur Primary Network (X-Chain, P-Chain, C-Chain) + framework Subnet (L1 kustom) dirancang sejak whitepaper 2018 untuk memungkinkan blockchain sovran dengan VM sendiri, gas token sendiri, dan validator set sendiri (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]
-· Evidence: Peluncuran Subnet mainnet 2021 (EV-012), AvaCloud managed service 2022 (EV-015), HyperSDK 2022 (EV-016), Teleporter 2023 (EV-020) menunjukkan eksekusi konsisten visi multi-chain (HIGH) [Phase 3 EV-012, EV-015, EV-016, EV-020]
-· Evidence: Klien enterprise (Deloitte, SK Planet, T. Rowe Price) dan game AAA (Shrapnel, Gunzilla, Nexon) mendeploy Subnet sendiri via AvaCloud, bukan berseter di C-Chain (HIGH) [Phase 3 EV-022, EV-023, EV-024, EV-025, EV-026]
-· Supporting Dataset: Phase 1 (Foundation), Phase 3 (EV-012, EV-015, EV-016, EV-020, EV-022, EV-023, EV-024, EV-025, EV-026), Phase 4 (System Architecture, Subnets), Phase 7 (Major Integrations)
+1. Membangun "Internet of Subnets" — jaringan blockchain sovran yang terhubung via native messaging (AWM/Teleporter) dan divalidasi oleh shared validator set Primary Network
+· Evidence: Arsitektur Primary Network (X/P/C-Chain) + Subnet framework dirancang sejak whitepaper 2018 untuk memungkinkan ribuan L1 kustom yang interoperabel; Teleporter (EV-020) dan AWM (EV-013) mengaktifkan messaging trust-minimized cross-VM; AvaCloud (EV-015) mempermudah deployment Subnet enterprise/game
+· Supporting Dataset: Phase 1 (Category: Multi-chain Architecture); Phase 3 (EV-001 Whitepaper, EV-012 Subnet Launch, EV-013 AWM, EV-016 HyperSDK, EV-020 Teleporter, EV-021 HyperSDK Mainnet); Phase 4 (System Architecture, Consensus, Subnet Validation); Phase 7 (Major Integrations: Teleporter, HyperSDK, AvaCloud clients)
 
-2. Menjangkau adopsi mass-market melalui kemitraan enterprise dan gaming AAA yang memanfaatkan Subnet untuk throughput tinggi dan UX terabstraksi
+2. Menjadi Layer 1 pilihan untuk enterprise & institusi via managed service (AvaCloud) dan Subnet permissioned (Evergreen Subnet)
+· Evidence: Klien enterprise besar: Deloitte (EV-025 CAYG disaster recovery), SK Planet (EV-026 UPTN 30M users), T. Rowe Price (fund admin tokenization), Gunzilla/Nexon (gaming AAA); AvaCloud menyediakan validator provisioning, gasless tx, fiat onramp, compliance tools; Evergreen Subnet dikembangkan untuk RWA/KYC/AML built-in
+· Supporting Dataset: Phase 3 (EV-015 AvaCloud Launch, EV-022 Nexon, EV-023 Gunzilla, EV-024 Shrapnel, EV-025 Deloitte, EV-026 SK Planet); Phase 7 (Infrastructure Providers: AWS, GCP; Major Integrations: Deloitte, SK Planet, T. Rowe Price, Gunzilla, Nexon, Shrapnel); Phase 8 (Narrative: Enterprise Blockchain, RWA Tokenization)
 
-· Evidence: Kemitraan Nexon (MapleStory Universe, 30M+ user base), Gunzilla (Off The Grid), Shrapnel, SK Planet (UPTN 30M users), Deloitte (CAYG untuk FEMA) — semuanya menggunakan Subnet via AvaCloud, bukan C-Chain langsung (HIGH) [Phase 3 EV-022, EV-023, EV-024, EV-025, EV-026]
-· Evidence: HyperSDK dirancang untuk 10k+ TPS sub-second finality, menargetkan kebutuhan gaming real-time (HIGH) [Phase 4 HyperSDK, Phase 3 EV-016, EV-021]
-· Evidence: Core Wallet multi-chain + Teleporter cross-subnet messaging + AvaCloud gasless/fiat onramp menciptakan chain abstraction layer untuk end-user (HIGH) [Phase 4 Core Wallet, Teleporter, Phase 7 Core Wallet, AvaCloud]
-· Supporting Dataset: Phase 3 (EV-016, EV-020, EV-021, EV-022, EV-023, EV-024, EV-025, EV-026), Phase 4 (HyperSDK, Teleporter, Core Wallet), Phase 7 (Major Integrations, Infrastructure Providers)
+3. Mempertahankan kompatibilitas EVM di C-Chain sebagai entry point developer & liquidity DeFi sambil membedakan via Subnet non-EVM (HyperSDK) untuk high-throughput use case
+· Evidence: C-Chain menggunakan Coreth (Geth fork) EVM-equivalent (Phase 4); Aave V3, Trader Joe, Benqi, GMX, Curve deploy di C-Chain (EV-009 Rush, EV-010 Aave, EV-011 Trader Joe/Benqi); HyperSDK (EV-016) memungkinkan custom VM Rust 10k+ TPS untuk game (Shrapnel, Gunzilla) tanpa EVM overhead
+· Supporting Dataset: Phase 3 (EV-009 Rush, EV-010 Aave, EV-011 Native DeFi, EV-016 HyperSDK, EV-021 HyperSDK Mainnet); Phase 4 (Execution Environment: C-Chain EVM vs Subnet VM HyperSDK); Phase 7 (Major Integrations: Aave, Trader Joe, Benqi, HyperSDK); Phase 8 (Narrative: DeFi Infrastructure, Gaming/HyperSDK)
 
-3. Membangun ekosistem DeFi sustainable di C-Chain sebagai "anchor chain" sekaligus showcase kompatibilitas EVM
+4. Mengamankan jaringan melalui Proof-of-Stake dengan validator set besar (~1.300+) dan stake tinggi (min 2.000 AVAX) tanpa slashing, mengandalkan uptime penalty dan ekonomi token deflationary (fee burn) + inflationary (staking reward)
+· Evidence: Sybil resistance PoS di P-Chain (Phase 4); ~1.300 validator aktif, ~250M+ AVAX staked (Phase 8); Tidak ada slashing, hanya uptime penalty (Phase 4 Known Limitations); Fee burn C-Chain (EIP-1559 style) + staking inflation hingga max cap 720M (Phase 5 Revenue Model, Phase 6 Supply)
+· Supporting Dataset: Phase 4 (Consensus Mechanism, Security Model, Known Limitations); Phase 5 (Revenue Model: Staking Rewards, Fee Burn); Phase 6 (Supply: Max 720M, Dynamic Inflation/Deflation); Phase 8 (Adoption Metrics: Validator Count, Staked AVAX)
 
-· Evidence: Avalanche Rush $180M+ (EV-009) menarik Aave V3, Curve, Benqi, Trader Joe ke C-Chain 2021 (HIGH) [Phase 3 EV-009, EV-010, EV-011]
-· Evidence: C-Chain menggunakan Coreth (Geth fork) untuk EVM-equivalent, memudahkan porting protokol Ethereum (HIGH) [Phase 4 Execution Environment, C-Chain]
-· Evidence: Post-crash 2022 (EV-017), fokus bergeser dari insentif mercenary ke builder fundamental (Trader Joe, Benqi, Aave bertahan) (HIGH) [Phase 3 EV-017, Phase 8 Narrative Position]
-· Supporting Dataset: Phase 3 (EV-009, EV-010, EV-011, EV-017), Phase 4 (C-Chain, Coreth), Phase 8 (Market Share, Narrative Position)
+5. Membangun ekosistem multi-vertical (DeFi, Gaming, Enterprise, RWA) melalui program insentif Foundation (Rush $180M+, Multiverse $290M+) dan grant berkelanjutan, bukan bergantung pada single vertical
+· Evidence: Avalanche Rush (EV-009) menarik Aave, Curve; Multiverse (EV-012 Subnet launch, EV-015 AvaCloud) mendanai Subnet game/enterprise; Foundation treasury dari genesis allocation 9.26% + ecosystem 12% (Phase 6 Distribution); Blizzard Fund untuk VC-style investment
+· Supporting Dataset: Phase 3 (EV-009 Rush, EV-012 Subnet, EV-015 AvaCloud); Phase 5 (Funding: Rush $180M+, Multiverse $290M+); Phase 6 (Distribution: Foundation 9.26%, Community/Ecosystem 12%, Staking Rewards 50%); Phase 7 (Ecosystem: DeFi, Gaming, Enterprise); Phase 8 (Narrative: DeFi, Gaming, Enterprise, RWA)
 
-4. Memisahkan entitas pengembangan protokol (Ava Labs Inc.) dari pengelola ekosistem (Avalanche Foundation) untuk compliance dan governance terstruktur
-
-· Evidence: Ava Labs Inc. (Delaware, 2018) fokus R&D, produk (AvaCloud, Core Wallet), enterprise sales; Avalanche Foundation (Cayman, 2020) mengelola treasury, grant, insentif (Rush, Multiverse) (HIGH) [Phase 2 Ava Labs Inc., Avalanche Foundation, Phase 3 EV-007]
-· Evidence: Foundation tidak memiliki revenue, hanya mendeployasikan genesis allocation (9.26% supply + ecosystem allocation) untuk grant (HIGH) [Phase 5 Treasury, Revenue Model, Phase 6 Distribution]
-· Evidence: Tidak ada DAO on-chain resmi; governance off-chain via forum.foundation, Foundation eksekusi (HIGH) [Phase 2 Avalanche Community, Phase 5 Fundraising Mechanism]
-· Supporting Dataset: Phase 2 (Ava Labs Inc., Avalanche Foundation), Phase 3 (EV-007), Phase 5 (Treasury, Revenue Model, Fundraising Mechanism), Phase 6 (Distribution)
+Decision Timeline
 
 Keputusan: Pendirian Ava Labs dan Publikasi Whitepaper Konsensus Avalanche (2018)
-· Trigger: Penemuan protokol konsensus probabilistik baru (Snowflake/Snowball/Avalanche) oleh tim IC3 Cornell (Gün Sirer, Ted Yin, Kevin Sekniqi) yang menjanjikan finality <1 detik dan throughput tinggi tanpa leader election
-· Evidence: Paper akademis "Snowflake to Avalanche" diterbitkan via IC3 Cornell; Ava Labs Inc. didirikan di Delaware (HIGH) [Phase 3 EV-001, Phase 2 Founders]
-· Decision: Mendirikan perusahaan untuk mengkomersialkan protokol; membangun implementasi referensi (AvalancheGo) dan persiapan testnet/mainnet
-· Immediate Result: Entitas hukum terbentuk; fondasi teoretis dipublikasikan; tim inti (3 founder) komit penuh
-· Long-term Impact: Menjadi blueprint arsitektur multi-chain (Primary Network + Subnet) yang dieksekusi hingga sekarang
-· Supporting Dataset: Phase 3 EV-001, Phase 2 (Emin Gün Sirer, Kevin Sekniqi, Maofan "Ted" Yin, Ava Labs Inc., IC3 Cornell)
+· Trigger: Penemuan protokol konsensus probabilistik baru (Snowflake/Snowball/Avalanche) oleh Emin Gün Sirer, Kevin Sekniqi, Maofan "Ted" Yin di IC3 Cornell; kebutuhan entitas hukum untuk komersialisasi
+· Evidence: Whitepaper diterbitkan via IC3; Ava Labs Inc. didirikan Delaware (Phase 1 Founding Entity, Founders); Phase 3 EV-001
+· Decision: Mendirikan Ava Labs Inc. (Delaware), mempublikasikan whitepaper "Snowflake to Avalanche", merekrut core team dari IC3
+· Immediate Result: Fondasi teoretis & entitas hukum terbentuk; tim siap fundraising seed
+· Long-term Impact: Menjadi dasar seluruh arsitektur Avalanche (multi-chain, Subnet, konsensus); menarik investor tier-1 (Polychain, a16z)
+· Supporting Dataset: Phase 1 (Founding Entity, Founders, Launch Dates); Phase 2 (Entities: Emin Gün Sirer, Kevin Sekniqi, Maofan "Ted" Yin, Ava Labs Inc., IC3 Cornell); Phase 3 (EV-001)
 
-Keputusan: Seed Funding $6M dipimpin Polychain Capital (2019-02)
-· Trigger: Perlu dana untuk mengembangkan AvalancheGo dari paper ke production-ready code dan menjalankan testnet publik
-· Evidence: Polychain Capital lead investor; Crunchbase & CoinDesk melaporkan ronde ini (HIGH) [Phase 3 EV-002, Phase 5 Funding History]
-· Decision: Menerima equity investment dari VC crypto native untuk runway pengembangan awal
-· Immediate Result: Dana pengembangan awal teraman; validasi pasar awal dari investor tier-1
-· Long-term Impact: Menetapkan hubungan dengan Polychain sebagai investor jangka panjang; membuka jalur ke strategic investors lain
-· Supporting Dataset: Phase 3 EV-002, Phase 5 Funding History
+Keputusan: Seed Round $6M dipimpin Polychain Capital (2019-02)
+· Trigger: Butuh dana untuk membangun implementasi node (AvalancheGo), testnet, dan persiapan mainnet
+· Evidence: Crunchbase, CoinDesk melaporkan ronde seed (Phase 3 EV-002); Polychain sebagai lead investor
+· Decision: Menerima $6M dari Polychain Capital untuk equity + token allocation (Seed Sale 2.5% supply)
+· Immediate Result: Dana pengembangan awal teraman; validasi teknis dari investor crypto-native
+· Long-term Impact: Polychain menjadi strategic investor jangka panjang; token allocation Seed Sale vesting 3 tahun post-cliff 1 tahun (Phase 6 Vesting)
+· Supporting Dataset: Phase 3 (EV-002); Phase 5 (Funding History: Seed); Phase 6 (Distribution: Seed Sale 2.5%, Vesting Schedule)
 
 Keputusan: Peluncuran Denali Testnet Publik (2019-04)
-· Trigger: Kode AvalancheGo siap untuk diuji di lingkungan adversarial dengan validator eksternal
-· Evidence: Ava Labs blog & Medium mengumumkan Denali Testnet April 2019 (HIGH) [Phase 3 EV-003]
-· Decision: Membuka testnet untuk validator dan developer global; mengumpulkan feedback performa konsensus, staking, asset creation
-· Immediate Result: Validasi teknis protokol di jaringan terdistribusi; identifikasi bottleneck untuk optimasi pre-mainnet
-· Long-term Impact: Membangun komunitas validator awal; menguji economic incentives staking sebelum mainnet
-· Supporting Dataset: Phase 3 EV-003, Phase 2 (Avalanche Validators, Ava Labs Engineering Team)
+· Trigger: Butuh validasi protokol konsensus di lingkungan adversarial sebelum mainnet; umpan balik performa & keamanan
+· Evidence: Ava Labs blog "Introducing Denali Testnet" (Phase 3 EV-003); Medium announcement April 2019
+· Decision: Meluncurkan testnet publik pertama dengan X-Chain, P-Chain, C-Chain fungsional; mengundang validator & developer eksternal
+· Immediate Result: Validasi teknis konsensus Avalanche/Snowman; identifikasi bug & optimasi performa; komunitas awal terbentuk
+· Long-term Impact: Dasar kepercayaan investor untuk Series A/Strategic Sale; fondasi validator set early adopters
+· Supporting Dataset: Phase 3 (EV-003); Phase 4 (Consensus Mechanism: Avalanche Consensus tested); Phase 2 (Entity: Avalanche Validators early participants)
 
-Keputusan: Series A $12M + Strategic Sale $42M (Juli 2020) + Public Sale CoinList $36M (Juli 2020)
-· Trigger: Mainnet siap launch September 2020; perlu kapital signifikan untuk ekosistem, marketing, dan treasury Foundation
-· Evidence: a16z lead Series A & Strategic Sale; 20+ investor termasuk 3AC, Dragonfly, CMS, Alameda, Jump, Wintermute; CoinList public sale 72M AVAX @ $0.50 (HIGH) [Phase 3 EV-004, EV-005, Phase 5 Funding History, Token Sale]
-· Decision: Kombinasi equity (Series A) + token allocation (Strategic + Public) untuk mendiversifikasi cap table dan distribusi token ke komunitas
-· Immediate Result: $90M+ fresh capital (equity + token sale); distribusi token ke ribuan retail + investor strategis; TGE supply 360M AVAX (50% max supply)
-· Long-term Impact: Cap table investor kompleks dengan vesting 1-3 tahun; tekanan jual signifikan saat unlock 2022-2023 (3AC, Alameda likuidasi); Foundation treasury besar untuk grant
-· Supporting Dataset: Phase 3 EV-004, EV-005, Phase 5 Funding History, Token Sale, Phase 6 Vesting Schedule
+Keputusan: Series A $12M (a16z lead) + Strategic Sale $42M + Public Sale CoinList $36M (2020-07)
+· Trigger: Skala pengembangan mainnet, ekosistem, marketing, legal/compliance; butuh kapital besar & distribusi token komunitas
+· Evidence: Crunchbase, a16z announcement, CoinList sale results (Phase 3 EV-004, EV-005); Total $90M fresh capital + token distribution
+· Decision: Struktur fundraising gabungan: equity Series A (a16z) + token Strategic Sale (institusional: a16z, Polychain, 3AC, Dragonfly, CMS, Alameda, dll @ $0.50) + Public Sale CoinList (retail 72M AVAX @ $0.50)
+· Immediate Result: Treasury besar untuk ekosistem; distribusi token ke ribuan holder retail + investor strategis; TGE siap mainnet Sept 2020
+· Long-term Impact: Alokasi token investor besar (Strategic 10% supply) menciptakan overhang vesting 2020-2023; 3AC/Alameda bankrup 2022 menyebabkan tekanan jual (Phase 3 EV-018); a16z menjadi pemangku kepentingan jangka panjang
+· Supporting Dataset: Phase 3 (EV-004, EV-005); Phase 5 (Funding History: Series A, Strategic Sale, Public Sale); Phase 6 (Distribution: Strategic 10%, Public 10%, Vesting); Phase 2 (Investors: a16z, Polychain, 3AC, Dragonfly, CMS, Alameda)
 
-Keputusan: Mainnet Launch Primary Network (21 September 2020)
-· Trigger: Testnet Denali & subsequent testnets (Everest, Fuji) stabil; kode AvalancheGo v1.0 siap produksi
-· Evidence: Ava Labs blog & CoinDesk melaporkan mainnet live 21 Sept 2020 dengan X/P/C-Chain aktif (HIGH) [Phase 3 EV-006]
-· Decision: Meluncurkan jaringan produksi dengan tiga chain terpisah: X-Chain (asset DAG), P-Chain (staking linear), C-Chain (EVM linear)
-· Immediate Result: Jaringan live; staking AVAX dimulai di P-Chain; C-Chain EVM tersedia untuk developer; Avalanche Bridge (AB) ke Ethereum siap
-· Long-term Impact: Arsitektur multi-chain heterogen menjadi fondasi seluruh ekosistem; Subnet framework tersedia di P-Chain sejak genesis
-· Supporting Dataset: Phase 3 EV-006, Phase 4 (System Architecture, Core Components, Consensus)
+Keputusan: Peluncuran Mainnet Avalanche Primary Network (2020-09-21)
+· Trigger: Testnet stabil; kode siap produksi; TGE token AVAX; validator set siap staking
+· Evidence: Ava Labs blog Mainnet Launch, CoinDesk coverage (Phase 3 EV-006); X/P/C-Chain live simultan
+· Decision: Meluncurkan Primary Network lengkap: X-Chain (asset/DAG), P-Chain (staking/validator/Snowman), C-Chain (EVM/Snowman); AVAX native aktif untuk gas, staking, governance
+· Immediate Result: Jaringan produksi live; staking dimulai di P-Chain; C-Chain EVM kompatibel siap developer; Bridge ke Ethereum siap deploy
+· Long-term Impact: Arsitektur multi-chain heterogen terbukti works; fondasi untuk Subnet (EV-012), DeFi Rush (EV-009), enterprise adoption (EV-015)
+· Supporting Dataset: Phase 3 (EV-006); Phase 4 (System Architecture: X/P/C-Chain; Core Components; Consensus); Phase 1 (Launch Date Mainnet)
 
 Keputusan: Pendirian Avalanche Foundation di Cayman Islands (2020-09)
-· Trigger: Perlu entitas hukum terpisah dari Ava Labs Inc. (US) untuk mengelola treasury token, grant, dan governance komunitas tanpa risiko regulasi US
-· Evidence: Foundation launch blog Ava Labs Sept 2020; struktur Cayman Islands foundation (HIGH) [Phase 3 EV-007, Phase 2 Avalanche Foundation]
-· Decision: Membangun yayasan non-profit di jurisdiksi crypto-friendly untuk custodian treasury AVAX genesis allocation (9.26%) dan ekosistem
-· Immediate Result: Entitas terpisah untuk deployment dana ekosistem (Rush, Multiverse, Blizzard Fund)
-· Long-term Impact: Memisahkan revenue Ava Labs (enterprise services) dari treasury protokol; menciptakan struktur governance off-chain via forum.foundation
-· Supporting Dataset: Phase 3 EV-007, Phase 2 (Ava Labs Inc., Avalanche Foundation), Phase 5 (Treasury, Fundraising Mechanism)
+· Trigger: Perlu entitas terpisah dari Ava Labs Inc. (US corporation) untuk mengelola treasury token, grant, governance komunitas, compliance non-profit
+· Evidence: Foundation launch blog, official site (Phase 3 EV-007); Whitepaper allocation Foundation 9.26%
+· Decision: Mendirikan yayasan Cayman Islands sebagai pengelola ekosistem, terpisah dari entitas komersial Ava Labs
+· Immediate Result: Entitas hukum untuk treasury token (genesis allocation), program grant (Rush, Multiverse), governance forum
+· Long-term Impact: Pemisahan kepentingan komersial (Ava Labs revenue via AvaCloud) vs ekosistem (Foundation grant); Foundation mengontrol ~66.7M AVAX genesis + ecosystem allocation; tidak ada DAO on-chain resmi, governance off-chain via forum
+· Supporting Dataset: Phase 3 (EV-007); Phase 2 (Entity: Avalanche Foundation); Phase 5 (Treasury: Foundation manages); Phase 6 (Distribution: Foundation 9.26%)
 
-Keputusan: Program Avalanche Rush $180M+ Insentif Likuiditas (2021-04)
-· Trigger: Mainnet live 6 bulan; TVL masih rendah (<$100M); perlu menarik blue-chip DeFi dan bootstrapping liquidity C-Chain
-· Evidence: Foundation announcement Rush program; Aave V3 & Curve deploy sebagai anchor protocols (HIGH) [Phase 3 EV-009, EV-010]
-· Decision: Mengalokasikan $180M+ AVAX dari treasury Foundation untuk liquidity mining di protokol DeFi terpilih (Aave, Curve, Benqi, Trader Joe, dll)
-· Immediate Result: TVL melonjak dari <$1M ke >$10M dalam bulan; Aave V3 & Curve live di C-Chain; Benqi & Trader Joe tumbuh pesat
-· Long-term Impact: Menciptakan "mercenary liquidity" yang keluar pasca-program; post-crash 2022, fokus bergeser ke sustainable yield & native protocols; TVL peak $11B Nov 2021 turun ke ~$850M Nov 2024
-· Supporting Dataset: Phase 3 EV-009, EV-010, EV-011, EV-017, Phase 5 (Fundraising Mechanism), Phase 8 (TVL History, Narrative Position)
+Keputusan: Program Avalanche Rush $180M+ Insentif Likuiditas DeFi (2021-04)
+· Trigger: Mainnet baru, TVL rendah, butuh menarik blue-chip DeFi (Aave, Curve) dan bootstrapping liquidity native
+· Evidence: Foundation announcement, Ava Labs blog (Phase 3 EV-009); Aave V3 deploy EV-010; Trader Joe/Benqi EV-011
+· Decision: Mengalokasikan $180M+ AVAX dari treasury Foundation untuk liquidity mining insentif protokol DeFi di C-Chain (Rush program)
+· Immediate Result: TVL melonjak < $1M ke > $10M dalam bulan; Aave V3, Curve deploy; Trader Joe, Benqi tumbuh pesat; DeFi ekosistem terbentuk
+· Long-term Impact: Menciptakan ketergantungan insentif mercenary; post-Terra crash (EV-017) TVL turun drastis; strategi bergeser ke sustainable yield & native protocols (Phase 8 Narrative: DeFi Secondary post-Rush)
+· Supporting Dataset: Phase 3 (EV-009, EV-010, EV-011); Phase 5 (Funding: Rush $180M+); Phase 7 (Integrations: Aave, Trader Joe, Benqi); Phase 8 (Market: TVL History, Narrative DeFi)
 
-Keputusan: Aktifkan Subnet di Mainnet (2021-11)
-· Trigger: P-Chain infrastructure siap; validator set matang; kebutuhan app-specific chain muncul dari gaming/enterprise
-· Evidence: Docs Subnet & Avascan list menunjukkan Subnet pertama produksi deploy (EV-012) (HIGH) [Phase 3 EV-012, Phase 4 Subnets]
-· Decision: Mengaktifkan fungsi CreateSubnetTx di P-Chain; memungkinkan validator set Primary Network memvalidasi L1 kustom
-· Immediate Result: Arsitektur "Internet of Subnets" operasional; fondasi untuk AvaCloud enterprise service
-· Long-term Impact: Differentiator utama vs monolithic L1 & L2 rollup; menarik klien enterprise (Deloitte, SK Planet, T. Rowe Price) dan game AAA (Shrapnel, Gunzilla, Nexon) yang butuh sovereignty
-· Supporting Dataset: Phase 3 EV-012, Phase 4 (Subnets, Subnet Validation), Phase 7 (Major Integrations AvaCloud clients)
+Keputusan: Aktifkan Fungsi Subnet di Mainnet (2021-11)
+· Trigger: Arsitektur Subnet dirancang sejak whitepaper; P-Chain validator set matang; butuh enable L1 sovran custom
+· Evidence: Docs Subnets, Avascan list (Phase 3 EV-012); Ava Labs blog Subnet launch
+· Decision: Mengaktifkan Subnet creation di P-Chain mainnet; validator Primary Network bisa memvalidasi Subnet kustom dengan VM sendiri
+· Immediate Result: Subnet pertama produksi deploy (Crabada/DeFi Kingdoms dll); arsitektur "Internet of Subnets" operasional
+· Long-term Impact: Fondasi untuk AvaCloud (EV-015), HyperSDK (EV-016), Teleporter (EV-020), enterprise/game adoption (EV-022 to EV-024); ~100+ Subnet live 2024
+· Supporting Dataset: Phase 3 (EV-012); Phase 4 (System Architecture: Subnets; Consensus: Subnet Validation); Phase 7 (Integrations: HyperSDK, Teleporter, AvaCloud clients)
 
 Keputusan: Peluncuran Avalanche Warp Messaging (AWM) (2022-03)
-· Trigger: Subnet bermakna banyak; butuh messaging native trust-minimized antar Subnet & Primary Network tanpa bridge eksternal
-· Evidence: AWM spec diterbitkan & live di mainnet Mar 2022; BLS multi-signature verification (HIGH) [Phase 3 EV-013, Phase 4 AWM]
-· Decision: Mengimplementasikan protokol messaging berbasis BLS multi-sig di Primary Network; validator set menandatangani pesan cross-chain
-· Immediate Result: Komunikasi antar Subnet tanpa bridge eksternal menjadi mungkin; fondasi untuk Teleporter
-· Long-term Impact: Standar messaging native pertama; namun terbatas pada payload tertentu & memerlukan upgrade ke Teleporter untuk generik
-· Supporting Dataset: Phase 3 EV-013, Phase 4 (AWM, Consensus BLS), Phase 7 (Teleporter Integration)
+· Trigger: Subnet butuh komunikasi trust-minimized antar chain tanpa bridge eksternal; BLS multi-sig memungkinkan verifikasi on-chain ringan
+· Evidence: Docs AWM, GitHub spec (Phase 3 EV-013); Phase 4 (Core Components: AWM; Consensus: BLS Multi-signature)
+· Decision: Mengaktifkan AWM di Primary Network: protokol messaging native berbasis BLS multi-signature untuk Subnet-to-Subnet & Subnet-to-Primary
+· Immediate Result: Cross-chain messaging native live; fondasi untuk Teleporter generasi baru
+· Long-term Impact: Teleporter (EV-020) menggantikan AWM dengan standar generik cross-VM; interoperabilitas Subnet jadi differentiator vs monolithic L1
+· Supporting Dataset: Phase 3 (EV-013); Phase 4 (Core Components: AWM, Teleporter; Security Model: BLS); Phase 7 (Integrations: Teleporter)
 
 Keputusan: Peluncuran Core Wallet (2022-06)
-· Trigger: UX fragmentation: user perlu MetaMask + custom RPC + bridge UI terpisah; hambatan onboarding non-teknis
-· Evidence: Core Wallet blog launch Juni 2022; multi-chain (X/P/C + Subnet), bridge terintegrasi, staking UI, portfolio (HIGH) [Phase 3 EV-014, Phase 4 Core Wallet]
-· Decision: Membangun wallet resmi Ava Labs (browser extension + mobile) sebagai unified entry point ekosistem Avalanche
-· Immediate Result: User experience terpadu; menggantikan kebutuhan MetaMask manual untuk C-Chain
-· Long-term Impact: Menjadi default wallet untuk Subnet onboarding; chain abstraction layer untuk end-user; integrasi AvaCloud gasless/fiat onramp
-· Supporting Dataset: Phase 3 EV-014, Phase 4 (Core Wallet), Phase 7 (Core Wallet Integration)
+· Trigger: UX fragmentasi (MetaMask manual config X/P/C-Chain); butuh wallet unified multi-chain native untuk onboarding non-teknis
+· Evidence: Core website, Chrome Web Store, Ava Labs products (Phase 3 EV-014); Phase 7 (Integrations: Core Wallet)
+· Decision: Membangun wallet resmi browser extension & mobile dengan multi-chain support (X/P/C-Chain + Subnet), bridge terintegrasi, staking UI, portfolio
+· Immediate Result: User experience terpadu; menggantikan perluasan MetaMask manual; onboarding enterprise/game user via AvaCloud terintegrasi
+· Long-term Impact: Core Wallet menjadi entry point utama user ke ekosistem; mendukung chain abstraction narrative (Phase 8 Narrative: Chain Abstraction)
+· Supporting Dataset: Phase 3 (EV-014); Phase 4 (Core Components: Core Wallet); Phase 7 (Major Integrations: Core Wallet); Phase 8 (Narrative: Chain Abstraction)
 
 Keputusan: Peluncuran AvaCloud Managed Subnet Service (2022-11)
-· Trigger: Enterprise & game studio butuh deploy Subnet tapi tidak punya expertise/run validator; hambatan teknis tinggi
-· Evidence: AvaCloud launch Nov 2022; klien awal Deloitte, SK Planet, T. Rowe Price, Gunzilla, Nexon, Shrapnel (HIGH) [Phase 3 EV-015, EV-022, EV-023, EV-024, EV-025, EV-026, Phase 7 AvaCloud]
-· Decision: Membangun SaaS platform fully-managed: provisioning validator, indexing, gasless tx, fiat onramp, compliance tools
-· Immediate Result: Hambatan deploy Subnet dihapus; percepatan adopsi enterprise & gaming AAA
-· Long-term Impact: Revenue stream utama Ava Labs Inc.; validasi model "Subnet per app" untuk mass adoption; AvaCloud menjadi produk komersial flagship
-· Supporting Dataset: Phase 3 EV-015, EV-022, EV-023, EV-024, EV-025, EV-026, Phase 4 (AvaCloud), Phase 7 (Major Integrations, Infrastructure Providers)
+· Trigger: Hambatan teknis menjalankan Subnet (validator provisioning, indexing, gasless, compliance) menghalangi enterprise/game adoption
+· Evidence: AvaCloud site, TechCrunch, Ava Labs blog (Phase 3 EV-015); Klien: Deloitte EV-025, SK Planet EV-026, Gunzilla EV-023, Nexon EV-022, Shrapnel EV-024
+· Decision: Meluncurkan SaaS platform managed Subnet: provisioning validator, indexing, gasless tx, fiat onramp, compliance tools
+· Immediate Result: Deployment Subnet dari bulan jadi hari; percepatan adopsi enterprise (Deloitte, SK Planet, T. Rowe Price) & game AAA (Shrapnel, Gunzilla, Nexon)
+· Long-term Impact: Revenue stream utama Ava Labs Inc. (Phase 5 Revenue Model: AvaCloud Enterprise Services); validasi model "Subnet per app" untuk sovereignty & throughput
+· Supporting Dataset: Phase 3 (EV-015, EV-022 to EV-026); Phase 5 (Revenue Model: AvaCloud); Phase 7 (Infrastructure: AvaCloud; Integrations: all enterprise/game clients); Phase 8 (Narrative: Enterprise, Gaming)
 
-Keputusan: Rilis HyperSDK Framework (2022-11) & Mainnet HyperSDK (2023-09)
-· Trigger: Subnet-EVM (Go) memiliki overhead EVM; butuh VM custom high-performance (10k+ TPS) untuk gaming/real-time apps
-· Evidence: HyperSDK GitHub release Nov 2022; Beam/Shrapnel Subnet live Sept 2023 demonstrasi 10k+ TPS (HIGH) [Phase 3 EV-016, EV-021, Phase 4 HyperSDK]
-· Decision: Mengembangkan framework Rust modular untuk custom VM (non-EVM) dengan execution pipeline teroptimasi
-· Immediate Result: Developer bisa launch Subnet performa tinggi dalam hari bukan bulan; non-EVM VM feasible
-· Long-term Impact: Menjadi backbone teknis game AAA (Shrapnel, Gunzilla, Nexon); diferensiasi vs EVM-only L2/L1; menarik use case non-DeFi
-· Supporting Dataset: Phase 3 EV-016, EV-021, Phase 4 (HyperSDK, Subnet VMs), Phase 7 (HyperSDK Integration)
+Keputusan: Rilis HyperSDK Framework (2022-11)
+· Trigger: Butuh framework VM high-performance non-EVM untuk Subnet gaming/enterprise yang butuh 10k+ TPS, finality sub-detik
+· Evidence: GitHub HyperSDK, Docs, Ava Labs blog (Phase 3 EV-016); Phase 4 (Core Components: HyperSDK; Execution Environment: Subnet VM HyperSDK)
+· Decision: Open-source framework Rust untuk custom VM: modular, 10k+ TPS, precompile Warp messaging, indexer built-in
+· Immediate Result: Developer bisa launch Subnet performa tinggi dalam hari; Shrapnel, Beam, Gunzilla adopt HyperSDK
+· Long-term Impact: Differentiator teknis vs EVM-only L1/L2; menarik game AAA (Shrapnel EV-024, Gunzilla EV-023, Nexon EV-022); Subnet non-EVM viable
+· Supporting Dataset: Phase 3 (EV-016, EV-021 HyperSDK Mainnet, EV-022 to EV-024); Phase 4 (Technical Stack: HyperSDK Rust); Phase 7 (Integrations: HyperSDK, Shrapnel, Gunzilla, Nexon); Phase 8 (Narrative: Gaming/HyperSDK)
 
-Keputusan: Upgrade Cortina (v1.10) & Aktifasi Teleporter (2023-09)
-· Trigger: P-Chain scaling bottleneck; AWM terbatas; butuh messaging generik cross-VM untuk Subnet interoperability
-· Evidence: Cortina upgrade Apr 2023 (P-Chain perf); Teleporter mainnet Sept 2023 (universal messaging, cross-VM) (HIGH) [Phase 3 EV-019, EV-020, Phase 4 Technical Upgrade History, Teleporter]
-· Decision: Upgrade bertahap: Cortina optimasi P-Chain/state sync → Teleporter menggantikan AWM dengan standar generik
-· Immediate Result: Validator set scaling lebih efisien; messaging cross-subnet universal live; cross-VM compatibility terealisasi
-· Long-term Impact: "Internet of Subnets" betul-betul fungsional; Teleporter + HyperSDK + AvaCloud = stack lengkap app-specific chain
-· Supporting Dataset: Phase 3 EV-019, EV-020, Phase 4 (Technical Upgrade History, Teleporter, Consensus), Phase 7 (Teleporter Integration)
-
-Keputusan: Kemitraan Enterprise & Gaming AAA via AvaCloud (2022-2023 berkelanjutan)
-· Trigger: AvaCloud siap; target pasar mass-market butuh throughput tinggi, compliance, UX terabstraksi
-· Evidence: Deloitte CAYG (Nov 2022), SK Planet UPTN (Nov 2022), Gunzilla GUNZ (2023), Nexon MSU (Dec 2023), Shrapnel (2022) (HIGH) [Phase 3 EV-022, EV-023, EV-024, EV-025, EV-026, Phase 7 Major Integrations]
-· Decision: Menjual managed Subnet service ke klien besar dengan brand recognition & user base existing
-· Immediate Result: Subnet produksi live dengan jutaan potential users; revenue AvaCloud; showcase enterprise-grade
-· Long-term Impact: Posisi Avalanche sebagai "enterprise blockchain" & "gaming blockchain" terukir; pipeline user acquisition terbesar (Nexon 30M+, SK Planet 30M+)
-· Supporting Dataset: Phase 3 EV-022, EV-023, EV-024, EV-025, EV-026, Phase 7 (Major Integrations), Phase 8 (Narrative Position)
+Keputusan: Upgrade Cortina (v1.10) + Teleporter Mainnet Activation (2023-09)
+· Trigger: Perlu scaling P-Chain validator set, optimasi C-Chain fee market, persiapan messaging generasi baru (Teleporter) pengganti AWM
+· Evidence: Ava Labs blog Cortina, Teleporter mainnet, GitHub releases (Phase 3 EV-019, EV-020); Phase 4 (Technical Upgrade History: Cortina, Teleporter)
+· Decision: Upgrade jaringan Cortina (performa P-Chain, state sync, fee market) + aktivasi Teleporter (messaging generik cross-VM, BLS verification, payload arbitrer)
+· Immediate Result: Efisiensi staking naik; latency C-Chain turun; Teleporter live sebagai standar universal interoperabilitas Subnet
+· Long-term Impact: Teleporter mengaktifkan "Internet of Subnets" betul-betul; cross-VM messaging (EVM, HyperSDK, SpacesVM) seamless; fondasi RWA/chain abstraction
+· Supporting Dataset: Phase 3 (EV-019, EV-020); Phase 4 (Technical Upgrade History: Cortina, Teleporter, HyperSDK Mainnet); Phase 7 (Integrations: Teleporter); Phase 8 (Narrative: Interoperability/Teleporter)
 
 Evolution Pattern
 
-Proyek berevolusi melalui empat fase strategis yang jelas:
+Perubahan Strategi: Dari Monolithic L1 DeFi-Focused ke Multi-Vertical Modular (Subnet-Centric)
+· Evidence: 2020-2021: Fokus C-Chain DeFi via Rush incentives (EV-009, EV-010, EV-011) menarik Aave, Curve, native DeFi; TVL puncak $11B Nov 2021. 2022: Terra crash (EV-017) & bear market menyebabkan TVL turun >90%; strategi bergeser ke Subnet deployment (EV-012, EV-015 AvaCloud) untuk enterprise (EV-025 Deloitte) & gaming (EV-022 Nexon, EV-023 Gunzilla, EV-024 Shrapnel). 2023: HyperSDK (EV-016) & Teleporter (EV-020) mengaktifkan Subnet high-performance & interoperabilitas native. 2024: Narasi utama = Enterprise, Gaming, RWA, Interoperability (Phase 8 Narratives), DeFi jadi secondary.
+· Supporting Dataset: Phase 3 (EV-009 to EV-024); Phase 4 (Architecture evolution: Subnet, HyperSDK, Teleporter); Phase 7 (Ecosystem shift: DeFi → Enterprise/Gaming); Phase 8 (Market Position: Primary competitors, Narrative shift)
 
-Fase 1 — Research & Foundation (2018-2020): Dari paper akademis IC3 Cornell ke implementasi AvalancheGo, testnet Denali, dan fundraising bertahap (Seed → Series A + Strategic + Public Sale). Fokus: membuktikan konsensus probabilistik works at scale dan membangun cap table investor kuat. Entitas terpisah: Ava Labs Inc. (dev) + Avalanche Foundation (ekosistem).
+Perubahan Teknologi: Dari Single VM (EVM) ke Multi-VM Heterogen (EVM + HyperSDK + Custom VM)
+· Evidence: Launch 2020: Hanya C-Chain EVM (Coreth) untuk smart contract; X-Chain AVM (UTXO), P-Chain PVM (platform). 2022: HyperSDK (EV-016) memperkenalkan Rust-based VM framework untuk custom VM non-EVM. 2023: HyperSDK mainnet (EV-021) buktikan 10k+ TPS di Subnet produksi (Beam/Shrapnel). Teleporter (EV-020) mendukung cross-VM messaging generik. Subnet-EVM untuk EVM-compatible Subnet. Arsitektur jadi: Primary Network (3 VM) + Subnet (EVM via Subnet-EVM, HyperSDK, SpacesVM, BlobVM, custom).
+· Supporting Dataset: Phase 3 (EV-016 HyperSDK, EV-020 Teleporter, EV-021 HyperSDK Mainnet); Phase 4 (Execution Environment: C-Chain EVM, X-Chain AVM, P-Chain PVM, Subnet VMs; Core Components: HyperSDK, Subnet-EVM); Phase 7 (Integrations: HyperSDK, Teleporter, Subnet-EVM)
 
-Fase 2 — Mainnet Launch & DeFi Bootstrapping (2020-09 — 2021): Mainnet Primary Network (X/P/C-Chain) live; C-Chain EVM menjadi anchor. Program Rush $180M+ menarik blue-chip DeFi (Aave, Curve) dan melahirkan native DeFi (Trader Joe, Benqi). TVL peak $11B Nov 2021. Subnet framework tersedia tapi belum dipakai produksi.
+Perubahan Tokenomics: Dari Inflationary Staking Rewards Dominen ke Dynamic Burn/Inflation Equilibrium
+· Evidence: Genesis: 50% supply (360M AVAX) dialokasi untuk staking rewards terminting berdecade (Phase 6 Distribution: Staking Rewards 50%). Fee burn C-Chain (EIP-1559) mulai mainnet 2020 (Phase 4 Technical Upgrade: Apricot 2021 fee market). Net supply dynamic: inflation dari staking rewards vs deflation dari fee burn. Tidak ada fee switch ke treasury (Phase 5 Revenue Model: Protocol fees burned). Vesting investor (Seed/Private/Strategic 1-2yr cliff, 2-3yr linear) selesai ~2023-2024 (Phase 6 Vesting). Public Sale vesting 18 bulan selesai 2022.
+· Supporting Dataset: Phase 3 (EV-006 Mainnet, EV-019 Cortina fee market); Phase 4 (Technical Upgrade History: Apricot fee market); Phase 5 (Revenue Model: Fee Burn, Staking Rewards); Phase 6 (Supply: Dynamic, Distribution, Vesting); Phase 8 (Financial Risk: No fee switch)
 
-Fase 3 — Market Crash & Strategic Pivot (2022): Terra/Luna crash (Mei 2022) & 3AC/Alameda bankruptcy (Juni-Nov 2022) menghapus mercenary liquidity. TVL turun >90%. Respons: fokus bergeser ke fundamental builder (native protocols bertahan), enterprise adoption (AvaCloud launch Nov 2022), dan infrastructure tooling (Core Wallet, HyperSDK, AWM). Tidak ada pivot teknis arsitektur — arsitektur multi-chain sudah siap sejak genesis.
+Perubahan Governance: Dari Founder/Company-Led ke Foundation-Led Off-Chain Governance (No On-Chain DAO)
+· Evidence: 2018-2020: Ava Labs Inc. (founder-led) semua keputusan teknis & bisnis. 2020: Avalanche Foundation (Cayman) didirikan (EV-007) mengelola treasury & grant. Governance via forum.avalanche.foundation (off-chain signaling). Tidak ada token voting on-chain resmi. Foundation eksekusi grant (Rush, Multiverse, Blizzard). Ava Labs Inc. fokus produk komersial (AvaCloud, Core Wallet). Validator set signaling via P-Chain staking (tidak voting protokol).
+· Supporting Dataset: Phase 2 (Entities: Ava Labs Inc., Avalanche Foundation); Phase 3 (EV-007 Foundation, EV-009 Rush, EV-015 AvaCloud); Phase 5 (Fundraising: Foundation Grant, no DAO Treasury); Phase 6 (Distribution: Foundation 9.26%, no DAO allocation); Phase 7 (Infrastructure: Forum Governance); Phase 8 (Narrative: tidak ada DAO governance narrative)
 
-Fase 4 — Subnet Production & Mass-Market Pipeline (2023-sekarang): Teleporter (Sept 2023) mengaktifkan cross-subnet messaging universal. HyperSDK mainnet (Beam/Shrapnel) membuktikan 10k+ TPS. Kemitraan enterprise/gaming AAA (Deloitte, SK Planet, T. Rowe Price, Gunzilla, Nexon, Shrapnel) deploy Subnet via AvaCloud. Narasi bergeser dari "DeFi L1" ke "App-specific chain platform untuk enterprise & gaming". TVL stabil ~$850M (native DeFi sustainable), developer count ~400+ (Electric Capital 2024), Subnet count 100+.
+Technical Decision Pattern
 
-Pola 1: Arsitektur Heterogen Multi-Chain sejak Genesis (Tidak Pivot Teknis)
+Pola 1: Modular Multi-Chain Architecture dengan Shared Security via Validator Set
+· Decision Pattern: Memisahkan fungsi jaringan ke chain khusus (X-Chain asset/DAG, P-Chain staking/linear, C-Chain EVM/linear) yang dibangun di atas protokol konsensus yang sama (Avalanche/Snowman), dengan Subnet sebagai L1 sovran yang divalidasi subset validator Primary Network
+· Evidence: Whitepaper 2018 mendefinisikan arsitektur ini (Phase 1, Phase 3 EV-001); Mainnet 2020 meluncurkan ketiga chain simultan (EV-006); Subnet activation 2021 (EV-012) memperluas model ke L1 kustom; Validator set ~1.300+ mengamankan Primary Network + Subnet (Phase 4 Consensus: Subnet Validation, Security Model: Subnet Isolation)
+· Supporting Dataset: Phase 1 (Category: Multi-chain Architecture); Phase 3 (EV-001, EV-006, EV-012); Phase 4 (System Architecture, Consensus Mechanism, Security Model); Phase 8 (Adoption Metrics: Validator Count, Subnet Count)
 
-· Decision Pattern: Primary Network dirancang sebagai tiga chain terpisah (X-Chain DAG, P-Chain Linear, C-Chain EVM) dengan konsensus berbeda (Avalanche vs Snowman) sejak whitepaper 2018; Subnet framework tersedia di P-Chain sejak mainnet 2020; tidak ada redesign arsitektur fundamental pasca-launch
-· Evidence: Whitepaper 2018 sudah mendefinisikan X/P/C-Chain + Subnet; Mainnet 2020 meluncurkan ketiganya bersamaan; Subnet aktif 2021 tanpa hard fork arsitektur (HIGH) [Phase 1 Launch Dates, Phase 3 EV-006, EV-012, Phase 4 System Architecture, Consensus Mechanism]
-· Supporting Dataset: Phase 1 (Foundation), Phase 3 (EV-001, EV-006, EV-012), Phase 4 (System Architecture, Consensus Mechanism, Core Components)
+Pola 2: Native Cross-Chain Messaging (AWM → Teleporter) sebagai Differentiator vs External Bridge
+· Decision Pattern: Mengembangkan protokol messaging native (AWM 2022, Teleporter 2023) berbasis BLS multi-signature untuk komunikasi trust-minimized antar Subnet & Primary Network, cross-VM compatible, bukan bergantung pada bridge eksternal (LayerZero, Wormhole, CCIP) untuk internal interoperabilitas
+· Evidence: AWM launch EV-013 (Phase 3); Teleporter launch EV-020 (Phase 3); BLS multi-sig verification (Phase 4 Core Components: AWM, Teleporter; Security Model: BLS); Teleporter mendukung payload arbitrer & cross-VM (EVM, HyperSDK, SpacesVM) (Phase 4 Technical Upgrade: Teleporter); Bridge eksternal tetap dipertahankan untuk eksternal (Phase 7 External Dependencies: LayerZero, Wormhole, CCIP)
+· Supporting Dataset: Phase 3 (EV-013, EV-020); Phase 4 (Core Components: AWM, Teleporter; Consensus: BLS; Technical Upgrade: Teleporter); Phase 7 (External Dependencies, Major Integrations: Teleporter, LayerZero, Wormhole, CCIP); Phase 8 (Narrative: Interoperability/Teleporter)
 
-Pola 2: Upgrade Bertahap dengan Testing Ekstensif di Testnet Publik
+Pola 3: Upgrade Jaringan Bertahap dengan Koordinasi Validator Set (Governance Off-Chain → On-Chain Activation)
+· Decision Pattern: Major upgrade (Apricot, Banff, Cortina, Durango, Etna) dikembangkan di AvalancheGo, diuji di testnet, lalu diaktifkan via koordinasi off-chain (forum, Discord, validator signaling) tanpa on-chain voting protokol; validator upgrade node simultan
+· Evidence: Upgrade history 2021-2024 (Phase 4 Technical Upgrade History: 8 major upgrades); Cortina (EV-019) persiapan Teleporter/HyperSDK; Durango/Etna (2024) scaling P-Chain & C-Chain batch processing; Tidak ada on-chain governance voting (Phase 4 Security Model: No on-chain governance; Phase 2 Entity: Avalanche Foundation governance off-chain)
+· Supporting Dataset: Phase 3 (EV-019 Cortina, EV-020 Teleporter); Phase 4 (Technical Upgrade History: 8 upgrades; Security Model: No slashing, off-chain governance); Phase 2 (Entity: Avalanche Foundation, Validators); Phase 7 (Infrastructure: Discord/Forum governance)
 
-· Decision Pattern: Setiap major upgrade (Apricot, Banff, Cortina, Durango, Etna) diuji di testnet (Fuji) bulan-bulan sebelum mainnet; validator set diberikan waktu upgrade koordinatif; changelog transparan di GitHub AvalancheGo releases
-· Evidence: Upgrade history 2021-2024 menunjukkan interval 6-12 bulan; Cortina (v1.10) testing P-Chain perf; Teleporter activation terpisah dari network upgrade; HyperSDK support di v1.11 (HIGH) [Phase 3 EV-019, EV-020, Phase 4 Technical Upgrade History, GitHub AvalancheGo Releases]
-· Supporting Dataset: Phase 3 (EV-019, EV-020), Phase 4 (Technical Upgrade History, Current Technical Stack)
+Pola 4: High-Performance Custom VM (HyperSDK) untuk Use Case Non-EVM (Gaming/Enterprise) tanpa Mengganggu C-Chain EVM
+· Decision Pattern: Membangun framework VM terpisah (HyperSDK Rust) untuk Subnet yang butuh throughput tinggi (10k+ TPS), finality sub-detik, custom logic — biarkan C-Chain tetap EVM-compatible untuk DeFi/composability; Teleporter menghubungkan keduanya
+· Evidence: HyperSDK release EV-016 (Phase 3); HyperSDK mainnet EV-021 (Phase 3); Shrapnel, Gunzilla, Nexon adopt HyperSDK Subnet (EV-022 to EV-024); C-Chain tetap EVM untuk Aave, Trader Joe, Benqi (EV-010, EV-011); Teleporter cross-VM messaging (EV-020)
+· Supporting Dataset: Phase 3 (EV-016, EV-021, EV-022 to EV-024); Phase 4 (Execution Environment: Subnet VM HyperSDK vs C-Chain EVM; Core Components: HyperSDK, Coreth); Phase 7 (Integrations: HyperSDK, Shrapnel, Gunzilla, Nexon, Teleporter); Phase 8 (Narrative: Gaming/HyperSDK, DeFi Infrastructure)
 
-Pola 3: Memilih EVM-Compatibility (Coreth) Bukan EVM-Equivalence Penuh untuk C-Chain
+Pola 5: Enterprise-Grade Managed Infrastructure (AvaCloud) untuk Menghilangkan Hambatan Operasional Subnet
+· Decision Pattern: Menyediakan SaaS fully-managed (validator provisioning, indexing, gasless, fiat onramp, compliance) sehingga enterprise/game studio fokus pada application logic, bukan infrastructure ops
+· Evidence: AvaCloud launch EV-015 (Phase 3); Klien: Deloitte (EV-025), SK Planet (EV-026), T. Rowe Price, Gunzilla (EV-023), Nexon (EV-022), Shrapnel (EV-024); AvaCloud jadi revenue stream Ava Labs Inc. (Phase 5 Revenue Model); Infrastructure AWS/GCP (Phase 7 Infrastructure Providers)
+· Supporting Dataset: Phase 3 (EV-015, EV-022 to EV-026); Phase 4 (Core Components: AvaCloud); Phase 5 (Revenue Model: AvaCloud Enterprise Services); Phase 7 (Infrastructure: AWS, GCP; Integrations: all AvaCloud clients); Phase 8 (Narrative: Enterprise, Gaming)
 
-· Decision Pattern: C-Chain menggunakan Coreth (Geth fork) dengan precompile native (staking, AWM/Teleporter, native AVAX transfer) dan fee model EIP-1559 modified; bukan EVM-equivalent penuh seperti Polygon zkEVM atau Scroll
-· Evidence: Docs C-Chain Differences menyebutkan precompile berbeda, gas model berbeda, block time ~1-2 detik vs 12 detik Ethereum; Coreth tracking upstream Geth tapi dengan modifikasi signifikan (HIGH) [Phase 4 Execution Environment, C-Chain, Known Technical Limitations]
-· Supporting Dataset: Phase 4 (Execution Environment, Known Technical Limitations), Phase 7 (Major Integrations Aave, Curve)
+Financial Decision Pattern
 
-Pola 4: Native Cross-Chain Messaging (AWM → Teleporter) sebagai Priority over External Bridge Dependency
+Pola 1: Fundraising Bertahap dengan Kombinasi Equity + Token Sale (Seed → Series A + Strategic Sale + Public Sale)
+· Decision Pattern: Menggabungkan equity funding (Seed Polychain, Series A a16z) untuk operasional Ava Labs Inc. dengan token sale (Strategic $42M institusional, Public $36M retail via CoinList) untuk distribusi token, likuiditas, dan treasury ekosistem — semua pada valuasi token sama ($0.50/AVAX)
+· Evidence: Phase 3 (EV-002 Seed, EV-004 Series A+Strategic, EV-005 Public Sale); Phase 5 (Funding History: 4 rounds total ~$96M cash + token allocation); Phase 6 (Distribution: Seed 2.5%, Private 3.5%, Strategic 10%, Public 10% @ $0.50); Phase 2 (Investors: Polychain, a16z, 3AC, Dragonfly, CMS, Alameda, Republic, Jump, Wintermute)
+· Supporting Dataset: Phase 3 (EV-002, EV-004, EV-005); Phase 5 (Funding History); Phase 6 (Distribution, Vesting); Phase 2 (Investors)
 
-· Decision Pattern: Investasi besar pada AWM (2022) lalu Teleporter (2023) untuk messaging trust-minimized native antar Subnet & Primary Network; bridge eksternal (LayerZero, Wormhole, CCIP) sebagai komplementer, bukan substitusi
-· Evidence: AWM & Teleporter spec menggunakan BLS multi-sig validator set Primary Network; Teleporter cross-VM compatible; bridge eksternal terdeploy terpisah (HIGH) [Phase 3 EV-013, EV-020, Phase 4 AWM, Teleporter, Phase 7 External Dependencies]
-· Supporting Dataset: Phase 3 (EV-013, EV-020), Phase 4 (AWM, Teleporter), Phase 7 (External Dependencies, Major Integrations)
+Pola 2: Foundation Treasury sebagai Sumber Dana Ekosistem Utama (Grant/Insentif), Bukan Protocol Revenue
+· Decision Pattern: Avalanche Foundation (genesis allocation 9.26% + ecosystem 12%) mengeluarkan token untuk grant (Rush $180M+, Multiverse $290M+, Blizzard Fund) — tidak ada protocol revenue (fee burn, staking reward ke validator); Ava Labs Inc. revenue terpisah dari AvaCloud enterprise services
+· Evidence: Phase 3 (EV-007 Foundation, EV-009 Rush, EV-015 AvaCloud); Phase 5 (Treasury: Foundation manages; Revenue Model: Fee burn, Staking rewards, AvaCloud services, no protocol revenue); Phase 6 (Distribution: Foundation 9.26%, Community/Ecosystem 12%, Staking Rewards 50%); Phase 8 (Financial Risk: Treasury concentration AVAX, Revenue dependency AvaCloud)
+· Supporting Dataset: Phase 3 (EV-007, EV-009); Phase 5 (Treasury, Revenue Model, Funding History: Rush/Multiverse); Phase 6 (Distribution); Phase 8 (Financial Risk)
 
-Pola 5: Custom VM Framework (HyperSDK) untuk Non-EVM Use Case (Gaming, Enterprise)
+Pola 3: Vesting Investor Jangka Panjang (1-2yr Cliff + 2-3yr Linear) Menciptakan Overhang yang Teratasi 2023-2024
+· Decision Pattern: Semua investor private (Seed, Private, Strategic) menerima vesting 1yr cliff + 2-3yr linear; Public Sale 10% TGE + 18mo linear; unlock besar 2022-2023 selesai ~2024; 3AC/Alameda bankrup 2022 likuidasi token tambahan
+· Evidence: Phase 3 (EV-004 Strategic Sale, EV-005 Public Sale); Phase 6 (Vesting Schedule: Seed 3yr, Private/Strategic 2yr post-1yr cliff, Public 18mo); Phase 3 (EV-018 3AC Bankruptcy); Phase 8 (Financial Risk: Investor Liquidation Risk)
+· Supporting Dataset: Phase 3 (EV-004, EV-005, EV-018); Phase 6 (Vesting Schedule); Phase 8 (Financial Risk)
 
-· Decision Pattern: Mengembangkan HyperSDK (Rust) sebagai framework VM modular high-performance paralel dengan Subnet-EVM (Go); menargetkan use case yang butuh >EVM throughput (gaming real-time, enterprise high-frequency)
-· Evidence: HyperSDK GitHub Nov 2022; Beam/Shrapnel Subnet live Sept 2023 dengan 10k+ TPS; Gunzilla/Nexon adopt HyperSDK via AvaCloud (HIGH) [Phase 3 EV-016, EV-021, Phase 4 HyperSDK, Subnet VMs, Phase 7 Major Integrations]
-· Supporting Dataset: Phase 3 (EV-016, EV-021), Phase 4 (HyperSDK, Subnet VMs), Phase 7 (Major Integrations Gaming)
+Pola 4: Tokenomics Dynamic Supply (Inflation Staking vs Deflation Fee Burn) Tanpa Fee Switch ke Treasury
+· Decision Pattern: Max supply 720M hard cap; 50% (360M) untuk staking rewards terminting berdecade (inflationary); C-Chain base fee burn (deflationary); net supply bergantung usage vs staking; tidak ada mekanisme fee switch mengarahkan fee ke treasury Foundation/Ava Labs
+· Evidence: Phase 1 (Supply: Max 720M, Dynamic); Phase 4 (Technical Upgrade: Apricot fee market EIP-1559); Phase 5 (Revenue Model: Fee burn, Staking rewards); Phase 6 (Supply: Dynamic, Max 720M, Staking Rewards 50%); Phase 8 (Financial Risk: No fee switch, Treasury concentration AVAX)
+· Supporting Dataset: Phase 1 (Supply); Phase 4 (Technical Upgrade History: Apricot); Phase 5 (Revenue Model); Phase 6 (Supply, Distribution); Phase 8 (Financial Risk)
 
-Pola 6: Validator Set Shared Security Model (Primary Network Validator = Subnet Validator Prasyarat)
+Ecosystem Decision Pattern
 
-· Decision Pattern: Subnet validator harus menjadi validator Primary Network (stake 2000 AVAX); shared security lewat validator overlap, bukan shared stake pooling seperti Polkadot atau Cosmos Interchain Security
-· Evidence: Docs Subnet Validation: "Subnet validators must validate Primary Network"; P-Chain mengelola validator set; slashing belum diimplementasikan (hanya uptime penalty) (HIGH) [Phase 4 Consensus Mechanism, Security Model, Known Technical Limitations]
-· Supporting Dataset: Phase 4 (Consensus Mechanism, Security Model, Known Technical Limitations), Phase 7 (Infrastructure Providers Validators)
+Pola 1: Partnership Enterprise/Gaming via AvaCloud sebagai Go-to-Market Utama (Bukan BD Tradisional)
+· Decision Pattern: Menggunakan AvaCloud managed service sebagai saluran utama onboarding enterprise (Deloitte, SK Planet, T. Rowe Price) dan game AAA (Gunzilla, Nexon, Shrapnel) — AvaCloud handle infrastructure, compliance, fiat onramp; partnership = deployment Subnet di AvaCloud
+· Evidence: Phase 3 (EV-015 AvaCloud launch, EV-022 Nexon, EV-023 Gunzilla, EV-024 Shrapnel, EV-025 Deloitte, EV-026 SK Planet); Phase 7 (Major Integrations: all AvaCloud clients; Infrastructure: AvaCloud); Phase 8 (Narrative: Enterprise, Gaming; Market Position: Enterprise focus)
+· Supporting Dataset: Phase 3 (EV-015, EV-022 to EV-026); Phase 7 (Major Integrations, Infrastructure); Phase 8 (Narrative, Market Position)
 
-Pola 1: Fundraising Bertahap: Equity (VC) + Token Allocation (Strategic/Public) — Tidak Ada Token Sale Ulang
+Pola 2: Integrasi Bridge & Oracle Multi-Provider (LayerZero, Wormhole, CCIP, Chainlink) untuk Redundansi & Reach Eksternal
+· Decision Pattern: Tidak mengunci ekosistem ke single bridge/oracle; mengaktifkan LayerZero (OApp/OFT), Wormhole (NTT/Messaging), Chainlink CCIP, Avalanche Bridge (AB SGX) simultan — memberikan developer pilihan & redundansi cross-chain ke Ethereum, Solana, BSC, L2s
+· Evidence: Phase 3 (EV-013 AWM, EV-020 Teleporter internal; external bridges live 2022+); Phase 7 (External Dependencies: LayerZero, Wormhole, Chainlink CCIP, Intel SGX/AB; Major Integrations: all bridges); Phase 8 (Narrative: Interoperability; Market: Bridge Volume multi-bridge)
+· Supporting Dataset: Phase 3 (EV-013, EV-020); Phase 7 (External Dependencies, Major Integrations); Phase 8 (Narrative, Market: Liquidity/Bridge Volume)
 
-· Decision Pattern: Seed equity (Polychain) → Series A equity (a16z) + Strategic Sale token (20+ investor) + Public Sale token (CoinList) Juli 2020; total ~$96M cash raise; tidak ada Series B equity atau token sale tambahan setelah TGE
-· Evidence: Crunchbase funding history hanya 4 ronde (Seed, Series A, Strategic, Public); Ava Labs revenue dari AvaCloud enterprise services sejak 2022; Foundation treasury dari genesis allocation (HIGH) [Phase 5 Funding History, Revenue Model, Fundraising Mechanism]
-· Supporting Dataset: Phase 5 (Funding History, Revenue Model, Fundraising Mechanism), Phase 3 (EV-002, EV-004, EV-005)
+Pola 3: Insentif Ekosistem Berbasis Vertical (Rush DeFi → Multiverse Subnet/Game/Enterprise) Mengikuti Siklus Adopsi
+· Decision Pattern: Rush (2021) target DeFi blue-chip (Aave, Curve) & native (Trader Joe, Benqi) untuk TVL cepat; Multiverse (2021+) target Subnet builder (game, enterprise, DeFi baru) untuk jangka panjang; Blizzard Fund untuk equity investment ekosistem
+· Evidence: Phase 3 (EV-009 Rush, EV-010 Aave, EV-011 Native DeFi, EV-012 Subnet, EV-015 AvaCloud); Phase 5 (Funding: Rush $180M+, Multiverse $290M+); Phase 7 (Integrations: Rush recipients, Multiverse builders); Phase 8 (Narrative shift: DeFi → Gaming/Enterprise/RWA)
+· Supporting Dataset: Phase 3 (EV-009 to EV-012, EV-015); Phase 5 (Funding History: Rush, Multiverse); Phase 7 (Major Integrations); Phase 8 (Narrative Position)
 
-Pola 2: Foundation Treasury sebagai Sumber Dana Ekosistem Tunggal (Grant/Incentive), Tanpa Revenue Protocol
+Pola 4: Infrastructure Provider Partnership (AWS, GCP, The Graph, RPC Providers) untuk Menjamin Ketersediaan & Akses Data
+· Decision Pattern: Mitralah dengan cloud provider besar (AWS Marketplace, GCP Marketplace, BigQuery), indexing (The Graph), RPC (QuickNode, Alchemy, Infura) — memastikan validator/node deployment mudah, data terindeks, akses RPC reliable
+· Evidence: Phase 7 (Infrastructure Providers: AWS, GCP, Chainlink, The Graph, Snowtrace/Avascan, QuickNode/Alchemy/Infura, GitHub, Discord/Telegram); Phase 3 (EV-015 AvaCloud uses AWS/GCP); Phase 4 (Technical Stack: CI/CD GitHub, Kubernetes)
+· Supporting Dataset: Phase 3 (EV-015); Phase 4 (Technical Stack); Phase 7 (Infrastructure Providers); Phase 8 (Market: Infrastructure dependencies)
 
-· Decision Pattern: Avalanche Foundation (genesis 9.26% + ecosystem allocation) mendeployasikan token untuk Rush ($180M+), Multiverse ($290M+), Blizzard Fund, grant; tidak ada fee switch, protocol revenue, atau DAO treasury on-chain; Ava Labs Inc. revenue terpisah dari AvaCloud
-· Evidence: Phase 5 Treasury, Revenue Model, Fundraising Mechanism; Phase 3 EV-009 (Rush), EV-007 (Foundation launch); Phase 6 Distribution (Foundation 9.26%, Staking Rewards 50%) (HIGH) [Phase 5, Phase 3 EV-007, EV-009, Phase 6 Distribution]
-· Supporting Dataset: Phase 5 (Treasury, Revenue Model, Fundraising Mechanism), Phase 3 (EV-007, EV-009), Phase 6 (Distribution)
+Governance Decision Pattern
 
-Pola 3: Vesting Investor Panjang (1-3 Tahun) Menciptakan Overhang Token 2022-2023
+Pola 1: Off-Chain Governance via Foundation Forum + Signaling — No On-Chain DAO Voting
+· Decision Pattern: Semua keputusan protokol (upgrade, parameter, treasury allocation) dikordinasikan off-chain melalui forum.avalanche.foundation, Discord, Telegram; Foundation eksekusi grant; validator signaling via staking participation (tidak voting); tidak ada snapshot voting atau on-chain governance protokol
+· Evidence: Phase 2 (Entity: Avalanche Foundation governance off-chain); Phase 3 (EV-007 Foundation, EV-009 Rush grants, EV-019 Cortina upgrade coordination); Phase 4 (Security Model: No on-chain governance); Phase 5 (Fundraising: Foundation Grant, no DAO Treasury); Phase 6 (Distribution: no DAO allocation); Phase 7 (Infrastructure: Forum Governance)
+· Supporting Dataset: Phase 2 (Entity: Avalanche Foundation); Phase 3 (EV-007, EV-009, EV-019); Phase 4 (Security Model); Phase 5 (Fundraising Mechanism); Phase 6 (Distribution); Phase 7 (Infrastructure Providers: Forum)
 
-· Decision Pattern: Seed/Private/Strategic sale: cliff 1 tahun + vesting linear 2-3 tahun; Public Sale: 10% TGE + 18 bulan vesting; unlock massal 2022-2023 bertemu bear market & 3AC/Alameda liquidation
-· Evidence: Phase 6 Vesting Schedule detail per kategori; Phase 3 EV-018 (3AC bankruptcy), EV-017 (market crash); token unlock data on-chain menunjukkan tekanan jual (HIGH) [Phase 6 Vesting Schedule, Phase 3 EV-017, EV-018]
-· Supporting Dataset: Phase 6 (Vesting Schedule), Phase 3 (EV-017, EV-018)
+Pola 2: Foundation Sebagai Eksekutor Treasury & Grant — Bukan DAO
+· Decision Pattern: Foundation (Cayman entity) mengontrol genesis allocation 9.26% + ecosystem 12% + sisa staking rewards; menentukan penerima grant (Rush, Multiverse, Blizzard) secara unilateral/basis aplikasi; tidak ada voting token holder pada alokasi treasury
+· Evidence: Phase 3 (EV-007 Foundation launch, EV-009 Rush, EV-015 AvaCloud); Phase 5 (Treasury: Foundation manages; Funding: Foundation Grant); Phase 6 (Distribution: Foundation 9.26%, Community/Ecosystem 12%); Phase 8 (Financial Risk: Treasury concentration, no transparency dashboard)
+· Supporting Dataset: Phase 3 (EV-007, EV-009); Phase 5 (Treasury, Funding History); Phase 6 (Distribution); Phase 8 (Financial Risk)
 
-Pola 4: Revenue Model Ava Labs = Enterprise SaaS (AvaCloud), Bukan Protocol Fees
+Pola 3: Upgrade Protokol Dikoordinasikan Off-Chain (Validator Signaling) Tanpa Voting On-Chain
+· Decision Pattern: Major upgrade (Apricot, Banff, Cortina, Durango, Etna, Teleporter) dikembangkan Ava Labs, direview auditor, diuji testnet, lalu validator diinstruksikan upgrade via komunikasi off-chain (blog, Discord, forum, email); tidak ada signaling on-chain atau voting
+· Evidence: Phase 3 (EV-019 Cortina, EV-020 Teleporter activation); Phase 4 (Technical Upgrade History: 8 upgrades koordinasi off-chain); Phase 2 (Entity: Avalanche Validators, Ava Labs Engineering Team); Phase 7 (Infrastructure: Discord/Forum coordination)
+· Supporting Dataset: Phase 3 (EV-019, EV-020); Phase 4 (Technical Upgrade History); Phase 2 (Entity: Validators, Engineering Team); Phase 7 (Infrastructure)
 
-· Decision Pattern: Ava Labs Inc. (private company) monetisasi via AvaCloud managed Subnet services ke enterprise (Deloitte, SK Planet, T. Rowe Price, game studios); protocol fees (C-Chain base fee) dibakar, tidak ke treasury; staking rewards dari inflasi protocol
-· Evidence: Phase 5 Revenue Model (AvaCloud Enterprise Services), Phase 3 EV-015 (AvaCloud launch), EV-025/026/023/022 (client deals); Phase 4 (C-Chain fee burn) (HIGH) [Phase 5 Revenue Model, Phase 3 EV-015, EV-022, EV-023, EV-024, EV-025, EV-026, Phase 4 C-Chain Fee Market]
-· Supporting Dataset: Phase 5 (Revenue Model, Financial Dependencies), Phase 3 (EV-015, EV-022, EV-023, EV-024, EV-025, EV-026), Phase 4 (C-Chain)
+Risk Response Pattern
 
-Pola 5: Tidak Ada Diversifikasi Treasury Foundation Terverifikasi (Konsentrasi AVAX)
+Pola 1: Respons Terhadap Crash Pasar Terra/Luna (Mei 2022) — Konsolidasi & Pivot ke Fundamental Builder
+· Trigger: Kecelakaan UST/LUNA memicu contagion global; TVL Avalanche turun dari ~$11B (Nov 2021) ke <$1B; harga AVAX -80% (Phase 3 EV-017)
+· Decision Pattern: Tidak intervensi darurat protokol (tidak ada slashing, tidak ada emergency freeze); biarkan pasar bersih; fokus internal: kurangi ketergantungan insentif mercenary (Rush), perkuat native protocol (Trader Joe, Benqi, Aave stay), percepat Subnet/AvaCloud enterprise & gaming pipeline
+· Evidence: Phase 3 (EV-017 Terra Crash impact); Phase 4 (Security Model: No slashing, no emergency pause); Phase 7 (Integrations: Native DeFi survived); Phase 8 (Market: TVL History crash, Narrative shift post-Rush)
+· Response: Strategi bergeser dari "growth at all costs via incentives" ke "sustainable adoption via Subnet sovereignty & enterprise contracts"
+· Result: TVL stabil ~$850M (2024); enterprise clients naik (Deloitte, SK Planet, Nexon, Gunzilla); Subnet live 100+; native DeFi (Trader Joe, Benqi) remain top protocols
+· Supporting Dataset: Phase 3 (EV-017); Phase 4 (Security Model); Phase 7 (Integrations); Phase 8 (Market: TVL, Narrative)
 
-· Decision Pattern: Foundation treasury genesis allocation ~66.7M AVAX (9.26% supply) + ecosystem allocation; tidak ada laporan transparansi atau dashboard on-chain terverifikasi menunjukkan diversifikasi ke stablecoin/blue-chip asset
-· Evidence: Phase 5 Treasury (Current Treasury Size: tidak diungkapkan; Composition: tidak diungkapkan); Phase 5 Financial Risk (Treasury Concentration risk); Phase 6 Distribution (Foundation 9.26%) (MEDIUM) [Phase 5 Treasury, Financial Risk, Phase 6 Distribution]
-· Supporting Dataset: Phase 5 (Treasury, Financial Risk), Phase 6 (Distribution), Open Threads Phase 5
+Pola 2: Respons Kebangkrutan Investor Besar (3AC Juni 2022, Alameda/FTX Nov 2022) — Tidak Ada Tindakan Protokol, Hanya Monitoring Likuidasi
+· Trigger: 3AC (Strategic Sale investor) Chapter 15 bankruptcy (EV-018); Alameda/FTX bankruptcy likuidasi aset AVAX besar
+· Decision Pattern: Ava Labs/Foundation tidak intervensi (tidak buyback, tidak freeze token); biarkan proses hukum & pasar menentukan harga; kommunikasi transparan via blog/twitter; fokus pada fundamental protokol
+· Evidence: Phase 3 (EV-018 3AC Bankruptcy); Phase 2 (Investors: 3AC, Alameda); Phase 5 (Funding History: Strategic Sale investors); Phase 8 (Financial Risk: Investor Liquidation Risk historical)
+· Response: Pasif monitoring; tidak ada treasury deployment untuk support price
+· Result: Tekanan jual sementara; supply overhang investor selesai ~2023-2024 (vesting complete); price recovery driven fundamental adoption bukan buyback
+· Supporting Dataset: Phase 3 (EV-018); Phase 5 (Funding History); Phase 6 (Vesting Schedule complete ~2024); Phase 8 (Financial Risk)
 
-Pola 1: Go-to-Market via Enterprise & Gaming AAA Partnerships (Top-Down Adoption)
+Pola 3: Respons Keamanan — Audit Berkala Multi-Auditor + Bug Bounty + Tidak Ada Slashing (Hanya Uptime Penalty)
+· Trigger: Risiko bug konsensus, VM, bridge, smart contract; tidak ada slashing untuk double-sign
+· Decision Pattern: Kontrak auditor tier-1 berkelanjutan (Halborn, Trail of Bits, CertiK, Quantstamp, Sigma Prime, Ackee) untuk core protocol, HyperSDK, wallet, bridge; bug bounty Immunefi; keamanan jaringan bergantung pada honest majority PoS + uptime penalty; bridge AB menggunakan Intel SGX TEE
+· Evidence: Phase 4 (Audit History: 6+ auditors 2020-2024; Security Model: No slashing, uptime penalty only; Bridge Security: AB SGX); Phase 2 (Security Entities: Halborn, Trail of Bits, CertiK, etc.); Phase 7 (Infrastructure: Security Auditors)
+· Response: Proaktif audit terus-menerus; transparan publikasi laporan; no slashing = trade-off keamanan vs kompleksitas implementasi
+· Result: Tidak ada major exploit protokol inti (AvalancheGo, konsensus) sejak mainnet; bridge AB aman; exploit terjadi di tingkat aplikasi (DeFi) bukan protokol
+· Supporting Dataset: Phase 4 (Audit History, Security Model, Known Limitations); Phase 2 (Security Entities); Phase 7 (Infrastructure: Security Auditors)
 
-· Decision Pattern: Menargetkan klien enterprise besar (Deloitte, SK Planet, T. Rowe Price) dan game studio AAA (Gunzilla, Nexon, Shrapnel) yang membawa user base existing (jutaan) ke on-chain via Subnet AvaCloud; bukan bottom-up community growth saja
-· Evidence: Phase 3 EV-022 (Nex
+Pola 4: Respons Regulasi — Pisah Entitas (Ava Labs US Corp vs Foundation Cayman) + Compliance Tools di AvaCloud
+· Trigger: Risiko klasifikasi AVAX sebagai security (SEC US); enterprise butuh KYC/AML/compliance
+· Decision Pattern: Ava Labs Inc. (Delaware) handle komersial (AvaCloud, token sale compliance Reg D/Reg S); Foundation (Cayman) handle treasury & grant non-profit; AvaCloud menyediakan compliance tools, gasless tx, fiat onramp untuk klien enterprise
+· Evidence: Phase 2 (Entity: Ava Labs Legal/Compliance, Cayman Foundation Legal Entity); Phase 3 (EV-007 Foundation, EV-015 AvaCloud compliance); Phase 5 (Financial Risk: Legal Financial Risk SEC); Phase 7 (Integrations: AvaCloud enterprise compliance)
+· Response: Struktur hukum terpisah; AvaCloud jual compliance sebagai fitur; tidak ada tindakan regulasi enforcement terhadap Ava Labs/AVAX sejauh ini
+· Result: Enterprise clients (Deloitte, SK Planet, T. Rowe Price) comfortable deploy; AVAX listed di CEX US (Coinbase, Kraken) tanpa enforcement
+· Supporting Dataset: Phase 2 (Entities); Phase 3 (EV-007, EV-015); Phase 5 (Financial Risk); Phase 7 (Integrations)
+
+Recurring Behavioral Pattern
+
+Pola 1: Selalu Membangun Infrastructure Layer Dulu, Kemudian Menarik Application Via Incentive/Managed Service
+· Decision Pattern: Urutan konstan: 1) Rilis protokol/infrastruktur (Mainnet EV-006, Subnet EV-012, AWM EV-013, HyperSDK EV-016, Teleporter EV-020, AvaCloud EV-015) → 2) Program insentif/grant untuk menarik builder (Rush EV-009, Multiverse) → 3) Managed service untuk enterprise (AvaCloud clients EV-022 to EV-026)
+· Evidence: Phase 3 timeline berurutan: Mainnet (2020) → Subnet (2021) → AWM (2022) → HyperSDK/AvaCloud (2022) → Teleporter (2023) → Enterprise/Game clients (2022-2023); Phase 5 Funding: Rush/Multiverse setelah infra ready; Phase 7 Integrations: clients deploy di atas infra yang sudah live
+· Supporting Dataset: Phase 3 (EV-006, EV-012, EV-013, EV-015, EV-016, EV-020, EV-022 to EV-026); Phase 5 (Funding History); Phase 7 (Major Integrations)
+
+Pola 2: Multi-Provider Strategy untuk Dependensi Kritis (Bridge, Oracle, Cloud, RPC) — Hindari Single Point of Failure
+· Decision Pattern: Tidak pernah mengunci ekosistem ke single provider: Bridge = AB + LayerZero + Wormhole + CCIP; Oracle = Chainlink (feeds, VRF, CCIP, Automation); Cloud = AWS + GCP; RPC = QuickNode + Alchemy + Infura + Ankr + Chainstack + Blast; Explorer = Snowtrace + Avascan; Auditor = Halborn + Trail of Bits + CertiK + Quantstamp + Sigma Prime + Ackee
+· Evidence: Phase 7 (External Dependencies: 4 bridges, Chainlink; Infrastructure Providers: 2 cloud, 6+ RPC, 2 explorer, 6+ auditors); Phase 4 (Security Model: Bridge risks external); Phase 8 (Market: Bridge Volume multi-bridge)
+· Supporting Dataset: Phase 7 (External Dependencies, Infrastructure Providers); Phase 4 (Security Model); Phase 8 (Market: Liquidity)
+
+Pola 3: Enterprise & Gaming Adoption Mengikuti Siklus: Partnership Announcement → AvaCloud Deployment → Subnet Live → Token/Mainnet Launch
+· Decision Pattern: Deloitte (EV-025 announce 2022 → Subnet CAYG), SK Planet (EV-026 announce 2022 → UPTN Subnet), Gunzilla (EV-023 announce 2023 → GUNZ Subnet), Nexon (EV-022 announce 2023 → MSU Subnet), Shrapnel (EV-024 announce 2022 → Shrapnel Subnet) — semuanya via AvaCloud, timeline ~6-18 bulan announce ke live
+· Evidence: Phase 3 (EV-022 to EV-026 timestamps); Phase 7 (Major Integrations: all AvaCloud clients with Subnet live); Phase 8 (Narrative: Enterprise, Gaming)
+· Supporting Dataset: Phase 3 (EV-022 to EV-026); Phase 7 (Major Integrations); Phase 8 (Narrative)
+
+Pola 4: Upgrade Protokol Berkala Setiap 6-12 Bulan dengan Fokus Scaling & Feature Parity untuk Subnet
+· Decision Pattern: Apricot (2021-04), Banff (2021-08), Cortina (2023-03), Durango (2024-03), Etna (2024-06) — interval ~6-12 bln; setiap upgrade: scaling P-Chain/validator, C-Chain performance, persiapan fitur Subnet baru (AWM, Teleporter, HyperSDK)
+· Evidence: Phase 4 (Technical Upgrade History: 8 upgrades 2021-2024); Phase 3 (EV-019 Cortina, EV-020 Teleporter, EV-021 HyperSDK Mainnet); Phase 4 (Known Limitations: State bloat P-Chain addressed in Cortina/Durango)
+· Supporting Dataset: Phase 3 (EV-019, EV-020, EV-021); Phase 4 (Technical Upgrade History, Known Limitations)
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi Konsensus vs Kecepatan Finality & Throughput
+· Decision: Menggunakan Avalanche/Snowman consensus (probabilistik, subsampling) dengan finality <1-2 detik, throughput tinggi, tanpa leader election — trade-off: safety threshold <50% stake adversarial (vs BFT 33%), tidak ada slashing untuk equivocation, hanya uptime penalty
+· Trade-off: Kecepatan & skalabilitas tinggi (sub-second finality, 4.5k+ TPS C-Chain, 10k+ HyperSDK) dikorbankan untuk keamanan ekonomik yang lebih lemah (no slashing, safety assumption 50% vs 33%); validator set ~1.300 (lebih terdesentralisasi dari Solana 21, tapi kurang dari Ethereum 1M+)
+· Evidence: Phase 4 (Consensus Mechanism: Avalanche/Snowman probabilistik; Security Model: <50% adversarial safety, no slashing, uptime penalty only; Known Limitations: No slashing); Phase 8 (Adoption Metrics: Validator Count 1.3k+)
+· Supporting Dataset: Phase 4 (Consensus, Security Model, Known Limitations); Phase 8 (Adoption Metrics)
+
+Trade-off 2: Shared Security (Validator Set Overlap) vs Subnet Sovereignty & Isolation
+· Decision: Subnet validator harus subset Primary Network validator (stake AVAX 2k min) — shared security via validator overlap; tapi Subnet failure tidak memengaruhi Primary Network (isolation)
+· Trade-off: Keamanan Subnet bergantung pada validator Primary Network yang sama (shared stake) — mengurangi biaya bootstrap validator baru, tapi menciptakan korelasi risiko: attacker yang mengontrol >50% Primary Network stake bisa menyerang semua Subnet; Subnet tidak bisa memilih validator set sendiri sepenuhnya (harus subset PN)
+· Evidence: Phase 4 (Consensus: Subnet Validation; Security Model: Subnet Isolation, Shared security via validator overlap); Phase 8 (Adoption Metrics: Validator Count, Subnet Count)
+· Supporting Dataset: Phase 4 (Consensus, Security Model); Phase 8 (Adoption Metrics)
+
+Trade-off 3: EVM Compatibility (C-Chain) vs Innovation VM (HyperSDK/Subnet) — Fragmentasi Liquidity & Developer
+· Decision: Mempertahankan C-Chain EVM-compatible (Coreth) untuk DeFi/composability existing, sambil membangun HyperSDK untuk custom VM non-EVM high-performance — Teleporter menghubungkan keduanya
+· Trade-off: Developer & liquidity terbagi dua ekosistem: EVM developers stay di C-Chain/Subnet-EVM (tooling familiar, composability DeFi); game/enterprise butuh HyperSDK (performance, custom logic) — butuh bridge/Teleporter untuk composability cross-VM; fragmentasi UX & liquidity
+· Evidence: Phase 4 (Execution Environment: C-Chain EVM vs Subnet VM HyperSDK/Subnet-EVM; Core Components: Coreth, HyperSDK, Subnet-EVM, Teleporter); Phase 7 (Integrations: Aave/Trader Joe di C-Chain, Shrapnel/Gunzilla di HyperSDK); Phase 8 (Narrative: DeFi Infrastructure vs Gaming/HyperSDK)
+· Supporting Dataset: Phase 4 (Execution Environment, Core Components); Phase 7 (Major Integrations); Phase 8 (Narrative Position)
+
+Trade-off 4: Foundation Treasury Concentration (AVAX) vs Diversifikasi Aset — Eksposur Volatilitas Tinggi
+· Decision: Foundation treasury hampir seluruhnya AVAX (genesis allocation 9.26% + ecosystem 12% + staking rewards) — tidak diversifikasi ke stablecoin/blue-chip secara publik
+· Trade-off: Kemudahan manajemen & alignment insentif dengan ekosistem AVAX dikorbankan untuk risiko finansial: bear market AVAX -90% mengurangi daya beli grant drastis (Rush $180M nominal jadi jauh lebih kecil USD); tidak ada transparency dashboard real-time
+· Evidence: Phase 5 (Treasury: not disclosed, Foundation manages; Financial Risk: Treasury concentration AVAX, no diversification); Phase 6 (Distribution: Foundation 9.26%, Community/Ecosystem 12%, Staking Rewards 50%); Phase 8 (Financial Risk: Treasury concentration, Revenue dependency)
+· Supporting Dataset: Phase 5 (Treasury, Financial Risk); Phase 6 (Distribution); Phase 8 (Financial Risk)
+
+Trade-off 5: No Slashing (Simpler Implementation, Validator Friendly) vs Stronger Economic Security
+· Decision: Hanya uptime penalty (no reward saat offline), tidak ada slashing untuk double-sign/equivocation
+· Trade-off: Validator friendly (tidak kehilangan stake untuk bug/konfigurasi salah), implementasi konsensus lebih sederhana — tapi keamanan ekonomik lebih lemah: attacker tidak risiko kehilangan stake, hanya opportunity cost; mengurangi deterrence bagi validator besar berperilaku jahat
+· Evidence: Phase

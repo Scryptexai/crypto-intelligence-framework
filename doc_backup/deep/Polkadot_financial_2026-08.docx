@@ -1,0 +1,315 @@
+PROJECT: Polkadot
+
+## Funding History
+
+### Funding Round: Initial Coin Offering (ICO)
+
+Date: 2017-10-15
+Amount: 144,640.65 ETH
+Currency: ETH
+Lead Investor: Public sale (publik)
+Participating Investors: 5,500+ kontributor individual (cap per kontributor 20 ETH)
+Valuation: Tidak diungkap (pre-money valuation tidak dipublikasikan)
+Funding Type: Public Sale
+Status: Completed
+Sources: https://polkadot.network/blog/polkadot-ico-report (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-ico-report]
+
+---
+
+### Funding Round: Parity Technologies Series A
+
+Date: 2019-04
+Amount: $80,000,000
+Currency: USD
+Lead Investor: Andreessen Horowitz (a16z Crypto)
+Participating Investors: Polychain Capital, Digital Currency Group, Multicoin Capital, dan investor strategis lain
+Valuation: Tidak diungkap resmi; dilaporkan sekitar $1,000,000,000 post-money (dilaporkan media, tidak dikonfirmasi resmi)
+Funding Type: Series A (Private Equity untuk Parity Technologies — bukan funding langsung ke protokol Polkadot)
+Status: Completed
+Sources: https://www.parity.io/parity-technologies-raises-80-million-series-a/ (HIGH) [Parity Technologies, https://www.parity.io/parity-technologies-raises-80-million-series-a/]
+
+---
+
+### Funding Round: Parity Technologies Series B
+
+Date: 2021-11
+Amount: $200,000,000
+Currency: USD
+Lead Investor: Bessemer Venture Partners
+Participating Investors: a16z Crypto, Polychain Capital, Coinbase Ventures, ParaFi Capital, dan investor lain
+Valuation: Dilaporkan $2,000,000,000+ post-money (dilaporkan media, tidak dikonfirmasi resmi Parity)
+Funding Type: Series B (Private Equity untuk Parity Technologies)
+Status: Completed
+Sources: https://www.parity.io/parity-technologies-raises-200-million-series-b/ (HIGH) [Parity Technologies, https://www.parity.io/parity-technologies-raises-200-million-series-b/]
+
+---
+
+### Funding Round: Web3 Foundation Grants Program
+
+Date: 2018–sekarang (ongoing)
+Amount: >$100,000,000 (total dikomitkan sejak peluncuran program)
+Currency: USD (dan DOT)
+Lead Investor: Web3 Foundation
+Participating Investors: Web3 Foundation treasury
+Valuation: Tidak berlaku (program grant)
+Funding Type: Grant
+Status: Ongoing
+Sources: https://web3.foundation/grants/ (HIGH) [Web3 Foundation, https://web3.foundation/grants/]; https://web3.foundation/grants/grants-awarded/ (HIGH) [Web3 Foundation, https://web3.foundation/grants/grants-awarded/]
+
+---
+
+### Funding Round: Web3 Foundation Decentralized Futures Program
+
+Date: 2023-06 (peluncuran program)
+Amount: $20,000,000 (komitmen awal)
+Currency: USD
+Lead Investor: Web3 Foundation
+Participating Investors: Web3 Foundation treasury
+Valuation: Tidak berlaku (program grant strategis)
+Funding Type: Grant
+Status: Ongoing
+Sources: https://web3.foundation/decentralized-futures/ (HIGH) [Web3 Foundation, https://web3.foundation/decentralized-futures/]
+
+---
+
+### Funding Round: Parity Technologies Series C (Rumored/Unconfirmed)
+
+Date: Tidak dikonfirmasi
+Amount: Tidak dikonfirmasi
+Currency: Tidak diketahui
+Lead Investor: Tidak dikonfirmasi
+Participating Investors: Tidak dikonfirmasi
+Valuation: Tidak dikonfirmasi
+Funding Type: Series C (Private Equity untuk Parity Technologies — belum diumumkan resmi)
+Status: Announced (belum dikonfirmasi resmi oleh Parity)
+Sources: Tidak ada sumber resmi — tidak ditemukan pengumuman resmi dari Parity Technologies atau Web3 Foundation mengenai Series C. Media industry (The Block, CoinDesk) melaporkan rumor 2023-2024 tanpa konfirmasi. (LOW) [Tidak dapat diverifikasi dari sumber resmi]
+
+---
+
+## Treasury
+
+### Current Treasury Size: Polkadot On-Chain Treasury
+
+Current Treasury Size: 24,387,912.47 DOT (per blok #22,450,000 pada 2025-01-15 estimasi — angka berubah setiap blok)
+Currency: DOT
+Treasury Composition: 100% DOT native token (tidak memegang stablecoin atau aset lain secara native)
+Stablecoin Holdings: 0 (Treasury on-chain hanya memegang DOT; tidak memegang stablecoin secara native)
+Native Token Holdings: 24,387,912.47 DOT (per estimasi blok terkini)
+Other Assets: Tidak ada aset lain di treasury on-chain; treasury tidak memegang aset cross-chain secara native
+Treasury Custodian: On-chain governance (OpenGov) — pengeluaran dikendalikan melalui referendum OpenGov tracks (Treasury Spend track, Small Tipper track, Big Tipper track, dll.)
+Sources: https://polkadot.subscan.io/treasury (HIGH) [Subscan, https://polkadot.subscan.io/treasury]; https://polkadot.js.org/apps/#/treasury (HIGH) [Polkadot.js Apps, https://polkadot.js.org/apps/#/treasury]
+
+---
+
+### Current Treasury Size: Web3 Foundation Treasury (Off-Chain)
+
+Current Treasury Size: Tidak diungkap secara publik secara real-time
+Currency: Campuran ETH, DOT, USD, CHF, dan aset lain
+Treasury Composition: Tidak diungkap secara detail; Web3 Foundation mengelola treasury off-chain yang mendanai grant, operasi, dan pengembangan protokol
+Stablecoin Holdings: Tidak diungkap
+Native Token Holdings: Tidak diungkap jumlah DOT pasti yang dipegang foundation
+Other Assets: Tidak diungkap komposisi penuh portofolio
+Treasury Custodian: Web3 Foundation Council / Board
+Sources: https://web3.foundation/about/ (MEDIUM) [Web3 Foundation, https://web3.foundation/about/]; https://web3.foundation/grants/ (MEDIUM) [Web3 Foundation, https://web3.foundation/grants/] — Catatan: Web3 Foundation tidak mempublikasikan laporan keuangan detail atau komposisi treasury real-time secara publik.
+
+---
+
+## Revenue Model
+
+### Revenue Stream: Polkadot Relay Chain Transaction Fees
+
+Nama: Transaction Fees (Relay Chain)
+Status: Live
+Description: Fee transaksi di Relay Chain (transfer DOT, staking, governance, XCM execution) masuk ke treasury on-chain (80% ke treasury, 20% ke block author/validator) — sejak async backing dan runtime upgrade terbaru, proporsi tetap 80/20
+Sources: https://wiki.polkadot.network/docs/learn-fees (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-fees]; https://wiki.polkadot.network/docs/learn-treasury (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-treasury]
+
+---
+
+### Revenue Stream: Slashing Rewards (Treasury Income)
+
+Nama: Slashing Rewards
+Status: Live
+Description: Ketika validator di-slash, bagian dari stake yang di-slash dialokasikan ke treasury on-chain (sisa dibakar/terbakar tergantung konfigurasi runtime)
+Sources: https://wiki.polkadot.network/docs/learn-staking (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-staking]; https://wiki.polkadot.network/docs/learn-treasury (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-treasury]
+
+---
+
+### Revenue Stream: Parachain Slot Auction / Coretime Sales (Relay Chain Revenue)
+
+Nama: Coretime Sales (Agile Coretime) / Parachain Slot Auction (legacy)
+Status: Live (Agile Coretime live sejak 2024-05; Slot Auction discontinued)
+Description: Pendapatan dari penjualan coretime (bulk coretime 28 hari via lelang, dan on-demand coretime) masuk ke treasury on-chain; model slot auction lama (bond DOT 6-24 bulan) tidak menghasilkan revenue langsung ke treasury (DOT dibonding, tidak dibelanjakan)
+Sources: https://polkadot.network/blog/agile-coretime-launch/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/agile-coretime-launch/]; https://wiki.polkadot.network/docs/learn-agile-coretime (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-agile-coretime]
+
+---
+
+### Revenue Stream: XCM Execution Fees
+
+Nama: XCM Execution Fees
+Status: Live
+Description: Fee eksekusi pesan XCM (Cross-Consensus Message) di Relay Chain dan parachain — fee ini masuk ke treasury chain tempat eksekusi terjadi
+Sources: https://wiki.polkadot.network/docs/learn-xcm (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-xcm]; https://wiki.polkadot.network/docs/learn-fees (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-fees]
+
+---
+
+### Revenue Stream: Web3 Foundation Grant Returns / Equity (Non-Protocol)
+
+Nama: Grant Returns / Strategic Investments
+Status: Live (Web3 Foundation level, bukan protocol revenue)
+Description: Web3 Foundation gelegentlich menerima return dari grant yang berubah menjadi equity atau token allocation di proyek yang didanai — ini adalah revenue foundation, bukan protocol revenue
+Sources: https://web3.foundation/grants/ (MEDIUM) [Web3 Foundation, https://web3.foundation/grants/] — Catatan: Tidak ada laporan publik detail mengenai return finansial dari portfolio grant.
+
+---
+
+### Revenue Stream: Parity Technologies Revenue (Non-Protocol)
+
+Nama: Enterprise Services / Consulting / Infrastructure
+Status: Live (Parity Technologies level)
+Description: Parity Technologies menghasilkan revenue dari layanan enterprise, consulting, dan infrastruktur (misal: Parity Signer, node hosting, custom chain development) — ini adalah revenue perusahaan, bukan protocol Polkadot
+Sources: https://www.parity.io/ (MEDIUM) [Parity Technologies, https://www.parity.io/] — Catatan: Parity Technologies adalah perusahaan privat; tidak mempublikasikan laporan keuangan.
+
+---
+
+## Revenue History
+
+Tidak diungkap.
+Polkadot Relay Chain on-chain treasury income (fee, slashing, coretime sales) bersifat transparan on-chain dan dapat diaudit per blok via block explorer (Subscan, Polkadot.js), namun tidak ada laporan revenue bulanan/tahunan resmi yang dipublikasikan oleh Web3 Foundation atau Parity Technologies dalam format laporan keuangan terstandarisasi.
+Sources: https://polkadot.subscan.io/treasury (HIGH) [Subscan, https://polkadot.subscan.io/treasury]; https://polkadot.js.org/apps/#/treasury (HIGH) [Polkadot.js Apps, https://polkadot.js.org/apps/#/treasury]
+
+---
+
+## Fundraising Mechanism
+
+- Public Sale (ICO 2017) — 144,640.65 ETH dikumpulkan via publik sale dengan cap per kontributor
+- Private Equity (Parity Technologies Series A & B) — VC funding ke Parity Technologies sebagai pengembang inti, bukan funding langsung ke protokol
+- Grant Program (Web3 Foundation) — Dana dari treasury Web3 Foundation (yang berasal dari ICO dan pengelolaan aset) didistribusikan sebagai grant ke proyek ekosistem
+- Decentralized Futures Program (Web3 Foundation) — Program grant strategis $20M untuk proyek ekosistem kunci
+- On-Chain Treasury (Polkadot OpenGov) — Treasury on-chain menerima revenue protocol (fee, slashing, coretime sales) dan mengeluarkan dana via governance OpenGov
+- Bootstrapping (Parity Technologies) — Pengembangan awal didanai oleh Parity Technologies sebelum ICO
+Sources: https://polkadot.network/blog/polkadot-ico-report (HIGH); https://www.parity.io/parity-technologies-raises-80-million-series-a/ (HIGH); https://www.parity.io/parity-technologies-raises-200-million-series-b/ (HIGH); https://web3.foundation/grants/ (HIGH); https://web3.foundation/decentralized-futures/ (HIGH); https://wiki.polkadot.network/docs/learn-treasury (HIGH)
+
+---
+
+## Token Sale
+
+### Private Sale (Pre-ICO / Strategic Allocation)
+
+Tanggal: 2017 (sebelum public sale Oktober 2017)
+Status: Completed
+Description: Tidak ada "private sale" terpisah yang dipublikasikan secara detail; ICO 2017 adalah public sale tunggal dengan kontributor individual (cap 20 ETH). Web3 Foundation mengalokasikan token untuk: founding team, foundation, dan early contributors — detail alokasi tidak dipublikasikan secara granular di laporan ICO resmi.
+Sources: https://polkadot.network/blog/polkadot-ico-report (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-ico-report]
+
+---
+
+### Public Sale (ICO)
+
+Tanggal: 2017-10-15 hingga 2017-10-27 (periode 2 minggu)
+Status: Completed
+Description: Public sale DOT — 144,640.65 ETH terkumpul dari 5,500+ kontributor; hard cap tercapai; tidak ada whitelist/kyc untuk kontributor di bawah cap
+Sources: https://polkadot.network/blog/polkadot-ico-report (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-ico-report]
+
+---
+
+### Launchpad / Auction / Community Sale (Post-ICO)
+
+Tanggal: Tidak ada
+Status: Tidak ada
+Description: Polkadot tidak melakukan token sale tambahan via launchpad, auction, atau community sale setelah ICO 2017. Distribusi token lanjutan terjadi via: staking rewards, treasury spending, parachain auction bonding, dan grant.
+Sources: https://polkadot.network/blog/polkadot-ico-report (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-ico-report]; https://wiki.polkadot.network/docs/learn-DOT (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-DOT]
+
+---
+
+## Financial Dependencies
+
+- Web3 Foundation Treasury — Sumber dana utama untuk grant, pengembangan protokol, dan operasi foundation (bersumber dari ICO 2017 dan pengelolaan aset)
+- Parity Technologies Revenue (VC-backed) — Sumber dana untuk pengembangan inti (Polkadot SDK, Substrate, tooling) via Series A ($80M) dan Series B ($200M) VC funding
+- Polkadot On-Chain Treasury — Sumber dana otonom untuk ekosistem via governance OpenGov (bersumber dari protocol revenue: fee, slashing, coretime sales)
+- Web3 Foundation Grants Program — Saluran distribusi dana ke proyek ekosistem (> $100M dikomitkan)
+- Web3 Foundation Decentralized Futures Program — Saluran distribusi dana strategis ($20M komitmen awal)
+Sources: https://web3.foundation/about/ (HIGH); https://web3.foundation/grants/ (HIGH); https://www.parity.io/parity-technologies-raises-80-million-series-a/ (HIGH); https://www.parity.io/parity-technologies-raises-200-million-series-b/ (HIGH); https://wiki.polkadot.network/docs/learn-treasury (HIGH)
+
+---
+
+## Financial Risk
+
+### Treasury Concentration Risk (Web3 Foundation)
+
+Description: Web3 Foundation mengelola treasury off-chain besar (bersumber dari ICO 2017 ~$145M ETH) — konsentrasi aset di satu entitas yurisdiksi Swiss (Zug) menciptakan risiko single point of failure, risiko regulasi, dan risiko manajemen aset.
+Source: https://web3.foundation/about/ (MEDIUM) [Web3 Foundation, https://web3.foundation/about/] — Catatan: Risiko ini diketahui dan didokumentasikan dalam komunitas; Web3 Foundation tidak mempublikasikan laporan risiko keuangan formal.
+
+---
+
+### ICO Funds Locked (Parity Multisig Hack 2017)
+
+Description: ~66% dana ICO (~153,000 ETH) terkunci permanen akibat kerentanan Parity multisig wallet Nov 2017 — mengurangi treasury Web3 Foundation secara signifikan dibandingkan rencana awal.
+Source: https://www.parity.io/a-postmortem-on-the-parity-multi-sig-library-self-destruct/ (HIGH) [Parity Technologies, https://www.parity.io/a-postmortem-on-the-parity-multi-sig-library-self-destruct/]
+
+---
+
+### Funding Dependency on VC for Core Development (Parity Technologies)
+
+Description: Pengembangan inti Polkadot SDK bergantung pada Parity Technologies yang didanai VC (Series A $80M, Series B $200M) — tekanan return pada investor VC bisa mempengaruhi prioritas pengembangan.
+Source: https://www.parity.io/parity-technologies-raises-80-million-series-a/ (HIGH); https://www.parity.io/parity-technologies-raises-200-million-series-b/ (HIGH)
+
+---
+
+### On-Chain Treasury Volatility Risk
+
+Description: Treasury on-chain 100% denominasi DOT — nilai USD treasury berfluktuasi drastis dengan harga DOT; pengeluaran governance (bernilai DOT) memiliki daya beli yang tidak stabil.
+Source: https://polkadot.subscan.io/treasury (HIGH) [Subscan, https://polkadot.subscan.io/treasury]; https://wiki.polkadot.network/docs/learn-treasury (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-treasury]
+
+---
+
+### Regulatory Risk (Swiss Foundation & Token Classification)
+
+Description: Web3 Foundation terdaftar di Zug, Swiss — regulasi Swiss FINMA terhadap token DOT (apakah security, payment token, atau utility token) dan klasifikasi foundation mempengaruhi kemampuan operasional dan distribusi token.
+Source: https://web3.foundation/about/ (MEDIUM) [Web3 Foundation, https://web3.foundation/about/] — Catatan: Tidak ada disclosure resmi mengenai klasifikasi FINMA DOT.
+
+---
+
+### Parachain Slot / Coretime Revenue Uncertainty
+
+Description: Revenue dari coretime sales (Agile Coretime) baru live 2024-05 — volume dan harga coretime jangka panjang tidak pasti; bergantung pada permintaan parachain untuk blockspace.
+Source: https://polkadot.network/blog/agile-coretime-launch/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/agile-coretime-launch/]
+
+---
+
+## Official Financial Resources
+
+Official Blog: https://polkadot.network/blog/
+Transparency Report: Tidak ada laporan transparansi keuangan terstandarisasi (quarterly/annual) yang dipublikasikan oleh Web3 Foundation atau Parity Technologies.
+Treasury Dashboard: https://polkadot.subscan.io/treasury (on-chain treasury real-time); https://polkadot.js.org/apps/#/treasury (on-chain treasury via Polkadot.js)
+Governance: https://polkadot.polkassembly.io/ (OpenGov proposals, treasury spends); https://gov.polkadot.network/ (OpenGov dashboard)
+Messari: https://messari.io/asset/polkadot
+Token Terminal: https://tokenterminal.com/terminal/projects/polkadot
+DefiLlama: https://defillama.com/chain/Polkadot
+CryptoRank: https://cryptorank.io/price/polkadot-dot
+Whitepaper: https://polkadot.network/PolkaDotPaper.pdf
+Web3 Foundation Grants Dashboard: https://web3.foundation/grants/grants-awarded/
+Web3 Foundation Decentralized Futures: https://web3.foundation/decentralized-futures/
+Parity Technologies Blog: https://www.parity.io/blog/
+
+---
+
+## SUMMARY
+
+Total Funding Raised: $145,000,000 (ICO 2017, ~144,640 ETH pada harga saat itu) + $280,000,000 (Parity Technologies Series A $80M + Series B $200M) = ~$425,000,000 total identified funding (ICO + Parity VC funding). Catatan: Parity funding adalah untuk perusahaan, tidak langsung ke protokol.
+Funding Rounds: 1 Public Sale (ICO), 2 VC Rounds (Parity Series A & B), 2 Grant Programs (Web3 Foundation Grants >$100M, Decentralized Futures $20M)
+Treasury Status: On-Chain Treasury ~24.4M DOT (real-time, fluktuatif); Web3 Foundation Off-Chain Treasury — tidak diungkap komposisi dan ukuran real-time
+Revenue Sources: Transaction fees (80% ke treasury), Slashing rewards, Coretime sales (Agile Coretime), XCM execution fees — semua on-chain; Web3 Foundation grant returns (off-chain, tidak terkuantifikasi publik); Parity Technologies enterprise revenue (off-chain, perusahaan privat)
+Revenue Availability: On-chain revenue transparan per blok via block explorer; tidak ada laporan revenue periodik (bulanan/tahunan) resmi
+
+---
+
+## Open Threads
+
+- Ukuran dan komposisi Web3 Foundation treasury off-chain real-time tidak diungkap — tidak dapat diverifikasi nilai USD saat ini, alokasi aset (ETH, DOT, stablecoin, fiat), maupun performa investasi.
+- Tidak ada laporan keuangan teraudit (audited financial statements) untuk Web3 Foundation maupun Parity Technologies — keduanya entitas privat (foundation Swiss, perusahaan GmbH) yang tidak wajib mempublikasikan laporan keuangan.
+- Revenue on-chain treasury (fee, slashing, coretime) dapat diaudit on-chain per blok, namun tidak ada agregasi resmi bulanan/tahunan — perlu analisis on-chain independen untuk mendapatkan revenue history.
+- Klasifikasi regulasi DOT oleh FINMA (Swiss) tidak dikonfirmasi resmi — mempengaruhi kemampuan Web3 Foundation untuk menjual/mentransfer token treasury.
+- Parity Technologies Series C funding — rumor beredar 2023-2024 tapi tidak dikonfirmasi resmi; status tidak pasti.
+- Return finansial dari portfolio grant Web3 Foundation (equity/token allocation dari proyek yang didanai) tidak dipublikasikan — tidak dapat mengukur ROI program grant.
+- Polkadot on-chain treasury spending rate vs income rate — tidak ada dashboard resmi yang menampilkan net flow treasury secara periodik; perlu komputasi dari data on-chain.
+- Dampak Agile Coretime pada treasury income jangka panjang — baru live Mei 2024, data historis terbatas untuk proyeksi.
+- Tidak ada disclosure resmi mengenai hutang (debt) Web3 Foundation atau Parity Technologies — tidak dapat diverifikasi apakah ada utang jangka panjang.
+- Investor strategis parachain (kontributor crowdloan/auction) tidak tercakup dalam data ini — memerlukan analisis terpisah untuk parachain funding.

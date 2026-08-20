@@ -87,6 +87,9 @@ run_extract_iw_fields() {
     # wired in, so a manual `./run.sh build` left events.json stale -- only the reset
     # pipeline's own chain regenerated it.
     "$PY" tools/extract_events.py "${real[@]}"
+    # Phase 12 (Airdrop Intelligence) -- optional phase, so dossiers without it parse to
+    # nothing and are skipped, same as Track A/B dossiers in every other extractor.
+    "$PY" tools/extract_airdrop.py "${real[@]}"
   fi
 }
 
