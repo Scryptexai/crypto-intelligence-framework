@@ -1,0 +1,63 @@
+PROJECT: Walrus
+
+## System Architecture
+
+**Decentralized blob storage layer di atas Sui**
+Walrus adalah protokol penyimpanan data besar (blob: file, gambar, video, dataset AI, model AI, aset game) yang berjalan berdampingan dengan blockchain Sui. Metadata, kepemilikan, dan siklus hidup blob dikelola smart contract Sui (Move), sementara isi data disimpan jaringan storage node terpisah — pemisahan yang membuat penyimpanan skala besar tidak membebani throughput chain. (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]; [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]
+
+**Programmable & verifiable storage**
+Data yang disimpan bersifat dinamis, terverifikasi, dan dapat diprogram — blob dapat dirujuk, dipindahkan, dan dikelola via kontrak (sesuai positioning "storage isn't just storage anymore: dynamic, verifiable, programmable"). (HIGH) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]
+
+**Modular Components**
+- Client/Publisher SDK: library untuk encode, publish, dan baca blob (Rust; SDK developer)
+- Storage Nodes: operator independen yang menyimpan shard blob dan melayani pembacaan
+- Erasure Coding Layer: redundansi matematis ("Red Stuff") agar blob tetap dapat direkonstruksi walau sebagian node hilang/gagal
+- Sui Smart Contracts (Move): registrasi blob, kepemilikan, pembayaran storage, dan staking WAL
+- Aggregator/indexer: layanan bantu untuk ketersediaan dan akses blob (ekosistem)
+(MEDIUM) [Imperator Walrus overview, https://www.imperator.co/resources/blog/walrus-protocol]; [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+**Cross-chain/chain relationship**
+Walrus bukan L1/L2 sendiri — ia protokol storage yang memakai Sui sebagai lapisan koordinasi dan ekonomi; tidak ada consensus terpisah Walrus; keamanan dan finality metadata mengikuti Sui. (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+## Core Components
+
+- Blob: unit data immutable (atau mutable via kepemilikan kontrak) yang dipecah menjadi shard ter-erasure-code
+- Storage epoch: periode operasional tempat staker memvalidasi storage proofs dan parameter jaringan diperbarui; reward dibagikan per epoch
+- WAL staking pada storage nodes: partisipasi staker dalam validasi dan keamanan jaringan storage (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+## Consensus Mechanism
+
+Consensus: Walrus mewarisi mekanisme konsensus Sui untuk seluruh state on-chain (metadata, kepemilikan, staking); jaringan storage sendiri memakai proof/validasi per epoch alih-alih consensus Nakamoto terpisah (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+## Execution Environment
+
+Execution Environment: Move VM di Sui untuk seluruh logika kontrak Walrus (registrasi blob, pembayaran, staking); aplikasi klien berjalan off-chain dengan SDK (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+## Security Model
+
+Security Model: Redundansi erasure coding menjamin ketersediaan data walau sebagian storage node gagal/hilang; staking + validasi per epoch memberi insentif ekonomi bagi node jujur; mekanisme burn/penalti pada stake shifts direncanakan sebagai tekanan deflasioner dan disinsentif perilaku buruk (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+## Audit History
+
+Audit History: tidak ditemukan laporan audit publik spesifik Walrus di sumber yang diakses riset ini — perlu verifikasi langsung ke Walrus Foundation/dokumentasi resmi (LOW)
+
+## Technical Upgrade History
+
+Technical Upgrade History: Testnet (Desember 2024) → Mainnet (27 Maret 2025) dengan token ekonomis aktif; upgrade mayor pasca-mainnet tidak dirinci di sumber yang diakses (MEDIUM) [Imperator, https://www.imperator.co/resources/blog/walrus-protocol]
+
+## Current Technical Stack
+
+Current Technical Stack: Rust (node & SDK), Move smart contracts di Sui, erasure coding layer, portal klaim/UX web; explorer via Suiscan/SuiVision untuk kontrak terkait (MEDIUM) [GitHub MystenLabs, https://github.com/MystenLabs]
+
+## Known Technical Limitations
+
+Known Technical Limitations: Sentralisasi pengembangan awal di Mysten Labs (kode dikembangkan satu organisasi sebelum transisi foundation); ketergantungan pada ketersediaan/keamanan Sui untuk lapisan koordinasi; detail desentralisasi storage node set (jumlah, distribusi geografis) tidak dipublikasikan penuh (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+## Official Technical Resources
+
+Official Technical Resources: https://github.com/MystenLabs/walrus (HIGH); https://docs.walrus.xyz (HIGH)
+
+Open Threads
+- Laporan audit keamanan pihak ketiga (ada/tidaknya dan auditor)
+- Jumlah storage node aktif dan distribusi stake per epoch (dashboard resmi belum ditemukan di sumber sekunder)
+- Spesifikasi teknis lengkap skema erasure coding ("Red Stuff") dari whitepaper/blog resmi

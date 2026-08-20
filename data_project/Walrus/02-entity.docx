@@ -1,0 +1,124 @@
+PROJECT: Walrus
+
+Entity: Mysten Labs
+Type: Organization
+Relationship: Pengembang awal Walrus dan pencipta Sui; core contributors Walrus berasal dari tim Mysten Labs; menerima alokasi 30% supply WAL (kategori Core Contributors bersama early contributors)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]; (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]
+
+---
+Entity: Walrus Foundation
+Type: Foundation
+Relationship: Entitas non-profit pengarah protokol Walrus pasca token sale; pelaksana $140M token sale dan pengelola arah pengembangan jaringan
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]
+
+---
+Entity: Evan Cheng
+Type: Person
+Relationship: CEO Mysten Labs, organisasi induk yang mengembangkan Walrus
+Period: 2021–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+---
+Entity: Sam Blackshear
+Type: Person
+Relationship: Co-founder Mysten Labs dan pencipta bahasa Move (bahasa smart contract Sui yang juga dipakai kontrak Walrus)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+---
+Entity: Adeniyi Abiodun
+Type: Person
+Relationship: Co-founder Mysten Labs; menyatakan publik bahwa airdrop WAL akan menjadi salah satu yang terbesar dan paling terdistribusi dalam sejarah crypto (Maret 2025)
+Period: 2021–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]
+
+---
+Entity: Rebecca Simmonds
+Type: Person
+Relationship: Managing executive Walrus Foundation; juru bicara resmi token sale $140M dan peluncuran mainnet
+Period: 2025–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]
+
+---
+Entity: Sui Network
+Type: Protocol
+Relationship: Layer-1 tempat Walrus dibangun — smart contract Sui mengelola metadata, kepemilikan, dan siklus hidup blob; staking dan koordinasi jaringan memanfaatkan infrastruktur Sui
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]; (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+---
+Entity: Standard Crypto
+Type: Investor
+Relationship: Lead investor token sale WAL $140 juta (pengumuman 20 Maret 2025)
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]
+
+---
+Entity: a16z crypto
+Type: Investor
+Relationship: Partisipan token sale WAL $140 juta; juga investor historis Mysten Labs/Sui
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]
+
+---
+Entity: Electric Capital
+Type: Investor
+Relationship: Partisipan token sale WAL $140 juta
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]
+
+---
+Entity: Franklin Templeton Digital Assets
+Type: Investor
+Relationship: Partisipan token sale WAL $140 juta
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]
+
+---
+Entity: RW3 Ventures
+Type: Investor
+Relationship: Partisipan token sale WAL $140 juta
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]
+
+---
+Entity: Lombard
+Type: Protocol
+Relationship: Partner ekosistem Sui/Walrus — penyedia LBTC (Bitcoin berlikuiditas) di Sui; kolaborasi lintas-ekosistem diumumkan sekitar peluncuran WAL
+Period: 2025–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]
+
+---
+Entity: MEXC
+Type: Exchange
+Relationship: Exchange terpusat pertama yang mengumumkan listing WAL pada TGE (27 Maret 2025), diikuti exchange lain
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]
+
+---
+Entity: Backpack Exchange
+Type: Exchange
+Relationship: Exchange yang me-listing WAL dan menerbitkan riset tokenomics WAL
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+Open Threads
+- Daftar lengkap investor token sale $140M di luar lima nama yang terkonfirmasi (sumber menyebut "and other crypto-native VCs")
+- Struktur hukum Walrus Foundation (yurisdiksi, board)

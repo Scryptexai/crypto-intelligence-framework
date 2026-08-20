@@ -1,0 +1,28 @@
+PROJECT: Walrus
+Official Name: Walrus
+Symbol: WAL
+Category: Decentralized programmable data storage protocol (blob storage) di atas Sui
+Founding Entity: Mysten Labs (pengembang awal; tim di balik Sui); Walrus Foundation (non-profit, pengarah protokol pasca token sale) (HIGH) [CoinDesk Walrus raises $140M, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]
+Founders: Evan Cheng (CEO Mysten Labs); Sam Blackshear (co-founder, pencipta bahasa Move); Adeniyi Abiodun (co-founder); George Danezis (co-founder); Kostas Chalkias (co-founder) — pendiri Mysten Labs, organisasi induk Walrus (HIGH) [Backpack Exchange Walrus overview, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]; [Altcoin Buzz Walrus TGE, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]
+Core Team: Tim engineering Mysten Labs yang mengembangkan Walrus sejak inkubasi; Walrus Foundation managing executive: Rebecca Simmonds; ukuran tim Walrus spesifik tidak dipublikasikan terpisah (MEDIUM) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]
+Country: Mysten Labs berbasis di Amerika Serikat (Palo Alto); Walrus Foundation yurisdiksi non-profit (tidak dirinci publik) (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]
+Launch Date - Testnet: Desember 2024 (fase testnet publik sebelum mainnet; tanggal persis tidak dirinci di sumber yang diakses) (MEDIUM) [Imperator Walrus overview, https://www.imperator.co/resources/blog/walrus-protocol]
+Launch Date - Mainnet: 2025-03-27 (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]; [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Launch Date - TGE: 2025-03-27 (WAL token live bersamaan mainnet; airdrop komunitas didistribusikan bertahap pasca-TGE) (HIGH) [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]
+Main Products: Walrus blob storage network (penyimpanan file/AI model/dataset besar terdesentralisasi); WAL token (pembayaran storage, staking, governance); integrasi Sui Move smart contracts untuk metadata & kepemilikan blob; Walrus Sites (hosting konten) (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Official Website: https://walrus.xyz (HIGH)
+Repository: https://github.com/MystenLabs/walrus (HIGH) [GitHub MystenLabs, https://github.com/MystenLabs]
+Documentation: https://docs.walrus.xyz (HIGH)
+Social - X/Twitter: @WalrusProtocol (HIGH) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]
+Social - Discord: https://discord.gg/walrus (MEDIUM)
+Social - Telegram: tidak ada kanal Telegram resmi utama (MEDIUM)
+Block Explorer: https://suiscan.xyz dan https://suivision.org (explorer ekosistem Sui untuk kontrak Walrus) (MEDIUM)
+Token Contract: WAL adalah token native dengan kontrak di Sui (alamat kontrak per dokumentasi resmi; tidak dirinci di sumber yang diakses) (LOW)
+Chain(s): Sui (Layer 1); Walrus berjalan sebagai protokol storage terpisah yang berkoordinasi via smart contract Sui (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Ecosystem: Sui ecosystem; AI/decentralized data (penyimpanan model AI, dataset); partner termasuk Lombard (likuiditas BTC di Sui) dan proyek kredit/storage lain (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]
+
+Open Threads
+- Tanggal pasti testnet publik Desember 2024 (hari spesifik tidak dirinci sumber sekunder)
+- Alamat kontrak WAL di Sui secara eksplisit
+- Yurisdiksi legal Walrus Foundation
+- Rincian unlock 20% alokasi non-community/investor/contributor (kategori subsidies/foundation) — sumber sekunder tidak merinci penuh

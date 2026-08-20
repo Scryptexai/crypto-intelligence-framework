@@ -1,0 +1,76 @@
+PROJECT: Walrus
+
+## Token Information
+
+Official Token Name: Walrus
+Symbol: WAL
+Token Standard: Native token dengan kontrak di Sui (SPL-style Sui coin)
+Blockchain: Sui
+Contract Address: tidak dirinci di sumber yang diakses (lihat Open Threads) (LOW)
+Decimals: tidak dirinci di sumber yang diakses (LOW)
+Status: Live (TGE 27 Maret 2025) (HIGH) [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]
+Sources: https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/ (MEDIUM)
+Sources: https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network (MEDIUM)
+
+## Supply
+
+Maximum Supply: 5.000.000.000 WAL (5 miliar) (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Total Supply: 5.000.000.000 WAL (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Circulating Supply: ~690.000.000 WAL tersedia di launch (bagian Community Reserve yang cair awal); angka beredar real-time tidak dipublikasikan resmi di sumber yang diakses (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]
+Initial Supply: tidak dirinci terpisah dari total supply (LOW)
+Supply Type: Fixed total supply dengan jadwal unlock/burn; mekanisme burn (penalti stake shifts) menambah tekanan deflasioner bertahap (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Sources: https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network (MEDIUM)
+Sources: https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/ (MEDIUM)
+
+## Distribution
+
+Community Reserve: 43% (2,15 miliar WAL) — 690 juta tersedia di launch, sisanya linear unlock hingga Maret 2033 (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]
+Community Airdrop (bagian dari komunitas): 10% total supply — 4% pre-mainnet + 6% post-mainnet bertahap (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Investors: 7% (350 juta WAL) — unlock dimulai 12 bulan setelah launch (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]
+Core Contributors (early contributors + Mysten Labs): 30% (1,5 miliar WAL) — berbagai mekanisme unlock (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]; [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Subsidies/Ecosystem/Foundation (sisa ~20%): untuk subsidi storage dan pertumbuhan ekosistem — rincian per sub-kategori tidak dipublikasikan penuh di sumber sekunder (LOW) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+INKONSISTENSI: Altcoin Buzz menyebut "Community Reserve 43% = 690 juta token available at launch" sementara Backpack memecah "10% community airdrop (4% pre + 6% post)" dari supply 5 miliar — kedua angka dapat konsisten (690 juta = porsi cair awal dari reserve 43%, airdrop 10% adalah sub-alokasi) namun dokumen tokenomics resmi harus dirujuk untuk kepastian; Evidence Level MEDIUM untuk kedua sumber sekunder.
+Advisors: tidak diketahui (tidak tercantum terpisah) (LOW)
+Sources: https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/ (MEDIUM)
+Sources: https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network (MEDIUM)
+
+## Vesting Schedule
+
+Category: Community Reserve
+Cliff: 0 (690 juta cair di launch)
+Vesting: Linear unlock hingga Maret 2033 untuk sisanya (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]
+Unlock Frequency: Linear/bertahap (MEDIUM)
+Current Status: Berjalan sejak 27 Maret 2025
+
+Category: Investors
+Cliff: 12 bulan (unlock pertama ~Maret 2026)
+Vesting: jadwal pasca-cliff tidak dirinci publik (LOW)
+Unlock Frequency: tidak dirinci (LOW)
+Current Status: Cliff berjalan
+
+Category: Core Contributors
+Cliff: tidak dirinci publik
+Vesting: berbagai mekanisme unlock (per tokenomics blog) — detail tidak dikutip penuh di sumber sekunder (LOW)
+Unlock Frequency: tidak dirinci (LOW)
+Current Status: Berjalan sejak TGE
+
+## Utility
+
+Utility 1: Pembayaran storage — seluruh biaya publish/extend blob dibayar dalam WAL (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Utility 2: Staking — WAL di-stake ke storage nodes; staker memvalidasi storage proofs dan parameter jaringan per epoch, menerima reward epoch (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Utility 3: Governance — WAL sebagai token governance protokol (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Utility 4: Burn mechanism — penalti pada stake shifts dibakar, tekanan deflasioner jangka panjang (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+## Inflation / Deflation
+
+Inflation/Deflation: Emisi reward epoch untuk staker (inflasioner bertahap per jadwal) diimbangi mekanisme burn penalti — net trajectory bergantung parameter yang tidak dirinci publik di sumber sekunder (LOW) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+## Holder Distribution
+
+Holder Distribution: tidak ditemukan data on-chain holder concentration yang dipublikasikan di sumber sekunder (LOW)
+
+Open Threads
+- Alamat kontrak dan decimals WAL di Sui
+- Dokumen tokenomics resmi lengkap (breakdown 20% sisa, jadwal unlock contributors)
+- Jumlah wallet penerima airdrop dan distribusi per tier
+- Data holder concentration on-chain (top 10/100)

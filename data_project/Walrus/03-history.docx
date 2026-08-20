@@ -1,0 +1,256 @@
+PROJECT: Walrus
+
+Event ID
+
+EV-001
+
+Date
+
+2021
+
+Event Name
+
+Pendirian Mysten Labs oleh tim arsitek Sui
+
+Event Type
+
+Founding
+
+Description
+
+Evan Cheng, Sam Blackshear, Adeniyi Abiodun, George Danezis, dan Kostas Chalkias mendirikan Mysten Labs dan mengembangkan blockchain Sui beserta bahasa Move — fondasi organisasi dan teknologi tempat Walrus kemudian dibangun.
+
+Participants
+
+Evan Cheng; Sam Blackshear; Adeniyi Abiodun; George Danezis; Kostas Chalkias
+
+Location
+
+Palo Alto, Amerika Serikat (tim global)
+
+Status
+
+Completed
+
+Immediate Result
+
+Sui dikembangkan dan kemudian mainnet (Mei 2023); Mysten Labs menjadi organisasi induk Walrus.
+
+Sources
+
+https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network (MEDIUM)
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2024 (semester kedua)
+
+Event Name
+
+Pengembangan dan pengumuman Walrus sebagai protokol storage di Sui
+
+Event Type
+
+Product Announcement
+
+Description
+
+Mysten Labs mengembangkan Walrus, protokol penyimpanan blob terdesentralisasi (file besar, dataset AI, media) yang berkoordinasi melalui smart contract Sui, dengan teknologi erasure coding untuk redundansi data.
+
+Participants
+
+Mysten Labs; Walrus dev team
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Arsitektur blob storage + erasure coding disiapkan menuju testnet.
+
+Sources
+
+https://www.imperator.co/resources/blog/walrus-protocol (MEDIUM)
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2024-12
+
+Event Name
+
+Peluncuran testnet Walrus
+
+Event Type
+
+Testnet Launch
+
+Description
+
+Walrus membuka testnet publik; pengguna dapat menyimpan blob, menjalankan storage node, dan berpartisipasi dalam campaign (termasuk Walrus Academy) yang kemudian dikaitkan dengan eligibility airdrop WAL.
+
+Participants
+
+Walrus dev team; komunitas testnet; storage node operators awal
+
+Location
+
+Global (testnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Partisipasi testnet besar (didorong komunitas Sui); kesiapan mainnet diverifikasi bertahap.
+
+Sources
+
+https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network (MEDIUM)
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2025-03-20
+
+Event Name
+
+Token sale WAL $140 juta dipimpin Standard Crypto
+
+Event Type
+
+Funding
+
+Description
+
+Walrus Foundation mengumumkan private token sale WAL senilai $140 juta — fundraising pertama khusus untuk Walrus (terpisah dari fundraising Sui/Mysten) — dipimpin Standard Crypto dengan partisipasi a16z crypto, Electric Capital, Franklin Templeton Digital Assets, dan RW3 Ventures; dana untuk memperluas jaringan storage dan tooling.
+
+Participants
+
+Walrus Foundation; Standard Crypto; a16z crypto; Electric Capital; Franklin Templeton Digital Assets; RW3 Ventures; Rebecca Simmonds (managing executive)
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+$140.000.000 terkumpul seminggu sebelum mainnet; jadwal mainnet 27 Maret 2025 dikonfirmasi publik.
+
+Sources
+
+https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch (HIGH)
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2025-03-27
+
+Event Name
+
+Mainnet Walrus dan TGE WAL
+
+Event Type
+
+TGE
+
+Description
+
+Mainnet Walrus live dengan WAL sebagai token native pembayaran storage, staking, dan governance; TGE dilaksanakan bersamaan; MEXC mengumumkan listing hari pertama diikuti exchange lain dan DEX ekosistem Sui.
+
+Participants
+
+Walrus Foundation; Mysten Labs; storage node operators; komunitas Sui; MEXC; Backpack Exchange
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan storage produksi berjalan dengan token ekonomis aktif; distribusi airdrop komunitas dimulai bertahap.
+
+Sources
+
+https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/ (MEDIUM); https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network (MEDIUM)
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2025-03 hingga 2025 (berlanjut)
+
+Event Name
+
+Distribusi airdrop komunitas WAL (4% pre-mainnet + 6% post-mainnet)
+
+Event Type
+
+Airdrop
+
+Description
+
+10% total supply WAL dialokasikan ke komunitas: 4% didistribusikan segera pasca-mainnet (klaim via portal resmi untuk wallet eligible dari aktivitas testnet/kampanye) dan 6% didistribusikan bertahap seiring kematangan ekosistem; co-founder Mysten menyebutnya salah satu airdrop terbesar dan paling terdistribusi.
+
+Participants
+
+Walrus Foundation; komunitas testnet/mainnet; pemegang/pengguna ekosistem Sui
+
+Location
+
+Global
+
+Status
+
+Ongoing (fase bertahap)
+
+Immediate Result
+
+Klaim pre-mainnet 4% berjalan pasca-TGE; gelombang lanjutan post-mainnet berjalan sepanjang 2025.
+
+Sources
+
+https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network (MEDIUM); https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/ (MEDIUM)
+
+Open Threads
+- Tanggal persis testnet Desember 2024 dan detail milestone testnet per bulan
+- Jumlah wallet penerima airdrop WAL dan besaran per wallet (tidak dipublikasikan di sumber yang diakses)
+- Timeline lengkap unlock investor (12 bulan pasca-launch) dan core contributors
