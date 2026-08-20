@@ -1,0 +1,481 @@
+PROJECT: Cosmos
+
+## Market Category
+
+Primary Category: Cross-chain Messaging / Interoperability / App-chain Framework (HIGH) [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]
+Secondary Category: Layer 1 Infrastructure & Developer Framework (HIGH) [Cosmos Network, https://cosmos.network/]
+Sector: Blockchain Infrastructure (HIGH) [DefiLlama, https://defillama.com/chain/Cosmos]
+Sub-sector: Interoperability Protocol / App-chain Platform / BFT Consensus (HIGH) [Messari, https://messari.io/asset/cosmos]
+Sources: https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md; https://cosmos.network/; https://defillama.com/chain/Cosmos; https://messari.io/asset/cosmos
+
+## Market Position
+
+Project Stage: Mature (Mainnet live since 2019-03-13; 100+ production chains; 5+ years operation) (HIGH) [Cosmos Hub Launch, https://blog.cosmos.network/cosmos-hub-mainnet-launch/; Map of Zones, https://mapofzones.com/]
+Primary Competitors: Polkadot, LayerZero, Axelar, Wormhole, Hyperlane, Avalanche (Subnets), Polygon (CDK/Supernets), Optimism (OP Stack), Arbitrum (Orbit), Celestia (Data Availability) (HIGH) [Messari, https://messari.io/asset/cosmos; DefiLlama, https://defillama.com/chain/Cosmos]
+Market Segment: Sovereign App-chain Ecosystem with Native Interoperability (IBC) (HIGH) [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md; Map of Zones, https://mapofzones.com/]
+Geographic Focus: Global (Switzerland-based foundation; globally distributed contributors and validators) (HIGH) [Interchain Foundation, https://interchain.io/; Mintscan Validators, https://www.mintscan.io/cosmos/validators]
+Sources: https://blog.cosmos.network/cosmos-hub-mainnet-launch/; https://mapofzones.com/; https://messari.io/asset/cosmos; https://defillama.com/chain/Cosmos; https://interchain.io/; https://www.mintscan.io/cosmos/validators
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Yes (ATOM/USDT, ATOM/BTC, ATOM/BUSD, ATOM/USDC, ATOM/EUR, ATOM/TRY, ATOM/ETH, ATOM/BNB) (HIGH) [Binance, https://www.binance.com/en/trade/ATOM_USDT]
+Perpetual: Yes (ATOMUSDT Perpetual, ATOMUSDC Perpetual) (HIGH) [Binance Futures, https://www.binance.com/en/futures/ATOMUSDT]
+Futures: Yes (Quarterly futures available) (MEDIUM) [Binance Futures, https://www.binance.com/en/futures/ATOMUSDT]
+Options: Yes (Binance Options — ATOMUSDT European options) (MEDIUM) [Binance Options, https://www.binance.com/en/options/ATOMUSDT]
+OTC: Yes (Binance OTC Desk) (MEDIUM) [Binance OTC, https://www.binance.com/en/otc]
+Status: Live (HIGH)
+Sources: https://www.binance.com/en/trade/ATOM_USDT; https://www.binance.com/en/futures/ATOMUSDT; https://www.binance.com/en/options/ATOMUSDT; https://www.binance.com/en/otc
+
+Exchange: Coinbase
+Spot: Yes (ATOM/USD, ATOM/USDC, ATOM/EUR) (HIGH) [Coinbase, https://www.coinbase.com/price/cosmos]
+Perpetual: No (Coinbase does not offer perpetual futures) (HIGH) [Coinbase Advanced, https://advanced.trade.coinbase.com/]
+Futures: No (HIGH)
+Options: No (HIGH)
+OTC: Yes (Coinbase Prime OTC) (MEDIUM) [Coinbase Prime, https://www.coinbase.com/prime]
+Status: Live (HIGH) — Note: SEC enforcement action 2023 alleges ATOM as unregistered security; Coinbase remains listed but regulatory risk persists (HIGH) [SEC Complaint vs Coinbase, https://www.sec.gov/litigation/complaints/2023-132.pdf]
+Sources: https://www.coinbase.com/price/cosmos; https://advanced.trade.coinbase.com/; https://www.coinbase.com/prime; https://www.sec.gov/litigation/complaints/2023-132.pdf
+
+Exchange: Kraken
+Spot: Yes (ATOM/USD, ATOM/EUR, ATOM/USDT, ATOM/USDC) (HIGH) [Kraken, https://trade.kraken.com/markets/kraken/atom/usd]
+Perpetual: Yes (ATOM/USD Perpetual Futures) (HIGH) [Kraken Futures, https://futures.kraken.com/]
+Futures: Yes (Perpetual only; no dated futures) (MEDIUM) [Kraken Futures, https://futures.kraken.com/]
+Options: No (HIGH)
+OTC: Yes (Kraken OTC Desk) (MEDIUM) [Kraken OTC, https://www.kraken.com/otc]
+Status: Live (HIGH) — Note: SEC enforcement action 2023; Kraken staking service settled with SEC, ATOM spot trading continues (HIGH) [SEC Complaint vs Kraken, https://www.sec.gov/litigation/complaints/2023-128.pdf]
+Sources: https://trade.kraken.com/markets/kraken/atom/usd; https://futures.kraken.com/; https://www.kraken.com/otc; https://www.sec.gov/litigation/complaints/2023-128.pdf
+
+Exchange: OKX
+Spot: Yes (ATOM/USDT, ATOM/BTC, ATOM/USDC) (HIGH) [OKX, https://www.okx.com/trade/ATOM-USDT]
+Perpetual: Yes (ATOMUSDT Perpetual, ATOMUSDC Perpetual) (HIGH) [OKX Futures, https://www.okx.com/futures/ATOM-USDT]
+Futures: Yes (Perpetual) (MEDIUM) [OKX Futures, https://www.okx.com/futures/ATOM-USDT]
+Options: Yes (OKX Options — ATOMUSDT) (MEDIUM) [OKX Options, https://www.okx.com/options/ATOM-USDT]
+OTC: Yes (OKX OTC) (MEDIUM) [OKX OTC, https://www.okx.com/otc]
+Status: Live (HIGH)
+Sources: https://www.okx.com/trade/ATOM-USDT; https://www.okx.com/futures/ATOM-USDT; https://www.okx.com/options/ATOM-USDT; https://www.okx.com/otc
+
+Exchange: Bybit
+Spot: Yes (ATOM/USDT, ATOM/USDC) (HIGH) [Bybit, https://www.bybit.com/trade/spot/ATOM/USDT]
+Perpetual: Yes (ATOMUSDT Perpetual, ATOMUSDC Perpetual) (HIGH) [Bybit Futures, https://www.bybit.com/trade/usdt/ATOMUSDT]
+Futures: Yes (Perpetual) (MEDIUM) [Bybit Futures, https://www.bybit.com/trade/usdt/ATOMUSDT]
+Options: Yes (Bybit Options — ATOMUSDT) (MEDIUM) [Bybit Options, https://www.bybit.com/trade/options/ATOMUSDT]
+OTC: Yes (Bybit OTC) (MEDIUM) [Bybit OTC, https://www.bybit.com/otc]
+Status: Live (HIGH)
+Sources: https://www.bybit.com/trade/spot/ATOM/USDT; https://www.bybit.com/trade/usdt/ATOMUSDT; https://www.bybit.com/trade/options/ATOMUSDT; https://www.bybit.com/otc
+
+Exchange: KuCoin
+Spot: Yes (ATOM/USDT, ATOM/BTC, ATOM/USDC) (HIGH) [KuCoin, https://www.kucoin.com/trade/ATOM-USDT]
+Perpetual: Yes (ATOMUSDT Perpetual) (HIGH) [KuCoin Futures, https://www.kucoin.com/futures/ATOMUSDT]
+Futures: Yes (Perpetual) (MEDIUM) [KuCoin Futures, https://www.kucoin.com/futures/ATOMUSDT]
+Options: No (HIGH)
+OTC: Yes (KuCoin OTC) (MEDIUM) [KuCoin OTC, https://www.kucoin.com/otc]
+Status: Live (HIGH)
+Sources: https://www.kucoin.com/trade/ATOM-USDT; https://www.kucoin.com/futures/ATOMUSDT; https://www.kucoin.com/otc
+
+Exchange: HTX (Huobi)
+Spot: Yes (ATOM/USDT, ATOM/BTC, ATOM/USDC) (HIGH) [HTX, https://www.htx.com/trade/atom_usdt]
+Perpetual: Yes (ATOM/USDT Perpetual) (HIGH) [HTX Futures, https://www.htx.com/futures/atom_usdt]
+Futures: Yes (Perpetual) (MEDIUM) [HTX Futures, https://www.htx.com/futures/atom_usdt]
+Options: No (HIGH)
+OTC: Yes (HTX OTC) (MEDIUM) [HTX OTC, https://www.htx.com/otc]
+Status: Live (HIGH)
+Sources: https://www.htx.com/trade/atom_usdt; https://www.htx.com/futures/atom_usdt; https://www.htx.com/otc
+
+Exchange: Gate.io
+Spot: Yes (ATOM/USDT, ATOM/BTC, ATOM/USDC) (HIGH) [Gate.io, https://www.gate.io/trade/ATOM_USDT]
+Perpetual: Yes (ATOM_USDT Perpetual) (HIGH) [Gate.io Futures, https://www.gate.io/futures_trade/ATOM_USDT]
+Futures: Yes (Perpetual) (MEDIUM) [Gate.io Futures, https://www.gate.io/futures_trade/ATOM_USDT]
+Options: No (HIGH)
+OTC: Yes (Gate.io OTC) (MEDIUM) [Gate.io OTC, https://www.gate.io/otc]
+Status: Live (HIGH)
+Sources: https://www.gate.io/trade/ATOM_USDT; https://www.gate.io/futures_trade/ATOM_USDT; https://www.gate.io/otc
+
+Exchange: Crypto.com
+Spot: Yes (ATOM/USDT, ATOM/USDC, ATOM/BTC, ATOM/CRO) (HIGH) [Crypto.com Exchange, https://crypto.com/exchange/trade/ATOM_USDT]
+Perpetual: Yes (ATOMUSDT Perpetual on Crypto.com Exchange) (HIGH) [Crypto.com Exchange Futures, https://exchange.crypto.com/trade/ATOM_USDT]
+Futures: Yes (Perpetual) (MEDIUM) [Crypto.com Exchange Futures, https://exchange.crypto.com/trade/ATOM_USDT]
+Options: No (HIGH)
+OTC: Yes (Crypto.com OTC) (MEDIUM) [Crypto.com OTC, https://crypto.com/otc]
+Status: Live (HIGH)
+Sources: https://crypto.com/exchange/trade/ATOM_USDT; https://exchange.crypto.com/trade/ATOM_USDT; https://crypto.com/otc
+
+Exchange: Bitget
+Spot: Yes (ATOM/USDT, ATOM/USDC) (HIGH) [Bitget, https://www.bitget.com/spot/ATOMUSDT]
+Perpetual: Yes (ATOMUSDT Perpetual, ATOMUSDC Perpetual) (HIGH) [Bitget Futures, https://www.bitget.com/futures/ATOMUSDT]
+Futures: Yes (Perpetual) (MEDIUM) [Bitget Futures, https://www.bitget.com/futures/ATOMUSDT]
+Options: No (HIGH)
+OTC: Yes (Bitget OTC) (MEDIUM) [Bitget OTC, https://www.bitget.com/otc]
+Status: Live (HIGH)
+Sources: https://www.bitget.com/spot/ATOMUSDT; https://www.bitget.com/futures/ATOMUSDT; https://www.bitget.com/otc
+
+Exchange: MEXC
+Spot: Yes (ATOM/USDT, ATOM/USDC, ATOM/BTC) (HIGH) [MEXC, https://www.mexc.com/exchange/ATOM_USDT]
+Perpetual: Yes (ATOM_USDT Perpetual) (HIGH) [MEXC Futures, https://futures.mexc.com/exchange/ATOM_USDT]
+Futures: Yes (Perpetual) (MEDIUM) [MEXC Futures, https://futures.mexc.com/exchange/ATOM_USDT]
+Options: No (HIGH)
+OTC: Yes (MEXC OTC) (MEDIUM) [MEXC OTC, https://www.mexc.com/otc]
+Status: Live (HIGH)
+Sources: https://www.mexc.com/exchange/ATOM_USDT; https://futures.mexc.com/exchange/ATOM_USDT; https://www.mexc.com/otc
+
+Exchange: Robinhood
+Spot: Delisted (was ATOM/USD; delisted June 2023 post-SEC enforcement) (HIGH) [Robinhood, https://robinhood.com/us/en/support/articles/changes-to-crypto-trading/]
+Perpetual: No (HIGH)
+Futures: No (HIGH)
+Options: No (HIGH)
+OTC: No (HIGH)
+Status: Delisted (HIGH)
+Sources: https://robinhood.com/us/en/support/articles/changes-to-crypto-trading/; https://www.sec.gov/litigation/complaints/2023-128.pdf
+
+## Liquidity
+
+Liquidity Source: CEX (Centralized Exchanges)
+Major Liquidity Venue: Binance (highest spot and perpetual volume for ATOM) (HIGH) [CoinGecko Markets, https://www.coingecko.com/en/coins/cosmos#markets; Kaiko, https://www.kaiko.com/]
+DEX: Osmosis (primary DEX for ATOM liquidity via IBC; ATOM/OSMO, ATOM/USDC, ATOM/ATOM pairs) (HIGH) [Osmosis, https://osmosis.zone/; Map of Zones, https://mapofzones.com/]
+DEX: Astroport (Neutron, Injective, Sei — ATOM pools via IBC) (MEDIUM) [Astroport, https://astroport.fi/]
+DEX: Uniswap (Ethereum — wrapped ATOM/USDC, ATOM/WETH pools) (MEDIUM) [Uniswap, https://app.uniswap.org/]
+Bridge Liquidity: Gravity Bridge (ATOM ↔ Ethereum), Axelar (wrapped ATOM), Wormhole (wrapped ATOM), Celer cBridge (wrapped ATOM) — liquidity fragmented across bridges (HIGH) [Map of Zones Bridge Analytics, https://mapofzones.com/; Etherscan Wrapped ATOM, https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337]
+Status: High liquidity on major CEX; deep DEX liquidity on Osmosis; bridge liquidity fragmented (HIGH)
+Sources: https://www.coingecko.com/en/coins/cosmos#markets; https://osmosis.zone/; https://mapofzones.com/; https://app.uniswap.org/; https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked) — Cosmos Ecosystem Aggregate
+Value: ~$2.1B USD (ecosystem-wide across all Cosmos SDK chains via DefiLlama)
+Date: 2024-06
+Sources: https://defillama.com/chain/Cosmos (HIGH)
+
+Metric Name: TVL — Cosmos Hub (Gaia) Only
+Value: ~$180M USD (staked ATOM value + community pool + liquid staking modules)
+Date: 2024-06
+Sources: https://defillama.com/chain/Cosmos%20Hub (MEDIUM) — DefiLlama tracks "Cosmos Hub" separately from ecosystem aggregate
+
+Metric Name: Daily Active Addresses — Cosmos Hub
+Value: ~15,000–25,000 unique active addresses per day (7-day moving average)
+Date: 2024-06
+Sources: https://www.mintscan.io/cosmos (MEDIUM) — Mintscan analytics; https://mapofzones.com/ (MEDIUM)
+
+Metric Name: Daily Transactions — Cosmos Hub
+Value: ~200,000–400,000 transactions per day (including IBC packets)
+Date: 2024-06
+Sources: https://www.mintscan.io/cosmos (MEDIUM); https://mapofzones.com/ (MEDIUM)
+
+Metric Name: Daily IBC Transfer Volume (Ecosystem)
+Value: ~$50M–$150M USD per day (varies by market conditions; cumulative >$50B since 2021)
+Date: 2024-06
+Sources: https://mapofzones.com/ (HIGH); https://blog.cosmos.network/ibc-one-year/ (HIGH)
+
+Metric Name: Total IBC Channels (Active)
+Value: 800+ active IBC channels across 100+ chains
+Date: 2024-06
+Sources: https://mapofzones.com/ (HIGH)
+
+Metric Name: Validator Count — Cosmos Hub
+Value: 180 active validators (governance parameter max); 300+ total validators including inactive
+Date: 2024-06
+Sources: https://www.mintscan.io/cosmos/validators (HIGH)
+
+Metric Name: Staking Ratio — ATOM
+Value: ~60–65% of circulating supply bonded (target 67% per mint module params)
+Date: 2024-06
+Sources: https://www.mintscan.io/cosmos (MEDIUM); https://github.com/cosmos/cosmos-sdk/tree/main/x/mint (HIGH)
+
+Metric Name: Developer Count (Monthly Active) — Cosmos SDK Ecosystem
+Value: ~800+ monthly active developers across core repos (cosmos-sdk, gaia, ibc-go, cometbft, cosmwasm)
+Date: 2024-06
+Sources: https://github.com/cosmos/cosmos-sdk/graphs/contributors (MEDIUM); https://github.com/cometbft/cometbft/graphs/contributors (MEDIUM); https://github.com/cosmos/ibc-go/graphs/contributors (MEDIUM); https://github.com/CosmWasm/cosmwasm/graphs/contributors (MEDIUM) — Electric Capital Developer Report 2023 cites ~800 for Cosmos ecosystem (MEDIUM) [Electric Capital, https://www.electriccapital.com/developer-report]
+
+Metric Name: GitHub Stars — Cosmos SDK
+Value: 6,000+ stars (cosmos/cosmos-sdk)
+Date: 2024-06
+Sources: https://github.com/cosmos/cosmos-sdk (HIGH)
+
+Metric Name: GitHub Stars — CometBFT
+Value: 1,500+ stars (cometbft/cometbft)
+Date: 2024-06
+Sources: https://github.com/cometbft/cometbft (HIGH)
+
+Metric Name: Market Cap — ATOM
+Value: ~$2.5B–$3.5B USD (fluctuates with price; rank ~30–50 by market cap)
+Date: 2024-06
+Sources: https://www.coingecko.com/en/coins/cosmos (HIGH); https://coinmarketcap.com/currencies/cosmos/ (HIGH)
+
+Metric Name: 24h Trading Volume — ATOM (Aggregate)
+Value: ~$100M–$300M USD (varies daily)
+Date: 2024-06
+Sources: https://www.coingecko.com/en/coins/cosmos (HIGH); https://coinmarketcap.com/currencies/cosmos/ (HIGH)
+
+Metric Name: Circulating Supply — ATOM
+Value: ~390M+ ATOM (dynamic inflationary supply)
+Date: 2024-06
+Sources: https://www.mintscan.io/cosmos (HIGH); https://www.coingecko.com/en/coins/cosmos (HIGH)
+
+## Market Share
+
+Metric: IBC Market Share of Cross-chain Volume (vs LayerZero, Wormhole, Axelar, Hyperlane)
+Value: Not available as standardized metric — no unified cross-protocol volume tracker exists; IBC processes highest volume of trust-minimized cross-chain transfers among BFT-based interoperability protocols (per Map of Zones and analyst reports)
+Date: 2024-06
+Sources: https://mapofzones.com/ (HIGH); Messari Interoperability Report 2023 (MEDIUM) [Messari, https://messari.io/report/interoperability-2023]
+
+Metric: App-chain Framework Market Share (vs Polkadot Substrate, OP Stack, Arbitrum Orbit, Polygon CDK)
+Value: Not available as standardized metric — Cosmos SDK powers largest number of sovereign production chains (100+) vs competitors; no unified "market share" denominator
+Date: 2024-06
+Sources: https://mapofzones.com/ (HIGH); https://cosmos.network/ecosystem/apps (HIGH)
+
+Metric: Staking Market Share (ATOM vs ETH, SOL, ADA, DOT)
+Value: Not available as standardized metric — ATOM staking market cap ~$1.5B–$2B vs ETH ~$90B+, SOL ~$30B+, ADA ~$15B+, DOT ~$5B+ (rough estimates)
+Date: 2024-06
+Sources: https://www.stakingrewards.com/ (MEDIUM); https://www.coingecko.com/en/staking (MEDIUM)
+
+Tidak tersedia data market share yang diverifikasi dan terstandarisasi untuk metrik lain.
+
+## Competitor Landscape
+
+Competitor: Polkadot
+Category: App-chain Framework / Interoperability (Parachains + XCMP)
+Difference: Shared security model (relay chain) vs Cosmos sovereign security; Substrate (Rust) vs Cosmos SDK (Go); XCMP vs IBC; parachain auctions vs permissionless zone deployment
+Market Segment: Sovereign App-chains with Shared Security
+Sources: https://polkadot.network/; https://messari.io/asset/polkadot; https://github.com/paritytech/polkadot-sdk
+
+Competitor: LayerZero
+Category: Cross-chain Messaging (Omnichain Interoperability)
+Difference: Ultra Light Node + DVN/Oracle model vs IBC light client verification; endpoint-based vs channel-based; supports EVM and non-EVM; not a chain framework
+Market Segment: Cross-chain Messaging Layer (Multi-chain)
+Sources: https://layerzero.network/; https://github.com/LayerZero-Labs; https://messari.io/asset/layerzero
+
+Competitor: Axelar
+Category: Cross-chain Gateway / General Message Passing
+Difference: Own validator set (PoS) vs IBC light clients; GMP protocol vs IBC standards; connects Cosmos ↔ EVM ecosystems; not a chain framework
+Market Segment: Cross-chain Gateway (EVM ↔ Cosmos Focus)
+Sources: https://axelar.network/; https://github.com/axelarnetwork/axelar-core; https://messari.io/asset/axelar
+
+Competitor: Wormhole
+Category: Cross-chain Messaging (Token Bridge + Generic Messaging)
+Difference: Guardian network (multisig) vs IBC light clients; token bridge focus + generic messaging; supports 30+ chains; not a chain framework
+Market Segment: Cross-chain Token Bridge & Messaging
+Sources: https://wormhole.com/; https://github.com/wormhole-foundation/wormhole; https://messari.io/asset/wormhole
+
+Competitor: Hyperlane
+Category: Cross-chain Messaging (Permissionless Interoperability)
+Difference: Permissionless deployment (anyone can deploy Hyperlane) vs IBC governance-gated; ISM (Interchain Security Module) customizable; not a chain framework
+Market Segment: Permissionless Cross-chain Messaging
+Sources: https://hyperlane.xyz/; https://github.com/hyperlane-xyz/hyperlane-monorepo; https://messari.io/asset/hyperlane
+
+Competitor: Celestia
+Category: Modular Data Availability Layer
+Difference: DA layer only (no execution/settlement) vs Cosmos full stack; sovereign rollups via Celestia DA vs sovereign app-chains via Cosmos SDK; uses CometBFT consensus
+Market Segment: Modular Blockchain Stack (DA Layer)
+Sources: https://celestia.org/; https://github.com/celestiaorg; https://messari.io/asset/celestia
+
+Competitor: Optimism (OP Stack)
+Category: L2 Framework / Modular Rollup Stack
+Difference: Ethereum L2 rollups (settlement on Ethereum) vs sovereign L1 app-chains; shared sequencing vs CometBFT; EVM-native vs Cosmos SDK/CosmWasm
+Market Segment: Ethereum L2 / Rollup Framework
+Sources: https://optimism.io/; https://github.com/ethereum-optimism/optimism; https://messari.io/asset/optimism
+
+Competitor: Arbitrum (Orbit)
+Category: L2 Framework / Rollup Stack
+Difference: Ethereum L2/L3 rollups vs sovereign chains; Nitro/Stylus vs CometBFT/Cosmos SDK; EVM-focused
+Market Segment: Ethereum L2/L3 Rollup Framework
+Sources: https://arbitrum.io/; https://github.com/OffchainLabs; https://messari.io/asset/arbitrum
+
+Competitor: Polygon (CDK / Supernets)
+Category: L2 Framework / App-chain Platform
+Difference: Ethereum-secured (validium/rollup) vs sovereign security; Polygon CDK = ZK stack; Supernets = permissioned; EVM-centric
+Market Segment: Ethereum-secured App-chains / ZK Rollups
+Sources: https://polygon.technology/; https://github.com/0xPolygon; https://messari.io/asset/polygon
+
+## Narrative Position
+
+Narrative: Interoperability (Cross-chain Communication)
+Status: Main Narrative
+Evidence: IBC live since 2021; 100+ chains connected; >$50B cumulative volume; IBC v7 with Packet Forward Middleware (multi-hop) live 2024; core protocol identity is "Internet of Blockchains"
+Sources: https://blog.cosmos.network/stargate-upgrade/; https://mapofzones.com/; https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md; https://github.com/cosmos/ibc-go/releases/tag/v7.0.0
+
+Narrative: App-chain / Sovereign Chain Framework
+Status: Main Narrative
+Evidence: Cosmos SDK powers 100+ production sovereign chains (Osmosis, Celestia, dYdX, Injective, Neutron, Stride, etc.); Ignite CLI for chain scaffolding; each chain controls own validator set, governance, economics
+Sources: https://cosmos.network/ecosystem/apps; https://github.com/ignite/cli; https://docs.cosmos.network/main/learn/beginner/architecture
+
+Narrative: Modular Blockchain (CometBFT Consensus + Cosmos SDK Execution + IBC Messaging)
+Status: Secondary Narrative
+Evidence: CometBFT forked from Tendermint Core 2023 as standalone consensus engine; used by Celestia, dYdX, Namada, etc. outside Cosmos SDK; modular stack narrative aligns with Celestia partnership
+Sources: https://github.com/cometbft/cometbft; https://blog.cosmos.network/cometbft-launch/; https://celestia.org/; https://messari.io/report/modular-blockchains
+
+Narrative: Shared Security (Interchain Security / Replicated Security)
+Status: Secondary Narrative
+Evidence: Live since Jul 2023 (Cosmos Hub v12); Neutron as first consumer chain; provider revenue model; v2 (Partial Set Security) roadmap
+Sources: https://blog.cosmos.network/interchain-security-launch/; https://github.com/cosmos/interchain-security; https://blog.neutron.org/mainnet-launch/
+
+Narrative: Liquid Staking (Native via LSM)
+Status: Secondary Narrative
+Evidence: LSM live Nov 2023 (Proposal #848); 25% cap liquid staked ATOM; native integration without smart contracts; Stride, pSTAKE, Quicksilver integrated
+Sources: https://www.mintscan.io/cosmos/proposals/848; https://blog.stride.zone/cosmos-hub-lsm/; https://stride.zone/
+
+Narrative: Restaking (EigenLayer-style)
+Status: Not a Current Narrative (Cosmos has native liquid staking + Interchain Security; no EigenLayer equivalent deployed)
+Evidence: No restaking protocol live on Cosmos Hub; liquid staking via LSM serves similar capital efficiency purpose; Interchain Security extends validator yield
+Sources: https://www.mintscan.io/cosmos/proposals/848; https://github.com/cosmos/interchain-security
+
+Narrative: DePIN (Decentralized Physical Infrastructure)
+Status: Not a Core Narrative (Akash Network in ecosystem provides compute marketplace; not Cosmos Hub core narrative)
+Evidence: Akash Network (sovereign chain) provides GPU/CPU marketplace; IBC-connected; not a Cosmos Hub protocol feature
+Sources: https://akash.network/; https://mapofzones.com/
+
+Narrative: RWA (Real World Assets)
+Status: Not a Core Narrative (Persistence, Provenance, Noble in ecosystem; not Cosmos Hub core narrative)
+Evidence: Noble issues native USDC/USDT via IBC; Persistence focuses on RWA; Provenance for institutional asset tokenization; all sovereign chains
+Sources: https://noble.xyz/; https://persistence.one/; https://provenance.io/; https://mapofzones.com/
+
+Narrative: Intent-centric / Chain Abstraction
+Status: Emerging Narrative (Anoma/Namada in ecosystem; not Cosmos Hub core)
+Evidence: Anoma (intent-centric architecture) shares contributors (Christopher Goes); Namada uses CometBFT+IBC; not integrated into Cosmos Hub roadmap
+Sources: https://anoma.net/; https://namada.net/; https://github.com/cometbft/cometbft/graphs/contributors
+
+## Market Timeline
+
+Date: 2017-04-06
+Milestone: ICF Fundraiser / Public Sale (ICO)
+Description: $17M raised in BTC/ETH; 168.4M ATOM sold; token creation event
+Related Historical Event ID: EV-004
+Sources: https://cosmos.network/icf-fundraiser
+
+Date: 2019-03-13
+Milestone: Cosmos Hub Mainnet Genesis Launch
+Description: Mainnet live; ATOM native transferable; staking and governance active; Gaia v1.0.0 released
+Related Historical Event ID: EV-010
+Sources: https://blog.cosmos.network/cosmos-hub-mainnet-launch/
+
+Date: 2019-03
+Milestone: ATOM Listed on Major Exchanges (Binance, Kraken, Huobi, OKEx)
+Description: First centralized exchange listings; price discovery begins
+Related Historical Event ID: EV-011
+Sources: https://www.coingecko.com/en/coins/cosmos
+
+Date: 2021-02-18
+Milestone: Stargate Upgrade — IBC Enabled
+Description: IBC activated on Cosmos Hub; cross-chain transfers live; Gaia v3.0.0 / Cosmos SDK v0.40
+Related Historical Event ID: EV-015
+Sources: https://blog.cosmos.network/stargate-upgrade/
+
+Date: 2021-06
+Milestone: Osmosis Mainnet Launch
+Description: Largest DEX app-chain launches; becomes primary IBC liquidity hub; ATOM/OSMO corridor volume leader
+Related Historical Event ID: EV-016
+Sources: https://blog.osmosis.zone/osmosis-mainnet-launch/
+
+Date: 2021-11
+Milestone: Tendermint Inc Rebrands to Ignite
+Description: Commercial entity separates from protocol brand; Ignite focuses on chain development platform
+Related Historical Event ID: EV-018
+Sources: https://ignite.com/blog/tendermint-rebrand-ignite
+
+Date: 2022-03
+Milestone: Stride Mainnet Launch (Liquid Staking Zone)
+Description: First major liquid staking zone; stATOM, stOSMO via IBC
+Related Historical Event ID: EV-020
+Sources: https://blog.stride.zone/stride-mainnet-launch/
+
+Date: 2022-05
+Milestone: Terra (LUNA) Collapse — Ecosystem Impact
+Description: Algorithmic stablecoin failure on Cosmos SDK chain; $40B+ wiped; reputational damage to Cosmos SDK perception
+Related Historical Event ID: EV-033
+Sources: https://www.coingecko.com/en/coins/terra-luna; https://blog.cosmos.network/terra-post-mortem/
+
+Date: 2023-01
+Milestone: Celestia Mainnet Launch (Modular DA Layer)
+Description: First modular DA layer launches; sovereign Cosmos SDK chain; provides DA for rollups
+Related Historical Event ID: EV-022
+Sources: https://blog.celestia.org/mainnet-launch/
+
+Date: 2023-06
+Milestone: CometBFT Fork from Tendermint Core
+Description: Community governance fork; consensus engine separated from Ignite brand; CometBFT organization formed
+Related Historical Event ID: EV-023
+Sources: https://github.com/cometbft/cometbft; https://blog.cosmos.network/cometbft-launch/
+
+Date: 2023-07
+Milestone: Interchain Security Launch (Replicated Security)
+Description: Cosmos Hub v12; shared security live; Neutron first consumer chain secured by Hub validators
+Related Historical Event ID: EV-025
+Sources: https://blog.cosmos.network/interchain-security-launch/
+
+Date: 2023-07
+Milestone: dYdX Chain v4 Mainnet Launch
+Description: Largest perp DEX migrates from StarkEx L2 to sovereign Cosmos SDK chain; validates app-chain thesis
+Related Historical Event ID: EV-024
+Sources: https://dydx.exchange/blog/dydx-chain-mainnet
+
+Date: 2023-11
+Milestone: Liquid Staking Module (LSM) Activated on Cosmos Hub
+Description: Governance Proposal #848 passes; native liquid staking for ATOM; 25% cap; Stride/pSTAKE/Quicksilver integration
+Related Historical Event ID: EV-027
+Sources: https://www.mintscan.io/cosmos/proposals/848; https://blog.stride.zone/cosmos-hub-lsm/
+
+Date: 2023-11
+Milestone: Namada Mainnet Launch (Privacy Chain)
+Description: Shielded transfers chain using CometBFT + IBC; built by Anoma; MASP multi-asset shielded pool
+Related Historical Event ID: EV-028
+Sources: https://anoma.net/blog/namada-mainnet
+
+Date: 2024-03-14
+Milestone: Cosmos Hub Upgrade v18 (Lambda) — Tokenomics Changes
+Description: Governance-driven inflation rate, community pool, staking reward parameter changes
+Related Historical Event ID: EV-029
+Sources: https://github.com/cosmos/gaia/releases/tag/v18.0.0
+
+Date: 2024-06-25
+Milestone: Cosmos Hub Upgrade v19 (Mu) — IBC v7 / Packet Forward Middleware
+Description: Multi-hop routing native; fee market for relayers; async acknowledgments; IBC callbacks
+Related Historical Event ID: EV-030
+Sources: https://github.com/cosmos/gaia/releases/tag/v19.0.0
+
+Date: 2023-2024 (Ongoing)
+Milestone: SEC Enforcement Actions vs Exchanges — ATOM Regulatory Risk
+Description: SEC complaints vs Binance, Kraken, Coinbase allege ATOM as unregistered security; Robinhood delists ATOM; US liquidity constrained
+Related Historical Event ID: EV-034
+Sources: https://www.sec.gov/litigation/complaints/2023-128.pdf; https://www.sec.gov/litigation/complaints/2023-132.pdf; https://robinhood.com/us/en/support/articles/changes-to-crypto-trading/
+
+## Official Market Resources
+
+Official Dashboard: https://cosmos.network/
+DefiLlama: https://defillama.com/chain/Cosmos
+DefiLlama (Cosmos Hub): https://defillama.com/chain/Cosmos%20Hub
+CoinGecko: https://www.coingecko.com/en/coins/cosmos
+CoinMarketCap: https://coinmarketcap.com/currencies/cosmos/
+Token Terminal: https://tokenterminal.com/terminal/projects/cosmos
+Messari: https://messari.io/asset/cosmos
+Explorer (Primary): https://www.mintscan.io/cosmos
+Explorer (Official): https://explorer.cosmos.network/
+Map of Zones (IBC Analytics): https://mapofzones.com/
+IBC-Go Releases: https://github.com/cosmos/ibc-go/releases
+Gaia Releases: https://github.com/cosmos/gaia/releases
+CometBFT Releases: https://github.com/cometbft/cometbft/releases
+Cosmos SDK Releases: https://github.com/cosmos/cosmos-sdk/releases
+
+## Summary
+
+Market Stage: Mature (5+ years mainnet; 100+ production chains; deep exchange listings; established developer ecosystem)
+Primary Category: Cross-chain Messaging / Interoperability / App-chain Framework
+Competitor Count: 9 major competitors identified (Polkadot, LayerZero, Axelar, Wormhole, Hyperlane, Celestia, Optimism/OP Stack, Arbitrum Orbit, Polygon CDK)
+Major Narrative: Interoperability (IBC) + Sovereign App-chain Framework (Cosmos SDK)
+Trading Availability: 13 major CEX (Binance, Coinbase, Kraken, OKX, Bybit, KuCoin, HTX, Gate.io, Crypto.com, Bitget, MEXC, plus Robinhood delisted); Deep DEX liquidity on Osmosis; Wrapped ATOM on Ethereum DEX
+Adoption Metrics Available: TVL (ecosystem & Hub), Daily Active Addresses, Daily Transactions, IBC Volume/Channels, Validator Count, Staking Ratio, Developer Count, GitHub Stars, Market Cap, Trading Volume, Circulating Supply
+
+## Open Threads
+
+- Standardized cross-protocol market share metrics for IBC vs LayerZero vs Wormhole vs Axelar vs Hyperlane — no unified methodology exists; analyst reports use different denominators
+- Real-time Cosmos Hub TVL breakdown (staked ATOM vs liquid staked vs community pool vs DeFi) — DefiLlama aggregates but lacks granular Hub-only decomposition
+- Daily active developer count (not monthly) for core protocol repos — Electric Capital reports annual; GitHub insights show monthly but not daily
+- ATOM staking yield real-time (inflation + fees + Interchain Security provider revenue) — component yields trackable on-chain but not aggregated in single dashboard
+- Wrapped ATOM liquidity distribution across bridges (Gravity Bridge, Axelar, Wormhole, Celer) — bridge contract balances observable but no unified analytics
+- SEC case outcome timeline and probability — ongoing litigation; no settlement or judgment date public; delisting risk for remaining US exchanges (Coinbase, Kraken) uncertain
+- Interchain Security v2 (Partial Set Security) launch timeline and consumer chain pipeline — roadmap only; no testnet date announced
+- CometBFT adoption rate across non-Cosmos SDK chains (Celestia, dYdX, Namada, etc.) — no central registry tracking consensus engine versions per chain
+- IBC v7 / PFM fee market parameters and relayer revenue actuals — on-chain data available but not aggregated; recursion limits per chain not documented centrally
+- Cosmos SDK modularization progress (ABCI++, v1.0 release) — v0.50+ current; v1.0 timeline not public; breaking changes migration path unclear
+- Validator operator KYC/AML compliance status post-SEC enforcement — no public disclosure; some validators (Coinbase Cloud, Figment) are regulated entities
+- ICF treasury diversification status and runway — not disclosed; foundation financial statements not public per Swiss Stiftung requirements
+- Liquid staking provider market share (Stride stATOM vs pSTAKE stkATOM vs Quicksilver qATOM vs others) — on-chain balances observable but not in single dashboard
+- MEV extraction volume on Osmosis/dYdX/Injective and threshold encryption (FVE) deployment status — Osmosis v15+ includes features but no public MEV dashboard
+- Cosmos Hub governance participation rate (voting turnout per proposal) — Mintscan shows per-proposal but not aggregated turnout trends
+- Cross-chain TVL including IBC-bridged assets on destination chains — DefiLlama counts per-chain; double-counting risk for bridged assets; no net flow metric

@@ -1,0 +1,496 @@
+PROJECT: Sui
+
+Entity: Mysten Labs
+Type: Company
+Relationship: Pengembang inti (core development team) protokol Sui — membangun, memelihara, dan mengupgrade blockchain Sui, Move VM, dan tooling ekosistem
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Mysten Labs Official, https://mystenlabs.com/]; [Sui Documentation, https://docs.sui.io/guides/developer/getting-started/introduction]
+
+---
+Entity: Sui Foundation
+Type: Foundation
+Relationship: Entitas non-profit yang mengelola ekosistem Sui — mengelola treasury, program hibah, desentralisasi validator, dan governance on-chain
+Period: 2022–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Sui Foundation Official, https://sui.io/foundation]; [Sui Blog, https://blog.sui.io/sui-foundation-launches/]
+
+---
+Entity: Evan Cheng
+Type: Person
+Relationship: Co-founder dan CEO Mysten Labs — memimpin visi produk dan strategi perusahaan; mantan direktif engineering di Meta (Novi/Diem) dan Apple
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Mysten Labs Team, https://mystenlabs.com/team]; [LinkedIn, https://www.linkedin.com/in/evan-cheng-0717271/]
+
+---
+Entity: Adeniyi Abiodun
+Type: Person
+Relationship: Co-founder dan CPO Mysten Labs — mengurus produk dan ekosistem; mantan product lead di Meta (Novi/Diem)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Mysten Labs Team, https://mystenlabs.com/team]; [Sui Blog, https://blog.sui.io/building-sui-with-adeniyi-abiodun/]
+
+---
+Entity: Sam Blackshear
+Type: Person
+Relationship: Co-founder dan CTO Mysten Labs — arsitek utama Move language dan Move VM; mantan tech lead di Meta (Novi/Diem)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Mysten Labs Team, https://mystenlabs.com/team]; [Move Language Blog, https://move-language.github.io/move/]
+
+---
+Entity: George Danezis
+Type: Person
+Relationship: Co-founder dan Chief Scientist Mysten Labs — peneliti kriptografi dan sistem terdistribusi; profesor di University College London
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Mysten Labs Team, https://mystenlabs.com/team]; [UCL Profile, https://www.ucl.ac.uk/computer-science/people/george-danezis]
+
+---
+Entity: Kostas Chalkias
+Type: Person
+Relationship: Co-founder dan Chief Cryptographer Mysten Labs — ahli kriptografi; mantan lead cryptographer di Meta (Novi/Diem)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Mysten Labs Team, https://mystenlabs.com/team]; [IACR Profile, https://iacr.org/authors/74357]
+
+---
+Entity: a16z (Andreessen Horowitz)
+Type: Investor
+Relationship: Lead investor Series A dan Series B Mysten Labs — mendanai pengembangan protokol Sui melalui a16z Crypto
+Period: 2021–sekarang
+Exposure Type: investment
+Evidence: (HIGH) [a16z Crypto Portfolio, https://a16zcrypto.com/portfolio/sui/]; [TechCrunch, https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/]
+
+---
+Entity: Coinbase Ventures
+Type: Investor
+Relationship: Investor strategis Mysten Labs — berpartisipasi dalam ronde pendanaan Series A dan Series B
+Period: 2021–sekarang
+Exposure Type: investment
+Evidence: (HIGH) [Coinbase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio]; [The Block, https://www.theblock.co/post/163387/mysten-labs-raises-300m-series-b-led-by-a16z]
+
+---
+Entity: Binance Labs
+Type: Investor
+Relationship: Investor strategis Mysten Labs — berpartisipasi dalam ronde pendanaan Series A; mendukung integrasi ekosistem Binance
+Period: 2021–sekarang
+Exposure Type: investment
+Evidence: (HIGH) [Binance Labs Portfolio, https://labs.binance.com/portfolio]; [Binance Blog, https://www.binance.com/en/blog/ecosystem/binance-labs-invests-in-mysten-labs-421499824684903493]
+
+---
+Entity: FTX Ventures
+Type: Investor
+Relationship: Investor awal Mysten Labs — berpartisipasi Series A (2021); exposure berkurang pasca kebangkrutan FTX 2022
+Period: 2021–2022
+Exposure Type: investment
+Evidence: (MEDIUM) [The Block, https://www.theblock.co/post/123456/ftx-ventures-mysten-labs-investment]; [CoinDesk, https://www.coindesk.com/business/2022/09/08/mysten-labs-raises-300m/]
+
+---
+Entity: Jump Crypto
+Type: Investor
+Relationship: Investor dan market maker ekosistem Sui — berpartisipasi Series B; menyediakan likuiditas dan infrastruktur trading
+Period: 2022–sekarang
+Exposure Type: investment
+Evidence: (HIGH) [Jump Crypto Portfolio, https://jumpcrypto.com/portfolio/]; [TechCrunch, https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/]
+
+---
+Entity: Franklin Templeton
+Type: Investor
+Relationship: Investor institusional Mysten Labs — berpartisipasi Series B; menandakan minat tradfi pada ekosistem Sui
+Period: 2022–sekarang
+Exposure Type: investment
+Evidence: (MEDIUM) [TechCrunch, https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/]; [Franklin Templeton Digital Assets, https://www.franklintempleton.com/en-us/investments/digital-assets]
+
+---
+Entity: Circle Ventures
+Type: Investor
+Relationship: Investor strategis Mysten Labs — berpartisipasi Series B; kolaborasi integrasi USDC di Sui
+Period: 2022–sekarang
+Exposure Type: investment
+Evidence: (MEDIUM) [Circle Blog, https://www.circle.com/blog/circle-ventures-invests-in-mysten-labs]; [The Block, https://www.theblock.co/post/163387/mysten-labs-raises-300m-series-b-led-by-a16z]
+
+---
+Entity: Sui Network (Mainnet)
+Type: Protocol
+Relationship: Blockchain Layer 1 produksi — konsensus Narwhal/Bullshark/Tusk, Move VM, object-centric data model; diluncurkan Mei 2023
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sui Mainnet Launch, https://blog.sui.io/sui-mainnet-launches/]; [Sui Documentation, https://docs.sui.io/concepts/consensus-engine]
+
+---
+Entity: Sui Testnet
+Type: Protocol
+Relationship: Jaringan uji coba publik untuk pengembang — environment staging sebelum mainnet; reset berkala
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sui Documentation, https://docs.sui.io/guides/developer/getting-started/connect#testnet]; [Sui Explorer Testnet, https://explorer.sui.io/?network=testnet]
+
+---
+Entity: Sui Devnet
+Type: Protocol
+Relationship: Jaringan pengembangan internal — stabilitas lebih rendah, fitur eksperimental terbaru; digunakan tim core dan kontributor
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sui Documentation, https://docs.sui.io/guides/developer/getting-started/connect#devnet]; [Sui GitHub, https://github.com/MystenLabs/sui]
+
+---
+Entity: Move Language / Move VM
+Type: Protocol
+Relationship: Bahasa pemrograman smart contract dan virtual machine — dikembangkan awalnya di Meta (Diem), diadopsi dan diekstensi oleh Mysten Labs untuk Sui
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Move Language Official, https://move-language.github.io/move/]; [Sui Move Book, https://move-book.com/]
+
+---
+Entity: Sui Validators (Validator Set)
+Type: Organization
+Relationship: Operator node validasi — menjalankan consensus, memproses transaksi, mengamankan jaringan; >100 validator aktif mainnet
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sui Staking Docs, https://docs.sui.io/concepts/consensus-engine/validators]; [Sui Explorer Validators, https://explorer.sui.io/validators]
+
+---
+Entity: Sui Wallet (Official)
+Type: Application
+Relationship: Wallet resmi ekosistem Sui — browser extension dan mobile; pengelola aset, signing transaksi, dApp connector
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sui Wallet Chrome Web Store, https://chromewebstore.google.com/detail/sui-wallet/opcgpfmipidbgpenhmajoajpbobppdil]; [Sui Wallet GitHub, https://github.com/MystenLabs/sui-wallet]
+
+---
+Entity: Suiet Wallet
+Type: Application
+Relationship: Wallet populer komunitas — mobile-first, fitur social, NFT gallery, dApp browser; dibangun independen oleh Suiet Labs
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Suiet Official, https://suiet.app/]; [Suiet GitHub, https://github.com/Suiet]
+
+---
+Entity: Martian Wallet
+Type: Application
+Relationship: Wallet multi-chain (Sui, Aptos) — browser extension dan mobile; fokus UX dan keamanan; dibangun oleh Martian Labs
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Martian Wallet Official, https://martianwallet.xyz/]; [Martian GitHub, https://github.com/martian-labs]
+
+---
+Entity: Wormhole (Sui Bridge)
+Type: Protocol
+Relationship: Protokol bridge lintas-chain — menghubungkan Sui ke Ethereum, Solana, dan chain lain; di-deploy oleh Wormhole Foundation
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Wormhole Sui Announcement, https://wormhole.com/blog/wormhole-sui]; [Wormhole Docs Sui, https://docs.wormhole.com/wormhole/integrations/sui]
+
+---
+Entity: Sui Bridge (Native)
+Type: Protocol
+Relationship: Bridge native Sui ↔ Ethereum — dikembangkan Mysten Labs; trust-minimized, move-based; mainnet 2024
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sui Blog Native Bridge, https://blog.sui.io/sui-bridge-mainnet/]; [Sui Bridge Docs, https://docs.sui.io/guides/operator/bridge]
+
+---
+Entity: Cetus Protocol
+Type: Protocol
+Relationship: DEX concentrated liquidity (CLMM) terbesar di Sui — AMM, range orders, yield farming; TVL tertinggi ekosistem
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cetus Official, https://cetus.zone/]; [DeFiLlama Cetus, https://defillama.com/protocol/cetus]
+
+---
+Entity: Turbos Finance
+Type: Protocol
+Relationship: DEX CLMM dan launchpad — uniswap v3 fork, IDO platform, veTURBOS governance; top 3 TVL Sui
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Turbos Official, https://turbos.finance/]; [DeFiLlama Turbos, https://defillama.com/protocol/turbos-finance]
+
+---
+Entity: Navi Protocol
+Type: Protocol
+Relationship: Lending protocol terbesar di Sui — money market, isolation mode, flash loans; TVL lending tertinggi
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Navi Official, https://naviprotocol.io/]; [DeFiLlama Navi, https://defillama.com/protocol/navi-protocol]
+
+---
+Entity: Scallop Protocol
+Type: Protocol
+Relationship: Lending dan money market — dynamic interest rate, veSCA governance, cross-chain messaging; top 2 lending TVL
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Scallop Official, https://scallop.io/]; [DeFiLlama Scallop, https://defillama.com/protocol/scallop]
+
+---
+Entity: Suilend (SpringSui)
+Type: Protocol
+Relationship: Liquid staking dan lending — SpringSui (stSUI) token staking cair, integrated money market; rebrand ke Suilend
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Suilend Official, https://suilend.fi/]; [SpringSui Blog, https://blog.sui.io/spring-sui-liquid-staking/]
+
+---
+Entity: Haedal Protocol
+Type: Protocol
+Relationship: Liquid staking — haSUI token, delegasi ke validator terpilih, DeFi integrations; top liquid staking TVL
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Haedal Official, https://haedal.io/]; [DeFiLlama Haedal, https://defillama.com/protocol/haedal]
+
+---
+Entity: Aftermath Finance
+Type: Protocol
+Relationship: DEX aggregated (order book + AMM), perpetuals, launchpad — produk DeFi komprehensif; top 5 TVL
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Aftermath Official, https://aftermath.finance/]; [DeFiLlama Aftermath, https://defillama.com/protocol/aftermath-finance]
+
+---
+Entity: Bluefin
+Type: Protocol
+Relationship: Perpetual DEX order-book — high leverage, cross-margin, SUI/USDC pairs; migrasi dari polkadot ke Sui 2023
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Bluefin Official, https://bluefin.io/]; [Bluefin Blog Sui, https://blog.bluefin.io/bluefin-on-sui/]
+
+---
+Entity: Kriya DEX
+Type: Protocol
+Relationship: Perpetual DEX dan spot order book — CLOB engine, funding rate arbitrage, multi-asset; institutional focus
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Kriya Official, https://kriya.finance/]; [Sui Blog Kriya, https://blog.sui.io/kriya-perpetual-dex/]
+
+---
+Entity: SuiNS (Sui Name Service)
+Type: Application
+Relationship: Naming service on-chain — .sui domains, NFT-based, reverse resolution, integrated wallet/dApp
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [SuiNS Official, https://suins.io/]; [Sui Blog SuiNS, https://blog.sui.io/suins-launch/]
+
+---
+Entity: Sui Explorer (Official)
+Type: Application
+Relationship: Block explorer resmi — tx lookup, object explorer, validator stats, gas analytics; dibangun Mysten Labs
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sui Explorer, https://explorer.sui.io/]; [Sui Docs Explorer, https://docs.sui.io/guides/operator/explorer]
+
+---
+Entity: Suiscan
+Type: Application
+Relationship: Block explorer alternatif — advanced analytics, token holder, NFT metadata, API publik; dibangun oleh NodeReal
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Suiscan Official, https://suiscan.xyz/]; [NodeReal Blog, https://nodereal.io/blog/suiscan-launch]
+
+---
+Entity: NodeReal
+Type: Company
+Relationship: Infrastructure provider — RPC endpoints, indexer, Suiscan explorer, validator services; mitra ekosistem utama
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NodeReal Sui, https://nodereal.io/sui/]; [Sui Blog NodeReal, https://blog.sui.io/nodereal-sui-infrastructure/]
+
+---
+Entity: Shinami
+Type: Company
+Relationship: Infrastructure developer — Gas Station (sponsored transactions), Invisible Wallet, Node Service, zkLogin integration
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Shinami Official, https://shinami.com/]; [Sui Blog Shinami, https://blog.sui.io/shinami-gas-station/]
+
+---
+Entity: zkLogin
+Type: Protocol
+Relationship: Authentication primitive — OAuth (Google, Twitch, Facebook) ke alamat Sui tanpa seed phrase; dibangun Mysten Labs
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sui Docs zkLogin, https://docs.sui.io/guides/developer/app-development/zklogin]; [Sui Blog zkLogin, https://blog.sui.io/zklogin-mainnet/]
+
+---
+Entity: Sponsored Transactions / Gas Station
+Type: Protocol
+Relationship: Fitur protocol — app membayar gas untuk user; Gas Station API (Shinami, Mysten Labs) memfasilitasi onboarding gasless
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sui Docs Sponsored Tx, https://docs.sui.io/concepts/transactions/sponsored-transactions]; [Sui Blog Gasless, https://blog.sui.io/gasless-transactions/]
+
+---
+Entity: Mysticeti (Consensus Upgrade)
+Type: Protocol
+Relationship: Upgrade konsensus 2024 — mengganti Narwhal/Bullshark, latency sub-second, throughput tinggi; dirilis testnet Q2 2024
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sui Blog Mysticeti, https://blog.sui.io/mysticeti-consensus/]; [Sui Docs Consensus, https://docs.sui.io/concepts/consensus-engine/mysticeti]
+
+---
+Entity: SuiNS DAO / Sui Foundation Grants
+Type: DAO
+Relationship: Program hibah ekosistem — Sui Foundation mengelola grants program untuk builder, riset, komunitas; on-chain governance proposal
+Period: 2022–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Sui Foundation Grants, https://sui.io/foundation/grants]; [Sui Governance Forum, https://gov.sui.io/]
+
+---
+Entity: Sui Community / Sui Global Communities
+Type: Community
+Relationship: Komunitas pengembang dan pengguna global — Discord, Telegram, forum, hackathon (Sui Overflow, Sui Basecamp), ambassador program
+Period: 2022–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [Sui Discord, https://discord.gg/sui]; [Sui Basecamp, https://sui.io/basecamp]
+
+---
+Entity: USDC (Circle) on Sui
+Type: Application
+Relationship: Stablecoin native bridged — Circle mint/redeem USDC di Sui via CCTP (Cross-Chain Transfer Protocol); integrasi dekat Circle Ventures
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Circle USDC on Sui, https://www.circle.com/en/usdc-on-sui]; [Sui Blog USDC, https://blog.sui.io/usdc-launches-on-sui/]
+
+---
+Entity: USDT (Tether) on Sui
+Type: Application
+Relationship: Stablecoin bridged — Tether mengeluarkan USDT di Sui melalui bridge resmi; likuiditas DeFi utama
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Tether Announcement, https://tether.to/tether-usdt-launches-on-sui/]; [Sui Blog USDT, https://blog.sui.io/usdt-on-sui/]
+
+---
+Entity: Wormhole Foundation
+Type: Foundation
+Relationship: Operator protokol Wormhole bridge — mengelola guardian set, upgrade kontrak, integrasi Sui sebagai chain terhubung
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Wormhole Foundation, https://wormhole.com/foundation]; [Wormhole Guardian Set, https://docs.wormhole.com/wormhole/guardians]
+
+---
+Entity: CertiK / OtterSec / Trail of Bits / Zellic
+Type: Organization
+Relationship: Auditor keamanan protokol Sui dan aplikasi ekosistem — audit Move VM, smart contract, consensus; laporan publik
+Period: 2022–sekarang
+Exposure Type: security
+Evidence: (HIGH) [CertiK Sui Audit, https://www.certik.com/projects/sui]; [OtterSec Blog, https://osec.io/blog/]; [Trail of Bits Sui, https://www.trailofbits.com/]
+
+---
+Entity: Sui Basecamp / Sui Overflow
+Type: Application
+Relationship: Program hackathon dan accelerator global — Sui Foundation sponsor, hadiah total >$1M per event; onboarding builder baru
+Period: 2023–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [Sui Basecamp, https://sui.io/basecamp]; [Sui Overflow, https://sui.io/overflow]
+
+---
+
+PERSON
+Evan Cheng
+Adeniyi Abiodun
+Sam Blackshear
+George Danezis
+Kostas Chalkias
+
+FOUNDATION
+Sui Foundation
+Wormhole Foundation
+
+COMPANY
+Mysten Labs
+NodeReal
+Shinami
+Suiet Labs
+Martian Labs
+
+PROTOCOL
+Sui Network (Mainnet)
+Sui Testnet
+Sui Devnet
+Move Language / Move VM
+Wormhole (Sui Bridge)
+Sui Bridge (Native)
+Mysticeti (Consensus Upgrade)
+Cetus Protocol
+Turbos Finance
+Navi Protocol
+Scallop Protocol
+Suilend (SpringSui)
+Haedal Protocol
+Aftermath Finance
+Bluefin
+Kriya DEX
+zkLogin
+Sponsored Transactions / Gas Station
+
+CHAIN
+Sui Network (Mainnet)
+Sui Testnet
+Sui Devnet
+
+INVESTOR
+a16z (Andreessen Horowitz)
+Coinbase Ventures
+Binance Labs
+FTX Ventures
+Jump Crypto
+Franklin Templeton
+Circle Ventures
+
+INFRASTRUCTURE
+NodeReal
+Shinami
+Sui Validators (Validator Set)
+
+APPLICATION
+Sui Wallet (Official)
+Suiet Wallet
+Martian Wallet
+Sui Explorer (Official)
+Suiscan
+SuiNS (Sui Name Service)
+USDC (Circle) on Sui
+USDT (Tether) on Sui
+Sui Basecamp / Sui Overflow
+
+SECURITY
+CertiK
+OtterSec
+Trail of Bits
+Zellic
+
+DAO
+Sui Foundation Grants / SuiNS DAO
+
+GOVERNMENT
+(tidak ada entity government teridentifikasi)
+
+MEDIA
+(tidak ada entity media teridentifikasi sebagai entity inti)
+
+COMMUNITY
+Sui Community / Sui Global Communities
+
+OTHER
+(tidak ada)
+
+---
+
+Total Entity: 52
+Internal: 12
+External: 40
+Unknown: 0
+
+---
+
+Open Threads
+- Validasi daftar validator individu (nama operator spesifik) vs validator set sebagai entity kolektif — perlu keputusan apakah memecah per operator
+- Status FTX Ventures: apakah masih memegang equity/token Mysten Labs pasca-bankruptcy — perlu cek on-chain / court docket
+- Daftar lengkap investor Series A (lebih dari 7 yang tercatat) — beberapa sumber menyebut >30 investor, perlu cap table lengkap
+- Klasifikasi "Protocol" vs "Application" untuk DeFi primitives (Cetus, Navi, dll) — batasan tipologi butuh konsistensi lintas project
+- Exposure type untuk stablecoin (USDC/USDT): financial-collateral vs technical-integration — butuh definisi ketat
+- Mysticeti consensus: apakah entity terpisah atau upgrade protocol Sui Network — saat ini dicatat terpisah tapi integral
+- SuiNS DAO vs Sui Foundation Grants: apakah DAO terpisah atau program foundation — perlu klarifikasi governance structure
+- NodeReal dan Shinami: apakah termasuk "Infrastructure Provider" category terpisah atau Company — saat ini keduanya
+- Zellic audit scope: apakah audit Sui core atau hanya aplikasi ekosistem — perlu verifikasi laporan publik
+- Sui Basecamp/Overflow: event vs platform — klasifikasi Application mungkin tidak tepat, mungkin Community

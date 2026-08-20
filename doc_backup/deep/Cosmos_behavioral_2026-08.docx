@@ -1,0 +1,440 @@
+PROJECT: Cosmos
+
+Strategic Objectives
+
+1. Membangun Internet of Blockchains melalui protokol interoperabilitas standar (IBC) yang memungkinkan chain sovereign berkomunikasi trust-minimized
+
+· Evidence: Whitepaper Cosmos mendefinisikan visi "Internet of Blockchains" dengan arsitektur hub-and-zone dan IBC sebagai protokol komunikasi standar [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]
+· Supporting Dataset: Phase 1 Foundation, Phase 3 History EV-003, EV-015
+
+2. Menyediakan framework pengembangan app-chain sovereign (Cosmos SDK) yang memungkinkan developer membangun blockchain custom dengan consensus CometBFT tanpa harus membangun dari nol
+
+· Evidence: Cosmos SDK digunakan 100+ production chains (Osmosis, Celestia, dYdX, Injective, Neutron, Stride, dll) [Map of Zones, https://mapofzones.com/; Cosmos Network Ecosystem, https://cosmos.network/ecosystem/apps]
+· Supporting Dataset: Phase 1 Foundation, Phase 4 Technology, Phase 7 Ecosystem
+
+3. Mengamankan ekosistem melalui shared security (Interchain Security) di mana Cosmos Hub validator set menyediakan keamanan untuk consumer chain
+
+· Evidence: Interchain Security live sejak Juli 2023 (Cosmos Hub v12), Neutron sebagai consumer chain pertama [Interchain Security Launch, https://blog.cosmos.network/interchain-security-launch/]
+· Supporting Dataset: Phase 3 History EV-025, EV-026, Phase 4 Technology, Phase 7 Ecosystem
+
+4. Mengaktifkan liquid staking native untuk ATOM via Liquid Staking Module (LSM) tanpa smart contract eksternal
+
+· Evidence: LSM diaktifkan via Proposal #848 November 2023, cap 25% liquid staked ATOM [LSM Proposal #848, https://www.mintscan.io/cosmos/proposals/848]
+· Supporting Dataset: Phase 3 History EV-027, Phase 4 Technology, Phase 6 Token
+
+5. Menjaga evolusi protokol melalui on-chain governance yang berkontinu (19 major upgrades Cosmos Hub via proposals)
+
+· Evidence: Cosmos Hub menjalankan 19 upgrade mayor (v1-v19) semuanya melalui on-chain governance [Gaia Releases, https://github.com/cosmos/gaia/releases; Mintscan Proposals, https://www.mintscan.io/cosmos/proposals]
+· Supporting Dataset: Phase 3 History EV-032, Phase 6 Token Governance
+
+Decision Timeline
+
+Keputusan: Publikasi Whitepaper Cosmos Network mendefinisikan arsitektur Hub-Zone dan IBC (2016)
+· Trigger: Perlu fondasi teknis untuk visi "Internet of Blockchains" setelah penelitian Tendermint BFT
+· Evidence: Whitepaper diterbitkan oleh Jae Kwon, Ethan Buchman, Zarko Milosevic di GitHub [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]
+· Decision: Mendokumentasikan arsitektur hub-and-zone, IBC, Cosmos SDK, dan proof-of-stake BFT consensus sebagai spesifikasi terbuka
+· Immediate Result: Arsitektur Cosmos terdokumentasikan resmi; menjadi blueprint untuk pengembangan 2017+
+· Long-term Impact: Menetapkan standar arsitektur yang diikuti 100+ chain hingga 2024
+· Supporting Dataset: Phase 1 Foundation, Phase 3 History EV-003
+
+Keputusan: ICF Fundraiser / Public Sale ATOM (2017-04-06)
+· Trigger: Perlu dana untuk pengembangan protokol; memilih public sale bukan VC-only untuk distribusi luas
+· Evidence: ~$17M terkumpul dari BTC/ETH; 168.4M ATOM dijual ke publik [ICF Fundraiser, https://cosmos.network/icf-fundraiser]
+· Decision: Melakukan public fundraiser dengan alokasi: 71.3% community, 10% team, 10% foundation, 8.7% ecosystem
+· Immediate Result: Dana ~$17M terkumpul; distribusi ATOM awal dialokasikan; ICF terbentuk sebagai treasury holder
+· Long-term Impact: Distribusi token yang relatif merata (no large VC unlocks); ICF menjadi primary funder protokol inti
+· Supporting Dataset: Phase 3 History EV-004, Phase 5 Financial Funding History, Phase 6 Token Distribution
+
+Keputusan: Launch Cosmos Hub Mainnet Genesis (2019-03-13)
+· Trigger: Game of Stakes testnet series selesai; konsensus BFT tervalidasi; siap untuk production
+· Evidence: Gaia v1.0.0 released; 100 validator genesis; ATOM native transferable [Cosmos Hub Launch, https://blog.cosmos.network/cosmos-hub-mainnet-launch/]
+· Decision: Meluncurkan mainnet dengan staking, governance, dan token transfer aktif dari block 1
+· Immediate Result: Cosmos Hub live; ATOM price discovery dimulai; staking rewards berjalan
+· Long-term Impact: Menjadi hub pertama dan chain utama ekosistem; fondasi untuk IBC nanti
+· Supporting Dataset: Phase 3 History EV-010, Phase 4 Technology
+
+Keputusan: Stargate Upgrade — Mengaktifkan IBC di Cosmos Hub (2021-02-18)
+· Trigger: IBC spec matang; Cosmos SDK v0.40 ready; protobuf migration selesai; ekosistem siap cross-chain
+· Evidence: Gaia v3.0.0 release; Proposal #38 passed; IBC modules integrated [Stargate Upgrade, https://blog.cosmos.network/stargate-upgrade/]
+· Decision: Upgrade mayor yang mengaktifkan IBC core (handshake, channel, packet, light client) di mainnet
+· Immediate Result: Cross-chain token transfer live; era "Interchain" dimulai; Osmosis launch 4 bulan kemudian
+· Long-term Impact: IBC menjadi protokol interoperabilitas utama ekosistem; 100+ chain connected by 2024
+· Supporting Dataset: Phase 3 History EV-015, Phase 4 Technology, Phase 7 Major Integrations
+
+Keputusan: Tendermint Inc Rebrand ke Ignite & Pemisahan Brand Protokol (2021-11)
+· Trigger: Perlu pemisahan jelas antara entitas komersial (Ignite) dan protokol open source (Tendermint Core/CometBFT)
+· Evidence: Announcement resmi; fokus Ignite pada CLI/platform development [Ignite Rebrand, https://ignite.com/blog/tendermint-rebrand-ignite]
+· Decision: Rebrand perusahaan komersial ke Ignite; protokol konsensus tetap "Tendermint Core" (then CometBFT)
+· Immediate Result: Pemisahan brand jelas; komunitas mulai mendorong fork community-governed
+· Long-term Impact: Memicu CometBFT fork 2023; governance protokul jadi community-driven bukan corporate
+· Supporting Dataset: Phase 3 History EV-018, Phase 2 Entity, Phase 4 Technology
+
+Keputusan: Pembentukan Interchain GmbH di bawah ICF (2021)
+· Trigger: Perlu koordinasi terpusat untuk core contributors (Informal Systems, Hypha, Notional, Strangelove)
+· Evidence: Interchain GmbH formed; mengelola roadmap dan funding protokol inti [Interchain GmbH, https://interchain.io/team/]
+· Decision: Membuat entitas pengembangan di bawah ICF yang mengontrak core contributor companies
+· Immediate Result: Pengembangan Cosmos SDK, CometBFT, IBC-Go, Gaia terkoordinasi; funding terpusat
+· Long-term Impact: Model pengembangan protokol yang scalable; core team ~50+ contributors across 5+ companies
+· Supporting Dataset: Phase 3 History EV-019, Phase 2 Entity, Phase 5 Financial Dependencies
+
+Keputusan: CometBFT Fork dari Tendermint Core v0.34 (2023-06)
+· Trigger: Kebutuhan governance protokol yang community-driven; pemisahan dari brand Ignite/Tendermint Inc
+· Evidence: Fork di github.com/cometbft/cometbft; dikelola komunitas [CometBFT Fork, https://github.com/cometbft/cometbft; CometBFT Launch, https://blog.cosmos.network/cometbft-launch/]
+· Decision: Memfork Tendermint Core v0.34 menjadi CometBFT di organisasi terpisah; community-governed
+· Immediate Result: Consensus engine default Cosmos SDK jadi CometBFT; formal verification focus
+· Long-term Impact: CometBFT v1.0 stable 2024; digunakan Celestia, dYdX, Namada, dll outside Cosmos SDK
+· Supporting Dataset: Phase 3 History EV-023, EV-038, Phase 4 Technology, Phase 7 Ecosystem
+
+Keputusan: Interchain Security Launch (Replicated Security) di Cosmos Hub v12 (2023-07)
+· Trigger: Consumer chain (Neutron) butuh security tanpa bootstrap validator set sendiri; provider revenue model
+· Evidence: Proposal #792 passed; Neutron launch sebagai consumer chain pertama [Interchain Security Launch, https://blog.cosmos.network/interchain-security-launch/]
+· Decision: Mengaktifkan Replicated Security di mana Cosmos Hub validators validate consumer chain blocks
+· Immediate Result: Neutron secured by Hub validators; provider revenue stream baru untuk validators
+· Long-term Impact: Model shared security terbukti work; v2 (Partial Set Security) di roadmap
+· Supporting Dataset: Phase 3 History EV-025, EV-026, Phase 4 Technology, Phase 7 Major Integrations
+
+Keputusan: Liquid Staking Module (LSM) Activation via Proposal #848 (2023-11)
+· Trigger: Kebutuhan liquid staking native tanpa smart contract risk; Stride/pSTAKE/Quicksilver sudah ada tapi external
+· Evidence: Proposal #848 passed; LSM live dengan 25% cap, rate limiting, validator bonding [LSM Proposal #848, https://www.mintscan.io/cosmos/proposals/848]
+· Decision: Mengaktifkan native liquid staking module di Cosmos Hub dengan safety parameters
+· Immediate Result: stATOM, stkATOM, qATOM terintegrasi native; 25% cap enforced; redemption rate on-chain
+· Long-term Impact: Capital efficiency ATOM meningkat; LSM menjadi template untuk chain lain
+· Supporting Dataset: Phase 3 History EV-027, Phase 4 Technology, Phase 6 Token Utility
+
+Keputusan: Cosmos Hub Upgrade v19 — IBC v7 dengan Packet Forward Middleware (2024-06-25)
+· Trigger: Kebutuhan multi-hop routing native (chain A→B→C dalam 1 tx); fee market untuk relayer; async ack
+· Evidence: Gaia v19 release; IBC-Go v7; PFM middleware live [Gaia v19 Release, https://github.com/cosmos/gaia/releases/tag/v19.0.0]
+· Decision: Upgrade ke IBC v7 dengan PFM, async acknowledgments, IBC callbacks
+· Immediate Result: Multi-hop routing live; UX cross-chain disederhanakan; relayer fee market enabled
+· Long-term Impact: IBC jadi lebih user-friendly; composability cross-chain meningkat
+· Supporting Dataset: Phase 3 History EV-030, Phase 4 Technology, Phase 7 Major Integrations
+
+Evolution Pattern
+
+Perubahan Strategi: Dari Single Chain (Cosmos Hub) ke Multi-Chain Ecosystem (Interchain)
+· Awal 2019: Fokus launch Cosmos Hub sebagai chain tunggal dengan staking/governance
+· 2021 Stargate: Pivot ke IBC-enabled; ekosistem zones mulai launch (Osmosis, Injective)
+· 2023+: Interchain Security menambahkan shared security layer; LSM menambahkan capital efficiency layer
+· Evidence: Timeline EV-010 → EV-015 → EV-016 → EV-025 → EV-027 → EV-030 [Phase 3 History]
+· Supporting Dataset: Phase 3 History, Phase 7 Ecosystem
+
+Perubahan Teknologi: Tendermint Core (Corporate) → CometBFT (Community-Governed)
+· 2017-2023: Tendermint Core dikembangkan Tendermint Inc/Ignite sebagai proprietary-adjacent
+· 2023-06: Fork ke CometBFT v0.34+ di organisasi terpisah; governance terbuka
+· 2024-03: CometBFT v1.0 stable release dengan API stability guarantees
+· Evidence: EV-018, EV-023, CometBFT v1.0 release [Phase 3 History, Phase 4 Technology]
+· Supporting Dataset: Phase 3 History EV-018, EV-023, Phase 4 Technology
+
+Perubahan Tokenomics: Fixed Inflation Parameters → Dynamic Governance-Controlled Parameters
+· Genesis: Inflation params fixed di mint module (7-20% range, 67% target bonded)
+· 2024-03 (v18 Lambda): Governance proposal mengubah inflation rate, community pool allocation, staking rewards
+· Ongoing: Parameter dapat diubah via on-chain governance tanpa hard fork
+· Evidence: EV-029, Mint module params governance-controlled [Phase 3 History EV-029, Phase 6 Token Inflation]
+· Supporting Dataset: Phase 3 History EV-029, Phase 6 Token
+
+Perubahan Governance: Foundation-Led → On-Chain Governance + Core Contributor Coordination
+· 2017-2019: ICF dan Tendermint Inc memimpin roadmap
+· 2021+: Interchain GmbH mengkoordinasi core contributors; on-chain governance untuk protocol upgrades
+· 2023+: CometBFT, IBC-Go, Cosmos SDK punya maintainer councils terpisah; ICF grants untuk funding
+· Evidence: EV-019, GOVERNANCE.md files di masing-masing repo [Phase 3 History EV-019, Phase 2 Entity, Phase 4 Technology]
+· Supporting Dataset: Phase 2 Entity, Phase 3 History EV-019, Phase 4 Technology
+
+Perubahan Ecosystem: Hub-and-Zone → Mesh of Sovereign Chains dengan Multiple Hubs
+· Original vision: Cosmos Hub sebagai hub utama; zones connect ke hub
+· Reality 2024: 100+ chains dengan IBC mesh topology; multiple hubs (Osmosis sebagai DeFi hub, Celestia sebagai DA hub)
+· PFM (IBC v7) memungkinkan multi-hop tanpa perlu central hub
+· Evidence: Map of Zones topology; PFM live [Phase 7 Ecosystem, Phase 3 History EV-030, EV-031]
+· Supporting Dataset: Phase 3 History EV-030, EV-031, Phase 7 Ecosystem
+
+Technical Decision Pattern
+
+Pola 1: Modular Architecture dengan Separation of Concerns (Consensus / Execution / Messaging)
+· Decision Pattern: Memisahkan consensus (CometBFT), execution (Cosmos SDK), dan messaging (IBC) ke layer terpisah yang dapat di-upgrade independen
+· Evidence: CometBFT fork terpisah dari SDK; IBC-Go sebagai library terpisah; ABCI++ interface antar layer [CometBFT GitHub, https://github.com/cometbft/cometbft; Cosmos SDK Architecture, https://docs.cosmos.network/main/learn/beginner/architecture; IBC-Go GitHub, https://github.com/cosmos/ibc-go]
+· Supporting Dataset: Phase 4 Technology Core Components, Phase 3 History EV-023, EV-030
+
+Pola 2: Sovereign Chain Model — Setiap Chain Kontrol Validator Set, Governance, Economics Sendiri
+· Decision Pattern: Tidak memaksa shared security (seperti Polkadot parachains); setiap zone sovereign dengan validator set sendiri; Interchain Security opsional
+· Evidence: 100+ chains dengan validator set sendiri; Interchain Security consumer chain opt-in [Map of Zones, https://mapofzones.com/; Interchain Security Spec, https://github.com/cosmos/interchain-security]
+· Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem Applications, Phase 3 History EV-025
+
+Pola 3: Light Client Verification untuk Cross-Chain Trust Minimization
+· Decision Pattern: IBC menggunakan light client verification (Tendermint/CometBFT light client) bukan trusted bridge/validator set untuk cross-chain state verification
+· Evidence: IBC spec ICS-007 Tendermint light client; trust-minimized bridging [IBC Light Client Spec, https://github.com/cosmos/ibc/tree/main/spec/clients/ics-007-tendermint]
+· Supporting Dataset: Phase 4 Technology Security Model, Phase 7 Major Integrations IBC Launch
+
+Pola 4: Upgrade Bertahap via On-Chain Governance dengan Cosmovisor
+· Decision Pattern: Semua major upgrades (19x Cosmos Hub) melalui on-chain proposal; Cosmovisor mengotomatisasi binary switch di block height tertinggi
+· Evidence: 19 upgrades via proposals; Cosmovisor tooling [Gaia Releases, https://github.com/cosmos/gaia/releases; Cosmovisor, https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor]
+· Supporting Dataset: Phase 3 History EV-032, Phase 4 Technology Development Framework
+
+Pola 5: Formal Verification Focus untuk Consensus Critical Path
+· Decision Pattern: Informal Systems melakukan formal verification (Coq/Isabelle) untuk Tendermint/CometBFT consensus safety/liveness dan IBC protocol
+· Evidence: Informal Systems blog formal verification IBC; CometBFT audit Trail of Bits [Informal Systems Formal Verification, https://informal.systems/blog/ibc-formal-verification/; CometBFT Audit, https://github.com/cometbft/cometbft/security/advisories]
+· Supporting Dataset: Phase 4 Technology Audit History, Phase 2 Entity Informal Systems
+
+Pola 6: WASM Smart Contract Engine (CosmWasm) sebagai Optional Module di SDK
+· Decision Pattern: CosmWasm tidak mandatory; chain pilih enable x/wasm module; portable contracts across chains via IBC
+· Evidence: 20+ chains deploy CosmWasm (Neutron, Juno, Osmosis, Secret, Injective, dll) [CosmWasm GitHub, https://github.com/CosmWasm/cosmwasm; CosmWasm Deployment, https://cosmwasm.com/]
+· Supporting Dataset: Phase 4 Technology Core Components, Phase 7 Ecosystem Applications
+
+Pola 7: Native Modules over Smart Contracts untuk Core Primitives (Staking, Gov, IBC, Distribution)
+· Decision Pattern: Core primitives dibangun sebagai native Go modules di Cosmos SDK (x/staking, x/gov, x/ibc, x/distribution) bukan smart contracts; Wasm untuk application layer
+· Evidence: Cosmos SDK module architecture; x/wasm hanya untuk user contracts [Cosmos SDK Modules, https://github.com/cosmos/cosmos-sdk/tree/main/x]
+· Supporting Dataset: Phase 4 Technology Core Components, Phase 4 Technology Execution Environment
+
+Financial Decision Pattern
+
+Pola 1: Single Public Fundraiser (ICO 2017) + Ongoing Grants Program — No Series A/B/C untuk Protocol Treasury
+· Decision Pattern: ICF mengumpulkan $17M sekali via public sale; kemudian mendanai pengembangan via Grants Program (>$50M cumulative) dari treasury; tidak ada token sale tambahan
+· Evidence: ICF Fundraiser 2017; ICF Grants >$50M; no subsequent public sales [ICF Fundraiser, https://cosmos.network/icf-fundraiser; ICF Grants, https://interchain.io/grants/]
+· Supporting Dataset: Phase 5 Financial Funding History, Phase 6 Token TGE
+
+Pola 2: Core Contributor Companies Funded via ICF Grants/Interchain GmbH Contracts — Not Direct Protocol Revenue
+· Decision Pattern: Informal Systems, Strangelove, Hypha, Notional, Interchain GmbH dibayarkan via ICF grants atau Interchain GmbH contracts; revenue protokol (fees, Interchain Security) goes to validators/community pool, tidak ke contributor companies langsung
+· Evidence: Interchain GmbH formation; GOVERNANCE.md; ICF Grants program [Interchain GmbH, https://interchain.io/team/; Cosmos SDK Governance, https://github.com/cosmos/cosmos-sdk/blob/main/GOVERNANCE.md; ICF Grants, https://interchain.io/grants/]
+· Supporting Dataset: Phase 2 Entity Companies, Phase 5 Financial Dependencies, Phase 5 Financial Revenue Model
+
+Pola 3: App-Chain Companies Raise Independent VC Funding — Separate from Protocol Treasury
+· Decision Pattern: Osmosis, Celestia, dYdX, Injective, Neutron, Stride masing-masing raise VC sendiri (Paradigm, Bain Capital, Binance Labs, dll); tidak bergantung pada ICF treasury
+· Evidence: Osmosis, Celestia, dYdX, Injective, Neutron funding rounds terpisah [Phase 5 Financial Funding History - chain-specific entries]
+· Supporting Dataset: Phase 5 Financial Funding History, Phase 7 Ecosystem Applications
+
+Pola 4: Protocol Revenue Flows to Validators + Community Pool — Not to Foundation Treasury
+· Decision Pattern: Transaction fees, Interchain Security provider revenue, LSM fees, IBC relay fees → validators (commission) + community pool (2% tax); ICF treasury terpisah off-chain
+· Evidence: Distribution module; Interchain Security revenue model; LSM fee params [Cosmos SDK Distribution, https://github.com/cosmos/cosmos-sdk/tree/main/x/distribution; Interchain Security Spec, https://github.com/cosmos/interchain-security; LSM Proposal #848, https://www.mintscan.io/cosmos/proposals/848]
+· Supporting Dataset: Phase 5 Financial Revenue Model, Phase 6 Token Utility
+
+Pola 5: Inflationary Token Model dengan Dynamic Rate Berbasis Staking Ratio — No Hard Cap
+· Decision Pattern: ATOM supply inflationary (7-20% APY dynamic); target bonded ratio 67%; inflation rate adjusts per block; no max supply; v18 governance bisa ubah params
+· Evidence: Mint module params; v18 Lambda upgrade tokenomics changes [Cosmos SDK Mint Module, https://github.com/cosmos/cosmos-sdk/tree/main/x/mint; Gaia v18 Release, https://github.com/cosmos/gaia/releases/tag/v18.0.0]
+· Supporting Dataset: Phase 6 Token Supply, Phase 6 Token Inflation, Phase 3 History EV-029
+
+Ecosystem Decision Pattern
+
+Pola 1: Permissionless Zone Deployment — Siapa Saja Bisa Launch Chain IBC-Connected Tanpa Izin Hub
+· Decision Pattern: Tidak ada parachain auction atau permissioning; developer launch sovereign chain via Cosmos SDK + Ignite CLI; connect via IBC setelah relay path established
+· Evidence: 100+ chains di Map of Zones; Ignite CLI untuk scaffolding [Map of Zones, https://mapofzones.com/; Ignite CLI, https://github.com/ignite/cli]
+· Supporting Dataset: Phase 7 Ecosystem Position, Phase 7 Developer Ecosystem, Phase 3 History EV-016, EV-017, EV-020, EV-022, EV-024, EV-026, EV-028
+
+Pola 2: IBC sebagai Universal Interoperability Standard — Integrasi ke Non-Cosmos Chains via IBC-RS, Light Clients
+· Decision Pattern: IBC protocol designed chain-agnostic; IBC-RS (Rust) untuk Substrate/Solana; light client implementations untuk Ethereum (via bridges), dll
+· Evidence: IBC-RS GitHub; Axelar/Wormhole/Gravity Bridge untuk wrapped ATOM; Celestia DA via IBC [IBC-RS GitHub, https://github.com/informalsystems/ibc-rs; Map of Zones, https://mapofzones.com/; Etherscan Wrapped ATOM, https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337]
+· Supporting Dataset: Phase 7 External Dependencies, Phase 7 Major Integrations Wrapped ATOM Bridge
+
+Pola 3: Core Infrastructure Provided by Dedicated Contributor Companies (Informal Systems, Interchain GmbH, Strangelove, Hypha, Notional) — Not Single Entity
+· Decision Pattern: Pengembangan protokol inti (SDK, CometBFT, IBC-Go, Gaia) didistribusikan ke 5+ companies yang dikontrak Interchain GmbH; redundancy dan specialisasi
+· Evidence: Core contributor list di GOVERNANCE.md; GitHub contributor graphs [Cosmos SDK Governance, https://github.com/cosmos/cosmos-sdk/blob/main/GOVERNANCE.md; GitHub Contributors, https://github.com/cosmos/cosmos-sdk/graphs/contributors]
+· Supporting Dataset: Phase 2 Entity Companies, Phase 7 Infrastructure Providers
+
+Pola 4: Wallet & Tooling Ecosystem Dibangun oleh Third Parties (Keplr, Leap, Cosmostation, Mintscan, Hermes) — Protocol Provides Standards
+· Decision Pattern: Protocol tidak build wallet/explorer; provide standards (CosmJS, ADR-001, IBC specs); ecosystem builds UX layer
+· Evidence: Keplr, Leap, Cosmostation wallets; Mintscan explorer; Hermes relayer; CosmJS SDK [Keplr, https://www.keplr.app/; Leap, https://www.leapwallet.io/; Mintscan, https://www.mintscan.io/; Hermes, https://github.com/informalsystems/hermes; CosmJS, https://github.com/cosmos/cosmjs]
+· Supporting Dataset: Phase 7 Wallet Ecosystem, Phase 7 Infrastructure Providers, Phase 7 Developer Ecosystem
+
+Pola 5: DeFi & Application Layer Dibangun sebagai Sovereign Chains (Osmosis, dYdX, Injective, Neutron) — Not Smart Contracts on Hub
+· Decision Pattern: Aplikasi kompleks (DEX, perp DEX, lending) deploy sebagai chain sendiri bukan contracts di Cosmos Hub; hub focused on security/interoperability
+· Evidence: Osmosis, dYdX, Injective, Neutron sebagai sovereign chains [Osmosis, https://osmosis.zone/; dYdX Chain, https://dydx.exchange/chain; Injective, https://injective.com/; Neutron, https://neutron.org/]
+· Supporting Dataset: Phase 7 Applications, Phase 3 History EV-016, EV-017, EV-024, EV-026
+
+Pola 6: Shared Security (Interchain Security) sebagai Opt-In Service untuk Consumer Chains — Not Mandatory
+· Decision Pattern: Consumer chain (Neutron, future Stride/Noble) pilih gunakan Hub validators; provider revenue share; v2 akan allow partial set security
+· Evidence: Interchain Security launch; Neutron first consumer; v2 roadmap [Interchain Security Launch, https://blog.cosmos.network/interchain-security-launch/; Interchain Security v2, https://blog.cosmos.network/interchain-security-v2/]
+· Supporting Dataset: Phase 3 History EV-025, EV-026, Phase 7 Major Integrations Interchain Security
+
+Governance Decision Pattern
+
+Pola 1: On-Chain Governance untuk Semua Protocol Upgrades — 19 Major Upgrades via Proposals
+· Decision Pattern: Setiap major upgrade (software, parameter, spending) melalui proposal on-chain: submit → deposit → voting → execution; no off-chain coordination untuk activation
+· Evidence: 19 upgrades via proposals; Mintscan proposals history [Gaia Releases, https://github.com/cosmos/gaia/releases; Mintscan Proposals, https://www.mintscan.io/cosmos/proposals]
+· Supporting Dataset: Phase 3 History EV-032, Phase 6 Token Governance
+
+Pola 2: Coin-Weighted Voting dengan Delegation Override — 1 Bonded ATOM = 1 Vote
+· Decision Pattern: Voting power berdasarkan bonded ATOM; delegator bisa override validator vote; quorum 33.4%, threshold 50%, veto 33.4%
+· Evidence: Gov module spec; Mintscan proposal voting results [Cosmos SDK Gov Module, https://github.com/cosmos/cosmos-sdk/tree/main/x/gov; Mintscan Proposals, https://www.mintscan.io/cosmos/proposals]
+· Supporting Dataset: Phase 6 Token Governance, Phase 3 History EV-027 (LSM proposal #848)
+
+Pola 3: Community Pool Spending via Governance Proposals — Treasury Managed On-Chain
+· Decision Pattern: Community Pool (funded by 2% tax on rewards + fees) dikelola via spend proposals; ICF treasury terpisah off-chain
+· Evidence: Distribution module; community pool spend proposals [Cosmos SDK Distribution, https://github.com/cosmos/cosmos-sdk/tree/main/x/distribution; Mintscan Proposals, https://www.mintscan.io/cosmos/proposals]
+· Supporting Dataset: Phase 5 Financial Revenue Model, Phase 6 Token Governance
+
+Pola 4: Multi-Level Governance — Protocol (On-Chain) + Core Contributor Coordination (Interchain GmbH) + Maintainer Councils (Per Repo)
+· Decision Pattern: On-chain untuk protocol params/upgrades; Interchain GmbH untuk roadmap coordination & funding allocation; per-repo maintainer councils untuk code merges/releases
+· Evidence: GOVERNANCE.md di cosmos-sdk, cometbft, ibc-go; Interchain GmbH role [Cosmos SDK Governance, https://github.com/cosmos/cosmos-sdk/blob/main/GOVERNANCE.md; CometBFT Governance, https://github.com/cometbft/cometbft/blob/main/GOVERNANCE.md; IBC-Go Governance, https://github.com/cosmos/ibc-go/blob/main/GOVERNANCE.md]
+· Supporting Dataset: Phase 2 Entity, Phase 4 Technology, Phase 7 Governance Ecosystem
+
+Pola 5: Parameter Changes via Governance — Inflation, Staking, IBC, LSM Params All Governable
+· Decision Pattern: Semua parameter kritis (inflation rate, bonded ratio target, LSM cap, IBC timeouts, validator set size) dapat diubah via proposal tanpa code change
+· Evidence: v18 Lambda tokenomics changes; LSM params; validator set size 180 via proposal [Gaia v18 Release, https://github.com/cosmos/gaia/releases/tag/v18.0.0; LSM Proposal #848, https://www.mintscan.io/cosmos/proposals/848; Mintscan Validators, https://www.mintscan.io/cosmos/validators]
+· Supporting Dataset: Phase 3 History EV-027, EV-029, Phase 6 Token Inflation
+
+Risk Response Pattern
+
+Pola 1: Coordinated Emergency Upgrade untuk Consensus Bug (CometBFT v0.37.x Chain Halt)
+· Decision Pattern: Bug di consensus engine → patch release (v0.37.2) → coordinated upgrade across affected chains → post-mortem published
+· Evidence: CometBFT v0.37.2 release; Informal Systems post-mortem; multiple chains upgraded [CometBFT v0.37.2, https://github.com/cometbft/cometbft/releases/tag/v0.37.2; Post-mortem, https://blog.informal.systems/cometbft-v0.37-postmortem/]
+· Trigger: Chain halt incident di multiple chains akibat evidence handling bug di v0.37.x (EV-038)
+· Response: Patch dalam hari; validator operators upgrade via Cosmovisor; post-mortem transparan
+· Result: Chain resumed; trust dalam upgrade process diperkuat; formal verification dipercepat
+· Supporting Dataset: Phase 3 History EV-038, Phase 4 Technology Audit History, Phase 7 Ecosystem Risks
+
+Pola 2: Post-Mortem & Formal Verification Investment Pasca Security Incident
+· Decision Pattern: Setiap security incident (chain halt, MEV exploit) → post-mortem publik → investasi formal verification/threshold encryption R&D
+· Evidence: CometBFT post-mortem; Osmosis MEV → FVE R&D; Informal Systems formal verification focus [Informal Systems Post-mortem, https://blog.informal.systems/cometbft-v0.37-postmortem/; Osmosis MEV Blog, https://blog.osmosis.zone/mev-protection/; Informal Systems Formal Verification, https://informal.systems/blog/ibc-formal-verification/]
+· Trigger: EV-038 (chain halt), EV-039 (Osmosis MEV)
+· Response: Publikasi post-mortem; R&D threshold encryption (FVE) di Osmosis; formal verification untuk CometBFT/IBC
+· Result: CometBFT safety proofs; Osmosis v15+ MEV protection features; IBC formally verified
+· Supporting Dataset: Phase 3 History EV-038, EV-039, Phase 4 Technology Audit History, Phase 7 Ecosystem Risks
+
+Pola 3: Regulatory Response — Legal Clarity + Continued Operations + No Token Changes
+· Decision Pattern: SEC enforcement actions vs exchanges (Binance, Kraken, Coinbase) aleging ATOM security → ICF statement ATOM utility token → no protocol changes → monitor litigation
+· Evidence: SEC complaints; ICF position; Robinhood delisting; Coinbase/Kraken remain listed [SEC vs Binance, https://www.sec.gov/litigation/complaints/2023-128.pdf; SEC vs Coinbase, https://www.sec.gov/litigation/complaints/2023-132.pdf; Robinhood Delist, https://robinhood.com/us/en/support/articles/changes-to-crypto-trading/]
+· Trigger: EV-034 (SEC enforcement 2023-2024 ongoing)
+· Response: ICF menegaskan ATOM sebagai utility token untuk staking/governance; no token redesign; exchanges US delist sebagian
+· Result: ATOM tetap listed di Coinbase, Kraken, Binance global; US liquidity constrained; litigation ongoing
+· Supporting Dataset: Phase 3 History EV-034, Phase 5 Financial Risk, Phase 8 Market Trading Markets
+
+Pola 4: Ecosystem Resilience via Sovereign Chain Isolation — Terra Collapse Tidak Mengerok Chain Lain
+· Decision Pattern: Terra (LUNA/UST) collapse $40B+ → hanya Terra chain affected; Cosmos Hub, Osmosis, dll berlanjut normal karena sovereign security models
+· Evidence: Terra collapse EV-033; other chains unaffected; ICF post-mortem [Terra Collapse, https://www.coingecko.com/en/coins/terra-luna; Cosmos Terra Post-mortem, https://blog.cosmos.network/terra-post-mortem/]
+· Trigger: EV-033 (Terra collapse Mei 2022)
+· Response: No cross-chain contagion; reputational damage mitigated via communication; app-chain thesis validated
+· Result: Ekosistem survive; new chains continue launching (Celestia, dYdX, Neutron, Namada 2023-2024)
+· Supporting Dataset: Phase 3 History EV-033, Phase 7 Ecosystem Risks, Phase 8 Market Timeline
+
+Pola 5: Validator Set Decentralization via Governance Parameter Increases — 100 → 180 Validators
+· Decision Pattern: Sentralisasi stake risk → governance proposal increase max validators → nakamoto coefficient improvement
+· Evidence: Validator set growth 100→180 via proposals; Mintscan validators [Mintscan Validators, https://www.mintscan.io/cosmos/validators; Mintscan Proposals, https://www.mintscan.io/cosmos/proposals]
+· Trigger: Centralization risk identified (top 10 validators ~30-40% stake)
+· Response: Governance proposals meningkatkan max validators bertahap
+· Result: 180 active validators; improved nakamoto coefficient; censorship resistance stronger
+· Supporting Dataset: Phase 3 History EV-036, Phase 6 Token Holder Distribution, Phase 7 Ecosystem Risks
+
+Recurring Behavioral Pattern
+
+Pola 1: Launch Testnet Adversarial (Game of Stakes) Sebelum Mainnet / Major Upgrade
+· Pattern: Sebelum mainnet 2019: Game of Stakes 2017-2018; sebelum IBC: extensive testnet; sebelum Interchain Security: testnet; sebelum CometBFT v1.0: testnet
+· Evidence: Game of Stakes series EV-007, EV-008; Gaia testnet EV-009; multiple testnets untuk upgrades [Phase 3 History EV-007, EV-008, EV-009]
+· Supporting Dataset: Phase 3 History EV-007, EV-008, EV-009
+
+Pola 2: Fork/Spin-Out Protokol dari Entitas Komersial ke Community Governance
+· Pattern: Tendermint Core → CometBFT (fork 2023); Tendermint Inc → Ignite (rebrand 2021); ICF holds trademarks; protokol jadi public good
+· Evidence: EV-018, EV-023; CometBFT organization; ICF trademark holder [Phase 3 History EV-018, EV-023, Phase 2 Entity]
+· Supporting Dataset: Phase 2 Entity, Phase 3 History EV-018, EV-023
+
+Pola 3: Major DeFi App Launch sebagai Sovereign Chain Bukan Smart Contract di Hub
+· Pattern: Osmosis (DEX), dYdX (perp), Injective (derivatives), Neutron (CosmWasm hub), Stride (liquid staking) — semua launch chain sendiri
+· Evidence: EV-016, EV-017, EV-020, EV-024, EV-026; 100+ sovereign chains [Phase 3 History, Phase 7 Applications]
+· Supporting Dataset: Phase 3 History EV-016, EV-017, EV-020, EV-024, EV-026, Phase 7 Applications
+
+Pola 4: Upgrade Protocol via On-Chain Governance Setiap 3-6 Bulan (19 Upgrades in 5 Years)
+· Pattern: Rata-rata ~3-4 major upgrades per tahun; semua via proposal; Cosmovisor automation
+· Evidence: 19 upgrades 2019-2024; Gaia releases timeline [Gaia Releases, https://github.com/cosmos/gaia/releases; Phase 3 History EV-032]
+· Supporting Dataset: Phase 3 History EV-032, Phase 4 Technology Development Framework
+
+Pola 5: New Primitives Diperkenalkan via Native Module Lalu Distandarisasi ke Ecosystem (IBC → LSM → PFM → ICA)
+· Pattern: IBC core → LSM native module → PFM middleware → ICA → semua jadi standard yang chain lain adopt
+· Evidence: EV-015 (IBC), EV-027 (LSM), EV-030 (PFM), ICA modules [Phase 3 History, Phase 4 Technology Core Components]
+· Supporting Dataset: Phase 3 History EV-015, EV-027, EV-030, Phase 4 Technology Core Components
+
+Strategic Trade-offs
+
+Trade-off 1: Sovereign Security vs Shared Security (Interchain Security Opt-In)
+· Decision: Memungkinkan sovereign validator set per chain sebagai default; Interchain Security sebagai opt-in service untuk chain yang mau shared security
+· Trade-off: Keamanan terfragmentasi (setiap chain bootstrap validator sendiri) ditukar dengan kebebasan chain mengontrol economics, governance, validator set sendiri; consumer chain bergantung pada Hub liveness
+· Evidence: 100+ sovereign chains; Interchain Security consumer chains opt-in; Interchain Security spec documents liveness dependency [Map of Zones, https://mapofzones.com/; Interchain Security Spec, https://github.com/cosmos/interchain-security]
+· Supporting Dataset: Phase 4 Technology Consensus Mechanism, Phase 7 Major Integrations Interchain Security, Phase 7 Ecosystem Risks
+
+Trade-off 2: Modular Architecture (Separate Repos) vs Monolithic Upgrade Coordination
+· Decision Pattern: CometBFT, Cosmos SDK, IBC-Go, Gaia, CosmWasm separate repos dengan release cycles sendiri; upgrade coordination via Cosmovisor dan governance proposals
+· Trade-off: Flexibilitas upgrade per layer (consensus bisa upgrade tanpa SDK change) ditukar dengan kompleksitas version matrix dan dependency management across repos
+· Evidence: Separate GitHub orgs (cosmos, cometbft, CosmWasm); version compatibility matrix; Cosmovisor [GitHub Organizations, Phase 4 Technology Current Technical Stack]
+· Supporting Dataset: Phase 4 Technology Core Components, Phase 4 Technology Development Framework, Phase 7 Developer Ecosystem
+
+Trade-off 3: Inflationary Token Model (No Hard Cap) vs Long-Term Value Accrual Certainty
+· Decision: Dynamic inflation 7-20% berbasis staking ratio; no max supply; v18 governance bisa ubah params
+· Trade-off: Staking yield sustainability dan security budget ditukar dengan ketidakpastian supply long-term dan selling pressure dari inflation; no fee burn mechanism
+· Evidence: Mint module params; v18 tokenomics changes; no burn [Cosmos SDK Mint Module, https://github.com/cosmos/cosmos-sdk/tree/main/x/mint; Gaia v18 Release, https://github.com/cosmos/gaia/releases/tag/v18.0.0]
+· Supporting Dataset: Phase 6 Token Supply, Phase 6 Token Inflation, Phase 3 History EV-029
+
+Trade-off 4: Light Client Verification (Trust-Minimized) vs Latency/Complexity
+· Decision: IBC menggunakan light client verification (Tendermint/CometBFT) bukan trusted relayers/validators; memerlukan relayer infrastructure dan ~2-5 block latency per hop
+· Trade-off: Trust-minimized security ditukar dengan latency lebih tinggi dan infrastruktur relayer yang kompleks; PFM (IBC v7) mitigate UX tapi tidak latency
+· Evidence: IBC light client spec; IBC latency analysis; PFM live [IBC Light Client Spec, https://github.com/cosmos/ibc/tree/main/spec/clients/ics-007-tendermint; IBC Latency, https://blog.informal.systems/ibc-latency/; IBC-Go v7, https://github.com/cosmos/ibc-go/releases/tag/v7.0.0]
+· Supporting Dataset: Phase 4 Technology Security Model, Phase 4 Technology Known Limitations, Phase 3 History EV-030
+
+Trade-off 5: Single Consensus Engine (CometBFT) for All Chains vs Diversity/Innovation Risk
+· Decision: 100+ chains menggunakan CometBFT; bug di consensus engine mempengaruhi seluruh ekosistem (v0.37.x chain halt)
+· Trade-off: Interoperability ease (same consensus = same light client = easy IBC) ditukar dengan systemic risk single point of failure di consensus layer
+· Evidence: EV-038 chain halt multiple chains; CometBFT adoption across ecosystem [Phase 3 History EV-038, Phase 7 Ecosystem Risks Single Infrastructure Dependency]
+· Supporting Dataset: Phase 3 History EV-038, Phase 7 Ecosystem Risks, Phase 4 Technology Consensus Mechanism
+
+Trade-off 6: ICF Treasury Dependency for Core Protocol Funding vs Sustainable Revenue Diversification
+· Decision: Core protocol development (SDK, CometBFT, IBC, Gaia) funded primarily via ICF grants from treasury (ATOM-heavy); no diversified revenue stream disclosed
+· Trade-off: Funding stability tergantung ATOM price dan ICF treasury management; no protocol-level revenue capture (fees go to validators/community pool)
+· Evidence: ICF Grants >$50M; no protocol revenue to foundation; ICF treasury composition undisclosed [ICF Grants, https://interchain.io/grants/; Phase 5 Financial Revenue Model, Phase 5 Financial Risk]
+· Supporting Dataset: Phase 5 Financial Funding History, Phase 5 Financial Dependencies, Phase 5 Financial Risk
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. Interoperabilitas trust-minimized (IBC) sebagai fondasi "Internet of Blockchains"
+2. Sovereign app-chain framework (Cosmos SDK) yang memberdayakan developer kontrol penuh
+3. Evolusi protokol melalui on-chain governance yang berkontinu dan transparent
+4. Keamanan ekonomis via PoS BFT (CometBFT) dengan formal verification
+5. Ekosistem permissionless di mana siapa saja bisa launch chain dan connect via IBC
+
+Cara Mengambil Keputusan:
+- Teknis: Modular design memungkinkan upgrade per layer; testnet adversarial sebelum mainnet; formal verification untuk consensus critical path
+- Governance: Semua parameter/upgrade via on-chain proposal (coin-weighted voting dengan delegation override); core contributor coordination via Interchain GmbH
+- Finansial: ICF treasury mendanai protokol inti via grants; app-chain companies raise VC terpisah; protocol revenue ke validators/community pool
+- Ekosistem: Standards-first approach (IBC specs, CosmJS, ADR); third-party builds UX/infrastructure; sovereign chains untuk aplikasi kompleks
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Kebutuhan interoperabilitas trust-minimized (mendorong IBC, light clients, PFM, ICA)
+2. Kebutuhan developer sovereignty (mendorong Cosmos SDK modular, Ignite CLI, sovereign chain model)
+3. Security incidents (mendorong formal verification, coordinated upgrades, post-mortems)
+4. Regulatory pressure (SEC enforcement → defensive positioning, no token changes)
+5. Governance legitimacy (semua major changes via on-chain proposals)
+
+Pola Evolusi:
+- 2014-2017: Research & fundraising (Tendermint BFT → Cosmos Whitepaper → ICO)
+- 2019-2021: Mainnet launch → IBC activation (Stargate) → ecosystem explosion (Osmosis, Injective)
+- 2021-2023: Infrastructure maturation (CometBFT fork, Interchain GmbH, Interchain Security, LSM)
+- 2023-2024: UX & composability (PFM multi-hop, IBC v7, CosmWasm maturity, 100+ chains)
+
+Kekuatan Utama:
+- IBC sebagai standard interoperabilitas paling battle-tested (live 2021, >$50B volume, 100+ chains)
+- Cosmos SDK framework paling mature untuk sovereign app-chains (100+ production chains)
+- On-chain governance yang terbukti work untuk 19 major upgrades tanpa hard fork kontroversial
+- CometBFT consensus engine dengan instant finality dan formal verification
+- Ecosystem permissionless dengan tooling lengkap (Ignite CLI, CosmJS, Hermes, wallets, explorers)
+
+Kelemahan Utama:
+- Systemic risk: single consensus engine (CometBFT) untuk seluruh ekosistem
+- ICF treasury dependency untuk core protocol funding (ATOM-concentrated, undisclosed diversification)
+- Regulatory overhang: SEC enforcement actions terhadap ATOM classification
+- Inflationary token model tanpa burn mechanism; long-term value accrual uncertain
+- Validator centralization: top 10 ~30-40% stake; exchange validators significant
+- Bridge risk: wrapped ATOM custody fragmented across multiple bridges
+- No unified cross-protocol market share metrics untuk IBC vs competitors
+
+Open Threads
+
+- Exact ICF treasury composition and diversification strategy — tidak dipublikasikan; hanya struktur yayasan diketahui (Phase 5 Financial Treasury, Phase 5 Financial Risk)
+- Precise legal relationship between ICF, Ignite (Tendermint Inc), Informal Systems, Interchain GmbH post-2021 restructuring — tidak sepenuhnya terdokumentasi publik (Phase 2 Entity, Phase 3 History EV-018, EV-019)
+- Team (Tendermint Inc/All in Bits) dan Ecosystem/Seed allocation vesting schedule actual implementation — whitepaper menyebut 2 tahun tapi genesis accounts tidak menggunakan vesting module (Phase 6 Token Vesting Schedule)
+- Interchain Security v2 (Partial Set Security, Opt-in Security) launch timeline dan consumer chain pipeline — roadmap only, no testnet date (Phase 3 History EV-025, Phase 7 Governance Ecosystem)
+- CometBFT adoption rate across non-Cosmos SDK chains (Celestia, dYdX, Namada, etc.) — no central registry tracking consensus engine versions per chain (Phase 7 Ecosystem Risks, Phase 4 Technology)
+- Wrapped ATOM bridge custody details per bridge (Gravity Bridge, Axelar, Wormhole, Celer) — bridge contract addresses, validator sets, upgradeability, audit status (Phase 7 Major Integrations Wrapped ATOM Bridge, Phase 7 Ecosystem Risks Bridge Dependency)
+- SEC case outcome timeline dan probability — ongoing litigation; no settlement/judgment date public; delisting risk untuk remaining US exchanges uncertain (Phase 3 History EV-034, Phase 5 Financial Risk, Phase 8 Market Trading Markets)
+- CosmWasm 2.0 roadmap dan release timeline (multi-contract atomic execution, better upgradeability) — tidak ada tanggal resmi (Phase 4 Technology Known Limitations, Phase 7 Developer Ecosystem)
+- ABCI++ adoption timeline dan production readiness — masih experimental, spec berubah cepat (Phase 4 Technology Known Limitations, Phase 4 Technology Technical Upgrade History)
+- ZK-light client untuk IBC (zkTendermint, zkIBC) progress — R&D stage, tidak ada testnet integration resmi (Phase 4 Technology Known Limitations, Phase 4 Technology Security Model)
+- Threshold encryption (FVE - Fair Validated Execution) di Osmosis deployment status — closed testnet, spec tidak publik lengkap (Phase 4 Technology Known Limitations, Phase 3 History EV-039)
+- Validator operator KYC/AML compliance status post-SEC enforcement — no public disclosure; some validators (Coinbase Cloud, Figment) regulated entities (Phase 7 Infrastructure Providers, Phase 8 Market Trading Markets)
+- Liquid staking provider market share (Stride stATOM vs pSTAKE stkATOM vs Quicksilver qATOM vs others) — on-chain balances observable tapi tidak di single dashboard (Phase 6 Token Utility LSM, Phase 7 Major Integrations LSM)
+- MEV extraction volume di Osmosis/dYdX/Injective dan FVE deployment status — Osmosis v15+ include features tapi no public MEV dashboard (Phase 4 Technology Known Limitations, Phase 3 History EV-039)
+- Cosmos Hub governance participation rate (voting turnout per proposal) — Mintscan shows per-proposal tapi tidak aggregated turnout trends (Phase 6 Token Governance, Phase 3 History EV-027)
+- Cross-chain TVL including IBC-bridged assets on destination chains — DefiLlama counts per-chain; double-counting risk; no net flow metric (Phase 8 Market Adoption Metrics, Phase 7 Ecosystem)

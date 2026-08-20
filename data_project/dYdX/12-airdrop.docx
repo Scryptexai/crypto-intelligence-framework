@@ -1,0 +1,149 @@
+PROJECT: dYdX
+
+STATUS AIRDROP
+
+Sudah dilakukan. dYdX mendistribusikan token governance DYDX (ERC-20) mulai TGE 3 Agustus 2021 melalui tiga mekanisme komunitas: retroactive mining 7,5% (75 juta DYDX) untuk pengguna historis, liquidity provider rewards 7,5%, dan trading rewards 25% (250 juta DYDX selama ~5 tahun, klaim mingguan via Merkle distributor); total alokasi komunitas 50% dari 1 miliar supply【Phase 6 — Distribution; Phase 6 — Vesting Schedule】(HIGH) [dYdX Blog Introducing the dYdX Token, https://dydx.exchange/blog/introducing-the-dydx-token].
+
+AIRDROP EVENTS
+
+AD-001: Retroactive Mining Rewards (Pengguna Historis v1/v2/v3)
+Tanggal: 2021-08-03 (TGE; airdrop 100% unlocked at claim)
+Tipe: Retroactive / Milestone-based, 5 tier alokasi
+Alokasi: 7,5% total supply (75.000.000 DYDX); terealisasi diklaim ~50.309.197 DYDX — sisa 24.690.803 DYDX tidak diklaim setelah Epoch 0 dan dipindahkan ke Community Treasury【Phase 6 — Distribution】(HIGH) [dYdX Foundation Introducing DYDX, https://www.dydx.foundation/blog/introducing-dydx-token]; [docs.dydx.community Token Allocation, https://docs.dydx.community/dydx/start-here/dydx-token-allocation] (MEDIUM)
+Penerima: Pengguna historis seluruh protokol dYdX (v1/v2/v3) yang mencapai milestone trading tertentu berdasarkan snapshot 26 Juli 2021 00:00 UTC; jumlah wallet penerima tidak dipublikasikan resmi (LOW)
+Nilai saat klaim: Tidak ditemukan untuk tanggal TGE 2021-08-03 di sumber terverifikasi yang dapat diakses; referensi terverifikasi terdekat: 12.98 USD (close hari pertama listing KuCoin, 2021-09-09 — KuCoin listing 37 hari setelah TGE) [KuCoin DYDX-USDT daily candle, https://www.kucoin.com/trade/DYDX-USDT] (MEDIUM)
+Kriteria: Lima tier alokasi berbasis penggunaan lintas protokol dYdX (volume/fee historis dan milestone) per snapshot 26 Juli 2021【Phase 3 — TGE & Airdrop event】(HIGH) [dYdX Foundation Introducing DYDX, https://www.dydx.foundation/blog/introducing-dydx-token]
+Anti-sybil: Akun yang teridentifikasi bot activity berspekulasi atas airdrop dieksklusi; pengguna di Amerika Serikat dan yurisdiksi terlarang tidak eligible (pembatasan ketersediaan protokol L2 dYdX di AS) (HIGH) [dYdX Foundation Introducing DYDX, https://www.dydx.foundation/blog/introducing-dydx-token]
+Terkait EV: EV TGE & Airdrop 2021-08-03
+Sitasi: Phase 3 TGE event; Phase 6 Distribution, Vesting Schedule (HIGH)
+
+AD-002: Trading Rewards (Epoch Mingguan v3 StarkEx)
+Tanggal: 2021-08 mulai — epoch mingguan, dihentikan bersama v3 (deprecated 2023-2024)
+Tipe: Activity-based / Trading rewards berkelanjutan
+Alokasi: 25% total supply (250.000.000 DYDX) — distribusi ~3,8 juta DYDX per bulan berbasis proporsi volume trading, memakai fungsi Cobb-Douglas untuk distribusi incremental lintas rentang likuiditas【Phase 6 — Distribution】(HIGH) [Enigma Securities DYDX research, https://enigma-securities.io/wp-content/uploads/2023/06/dydx-em.pdf] (MEDIUM)
+Penerima: Trader dan market maker aktif di v3 Layer 2 Perpetuals; klaim mingguan via Merkle distributor【Phase 3 — Trading Rewards event】(HIGH)
+Nilai saat klaim: Tidak berlaku (emisi mingguan berkelanjutan, harga mengikuti pasar saat klaim)
+Kriteria: Volume trading dan fee yang dibayar per epoch (formula resmi Trading Rewards) (HIGH) [dYdX Foundation Introducing DYDX, https://www.dydx.foundation/blog/introducing-dydx-token]
+Anti-sybil: Berbasis aktivitas trading nyata dengan fee riil; wash-trading mahal karena membayar fee (MEDIUM)
+Terkait EV: EV TGE & Airdrop; v3 rewards events
+Sitasi: Phase 3 Events; Phase 6 Distribution (HIGH)
+
+AD-003: Liquidity Provider Rewards
+Tanggal: 2021-08 mulai — linear ~5 tahun (2021-2026) sesuai vesting schedule
+Tipe: Liquidity mining berbasis formula kualitas pasar
+Alokasi: 7,5% total supply (75.000.000 DYDX) dengan formula rewarding uptime, two-sided depth, bid-ask spread, dan jumlah market yang didukung【Phase 6 — Distribution】(HIGH) [dYdX Foundation Introducing DYDX, https://www.dydx.foundation/blog/introducing-dydx-token]
+Penerima: Liquidity provider/market maker pada orderbook v3; jumlah tidak dipublikasikan resmi (LOW)
+Nilai saat klaim: Tidak berlaku (emisi linear berkelanjutan)
+Kriteria: Uptime, kedalaman dua sisi, spread, dan cakupan market per formula resmi (HIGH)
+Anti-sybil: Tidak relevan (berbasis kontribusi likuiditas terukur)
+Terkait EV: EV TGE & Airdrop
+Sitasi: Phase 6 Distribution (HIGH)
+
+CONTEXT SAAT KEPUTUSAN
+
+Kondisi saat keputusan token/airdrop (pertengahan 2021):
+- Kondisi pasar: Bull market 2021; kompetisi derivatives DEX memanas (Perpetual Protocol, GMX awal, FTX/CEX dominan); "DeFi governance token + rewards" menjadi pola standar【Phase 8 — Market Timeline】(HIGH)
+- Posisi project: dYdX v3 di StarkEx L2 live sejak April 2021 dengan pertumbuhan volume tercepat di antara DEX perpetual; belum bertoken sementara kompetitor mulai bertoken【Phase 3 — v3 Mainnet Launch】(HIGH)
+- Kompetitor terdekat: Perpetual Protocol (PERP sudah live), GMX (Jul 2021), CEX (FTX/Binance) sebagai benchmark likuiditas【Phase 8 — Competitor Landscape】(HIGH)
+- Trigger: Kebutuhan insentif retensi trader/LP dan legitimasi governance sebelum kompetisi mengunci pangsa pasar【Phase 9 — Decision Timeline】(HIGH)
+
+TRIGGER DAN ALTERNATIF
+
+Trigger utama: Pertumbuhan volume v3 yang perlu dikunci melalui insentif token sebelum kompetitor derivatives lain matang【Phase 9 — Decision Timeline】(HIGH).
+Alternatif tidak diambil:
+- Public sale: tidak dilakukan — distribusi komunitas via airdrop/rewards tanpa penggalangan dana publik (HIGH) [Phase 5 — Token Sale】
+- Token dengan fee-sharing langsung ke holder: tidak dipilih — DYDX memberi governance + trading fee discounts, bukan dividen fee; value accrual eksplisit ditunda ke keputusan governance masa depan (HIGH) [Enigma Securities research, https://enigma-securities.io/wp-content/uploads/2023/06/dydx-em.pdf] (MEDIUM)
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Menyelaraskan insentif trader, liquidity provider, dan partner melalui governance token; 50% supply untuk komunitas (HIGH) [dYdX Foundation Introducing DYDX, https://www.dydx.foundation/blog/introducing-dydx-token]
+- Retroactive mining mengakui pengguna historis semua versi protokol (HIGH) [sumber sama】
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Struktur reward berbasis volume (Cobb-Douglas) dirancang mempertahankan dominasi pangsa pasar perpetuals, bukan sekadar apresiasi pengguna — insentif berperilaku seperti subsidi akuisisi berulang — HIPOTESIS (MEDIUM) [Enigma Securities research, https://enigma-securities.io/wp-content/uploads/2023/06/dydx-em.pdf]
+- Eksklusi AS menjaga opsi regulasi dYdX Trading Inc. (Delaware) sambil memusatkan distribusi pada yurisdiksi ramah — HIPOTESIS (MEDIUM) [dYdX Foundation Introducing DYDX】
+
+OUTCOME PER POV
+
+POV Founder (Antonio Juliano, dYdX Trading Inc.): Sukses
+- Jangka pendek: TGE + program reward mendorong volume v3 menjadi DEX perpetual terbesar 2021-2022 (HIGH) [Phase 8 — Market Timeline】
+- Jangka panjang: Migrasi ambisius ke dYdX Chain (Cosmos appchain) Oktober 2023 membuktikan kapasitas eksekusi; namun volume dan relevansi menurun setelah era insentif (MEDIUM) [Phase 3 — dYdX Chain Mainnet】
+- Dasar: Phase 3 Events; Phase 8 Market Timeline (HIGH/MEDIUM)
+
+POV VC (Polychain, a16z, 3AC, dkk.): Sukses
+- Jangka pendek: Alokasi investor 21% (210 juta DYDX) dengan 1-year cliff (berakhir ~Agustus 2022); harga puncak 27.86 USD (29 Sep 2021) terjadi sebelum cliff berakhir — paper return maksimal pada window tersebut [KuCoin DYDX-USDT, https://www.kucoin.com/trade/DYDX-USDT] (MEDIUM)
+- Jangka panjang: Harga turun tajam ke ~1-2 USD pada 2023 (era bear + unlock), tetapi entry pra-2021 tetap menguntungkan pada sebagian besar window; 3AC kolaps 2022 menambah tekanan jual dari estate (MEDIUM) [Phase 6 — Holder Distribution】
+- Dasar: Phase 6 Distribution, Vesting Schedule; KuCoin price history (HIGH/MEDIUM)
+
+POV Retail (Trader penerima retro + trading rewards): Sebagian
+- Jangka pendek: Penerima retro mendapat DYDX 100% unlock di TGE; trader aktif menerima ~3,8 juta DYDX/bulan melalui epoch mingguan — imbal hasil riil berbasis aktivitas (HIGH) [Phase 6 — Distribution; Enigma research】
+- Jangka panjang: Tanpa fee-sharing, nilai jangka panjang bergantung apresiasi harga; harga turun >90% dari puncak dalam 12-18 bulan setelah TGE — pemegang pasif merugi besar [KuCoin DYDX-USDT, https://www.kucoin.com/trade/DYDX-USDT] (MEDIUM)
+- Dasar: Phase 6 Distribution; KuCoin price history (HIGH/MEDIUM)
+
+POV Community (DAO & Community Treasury): Sukses
+- Jangka pendek: Community Treasury 50 juta DYDX (5%) + governance live sejak TGE (HIGH) [Phase 6 — Distribution】
+- Jangka panjang: Unclaimed retro 24,69 juta DYDX mengalir ke treasury, memperkuat kas komunitas; governance aktif mengarahkan migrasi v4 (MEDIUM) [docs.dydx.community, https://docs.dydx.community/dydx/start-here/dydx-token-allocation】
+- Dasar: Phase 6 Governance; docs.dydx.community (HIGH/MEDIUM)
+
+POV Developer (Integrator & kontributor open-source): Sebagian
+- Jangka pendek: Grants Foundation (7% alokasi) tersedia; dokumentasi dan SDK v3 matang (HIGH) [Phase 6 — Distribution】
+- Jangka panjang: v4 dirilis sebagai open-source penuh dan menjadi basis dYdX Chain — peluang build meluas pasca-2023, namun nilai insentif era v3 menyusut seiring deprecated-nya v3 (MEDIUM) [Phase 3 — dYdX Chain; Phase 7 — Developer Ecosystem】
+- Dasar: Phase 6 Distribution; Phase 7 Developer Ecosystem (HIGH/MEDIUM)
+
+POV Institution (Exchange, market maker profesional): Sebagian
+- Jangka pendek: Listing CEX serentak pada TGE; LP rewards formula menarik market maker profesional sejak awal (HIGH) [Phase 3 — TGE & Airdrop】
+- Jangka panjang: Eksklusi AS dan struktur tanpa fee-sharing membatasi kasus penggunaan institusional jangka panjang; migrasi v4 menambah kompleksitas operasional (MEDIUM) [Phase 4 — Technology; Phase 8 — Trading Markets】
+- Dasar: Phase 3 Listing; Phase 8 Trading Markets (HIGH/MEDIUM)
+
+POV Validator: Tidak relevan
+- Pada era TGE 2021 dYdX v3 berjalan di StarkEx dengan operator terpusat — tidak ada validator set; validator baru ada setelah dYdX Chain (CometBFT) mainnet Oktober 2023, di luar jendela airdrop awal (HIGH) [Phase 4 — Consensus Mechanism】
+
+POV Builder (Market maker & protokol turunan): Sebagian
+- Jangka pendek: Formula LP rewards (uptime, depth, spread, market coverage) memberi pendapatan terukur bagi builder likuiditas (HIGH) [Phase 6 — Distribution】
+- Jangka panjang: Keberlanjutan reward berakhir bersama v3 (deprecated); builder harus bermigrasi ke dYdX Chain untuk insentif lanjutan (MEDIUM) [Phase 3 — v3 deprecated】
+- Dasar: Phase 6 Distribution; Phase 3 Events (HIGH/MEDIUM)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 12.98 USD (2021-09-09) [KuCoin DYDX-USDT daily candle close — candle terverifikasi terdekat; KuCoin baru listing 9 Sep 2021 sehingga tanggal TGE 2021-08-03 tidak tercakup, https://www.kucoin.com/trade/DYDX-USDT] (MEDIUM)
+Harga +30 hari: 12.98 USD (2021-09-09) [KuCoin DYDX-USDT daily candle close — titik +30 hari sesungguhnya (2021-09-02) jatuh sebelum listing KuCoin; candle terverifikasi terdekat dipakai, https://www.kucoin.com/trade/DYDX-USDT] (MEDIUM)
+Harga +90 hari: 17.27 USD (2021-11-01) [KuCoin DYDX-USDT daily candle close, https://www.kucoin.com/trade/DYDX-USDT] (MEDIUM)
+Harga puncak 12 bulan pertama: 27.86 USD (2021-09-29) [KuCoin DYDX-USDT daily candle high; scan mingguan 12 bulan tidak menemukan high lebih tinggi, https://www.kucoin.com/trade/DYDX-USDT] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan volume perdagangan sebelum vs sesudah distribusi: Program trading rewards (~3,8 juta DYDX/bulan) berkorelasi dengan pertumbuhan volume v3 menjadi DEX perpetual terbesar 2021-2022; angka volume harian pre/post tidak diekstrak di fase sebelumnya (HIGH) [Phase 8 — Market Timeline】
+Jumlah alamat pemegang token (unique holders): Tidak ditemukan (jumlah penerima retro tidak dipublikasikan; hanya total klaim ~50,3 juta DYDX yang terdokumentasi) (LOW)
+Jumlah alamat aktif harian sebelum vs sesudah: Tidak ditemukan (tidak ada dashboard publik pre/post TGE di fase sebelumnya) (LOW)
+Konsentrasi kepemilikan: Team 21% + Investors 21% dengan cliff 1 tahun; Community 50% termasuk treasury — sirkulasi awal didominasi airdrop 7,5% + reward berjalan (HIGH) [Phase 6 — Distribution】
+Tingkat partisipasi staking: Tidak berlaku (DYDX era ERC-20 tidak memiliki staking native; staking validator baru ada di dYdX Chain pasca-2023)【Phase 6 — Utility】(HIGH)
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat (klaim vs jual dalam 30 hari), tidak tersedia di sumber publik.
+Harga pada tanggal klaim aktual (2021-08-03) tidak terverifikasi dari sumber yang dapat diakses — titik referensi memakai candle pertama KuCoin (2021-09-09); selisih 37 hari adalah keterbatasan data, bukan ketiadaan pasar (DYDX diperdagangkan di exchange lain sejak TGE).
+Jumlah wallet penerima retroactive tidak dipublikasikan resmi.
+
+FARMING DAN SYBIL
+
+Eksklusi eksplisit akun bot yang berspekulasi atas airdrop dan pembatasan yurisdiksi AS menjadi mekanisme anti-sybil utama; kriteria berbasis fee riil dan milestone historis membuat farming pasca-pengumuman mahal (fee nyata harus dibayar), namun trading rewards berbasis volume tetap rentan wash-trading berbiaya fee — pola yang umum pada era reward DEX 2021-2022 (MEDIUM) [dYdX Foundation Introducing DYDX, https://www.dydx.foundation/blog/introducing-dydx-token]; [Enigma Securities research, https://enigma-securities.io/wp-content/uploads/2023/06/dydx-em.pdf]
+
+PROSPEK
+
+Metrik yang terpenuhi: Dominasi pangsa pasar perpetuals DEX 2021-2023; distribusi reward mingguan fungsional; treasury komunitas terisi (termasuk unclaimed 24,69 juta DYDX) (HIGH)
+Metrik yang tidak terpenuhi: Retensi nilai token pasca-insentif (depresiasi >90% dari puncak dalam 18 bulan); value accrual langsung ke holder (fee-sharing tidak pernah diaktifkan di era v3) (HIGH)
+Sinyal ke depan: Utilitas DYDX di dYdX Chain (staking validator, fee arrangement baru); apakah volume v4 menjustifikasi emisi lanjutan (MEDIUM)
+Penilaian: Airdrop dYdX adalah distribusi berbasis aktivitas paling disiplin di eranya (fee riil sebagai anti-sybil, tiga kanal distribusi terpisah) — sukses mengunci pangsa pasar, tetapi ketiadaan value accrual membuat retensi harga bergantung sepenuhnya pada subsidi emisi (MEDIUM)
+
+PELAJARAN LINTAS PROJECT
+
+Reward berbasis fee/volume riil menghasilkan distribusi yang sulit di-sybil namun berperilaku sebagai subsidi berulang: volume bertahan selama emisi berjalan, lalu menyusut ketika insentif berhenti (pola sama terlihat lintas DEX era 2021).
+Unclaimed allocation yang kembali ke treasury (24,69 juta DYDX) adalah desain kebersihan yang jarang — mencegah supply mengambang tak bertuan dan memperkuat kas komunitas.
+Token governance tanpa fee-sharing memisahkan "imbal hasil aktivitas" (reward) dari "imbal hasil kepemilikan" (apresiasi) — pemegang pasif menanggung risiko penuh tanpa arus kas, pola yang berulang memicu kekecewaan retail lintas project.
+
+OPEN THREADS
+
+- Verifikasi jumlah wallet penerima retroaktif (on-chain claimant count Merkle distributor).
+- Harga hari TGE aktual (3 Agustus 2021) dari arsip exchange yang listing hari pertama (di luar sumber yang diakses riset ini).
+- Dampak unlock investor Agustus 2022 terhadap distribusi holder (on-chain transfer analysis).

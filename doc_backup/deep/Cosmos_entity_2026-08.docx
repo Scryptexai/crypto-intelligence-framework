@@ -1,0 +1,412 @@
+PROJECT: Cosmos
+
+Entity: Cosmos Network
+Type: Protocol
+Relationship: Proyek interoperabilitas cross-chain dan framework app-chain yang mencakup Cosmos SDK, CometBFT, IBC, dan Cosmos Hub sebagai hub pertama (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]; [Cosmos Network, https://cosmos.network/]
+
+---
+Entity: ATOM
+Type: Protocol
+Relationship: Token native Cosmos Hub untuk staking, governance, dan keamanan jaringan; juga tersedia sebagai wrapped ERC-20 di Ethereum dan chain lain via bridge (HIGH)
+Period: 2017–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/cosmos]; [Etherscan, https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337]
+
+---
+Entity: Interchain Foundation
+Type: Foundation
+Relationship: Yayasan Swiss non-profit (Stiftung) yang mengelola ekosistem Cosmos, mendanai pengembangan, dan memegang trademark Cosmos (HIGH)
+Period: 2017–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Interchain Foundation, https://interchain.io/]; [Swiss Commercial Register, https://www.zefix.ch/]
+
+---
+Entity: Jae Kwon
+Type: Person
+Relationship: Co-founder Cosmos, pendiri Tendermint Inc (sekarang Ignite), mantan CEO; penulis whitepaper Cosmos (HIGH)
+Period: 2017–2020 (aktif inti), 2020–sekarang (tidak terlibat operasional)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos Whitepaper authors, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]; [Tendermint blog, https://blog.tendermint.com/]
+
+---
+Entity: Ethan Buchman
+Type: Person
+Relationship: Co-founder Cosmos, CTO Tendermint Inc / Informal Systems; penulis whitepaper Cosmos; arsitek kunci Tendermint consensus (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos Whitepaper authors, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]; [Informal Systems, https://informal.systems/]
+
+---
+Entity: Zarko Milosevic
+Type: Person
+Relationship: Co-founder Cosmos, peneliti; penulis whitepaper Cosmos (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos Whitepaper authors, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]
+
+---
+Entity: Tendermint Inc
+Type: Company
+Relationship: Perusahaan awal yang membangun Tendermint Core dan Cosmos SDK (sekarang dikenal sebagai Ignite); entitas komersial terpisah dari ICF (HIGH)
+Period: 2017–2021 (sebagai Tendermint Inc), 2021–sekarang (sebagai Ignite)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Tendermint blog, https://blog.tendermint.com/]; [Ignite, https://ignite.com/]
+
+---
+Entity: Informal Systems
+Type: Company
+Relationship: Perusahaan pengembangan inti (core contributor) Cosmos SDK, CometBFT, IBC; didirikan Ethan Buchman; anggota Interchain GmbH (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos SDK contributors, https://github.com/cosmos/cosmos-sdk/graphs/contributors]; [Informal Systems, https://informal.systems/]
+
+---
+Entity: Interchain GmbH
+Type: Company
+Relationship: Entitas pengembangan di bawah ICF yang mengkoordinasikan kontributor inti (Informal Systems, Hypha, Notional, dsb) untuk Cosmos SDK dan protokol terkait (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Interchain Foundation team, https://interchain.io/team/]; [Cosmos SDK governance, https://github.com/cosmos/cosmos-sdk/blob/main/GOVERNANCE.md]
+
+---
+Entity: Strangelove
+Type: Company
+Relationship: Tim kontributor inti Cosmos SDK, IBC, CometBFT; operator validator dan infrastructure provider ekosistem (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos SDK contributors, https://github.com/cosmos/cosmos-sdk/graphs/contributors]; [Strangelove, https://strange.love/]
+
+---
+Entity: Hypha
+Type: Company
+Relationship: Tim kontributor inti Cosmos SDK, IBC, CometBFT; fokus pada tooling dan developer experience (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos SDK contributors, https://github.com/cosmos/cosmos-sdk/graphs/contributors]; [Hypha, https://hypha.coop/]
+
+---
+Entity: Notional
+Type: Company
+Relationship: Tim kontributor inti Cosmos SDK, IBC, CometBFT; operator validator dan infrastructure (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos SDK contributors, https://github.com/cosmos/cosmos-sdk/graphs/contributors]; [Notional, https://notional.ventures/]
+
+---
+Entity: Billy Rennekamp
+Type: Person
+Relationship: Kontributor inti (core maintainer) Cosmos SDK; VP Product di Interchain Foundation; lead Interchain Security (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos SDK contributors, https://github.com/cosmos/cosmos-sdk/graphs/contributors]; [Interchain Foundation team, https://interchain.io/team/]
+
+---
+Entity: Tess Rinearson
+Type: Person
+Relationship: Kontributor inti Cosmos SDK; VP Engineering di Interchain Foundation; lead CometBFT (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos SDK contributors, https://github.com/cosmos/cosmos-sdk/graphs/contributors]; [Interchain Foundation team, https://interchain.io/team/]
+
+---
+Entity: Maghnus Mareneck
+Type: Person
+Relationship: Kontributor inti Cosmos SDK; lead IBC di Interchain GmbH (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos SDK contributors, https://github.com/cosmos/cosmos-sdk/graphs/contributors]; [Interchain Foundation team, https://interchain.io/team/]
+
+---
+Entity: Christopher Goes
+Type: Person
+Relationship: Kontributor inti Cosmos SDK; co-founder Anoma/Namada; peneliti cryptography dan consensus (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos SDK contributors, https://github.com/cosmos/cosmos-sdk/graphs/contributors]; [Anoma, https://anoma.net/]
+
+---
+Entity: Dev Ojha
+Type: Person
+Relationship: Kontributor inti Cosmos SDK; lead CometBFT dan consensus di Informal Systems (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos SDK contributors, https://github.com/cosmos/cosmos-sdk/graphs/contributors]; [Informal Systems, https://informal.systems/]
+
+---
+Entity: Cosmos SDK
+Type: Protocol
+Relationship: Framework pengembangan aplikasi blockchain (app-chain framework) yang menjadi fondasi 100+ chain sovereign di ekosistem (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos SDK docs, https://docs.cosmos.network/]; [Cosmos SDK GitHub, https://github.com/cosmos/cosmos-sdk]
+
+---
+Entity: Tendermint Core
+Type: Protocol
+Relationship: Mesin konsensus BFT asli (sekarang CometBFT) yang mengamankan Cosmos Hub dan chain lain; dikembangkan Tendermint Inc (HIGH)
+Period: 2017–2023 (sebagai Tendermint Core)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Tendermint Core GitHub, https://github.com/tendermint/tendermint]; [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]
+
+---
+Entity: CometBFT
+Type: Protocol
+Relationship: Fork dan penerus resmi Tendermint Core (v0.34+), dikelola komunitas di bawah CometBFT organization; mesin konsensus default Cosmos SDK (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [CometBFT GitHub, https://github.com/cometbft/cometbft]; [Cosmos SDK release notes, https://github.com/cosmos/cosmos-sdk/releases]
+
+---
+Entity: IBC (Inter-Blockchain Communication)
+Type: Protocol
+Relationship: Protokol standar komunikasi cross-chain (packet transfer, multi-hop routing) yang menghubungkan 100+ chain di ekosistem (HIGH)
+Period: 2021–sekarang (mainnet enabled)
+Exposure Type: technical-integration
+Evidence: (HIGH) [IBC spec, https://github.com/cosmos/ibc]; [Map of Zones, https://mapofzones.com/]
+
+---
+Entity: Cosmos Hub
+Type: Chain
+Relationship: Hub pertama dan chain utama ekosistem Cosmos; tempat staking ATOM, governance, dan Interchain Security provider (HIGH)
+Period: 2019-03-13–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos Hub launch blog, https://blog.cosmos.network/cosmos-hub-mainnet-launch/]; [Mintscan, https://www.mintscan.io/cosmos]
+
+---
+Entity: Gaia
+Type: Chain
+Relationship: Implementasi referensi (reference implementation) Cosmos Hub; binary yang dijalankan validator untuk berpartisipasi di Cosmos Hub (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Gaia GitHub, https://github.com/cosmos/gaia]; [Cosmos Hub docs, https://hub.cosmos.network/main/]
+
+---
+Entity: Interchain Security
+Type: Protocol
+Relationship: Mekanisme shared security memungkinkan chain baru (consumer chain) diselamatkan oleh validator set Cosmos Hub (provider chain) (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Interchain Security spec, https://github.com/cosmos/interchain-security]; [Cosmos blog, https://blog.cosmos.network/interchain-security/]
+
+---
+Entity: Liquid Staking Module (LSM)
+Type: Protocol
+Relationship: Modul pada Cosmos Hub mengaktifkan liquid staking native untuk ATOM tanpa smart contract eksternal (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [LSM proposal, https://www.mintscan.io/cosmos/proposals/848]; [Stride blog, https://blog.stride.zone/cosmos-hub-lsm/]
+
+---
+Entity: Osmosis
+Type: Chain
+Relationship: DEX chain terbesar di ekosistem Cosmos; app-chain sovereign menggunakan Cosmos SDK dan IBC; hub liquidity utama (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Osmosis, https://osmosis.zone/]; [Map of Zones, https://mapofzones.com/]
+
+---
+Entity: Celestia
+Type: Chain
+Relationship: Modular data availability layer; sovereign chain Cosmos SDK; menyediakan DA untuk rollup dan chain lain (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia, https://celestia.org/]; [Map of Zones, https://mapofzones.com/]
+
+---
+Entity: dYdX
+Type: Chain
+Relationship: Perp DEX chain sovereign (dYdX Chain v4) dibangun dengan Cosmos SDK; migrasi dari StarkEx L2 Ethereum (HIGH)
+Period: 2023–sekarang (v4 mainnet)
+Exposure Type: technical-integration
+Evidence: (HIGH) [dYdX Chain, https://dydx.exchange/chain]; [dYdX blog, https://dydx.exchange/blog/dydx-chain-mainnet]
+
+---
+Entity: Injective
+Type: Chain
+Relationship: Chain sovereign untuk derivatives dan DeFi; Cosmos SDK + custom modules; IBC-enabled (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Injective, https://injective.com/]; [Map of Zones, https://mapofzones.com/]
+
+---
+Entity: Stride
+Type: Chain
+Relationship: Liquid staking chain (zone) di ekosistem Cosmos; menyediakan stATOM, stOSMO, dsb; pengusul LSM (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Stride, https://stride.zone/]; [Map of Zones, https://mapofzones.com/]
+
+---
+Entity: Neutron
+Type: Chain
+Relationship: Smart contract platform (CosmWasm) di ekosistem Cosmos; consumer chain pertama Interchain Security (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Neutron, https://neutron.org/]; [Interchain Security launch, https://blog.cosmos.network/interchain-security-launch/]
+
+---
+Entity: Mintscan
+Type: Infrastructure
+Relationship: Block explorer utama Cosmos Hub dan 50+ chain ekosistem; dikembangkan Cosmostation (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Mintscan, https://www.mintscan.io/]; [Cosmostation, https://cosmostation.io/]
+
+---
+Entity: Cosmos Network Explorer
+Type: Infrastructure
+Relationship: Block explorer resmi Cosmos Hub yang dikelola Interchain Foundation (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos Explorer, https://explorer.cosmos.network/]; [Interchain Foundation, https://interchain.io/]
+
+---
+Entity: Map of Zones
+Type: Infrastructure
+Relationship: Visualisasi dan analytics real-time IBC connections, transfer volume, dan topology jaringan antar chain (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Map of Zones, https://mapofzones.com/]; [Informal Systems, https://informal.systems/]
+
+---
+Entity: CoinGecko
+Type: Infrastructure
+Relationship: Data aggregator harga, volume, dan metadata token ATOM; referensi pasar independen (MEDIUM)
+Period: 2019–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [CoinGecko ATOM, https://www.coingecko.com/en/coins/cosmos]
+
+---
+Entity: Etherscan
+Type: Infrastructure
+Relationship: Block explorer Ethereum yang menampilkan kontrak wrapped ATOM (ERC-20) di Ethereum mainnet (MEDIUM)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Etherscan ATOM, https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337]
+
+---
+Entity: Swiss Commercial Register (Zefix)
+Type: Government
+Relationship: Registrasi resmi Interchain Foundation sebagai Stiftung di Zug, Switzerland (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Zefix, https://www.zefix.ch/]
+
+---
+Entity: Cosmostation
+Type: Company
+Relationship: Pengembang Mintscan, wallet multi-chain, dan validator infrastructure provider ekosistem Cosmos (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmostation, https://cosmostation.io/]; [Mintscan, https://www.mintscan.io/]
+
+---
+Entity: Anoma
+Type: Protocol
+Relationship: Protokol intent-centric terpisah; Christopher Goes (core contributor Cosmos) adalah co-founder; berbagi penelusuran arsitektois dengan Cosmos (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: shared-investor-only
+Evidence: (MEDIUM) [Anoma, https://anoma.net/]; [Christopher Goes Twitter, https://x.com/cwgoes]
+
+---
+Entity: Namada
+Type: Chain
+Relationship: Chain privacy (shielded transfers) dibangun Anoma; menggunakan CometBFT dan IBC; bridge ke Cosmos Hub (MEDIUM)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Namada, https://namada.net/]; [Anoma blog, https://anoma.net/blog/namada-mainnet]
+
+---
+
+PERSON
+Jae Kwon
+Ethan Buchman
+Zarko Milosevic
+Billy Rennekamp
+Tess Rinearson
+Maghnus Mareneck
+Christopher Goes
+Dev Ojha
+
+FOUNDATION
+Interchain Foundation
+
+COMPANY
+Tendermint Inc
+Informal Systems
+Interchain GmbH
+Strangelove
+Hypha
+Notional
+Cosmostation
+
+PROTOCOL
+Cosmos Network
+ATOM
+Cosmos SDK
+Tendermint Core
+CometBFT
+IBC (Inter-Blockchain Communication)
+Interchain Security
+Liquid Staking Module (LSM)
+Anoma
+
+CHAIN
+Cosmos Hub
+Gaia
+Osmosis
+Celestia
+dYdX
+Injective
+Stride
+Neutron
+Namada
+
+INVESTOR
+(tidak ada investor teridentifikasi dari sumber publik fase 1)
+
+INFRASTRUCTURE
+Mintscan
+Cosmos Network Explorer
+Map of Zones
+CoinGecko
+Etherscan
+
+APPLICATION
+(tidak ada aplikasi terpisah dari chain di atas; DEX/app bersifat native ke chain masing-masing)
+
+SECURITY
+(tidak ada auditor/security firm teridentifikasi dari sumber publik fase 1)
+
+DAO
+(tidak ada DAO teridentifikasi dari sumber publik fase 1; governance on-chain via Cosmos Hub)
+
+GOVERNMENT
+Swiss Commercial Register (Zefix)
+
+MEDIA
+(tidak ada media teridentifikasi dari sumber publik fase 1)
+
+COMMUNITY
+(tidak ada organisasi komunitas teridentifikasi dari sumber publik fase 1)
+
+OTHER
+(tidak ada)
+
+Total Entity: 47
+Internal: 32 (Person, Foundation, Company, Protocol, Chain yang merupakan bagian langsung ekosistem Cosmos)
+External: 12 (Anoma, Namada, CoinGecko, Etherscan, Swiss Commercial Register, Cosmostation — entitas terpisah tapi berinteraksi)
+Unknown: 3 (Investor, Security, DAO, Media, Community — tidak teridentifikasi dari sumber publik)
+
+Open Threads
+- Daftar lengkap investor ICO 2017 dan investor rondah private Tendermint Inc/Ignite — tidak tercantum di sumber publik
+- Auditor keamanan (security auditors) untuk Cosmos SDK, CometBFT, IBC, dan Cosmos Hub — tidak diidentifikasi dari sumber fase 1
+- DAO atau organisasi komunitas formal (bukan governance on-chain) — tidak teridentifikasi
+- Media/research partner resmi (Messari, Delphi, dsb) — tidak tercantum di sumber fase 1
+- Hubungan hukum pasti antara ICF, Tendermint Inc/Ignite, Informal Systems, Interchain GmbH — restrukturisasi 2021-2023 tidak sepenuhnya terdokumentasi publik
+- Daftar validator set Cosmos Hub saat ini dan operator mereka — tidak tercantum di sumber fase 1
+- Status migrasi chain ekosistem dari Tendermint Core ke CometBFT — tidak terpelacak terpusat
+- Parameter tokenomics ATOM terkini (inflation, community pool %, staking rewards) pasca-upgrade v18/v19 — butuh verifikasi on-chain governance proposal

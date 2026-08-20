@@ -1,0 +1,29 @@
+PROJECT: Ethereum
+Official Name: Ethereum (HIGH) [Ethereum Foundation, https://ethereum.org/en/what-is-ethereum/]
+Symbol: ETH (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/ethereum]
+Category: Smart contract platform / Layer 1 blockchain (HIGH) [Ethereum Foundation, https://ethereum.org/en/what-is-ethereum/]
+Founding Entity: Ethereum Foundation (Stiftung), Zug, Swiss (HIGH) [Ethereum Foundation, https://ethereum.org/en/foundation/]
+Founders: Vitalik Buterin (co-founder); Gavin Wood (co-founder); Jeffrey Wilcke (co-founder); Charles Hoskinson (co-founder); Anthony Di Iorio (co-founder); Mihai Alisie (co-founder); Amir Chetrit (co-founder); Joseph Lubin (co-founder) (HIGH) [Wikipedia - Ethereum, https://en.wikipedia.org/wiki/Ethereum#History; Messari, https://messari.io/asset/ethereum/profile]
+Core Team: Ratusan kontributor inti tersebar di tim klien eksekusi (Geth, Besu, Nethermind, Erigon), tim klien konsensus (Prysm, Lighthouse, Teku, Nimbus, Lodestar), tim riset EF, dan komunitas pengembang mandiri; ukuran pasti tidak diungkap secara resmi (MEDIUM) [Ethereum Foundation Blog - Client Diversity, https://blog.ethereum.org/2022/03/08/client-diversity; Ethereum GitHub Organizations, https://github.com/ethereum]
+Country: Swiss (yayasan); operasi global terdesentralisasi (HIGH) [Ethereum Foundation, https://ethereum.org/en/foundation/]
+Launch Date - Testnet: 9 Mei 2015 (Olympic testnet) (HIGH) [Ethereum Blog - Olympic Launch, https://blog.ethereum.org/2015/05/09/olympic-frontier-test-network]
+Launch Date - Mainnet: 30 Juli 2015 (Frontier) (HIGH) [Ethereum Blog - Frontier Release, https://blog.ethereum.org/2015/07/22/frontier-is-coming; Etherscan Genesis Block, https://etherscan.io/block/0]
+Launch Date - TGE: 22 Juli – 2 September 2014 (Ether Crowdsale / Penjualan Publik) (HIGH) [Ethereum Blog - Ether Sale, https://blog.ethereum.org/2014/07/22/launching-the-ether-sale; Messari, https://messari.io/asset/ethereum/profile]
+Main Products: Ethereum Mainnet (Layer 1); Ethereum Virtual Machine (EVM); Bahasa pemrograman Solidity; Testnet Sepolia; Testnet Holesky; Klien eksekusi (Geth, Besu, Nethermind, Erigon); Klien konsensus (Prysm, Lighthouse, Teku, Nimbus, Lodestar); Standar EIP (ERC-20, ERC-721, ERC-1155, ERC-4337, dll.) (HIGH) [Ethereum.org Developers Docs, https://ethereum.org/en/developers/docs/; EIPs Repository, https://eips.ethereum.org/]
+Official Website: https://ethereum.org (HIGH) [Ethereum.org, https://ethereum.org]
+Repository: https://github.com/ethereum (organisasi utama); https://github.com/ethereum/go-ethereum (Geth); https://github.com/ethereum/consensus-specs (Spesifikasi Konsensus) (HIGH) [GitHub Ethereum Organization, https://github.com/ethereum]
+Documentation: https://ethereum.org/en/developers/docs/; https://eips.ethereum.org/; https://eth.wiki/ (HIGH) [Ethereum.org Docs, https://ethereum.org/en/developers/docs/; EIPs, https://eips.ethereum.org/]
+Social - X/Twitter: @ethereum (HIGH) [X.com, https://x.com/ethereum]
+Social - Discord: https://discord.gg/ethereum (HIGH) [Discord Invite, https://discord.gg/ethereum]
+Social - Telegram: @ethereumofficial (MEDIUM) [Telegram, https://t.me/ethereumofficial]
+Block Explorer: https://etherscan.io; https://blockscout.com/eth/mainnet; https://eth.blockscout.com (HIGH) [Etherscan, https://etherscan.io; Blockscout, https://blockscout.com/eth/mainnet]
+Token Contract: Native asset (tidak ada kontrak token pada mainnet; ETH adalah aset asli protokol) (HIGH) [Ethereum.org - ETH, https://ethereum.org/en/eth/; Etherscan Token Tracker (tidak ada kontrak untuk ETH native), https://etherscan.io/token/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee]
+Chain(s): Ethereum Mainnet (L1); Sepolia (testnet); Holesky (testnet) (HIGH) [Ethereum.org - Networks, https://ethereum.org/en/developers/docs/networks/; Sepolia, https://sepolia.dev/; Holesky, https://holesky.ethpandaops.io/]
+Ecosystem: Ekosistem Ethereum mencakup DeFi (Uniswap, Aave, Maker), NFT (OpenSea, Blur), DAO, Infrastructure (Infura, Alchemy, The Graph), L2 Scaling (Arbitrum, Optimism, Base, Linea, Scroll, zkSync), Wallet (MetaMask, Rainbow, Coinbase Wallet), dan ribuan dApps lainnya (HIGH) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report; DefiLlama Ethereum, https://defillama.com/chain/Ethereum]
+
+Open Threads
+- Ukuran pasti "Core Team" (jumlah karyawan EF penuh vs kontributor mandiri vs tim klien independen) tidak terpublikasi sebagai angka tunggal resmi.
+- Detail yurisdiksi hukum dan struktur kepemilikan untuk seluruh 8 co-founder (beberapa telah meninggalkan proyek sejak awal, misal Charles Hoskinson, Gavin Wood) memerlukan verifikasi per orang.
+- Tanggal TGE yang "resmi" diperdebatkan: apakah tanggal crowdsale (2014) atau genesis block (2015) dianggap TGE; dokumen hukum proyek awal jarang merujuk istilah "TGE".
+- Alamat kontrak token "resmi" untuk ETH native tidak ada; WETH (Wrapped ETH) memiliki kontrak (0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2) tapi bukan aset native.
+- Daftar lengkap investor/ronda pendanaan awal (presale, angels) tidak sepenuhnya transparan di domain publik terverifikasi primer.

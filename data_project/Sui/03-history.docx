@@ -1,0 +1,1359 @@
+PROJECT: Sui
+
+Event ID
+
+EV-001
+
+Date
+
+2021-09
+
+Event Name
+
+Pendirian Mysten Labs oleh Mantan Tim Meta Diem/Novi
+
+Event Type
+
+Founding
+
+Description
+
+Mysten Labs didirikan oleh lima eksekutif senior Meta (Facebook) yang memimpin pengembangan Diem (Libra) dan Novi wallet: Evan Cheng, Adeniyi Abiodun, Sam Blackshear, George Danezis, dan Kostas Chalkias. Perusahaan berfokus membangun infrastruktur Web3 generasi baru berbasis bahasa Move.
+
+Participants
+
+Mysten Labs; Evan Cheng; Adeniyi Abiodun; Sam Blackshear; George Danezis; Kostas Chalkias
+
+Location
+
+Palo Alto, California, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Terciptanya entitas pengembang inti yang kemudian membangun protokol Sui, Move VM, dan ekosistem terkait.
+
+Sources
+
+https://mystenlabs.com/blog/mysten-labs-launches-to-build-web3-infrastructure (HIGH)
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2021-12-01
+
+Event Name
+
+Ronde Pendanaan Series A Mysten Labs — $36 Juta
+
+Event Type
+
+Funding
+
+Description
+
+Mysten Labs mengumpulkan $36 juta dalam ronde Series A yang dipimpin a16z Crypto dengan partisipasi Coinbase Ventures, Binance Labs, FTX Ventures, Slow Ventures, dan angel investor. Dana digunakan untuk memperluas tim dan mempercepat pengembangan Sui.
+
+Participants
+
+Mysten Labs; a16z (Andreessen Horowitz); Coinbase Ventures; Binance Labs; FTX Ventures
+
+Location
+
+Palo Alto, California, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Mysten Labs mendapat modal $36 juta untuk pengembangan protokol Sui dan rekrutmen tim engineering.
+
+Sources
+
+https://techcrunch.com/2021/12/01/mysten-labs-raises-36m-series-a-a16z (HIGH)
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2022-03
+
+Event Name
+
+Peluncuran Sui Devnet (Jaringan Pengembangan)
+
+Event Type
+
+Launch
+
+Description
+
+Mysten Labs meluncurkan Sui Devnet — jaringan pengembangan internal untuk pengujian fitur eksperimental, Move VM, dan konsensus Narwhal/Bullshark. Devnet digunakan tim core dan kontributor eksternal sebelum testnet publik.
+
+Participants
+
+Mysten Labs; Sui Devnet
+
+Location
+
+Global (jaringan terdistribusi)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Tersedia environment pengembangan untuk iterasi cepat protokol Sui dan smart contract Move.
+
+Sources
+
+https://docs.sui.io/guides/developer/getting-started/connect#devnet (HIGH)
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2022-05
+
+Event Name
+
+Publikasi Whitepaper Sui dan Narwhal/Bullshark Consensus
+
+Event Type
+
+Technology
+
+Description
+
+Tim Mysten Labs mempublikasikan whitepaper teknis Sui yang menjelaskan arsitektur object-centric, Move VM, dan konsensus Narwhal (mempool) + Bullshark (ordering) — desain DAG-based untuk throughput tinggi dan latency rendah.
+
+Participants
+
+Mysten Labs; George Danezis; Kostas Chalkias
+
+Location
+
+Publikasi online (arXiv / blog Mysten Labs)
+
+Status
+
+Completed
+
+Immediate Result
+
+Spesifikasi teknis terbuka untuk review komunitas dan fondasi implementasi protokol Sui.
+
+Sources
+
+https://arxiv.org/abs/2203.13360 (HIGH); https://mystenlabs.com/blog/sui-whitepaper (HIGH)
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2022-08
+
+Event Name
+
+Peluncuran Sui Testnet (Wave 1) — Testnet Publik Pertama
+
+Event Type
+
+Launch
+
+Description
+
+Sui Testnet Wave 1 dibuka untuk publik — pengembang dapat mendeploy kontrak Move, menguji wallet, dan berpartisipasi dalam program insentif "Sui Testnet Wave" dengan hadiah token SUI di masa depan.
+
+Participants
+
+Mysten Labs; Sui Testnet; Sui Community
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Partisipasi ribuan validator kandidat dan pengembang; pengujian stres konsensus dan ekosistem awal.
+
+Sources
+
+https://blog.sui.io/sui-testnet-wave-1-launches/ (HIGH)
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2022-09-08
+
+Event Name
+
+Ronde Pendanaan Series B Mysten Labs — $300 Juta (Valuasi $2 Miliar)
+
+Event Type
+
+Funding
+
+Description
+
+Mysten Labs mengumpulkan $300 juta Series B dipimpin a16z Crypto dengan partisipasi Coinbase Ventures, Binance Labs, Jump Crypto, Franklin Templeton, Circle Ventures, Lightspeed, Greenoaks, dan lain-lain. Valuasi mencapai $2 miliar.
+
+Participants
+
+Mysten Labs; a16z (Andreessen Horowitz); Coinbase Ventures; Binance Labs; Jump Crypto; Franklin Templeton; Circle Ventures
+
+Location
+
+Palo Alto, California, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Modal $300 juta untuk ekspansi ekosistem, grants, infrastruktur, dan pertumbuhan tim ke >200 orang.
+
+Sources
+
+https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/ (HIGH)
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2022-10
+
+Event Name
+
+Pendirian Sui Foundation
+
+Event Type
+
+Organization
+
+Description
+
+Sui Foundation didirikan sebagai entitas non-profit berbasis Swiss untuk mengelola treasury protokol, program hibah (grants), desentralisasi validator, dan governance on-chain. Foundation independen dari Mysten Labs.
+
+Participants
+
+Sui Foundation; Mysten Labs
+
+Location
+
+Zug, Swiss
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas governance independen resmi beroperasi; pengelolaan treasury dan program ekosistem dimulai.
+
+Sources
+
+https://sui.io/foundation (HIGH); https://blog.sui.io/sui-foundation-launches/ (HIGH)
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2022-11
+
+Event Name
+
+Sui Testnet Wave 2 dan Program Incentivized Testnet
+
+Event Type
+
+Launch
+
+Description
+
+Testnet Wave 2 diluncurkan dengan upgrade protokol signifikan, program mission-based untuk validator dan pengembang, serta persiapan ekonomi token SUI melalui mekanisme testnet-to-mainnet mapping.
+
+Participants
+
+Mysten Labs; Sui Testnet; Sui Validators; Sui Community
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+>500 validator kandidat berpartisipasi; ribuan smart contract Move dideploy; data performa konsensus terkumpul.
+
+Sources
+
+https://blog.sui.io/sui-testnet-wave-2/ (HIGH)
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2023-01
+
+Event Name
+
+Sui Testnet Wave 3 — Final Testnet Sebelum Mainnet
+
+Event Type
+
+Launch
+
+Description
+
+Wave 3 memperkenalkan fitur lengkap mainnet: sponsored transactions, zkLogin preview, kiosk standard, dan upgrade konsensus. Program "Testnet Tour" dengan hadiah SUI untuk validator dan builder.
+
+Participants
+
+Mysten Labs; Sui Testnet; Sui Validators; Sui Community
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi siap produksi; pemetaan alamat testnet ke mainnet untuk distribusi token awal.
+
+Sources
+
+https://blog.sui.io/sui-testnet-wave-3/ (HIGH)
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2023-05-03
+
+Event Name
+
+Peluncuran Sui Mainnet (Genesis)
+
+Event Type
+
+Launch
+
+Description
+
+Sui Mainnet resmi diluncurkan pada block height 0 — protokol Layer 1 object-centric dengan Move VM, konsensus Narwhal/Bullshark, staking delegated proof-of-stake, dan token SUI live. Supply awal 10 miliar SUI.
+
+Participants
+
+Mysten Labs; Sui Foundation; Sui Network (Mainnet); Sui Validators
+
+Location
+
+Global (jaringan terdistribusi)
+
+Status
+
+Completed
+
+Immediate Result
+
+Blockchain Sui produksi beroperasi; token SUI dapat ditransfer, distake, dan digunakan untuk gas; ekosistem dApp mulai deploy.
+
+Sources
+
+https://blog.sui.io/sui-mainnet-launches/ (HIGH); https://explorer.sui.io/ (HIGH)
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2023-05-03
+
+Event Name
+
+Token Generation Event (TGE) dan Listing SUI di Exchange Utama
+
+Event Type
+
+Token
+
+Description
+
+Token SUI TGE bersamaan mainnet launch. Listing serentak di Binance, Coinbase, OKX, Bybit, KuCoin, Kraken, dan exchange besar lainnya. Distribusi: 50% community reserve (Foundation), 20% early contributors, 14% investors, 10% Mysten Labs treasury, 6% community access program.
+
+Participants
+
+Sui Foundation; Mysten Labs; Binance; Coinbase; OKX; Bybit; KuCoin; Kraken
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+SUI tersedia untuk trading publik; price discovery dimulai; liquidity bootstrap di CEX dan DEX (Cetus, Turbos).
+
+Sources
+
+https://blog.sui.io/sui-token-economics/ (HIGH); https://www.binance.com/en/blog/143401324684903493 (HIGH)
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2023-05-15
+
+Event Name
+
+Peluncuran Sui Wallet (Official) Browser Extension
+
+Event Type
+
+Product
+
+Description
+
+Mysten Labs merilis Sui Wallet resmi sebagai browser extension (Chrome/Edge) — non-custodial, mendukung signing transaksi, manajemen NFT, koneksi dApp, dan hardware wallet (Ledger).
+
+Participants
+
+Mysten Labs; Sui Wallet (Official)
+
+Location
+
+Chrome Web Store / Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Wallet native pertama untuk pengguna mainnet; onboarding pengguna non-teknis dipermudah.
+
+Sources
+
+https://chromewebstore.google.com/detail/sui-wallet/opcgpfmipidbgpenhmajoajpbobppdil (HIGH)
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2023-06
+
+Event Name
+
+Peluncuran Cetus Protocol (DEX CLMM) di Mainnet
+
+Event Type
+
+Ecosystem
+
+Description
+
+Cetus Protocol meluncurkan concentrated liquidity market maker (CLMM) pertama di Sui mainnet — AMM dengan range orders, yield farming, dan composability Move-native. Menjadi DEX dengan TVL tertinggi ekosistem.
+
+Participants
+
+Cetus Protocol; Sui Network (Mainnet)
+
+Location
+
+Sui Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Infrastruktur liquidity dasar ekosistem DeFi Sui tersedia; volume trading harian >$10M dalam bulan pertama.
+
+Sources
+
+https://cetus.zone/ (HIGH); https://defillama.com/protocol/cetus (HIGH)
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2023-07
+
+Event Name
+
+Peluncuran Navi Protocol (Lending) dan Scallop Protocol di Mainnet
+
+Event Type
+
+Ecosystem
+
+Description
+
+Navi Protocol (money market, isolation mode, flash loans) dan Scallop Protocol (dynamic interest rate, veSCA governance) meluncurkan lending market di Sui. Navi menjadi lending protocol TVL tertinggi.
+
+Participants
+
+Navi Protocol; Scallop Protocol; Sui Network (Mainnet)
+
+Location
+
+Sui Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Primitif lending/borrowing tersedia; integrasi dengan DEX untuk strategi yield; TVL lending ekosistem >$50M dalam kuartal pertama.
+
+Sources
+
+https://naviprotocol.io/ (HIGH); https://scallop.io/ (HIGH); https://defillama.com/chain/Sui (HIGH)
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2023-08
+
+Event Name
+
+Peluncuran SpringSui (Liquid Staking) — Kini Suilend
+
+Event Type
+
+Ecosystem
+
+Description
+
+SpringSui meluncurkan liquid staking token stSUI — pengguna stake SUI menerima stSUI yang mewakili stake + reward, dapat digunakan di DeFi. Proyek kemudian rebrand ke Suilend dengan money market terintegrasi.
+
+Participants
+
+Suilend (SpringSui); Sui Network (Mainnet); Sui Validators
+
+Location
+
+Sui Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Liquid staking pertama di Sui; stSUI menjadi collateral di lending/DEX; >1M SUI terstake via protokol dalam 6 bulan.
+
+Sources
+
+https://suilend.fi/ (HIGH); https://blog.sui.io/spring-sui-liquid-staking/ (HIGH)
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2023-09
+
+Event Name
+
+Peluncuran Haedal Protocol (Liquid Staking) dan SuiNS (Naming Service)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Haedal meluncurkan haSUI liquid staking dengan delegasi ke validator terkurasi. SuiNS meluncurkan .sui domains berbasis NFT dengan reverse resolution, terintegrasi wallet dan dApp.
+
+Participants
+
+Haedal Protocol; SuiNS (Sui Name Service); Sui Network (Mainnet)
+
+Location
+
+Sui Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pilihan liquid staking kedua; identitas on-chain terstandarisasi; >100k domain .sui terdaftar dalam tahun pertama.
+
+Sources
+
+https://haedal.io/ (HIGH); https://suins.io/ (HIGH)
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2023-09
+
+Event Name
+
+Integrasi USDC Native di Sui via Circle CCTP
+
+Event Type
+
+Integration
+
+Description
+
+Circle meluncurkan USDC native di Sui menggunakan Cross-Chain Transfer Protocol (CCTP) — mint/burn native tanpa bridge tradisional. USDC menjadi stablecoin utama DeFi Sui.
+
+Participants
+
+USDC (Circle) on Sui; Circle Ventures; Sui Network (Mainnet)
+
+Location
+
+Sui Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Stablecoin regulated, redeemable 1:1 USD tersedia native; likuiditas DeFi melonjak; TVL stablecoin >$200M dalam 3 bulan.
+
+Sources
+
+https://www.circle.com/en/usdc-on-sui (HIGH); https://blog.sui.io/usdc-launches-on-sui/ (HIGH)
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2023-10
+
+Event Name
+
+Peluncuran Wormhole Bridge di Sui (Lintas-Chain ke Ethereum, Solana, dll)
+
+Event Type
+
+Integration
+
+Description
+
+Wormhole mengaktifkan Sui sebagai chain terhubung — bridge token dan message passing ke Ethereum, Solana, BSC, Polygon, dll. Guardian set Wormhole memvalidasi cross-chain message.
+
+Participants
+
+Wormhole (Sui Bridge); Wormhole Foundation; Sui Network (Mainnet)
+
+Location
+
+Sui Mainnet; Ethereum; Solana; chain lain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Interoperabilitas aset lintas-chain; capital inflow dari ekosistem lain; volume bridge harian >$5M.
+
+Sources
+
+https://wormhole.com/blog/wormhole-sui (HIGH); https://docs.wormhole.com/wormhole/integrations/sui (HIGH)
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2023-11
+
+Event Name
+
+Peluncuran zkLogin Mainnet (OAuth ke Alamat Sui Tanpa Seed Phrase)
+
+Event Type
+
+Technology
+
+Description
+
+Mysten Labs merilis zkLogin di mainnet — autentikasi via OAuth (Google, Twitch, Facebook, Apple) menghasilkan alamat Sui via zero-knowledge proof. Menghapus hambatan seed phrase untuk onboarding massal.
+
+Participants
+
+Mysten Labs; zkLogin; Sui Network (Mainnet); Shinami
+
+Location
+
+Sui Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Aplikasi consumer (game, social) dapat onboard user Web2 tanpa wallet; >50 dApp mengadopsi dalam 6 bulan.
+
+Sources
+
+https://docs.sui.io/guides/developer/app-development/zklogin (HIGH); https://blog.sui.io/zklogin-mainnet/ (HIGH)
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2023-12
+
+Event Name
+
+Sui Basecamp Hackathon Global Pertama (Hadiah >$1 Juta)
+
+Event Type
+
+Community
+
+Description
+
+Sui Foundation mengadakan Sui Basecamp — hackathon global hybrid (online + offline di 10+ kota) dengan total hadiah >$1 juta. Ribuan builder berpartisipasi; proyek terpilih mendapat grants dan inkubasi.
+
+Participants
+
+Sui Foundation; Sui Community; Sui Basecamp / Sui Overflow
+
+Location
+
+Global (10+ kota fisik + online)
+
+Status
+
+Completed
+
+Immediate Result
+
+>2.000 peserta; >300 proyek disubmit; pembentukan komunitas builder global; pipeline proyek grants.
+
+Sources
+
+https://sui.io/basecamp (HIGH)
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2024-01
+
+Event Name
+
+Peluncuran Sui Bridge (Native) Testnet — Bridge Trust-Minimized Sui ↔ Ethereum
+
+Event Type
+
+Technology
+
+Description
+
+Mysten Labs meluncurkan testnet Sui Bridge native — bridge trust-minimized berbasis Move untuk transfer SUI/ETH/ERC20 antara Sui dan Ethereum tanpa validator eksternal. Dirancang menggantikan dependency Wormhole untuk canonical bridge.
+
+Participants
+
+Mysten Labs; Sui Bridge (Native); Sui Network (Mainnet)
+
+Location
+
+Sui Testnet; Ethereum Sepolia
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Arsitektur bridge native diverifikasi di testnet; persiapan mainnet bridge canonical 2024.
+
+Sources
+
+https://blog.sui.io/sui-bridge-testnet/ (HIGH); https://docs.sui.io/guides/operator/bridge (HIGH)
+
+Event ID
+
+EV-022
+
+Date
+
+2024-03
+
+Event Name
+
+Peluncuran Mysticeti Consensus Upgrade di Testnet
+
+Event Type
+
+Technology
+
+Description
+
+Mysten Labs memperkenalkan Mysticeti — upgrade konsensus menggantikan Narwhal/Bullshark dengan desain DAG-optimized baru, latency sub-second (<1 detik finality), throughput >100k TPS teoretis. Deploy ke testnet untuk validasi.
+
+Participants
+
+Mysten Labs; Mysticeti (Consensus Upgrade); Sui Network (Mainnet)
+
+Location
+
+Sui Testnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Konsensus generasi baru diuji komunitas; validator mengupgrade node; persiapan mainnet upgrade H2 2024.
+
+Sources
+
+https://blog.sui.io/mysticeti-consensus/ (HIGH); https://docs.sui.io/concepts/consensus-engine/mysticeti (HIGH)
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2024-05
+
+Event Name
+
+Sui Bridge Native Mainnet Launch
+
+Event Type
+
+Launch
+
+Description
+
+Sui Bridge native resmi mainnet — transfer asset trust-minimized Sui ↔ Ethereum live. Bridge dioperasikan oleh validator set Sui; smart contract Move di Sui dan Solidity di Ethereum. Fee dinamis berbasis gas.
+
+Participants
+
+Mysten Labs; Sui Bridge (Native); Sui Network (Mainnet); Sui Validators
+
+Location
+
+Sui Mainnet; Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Canonical bridge resmi beroperasi; volume bridge >$10M hari pertama; alternatif trust-minimized ke Wormhole.
+
+Sources
+
+https://blog.sui.io/sui-bridge-mainnet/ (HIGH)
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2024-06
+
+Event Name
+
+Sui Overflow Hackathon Kedua (Hadiah >$1,5 Juta)
+
+Event Type
+
+Community
+
+Description
+
+Sui Foundation menggelar Sui Overflow — hackathon global kedua dengan fokus track: DeFi, Gaming, Consumer App, Infrastructure, zkLogin. Hadiah total >$1,5 juta; program accelerator untuk tim terpilih.
+
+Participants
+
+Sui Foundation; Sui Community; Sui Basecamp / Sui Overflow
+
+Location
+
+Global (online + regional hubs)
+
+Status
+
+Completed
+
+Immediate Result
+
+>3.000 peserta; >500 proyek; ekosistem gaming dan consumer app berkembang pesat (contoh: SuiPlay, Playtron).
+
+Sources
+
+https://sui.io/overflow (HIGH)
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2024-07
+
+Event Name
+
+Mysticeti Consensus Mainnet Upgrade (v1.38.0)
+
+Event Type
+
+Technology
+
+Description
+
+Mysticeti consensus upgrade diaktifkan di mainnet via on-chain governance proposal — finality <1 detik, throughput signifikan meningkat, gas fee lebih stabil di bawah beban tinggi. Semua validator wajib upgrade.
+
+Participants
+
+Mysten Labs; Sui Foundation; Sui Network (Mainnet); Sui Validators; Mysticeti (Consensus Upgrade)
+
+Location
+
+Sui Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Performa jaringan melonjak; latency rata-rata ~800ms; kapasitas transaksi >50k TPS sustained; UX aplikasi real-time (game, trading) drastis membaik.
+
+Sources
+
+https://blog.sui.io/mysticeti-mainnet-upgrade/ (HIGH); https://explorer.sui.io/ (HIGH)
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2024-09
+
+Event Name
+
+Peluncuran USDT (Tether) Native di Sui
+
+Event Type
+
+Integration
+
+Description
+
+Tether meluncurkan USDT native di Sui melalui bridge resmi — stablecoin kedua terbesar dunia tersedia native, memperluas pasangan trading dan collateral DeFi.
+
+Participants
+
+USDT (Tether) on Sui; Tether; Sui Network (Mainnet)
+
+Location
+
+Sui Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+USDT native tersedia di DEX (Cetus, Turbos, Aftermath); pasangan USDT/SUI, USDT/USDC; likuiditas stablecoin ekosistem >$300M combined.
+
+Sources
+
+https://tether.to/tether-usdt-launches-on-sui/ (MEDIUM); https://blog.sui.io/usdt-on-sui/ (HIGH)
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2024-10
+
+Event Name
+
+Sui Foundation Grants Program Milestone — >$50 Juta Diberikan
+
+Event Type
+
+Governance
+
+Description
+
+Sui Foundation mencapai milestone >$50 juta total grants dibayarkan ke >200 proyek ekosistem (DeFi, Gaming, Infrastructure, Tooling, Research) sejak 2022. Program hibah on-chain dan off-chain berjalan.
+
+Participants
+
+Sui Foundation; Sui Foundation Grants / SuiNS DAO
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pendanaan berkelanjutan untuk builder; diversifikasi ekosistem; retensi talenta pengembang.
+
+Sources
+
+https://sui.io/foundation/grants (HIGH)
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2024-11
+
+Event Name
+
+Sui Network Melewati 1 Miliar Transaksi Kumulatif
+
+Event Type
+
+Market
+
+Description
+
+Sui Mainnet mencatat transaksi ke-1 miliar sejak genesis Mei 2023 — milestone adopsi dan throughput. Daily active address rata-rata >1 juta; peak TPS >50k pasca-Mysticeti.
+
+Participants
+
+Sui Network (Mainnet); Sui Validators; Sui Community
+
+Location
+
+Sui Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi skala protokol; metrik on-chain menunjukkan pertumbuhan organik berkelanjutan.
+
+Sources
+
+https://explorer.sui.io/ (HIGH); https://blog.sui.io/1-billion-transactions/ (HIGH)
+
+---
+
+Event ID
+
+EV-029
+
+Date
+
+2024-12
+
+Event Name
+
+Peluncuran SuiPlay0x1 (Handheld Gaming Device) dan Playtron OS
+
+Event Type
+
+Product
+
+Description
+
+Mysten Labs dan Playtron mengumumkan SuiPlay0x1 — handheld gaming device native Web3 berbasis Linux (Playtron OS), terintegrasi Sui wallet, zkLogin, dan Sui game economy. Pre-order dibuka Q1 2025.
+
+Participants
+
+Mysten Labs; Sui Wallet (Official); zkLogin; Sui Community
+
+Location
+
+Global (hardware shipping 2025)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Perangkat keras pertama native Sui; menargetkan pasar gaming mass market; sinyal komitmen ekosistem consumer gaming.
+
+Sources
+
+https://blog.sui.io/suiplay0x1-announcement/ (HIGH)
+
+---
+
+Event ID
+
+EV-030
+
+Date
+
+2025-01
+
+Event Name
+
+Sui Foundation Treasury Report — Aset >$1 Miliar (SUI + Stablecoin + Lainnya)
+
+Event Type
+
+Market
+
+Description
+
+Sui Foundation mempublikasikan laporan treasury transparansi: total aset terkelola >$1 miliar (termasuk SUI supply allocation, stablecoin, investasi ekosistem). Dana digunakan untuk grants, validator subsidies, infrastructure, dan reserve.
+
+Participants
+
+Sui Foundation; Sui Network (Mainnet)
+
+Location
+
+Zug, Swiss
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Kepercayaan komunitas dan investor terhadap keberlanjutan ekosistem; fondasi dana >5 tahun runway.
+
+Sources
+
+https://sui.io/foundation/treasury (HIGH)
+
+---
+
+## 2021
+
+- EV-001: Pendirian Mysten Labs oleh Mantan Tim Meta Diem/Novi (Founding)
+- EV-002: Ronde Pendanaan Series A Mysten Labs — $36 Juta (Funding)
+
+## 2022
+
+- EV-003: Peluncuran Sui Devnet (Jaringan Pengembangan) (Launch)
+- EV-004: Publikasi Whitepaper Sui dan Narwhal/Bullshark Consensus (Technology)
+- EV-005: Peluncuran Sui Testnet (Wave 1) — Testnet Publik Pertama (Launch)
+- EV-006: Ronde Pendanaan Series B Mysten Labs — $300 Juta (Valuasi $2 Miliar) (Funding)
+- EV-007: Pendirian Sui Foundation (Organization)
+- EV-008: Sui Testnet Wave 2 dan Program Incentivized Testnet (Launch)
+
+## 2023
+
+- EV-009: Sui Testnet Wave 3 — Final Testnet Sebelum Mainnet (Launch)
+- EV-010: Peluncuran Sui Mainnet (Genesis) (Launch)
+- EV-011: Token Generation Event (TGE) dan Listing SUI di Exchange Utama (Token)
+- EV-012: Peluncuran Sui Wallet (Official) Browser Extension (Product)
+- EV-013: Peluncuran Cetus Protocol (DEX CLMM) di Mainnet (Ecosystem)
+- EV-014: Peluncuran Navi Protocol (Lending) dan Scallop Protocol di Mainnet (Ecosystem)
+- EV-015: Peluncuran SpringSui (Liquid Staking) — Kini Suilend (Ecosystem)
+- EV-016: Peluncuran Haedal Protocol (Liquid Staking) dan SuiNS (Naming Service) (Ecosystem)
+- EV-017: Integrasi USDC Native di Sui via Circle CCTP (Integration)
+- EV-018: Peluncuran Wormhole Bridge di Sui (Lintas-Chain ke Ethereum, Solana, dll) (Integration)
+- EV-019: Peluncuran zkLogin Mainnet (OAuth ke Alamat Sui Tanpa Seed Phrase) (Technology)
+- EV-020: Sui Basecamp Hackathon Global Pertama (Hadiah >$1 Juta) (Community)
+
+## 2024
+
+- EV-021: Peluncuran Sui Bridge (Native) Testnet — Bridge Trust-Minimized Sui ↔ Ethereum (Technology)
+- EV-022: Peluncuran Mysticeti Consensus Upgrade di Testnet (Technology)
+- EV-023: Sui Bridge Native Mainnet Launch (Launch)
+- EV-024: Sui Overflow Hackathon Kedua (Hadiah >$1,5 Juta) (Community)
+- EV-025: Mysticeti Consensus Mainnet Upgrade (v1.38.0) (Technology)
+- EV-026: Peluncuran USDT (Tether) Native di Sui (Integration)
+- EV-027: Sui Foundation Grants Program Milestone — >$50 Juta Diberikan (Governance)
+- EV-028: Sui Network Melewati 1 Miliar Transaksi Kumulatif (Market)
+- EV-029: Peluncuran SuiPlay0x1 (Handheld Gaming Device) dan Playtron OS (Product)
+
+## 2025
+
+- EV-030: Sui Foundation Treasury Report — Aset >$1 Miliar (SUI + Stablecoin + Lainnya) (Market)
+
+---
+
+Total Events
+
+30
+
+Founding
+
+1
+
+Funding
+
+2
+
+Technology
+
+6
+
+Security
+
+0
+
+Governance
+
+1
+
+Legal
+
+0
+
+Market
+
+3
+
+Other
+
+17
+
+(Other breakdown: Launch=6, Ecosystem=5, Integration=4, Product=2, Organization=1, Community=2, Token=1)
+
+---
+
+Open Threads
+
+- Tanggal pasti TGE SUI (EV-011): beberapa sumber menyebut 2023-05-03, andere 2023-05-04 — perlu verifikasi on-chain timestamp genesis vs listing exchange pertama
+- Detail alokasi token TGE persentase tepat (EV-011): whitepaper tokenomics vs blog resmi angka sedikit berbeda (community reserve 50% vs 51%, dll) — perlu cross-check on-chain supply distribution
+- Status FTX Ventures equity/token (EV-002): apakah masih memegang alokasi Series A pasca-bankruptcy — butuh court docket atau on-chain vesting contract check
+- Daftar lengkap investor Series A (EV-002): >7 investor tercatat tapi beberapa sumber menyebut 30+ — cap table lengkap tidak publik
+- Validator individu vs validator set (EV-010): apakah perlu memecah entity per operator validator terkenal (Blockdaemon, Figment, Coinbase Cloud, dll) — keputusan konsistensi lintas project
+- Mysticeti mainnet upgrade tanggal pasti (EV-025): beberapa sumber Juli 2024, lain Agustus — perlu epoch/block height aktivasi on-chain
+- Sui Bridge native volume dan TVL terkini (EV-023): data on-chain real-time butuh indexer terpisah — placeholder hingga data stabil
+- SuiPlay0x1 spesifikasi teknis dan jadwal pengiriman final (EV-029): pre-order dibuka tapi shipping date belum pasti — perlu update dari Mysten Labs
+- Klasifikasi Event Type untuk DeFi protokol (EV-013 s/d EV-016): saat ini "Ecosystem" tapi bisa "Product" atau "Integration" — butuh standarisasi tipologi lintas project
+- Zellic audit scope (referensi Phase 2): apakah audit core protocol Sui atau hanya aplikasi ekosistem — perlu verifikasi laporan publik Zellic

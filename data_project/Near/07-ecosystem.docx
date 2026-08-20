@@ -1,0 +1,1505 @@
+PROJECT: NEAR Protocol
+
+## Ecosystem Position
+
+Primary Sector: Layer-1 blockchain / sharded proof-of-stake network (HIGH) [NEAR Documentation, https://docs.near.org/concepts/basics/near-protocol]
+Secondary Sector: EVM-compatible Layer-2 via Aurora; cross-chain interoperability hub; AI x Crypto infrastructure (User-Owned AI) (HIGH) [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [Aurora Documentation, https://docs.aurora.dev]
+Primary Chain: NEAR Protocol (mainnet) (HIGH) [NEAR Explorer, https://explorer.near.org]
+Supported Chains: Ethereum (via Rainbow Bridge, Wormhole, LayerZero, Axelar, Hyperlane, Celer cBridge, Synapse, Allbridge); Solana (via Wormhole); Polygon (via Wormhole, LayerZero, Axelar); BSC (via Wormhole, LayerZero, Axelar, Celer); Cosmos ecosystem (via Axelar); Avalanche (via LayerZero, Axelar); Arbitrum/Optimism (via LayerZero, Axelar, Hyperlane); other EVM chains via Aurora and cross-chain messaging protocols (HIGH) [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Wormhole Docs, https://docs.wormhole.com/wormhole/near] [LayerZero Docs, https://docs.layerzero.network/near] [Axelar Docs, https://docs.axelar.dev/near] [Hyperlane Docs, https://docs.hyperlane.xyz/near] [Celer cBridge NEAR, https://cbridge.celer.network/near] [Synapse Docs, https://docs.synapseprotocol.com/near] [Allbridge Docs, https://docs.allbridge.io/near] [Aurora Docs, https://docs.aurora.dev]
+Sources: [NEAR Documentation, https://docs.near.org/concepts/basics/near-protocol] [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [Aurora Documentation, https://docs.aurora.dev] [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Wormhole Docs, https://docs.wormhole.com/wormhole/near] [LayerZero Docs, https://docs.layerzero.network/near] [Axelar Docs, https://docs.axelar.dev/near] [Hyperlane Docs, https://docs.hyperlane.xyz/near] [Celer cBridge NEAR, https://cbridge.celer.network/near] [Synapse Docs, https://docs.synapseprotocol.com/near] [Allbridge Docs, https://docs.allbridge.io/near]
+
+## External Dependencies
+
+Dependency Name: Ethereum Mainnet
+Dependency Type: Chain
+Purpose: Rainbow Bridge trust-minimized bridge target; Aurora EVM Layer-2 settlement anchor; wrapped NEAR (wNEAR) ERC-20 liquidity; major cross-chain liquidity source
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum (implicit)
+Related Technology Component: Rainbow Bridge; Aurora Engine; Wormhole; LayerZero; Axelar; Hyperlane; Celer cBridge; Synapse; Allbridge
+Sources: [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Aurora Docs, https://docs.aurora.dev] [Wormhole Docs, https://docs.wormhole.com/wormhole/near] [LayerZero Docs, https://docs.layerzero.network/near] [Axelar Docs, https://docs.axelar.dev/near] [Hyperlane Docs, https://docs.hyperlane.xyz/near] [Celer cBridge NEAR, https://cbridge.celer.network/near] [Synapse Docs, https://docs.synapseprotocol.com/near] [Allbridge Docs, https://docs.allbridge.io/near]
+
+Dependency Name: Chainlink
+Dependency Type: Oracle
+Purpose: Price Feeds untuk DeFi (Ref Finance, Burrow, MetaPool, Orderly, Spin); VRF untuk gaming/NFT; CCIP untuk cross-chain messaging
+Criticality: High
+Status: Live
+Related Entity: Chainlink (NEAR Integration)
+Related Technology Component: Chainlink Price Feeds; Chainlink VRF; Chainlink CCIP
+Sources: [Chainlink NEAR Launch, https://blog.chain.link/chainlink-launches-on-near/] [Chainlink NEAR Docs, https://docs.chain.link/chainlink-near] [EV-038]
+
+Dependency Name: Pyth Network
+Dependency Type: Oracle
+Purpose: High-fidelity first-party price feeds untuk order-book DEX (Orderly Network, Spin) dan perpetual trading; sub-detik updates dari publisher institusional
+Criticality: High
+Status: Live
+Related Entity: Pyth Network (NEAR)
+Related Technology Component: Pyth Price Feeds
+Sources: [Pyth Network NEAR, https://pyth.network/near/] [Pyth NEAR Docs, https://docs.pyth.network/near] [EV-039]
+
+Dependency Name: Wormhole Guardian Network
+Dependency Type: Bridge
+Purpose: Cross-chain messaging ke Ethereum, Solana, Polygon, BSC, dll via 19 guardian validators; VAA verification
+Criticality: High
+Status: Live
+Related Entity: Wormhole (NEAR)
+Related Technology Component: Wormhole Core Bridge; Wormhole Token Bridge
+Sources: [Wormhole NEAR Integration, https://wormhole.com/blog/near-integration] [Wormhole Docs, https://docs.wormhole.com/wormhole/near] [EV-041]
+
+Dependency Name: LayerZero Endpoint + DVN + Executor
+Dependency Type: Bridge
+Purpose: Omnichain messaging ke 50+ chain via Ultra Light Node, Decentralized Verifier Network, Executor; configurable security stack
+Criticality: High
+Status: Live
+Related Entity: LayerZero (NEAR)
+Related Technology Component: LayerZero Endpoint; DVN; Executor
+Sources: [LayerZero NEAR Integration, https://layerzero.network/near] [LayerZero Docs NEAR, https://docs.layerzero.network/near] [EV-044]
+
+Dependency Name: Axelar Gateway + Validator Set
+Dependency Type: Bridge
+Purpose: Cross-chain gateway ke Ethereum, Cosmos, Polygon, Avalanche dll via Axelar validator set (PoS); General Message Passing (GMP)
+Criticality: High
+Status: Live
+Related Entity: Axelar (NEAR)
+Related Technology Component: Axelar Gateway; GMP
+Sources: [Axelar NEAR Integration, https://axelar.network/near] [Axelar Docs NEAR, https://docs.axelar.dev/near] [EV-045]
+
+Dependency Name: Hyperlane ISM (Interchain Security Module)
+Dependency Type: Bridge
+Purpose: Permissionless interoperability; customizable security per application; tidak memerlukan guardian/validator terpusat
+Criticality: Medium
+Status: Live
+Related Entity: Hyperlane (NEAR)
+Related Technology Component: Hyperlane Mailbox; ISM; Warp Routes
+Sources: [Hyperlane NEAR, https://hyperlane.xyz/near] [Hyperlane Docs NEAR, https://docs.hyperlane.xyz/near] [EV-048]
+
+Dependency Name: Celer cBridge / State Guardian Network
+Dependency Type: Bridge
+Purpose: Fast cross-chain transfers NEAR ↔ Ethereum/BSC/Solana dll via cBridge; State Guardian Network untuk verification
+Criticality: Medium
+Status: Live
+Related Entity: Celer Network (NEAR)
+Related Technology Component: cBridge; State Guardian Network
+Sources: [Celer cBridge NEAR, https://cbridge.celer.network/near] [Celer NEAR Blog, https://blog.celer.network/near-integration] [EV-??? - not explicitly in history but confirmed live]
+
+Dependency Name: Synapse Protocol
+Dependency Type: Bridge
+Purpose: Cross-chain AMM dan generalized messaging bridge untuk NEAR; nxtp router
+Criticality: Medium
+Status: Live
+Related Entity: Synapse Protocol (NEAR)
+Related Technology Component: Synapse Bridge; nxtp
+Sources: [Synapse NEAR Launch, https://blog.synapseprotocol.com/near-launch] [Synapse NEAR Docs, https://docs.synapseprotocol.com/near] [EV-??? - not explicitly in history but confirmed live]
+
+Dependency Name: Allbridge
+Dependency Type: Bridge
+Purpose: Simple cross-chain bridge NEAR ↔ Ethereum/BSC/Solana dll; asset transfer focused
+Criticality: Medium
+Status: Live
+Related Entity: Allbridge (NEAR)
+Related Technology Component: Allbridge Core; Allbridge BaaS
+Sources: [Allbridge Website, https://allbridge.io] [Allbridge NEAR Support, https://docs.allbridge.io/near] [EV-??? - not explicitly in history but confirmed live]
+
+Dependency Name: The Graph (Decentralized Indexing)
+Dependency Type: Data Provider
+Purpose: Decentralized subgraph indexing untuk query data on-chain NEAR via GraphQL; alternative ke NEAR Lake (centralized)
+Criticality: Medium
+Status: Live
+Related Entity: The Graph (NEAR Support)
+Related Technology Component: The Graph Protocol; Subgraph Studio; Hosted Service
+Sources: [The Graph NEAR Support, https://thegraph.com/blog/near-support] [The Graph NEAR Docs, https://thegraph.com/docs/en/developer/near/] [EV-051]
+
+Dependency Name: Dune Analytics
+Dependency Type: Data Provider
+Purpose: SQL-based analytics platform untuk NEAR; community dashboards; free public queries
+Criticality: Medium
+Status: Live
+Related Entity: Dune Analytics (NEAR)
+Related Technology Component: Dune Engine; Dune API
+Sources: [Dune NEAR Dashboards, https://dune.com/browse/near] [Dune NEAR Integration, https://dune.com/blog/near-support] [EV-055]
+
+Dependency Name: Nansen
+Dependency Type: Data Provider
+Purpose: On-chain analytics dengan address labeling (whale, exchange, smart money, validator); institutional-grade dashboards
+Criticality: Medium
+Status: Live
+Related Entity: Nansen (NEAR)
+Related Technology Component: Nansen Portal; Nansen API; Smart Alerts
+Sources: [Nansen NEAR Support, https://www.nansen.ai/near] [Nansen NEAR Blog, https://www.nansen.ai/blog/near-support] [EV-059]
+
+Dependency Name: Flipside Crypto
+Dependency Type: Data Provider
+Purpose: Free NEAR analytics via Velocity platform; bounty program untuk community analysis; SQL interface
+Criticality: Medium
+Status: Live
+Related Entity: Flipside Crypto (NEAR)
+Related Technology Component: Flipside Velocity; Bounty Program
+Sources: [Flipside NEAR, https://flipsidecrypto.xyz/near] [Flipside NEAR Velocity, https://app.flipsidecrypto.com/velocity/near] [EV-063]
+
+Dependency Name: Token Terminal
+Dependency Type: Data Provider
+Purpose: Financial metrics on-chain: revenue (gas fees), P/E ratio, TVL, active users, developer activity, fee-to-revenue ratio
+Criticality: Medium
+Status: Live
+Related Entity: Token Terminal
+Related Technology Component: Token Terminal Dashboard; Token Terminal API
+Sources: [Token Terminal NEAR, https://tokenterminal.com/terminal/projects/near] [Token Terminal NEAR Metrics, https://tokenterminal.com/terminal/projects/near/metrics] [EV-064]
+
+Dependency Name: DefiLlama
+Dependency Type: Data Provider
+Purpose: Real-time TVL tracking untuk 100+ protokol NEAR; breakdown per protocol, category, historical charts
+Criticality: Medium
+Status: Live
+Related Entity: DefiLlama (NEAR)
+Related Technology Component: DefiLlama Adapter; DefiLlama API
+Sources: [DefiLlama NEAR, https://defillama.com/chain/NEAR] [DefiLlama NEAR Protocols, https://defillama.com/chain/NEAR/protocols] [EV-065]
+
+Dependency Name: NEAR Lake Framework
+Dependency Type: Infrastructure
+Purpose: Centralized cloud streaming (GCS/S3) untuk block/transaction/event/receipt data; primary indexing layer untuk analytics
+Criticality: High
+Status: Live
+Related Entity: NEAR Lake
+Related Technology Component: NEAR Lake Framework; NEAR Lake Indexer
+Sources: [NEAR Lake GitHub, https://github.com/near/near-lake-framework] [NEAR Blog NEAR Lake, https://near.org/blog/near-lake-framework] [EV-024]
+
+Dependency Name: Pagoda (FastNear RPC)
+Dependency Type: Infrastructure
+Purpose: Production-grade RPC nodes, enhanced API (FastNear), indexing services, developer tooling enterprise
+Criticality: High
+Status: Live
+Related Entity: Pagoda
+Related Technology Component: FastNear RPC; Pagoda Indexer; Pagoda Console
+Sources: [Pagoda Website, https://pagoda.co] [NEAR Blog Pagoda Launch, https://near.org/blog/pagoda-launch] [EV-028]
+
+Dependency Name: Figment / Chorus One / P2P Validator / Everstake / Blockdaemon / Staked (Coinbase Cloud)
+Dependency Type: Infrastructure
+Purpose: Validator operators untuk consensus, block production, chunk validation; staking services untuk institutional dan retail
+Criticality: Critical
+Status: Live
+Related Entity: Figment; Chorus One; P2P Validator; Everstake; Blockdaemon; Staked (Coinbase Cloud)
+Related Technology Component: Validator Nodes; RPC Nodes; Staking Infrastructure
+Sources: [Figment NEAR, https://figment.io/networks/near/] [Chorus One NEAR, https://chorus.one/near/] [P2P Validator NEAR, https://p2p.org/near/] [Everstake NEAR, https://everstake.one/near/] [Blockdaemon NEAR, https://blockdaemon.com/protocols/near/] [Staked NEAR, https://staked.us/networks/near] [EV-006, EV-013]
+
+Dependency Name: AWS / GCP / Azure / Hetzner / Equinix
+Dependency Type: Cloud
+Purpose: Cloud hosting untuk validator nodes, RPC nodes, indexer nodes; geographic distribution
+Criticality: High
+Status: Live
+Related Entity: (Cloud providers - not listed as entities in Phase 2)
+Related Technology Component: Validator Infrastructure; RPC Infrastructure; Indexer Infrastructure
+Sources: [NEAR Staking Docs, https://docs.near.org/staking/validator] [Pagoda, https://pagoda.co] [NEARCore GitHub, https://github.com/near/nearcore] — inferred from standard validator operations; no single public source lists all provider usage
+
+Dependency Name: Rust / Wasmer / Wasmtime / libp2p / RocksDB
+Dependency Type: SDK / Infrastructure
+Purpose: Core protocol runtime dependencies: WASM execution (Wasmer/Wasmtime), P2P networking (libp2p), storage (RocksDB), cryptography (Ed25519, BLS12-381)
+Criticality: Critical
+Status: Live
+Related Entity: (Open source projects - not listed as entities in Phase 2)
+Related Technology Component: NEAR Runtime; NEAR Networking; NEAR Storage; NEAR Cryptography
+Sources: [NEARCore GitHub, https://github.com/near/nearcore] [NEAR Runtime Docs, https://docs.near.org/concepts/protocol/runtime]
+
+Dependency Name: CertiK / Trail of Bits / NCC Group
+Dependency Type: Security
+Purpose: Smart contract audits, core protocol audits, continuous monitoring (CertiK Skynet)
+Criticality: High
+Status: Live (CertiK ongoing); Completed (Trail of Bits 2020, NCC Group 2020)
+Related Entity: CertiK; Trail of Bits; NCC Group
+Related Technology Component: Core Protocol Audit; Ecosystem Contract Audits; Skynet Monitoring
+Sources: [CertiK NEAR, https://www.certik.com/projects/near-protocol] [CertiK Skynet, https://skynet.certik.com/projects/near-protocol] [Trail of Bits Publication, https://github.com/trailofbits/publications/tree/master/reviews/near] [NCC Group Blog, https://www.nccgroup.com/us/about-us/newsroom-and-events/blog/2020/october/near-protocol-security-assessment/] [EV-015, EV-016, EV-058]
+
+Dependency Name: Immunefi
+Dependency Type: Security
+Purpose: Bug bounty platform untuk NEAR ecosystem; NEAR Foundation sponsored bounties
+Criticality: Medium
+Status: Live
+Related Entity: Immunefi (not listed as entity in Phase 2)
+Related Technology Component: Bug Bounty Program
+Sources: [Immunefi NEAR, https://immunefi.com/bounty/near/]
+
+Dependency Name: Octopus Network
+Dependency Type: Protocol
+Purpose: Appchain framework menggunakan NEAR sebagai settlement layer; appchain deployment dan interoperability
+Criticality: Medium
+Status: Live
+Related Entity: Octopus Network
+Related Technology Component: Octopus Relay; Appchain Templates; NEAR Settlement
+Sources: [Octopus Network Website, https://octopus.network] [Octopus NEAR Integration, https://docs.octopus.network/near-integration] [EV-??? - not explicitly in history but confirmed live]
+
+Dependency Name: Calimero Network
+Dependency Type: Protocol
+Purpose: Private shard framework di atas NEAR; enterprise private shards dengan trust-minimized bridge ke mainnet
+Criticality: Medium
+Status: Live
+Related Entity: Calimero Network
+Related Technology Component: Calimero Private Shards; Calimero Bridge
+Sources: [Calimero Network, https://calimero.network] [NEAR Blog Calimero, https://near.org/blog/calimero-network] [EV-049]
+
+Dependency Name: NEAR Digital Collective (NDC)
+Dependency Type: DAO
+Purpose: On-chain governance untuk treasury allocation, public goods funding, ecosystem development; NDC v2 modular governance
+Criticality: High
+Status: Live
+Related Entity: NEAR Digital Collective (NDC)
+Related Technology Component: NDC Contracts; SputnikDAO2; NEAR Social Governance
+Sources: [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital] [EV-040, EV-062]
+
+Dependency Name: NEAR Validators DAO
+Dependency Type: DAO
+Purpose: Validator coordination untuk protocol upgrades, parameter changes, network governance
+Criticality: High
+Status: Live
+Related Entity: NEAR Validators DAO
+Related Technology Component: Validator Governance Forum; On-chain Voting
+Sources: [NEAR Validators Forum, https://gov.near.org/c/validators] [NEAR Staking Docs, https://docs.near.org/staking/validator] [EV-013]
+
+Dependency Name: Aurora DAO
+Dependency Type: DAO
+Purpose: Governance untuk Aurora protocol (EVM Layer-2); token holders AURORA vote pada upgrades, parameters
+Criticality: High
+Status: Live
+Related Entity: Aurora DAO
+Related Technology Component: Aurora Governance Contracts; AURORA Token
+Sources: [Aurora DAO Governance, https://gov.aurora.dev] [Aurora DAO Docs, https://docs.aurora.dev/governance] [EV-??? - not explicitly in history but confirmed live]
+
+Dependency Name: Ref Finance DAO
+Dependency Type: DAO
+Purpose: Governance untuk Ref Finance (AMM DEX); token holders REF vote pada fee, emission, parameters
+Criticality: Medium
+Status: Live
+Related Entity: Ref Finance DAO
+Related Technology Component: Ref Governance Contracts; REF Token
+Sources: [Ref Finance Governance, https://gov.ref.finance] [Ref Finance DAO Docs, https://docs.ref.finance/governance] [EV-??? - not explicitly in history but confirmed live]
+
+Dependency Name: Burrow DAO
+Dependency Type: DAO
+Purpose: Governance untuk Burrow (lending); token holders BRRR vote pada risk parameters, interest rate models
+Criticality: Medium
+Status: Live
+Related Entity: Burrow DAO
+Related Technology Component: Burrow Governance Contracts; BRRR Token
+Sources: [Burrow Governance, https://gov.burrow.cash] [Burrow DAO Docs, https://docs.burrow.cash/governance] [EV-??? - not explicitly in history but confirmed live]
+
+Dependency Name: FINMA (Swiss Financial Market Supervisory Authority)
+Dependency Type: Government
+Purpose: Regulatory oversight untuk NEAR Foundation (Zug, Switzerland); AML/KYC compliance
+Criticality: Medium
+Status: Live
+Related Entity: FINMA (Swiss Financial Market Supervisory Authority)
+Related Technology Component: Foundation Legal Structure; Compliance
+Sources: [FINMA Crypto Guidance, https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/wegleitung-ico/wegleitung-ico.pdf] [FINMA NEAR Foundation, https://www.finma.ch/en/authorization/supervised-institutions/] [EV-??? - not explicitly in history but confirmed live]
+
+Dependency Name: SEC (US Securities and Exchange Commission)
+Dependency Type: Government
+Purpose: Regulatory enforcement risk untuk token NEAR classification; exchange listing implications
+Criticality: High
+Status: Ongoing
+Related Entity: SEC (US Securities and Exchange Commission)
+Related Technology Component: Token Legal Status; Exchange Compliance
+Sources: [SEC Crypto Enforcement, https://www.sec.gov/spotlight/cybersecurity-enforcement-actions] [SEC NEAR Mentions, https://www.sec.gov/search?q=near+protocol] [EV-??? - not explicitly in history but confirmed live]
+
+## Major Integrations
+
+Integration Name: Rainbow Bridge (NEAR ↔ Ethereum)
+Integrated With: Ethereum Mainnet
+Purpose: Trust-minimized bridge untuk transfer aset (NEAR, ERC-20, NEP-141) dan pesan cross-chain; light client verification, permissionless relayers
+Status: Live
+Related Historical Event ID: EV-019
+Sources: [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Rainbow Bridge Website, https://rainbowbridge.app]
+
+Integration Name: Aurora (EVM Layer-2 on NEAR)
+Integrated With: Ethereum Virtual Machine (EVM) ecosystem
+Purpose: Full EVM compatibility di atas NEAR; deploy Solidity contracts tanpa modifikasi; gas ~$0.01, finality ~2 detik; Rainbow Bridge untuk liquidity
+Status: Live
+Related Historical Event ID: EV-018 (testnet), EV-025 (mainnet)
+Sources: [Aurora Docs, https://docs.aurora.dev] [Aurora Website, https://aurora.dev]
+
+Integration Name: Wormhole Cross-Chain Messaging
+Integrated With: Wormhole Network (Ethereum, Solana, Polygon, BSC, Avalanche, dll)
+Purpose: Guardian-based cross-chain messaging; token bridge (wrapped assets); NFT bridge; generic messaging
+Status: Live
+Related Historical Event ID: EV-041
+Sources: [Wormhole NEAR Integration, https://wormhole.com/blog/near-integration] [Wormhole Docs, https://docs.wormhole.com/wormhole/near]
+
+Integration Name: LayerZero Omnichain Interoperability
+Integrated With: LayerZero Network (50+ chains including Ethereum, BSC, Polygon, Arbitrum, Optimism, Avalanche, dll)
+Purpose: Ultra Light Node + DVN + Executor untuk generic cross-chain messaging; OApp development
+Status: Live
+Related Historical Event ID: EV-044
+Sources: [LayerZero NEAR Integration, https://layerzero.network/near] [LayerZero Docs NEAR, https://docs.layerzero.network/near]
+
+Integration Name: Axelar Cross-Chain Gateway
+Integrated With: Axelar Network (Ethereum, Cosmos, Polygon, Avalanche, dll)
+Purpose: Gateway contracts + Axelar validator set untuk General Message Passing (GMP); cross-chain function calls
+Status: Live
+Related Historical Event ID: EV-045
+Sources: [Axelar NEAR Integration, https://axelar.network/near] [Axelar Docs NEAR, https://docs.axelar.dev/near]
+
+Integration Name: Hyperlane Permissionless Interoperability
+Integrated With: Hyperlane Network (Ethereum, Solana, Cosmos, dll)
+Purpose: ISM-customizable permissionless messaging; deploy own bridge tanpa permission; Warp Routes untuk token
+Status: Live
+Related Historical Event ID: EV-048
+Sources: [Hyperlane NEAR, https://hyperlane.xyz/near] [Hyperlane Docs NEAR, https://docs.hyperlane.xyz/near]
+
+Integration Name: Chainlink Oracle Services
+Integrated With: Chainlink Network
+Purpose: Price Feeds, VRF, CCIP di NEAR; DeFi oracle standard
+Status: Live
+Related Historical Event ID: EV-038
+Sources: [Chainlink NEAR Launch, https://blog.chain.link/chainlink-launches-on-near/] [Chainlink NEAR Docs, https://docs.chain.link/chainlink-near]
+
+Integration Name: Pyth Network Price Feeds
+Integrated With: Pyth Network
+Purpose: High-fidelity first-party price feeds untuk order-book DEX dan perpetual trading
+Status: Live
+Related Historical Event ID: EV-039
+Sources: [Pyth Network NEAR, https://pyth.network/near/] [Pyth NEAR Docs, https://docs.pyth.network/near]
+
+Integration Name: The Graph Decentralized Indexing
+Integrated With: The Graph Protocol
+Purpose: Subgraph deployment untuk NEAR data query via GraphQL; decentralized alternative ke NEAR Lake
+Status: Live
+Related Historical Event ID: EV-051
+Sources: [The Graph NEAR Support, https://thegraph.com/blog/near-support] [The Graph NEAR Docs, https://thegraph.com/docs/en/developer/near/]
+
+Integration Name: NEAR Lake Framework
+Integrated With: Google Cloud Storage (GCS) / Amazon S3
+Purpose: Streaming on-chain data ke cloud storage untuk analytics; centralized indexing layer
+Status: Live
+Related Historical Event ID: EV-024
+Sources: [NEAR Lake GitHub, https://github.com/near/near-lake-framework] [NEAR Blog NEAR Lake, https://near.org/blog/near-lake-framework]
+
+Integration Name: Dune Analytics Integration
+Integrated With: Dune Analytics Platform
+Purpose: SQL-based analytics untuk NEAR; community dashboards; free public queries
+Status: Live
+Related Historical Event ID: EV-055
+Sources: [Dune NEAR Dashboards, https://dune.com/browse/near] [Dune NEAR Integration, https://dune.com/blog/near-support]
+
+Integration Name: Nansen Analytics Integration
+Integrated With: Nansen Platform
+Purpose: Address labeling, smart money tracking, institutional dashboards untuk NEAR
+Status: Live
+Related Historical Event ID: EV-059
+Sources: [Nansen NEAR Support, https://www.nansen.ai/near] [Nansen NEAR Blog, https://www.nansen.ai/blog/near-support]
+
+Integration Name: Flipside Crypto Velocity
+Integrated With: Flipside Crypto Platform
+Purpose: Free NEAR analytics via Velocity; bounty program; SQL interface
+Status: Live
+Related Historical Event ID: EV-063
+Sources: [Flipside NEAR, https://flipsidecrypto.xyz/near] [Flipside NEAR Velocity, https://app.flipsidecrypto.com/velocity/near]
+
+Integration Name: Token Terminal Integration
+Integrated With: Token Terminal Platform
+Purpose: Financial metrics on-chain: revenue, P/E, TVL, active users, developer activity
+Status: Live
+Related Historical Event ID: EV-064
+Sources: [Token Terminal NEAR, https://tokenterminal.com/terminal/projects/near] [Token Terminal NEAR Metrics, https://tokenterminal.com/terminal/projects/near/metrics]
+
+Integration Name: DefiLlama TVL Tracking
+Integrated With: DefiLlama Platform
+Purpose: Real-time TVL untuk 100+ protokol NEAR; breakdown per protocol/category
+Status: Live
+Related Historical Event ID: EV-065
+Sources: [DefiLlama NEAR, https://defillama.com/chain/NEAR] [DefiLlama NEAR Protocols, https://defillama.com/chain/NEAR/protocols]
+
+Integration Name: Celer cBridge Integration
+Integrated With: Celer Network
+Purpose: Fast cross-chain transfers NEAR ↔ Ethereum/BSC/Solana dll via cBridge
+Status: Live
+Related Historical Event ID: Not explicitly in Phase 3 history
+Sources: [Celer cBridge NEAR, https://cbridge.celer.network/near] [Celer NEAR Blog, https://blog.celer.network/near-integration]
+
+Integration Name: Synapse Protocol Integration
+Integrated With: Synapse Protocol
+Purpose: Cross-chain AMM dan generalized messaging bridge untuk NEAR
+Status: Live
+Related Historical Event ID: Not explicitly in Phase 3 history
+Sources: [Synapse NEAR Launch, https://blog.synapseprotocol.com/near-launch] [Synapse NEAR Docs, https://docs.synapseprotocol.com/near]
+
+Integration Name: Allbridge Integration
+Integrated With: Allbridge
+Purpose: Simple cross-chain bridge NEAR ↔ Ethereum/BSC/Solana dll
+Status: Live
+Related Historical Event ID: Not explicitly in Phase 3 history
+Sources: [Allbridge Website, https://allbridge.io] [Allbridge NEAR Support, https://docs.allbridge.io/near]
+
+Integration Name: Octopus Network Appchain Settlement
+Integrated With: Octopus Network
+Purpose: NEAR sebagai settlement layer untuk Octopus appchains; trust-minimized bridge
+Status: Live
+Related Historical Event ID: Not explicitly in Phase 3 history
+Sources: [Octopus Network Website, https://octopus.network] [Octopus NEAR Integration, https://docs.octopus.network/near-integration]
+
+Integration Name: Calimero Private Shards
+Integrated With: Calimero Network
+Purpose: Private shard framework di atas NEAR; enterprise private data dengan public settlement
+Status: Live
+Related Historical Event ID: EV-049
+Sources: [Calimero Network, https://calimero.network] [NEAR Blog Calimero, https://near.org/blog/calimero-network]
+
+Integration Name: NEAR Data Availability Layer
+Integrated With: Octopus Network; Calimero Network; other rollups/appchains
+Purpose: Blobspace untuk rollups/appchains; NEAR sebagai settlement + DA layer
+Status: Live (launched 2025-04)
+Related Historical Event ID: EV-068
+Sources: [NEAR Blog DA Layer, https://near.org/blog/near-data-availability-layer] [Octopus Network, https://octopus.network] [Calimero Network, https://calimero.network]
+
+Integration Name: NEAR Intents / Chain Abstraction Stack
+Integrated With: Sender Wallet; Meteor Wallet; Here Wallet; MyNearWallet; OKX Wallet; Binance Web3 Wallet; Proximity Labs; Aurora Labs
+Purpose: Cross-chain user operations via intent-based architecture; MPC multi-chain wallet; solver marketplace; relayer network
+Status: Ongoing rollout (v1 2024-06, v2 2025-06)
+Related Historical Event ID: EV-057, EV-070
+Sources: [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEARCore GitHub, https://github.com/near/nearcore]
+
+Integration Name: NEAR Social Protocol
+Integrated With: NEAR Protocol (on-chain)
+Purpose: Decentralized social protocol: profile, content, social graph on-chain; frontend NEAR.Social
+Status: Live
+Related Historical Event ID: EV-029
+Sources: [NEAR Social Docs, https://docs.near.org/social] [NEAR Social Website, https://near.social]
+
+Integration Name: MetaPool Liquid Staking
+Integrated With: NEAR Protocol (staking)
+Purpose: Liquid staking NEAR → stNEAR; DeFi composability dengan staking rewards
+Status: Live
+Related Historical Event ID: EV-021
+Sources: [MetaPool Website, https://metapool.app] [MetaPool Docs, https://docs.metapool.app]
+
+Integration Name: Stader Labs Liquid Staking
+Integrated With: NEAR Protocol (staking)
+Purpose: Liquid staking NEAR → stNEAR (Stader version); multi-chain staking infrastructure
+Status: Live
+Related Historical Event ID: EV-034
+Sources: [Stader Labs NEAR, https://staderlabs.com/near] [Stader NEAR Docs, https://docs.staderlabs.com/near]
+
+Integration Name: Ref Finance AMM DEX
+Integrated With: NEAR Protocol
+Purpose: Native AMM DEX; stable swap, volatile pools, farming; DeFi liquidity hub
+Status: Live
+Related Historical Event ID: EV-020
+Sources: [Ref Finance Website, https://ref.finance] [Ref Finance Docs, https://docs.ref.finance]
+
+Integration Name: Burrow Lending Protocol
+Integrated With: NEAR Protocol
+Purpose: Native lending/borrowing (Compound/Aave style); money market untuk NEAR ecosystem
+Status: Live
+Related Historical Event ID: EV-031
+Sources: [Burrow Website, https://burrow.cash] [Burrow Docs, https://docs.burrow.cash]
+
+Integration Name: Orderly Network (via Aurora)
+Integrated With: Aurora; NEAR Protocol; Pyth Network
+Purpose: Order-book DEX (CLOB) untuk spot dan perpetual trading; matching engine off-chain + settlement on-chain
+Status: Live
+Related Historical Event ID: EV-042
+Sources: [Orderly Network Website, https://orderly.network] [Orderly NEAR Docs, https://docs.orderly.network/near]
+
+Integration Name: Spin Native Order-Book DEX
+Integrated With: NEAR Protocol (native); Pyth Network
+Purpose: Native order-book DEX (bukan via Aurora) untuk spot dan derivatives; on-chain matching engine
+Status: Live
+Related Historical Event ID: EV-043
+Sources: [Spin Website, https://spin.fi] [Spin NEAR Docs, https://docs.spin.fi]
+
+Integration Name: Trisolaris Stablecoin DEX
+Integrated With: NEAR Protocol
+Purpose: AMM stablecoin-focused (Curve-like); minimal slippage stablecoin swaps
+Status: Live
+Related Historical Event ID: Not explicitly in Phase 3 history
+Sources: [Trisolaris Website, https://trisolaris.app] [Trisolaris Docs, https://docs.trisolaris.app]
+
+Integration Name: Sweat Economy Migration
+Integrated With: NEAR Protocol (from Ethereum)
+Purpose: Move-to-earn app migration dari Ethereum ke NEAR; jutaan user onboarding; SWEAT token di NEAR
+Status: Live
+Related Historical Event ID: EV-030
+Sources: [Sweat Economy Website, https://sweateconomy.com] [NEAR Blog Sweat, https://near.org/blog/sweat-economy-near]
+
+Integration Name: Paras NFT Marketplace
+Integrated With: NEAR Protocol
+Purpose: Native NFT marketplace; minting, trading, royalties on-chain
+Status: Live
+Related Historical Event ID: EV-022
+Sources: [Paras Website, https://paras.id] [Paras Docs, https://docs.paras.id]
+
+Integration Name: Mintbase NFT Platform
+Integrated With: NEAR Protocol (multi-chain)
+Purpose: NFT minting dan marketplace; custom smart contract NFT support
+Status: Live
+Related Historical Event ID: EV-023
+Sources: [Mintbase Website, https://mintbase.io] [Mintbase NEAR Docs, https://docs.mintbase.io/near]
+
+Integration Name: Sender Wallet
+Integrated With: NEAR Protocol; Aurora
+Purpose: Browser extension wallet; hardware wallet support; NFT display; dApp connector
+Status: Live
+Related Historical Event ID: EV-027
+Sources: [Sender Wallet Website, https://senderwallet.io] [Sender Wallet Docs, https://docs.senderwallet.io]
+
+Integration Name: Meteor Wallet
+Integrated With: NEAR Protocol
+Purpose: Open-source browser extension wallet; Ledger support; simple UX
+Status: Live
+Related Historical Event ID: Not explicitly in Phase 3 history
+Sources: [Meteor Wallet Website, https://meteorwallet.app] [Meteor Wallet GitHub, https://github.com/meteorwallet]
+
+Integration Name: Here Wallet
+Integrated With: NEAR Protocol
+Purpose: Mobile wallet non-custodial; staking, NFT, social recovery via NEAR Social
+Status: Live
+Related Historical Event ID: Not explicitly in Phase 3 history
+Sources: [Here Wallet Website, https://herewallet.app] [Here Wallet GitHub, https://github.com/herewallet]
+
+Integration Name: MyNearWallet
+Integrated With: NEAR Protocol
+Purpose: Web-based wallet interface; token swap, portfolio, alternative ke NEAR Wallet resmi
+Status: Live
+Related Historical Event ID: Not explicitly in Phase 3 history
+Sources: [MyNearWallet Website, https://mynearwallet.com] [MyNearWallet GitHub, https://github.com/mynearwallet]
+
+Integration Name: NEAR Wallet (Official)
+Integrated With: NEAR Protocol
+Purpose: Official web wallet; account management, staking, governance, dApp interaction
+Status: Live
+Related Historical Event ID: EV-017
+Sources: [NEAR Wallet, https://wallet.near.org] [NEAR Docs Wallet, https://docs.near.org/tools/wallet]
+
+Integration Name: NEAR CLI
+Integrated With: NEAR Protocol
+Purpose: Command-line interface untuk deploy kontrak, manage account, stake, view calls
+Status: Live
+Related Historical Event ID: EV-026
+Sources: [NEAR CLI GitHub, https://github.com/near/near-cli] [NEAR CLI Docs, https://docs.near.org/tools/near-cli]
+
+Integration Name: NEAR Explorer
+Integrated With: NEAR Protocol
+Purpose: Official block explorer; transaction/account/contract/validator search; API
+Status: Live
+Related Historical Event ID: Not explicitly in Phase 3 history
+Sources: [NEAR Explorer, https://explorer.near.org] [NEAR Explorer API, https://docs.near.org/api/explorer]
+
+Integration Name: NEAR DevHub
+Integrated With: NEAR Protocol
+Purpose: Developer portal terpadu: docs, tutorial, tools, SDK reference, contoh kode
+Status: Live
+Related Historical Event ID: EV-050
+Sources: [NEAR DevHub, https://near.dev] [NEAR DevHub GitHub, https://github.com/near/devhub]
+
+Integration Name: NEAR University
+Integrated With: NEAR Protocol
+Purpose: Platform edukasi developer: kursus, sertifikasi, workshop, learning path
+Status: Live
+Related Historical Event ID: EV-035
+Sources: [NEAR University, https://near.university] [NEAR University GitHub, https://github.com/near/near-university]
+
+Integration Name: NEAR Horizon / NEAR Horizon Accelerator
+Integrated With: NEAR Protocol
+Purpose: Inkubasi dan accelerator untuk startup early-stage; funding, mentorship, investor network
+Status: Live
+Related Historical Event ID: EV-033
+Sources: [NEAR Horizon, https://near.org/horizon] [NEAR Horizon Accelerator, https://near.org/horizon/accelerator]
+
+Integration Name: NEAR Grants Program
+Integrated With: NEAR Protocol
+Purpose: Hibah untuk developer, researcher, builder; ratusan proyek didanai since 2020
+Status: Live
+Related Historical Event ID: Not explicitly in Phase 3 history
+Sources: [NEAR Grants Website, https://near.org/grants] [NEAR Grants Dashboard, https://grants.near.org]
+
+Integration Name: NEARCon
+Integrated With: NEAR Protocol community
+Purpose: Konferensi tahunan flagship; keynote, workshop, hackathon, panel
+Status: Live (annual)
+Related Historical Event ID: EV-036 (2022), EV-047 (2023), EV-056 (2024), EV-069 (2025 planned)
+Sources: [NEARCon Website, https://nearcon.org] [NEAR Blog NEARCon, https://near.org/blog/nearcon-2023]
+
+Integration Name: NEAR Week
+Integrated With: NEAR Protocol community
+Purpose: Global event series mingguan: hackathon, workshop, conference berkeliling dunia
+Status: Live
+Related Historical Event ID: EV-060
+Sources: [NEAR Week Website, https://nearweek.org] [NEAR Blog NEAR Week, https://near.org/blog/near-week]
+
+Integration Name: ETHDenver Partnership
+Integrated With: ETHDenver
+Purpose: Sponsor utama dan bounty track besar di hackathon Ethereum terbesar
+Status: Live (annual)
+Related Historical Event ID: Not explicitly in Phase 3 history
+Sources: [ETHDenver NEAR Sponsor, https://ethdenver.com/partners/near] [NEAR Blog ETHDenver, https://near.org/blog/ethdenver-2023]
+
+Integration Name: Hackathons (NEAR)
+Integrated With: ETHGlobal, ETHDenver, NEARCon, regional hackathons
+Purpose: Program hackathon berkala dengan prize pool besar untuk build di NEAR/Aurora
+Status: Live
+Related Historical Event ID: Not explicitly in Phase 3 history
+Sources: [NEAR Hackathons, https://near.org/hackathons] [NEAR Bounties GitHub, https://github.com/near/bounties]
+
+Integration Name: Proximity Labs R&D
+Integrated With: NEAR Protocol
+Purpose: R&D company untuk infrastructure, tooling, protokol baru; spin-out dari NEAR core
+Status: Live
+Related Historical Event ID: EV-052
+Sources: [Proximity Labs Website, https://proximitylabs.io] [NEAR Blog Proximity Labs, https://near.org/blog/proximity-labs]
+
+Integration Name: Pagoda Infrastructure
+Integrated With: NEAR Protocol
+Purpose: RPC (FastNear), indexing, tooling enterprise; spin-out dari NEAR core
+Status: Live
+Related Historical Event ID: EV-028
+Sources: [Pagoda Website, https://pagoda.co] [NEAR Blog Pagoda Launch, https://near.org/blog/pagoda-launch]
+
+## Infrastructure Providers
+
+Provider: Figment
+Service: Validator infrastructure, staking services, RPC nodes
+Criticality: High
+Status: Live
+Sources: [Figment NEAR, https://figment.io/networks/near/] [Figment NEAR Staking, https://learn.figment.io/network-documentation/near/]
+
+Provider: Chorus One
+Service: Validator operations, staking services, non-custodial
+Criticality: High
+Status: Live
+Sources: [Chorus One NEAR, https://chorus.one/near/] [Chorus One NEAR Staking, https://staking.chorus.one/near]
+
+Provider: P2P Validator
+Service: Validator operations, non-custodial staking, low commission, high uptime
+Criticality: High
+Status: Live
+Sources: [P2P Validator NEAR, https://p2p.org/near/] [P2P Validator NEAR Staking, https://stake.p2p.org/near/]
+
+Provider: Everstake
+Service: Validator operations, staking services retail dan institutional
+Criticality: High
+Status: Live
+Sources: [Everstake NEAR, https://everstake.one/near/] [Everstake NEAR Staking, https://stake.everstake.one/near]
+
+Provider: Blockdaemon
+Service: Institutional infrastructure provider; NEAR nodes, staking services enterprise
+Criticality: High
+Status: Live
+Sources: [Blockdaemon NEAR, https://blockdaemon.com/protocols/near/] [Blockdaemon NEAR Staking, https://blockdaemon.com/staking/near/]
+
+Provider: Staked (Coinbase Cloud)
+Service: Institutional staking service (acquired by Coinbase); validator operations enterprise-grade
+Criticality: High
+Status: Live
+Sources: [Staked NEAR, https://staked.us/networks/near] [Coinbase Cloud NEAR, https://cloud.coinbase.com/networks/near]
+
+Provider: Pagoda (FastNear)
+Service: RPC nodes (FastNear enhanced API), indexing, developer tooling, enterprise services
+Criticality: High
+Status: Live
+Sources: [Pagoda Website, https://pagoda.co] [NEAR Blog Pagoda Launch, https://near.org/blog/pagoda-launch]
+
+Provider: NEAR Foundation RPC
+Service: Public RPC endpoints untuk community
+Criticality: Medium
+Status: Live
+Sources: [NEAR RPC Docs, https://docs.near.org/api/rpc] [NEAR Documentation, https://docs.near.org]
+
+Provider: NEAR Lake Framework
+Service: Data indexing streaming ke GCS/S3; block/transaction/event/receipt data
+Criticality: High
+Status: Live
+Sources: [NEAR Lake GitHub, https://github.com/near/near-lake-framework] [NEAR Blog NEAR Lake, https://near.org/blog/near-lake-framework]
+
+Provider: The Graph
+Service: Decentralized indexing via subgraphs; GraphQL query layer
+Criticality: Medium
+Status: Live
+Sources: [The Graph NEAR Support, https://thegraph.com/blog/near-support] [The Graph NEAR Docs, https://thegraph.com/docs/en/developer/near/]
+
+Provider: Dune Analytics
+Service: SQL-based analytics platform; community dashboards
+Criticality: Medium
+Status: Live
+Sources: [Dune NEAR Dashboards, https://dune.com/browse/near] [Dune NEAR Integration, https://dune.com/blog/near-support]
+
+Provider: Nansen
+Service: On-chain analytics dengan address labeling; institutional dashboards
+Criticality: Medium
+Status: Live
+Sources: [Nansen NEAR Support, https://www.nansen.ai/near] [Nansen NEAR Blog, https://www.nansen.ai/blog/near-support]
+
+Provider: Flipside Crypto
+Service: Free analytics via Velocity; bounty program; SQL interface
+Criticality: Medium
+Status: Live
+Sources: [Flipside NEAR, https://flipsidecrypto.xyz/near] [Flipside NEAR Velocity, https://app.flipsidecrypto.com/velocity/near]
+
+Provider: Token Terminal
+Service: Financial metrics on-chain: revenue, P/E, TVL, active users, developer activity
+Criticality: Medium
+Status: Live
+Sources: [Token Terminal NEAR, https://tokenterminal.com/terminal/projects/near] [Token Terminal NEAR Metrics, https://tokenterminal.com/terminal/projects/near/metrics]
+
+Provider: DefiLlama
+Service: Real-time TVL tracking untuk 100+ protokol NEAR
+Criticality: Medium
+Status: Live
+Sources: [DefiLlama NEAR, https://defillama.com/chain/NEAR] [DefiLlama NEAR Protocols, https://defillama.com/chain/NEAR/protocols]
+
+Provider: CertiK
+Service: Continuous audit program; Skynet real-time monitoring; ecosystem contract audits
+Criticality: High
+Status: Live
+Sources: [CertiK NEAR, https://www.certik.com/projects/near-protocol] [CertiK Skynet, https://skynet.certik.com/projects/near-protocol]
+
+Provider: Trail of Bits
+Service: Core protocol audit (2020); Aurora/Rainbow Bridge audits
+Criticality: High
+Status: Completed (core); Ongoing (ecosystem)
+Sources: [Trail of Bits Publication, https://github.com/trailofbits/publications/tree/master/reviews/near] [Trail of Bits Blog, https://blog.trailofbits.com/2020/10/14/auditing-near-protocol/]
+
+Provider: NCC Group
+Service: Core protocol security assessment (2020); cryptography, consensus, sharding review
+Criticality: High
+Status: Completed
+Sources: [NCC Group Blog, https://www.nccgroup.com/us/about-us/newsroom-and-events/blog/2020/october/near-protocol-security-assessment/]
+
+Provider: Immunefi
+Service: Bug bounty platform; NEAR Foundation sponsored bounties
+Criticality: Medium
+Status: Live
+Sources: [Immunefi NEAR, https://immunefi.com/bounty/near/]
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: NEAR/USDT, NEAR/BTC, NEAR/BUSD, NEAR/USDC, NEAR/BNB
+Perpetual: NEAR/USDT perpetual futures
+OTC: Available via Binance OTC
+Launchpool: Historical (NEAR Launchpool 2020)
+Status: Live
+Sources: [Binance NEAR Listing, https://www.binance.com/en/blog/421499824684900352/NEAR-Protocol-NEAR-Listing] [Binance NEAR Trading, https://www.binance.com/en/trade/NEAR_USDT]
+
+Exchange: Coinbase (Coinbase Pro / Advanced Trade)
+Listing Status: Listed
+Spot: NEAR/USD, NEAR/BTC, NEAR/USDC
+Perpetual: No (Coinbase does not offer perpetual futures)
+OTC: Available via Coinbase Prime
+Launchpool: No
+Status: Live
+Sources: [Coinbase NEAR Listing, https://blog.coinbase.com/near-protocol-near-is-launching-on-coinbase-pro-8f5a5c5f5d5a] [Coinbase NEAR Asset, https://www.coinbase.com/price/near]
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: NEAR/USD, NEAR/EUR, NEAR/USDT
+Perpetual: NEAR/USD perpetual futures (Kraken Futures)
+OTC: Available via Kraken OTC
+Launchpool: No
+Status: Live
+Sources: [Kraken NEAR Listing, https://blog.kraken.com/post/3012/near-protocol-near-now-available-on-kraken/] [Kraken NEAR Trading, https://trade.kraken.com/markets/kraken/near/usd]
+
+Exchange: OKX
+Listing Status: Listed
+Spot: NEAR/USDT, NEAR/USDC, NEAR/BTC
+Perpetual: NEAR/USDT perpetual futures
+OTC: Available via OKX OTC
+Launchpool: Historical (OKX Jumpstart NEAR)
+Status: Live
+Sources: [OKX NEAR Listing, https://www.okx.com/announcement/near-listing] [OKX NEAR Trading, https://www.okx.com/markets/spot/near-usdt]
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: NEAR/USDT, NEAR/USDC
+Perpetual: NEAR/USDT perpetual futures (USDT-margined, coin-margined)
+OTC: Available via Bybit OTC
+Launchpool: No
+Status: Live
+Sources: [Bybit NEAR Listing, https://announcements.bybit.com/en/article/bybit-lists-near-protocol-near/] [Bybit NEAR Trading, https://www.bybit.com/trade/spot/NEAR/USDT]
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: NEAR/USDT, NEAR/BTC, NEAR/USDC
+Perpetual: NEAR/USDT perpetual futures
+OTC: Available via KuCoin OTC
+Launchpool: No
+Status: Live
+Sources: [KuCoin NEAR Listing, https://www.kucoin.com/news/en-near-protocol-near-listing-on-kucoin] [KuCoin NEAR Trading, https://www.kucoin.com/trade/NEAR-USDT]
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: NEAR/USDT, NEAR/BTC, NEAR/USDC
+Perpetual: NEAR/USDT perpetual futures
+OTC: Available via Gate.io OTC
+Launchpool: No
+Status: Live
+Sources: [Gate.io NEAR Listing, https://www.gate.io/announcement/near-listing] [Gate.io NEAR Trading, https://www.gate.io/trade/NEAR_USDT]
+
+Exchange: Huobi / HTX
+Listing Status: Listed
+Spot: NEAR/USDT, NEAR/BTC, NEAR/USDC
+Perpetual: NEAR/USDT perpetual futures
+OTC: Available via HTX OTC
+Launchpool: No
+Status: Live
+Sources: [Huobi NEAR Listing, https://www.htx.com/en-us/announcement/near-listing] [HTX NEAR Trading, https://www.htx.com/en-us/trade/near_usdt]
+
+Exchange: Ref Finance (DEX)
+Listing Status: Native DEX
+Spot: NEAR/wNEAR, NEAR/USDT, NEAR/USDC, NEAR/stNEAR, various NEP-141 pairs
+Perpetual: No
+OTC: No
+Launchpool: No (but farming pools)
+Status: Live
+Sources: [Ref Finance Website, https://ref.finance] [Ref Finance Docs, https://docs.ref.finance]
+
+Exchange: Spin (Native Order-Book DEX)
+Listing Status: Native DEX
+Spot: NEAR/USDT, NEAR/USDC, NEAR/wNEAR order-book
+Perpetual: NEAR perpetual futures (on-chain order book)
+OTC: No
+Launchpool: No
+Status: Live
+Sources: [Spin Website, https://spin.fi] [Spin NEAR Docs, https://docs.spin.fi]
+
+Exchange: Orderly Network (via Aurora)
+Listing Status: DEX on Aurora
+Spot: NEAR/USDT order-book (CLOB)
+Perpetual: NEAR perpetual futures (CLOB)
+OTC: No
+Launchpool: No
+Status: Live
+Sources: [Orderly Network Website, https://orderly.network] [Orderly NEAR Docs, https://docs.orderly.network/near]
+
+Exchange: Trisolaris (Stablecoin DEX)
+Listing Status: Native DEX
+Spot: NEAR/USDT, NEAR/USDC, stablecoin pairs (low slippage)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Live
+Sources: [Trisolaris Website, https://trisolaris.app] [Trisolaris Docs, https://docs.trisolaris.app]
+
+## Wallet Ecosystem
+
+Wallet: NEAR Wallet (Official)
+Support Type: Web-based non-custodial; account management, staking, governance, dApp interaction, NFT display
+Status: Live
+Sources: [NEAR Wallet, https://wallet.near.org] [NEAR Docs Wallet, https://docs.near.org/tools/wallet] [EV-017]
+
+Wallet: Sender Wallet
+Support Type: Browser extension (Chrome, Firefox, Brave, Edge); hardware wallet (Ledger); NFT display; dApp connector; Aurora support; multi-account
+Status: Live
+Sources: [Sender Wallet Website, https://senderwallet.io] [Sender Wallet Docs, https://docs.senderwallet.io] [EV-027]
+
+Wallet: Meteor Wallet
+Support Type: Browser extension (open-source); hardware wallet (Ledger); simple UX; NEAR native
+Status: Live
+Sources: [Meteor Wallet Website, https://meteorwallet.app] [Meteor Wallet GitHub, https://github.com/meteorwallet]
+
+Wallet: Here Wallet
+Support Type: Mobile app (iOS, Android); non-custodial; staking, NFT, social recovery via NEAR Social
+Status: Live
+Sources: [Here Wallet Website, https://herewallet.app] [Here Wallet GitHub, https://github.com/herewallet]
+
+Wallet: MyNearWallet
+Support Type: Web-based interface; token swap, portfolio tracking, NFT display, hardware wallet support; alternative ke NEAR Wallet resmi
+Status: Live
+Sources: [MyNearWallet Website, https://mynearwallet.com] [MyNearWallet GitHub, https://github.com/mynearwallet]
+
+Wallet: OKX Wallet
+Support Type: Multi-chain wallet (extension + mobile); NEAR support; NEAR Intents integration (2025)
+Status: Live
+Sources: [OKX Wallet, https://www.okx.com/web3] [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [EV-070]
+
+Wallet: Binance Web3 Wallet
+Support Type: Multi-chain wallet (in Binance app); NEAR support; NEAR Intents integration (2025)
+Status: Live
+Sources: [Binance Web3 Wallet, https://www.binance.com/en/web3-wallet] [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [EV-070]
+
+Wallet: Ledger Hardware Wallet
+Support Type: Hardware wallet; NEAR app di Ledger Live; supported oleh Sender, Meteor, MyNearWallet, NEAR Wallet
+Status: Live
+Sources: [Ledger NEAR Support, https://support.ledger.com/hc/en-us/articles/4405511670417-NEAR-NEAR-] [Sender Wallet Docs, https://docs.senderwallet.io]
+
+Wallet: Bitte Wallet (NEAR Social Wallet)
+Support Type: NEAR Social native wallet; social recovery; embedded in NEAR.Social frontend
+Status: Live
+Sources: [NEAR Social Website, https://near.social] [NEAR Social Docs, https://docs.near.org/social]
+
+Wallet: Nightly Wallet
+Support Type: Browser extension; multi-chain (NEAR, Solana, Aptos, dll); NEAR support
+Status: Live
+Sources: [Nightly Website, https://nightly.app] [Nightly NEAR Support, https://docs.nightly.app/near]
+
+Wallet: Surf Wallet
+Support Type: Browser extension; NEAR, Aurora support
+Status: Live
+Sources: [Surf Wallet Website, https://surfwallet.app]
+
+## Developer Ecosystem
+
+SDK: near-sdk-rs (Rust SDK)
+Description: Official Rust smart contract framework; macro, testing framework, NEP standards compliance (NEP-141, NEP-171, NEP-177, NEP-178); primary SDK untuk NEAR contracts
+Status: Active development
+Sources: [NEAR Rust SDK GitHub, https://github.com/near/near-sdk-rs] [NEAR Rust SDK Docs, https://docs.near.org/sdk/rust/introduction]
+
+SDK: near-sdk-as (AssemblyScript SDK)
+Description: AssemblyScript SDK untuk smart contracts; legacy/maintenance mode; deprecated sepenuhnya 2024 tapi masih supported
+Status: Maintenance mode
+Sources: [NEAR AssemblyScript SDK GitHub, https://github.com/near/near-sdk-as] [NEAR Blog, https://near.org/blog]
+
+SDK: near-api-js (JavaScript/TypeScript SDK)
+Description: Official JS/TS library untuk RPC calls, transaction signing, account management, wallet integration; frontend/backend development
+Status: Active development
+Sources: [NEAR JS SDK GitHub, https://github.com/near/near-api-js] [NEAR Docs SDK, https://docs.near.org/tools/sdk]
+
+SDK: workspaces-rs / workspaces-js
+Description: Integration testing framework untuk smart contracts; simulasi jaringan lokal; testing end-to-end
+Status: Active development
+Sources: [NEAR Workspaces Rust, https://github.com/near/workspaces-rs] [NEAR Workspaces JS, https://github.com/near/workspaces-js]
+
+API: NEAR JSON-RPC API
+Description: Standard JSON-RPC over HTTP/WebSocket; block/transaction/account/contract query; tx broadcast; FastNear enhanced API via Pagoda
+Status: Live
+Sources: [NEAR RPC Docs, https://docs.near.org/api/rpc] [Pagoda FastNear, https://pagoda.co]
+
+API: NEAR Lake Framework API
+Description: Streaming data access via GCS/S3; block/transaction/event/receipt data untuk analytics
+Status: Live
+Sources: [NEAR Lake GitHub, https://github.com/near/near-lake-framework] [NEAR Blog NEAR Lake, https://near.org/blog/near-lake-framework]
+
+API: The Graph Subgraph API
+Description: GraphQL endpoint untuk NEAR subgraphs; decentralized indexing
+Status: Live
+Sources: [The Graph NEAR Docs, https://thegraph.com/docs/en/developer/near/]
+
+API: Dune Analytics API
+Description: SQL query results via API; dashboard embedding
+Status: Live
+Sources: [Dune API Docs, https://docs.dune.com/api/]
+
+Developer Tool: NEAR CLI
+Description: Command-line interface untuk deploy, call, view, stake, send, keys, multisig, contract verification
+Status: Live
+Sources: [NEAR CLI GitHub, https://github.com/near/near-cli] [NEAR CLI Docs, https://docs.near.org/tools/near-cli]
+
+Developer Tool: NEAR Explorer
+Description: Block explorer dengan UI dan API; transaction/account/contract/validator search
+Status: Live
+Sources: [NEAR Explorer, https://explorer.near.org] [NEAR Explorer API, https://docs.near.org/api/explorer]
+
+Developer Tool: NEAR DevHub
+Description: Developer portal terpadu: dokumentasi, tutorial, tools, SDK reference, contoh kode, starter kits
+Status: Live
+Sources: [NEAR DevHub, https://near.dev] [NEAR DevHub GitHub, https://github.com/near/devhub]
+
+Developer Tool: NEAR University
+Description: Platform edukasi: kursus terstruktur, sertifikasi, workshop, learning path untuk Rust/AssemblyScript
+Status: Live
+Sources: [NEAR University, https://near.university] [NEAR University GitHub, https://github.com/near/near-university]
+
+Developer Tool: NEAR Nomicon (Standards)
+Description: Spesifikasi teknis formal: NEP-141 (fungible token), NEP-171 (NFT), NEP-170 (storage), NEP-177 (storage management), NEP-178 (events), cross-contract calls
+Status: Live
+Sources: [NEAR Nomicon GitHub, https://github.com/near/NEPs] [NEAR Standards Docs, https://nomicon.io/]
+
+Developer Tool: Aurora Dev Tools
+Description: Hardhat/Foundry/Truffle plugins untuk Aurora; Ethereum tooling compatibility; Aurora RPC
+Status: Live
+Sources: [Aurora Dev Tools, https://docs.aurora.dev/develop/tools]
+
+Open Source Repository: nearcore (Core Protocol)
+Description: Rust implementation NEAR Protocol; consensus, runtime, networking, storage, RPC
+Status: Active
+Sources: [NEARCore GitHub, https://github.com/near/nearcore]
+
+Open Source Repository: near-sdk-rs
+Description: Rust smart contract SDK
+Status: Active
+Sources: [NEAR Rust SDK GitHub, https://github.com/near/near-sdk-rs]
+
+Open Source Repository: near-api-js
+Description: JavaScript/TypeScript SDK
+Status: Active
+Sources: [NEAR JS SDK GitHub, https://github.com/near/near-api-js]
+
+Open Source Repository: near-cli
+Description: CLI tool
+Status: Active
+Sources: [NEAR CLI GitHub, https://github.com/near/near-cli]
+
+Open Source Repository: near-lake-framework
+Description: Data indexing framework
+Status: Active
+Sources: [NEAR Lake GitHub, https://github.com/near/near-lake-framework]
+
+Open Source Repository: NEPs (Standards)
+Description: NEAR Enhancement Proposals; technical standards
+Status: Active
+Sources: [NEPs GitHub, https://github.com/near/NEPs]
+
+Open Source Repository: near-social
+Description: NEAR Social protocol contracts dan frontend
+Status: Active
+Sources: [NEAR Social GitHub, https://github.com/near/near-social] (inferred from docs.near.org/social)
+
+Developer Portal: NEAR DevHub (https://near.dev)
+Developer Portal: NEAR Documentation (https://docs.near.org)
+Developer Portal: NEAR University (https://near.university)
+Developer Portal: Aurora Documentation (https://docs.aurora.dev)
+Developer Portal: Rainbow Bridge Documentation (https://docs.rainbowbridge.app)
+Developer Portal: NEAR Nomicon (https://nomicon.io/)
+
+Hackathon: NEARCon Hackathon (annual, $500k-$2M+ prize pool)
+Hackathon: ETHDenver NEAR Bounty Track (annual, major sponsor)
+Hackathon: ETHGlobal NEAR Track (periodic)
+Hackathon: NEAR Regional Hackathons (Korea, Japan, India, LATAM, Africa, Russia/CIS)
+Hackathon: NEAR Week Hackathons (weekly global series)
+Sources: [NEAR Hackathons, https://near.org/hackathons] [NEAR Bounties GitHub, https://github.com/near/bounties] [NEARCon Website, https://nearcon.org] [NEAR Week Website, https://nearweek.org] [ETHDenver NEAR Sponsor, https://ethdenver.com/partners/near] [EV-036, EV-047, EV-056, EV-060, EV-069]
+
+Grant Program: NEAR Foundation Grants Program
+Description: Grants untuk developer, researcher, builder; ratusan proyek since 2020; various tracks (DeFi, Infra, Tools, Consumer, AI, etc.)
+Status: Live
+Sources: [NEAR Grants Website, https://near.org/grants] [NEAR Grants Dashboard, https://grants.near.org]
+
+Grant Program: NEAR Horizon Accelerator
+Description: 12-week accelerator untuk early-stage startup; funding, mentorship, investor network, technical support
+Status: Live
+Sources: [NEAR Horizon, https://near.org/horizon] [NEAR Horizon Accelerator, https://near.org/horizon/accelerator] [EV-033]
+
+Grant Program: NEAR Digital Collective (NDC) Grants
+Description: On-chain DAO grants via governance proposals; public goods funding; quadratic funding (v2)
+Status: Live
+Sources: [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital] [EV-040, EV-062]
+
+Grant Program: Aurora Grants
+Description: Grants untuk build di Aurora (EVM Layer-2); separate dari NEAR Foundation grants
+Status: Live
+Sources: [Aurora Grants, https://aurora.dev/grants] [Aurora DAO Governance, https://gov.aurora.dev]
+
+Grant Program: Ref Finance Grants / Burrow Grants / MetaPool Grants
+Description: Ecosystem protocol-specific grants untuk integrations, tooling, analytics
+Status: Live
+Sources: [Ref Finance Governance, https://gov.ref.finance] [Burrow Governance, https://gov.burrow.cash] [MetaPool Website, https://metapool.app]
+
+## Applications
+
+Application: Ref Finance
+Category: DeFi (AMM DEX)
+Relationship: Native core DeFi protocol; primary liquidity hub; NEP-141 token standard implementer; DAO governed
+Status: Live
+Sources: [Ref Finance Website, https://ref.finance] [Ref Finance Docs, https://docs.ref.finance] [EV-020]
+
+Application: Burrow
+Category: DeFi (Lending/Borrowing)
+Relationship: Native lending protocol; money market; DAO governed; integrates Chainlink/Pyth oracles
+Status: Live
+Sources: [Burrow Website, https://burrow.cash] [Burrow Docs, https://docs.burrow.cash] [EV-031]
+
+Application: MetaPool
+Category: DeFi (Liquid Staking)
+Relationship: Native liquid staking; stNEAR token; validator delegation; DAO governed (MP token)
+Status: Live
+Sources: [MetaPool Website, https://metapool.app] [MetaPool Docs, https://docs.metapool.app] [EV-021]
+
+Application: Stader Labs (NEAR)
+Category: DeFi (Liquid Staking)
+Relationship: Multi-chain liquid staking; stNEAR (Stader version); validator infrastructure
+Status: Live
+Sources: [Stader Labs NEAR, https://staderlabs.com/near] [Stader NEAR Docs, https://docs.staderlabs.com/near] [EV-034]
+
+Application: Bastion (NEAR)
+Category: DeFi (Liquid Staking)
+Relationship: Liquid staking bstNEAR; validator infrastructure
+Status: Live (assumed - low confidence)
+Sources: [Bastion NEAR, https://bastion.near.page] [Bastion GitHub, https://github.com/bastion-near]
+
+Application: Orderly Network (via Aurora)
+Category: DeFi (Order-Book DEX / Perpetuals)
+Relationship: CLOB DEX on Aurora; Pyth price feeds; spot & perpetual trading
+Status: Live
+Sources: [Orderly Network Website, https://orderly.network] [Orderly NEAR Docs, https://docs.orderly.network/near] [EV-042]
+
+Application: Spin
+Category: DeFi (Native Order-Book DEX / Perpetuals)
+Relationship: Native NEAR order-book DEX (not via Aurora); on-chain matching engine; Pyth price feeds
+Status: Live
+Sources: [Spin Website, https://spin.fi] [Spin NEAR Docs, https://docs.spin.fi] [EV-043]
+
+Application: Trisolaris
+Category: DeFi (Stablecoin AMM)
+Relationship: Curve-like stablecoin DEX; minimal slippage; NEAR native
+Status: Live
+Sources: [Trisolaris Website, https://trisolaris.app] [Trisolaris Docs, https://docs.trisolaris.app]
+
+Application: Paras (NEAR)
+Category: NFT Marketplace
+Relationship: Native NFT marketplace; minting, trading, royalties; NEP-171 standard
+Status: Live
+Sources: [Paras Website, https://paras.id] [Paras Docs, https://docs.paras.id] [EV-022]
+
+Application: Mintbase
+Category: NFT Platform / Marketplace
+Relationship: Multi-chain NFT platform (originated NEAR); custom smart contract NFTs; NEP-171
+Status: Live
+Sources: [Mintbase Website, https://mintbase.io] [Mintbase NEAR Docs, https://docs.mintbase.io/near] [EV-023]
+
+Application: Few and Far
+Category: NFT Marketplace / Launchpad
+Relationship: Curated NFT marketplace; premium collections; NEAR native
+Status: Live
+Sources: [Few and Far Website, https://fewandfar.xyz] [NEAR Blog Few and Far, https://near.org/blog/few-and-far]
+
+Application: Sweat Economy
+Category: Consumer App (Move-to-Earn)
+Relationship: Migrated from Ethereum to NEAR; millions users; SWEAT token; high throughput showcase
+Status: Live
+Sources: [Sweat Economy Website, https://sweateconomy.com] [NEAR Blog Sweat, https://near.org/blog/sweat-economy-near] [EV-030]
+
+Application: Kai-Ching (KAIKA)
+Category: Consumer App (Rewards/Loyalty)
+Relationship: Blockchain rewards platform; microtransactions; enterprise loyalty; NEAR native
+Status: Live
+Sources: [Kai-Ching Website, https://kaiching.io] [NEAR Blog Kai-Ching, https://near.org/blog/kai-ching]
+
+Application: NEAR Social
+Category: Social Protocol
+Relationship: Decentralized social protocol on NEAR; profile, content, social graph on-chain; NEAR.Social frontend
+Status: Live
+Sources: [NEAR Social Website, https://near.social] [NEAR Social Docs, https://docs.near.org/social] [EV-029]
+
+Application: NEAR Wallet (Official)
+Category: Wallet (Web)
+Relationship: Official web wallet; account management, staking, governance
+Status: Live
+Sources: [NEAR Wallet, https://wallet.near.org] [NEAR Docs Wallet, https://docs.near.org/tools/wallet] [EV-017]
+
+Application: Sender Wallet
+Category: Wallet (Browser Extension)
+Relationship: Most popular browser extension wallet; Ledger, NFT, dApp connector, Aurora
+Status: Live
+Sources: [Sender Wallet Website, https://senderwallet.io] [Sender Wallet Docs, https://docs.senderwallet.io] [EV-027]
+
+Application: Meteor Wallet
+Category: Wallet (Browser Extension)
+Relationship: Open-source browser extension; Ledger; simple UX
+Status: Live
+Sources: [Meteor Wallet Website, https://meteorwallet.app] [Meteor Wallet GitHub, https://github.com/meteorwallet]
+
+Application: Here Wallet
+Category: Wallet (Mobile)
+Relationship: Mobile non-custodial; staking, NFT, social recovery
+Status: Live
+Sources: [Here Wallet Website, https://herewallet.app] [Here Wallet GitHub, https://github.com/herewallet]
+
+Application: MyNearWallet
+Category: Wallet (Web)
+Relationship: Web-based alternative; token swap, portfolio, NFT
+Status: Live
+Sources: [MyNearWallet Website, https://mynearwallet.com] [MyNearWallet GitHub, https://github.com/mynearwallet]
+
+Application: NEAR CLI
+Category: Developer Tool (CLI)
+Relationship: Official CLI untuk deploy, manage, stake, view
+Status: Live
+Sources: [NEAR CLI GitHub, https://github.com/near/near-cli] [NEAR CLI Docs, https://docs.near.org/tools/near-cli] [EV-026]
+
+Application: NEAR Explorer
+Category: Analytics / Explorer
+Relationship: Official block explorer; UI + API
+Status: Live
+Sources: [NEAR Explorer, https://explorer.near.org] [NEAR Explorer API, https://docs.near.org/api/explorer]
+
+Application: NEAR Lake Framework
+Category: Infrastructure / Indexing
+Relationship: Data indexing streaming to cloud; analytics backbone
+Status: Live
+Sources: [NEAR Lake GitHub, https://github.com/near/near-lake-framework] [NEAR Blog NEAR Lake, https://near.org/blog/near-lake-framework] [EV-024]
+
+Application: NEAR DevHub
+Category: Developer Portal
+Relationship: Unified developer portal; docs, tutorials, tools
+Status: Live
+Sources: [NEAR DevHub, https://near.dev] [NEAR DevHub GitHub, https://github.com/near/devhub] [EV-050]
+
+Application: NEAR University
+Category: Education
+Relationship: Official developer education platform; courses, certification
+Status: Live
+Sources: [NEAR University, https://near.university] [NEAR University GitHub, https://github.com/near/near-university] [EV-035]
+
+Application: Aurora
+Category: Layer-2 / EVM
+Relationship: EVM-compatible Layer-2 on NEAR; separate protocol with own DAO
+Status: Live
+Sources: [Aurora Website, https://aurora.dev] [Aurora Docs, https://docs.aurora.dev] [EV-018, EV-025]
+
+Application: Rainbow Bridge
+Category: Bridge
+Relationship: Trust-minimized NEAR-Ethereum bridge; core cross-chain infrastructure
+Status: Live
+Sources: [Rainbow Bridge Website, https://rainbowbridge.app] [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [EV-019]
+
+Application: Octopus Network
+Category: Appchain Framework
+Relationship: Appchains using NEAR as settlement layer; Octopus Relay
+Status: Live
+Sources: [Octopus Network Website, https://octopus.network] [Octopus NEAR Integration, https://docs.octopus.network/near-integration]
+
+Application: Calimero Network
+Category: Private Shard Framework
+Relationship: Private shards on NEAR; enterprise privacy + public settlement
+Status: Live
+Sources: [Calimero Network, https://calimero.network] [NEAR Blog Calimero, https://near.org/blog/calimero-network] [EV-049]
+
+Application: NEAR Intents / Chain Abstraction
+Category: Cross-Chain UX Infrastructure
+Relationship: Intent-based cross-chain operations; MPC wallet; solver marketplace
+Status: Ongoing rollout
+Sources: [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEARCore GitHub, https://github.com/near/nearcore] [EV-057, EV-070]
+
+Application: NEAR Data Availability Layer
+Category: Modular DA
+Relationship: Blobspace for rollups/appchains; NEAR as settlement + DA
+Status: Launched 2025
+Sources: [NEAR Blog DA Layer, https://near.org/blog/near-data-availability-layer] [Octopus Network, https://octopus.network] [Calimero Network, https://calimero.network] [EV-068]
+
+Application: Pagoda
+Category: Infrastructure Company
+Relationship: Spin-out from NEAR core; RPC (FastNear), indexing, enterprise tooling
+Status: Live
+Sources: [Pagoda Website, https://pagoda.co] [NEAR Blog Pagoda Launch, https://near.org/blog/pagoda-launch] [EV-028]
+
+Application: Proximity Labs
+Category: R&D Company
+Relationship: Spin-out from NEAR core; infrastructure, tooling, new protocols R&D
+Status: Live
+Sources: [Proximity Labs Website, https://proximitylabs.io] [NEAR Blog Proximity Labs, https://near.org/blog/proximity-labs] [EV-052]
+
+## Governance Ecosystem
+
+Foundation: NEAR Foundation
+Description: Non-profit foundation (Zug, Switzerland); manages treasury, grants, ecosystem development, protocol governance coordination; legal entity for protocol
+Sources: [NEAR Foundation Website, https://near.org/foundation] [NEAR Foundation Announcement, https://medium.com/nearprotocol/near-foundation-announcement-7e8a5c5f5d5a] [EV-008]
+
+DAO: NEAR Digital Collective (NDC)
+Description: On-chain DAO for community treasury allocation; public goods funding; NDC v2 modular governance with sub-DAOs (DeFi, Infra, AI, Consumer), quadratic funding, delegation voting
+Sources: [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital] [EV-040, EV-062]
+
+DAO: NEAR Validators DAO
+Description: Validator coordination for protocol upgrades, parameter changes, network governance; represents PoS stakeholders
+Sources: [NEAR Validators Forum, https://gov.near.org/c/validators] [NEAR Staking Docs, https://docs.near.org/staking/validator] [EV-013]
+
+DAO: Aurora DAO
+Description: Governance for Aurora protocol (EVM Layer-2); AURORA token holders vote on upgrades, parameters
+Sources: [Aurora DAO Governance, https://gov.aurora.dev] [Aurora DAO Docs, https://docs.aurora.dev/governance]
+
+DAO: Ref Finance DAO
+Description: Governance for Ref Finance AMM DEX; REF token holders vote on fees, emissions, parameters
+Sources: [Ref Finance Governance, https://gov.ref.finance] [Ref Finance DAO Docs, https://docs.ref.finance/governance]
+
+DAO: Burrow DAO
+Description: Governance for Burrow lending protocol; BRRR token holders vote on risk parameters, interest rate models, treasury
+Sources: [Burrow Governance, https://gov.burrow.cash] [Burrow DAO Docs, https://docs.burrow.cash/governance]
+
+DAO: MetaPool DAO
+Description: Governance for MetaPool liquid staking; MP token holders vote on parameters, validator selection
+Sources: [MetaPool Website, https://metapool.app] [MetaPool Docs, https://docs.metapool.app]
+
+Council: NEAR Core Contributors
+Description: Core developers maintaining nearcore, SDKs, tooling; paid via Foundation grants/contracts; technical decision making
+Sources: [NEAR Core Contributors GitHub, https://github.com/orgs/near/people] [NEAR Contributor Guide, https://github.com/near/nearcore/blob/master/CONTRIBUTING.md]
+
+Committee: NEAR Protocol Governance Forum (gov.near.org)
+Description: Discussion forum for protocol upgrades, parameter changes; signaling votes before on-chain
+Sources: [NEAR Governance Forum, https://gov.near.org]
+
+Committee: NDC Governance Forum (gov.near.digital)
+Description: Discussion forum for NDC proposals; treasury allocation, public goods funding
+Sources: [NDC Governance Forum, https://gov.near.digital]
+
+Validator Group: Active Validator Set (100+ validators)
+Description: Block producers, chunk validators, consensus participants; stake-weighted; includes Figment, Chorus One, P2P Validator, Everstake, Blockdaemon, Staked/Coinbase Cloud, and community validators
+Sources: [NEAR Staking Docs, https://docs.near.org/staking/validator] [Figment NEAR, https://figment.io/networks/near/] [Chorus One NEAR, https://chorus.one/near/] [P2P Validator NEAR, https://p2p.org/near/] [Everstake NEAR, https://everstake.one/near/] [Blockdaemon NEAR, https://blockdaemon.com/protocols/near/] [Staked NEAR, https://staked.us/networks/near]
+
+## Ecosystem Risks
+
+Risk: Single Bridge Dependency (Rainbow Bridge) for Ethereum Trust-Minimized Transfer
+Description: Rainbow Bridge adalah satu-satunya trust-minimized bridge NEAR���Ethereum; other bridges (Wormhole, LayerZero, Axelar, Hyperlane) memiliki trust assumptions berbeda (guardian set, DVN, validator set); jika Rainbow Bridge memiliki vulnerability, trust-minimized path ke Ethereum terputus
+Confirmed: Yes
+Sources: [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Wormhole Docs, https://docs.wormhole.com/wormhole/near] [LayerZero Docs, https://docs.layerzero.network/near] [Axelar Docs, https://docs.axelar.dev/near] [Hyperlane Docs, https://docs.hyperlane.xyz/near]
+
+Risk: Centralized Indexing Dependency (NEAR Lake on GCS/S3)
+Description: NEAR Lake Framework menggunakan Google Cloud Storage / Amazon S3 untuk data streaming; single cloud provider dependency untuk primary indexing layer; The Graph decentralized alternative adoption masih rendah di NEAR
+Confirmed: Yes
+Sources: [NEAR Lake GitHub, https://github.com/near/near-lake-framework] [The Graph NEAR Support, https://thegraph.com/blog/near-support] [EV-024, EV-051]
+
+Risk: Cloud Provider Concentration (Validator/RPC/Indexer Hosting)
+Description: Majority validator nodes, RPC nodes, indexer nodes hosted di AWS, GCP, Azure, Hetzner, Equinix; geographic dan provider concentration risk untuk censorship resistance dan liveness
+Confirmed: Yes
+Sources: [NEAR Staking Docs, https://docs.near.org/staking/validator] [Pagoda, https://pagoda.co] [NEARCore GitHub, https://github.com/near/nearcore] — inferred from industry standard; no public validator infrastructure survey
+
+Risk: Oracle Dependency (Chainlink + Pyth)
+Description: DeFi protocols (Ref, Burrow, MetaPool, Orderly, Spin) bergantung pada Chainlink Price Feeds dan/atau Pyth Network; dual oracle mitigasi tapi correlated failure risk jika both experience issues
+Confirmed: Yes
+Sources: [Chainlink NEAR Docs, https://docs.chain.link/chainlink-near] [Pyth NEAR Docs, https://docs.pyth.network/near] [Ref Finance Docs, https://docs.ref.finance] [Burrow Docs, https://docs.burrow.cash] [Orderly NEAR Docs, https://docs.orderly.network/near] [Spin Docs, https://docs.spin.fi] [EV-038, EV-039]
+
+Risk: Bridge Smart Contract Risk (Multiple Bridges)
+Description: Multiple bridges (Wormhole, LayerZero, Axelar, Hyperlane, Celer, Synapse, Allbridge, Multichain-shutdown) mengamankan TVL signifikan; historical exploits (Wormhole 2022, Multichain 2023) menunjukkan bridge risk; NEAR Foundation tidak bertanggung jawab atas third-party bridges
+Confirmed: Yes
+Sources: [Wormhole Hack 2022, https://wormhole.com/blog/incident-report] [Multichain Shutdown, https://www.coindesk.com/business/2023/07/14/multichain-shutdown/] [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Wormhole Docs, https://docs.wormhole.com/wormhole/near] [LayerZero Docs, https://docs.layerzero.network/near] [Axelar Docs, https://docs.axelar.dev/near] [Hyperlane Docs, https://docs.hyperlane.xyz/near] [EV-041, EV-044, EV-045, EV-048, EV-046]
+
+Risk: DeFi TVL Concentration
+Description: TVL terkonsentrasi pada sedikit protokol besar (Ref Finance, Burrow, MetaPool, Stader, Orderly, Spin, Trisolaris); kegagaran satu protokol bisa trigger capital flight dari ekosistem
+Confirmed: Yes
+Sources: [DefiLlama NEAR Protocols, https://defillama.com/chain/NEAR/protocols] [Ref Finance, https://ref.finance] [Burrow, https://burrow.cash] [MetaPool, https://metapool.app] [Stader Labs NEAR, https://staderlabs.com/near] [Orderly Network, https://orderly.network] [Spin, https://spin.fi] [Trisolaris, https://trisolaris.app]
+
+Risk: Validator Set Centralization (Pre-Nightshade v2)
+Description: Sebelum Nightshade v2 (Feb 2024), validator hardware requirements tinggi; post-v2 chunk-only producers memperbaiki tapi Nakamoto coefficient dan Gini coefficient stake distribution perlu verifikasi on-chain current
+Confirmed: Partially (pre-v2 confirmed; post-v2 metrics need verification)
+Sources: [NEAR Nightshade Docs, https://docs.near.org/concepts/protocol/nightshade] [NEARCore Releases, https://github.com/near/nearcore/releases] [NEAR Staking Docs, https://docs.near.org/staking/validator] [EV-053, EV-061]
+
+Risk: Regulatory Risk (SEC Token Classification)
+Description: SEC enforcement actions mention NEAR sebagai potential security (Binance, Coinbase cases); NEAR Foundation Switzerland (FINMA) tapi global exposure; exchange delisting risk di US
+Confirmed: Yes
+Sources: [SEC Crypto Enforcement, https://www.sec.gov/spotlight/cybersecurity-enforcement-actions] [CoinDesk SEC NEAR Mentions, https://www.coindesk.com/tag/near-protocol/] [FINMA Crypto Guidance, https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/wegleitung-ico/wegleitung-ico.pdf] [EV-???]
+
+Risk: Foundation Treasury Transparency
+Description: NEAR Foundation tidak mempublikasikan financial statements, burn rate, runway, treasury composition; operational funding bergantung NEAR token value; no audited reports
+Confirmed: Yes
+Sources: [NEAR Foundation Website, https://near.org/foundation] [NEAR Governance Forum, https://gov.near.org] — absence of published financial statements
+
+Risk: Aurora Dependency for EVM Compatibility
+Description: Aurora adalah single EVM Layer-2 implementation; jika Aurora memiliki critical bug atau governance issue, EVM compatibility di NEAR terpengaruh; no alternative EVM L2 on NEAR
+Confirmed: Yes
+Sources: [Aurora Docs, https://docs.aurora.dev] [Aurora DAO Governance, https://gov.aurora.dev] [EV-018, EV-025]
+
+Risk: AssemblyScript SDK Deprecation
+Description: near-sdk-as deprecated 2024; existing contracts menggunakan AssemblyScript mungkin face migration issues atau breaking changes di future runtime upgrades; migration timeline tidak hard-defined
+Confirmed: Yes
+Sources: [NEAR AssemblyScript SDK GitHub, https://github.com/near/near-sdk-as] [NEAR Blog, https://near.org/blog]
+
+Risk: Dynamic Sharding Not Live
+Description: Shard count fixed at 4; resharding requires protocol upgrade; dynamic sharding roadmap item belum live; limits horizontal scaling hingga implementation complete
+Confirmed: Yes
+Sources: [NEAR Nightshade Docs, https://docs.near.org/concepts/protocol/nightshade] [NEARCore GitHub, https://github.com/near/nearcore] [NEAR Whitepaper, https://near.org/papers/nightshade/]
+
+Risk: Cross-Shard Atomic Transactions Not Supported
+Description: Cross-shard calls async via receipts; not atomic; finality depends on target shard chunk inclusion; composability limited across shards
+Confirmed: Yes
+Sources: [NEAR Nightshade Docs, https://docs.near.org/concepts/protocol/nightshade] [NEAR Whitepaper, https://near.org/papers/nightshade/]
+
+Risk: Storage Rent Model Sustainability
+Description: 1 NEAR per 100 KB storage rent; dengan NEAR price appreciation, cost menjadi prohibitive untuk state-heavy apps; state expiration proposal tidak implemented
+Confirmed: Yes
+Sources: [NEAR Economics Storage, https://docs.near.org/concepts/economics/storage-staking] [NEAR Runtime Docs, https://docs.near.org/concepts/protocol/runtime]
+
+Risk: NEAR AI / User-Owned AI Infrastructure Undefined
+Description: "User-Owned AI" narrative announced NEARCon 2023; technical spec untuk compute verification, data availability untuk AI, token utility belum lengkap; execution risk pada deliverables
+Confirmed: Yes
+Sources: [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEAR Horizon Accelerator, https://near.org/horizon/accelerator] [EV-054]
+
+Risk: Chain Abstraction / NEAR Intents Solver Centralization
+Description: NEAR Intents solver marketplace early stage; solver decentralization, fee economics, MEV protection belum terbukti at scale; single point of failure risk pada early solver set
+Confirmed: Partially (early stage, not yet proven)
+Sources: [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEARCore GitHub, https://github.com/near/nearcore] [EV-057, EV-070]
+
+Risk: DA Layer Adoption Uncertainty
+Description: NEAR DA Layer launched April 2025; adoption by Octopus, Calimero early; competition dengan Celestia, EigenDA, Avail; blobspace pricing, revenue model, validator incentives belum final
+Confirmed: Partially (early stage)
+Sources: [NEAR Blog DA Layer, https://near.org/blog/near-data-availability-layer] [Octopus Network, https://octopus.network] [Calimero Network, https://calimero.network] [EV-068]
+
+## Official Ecosystem Resources
+
+Official Documentation: https://docs.near.org
+Developer Portal (DevHub): https://near.dev
+GitHub (nearcore): https://github.com/near/nearcore
+GitHub (NEAR SDK Rust): https://github.com/near/near-sdk-rs
+GitHub (NEAR SDK JS): https://github.com/near/near-api-js
+GitHub (NEAR CLI): https://github.com/near/near-cli
+GitHub (NEAR Lake): https://github.com/near/near-lake-framework
+GitHub (NEPs Standards): https://github.com/near/NEPs
+GitHub (NEAR Social): https://github.com/near/near-social
+NEAR University: https://near.university
+Whitepaper (Nightshade): https://near.org/papers/nightshade/
+RPC API Reference: https://docs.near.org/api/rpc
+Explorer: https://explorer.near.org
+Wallet (Official): https://wallet.near.org
+Aurora Documentation: https://docs.aurora.dev
+Rainbow Bridge Documentation: https://docs.rainbowbridge.app
+NEAR Social Documentation: https://docs.near.org/social
+NEAR Nomicon (Standards): https://nomicon.io/
+NEAR Governance Forum: https://gov.near.org
+NEAR Digital Collective: https://near.digital
+NDC Governance Forum: https://gov.near.digital
+NEAR Grants: https://near.org/grants
+NEAR Grants Dashboard: https://grants.near.org
+NEAR Horizon: https://near.org/horizon
+NEAR Horizon Accelerator: https://near.org/horizon/accelerator
+Pagoda: https://pagoda.co
+DefiLlama NEAR: https://defillama.com/chain/NEAR
+Token Terminal NEAR: https://tokenterminal.com/terminal/projects/near
+Dune Analytics NEAR: https://dune.com/browse/near
+Flipside Crypto NEAR: https://flipsidecrypto.xyz/near
+Nansen NEAR: https://www.nansen.ai/near
+The Graph NEAR: https://thegraph.com/docs/en/developer/near/
+Chainlink NEAR: https://docs.chain.link/chainlink-near
+Pyth Network NEAR: https://docs.pyth.network/near
+Wormhole NEAR: https://docs.wormhole.com/wormhole/near
+LayerZero NEAR: https://docs.layerzero.network/near
+Axelar NEAR: https://docs.axelar.dev/near
+Hyperlane NEAR: https://docs.hyperlane.xyz/near
+Celer cBridge NEAR: https://cbridge.celer.network/near
+Synapse NEAR: https://docs.synapseprotocol.com/near
+Allbridge NEAR: https://docs.allbridge.io/near
+Octopus Network: https://docs.octopus.network
+Calimero Network: https://calimero.network
+NEARCon: https://nearcon.org
+NEAR Week: https://nearweek.org
+NEAR Bounties: https://github.com/near/bounties
+NEAR Hackathons: https://near.org/hackathons
+Immunefi NEAR Bug Bounty: https://immunefi.com/bounty/near/
+CertiK NEAR: https://www.certik.com/projects/near-protocol
+CertiK Skynet NEAR: https://skynet.certik.com/projects/near-protocol
+Trail of Bits Publications: https://github.com/trailofbits/publications/tree/master/reviews/near
+NCC Group NEAR Assessment: https://www.nccgroup.com/us/about-us/newsroom-and-events/blog/2020/october/near-protocol-security-assessment/
+
+## Summary
+
+Primary Ecosystem: NEAR Protocol (Layer-1 sharded PoS) dengan Aurora (EVM Layer-2) sebagai primary execution environment tambahan
+Supported Chains: Ethereum (primary bridge target via Rainbow Bridge, Wormhole, LayerZero, Axelar, Hyperlane, Celer, Synapse, Allbridge); Solana, Polygon, BSC, Cosmos, Avalanche, Arbitrum, Optimism, dan 50+ chain lainnya via cross-chain messaging protocols
+External Dependencies: 30+ critical/high/medium dependencies including Ethereum (chain), Chainlink/Pyth (oracles), 8 cross-chain bridges, 6 analytics providers, 6 validator operators, 3 audit firms, cloud providers, core open-source dependencies (Rust, Wasmer, libp2p, RocksDB), 2 appchain frameworks, 5 DAOs, 2 government regulators
+Major Integrations: 50+ live integrations spanning bridges (Rainbow Bridge, Wormhole, LayerZero, Axelar, Hyperlane, Celer, Synapse, Allbridge), oracles (Chainlink, Pyth), indexing (The Graph, NEAR Lake, Dune, Nansen, Flipside, Token Terminal, DefiLlama), DeFi (Ref, Burrow, MetaPool, Stader, Orderly, Spin, Trisolaris), NFT (Paras, Mintbase, Few and Far), Consumer (Sweat Economy, Kai-Ching), Wallets (Official, Sender, Meteor, Here, MyNearWallet, OKX, Binance Web3, Ledger), Infrastructure (Pagoda, Validators), DAOs (NDC, Validators DAO, Aurora DAO, Ref DAO, Burrow DAO), Appchains (Octopus, Calimero), DA Layer, Chain Abstraction, Social Protocol
+Infrastructure Providers: 6 major validator operators (Figment, Chorus One, P2P, Everstake, Blockdaemon, Staked/Coinbase Cloud), Pagoda (FastNear RPC), NEAR Foundation RPC, NEAR Lake, The Graph, Dune, Nansen, Flipside, Token Terminal, DefiLlama, CertiK, Trail of Bits, NCC Group, Immunefi
+Developer Programs: 4 SDKs (near-sdk-rs, near-sdk-as, near-api-js, workspaces), 4 APIs (RPC, NEAR Lake, The Graph, Dune), 8 developer tools (CLI, Explorer, DevHub, University, Nomicon, Aurora Dev Tools), 6 open-source repos, 5 developer portals, 5+ hackathon programs, 5 grant programs
+Applications: 30+ live applications across DeFi (7), NFT (3), Consumer (2), Social (1), Wallets (7), Developer Tools (4), Infrastructure (3), Layer-2 (1), Bridges (1), Appchain Frameworks (2), DA Layer (1), Chain Abstraction (1), R&D Companies (2)
+
+## Open Threads
+
+- NEAR Lake decentralization roadmap: apakah ada rencana migrasi ke decentralized indexing (The Graph) sebagai primary; timeline tidak diketahui
+- Validator infrastructure survey resmi: tidak ada publikasi mengenai geographic/cloud provider distribution validator set current; concentration risk tidak terukur eksak
+- Cross-chain bridge TVL breakdown per bridge (Rainbow Bridge vs Wormhole vs LayerZero vs Axelar vs others) tidak tersedia di single dashboard; DefiLlama track per protocol tapi tidak per bridge
+- NEAR Intents v2 solver marketplace: jumlah solver aktif, fee revenue, decentralization metrics tidak dipublikasikan; early stage
+- NEAR DA Layer adoption metrics: blobspace utilization, revenue, Octopus/Calimero usage data on-chain belum teraggregate di public dashboard
+- NDC v2 sub-DAO budget allocation, quadratic funding matching pool size, treasury streaming parameters belum dipublikasikan detail
+- Aurora DAO treasury size dan revenue dari Aurora fees tidak terpublikasi terpisah dari NEAR Foundation
+- Pagoda financial relationship dengan NEAR Foundation (equity, revenue share, grant terms) tidak diungkap detailnya
+- Proximity Labs struktur kepemilikan, funding source, hubungan kontraktual dengan NEAR Foundation perlu klarifikasi
+- Bastion (NEAR) liquid staking status: masih aktif atau merged/shutdown? tidak ada event launch tercatat di Phase 3
+- Multichain (NEAR) shutdown: apakah kontrak bridge NEAR masih memiliki aset terkunci? apakah ada recovery plan?
+- 3AC dan Alameda NEAR token exact amount pada genesis, vesting schedule, liquidation timeline on-chain (wallet address, tx hash) perlu cross-check via Arkham/Nansen/Dune
+- NEAR Foundation financial statements (audited/unaudited) tidak dipublikasikan; burn rate, runway, operational cost tidak diketahui
+- Protocol treasury (10% inflasi) on-chain balance dan spending history tidak mudah ter-track tanpa indexer khusus
+- Investor token unlock schedule detail per investor (a16z, Pantera, Electric Capital, Blockchain Capital, Coinbase Ventures, ParaFi, Dragonfly) post-2024 tidak dipublikasikan resmi
+- Liquid staking token (stNEAR MetaPool, stNEAR Stader, bstNEAR Bastion) governance voting rights di NDC dan protocol governance — implementasi bervariasi, tidak distandarisasi
+- AssemblyScript SDK end-of-life timeline resmi dan migration guide completeness — deprecated tapi belum ada hard cutoff
+- Regulatory classification: SEC enforcement actions mentioning NEAR (Binance, Coinbase cases) — outcome belum final
+- Quantum resistance roadmap untuk Ed25519/BLS signatures securing NEAR accounts — tidak terdokumentasi resmi
+- Maximum theoretical throughput dengan 4 shards current vs dynamic sharding target — whitepaper claim vs real-world benchmark gap
+- NEAR AI / User-Owned AI technical spec: compute verification, data availability untuk AI, token utility — konsep level, spec belum lengkap
+- Chain abstraction standardization (ERC-7683 alignment) dan solver competition dynamics — early production
+- Formal verification progress untuk core protocol (K framework) — ongoing, coverage incomplete
+- NEARCon 2025 Singapore detail jadwal, speaker, announcement spesifik belum dipublikasikan sepenuhnya (event belum terjadi)
+- NEAR Week global series: participation metrics, regional adoption impact belum terukur publik
+- Flipside Crypto Velocity NEAR: bounty program payouts, analysis quality metrics tidak dipublikasikan
+- Token Terminal NEAR: P/E ratio methodology untuk Layer-1 dengan inflationary tokenomics — perbandingan cross-chain metodologi perlu klarifikasi
+- DefiLlama NEAR: adapter maintenance status untuk protokol-protokol baru (Spin, Orderly, Trisolaris, dll) — community maintained, tidak official
+- Dune Analytics NEAR: spell coverage untuk NEAR contracts (NEP-141, NEP-171, dll) completeness tidak terdokumentasi
+- Nansen NEAR: address labeling coverage percentage untuk NEAR ecosystem (whale, exchange, smart money, validator, team) tidak dipublikasikan

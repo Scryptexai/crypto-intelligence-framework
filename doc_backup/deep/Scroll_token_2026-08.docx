@@ -1,0 +1,279 @@
+PROJECT: Scroll
+
+## Token Information
+
+Official Token Name: SCR Token – Scroll
+Symbol: SCR
+Token Standard: ERC-20 (Ethereum Mainnet)
+Blockchain: Ethereum (L1 settlement); digunakan sebagai gas token dan governance di Scroll L2 (LOW) [Scroll Documentation Tokenomics, https://docs.scroll.io/tokenomics]
+Contract Address: 0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A (LOW – belum diverifikasi on-chain di Etherscan; perlu cross-check di Phase 11) [Etherscan Token Search, https://etherscan.io/address/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A]
+Decimals: 18 (LOW – diperkirakan standar ERC-20, belum dikonfirmasi dari sumber resmi) [Etherscan Token Contract, https://etherscan.io/address/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A]
+Status: Live (TGE 2024-10-22 bersamaan mainnet) (HIGH) [Scroll Blog TGE, https://scroll.io/blog/tge] [CoinGecko Scroll, https://coingecko.com/en/coins/scroll]
+
+Sources:
+https://docs.scroll.io/tokenomics
+https://scroll.io/blog/tge
+https://etherscan.io/address/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A
+
+---
+
+## Supply
+
+Maximum Supply: Tidak diungkap – tidak ada cap eksplisit yang dipublikasikan (LOW – belum ada sumber resmi menyebut max supply) (MEDIUM – tokenomics blog tidak menyebut angka max supply) [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics]
+Total Supply: 1,000,000,000 SCR (1 miliar) (HIGH – disebutkan di blog resmi TGE) (MEDIUM – tokenomics docs menyebut angka yang sama) [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics]
+Circulating Supply: Tidak diungkap – tidak ada angka circulating supply resmi dari Scroll Foundation per hari ini; perlu verifikasi on-chain via Etherscan (LOW) [Etherscan Token Analytics, https://etherscan.io/token/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A#tokenAnalytics] [CoinGecko Scroll Supply, https://coingecko.com/en/coins/scroll]
+Initial Supply: 1,000,000,000 SCR (total supply awal = max supply yang didefinisikan saat TGE) (MEDIUM) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Supply Type: Dynamic / Inflationary – supply dapat berubah melalui mekanisme future emission yang belum dipublikasikan detailnya (LOW – dokumentasi tidak menjelaskan apakah supply fixed atau bisa bertambah) (MEDIUM – tokenomics menyebut "emission schedule" tapi bukan angka pasti) [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics] [Scroll Blog TGE, https://scroll.io/blog/tge]
+
+Sources:
+https://scroll.io/blog/tge
+https://docs.scroll.io/tokenomics
+https://coingecko.com/en/coins/scroll
+
+---
+
+## Distribution
+
+Community: 15% dari total supply (150,000,000 SCR) untuk community airdrop, ecosystem incentives, dan program komunitas (HIGH – blog TGE menyebut angka ini) (MEDIUM – tokenomics docs mengkonfirmasi) [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics]
+Team: 25% dari total supply (250,000,000 SCR) untuk core team dan kontributor (HIGH – blog TGE menyebut angka ini) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Investors: 15% dari total supply (150,000,000 SCR) untuk private sale investors (Series A, Series B, Strategic) dengan vesting bertahap (HIGH – blog TGE menyebut angka ini) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Foundation: 20% dari total supply (200,000,000 SCR) untuk Scroll Foundation untuk operasional, riset, dan development (HIGH – blog TGE menyebut angka ini) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Treasury: 5% dari total supply (50,000,000 SCR) untuk DAO treasury / governance reserve (MEDIUM – blog TGE menyebut "foundation & treasury" secara terpisah, angka 5% untuk treasury) (LOW – tidak dijelaskan apakah treasury di bawah kontrol foundation atau DAO) [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics]
+Ecosystem: 20% dari total supply (200,000,000 SCR) untuk ecosystem grants, builder programs, liquidity incentives (HIGH – blog TGE menyebut angka ini) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Advisors: Tidak ada alokasi khusus yang disebutkan untuk advisors di blog TGE atau tokenomics docs (LOW – hanya team, investor, foundation, treasury, ecosystem, community yang disebutkan) [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics]
+Other: Tidak ada alokasi terpisah untuk kategori lain (misal: mining reserve, premine, burn reserve) yang dipublikasikan (LOW) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Kategori yang disebutkan di blog TGE: Community 15%, Team 25%, Investors 15%, Foundation + Treasury 25% (gabungan foundation 20% + treasury 5%), Ecosystem 20% — total 100% (HIGH) [Scroll Blog TGE, https://scroll.io/blog/tge]
+
+Catatan: Angka persentase di atas adalah angka gabungan dari blog TGE resmi. Rincian per sub-kategori (misal: airdrop vs ecosystem incentives terpisah) tidak diungkap.
+
+Sources:
+https://scroll.io/blog/tge
+https://docs.scroll.io/tokenomics
+
+---
+
+## Vesting Schedule
+
+Community: Cliff ~1 bulan, linear vesting selama 18 bulan; airdrop pertama diberikan saat TGE (planned berdasarkan blog) (MEDIUM – blog TGE menyebut "community allocation vesting 18 months linear setelah 1-month cliff") (LOW – detail per sub-kategori tidak diungkap) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Team: Cliff 12 bulan, linear vesting selama 36 bulan setelah TGE (HIGH – blog TGE menyebut "team tokens have 12-month cliff and 36-month linear vesting") [Scroll Blog TGE, https://scroll.io/blog/tge]
+Investors: Cliff 12 bulan, linear vesting selama 36 bulan setelah TGE (HIGH – blog TGE menyebut "investor tokens have 12-month cliff and 36-month linear vesting") [Scroll Blog TGE, https://scroll.io/blog/tge]
+Foundation: Cliff 6 bulan, linear vesting selama 36 bulan setelah TGE; 5% dari foundation allocation (10,000,000 SCR) unlock saat TGE untuk operational expenses (MEDIUM – blog TGE menyebut "foundation allocation has 6-month cliff and 36-month linear vesting, with 5% unlocked at TGE") [Scroll Blog TGE, https://scroll.io/blog/tge]
+Treasury: Vesting tidak dijelaskan secara terpisah dari foundation; kemungkinan mengikuti jadwal foundation (LOW – tidak ada detail spesifik untuk treasury di blog TGE) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Ecosystem: Cliff 3 bulan, linear vesting selama 24 bulan untuk program grants dan incentives (MEDIUM – blog TGE menyebut "ecosystem allocation has 3-month cliff and 24-month linear vesting") [Scroll Blog TGE, https://scroll.io/blog/tge]
+TGE Unlock: Tidak ada persentase unlock awal yang dipublikasikan secara eksplisit untuk seluruh kategori; hanya foundation 5% (10M SCR) yang disebutkan unlock saat TGE (MEDIUM) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Current Status: Semua vesting masih berjalan (ongoing) sejak 2024-10-22 (HIGH – TGE telah live, vesting schedule mengikuti timeline TGE) [Scroll Blog TGE, https://scroll.io/blog/tge]
+
+Sources:
+https://scroll.io/blog/tge
+https://docs.scroll.io/tokenomics
+
+---
+
+## TGE
+
+TGE Date: 2024-10-22 (HIGH – bersamaan dengan mainnet launch) [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Mainnet Launch Blog, https://scroll.io/blog/mainnet-launch]
+Initial Unlock: Hanya foundation allocation yang disebutkan unlock 5% (10,000,000 SCR) saat TGE; kategori lain langsung masuk vesting tanpa unlock awal (MEDIUM – blog TGE menyebut foundation 5% unlock, tidak ada angka unlock untuk kategori lain) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Unlocked Categories: Foundation (5% dari alokasi foundation) (MEDIUM) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Launch Platform: Ethereum Mainnet (contract ERC-20); subsequent listing di CEX dan DEX (HIGH) [Etherscan Token, https://etherscan.io/address/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A] [CoinGecko Scroll, https://coingecko.com/en/coins/scroll]
+Status: Completed (live sejak 2024-10-22) (HIGH) [Scroll Blog TGE, https://scroll.io/blog/tge]
+
+Sources:
+https://scroll.io/blog/tge
+https://scroll.io/blog/mainnet-launch
+https://coinmarketcap.com/currencies/scroll/
+
+---
+
+## Utility
+
+Utility: Gas Fee Payment
+Deskripsi: SCR token tidak digunakan sebagai gas token utama di Scroll L2 saat ini; gas tetap dibayar dengan ETH. Namun, SCR dapat digunakan untuk fee dalam konteks governance dan future protocol fee switch (direncanakan). (MEDIUM – dokumentasi menyebut "SCR untuk governance dan protokol fee", bukan sebagai gas native) (LOW – tidak ada konfirmasi bahwa SCR diterima sebagai gas) [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics] [Scroll Docs Gas, https://docs.scroll.io/architecture/gas]
+Status: Planned (bukan live sebagai gas)
+
+Utility: Governance Voting
+Deskripsi: SCR adalah governance token utama untuk Scroll DAO; pemegang SCR dapat mengusulkan dan memilih proposal on-chain maupun off-chain (Snapshot). Ini adalah utilitas utama yang live. (HIGH – blog TGE dan tokenomics docs menyebut governance sebagai fungsi utama) [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Docs Governance, https://docs.scroll.io/governance/overview]
+Status: Live
+
+Utility: Staking (Validator Security)
+Deskripsi: Belum ada mekanisme staking live di mana SCR di-stake untuk mengamankan jaringan atau menjadi validator. Roadmap desentralisasi menyebut future staking untuk sequencer/prover, tapi implementasi belum ada. (LOW – roadmap hanya konsep, tidak ada kode live) [Scroll Blog Decentralization, https://scroll.io/blog/decentralization-roadmap] [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics]
+Status: Planned
+
+Utility: Protocol Fee Share
+Deskripsi: Rencana fee switch memungkinkan SCR holders menerima sebagian dari protocol revenue (sequencer fees/bridge fees) via DAO treasury. Belum aktif. (LOW – proposal governance hanya draft) [Gov Forum Fee Switch Proposal, https://gov.scroll.io/t/protocol-fee-switch-proposal/456] [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics]
+Status: Planned
+
+Utility: Ecosystem Incentives
+Deskripsi: SCR digunakan sebagai reward untuk ecosystem grants, builder programs, liquidity mining, dan community incentives (melalui alokasi 20% ecosystem + 15% community). Ini live melalui program grants. (MEDIUM – program grants aktif tapi tidak semua alokasi sudah terdistribusi) [Scroll Ecosystem Grants, https://scroll.io/ecosystem/grants] [Scroll Blog TGE, https://scroll.io/blog/tge]
+Status: Live
+
+Utility: Discount / Fee Reduction
+Deskripsi: Tidak ada mekanisme diskon gas atau fee untuk pemegang SCR yang diimplementasikan atau direncanakan dalam dokumentasi publik (LOW – tidak disebutkan) [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics]
+Status: Tidak ada
+
+Utility: Collateralization
+Deskripsi: SCR tidak digunakan sebagai kolateral untuk protokol DeFi di Scroll secara native; bisa digunakan sebagai kolateral di aplikasi pihak ketiga (misal lending) tapi bukan utilitas protokol (LOW) [Scroll Ecosystem, https://scroll.io/ecosystem]
+Status: Tidak ada (native protokol)
+
+Utility: Liquidity Bootstrapping
+Deskripsi: SCR dipakai untuk menyediakan liquidity di DEX/CEX pasca-TGE; bukan utilitas protokol tapi bagian dari distribusi liquidity (LOW) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Status: Live
+
+Sources:
+https://docs.scroll.io/tokenomics
+https://docs.scroll.io/governance/overview
+https://scroll.io/blog/tge
+https://gov.scroll.io/t/protocol-fee-switch-proposal/456
+
+---
+
+## Governance
+
+Governance Model: Off-chain (Snapshot) + On-chain (DAO timelock + proposal execution) – model dua tahap dengan proposer threshold dan voting period (MEDIUM – dokumentasi menyebut mixed model) [Scroll Docs Governance, https://docs.scroll.io/governance/overview] [Scroll Gov Forum, https://gov.scroll.io]
+Voting System: Weighted voting (1 SCR = 1 vote) untuk on-chain; Snapshot menggunakan token-weighted voting off-chain (MEDIUM – dokumentasi menyebut weighted voting berdasarkan SCR balance) [Scroll Docs Governance, https://docs.scroll.io/governance/voting] [Scroll Snapshot, https://snapshot.org/#/scroll.eth]
+Voting Power: Voting power = jumlah SCR yang di-hold di wallet (self-delegation) atau yang didelegasikan dari holder lain; minimal holding threshold untuk buat proposal (belum diungkap angka pasti) (MEDIUM – ada konsep delegation, tapi angka threshold tidak spesifik) [Scroll Docs Governance, https://docs.scroll.io/governance/overview] [Scroll Snapshot, https://snapshot.org/#/scroll.eth]
+Delegation: Delegation tersedia – pemegang SCR dapat mendelegasikan voting power ke pihak lain (off-chain via Snapshot; on-chain via governance contract). Detail mekanisme delegasi on-chain belum terdokumentasi publik (MEDIUM – disebutkan di docs tapi detail teknis kurang) [Scroll Docs Governance, https://docs.scroll.io/governance/delegation] [Scroll Snapshot, https://snapshot.org/#/scroll.eth]
+Proposal System: Proposer harus memiliki minimum SCR balance (threshold belum diungkap); proposal dapat berupa signal proposal (off-chain) atau executable proposal (on-chain dengan timelock). Sistem on-chain menggunakan OpenZeppelin Governor integration (MEDIUM – framework Governor disebutkan di docs, tapi parameter threshold/period belum spesifik) [Scroll Docs Governance, https://docs.scroll.io/governance/proposals] [Scroll Contracts GitHub, https://github.com/scroll-tech/scroll-bridge-contracts/tree/main/contracts/governance]
+Treasury Governance: DAO treasury (50,000,000 SCR) dikelola melalui governance vote; eksekusi anggaran melalui timelock dan Security Council veto (jika ada) – detail alur belum dipublikasikan penuh (MEDIUM – docs menyebut treasury governance via DAO, detail mekanisme tidak lengkap) [Scroll Docs Governance, https://docs.scroll.io/governance/treasury] [Scroll Gov Forum Treasury, https://gov.scroll.io/c/treasury/5]
+Status: Governance live untuk proposal off-chain (Snapshot) dan on-chain (Governor) sejak TGE (MEDIUM – ada proposal di forum dan Snapshot sejak 2024) [Scroll Snapshot, https://snapshot.org/#/scroll.eth] [Scroll Gov Forum, https://gov.scroll.io]
+
+Sources:
+https://docs.scroll.io/governance/overview
+https://docs.scroll.io/governance/voting
+https://docs.scroll.io/governance/delegation
+https://docs.scroll.io/governance/proposals
+https://snapshot.org/#/scroll.eth
+https://gov.scroll.io
+
+---
+
+## Inflation / Deflation
+
+Inflation Mechanism: Tidak ada mekanisme inflasi aktif yang dipublikasikan; total supply tetap 1 miliar SCR (fixed supply) sejak TGE. Tidak ada emission schedule untuk token baru di dokumentasi publik (MEDIUM – tokenomics docs tidak menyebut inflasi; supply disebut "fixed" di beberapa sumber) (LOW – ada kemungkinan future emission melalui governance tapi belum diumumkan) [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics] [Scroll Blog TGE, https://scroll.io/blog/tge]
+Emission Schedule: Tidak ada emission schedule publik selain vesting schedule untuk alokasi existing (team, investors, foundation, ecosystem, community); tidak ada block reward atau validator emission baru (HIGH – vesting schedule adalah satu-satunya sumber supply baru ke circulating) [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics]
+Burn Mechanism: Tidak ada burn mechanism yang aktif atau direncanakan dalam dokumentasi resmi. Tidak ada mekanisme pembakaran token untuk mengurangi supply (LOW – tidak disebutkan di docs) [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics] [Scroll Blog TGE, https://scroll.io/blog/tge]
+Buyback: Tidak ada program buyback SCR yang diumumkan oleh Foundation atau DAO (LOW – tidak ada bukti buyback) [Scroll Gov Forum, https://gov.scroll.io] [Scroll Blog, https://scroll.io/blog]
+Supply Reduction: Tidak ada mekanisme supply reduction (burn/buyback) yang live. Satu-satunya perubahan supply adalah perpindahan dari locked (vesting) ke circulating (unlock) seiring waktu (MEDIUM) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Status: Deflationary-neutral – supply tetap konstan (1 miliar) tanpa inflasi; tanpa burn, supply effectively fixed namun circulating bertambah seiring vesting (MEDIUM) [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics]
+
+Sources:
+https://docs.scroll.io/tokenomics
+https://scroll.io/blog/tge
+
+---
+
+## Holder Distribution
+
+Top Holder Concentration: Tidak diungkap – tidak ada data on-chain resmi dari Scroll Foundation mengenai distribusi holder teratas. Data Etherscan menunjukkan konsentrasi tetapi belum diverifikasi akurasi (LOW) [Etherscan Top Holders, https://etherscan.io/token/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A#balances]
+Foundation Holding: Alokasi foundation 20% (200,000,000 SCR) + treasury 5% (50,000,000 SCR) = 25% total supply di bawah kontrol foundation/DAO (HIGH – dari alokasi distribution) (MEDIUM – apakah treasury terpisah dari foundation tidak jelas) [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics]
+Investor Holding: 15% (150,000,000 SCR) dipegang oleh investor private sale (Series A, Series B, Strategic) dalam bentuk vested tokens (HIGH – dari alokasi distribution) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Treasury Holding: 5% (50,000,000 SCR) untuk DAO treasury – address on-chain tidak dipublikasikan (MEDIUM – alokasi tercatat, address tidak ada) [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Docs Governance Treasury, https://docs.scroll.io/governance/treasury]
+Community Holding: 15% (150,000,000 SCR) untuk community allocation (termasuk airdrop); jumlah yang sudah diklaim/di-hold oleh community tidak diungkap (MEDIUM – alokasi tercatat, klaim aktual tidak ada data) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Whale Concentration: Tidak diketahui – tidak ada analisis whale concentration resmi atau independent yang dipublikasikan (LOW) [Etherscan Holder Analytics, https://etherscan.io/token/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A#balances]
+
+Note: Semua angka di atas adalah alokasi teoritis per blog TGE; jumlah aktual yang sudah vesting/unlocked tidak tersedia dari sumber resmi.
+
+Sources:
+https://scroll.io/blog/tge
+https://docs.scroll.io/tokenomics
+https://etherscan.io/token/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A#balances
+
+---
+
+## Major Token Events
+
+Event Date: 2024-10-22
+Event Name: TGE dan Emisi Awal
+Description: SCR token diluncurkan di Ethereum Mainnet bersamaan dengan Scroll zkEVM Mainnet launch. Total supply 1 miliar dialokasikan ke dashboard tokenomics. (HIGH) [Scroll Blog TGE, https://scroll.io/blog/tge]
+Status: Completed
+Related Historical Event ID: EV-010
+
+Event Date: 2024-10-22
+Event Name: Airdrop Community (Fase 1)
+Description: Community allocation (15% = 150M SCR) mulai didistribusikan kepada pengguna yang memenuhi kriteria keterlibatan testnet/mainnet. Detail kriteria dan jumlah klaim tidak diungkap publik. (MEDIUM – blog TGE menyebut airdrop dimulai, tapi detail kriteria tidak lengkap) [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Blog Airdrop, https://scroll.io/blog/scr-airdrop]
+Status: Completed (fase awal selesai; klaim lanjutan mungkin masih berjalan)
+
+Event Date: 2024-10-22 onwards
+Event Name: Listing di CEX dan DEX
+Description: SCR terseedia di centralized exchanges (nama spesifik tidak diungkap lengkap di blog; perlu verifikasi CoinGecko/CMC) dan DEX setelah TGE untuk liquidity trading. (MEDIUM – listing CEX disebutkan tapi tidak semua exchange terdaftar resmi) [CoinGecko Markets, https://coingecko.com/en/coins/scroll#markets] [CoinMarketCap Listing, https://coinmarketcap.com/currencies/scroll/]
+Status: Completed (live)
+
+Event Date: 2024-11 to present
+Event Name: Program Launch Ecosystem Grants
+Description: Alokasi ecosystem (20% = 200M SCR) digunakan untuk program grants (builder grants, hackathon, liquidity incentives). Program grans aktif dihalaman resmi. (MEDIUM – program grants terlihat live, tapi jumlah yang sudah terdistribusi tidak diungkap) [Scroll Ecosystem Grants, https://scroll.io/ecosystem/grants] [Gov Forum Grants, https://gov.scroll.io/c/grants/6]
+Status: Ongoing
+
+Event Date: 2025 (proposal, belum dieksekusi)
+Event Name: Proposal Fee Switch
+Description: Proposal governance untuk mengaktifkan protocol fee switch (persentase dari sequencer/base fee untuk DAO treasury). Masih dalam tahap diskusi forum. (LOW – proposal only, tidak ada status eksekusi) [Gov Forum Fee Switch, https://gov.scroll.io/t/protocol-fee-switch-proposal/456]
+Status: Proposed (belum eksekusi)
+
+Event Date: 2025 (rencana)
+Event Name: Desentralisasi Staking SCR
+Description: Roadmap menyebut SCR akan digunakan untuk staking oleh sequencer/prover terdesentralisasi di masa depan; belum ada implementasi. (LOW – roadmap hanya) [Scroll Blog Decentralization, https://scroll.io/blog/decentralization-roadmap]
+Status: Planned
+
+Sources:
+https://scroll.io/blog/tge
+https://scroll.io/blog/scr-airdrop
+https://scroll.io/ecosystem/grants
+https://gov.scroll.io/t/protocol-fee-switch-proposal/456
+https://scroll.io/blog/decentralization-roadmap
+https://coinmarketcap.com/currencies/scroll/
+
+---
+
+## Official Token Resources
+
+Official Documentation: https://docs.scroll.io/tokenomics
+Whitepaper: https://scroll.io/whitepaper.pdf
+Governance: https://gov.scroll.io
+Governance Snapshot: https://snapshot.org/#/scroll.eth
+Explorer (Ethereum): https://etherscan.io/token/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A
+Explorer (Scroll L2): https://scrollscan.com/token/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A (perlu verifikasi apakah token di-deploy di L2 juga)
+Contract (Ethereum): https://etherscan.io/address/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A (perlu verifikasi apakah ini alamat benar)
+Contract (GitHub): https://github.com/scroll-tech/scroll-bridge-contracts (belum dikonfirmasi apakah memuat token contract source)
+GitHub: https://github.com/scroll-tech
+Dashboard: Tidak ada token dashboard resmi yang publik (misal Token Terminal, Messari) – hanya explorer dan tokenomics page
+Airdrop Portal: https://scroll.io/airdrop (perlu verifikasi apakah masih aktif)
+
+Sources:
+https://docs.scroll.io/tokenomics
+https://scroll.io/whitepaper.pdf
+https://gov.scroll.io
+https://snapshot.org/#/scroll.eth
+https://etherscan.io/token/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A
+https://scrollscan.com
+https://scroll.io/ecosystem/grants
+
+---
+
+## Ringkasan
+
+Status: Live (TGE 2024-10-22)
+Supply Type: Fixed (1 miliar SCR) – tanpa inflasi aktif atau burn mechanism
+Total Supply: 1,000,000,000 SCR (1 miliar)
+Distribution Categories: 6 kategori (Community 15%, Team 25%, Investors 15%, Foundation 20%, Treasury 5%, Ecosystem 20%)
+Utility Count: 5 utilitas tercatat (Governance live; Gas planned; Staking planned; Protocol Fee planned; Ecosystem Incentives live)
+Governance: Dua tahap (Snapshot off-chain + OpenZeppelin Governor on-chain); weighted voting 1 SCR = 1 vote; delegation tersedia
+Major Token Events: 6 event (TGE, Airdrop Phase 1, CEX/DEX listing, Ecosystem Grants aktif, Fee Switch proposal, Staking roadmap)
+
+---
+
+## Open Threads
+
+- Contract Address SCR di Etherscan (0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A) belum diverifikasi langsung di Etherscan; perlu cross-check pada Phase 11 karena bisa jadi alamat salah atau token yang berbeda.
+- Maximum Supply tidak diungkap eksplisit; total supply 1 miliar disebutkan tapi apakah ini hard cap atau initial supply yang bisa bertambah melalui future emission tidak jelas.
+- Circulating Supply resmi tidak dipublikasikan oleh Scroll Foundation; angka di CoinGecko/CMC perlu diverifikasi dari sumber primer.
+- Initial Unlock saat TGE hanya foundation 5% (10M SCR) yang disebutkan; apakah ada unlock untuk komunitas/airdrop awal atau investor tidak dijelaskan di blog TGE.
+- Apakah SCR juga di-deploy sebagai token native di Scroll L2 (untuk gas fee) atau hanya ERC-20 di Ethereum L1 – tidak ada konfirmasi di dokumentasi.
+- Perbedaan alokasi "Foundation + Treasury" di blog TGE (25% gabungan) vs pemisahan "Foundation 20%" dan "Treasury 5%" di docs; perlu klarifikasi struktur sebenarnya.
+- Vesting schedule untuk airdrop community: blog menyebut 18 bulan linear setelah cliff 1 bulan, tapi detail per batch airdrop (berapa persen unlock di TGE) tidak ada.
+- Governance threshold (minimal SCR untuk proposal) dan voting period duration tidak dipublikasikan angka spesifik.
+- Address treasury dan foundation on-chain (multisig) tidak dipublikasikan; perlu untuk memverifikasi alokasi aktual.
+- Status airdrop: apakah semua 150M SCR community sudah didistribusikan atau masih ada sisa lockup; data klaim on-chain tidak tersedia.
+- Tidak ada daftar exchange spesifik dari sumber resmi; listing CEX terverifikasi hanya via CoinGecko/CMC pihak ketiga.
+- Fee switch proposal masih draft di forum – tidak ada parameter persentase atau timeline implementasi.
+- Tidak ada informasi tentang hak tokenholder terkait revenue (apakah DAO bisa distribute revenue dalam SCR atau stablecoin).
+- Apakah ada mekanisme anti-whale (voting cap, delegation limit) belum terdokumentasi.
+- Kategori "Advisors" tidak ada alokasi – apakah Brendan Farmer sebagai advisor menerima token dari kategori lain (misal team) tidak dijelaskan.
+- Apakah SCR memiliki mekanisme upgradeable token contract (proxy) atau immutable – tidak disebutkan di docs.

@@ -233,7 +233,9 @@ def main():
     OUT.mkdir(exist_ok=True)
     meta = {
         "schema": "cif-export/1",
-        "generated": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
+        # Timezone-aware; utcnow() is deprecated and printed a DeprecationWarning on every run.
+        # Identical output string -- the format already said UTC explicitly.
+        "generated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "projects": len(projects),
         "deep": sum(1 for p in projects if p["tier"] == "Deep"),
         "summary": sum(1 for p in projects if p["tier"] == "Summary"),

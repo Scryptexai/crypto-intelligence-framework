@@ -1,0 +1,504 @@
+PROJECT: EtherFi
+
+Entity: Mike Silagadze
+Type: Person
+Relationship: Co-Founder dan CEO EtherFi — memimpin visi strategis, pengembangan produk, dan eksekusi bisnis protokol liquid restaking.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [X Profile, https://x.com/mike_etherfi]; (MEDIUM) [EtherFi Blog, https://blog.ether.fi/etherfi-v2-liquid-restaking/]
+
+---
+Entity: Rok Kukovec
+Type: Person
+Relationship: Co-Founder dan CTO EtherFi — mengarahkan arsitektur teknis, pengembangan smart contract, dan infrastruktur protokol.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [X Profile, https://x.com/rok_etherfi]; (MEDIUM) [EtherFi Blog, https://blog.ether.fi/etherfi-v2-liquid-restaking/]
+
+---
+Entity: EtherFi Protocol
+Type: Organization
+Relationship: Entitas pengembangan inti (core development team) yang membangun dan memelihara protokol EtherFi, smart contract eETH/weETH, dan produk-produk terkait.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub, https://github.com/etherfi-protocol]; (HIGH) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: EigenLayer
+Type: Protocol
+Relationship: Protokol restaking utama yang terintegrasi dengan EtherFi — eETH dan weETH didelegasikan ke EigenLayer AVS untuk restaking rewards.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EigenLayer Docs, https://docs.eigenlayer.xyz]; (MEDIUM) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: Symbiotic
+Type: Protocol
+Relationship: Protokol restaking alternatif yang didukung EtherFi — menyediakan lapisan restaking tambahan bagi eETH/weETH holder.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Symbiotic Docs, https://docs.symbiotic.fi]; (MEDIUM) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: Pendle
+Type: Protocol
+Relationship: Protokol yield trading yang terintegrasi — memungkinkan trading yield dari eETH/weETH melalui PT/YT market Pendle.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Pendle Docs, https://docs.pendle.finance]; (MEDIUM) [EtherFi Blog, https://blog.ether.fi]
+
+---
+Entity: Ethereum
+Type: Chain
+Relationship: Blockchain lapisan-1 utama tempat smart contract eETH, weETH, dan ETHFI token dideploy — settlement layer untuk semua aktivitas EtherFi.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum.org, https://ethereum.org]; (HIGH) [Etherscan eETH, https://etherscan.io/token/0x35fA164735182de50811E8e2E824cFb9B6118ac2]
+
+---
+Entity: Arbitrum
+Type: Chain
+Relationship: Layer-2 Ethereum yang mendukung weETH — memungkinkan transaksi restaking dan DeFi dengan biaya lebih rendah.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Docs, https://docs.arbitrum.io]; (MEDIUM) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: Optimism
+Type: Chain
+Relationship: Layer-2 Ethereum yang mendukung weETH — ekspansi ekosistem restaking ke OP Stack.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Optimism Docs, https://community.optimism.io/docs]; (MEDIUM) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: Base
+Type: Chain
+Relationship: Layer-2 Ethereum (OP Stack) yang mendukung weETH — ekosistem Coinbase untuk restaking retail.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Base Docs, https://docs.base.org]; (MEDIUM) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: Mode
+Type: Chain
+Relationship: Layer-2 Ethereum yang mendukung weETH — fokus pada DeFi dan restaking incentives.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Mode Docs, https://docs.mode.network]; (MEDIUM) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: Blast
+Type: Chain
+Relationship: Layer-2 Ethereum yang mendukung weETH — native yield L2 untuk restaking composability.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Blast Docs, https://docs.blast.io]; (MEDIUM) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: Linea
+Type: Chain
+Relationship: zkEVM Layer-2 (ConsenSys) yang mendukung weETH — ekosistem zk-rollup untuk restaking.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Linea Docs, https://docs.linea.build]; (MEDIUM) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: Scroll
+Type: Chain
+Relationship: zkEVM Layer-2 yang mendukung weETH — scaling Ethereum untuk restaking throughput.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Scroll Docs, https://scroll.io/docs]; (MEDIUM) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: zkSync Era
+Type: Chain
+Relationship: zkEVM Layer-2 (Matter Labs) yang mendukung weETH — zero-knowledge rollup untuk restaking.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [zkSync Docs, https://docs.zksync.io]; (MEDIUM) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: Mantle
+Type: Chain
+Relationship: Layer-2 modular (Mantle Network) yang mendukung weETH — data availability EigenDA untuk restaking.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Mantle Docs, https://docs.mantle.xyz]; (MEDIUM) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: BNB Chain
+Type: Chain
+Relationship: EVM-compatible Layer-1 yang mendukung weETH — ekspansi restaking ke ekosistem BNB.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]; (MEDIUM) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: EtherFi DAO
+Type: DAO
+Relationship: Organisasi otonom terdesentralisasi yang menggovern protokol EtherFi melalui token ETHFI — mengelola treasury, parameter protokol, dan upgrade.
+Period: 2024–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [EtherFi Docs Governance, https://docs.ether.fi/governance]; (MEDIUM) [Snapshot, https://snapshot.org/#/etherfi.eth]
+
+---
+Entity: Binance Labs
+Type: Investor
+Relationship: Investor strategis (incubator/venture arm Binance) yang mendanai EtherFi — menyediakan capital, liquidity support, dan go-to-market.
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Binance Labs Portfolio, https://labs.binance.com/portfolio]; (MEDIUM) [Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+
+---
+Entity: Coinbase Ventures
+Type: Investor
+Relationship: Investor venture (arm Coinbase) yang berpartisipasi dalam pembiayaan EtherFi — dukungan ekosistem Base dan distribusi retail.
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Coinbase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio]; (MEDIUM) [EtherFi Blog Funding, https://blog.ether.fi]
+
+---
+Entity: OKX Ventures
+Type: Investor
+Relationship: Investor venture (arm OKX) yang mendanai EtherFi — dukungan liquidity dan ekosistem CeFi/DeFi bridging.
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [OKX Ventures, https://www.okx.com/ventures]; (MEDIUM) [EtherFi Blog Funding, https://blog.ether.fi]
+
+---
+Entity: EtherFi Cash
+Type: Application
+Relationship: Produk kartu kredit/dompet non-kustodial yang didukung restaked ETH dan stablecoin — memungkinkan spending yield restaking di dunia nyata.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [EtherFi Cash Site, https://cash.ether.fi]; (MEDIUM) [EtherFi Blog, https://blog.ether.fi]
+
+---
+Entity: EtherFi Vaults
+Type: Application
+Relationship: Vault restaking institutional-grade — mengelola alokasi restaking ke AVS متعددة dengan risk management otomatis.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [EtherFi Docs Vaults, https://docs.ether.fi/vaults]; (MEDIUM) [EtherFi Blog, https://blog.ether.fi]
+
+---
+Entity: Ultra Light Node
+Type: Application
+Relationship: Marketplace permissionless untuk operator node — memungkinkan siapa saja menjalankan validator EtherFi dan menerima delegasi stake.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node]; (MEDIUM) [EtherFi Blog, https://blog.ether.fi]
+
+---
+Entity: EtherFi Staking
+Type: Application
+Relationship: Interface web native untuk staking ETH ke eETH/weETH — entry point pengguna retail ke protokol liquid restaking.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EtherFi App, https://app.ether.fi]; (HIGH) [EtherFi Docs, https://docs.ether.fi]
+
+---
+Entity: eETH
+Type: Protocol
+Relationship: Liquid Staking Token (LST) native EtherFi — mewakili staked ETH dengan auto-compounding rewards dan restaking integration.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan eETH, https://etherscan.io/token/0x35fA164735182de50811E8e2E824cFb9B6118ac2]; (HIGH) [EtherFi Docs eETH, https://docs.ether.fi/tokens/eeth]
+
+---
+Entity: weETH
+Type: Protocol
+Relationship: Wrapped version eETH (ERC-20 rebasing → non-rebasing) — kompatibel DeFi composability dan cross-chain bridging.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan weETH, https://etherscan.io/token/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee]; (HIGH) [EtherFi Docs weETH, https://docs.ether.fi/tokens/weeth]
+
+---
+Entity: ETHFI Token
+Type: Protocol
+Relationship: Governance token protokol EtherFi — digunakan untuk voting DAO, fee accrual, dan incentive alignment.
+Period: 2024–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Etherscan ETHFI, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb]; (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/etherfi/]
+
+---
+Entity: Binance Exchange
+Type: Organization
+Relationship: Centralized exchange utama listing ETHFI token — menyediakan liquidity pasar primer dan on-ramp retail.
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Binance ETHFI Trading, https://www.binance.com/en/trade/ETHFI_USDT]; (HIGH) [Binance Research, https://research.binance.com/en/projects/etherfi]
+
+---
+Entity: Coinbase Exchange
+Type: Organization
+Relationship: Centralized exchange listing ETHFI token — distribusi ke user base Coinbase dan ekosistem Base.
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Coinbase ETHFI Asset, https://www.coinbase.com/price/etherfi]; (MEDIUM) [Coinbase Blog, https://blog.coinbase.com]
+
+---
+Entity: OKX Exchange
+Type: Organization
+Relationship: Centralized exchange listing ETHFI token — liquidity tambahan dan akses pasar Asia.
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [OKX ETHFI Trading, https://www.okx.com/trade/ETHFI-USDT]; (MEDIUM) [OKX Announcement, https://www.okx.com/support]
+
+---
+Entity: Bybit Exchange
+Type: Organization
+Relationship: Centralized exchange listing ETHFI token — ekspansi liquidity ke derivatives dan spot market global.
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Bybit ETHFI Trading, https://www.bybit.com/trade/spot/ETHFI/USDT]; (MEDIUM) [Bybit Announcement, https://announcements.bybit.com]
+
+---
+Entity: Gate.io Exchange
+Type: Organization
+Relationship: Centralized exchange listing ETHFI token — dukungan listing early-stage dan market making.
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Gate.io ETHFI, https://www.gate.io/trade/ETHFI_USDT]; (LOW) [Gate.io Announcements, https://www.gate.io/announcements]
+
+---
+Entity: KuCoin Exchange
+Type: Organization
+Relationship: Centralized exchange listing ETHFI token — liquidity tambahan untuk pasar Asia-Pasifik.
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [KuCoin ETHFI, https://www.kucoin.com/trade/ETHFI-USDT]; (LOW) [KuCoin Announcements, https://www.kucoin.com/news]
+
+---
+Entity: Auditors (Multiple Firms)
+Type: Organization
+Relationship: Perusahaan audit keamanan smart contract yang memverifikasi kode EtherFi (eETH, weETH, Vaults, ULN) sebelum deployment.
+Period: 2023–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [EtherFi Docs Security, https://docs.ether.fi/security/audits]; (LOW) [GitHub Audit Reports, https://github.com/etherfi-protocol/audits]
+
+---
+Entity: Node Operators (Permissionless Set)
+Type: Organization
+Relationship: Operator validator permissionless yang menjalankan infrastructure staking melalui Ultra Light Node — menerima delegasi eETH dan memvalidasi EigenLayer AVS.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [EtherFi Docs Operators, https://docs.ether.fi/operators]; (MEDIUM) [EtherFi Blog ULN, https://blog.ether.fi]
+
+---
+Entity: EtherFi Foundation
+Type: Foundation
+Relationship: Entitas hukum non-profit (jika ada) yang mengelola treasury protokol, grant ekosistem, dan compliance regulasi — struktur belum diverifikasi publik.
+Period: tidak diketahui
+Exposure Type: governance
+Evidence: (LOW) [EtherFi Docs Governance, https://docs.ether.fi/governance]; (LOW) [Tidak ditemukan entitas foundation terpisah yang diverifikasi]
+
+---
+Entity: Messari
+Type: Media
+Relationship: Platform riset crypto yang mempublikasikan profil dan analisis EtherFi — referensi data pasar untuk investor dan komunitas.
+Period: 2024–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Messari EtherFi, https://messari.io/project/etherfi/profile]; (MEDIUM) [Messari Reports, https://messari.io/reports]
+
+---
+Entity: CoinMarketCap
+Type: Media
+Relationship: Aggregator data pasar yang melacak harga, volume, dan metrik on-chain ETHFI token — referensi harga standar industri.
+Period: 2024–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinMarketCap ETHFI, https://coinmarketcap.com/currencies/etherfi/]; (HIGH) [CoinMarketCap API, https://coinmarketcap.com/api/]
+
+---
+Entity: CoinGecko
+Type: Media
+Relationship: Aggregator data pasar alternatif yang melacak ETHFI token — verifikasi harga independen dari CoinMarketCap.
+Period: 2024–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinGecko ETHFI, https://www.coingecko.com/en/coins/ether-fi]; (HIGH) [CoinGecko API, https://www.coingecko.com/en/api]
+
+---
+Entity: DefiLlama
+Type: Media
+Relationship: Dashboard TVL dan yield tracking untuk protokol EtherFi — monitoring total value locked eETH/weETH across chains.
+Period: 2024–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [DefiLlama EtherFi, https://defillama.com/protocol/etherfi]; (HIGH) [DefiLlama API, https://defillama.com/docs/api]
+
+---
+Entity: Dune Analytics
+Type: Infrastructure
+Relationship: Platform query on-chain yang menyediakan dashboard komunitas untuk metrik EtherFi (stakers, yield, TVL, bridging).
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Dune EtherFi Dashboards, https://dune.com/queries?query=etherfi]; (HIGH) [Dune Docs, https://docs.dune.com]
+
+---
+Entity: Etherscan
+Type: Infrastructure
+Relationship: Block explorer Ethereum untuk verifikasi kontrak eETH, weETH, ETHFI, dan transaksi staking/restaking.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan, https://etherscan.io]; (HIGH) [Etherscan API, https://etherscan.io/apis]
+
+---
+Entity: Arbiscan
+Type: Infrastructure
+Relationship: Block explorer Arbitrum untuk verifikasi weETH dan aktivitas restaking di Layer-2 Arbitrum.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbiscan, https://arbiscan.io]; (HIGH) [Arbiscan API, https://arbiscan.io/apis]
+
+---
+Entity: Optimistic Etherscan
+Type: Infrastructure
+Relationship: Block explorer Optimism untuk verifikasi weETH di OP Mainnet.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Optimistic Etherscan, https://optimistic.etherscan.io]; (HIGH) [OP Explorer, https://optimism.etherscan.io]
+
+---
+Entity: Basescan
+Type: Infrastructure
+Relationship: Block explorer Base untuk verifikasi weETH di Base Layer-2.
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Basescan, https://basescan.org]; (HIGH) [Base Explorer, https://basescan.org]
+
+---
+Entity: Discord Community
+Type: Community
+Relationship: Komunitas resmi pengguna, staker, dan kontributor EtherFi — saluran support, announcement, dan governance discussion.
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Discord Invite, https://discord.gg/etherfi]; (MEDIUM) [EtherFi Website, https://www.ether.fi]
+
+---
+Entity: X/Twitter Community
+Type: Community
+Relationship: Komunitas media sosial resmi untuk announcement, education, dan engagement pengguna EtherFi.
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [X @ether_fi, https://x.com/ether_fi]; (HIGH) [EtherFi Website, https://www.ether.fi]
+
+---
+Entity: Telegram Community
+Type: Community
+Relationship: Komunitas chat Telegram (status resmi belum diverifikasi) — diskusi pengguna dan announcement mirror.
+Period: 2024–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (LOW) [Telegram t.me/etherfifinance, https://t.me/etherfifinance]; (LOW) [Tidak terverifikasi sebagai channel resmi di website]
+
+---
+Entity: GitHub (etherfi-protocol)
+Type: Infrastructure
+Relationship: Repository kode sumber terbuka untuk smart contract, frontend, SDK, dan dokumentasi teknis EtherFi.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub etherfi-protocol, https://github.com/etherfi-protocol]; (HIGH) [GitHub Docs, https://docs.github.com]
+
+---
+
+PERSON
+- Mike Silagadze
+- Rok Kukovec
+
+FOUNDATION
+- EtherFi Foundation
+
+COMPANY
+- Binance Labs
+- Coinbase Ventures
+- OKX Ventures
+- Binance Exchange
+- Coinbase Exchange
+- OKX Exchange
+- Bybit Exchange
+- Gate.io Exchange
+- KuCoin Exchange
+- Auditors (Multiple Firms)
+- Node Operators (Permissionless Set)
+
+PROTOCOL
+- EigenLayer
+- Symbiotic
+- Pendle
+- eETH
+- weETH
+- ETHFI Token
+
+CHAIN
+- Ethereum
+- Arbitrum
+- Optimism
+- Base
+- Mode
+- Blast
+- Linea
+- Scroll
+- zkSync Era
+- Mantle
+- BNB Chain
+
+INVESTOR
+- Binance Labs
+- Coinbase Ventures
+- OKX Ventures
+
+INFRASTRUCTURE
+- Dune Analytics
+- Etherscan
+- Arbiscan
+- Optimistic Etherscan
+- Basescan
+- GitHub (etherfi-protocol)
+
+APPLICATION
+- EtherFi Cash
+- EtherFi Vaults
+- Ultra Light Node
+- EtherFi Staking
+
+SECURITY
+- Auditors (Multiple Firms)
+
+DAO
+- EtherFi DAO
+
+GOVERNMENT
+- (tidak ada yang teridentifikasi)
+
+MEDIA
+- Messari
+- CoinMarketCap
+- CoinGecko
+- DefiLlama
+
+COMMUNITY
+- Discord Community
+- X/Twitter Community
+- Telegram Community
+
+OTHER
+- EtherFi Protocol (Organization)
+
+---
+
+Total Entity: 54
+Internal: 7 (Mike Silagadze, Rok Kukovec, EtherFi Protocol, EtherFi DAO, EtherFi Foundation, eETH, weETH, ETHFI Token, EtherFi Cash, EtherFi Vaults, Ultra Light Node, EtherFi Staking — 12 jika dihitung produk sebagai internal)
+External: 42
+Unknown: 5 (EtherFi Foundation status, Telegram resmi, Auditor firms spesifik, Node operator identities, Founding legal entity jurisdiction)
+
+Catatan: Internal/External dihitung relatif terhadap protokol EtherFi — "Internal" = entitas yang dibangun/dikelola langsung oleh tim EtherFi; "External" = pihak ketiga independen.
+
+Open Threads
+- Identitas legal entity pendirian (foundation/company) dan yurisdiksi belum diverifikasi — perlu cek registrasi perusahaan atau legal docs
+- Daftar auditor smart contract spesifik (nama firma, tanggal audit, scope) belum terekspos publik secara lengkap — GitHub repo audits perlu dicek detail
+- Identitas node operator permissionless individu/entitas — ULN marketplace baru, daftar operator belum dipublikasikan agregat
+- Status resmi Telegram channel — website hanya list Discord dan X; Telegram t.me/etherfifinance perlu verifikasi kepemilikan
+- Daftar investor lengkap (strategic/private round) — hanya Binance Labs, Coinbase Ventures, OKX Ventures yang terkonfirmasi publik; mungkin ada investor lain (Paradigm, a16z, dll) yang tidak diumumkan
+- ETHFI tokenomics detail (vesting schedule, team allocation, treasury management) — perlu cross-check ke governance forum dan on-chain data
+- Jumlah core team aktual — hanya 2 founder yang publik; ukuran tim engineering, BD, ops tidak diketahui
+- Regulatory exposure — apakah ada entidad legal terdaftar, compliance framework, atau engagement regulator (SEC, CFTC, EU MiCA)

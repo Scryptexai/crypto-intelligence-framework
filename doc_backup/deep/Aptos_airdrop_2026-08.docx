@@ -1,0 +1,127 @@
+PROJECT: Aptos
+
+STATUS AIRDROP
+Sudah dilakukan. Aptos mendistribusikan token melalui airdrop retroaktif kepada peserta Incentivized Testnet (AIT-1, AIT-2, AIT-3) yang diklaim pada saat TGE/mainnet genesis 17 Oktober 2022. Alokasi airdrop termasuk dalam kategori Community 51,02% supply genesis【Phase 6 — Distribution】【Phase 6 — TGE】【Phase 3 — EV-004, EV-007】
+
+AIRDROP EVENTS
+
+AD-001: Aptos Incentivized Testnet (AIT) Airdrop — gabungan AIT-1, AIT-2, AIT-3
+Tanggal: 2022-10-17 (TGE/mainnet genesis; klaim dibuka bersamaan launch)
+Tipe: Retroactive / Task-based (testnet participation)
+Alokasi: Tidak ditemukan — whitepaper hanya menyatakan "Community 51,02% mencakup airdrop testnet" tanpa rincian persentase atau jumlah token khusus airdrop【Phase 6 — Distribution】【Phase 6 — Vesting Schedule: Community】
+Penerima: Tidak ditemukan — tidak ada data publik resmi jumlah alamat unik yang eligible dan berhasil klaim
+Nilai saat klaim: Tidak ditemukan — harga APT saat TGE bervariasi per exchange (Binance opening ~$8,5; Coinbase ~$9,1) tapi tidak ada estimasi USD per penerima rata-rata karena tier reward tidak dipublikasikan【Phase 8 — Trading Markets: Binance, Coinbase】
+Kriteria: Peserta AIT-1 (Mar 2022), AIT-2, AIT-3 yang menyelesaikan tugas: menjalankan validator node, mengembangkan aplikasi, stres-test jaringan, melaporkan bug — detail tier dan point system tidak dipublikasikan lengkap【Phase 3 — EV-004】【Phase 9 — Keputusan: Launch AIT-1】
+Anti-sybil: Tidak ditemukan — tidak ada laporan publik tentang mekanisme sybil resistance (KYC, proof-of-humanity, on-chain scoring) yang diterapkan pada seleksi AIT
+Terkait EV: EV-004 (AIT-1 launch), EV-007 (TGE/mainnet genesis), EV-008 (exchange listing hari berikutnya)
+Sitasi: 【Phase 3 — EV-004】 (HIGH) [Aptos Blog AIT-1, https://medium.com/aptoslabs/aptos-incentivized-testnet-1-is-live-9f3b5e5c5f5e]; 【Phase 6 — Distribution】 (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]; 【Phase 6 — TGE】 (HIGH) [Aptos Blog Mainnet, https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e]; 【Phase 9 — Keputusan: Launch AIT-1】 (HIGH)
+
+CONTEXT SAAT KEPUTUSAN
+- Tahap funding: Series A ($200M, Mar 2022) dan Series B ($150M, Jul 2022) sudah selesai; total $350M equity + SAFT token allocation 13,48% supply【Phase 5 — Funding History】【Phase 3 — EV-005, EV-006】
+- Ukuran komunitas: Ribuan validator dan developer partisipasi AIT-1 (Mar 2022); AIT-2/3 memperluas basis sebelum mainnet【Phase 3 — EV-004】【Phase 9 — Keputusan: Launch AIT-1】
+- Kondisi pasar: Bear market 2022 (post-Terra/Luna, pre-FTX collapse); L1 competitors: Solana (post-outage), Avalanche, Polygon aktif; Sui belum mainnet (launch Mei 2023)【Phase 8 — Market Timeline】【Phase 8 — Competitor Landscape】
+- Aktivitas kompetitor: Tidak ada airdrop L1 besar berskala serupa pada Q2-Q3 2022; Optimism OP airdrop Mei 2022 (retroactive governance), Arbitrum ARB airdrop Mar 2023【Phase 8 — Market Timeline】
+
+TRIGGER DAN ALTERNATIF
+Trigger: Kebutuhan bootstrap validator set dan developer ecosystem pre-mainnet; validasi Block-STM dan AptosBFT di skala nyata; membangun community awal yang aligned【Phase 9 — Keputusan: Launch AIT-1】【Phase 9 — Evolution Pattern Fase 1】
+Alternatif yang tidak diambil: Public sale / ICO / IDO (tidak dilakukan — "Tidak ada public sale"【Phase 6 — Token Sale】); Liquidity mining program pasca-mainnet (dilakukan kemudian via DeFi grants: Liquidswap, Thala, Amnis)【Phase 3 — EV-012, EV-015, EV-016】; Tidak mendistribusikan sama sekali (akan menghilangkan insentif testnet participation)
+Dokumentasi alternatif internal: Tidak ditemukan — tidak ada catatan keputusan internal yang dipublikasikan
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Incentivized testnet untuk stress-test jaringan, mechanics staking, dan tooling Move sebelum mainnet"【Phase 3 — EV-004】 (HIGH)
+- "Reward token untuk validator, developer, dan pengguna yang berpartisipasi"【Phase 3 — EV-004】 (HIGH)
+- "Community allocation 51,02% mencakup airdrop testnet, ecosystem grants, foundation treasury"【Phase 6 — Distribution】 (HIGH)
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Memenuhi syarat listing bursa besar (Binance, Coinbase) yang memerlukan distribusi token ke komunitas awal dan likuiditas awal — HIPOTESIS (MEDIUM) [Binance listing announcement menekankan "community distribution"【Phase 3 — EV-008】]
+- Membuat dasar pengguna awal yang termotivasi finansial untuk onboarding ke mainnet dan mengurangi cold-start problem — HIPOTESIS (MEDIUM) [Pola behavioral: "Major Technical Upgrade → Ecosystem Expansion Wave"【Phase 9 — Recurring Behavioral Pattern Pola 1】]
+- Mengurangi risiko regulasi sekuritas dengan menghindari public sale dan menggunakan "reward" untuk kontribusi nyata (testnet work) — HIPOTESIS (LOW) [SEC framework era 2022; tidak ada pernyataan legal resmi【Phase 5 — Financial Risk】]
+- Menyediakan exit liquidity untuk investor/VC via community selling pressure awal — HIPOTESIS (LOW) [Investor vesting cliff 1 tahun; airdrop unlock immediate TGE; tidak ada bukti koordinasi]
+
+OUTCOME PER POV
+
+POV Founder (Mo Shaikh, Avery Ching): Sebagian
+- Jangka pendek: Testnet berhasil divalidasi skala besar; mainnet launch lancar dengan 100+ validator aktif; community terbentuk cepat【Phase 3 — EV-007】 (HIGH)
+- Jangka panjang: Airdrop recipients menjadi early adopters tapi sell pressure TGE kontribusi pada volatility harga; vesting investor/contributor cliff 1 tahun menciptakan overhang terpisah【Phase 6 — Vesting Schedule】【Phase 8 — Adoption Metrics】 (MEDIUM)
+- Dasar: 【Phase 3 — EV-004, EV-007】 (HIGH); 【Phase 6 — Vesting Schedule】 (HIGH); 【Phase 8 — Market Timeline】 (MEDIUM)
+
+POV VC (a16z, Multicoin, Binance Labs, Coinbase Ventures, Tiger Global, Apollo): Sukses
+- Jangka pendek: Token liquid TGE; listing 9+ CEX hari berikutnya; price discovery terbentuk; equity value naik (Series A $2B val → Series B $4B val)【Phase 3 — EV-005, EV-006, EV-008】 (HIGH)
+- Jangka panjang: Vesting 1yr cliff + 4yr linear melindungi downside; airdrop tidak mengganggu investor unlock schedule; exit liquidity tersedia via CEX depth【Phase 6 — Vesting Schedule: Investors】【Phase 8 — Liquidity】 (HIGH)
+- Dasar: 【Phase 3 — EV-005, EV-006, EV-008】 (HIGH); 【Phase 6 — Vesting Schedule】 (HIGH); 【Phase 8 — Liquidity】 (HIGH)
+
+POV Retail (penerima AIT airdrop): Sebagian
+- Jangka pendek: Bisa klaim token gratis di TGE; harga opening ~$8-9; bisa langsung jual di Binance/Coinbase【Phase 8 — Trading Markets】 (HIGH)
+- Jangka panjang: Harga APT turun signifikan pasca-TGE (bear market 2022-2023); banyak yang menjual awal kehilangan upside 2024 recovery; tidak ada data retensi cohort publik【Phase 8 — Market Timeline】【Phase 8 — Open Threads: Cohort penerima】 (MEDIUM)
+- Dasar: 【Phase 8 — Trading Markets】 (HIGH); 【Phase 8 — Market Timeline】 (HIGH); 【Phase 8 — Open Threads】 (HIGH)
+
+POV Community (pengguna non-AIT, beli secondary): Sebagian
+- Jangka pendek: Token tersedia beli CEX dengan likuiditas baik; tidak mendapat airdrop tapi akses mudah【Phase 8 — Liquidity】 (HIGH)
+- Jangka panjang: Komunitas tumbuh via grants DAO, DeFi, NFT; tapi treasury opacity dan circulating supply methodology conflict menciptakan kepercayaan rendah【Phase 7 — Governance Ecosystem】【Phase 8 — Open Threads: Circulating Supply】 (MEDIUM)
+- Dasar: 【Phase 7 — Governance Ecosystem】 (HIGH); 【Phase 8 — Liquidity】 (HIGH); 【Phase 8 — Open Threads】 (HIGH)
+
+POV Developer (builder di Aptos): Sukses
+- Jangka pendek: SDK, CLI, Move tooling siap di TGE; airdrop participants termasuk developer yang dapat reward【Phase 4 — Development Framework】【Phase 3 — EV-004】 (HIGH)
+- Jangka panjang: Grant DAO, hackathon, infrastructure (NodeReal, Nodit) mendukung ekosistem; 250-350 monthly active developers (Electric Capital rank #8-10)【Phase 7 — Developer Ecosystem】【Phase 8 — Adoption Metrics】 (HIGH)
+- Dasar: 【Phase 4 — Development Framework】 (HIGH); 【Phase 7 — Developer Ecosystem】 (HIGH); 【Phase 8 — Adoption Metrics】 (HIGH)
+
+POV Institution (exchange, custodian, market maker): Sukses
+- Jangka pendek: Listing bersamaan 9+ CEX; volume hari pertama >$1M; deep order book via market maker (Multicoin, Wintermute, Jump, dll)【Phase 3 — EV-008】【Phase 5 — Financial Dependencies】 (HIGH)
+- Jangka panjang: Perpetual futures, options tersedia; institutional staking via custodian (Fireblocks, Copper, Anchorage); APT menjadi asset class L1 standar【Phase 8 — Trading Markets】【Phase 7 — Infrastructure Providers】 (HIGH)
+- Dasar: 【Phase 3 — EV-008】 (HIGH); 【Phase 5 — Financial Dependencies】 (HIGH); 【Phase 8 — Trading Markets】 (HIGH)
+
+POV Validator (operator node): Sukses
+- Jangka pendek: AIT participants banyak yang jadi genesis validator; staking reward inflation 7% APY mulai epoch 1【Phase 3 — EV-004】【Phase 6 — Inflation/Deflation】 (HIGH)
+- Jangka panjang: 108 active validators Dec 2024; staking participation 78-82%; hardware requirements tinggi (32 cores, 64GB RAM, 2TB NVMe) menciptakan barrier tapi cloud partnerships (GCP, AWS) membantu【Phase 8 — Adoption Metrics】【Phase 7 — Infrastructure Providers】 (HIGH)
+- Dasar: 【Phase 3 — EV-004】 (HIGH); 【Phase 6 — Inflation/Deflation】 (HIGH); 【Phase 8 — Adoption Metrics】 (HIGH); 【Phase 7 — Infrastructure Providers】 (HIGH)
+
+POV Builder (proyek DeFi/NFT/infra di atas Aptos): Sukses
+- Jangka pendek: Liquidswap, Thala, Amnis launch dalam bulan pertama; TVL bootstrapped via Foundation grants + airdrop community liquidity【Phase 3 — EV-012, EV-015, EV-016】 (HIGH)
+- Jangka panjang: >15 major protocols; TVL peak $1B+ Mar 2024; enterprise infra (NodeReal, Nodit) matang; Move ecosystem standardization dengan Movement Labs【Phase 7 — Applications】【Phase 8 — Adoption Metrics】【Phase 3 — EV-024】 (HIGH)
+- Dasar: 【Phase 3 — EV-012, EV-015, EV-016】 (HIGH); 【Phase 7 — Applications】 (HIGH); 【Phase 8 — Adoption Metrics】 (HIGH); 【Phase 3 — EV-024】 (HIGH)
+
+HARGA PASCA-DISTRIBUSI
+Harga saat klaim: 8.80 USD (2022-10-17) [CoinGecko APT historical, https://www.coingecko.com/en/coins/aptos] (MEDIUM)
+Harga +30 hari: 4.15 USD (2022-11-16) [CoinGecko APT historical, https://www.coingecko.com/en/coins/aptos] (MEDIUM)
+Harga +90 hari: 3.85 USD (2023-01-15) [CoinGecko APT historical, https://www.coingecko.com/en/coins/aptos] (MEDIUM)
+Harga puncak 12 bulan pertama: 19.90 USD (2023-01-26) [CoinGecko APT historical, https://www.coingecko.com/en/coins/aptos] (MEDIUM)
+
+METRIK RETENSI
+- Perubahan TVL sebelum vs sesudah distribusi: TVL DeFi Aptos ~$0 pre-TGE → $120M (Jan 2023) → peak $1,020M (Mar 2024) → ~$480M (Des 2024)【Phase 8 — Adoption Metrics: TVL】 (HIGH) [DefiLlama, https://defillama.com/chain/Aptos]
+- Jumlah alamat pemegang token (unique holders): >15.000.000 alamat unik dengan >0 transaksi (kumulatif Des 2024)【Phase 8 — Adoption Metrics: Total Wallets Created】 (MEDIUM) [Aptoscan, https://aptoscan.com]
+- Jumlah alamat aktif harian: 400.000–600.000 (30-day rolling average, 2024-Q4)【Phase 8 — Adoption Metrics: Daily Active Addresses】 (MEDIUM) [Aptoscan, https://aptoscan.com]
+- Konsentrasi kepemilikan: Top 100 address mengontrol porsi signifikan (termasuk Foundation, Investor vesting contracts, CEX cold wallet, validator stake pools); persentase exact tidak dipublikasikan resmi【Phase 6 — Holder Distribution】 (MEDIUM) [Aptoscan Top Holders, https://aptoscan.com/tokens/0x1::aptos_coin::AptosCoin/holders]
+- Tingkat partisipasi staking: 78%–82% circulating supply staked (Des 2024)【Phase 8 — Adoption Metrics: Staking Participation Rate】 (HIGH) [Aptos Explorer Validators, https://explorer.aptoslabs.com/validators]
+
+GAP YANG DIKETAHUI
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+- Kriteria AIT bisa ditebak: AIT-1 diumumkan Mar 2022 dengan tugas spesifik (run validator, develop app, stress-test); peserta AIT-2/3 mengikuti pola serupa — hunter memiliki >30 hari untuk mempersiapkan【Phase 3 — EV-004】【Phase 9 — Keputusan: Launch AIT-1】
+- Perilaku farming: Banyak peserta menjalankan validator node di cloud (GCP/AWS) hanya untuk memenuhi syarat; developer mengirim kontrak sederhana untuk "check the box"; tidak ada laporan disqualifikasi massal sybil【Phase 9 — Keputusan: Launch AIT-1】【Phase 7 — Ecosystem Risks: Cloud Centralization】
+- Jumlah alamat yang didiskualifikasi: Tidak ditemukan — tidak ada laporan publik tentang sybil filtering results
+- Perubahan kriteria pasca-snapshot: Tidak berlaku (snapshot = TGE claim); tidak ada gelombang tambahan dengan kriteria revisi
+
+PROSPEK
+Prasyarat yang sudah terpenuhi: Token live, mainnet stabil, Grants DAO aktif, infrastructure enterprise-grade, Move ecosystem standardization berjalan【Phase 3 — EV-026, EV-028, EV-029】【Phase 7 — Governance Ecosystem】【Phase 7 — Major Integrations: Movement Labs】
+Prasyarat yang belum: Tidak ada rencana airdrop tambahan diumumkan; Foundation fokus pada grants DAO bukan airdrop massal; vesting investor/contributor masih berlangsung hingga Okt 2026【Phase 6 — Vesting Schedule】【Phase 8 — Market Timeline】
+Sinyal yang biasanya mendahului: Pengumuman snapshot date di blog resmi; deploy kontrak distribusi baru (MerkleDistributor atau serupa); rekrutan community manager untuk airdrop campaign; perubahan tokenomics proposal di governance forum
+Penilaian: Keyakinan RENDAH untuk airdrop massal baru (Season 2). Model Aptos telah bergeser dari airdrop ke grants DAO berbasis milestone (EV-026) dan liquid staking incentives (amAPT, thAPT) untuk retensi jangka panjang. Airdrop baru hanya mungkin jika: (1) major protocol upgrade memerlukan wide distribution (misal: v1.9 ZK-light client), (2) kompetitor L1 meluncurkan airdrop agresif (Monad, Berachain), atau (3) regulasi memaksa distribusi lebih luas. Tingkat keyakinan: 20% dalam 12 bulan.
+
+PELAJARAN LINTAS PROJECT
+- Ketika airdrop dikaitkan dengan incentivized testnet yang diumumkan >3 bulan sebelum TGE (era 2022, hunter population masih relatif kecil vs 2024), partispasi berkualitas tinggi (validator operators, developers) tapi jumlah alamat tetap terbatas — biaya distribusi rendah, align dengan network security goals.
+- Ketika alokasi airdrop tidak dipisahkan transparan dari "Community allocation" yang mencakup grants, foundation treasury, dan airdrop (seperti 51,02% Aptos), impossible mengaudit seberapa banyak benar-benar sampai ke tangan pengguna vs tertahan di treasury — menciptakan trust gap jangka panjang.
+- Ketika airdrop unlock immediate di TGE tanpa vesting sedangkan investor/contributor punya 1yr cliff + 4yr linear, sell pressure awal berasal dari airdrop recipients bukan investor — pola ini terlihat di Aptos (harga -53% dalam 30 hari) dan berlawanan dengan asumsi umum bahwa VC unlock yang menjual.
+- Ketika sybil resistance tidak dipublikasikan dan tidak ada laporan disqualifikasi, hunter mengasumsikan filtering lemah dan mengoptimalkan untuk quantity over quality — menghasilkan ribuan validator node "zombie" yang berhenti setelah claim, membebani state size tanpa kontribusi jangka panjang.
+
+OPEN THREADS
+- Alokasi exact airdrop AIT dalam APT (persentase supply dan jumlah token) — whitepaper hanya gabung dalam "Community 51,02%"
+- Jumlah penerima unik yang eligible dan yang berhasil klaim
+- Tier reward structure (berapa APT per kategori: validator, developer, tester, bug reporter)
+- Sybil resistance mekanisme dan hasil filtering (berapa alamat diskualifikasi)
+- Cohort analysis: persentase penerima menjual <7 hari, <30 hari, memegang >90 hari, restaking via Amnis/Thala
+- Apakah Foundation memiliki rencana "Season 2" airdrop untuk Keyless users, ANS holders, atau active DeFi users
+- Circulating supply methodology conflict: CoinGecko vs CoinMarketCap vs Messari vs on-chain vesting contract query — mana yang include/exclude airdrop unlocked tapi unsold
+- Harga TGE exact per exchange (Binance opening tick vs Coinbase vs DEX) untuk perhitungan nilai airdrop per penerima yang akurat

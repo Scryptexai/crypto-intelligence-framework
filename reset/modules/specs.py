@@ -26,6 +26,8 @@ import extract_events as _extract_events
 import extract_decision_events as _extract_decision_events
 import extract_knowledge as _extract_knowledge
 import extract_behavior as _extract_behavior
+import extract_qa as _extract_qa
+import extract_airdrop as _extract_airdrop
 
 # The `## <Title>` heading tools/ingest.py writes above each phase in the assembled dossier.
 # The extractors slice on these, so a single phase checked in isolation has to be wrapped in
@@ -43,6 +45,7 @@ PHASE_TITLES = {
     "behavioral": "Behavioral Intelligence",
     "knowledge": "Knowledge Extraction",
     "conflict": "Validation & Quality Assurance (CIF Score)",
+    "airdrop": "Airdrop Intelligence",
 }
 # What each phase's slice is terminated BY in a real dossier -- the next phase's title.
 _NEXT_TITLE = {
@@ -50,6 +53,7 @@ _NEXT_TITLE = {
     "history": "Technology Intelligence",
     "behavioral": "Knowledge Extraction",
     "knowledge": "Validation & Quality Assurance (CIF Score)",
+    "conflict": "Airdrop Intelligence",
 }
 
 
@@ -196,6 +200,199 @@ def _check_knowledge(text: str, project_name: str) -> tuple:
     return True, f"{len(rows)} knowledge items"
 
 
+def _check_qa_parse(text: str, project_name: str) -> tuple:
+    """extract_qa.parse_qa returns None for two very different reasons, so say which.
+
+    The first version reported both as "no CIF Score Calculation block", which sent the
+    diagnosis in the wrong direction on Aave: the block was missing because the report was cut
+    off, not because the model formatted it wrong. The detail line now reports what IS in the
+    text -- how many 'Kontribusi:' lines, which dimension labels appear, whether the text ends
+    mid-sentence -- so the next failure is readable without opening the file.
+    """
+    wrapped = wrap_for_extractor(text, "conflict")
+    res = _extract_qa.parse_qa(wrapped, project_name)
+    if res is not None and res.get("dimensions"):
+        # The stated CIF Score must equal the sum of its own Kontribusi lines. The prompt's
+        # rule 16 already demands this ("Kedua bagian WAJIB melaporkan angka yang sama
+        # persis") and reports break it anyway -- 5 of 28 on 2026-08-10, worst at 77.85 vs a
+        # claimed 86.0. A headline number that contradicts the breakdown printed beside it is
+        # the one defect a user is guaranteed to notice, so it is caught here rather than
+        # shipped. Tolerance 1.0 is generous: six values rounded to 2dp cannot drift past ~0.5.
+        if res["total"] is not None:
+            computed = sum(d["score"] * d["weight"] / 100 for d in res["dimensions"])
+            if abs(computed - res["total"]) > 1.0:
+                return False, (f"CIF Score {res['total']} does not match the sum of its own "
+                               f"Kontribusi lines ({computed:.2f})")
+        return True, (f"total={res['total']} {len(res['dimensions'])} dimensions "
+                      f"{len(res.get('phases') or [])} phases")
+
+    kontribusi = len(re.findall(r"(?im)^\s*Kontribusi:", text))
+    labels = [d for d in _extract_qa.DIMENSION_KEYS if re.search(rf"(?m)^\s*{re.escape(d)}\s*\(",
+                                                                 text)]
+    tail = text.rstrip()[-60:].replace("\n", " ")
+    looks_cut = not text.rstrip().endswith((".", "!", "?", "|", "-", ")", "]"))
+    return False, (
+        f"extract_qa parsed 0 dimensions -- 'Kontribusi:' lines={kontribusi}, "
+        f"dimension headings found={labels or 'none'}, "
+        f"{'text ends mid-sentence (likely truncated): ' if looks_cut else 'ends at: '}"
+        f"...{tail!r}")
+
+
+def _check_no_md_headers(text: str, project_name: str) -> tuple:
+    """`## ` anywhere in Phase 11's body silently truncates it.
+
+    tools/ingest.py assembles each phase under its own `## <title>` heading, and
+    extract_qa.py bounds the section with `(?=\\n## |\\Z)`. A `## ` the model adds inside the
+    report therefore ends the section early: everything after it -- Conflict Register,
+    Evidence Audit, sometimes the score itself -- is dropped with no error anywhere. Same
+    failure that cost Phase 9 its Decision Timeline. Arbitrum's real Phase 11 has zero.
+    """
+    bad = re.findall(r"(?m)^(#{2,6}\s+\S.*)$", text)
+    if bad:
+        return False, f"{len(bad)} markdown header line(s), first: {bad[0][:60]!r}"
+    return True, "no markdown headers"
+
+
+_QA_HINT = (
+    "Laporan Phase 11 tidak terbaca oleh parser CIF Score. Perbaiki DUA hal:\n"
+    "1. WAJIB ada bagian berjudul persis `CIF SCORE CALCULATION` (huruf besar semua), dan di "
+    "dalamnya setiap dimensi ditulis sebagai `<Nama Dimensi> (<bobot>%)` pada barisnya sendiri, "
+    "diakhiri baris `Kontribusi: <skor> × <bobot> = <hasil>`. Contoh persis:\n"
+    "Research Quality (25%)\n"
+    "- <detail penilaian>\n"
+    "Kontribusi: 8.5 × 0.25 = 2.13\n"
+    "2. JANGAN pernah memakai heading markdown (`##`, `###`) di mana pun dalam laporan. "
+    "Gunakan baris teks huruf besar biasa sebagai judul bagian, seperti `COVERAGE REPORT` dan "
+    "`CONFLICT REGISTER`. Satu baris `## ` saja akan memotong laporan ini di tengah dan "
+    "membuang semua isi setelahnya.\n"
+    "3. Jika jawaban sebelumnya terputus di tengah kalimat, itu berarti laporannya terlalu "
+    "panjang untuk satu jawaban. RINGKAS bagian-bagian detail di depan (Dataset Integrity, "
+    "Inventory, Data Lineage, Evidence Audit) — cukup poin-poin padat, bukan paragraf — supaya "
+    "bagian CIF SCORE CALCULATION di akhir PASTI tertulis lengkap. Bagian skor itu wajib ada; "
+    "bagian detail boleh lebih ringkas."
+)
+
+
+def _check_airdrop_parse(text: str, project_name: str) -> tuple:
+    """Phase 12 must yield a status AND the eight-POV outcome block.
+
+    The POV count is the check that matters. A single success/failure verdict is the exact
+    mistake reset/phase_12_airdrop.txt exists to prevent -- an airdrop can succeed for the
+    founder and fail for retail in the same month -- so a report that collapses them is not
+    a formatting slip, it is the wrong analysis.
+    """
+    wrapped = wrap_for_extractor(text, "airdrop")
+    res = _extract_airdrop.parse_airdrop(wrapped, project_name)
+    if res is None:
+        return False, "extract_airdrop found no parseable Phase 12 content"
+    problems = []
+    if not res["status"]:
+        problems.append("STATUS AIRDROP missing or not one of the four literal states")
+    missing_pov = [p for p in _extract_airdrop.POV_NAMES if p.lower() not in res["povOutcomes"]]
+    if missing_pov:
+        problems.append(f"{len(missing_pov)} POV missing: {', '.join(missing_pov)}")
+    # Events are only expected when something was actually distributed; "Belum ada" with zero
+    # events is a correct answer, not an empty one.
+    if res["status"] in ("Sudah dilakukan", "Sedang berjalan") and not res["events"]:
+        problems.append("status says a distribution happened but no AD-NNN block parsed")
+    if problems:
+        return False, "; ".join(problems)
+    return True, (f"status={res['status']!r}, {len(res['events'])} event(s), "
+                  f"{len(res['povOutcomes'])} POV")
+
+
+def _check_price_block(text: str, project_name: str) -> tuple:
+    """A completed distribution must carry the four HARGA PASCA-DISTRIBUSI figures.
+
+    This is the check the retention section should always have been. Phase 12 asked 13
+    projects what share of recipients sold within 7 days and got an answer zero times -- that
+    number needs per-address on-chain work nobody publishes -- so 44 of 66 retention rows read
+    "Tidak ditemukan". Price at claim vs +30/+90 answers the same question from CoinGecko's
+    daily history, which exists for nearly every listed token.
+
+    Only enforced when something was actually distributed. "Belum ada" has no claim date and
+    therefore no price line to write; demanding one there would send the repair loop chasing
+    a figure that cannot exist (L4: a loop aimed at the wrong target cannot converge).
+    """
+    wrapped = wrap_for_extractor(text, "airdrop")
+    res = _extract_airdrop.parse_airdrop(wrapped, project_name)
+    if res is None:
+        return False, "extract_airdrop found no parseable Phase 12 content"
+    if res["status"] not in ("Sudah dilakukan", "Sedang berjalan"):
+        return True, f"status={res['status']!r} — no distribution, price block not required"
+    price = res["priceTrajectory"]
+    missing = [label for key, label, _pat in _extract_airdrop.PRICE_POINTS if key not in price]
+    if missing:
+        return False, f"{len(missing)} price line(s) missing: {', '.join(missing)}"
+    # Only `Tidak berlaku` excuses a missing figure -- never `Tidak ditemukan`. The two are not
+    # synonyms here: "berlaku" means the question does not apply (token never listed, or a
+    # continuous distribution with no claim date), while "ditemukan" means the model did not
+    # look. The first version of this check accepted both, and three projects took the exit:
+    # Blast answered all four lines "Tidak ditemukan USD [CoinGecko/CoinMarketCap historical
+    # data diperlukan]" and passed, for a token with complete price history. Hyperliquid's
+    # at_claim really is Tidak berlaku (native TGE, no single claim price) but its +30/+90 read
+    # "tidak tersedia di sumber Phase 1-11" -- treating the dossier as the only admissible
+    # source for a public market fact.
+    refused = [label for key, label, _pat in _extract_airdrop.PRICE_POINTS
+               if price[key]["usd"] is None
+               and not re.search(r"(?i)tidak\s+berlaku", price[key]["raw"])]
+    if refused:
+        return False, (f"{len(refused)} price line(s) with neither a figure nor `Tidak "
+                       f"berlaku`: {', '.join(refused)}")
+    # `Tidak berlaku` on its own is an assertion, not an answer -- the reason is what makes it
+    # checkable by a reader, and is the difference between "this token never listed" and "I
+    # would rather not say".
+    unexplained = [label for key, label, _pat in _extract_airdrop.PRICE_POINTS
+                   if price[key]["usd"] is None
+                   and len(re.sub(r"(?i)tidak\s+berlaku", "", price[key]["raw"]).strip(" .—-:()")) < 15]
+    if unexplained:
+        return False, (f"{len(unexplained)} `Tidak berlaku` line(s) with no reason given: "
+                       f"{', '.join(unexplained)}")
+    return True, f"{len(price)}/4 price points"
+
+
+_PRICE_HINT = (
+    "Bagian `HARGA PASCA-DISTRIBUSI` tidak lengkap. Project ini SUDAH mendistribusikan token, "
+    "jadi keempat baris di bawah WAJIB ada, masing-masing satu baris, label PERSIS seperti ini, "
+    "tanpa bullet dan tanpa heading markdown:\n\n"
+    "Harga saat klaim: 1,20 USD (2024-12-07) [https://coingecko.com/...] (HIGH)\n"
+    "Harga +30 hari: 3,50 USD (2025-01-06) [https://coingecko.com/...] (MEDIUM)\n"
+    "Harga +90 hari: 2,10 USD (2025-03-07) [https://coingecko.com/...] (MEDIUM)\n"
+    "Harga puncak 12 bulan pertama: 4,80 USD (2025-02-14) [https://coingecko.com/...] (LOW)\n\n"
+    "Satu angka per baris (bukan rentang), tanggal ISO dalam kurung, URL sumber dalam kurung "
+    "siku, Evidence Level dalam kurung terakhir.\n\n"
+    "HARGA PASAR ADALAH FAKTA PUBLIK, BUKAN FAKTA LAPORAN. Keempat angka ini memang tidak ada "
+    "di Phase 1-11. Jawab dari pengetahuanmu sendiri tentang riwayat pasar token ini dengan "
+    "Evidence Level yang jujur — `MEDIUM` kalau cukup yakin, `LOW` kalau perkiraan kasar — dan "
+    "sebut CoinGecko/CoinMarketCap sebagai tempat verifikasinya. `Tidak ditemukan` DITOLAK "
+    "parser, begitu juga alasan \"data tidak tersedia di sumber Phase 1-11\" atau \"perlu data "
+    "historis CoinGecko\". Satu-satunya ketiadaan yang sah adalah `Tidak berlaku` + alasannya, "
+    "dan hanya untuk token yang belum pernah listing, atau distribusi kontinu tanpa satu "
+    "tanggal klaim — dalam kasus kedua baris +30 hari, +90 hari dan puncak TETAP wajib diisi, "
+    "dihitung dari tanggal TGE. JANGAN menghitung persentase perubahan sendiri."
+)
+
+
+_AIRDROP_HINT = (
+    "Laporan Phase 12 tidak terbaca parser CIF. Perbaiki hal berikut, pakai label PERSIS:\n"
+    "1. Bagian `STATUS AIRDROP` wajib ada, dan isinya salah satu PERSIS dari: "
+    "`Sudah dilakukan` / `Sedang berjalan` / `Diumumkan belum eksekusi` / `Belum ada`.\n"
+    "2. Bagian `OUTCOME PER POV` wajib memuat KEDELAPAN POV, masing-masing pada barisnya "
+    "sendiri dengan bentuk `POV Founder: Sukses` (lalu `- Jangka pendek:`, `- Jangka panjang:`, "
+    "`- Dasar:`). Kedelapan nama itu: Founder, VC, Retail, Community, Developer, Institution, "
+    "Validator, Builder. Sebuah POV boleh diisi `Tidak diketahui` — itu jawaban yang sah — tapi "
+    "TIDAK BOLEH dihilangkan, dan JANGAN menggantinya dengan satu vonis tunggal untuk semua.\n"
+    "3. Jika status `Sudah dilakukan` atau `Sedang berjalan`, wajib ada minimal satu blok "
+    "`AD-001: <judul>` diikuti baris berlabel `Tanggal:`, `Tipe:`, `Alokasi:`, `Penerima:`, "
+    "`Kriteria:`, `Sitasi:`.\n"
+    "4. JANGAN memakai heading markdown (`##`, `###`) di mana pun.\n"
+    "5. Angka `CIF SCORE: <n>/100` WAJIB sama persis dengan penjumlahan seluruh baris "
+    "`Kontribusi:` di atasnya. Hitung ulang penjumlahannya, lalu tulis angka yang sama di "
+    "bagian CIF SCORE CALCULATION dan di CIF MANIFEST — jangan menaksir dan jangan memakai "
+    "angka dari draf sebelumnya."
+)
+
+
 _ENTITY_HINT = (
     "Format blok ENTITY salah sehingga tidak terparsing. Tulis SETIAP entity sebagai blok "
     "flat text, label BAHASA INGGRIS persis ini, satu field per baris, dipisah \"---\" "
@@ -270,15 +467,35 @@ PHASE_CHECKS = {
     ],
     "knowledge": [Check("knowledge_parse", "knowledge items parse", _check_knowledge,
                         _KNOWLEDGE_HINT)],
+    "conflict": [
+        Check("qa_parse", "CIF Score Calculation parses", _check_qa_parse, _QA_HINT),
+        Check("no_md_headers", "no markdown headers to truncate the report",
+              _check_no_md_headers, _QA_HINT),
+    ],
+    "airdrop": [
+        Check("airdrop_parse", "status + all 8 POV outcomes parse", _check_airdrop_parse,
+              _AIRDROP_HINT),
+        Check("price_block", "four post-distribution price points present", _check_price_block,
+              _PRICE_HINT),
+        Check("no_md_headers", "no markdown headers to truncate the report",
+              _check_no_md_headers, _AIRDROP_HINT),
+    ],
 }
 
 
 def checks_for(num: int, key: str) -> list:
-    """Universal checks + this phase's format checks. Phase 11 is excluded: it is assembled
-    from four stages with its own separate contract (a CIF Validation Report, not a dataset
-    of parseable rows) and has no extractor to test against."""
-    if num == 11:
-        return []
+    """Universal checks + this phase's format checks.
+
+    Phase 11 used to be excluded, on the grounds that it was assembled from four stages and
+    had no extractor to test against. Both halves stopped being true on 2026-08-09: it now
+    goes out as one prompt like every other phase, and extract_qa.py is exactly the extractor
+    that reads it. Leaving it unchecked meant an unparseable audit was written to disk, the
+    project reported success, and poc/qa.json silently gained nothing.
+
+    All three universal checks were verified against the one known-good Phase 11
+    (data_project/Arbitrum/11-conflict.docx) before being switched on here, so they cannot
+    trigger a repair loop on correct output.
+    """
     return _UNIVERSAL + PHASE_CHECKS.get(key, [])
 
 

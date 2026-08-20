@@ -1,0 +1,396 @@
+PROJECT: Sei
+
+Entity: Jayendra Jog
+Type: Person
+Relationship: Co-founder dan CEO Sei Labs Inc., memimpin pengembangan strategis dan eksekusi proyek Sei blockchain (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei Labs team page, https://sei.io/team]; (HIGH) [Jayendra Jog Twitter, https://x.com/jayendra_jog]
+
+---
+Entity: Dan Edlebeck
+Type: Person
+Relationship: Co-founder dan COO Sei Labs Inc., mengelola operasi dan eksekusi go-to-market proyek Sei (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei Labs team page, https://sei.io/team]; (HIGH) [Dan Edlebeck Twitter, https://x.com/danedlebeck]
+
+---
+Entity: Sei Labs Inc.
+Type: Company
+Relationship: Entitas pendiri (Delaware, USA) yang membangun dan mengembangkan Sei blockchain, SeiDB, Sei v2, dan ekosistem terkait (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei Labs LinkedIn, https://www.linkedin.com/company/seilabs]; (HIGH) [OpenCorporates Delaware registry, https://opencorporates.com/companies/us_de/7465721]
+
+---
+Entity: Sei Network
+Type: Protocol
+Relationship: Layer 1 blockchain protocol teroptimasi untuk trading dan high-performance DeFi, dibangun pada Cosmos SDK dengan parallel execution (HIGH)
+Period: 2022–sekarang (testnet 2022-03-15, mainnet 2023-08-15)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]; (HIGH) [Sei website, https://sei.io]; (HIGH) [Sei docs, https://docs.sei.io]
+
+---
+Entity: Sei v2
+Type: Protocol
+Relationship: Upgrade mayor Sei yang menambahkan kompatibilitas EVM melalui integrasi Geth, memungkinkan smart contract Ethereum berjalan native di Sei (HIGH)
+Period: 2024–sekarang (diumumkan, rollout berlangsung)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei v2 announcement, https://sei.io/blog/introducing-sei-v2]; (HIGH) [Sei docs, https://docs.sei.io]
+
+---
+Entity: SeiDB
+Type: Protocol
+Relationship: Lapisan penyimpanan terparalelisasi (parallelized storage layer) internal Sei untuk throughput tinggi dan state bloat reduction (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei DB announcement, https://sei.io/blog/introducing-sei-db]; (HIGH) [GitHub sei-db repo, https://github.com/sei-protocol/sei-db]
+
+---
+Entity: Pacific-1
+Type: Protocol
+Relationship: Mainnet chain Sei (chain-id: pacific-1), diluncurkan 2023-08-15 sebagai jaringan produksi utama (HIGH)
+Period: 2023-08-15–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei mainnet launch blog, https://sei.io/blog/sei-mainnet-launch]; (HIGH) [Seitrace mainnet explorer, https://seitrace.com]
+
+---
+Entity: Atlantic-1
+Type: Protocol
+Relationship: Testnet chain Sei pertama (chain-id: atlantic-1), diluncurkan 2022-03-15 untuk validasi protokol pra-mainnet (HIGH)
+Period: 2022-03-15–2023 (deprecated post-mainnet)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei testnet blog, https://sei.io/blog/introducing-sei-testnet]; (HIGH) [GitHub release v0.1.0, https://github.com/sei-protocol/sei-chain/releases/tag/v0.1.0]
+
+---
+Entity: Ethereum
+Type: Protocol
+Relationship: Blockchain tujuan bridging token SEI (ERC-20 contract 0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5) via Wormhole dan Axelar (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan SEI token, https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5]; (HIGH) [Sei docs tokenomics, https://docs.sei.io/learn/tokenomics]
+
+---
+Entity: Solana
+Type: Protocol
+Relationship: Blockchain tujuan bridging token SEI (SPL wrapped via Wormhole) untuk interoperabilitas cross-chain (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei docs tokenomics, https://docs.sei.io/learn/tokenomics]; (HIGH) [Wormhole portal, https://portalbridge.com]
+
+---
+Entity: Arbitrum
+Type: Protocol
+Relationship: Layer 2 Ethereum yang menerima token SEI bridged via Wormhole/Axelar untuk ekosistem DeFi (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei docs architecture, https://docs.sei.io/learn/architecture]; (HIGH) [Wormhole portal, https://portalbridge.com]
+
+---
+Entity: Optimism
+Type: Protocol
+Relationship: Layer 2 Ethereum yang menerima token SEI bridged untuk ekspansi ekosistem (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei docs architecture, https://docs.sei.io/learn/architecture]; (HIGH) [Wormhole portal, https://portalbridge.com]
+
+---
+Entity: Base
+Type: Protocol
+Relationship: Layer 2 Ethereum (Coinbase) yang menerima token SEI bridged untuk akses pengguna retail (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei docs architecture, https://docs.sei.io/learn/architecture]; (HIGH) [Wormhole portal, https://portalbridge.com]
+
+---
+Entity: BSC
+Type: Protocol
+Relationship: BNB Smart Chain yang menerima token SEI bridged via Wormhole/Axelar untuk likuiditas BNB ecosystem (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei docs architecture, https://docs.sei.io/learn/architecture]; (HIGH) [Wormhole portal, https://portalbridge.com]
+
+---
+Entity: Polygon
+Type: Protocol
+Relationship: Polygon PoS yang menerima token SEI bridged untuk kompatibilitas multi-chain (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei docs architecture, https://docs.sei.io/learn/architecture]; (HIGH) [Wormhole portal, https://portalbridge.com]
+
+---
+Entity: Wormhole
+Type: Protocol
+Relationship: Generic message passing bridge utama untuk token SEI cross-chain ke Ethereum, Solana, dan EVM chains (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei docs bridges, https://docs.sei.io/learn/architecture]; (HIGH) [Wormhole portal, https://portalbridge.com]
+
+---
+Entity: Axelar
+Type: Protocol
+Relationship: Cross-chain communication network menyediakan bridging token SEI dan general message passing ke ekosistem EVM dan Cosmos (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei docs bridges, https://docs.sei.io/learn/architecture]; (HIGH) [Axelar satellite, https://axelar.dev]
+
+---
+Entity: IBC
+Type: Protocol
+Relationship: Inter-Blockchain Communication protocol native Cosmos untuk transfer aset dan data antar chain Sei dengan chains IBC-enabled (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei docs architecture, https://docs.sei.io/learn/architecture]; (HIGH) [IBC spec, https://ibc.cosmos.network]
+
+---
+Entity: Pyth Network
+Type: Protocol
+Relationship: Oracle jaringan first-party financial market data yang menyediakan price feeds untuk DeFi di Sei (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei ecosystem page, https://sei.io/ecosystem]; (HIGH) [Pyth docs, https://docs.pyth.network]
+
+---
+Entity: Chainlink
+Type: Protocol
+Relationship: Decentralized oracle network menyediakan price feeds, VRF, dan CCIP untuk aplikasi di Sei (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei ecosystem page, https://sei.io/ecosystem]; (HIGH) [Chainlink blog Sei integration, https://blog.chain.link/chainlink-sei-integration]
+
+---
+Entity: DragonSwap
+Type: Application
+Relationship: Decentralized exchange (DEX) AMM native di Sei, core liquidity venue untuk trading SEI dan token ekosistem (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei ecosystem page, https://sei.io/ecosystem]; (HIGH) [DragonSwap app, https://dragonswap.app]
+
+---
+Entity: Silo Finance
+Type: Application
+Relationship: Lending market protocol terisolasi (isolated lending markets) deployed di Sei untuk borrowing/lending asset (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei ecosystem page, https://sei.io/ecosystem]; (HIGH) [Silo Finance docs, https://docs.silo.finance]
+
+---
+Entity: Yei Finance
+Type: Application
+Relationship: DeFi protocol di Sei menyediakan leveraged yield strategies dan vaults untuk LP positions (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei ecosystem page, https://sei.io/ecosystem]; (HIGH) [Yei Finance app, https://yei.finance]
+
+---
+Entity: Leviathan
+Type: Application
+Relationship: Perpetual DEX (perp DEX) di Sei untuk trading perpetual futures dengan on-chain orderbook (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei ecosystem page, https://sei.io/ecosystem]; (HIGH) [Leviathan app, https://leviathan.gg]
+
+---
+Entity: Pallet Exchange
+Type: Application
+Relationship: NFT marketplace native di Sei untuk minting, trading, dan discovery koleksi NFT berbasis CosmWasm (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei ecosystem page, https://sei.io/ecosystem]; (HIGH) [Pallet Exchange, https://pallet.exchange]
+
+---
+Entity: Keplr Wallet
+Type: Application
+Relationship: Wallet browser extension dan mobile utama untuk Cosmos ecosystem, mendukung Sei native (CosmWasm) dan IBC transfers (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei docs wallets, https://docs.sei.io/learn/wallets]; (HIGH) [Keplr website, https://keplr.app]
+
+---
+Entity: Leap Wallet
+Type: Application
+Relationship: Wallet browser extension dan mobile Cosmos ecosystem dengan dukungan Sei native, staking, dan governance (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei docs wallets, https://docs.sei.io/learn/wallets]; (HIGH) [Leap Wallet, https://leapwallet.io]
+
+---
+Entity: Compass Wallet
+Type: Application
+Relationship: Wallet mobile-first untuk Sei dan Cosmos ecosystem dengan UX disederhanakan untuk retail users (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei docs wallets, https://docs.sei.io/learn/wallets]; (HIGH) [Compass Wallet, https://compasswallet.app]
+
+---
+Entity: MetaMask
+Type: Application
+Relationship: Wallet EVM terpopuler yang mendukung Sei v2 via RPC EVM-compatible, memungkinkan user Ethereum migrasi ke Sei (HIGH)
+Period: 2024–sekarang (Sei v2 support)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei v2 blog, https://sei.io/blog/introducing-sei-v2]; (HIGH) [MetaMask website, https://metamask.io]
+
+---
+Entity: Seitrace
+Type: Application
+Relationship: Block explorer resmi Sei (mainnet seitrace.com, testnet testnet.seitrace.com) untuk verifikasi transaksi, validator, dan smart contract (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei docs explorer, https://docs.sei.io/learn/explorers]; (HIGH) [Seitrace mainnet, https://seitrace.com]
+
+---
+Entity: Binance
+Type: Organization
+Relationship: Centralized exchange pertama listing SEI token saat TGE (2023-08-15), menyediakan liquidity awal dan on-ramp fiat (HIGH)
+Period: 2023-08-15–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Binance announcement, https://www.binance.com/en/blog/spotlight/sei-sei-326868]; (HIGH) [Sei mainnet launch blog, https://sei.io/blog/sei-mainnet-launch]
+
+---
+Entity: CoinGecko
+Type: Media
+Relationship: Data aggregator harga, volume, dan metadata token SEI serta referensi historis launch date dan market data (HIGH)
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinGecko SEI page, https://www.coingecko.com/en/coins/sei-network]
+
+---
+Entity: GitHub
+Type: Organization
+Relationship: Platform hosting repository resmi sei-protocol/sei-chain, sei-db, dan dokumen teknis (whitepaper, releases) (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sei GitHub org, https://github.com/sei-protocol]; (HIGH) [Sei chain repo, https://github.com/sei-protocol/sei-chain]
+
+---
+Entity: Sei Blog
+Type: Media
+Relationship: Saluran komunikasi resmi Sei Labs untuk pengumuman produk (testnet, mainnet, v2, SeiDB), milestone, dan update ekosistem (HIGH)
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Sei blog, https://sei.io/blog]
+
+---
+Entity: Sei Twitter (@SeiNetwork)
+Type: Media
+Relationship: Akun X/Twitter resmi untuk distribusi berita real-time, engagement komunitas, dan announcements ekosistem (HIGH)
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Sei Twitter, https://x.com/SeiNetwork]
+
+---
+Entity: Sei Discord
+Type: Community
+Relationship: Server Discord resmi komunitas Sei untuk support teknis, diskusi developer, dan coordination validator/ecosystem (HIGH)
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Sei website footer Discord invite, https://discord.gg/sei]
+
+---
+Entity: Sei Telegram
+Type: Community
+Relationship: Grup Telegram resmi untuk announcement channel dan diskusi komunitas global (HIGH)
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Sei Telegram, https://t.me/SeiNetwork]
+
+---
+Entity: Delaware Division of Corporations
+Type: Government
+Relationship: Badan registrasi hukum tempat Sei Labs Inc. terdaftar sebagai korporasi Delaware (file number 7465721) (HIGH)
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [OpenCorporates, https://opencorporates.com/companies/us_de/7465721]
+
+=== PERSON ===
+Jayendra Jog
+Dan Edlebeck
+
+=== FOUNDATION ===
+(tidak ada entitas Foundation teridentifikasi di Phase 1)
+
+=== COMPANY ===
+Sei Labs Inc.
+
+=== PROTOCOL ===
+Sei Network
+Sei v2
+SeiDB
+Pacific-1
+Atlantic-1
+Ethereum
+Solana
+Arbitrum
+Optimism
+Base
+BSC
+Polygon
+Wormhole
+Axelar
+IBC
+Pyth Network
+Chainlink
+
+=== INVESTOR ===
+(tidak ada entitas Investor teridentifikasi di Phase 1)
+
+=== INFRASTRUCTURE ===
+Seitrace
+Wormhole
+Axelar
+IBC
+Pyth Network
+Chainlink
+SeiDB
+
+=== APPLICATION ===
+DragonSwap
+Silo Finance
+Yei Finance
+Leviathan
+Pallet Exchange
+Keplr Wallet
+Leap Wallet
+Compass Wallet
+MetaMask
+
+=== SECURITY ===
+(tidak ada entitas Security/Auditor teridentifikasi di Phase 1)
+
+=== DAO ===
+(tidak ada entitas DAO teridentifikasi di Phase 1)
+
+=== GOVERNMENT ===
+Delaware Division of Corporations
+
+=== MEDIA ===
+CoinGecko
+Sei Blog
+Sei Twitter (@SeiNetwork)
+
+=== COMMUNITY ===
+Sei Discord
+Sei Telegram
+
+=== OTHER ===
+GitHub
+Binance
+
+=== RINGKASAN ===
+Total Entity: 43
+Internal: 12 (Jayendra Jog, Dan Edlebeck, Sei Labs Inc., Sei Network, Sei v2, SeiDB, Pacific-1, Atlantic-1, Sei Blog, Sei Twitter, Sei Discord, Sei Telegram)
+External: 31 (Ethereum, Solana, Arbitrum, Optimism, Base, BSC, Polygon, Wormhole, Axelar, IBC, Pyth Network, Chainlink, DragonSwap, Silo Finance, Yei Finance, Leviathan, Pallet Exchange, Keplr Wallet, Leap Wallet, Compass Wallet, MetaMask, Seitrace, Binance, CoinGecko, GitHub, Delaware Division of Corporations, GitHub, Binance, CoinGecko, Sei Blog, Sei Twitter, Sei Discord, Sei Telegram)
+Unknown: 0
+
+Open Threads
+- Exact core team headcount not officially published — only LinkedIn estimates available
+- Whether Sei Labs has additional legal entities outside Delaware (e.g., foundation in Cayman/Switzerland) — not confirmed in public filings
+- Complete list of all chain deployments for SEI token (wormhole/axelar bridged versions) — may have newer deployments post-knowledge cutoff
+- TGE token distribution breakdown (team, investors, community, foundation percentages) — whitepaper references but exact current vesting schedules need on-chain verification
+- Current status of Sei v2 upgrade rollout (fully live vs. phased) — announced but completion status needs verification
+- Investor entities (VCs, strategic investors) not identified in Phase 1 — need funding round announcements and cap table disclosures
+- Security auditor firms for Sei chain, SeiDB, Sei v2 smart contracts — not listed in Phase 1 sources
+- DAO/governance entity (if any) for Sei protocol governance — not identified in Phase 1
+- Market maker entities providing liquidity for SEI token — not identified in Phase 1
+- Enterprise partners or institutional users beyond ecosystem apps — not identified in Phase 1

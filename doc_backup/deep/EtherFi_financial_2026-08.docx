@@ -1,0 +1,168 @@
+PROJECT: EtherFi
+
+## Funding History
+
+Funding Round: Seed / Private Round
+Date: 2023
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: Binance Labs
+Participating Investors: Coinbase Ventures, OKX Ventures
+Valuation: tidak diungkap
+Funding Type: Strategic / Private
+Status: Completed
+Sources: https://labs.binance.com/portfolio, https://research.binance.com/en/projects/etherfi, https://www.coinbase.com/ventures/portfolio, https://www.okx.com/ventures
+
+Funding Round: Token Generation Event (TGE) / Public Sale
+Date: 2024-03-18
+Amount: tidak diungkap (total raise via public sale tidak dipublikasikan terpisah dari TGE allocation)
+Currency: USD / ETHFI
+Lead Investor: N/A (public sale)
+Participating Investors: Retail participants via launchpad/CEX
+Valuation: tidak diungkap (FDV at TGE ~$1.2B per CoinMarketCap data awal, tidak dikonfirmasi resmi)
+Funding Type: Public Sale / TGE
+Status: Completed
+Sources: https://coinmarketcap.com/currencies/etherfi/, https://research.binance.com/en/projects/etherfi, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb
+
+Funding Round: Ecosystem Grants / Incentive Programs (EigenLayer, Symbiotic, Chain L2 foundations)
+Date: 2024–sekarang
+Amount: tidak diungkap secara agregat
+Currency: ETH / Native tokens (ARB, OP, BASE, etc.)
+Lead Investor: EigenLayer Foundation, Symbiotic Foundation, L2 Foundations (Arbitrum, Optimism, Base, dll)
+Participating Investors: N/A (grant programs)
+Valuation: N/A
+Funding Type: Grant / Ecosystem Incentive
+Status: Ongoing
+Sources: https://docs.eigenlayer.xyz, https://docs.symbiotic.fi, https://docs.ether.fi, https://blog.ether.fi
+
+## Treasury
+
+Current Treasury Size: tidak diungkap
+Treasury Composition: tidak diungkap
+Stablecoin Holdings: tidak diungkap
+Native Token Holdings: tidak diungkap (ETHFI token allocation untuk treasury/DAO tidak dipublikasikan detailnya)
+Other Assets: tidak diungkap (kemungkinan berisi ETH, eETH, weETH, stablecoin dari protocol fees)
+Treasury Custodian: EtherFi DAO (governance via Governor + Timelock) — multi-sig signers tidak dipublikasikan
+Sources: https://docs.ether.fi/governance, https://snapshot.org/#/etherfi.eth, https://etherscan.io/address/ (DAO treasury address tidak terverifikasi publik)
+
+## Revenue Model
+
+Nama: Staking Fee (Protocol Fee pada eETH staking rewards)
+Status: Live
+Sources: https://docs.ether.fi/staking, https://docs.ether.fi/tokens/eeth, https://app.ether.fi
+
+Nama: Restaking Fee / EigenLayer Strategy Fee (Fee pada restaking rewards via EigenLayer AVS delegation)
+Status: Live
+Sources: https://docs.ether.fi/restaking, https://docs.eigenlayer.xyz, https://blog.ether.fi/etherfi-v2-liquid-restaking/
+
+Nama: Vault Management Fee (Fee pada EtherFi Vaults untuk institutional-grade restaking allocation)
+Status: Live
+Sources: https://docs.ether.fi/vaults, https://blog.ether.fi
+
+Nama: weETH Bridging Fee (Fee pada cross-chain bridging weETH via canonical/third-party bridge)
+Status: Live
+Sources: https://docs.ether.fi/bridging, https://docs.ether.fi/tokens/weeth
+
+Nama: EtherFi Cash Revenue (Interchange fee, yield spread dari spending yield restaked ETH/stablecoin)
+Status: Live
+Sources: https://cash.ether.fi, https://blog.ether.fi
+
+Nama: Fee Switch / Protocol Revenue Sharing ke ETHFI Token Holder (Governance-activated fee accrual)
+Status: Planned / Governance Proposal (EV-024 2024-10 proposal untuk fee switch — outcome perlu verifikasi di Snapshot)
+Sources: https://snapshot.org/#/etherfi.eth, https://docs.ether.fi/governance, https://blog.ether.fi
+
+Nama: MEV / Priority Fee dari Validator Operation (via Ultra Light Node operator set)
+Status: Live (terdistribusi ke staker via eETH rebase, portion ke protocol fee jika dikonfigurasi)
+Sources: https://docs.ether.fi/ultra-light-node, https://docs.ether.fi/restaking
+
+Nama: Grant / Ecosystem Incentive Revenue (Token incentives dari EigenLayer, Symbiotic, L2 foundations untuk bootstrapping TVL)
+Status: Live
+Sources: https://docs.eigenlayer.xyz, https://docs.symbiotic.fi, https://blog.ether.fi
+
+## Revenue History
+
+Tidak diungkap. EtherFi tidak mempublikasikan laporan pendapatan berkala (quarterly/monthly revenue report) secara resmi. Data on-chain fee collection dapat ditrack via smart contract event tapi tidak diagregasikan ke laporan keuangan publik.
+Sources: https://docs.ether.fi, https://blog.ether.fi, https://dune.com/queries?query=etherfi
+
+## Fundraising Mechanism
+
+VC Funding: Binance Labs, Coinbase Ventures, OKX Ventures (Seed/Private round 2023) (HIGH) [https://labs.binance.com/portfolio, https://research.binance.com/en/projects/etherfi]
+Private Sale: Termasuk dalam Seed/Private round — allocation untuk investor strategis (tidak diungkap detail) (MEDIUM) [https://research.binance.com/en/projects/etherfi]
+Public Sale: TGE 2024-03-18 — public distribution via CEX listing (Binance, Coinbase, OKX, Bybit, Gate.io, KuCoin) dan potential launchpad (detail launchpad tidak dikonfirmasi) (HIGH) [https://coinmarketcap.com/currencies/etherfi/, https://www.binance.com/en/trade/ETHFI_USDT]
+Grant: Ecosystem grants dari EigenLayer, Symbiotic, L2 foundations (Arbitrum, Optimism, Base, Mode, Blast, Linea, Scroll, zkSync, Mantle, BNB Chain) untuk liquidity mining dan TVL incentives (MEDIUM) [https://docs.eigenlayer.xyz, https://docs.symbiotic.fi, https://docs.ether.fi]
+DAO Treasury: Protocol fees terkumpul di DAO treasury, dikelola via governance (MEDIUM) [https://docs.ether.fi/governance, https://snapshot.org/#/etherfi.eth]
+Protocol Revenue: Staking fee, restaking fee, vault fee, bridging fee, EtherFi Cash revenue (LIVE) (HIGH) [https://docs.ether.fi/staking, https://docs.ether.fi/restaking, https://docs.ether.fi/vaults, https://docs.ether.fi/bridging, https://cash.ether.fi]
+Bootstrapping: Initial development funded by founders + seed investors sebelum revenue live (MEDIUM) [https://x.com/mike_etherfi, https://x.com/rok_etherfi]
+
+## Token Sale
+
+Private Sale: Termasuk dalam Seed/Private round 2023 — investor: Binance Labs, Coinbase Ventures, OKX Ventures. Detail allocation, price, vesting tidak diungkap publik. (MEDIUM) [https://research.binance.com/en/projects/etherfi, https://labs.binance.com/portfolio]
+Public Sale: TGE 2024-03-18 — token tersedia untuk trading di Binance, Coinbase, OKX, Bybit, Gate.io, KuCoin. Apakah ada launchpad community sale (seperti Binance Launchpool, Coinbase Launchpad, dll) tidak dikonfirmasi secara resmi. (HIGH) [https://coinmarketcap.com/currencies/etherfi/, https://www.binance.com/en/trade/ETHFI_USDT, https://www.coinbase.com/price/etherfi]
+Launchpad: Tidak dikonfirmasi apakah ada launchpad dedicated (Binance Launchpool, Coinbase Launchpad, dll) — CEX listing simultan dengan TGE mengindikasikan potential launchpad allocation tapi tidak diverifikasi. (LOW) [https://research.binance.com/en/projects/etherfi]
+Auction: Tidak ada auction mechanism yang dikonfirmasi. (LOW) [Tidak ada sumber]
+Community Sale: Tidak dikonfirmasi community sale terpisah dari TGE/CEX listing. (LOW) [Tidak ada sumber]
+Tanggal: 2024-03-18 (TGE)
+Status: Completed
+Sources: https://coinmarketcap.com/currencies/etherfi/, https://research.binance.com/en/projects/etherfi, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb, https://www.binance.com/en/trade/ETHFI_USDT
+Catatan: Distribusi token, vesting schedule, team allocation, investor allocation, community/ecosystem allocation — merupakan Phase 6 (Tokenomics), tidak dibahas di sini.
+
+## Financial Dependencies
+
+VC: Binance Labs, Coinbase Ventures, OKX Ventures — seed/private capital, strategic support, liquidity via exchange listing (HIGH) [https://labs.binance.com/portfolio, https://www.coinbase.com/ventures/portfolio, https://www.okx.com/ventures]
+Foundation: EigenLayer Foundation, Symbiotic Foundation — ecosystem grants, AVS incentives, restaking rewards bootstrap (MEDIUM) [https://docs.eigenlayer.xyz, https://docs.symbiotic.fi]
+Grant Program: L2 Foundation Grants (Arbitrum, Optimism, Base, Mode, Blast, Linea, Scroll, zkSync, Mantle, BNB Chain) — weETH deployment incentives, liquidity mining (MEDIUM) [https://docs.ether.fi, https://blog.ether.fi]
+Revenue: Protocol fees (staking, restaking, vault, bridging, EtherFi Cash) — primary sustainable revenue source post-TGE (HIGH) [https://docs.ether.fi/staking, https://docs.ether.fi/restaking, https://docs.ether.fi/vaults, https://docs.ether.fi/bridging, https://cash.ether.fi]
+DAO: EtherFi DAO treasury management, fee switch governance, parameter control (MEDIUM) [https://docs.ether.fi/governance, https://snapshot.org/#/etherfi.eth]
+Sources: https://labs.binance.com/portfolio, https://docs.eigenlayer.xyz, https://docs.symbiotic.fi, https://docs.ether.fi, https://snapshot.org/#/etherfi.eth
+
+## Financial Risk
+
+Treasury Concentration: Treasury composition tidak diungkap — risiko konsentrasi aset (ETHFI token, ETH, stablecoin) tidak dapat diverifikasi. (MEDIUM) [https://docs.ether.fi/governance, https://snapshot.org/#/etherfi.eth]
+Revenue Decline: Protocol revenue bergantung pada ETH staking yield, EigenLayer restaking yield, dan TVL — bear market mengurangi yield dan TVL, menurunkan fee revenue. (HIGH) [https://docs.ether.fi/staking, https://docs.ether.fi/restaking, https://defillama.com/protocol/etherfi]
+Funding Dependency: Early-stage bergantung pada VC funding (Binance Labs, Coinbase Ventures, OKX Ventures) — post-TGE transisi ke protocol revenue + DAO treasury. (HIGH) [https://labs.binance.com/portfolio, https://research.binance.com/en/projects/etherfi]
+Debt: Tidak ada pinjaman/utang yang dikonfirmasi publik. (LOW) [Tidak ada sumber]
+Legal Financial Risk: Regulatory uncertainty pada liquid staking/restaking (SEC stance pada staking-as-a-service, LST sebagai security), potential enforcement action mempengaruhi revenue model dan token status. (MEDIUM) [https://www.sec.gov, https://docs.ether.fi, https://blog.ether.fi]
+Smart Contract Risk: Exploit/bug pada core contracts (StakeManager, Vaults, ULN, Bridge) dapat menguras treasury/user funds — dimitigasi audit tapi residual risk ada. (HIGH) [https://docs.ether.fi/security/audits, https://github.com/etherfi-protocol/audits]
+Bridge Risk: Cross-chain weETH bridging mengandalkan canonical/third-party bridge — bridge hack/exploit dapat menyebabkan loss of funds dan reputational damage. (HIGH) [https://docs.ether.fi/bridging, https://docs.layerzero.network, https://docs.wormhole.com]
+Slashing Risk: EigenLayer/Symbiotic slashing dapat mengurangi nilai eETH/weETH, mempengaruhi TVL dan fee revenue. (HIGH) [https://docs.eigenlayer.xyz/slashing, https://docs.symbiotic.fi, https://docs.ether.fi/restaking]
+Sources: https://docs.ether.fi/security/audits, https://docs.eigenlayer.xyz/slashing, https://docs.ether.fi/governance, https://defillama.com/protocol/etherfi
+
+## Official Financial Resources
+
+Official Blog: https://blog.ether.fi
+Transparency Report: tidak diungkap (tidak ada transparency report berkala yang dipublikasikan)
+Treasury Dashboard: tidak diungkap (tidak ada dashboard treasury real-time publik)
+Governance: https://snapshot.org/#/etherfi.eth, https://docs.ether.fi/governance
+Messari: https://messari.io/project/etherfi/profile
+Token Terminal: https://tokenterminal.com/terminal/projects/etherfi (jika tersedia; perlu verifikasi)
+DefiLlama: https://defillama.com/protocol/etherfi
+CryptoRank: https://cryptorank.io/price/etherfi (jika tersedia; perlu verifikasi)
+Whitepaper: https://docs.ether.fi/whitepaper (jika ada; docs.ether.fi mencakup arsitektur dan tokenomics)
+Etherscan Token Holder / Contract: https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb
+Dune Analytics: https://dune.com/queries?query=etherfi
+
+## BUAT RINGKASAN
+
+Total Funding Raised: tidak diungkap (Seed/Private round amount tidak dipublikasikan; TGE public sale amount tidak dipisahkan)
+Funding Rounds: 2 confirmed (Seed/Private 2023 dengan Binance Labs, Coinbase Ventures, OKX Ventures; TGE/Public Sale 2024-03-18) + ongoing ecosystem grants
+Treasury Status: tidak diungkap (size, composition, custodian detail tidak publik)
+Revenue Sources: 8 confirmed live/planned streams (Staking Fee, Restaking Fee, Vault Management Fee, weETH Bridging Fee, EtherFi Cash Revenue, Fee Switch (proposed), MEV/Validator Revenue, Grant/Ecosystem Incentive)
+Revenue Availability: Tidak diungkap (tidak ada periodic financial report; on-chain fee data tersedia tapi tidak diagregasikan)
+
+## Open Threads
+
+- Jumlah exact seed/private round funding (USD) — tidak diungkap oleh investor maupun protokol
+- Valuation pada seed/private round — tidak diungkap
+- TGE public sale raise amount — tidak dipublikasikan terpisah
+- ETHFI token allocation untuk treasury/DAO — tidak diungkap detail (Phase 6)
+- Vesting schedule investor/team — tidak diungkap (Phase 6)
+- Treasury address on-chain — tidak terverifikasi publik; perlu identifikasi DAO treasury multisig/gnosis safe address
+- Protocol revenue historical data (bulanan/kuartalan) — tidak dipublikasikan; perlu query on-chain via Dune/custom indexer
+- Fee switch proposal outcome (EV-024 2024-10) — apakah passed/implemented; perlu check Snapshot vote result
+- EtherFi Cash revenue model detail (interchange fee %, yield spread) — tidak diungkap teknis
+- Grant amount total dari EigenLayer, Symbiotic, L2 foundations — tidak diungkap agregat
+- Audit cost / security budget — tidak diungkap
+- Operating expense (team salary, infra, legal, marketing) — tidak diungkap
+- Runway / burn rate — tidak diungkap
+- Insurance fund / slashing coverage reserve — tidak diungkap apakah ada
+- Regulatory reserve / legal fund — tidak diungkap

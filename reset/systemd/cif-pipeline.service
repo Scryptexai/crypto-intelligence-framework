@@ -1,0 +1,56 @@
+[Unit]
+Description=CIF research pipeline — repair broken phases, publish, then run Phase 11
+Documentation=file:///opt/crypto-intelligence-framework/reset/systemd/README.md
+# The whole programme is network-bound (LLM gateway + GitHub + Supabase), so starting before
+# the box has routes just burns the first few retries.
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+
+# ---- EDIT THESE FOUR LINES FOR YOUR VPS -------------------------------------------------
+User=cif
+Group=cif
+WorkingDirectory=/opt/crypto-intelligence-framework
+ExecStart=/opt/crypto-intelligence-framework/reset/run_pipeline_stages.sh
+# -----------------------------------------------------------------------------------------
+
+# Credentials live in the repo's gitignored .env and are read by systemd, never by the script
+# and never written to a log. Format is plain KEY=value, which is exactly what systemd wants.
+# The leading '-' means "start anyway if the file is missing" — the script degrades sensibly
+# (it skips the sync and says so) rather than failing at boot.
+EnvironmentFile=-/opt/crypto-intelligence-framework/.env
+
+# Push the commits this run produces. Off by default in the script itself; turning it on is a
+# deliberate choice made here, where it is visible.
+Environment=PIPELINE_PUSH=1
+Environment=PIPELINE_GIT_BRANCH=claude/crypto-intelligence-framework-jegycz
+
+# THE MOST IMPORTANT LINE IN THIS FILE.
+# systemd's default start timeout is 90 seconds and it applies to the whole of a Type=oneshot
+# ExecStart. This run is expected to take a day or more on the shared gateway (~26-28 tok/s,
+# ~40 projects, 60s between phases, 300s between projects), so without this systemd would
+# SIGTERM it mid-generation a minute and a half in, every single time, and the failure would
+# look like the gateway timing out rather than like a unit misconfiguration.
+TimeoutStartSec=infinity
+
+# Give a generation in flight time to finish its HTTP request on stop; the pipeline is
+# resumable, so a hard kill costs at most one phase, but a clean exit costs nothing.
+TimeoutStopSec=120
+KillSignal=SIGTERM
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=cif-pipeline
+
+# Modest hardening. Not a sandbox — the job legitimately writes the repo, reaches the network,
+# and runs git — but there is no reason for it to touch the rest of the filesystem.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=read-only
+ReadWritePaths=/opt/crypto-intelligence-framework
+
+[Install]
+WantedBy=multi-user.target

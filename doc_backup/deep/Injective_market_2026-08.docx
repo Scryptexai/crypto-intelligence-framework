@@ -1,0 +1,502 @@
+PROJECT: Injective
+
+## Market Category
+
+Primary Category: Layer-1 blockchain untuk decentralized finance / cross-chain derivatives exchange (HIGH) [Injective Documentation, https://docs.injective.network/learn/products/]
+Secondary Category: DeFi infrastructure (HIGH) [Injective Documentation, https://docs.injective.network/learn/architecture/]
+Sector: DeFi (HIGH) [Injective Documentation, https://docs.injective.network/learn/products/]
+Sub-sector: Decentralized exchange / Derivatives / Synthetic assets / Interoperability (HIGH) [Injective Documentation, https://docs.injective.network/learn/products/; https://docs.injective.network/learn/architecture/]
+Sources: https://docs.injective.network/learn/products/; https://docs.injective.network/learn/architecture/
+
+## Market Position
+
+Project Stage: Growth (HIGH) [Injective Blog Mainnet Launch, https://blog.injective.com/injective-mainnet-launch/; DefiLlama, https://defillama.com/chain/Injective]
+Primary Competitors: dydX, Osmosis, Celestia, Neutron, Hyperliquid, Binance, Coinbase, Kraken, GMX, Synthetix (HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/; CoinGecko, https://www.coingecko.com/en/coins/injective; DefiLlama, https://defillama.com/]
+Market Segment: Cross-chain derivatives exchange, on-chain orderbook DEX, synthetic assets, Cosmos DeFi, Ethereum bridge DeFi (HIGH) [Injective Docs Products, https://docs.injective.network/learn/products/; Injective Docs Architecture, https://docs.injective.network/learn/architecture/]
+Geographic Focus: Global (HIGH) [Injective Website, https://injective.com/; Binance Launchpad Announcement, https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad]
+Sources: https://docs.injective.network/ecosystem/; https://www.coingecko.com/en/coins/injective; https://defillama.com/; https://blog.injective.com/injective-mainnet-launch/; https://injective.com/; https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Yes (INJ/USDT, INJ/BTC, INJ/BUSD, INJ/TRY, INJ/EUR) (HIGH) [Binance Spot, https://www.binance.com/en/trade/INJ_USDT]
+Perpetual: Yes (INJUSDT Perpetual, INJUSD Perpetual) (HIGH) [Binance Futures, https://www.binance.com/en/futures/INJUSDT]
+Futures: No (HIGH) [Binance Futures, https://www.binance.com/en/futures/INJUSDT]
+Options: No (HIGH) [Binance Options, https://www.binance.com/en/options]
+OTC: Yes (Binance OTC desk) (MEDIUM) [Binance OTC, https://www.binance.com/en/otc]
+Status: Active (HIGH) [Binance, https://www.binance.com/en/trade/INJ_USDT]
+Sources: https://www.binance.com/en/trade/INJ_USDT; https://www.binance.com/en/futures/INJUSDT; https://www.binance.com/en/otc
+
+Exchange: Coinbase
+Spot: Yes (INJ/USD, INJ/USDT) (HIGH) [Coinbase Price, https://www.coinbase.com/price/injective]
+Perpetual: No (Coinbase International Exchange has perp but not confirmed for INJ) (MEDIUM) [Coinbase International, https://international.coinbase.com/]
+Futures: No (MEDIUM) [Coinbase, https://www.coinbase.com/]
+Options: No (MEDIUM) [Coinbase, https://www.coinbase.com/]
+OTC: Yes (Coinbase Prime OTC) (MEDIUM) [Coinbase Prime, https://www.coinbase.com/prime]
+Status: Active (HIGH) [Coinbase, https://www.coinbase.com/price/injective]
+Sources: https://www.coinbase.com/price/injective; https://international.coinbase.com/; https://www.coinbase.com/prime
+
+Exchange: Kraken
+Spot: Yes (INJ/USD, INJ/EUR, INJ/USDT) (HIGH) [Kraken Spot, https://trade.kraken.com/markets/kraken/inj/usd]
+Perpetual: Yes (Kraken Futures INJ/USD) (HIGH) [Kraken Futures, https://futures.kraken.com/]
+Futures: No (MEDIUM) [Kraken, https://www.kraken.com/]
+Options: No (MEDIUM) [Kraken, https://www.kraken.com/]
+OTC: Yes (Kraken OTC) (MEDIUM) [Kraken OTC, https://www.kraken.com/otc]
+Status: Active (HIGH) [Kraken, https://trade.kraken.com/markets/kraken/inj/usd]
+Sources: https://trade.kraken.com/markets/kraken/inj/usd; https://futures.kraken.com/; https://www.kraken.com/otc
+
+Exchange: KuCoin
+Spot: Yes (INJ/USDT, INJ/BTC, INJ/ETH) (HIGH) [KuCoin Spot, https://www.kucoin.com/trade/INJ-USDT]
+Perpetual: Yes (KuCoin Futures INJ/USDT) (HIGH) [KuCoin Futures, https://www.kucoin.com/futures/trade/INJUSDT]
+Futures: No (MEDIUM) [KuCoin, https://www.kucoin.com/]
+Options: No (MEDIUM) [KuCoin, https://www.kucoin.com/]
+OTC: Yes (KuCoin OTC) (MEDIUM) [KuCoin OTC, https://www.kucoin.com/otc]
+Status: Active (HIGH) [KuCoin, https://www.kucoin.com/trade/INJ-USDT]
+Sources: https://www.kucoin.com/trade/INJ-USDT; https://www.kucoin.com/futures/trade/INJUSDT; https://www.kucoin.com/otc
+
+Exchange: Bybit
+Spot: Yes (INJ/USDT) (HIGH) [Bybit Spot, https://www.bybit.com/trade/spot/INJ/USDT]
+Perpetual: Yes (Bybit USDT Perpetual INJUSDT) (HIGH) [Bybit Futures, https://www.bybit.com/trade/usdt/INJUSDT]
+Futures: No (MEDIUM) [Bybit, https://www.bybit.com/]
+Options: No (MEDIUM) [Bybit, https://www.bybit.com/]
+OTC: Yes (Bybit OTC) (MEDIUM) [Bybit OTC, https://www.bybit.com/otc]
+Status: Active (HIGH) [Bybit, https://www.bybit.com/trade/spot/INJ/USDT]
+Sources: https://www.bybit.com/trade/spot/INJ/USDT; https://www.bybit.com/trade/usdt/INJUSDT; https://www.bybit.com/otc
+
+Exchange: OKX
+Spot: Yes (INJ/USDT, INJ/USDC) (HIGH) [OKX Spot, https://www.okx.com/trade/INJ-USDT]
+Perpetual: Yes (OKX Perpetual INJ-USDT-SWAP) (HIGH) [OKX Futures, https://www.okx.com/trade-swap/INJ-USDT-SWAP]
+Futures: No (MEDIUM) [OKX, https://www.okx.com/]
+Options: No (MEDIUM) [OKX, https://www.okx.com/]
+OTC: Yes (OKX OTC) (MEDIUM) [OKX OTC, https://www.okx.com/otc]
+Status: Active (HIGH) [OKX, https://www.okx.com/trade/INJ-USDT]
+Sources: https://www.okx.com/trade/INJ-USDT; https://www.okx.com/trade-swap/INJ-USDT-SWAP; https://www.okx.com/otc
+
+Exchange: Gate.io
+Spot: Yes (INJ/USDT, INJ/BTC, INJ/ETH) (HIGH) [Gate.io Spot, https://www.gate.io/trade/INJ_USDT]
+Perpetual: Yes (Gate.io Futures INJ_USDT) (HIGH) [Gate.io Futures, https://www.gate.io/futures_trade/INJ_USDT]
+Futures: No (MEDIUM) [Gate.io, https://www.gate.io/]
+Options: No (MEDIUM) [Gate.io, https://www.gate.io/]
+OTC: No (MEDIUM) [Gate.io, https://www.gate.io/]
+Status: Active (HIGH) [Gate.io, https://www.gate.io/trade/INJ_USDT]
+Sources: https://www.gate.io/trade/INJ_USDT; https://www.gate.io/futures_trade/INJ_USDT
+
+Exchange: MEXC
+Spot: Yes (INJ/USDT) (HIGH) [MEXC Spot, https://www.mexc.com/exchange/INJ_USDT]
+Perpetual: Yes (MEXC Futures INJ_USDT) (HIGH) [MEXC Futures, https://futures.mexc.com/exchange/INJ_USDT]
+Futures: No (MEDIUM) [MEXC, https://www.mexc.com/]
+Options: No (MEDIUM) [MEXC, https://www.mexc.com/]
+OTC: No (MEDIUM) [MEXC, https://www.mexc.com/]
+Status: Active (HIGH) [MEXC, https://www.mexc.com/exchange/INJ_USDT]
+Sources: https://www.mexc.com/exchange/INJ_USDT; https://futures.mexc.com/exchange/INJ_USDT
+
+Exchange: Bitget
+Spot: Yes (INJ/USDT) (HIGH) [Bitget Spot, https://www.bitget.com/spot/INJUSDT]
+Perpetual: Yes (Bitget USDT Perpetual INJUSDT) (HIGH) [Bitget Futures, https://www.bitget.com/futures/INJUSDT]
+Futures: No (MEDIUM) [Bitget, https://www.bitget.com/]
+Options: No (MEDIUM) [Bitget, https://www.bitget.com/]
+OTC: No (MEDIUM) [Bitget, https://www.bitget.com/]
+Status: Active (HIGH) [Bitget, https://www.bitget.com/spot/INJUSDT]
+Sources: https://www.bitget.com/spot/INJUSDT; https://www.bitget.com/futures/INJUSDT
+
+Exchange: Coinbase International Exchange
+Spot: No (MEDIUM) [Coinbase International, https://international.coinbase.com/]
+Perpetual: Yes (INJ-PERP on Coinbase International) (HIGH) [Coinbase International, https://international.coinbase.com/]
+Futures: No (MEDIUM) [Coinbase International, https://international.coinbase.com/]
+Options: No (MEDIUM) [Coinbase International, https://international.coinbase.com/]
+OTC: No (MEDIUM) [Coinbase International, https://international.coinbase.com/]
+Status: Active (HIGH) [Coinbase International, https://international.coinbase.com/]
+Sources: https://international.coinbase.com/
+
+Exchange: Hyperliquid
+Spot: No (MEDIUM) [Hyperliquid, https://app.hyperliquid.xyz/]
+Perpetual: Yes (INJ perpetual on Hyperliquid DEX) (HIGH) [Hyperliquid, https://app.hyperliquid.xyz/]
+Futures: No (MEDIUM) [Hyperliquid, https://app.hyperliquid.xyz/]
+Options: No (MEDIUM) [Hyperliquid, https://app.hyperliquid.xyz/]
+OTC: No (MEDIUM) [Hyperliquid, https://app.hyperliquid.xyz/]
+Status: Active (HIGH) [Hyperliquid, https://app.hyperliquid.xyz/]
+Sources: https://app.hyperliquid.xyz/; https://hyperliquid.xyz/
+
+Exchange: Injective Exchange (native DEX)
+Spot: Yes (native orderbook spot markets) (HIGH) [Helix App, https://helixapp.com/]
+Perpetual: Yes (native orderbook perpetual futures) (HIGH) [Helix App, https://helixapp.com/]
+Futures: No (MEDIUM) [Injective Docs Exchange, https://docs.injective.network/learn/exchange/]
+Options: No (MEDIUM) [Injective Docs Exchange, https://docs.injective.network/learn/exchange/]
+OTC: N/A (on-chain) (HIGH) [Injective Docs Exchange, https://docs.injective.network/learn/exchange/]
+Status: Active (HIGH) [Helix App, https://helixapp.com/]
+Sources: https://helixapp.com/; https://docs.injective.network/learn/exchange/
+
+## Liquidity
+
+Liquidity Source: CEX (Binance, Coinbase, Kraken, KuCoin, Bybit, OKX, Gate.io, MEXC, Bitget, Coinbase International, Hyperliquid) (HIGH) [CoinGecko Markets, https://www.coingecko.com/en/coins/injective#markets]
+Major Liquidity Venue: Binance (spot & perpetual volume leader) (MEDIUM) [CoinGecko Markets, https://www.coingecko.com/en/coins/injective#markets; Token Terminal, https://tokenterminal.com/terminal/projects/injective]
+DEX: Injective Exchange (native orderbook), Osmosis (AMM via IBC), Hyperliquid (perp DEX) (HIGH) [Injective Docs Exchange, https://docs.injective.network/learn/exchange/; Osmosis, https://osmosis.zone/; Hyperliquid, https://app.hyperliquid.xyz/]
+Bridge Liquidity: Peggy Bridge (Ethereum ↔ Injective), IBC channels (Osmosis, Celestia, Neutron, Axelar, Stride, dydX) (HIGH) [Injective Docs Bridge, https://docs.injective.network/learn/bridge/; Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]
+Status: Live (HIGH) [Injective Bridge UI, https://bridge.injective.network/; Helix App, https://helixapp.com/]
+Sources: https://www.coingecko.com/en/coins/injective#markets; https://tokenterminal.com/terminal/projects/injective; https://docs.injective.network/learn/exchange/; https://osmosis.zone/; https://app.hyperliquid.xyz/; https://docs.injective.network/learn/bridge/; https://docs.injective.network/ecosystem/; https://bridge.injective.network/; https://helixapp.com/
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked)
+Value: ~$45M (per November 2024, per DefiLlama)
+Date: 2024-11
+Sources: https://defillama.com/chain/Injective
+
+Metric Name: Daily Active Users
+Value: tidak diketahui (tidak ada dashboard publik DAU untuk Injective Chain)
+Date: N/A
+Sources: https://docs.injective.network/; https://explorer.injective.network/
+
+Metric Name: Transactions (daily)
+Value: ~200.000-500.000 tx/hari (estimasi per explorer mainnet periode 2024)
+Date: 2024
+Sources: https://explorer.injective.network/
+
+Metric Name: Wallets (unique addresses dengan aktivitas)
+Value: >1.000.000 addresses created (per explorer mainnet cumulative)
+Date: 2024
+Sources: https://explorer.injective.network/accounts
+
+Metric Name: Developer Count
+Value: ~50+ full-time engineers di Injective Labs; komunitas developer ekosistem tidak diagregasi publik
+Date: 2024
+Sources: https://www.linkedin.com/company/injective-labs/; https://github.com/InjectiveLabs
+
+Metric Name: Volume (24h spot + perp aggregate)
+Value: ~$100M-$300M/24h (variasi pasar, per CoinGecko aggregate)
+Date: 2024-11
+Sources: https://www.coingecko.com/en/coins/injective#markets
+
+Metric Name: Bridge Volume (Peggy + IBC aggregate)
+Value: tidak diketahui (tidak ada dashboard publik bridge volume historis)
+Date: N/A
+Sources: https://bridge.injective.network/; https://docs.injective.network/learn/bridge/
+
+Metric Name: IBC Messages (daily)
+Value: tidak diketahui (tidak ada dashboard publik IBC packet count)
+Date: N/A
+Sources: https://explorer.injective.network/; https://docs.injective.network/ecosystem/
+
+Metric Name: Validator Count
+Value: 100 active validators (max), ~100-150 total validators (active + inactive)
+Date: 2024
+Sources: https://hub.injective.network/staking; https://explorer.injective.network/validators
+
+## Market Share
+
+Tidak tersedia.
+Sources: https://defillama.com/; https://tokenterminal.com/terminal/projects/injective; https://www.coingecko.com/en/coins/injective
+
+## Competitor Landscape
+
+Competitor: dydX
+Category: Orderbook DEX chain (Cosmos-based)
+Difference: dydX v4 adalah appchain khusus trading dengan orderbook off-chain matching + on-chain settlement; Injective orderbook sepenuhnya on-chain native module
+Market Segment: Cross-chain derivatives exchange
+Sources: https://dydx.exchange/; https://docs.injective.network/learn/exchange/; https://docs.injective.network/ecosystem/
+
+Competitor: Osmosis
+Category: AMM DEX (Cosmos)
+Difference: Osmosis adalah AMM (liquidity pool-based); Injective adalah orderbook (limit order-based); keduanya terhubung via IBC untuk cross-chain routing
+Market Segment: Cosmos DeFi / DEX
+Sources: https://osmosis.zone/; https://docs.injective.network/ecosystem/; https://docs.injective.network/learn/exchange/
+
+Competitor: Celestia
+Category: Modular data availability layer
+Difference: Celestia menyediakan DA layer untuk rollup; Injective adalah L1 execution chain dengan DA sendiri (Tendermint) + integrasi Celestia DA untuk scaling
+Market Segment: Modular blockchain / Data availability
+Sources: https://celestia.org/; https://docs.injective.network/ecosystem/; https://blog.injective.com/ (Celestia integration)
+
+Competitor: Neutron
+Category: Smart contract platform cross-chain (Cosmos)
+Difference: Neutron fokus CosmWasm smart contract interoperability via IBC/ICA; Injective fokus exchange native module + CosmWasm sebagai tambahan
+Market Segment: Cosmos DeFi / Smart contract platform
+Sources: https://neutron.org/; https://docs.injective.network/ecosystem/; https://docs.injective.network/develop/cosmwasm/
+
+Competitor: Hyperliquid
+Category: Perp DEX (custom L1)
+Difference: Hyperliquid adalah L1 custom untuk perp DEX dengan off-chain matching + on-chain settlement; Injective adalah Cosmos SDK L1 dengan orderbook fully on-chain
+Market Segment: Perpetual futures DEX
+Sources: https://hyperliquid.xyz/; https://docs.injective.network/learn/exchange/; https://app.hyperliquid.xyz/
+
+Competitor: GMX
+Category: Perp DEX (Arbitrum / Avalanche)
+Difference: GMX adalah perp DEX berbasis AMM (GLP pool) di L2 Ethereum; Injective adalah orderbook native di L1 Cosmos
+Market Segment: Perpetual futures DEX
+Sources: https://gmx.io/; https://docs.injective.network/learn/exchange/; https://docs.injective.network/learn/architecture/
+
+Competitor: Synthetix
+Category: Synthetic assets protocol (Ethereum / Optimism)
+Difference: Synthetix mengeluarkan synths via collateralized debt position di Ethereum L1/L2; iAssets Injective native di Cosmos L1 dengan Oracle module terintegrasi
+Market Segment: Synthetic assets
+Sources: https://synthetix.io/; https://docs.injective.network/learn/products/; https://blog.injective.com/injective-iassets-launch/
+
+Competitor: Binance
+Category: CEX
+Difference: Binance adalah exchange terpusat dengan orderbook custodial; Injective adalah DEX non-custodial on-chain; Binance juga investor & Launchpad partner Injective
+Market Segment: Centralized exchange / Derivatives
+Sources: https://www.binance.com/; https://docs.injective.network/learn/exchange/; https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad
+
+Competitor: Coinbase
+Category: CEX
+Difference: Coinbase adalah exchange terpusat dengan custodial spot & perp (via International); Injective non-custodial on-chain; Coinbase listing partner INJ
+Market Segment: Centralized exchange
+Sources: https://www.coinbase.com/; https://www.coinbase.com/price/injective; https://international.coinbase.com/
+
+Competitor: Kraken
+Category: CEX
+Difference: Kraken exchange terpusat spot & futures; Injective DEX on-chain; Kraken listing partner INJ
+Market Segment: Centralized exchange
+Sources: https://www.kraken.com/; https://trade.kraken.com/markets/kraken/inj/usd; https://futures.kraken.com/
+
+## Narrative Position
+
+Narrative: Interoperability (Cross-chain DeFi)
+Status: Main Narrative
+Evidence: Injective Chain native IBC untuk Cosmos ecosystem + Peggy Bridge untuk Ethereum + Axelar integration untuk multi-chain messaging; produk inti (Exchange, Bridge, iAssets) dirancang cross-chain sejak genesis (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/; Injective Docs Bridge, https://docs.injective.network/learn/bridge/; Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]
+Sources: https://docs.injective.network/learn/architecture/; https://docs.injective.network/learn/bridge/; https://docs.injective.network/ecosystem/
+
+Narrative: Modular (Appchain / Purpose-built L1)
+Status: Main Narrative
+Evidence: Injective Chain dibangun sebagai appchain khusus DeFi (exchange, derivatives, synthetics) menggunakan Cosmos SDK modular; bukan general-purpose L1 (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/; Injective Blog Mainnet Launch, https://blog.injective.com/injective-mainnet-launch/]
+Sources: https://docs.injective.network/learn/architecture/; https://blog.injective.com/injective-mainnet-launch/
+
+Narrative: DeFi (Decentralized Exchange / Derivatives / Synthetics)
+Status: Main Narrative
+Evidence: Produk inti Injective Exchange (orderbook spot & perp), iAssets (synthetics), Hydro (lending), Mito (vaults) — seluruh stack DeFi native on-chain (HIGH) [Injective Docs Products, https://docs.injective.network/learn/products/; Injective Docs Exchange, https://docs.injective.network/learn/exchange/]
+Sources: https://docs.injective.network/learn/products/; https://docs.injective.network/learn/exchange/; https://blog.injective.com/injective-iassets-launch/
+
+Narrative: Cosmos Ecosystem (IBC)
+Status: Main Narrative
+Evidence: Injective adalah salah satu chain utama di ekosistem Cosmos dengan IBC enabled sejak mainnet; integrasi aktif dengan Osmosis, Celestia, Neutron, Stride, dydX, Axelar (HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/; Injective Blog Mainnet Launch, https://blog.injective.com/injective-mainnet-launch/]
+Sources: https://docs.injective.network/ecosystem/; https://blog.injective.com/injective-mainnet-launch/
+
+Narrative: RWA (Real World Assets) via Synthetics
+Status: Secondary Narrative
+Evidence: iAssets protocol memungkinkan pembuatan aset sintetis (saham, komoditas, forex) on-chain; narasi RWA di blog Injective dan partnership tradfi (HIGH) [Injective Docs Products, https://docs.injective.network/learn/products/; Injective Blog iAssets, https://blog.injective.com/injective-iassets-launch/]
+Sources: https://docs.injective.network/learn/products/; https://blog.injective.com/injective-iassets-launch/
+
+Narrative: Chain Abstraction (via IBC + ICA + Axelar)
+Status: Secondary Narrative
+Evidence: Interchain Accounts (ICA) enabled v2.1 upgrade; Axelar integration untuk general message passing; bridge UI menyembunyikan kompleksitas cross-chain dari user (MEDIUM) [Injective Blog ICA, https://blog.injective.com/interchain-accounts/; Injective Docs Ecosystem, https://docs.injective.network/ecosystem/; Injective Bridge UI, https://bridge.injective.network/]
+Sources: https://blog.injective.com/interchain-accounts/; https://docs.injective.network/ecosystem/; https://bridge.injective.network/
+
+Narrative: AI (Artificial Intelligence)
+Status: Tidak teridentifikasi sebagai narasi utama
+Evidence: Tidak ada produk/research AI resmi di dokumentasi/blog Injective per November 2024 (LOW) [Injective Docs, https://docs.injective.network/; Injective Blog, https://blog.injective.com/]
+Sources: https://docs.injective.network/; https://blog.injective.com/
+
+Narrative: Restaking
+Status: Tidak teridentifikasi sebagai narasi utama
+Evidence: Tidak ada native restaking protocol di Injective; liquid staking via Stride (stINJ) tersedia via IBC tapi bukan native (LOW) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/; Stride, https://stride.zone/]
+Sources: https://docs.injective.network/ecosystem/; https://stride.zone/
+
+Narrative: DePIN
+Status: Tidak teridentifikasi sebagai narasi utama
+Evidence: Tidak ada produk DePIN di ekosistem Injective per November 2024 (LOW) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]
+Sources: https://docs.injective.network/ecosystem/
+
+Narrative: Gaming
+Status: Tidak teridentifikasi sebagai narasi utama
+Evidence: Tidak ada game/focus gaming di produk Injective per November 2024 (LOW) [Injective Docs Products, https://docs.injective.network/learn/products/]
+Sources: https://docs.injective.network/learn/products/
+
+Narrative: L2
+Status: Tidak berlaku (Injective adalah L1, bukan L2)
+Evidence: Injective Chain adalah Layer-1 Cosmos SDK; tidak membangun di atas Ethereum sebagai L2 (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/]
+Sources: https://docs.injective.network/learn/architecture/
+
+Narrative: Intent
+Status: Tidak teridentifikasi sebagai narasi utama
+Evidence: Tidak ada intent-centric architecture atau produk di Injective per November 2024 (LOW) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/]
+Sources: https://docs.injective.network/learn/architecture/
+
+## Market Timeline
+
+Date: 2018
+Milestone: Pendirian Injective Labs
+Description: Eric Chen dan Albert Chon mendirikan Injective Labs untuk membangun protokol Layer-1 derivatives exchange
+Related Historical Event ID: EV-001
+Sources: https://www.forbes.com/profile/eric-chen/; https://injective.com/team/; https://www.crunchbase.com/organization/injective-labs
+
+Date: 2019
+Milestone: Seed / Private Funding Round
+Description: Pendanaan awal dari Pantera Capital dan investor strategis untuk pengembangan testnet
+Related Historical Event ID: EV-003
+Sources: https://www.crunchbase.com/organization/injective-labs; https://blog.injective.com/injective-ecosystem-fund/; https://www.panteracapital.com/portfolio/
+
+Date: 2020-09
+Milestone: Pengumuman IEO INJ di Binance Launchpad
+Description: Binance mengumumkan Injective Protocol sebagai proyek Launchpad ke-17
+Related Historical Event ID: EV-004
+Sources: https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad; https://blog.injective.com/injective-protocol-inj-token-sale-on-binance-launchpad/
+
+Date: 2020-10
+Milestone: Testnet Launch
+Description: Injective testnet publik diluncurkan untuk validator, developer, dan user testing
+Related Historical Event ID: EV-005
+Sources: https://blog.injective.com/injective-testnet-launch/; https://testnet.explorer.injective.network/
+
+Date: 2020-10
+Milestone: Token Generation Event (TGE) / Binance Launchpad IEO
+Description: Public sale 30M INJ (3% supply) di $0.10/INJ, raise $3M; ERC-20 token di Ethereum
+Related Historical Event ID: EV-006
+Sources: https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad; https://blog.injective.com/injective-protocol-inj-token-sale-on-binance-launchpad/; https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30
+
+Date: 2021-11-16
+Milestone: Mainnet Launch
+Description: Injective Chain mainnet live dengan Tendermint consensus, exchange module, Peggy bridge, IBC enabled
+Related Historical Event ID: EV-007
+Sources: https://blog.injective.com/injective-mainnet-launch/; https://explorer.injective.network/block/1; https://docs.injective.network/learn/architecture/
+
+Date: 2021-11
+Milestone: Injective Exchange, Hub, Bridge Launch
+Description: On-chain orderbook DEX, staking/governance portal, cross-chain bridge (Ethereum + IBC) aktif
+Related Historical Event ID: EV-008, EV-009, EV-010
+Sources: https://docs.injective.network/learn/exchange/; https://hub.injective.network/; https://bridge.injective.network/; https://docs.injective.network/learn/bridge/
+
+Date: 2022-03
+Milestone: Helix Launch
+Description: Consumer-facing DEX frontend (Helix) diluncurkan untuk trading UX mirip CEX
+Related Historical Event ID: EV-011
+Sources: https://helixapp.com/; https://docs.injective.network/learn/products/; https://github.com/InjectiveLabs/helix-app
+
+Date: 2022-06
+Milestone: iAssets Launch
+Description: Protokol aset sintetis (stocks, commodities, forex) diluncurkan on-chain
+Related Historical Event ID: EV-012
+Sources: https://docs.injective.network/learn/products/; https://blog.injective.com/injective-iassets-launch/; https://github.com/InjectiveLabs/injective-core/tree/master/x/oracle
+
+Date: 2022-08
+Milestone: Osmosis IBC Integration
+Description: Saluran IBC dibuka dengan Osmosis untuk cross-chain DEX liquidity routing
+Related Historical Event ID: EV-013
+Sources: https://docs.injective.network/ecosystem/; https://osmosis.zone/; https://blog.injective.com/
+
+Date: 2022-08
+Milestone: CosmWasm Enable Upgrade (v1.2)
+Description: Upgrade mengaktifkan x/wasm module untuk smart contract WASM deployment
+Related Historical Event ID: EV-022
+Sources: https://blog.injective.com/injective-cosmwasm-launch/; https://hub.injective.network/governance
+
+Date: 2022-10
+Milestone: Talis NFT Marketplace Launch
+Description: Marketplace NFT native Injective (CW721/CW1155) dengan IBC support
+Related Historical Event ID: EV-015
+Sources: https://talis.art/; https://docs.injective.network/ecosystem/; https://github.com/InjectiveLabs/injective-core/tree/master/x/wasm
+
+Date: 2022-11
+Milestone: Injective Ecosystem Fund Launch
+Description: Dana ekosistem dengan Binance, Pantera, Jump, Delphi, Mark Cuban untuk grants & incentives
+Related Historical Event ID: EV-014
+Sources: https://blog.injective.com/injective-ecosystem-fund/; https://docs.injective.network/ecosystem/
+
+Date: 2023-02
+Milestone: Celestia IBC Integration
+Description: Saluran IBC dengan Celestia untuk data availability layer
+Related Historical Event ID: EV-016
+Sources: https://docs.injective.network/ecosystem/; https://blog.celestia.org/; https://blog.injective.com/
+
+Date: 2023-02
+Milestone: v2.0 Upgrade (IBC-Go v5, Performance, Gas Optimization)
+Description: Major upgrade mengurangi gas fee, meningkatkan throughput, IBC-Go v5
+Related Historical Event ID: EV-022
+Sources: https://blog.injective.com/injective-v2-0-upgrade/; https://hub.injective.network/governance
+
+Date: 2023-05
+Milestone: Neutron IBC Integration
+Description: Saluran IBC dengan Neutron untuk CosmWasm cross-chain & ICA
+Related Historical Event ID: EV-017
+Sources: https://docs.injective.network/ecosystem/; https://blog.neutron.org/; https://blog.injective.com/interchain-accounts/
+
+Date: 2023-07
+Milestone: Frontrunner Launch
+Description: Social/copy trading platform on-chain di Injective
+Related Historical Event ID: EV-018
+Sources: https://frontrunner.xyz/; https://docs.injective.network/ecosystem/
+
+Date: 2023-07
+Milestone: Interchain Accounts (ICA) Enable (v2.1)
+Description: ICA support untuk cross-chain account control via IBC
+Related Historical Event ID: EV-022
+Sources: https://blog.injective.com/interchain-accounts/; https://hub.injective.network/governance
+
+Date: 2023-09
+Milestone: Hydro Protocol Launch
+Description: Money market lending/borrowing native di Injective
+Related Historical Event ID: EV-019
+Sources: https://hydroprotocol.io/; https://docs.injective.network/ecosystem/
+
+Date: 2023-10
+Milestone: Mito Finance Launch
+Description: Vault strategi yield otomatis & asset management platform
+Related Historical Event ID: EV-020
+Sources: https://mito.finance/; https://docs.injective.network/ecosystem/
+
+Date: 2023-11
+Milestone: Black Panther Launch
+Description: DEX aggregator & trade router untuk best execution across Injective liquidity
+Related Historical Event ID: EV-021
+Sources: https://blackpanther.trade/; https://docs.injective.network/ecosystem/
+
+Date: 2023-11
+Milestone: v2.2 Upgrade (Wasmd 0.32, CW1155, Exchange Module v2)
+Description: Exchange module v2 (order type baru, gas reduction), CW1155 multi-token, CometBFT prep
+Related Historical Event ID: EV-022
+Sources: https://blog.injective.com/injective-v2-2-upgrade/; https://hub.injective.network/governance
+
+Date: 2024 (ongoing)
+Milestone: CometBFT Migration Preparation
+Description: Persiapan migrasi dari Tendermint ke CometBFT (fork)
+Related Historical Event ID: (belum ada EV tercatat)
+Sources: https://blog.injective.com/; https://github.com/cometbft/cometbft
+
+## Official Market Resources
+
+Official Dashboard: https://hub.injective.network/ (staking & governance); https://explorer.injective.network/ (block explorer); https://helixapp.com/ (trading)
+DefiLlama: https://defillama.com/chain/Injective
+CoinGecko: https://www.coingecko.com/en/coins/injective
+CoinMarketCap: https://coinmarketcap.com/currencies/injective/
+Token Terminal: https://tokenterminal.com/terminal/projects/injective
+Messari: https://messari.io/asset/injective
+Explorer (Mainnet): https://explorer.injective.network/
+Explorer (Testnet): https://testnet.explorer.injective.network/
+
+## RINGKASAN
+
+Market Stage: Growth
+Primary Category: Layer-1 blockchain untuk decentralized finance / cross-chain derivatives exchange
+Competitor Count: 10+ (dydX, Osmosis, Celestia, Neutron, Hyperliquid, GMX, Synthetix, Binance, Coinbase, Kraken)
+Major Narrative: Interoperability, Modular Appchain, DeFi (DEX/Derivatives/Synthetics), Cosmos Ecosystem
+Trading Availability: 12+ CEX (spot + perp), 1 native DEX (Injective Exchange), 3 DEX partners (Osmosis, Hyperliquid, dydX via IBC)
+Adoption Metrics Available: TVL, Transactions, Wallets, Validator Count, Volume (aggregate); DAU, Bridge Volume, IBC Messages, Developer Count (ekosistem) — tidak tersedia publik
+
+## Open Threads
+
+- TVL exact value per November 2024 — DefiLlama menunjukkan ~$45M tapi perlu cross-check dengan data on-chain (x/insurance, x/exchange, Hydro, Mito, iAssets TVL breakdown)
+- Daily Active Users (DAU) metric — tidak ada dashboard publik; explorer tidak menyediakan DAU distinct addresses
+- Bridge Volume (Peggy + IBC) historis — tidak ada dashboard publik; bridge UI tidak menampilkan volume agregat bulanan
+- IBC Messages daily count — tidak ada dashboard publik packet count/throughput per channel
+- Developer Count ekosemis (bukan Injective Labs core team) — tidak diagregasi publik; GitHub repos hanya menunjukkan core team contributors
+- Market Share data — tidak tersedia dari sumber independen (DefiLlama/Token Terminal tidak menyediakan market share % untuk L1/DEX category)
+- Binance Launchpad IEO exact unlock compliance — apakah ada lockup singkat untuk KYC/AML compliance? Docs menyatakan "immediate" tapi praktik Launchpad terkadang ada 0-30 hari lockup
+- ERC-20 INJ contract status (0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) — apakah masih aktif digunakan, volume bridge bulanan, apakah ada plan deprecation resmi? Info konflik Phase 1-6
+- CometBFT migration timeline — blog menyebut "preparation" di v2.2 upgrade (EV-022), apakah sudah live di mainnet? Tidak ada announcement resmi detail
+- Injective Ecosystem Fund legal structure — apakah entitas terpisah (foundation/DAO LLC) atau internal accounting di Injective Labs Inc.? Tidak diverifikasi di Phase 2-7
+- Validator set composition detail (identity, commission, self-bond, uptime, jurisdiction) — tersedia di explorer tapi perlu agregasi untuk risk assessment centralization
+- Relayer/operator identity untuk Peggy Bridge dan IBC channels — apakah dioperasikan Injective Labs, validator set, atau relayer terdesentralisasi independen? Tidak teridentifikasi
+- Cloud provider concentration untuk validator nodes — tidak ada data publik distribusi validator across AWS/GCP/Hetzner/DO; perlu survey validator
+- Formal verification status untuk critical modules (exchange matching engine x/exchange, peggy bridge x/peggy, oracle x/oracle) — tidak ada publikasi
+- MEV protection pada orderbook — apakah ada mechanism (batch auction, frequent batch auction, commit-reveal) untuk front-running protection? Tidak terdokumentasi
+- Cross-chain MEV / arbitrage risk pada kombinasi IBC + Peggy bridge — tidak dianalisis publik
+- Indexer/GraphQL API public endpoint availability, rate limits, SLA — tidak terdokumentasi di developer docs
+- Hardware requirements validator/node resmi (CPU, RAM, disk, network spesifik) — validator guide mention tapi tidak spesifik angka
+- Testnet persistence policy — apakah testnet state reset berkala? Periode reset tidak terdokumentasi
+- Injective Labs Inc. legal structure beyond BVI — apakah ada foundation, DAO LLC, Swiss entity untuk governance/treasury? Phase 1-2 tidak menemukan
+- Auditor/security firm lengkap untuk smart contract Injective — Phase 4 mention 6 auditor tapi laporan lengkap tidak publik; scope, findings, remediation status tidak diverifikasi
+- Insurance Fund (x/insurance) balance INJ dan deployment history — tidak dipublikasikan
+- Auction module burn volume historis (bulanan) — tidak dipublikasikan; hanya on-chain query via indexer
+- Net inflation rate aktual (inflasi - burn) per bulan/tahun — tidak ada dashboard real-time
+- Treasury/community pool balance real-time INJ — tidak ada halaman transparansi treasury publik
+- Cross-chain INJ representation (IBC denom di Osmosis, Celestia, Neutron, Stride, dll.) — tidak terdokumentasi di tokenomics resmi
+- INJ sebagai gas di CosmWasm contract — apakah ada discount/premium vs native module? Tidak terdokumentasi

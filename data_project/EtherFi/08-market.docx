@@ -1,0 +1,449 @@
+PROJECT: EtherFi
+
+## Market Category
+
+Primary Category: Liquid Restaking Protocol
+Secondary Category: Liquid Staking Token (LST) Provider
+Sector: DeFi (Decentralized Finance)
+Sub-sector: Restaking Infrastructure / Liquid Staking Derivatives
+Sources: (HIGH) [EtherFi Docs, https://docs.ether.fi]; (HIGH) [DefiLlama EtherFi, https://defillama.com/protocol/etherfi]; (HIGH) [Messari EtherFi, https://messari.io/project/etherfi/profile]; (HIGH) [Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+
+## Market Position
+
+Project Stage: Growth (post-TGE, multi-chain expansion, institutional products live)
+Primary Competitors: EigenLayer (restaking layer), Lido (stETH — liquid staking), Rocket Pool (rETH — liquid staking), Puffer Finance (pufferETH — liquid restaking), Renzo (ezETH — liquid restaking), Ether.fi (eETH/weETH — liquid restaking), Kelp DAO (rsETH — liquid restaking), Swell (swETH — liquid restaking), Bedrock (uniETH — liquid restaking), Mellow (mellowETH — liquid restaking), Symbiotic (restaking layer — partner + competitor), Karak (restaking layer)
+Market Segment: Institutional & Retail Liquid Restaking, Multi-chain LST/LRT Distribution, Real-World Spending via EtherFi Cash
+Geographic Focus: Global (Ethereum mainnet + 10 L2/L1 deployments), Asia-Pacific expansion via EtherFi Cash (EV-023)
+Sources: (HIGH) [DefiLlama Restaking Category, https://defillama.com/category/Restaking]; (HIGH) [Messari EtherFi, https://messari.io/project/etherfi/profile]; (HIGH) [Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]; (MEDIUM) [EtherFi Blog V2, https://blog.ether.fi/etherfi-v2-liquid-restaking/]; (MEDIUM) [EV-018, EV-023 dari Phase 3 History]
+
+## Trading Markets
+
+Exchange: Binance Exchange
+Spot: Yes (ETHFI/USDT, ETHFI/BTC, ETHFI/BNB, ETHFI/FDUSD, ETHFI/TRY)
+Perpetual: Yes (ETHFI/USDT Perpetual)
+Futures: No
+Options: No
+OTC: tidak diketahui
+Status: Live
+Sources: (HIGH) [Binance ETHFI Trading, https://www.binance.com/en/trade/ETHFI_USDT]; (HIGH) [Binance ETHFI Futures, https://www.binance.com/en/futures/ETHFIUSDT]; (HIGH) [Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+
+Exchange: Coinbase Exchange
+Spot: Yes (ETHFI/USD, ETHFI/USDC)
+Perpetual: No
+Futures: No
+Options: No
+OTC: tidak diketahui (Coinbase Prime OTC tersedia untuk institutional)
+Status: Live
+Sources: (HIGH) [Coinbase ETHFI Price, https://www.coinbase.com/price/etherfi]; (HIGH) [Coinbase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio]
+
+Exchange: OKX Exchange
+Spot: Yes (ETHFI/USDT, ETHFI/USDC)
+Perpetual: Yes (ETHFI/USDT Perpetual)
+Futures: No
+Options: No
+OTC: tidak diketahui
+Status: Live
+Sources: (HIGH) [OKX ETHFI Trading, https://www.okx.com/trade/ETHFI-USDT]; (HIGH) [OKX Ventures, https://www.okx.com/ventures]
+
+Exchange: Bybit Exchange
+Spot: Yes (ETHFI/USDT)
+Perpetual: Yes (ETHFI/USDT Perpetual)
+Futures: No
+Options: No
+OTC: tidak diketahui
+Status: Live
+Sources: (HIGH) [Bybit ETHFI Trading, https://www.bybit.com/trade/spot/ETHFI/USDT]; (MEDIUM) [Bybit Announcements, https://announcements.bybit.com]
+
+Exchange: Gate.io Exchange
+Spot: Yes (ETHFI/USDT)
+Perpetual: Yes (ETHFI/USDT Perpetual)
+Futures: No
+Options: No
+OTC: tidak diketahui
+Status: Live
+Sources: (MEDIUM) [Gate.io ETHFI Trading, https://www.gate.io/trade/ETHFI_USDT]; (LOW) [Gate.io Announcements, https://www.gate.io/announcements]
+
+Exchange: KuCoin Exchange
+Spot: Yes (ETHFI/USDT)
+Perpetual: Yes (ETHFI/USDT Perpetual)
+Futures: No
+Options: No
+OTC: tidak diketahui
+Status: Live
+Sources: (MEDIUM) [KuCoin ETHFI Trading, https://www.kucoin.com/trade/ETHFI-USDT]; (LOW) [KuCoin Announcements, https://www.kucoin.com/news]
+
+Exchange: Uniswap (DEX)
+Spot: Yes (ETHFI/WETH V2/V3 pools, ETHFI/USDC pools)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No
+Status: Live
+Sources: (HIGH) [Uniswap ETHFI Token, https://app.uniswap.org/explore/tokens/ethereum/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb]; (HIGH) [Uniswap Info, https://info.uniswap.org]
+
+Exchange: Curve (DEX)
+Spot: tidak diketahui (perlu verifikasi apakah pool ETHFI resmi ada di Curve factory)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No
+Status: tidak diketahui
+Sources: (LOW) [Curve Finance, https://curve.fi]; (LOW) [Curve DAO, https://dao.curve.fi]
+
+## Liquidity
+
+Liquidity Source: CEX (Centralized Exchange)
+Major Liquidity Venue: Binance (ETHFI/USDT primary pair), Coinbase (ETHFI/USD), OKX (ETHFI/USDT), Bybit (ETHFI/USDT), Gate.io (ETHFI/USDT), KuCoin (ETHFI/USDT)
+DEX: Uniswap V2/V3 (ETHFI/WETH, ETHFI/USDC), potential Curve pools (unverified)
+Bridge Liquidity: weETH cross-chain liquidity via canonical bridges (Arbitrum Bridge, Optimism Portal, Base Bridge) + third-party bridges (LayerZero, Wormhole, Hyperlane) — bridge TVL tidak diagregasikan secara publik per bridge
+Status: Live — CEX liquidity concentrated pada Binance dan Coinbase; DEX liquidity di Uniswap Ethereum mainnet
+Sources: (HIGH) [CoinMarketCap ETHFI Markets, https://coinmarketcap.com/currencies/etherfi/markets/]; (HIGH) [DefiLlama EtherFi, https://defillama.com/protocol/etherfi]; (HIGH) [Binance ETHFI Trading, https://www.binance.com/en/trade/ETHFI_USDT]; (MEDIUM) [EtherFi Docs Bridging, https://docs.ether.fi/bridging]; (MEDIUM) [LayerZero Docs, https://docs.layerzero.network]; (MEDIUM) [Wormhole Docs, https://docs.wormhole.com]
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked)
+Value: $5.2B (peak November 2024 per DefiLlama), $3.8B (per 2025-01 per DefiLlama — angka berfluktuasi harian)
+Date: 2025-01 (latest available)
+Sources: (HIGH) [DefiLlama EtherFi, https://defillama.com/protocol/etherfi]; (HIGH) [DefiLlama API, https://defillama.com/docs/api]
+
+Metric Name: eETH Supply
+Value: ~1.1M ETH equivalent (peak), ~850K ETH equivalent (per 2025-01)
+Date: 2025-01
+Sources: (HIGH) [DefiLlama EtherFi, https://defillama.com/protocol/etherfi]; (MEDIUM) [Etherscan eETH, https://etherscan.io/token/0x35fA164735182de50811E8e2E824cFb9B6118ac2]
+
+Metric Name: weETH Supply (Multi-chain Aggregate)
+Value: ~400K ETH equivalent across 10+ chains (peak), ~300K ETH equivalent (per 2025-01)
+Date: 2025-01
+Sources: (HIGH) [DefiLlama EtherFi, https://defillama.com/protocol/etherfi]; (MEDIUM) [Etherscan weETH, https://etherscan.io/token/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee]; (MEDIUM) [Arbiscan weETH, https://arbiscan.io]; (MEDIUM) [Optimistic Etherscan weETH, https://optimistic.etherscan.io]; (MEDIUM) [Basescan weETH, https://basescan.org]
+
+Metric Name: Unique Stakers (eETH holders)
+Value: ~45,000 unique addresses (peak), ~38,000 (per 2025-01)
+Date: 2025-01
+Sources: (HIGH) [DefiLlama EtherFi, https://defillama.com/protocol/etherfi]; (MEDIUM) [Etherscan eETH Holders, https://etherscan.io/token/0x35fA164735182de50811E8e2E824cFb9B6118ac2#balances]
+
+Metric Name: Daily Active Users (Staking Interface)
+Value: tidak diketahui — tidak ada DAU metric resmi yang dipublikasikan
+Date: N/A
+Sources: (LOW) [EtherFi App, https://app.ether.fi]; (LOW) [Dune Analytics EtherFi, https://dune.com/queries?query=etherfi]
+
+Metric Name: Transactions (Daily Staking/Unstaking)
+Value: tidak diketahui — tidak diagregasikan secara publik
+Date: N/A
+Sources: (LOW) [Etherscan eETH Transfers, https://etherscan.io/token/0x35fA164735182de50811E8e2E824cFb9B6118ac2#tokentxns]; (LOW) [Dune Analytics EtherFi, https://dune.com/queries?query=etherfi]
+
+Metric Name: Volume (ETHFI Spot Trading 24h)
+Value: $150M-$300M (rentang historis 2024-2025 per CoinMarketCap), berfluktuasi harian
+Date: 2025-01
+Sources: (HIGH) [CoinMarketCap ETHFI, https://coinmarketcap.com/currencies/etherfi/]; (HIGH) [CoinGecko ETHFI, https://www.coingecko.com/en/coins/ether-fi]
+
+Metric Name: Bridge Volume (weETH Cross-chain)
+Value: tidak diketahui — tidak ada bridge volume aggregator resmi
+Date: N/A
+Sources: (LOW) [EtherFi Docs Bridging, https://docs.ether.fi/bridging]; (LOW) [Dune Analytics EtherFi, https://dune.com/queries?query=etherfi]
+
+Metric Name: Messages (Cross-chain Messages)
+Value: tidak diketahui
+Date: N/A
+Sources: (LOW) [LayerZero Scan, https://layerzeroscan.com]; (LOW) [Wormhole Explorer, https://wormholescan.io]; (LOW) [Hyperlane Explorer, https://explorer.hyperlane.xyz]
+
+Metric Name: Validator Count (ULN Operators)
+Value: ~150+ registered operators (per EtherFi blog ULN launch announcement), exact current count tidak dipublikasikan real-time
+Date: 2024-02 (launch), 2025-01 (estimate)
+Sources: (MEDIUM) [EtherFi Blog ULN, https://blog.ether.fi]; (MEDIUM) [EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node]; (LOW) [Dune Analytics ULN, https://dune.com/queries?query=etherfi+ultra+light+node]
+
+Metric Name: Developer Count (GitHub Contributors)
+Value: ~25 contributors di etherfi-protocol/contracts, ~15 di etherfi-protocol/frontend (per GitHub insights)
+Date: 2025-01
+Sources: (MEDIUM) [GitHub EtherFi Contracts Contributors, https://github.com/etherfi-protocol/contracts/graphs/contributors]; (MEDIUM) [GitHub EtherFi Frontend Contributors, https://github.com/etherfi-protocol/frontend/graphs/contributors]
+
+## Market Share
+
+Metric: TVL Market Share in Liquid Restaking Category
+Value: ~15-20% of total liquid restaking TVL (DefiLlama category: Restaking ~$25B total, EtherFi ~$3.8B)
+Date: 2025-01
+Sources: (HIGH) [DefiLlama Restaking Category, https://defillama.com/category/Restaking]; (HIGH) [DefiLlama EtherFi, https://defillama.com/protocol/etherfi]
+
+Metric: TVL Market Share in Liquid Staking (LST) Category
+Value: ~5-8% of total LST TVL (Lido stETH ~$30B, Rocket Pool rETH ~$4B, EtherFi eETH ~$3.8B combined)
+Date: 2025-01
+Sources: (HIGH) [DefiLlama Liquid Staking Category, https://defillama.com/category/Liquid+Staking]; (HIGH) [DefiLlama EtherFi, https://defillama.com/protocol/etherfi]
+
+Metric: ETHFI Token Market Cap Rank
+Value: #150-#200 range (berfluktuasi), Market Cap ~$300M-$500M range
+Date: 2025-01
+Sources: (HIGH) [CoinMarketCap ETHFI, https://coinmarketcap.com/currencies/etherfi/]; (HIGH) [CoinGecko ETHFI, https://www.coingecko.com/en/coins/ether-fi]
+
+## Competitor Landscape
+
+Competitor: Lido
+Category: Liquid Staking Protocol (LST)
+Difference: Lido fokus liquid staking murni (stETH) tanpa native restaking integration; EtherFi = liquid staking + native restaking (EigenLayer + Symbiotic) + multi-chain weETH + institutional vaults + real-world spending (EtherFi Cash)
+Market Segment: Retail & Institutional Staking, DeFi Composability
+Sources: (HIGH) [DefiLlama Lido, https://defillama.com/protocol/lido]; (HIGH) [Lido Docs, https://docs.lido.fi]; (HIGH) [EtherFi Docs, https://docs.ether.fi]
+
+Competitor: Rocket Pool
+Category: Liquid Staking Protocol (LST)
+Difference: Rocket Pool = decentralized node operator network untuk Ethereum staking (rETH); EtherFi = permissionless operator marketplace (ULN) + restaking delegation ke EigenLayer/Symbiotic + multi-chain
+Market Segment: Decentralized Staking, Node Operator Network
+Sources: (HIGH) [DefiLlama Rocket Pool, https://defillama.com/protocol/rocket-pool]; (HIGH) [Rocket Pool Docs, https://docs.rocketpool.net]; (HIGH) [EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node]
+
+Competitor: Puffer Finance
+Category: Liquid Restaking Protocol (LRT)
+Difference: Puffer = native liquid restaking pada EigenLayer (pufferETH) dengan validator ticket mechanism; EtherFi = broader restaking (EigenLayer + Symbiotic) + multi-chain weETH + vaults + cash product
+Market Segment: EigenLayer Native Restaking, Retail Restaking
+Sources: (HIGH) [DefiLlama Puffer, https://defillama.com/protocol/puffer-finance]; (HIGH) [Puffer Docs, https://docs.puffer.fi]; (HIGH) [EtherFi Docs Restaking, https://docs.ether.fi/restaking]
+
+Competitor: Renzo
+Category: Liquid Restaking Protocol (LRT)
+Difference: Renzo = ezETH (liquid restaking token) dengan Actively Validated Services (AVS) curation; EtherFi = eETH/weETH dual token model + multi-AVS (EigenLayer + Symbiotic) + ULN operator marketplace + vaults
+Market Segment: Liquid Restaking, AVS Curation
+Sources: (HIGH) [DefiLlama Renzo, https://defillama.com/protocol/renzo]; (HIGH) [Renzo Docs, https://docs.renzoprotocol.com]; (HIGH) [EtherFi Docs, https://docs.ether.fi]
+
+Competitor: Ether.fi
+Category: Liquid Restaking Protocol (LRT)
+Difference: Nama serupa tapi project berbeda — Ether.fi (dengan titik) adalah competitor langsung dengan eETH/weETH; EtherFi (tanpa titik) adalah project ini. PERHATIAN: Phase 1-7 semua merujuk pada "EtherFi" (tanpa titik) sebagai project ini. Jika ada project "Ether.fi" terpisah, itu competitor.
+Market Segment: Liquid Restaking, LST/LRT
+Sources: (HIGH) [DefiLlama Ether.fi, https://defillama.com/protocol/ether-fi]; (HIGH) [Ether.fi Website, https://www.ether.fi]; (HIGH) [EtherFi Website, https://www.ether.fi] — CATATAN: Nama project di Phase 1 adalah "EtherFi" tapi website resmi adalah ether.fi — kemungkinan ini project yang sama. Perlu verifikasi.
+
+Competitor: Kelp DAO
+Category: Liquid Restaking Protocol (LRT)
+Difference: Kelp = rsETH dengan multi-AVS support (EigenLayer + Karak); EtherFi = EigenLayer + Symbiotic + ULN + vaults + cash
+Market Segment: Multi-AVS Restaking, Institutional
+Sources: (HIGH) [DefiLlama Kelp, https://defillama.com/protocol/kelp-dao]; (HIGH) [Kelp Docs, https://docs.kelpdao.xyz]; (HIGH) [EtherFi Docs Symbiotic, https://docs.ether.fi]
+
+Competitor: Swell
+Category: Liquid Restaking Protocol (LRT)
+Difference: Swell = swETH dengan restaking ke EigenLayer + rollup (Swell L2); EtherFi = multi-chain weETH (bukan appchain) + Symbiotic + ULN + vaults + cash
+Market Segment: Restaking + Rollup, Liquid Restaking
+Sources: (HIGH) [DefiLlama Swell, https://defillama.com/protocol/swell]; (HIGH) [Swell Docs, https://docs.swellnetwork.io]; (HIGH) [EtherFi Docs, https://docs.ether.fi]
+
+Competitor: Bedrock
+Category: Liquid Restaking Protocol (LRT)
+Difference: Bedrock = uniETH dengan multi-chain deployment (seperti weETH) + RockX validator; EtherFi = ULN permissionless operators + Symbiotic + vaults + cash
+Market Segment: Multi-chain Liquid Restaking, Institutional
+Sources: (HIGH) [DefiLlama Bedrock, https://defillama.com/protocol/bedrock]; (HIGH) [Bedrock Docs, https://docs.bedrock.technology]; (HIGH) [EtherFi Docs Multi-chain, https://docs.ether.fi]
+
+Competitor: Mellow
+Category: Liquid Restaking Protocol (LRT)
+Difference: Mellow = vault-based restaking optimizer (mellowETH) yang allocate ke best AVS; EtherFi = native LST/LRT issuer + vaults sebagai produk terpisah
+Market Segment: Restaking Vault Optimizer, Yield Optimization
+Sources: (HIGH) [DefiLlama Mellow, https://defillama.com/protocol/mellow]; (HIGH) [Mellow Docs, https://docs.mellow.finance]; (HIGH) [EtherFi Docs Vaults, https://docs.ether.fi/vaults]
+
+Competitor: Symbiotic
+Category: Restaking Layer (Protocol)
+Difference: Symbiotic = restaking infrastructure layer (seperti EigenLayer); EtherFi = consumer protocol yang build di atas Symbiotic + EigenLayer. Symbiotic adalah dependency DAN competitor potensial jika launch native LRT.
+Market Segment: Restaking Infrastructure, AVS Marketplace
+Sources: (HIGH) [Symbiotic Docs, https://docs.symbiotic.fi]; (HIGH) [EtherFi Docs Symbiotic, https://docs.ether.fi]; (HIGH) [EV-013 Phase 3 History]
+
+Competitor: Karak
+Category: Restaking Layer (Protocol)
+Difference: Karak = multi-asset restaking layer (BTC, ETH, stablecoin); EtherFi = ETH-focused liquid restaking. Karak belum launch native LRT tapi potential competitor.
+Market Segment: Multi-asset Restaking, Universal Restaking
+Sources: (HIGH) [Karak Docs, https://docs.karak.network]; (MEDIUM) [DefiLlama Karak, https://defillama.com/protocol/karak]; (HIGH) [EtherFi Docs, https://docs.ether.fi]
+
+Competitor: EigenLayer
+Category: Restaking Layer (Protocol)
+Difference: EigenLayer = primary restaking layer; EtherFi = largest consumer protocol di atas EigenLayer. EigenLayer tidak issue LST/LRT sendiri; dependency kritis.
+Market Segment: Restaking Infrastructure, AVS Marketplace
+Sources: (HIGH) [EigenLayer Docs, https://docs.eigenlayer.xyz]; (HIGH) [DefiLlama EigenLayer, https://defillama.com/protocol/eigenlayer]; (HIGH) [EV-007 Phase 3 History]
+
+## Narrative Position
+
+Narrative: Restaking
+Status: Main Narrative
+Evidence: EtherFi V2 positioned as "Liquid Restaking Protocol" (EV-008), native integration dengan EigenLayer (EV-007) dan Symbiotic (EV-013), TVL ranked top 3 liquid restaking protocols
+Sources: (HIGH) [EtherFi Blog V2, https://blog.ether.fi/etherfi-v2-liquid-restaking/]; (HIGH) [DefiLlama Restaking Category, https://defillama.com/category/Restaking]; (HIGH) [Messari EtherFi, https://messari.io/project/etherfi/profile]; (HIGH) [Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+
+Narrative: Liquid Staking Token (LST)
+Status: Main Narrative
+Evidence: eETH sebagai LST rebasing, weETH sebagai non-rebasing wrapper untuk DeFi composability — core product sejak V1 (EV-005, EV-006)
+Sources: (HIGH) [EtherFi Docs eETH, https://docs.ether.fi/tokens/eeth]; (HIGH) [EtherFi Docs weETH, https://docs.ether.fi/tokens/weeth]; (HIGH) [DefiLlama Liquid Staking Category, https://defillama.com/category/Liquid+Staking]
+
+Narrative: Multi-chain / Interoperability
+Status: Secondary Narrative
+Evidence: weETH deployed di 10+ chain (EV-018 batch 1 & 2) — Arbitrum, Optimism, Base, Mode, Blast, Linea, Scroll, zkSync Era, Mantle, BNB Chain
+Sources: (HIGH) [EtherFi Docs Multi-chain, https://docs.ether.fi]; (HIGH) [EV-018 Phase 3 History]; (MEDIUM) [EtherFi Docs Bridging, https://docs.ether.fi/bridging]
+
+Narrative: Real-World Assets (RWA) / DeFi x TradFi
+Status: Secondary Narrative
+Evidence: EtherFi Cash — kartu kredit non-kustodial terhubung ke restaked ETH yield (EV-010, EV-023), spending yield di dunia nyata
+Sources: (MEDIUM) [EtherFi Cash, https://cash.ether.fi]; (MEDIUM) [EtherFi Blog Cash, https://blog.ether.fi]; (MEDIUM) [EV-010, EV-023 Phase 3 History]
+
+Narrative: Institutional DeFi / Therapeutic-grade Restaking
+Status: Secondary Narrative
+Evidence: EtherFi Vaults — institutional-grade vault dengan risk management, multi-AVS allocation, withdrawal queue (EV-011, EV-026)
+Sources: (MEDIUM) [EtherFi Docs Vaults, https://docs.ether.fi/vaults]; (MEDIUM) [EtherFi Blog Vaults, https://blog.ether.fi]; (MEDIUM) [EV-011, EV-026 Phase 3 History]
+
+Narrative: Permissionless Operator Network / Decentralized Validation
+Status: Secondary Narrative
+Evidence: Ultra Light Node (ULN) — marketplace permissionless untuk operator node (EV-012), desentralisasi validator set
+Sources: (MEDIUM) [EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node]; (MEDIUM) [EtherFi Blog ULN, https://blog.ether.fi]; (MEDIUM) [EV-012 Phase 3 History]
+
+Narrative: Yield Trading / Fixed Income DeFi
+Status: Secondary Narrative
+Evidence: Pendle integration untuk PT/YT trading eETH/weETH yield (EV-014)
+Sources: (HIGH) [Pendle Docs, https://docs.pendle.finance]; (HIGH) [EtherFi Blog Pendle, https://blog.ether.fi]; (HIGH) [EV-014 Phase 3 History]
+
+Narrative: Governance / DAO
+Status: Secondary Narrative
+Evidence: EtherFi DAO dengan ETHFI token governance, fee switch proposal (EV-017, EV-020, EV-024)
+Sources: (HIGH) [EtherFi Docs Governance, https://docs.ether.fi/governance]; (HIGH) [Snapshot EtherFi, https://snapshot.org/#/etherfi.eth]; (HIGH) [EV-017, EV-020, EV-024 Phase 3 History]
+
+Narrative: Modular / EigenLayer AVS
+Status: Secondary Narrative
+Evidence: Integrasi dengan EigenLayer AVS spesifik (EigenDA) (EV-021), Symbiotic networks
+Sources: (MEDIUM) [EigenLayer Docs AVS, https://docs.eigenlayer.xyz/avs]; (MEDIUM) [EtherFi Blog AVS, https://blog.ether.fi]; (MEDIUM) [EV-021 Phase 3 History]
+
+## Market Timeline
+
+Date: 2023-06
+Milestone: Mainnet V1 Launch — eETH Staking
+Description: EtherFi V1 live di Ethereum mainnet, staking ETH ke eETH (LST rebasing) dimulai
+Related Historical Event ID: EV-005
+Sources: (HIGH) [EtherFi Docs eETH, https://docs.ether.fi/tokens/eeth]; (HIGH) [Etherscan eETH, https://etherscan.io/token/0x35fA164735182de50811E8e2E824cFb9B6118ac2]; (HIGH) [EV-005 Phase 3 History]
+
+Date: 2023-07
+Milestone: weETH Launch
+Description: weETH (wrapped eETH, non-rebasing) deployed di Ethereum mainnet untuk DeFi composability
+Related Historical Event ID: EV-006
+Sources: (HIGH) [EtherFi Docs weETH, https://docs.ether.fi/tokens/weeth]; (HIGH) [Etherscan weETH, https://etherscan.io/token/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee]; (HIGH) [EV-006 Phase 3 History]
+
+Date: 2023-08
+Milestone: EigenLayer Mainnet Integration
+Description: eETH/weETH delegasi ke EigenLayer AVS live — restaking rewards mulai terakumulasi
+Related Historical Event ID: EV-007
+Sources: (HIGH) [EigenLayer Docs, https://docs.eigenlayer.xyz]; (HIGH) [EtherFi Docs Restaking, https://docs.ether.fi/restaking]; (HIGH) [EV-007 Phase 3 History]
+
+Date: 2023-11
+Milestone: EtherFi V2 Launch — Liquid Restaking Protocol
+Description: Upgrade arsitektur ke liquid restaking penuh, modular AVS support, UUPS proxy
+Related Historical Event ID: EV-008
+Sources: (HIGH) [EtherFi Blog V2, https://blog.ether.fi/etherfi-v2-liquid-restaking/]; (HIGH) [EtherFi Docs, https://docs.ether.fi]; (HIGH) [EV-008 Phase 3 History]
+
+Date: 2024-01
+Milestone: EtherFi Cash Launch
+Description: Kartu kredit non-kustodial didukung restaked ETH yield diluncurkan
+Related Historical Event ID: EV-010
+Sources: (MEDIUM) [EtherFi Cash, https://cash.ether.fi]; (MEDIUM) [EtherFi Blog Cash, https://blog.ether.fi]; (MEDIUM) [EV-010 Phase 3 History]
+
+Date: 2024-02
+Milestone: EtherFi Vaults Launch
+Description: Institutional-grade restaking vaults live dengan multi-AVS allocation
+Related Historical Event ID: EV-011
+Sources: (MEDIUM) [EtherFi Docs Vaults, https://docs.ether.fi/vaults]; (MEDIUM) [EtherFi Blog Vaults, https://blog.ether.fi]; (MEDIUM) [EV-011 Phase 3 History]
+
+Date: 2024-02
+Milestone: Ultra Light Node (ULN) Launch
+Description: Permissionless operator marketplace live
+Related Historical Event ID: EV-012
+Sources: (MEDIUM) [EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node]; (MEDIUM) [EtherFi Blog ULN, https://blog.ether.fi]; (MEDIUM) [EV-012 Phase 3 History]
+
+Date: 2024-03
+Milestone: Symbiotic Integration
+Description: Restaking layer alternatif Symbiotic terintegrasi
+Related Historical Event ID: EV-013
+Sources: (MEDIUM) [Symbiotic Docs, https://docs.symbiotic.fi]; (MEDIUM) [EtherFi Blog, https://blog.ether.fi]; (MEDIUM) [EV-013 Phase 3 History]
+
+Date: 2024-03
+Milestone: Pendle Integration
+Description: Yield trading eETH/weETH via PT/YT markets Pendle live
+Related Historical Event ID: EV-014
+Sources: (HIGH) [Pendle Docs, https://docs.pendle.finance]; (HIGH) [EtherFi Blog Pendle, https://blog.ether.fi]; (HIGH) [EV-014 Phase 3 History]
+
+Date: 2024-03-18
+Milestone: ETHFI Token Generation Event (TGE)
+Description: ETHFI token deployed, 1B supply minted, simultaneous 6 CEX listing
+Related Historical Event ID: EV-015, EV-016
+Sources: (HIGH) [CoinMarketCap ETHFI, https://coinmarketcap.com/currencies/etherfi/]; (HIGH) [Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]; (HIGH) [Etherscan ETHFI, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb]; (HIGH) [EV-015, EV-016 Phase 3 History]
+
+Date: 2024-03
+Milestone: EtherFi DAO Formation
+Description: On-chain governance via Governor + Timelock activated
+Related Historical Event ID: EV-017
+Sources: (HIGH) [EtherFi Docs Governance, https://docs.ether.fi/governance]; (HIGH) [Snapshot EtherFi, https://snapshot.org/#/etherfi.eth]; (HIGH) [EV-017 Phase 3 History]
+
+Date: 2024-04
+Milestone: Multi-Chain weETH Deployment Batch 1
+Description: weETH deployed ke Arbitrum, Optimism, Base, Mode, Blast
+Related Historical Event ID: EV-018 (partial)
+Sources: (MEDIUM) [EtherFi Docs Multi-chain, https://docs.ether.fi]; (MEDIUM) [Arbiscan weETH, https://arbiscan.io]; (MEDIUM) [Optimistic Etherscan weETH, https://optimistic.etherscan.io]; (MEDIUM) [Basescan weETH, https://basescan.org]; (MEDIUM) [EV-018 Phase 3 History]
+
+Date: 2024-05
+Milestone: Multi-Chain weETH Deployment Batch 2
+Description: weETH deployed ke Linea, Scroll, zkSync Era, Mantle, BNB Chain
+Related Historical Event ID: EV-018 (partial)
+Sources: (MEDIUM) [EtherFi Docs Multi-chain, https://docs.ether.fi]; (MEDIUM) [LineaScan weETH, https://lineascan.build]; (MEDIUM) [ScrollScan weETH, https://scrollscan.com]; (MEDIUM) [zkSync Explorer weETH, https://explorer.zksync.io]; (MEDIUM) [MantleScan weETH, https://mantlescan.xyz]; (MEDIUM) [BscScan weETH, https://bscscan.com]; (MEDIUM) [EV-018 Phase 3 History]
+
+Date: 2024-07
+Milestone: EigenLayer Specific AVS Integration (EigenDA)
+Description: Delegasi ke AVS spesifik EigenLayer (EigenDA) diaktifkan
+Related Historical Event ID: EV-021
+Sources: (MEDIUM) [EigenLayer Docs AVS, https://docs.eigenlayer.xyz/avs]; (MEDIUM) [EtherFi Blog, https://blog.ether.fi]; (MEDIUM) [EV-021 Phase 3 History]
+
+Date: 2024-10
+Milestone: Fee Switch Governance Proposal
+Description: Proposal fee switch / revenue sharing ke ETHFI holder divote
+Related Historical Event ID: EV-024
+Sources: (MEDIUM) [Snapshot EtherFi, https://snapshot.org/#/etherfi.eth]; (MEDIUM) [EtherFi Blog, https://blog.ether.fi]; (MEDIUM) [EV-024 Phase 3 History]
+
+Date: 2024-12
+Milestone: EtherFi Vaults v2 Launch
+Description: Vault strategi baru, risk management ditingkatkan, AVS tambahan
+Related Historical Event ID: EV-026
+Sources: (MEDIUM) [EtherFi Docs Vaults, https://docs.ether.fi/vaults]; (MEDIUM) [EtherFi Blog, https://blog.ether.fi]; (MEDIUM) [EV-026 Phase 3 History]
+
+Date: 2025-03-18
+Milestone: 1-Year TGE Anniversary
+Description: Tokenomics review, vesting unlock schedule berlangsung
+Related Historical Event ID: EV-028
+Sources: (MEDIUM) [EtherFi Docs Token, https://docs.ether.fi/token/ethfi]; (MEDIUM) [Snapshot EtherFi, https://snapshot.org/#/etherfi.eth]; (MEDIUM) [EV-028 Phase 3 History]
+
+## Official Market Resources
+
+Official Dashboard: https://app.ether.fi (staking interface dengan portfolio analytics)
+DefiLlama: https://defillama.com/protocol/etherfi
+CoinGecko: https://www.coingecko.com/en/coins/ether-fi
+CoinMarketCap: https://coinmarketcap.com/currencies/etherfi/
+Token Terminal: https://tokenterminal.com/terminal/projects/etherfi (jika tersedia — perlu verifikasi)
+Messari: https://messari.io/project/etherfi/profile
+Explorer (Ethereum): https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb (ETHFI), https://etherscan.io/token/0x35fA164735182de50811E8e2E824cFb9B6118ac2 (eETH), https://etherscan.io/token/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee (weETH)
+Explorer (Arbitrum): https://arbiscan.io/token/ (weETH address perlu verifikasi)
+Explorer (Optimism): https://optimistic.etherscan.io/token/ (weETH address perlu verifikasi)
+Explorer (Base): https://basescan.org/token/ (weETH address perlu verifikasi)
+Explorer (Linea): https://lineascan.build/token/ (weETH address perlu verifikasi)
+Explorer (Scroll): https://scrollscan.com/token/ (weETH address perlu verifikasi)
+Explorer (zkSync): https://explorer.zksync.io/token/ (weETH address perlu verifikasi)
+Explorer (Mantle): https://mantlescan.xyz/token/ (weETH address perlu verifikasi)
+Explorer (BNB Chain): https://bscscan.com/token/ (weETH address perlu verifikasi)
+
+## BUAT RINGKASAN
+
+Market Stage: Growth (post-TGE, multi-chain live, institutional products live, DAO active)
+Primary Category: Liquid Restaking Protocol
+Competitor Count: 12 direct competitors teridentifikasi (Lido, Rocket Pool, Puffer, Renzo, Ether.fi, Kelp, Swell, Bedrock, Mellow, Symbiotic, Karak, EigenLayer) + broader LST/LRT landscape
+Major Narrative: Restaking (Main), Liquid Staking Token (Main), Multi-chain/Interoperability (Secondary), RWA/DeFi x TradFi (Secondary), Institutional DeFi (Secondary), Permissionless Operator Network (Secondary), Yield Trading (Secondary), Governance/DAO (Secondary)
+Trading Availability: 6 CEX (Binance, Coinbase, OKX, Bybit, Gate.io, KuCoin) + Uniswap DEX, perpetual di 5 CEX
+Adoption Metrics Available: TVL, eETH/weETH supply, unique stakers, ETHFI volume, market cap, validator count estimate, developer count — DAU, daily txns, bridge volume, cross-chain messages TIDAK tersedia publik
+
+## Open Threads
+
+- Exact weETH contract address per chain (10+ chain) — tidak diagregasikan di docs.ether.fi/bridging; perlu query per explorer
+- Bridge TVL dan volume per bridge (canonical vs LayerZero vs Wormhole vs Hyperlane) — tidak ada dashboard terpusat
+- Daily Active Users (DAU) metric — tidak dipublikasikan resmi; Dune dashboard komunitas mungkin ada tapi tidak terverifikasi official
+- Daily transaction count (staking/unstaking/wrapping/bridging) — tidak diagregasikan publik
+- Cross-chain message count (LayerZero/Wormhole/Hyperlane) — perlu query per explorer
+- Exact ULN operator count real-time — tidak ada dashboard publik; blog launch mention ~150+ tapi current count unknown
+- Ether.fi vs EtherFi naming confusion — website resmi ether.fi tapi project disebut "EtherFi" di Phase 1-7; apakah project yang sama atau ada competitor terpisah "Ether.fi"? Perlu verifikasi
+- ETHFI token market cap rank exact — berfluktuasi harian, range #150-#200 perlu real-time check
+- Fee switch proposal (EV-024) outcome — apakah passed dan implemented; Snapshot vote result perlu diverifikasi
+- Tokenomics distribution breakdown (team, investor, community, treasury %) — Phase 6 confirm semua tidak diungkap resmi
+- Vesting unlock schedule real-time — investor/team unlock yang mempengaruhi circulating supply dan selling pressure
+- Institutional adoption metrics untuk EtherFi Vaults — TVL vaults, jumlah institutional partner, AUM tidak dipublikasikan
+- EtherFi Cash adoption — jumlah kartu terbit, transaction volume, geographic reach tidak dipublikasikan
+- Grant program / hackathon sponsorship — tidak ditemukan program resmi EtherFi untuk developer eksternal
+- Formal verification status smart contracts — apakah ada kontrak yang diverifikasi formal (Certora, Halmos) selain audit
+- Insurance coverage untuk slashing risk — apakah Vaults/protocol membeli coverage dari Nexus Mutual, Unslashed, dll
+- Regulatory status di yurisdiksi utama (US, EU, Singapore) — legal opinion, compliance framework tidak dipublikasikan
+- Revenue data historis (bulanan/kuartalan) — Phase 5 confirm tidak diungkap; perlu on-chain query via Dune/custom indexer
+- Treasury composition dan address — DAO treasury address tidak terverifikasi publik; composition unknown
+- Competitor "Ether.fi" (dengan titik) — apakah project terpisah atau nama yang sama; DefiLlama memiliki "Ether.fi" sebagai protocol terpisah

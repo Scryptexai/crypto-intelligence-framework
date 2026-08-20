@@ -1,0 +1,263 @@
+PROJECT: BNB Chain
+
+## Token Information
+
+Official Token Name: BNB (sering disebut "Binance Coin", secara resmi didokumentasikan sebagai "BNB" dalam ekosistem BNB Chain) (HIGH) [BNB Chain Docs, https://docs.bnbchain.org/docs/overview]
+Symbol: BNB
+Token Standard: BEP-2 (native di BNB Beacon Chain), BEP-20 (BNB Smart Chain), ERC-20 (di Ethereum sejak ICO 2017 hingga token swap) (HIGH) [BnbScan, https://bnbscan.com]; [BscScan, https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c]
+Blockchain: Multi-chain — asal mula native di BNB Beacon Chain; sekarang beroperasi sebagai native asset di BNB Beacon Chain, BNB Smart Chain, opBNB, BNB Greenfield, dan sebagai ERC-20 legacy di Ethereum (HIGH) [BNB Chain Docs, https://docs.bnbchain.org/docs/overview]
+Contract Address: 
+- BEP-2 (Beacon Chain): native asset, tanpa kontrak terpisah (HIGH) [BnbScan, https://bnbscan.com]
+- BEP-20 (BSC): 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c (HIGH) [BscScan, https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c]
+- ERC-20 (Ethereum): 0xB8c77482e45F1F44dE1745F52C74426C631bDD52 (legacy, tidak lagi aktif untuk transfer baru) (HIGH) [Etherscan, https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52]
+Decimals: 
+- BEP-20 (BSC): 18 decimals (HIGH) [BscScan, https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c]
+- BEP-2 (Beacon Chain): 8 decimals (HIGH) [BnbScan, https://bnbscan.com/token/BNB]
+- ERC-20 (Ethereum): 18 decimals (HIGH) [Etherscan, https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52]
+Status: Live (mainnet sejak 2017) (HIGH) [Binance Blog, https://www.binance.com/en/blog/421499824684900357]
+Sources: [BNB Chain Docs, https://docs.bnbchain.org/docs/overview]; [BscScan, https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c]; [BnbScan, https://bnbscan.com/token/BNB]; [Etherscan, https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52]
+
+## Supply
+
+Maximum Supply: 200.000.000 BNB (fix sejak genesis; tidak ada mekanisme untuk menambah supply di atas total ini) (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+Total Supply: 200.000.000 BNB (tidak berubah sejak TGE; sebagian telah dibakar permanen) (HIGH) [BNB Chain Burn, https://www.bnbchain.org/en/burn]
+Circulating Supply: Tidak diungkapkan oleh BNB Chain Foundation secara resmi; data on-chain dari BscScan menunjukkan circulating supply sekitar 144-145 juta BNB pada akhir 2024 (setelah burn >50 juta) (MEDIUM) [BscScan, https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c]; (LOW) [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/]
+Initial Supply: 200.000.000 BNB (diciptakan saat TGE di Ethereum; kemudian dimigrasikan 1:1 ke BNB Beacon Chain dan BSC) (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+Supply Type: Fixed Supply dengan mekanisme deflasioner (bukan inflationary; total supply tidak pernah bertambah dan secara permanen berkurang via burn) (HIGH) [BNB Chain Burn, https://www.bnbchain.org/en/burn]
+Sources: [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]; [BNB Chain Burn, https://www.bnbchain.org/en/burn]; [BscScan, https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c]
+
+## Distribution
+
+Community (Public ICO): 100.000.000 BNB (50% dari total supply) dijual kepada publik saat ICO Juli 2017 (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+Team: 80.000.000 BNB (40% dari total supply) dialokasikan untuk tim Binance (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+Investors (Angel): 20.000.000 BNB (10% dari total supply) dialokasikan untuk angel investors pada saat ICO (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+Foundation: Tidak ada alokasi terpisah yang didokumentasikan dalam whitepaper awal untuk "BNB Chain Foundation" (entitas ini tidak ada saat TGE; pembentukan terjadi setelah rebranding 2021) (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog/announcing-the-bnb-chain-brand]
+Treasury: Tidak diungkapkan secara resmi; tidak ada alokasi treasury terpisah yang didokumentasikan dalam sumber publik (MEDIUM) [BNB Chain Foundation tidak punya laporan resmi publik]
+Ecosystem: Tidak ada alokasi khusus "ecosystem" dalam struktur awal; dana ekosistem kemudian dikelola via BNB Chain Foundation dari treasury internal yang tidak diungkapkan (MEDIUM) [BNB Chain Forum Grants, https://forum.bnbchain.org/c/grants]
+Advisors: Tidak ada alokasi khusus untuk advisors dalam whitepaper (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+Other: 0 BNB (tidak ada kategori lain yang terdokumentasi) (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+Status: Post-TGE (semua alokasi awal telah disalurkan sejak 2017-2019)
+Sources: [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]; [BNB Chain Blog, https://www.bnbchain.org/en/blog/announcing-the-bnb-chain-brand]; [BNB Chain Forum Grants, https://forum.bnbchain.org/c/grants]
+
+## Vesting Schedule
+
+Category: Team (80M BNB)
+- Cliff: Tidak didokumentasikan secara resmi (whitepaper tidak menyebut cliff) (MEDIUM) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+- Vesting: Tidak didokumentasikan secara resmi dalam whitepaper; tidak ada jadwal vesting tahunan yang dipublikasikan (MEDIUM) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+- Unlock Frequency: Tidak didokumentasikan (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+- Current Status: Sudah unlocked dan beredar; tidak ada lockup yang tercatat aktif (LOW) [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/]
+
+Category: Angel Investors (20M BNB)
+- Cliff: Tidak didokumentasikan secara resmi (MEDIUM) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+- Vesting: Tidak didokumentasikan dalam whitepaper (MEDIUM) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+- Unlock Frequency: Tidak didokumentasikan (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+- Current Status: Sudah unlocked dan beredar; tidak ada lockup yang tercatat aktif (LOW) [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/]
+
+Category: Community Public ICO (100M BNB)
+- Cliff: Tidak ada (token langsung disalurkan saat ICO) (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+- Vesting: Tidak ada (immediate unlock) (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+- Unlock Frequency: Sekali di TGE (Juli 2017) (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+- Current Status: Sudah sepenuhnya beredar (HIGH) [Binance Blog, https://www.binance.com/en/blog/421499824684900357]
+
+Catatan: Dokumen whitepaper BNB tidak memuat jadwal vesting terperinci untuk tim dan investor; informasi ini tidak tersedia dari sumber resmi (MEDIUM) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+Sources: [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]; [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/]
+
+## TGE
+
+TGE Date: Juli 2017 (tanggal pasti tidak diungkapkan dalam whitepaper; ICO berlangsung sekitar 1-2 minggu) (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]; (MEDIUM) [Binance Blog, https://www.binance.com/en/blog/421499824684900357]
+Initial Unlock: 100.000.000 BNB untuk community (public ICO) langsung dijual; 80.000.000 BNB tim dan 20.000.000 BNB angel dirilis secara bertahap sesuai vesting yang tidak terdokumentasi (MEDIUM) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+Unlocked Categories: Community (100M), Team (80M), Angel (20M) — semuanya telah fully unlocked (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]; (LOW) [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/]
+Launch Platform: Ethereum mainnet (ERC-20 token) pada Juli 2017 (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]; (HIGH) [Etherscan, https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52]
+Status: Completed (TGE selesai; semua token sudah dialokasikan dan beredar)
+Sources: [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]; [Etherscan, https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52]; [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/]
+
+## Utility
+
+Utility: Gas Fee (BNB Smart Chain)
+- Deskripsi: BNB digunakan untuk membayar gas fee transaksi di BSC; sebagian base fee dibakar real-time via BEP-95 (EIP-1559 style) (HIGH) [BNB Chain Docs Burn, https://docs.bnbchain.org/docs/burn]
+- Status: Live
+
+Utility: Gas Fee (opBNB)
+- Deskripsi: BNB digunakan untuk membayar gas fee transaksi di opBNB (L2 optimistic rollup); fee dibayar dalam BNB dan dibagikan ke sequencer/l1 settlement (HIGH) [opBNB Docs, https://docs.opbnb.io]
+- Status: Live
+
+Utility: Gas Fee (BNB Beacon Chain)
+- Deskripsi: BNB digunakan untuk membayar fee staking dan transaksi governance di BNB Beacon Chain (Tendermint) (HIGH) [BNB Chain Docs Beacon Chain, https://docs.bnbchain.org/docs/beacon-chain]
+- Status: Live
+
+Utility: Staking (Validator & Delegator)
+- Deskripsi: BNB di-stake untuk memilih validator di BNB Beacon Chain dan BSC (21 validator aktif); delegator dapat mendelegasikan BNB untuk mendapatkan reward (HIGH) [BNB Chain Docs Staking, https://docs.bnbchain.org/docs/staking]
+- Status: Live
+
+Utility: Collateral (Lending)
+- Deskripsi: BNB digunakan sebagai aset kolateral utama di protokol DeFi BSC seperti Venus Protocol (money market), di mana pengguna dapat meminjam stablecoin dengan jaminan BNB (HIGH) [Venus Protocol, https://venus.io]
+- Status: Live
+
+Utility: Fee Discount (Binance Exchange)
+- Deskripsi: BNB digunakan untuk membayar trading fee di Binance Exchange dengan diskon 25% hingga 50% (dikurangi bertahap; saat ini diskon 25%) (HIGH) [Binance Fee, https://www.binance.com/en/fee/trading]
+- Status: Live
+
+Utility: Governance
+- Deskripsi: Pemegang BNB dapat menggunakan voting power dalam BEP (BNB Chain Evolution Proposals) dan proposal governance di BNB Beacon Chain (HIGH) [BNB Chain Docs Governance, https://docs.bnbchain.org/docs/governance]
+- Status: Live
+
+Utility: Payment untuk Greenfield Storage
+- Deskripsi: BNB digunakan untuk membayar Storage Providers di BNB Greenfield (decentralized storage) via pembayaran on-chain (pay-per-use, subscription) (HIGH) [Greenfield Docs, https://docs.bnbchain.org/docs/greenfield]
+- Status: Live
+
+Utility: Bridging (Cross-chain)
+- Deskripsi: BNB digunakan sebagai asset native dan fee token di BNB Bridge dan berbagai bridge (LayerZero, Wormhole, Celer) untuk transfer cross-chain (HIGH) [BNB Bridge, https://www.bnbchain.org/en/bridge]
+- Status: Live
+
+Utility: Launchpad Participation
+- Deskripsi: BNB digunakan untuk mengakses token sale di Binance Launchpad; pengguna memegang BNB untuk memenuhi syarat (HIGH) [Binance Launchpad, https://www.binance.com/en/support/faq/introduction-to-binance-launchpad-a7b1f8c0e5c04b6e8d2b3c7a8d9e0f1a2]
+- Status: Live (kontroversial — tidak dianggap utility inti oleh BNB Chain Foundation sendiri)
+
+Utility: Reward (Airdrops & Staking)
+- Deskripsi: BNB digunakan sebagai reward untuk staking di Beacon Chain dan berbagai program ekosistem (misal Megadrop) (HIGH) [BNB Chain Docs Staking, https://docs.bnbchain.org/docs/staking]
+- Status: Live
+
+Utility: Payment untuk GameFi & NFT
+- Deskripsi: BNB diterima sebagai pembayaran di banyak protokol GameFi (Mobox, BinaryX) dan NFT marketplace (Element Market) di BSC (HIGH) [Mobox, https://mobox.io]
+- Status: Live
+
+Sources: [BNB Chain Docs Burn, https://docs.bnbchain.org/docs/burn]; [BNB Chain Docs Staking, https://docs.bnbchain.org/docs/staking]; [BNB Chain Docs Governance, https://docs.bnbchain.org/docs/governance]; [opBNB Docs, https://docs.opbnb.io]; [BNB Chain Docs Beacon Chain, https://docs.bnbchain.org/docs/beacon-chain]; [Greenfield Docs, https://docs.bnbchain.org/docs/greenfield]; [Venus Protocol, https://venus.io]; [Binance Fee, https://www.binance.com/en/fee/trading]; [BNB Bridge, https://www.bnbchain.org/en/bridge]
+
+## Governance
+
+Governance Model: On-chain governance berbasis staking di BNB Beacon Chain; proposal BEP (BNB Chain Evolution Proposals) dibahas di forum BNB Chain dan diputuskan melalui voting validator + pemegang BNB (HIGH) [BNB Chain Docs Governance, https://docs.bnbchain.org/docs/governance]
+Voting System: Voting tertimbang berdasarkan jumlah BNB yang di-stake dan didelegasikan; proposal harus melewati quorum dan threshold tertentu (HIGH) [BNB Chain Docs Governance, https://docs.bnbchain.org/docs/governance]
+Voting Power: Voting power proporsional terhadap BNB yang di-stake oleh validator dan delegator; pemegang BNB yang tidak stake dapat mendelegasikan (HIGH) [BNB Chain Docs Staking, https://docs.bnbchain.org/docs/staking]
+Delegation: Delegator dapat mendelegasikan BNB ke validator; voting power delegator dikelola validator sesuai proporsi stake (HIGH) [BNB Chain Docs Staking, https://docs.bnbchain.org/docs/staking]
+Proposal System: BEP (BNB Chain Evolution Proposals) — proposal teknis dan parameter governance diajukan via GitHub (BNB Chain BEPs repository) dan didiskusikan di BNB Chain Forum; voting dilakukan on-chain oleh validator set (HIGH) [BNB Chain Governance GitHub, https://github.com/bnb-chain/BEPs]
+Treasury Governance: Tidak ada mekanisme voting langsung untuk treasury; BNB Chain Foundation mengelola dana ekosistem secara internal tanpa transparansi voting publik (MEDIUM) [BNB Chain Forum Grants, https://forum.bnbchain.org/c/grants]
+Status: Live (aktif; BEP-341 dan BEP-336 sedang dalam proses diskusi/voting 2024)
+Sources: [BNB Chain Docs Governance, https://docs.bnbchain.org/docs/governance]; [BNB Chain Governance GitHub, https://github.com/bnb-chain/BEPs]; [BNB Chain Forum, https://forum.bnbchain.org]
+
+## Inflation / Deflation
+
+Inflation Mechanism: Tidak ada — total supply BNB tetap 200.000.000; tidak ada block reward inflation untuk BNB (reward staking berasal dari gas fee dan biaya lainnya, bukan dari creating new BNB) (HIGH) [BNB Chain Docs Staking, https://docs.bnbchain.org/docs/staking]
+Emission Schedule: Tidak ada emisi baru; supply tetap sejak genesis (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+Burn Mechanism: BEP-95 (real-time burn base fee di BSC) — sebagian gas fee dibakar per blok; auto-burn kuartalan berdasarkan harga BNB dan jumlah blok (HIGH) [BNB Chain Docs Burn, https://docs.bnbchain.org/docs/burn]
+Buyback: Tidak ada program buyback resmi BNB Chain Foundation; burn hanya dari mekanisme on-chain (BEP-95) dan auto-burn kuartalan (HIGH) [BNB Chain Docs Burn, https://docs.bnbchain.org/docs/burn]
+Supply Reduction: Total burn kumulatif >50.000.000 BNB per 2024 (25% dari 200M supply); mengurangi supply beredar secara permanen (HIGH) [BNB Chain Burn, https://www.bnbchain.org/en/burn]
+Status: Aktif (deflasioner; burn berlanjut terus)
+Sources: [BNB Chain Docs Burn, https://docs.bnbchain.org/docs/burn]; [BNB Chain Burn, https://www.bnbchain.org/en/burn]; [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+
+## Holder Distribution
+
+Top Holder Concentration: Tidak diungkapkan oleh BNB Chain Foundation secara resmi; data on-chain BscScan menunjukkan beberapa alamat whale besar (termasuk burned address dan exchange hot wallet), tetapi konsentrasi pastinya tidak tersedia dari sumber resmi (LOW) [BscScan Top Holders, https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c]
+Foundation Holding: Tidak diungkapkan — tidak ada wallet BNB Chain Foundation yang dipublikasikan sebagai treasury (MEDIUM) [BNB Chain Blog tidak pernah merinci]
+Investor Holding: Tidak diungkapkan — alokasi awal untuk angel investors (20M BNB) telah beredar sejak 2017-2019; tidak ada data current holding (LOW) [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/]
+Treasury Holding: Tidak diungkapkan — BNB Chain Foundation tidak mempublikasikan ukuran treasury BNB-nya (MEDIUM) [BNB Chain Foundation tidak punya laporan resmi]
+Community Holding: Tidak diungkapkan — mayoritas BNB dipegang oleh pemegang retail dan institusi di exchange; tidak ada data resmi (LOW) [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/]
+Whale Concentration: Data on-chain tidak resmi (misal Nansen, bscscan) menunjukkan beberapa whale besar menguasai >10% supply, namun ini tidak diverifikasi oleh BNB Chain Foundation (LOW) [BscScan Top Holders, https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c]
+Sources: [BscScan Top Holders, https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c]; [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/]; [BNB Chain Foundation tidak mempublikasikan]
+
+## Major Token Events
+
+Event: BNB TGE (ICO) di Ethereum
+- Date: 2017-07
+- Description: Penjualan publik 100M BNB; total 200M BNB diciptakan di Ethereum; harga ICO ~$0,15
+- Status: Completed
+- Related Historical Event ID: EV-001
+- Sources: [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+
+Event: BNB Token Swap ERC-20 → BEP-2
+- Date: 2019-06
+- Description: Migrasi 1:1 dari token ERC-20 di Ethereum ke native BEP-2 di Binance Chain (Beacon Chain); token ERC-20 di-burn dan BNB baru di-mint di Beacon Chain
+- Status: Completed
+- Related Historical Event ID: EV-007
+- Sources: [Binance Blog, https://www.binance.com/en/blog/421499824684900357]
+
+Event: BNB Chain Rebranding
+- Date: 2021-09
+- Description: Rebrand dari "Binance Smart Chain" menjadi "BNB Smart Chain"; "Binance Chain" menjadi "BNB Beacon Chain"; penekanan pada "BNB" sebagai "Build N Build"
+- Status: Completed
+- Related Historical Event ID: EV-019
+- Sources: [BNB Chain Blog, https://www.bnbchain.org/en/blog/announcing-the-bnb-chain-brand]
+
+Event: BEP-95 (Real-time Burn) Activation
+- Date: 2021-10
+- Description: Aktivasi mekanisme pembakaran base fee gas di BSC secara real-time; mempercepat deflasi BNB
+- Status: Completed
+- Related Historical Event ID: EV-020
+- Sources: [BNB Chain Docs Burn, https://docs.bnbchain.org/docs/burn]
+
+Event: BNB Greenfield Mainnet (Utility untuk Payment Storage)
+- Date: 2023-09
+- Description: Mainnet BNB Greenfield memungkinkan BNB digunakan untuk membayar storage terdesentralisasi; perluasan utilitas BNB ke data layer
+- Status: Completed
+- Related Historical Event ID: EV-035
+- Sources: [BNB Chain Blog, https://www.bnbchain.org/en/blog/greenfield-mainnet-launch]
+
+Event: BNB Auto-Burn Total >50M BNB
+- Date: 2024-12
+- Description: Total burn kumulatif (BEP-95 + auto-burn kuartalan) melebihi 50 juta BNB, setara 25% dari total supply awal; burn terus berlanjut
+- Status: Ongoing
+- Related Historical Event ID: EV-049
+- Sources: [BNB Chain Burn, https://www.bnbchain.org/en/burn]
+
+Event: BEP-341 (Proposer-Builder Separation) Proposal
+- Date: 2024-02
+- Description: Proposal untuk memisahkan proposer dan builder di BSC guna mitigasi MEV toxic; memengaruhi cara gas fee dan reward staking BNB didistribusikan
+- Status: Ongoing (diskusi)
+- Related Historical Event ID: EV-040
+- Sources: [BNB Chain Forum, https://forum.bnbchain.org/t/bep-341-pbs]
+
+Event: BEP-336 (Parallel EVM) Proposal
+- Date: 2024-01
+- Description: Proposal untuk eksekusi transaksi paralel di BSC untuk meningkatkan throughput; berpotensi memengaruhi gas fee pattern dan burn BNB
+- Status: Ongoing (testnet)
+- Related Historical Event ID: EV-039
+- Sources: [BNB Chain Forum, https://forum.bnbchain.org/t/bep-336-parallel-evm]
+
+Sources: [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]; [Binance Blog, https://www.binance.com/en/blog/421499824684900357]; [BNB Chain Blog, https://www.bnbchain.org/en/blog/announcing-the-bnb-chain-brand]; [BNB Chain Docs Burn, https://docs.bnbchain.org/docs/burn]; [BNB Chain Blog, https://www.bnbchain.org/en/blog/greenfield-mainnet-launch]; [BNB Chain Burn, https://www.bnbchain.org/en/burn]; [BNB Chain Forum, https://forum.bnbchain.org/t/bep-341-pbs]; [BNB Chain Forum, https://forum.bnbchain.org/t/bep-336-parallel-evm]
+
+## Official Token Resources
+
+Official Documentation: https://docs.bnbchain.org/docs/overview
+Whitepaper (BNB ICO): https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf
+Governance: https://forum.bnbchain.org
+Governance GitHub (BEP): https://github.com/bnb-chain/BEPs
+Explorer (BSC): https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c
+Explorer (Beacon Chain): https://bnbscan.com/token/BNB
+Etherscan (Legacy ERC-20): https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52
+Contract (BEP-20): https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c
+Contract (ERC-20 legacy): https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52
+GitHub BNB Chain: https://github.com/bnb-chain
+Dashboard Burn Resmi: https://www.bnbchain.org/en/burn
+Dokumentasi Staking: https://docs.bnbchain.org/docs/staking
+Dokumentasi Burn: https://docs.bnbchain.org/docs/burn
+Dokumentasi Governance: https://docs.bnbchain.org/docs/governance
+
+## Ringkasan
+
+Status: Live (mainnet sejak 2017; token beroperasi di BSC, Beacon Chain, opBNB, Greenfield, dan legacy ERC-20 Ethereum)
+Supply Type: Fixed Supply, deflasioner (tidak ada inflasi; burn permanen)
+Total Supply: 200.000.000 BNB (tidak berubah sejak TGE; >50 juta telah dibakar)
+Distribution Categories: Community (50%), Team (40%), Angel Investors (10%); tidak ada alokasi Foundation/Ecosystem/Advisors dalam struktur awal
+Utility Count: 10 utilitas teridentifikasi (gas fee BSC, gas fee opBNB, gas fee Beacon Chain, staking, collateral, fee discount Binance, governance, payment storage, bridge, Launchpad, reward GameFi/NFT)
+Governance: On-chain berbasis staking di Beacon Chain; BEP proposal via GitHub + Forum; voting tertimbang stake BNB; tidak ada mekanisme voting treasury publik
+Major Token Events: 8 event utama (TGE, token swap, rebranding, BEP-95 burn activation, Greenfield utility, auto-burn >50M, BEP-341 PBS proposal, BEP-336 Parallel EVM)
+Open Threads: Vesting detail team/angel tidak terdokumentasi resmi; treasury Foundation tidak diungkapkan; holder distribution tidak transparan; beberapa proposal governance masih ongoing
+
+## Open Threads
+
+- Vesting schedule tim (80M BNB) dan angel investors (20M BNB) tidak pernah didokumentasikan secara resmi dalam whitepaper atau sumber lain — tidak dapat diverifikasi apakah ada cliff, durasi vesting, atau jadwal unlock bertahap. Hanya diketahui token sudah beredar (LOW) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf].
+
+- Circulating supply yang tepat tidak dipublikasikan oleh BNB Chain Foundation; data on-chain BscScan vs CoinMarketCap berpotensi berbeda karena definisi "circulating" berbeda (exclude burned, exclude team vesting yang tidak terlihat) — perlu konsensus numerik dari sumber primer on-chain (MEDIUM) [BscScan, https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c]; [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/].
+
+- Treasurer "BNB Chain Foundation" (entitas pengelola grant dan burn) tidak memiliki legal entity yang terdokumentasi publik — tidak dapat diverifikasi apakah dana ekosistem berasal dari alokasi awal 8% (80M) team, dari hasil ICO, atau dari sumber lain. Tidak ada laporan treasury.
+
+- Apakah BNB yang di-burn (khususnya dari alokasi team/angel yang telah beredar) berarti "burn" mengurangi holding historis para pihak tersebut, atau hanya mengurangi circulating supply — tidak dijelaskan secara eksplisit di BNB Chain Docs Burn (HIGH) [BNB Chain Burn, https://www.bnbchain.org/en/burn].
+
+- Apakah BNB memenuhi definisi "security" per SEC (terkait kasus berjalan) — implikasi legal terhadap tokenomics (misal apakah burn dianggap "pembelian kembali" yang memengaruhi harga) tidak diputuskan final (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2023-131.pdf].
+
+- BEP-336 (Parallel EVM) dan BEP-341 (PBS) adalah proposal yang masih berstatus diskusi/testnet; dampak akhirnya terhadap gas fee burn rate dan distribusi reward staking BNB belum final (MEDIUM) [BNB Chain Forum, https://forum.bnbchain.org/t/bep-336-parallel-evm]; [BNB Chain Forum, https://forum.bnbchain.org/t/bep-341-pbs].
+
+- "Fee discount di Binance Exchange" sering disebut sebagai utilitas BNB, namun Binance telah mengubah kebijakan diskon sejak 2023 (diskon menurun); detail persentase diskon saat ini tidak dipublikasikan transparan oleh BNB Chain Foundation (hanya oleh Binance Exchange) (MEDIUM) [Binance Fee, https://www.binance.com/en/fee/trading].
+
+- Data "top holder concentration" dari BscScan menunjukkan alamat burn terkadang diklasifikasikan sebagai "holder" (karena burn address menyimpan BNB), yang dapat menyesatkan analisis konsentrasi — interpretasi harus hati-hati (LOW) [BscScan Top Holders, https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c].
+
+- Tidak ada mekanisme vote oleh pemegang BNB retail pada Treasury Governance — hanya validator set yang vote; peran BNB Chain Foundation dalam alokasi dana ekosistem tanpa pengawasan on-chain publik (MEDIUM) [BNB Chain Forum Grants, https://forum.bnbchain.org/c/grants].

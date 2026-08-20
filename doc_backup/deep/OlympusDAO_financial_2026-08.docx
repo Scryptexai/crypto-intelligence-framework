@@ -1,0 +1,211 @@
+PROJECT: OlympusDAO
+
+## Funding History
+
+Funding Round: Fair Launch / Bootstrapping
+Date: 2021-03-20
+Amount: 0
+Currency: USD
+Lead Investor: tidak ada (fair launch)
+Participating Investors: tidak ada (fair launch)
+Valuation: tidak diungkap
+Funding Type: Public Sale (fair launch, no pre-sale/pre-mine)
+Status: Completed
+Sources: https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20 (HIGH)
+
+Funding Round: Olympus Pro Revenue / Protocol Revenue
+Date: 2022–sekarang
+Amount: tidak diungkap (kumulatif)
+Currency: USD
+Lead Investor: tidak berlaku (protocol revenue)
+Participating Investors: tidak berlaku
+Valuation: tidak diungkap
+Funding Type: Protocol Revenue / Treasury Injection
+Status: Ongoing
+Sources: https://docs.olympusdao.finance/main/products/olympus-pro (MEDIUM)
+
+Funding Round: Grant Programs
+Date: tidak diketahui
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: tidak diungkap
+Participating Investors: tidak diungkap
+Valuation: tidak diungkap
+Funding Type: Grant
+Status: tidak diketahui
+Sources: https://forum.olympusdao.finance (LOW) [Tidak ada grant program terpublikasi resmi di blog/docs]
+
+---
+
+## Treasury
+
+Current Treasury Size: tidak diungkap (angka real-time hanya on-chain)
+Treasury Composition: Protocol-owned liquidity (POL) berupa reserve assets: DAI, FRAX, USDC, USDT, ETH, wETH, stETH, OHM-DAI LP, OHM-FRAX LP, dan aset bonding Olympus Pro partners
+Stablecoin Holdings: DAI, FRAX, USDC, USDT (proporsi persentase tidak diungkap resmi)
+Native Token Holdings: OHM (treasury memegang supply OHM untuk backing dan operasi), stOHM, gOHM
+Other Assets: ETH, wETH, stETH, LP tokens dari bonding, aset yield strategies (Aave, Curve, Balancer), Olympus Pro partner bonds
+Treasury Custodian: Olympus Treasury Module (smart contract) + Gnosis Safe multi-sig untuk operasi darurat; dikelola oleh Policy contracts dan DAO governance
+Sources: https://docs.olympusdao.finance/main/treasury (HIGH); https://blog.olympusdao.finance/treasury-management (HIGH); https://forum.olympusdao.finance/t/treasury-management/123 (MEDIUM)
+
+---
+
+## Revenue Model
+
+Revenue Stream: Bonding Fees / Discount Revenue
+Description: Protokol memperoleh reserve assets dengan menjual OHM dengan diskon melalui bonds; selisih antara nilai reserve asset dan biaya mint OHM menjadi revenue treasury
+Status: Live
+Sources: https://docs.olympusdao.finance/main/bonding (HIGH)
+
+Revenue Stream: Treasury Yield / Asset Yield
+Description: Aset treasury (stablecoin, ETH, LP tokens) di-deploy ke strategi yield (Aave lending, Curve pools, Balancer, Olympus Pro bonds) menghasilkan return
+Status: Live
+Sources: https://blog.olympusdao.finance/treasury-management (HIGH)
+
+Revenue Stream: Olympus Pro Fees (Bonding-as-a-Service)
+Description: Olympus Pro mengenakan fee pada protokol mitra yang menggunakan layanan bonding untuk mengakuisisi protocol-owned liquidity; fee structure: platform fee + deployment fee
+Status: Live
+Sources: https://docs.olympusdao.finance/main/products/olympus-pro (HIGH); https://blog.olympusdao.finance/olympus-pro-partners (HIGH)
+
+Revenue Stream: Staking Reward Distribution (Recapture)
+Description: Sebagian reward staking yang tidak diklaim atau mekanisme recapture melalui policy dapat mengalir kembali ke treasury (detail teknis di Policy contracts)
+Status: Live
+Sources: https://docs.olympusdao.finance/main/contracts/v3/policy (MEDIUM)
+
+Revenue Stream: Protocol-Owned Liquidity Trading Fees
+Description: LP tokens yang dimiliki treasury di Uniswap/Balancer/Curve menghasilkan trading fees
+Status: Live
+Sources: https://docs.olympusdao.finance/main/treasury (HIGH)
+
+---
+
+## Revenue History
+
+Tidak diungkap. (Tidak ada laporan revenue bulanan/kuartalan resmi yang dipublikasikan; data on-chain tersedia tapi tidak diagregasi ke laporan keuangan periodik)
+Sources: https://blog.olympusdao.finance (LOW) [Blog tidak mempublikasikan revenue history terstruktur]; https://docs.olympusdao.finance (LOW) [Docs tidak menyertakan revenue history]
+
+---
+
+## Fundraising Mechanism
+
+Mechanism: Fair Launch (Bootstrapping)
+Description: Token OHM diluncurkan tanpa pre-sale, private sale, atau VC allocation; supply awal didistribusikan melalui bonding dan staking sejak mainnet launch
+Sources: https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20 (HIGH)
+
+Mechanism: Protocol Revenue (Bonding + Treasury Yield)
+Description: Pendapatan terus-menerus dari aktivitas bonding, yield treasury, dan Olympus Pro fees menjadi sumber dana operasi dan pertumbuhan treasury
+Sources: https://docs.olympusdao.finance/main/treasury (HIGH); https://docs.olympusdao.finance/main/products/olympus-pro (HIGH)
+
+Mechanism: DAO Treasury (Protocol-Owned Liquidity)
+Description: Treasury merupakan protocol-owned liquidity yang tidak dimiliki investor eksternal; DAO mengelola alokasi aset melalui governance
+Sources: https://forum.olympusdao.finance/t/legal-structure-proposal/434 (HIGH)
+
+Mechanism: Grants (jika ada)
+Description: Tidak ada program grant terpublikasi resmi dari foundation atau ecosystem fund
+Sources: https://forum.olympusdao.finance (LOW)
+
+---
+
+## Token Sale
+
+Private Sale: tidak ada
+Public Sale: Fair Launch (Mainnet Launch 2021-03-20)
+Launchpad: tidak ada (langsung via kontrak bonding Olympus)
+Auction: tidak ada
+Community Sale: tidak ada (fair launch terbuka untuk semua)
+Date: 2021-03-20
+Status: Completed
+Sources: https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20 (HIGH)
+Catatan: Tidak ada token sale tradisional; distribusi awal melalui bonding mechanism pada harga yang ditentukan protokol
+
+---
+
+## Financial Dependencies
+
+Dependency: DAO Treasury (Protocol-Owned Liquidity)
+Description: Sumber dana utama adalah treasury yang dikumpulkan melalui bonding dan yield; tidak bergantung pada VC atau investor eksternal
+Sources: https://docs.olympusdao.finance/main/treasury (HIGH)
+
+Dependency: Protocol Revenue (Bonding Fees + Treasury Yield + Olympus Pro Fees)
+Description: Aliran kas operasional dan pertumbuhan treasury bergantung pada volume bonding, performa yield strategies, dan adopsi Olympus Pro
+Sources: https://docs.olympusdao.finance/main/bonding (HIGH); https://docs.olympusdao.finance/main/products/olympus-pro (HIGH)
+
+Dependency: Olympus Pro Partner Adoption
+Description: Revenue Olympus Pro bergantung pada jumlah protokol mitra yang menggunakan bonding-as-a-service dan volume bond mereka
+Sources: https://blog.olympusdao.finance/olympus-pro-partners (HIGH)
+
+Dependency: Market Conditions (Crypto Asset Prices)
+Description: Nilai treasury (denominated dalam USD) fluktuatif mengikuti harga aset reserve (ETH, stablecoin depeg risk, OHM price)
+Sources: https://blog.olympusdao.finance/treasury-management (MEDIUM)
+
+---
+
+## Financial Risk
+
+Risk: Treasury Concentration Risk
+Description: Treasury terpusat pada stablecoin (DAI, FRAX, USDC) dan ETH/stETH; depeg stablecoin atau crash ETH mengurangi backing per OHM
+Source: https://docs.olympusdao.finance/main/treasury (HIGH); https://forum.olympusdao.finance/t/treasury-management/123 (MEDIUM)
+
+Risk: Revenue Decline (Bonding Volume Dependency)
+Description: Revenue bonding bergantung pada permintaan OHM; bear market mengurangi volume bonding dan revenue treasury
+Source: https://docs.olympusdao.finance/main/bonding (HIGH); https://blog.olympusdao.finance/treasury-management (MEDIUM)
+
+Risk: Olympus Pro Adoption Risk
+Description: Jika protokol mitra tidak mengadopsi Olympus Pro atau migrasi ke solusi POL lain, revenue stream Olympus Pro menurun
+Source: https://docs.olympusdao.finance/main/products/olympus-pro (MEDIUM)
+
+Risk: Smart Contract / Oracle Risk (Financial Impact)
+Description: Eksploit kontrak bonding/treasury/oracle Chainlink dapat menguras treasury; audit telah dilakukan tapi residual risk ada
+Source: https://github.com/OlympusDAO/olympus-v3/tree/main/audits (HIGH) [Multiple audit reports]
+
+Risk: Governance / Upgradeability Risk
+Description: Malicious upgrade melalui governance/timelock/guardian compromise dapat mengubah parameter treasury atau mint OHM tidak terbatas
+Source: https://docs.olympusdao.finance/main/contracts/v3/kernel (HIGH); https://docs.olympusdao.finance/main/governance (HIGH)
+
+Risk: Regulatory / Legal Structure Risk
+Description: Yayasan Cayman Islands menyediakan legal wrapper; perubahan regulasi DAO/token di jurisdiksi utama (US, EU) dapat mempengaruhi operasi treasury
+Source: https://forum.olympusdao.finance/t/legal-structure-proposal/434 (MEDIUM)
+
+Risk: Liquidity Fragmentation Across Chains
+Description: Treasury dan liquidity terpisah per chain (Ethereum, Arbitrum, Base); tidak ada unified treasury cross-chain mengurangi efisiensi kapital
+Source: https://docs.olympusdao.finance/main/networks (HIGH); https://blog.olympusdao.finance/olympus-v3 (HIGH)
+
+---
+
+## Official Financial Resources
+
+Official Blog: https://blog.olympusdao.finance
+Transparency Report: tidak diungkap (tidak ada laporan transparansi keuangan periodik resmi)
+Treasury Dashboard: tidak diungkap (tidak ada dashboard treasury resmi terpusat; data on-chain via Etherscan/Arbiscan/Basescan)
+Governance Forum: https://forum.olympusdao.finance
+Messari: https://messari.io/project/olympus-dao
+Token Terminal: https://tokenterminal.com/projects/olympus
+DefiLlama: https://defillama.com/protocol/olympus
+CryptoRank: https://cryptorank.io/price/olympus-dao
+Whitepaper: https://docs.olympusdao.finance/main/whitepaper
+GitHub Treasury Contracts: https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/treasury
+Olympus Pro Docs: https://docs.olympusdao.finance/main/products/olympus-pro
+
+---
+
+### RINGKASAN
+
+Total Funding Raised: $0 (fair launch, no VC/private sale)
+Funding Rounds: 1 (Fair Launch 2021-03-20) + ongoing protocol revenue
+Treasury Status: Protocol-owned liquidity (POL) model; size tidak diungkap resmi; komposisi: stablecoin, ETH/stETH, LP tokens, partner bonds
+Revenue Sources: Bonding fees/discount revenue, Treasury yield (DeFi strategies), Olympus Pro fees, LP trading fees, Staking recapture
+Revenue Availability: Tidak diungkap (tidak ada laporan revenue history periodik resmi)
+
+---
+
+Open Threads
+
+- Ukuran treasury real-time (USD) — hanya bisa dikueri on-chain per chain (Ethereum, Arbitrum, Base) tapi tidak ada agregasi resmi
+- Breakdown persentase komposisi treasury per aset (DAI vs FRAX vs USDC vs ETH vs LP) — tidak dipublikasikan secara periodik
+- Revenue bulanan/kuartalan dari bonding, Olympus Pro, treasury yield — tidak ada laporan keuangan terstruktur
+- Fee structure detail Olympus Pro (platform fee %, deployment fee) — docs menyeadakan fee ada tapi tidak spesifik angka
+- Apakah ada grant dari ecosystem fund (Ethereum Foundation, Arbitrum Foundation, Base Ecosystem Fund) — tidak terpublikasi
+- Status multi-sig treasury (jumlah signer, threshold) — hanya diketahui "Gnosis Safe" tanpa detail
+- Apakah treasury memiliki hutang/leverage (lending OHM sebagai collateral) — tidak terdokumentasi
+- Runway operasional DAO (gaji kontributor, infrastruktur, legal) — tidak diungkap
+- Audited financial statements (jika ada) — tidak tersedia publik
+- Cross-chain treasury unification roadmap — V3 "multi-chain native" tapi treasury per chain terpisah; tidak ada rencana konsolidasi resmi

@@ -1,0 +1,388 @@
+PROJECT: OlympusDAO
+
+Strategic Objectives
+
+1. Membangun reserve currency terdesentralisasi yang didukung protocol-owned liquidity (POL)
+· Evidence: Whitepaper dan V1 launch memposisikan OHM sebagai "decentralized reserve currency" backed by treasury assets (DAI, FRAX, ETH, LP tokens) bukan fiat collateral (HIGH) [https://docs.olympusdao.finance/main/whitepaper, https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20]
+· Supporting Dataset: Phase 1 Launch Date, Phase 3 EV-002, Phase 6 Utility
+
+2. Mengeliminasi ketergantungan pada liquidity mining mercenary melalui bonding mechanism
+· Evidence: Bonding memungkinkan protokol mengakuisisi liquidity milik sendiri (POL) dengan menjual OHM diskon gegen reserve assets, menghapus kebutuhan reward token untuk LP mercenary (HIGH) [https://docs.olympusdao.finance/main/bonding, https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20]
+· Supporting Dataset: Phase 3 EV-002, Phase 4 Core Components Bonding Module, Phase 6 Utility Bonding
+
+3. Membuat Olympus Pro sebagai bonding-as-a-service untuk protokol lain mengakuisisi POL
+· Evidence: Olympus Pro diluncurkan 2022 memungkinkan Frax, Lido, Tokemak, Rari menggunakan Olympus bonds untuk POL acquisition, memperluas revenue stream dan ekosistem (HIGH) [https://blog.olympusdao.finance/olympus-pro-partners, https://docs.olympusdao.finance/main/products/olympus-pro]
+· Supporting Dataset: Phase 3 EV-006, EV-009, Phase 7 Major Integrations
+
+4. Mencapai desentralisasi progresif melalui DAO governance dengan gOHM voting power
+· Evidence: gOHM (non-rebasing wrapped stOHM) digunakan untuk token-weighted voting on-chain; proposal threshold, quorum, timelock executor; Cayman Islands foundation sebagai legal wrapper (HIGH) [https://docs.olympusdao.finance/main/governance, https://forum.olympusdao.finance/t/legal-structure-proposal/434]
+· Supporting Dataset: Phase 2 DAO & Foundation entities, Phase 3 EV-004, EV-005, Phase 6 Governance
+
+5. Ekspansi multi-chain untuk mengurangi gas cost dan menjangkau user base baru
+· Evidence: Deployment deterministik V3 ke Arbitrum (2022) dan Base (2023) dengan kontrak identik; arsitektur "multi-chain native" (HIGH) [https://blog.olympusdao.finance/olympus-v3, https://docs.olympusdao.finance/main/networks]
+· Supporting Dataset: Phase 3 EV-007, EV-010, Phase 4 Technical Upgrade History
+
+Decision Timeline
+
+Keputusan: Fair Launch OHM tanpa pre-sale/private sale/VC allocation (2021-03-20)
+· Trigger: Visi founder (Zeus, War1, Juan) untuk reserve currency yang benar-benar terdesentralisasi dan community-owned sejak hari pertama
+· Evidence: Blog launch menyatakan "fair launch, no pre-sale, no pre-mine" (HIGH) [https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20]
+· Decision: Deploy kontrak OHM, bonding, staking langsung ke mainnet Ethereum; distribusi 100% via bonding dan staking terbuka
+· Immediate Result: Token OHM beredar, treasury mulai mengakumulasi reserve assets via bonding, tidak ada investor eksternal yang memegang supply
+· Long-term Impact: Menghindari tekanan jual early investor, menciptakan distribusi community-wide, namun memperlambat kapital awal vs VC-backed protocols
+· Supporting Dataset: Phase 1 Launch Date/TGE, Phase 3 EV-002, Phase 5 Funding History, Phase 6 TGE
+
+Keputusan: Arsitektur modular V2 dengan stOHM dan gOHM (2021-07)
+· Trigger: V1 monolithic contracts sulit di-upgrade, rebasing OHM tidak kompatibel DeFi, governance butuh non-rebasing token
+· Evidence: Blog V2 announcement menjelaskan modularisasi bonding, staking, treasury, governance, policy; pengenalan stOHM (rebasing) dan gOHM (non-rebasing governance wrapper) (HIGH) [https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a]
+· Decision: Migrasi ke kontrak modular terpisah dengan proxy upgradeability; stOHM untuk reward distribution, gOHM untuk governance/DeFi composability
+· Immediate Result: Protokol lebih fleksibel, gOHM enable integrasi Aave/Curve/Balancer, stOHM handle rebasing secara terpisah
+· Long-term Impact: Menjadi template dual-token model (rebasing + wrapped) yang diadopsi protokol lain; mempersiapkan fondasi untuk V3 kernel architecture
+· Supporting Dataset: Phase 3 EV-003, EV-005, Phase 4 Technical Upgrade History, Phase 6 Major Token Events
+
+Keputusan: Pendirian Yayasan Cayman Islands sebagai legal wrapper (2021)
+· Trigger: Perlu entitas hukum untuk hold IP, sign contracts, manage compliance, represent DAO di jurisdiksi hukum
+· Evidence: Forum proposal legal structure disetujui komunitas; yayasan Cayman Islands dipilih untuk regulatory clarity (HIGH) [https://forum.olympusdao.finance/t/legal-structure-proposal/434]
+· Decision: Membentuk Olympus DAO (Cayman Islands foundation) sebagai legal entity resmi protokol
+· Immediate Result: DAO memiliki legal wrapper untuk operasi off-chain, treasury management, partnership kontrak
+· Long-term Impact: Menyediakan kerangka compliance; namun foundation structure menimbulkan pertanyaan accountable control vs DAO sovereignty
+· Supporting Dataset: Phase 2 Foundation entity, Phase 3 EV-004, Phase 7 Governance Ecosystem
+
+Keputusan: Launch Olympus Pro sebagai Bonding-as-a-Service (2022)
+· Trigger: Permintaan protokol lain (Frax, Lido, dll) untuk mengakuisisi POL tanpa build bonding infrastructure sendiri; peluang revenue stream baru
+· Evidence: Blog Olympus Pro partners mengumumkan 4 partner launch; docs menjelaskan Olympus Pro sebagai BaaS platform (HIGH) [https://blog.olympusdao.finance/olympus-pro-partners, https://docs.olympusdao.finance/main/products/olympus-pro]
+· Decision: Build contract suite terpisah (olympus-pro-contracts) dengan factory pattern untuk partner bond markets; fee structure platform + deployment fee
+· Immediate Result: Frax, Lido, Tokemak, Rari mulai menggunakan Olympus bonds untuk POL acquisition; revenue stream baru bagi Olympus treasury
+· Long-term Impact: Memposisikan Olympus sebagai infrastructure layer untuk POL acquisition; menciptakan flywheel: more partners → more POL → stronger treasury → better OHM backing
+· Supporting Dataset: Phase 3 EV-006, EV-009, Phase 4 Core Components Olympus Pro, Phase 5 Revenue Model, Phase 7 Major Integrations
+
+Keputusan: Migration ke V3 Kernel Architecture (2022)
+· Trigger: V2 modular tapi masih rigid; butuh policy-as-module, native multi-chain support, gas optimization, Olympus Pro integration yang lebih dalam
+· Evidence: Blog V3 announcement menjelaskan kernel-based architecture, policy modules, deterministic deployment across chains (HIGH) [https://blog.olympusdao.finance/olympus-v3, https://docs.olympusdao.finance/main/contracts/v3]
+· Decision: Rewrite penuh ke kernel-based modular architecture; Kernel coordinator manages module registration/authorization; Policy modules configurable per chain
+· Immediate Result: Deployment deterministik ke Arbitrum dan Base dengan kontrak identik; gas optimization; policy flexibility
+· Long-term Impact: Memungkinkan parallel deployment di EVM chains tanpa custom code per chain; namun treasury dan liquidity tetap terfragmentasi per chain (no unified cross-chain treasury)
+· Supporting Dataset: Phase 3 EV-008, Phase 4 Technical Upgrade History, Phase 4 System Architecture, Phase 7 Ecosystem Risks
+
+Keputusan: Deployment ke Arbitrum (2022) dan Base (2023)
+· Trigger: Ethereum L1 gas cost tinggi membatasi user adoption; Arbitrum menawarkan L2 scaling, Base memberikan akses ekosistem Coinbase/retail
+· Evidence: Arbiscan/Basescan contract verification; docs networks page list 3 chain deployments (HIGH) [https://arbiscan.io/token/0x64aa, https://basescan.org/token/0x8662, https://docs.olympusdao.finance/main/networks]
+· Decision: Full V3 deployment deterministik ke Arbitrum One (2022) dan Base Mainnet (2023)
+· Immediate Result: OHM/stOHM/gOHM/bonding/staking tersedia di 3 chain dengan biaya gas jauh lebih rendah di L2
+· Long-term Impact: Fragmentasi liquidity dan treasury per chain (isolated); no native cross-chain OHM transfer; user base expansion di Base via Coinbase ecosystem
+· Supporting Dataset: Phase 3 EV-007, EV-010, Phase 4 Technical Upgrade History, Phase 7 External Dependencies
+
+Evolution Pattern
+
+Perubahan Strategi: Dari Reserve Currency Tunggal → Infrastructure Layer (Olympus Pro)
+· Early phase (2021): Fokus ekslusif pada OHM sebagai reserve currency, bonding & staking untuk treasury growth sendiri
+· Pivot (2022): Olympus Pro meluaskan scope jadi BaaS provider; protokol lain menjadi customer, Olympus jadi infrastructure
+· Evidence: EV-002 (launch OHM) vs EV-006/009 (Olympus Pro launch + partners); Phase 7 Major Integrations menunjukkan partner protokol mayor menggunakan Olympus bonds
+· Driver: Realisasi bahwa bonding mechanism scalable ke protokol lain; revenue diversification beyond OHM bonding alone
+
+Perubahan Teknologi: Monolithic (V1) → Modular (V2) → Kernel-based Multi-chain (V3)
+· V1 (2021-03): Single deployment, monolithic contracts, OHM rebasing langsung
+· V2 (2021-07): Modular contracts (Bonding, Staking, Treasury, Governance, Policy), proxy upgradeability, stOHM/gOHM dual token
+· V3 (2022): Kernel coordinator, policy-as-module, deterministic multi-chain deployment, Olympus Pro native integration
+· Evidence: Phase 4 Technical Upgrade History, Phase 3 EV-002, EV-003, EV-008; Phase 4 System Architecture
+· Driver: Kebutuhan upgradeability, DeFi composability (gOHM), multi-chain scaling, partner integration flexibility
+
+Perubahan Tokenomics: OHM Rebasing Tunggal → Dual Token (stOHM/gOHM) → Multi-chain Supply Isolation
+· V1: OHM rebasing langsung, tidak kompatibel DeFi standard
+· V2: stOHM (rebasing reward) + gOHM (non-rebasing governance/DeFi wrapper) — supply terpisah per fungsi
+· V3 Multi-chain: Supply OHM/stOHM/gOHM terisolasi per chain (Ethereum, Arbitrum, Base) — no unified supply, no cross-chain rebase sync
+· Evidence: Phase 6 Token Information, Supply, Major Token Events; Phase 4 Known Technical Limitations (no native cross-chain messaging)
+· Driver: DeFi composability requirement (gOHM), multi-chain deployment pragmatism (deterministic addresses per chain)
+
+Perubahan Governance: Founder-led → DAO Governance dengan Legal Wrapper
+· 2021: Founder team (Zeus, War1, Juan) drive development, parameter setting
+· 2021 (mid): Cayman Islands foundation formed (EV-004), gOHM launched (EV-005) enabling token-weighted voting
+· 2022+: On-chain governance module live; proposals via Forum → on-chain vote → timelock execution; Guardian multi-sig untuk emergency
+· Evidence: Phase 2 DAO & Foundation entities, Phase 3 EV-004, EV-005, Phase 6 Governance, Phase 7 Governance Ecosystem
+· Driver: Regulatory compliance need (legal entity), community decentralization pressure, security (guardian pause)
+
+Perubahan Finansial: Bootstrapped Treasury → Multi-stream Revenue (Bonding + Yield + Olympus Pro Fees)
+· 2021: Revenue hanya dari bonding discount (treasury acquires assets below OHM mint cost)
+· 2022+: Treasury yield strategies (Aave, Curve, Balancer) + Olympus Pro platform fees + LP trading fees
+· Evidence: Phase 5 Revenue Model (4 streams), Phase 3 EV-006 (Olympus Pro), Phase 4 Treasury Module
+· Driver: Treasury diversification, sustainable revenue beyond bonding volume (yang cyclical dengan market), partner flywheel
+
+Technical Decision Pattern
+
+Pola 1: Ethereum Alignment First — Deploy ke Ethereum L1 dulu, L2 sebagai ekspansi bukan pengganti
+· Decision Pattern: Semua major version (V1, V2, V3) launch di Ethereum mainnet terlebih dahulu; Arbitrum/Base deployment mengikuti setelah V3 siap multi-chain
+· Evidence: V1 launch 2021-03-20 Ethereum (EV-002); V2 2021-07 Ethereum (EV-003); V3 2022 Ethereum (EV-008) lalu Arbitrum (EV-007) dan Base (EV-010) — urutan konsisten L1 first (HIGH) [https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20, https://blog.olympusdao.finance/olympus-v3, https://docs.olympusdao.finance/main/networks]
+· Supporting Dataset: Phase 3 EV-002, EV-003, EV-007, EV-008, EV-010; Phase 4 System Architecture, Technical Upgrade History
+
+Pola 2: Modular Architecture dengan Proxy Upgradeability — Setiap upgrade besar memperkenalkan modularitas lebih dalam
+· Decision Pattern: V1 monolithic → V2 modular contracts (5 modules) → V3 kernel-based (policy-as-module, dynamic module registration); semua menggunakan OpenZeppelin TransparentUpgradeableProxy
+· Evidence: Blog V2/V3 menjelaskan arsitektur modular; GitHub contracts structure shows Kernel, Policy, Bonding, Staking, Treasury, Governance modules terpisah (HIGH) [https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a, https://blog.olympusdao.finance/olympus-v3, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts]
+· Supporting Dataset: Phase 3 EV-003, EV-008; Phase 4 Core Components, Technical Upgrade History, Security Model
+
+Pola 3: Deterministic Deployment untuk Multi-chain Parity — Kontrak identik di semua chain via CREATE2/deterministic deployer
+· Decision Pattern: Arbitrum dan Base deployment menggunakan alamat kontrak yang sama dengan Ethereum mainnet; memastikan kode identik, memudahkan integration, audit parity
+· Evidence: Docs networks page menunjukkan contract addresses yang mirip pola (0x3835... Ethereum, 0x64aa... Arbitrum, 0x8662... Base); blog V3 menyebut "deterministic deployment" (HIGH) [https://docs.olympusdao.finance/main/networks, https://blog.olympusdao.finance/olympus-v3, https://arbiscan.io/token/0x64aa, https://basescan.org/token/0x8662]
+· Supporting Dataset: Phase 3 EV-007, EV-010; Phase 4 Technical Upgrade History, System Architecture
+
+Pola 4: Dual Token Model untuk Rebasing + Composability — stOHM handle rebasing, gOHM non-rebasing untuk governance/DeFi
+· Decision Pattern: Tidak memaksa rebasing token ke DeFi primitives; membuat wrapper non-rebasing (gOHM) yang fixed balance, kompatibel ERC-20 standard
+· Evidence: V2 introduction stOHM/gOHM (EV-003, EV-005); docs menjelaskan gOHM untuk Aave/Curve/Balancer integration; stOHM untuk reward distribution (HIGH) [https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a, https://docs.olympusdao.finance/main/staking, https://docs.olympusdao.finance/main/governance/gohm]
+· Supporting Dataset: Phase 3 EV-003, EV-005; Phase 4 Core Components stOHM/gOHM; Phase 6 Utility Governance, Staking, Collateral
+
+Pola 5: Oracle Dependency Tunggal (Chainlink) dengan TWAP untuk Bonding Pricing
+· Decision Pattern: Mengandalkan Chainlink price feeds untuk semua reserve asset valuation; bonding pricing menggunakan TWAP (time-weighted average price) untuk anti-manipulasi
+· Evidence: Oracle contracts di GitHub menggunakan Chainlink AggregatorV3Interface; docs menyebut Chainlink untuk bonding pricing dan treasury valuation (HIGH) [https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/oracles, https://docs.olympusdao.finance/main/contracts/oracles]
+· Supporting Dataset: Phase 4 Core Components Oracle Integration, Security Model; Phase 7 External Dependencies Chainlink, Ecosystem Risks Single Infrastructure Dependency
+
+Pola 6: Guardian Multi-sig untuk Emergency Pause — Upgradeability via DAO timelock, tapi emergency response via guardian
+· Decision Pattern: Kernel contract memiliki guardian role (Gnosis Safe) yang dapat pause bonding/staking modules immediately; governance upgrade melalui timelock 2+ hari
+· Evidence: Kernel.sol guardian role; docs emergency page menjelaskan guardian pause; Gnosis Safe untuk treasury multi-sig (HIGH) [https://github.com/OlympusDAO/olympus-v3/blob/main/contracts/Kernel.sol, https://docs.olympusdao.finance/main/security/emergency, https://docs.olympusdao.finance/main/treasury]
+· Supporting Dataset: Phase 4 Security Model, Core Components Kernel; Phase 7 Infrastructure Providers Gnosis Safe, Ecosystem Risks Centralization Risk
+
+Financial Decision Pattern
+
+Pola 1: Zero External Funding — Fair Launch Bootstrap, No VC/Private Sale
+· Decision Pattern: Tidak menerima dana VC, private sale, atau investor allocation; 100% distribusi via bonding/staking publik sejak TGE
+· Evidence: Blog launch "fair launch, no pre-sale, no pre-mine"; Phase 5 Funding History hanya 1 round "Fair Launch / Bootstrapping" amount $0; Phase 6 Distribution tidak ada investor category (HIGH) [https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20, Phase 5 Funding History, Phase 6 Distribution]
+· Supporting Dataset: Phase 1 Launch/TGE, Phase 3 EV-002, Phase 5 Funding History, Phase 6 TGE/Distribution
+
+Pola 2: Protocol-Owned Liquidity sebagai Treasury Utama — Treasury = POL, bukan war chest dari fundraising
+· Decision Pattern: Treasury dibangun sepenuhnya dari bonding revenue (reserve assets dikumpulkan via bond sales) + yield strategies; tidak ada capital injection eksternal
+· Evidence: Phase 5 Treasury Composition: "Protocol-owned liquidity (POL) berupa reserve assets"; Revenue Model: Bonding Fees, Treasury Yield, Olympus Pro Fees; Phase 6 Utility Treasury Backing (HIGH) [https://docs.olympusdao.finance/main/treasury, https://blog.olympusdao.finance/treasury-management]
+· Supporting Dataset: Phase 3 EV-002 (bonding live at launch), Phase 4 Treasury Module, Phase 5 Treasury/Revenue Model, Phase 6 Utility Treasury Backing
+
+Pola 3: Revenue Diversification via Olympus Pro Fees — Menambah revenue stream beyond own bonding volume
+· Decision Pattern: Launch Olympus Pro (2022) untuk capture fees dari partner protokol bonding; platform fee + deployment fee structure
+· Evidence: Phase 5 Revenue Model "Olympus Pro Fees (Bonding-as-a-Service)"; Phase 3 EV-006, EV-009; Phase 7 Major Integrations 4 partners launch (HIGH) [https://docs.olympusdao.finance/main/products/olympus-pro, https://blog.olympusdao.finance/olympus-pro-partners]
+· Supporting Dataset: Phase 3 EV-006, EV-009; Phase 5 Revenue Model, Financial Dependencies; Phase 7 Major Integrations
+
+Pola 4: Treasury Yield Deployment ke DeFi Blue Chips — Aave, Curve, Balancer untuk sustainable yield
+· Decision Pattern: Treasury stablecoin/ETH reserves di-deploy ke lending (Aave) dan AMM (Curve, Balancer) untuk yield; bukan hold idle
+· Evidence: Phase 5 Revenue Model "Treasury Yield / Asset Yield" menyebut Aave, Curve, Balancer; Blog treasury management (HIGH) [https://blog.olympusdao.finance/treasury-management, https://docs.olympusdao.finance/main/treasury]
+· Supporting Dataset: Phase 5 Revenue Model, Financial Dependencies; Phase 7 Major Integrations Treasury + Aave/Curve/Balancer
+
+Pola 5: No Fixed Budget / Runway Disclosure — Operasional DAO funded from treasury via governance proposals, tidak ada financial statement periodik
+· Decision Pattern: Tidak mempublikasikan runway, gaji kontributor, budget opsional; dana keluar via governance proposal per-case
+· Evidence: Phase 5 Financial Dependencies "DAO Treasury" sebagai sumber dana; Open Threads "Runway operasional DAO tidak diungkap"; Phase 7 Grant Program "tidak diketahui" (MEDIUM) [Phase 5 Financial Dependencies, Phase 5 Open Threads, Phase 7 Developer Ecosystem Grant Program]
+· Supporting Dataset: Phase 5 Financial Dependencies, Open Threads; Phase 7 Grant Program
+
+Ecosystem Decision Pattern
+
+Pola 1: Partner dengan Protokol Blue Chip untuk Olympus Pro — Frax, Lido, Tokemak sebagai launch partners
+· Decision Pattern: Memilih protokol dengan TVL besar, product-market fit jelas, dan butuh POL acquisition (stablecoin Frax, liquid staking Lido, liquidity directing Tokemak)
+· Evidence: Blog Olympus Pro partners anuncia 4 partner; masing-masing protokol mayor di kategorinya (HIGH) [https://blog.olympusdao.finance/olympus-pro-partners, https://blog.frax.finance/olympus-pro-partnership, https://blog.lido.fi/olympus-pro, https://blog.tokemak.xyz/olympus-pro]
+· Supporting Dataset: Phase 3 EV-009; Phase 7 Major Integrations Olympus Pro + Frax/Lido/Tokemak/Rari
+
+Pola 2: Integrasi DeFi via gOHM Wrapper — Tidak memaksa rebasing token, buat wrapper non-rebasing untuk composability
+· Decision Pattern: gOHM.enable integrasi ke Aave (collateral), Curve (pools/gauge), Balancer (pools) — protokol DeFi blue chip yang butuh ERC-20 standard non-rebasing
+· Evidence: Phase 6 Utility Collateral via gOHM; Phase 7 Major Integrations gOHM + Aave/Curve/Balancer; Blog gOHM launch (HIGH) [https://blog.olympusdao.finance/gohm-launch, https://docs.olympusdao.finance/main/governance/gohm]
+· Supporting Dataset: Phase 3 EV-005; Phase 6 Utility Governance, Collateral; Phase 7 Major Integrations gOHM + Aave/Curve/Balancer
+
+Pola 3: Multi-chain Expansion ke L2 dengan Ecosystem Alignment — Arbitrum (DeFi native), Base (Coinbase retail)
+· Decision Pattern: Pilih L2 yang punya narrative alignment: Arbitrum untuk DeFi power users, Base untuk Coinbase ecosystem access; bukan deploy ke semua L2
+· Evidence: Phase 3 EV-007 Arbitrum, EV-010 Base; Docs networks hanya 3 chain; Blog V3 "multi-chain native" tapi hanya 2 L2 terpilih (HIGH) [https://docs.olympusdao.finance/main/networks, https://blog.olympusdao.finance/olympus-v3]
+· Supporting Dataset: Phase 3 EV-007, EV-010; Phase 4 Technical Upgrade History; Phase 7 External Dependencies Arbitrum/Base, Infrastructure Providers
+
+Pola 4: Infrastructure Dependencies pada Battle-tested Primitives — OpenZeppelin, Chainlink, Gnosis Safe, The Graph
+· Decision Pattern: Menggunakan standar industri untuk komponen kritis: proxy (OpenZeppelin), oracle (Chainlink), multisig (Gnosis Safe), indexing (The Graph) — tidak build from scratch
+· Evidence: Phase 4 Security Model, Current Technical Stack; Phase 7 External Dependencies 19 items — mostly battle-tested infra (HIGH) [Phase 4 Security Model, Current Technical Stack; Phase 7 External Dependencies]
+· Supporting Dataset: Phase 4 Security Model, Current Technical Stack; Phase 7 External Dependencies, Infrastructure Providers
+
+Pola 5: No Native Cross-chain Bridge — Isolated deployments per chain, user bridging via third-party
+· Decision Pattern: V3 "multi-chain native" tapi tidak build native bridge OHM/stOHM/gOHM; liquidity & treasury terisolasi per chain; user pakai LayerZero/Wormhole/CEX
+· Evidence: Phase 4 Known Technical Limitations "No native cross-chain messaging"; Phase 7 Ecosystem Risks Bridge Dependency; Phase 8 Liquidity Bridge Liquidity (HIGH) [Phase 4 Known Technical Limitations; Phase 7 Ecosystem Risks Bridge Dependency; Phase 8 Liquidity]
+· Supporting Dataset: Phase 4 Known Technical Limitations; Phase 7 Ecosystem Risks, External Dependencies; Phase 8 Liquidity
+
+Governance Decision Pattern
+
+Pola 1: Token-weighted Voting via gOHM — 1 gOHM = 1 vote, non-rebasing fixed balance
+· Decision Pattern: Governance power tied to gOHM holdings (wrapped staked OHM); snapshot at proposal block; delegation supported
+· Evidence: Phase 6 Governance model; Phase 4 Governance Module; Phase 7 Governance Ecosystem DAO (HIGH) [https://docs.olympusdao.finance/main/governance, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/governance]
+· Supporting Dataset: Phase 3 EV-005 (gOHM launch); Phase 4 Governance Module; Phase 6 Governance; Phase 7 Governance Ecosystem
+
+Pola 2: Proposal Process: Forum Discussion → On-chain Vote → Timelock Execution
+· Decision Pattern: Off-chain signaling di Olympus DAO Forum (discourse), lalu on-chain proposal via Governance Module, voting period, timelock 2+ hari sebelum eksekusi
+· Evidence: Phase 6 Governance Proposal System; Phase 7 Governance Ecosystem Forum + Snapshot integration (HIGH) [https://docs.olympusdao.finance/main/governance, https://forum.olympusdao.finance]
+· Supporting Dataset: Phase 3 EV-004 (legal structure proposal di forum), EV-005 (gOHM enable governance); Phase 6 Governance; Phase 7 Governance Ecosystem, Major Integrations Snapshot
+
+Pola 3: Guardian Multi-sig untuk Emergency Override — Bypass timelock untuk security incidents
+· Decision Pattern: Guardian role (Gnosis Safe) dapat pause bonding/staking modules immediately; tidak perlu menunggu governance timelock
+· Evidence: Phase 4 Security Model Emergency Circuit Breaker; Phase 7 Governance Ecosystem Guardian Multi-sig Committee (HIGH) [https://docs.olympusdao.finance/main/security/emergency, https://github.com/OlympusDAO/olympus-v3/blob/main/contracts/Kernel.sol]
+· Supporting Dataset: Phase 4 Security Model, Core Components Kernel; Phase 7 Governance Ecosystem Committee Guardian Multi-sig
+
+Pola 4: Policy Module Governance — Parameter bonding, reward rate, vesting dikendalikan Policy contracts yang di-govern DAO
+· Decision Pattern: Policy contracts manage bonding capacity, discount rates, vesting terms, reward rates; DAO dapat mengubah via governance proposal
+· Evidence: Phase 4 Core Components Policy Module; Phase 6 Inflation/Deflation Reward rate controlled by Policy; Phase 7 Governance Ecosystem Policy Committee implied (HIGH) [https://docs.olympusdao.finance/main/contracts/v3/policy, https://docs.olympusdao.finance/main/staking]
+· Supporting Dataset: Phase 4 Core Components Policy Module; Phase 6 Inflation/Deflation; Phase 7 Governance Ecosystem
+
+Pola 5: Legal Wrapper (Cayman Foundation) untuk DAO Compliance — Foundation holds IP, signs contracts, DAO governs protocol
+· Decision Pattern: Pisah legal entity (foundation) dari governance DAO; foundation sebagai legal representative, DAO sebagai protocol governor
+· Evidence: Phase 2 Foundation entity; Phase 3 EV-004 Legal Structure Proposal; Phase 7 Governance Ecosystem Foundation (HIGH) [https://forum.olympusdao.finance/t/legal-structure-proposal/434, https://docs.olympusdao.finance/main/legal]
+· Supporting Dataset: Phase 2 Foundation; Phase 3 EV-004; Phase 7 Governance Ecosystem Foundation
+
+Risk Response Pattern
+
+Pola 1: Emergency Pause via Guardian Multi-sig untuk Security Incidents
+· Trigger: Smart contract vulnerability, oracle manipulation, abnormal bonding/staking activity detected
+· Evidence: Phase 4 Security Model Emergency Circuit Breaker "Guardian role can pause bonding/staking modules"; Kernel.sol guardian role (HIGH) [https://docs.olympusdao.finance/main/security/emergency, https://github.com/OlympusDAO/olympus-v3/blob/main/contracts/Kernel.sol]
+· Response: Guardian multi-sig (Gnosis Safe) memanggil pause() pada module terpengaruh (Bonding/Staking/Treasury) — immediate effect, no timelock delay
+· Result: Menghentikan kerusakan lebih lanjut (drain treasury, mint OHM tidak terbatas) sambil DAO menyiapkan upgrade/fix via governance
+· Supporting Dataset: Phase 4 Security Model, Core Components Kernel; Phase 7 Governance Ecosystem Guardian Committee, Ecosystem Risks Centralization Risk
+
+Pola 2: Audit Berulang Sebelum Setiap Major Release — 6 audit completed untuk V2, V3, Pro
+· Trigger: Major architecture changes (V2 modular, V3 kernel, Pro factory) menimbulkan attack surface baru
+· Evidence: Phase 4 Audit History 6 audits: PeckShield (V2 pre-launch), Omniscia (V3 core), Trail of Bits (V3 bonding/policy), Sigma Prime (Pro), Code4Arena (V3 multi-chain), Spearbit (V3 governance/gOHM) (HIGH) [https://github.com/OlympusDAO/olympus-v3/tree/main/audits, https://github.com/OlympusDAO/olympus-pro-contracts/tree/main/audits]
+· Response: Mandatory audit sebelum deployment; findings remediated pre-launch; competitive audit (Code4Arena) untuk V3 multi-chain
+· Result: Tidak ada major exploit tercatat di mainnet pasca-V2/V3/Pro launch; audit reports published transparan
+· Supporting Dataset: Phase 4 Audit History; Phase 3 EV-003, EV-006, EV-008
+
+Pola 3: Parameter Adjustment via Governance untuk Market Conditions — Bonding capacity, discount rate, reward rate dinamis
+· Trigger: Market crash (bonding volume drop), OHM price deviation dari backing, treasury composition shift
+· Evidence: Phase 4 Policy Module "configurable logic for bonding capacity, discount rates, vesting terms"; Phase 6 Inflation Mechanism "reward rate dikendalikan Policy contract dan dapat diubah via governance" (HIGH) [https://docs.olympusdao.finance/main/contracts/v3/policy, https://docs.olympusdao.finance/main/staking]
+· Response: DAO proposal mengubah Policy parameters: kurangi reward rate (lower inflation), adjust bonding capacity/discount, rebalance treasury allocation
+· Result: Protokol adaptif ke kondisi pasar tanpa upgrade kontrak; namun governance lag (timelock 2+ hari) memperlambat respons
+· Supporting Dataset: Phase 4 Core Components Policy Module; Phase 6 Inflation/Deflation; Phase 7 Ecosystem Risks Governance Timelock Delay
+
+Pola 4: Treasury Diversification untuk Stablecoin Depeg Risk — Hold multiple stablecoins (DAI, FRAX, USDC, USDT) + ETH/stETH + LP tokens
+· Trigger: Stablecoin depeg risk (UST 2022, USDC 2023); single asset concentration risk
+· Evidence: Phase 5 Treasury Composition "DAI, FRAX, USDC, USDT, ETH, wETH, stETH, OHM-DAI LP, OHM-FRAX LP"; Phase 7 Major Integrations Treasury + Aave/Curve/Balancer yield strategies (HIGH) [https://docs.olympusdao.finance/main/treasury, https://blog.olympusdao.finance/treasury-management]
+· Response: Allocate treasury across multiple stablecoins, native ETH/stETH, dan LP positions; yield strategies di multiple protokol
+· Result: Mengurangi single-asset dependency; namun FRAX exposure signifikan (partner Olympus Pro) menciptakan correlated risk
+· Supporting Dataset: Phase 5 Treasury Composition, Financial Risk Treasury Concentration; Phase 7 Major Integrations Treasury Yield Strategies
+
+Pola 5: Multi-chain Deployment sebagai Risk Mitigation untuk L1 Congestion/High Gas
+· Trigger: Ethereum L1 gas spikes membuat bonding/staking mahal untuk retail users
+· Evidence: Phase 3 EV-007 Arbitrum, EV-010 Base deployment; Phase 4 Known Technical Limitations "Gas costs on Ethereum L1 remain high; L2 deployments mitigate but fragment liquidity" (HIGH) [https://blog.olympusdao.finance/olympus-v3, https://docs.olympusdao.finance/main/networks]
+· Response: Deploy V3 deterministik ke Arbitrum dan Base; user bisa bonding/staking di L2 dengan gas murah
+· Result: Aksesibilitas meningkat di L2; tapi liquidity & treasury terfragmentasi, no unified cross-chain state
+· Supporting Dataset: Phase 3 EV-007, EV-010; Phase 4 Known Technical Limitations; Phase 7 Ecosystem Risks Chain Dependency Fragmented Liquidity
+
+Recurring Behavioral Pattern
+
+Pola 1: Major Upgrade → Audit → Deploy Ethereum → Deploy L2 (Arbitrum/Base) — Sequence konsisten untuk V2, V3
+· Evidence: V2: launch Ethereum (EV-003) → audit PeckShield → (no L2 yet); V3: launch Ethereum (EV-008) → audit Omniscia/Trail of Bits/Code4Arena → Arbitrum (EV-007) → Base (EV-010); Olympus Pro: audit Sigma Prime → deploy Ethereum → multi-chain support (HIGH) [Phase 3 EV-003, EV-007, EV-008, EV-010; Phase 4 Audit History, Technical Upgrade History]
+· Supporting Dataset: Phase 3 Historical Events; Phase 4 Audit History, Technical Upgrade History
+
+Pola 2: New Primitive → Wrapper untuk DeFi Composability — OHM rebasing → gOHM non-rebasing wrapper
+· Evidence: OHM V1 rebasing → V2 introduce gOHM (EV-005) untuk Aave/Curve/Balancer integration; pattern: identify composability gap → build wrapper → integrate blue chip DeFi (HIGH) [Phase 3 EV-005; Phase 6 Major Token Events; Phase 7 Major Integrations gOHM + Aave/Curve/Balancer]
+· Supporting Dataset: Phase 3 EV-005; Phase 6 Utility Collateral; Phase 7 Major Integrations
+
+Pola 3: Internal Need → External Product (Olympus Pro) — Butuh bonding untuk POL sendiri → jual bonding-as-a-service ke protokol lain
+· Evidence: Olympus bonding mechanism proven untuk POL acquisition → Olympus Pro launch (EV-006) → partner Frax/Lido/Tokemak/Rari (EV-009) menggunakan Olympus bonds (HIGH) [Phase 3 EV-006, EV-009; Phase 4 Core Components Olympus Pro; Phase 7 Major Integrations]
+· Supporting Dataset: Phase 3 EV-006, EV-009; Phase 4 Core Components Olympus Pro; Phase 7 Major Integrations
+
+Pola 4: Governance Parameter Tuning sebagai Primary Response Mechanism — Sebelum upgrade kontrak, coba adjust Policy parameters dulu
+· Evidence: Policy module controls bonding capacity, discount, reward rate, vesting; DAO proposals sering adjust parameters (reward rate reduction, bonding capacity changes) sebelum resort ke contract upgrade (HIGH) [Phase 4 Core Components Policy Module; Phase 6 Inflation Mechanism; Phase 7 Governance Ecosystem Policy Committee]
+· Supporting Dataset: Phase 4 Policy Module; Phase 6 Inflation/Deflation; Phase 7 Governance Ecosystem
+
+Pola 5: Legal/Compliance Structure Early — Cayman Foundation formed 2021 (EV-004) sebelum major scaling
+· Evidence: Legal structure proposal approved 2021 (EV-004) — sebelum V3, sebelum Olympus Pro, sebelum multi-chain L2 deployment; proactive compliance (HIGH) [Phase 3 EV-004; Phase 2 Foundation; Phase 7 Governance Ecosystem Foundation]
+· Supporting Dataset: Phase 2 Foundation; Phase 3 EV-004; Phase 7 Governance Ecosystem Foundation
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi vs Kecepatan Upgrade (Governance Timelock)
+· Decision: Semua protocol upgrades melalui DAO governance dengan timelock 2+ hari minimum
+· Trade-off: Keamanan/desentralisasi (no single entity control) dikorbankan untuk kecepatan respons darurat; guardian multi-sig jadi emergency backstop tapi centralized
+· Evidence: Phase 4 Security Model "Governance timelock (2+ days) delays emergency response; relies on guardian multi-sig for immediate pauses"; Phase 7 Ecosystem Risks Centralization Risk Guardian (HIGH) [https://docs.olympusdao.finance/main/governance, https://docs.olympusdao.finance/main/security/emergency]
+· Supporting Dataset: Phase 4 Security Model, Governance Module; Phase 7 Ecosystem Risks, Governance Ecosystem
+
+Trade-off 2: Multi-chain Scaling vs Unified Liquidity/Treasury
+· Decision: Deploy V3 independen ke Ethereum, Arbitrum, Base dengan deterministic addresses; no native cross-chain messaging
+· Trade-off: Gas cost rendah & user access L2 dicapai, tapi liquidity & treasury terfragmentasi per chain (isolated); OHM supply tidak unified, no cross-chain rebase sync, user bridging via third-party risky
+· Evidence: Phase 4 Known Technical Limitations "No native cross-chain messaging... each chain deployment has isolated liquidity and treasury"; Phase 7 Ecosystem Risks Chain Dependency Fragmented Liquidity; Phase 8 Liquidity Bridge Liquidity (HIGH) [https://blog.olympusdao.finance/olympus-v3, https://docs.olympusdao.finance/main/networks]
+· Supporting Dataset: Phase 4 Known Technical Limitations, System Architecture; Phase 7 Ecosystem Risks; Phase 8 Liquidity
+
+Trade-off 3: Rebasing Token (High APY Narrative) vs DeFi Composability
+· Decision: stOHM rebasing untuk reward distribution (high APY narrative), gOHM non-rebasing wrapper untuk DeFi integration
+· Trade-off: Rebasing token menarik user (high nominal APY) tapi breaks standard DeFi primitives; wrapper adds complexity (user harus wrap/unwrap), gas cost, dan two-token confusion
+· Evidence: Phase 4 Known Technical Limitations "Rebasing token (stOHM) not directly composable... requires gOHM wrapper"; Phase 6 Utility Staking vs Collateral; Phase 7 Major Integrations gOHM + Aave/Curve/Balancer (HIGH) [https://docs.olympusdao.finance/main/staking, https://docs.olympusdao.finance/main/governance/gohm]
+· Supporting Dataset: Phase 4 Known Technical Limitations; Phase 6 Utility Staking, Collateral; Phase 7 Major Integrations
+
+Trade-off 4: Protocol-Owned Liquidity (POL) vs Mercenary Liquidity Mining — POL chosen, no LM rewards
+· Decision: Zero liquidity mining incentives; semua liquidity acquired via bonding (POL) milik protokol
+· Trade-off: POL gives permanent liquidity ownership, no mercenary capital flight; tapi bonding volume cyclical dengan market sentiment, revenue drop di bear market, growth slower vs LM-incentivized protocols
+· Evidence: Phase 1 Category "Protocol-owned liquidity"; Phase 3 EV-002 bonding at launch; Phase 5 Financial Risk Revenue Decline Bonding Volume Dependency; Phase 8 Competitor Landscape (Frax/Lido use Olympus Pro for POL) (HIGH) [https://docs.olympusdao.finance/main/protocol, https://docs.olympusdao.finance/main/bonding]
+· Supporting Dataset: Phase 1 Category; Phase 3 EV-002; Phase 5 Financial Risk; Phase 8 Competitor Landscape
+
+Trade-off 5: Upgradeability (Proxy) vs Immutable Contracts — Proxy chosen untuk flexibility
+· Decision: Semua core contracts menggunakan OpenZeppelin TransparentUpgradeableProxy; DAO governance bisa upgrade logic
+· Trade-off: Bisa fix bug, add features, adjust architecture tanpa migration; tapi introduces governance risk — malicious upgrade bisa drain treasury jika timelock/guardian compromised
+· Evidence: Phase 4 Security Model Upgradeability "Transparent proxy pattern... governed by DAO timelock"; Known Technical Limitations "Upgradeability via proxy introduces governance risk... malicious upgrade could drain treasury" (HIGH) [https://docs.olympusdao.finance/main/contracts/v3/kernel, https://github.com/OlympusDAO/olympus-v3/blob/main/contracts/Kernel.sol]
+· Supporting Dataset: Phase 4 Security Model, Known Technical Limitations; Phase 7 Ecosystem Risks Centralization Risk Upgradeability
+
+Trade-off 6: Single Oracle Provider (Chainlink) vs Oracle Redundancy
+· Decision: Chainlink sebagai sole price feed untuk bonding pricing, treasury valuation, RFV calculation
+· Trade-off: Simplicity, battle-tested, standard; tapi single point of failure — Chainlink outage/staleness/deviation mempengaruhi seluruh protocol pricing dan valuation
+· Evidence: Phase 4 Oracle Integration "Chainlink price feeds used for bonding pricing and treasury valuation"; Known Technical Limitations "Oracle dependency on Chainlink... if feed stalls or deviates, bonding pricing and treasury valuation affected"; Phase 7 Ecosystem Risks Oracle Dependency Single Provider (HIGH) [https://docs.olympusdao.finance/main/contracts/oracles, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/oracles]
+· Supporting Dataset: Phase 4 Oracle Integration, Known Technical Limitations; Phase 7 External Dependencies Chainlink, Ecosystem Risks
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. Protocol-Owned Liquidity (POL) sebagai core value prop — bonding mechanism untuk acquire liquidity permanen, bukan rental
+2. Desentralisasi progresif — fair launch, DAO governance, legal wrapper, no VC control
+3. Infrastructure play via Olympus Pro — memperluas bonding mechanism ke protokol lain sebagai revenue diversification
+4. Multi-chain accessibility — L2 deployment untuk gas cost reduction, retail reach
+5. Security-first development — modular architecture, extensive audits, guardian emergency pause
+
+Cara Mengambil Keputusan:
+- Data-driven via on-chain metrics (bonding volume, treasury composition, RFV) dan governance forum discussion
+- Parameter adjustment via Policy Module sebagai first response; contract upgrade sebagai last resort
+- Audit mandatory sebelum setiap major deployment (6 audits untuk V2/V3/Pro)
+- Partner selection berdasarkan blue-chip status dan POL need alignment (Frax, Lido, Tokemak)
+- Legal/compliance proactive (Cayman foundation 2021) sebelum scaling
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Treasury health & backing (RFV per OHM) — drive policy parameter changes
+2. Market conditions (gas cost, bear/bull cycle) — drive L2 deployment, reward rate adjustments
+3. Security audit findings — drive architecture changes, upgrade timing
+4. Partner demand — drive Olympus Pro feature development
+5. DeFi composability requirements — drive gOHM wrapper, integration priorities
+
+Pola Evolusi:
+- V1: Monolithic reserve currency experiment
+- V2: Modular architecture + dual token (stOHM/gOHM) untuk composability
+- V3: Kernel-based + policy-as-module + multi-chain native + Olympus Pro integration
+- Pro: Internal tool → External BaaS product
+- Governance: Founder-led → DAO + legal wrapper → parameter-driven governance
+- Treasury: Bonding only → Bonding + Yield strategies + Pro fees
+
+Kekuatan Utama:
+- POL model proven sustainable (no mercenary liquidity dependency)
+- Modular upgradeable architecture dengan extensive audit trail
+- Olympus Pro creates infrastructure moat dan revenue diversification
+- Blue-chip DeFi integrations via gOHM (Aave, Curve, Balancer)
+- Multi-chain deployment dengan deterministic parity
+- Fair launch credibility, no VC overhang
+
+Kelemahan Utama:
+- Treasury & liquidity fragmentasi multi-chain (no unified state)
+- Governance timelock lambat untuk emergency response (guardian centralized backstop)
+- Single oracle dependency (Chainlink) tanpa documented fallback
+- Revenue terkait bonding volume (cyclical dengan market)
+- No native cross-chain bridge untuk OHM/stOHM/gOHM
+- Financial transparency limited (no periodic revenue/treasury reports)
+- Rari Capital partnership status unclear post-2023 restructuring
+- Grant program / ecosystem fund existence unverified
+
+Open Threads
+
+- Treasury size USD real-time teragregasi multi-chain — tidak dipublikasikan resmi; hanya on-chain per chain queryable (Phase 5 Treasury, Phase 8 Adoption Metrics)
+- Revenue history periodik (bonding fees, Pro fees, treasury yield) — tidak ada laporan keuangan resmi; hanya on-chain events (Phase 5 Revenue History, Phase 8 Adoption Metrics)
+- Olympus Pro current active partner count, fee structure detail, revenue contribution — blog 2022 menyebut 4 partner; tidak ada update resmi partner baru/keluar; fee % tidak dipublikasikan (Phase 5 Revenue Model, Phase 7 Major Integrations, Phase 8 Market Narrative)
+- Rari Capital partnership status — diumumkan EV-009 2022; Rari restructuring 2023; integrasi Olympus Pro status tidak diketahui (Phase 3 EV-009, Phase 7 Major Integrations Rari, Phase 8 Open Threads)
+- Cross-chain treasury unification roadmap — V3 "multi-chain native" tapi treasury per chain terisolasi; tidak ada rencana konsolidasi resmi (Phase 4 Known Technical Limitations, Phase 7 Ecosystem Risks Chain Dependency, Phase 8 Open Threads)
+- gOHM vs stOHM supply ratio, holder distribution detail — hanya query on-chain real-time, tidak ada analisis resmi (Phase 6 Holder Distribution, Phase 8 Open Threads)
+- OHM price vs RFV historical chart — tidak dipublikasikan resmi; RFV per OHM dihitung dari treasury/supply tapi tidak ada time series (Phase 6 Token Information, Phase 8 Market Narrative)
+- CEX listing detail resmi (exchange nama, pair, perpetual availability) — tidak ada daftar resmi Olympus; hanya data aggregator (Phase 7 Exchange Ecosystem, Phase 8 Trading Markets)
+- Grant program / ecosystem fund existence dan deployment — tidak diumumkan resmi di blog/docs/forum (Phase 7 Developer Ecosystem Grant Program, Phase 8 Open Threads)
+- Guardian multi-sig composition (signers, threshold) — hanya "Gnosis Safe" tanpa detail (Phase 4 Security Model, Phase 7 Governance Ecosystem Committee, Phase 8 Open Threads)
+- Formal verification status — tidak ada bukti Certora/runtime verification di audit directories publik (Phase 4 Audit History, Phase 8 Open Threads)
+- Testnet deployments (Sepolia, Arbitrum Sepolia, Base Sepolia) untuk V3 — tidak terdokumentasi; CI/CD mungkin hanya Anvil/fork (Phase 4 Known Technical Limitations, Phase 8 Open Threads)
+- MEV protection untuk bonding/staking — tidak terdokumentasi di tech specs atau audit reports (Phase 4 Known Technical Limitations, Phase 8 Open Threads)
+- Disaster recovery / emergency shutdown procedure detail — guardian pause documented tapi full recovery process tidak publik (Phase 4 Security Model, Phase 8 Open Threads)
+- Client diversity — hanya single frontend (olympus-frontend) terdokumentasi; no mobile app, CLI, alternative clients (Phase 4 Current Technical Stack, Phase 8 Open Threads)
+- Dependency audit untuk transitive dependencies (OpenZeppelin, Solmate, dll) — tidak terdokumentasi terpisah (Phase 4 Current Technical Stack, Phase 8 Open Threads)
+- Performance benchmarks (gas cost V2 vs V3, TPS estimates, bonding throughput) — tidak dipublikasikan di technical specs (Phase 4 Current Technical Stack, Phase 8 Open Threads)
+- Konflik data: Phase 7 Infrastructure Providers mencantumkan Vercel/Netlify sebagai "inferred" LOW confidence — perlu verifikasi hosting frontend aktual (Phase 7 Infrastructure Providers)

@@ -1,0 +1,151 @@
+PROJECT: Kamino Finance
+
+STATUS AIRDROP
+
+Sudah dilakukan. Kamino Finance mendistribusikan token KMNO melalui Token Generation Event (TGE) pada 10 April 2024 di mana pemegang Points Season 1-3 (program off-chain yang berjalan Nov 2023 - Mar 2024) memenuhi syarat klaim alokasi komunitas. Distribusi ini bersifat retroactive berbasis poin yang dikumpulkan pengguna melalui aktivitas Vaults, K-Lend, Multiply, dan referral, bukan airdrop snapshot tunggal tanpa prasyarat. 【Phase 3 EV-012】【Phase 6 TGE】【Phase 3 EV-009, EV-010, EV-011】
+
+AIRDROP EVENTS
+
+AD-001: KMNO TGE Claim untuk Points Season 1-3 Holders
+Tanggal: 2024-04-10
+Tipe: Points-based / Retroactive
+Alokasi: Tidak ditemukan (persentase total supply 10B KMNO untuk komunitas/points holders tidak dipublikasikan resmi; hanya kategori "community/points holders" tercantum di announcement TGE tanpa breakdown %)
+Penerima: Tidak ditemukan (jumlah wallet eligible claim tidak dipublikasikan resmi; blog menyebut "100k+ wallets" tapi tidak diverifikasi exact) 【Phase 8 Adoption Metrics】
+Nilai saat klaim: ~$0,75 USD (2024-04-10) [CoinGecko historical KMNO 2024-04-10 ~$0,70-$0,80] (MEDIUM) [CoinGecko KMNO historical]
+Kriteria: Mengakumulasi Kamino Points melalui aktivitas: deposit ke Vaults (CLMM), supply/borrow di K-Lend, posisi Multiply, referral pengguna baru. Season 1 (Nov 2023) basic vault/lend points + Tensor partnership; Season 2 (Jan 2024) tambah kategori Multiply, Borrow, Referral + multiplier tier; Season 3 (Mar 2024) bonus JitoSOL & restaking vault. Poin dihitung off-chain oleh indexer Kamino, Merkle root di-commit on-chain untuk verifikasi claim. 【Phase 3 EV-009】【Phase 3 EV-010】【Phase 3 EV-011】【Phase 4 Core Components Points Program】
+Anti-sybil: Tidak ditemukan (detail mekanisme anti-sybil untuk Points Season 1-3 tidak dipublikasikan; Phase 4 Known Limitations menyebut perhitungan off-chain sepenuhnya trusted indexer tanpa verifikasi on-chain hingga Merkle root commit) 【Phase 4 Known Limitations】
+Terkait EV: EV-009 (Season 1 Tensor Partnership), EV-010 (Season 2 Ekspansi), EV-011 (Season 3 Jito), EV-012 (TGE Claim Live)
+Sitasi: 【Phase 3 EV-009】【Phase 3 EV-010】【Phase 3 EV-011】【Phase 3 EV-012】【Phase 4 Core Components Points Program】【Phase 8 Adoption Metrics】
+
+AD-002: Points Season 4 On-chain KMNO Emission (Post-TGE Ongoing)
+Tanggal: 2024-10 (mulai)
+Tipe: Points-based / On-chain Emission (bukan airdrop claim tunggal; emisi berkelanjutan per epoch/blok ke pengguna aktif)
+Alokasi: Tidak ditemukan (total KMNO dialokasikan untuk Season 4 emission dari treasury tidak dipublikasikan; Phase 6 Inflation/Deflation menyebut emission dari treasury allocation bukan mint baru)
+Penerima: Tidak ditemukan (jumlah penerima unik Season 4 tidak dipublikasikan)
+Nilai saat klaim: Tidak berlaku (distribusi berkelanjutan on-chain, bukan event claim tunggal dengan harga referensi tetap)
+Kriteria: Aktivitas Vaults, K-Lend, Multiply, Referral Season 4 dihitung on-chain via program emisi KMNO; reward real-time berdasarkan parameter governance (Season 4 parameters). Transisi dari off-chain Merkle root (Season 1-3) ke fully on-chain emission program. 【Phase 3 EV-020】【Phase 6 Inflation/Deflation】【Phase 4 Core Components Points Program】
+Anti-sybil: On-chain program rules (parameter emission, health factor, volume thresholds) sebagai filter intrinsik; detail spesifik tidak dipublikasikan
+Terkait EV: EV-020 (Season 4 Launch)
+Sitasi: 【Phase 3 EV-020】【Phase 6 Inflation/Deflation】【Phase 4 Core Components Points Program】
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Post-Seed (2022), tidak ada follow-on round; operasi didanai protocol revenue (Vault fees, K-Lend spread, Multiply fees) + DAO treasury KMNO allocation post-TGE. 【Phase 5 Funding History】【Phase 5 Financial Dependencies】
+- Ukuran komunitas: ~100k+ wallet eligible TGE claim (points holders Season 1-3 per announcement); TVL peak ~$1,5B Maret 2024 pre-TGE; pengguna aktif harian tidak dipublikasikan. 【Phase 8 Adoption Metrics】【Phase 8 Market Timeline】
+- Kondisi pasar: Solana DeFi bull run Q1 2024 (SOL ~$180-200); narasi "Real Yield" & "Fee Switch" memuncak; competitor (Jupiter, Jito, Drift) sudah memiliki token; airdrop besar lain (JUP Jan 2024, WIF Mar 2024) menciptakan ekspektasi komunitas. 【Phase 8 Narrative】【Phase 8 Market Timeline】
+- Kompetitor terdekat: Jupiter (JUP TGE Jan 2024, airdrop snapshot-based), Jito (JTO TGE Dec 2023, airdrop staker SOL), Drift (DRIFT TGE Apr 2024, points-based), MarginFi (belum token), Solend (SLND existing). Semua menggunakan points/retroactive model. 【Phase 8 Competitor Landscape】
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Kematanangan protokol (4 produk live, TVL >$1B, audit lengkap, DAO siap) + window listing CEX (Binance, Coinbase commit listing same-day TGE) + tekanan komunitas & investor untuk liquidity event setelah 2 tahun development tanpa token. 【Phase 3 EV-012, EV-013, EV-014, EV-015】【Phase 5 Fundraising Mechanism】
+Alternatif yang tidak diambil (tidak terdokumentasi tapi terlihat dari pola industri):
+- Public sale / IDO / Launchpad: tidak dipilih (mungkin untuk hindari klasifikasi sekuritas & regulatory risk US)
+- Snapshot tunggal tanpa points program: tidak dipilih (points program 4 bulan membangun retention & usage data kaya)
+- Distribusi bertahap hanya ke early users (pre-Season 1): tidak dipilih (Season 1-3 ekspansi progresif untuk maximize distribution breadth)
+- Tidak mendistribusikan token sama sekali (hanya governance off-chain): tidak dipilih (funding dependency pada Seed investors + narrative "real yield" butuh token)
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Reward early users dan builder yang berkontribusi pada pertumbuhan protokol" — Kamino Blog TGE Announcement 【Phase 3 EV-012】
+- "Membangun komunitas pemegang token yang aligned jangka panjang melalui fee switch & governance" — Governance Forum DAO Launch 【Phase 3 EV-016】【Phase 6 Utility Governance】
+- "Transisi dari points off-chain ke token on-chain dengan utility nyata (staking, fee switch, governance)" — Season 4 Announcement 【Phase 3 EV-020】
+
+Alasan yang tidak diumumkan (HIPOTESIS dengan evidence pendukung):
+- Kebutuhan memenuhi syarat listing CEX tier-1 (Binance, Coinbase) yang menuntut circulating supply day-1, distribusi komunitas nyata, dan likuiditas pasar — HIPOTESIS (evidence: 5 CEX listing same-day TGE unusual tanpa market maker program publik; Coinbase listing biasanya butuh token distribution metrics) 【Phase 3 EV-013, EV-014, EV-015】【Phase 8 Trading Markets】
+- Tekanan investor Seed (Multicoin, Jump, Solana Ventures) untuk liquidity event & markup — HIPOTESIS (evidence: Seed 2022 tanpa follow-on, 2 tahun locked; TGE unlock investor vesting start) 【Phase 5 Funding History】【Phase 6 Vesting Schedule Investors】
+- Menghindari klasifikasi sekuritas dengan "fair launch" via points program bukan public sale — HIPOTESIS (evidence: tim anonim, entitas BVI, tidak ada public sale, points sebagai "bukti kontribusi" bukan pembelian) 【Phase 2 Entity Kamino Team】【Phase 2 Entity Kamino Finance Ltd.】【Phase 5 Financial Risk Regulatory】
+- Membuat narasi "Real Yield" differentiable vs competitor yang hanya governance token — HIPOTESIS (evidence: Fee Switch activation Mei 2024 via proposal #1 cepat post-TGE; narrative "Real Yield" di Phase 8) 【Phase 3 EV-017】【Phase 8 Narrative Real Yield】
+
+OUTCOME PER POV
+
+POV Founder (Kamino Team/Core Contributors): Sebagian
+- Jangka pendek: TGE berhasil ekssekusi (claim live, 5 CEX listing same-day, price discovery $0,70-$1,20 range); TVL tetap ~$1,2B post-TGE (tidak crash massal); fee switch activated Mei 2024 membuktikan utility. 【Phase 3 EV-012, EV-013, EV-014, EV-015, EV-017】【Phase 8 Adoption Metrics TVL】
+- Jangka panjang: Upgrade authority masih multisig tim (belum fully DAO) → reputational risk; token allocation opacity (no public %) → community trust issue; treasury KMNO concentration → runway volatility. 【Phase 4 Known Limitations】【Phase 6 Distribution】【Phase 5 Financial Risk Treasury Concentration】
+- Dasar: 【Phase 3 EV-012, EV-017】【Phase 4 Known Limitations】【Phase 6 Distribution】【Phase 5 Financial Risk】
+
+POV VC (Multicoin Capital, Jump Crypto, Solana Ventures): Sukses
+- Jangka pendek: Liquiditas exit day-1 via CEX listings; token transferable; price discovery immediate; vesting schedule mulai berjalan. 【Phase 3 EV-012, EV-013, EV-014, EV-015】【Phase 6 Vesting Schedule Investors】
+- Jangka panjang: Token unlock schedule investor (cliff/vesting tidak dipublikasikan tapi on-chain vesting accounts ada) → potential sell pressure di unlock milestones; protocol revenue sharing via fee switch tidak langsung ke investor tapi ke veKMNO stakers. 【Phase 6 Vesting Schedule】【Phase 6 Utility Staking】
+- Dasar: 【Phase 3 EV-012, EV-013, EV-014, EV-015】【Phase 6 Vesting Schedule Investors】【Phase 6 Utility Staking】
+
+POV Retail (penerima Season 1-3 Points): Sebagian
+- Jangka pendek: Claim process lancar via app.kamino.finance; harga claim ~$0,75; bisa menjual instan di Binance/Coinbase dengan slippage rendah (deep liquidity); banyak yang claim & sell immediate (volume TGE day tinggi). 【Phase 3 EV-012】【Phase 8 Trading Markets Binance volume】【Phase 8 Liquidity】
+- Jangka panjang: Harga KMNO volatil (peak ~$1,50 Mei 2024 lalu turun ke ~$0,30-0,50 Q3 2024); staking veKMNO yield ~10-20% APR fee switch tapi token price drop offset yield; Season 4 emission on-chain memberikan reward tambahan tapi sell pressure dari emission. 【Phase 8 Market Timeline peak】【Phase 6 Utility Staking】【Phase 3 EV-020】
+- Dasar: 【Phase 8 Market Timeline】【Phase 8 Trading Markets】【Phase 6 Utility Staking】【Phase 3 EV-020】
+
+POV Community (pengguna aktif Discord/Governance/Forum): Sukses
+- Jangka pendek: DAO formation 5 hari post-TGE (EV-016); proposal #1 fee switch lulus Mei 2024 (EV-017); community merasa ownership nyata via veKMNO voting; governance forum aktif. 【Phase 3 EV-016, EV-017】【Phase 7 Governance Ecosystem】
+- Jangka panjang: Treasury transparency masih minim (no public breakdown); upgrade authority belum DAO; Season 4 emission parameters decided via governance tapi detail tidak fully transparent. 【Phase 5 Treasury】【Phase 4 Known Limitations】【Phase 3 EV-020】
+- Dasar: 【Phase 3 EV-016, EV-017】【Phase 7 Governance Ecosystem】【Phase 5 Treasury】【Phase 4 Known Limitations】
+
+POV Developer (builder di atas Kamino SDK/API): Sukses
+- Jangka pendek: SDK, IDL, docs publik; TGE tidak mengganggu integrasi teknis; program IDs stabil; fee switch tidak mempengaruhi developer UX. 【Phase 7 Developer Ecosystem】【Phase 4 Official Technical Resources】
+- Jangka panjang: Open source core programs memungkinkan composability; Season 4 on-chain emission program bisa di-integrasi; DAO grants proposal (EV-021) potential funding. 【Phase 7 Developer Ecosystem】【Phase 3 EV-021】
+- Dasar: 【Phase 7 Developer Ecosystem】【Phase 4 Official Technical Resources】【Phase 3 EV-021】
+
+POV Institution (CEX, Market Maker, Fund): Sukses
+- Jangka pendek: Deep liquidity day-1 (Binance volume dominant ~60-70%); Coinbase listing memberikan akses US retail; market making feasible dengan spread ketat. 【Phase 8 Trading Markets】【Phase 8 Liquidity】【Phase 8 Market Share】
+- Jangka panjang: Tokenomics fixed supply 10B (no inflation) attractive; fee switch real yield verifiable on-chain; regulatory clarity BVI entity + Coinbase listing reduces risk. 【Phase 6 Supply】【Phase 6 Inflation/Deflation】【Phase 3 EV-017】【Phase 2 Entity Kamino Finance Ltd.】
+- Dasar: 【Phase 6 Supply】【Phase 6 Inflation/Deflation】【Phase 3 EV-017】【Phase 8 Trading Markets】【Phase 2 Entity Kamino Finance Ltd.】
+
+POV Validator (Solana Validators): Tidak relevan
+- Jangka pendek: Tidak ada perubahan pada validator set atau economics; Kamino tidak menjalankan validator. 【Phase 7 Ecosystem Position】【Phase 8 Ecosystem Risks Single Chain Dependency】
+- Jangka panjang: Protocol fees & MEV dari liquidations (Liquidate program) flow ke Jito/MEV infrastructure tapi tidak langsung ke validator rewards. 【Phase 4 Core Components Liquidate】【Phase 7 Major Integrations Jito】
+- Dasar: 【Phase 7 Ecosystem Position】【Phase 8 Ecosystem Risks】【Phase 4 Core Components Liquidate】【Phase 7 Major Integrations】
+
+POV Builder (ekosistem Solana integrator: Jupiter, Phantom, Backpack, Wormhole): Sukses
+- Jangka pendek: Integrasi existing tidak terganggu; KMNO token baru menambah asset di swap (Jupiter), wallet display (Phantom/Backpack), bridge (Wormhole NTT). 【Phase 7 Major Integrations】【Phase 7 Wallet Ecosystem】【Phase 7 Applications】
+- Jangka panjang: DAO treasury grants (EV-021 proposal) potential funding untuk builder; Season 4 emission on-chain composable untuk protokol lain; Kamino sebagai "hub" DeFi Solana semakin kuat. 【Phase 3 EV-021】【Phase 3 EV-020】【Phase 8 Narrative Solana DeFi Blue Chip】
+- Dasar: 【Phase 3 EV-021】【Phase 3 EV-020】【Phase 7 Major Integrations】【Phase 8 Narrative】
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 0,75 USD (2024-04-10) [CoinGecko KMNO historical 2024-04-10 $0,70-$0,80 midpoint] (MEDIUM)
+Harga +30 hari: 1,10 USD (2024-05-10) [CoinGecko KMNO historical 2024-05-10 ~$1,00-$1,20 midpoint] (MEDIUM)
+Harga +90 hari: 0,65 USD (2024-07-09) [CoinGecko KMNO historical 2024-07-09 ~$0,55-$0,75 midpoint] (MEDIUM)
+Harga puncak 12 bulan pertama: 1,55 USD (2024-05-15) [CoinGecko KMNO historical 2024-05-15 ~$1,50-$1,60 midpoint] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan TVL sebelum vs sesudah distribusi: TVL pre-TGE (Maret 2024) ~$1,5B peak → post-TGE (April 2024) ~$1,2B → Oktober 2024 ~$1,1-1,3B rentang (tidak crash drastis, retensi baik) [DefiLlama Kamino TVL History] (HIGH) [DefiLlama Kamino TVL]
+Jumlah alamat pemegang token (unique holders): Tidak ditemukan (tidak dipublikasikan resmi; Solscan holders list raw tersedia tapi tidak diagregasikan ke kategori entity) [Solscan KMNO holders] (MEDIUM) [Solscan KMNO token holders]
+Jumlah alamat aktif harian sebelum vs sesudah: Tidak ditemukan (tidak dipublikasikan; Dune/Flipside community dashboards ada tapi tidak diverifikasi resmi) [Dune Kamino dashboards] (LOW) [Dune Analytics Kamino]
+Konsentrasi kepemilikan (persen supply 10 alamat teratas): Tidak ditemukan (tidak ada analisis resmi; on-chain query diperlukan untuk label team/investor/treasury/community vesting accounts) [Solscan token accounts] (MEDIUM) [Solscan KMNO token accounts]
+Tingkat partisipasi staking (veKMNO): Tidak ditemukan (persentase supply di-stake tidak dipublikasikan; staking program state on-chain bisa di-query tapi tidak di-dashboard resmi) [Kamino Staking Program] (MEDIUM) [Kamino App Staking]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+Kriteria Points Season 1-3 dapat ditebak jauh sebelum snapshot (Season 1 dimulai Nov 2023, TGE April 2024 = 5 bulan window); kategori aktivitas (vault deposit, lend supply/borrow, multiply, referral) diketahui publik via blog & docs. Muncul perilaku farming massal: pengguna deploy bot auto-compound, multi-wallet referral loop, leverage looping via Multiply untuk maximize points. Tim tidak mempublikasikan jumlah alamat yang didiskualifikasi anti-sybil. Phase 4 Known Limitations mengakui perhitungan off-chain trusted indexer tanpa verifikasi on-chain → rentan manipulasi internal. Tidak ada bukti tim mengubah kriteria setelah melihat farming (kriteria Season 1-3 konsisten ekspansi kategori, tidak pengecualian). 【Phase 3 EV-009, EV-010, EV-011】【Phase 4 Core Components Points Program】【Phase 4 Known Limitations】【Phase 8 Narrative Points/Incentive】
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi: Token live (TGE done); DAO aktif (Realms); Fee switch live; Revenue streams 4 produk; CEX liquidity deep; On-chain emission program (Season 4) running. 【Phase 3 EV-012, EV-016, EV-017, EV-020】【Phase 5 Revenue Model】【Phase 8 Trading Markets】
+Prasyarat yang belum: Gelombang airdrop tambahan (Season 5+ / new program) — belum diumumkan; Treasury diversification plan (buyback proposal EV-021 masih diskusi); Upgrade authority decentralization roadmap — tidak ada. 【Phase 3 EV-021】【Phase 4 Known Limitations】【Phase 5 Financial Risk】
+Sinyal yang biasanya mendahului: Pengumuman snapshot date di blog/governance forum; Deploy kontrak distribusi baru di GitHub; Rekrutul community manager/airdrop specialist; Perubahan points program ke "final season" language; CEX listing announcement untuk market maker allocation. 【Phase 3 EV-009, EV-010, EV-011 pattern】【Phase 7 Developer Ecosystem GitHub】
+Penilaian: Kemungkinan airdrop/emisi tambahan MODERATE (60-70%). Kamino memiliki Season 4 on-chain emission ongoing (bukan airdrop claim tunggal), jadi "airdrop" tradisional berikutnya kurang likely; lebih likely ekspansi Season 4 emission parameters via governance atau Season 5 dengan mekanisme baru. Key risk: treasury KMNO concentration memaksa buyback/emission adjustment. Confidence: Medium. Akan berubah jadi High jika governance proposal untuk "Season 5 / New Incentive Program" muncul di forum. 【Phase 3 EV-020, EV-021】【Phase 6 Inflation/Deflation】【Phase 5 Financial Risk】
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika kriteria kelayakan (points program) berjalan >4 bulan sebelum TGE dan kategori aktivitas transparan (vault, lend, multiply, referral), populasi hunter membangun infrastruktur farming skala besar (multi-wallet, bot, leverage looping) yang membengkakkan metrics TVL & user count tanpa menambah pengguna nyata — akibatnya biaya distribusi naik (token allocation ke sybil) dan retensi post-TGE menurun karena farmer sell immediate. (Era 2023-2024, Solana DeFi points meta)
+- Ketika protokol melakukan multi-CEX listing same-day TGE (5+ bursa tier-1) tanpa public sale, price discovery efisien dan liquidity depth melindungi retail dari slippage ekstrem, tapi juga memungkinkan investor/insider sell besar tanpa crash harga — menciptakan ilusi "successful launch" sementara token distribution concentration tidak berubah. (Era 2024, Blue chip DeFi TGE model)
+- Ketika fee switch diaktifkan <30 hari post-TGE via governance proposal, narasi "real yield" tervalidasi on-chain dan menarik institutional capital, tapi yield denominasi token (KMNO) berarti staker terekspos penuh pada token price volatility — APY nominal tinggi tapi real yield USD bisa negatif saat bear. (Era 2024, Fee switch narrative)
+- Ketika treasury denominasi >80% native token (tidak diverifikasi tapi indikasi kuat dari tokenomics fixed supply + no revenue reports + DAO treasury allocation KMNO), protocol runway berkorelasi sempurna dengan token price — bear market 50% drop = treasury value 50% drop, memaksa emission cut atau sell pressure. (Era 2022-2024, DAO treasury management)
+- Ketika upgrade authority tetap di multisig tim anonim >6 bulan post-TGE dan DAO hanya kontrol parameter, community trust erosi perlahan meski governance aktif — "progressive decentralization" jadi narasi tanpa deadline, investor & builder ragu commit jangka panjang. (Era 2023-2024, Solana DeFi DAO patterns)
+
+OPEN THREADS
+
+- Persentase alokasi KMNO exact untuk komunitas/points holders (Season 1-3) vs team vs investor vs treasury vs ecosystem — tidak dipublikasikan, butuh on-chain vesting program analysis atau transparency report resmi.
+- Jumlah wallet eligible claim TGE exact & breakdown per Season (1, 2, 3) — tidak dipublikasikan.
+- Mekanisme anti-sybil detail untuk Points Season 1-3 & jumlah alamat yang didiskualifikasi — tidak dipublikasikan.
+- Harga rata-rata claim per penerima (median/mean USD value) — butuh cohort analysis on-chain.
+- Persentase penerima yang menjual dalam 7/30/90 hari post-claim — butuh cohort analysis on-chain.
+- Season 4 emission schedule exact (KMNO per epoch, total allocation, durasi) — governance forum parameters tidak terpusat di single source.
+- Treasury composition breakdown (KMNO vs stablecoin vs yield-bearing) — Realms view raw only.
+- Upgrade authority decentralization timeline (multisig tim → DAO timelock/immutable) — tidak ada roadmap publik.
+- Formal verification status untuk core math (rebalancing, health factor, rate curves, points calculation) — hanya audit manual.
+- Regulatory strategy post-Coinbase listing (legal wrapper DAO Cayman/Swiss, team doxxing plan) — tidak diumumkan.
