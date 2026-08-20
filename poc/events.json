@@ -27316,5 +27316,139 @@
       "_location": "Ethereum",
       "_status": "Completed"
     }
+  ],
+  "Curve": [
+    {
+      "id": "curve-EV-001",
+      "projectSlug": "curve",
+      "name": "Publikasi StableSwap paper dan peluncuran pool pertama",
+      "date": "2019 (publikasi) — 2020-01",
+      "type": "Founding",
+      "participants": [
+        "Michael Egorov",
+        "pengguna awal DeFi"
+      ],
+      "description": "Michael Egorov mempublikasikan whitepaper \"StableSwap\" — AMM dengan invariant khusus aset bernilai serupa yang memungkinkan slippage jauh lebih rendah dari Uniswap untuk stablecoin — lalu meluncurkan pool pertama di Ethereum pada Januari 2020.",
+      "result": "Curve menjadi venue utama swap stablecoin dengan TVL yang tumbuh sepanjang 2020.",
+      "source": "CIF Research Dossier",
+      "url": "https://curve.fi/whitepaper.pdf (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Ethereum mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "curve-EV-002",
+      "projectSlug": "curve",
+      "name": "TGE CRV dan dimulainya liquidity mining",
+      "date": "2020-08-14",
+      "type": "TGE",
+      "participants": [
+        "Curve DAO (baru terbentuk)",
+        "LP awal",
+        "komunitas DeFi"
+      ],
+      "description": "Token CRV diluncurkan dengan emisi liquidity mining via gauge; distribusi awal mencakup alokasi komunitas 62% (emisi), serta alokasi team/investors/foundation/employees dengan vesting (rincian persentase per kategori memiliki versi berbeda antar sumber — lihat Conflict Register Phase 11).",
+      "result": "Likuiditas Curve melonjak; CRV menjadi pusat narasi \"DeFi Summer\" gelombang kedua.",
+      "source": "CIF Research Dossier",
+      "url": "https://resources.curve.fi/ (HIGH); Phase 6 — Token (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Ethereum mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "curve-EV-003",
+      "projectSlug": "curve",
+      "name": "Peluncuran veCRV (vote-escrow)",
+      "date": "2020-08/09",
+      "type": "Product Launch",
+      "participants": [
+        "Curve DAO",
+        "pemegang CRV"
+      ],
+      "description": "Mekanisme lock CRV hingga 4 tahun (veCRV) diperkenalkan: hak voting gauge, boost reward LP hingga 2.5x, dan bagian dari fee protokol — menjadi template \"vote-escrow\" yang ditiru industri.",
+      "result": "Lock-up CRV skala besar; pasar gauge voting terbentuk.",
+      "source": "CIF Research Dossier",
+      "url": "https://resources.curve.fi/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Ethereum",
+      "_status": "Completed"
+    },
+    {
+      "id": "curve-EV-004",
+      "projectSlug": "curve",
+      "name": "Curve Wars — perebutan pengaruh veCRV",
+      "date": "2021",
+      "type": "Market Event",
+      "participants": [
+        "Convex Finance",
+        "Yearn Finance",
+        "Frax",
+        "pemegang veCRV"
+      ],
+      "description": "Protokol-protokol (Convex, Yearn, Frax, dll.) berlomba mengakumulasi veCRV untuk mengarahkan emisi CRV ke pool mereka — Convex menjadi agregator terbesar; \"bribe market\" (Votium) lahir dari dinamika ini.",
+      "result": "Konsentrasi veCRV di Convex; nilai strategis CRV governance menguat.",
+      "source": "CIF Research Dossier",
+      "url": "https://resources.curve.fi/ (MEDIUM)",
+      "affectedKnowledge": [],
+      "_location": "Ethereum",
+      "_status": "Completed"
+    },
+    {
+      "id": "curve-EV-005",
+      "projectSlug": "curve",
+      "name": "Peluncuran crvUSD stablecoin",
+      "date": "2023-05",
+      "type": "Product Launch",
+      "participants": [
+        "Curve DAO",
+        "pengguna crvUSD"
+      ],
+      "description": "Curve meluncurkan stablecoin crvUSD dengan mekanisme LLAMMA (likuidasi gradual) — ekspansi dari DEX menjadi issuer stablecoin dan kredit.",
+      "result": "Ekosistem lending/stablecoin Curve terbentuk (Curve Lend menyusul).",
+      "source": "CIF Research Dossier",
+      "url": "https://resources.curve.fi/ (MEDIUM)",
+      "affectedKnowledge": [],
+      "_location": "Ethereum",
+      "_status": "Completed"
+    },
+    {
+      "id": "curve-EV-006",
+      "projectSlug": "curve",
+      "name": "Eksploitasi Vyper dan krisis posisi CRV founder",
+      "date": "2023-07/08",
+      "type": "Security Incident",
+      "participants": [
+        "Penyerang",
+        "Michael Egorov",
+        "komunitas",
+        "pembeli OTC"
+      ],
+      "description": "Bug reentrancy pada kompilator Vyper (versi lama) dieksploitasi pada sejumlah pool Curve (era ini: pool ETH/LST terdampak) dengan kerugian puluhan juta USD; bersamaan, posisi pinjaman Michael Egorov yang berkolateral CRV dalam tekanan — sebagian CRV dijual via OTC untuk mengamankan posisi, menekan harga.",
+      "result": "Pool terdampak dipulihkan/ditangani; kepercayaan sempat terguncang; harga CRV tertekan; perbaikan keamanan Vyper dan audit lanjutan.",
+      "source": "CIF Research Dossier",
+      "url": "https://resources.curve.fi/ (MEDIUM); liputan media crypto era Agustus 2023 (MEDIUM)",
+      "affectedKnowledge": [],
+      "_location": "Ethereum",
+      "_status": "Completed"
+    },
+    {
+      "id": "curve-EV-007",
+      "projectSlug": "curve",
+      "name": "Era crvUSD/Curve Lend dan pemulihan",
+      "date": "2024–2025",
+      "type": "Product Evolution",
+      "participants": [
+        "Curve DAO",
+        "pengguna crvUSD",
+        "deployment multi-chain"
+      ],
+      "description": "Curve memfokuskan pertumbuhan pada crvUSD, Curve Lend, dan deployment multi-chain; aktivitas governance berlanjut dengan dinamika unlock vesting dan emisi yang menurun bertahap.",
+      "result": "Diversifikasi produk di luar swap stablecoin klasik.",
+      "source": "CIF Research Dossier",
+      "url": "https://resources.curve.fi/ (MEDIUM)",
+      "affectedKnowledge": [],
+      "_location": "Multi-chain",
+      "_status": "Ongoing"
+    }
   ]
 }

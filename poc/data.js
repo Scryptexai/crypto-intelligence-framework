@@ -2,9 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-20 04:01 UTC",
-    "projects": 59,
-    "deep": 59,
+    "generated": "2026-08-20 04:34 UTC",
+    "projects": 60,
+    "deep": 60,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -176,6 +176,20 @@ window.CIF = {
         "airdrop",
         "modular",
         "bridge"
+      ]
+    },
+    {
+      "n": "Curve",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Curve.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "liquid-staking",
+        "amm",
+        "stablecoin",
+        "governance"
       ]
     },
     {

@@ -3122,5 +3122,34 @@
       "Security via Extensive Audits vs Speed to Market",
       "Legal Wrapper (Cayman Foundation) vs Regulatory Uncertainty"
     ]
+  },
+  "Curve": {
+    "projectSlug": "curve",
+    "strategicObjectives": [
+      "Mempertahankan dominasi likuiditas stableswap lintas chain",
+      "Memperluas value capture melalui crvUSD dan Curve Lend",
+      "Menjaga relevansi governance CRV pasca-Curve-Wars"
+    ],
+    "decisionPatterns": [
+      "Spesialisasi invariant per kelas aset (StableSwap vs Crypto pools) bukan satu AMM umum",
+      "Factory pools permissionless untuk ekspansi venue tanpa bottleneck governance",
+      "crvUSD dengan likuidasi gradual LLAMAA alih-alih hard liquidation",
+      "Value accrual via fee share ke veCRV (bukan buyback/burn)",
+      "Emisi menurun bertahap hingga max supply 3,03 miliar CRV",
+      "Tanpa public sale; pendanaan awal via alokasi token vesting",
+      "Membiarkan meta-layer (Convex/bribe market) tumbuh tanpa intervensi",
+      "Deployment mengikuti likuiditas ke chain baru (Arbitrum, Optimism, Polygon, dll.)",
+      "Gauge voting sebagai alokasi sumber daya publik (emisi)",
+      "Iterasi produk bertahap (Earn-era pools → veCRV → factory → crvUSD → Lend) tanpa grand relaunch"
+    ],
+    "riskResponse": [
+      "Respons teknis cepat dengan komunikasi publik terbatas saat krisis",
+      "Penanganan posisi tokoh kunci via jalur OTC untuk menghindari tekanan harga spot"
+    ],
+    "tradeOffs": [
+      "Emisi besar untuk likuiditas vs tekanan inflasi CRV jangka panjang",
+      "Membiarkan konsentrasi veCRV di Convex vs risiko ketergantungan satu agregator",
+      "crvUSD menambah produk dan fee vs menambah risiko sistemik stablecoin ke protokol"
+    ]
   }
 }

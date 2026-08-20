@@ -167,6 +167,20 @@
     ]
   },
   {
+    "n": "Curve",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Curve.md",
+    "cat": "",
+    "era": "",
+    "tags": [
+      "airdrop",
+      "liquid-staking",
+      "amm",
+      "stablecoin",
+      "governance"
+    ]
+  },
+  {
     "n": "EOS",
     "tier": "Deep",
     "file": "examples/CaseStudies/EOS.md",

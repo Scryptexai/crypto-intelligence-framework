@@ -6571,5 +6571,146 @@
       "assessment": "Fair launch YFI adalah distribusi paling bersih secara prinsip di dataset ini — outcome LP spektakuler, founder nol-kepemilikan namun reputasi maksimal — dengan satu kelemahan struktural: tanpa rencana pendanaan tim, DAO harus memilih minting (mengubah prinsip fixed supply) dua belas bulan kemudian (MEDIUM)"
     },
     "lessons": []
+  },
+  "Curve": {
+    "projectSlug": "curve",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Liquidity Mining via Gauge (Distribusi Komunitas 62%)",
+        "date": "2020-08-14 mulai — emisi berkelanjutan dengan kurva menurun",
+        "type": "Liquidity mining / emisi gauge (bukan klaim satu kali)",
+        "allocation": "62% max supply (bagian dari 3.030.303.030 CRV) diemisikan ke pool-pool sesuai bobot gauge yang divote pemegang veCRV (HIGH) [Phase 6 — Distribution; Curve docs, https://resources.curve.fi/]",
+        "recipients": "Liquidity provider di pool dengan gauge aktif; reward dapat di-boost hingga 2.5x dengan veCRV (HIGH) [Phase 6 — Utility]",
+        "valueAtClaim": "Tidak berlaku (emisi per blok/epoch; harga mengikuti pasar saat reward diterima/dijual)",
+        "criteria": "Menyediakan likuiditas di pool bergauge; bobot emisi per pool ditentukan gauge voting veCRV (HIGH) [Phase 6 — Utility]",
+        "antiSybil": "Tidak relevan secara langsung — distribusi berbasis likuiditas riil; namun farming gauge (masuk-keluar pool) mungkin secara ekonomi (LOW)",
+        "relatedEvent": "EV-002 (TGE), EV-003 (veCRV)",
+        "citation": "Phase 3 EV-002; Phase 6 Distribution, Utility (HIGH)"
+      },
+      {
+        "id": "AD-002",
+        "title": "Alokasi Vesting (Kategori Non-Komunitas)",
+        "date": "2020-08-14 mulai — vesting 2-4 tahun sesuai kategori",
+        "type": "Alokasi internal dengan vesting (team/investors/foundation/employees — label dan persentase per kategori berkonflik antar sumber; lihat Conflict Register C-001)",
+        "allocation": "Sisa ~38% max supply dalam kategori vesting; Phase 6 dataset mencatat Team 30% (2y), Investors 3% (2y), Foundation 3% (4y), Employees 2% (2y) — versi sumber publik umum berbeda (shareholders 30%, team 3%, early users 5%) (MEDIUM — konflik terdokumentasi) [Phase 6 — Distribution; Phase 11 — C-001]",
+        "recipients": "Kontributor, investor awal, foundation, karyawan (identitas tidak dipublikasikan terpusat) (LOW)",
+        "valueAtClaim": "Tidak berlaku (pencairan vesting bertahap)",
+        "criteria": "Peran/kontrak dengan proyek (LOW)",
+        "antiSybil": "Tidak relevan (alokasi berbasis peran)",
+        "relatedEvent": "EV-002",
+        "citation": "Phase 6 Distribution, Vesting Schedule (MEDIUM — dengan catatan konflik)"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Michael Egorov",
+        "shortTerm": "Curve menjadi infrastruktur inti DeFi; CRV diluncurkan dengan likuiditas besar (HIGH) [Phase 3 — EV-002]",
+        "longTerm": "Krisis 2023 (Vyper + posisi pribadinya) menekan harga dan reputasi; OTC sale menjadi kontroversi — outcome campuran (MEDIUM) [Phase 3 — EV-006]",
+        "basis": "Phase 3 EV-002, EV-006 (HIGH/MEDIUM)"
+      },
+      "vc": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Investor pra-TGE",
+        "shortTerm": "Alokasi vesting (persentase versi berbeda antar sumber — konflik C-001) memberi eksposur pada kenaikan CRV 2021 (KuCoin: dari ~1.68 close 21 Jan 2021 ke high 4.667 pada 15 Apr 2021) (MEDIUM) [KuCoin CRV-USDT, https://www.kucoin.com/trade/CRV-USDT]",
+        "longTerm": "Depresiasi pasca-2021 dan tekanan unlock; outcome bergantung harga jual aktual yang tidak dipublikasikan (LOW)",
+        "basis": "KuCoin price history; Phase 6 Distribution (MEDIUM/LOW)"
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "LP peserta liquidity mining",
+        "shortTerm": "LP mendapat CRV emisi dengan basis biaya likuiditas; nilai reward tinggi saat harga CRV naik 2020-2021 (MEDIUM) [KuCoin CRV-USDT, https://www.kucoin.com/trade/CRV-USDT]",
+        "longTerm": "Emisi menurun + harga CRV jauh di bawah puncak 2021; LP yang tidak mengunci veCRV menerima tekanan jual berulang (MEDIUM) [Phase 6 — Supply; KuCoin CRV-USDT]",
+        "basis": "KuCoin price history; Phase 6 (MEDIUM)"
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Pemegang CRV/veCRV",
+        "shortTerm": "Governance gauge aktif; fee share ke veCRV memberi imbal hasil riil (HIGH) [Phase 6 — Utility]",
+        "longTerm": "Meredanya Curve Wars menurunkan permintaan politik gauge; nilai CRV bergantung volume swap yang juga menurun relatif (MEDIUM) [Phase 3 — EV-004; Phase 8 — Market]",
+        "basis": "Phase 6 Utility; Phase 8 Market (HIGH/MEDIUM)"
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "Integrator pool & tooling",
+        "shortTerm": "Likuiditas Curve menjadi primitif yang dapat dikomposisi (vault, agregator, stablecoin) (HIGH) [Phase 7 — Ecosystem]",
+        "longTerm": "Factory permissionless membuka pembuatan pool/venue baru tanpa izin (MEDIUM) [Phase 4 — Technology]",
+        "basis": "Phase 4; Phase 7 (HIGH/MEDIUM)"
+      },
+      "institution": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Exchange, fund, mitra stablecoin",
+        "shortTerm": "Listing CEX luas; venue kanonik untuk stablecoin institusional (MEDIUM) [Phase 8 — Trading Markets]",
+        "longTerm": "Insiden Vyper 2023 menambah catatan risiko due-diligence (MEDIUM) [Phase 3 — EV-006]",
+        "basis": "Phase 8; Phase 3 EV-006 (MEDIUM)"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "builder": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Protokol di atas likuiditas Curve",
+        "shortTerm": "Akses venue stableswap likuid untuk produk mereka (Convex, Yearn, Frax, issuer stablecoin) (HIGH) [Phase 7 — Ecosystem]",
+        "longTerm": "Ketergantungan pada kesehatan Curve = risiko turunan (insiden 2023 berdampak ke ekosistem) (MEDIUM) [Phase 7 — Ecosystem Risks]",
+        "basis": "Phase 7 (HIGH/MEDIUM)"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": 1.68,
+        "date": "2021-01-21",
+        "source": "KuCoin CRV-USDT daily candle close — candle terverifikasi terdekat; KuCoin baru me-listing CRV 21 Jan 2021, lima bulan setelah TGE 2020-08-14; harga era distribusi Agustus 2020 tidak tercakup exchange ini, https://www.kucoin.com/trade/CRV-USDT",
+        "evidence": "MEDIUM",
+        "raw": "1.68 USD (2021-01-21) [KuCoin CRV-USDT daily candle close — candle terverifikasi terdekat; KuCoin baru me-listing CRV 21 Jan 2021, lima bulan setelah TGE 2020-08-14; harga era distribusi Agustus 2020 tidak tercakup exchange ini, https://www.kucoin.com/trade/CRV-USDT] (MEDIUM)"
+      },
+      "day30": {
+        "usd": 1.68,
+        "date": "2021-01-21",
+        "source": "KuCoin CRV-USDT daily candle close — titik +30 hari sesungguhnya (pertengahan September 2020) jatuh jauh sebelum listing KuCoin; candle terverifikasi terdekat dipakai, https://www.kucoin.com/trade/CRV-USDT",
+        "evidence": "MEDIUM",
+        "raw": "1.68 USD (2021-01-21) [KuCoin CRV-USDT daily candle close — titik +30 hari sesungguhnya (pertengahan September 2020) jatuh jauh sebelum listing KuCoin; candle terverifikasi terdekat dipakai, https://www.kucoin.com/trade/CRV-USDT] (MEDIUM)"
+      },
+      "day90": {
+        "usd": 1.68,
+        "date": "2021-01-21",
+        "source": "KuCoin CRV-USDT daily candle close — titik +90 hari sesungguhnya (pertengahan November 2020) juga sebelum listing KuCoin; candle terverifikasi terdekat dipakai, https://www.kucoin.com/trade/CRV-USDT",
+        "evidence": "MEDIUM",
+        "raw": "1.68 USD (2021-01-21) [KuCoin CRV-USDT daily candle close — titik +90 hari sesungguhnya (pertengahan November 2020) juga sebelum listing KuCoin; candle terverifikasi terdekat dipakai, https://www.kucoin.com/trade/CRV-USDT] (MEDIUM)"
+      },
+      "peak12m": {
+        "usd": 4.67,
+        "date": "2021-04-15",
+        "source": "KuCoin CRV-USDT daily candle high; scan mingguan Jan-Agu 2021 tidak menemukan high lebih tinggi. Catatan: coverage KuCoin dimulai 21 Jan 2021 — periode Aug 2020-Jan 2021 tidak tercakup exchange ini (harga era itu berada di bawah 4.667 berdasarkan urutan candle yang tersedia), https://www.kucoin.com/trade/CRV-USDT",
+        "evidence": "MEDIUM",
+        "raw": "4.67 USD (2021-04-15) [KuCoin CRV-USDT daily candle high; scan mingguan Jan-Agu 2021 tidak menemukan high lebih tinggi. Catatan: coverage KuCoin dimulai 21 Jan 2021 — periode Aug 2020-Jan 2021 tidak tercakup exchange ini (harga era itu berada di bawah 4.667 berdasarkan urutan candle yang tersedia), https://www.kucoin.com/trade/CRV-USDT] (MEDIUM)"
+      }
+    },
+    "retention": [],
+    "gaps": [
+      "Cohort penerima: distribusi via emisi gauge tidak memiliki daftar penerima tunggal — analisis cohort memerlukan rekonstruksi on-chain klaim reward per gauge.",
+      "INKONSISTENSI komposisi distribusi (C-001) belum terpecahkan — angka per kategori non-komunitas tidak boleh dikutip sebagai final.",
+      "Harga era distribusi (Agu 2020-Jan 2021) tidak tercakup exchange yang datanya diakses riset ini."
+    ],
+    "prospect": {
+      "met": null,
+      "unmet": null,
+      "signals": null,
+      "assessment": "Distribusi CRV sukses mengunci likuiditas dan menciptakan mekanisme governance yang ditiru industri, namun tanpa kontrol pasokan ketat (inflasioner) dan dengan melemahnya meta-layer, retensi nilai bergantung penuh pada arus fee riil — kontras tajam dengan fair launch YFI di dataset ini (MEDIUM)"
+    },
+    "lessons": []
   }
 }

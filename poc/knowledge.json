@@ -43135,5 +43135,170 @@
       "relatedKnowledge": [],
       "dependencies": []
     }
+  ],
+  "Curve": [
+    {
+      "id": "curve-K-001",
+      "projectSlug": "curve",
+      "name": "StableSwap invariant adalah fondasi moat Curve",
+      "category": "Core Insight",
+      "description": "Invariant khusus aset bernilai serupa (stablecoin, LST, wrapped assets) menghasilkan slippage jauh lebih rendah dari AMM umum — menjadikan Curve venue kanonik yang dirutekan agregator dan dipilih issuer stablecoin selama bertahun-tahun.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "StableSwap whitepaper mendefinisikan invariant dan motivasinya【Phase 1 — Foundation】; pool 3pool/stETH menjadi venue referensi era 2020-2023【Phase 8 — Market Timeline】.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "curve-K-002",
+      "projectSlug": "curve",
+      "name": "Distribusi CRV via gauge emission mengunci likuiditas lebih lama daripada airdrop — dengan konsekuensi ketergantungan pada permintaan politik internal",
+      "category": "Core Insight",
+      "description": "62% supply diemisikan via gauge dengan bobot yang ditentukan vote veCRV; LP bertahan selama emisi menguntungkan. Ketika meta-layer (Convex/bribe) mendingin, permintaan struktural atas CRV ikut turun — nilai token menjadi fungsi arus fee vs emisi, bukan kelangkaan.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Mekanisme gauge & emisi 62%【Phase 6 — Distribution】; Curve Wars & konsentrasi Convex【Phase 3 — EV-004; Phase 7 — Key Integrations】; supply inflasioner max 3,03B【Phase 6 — Supply】.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-004"
+      ]
+    },
+    {
+      "id": "curve-K-003",
+      "projectSlug": "curve",
+      "name": "veCRV vote-escrow menjadi template industri (lock 4 tahun, boost 2.5x, fee share, gauge voting)",
+      "category": "Core Insight",
+      "description": "Mekanisme lock jangka panjang dengan hak ekonomi + governance ditiru lintas industri (Convex vlCVX dan banyak vl-token lain) — Curve mengekspor pola desain governance token.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Utilitas veCRV lengkap【Phase 6 — Utility; Phase 3 — EV-003】; adopsi pola oleh Convex dkk.【Phase 7 — Key Integrations】.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-003"
+      ]
+    },
+    {
+      "id": "curve-K-004",
+      "projectSlug": "curve",
+      "name": "Komposisi distribusi per kategori non-komunitas adalah konflik data yang belum terpecahkan",
+      "category": "Core Insight",
+      "description": "Dataset ini mencatat Team 30% / Investors 3% / Foundation 3% / Employees 2%, sementara sumber publik umum menyebut shareholders 30% / team 3% / early users 5% — atribusi 30% supply berbeda (team vs shareholders), mengubah analisis sentralisasi; verifikasi dokumen primer Agustus 2020 diperlukan.",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Phase 6 Distribution dataset vs sumber publik umum【Phase 11 — Conflict C-001】.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "curve-K-005",
+      "projectSlug": "curve",
+      "name": "Krisis Vyper 2023 menunjukkan risiko dependensi tooling pihak ketiga",
+      "category": "Core Insight",
+      "description": "Bug reentrancy pada versi lama kompilator Vyper berdampak pada pool Curve yang memakai Vyper — audit kontrak saja tidak cukup; rantai tooling (kompilator, framework) adalah permukaan serangan nyata.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Eksploitasi pool Curve era 2023-07/08 via bug Vyper【Phase 3 — EV-006】.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-006"
+      ]
+    },
+    {
+      "id": "curve-K-006",
+      "projectSlug": "curve",
+      "name": "Posisi leverage pribadi founder adalah risiko sistemik proyek bertoken",
+      "category": "Core Insight",
+      "description": "Posisi pinjaman Michael Egorov berkolateral CRV memaksa penjualan OTC saat krisis 2023 — keputusan pribadi tokoh kunci berdampak pada harga dan kepercayaan seluruh ekosistem.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Tekanan posisi & OTC sale 2023【Phase 3 — EV-006】.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-006"
+      ]
+    },
+    {
+      "id": "curve-K-007",
+      "projectSlug": "curve",
+      "name": "Fee share ke veCRV adalah value accrual berbasis arus kas, bukan kelangkaan",
+      "category": "Core Insight",
+      "description": "Berbeda dengan model buyback/burn, pemegang veCRV menerima bagian fee swap — nilai token terkait langsung volume protokol; saat volume turun relatif, tesis nilai melemah tanpa mekanisme penahan lain.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Fee distribution whitepaper【Curve whitepaper Fee Distribution】; utilitas veCRV【Phase 6 — Utility】.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "curve-K-008",
+      "projectSlug": "curve",
+      "name": "crvUSD memperluas basis produk dengan mekanisme likuidasi gradual (LLAMMA)",
+      "category": "Core Insight",
+      "description": "Ekspansi dari DEX menjadi issuer stablecoin + lending menambah sumber fee sekaligus menambah risiko sistemik baru — trade-off yang dikelola desain likuidasi halus.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "crvUSD launch 2023-05【Phase 3 — EV-005】; era Lend【Phase 3 — EV-007】.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-005",
+        "EV-007"
+      ]
+    },
+    {
+      "id": "curve-K-009",
+      "projectSlug": "curve",
+      "name": "Factory permissionless mempercepat ekspansi venue tanpa bottleneck governance",
+      "category": "Core Insight",
+      "description": "Template pool aman yang dapat dibuat tanpa vote memungkinkan Curve mengikuti likuiditas ke aset/chain baru dengan cepat — pola ekspansi aditif tanpa grand relaunch.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Factory deployments multi-chain【Phase 7 — Chain Deployments; Phase 4 — Technology】.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "curve-K-010",
+      "projectSlug": "curve",
+      "name": "Komunikasi krisis yang terbatas memperpanjang hilangnya kepercayaan",
+      "category": "Core Insight",
+      "description": "Respons teknis cepat pada krisis 2023 tidak diimbangi komunikasi publik yang memadai — pasar mengisi kekosongan narasi dengan spekulasi, memperpanjang tekanan harga di luar dampak teknis insiden.",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Pola respons krisis 2023【Phase 3 — EV-006; Phase 9 — Risk Response Pattern】.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-006"
+      ]
+    }
   ]
 }
