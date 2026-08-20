@@ -2,7 +2,7 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-20 06:17 UTC",
+    "generated": "2026-08-20 06:19 UTC",
     "projects": 60,
     "deep": 60,
     "summary": 0,
@@ -33,6 +33,17 @@ window.CIF = {
       ]
     },
     {
+      "n": "Blast",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Blast.md",
+      "cat": "Layer-2 (OP Stack, native yield)",
+      "era": "2023–",
+      "tags": [
+        "airdrop",
+        "l2"
+      ]
+    },
+    {
       "n": "Aave",
       "tier": "Deep",
       "file": "examples/CaseStudies/Aave.md",
@@ -52,6 +63,18 @@ window.CIF = {
       "tags": [
         "airdrop",
         "l1"
+      ]
+    },
+    {
+      "n": "Axie Infinity",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Axie Infinity.md",
+      "cat": "Gaming (play-to-earn, Ronin sidechain)",
+      "era": "2018–",
+      "tags": [
+        "airdrop",
+        "nft-community",
+        "governance"
       ]
     },
     {
@@ -87,6 +110,18 @@ window.CIF = {
         "l1",
         "airdrop",
         "testnet-incentive"
+      ]
+    },
+    {
+      "n": "BNB Chain",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/BNB Chain.md",
+      "cat": "Layer 1 blockchain ecosystem (EVM-compatible smart contract platform + beacon chain)",
+      "era": "2017–",
+      "tags": [
+        "l1",
+        "airdrop",
+        "pivot"
       ]
     },
     {
@@ -389,6 +424,18 @@ window.CIF = {
       ]
     },
     {
+      "n": "Movement Labs",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Movement Labs.md",
+      "cat": "Move-based modular blockchain stack / Layer 2 / MoveVM execution environment",
+      "era": "2022–",
+      "tags": [
+        "l2",
+        "airdrop",
+        "modular"
+      ]
+    },
+    {
       "n": "Near",
       "tier": "Deep",
       "file": "examples/CaseStudies/Near.md",
@@ -624,6 +671,18 @@ window.CIF = {
       ]
     },
     {
+      "n": "Yearn Finance",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Yearn Finance.md",
+      "cat": "DeFi yield aggregator/optimizer (vaults & strategi yield otomatis)",
+      "era": "2020–",
+      "tags": [
+        "defi",
+        "airdrop",
+        "governance"
+      ]
+    },
+    {
       "n": "dYdX",
       "tier": "Deep",
       "file": "examples/CaseStudies/dYdX.md",
@@ -643,64 +702,6 @@ window.CIF = {
       "tags": [
         "l2",
         "airdrop"
-      ]
-    },
-    {
-      "n": "Axie Infinity",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Axie Infinity.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "nft-community",
-        "governance"
-      ]
-    },
-    {
-      "n": "BNB Chain",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/BNB Chain.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "pivot",
-        "l1"
-      ]
-    },
-    {
-      "n": "Blast",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Blast.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "l2"
-      ]
-    },
-    {
-      "n": "Movement Labs",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Movement Labs.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "modular",
-        "l2"
-      ]
-    },
-    {
-      "n": "Yearn Finance",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Yearn Finance.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "governance"
       ]
     }
   ],
