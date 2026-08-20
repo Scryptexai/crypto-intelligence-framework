@@ -1,0 +1,128 @@
+PROJECT: Berachain
+
+STATUS AIRDROP
+
+Sudah dilakukan. Berachain mendistribusikan BERA saat mainnet genesis/TGE 6 Februari 2025 sebagai bagian dari alokasi komunitas 38% (190 juta BERA dari 500 juta total supply per whitepaper) — distribusi ke komunitas, ekosistem, dan early contributors melalui klaim genesis; angka per kategori adalah rencana whitepaper dan realisasi on-chain-nya belum diverifikasi via holder analysis (tercatat sebagai C-001 di Phase 11). (MEDIUM) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; [Phase 6 — Distribution]
+
+AIRDROP EVENTS
+
+AD-001: Distribusi Genesis BERA (Komunitas, Ekosistem, Early Contributors)
+Tanggal: 2025-02-06 (TGE/mainnet genesis)
+Tipe: Genesis distribution/klaim berbasis partisipasi historis (testnet Artio, kampanye komunitas, kontribusi ekosistem)
+Alokasi: Bagian dari alokasi komunitas 38% (190.000.000 BERA dari 500.000.000 total supply per whitepaper; porsi genesis vs program lanjutan tidak dirinci di sumber yang diakses) (MEDIUM) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; [Phase 6 — Distribution]
+Penerima: Peserta testnet Artio (v1-v3), komunitas kampanye, early contributors; jumlah wallet tidak dipublikasikan resmi di sumber yang diakses (LOW)
+Nilai saat klaim: 8.64 USD per BERA (close hari TGE 2025-02-06; intraday range ekstrem 0.5-15.0 — price discovery hari pertama) [KuCoin BERA-USDT daily candle, https://www.kucoin.com/trade/BERA-USDT] (MEDIUM)
+Kriteria: Partisipasi testnet & aktivitas komunitas pra-mainnet; detail pembobotan tidak dipublikasikan penuh (LOW)
+Anti-sybil: Tidak dirinci publik; testnet multi-fase (Artio v1-v3) memberi data aktivitas historis sebagai basis filter (LOW)
+Terkait EV: EV TGE BERA (Phase 3)
+Sitasi: Phase 3 TGE event; Phase 6 Distribution (MEDIUM — dengan catatan C-001)
+
+CONTEXT SAAT KEPUTUSAN
+
+Kondisi saat keputusan distribusi BERA (awal 2025):
+- Kondisi pasar: Awal 2025 — narasi L1 alternatif & Proof-of-Liquidity; kompetisi L2/L1 baru intensif (MEDIUM) [Phase 8 — Market]
+- Posisi project: Testnet panjang (Artio v1-v3) membangun komunitas besar sebelum mainnet; native apps (BEX, Bend, Berps) siap day-1 (HIGH) [Phase 3 — Events]
+- Kompetitor terdekat: L1/L2 dengan program insentif token (Sui, Sei, dll.) — Berachain membedakan via Proof-of-Liquidity & budaya komunitas kuat (MEDIUM) [Phase 8 — Competitor Landscape]
+
+TRIGGER DAN ALTERNATIF
+
+Trigger utama: Mainnet genesis membutuhkan lapisan ekonomis aktif (gas, staking, liquidity incentives) sekaligus penghargaan komunitas testnet yang besar (HIGH) [Phase 3 — TGE event].
+Alternatif tidak diambil:
+- Public sale: tidak dilakukan; distribusi via genesis allocation (MEDIUM) [Phase 5 — Financial]
+- Menunda distribusi komunitas: tidak dipilih — komunitas testnet adalah aset utama proyek (MEDIUM) [Phase 3 — Events]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Menghargai komunitas & early contributors; mengaktifkan Proof-of-Liquidity dengan BERA sebagai gas & staking (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+- BGT non-transferable memastikan governance terikat pada partisipasi likuiditas, bukan spekulasi (MEDIUM) [Phase 4 — Technology]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Alokasi advisors 5% dan investors 15% tanpa identitas publik menciptakan opasitas unlock — HIPOTESIS (MEDIUM) [Phase 6 — Distribution]
+
+OUTCOME PER POV
+
+POV Founder (Smokey, Dev, Papa — tim pseudonim): Sukses
+- Jangka pendek: Mainnet & TGE terlaksana dengan atensi komunitas besar; listing luas (HIGH) [Phase 3 — Events]
+- Jangka panjang: Tekanan pembuktian pasca-hype; identitas pseudonim membatasi kepercayaan institusional (MEDIUM) [Phase 1 — Foundation]
+- Dasar: Phase 3 Events; Phase 1 Foundation (HIGH/MEDIUM)
+
+POV VC (Investor privat 15%): Sebagian
+- Jangka pendek: Harga TGE tinggi (high 15.0 USD hari pertama) memberi paper gain awal (MEDIUM) [KuCoin BERA-USDT, https://www.kucoin.com/trade/BERA-USDT]
+- Jangka panjang: Harga turun ke ~3.00 USD pada +90 hari dan berlanjut melemah sepanjang 2025 (menuju ~0.4-0.9 USD per data mingguan akhir 2025) — realisasi nilai tertekan (MEDIUM) [KuCoin BERA-USDT, https://www.kucoin.com/trade/BERA-USDT]
+- Dasar: KuCoin price history; Phase 6 Distribution (MEDIUM)
+
+POV Retail (Penerima distribusi genesis): Sebagian
+- Jangka pendek: Penerima klaim genesis mendapat BERA pada harga penutupan TGE 8.64 USD; penjual hari pertama merealisasi gain dari partisipasi testnet berbiaya rendah (MEDIUM) [KuCoin BERA-USDT, https://www.kucoin.com/trade/BERA-USDT]
+- Jangka panjang: Depresiasi ~65% dalam 90 hari (3.00 USD pada 2025-05-07) dan berlanjut — pemegang pasif merugi besar (MEDIUM) [KuCoin BERA-USDT, https://www.kucoin.com/trade/BERA-USDT]
+- Dasar: KuCoin price history (MEDIUM)
+
+POV Community (Peserta testnet & budaya Berachain): Sebagian
+- Jangka pendek: Komunitas besar terreward; budaya "Bong Bears" menjadi identitas kuat (MEDIUM) [Phase 3 — Events]
+- Jangka panjang: Nilai reward menurun bersama harga; keberlanjutan engagement bergantung ekosistem riil (LOW)
+- Dasar: Phase 3; Phase 7 Ecosystem (MEDIUM/LOW)
+
+POV Developer (Builder native apps & ekosistem): Sukses
+- Jangka pendek: Native apps (BEX, Bend, Berps) live day-1; alokasi ekosistem 10% tersedia (HIGH) [Phase 3 — Events; Phase 6 — Distribution]
+- Jangka panjang: Insentif Proof-of-Liquidity memberi model berbeda dari emisi biasa (MEDIUM) [Phase 4 — Technology]
+- Dasar: Phase 3; Phase 4; Phase 7 (HIGH/MEDIUM)
+
+POV Institution (Exchange, fund): Sebagian
+- Jangka pendek: Listing CEX luas pada TGE (MEDIUM) [Phase 3 — TGE event]
+- Jangka panjang: Tim pseudonim + distribusi belum terverifikasi on-chain menjadi catatan due-diligence (MEDIUM) [Phase 11 — C-001, C-003]
+- Dasar: Phase 11 Conflict Register (MEDIUM)
+
+POV Validator: Sebagian
+- Jangka pendek: Validator set awal aktif pada genesis dengan staking BERA (HIGH) [Phase 3 — Mainnet genesis]
+- Jangka panjang: Imbal hasil validator bergantung emisi & fee; roadmap desentralisasi belum rinci (LOW) [Phase 4 — Technology]
+- Dasar: Phase 3; Phase 4 (HIGH/LOW)
+
+POV Builder (Protokol di ekosistem Berachain): Sebagian
+- Jangka pendek: Akses likuiditas Proof-of-Liquidity untuk bootstrap TVL (MEDIUM) [Phase 7 — Ecosystem]
+- Jangka panjang: Keberlanjutan insentif bergantung kesehatan ekonomi BERA/BGT (LOW)
+- Dasar: Phase 7 (MEDIUM/LOW)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 8.64 USD (2025-02-06) [KuCoin BERA-USDT daily candle close (hari TGE; intraday range ekstrem 0.5-15.0 mencerminkan price discovery hari pertama), https://www.kucoin.com/trade/BERA-USDT] (MEDIUM)
+Harga +30 hari: 6.76 USD (2025-03-08) [KuCoin BERA-USDT daily candle close, https://www.kucoin.com/trade/BERA-USDT] (MEDIUM)
+Harga +90 hari: 3.00 USD (2025-05-07) [KuCoin BERA-USDT daily candle close, https://www.kucoin.com/trade/BERA-USDT] (MEDIUM)
+Harga puncak 12 bulan pertama: 15.00 USD (2025-02-06) [KuCoin BERA-USDT TGE-day high; scan mingguan Feb 2025-Feb 2026 tidak menemukan high lebih tinggi (tertinggi berikutnya 9.20 minggu Feb 2025), https://www.kucoin.com/trade/BERA-USDT] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan TVL sebelum vs sesudah distribusi: Tidak ditemukan (data TVL Berachain pre/post TGE tidak tersedia di sumber yang diakses) (LOW)
+Jumlah alamat pemegang token (unique holders): Tidak ditemukan (tidak dipublikasikan resmi) (LOW)
+Jumlah alamat aktif harian sebelum vs sesudah: Tidak ditemukan (LOW)
+Konsentrasi kepemilikan: Belum terverifikasi on-chain (C-001) — alokasi whitepaper menyiratkan 62% di luar komunitas awal (team/investors/foundation/ecosystem/advisors) (MEDIUM) [Phase 6 — Distribution]
+Tingkat partisipasi staking: Staking BERA aktif untuk validator; angka partisipasi tidak dipublikasikan di sumber yang diakses (LOW)
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: distribusi genesis tanpa daftar penerima publik — analisis on-chain diperlukan.
+Distribusi whitepaper vs realisasi on-chain belum diverifikasi (C-001).
+Harga BERA 2026 terkini dari sumber terverifikasi.
+
+FARMING DAN SYBIL
+
+Testnet multi-fase (Artio v1-v3) memberi data aktivitas historis sebagai basis filter, namun detail mekanisme anti-sybil tidak dipublikasikan — farming testnet lintas multi-wallet mungkin terjadi sebagaimana pola testnet-point era 2023-2025 (LOW) [Phase 3 — Events]
+
+PROSPEK
+
+Metrik yang terpenuhi: Eksekusi TGE & mainnet dengan native apps day-1; komunitas besar terreward (HIGH)
+Metrik yang tidak terpenuhi: Retensi nilai (-65% dalam 90 hari dari close TGE, berlanjut melemah); transparansi distribusi on-chain (MEDIUM)
+Sinyal ke depan: Verifikasi holder distribution; pertumbuhan TVL Proof-of-Liquidity; jadwal unlock team/investors (MEDIUM)
+Penilaian: Distribusi genesis BERA sukses secara eksekusi dan narasi komunitas, namun mengikuti pola cohort TGE 2025 (BERA/VANA/LINEA): puncak di hari pertama, depresiasi tajam tanpa penahan nilai — diperburuk opasitas distribusi aktual (MEDIUM)
+
+PELAJARAN LINTAS PROJECT
+
+Komunitas testnet besar adalah aset distribusi, tetapi tanpa value capture pasca-TGE, reward berubah menjadi exit event — pola berulang di cohort 2025 (Bandingkan VANA, LINEA di dataset ini).
+Alokasi whitepaper yang belum terverifikasi on-chain adalah liabilitas kepercayaan — verifikasi holder harus menjadi syarat publikasi angka distribusi.
+Price discovery hari pertama yang ekstrem (0.5 → 15.0 dalam sehari) membuat harga klaim sebagai referensi menjadi tidak stabil — median/close lebih dapat diandalkan daripada high.
+
+OPEN THREADS
+
+- Verifikasi on-chain distribusi BERA aktual (berascan holder analysis)
+- Jumlah wallet penerima distribusi genesis
+- Jadwal unlock team (20%) & investors (15%)
+- TVL Proof-of-Liquidity terkini

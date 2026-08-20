@@ -1,0 +1,925 @@
+PROJECT: Sei
+
+Event ID
+
+EV-001
+
+Date
+
+2021
+
+Event Name
+
+Pendirian Sei Labs Inc.
+
+Event Type
+
+Founding
+
+Description
+
+Sei Labs Inc. didirikan sebagai korporasi Delaware oleh Jayendra Jog dan Dan Edlebeck untuk membangun blockchain Layer 1 teroptimasi trading.
+
+Participants
+
+Sei Labs Inc., Jayendra Jog, Dan Edlebeck
+
+Location
+
+Delaware, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas hukum pendiri terdaftar (file number 7465721), memulai pengembangan protokol Sei.
+
+Sources
+
+https://opencorporates.com/companies/us_de/7465721
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2022-03-15
+
+Event Name
+
+Luncuran Testnet Atlantic-1
+
+Event Type
+
+Launch
+
+Description
+
+Sei meluncurkan testnet pertama Atlantic-1 (chain-id: atlantic-1) untuk validasi protokol parallel execution dan order matching engine pra-mainnet.
+
+Participants
+
+Sei Labs Inc., Sei Network
+
+Location
+
+Global (testnet publik)
+
+Status
+
+Completed
+
+Immediate Result
+
+Testnet live untuk validator, developer, dan komunitas menguji arsitektur Sei; dasar feedback untuk mainnet.
+
+Sources
+
+https://sei.io/blog/introducing-sei-testnet
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2022-03-15
+
+Event Name
+
+Rilis GitHub v0.1.0 Sei Chain
+
+Event Type
+
+Technology
+
+Description
+
+Repository resmi sei-protocol/sei-chain merilis tag v0.1.0 seiring luncuran testnet Atlantic-1, menandai kode basis pertama publik.
+
+Participants
+
+Sei Labs Inc., GitHub
+
+Location
+
+GitHub (https://github.com/sei-protocol/sei-chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Kode sumber protokel Sei tersedia publik untuk audit, kontribusi, dan deployment validator testnet.
+
+Sources
+
+https://github.com/sei-protocol/sei-chain/releases/tag/v0.1.0
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2023-08-15
+
+Event Name
+
+Luncuran Mainnet Pacific-1 dan TGE Token SEI
+
+Event Type
+
+Launch
+
+Description
+
+Sei meluncurkan mainnet Pacific-1 (chain-id: pacific-1) bersamaan dengan Token Generation Event (TGE) token SEI native (denom: usei).
+
+Participants
+
+Sei Labs Inc., Sei Network, Pacific-1
+
+Location
+
+Global (mainnet publik)
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan produksi live; token SEI mulai beredar dan terdaftar di bursa; validator set aktif memproduksi blok.
+
+Sources
+
+https://sei.io/blog/sei-mainnet-launch
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2023-08-15
+
+Event Name
+
+Listing SEI di Binance saat TGE
+
+Event Type
+
+Market
+
+Description
+
+Binance melisting token SEI (spot trading pairs SEI/USDT, SEI/BUSD, SEI/BNB) tepat pada waktu TGE mainnet, menyediakan liquidity awal dan on-ramp fiat.
+
+Participants
+
+Binance, Sei Labs Inc., Sei Network
+
+Location
+
+Binance Exchange
+
+Status
+
+Completed
+
+Immediate Result
+
+Token SEI tersedia untuk trading publik dengan volume signifikan; price discovery dimulai.
+
+Sources
+
+https://www.binance.com/en/blog/spotlight/sei-sei-326868
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2023-08-15
+
+Event Name
+
+Deploy Token SEI ERC-20 di Ethereum
+
+Event Type
+
+Token
+
+Description
+
+Token SEI di-deploy sebagai ERC-20 di Ethereum mainnet (contract: 0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5) untuk bridging via Wormhole/Axelar.
+
+Participants
+
+Sei Labs Inc., Ethereum, Wormhole, Axelar
+
+Location
+
+Ethereum mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Representasi SEI di Ethereum memungkinkan bridging cross-chain dan akses ekosistem DeFi EVM.
+
+Sources
+
+https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2023-08
+
+Event Name
+
+Integrasi IBC Native di Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+Mainnet Pacific-1 mengaktifkan IBC (Inter-Blockchain Communication) native Cosmos untuk transfer aset dan data antar chain IBC-enabled.
+
+Participants
+
+Sei Network, IBC, Cosmos Hub
+
+Location
+
+Sei mainnet (Pacific-1)
+
+Status
+
+Completed
+
+Immediate Result
+
+Sei terhubung ke ekosistem Cosmos (Osmosis, Juno, dll) untuk transfer token dan interoperabilitas data.
+
+Sources
+
+https://docs.sei.io/learn/architecture
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2023-08
+
+Event Name
+
+Integrasi Bridge Wormhole dan Axelar
+
+Event Type
+
+Integration
+
+Description
+
+Sei mengintegrasikan Wormhole dan Axelar sebagai bridge utama cross-chain untuk token SEI dan general message passing ke Ethereum, Solana, dan EVM L2s.
+
+Participants
+
+Sei Network, Wormhole, Axelar
+
+Location
+
+Sei mainnet, Ethereum, Solana, Arbitrum, Optimism, Base, BSC, Polygon
+
+Status
+
+Completed
+
+Immediate Result
+
+Token SEI dapat dibridge ke 7+ chain eksternal; composability cross-chain untuk DeFi Sei.
+
+Sources
+
+https://docs.sei.io/learn/architecture
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2023-08
+
+Event Name
+
+Integrasi Oracle Pyth Network dan Chainlink
+
+Event Type
+
+Integration
+
+Description
+
+Sei mengintegrasikan Pyth Network (first-party financial data) dan Chainlink (decentralized oracle, VRF, CCIP) sebagai price feed infrastruktur DeFi.
+
+Participants
+
+Sei Network, Pyth Network, Chainlink
+
+Location
+
+Sei mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Aplikasi DeFi di Sei (DEX, lending, perps) memiliki akses price feed reliable dan tamper-proof.
+
+Sources
+
+https://sei.io/ecosystem
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2023-09
+
+Event Name
+
+Luncuran DragonSwap (DEX AMM Native)
+
+Event Type
+
+Ecosystem
+
+Description
+
+DragonSwap, DEX AMM native Sei, meluncurkan di mainnet sebagai core liquidity venue untuk trading SEI dan token ekosistem.
+
+Participants
+
+DragonSwap, Sei Network
+
+Location
+
+Sei mainnet (dApp)
+
+Status
+
+Completed
+
+Immediate Result
+
+AMM pertama live di Sei; liquidity pools SEI/USDC, SEI/USDT, dan token ekosistem awal tersedia.
+
+Sources
+
+https://dragonswap.app
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2023-09
+
+Event Name
+
+Luncuran Silo Finance (Isolated Lending)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Silo Finance mendeploy protokol isolated lending markets di Sei untuk borrowing/lending asset dengan isolasi risiko per market.
+
+Participants
+
+Silo Finance, Sei Network
+
+Location
+
+Sei mainnet (dApp)
+
+Status
+
+Completed
+
+Immediate Result
+
+Money market pertama di Sei; user bisa supply/borrow asset dengan risk isolation.
+
+Sources
+
+https://docs.silo.finance
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2023-10
+
+Event Name
+
+Luncuran Yei Finance (Leveraged Yield)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Yei Finance meluncurkan vaults leveraged yield strategies untuk LP positions di Sei, mengoptimalkan return liquidity provider.
+
+Participants
+
+Yei Finance, Sei Network
+
+Location
+
+Sei mainnet (dApp)
+
+Status
+
+Completed
+
+Immediate Result
+
+Strategi yield otomatis tersedia untuk LP DragonSwap dan DEX lain; capital efficiency meningkat.
+
+Sources
+
+https://yei.finance
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2023-11
+
+Event Name
+
+Luncuran Leviathan (Perpetual DEX)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Leviathan meluncurkan perpetual DEX dengan on-chain orderbook di Sei untuk trading perpetual futures.
+
+Participants
+
+Leviathan, Sei Network
+
+Location
+
+Sei mainnet (dApp)
+
+Status
+
+Completed
+
+Immediate Result
+
+Perp DEX pertama di Sei; orderbook on-chain memanfaatkan parallel execution Sei untuk throughput tinggi.
+
+Sources
+
+https://leviathan.gg
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2023-11
+
+Event Name
+
+Luncuran Pallet Exchange (NFT Marketplace)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Pallet Exchange meluncurkan NFT marketplace native Sei untuk minting, trading, dan discovery koleksi CosmWasm.
+
+Participants
+
+Pallet Exchange, Sei Network
+
+Location
+
+Sei mainnet (dApp)
+
+Status
+
+Completed
+
+Immediate Result
+
+Infrastruktur NFT pertama di Sei; standar CW721 diterapkan untuk koleksi ekosistem.
+
+Sources
+
+https://pallet.exchange
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2023-12
+
+Event Name
+
+Dukungan Wallet Keplr, Leap, Compass di Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+Wallet Cosmos ecosystem (Keplr, Leap, Compass) menambahkan dukungan penuh Sei mainnet untuk CosmWasm, staking, governance, dan IBC.
+
+Participants
+
+Keplr Wallet, Leap Wallet, Compass Wallet, Sei Network
+
+Location
+
+Browser extension / mobile app
+
+Status
+
+Completed
+
+Immediate Result
+
+User retail dan developer memiliki wallet non-custodial native untuk berinteraksi dengan Sei.
+
+Sources
+
+https://docs.sei.io/learn/wallets
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2024-04-23
+
+Event Name
+
+Pengumuman Sei v2 (EVM Compatibility dengan Geth)
+
+Event Type
+
+Technology
+
+Description
+
+Sei Labs mengumumkan Sei v2: upgrade mayor menambahkan kompatibilitas EVM native melalui integrasi Geth, memungkinkan smart contract Ethereum berjalan tanpa modifikasi di Sei.
+
+Participants
+
+Sei Labs Inc., Sei Network, Sei v2
+
+Location
+
+Global (announcement via blog)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Roadmap teknis Sei v2 dipublikasikan; developer EVM dapat mempersiapkan migrasi/deploy ke Sei; integrasi MetaMask direncanakan.
+
+Sources
+
+https://sei.io/blog/introducing-sei-v2
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2024-04-23
+
+Event Name
+
+Pengumuman SeiDB (Parallelized Storage Layer)
+
+Event Type
+
+Technology
+
+Description
+
+Sei Labs mengumumkan SeiDB: lapisan penyimpanan terparalelisasi internal untuk throughput tinggi, state bloat reduction, dan fast sync.
+
+Participants
+
+Sei Labs Inc., Sei Network, SeiDB
+
+Location
+
+Global (announcement via blog)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Arsitektur storage baru didesain untuk mendukung skalabilitas Sei v2 dan beban transaksi tinggi.
+
+Sources
+
+https://sei.io/blog/introducing-sei-db
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2024-05
+
+Event Name
+
+Dukungan MetaMask untuk Sei v2 (EVM RPC)
+
+Event Type
+
+Integration
+
+Description
+
+MetaMask menambahkan dukungan Sei v2 via RPC EVM-compatible, memungkinkan user Ethereum mengakses Sei tanpa ganti wallet.
+
+Participants
+
+MetaMask, Sei Labs Inc., Sei v2
+
+Location
+
+MetaMask browser extension / mobile
+
+Status
+
+Completed
+
+Immediate Result
+
+Jutaan user MetaMask dapat menambahkan jaringan Sei v2 dan berinteraksi dengan dApp EVM di Sei.
+
+Sources
+
+https://sei.io/blog/introducing-sei-v2
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2024-07
+
+Event Name
+
+Luncuran Testnet Sei v2 (Pacific-2 / Devnet)
+
+Event Type
+
+Launch
+
+Description
+
+Sei Labs meluncurkan testnet/public devnet untuk Sei v2 (EVM compatibility) guna validasi integrasi Geth, precompile contracts, dan tooling Ethereum.
+
+Participants
+
+Sei Labs Inc., Sei Network, Sei v2
+
+Location
+
+Global (testnet publik)
+
+Status
+
+Completed
+
+Immediate Result
+
+Developer bisa test deploy kontrak Solidity, gunakan Hardhat/Foundry, dan verifikasi kompatibilitas EVM penuh.
+
+Sources
+
+https://docs.sei.io
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2024-08-15
+
+Event Name
+
+Upgrade Mainnet ke Sei v2 (EVM Live)
+
+Event Type
+
+Technology
+
+Description
+
+Mainnet Pacific-1 di-upgrade ke Sei v2, mengaktifkan EVM compatibility penuh di production; Geth terintegrasi ke consensus layer Sei.
+
+Participants
+
+Sei Labs Inc., Sei Network, Sei v2, Pacific-1
+
+Location
+
+Sei mainnet (Pacific-1)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Smart contract Ethereum (Solidity/Vyper) bisa deploy dan execute native di Sei; ekosistem EVM berekspansi ke Sei.
+
+Sources
+
+https://sei.io/blog/introducing-sei-v2
+
+---
+
+### KELOMPOKKAN BERDASARKAN TAHUN
+
+#### 2021
+- EV-001: Pendirian Sei Labs Inc. (Founding)
+
+#### 2022
+- EV-002: Luncuran Testnet Atlantic-1 (Launch)
+- EV-003: Rilis GitHub v0.1.0 Sei Chain (Technology)
+
+#### 2023
+- EV-004: Luncuran Mainnet Pacific-1 dan TGE Token SEI (Launch)
+- EV-005: Listing SEI di Binance saat TGE (Market)
+- EV-006: Deploy Token SEI ERC-20 di Ethereum (Token)
+- EV-007: Integrasi IBC Native di Mainnet (Integration)
+- EV-008: Integrasi Bridge Wormhole dan Axelar (Integration)
+- EV-009: Integrasi Oracle Pyth Network dan Chainlink (Integration)
+- EV-010: Luncuran DragonSwap (DEX AMM Native) (Ecosystem)
+- EV-011: Luncuran Silo Finance (Isolated Lending) (Ecosystem)
+- EV-012: Luncuran Yei Finance (Leveraged Yield) (Ecosystem)
+- EV-013: Luncuran Leviathan (Perpetual DEX) (Ecosystem)
+- EV-014: Luncuran Pallet Exchange (NFT Marketplace) (Ecosystem)
+- EV-015: Dukungan Wallet Keplr, Leap, Compass di Mainnet (Integration)
+
+#### 2024
+- EV-016: Pengumuman Sei v2 (EVM Compatibility dengan Geth) (Technology)
+- EV-017: Pengumuman SeiDB (Parallelized Storage Layer) (Technology)
+- EV-018: Dukungan MetaMask untuk Sei v2 (EVM RPC) (Integration)
+- EV-019: Luncuran Testnet Sei v2 (Pacific-2 / Devnet) (Launch)
+- EV-020: Upgrade Mainnet ke Sei v2 (EVM Live) (Technology)
+
+---
+
+### RINGKASAN
+
+Total Events
+
+20
+
+Founding
+
+1
+
+Funding
+
+0
+
+Technology
+
+6
+
+Security
+
+0
+
+Governance
+
+0
+
+Legal
+
+0
+
+Market
+
+1
+
+Other
+
+12
+
+---
+
+Open Threads
+
+- Tanggal pasti pengumuman Sei v2 dan SeiDB: blog Sei tertulis "April 23, 2024" tapi perlu verifikasi URL exact publish date
+- Tanggal exact luncuran testnet Sei v2 (Pacific-2/devnet) — docs.sei.io merujuk "July 2024" tapi tanggal spesifik tidak tercatat di sumber Phase 1-2
+- Tanggal exact upgrade mainnet ke Sei v2 — diumumkan "August 2024" tapi apakah 2024-08-15 (tahun ke-1 mainnet) atau tanggal lain perlu konfirmasi on-chain governance proposal
+- Funding rounds (Series A, Series B, strategic rounds) — tidak ada data di Phase 1-2; perlu cari announcement Sei Labs / investor press release
+- Security audit reports untuk Sei chain, SeiDB, Sei v2 smart contracts — tidak teridentifikasi di Phase 1-2; perlu cari Halborn, Informal Systems, atau auditor lain
+- Governance proposals on-chain (parameter changes, upgrade signaling, community spend) — tidak tercatat; perlu query governance module Sei mainnet
+- DAO/Foundation entity terpisah dari Sei Labs Inc. — tidak ditemukan di Phase 1-2; apakah ada "Sei Foundation" di Cayman/Switzerland seperti pola Cosmos lain
+- Tokenomics detail: persentase TGE, vesting schedule team/investor/community, fee switch status — whitepaper mereferensikan tapi angka exact perlu cross-check on-chain dan blog resmi
+- Complete list chain deployments SEI bridged (wormhole/axelar) post-knowledge cutoff — mungkin ada chain baru (Linea, Scroll, Mantle, dll)

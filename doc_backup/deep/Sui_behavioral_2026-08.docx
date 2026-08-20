@@ -1,0 +1,414 @@
+PROJECT: Sui
+
+Strategic Objectives
+
+1. Menjadi blockchain Layer 1 generasi berikutnya dengan throughput tertinggi dan finality tercepat
+
+·  Evidence: Sui dirancang dari awal dengan arsitektur object-centric untuk parallel execution; Mysticeti consensus menghasilkan finality sub-second (~800ms) dan throughput >50k TPS sustained pasca-upgrade Juli 2024. (HIGH) [Sui Blog Mysticeti, https://blog.sui.io/mysticeti-mainnet-upgrade/]; [Sui Docs Architecture, https://docs.sui.io/concepts/architecture]
+·  Supporting Dataset: Phase 1, Phase 3 EV-022, EV-025, Phase 4, Phase 8
+
+2. Membangun ekosistem DeFi dan consumer application yang luas dengan onboarding pengguna Web2 tanpa hambatan teknis
+
+·  Evidence: zkLogin memungkinkan login via OAuth (Google, Twitch, Facebook, Apple) tanpa seed phrase; sponsored transactions / Gas Station memungkinkan aplikasi membayar gas fee user; >50 dApp mengadopsi zkLogin dalam 6 bulan pertama. (HIGH) [Sui Docs zkLogin, https://docs.sui.io/guides/developer/app-development/zklogin]; [Sui Blog zkLogin Mainnet, https://blog.sui.io/zklogin-mainnet/]
+·  Supporting Dataset: Phase 1, Phase 3 EV-019, EV-012, Phase 4, Phase 7
+
+3. Menciptakan ekosistem Move Language yang berkembang dan aman melalui formal verification
+
+·  Evidence: Move VM sebagai execution engine; Move Prover untuk formal verification; pengembangan SDK multi-bahasa (Rust, TypeScript, Python); ekosistem developer dengan >2.500 peserta hackathon global. (HIGH) [Move Language Book, https://move-book.com/]; [Sui Basecamp, https://sui.io/basecamp]
+·  Supporting Dataset: Phase 1, Phase 4, Phase 7, Phase 8
+
+4. Membangun interoperabilitas cross-chain yang trusted melalui bridge native dan integrasi stablecoin
+
+·  Evidence: Sui Bridge Native (Sui ↔ Ethereum) diluncurkan Mei 2024 sebagai bridge trust-minimized; USDC native via Circle CCTP; USDT native (Tether); integrasi Wormhole untuk lintas-chain tambahan. (HIGH) [Sui Blog Bridge Mainnet, https://blog.sui.io/sui-bridge-mainnet/]; [Circle USDC on Sui, https://www.circle.com/en/usdc-on-sui]; [Tether, https://tether.to/tether-usdt-launches-on-sui/]
+·  Supporting Dataset: Phase 3 EV-017, EV-018, EV-021, EV-023, EV-026, Phase 7
+
+5. Mencapai desentralisasi progresif melalui Sui Foundation dan on-chain governance
+
+·  Evidence: Pendirian Sui Foundation (Zug, Swiss) sebagai entitas non-profit yang mengelola treasury, grants, dan validator; on-chain governance aktif dengan proposal dan voting stake-weighted; treasury >$1 miliar per Januari 2025. (HIGH) [Sui Foundation, https://sui.io/foundation]; [Gov Sui, https://gov.sui.io/]; [Sui Foundation Treasury, https://sui.io/foundation/treasury]
+·  Supporting Dataset: Phase 2, Phase 3 EV-007, EV-027, EV-030, Phase 5, Phase 6
+
+6. Memperluas ekosistem gaming dan consumer app melalui perangkat keras dan inovasi UX
+
+·  Evidence: SuiPlay0x1 handheld gaming device dengan Playtron OS; integrasi Sui wallet dan zkLogin untuk game economy; fokus pada pengalaman pengguna non-teknis. (MEDIUM) [Sui Blog SuiPlay0x1, https://blog.sui.io/suiplay0x1-announcement/]
+·  Supporting Dataset: Phase 3 EV-029, Phase 7
+
+Decision Timeline
+
+Keputusan: Pendirian Mysten Labs oleh mantan tim Meta Diem/Novi (2021-09)
+·  Trigger: Kehilangan kesempatan meluncurkan Diem/Novi setelah regulasi; keinginan membawa teknologi Move dan pengalaman membangun blockchain ke lingkungan independen
+·  Evidence: Lima co-founder berasal dari Meta (Diem/Novi); fokus awal pada infrastruktur Web3 generasi baru. (HIGH) [Mysten Labs, https://mystenlabs.com/]
+·  Decision: Mendirikan Mysten Labs sebagai perusahaan independen dengan fokus membangun protokol Sui
+·  Immediate Result: Terbentuknya core development team dengan pengalaman unik di bidang konsensus, kriptografi, dan bahasa pemrograman Move
+·  Long-term Impact: Menjadi fondasi teknis dan visioner untuk seluruh pengembangan Sui
+·  Supporting Dataset: Phase 2, Phase 3 EV-001
+
+Keputusan: Ronde Pendanaan Series A $36M dipimpin a16z (2021-12-01)
+·  Trigger: Kebutuhan modal untuk membangun protokol dari awal dan merekrut tim engineering; menarik investor strategis kripto
+·  Evidence: a16z Crypto sebagai lead investor; partisipasi Coinbase Ventures, Binance Labs, FTX Ventures. (HIGH) [TechCrunch, https://techcrunch.com/2021/12/01/mysten-labs-raises-36m-series-a-a16z]
+·  Decision: Mengumpulkan $36M equity untuk pengembangan protokol Sui
+·  Immediate Result: Modal awal untuk rekrutmen dan pengembangan devnet/testnet
+·  Long-term Impact: Menandai awal kolaborasi strategis dengan investor besar yang kemudian mendukung listing dan integrasi ekosistem
+·  Supporting Dataset: Phase 3 EV-002, Phase 5
+
+Keputusan: Peluncuran Sui Testnet Wave 1 untuk pengujian publik (2022-08)
+·  Trigger: Kebutuhan untuk menguji protokol pada skala publik sebelum mainnet; mendapatkan feedback dan data dari validator kandidat dan pengembang
+·  Evidence: Program incentivized testnet Wave 1; ribuan validator kandidat berpartisipasi. (HIGH) [Sui Blog Testnet Wave 1, https://blog.sui.io/sui-testnet-wave-1-launches/]
+·  Decision: Membuka testnet publik pertama dengan insentif token SUI di masa depan
+·  Immediate Result: Partisipasi ribuan validator dan pengembang; data performa awal terkumpul
+·  Long-term Impact: Membangun komunitas awal dan memvalidasi arsitektur sebelum mainnet
+·  Supporting Dataset: Phase 3 EV-005
+
+Keputusan: Ronde Pendanaan Series B $300M dengan valuasi $2 miliar (2022-09-08)
+·  Trigger: Kebutuhan modal besar untuk ekspansi ekosistem, grants, infrastruktur, dan pertumbuhan tim menjelang mainnet; menarik investor institusional dan strategis
+·  Evidence: a16z memimpin; partisipasi Coinbase Ventures, Binance Labs, Jump Crypto, Franklin Templeton, Circle Ventures. (HIGH) [TechCrunch, https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/]
+·  Decision: Mengumpulkan $300M dengan valuasi $2 miliar
+·  Immediate Result: Modal besar tersedia untuk pengembangan ekosistem dan persiapan mainnet
+·  Long-term Impact: Memperkuat kolaborasi dengan investor yang mendukung listing exchange utama dan integrasi stablecoin
+·  Supporting Dataset: Phase 3 EV-006, Phase 5
+
+Keputusan: Pendirian Sui Foundation di Zug, Swiss sebagai entitas non-profit terpisah (2022-10)
+·  Trigger: Kebutuhan untuk desentralisasi pengelolaan treasury, grants, dan governance; memisahkan kepentingan commercial (Mysten Labs) dari kepentingan ekosistem
+·  Evidence: Foundation berbasis di Zug, Swiss; mengelola 50% community reserve. (HIGH) [Sui Blog Foundation Launch, https://blog.sui.io/sui-foundation-launches/]
+·  Decision: Mendirikan Sui Foundation sebagai entitas independen yang mengelola treasury dan program ekologi
+·  Immediate Result: Fungsi governance dan treasury terpisah dari Mysten Labs
+·  Long-term Impact: Fondasi untuk desentralisasi governance on-chain; kepercayaan komunitas terhadap netralitas ekosistem
+·  Supporting Dataset: Phase 2, Phase 3 EV-007
+
+Keputusan: Peluncuran Mainnet Bersamaan dengan Token Generation Event dan Listing Exchange Utama (2023-05-03)
+·  Trigger: Kesiapan protokol setelah 3 wave testnet; kebutuhan untuk memulai ekosistem DeFi dan menarik pengguna; memanfaatkan momentum pasar
+·  Evidence: Mainnet genesis block; TGE SUI; listing serentak di Binance, Coinbase, OKX, Bybit, KuCoin, Kraken. (HIGH) [Sui Blog Mainnet Launch, https://blog.sui.io/sui-mainnet-launches/]; [Binance Blog, https://www.binance.com/en/blog/143401324684903493]
+·  Decision: Meluncurkan mainnet bersamaan dengan TGE dan listing exchange terbesar
+·  Immediate Result: Token SUI live; ekosistem dApp mulai deploy; liquidity bootstrap via exchange
+·  Long-term Impact: Menjadi blockchain produksi dengan akses global; titik awal untuk entire timeline pertumbuhan berikutnya
+·  Supporting Dataset: Phase 3 EV-010, EV-011, Phase 6, Phase 8
+
+Keputusan: Peluncuran zkLogin Mainnet untuk onboarding user Web2 tanpa seed phrase (2023-11)
+·  Trigger: Kebutuhan untuk menghilangkan hambatan teknis adopsi massal; fokus pada consumer apps dan gaming
+·  Evidence: zkLogin dengan OAuth providers (Google, Twitch, Facebook, Apple); >50 dApp adopsi dalam 6 bulan. (HIGH) [Sui Blog zkLogin Mainnet, https://blog.sui.io/zklogin-mainnet/]
+·  Decision: Mengaktifkan zkLogin di mainnet sebagai primitif autentikasi standar
+·  Immediate Result: Aplikasi consumer dapat onboard user tanpa wallet; onboarding gasless
+·  Long-term Impact: Membedakan Sui dari pesaing pada UX consumer; mendukung ekspansi gaming
+·  Supporting Dataset: Phase 3 EV-019, Phase 4, Phase 7
+
+Keputusan: Peluncuran Sui Bridge Native (Sui ↔ Ethereum) sebagai bridge canonical trust-minimized (2024-05)
+·  Trigger: Ketergantungan pada Wormhole sebagai bridge utama dirasakan kurang trusted; kebutuhan untuk bridge resmi yang dioperasikan validator set Sui
+·  Evidence: Bridge native diumumkan; dioperasikan validator set; menggantikan ketergantungan pada Wormhole. (HIGH) [Sui Blog Bridge Mainnet, https://blog.sui.io/sui-bridge-mainnet/]
+·  Decision: Meluncurkan bridge native sebagai arus utama transfer aset antara Sui dan Ethereum
+·  Immediate Result: Bridge trust-minimized beroperasi; volume hari pertama >$10M
+·  Long-term Impact: Mengurangi risiko sentralisasi bridge eksternal; memperkuat interoperabilitas dengan Ethereum
+·  Supporting Dataset: Phase 3 EV-021, EV-023, Phase 4, Phase 7
+
+Keputusan: Upgrade Konsensus Mysticeti di Mainnet (2024-07)
+·  Trigger: Kebutuhan untuk meningkatkan throughput dan menurunkan latency; persaingan dengan Solana/Aptos pada segmen high-throughput
+·  Evidence: Mysticeti menggantikan Narwhal/Bullshark; finality sub-second; throughput >50k TPS. (HIGH) [Sui Blog Mysticeti Mainnet, https://blog.sui.io/mysticeti-mainnet-upgrade/]
+·  Decision: Mengaktifkan Mysticeti di mainnet via on-chain governance
+·  Immediate Result: Latency rata-rata ~800ms; kapasitas transaksi melonjak
+·  Long-term Impact: Memperkuat narasi high-performance; mendukung aplikasi real-time (game, trading)
+·  Supporting Dataset: Phase 3 EV-025, Phase 4, Phase 8
+
+Keputusan: Peluncuran USDT Native di Sui (2024-09)
+·  Trigger: Kebutuhan untuk menambah likuiditas stablecoin; USDC saja tidak cukup untuk pasangan trading dan collateral
+·  Evidence: Tether meluncurkan USDT native di Sui. (HIGH) [Tether, https://tether.to/tether-usdt-launches-on-sui/]
+·  Decision: Mengintegrasikan USDT native untuk memperluas pilihan stablecoin
+·  Immediate Result: USDT tersedia di DEX; kombinasi stablecoin >$300M
+·  Long-term Impact: Menambah kedalaman likuiditas DeFi dan menarik capital inflow
+·  Supporting Dataset: Phase 3 EV-026, Phase 7
+
+Keputusan: Peluncuran SuiPlay0x1 (Handheld Gaming Device) dan Playtron OS (2024-12)
+·  Trigger: Strategi menangkap pasar gaming; integrasi Web3 ke perangkat keras untuk mengatasi hambatan adopsi consumer
+·  Evidence: Mysten Labs dan Playtron mengumumkan device; pre-order Q1 2025. (MEDIUM) [Sui Blog SuiPlay0x1, https://blog.sui.io/suiplay0x1-announcement/]
+·  Decision: Mengembangkan perangkat keras gaming native Web3 terintegrasi Sui
+·  Immediate Result: Perangkat keras pertama native Sui dipasarkan
+·  Long-term Impact: Potensi membuka pasar gaming mass market jika berhasil
+·  Supporting Dataset: Phase 3 EV-029, Phase 7
+
+Evolution Pattern
+
+Pola 1: Dari Developer-First ke Consumer-First
+
+·  Decision Pattern: Pergeseran fokus dari menarik developer teknis (testnet, devnet, SDK) ke menarik pengguna non-teknis (zkLogin, gasless, gaming device)
+·  Evidence: Peluncuran zkLogin mainnet Nov 2023; SuiPlay0x1 Des 2024; sponsored transactions diadopsi secara luas; narasi "Web3 tanpa hambatan" semakin dominan di blog resmi. (HIGH) [Sui Blog, https://blog.sui.io/]
+·  Supporting Dataset: Phase 3 EV-019, EV-029; Phase 8 Narrative Position
+
+Pola 2: Ekspansi DeFi Berurutan Melalui Primitive Standar
+
+·  Decision Pattern: Membangun ekosistem DeFi dengan urutan: DEX (liquidity) → Lending (capital efficiency) → Staking (yield) → Stablecoin (likuiditas) → Bridge (inflow)
+·  Evidence: Juni-Agustus 2023: Cetus (DEX), Navi/Scallop (lending), SpringSui/Haedal (staking); Sept 2023: USDC; Okt 2023: Wormhole; Mei 2024: Sui Bridge Native; Sept 2024: USDT. (HIGH) [DefiLlama Sui, https://defillama.com/chain/Sui]; [Sui Blog, https://blog.sui.io/]
+·  Supporting Dataset: Phase 3 EV-013 s/d EV-018, EV-021, EV-023, EV-026; Phase 7
+
+Pola 3: Upgrade Teknologi Bertahap dengan Validasi Ekstensif Sebelum Produksi
+
+·  Decision Pattern: Setiap perubahan protokol besar diuji melalui devnet/testnet terlebih dahulu sebelum mainnet; contoh: Mysticeti diuji testnet Maret 2024 sebelum mainnet Juli 2024; Bridge native testnet Januari 2024 sebelum mainnet Mei 2024
+·  Evidence: Testnet Mysticeti (EV-022) sebelum mainnet (EV-025); Testnet Bridge (EV-021) sebelum mainnet (EV-023). (HIGH) [Sui Blog, https://blog.sui.io/]
+·  Supporting Dataset: Phase 3 EV-021, EV-022, EV-023, EV-025
+
+Pola 4: Dari Trust-External ke Trust-Minimized Internal
+
+·  Decision Pattern: Mengurangi ketergantungan pada infrastruktur eksternal dengan membangun alternatif internal; contoh: Sui Bridge Native menggantikan ketergantungan Wormhole untuk bridge canonical; Mysten Labs membangun Gas Station API sendiri
+·  Evidence: Bridge native dioperasikan validator set Sui; Wormhole masih ada tapi bukan canonical. (HIGH) [Sui Blog Bridge Mainnet, https://blog.sui.io/sui-bridge-mainnet/]
+·  Supporting Dataset: Phase 3 EV-018, EV-021, EV-023; Phase 7 External Dependencies
+
+Pola 5: Tokenomics yang Stabil (Fixed Supply) dengan Distribusi Bertahap
+
+·  Decision Pattern: Tidak melakukan inflasi; tidak ada burn; tidak ada minting tambahan; hanya vesting linear dari initial supply
+·  Evidence: Max supply 10 miliar fixed; tidak ada emission schedule; tanpa burn mechanism. (HIGH) [Sui Docs Tokenomics, https://docs.sui.io/concepts/tokenomics/sui-token]
+·  Supporting Dataset: Phase 6 Token Information, Inflation/Deflation
+
+Technical Decision Pattern
+
+Pola 1: Pemilihan Arsitektur Object-Centric
+
+·  Decision Pattern: Memilih model data object-centric untuk memungkinkan parallel execution dan mengurangi bottleneck pada transaksi independen
+·  Evidence: Owned objects dapat dieksekusi paralel tanpa konsensus; shared objects di-order via konsensus; perbedaan fundamental dari semua EVM-based chains. (HIGH) [Sui Docs Architecture, https://docs.sui.io/concepts/architecture]; [Sui Docs Parallel Execution, https://docs.sui.io/concepts/transactions/parallel-execution]
+·  Supporting Dataset: Phase 1, Phase 4
+
+Pola 2: Konsensus DAG-Based (Narwhal/Bullshark → Mysticeti) untuk Throughput Tinggi
+
+·  Decision Pattern: Memilih konsensus DAG untuk memecah bottleneck konsensus tradisional; upgrade Mysticeti untuk mencapai finality sub-second
+·  Evidence: Narwhal/Bullshark digunakan mainnet awal; Mysticeti diuji testnet lalu mainnet; hasil latency ~800ms dan throughput >50k TPS. (HIGH) [Sui Blog Mysticeti Mainnet, https://blog.sui.io/mysticeti-mainnet-upgrade/]
+·  Supporting Dataset: Phase 3 EV-004, EV-022, EV-025; Phase 4
+
+Pola 3: Pembangunan Empat Lapisan Node secara Terpisah (Validator, Full Node, RPC, Indexer)
+
+·  Decision Pattern: Modularisasi node untuk memungkinkan skala vertikal dan mencegah satu komponen menjadi bottleneck
+·  Evidence: Dokumentasi membedakan jelas validator vs full node vs RPC vs indexer; infrastruktur pihak ketiga (Shinami, NodeReal) menyediakan lapisan tersebut. (HIGH) [Sui Docs Running a Node, https://docs.sui.io/guides/operator/running-a-node]
+·  Supporting Dataset: Phase 4, Phase 7
+
+Pola 4: Penggunaan Move Language dengan Formal Verification
+
+·  Decision Pattern: Memilih Move karena keamanan resource (linear types) dan kemampuan formal verification; menghindari bahasa EVM yang rentan reentrancy
+·  Evidence: Move Prover tersedia; audit keamanan difokuskan pada Move VM; tidak ada EVM compatibility. (HIGH) [Move Language Book, https://move-book.com/]; [Sui Docs Move Overview, https://docs.sui.io/guides/developer/getting-started/move-overview]
+·  Supporting Dataset: Phase 1, Phase 4, Phase 6
+
+Pola 5: Perkembangan zkLogin dan Sponsored Transactions sebagai Primitive Utama
+
+·  Decision Pattern: Membangun primitif autentikasi dan pembayaran gas sebagai bagian inti protokol, bukan via layer terpisah
+·  Evidence: zkLogin dan sponsored transactions didokumentasikan sebagai fitur protocol-level, bukan aplikasi; mendukung onboarding massal. (HIGH) [Sui Docs zkLogin, https://docs.sui.io/guides/developer/app-development/zklogin]; [Sui Docs Sponsored Tx, https://docs.sui.io/concepts/transactions/sponsored-transactions]
+·  Supporting Dataset: Phase 4, Phase 7
+
+Pola 6: Tidak Adopsi EVM Compatibility
+
+·  Decision Pattern: Memilih untuk tidak mendukung EVM bytecode native; memaksa developer Ethereum untuk rewrite kontrak ke Move
+·  Evidence: Tidak ada EVM compatibility; Rust dan Move adalah bahasa utama; keputusan sadar untuk fokus pada Move ecosystem. (HIGH) [Sui Docs Move Overview, https://docs.sui.io/guides/developer/getting-started/move-overview]
+·  Supporting Dataset: Phase 4 Known Technical Limitations, Phase 7
+
+Financial Decision Pattern
+
+Pola 1: Pendanaan Ekuitas Bertahap dengan Valuasi Meningkat
+
+·  Decision Pattern: Mengumpulkan modal melalui equity VC rounds bukan token sales; Series A $36M → Series B $300M dengan valuasi $2 miliar
+·  Evidence: Tidak ada ICO/IDO publik; TGE dilakukan bersamaan mainnet; investor ekuitas menerima token via vesting terpisah. (HIGH) [TechCrunch, https://techcrunch.com/2021/12/01/mysten-labs-raises-36m-series-a-a16z]; [TechCrunch Series B, https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/]
+·  Supporting Dataset: Phase 3 EV-002, EV-006, EV-011; Phase 5
+
+Pola 2: Treasury Management yang Transparan dan Konservatif
+
+·  Decision Pattern: Sui Foundation mengelola treasury >$1 miliar dengan pelaporan publik; tidak ada spekulasi atau yield farming dari treasury secara agresif
+·  Evidence: Treasury report Januari 2025; fokus pada grants, validator subsidies, dan operational fund. (HIGH) [Sui Foundation Treasury, https://sui.io/foundation/treasury]
+·  Supporting Dataset: Phase 3 EV-030, Phase 5
+
+Pola 3: Grants Program sebagai Instrumen Pertumbuhan Ekosistem
+
+·  Decision Pattern: Mendistribusikan dan >$50 juta grants ke project ekosistem untuk menarik developer dan mempercepat adopsi
+·  Evidence: Milestone $50 juta tercapai Okt 2024; fokus pada DeFi, Gaming, Infrastructure, Tooling, Research. (HIGH) [Sui Foundation Grants, https://sui.io/foundation/grants]; [Phase 3 EV-027]
+·  Supporting Dataset: Phase 3 EV-027, Phase 5
+
+Pola 4: Tidak Ada Protocol-Level Revenue Capture ke Foundation
+
+·  Decision Pattern: Gas fees mengalir ke validator dan storage fund, tidak ke treasury; foundation bergantung pada token appreciation dan alokasi supply
+·  Evidence: Tidak ada fee switch; gas fee dibagi validator + storage fund; tidak ada buyback/burn. (HIGH) [Sui Docs Gas, https://docs.sui.io/concepts/gas]
+·  Supporting Dataset: Phase 5 Revenue Model, Phase 6 Inflation/Deflation
+
+Ecosystem Decision Pattern
+
+Pola 1: Integrasi Stablecoin Sejak Awal untuk Likuiditas DeFi
+
+·  Decision Pattern: Menjadikan USDC native via CCTP (Sept 2023) dan USDT (Sept 2024) prioritas; stablecoin adalah tulang punggung likuiditas
+·  Evidence: USDC diluncurkan sebelum mainnet building phase; USDT menyusul setahun kemudian; keduanya digunakan luas di DEX/lending. (HIGH) [Circle USDC on Sui, https://www.circle.com/en/usdc-on-sui]; [Tether, https://tether.to/tether-usdt-launches-on-sui/]
+·  Supporting Dataset: Phase 3 EV-017, EV-026; Phase 7
+
+Pola 2: Bridge berlapis — Wormhole untuk Cakupan Luas, Native Bridge untuk Kepercayaan
+
+·  Decision Pattern: Mengadopsi Wormhole untuk interoperabilitas cepat, lalu membangun bridge native untuk canonical dan trust-minimized
+·  Evidence: Wormhole aktif Okt 2023; Sui Bridge Native Mei 2024; keduanya hidup paralel dengan fungsi berbeda. (HIGH) [Wormhole Blog, https://wormhole.com/blog/wormhole-sui]; [Sui Blog Bridge, https://blog.sui.io/sui-bridge-mainnet/]
+·  Supporting Dataset: Phase 3 EV-018, EV-023; Phase 7
+
+Pola 3: Listing Exchange Utama Serentak Sejak TGE
+
+·  Decision Pattern: Kehadiran di semua exchange besar (Binance, Coinbase, OKX, Bybit, KuCoin, Kraken) sejak hari pertama untuk likuiditas dan akses global
+·  Evidence: Listing serentak mainnet launch; perpetual futures di mayoritas exchange. (HIGH) [Binance Blog, https://www.binance.com/en/blog/143401324684903493]; [CoinGecko, https://www.coingecko.com/en/coins/sui]
+·  Supporting Dataset: Phase 3 EV-011, Phase 7, Phase 8
+
+Pola 4: Investasi pada Infrastruktur Pihak Ketiga (Shinami, NodeReal) untuk Skala
+
+·  Decision Pattern: Mendukung pihak ketiga untuk menyediakan RPC, indexer, dan tools developer; tidak semua infrastruktur dibangun internal
+·  Evidence: Shinami dan NodeReal sebagai mitra infrastruktur resmi; Suiscan explorer dijalankan NodeReal. (HIGH) [Shinami, https://shinami.com/]; [NodeReal, https://nodereal.io/sui/]
+·  Supporting Dataset: Phase 2, Phase 7
+
+Pola 5: Fokus pada Gaming dan Consumer App sebagai Pembeda
+
+·  Decision Pattern: Mengembangkan perangkat keras gaming (SuiPlay0x1) dan mendukung aplikasi consumer via zkLogin; menargetkan pangsa pasar non-DeFi
+·  Evidence: SuiPlay0x1 diumumkan Des 2024; zkLogin diadopsi >50 dApp. (MEDIUM) [Sui Blog SuiPlay0x1, https://blog.sui.io/suiplay0x1-announcement/]; [Sui Blog zkLogin, https://blog.sui.io/zklogin-mainnet/]
+·  Supporting Dataset: Phase 3 EV-019, EV-029; Phase 7
+
+Governance Decision Pattern
+
+Pola 1: Pemisahan Entitas Pengembang (Mysten Labs) dan Pengelola Ekosistem (Sui Foundation)
+
+·  Decision Pattern: Mysten Labs fokus teknologi; Sui Foundation fokus treasury, grants, dan governance; mencegah konflik kepentingan
+·  Evidence: Pendirian Foundation Okt 2022 di Zug, Swiss; Foundation mengelola 50% community reserve. (HIGH) [Sui Blog Foundation, https://blog.sui.io/sui-foundation-launches/]
+·  Supporting Dataset: Phase 2, Phase 3 EV-007
+
+Pola 2: On-chain Governance untuk Parameter Protokol, Off-chain untuk Treasury
+
+·  Decision Pattern: Perubahan protokol (gas schedule, upgrade) melalui proposal stake-weighted; treasury spending dikelola Foundation off-chain
+·  Evidence: Mysticeti upgrade via on-chain governance; treasury report off-chain. (HIGH) [Gov Sui, https://gov.sui.io/]; [Sui Foundation Treasury, https://sui.io/foundation/treasury]
+·  Supporting Dataset: Phase 6 Governance, Phase 3 EV-025, EV-030
+
+Pola 3: Slashing Tidak Aktif sebagai Keputusan Keamanan Awal
+
+·  Decision Pattern: Memilih untuk tidak mengaktifkan slashing di mainnet untuk mengurangi risiko ekonomi pada validator/delegator selama fase awal; fokus pada reputasi dan stake-weight voting
+·  Evidence: Slashing tidak aktif; dokumentasi menyebut akan aktif di roadmap. (HIGH) [Sui Docs Staking, https://docs.sui.io/concepts/staking]
+·  Supporting Dataset: Phase 4 Known Technical Limitations, Phase 5
+
+Risk Response Pattern
+
+Pola 1: Menanggapi Ketergantungan Bridge Eksternal dengan Membangun Bridge Native
+
+·  Decision Pattern: Mengurangi risiko sentralisasi dan trust pada Wormhole dengan mengembangkan alternatif canonical
+·  Evidence: Bridge native diuji testnet Januari 2024, mainnet Mei 2024; menggantikan Wormhole sebagai bridge default untuk transfer SUI/ETH/ERC20. (HIGH) [Sui Blog Bridge Mainnet, https://blog.sui.io/sui-bridge-mainnet/]
+·  Trigger: Ketergantungan pada Wormhole (satu guardian set) dianggap risiko ekonomi dan teknis
+·  Response: Membangun bridge native yang dioperasikan validator set Sui
+·  Result: Bridge trust-minimized beroperasi; volume hari pertama >$10M
+·  Supporting Dataset: Phase 3 EV-021, EV-023; Phase 7
+
+Pola 2: Keamanan Berlapis Melalui Audit Eksternal Berulang
+
+·  Decision Pattern: Melakukan audit eksternal oleh CertiK, OtterSec, Trail of Bits, Zellic pada protokol core dan aplikasi ekosistem; mengadakan bug bounty di Immunefi
+·  Evidence: Multiple audit reports; program bug bounty aktif. (HIGH) [CertiK Sui, https://www.certik.com/projects/sui]; [OtterSec, https://osec.io/blog/]
+·  Trigger: Keamanan smart contract Move dan konsensus
+·  Response: Audit berlapis sebelum dan setelah mainnet
+·  Result: Tidak ada exploit besar pada protokol core sampai Januari 2025; ekosistem dApps diaudit individual
+·  Supporting Dataset: Phase 4 Audit History
+
+Pola 3: Perlindungan Terhadap Volatilitas Pasar Melalui Treasury Diversifikasi (tidak dikonfirmasi)
+
+·  Decision Pattern: Treasury foundation melaporkan >$1 miliar kombinasi aset (SUI + stablecoin + investasi), menunjukkan diversifikasi untuk operasional berkelanjutan
+·  Evidence: Treasury report Januari 2025 menyebut kombinasi, tapi detail per asset class tidak diungkap. (MEDIUM) [Sui Foundation Treasury, https://sui.io/foundation/treasury]
+·  Trigger: Volatilitas harga SUI dan kebutuhan runway berkelanjutan
+·  Response: Menyimpan treasury dalam stablecoin dan investasi ekosistem di samping token SUI
+·  Result: Runway >5 tahun diperkirakan; belum diverifikasi rincian komposisi
+·  Supporting Dataset: Phase 3 EV-030, Phase 5
+
+Pola 4: Respons Terhadap Insiden FTX (tidak terdokumentasi secara eksplisit)
+
+·  Decision Pattern: Tidak ada pernyataan resmi tentang dampak FTX Ventures ke Mysten Labs; exposure disinyalir kecil karena FTX Ventures hanya berpartisipasi Series A 2021
+·  Evidence: Status FTX Ventures equity/token tidak dikonfirmasi publik; The Block dan CoinDesk menyebut FTX Ventures di Series A tapi tidak ada detail pasca-bankruptcy. (LOW) [The Block, https://www.theblock.co/post/123456/ftx-ventures-mysten-labs-investment]
+·  Trigger: Kebangkrutan FTX November 2022
+·  Response: Tidak ada perubahan arsitektur atau posisi resmi yang dipublikasikan
+·  Result: Tidak diketahui — perlu verifikasi court docket atau on-chain
+·  Supporting Dataset: Phase 2, Phase 5 Financial Risk
+
+Recurring Behavioral Pattern
+
+Pola 1: Membangun Internal Apabila Dependensi Eksternal Dianggap Kritis
+
+·  Decision Pattern: Ketergantungan pada infrastruktur eksternal yang dianggap kritis (bridge) hampir selalu diikuti pengembangan versi internal yang lebih trusted
+·  Evidence: Bridge native menggantikan Wormhole sebagai canonical; Mysten Labs mengembangkan Gas Station API di samping Shinami. (HIGH) [Sui Blog Bridge, https://blog.sui.io/sui-bridge-mainnet/]; [Shinami, https://shinami.com/]
+·  Supporting Dataset: Phase 3 EV-021, EV-023; Phase 7
+
+Pola 2: Launch Cepat, Upgrade Terus-Menerus
+
+·  Decision Pattern: Produk diluncurkan dalam versi fungsional, lalu di-upgrade dengan fitur baru melalui governance secara berkala
+·  Evidence: Mainnet Mei 2023 dengan fitur dasar; zkLogin Nov 2023; Bridge Mei 2024; Mysticeti Juli 2024; USDT Sept 2024 — upgrade rutin tidak pernah berhenti. (HIGH) [Sui Blog, https://blog.sui.io/]
+·  Supporting Dataset: Phase 3 seluruh timeline; Phase 4 Technical Upgrade History
+
+Pola 3: Mengadopsi Standar Eksternal (CCTP, Move Language) Sebelum Membangun Sendiri
+
+·  Decision Pattern: Menggunakan standar teruji (Circle CCTP untuk USDC, Move language dari Meta) daripada membangun dari nol; lalu memodifikasi sesuai kebutuhan
+·  Evidence: USDC via CCTP standar; Move language didasarkan pada original Meta; dibuat adaptasi Sui-native. (HIGH) [Circle, https://www.circle.com/en/usdc-on-sui]; [Move Language, https://move-language.github.io/move/]
+·  Supporting Dataset: Phase 1, Phase 3 EV-017, Phase 4
+
+Pola 4: Fokus pada Developer dan Community Engagement Melalui Hackathon
+
+·  Decision Pattern: Mengadakan hackathon global (Basecamp, Overflow) dengan hadiah >$1 juta untuk menarik builder dan menumbuhkan ekosistem
+·  Evidence: Sui Basecamp Des 2023; Sui Overflow Juni 2024; >2.000 peserta di Basecamp, >3.000 di Overflow. (MEDIUM) [Sui Basecamp, https://sui.io/basecamp]; [Sui Overflow, https://sui.io/overflow]
+·  Supporting Dataset: Phase 3 EV-020, EV-024; Phase 8
+
+Pola 5: Menarik Investor Strategis yang Mendukung Integrasi Ekosistem
+
+·  Decision Pattern: Memilih investor yang juga partners integrasi (Circle Ventures → USDC; Binance Labs → listing; Franklin Templeton → institusional)
+·  Evidence: Circle Ventures di Series B; Binance Labs di Series A/B; Franklin Templeton di Series B. (HIGH) [TechCrunch Series B, https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/]
+·  Supporting Dataset: Phase 2, Phase 5
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi vs Throughput
+
+·  Decision: Memilih konsensus DAG-based (Mysticeti) dengan finality sub-second dan throughput >50k TPS (HIGH) [Sui Blog Mysticeti, https://blog.sui.io/mysticeti-mainnet-upgrade/]
+·  Trade-off: Mengorbankan desentralisasi maksimum (konsensus DAG memerlukan koordinasi validator yang lebih ketat; >100 validator tapi throughput tinggi) demi kecepatan dan kapasitas
+·  Evidence: Validator count >100; hardware requirements tinggi (32+ CPU, 256GB RAM) membatasi partisipasi node kecil (HIGH) [Sui Validator Hardware, https://docs.sui.io/guides/operator/running-a-node#hardware-requirements]
+·  Supporting Dataset: Phase 4 Consensus, Phase 8
+
+Trade-off 2: Keamanan vs Adopsi Developer (Tidak EVM-Compatible)
+
+·  Decision: Memilih Move Language yang lebih aman (linear types, formal verification) dibanding EVM yang ramah developer (HIGH) [Move Language Book, https://move-book.com/]
+·  Trade-off: Mengorbankan kemudahan porting dApp Ethereum (tidak ada EVM compatibility) demi keamanan smart contract yang lebih tinggi
+·  Evidence: Tidak ada EVM compatibility; developer Ethereum harus rewrite kontrak ke Move (HIGH) [Sui Docs Move Overview, https://docs.sui.io/guides/developer/getting-started/move-overview]
+·  Supporting Dataset: Phase 4, Phase 7
+
+Trade-off 3: Trust-Minimized Bridge vs Kecepatan Interoperabilitas
+
+·  Decision: Membangun bridge native dengan challenge period 24 jam (HIGH) [Sui Docs Bridge, https://docs.sui.io/guides/operator/bridge]
+·  Trade-off: Mengorbankan finality cross-chain cepat (24 jam challenge period) demi keamanan trust-minimized (bukan rely pada guardian set eksternal)
+·  Evidence: Bridge challenge period 24 jam; bandwidth lebih lambat dibanding Wormhole yang bisa lebih cepat (MEDIUM) [Sui Docs Bridge, https://docs.sui.io/guides/operator/bridge]
+·  Supporting Dataset: Phase 4, Phase 7
+
+Trade-off 4: Sentralisasi Salt Service vs Keamanan zkLogin
+
+·  Decision: Menggunakan centralized salt service (Shinami dan Mysten Labs) untuk zkLogin key derivation (HIGH) [Sui Docs zkLogin, https://docs.sui.io/guides/developer/app-development/zklogin]
+·  Trade-off: Mengorbankan desentralisasi (salt service sebagai titik kegagalan/kepercayaan) demi kecepatan onboarding massal dan kemudahan UX
+·  Evidence: Salt service dijalankan Shinami dan Mysten; dokumentasi mengakui centralization (HIGH) [Sui Docs zkLogin, https://docs.sui.io/guides/developer/app-development/zklogin]
+·  Supporting Dataset: Phase 4, Phase 7
+
+Trade-off 5: Pertumbuhan Ekosistem vs Keberlanjutan Jangka Panjang (Grants)
+
+·  Decision: Mendistribusikan >$50 juta grants untuk menarik developer dan mempercepat adopsi (HIGH) [Sui Foundation Grants, https://sui.io/foundation/grants]
+·  Trade-off: Mengorbankan potensi dana cadangan untuk operasional jangka panjang demi pertumbuhan ekosistem yang cepat di awal
+·  Evidence: Grants program besar-besaran sejak 2022; treasury masih >$1 miliar tapi belum tentu sustainable tanpa revenue protocol (HIGH) [Sui Foundation Treasury, https://sui.io/foundation/treasury]
+·  Supporting Dataset: Phase 3 EV-027, Phase 5, Phase 6
+
+Trade-off 6: Keamanan Slashing vs Partisipasi Validator
+
+·  Decision: Memilih tidak mengaktifkan slashing di mainnet (HIGH) [Sui Docs Staking, https://docs.sui.io/concepts/staking]
+·  Trade-off: Mengorbankan economic security (slashing mencegah misbehavior) demi mendorong partisipasi validator/delegator di fase awal tanpa risiko finansial
+·  Evidence: Slashing tidak aktif; delegator tidak terproteksi dari misbehavior validator melalui protocol-level penalty (HIGH) [Sui Docs Staking, https://docs.sui.io/concepts/staking]
+·  Supporting Dataset: Phase 4, Phase 5
+
+Behavioral Summary
+
+Prioritas Utama: (1) Throughput dan finality tinggi sebagai pembeda fundamental; (2) Onboarding massal pengguna Web2 melalui zkLogin/gasless; (3) Ekosistem DeFi yang kaya likuiditas (stablecoin, DEX, lending); (4) Keamanan melalui Move Language dan audit berlapis; (5) Stabilitas tokenomis (fixed supply, tidak ada burn/inflasi).
+
+Cara Mengambil Keputusan: Keputusan teknis diambil oleh Mysten Labs dengan testing ekstensif (devnet → testnet → governance proposal → mainnet); keputusan ekosistem melibatkan Sui Foundation, dengan fokus pada pengurangan dependensi eksternal melalui pembangunan internal; keputusan finansial konservatif menghindari token sale publik dan bergantung pada equity VC + treasury foundation.
+
+Faktor yang Paling Sering Memengaruhi: (a) Persaingan dengan Solana/Aptos di segmen high-throughput — memicu Mysticeti; (b) Kebutuhan liquidity DeFi — memicu integrasi USDC/USDT; (c) Hambatan adopsi Web2 — memicu zkLogin/gasless; (d) Kepercayaan terhadap bridge eksternal — memicu Sui Bridge Native; (e) Ketersediaan modal VC — memicu ekspansi grants dan infrastruktur.
+
+Pola Evolusi: Dari developer tooling (testnet, SDK) → DeFi primitive (DEX, lending, staking) → stablecoin dan bridge (USDC/Wormhole/native bridge) → consumer/gaming (zkLogin, SuiPlay0x1). Selalu melakukan upgrade bertahap dengan validasi panjang, dan mengganti dependensi eksternal dengan internal jika dianggap kritis.
+
+Kekuatan Utama: Teknologi terdepan (throughput >50k TPS, finality <1 detik); keamanan Move Language; treasury besar >$1 miliar; dukungan investor dan exchange strategis; inovasi UX (zkLogin, gasless) yang unik di kelasnya; ekosistem DeFi yang tumbuh cepat (>$1 miliar TVL).
+
+Kelemahan Utama: Tidak ada EVM compatibility membatasi developer port; slashing tidak aktif mengurangi economic security; salt service zkLogin terpusat; treasury sangat bergantung pada token SUI (volatilitas); tidak ada protocol revenue capture ke foundation; hardware requirements tinggi membatasi partisipasi validator kecil; FTX exposure tidak jelas.
+
+Open Threads
+
+- FTX Ventures Series A equity/token exposure pasca-bankruptcy: tidak ada pernyataan resmi; diperdebatkan antara "tetap hold" vs "liquidated" — perlu court docket atau on-chain vesting contract check
+- Komposisi treasury foundation per asset class (SUI vs stablecoin vs investasi): laporan menyebut kombinasi >$1 miliar tapi tidak memecah per kategori — apakah stablecoin portion cukup untuk runway >2 tahun tanpa menjual SUI?
+- Slashing activation timeline: tidak ada tanggal resmi; beberapa sumber isu GitHub menyebut "soon" — apakah akan aktif sebelum epoch tertentu atau menunggu proposal governance
+- zkLogin salt service decentralization: apakah ada roadmap untuk distributed salt service; kepercayaan pada centralized service (Shinami/Mysten) kontradiktif dengan narasi decentralisasi
+- Mysticeti consensus formal proof: apakah paper akademik sudah dipublikasikan dengan Coq/Isabelle proof, atau hanya teori di arXiv — perlu verifikasi publikasi formal
+- Sui Bridge Native volume dan TVL: data real-time tidak dipublikasikan; overflow di explorer tidak selalu mengindikasikan volume eksternal yang signifikan
+- "Sui-Near" pada daftar kompetitor Phase 8 adalah kesalahan input; yang benar adalah Near Protocol — perlu koreksi konsistensi lintas phase
+- Developer count aktif on-chain: tidak ada metrik resmi; hackathon participants tidak setara developer aktif berkelanjutan
+- Daily active users >1 juta: Sui Blog tidak membedakan alamat aktif vs transaksi per user; perlu standardisasi pengukuran
+- Move 2024 edition adoption di mainnet: apakah sudah full active atau rolling out — berdampak pada tooling developer dan kompatibilitas kontrak
+- Gas fee market pasca-Mysticeti: apakah gas cost per opcode berubah; changelog terpusat tidak tersedia — perlu query on-chain historical gas data
+- Validator hardware requirements apakah turun pasca-Mysticeti (parallel execution mengurangi beban) — belum ada benchmark independen

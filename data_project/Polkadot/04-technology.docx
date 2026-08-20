@@ -1,0 +1,175 @@
+PROJECT: Polkadot
+
+## System Architecture
+
+- **Arsitektur** : Heterogeneous multi-chain network dengan Relay Chain sebagai lapisan koordinasi konsensus dan keamanan bersama (shared security) untuk parachains (HIGH) [Polkadot Official Website, https://polkadot.network/technology/]
+- **Layer Classification** : Layer-0 protocol — infrastruktur dasar yang menghubungkan beberapa Layer-1 chain (parachains) dalam satu jaringan terpadu (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-polkadot]
+- **Relay Chain** : Chain utama yang menyediakan finality, keamanan bersama, dan koordinasi cross-chain untuk seluruh parachain — tidak mendukung smart contract secara langsung (HIGH) [Polkadot Official Website, https://polkadot.network/technology/]
+- **Parachains** : Chain khusus yang terhubung ke Relay Chain dan mendapatkan keamanan dari Relay Chain — dapat memiliki token, gas, dan logika bisnis sendiri (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-parachains]
+- **Canary Network** : Kusama sebagai jaringan "canary network" — berjalan paralel dengan Polkadot untuk menguji fitur dalam lingkungan produksi dengan nilai ekonomi nyata (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-kusama]
+- **Cross-Consensus Messaging (XCM)** : Protokol komunikasi lintas konsensus yang memungkinkan transfer aset, remote execution, dan interoperabilitas antar parachains dan chain eksternal (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-xcm]
+- **Shared Security Model** : Semua parachain mendapatkan keamanan kriptografi dari set validator Relay Chain yang sama — tidak perlu bootstrap keamanan sendiri (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-security]
+- **Sources** : https://polkadot.network/technology/ (HIGH); https://wiki.polkadot.network/docs/learn-polkadot (HIGH); https://wiki.polkadot.network/docs/learn-xcm (HIGH)
+
+## Core Components
+
+- **Relay Chain** : Jaringan utama yang memvalidasi dan memfinalisasi blok untuk seluruh ekosistem — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-polkadot]
+- **Validators** : Node yang menjalankan consensus NPoS, memproduksi blok Relay Chain, dan menyediakan keamanan untuk parachains — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-validator]
+- **Nominators** : Token holder yang menominasikan validator dengan stake DOT mereka — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-nominator]
+- **Collators** : Node yang mengumpulkan transaksi parachain dan menghasilkan blok kandidat untuk validator Relay Chain — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-collator]
+- **Parachains** : Chain khusus yang terhubung ke Relay Chain dan berjalan paralel — status aktif (50+ parachain terhubung) (HIGH) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+- **Parathreads (Coretime)** : Model akses on-demand ke blockspace Relay Chain — menggantikan model slot auction setelah Agile Coretime launch — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-agile-coretime]
+- **Cumulus** : Framework pengembangan untuk membangun parachains berbasis Substrate — mengimplementasikan protokol komunikasi antara parachain dan Relay Chain — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/build-pdk]
+- **XCM (Cross-Consensus Message Format)** : Standar pesan untuk komunikasi lintas konsensus — status aktif (v3) (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-xcm]
+- **Substrate Framework** : Framework modular untuk membangun blockchain — fondasi untuk Relay Chain, parachains, dan chain mandiri — status aktif (HIGH) [Substrate Official, https://substrate.io/]
+- **FRAME** : Modul-modul runtime yang menyediakan fungsi seperti staking, governance, balances, dan treasury untuk chain berbasis Substrate — status aktif (HIGH) [Substrate Docs, https://docs.substrate.io/reference/frame/]
+- **Polkadot SDK** : Paket terpadu yang menggabungkan Substrate, FRAME, Cumulus, dan tooling untuk pengembangan chain — status aktif (v1.x) (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk]
+- **Kusama (Canary Network)** : Jaringan canary network untuk pengujian produksi — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-kusama]
+- **Grandpa** : Protokol finality gadget yang memberikan finality deterministik untuk Relay Chain — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-consensus]
+- **BABE** : Protokol eksekusi block production berdasarkan slot — digunakan untuk memproduksi blok Relay Chain — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-consensus]
+- **Sources** : https://wiki.polkadot.network/docs/learn-polkadot (HIGH); https://wiki.polkadot.network/docs/learn-validator (HIGH); https://wiki.polkadot.network/docs/learn-collator (HIGH); https://wiki.polkadot.network/docs/learn-consensus (HIGH); https://docs.substrate.io/reference/frame/ (HIGH)
+
+## Consensus Mechanism
+
+- **Nominated Proof-of-Stake (NPoS)** : Mekanisme konsensus utama — validator dipilih berdasarkan stake dari nominator; setiap era (24 jam) validator baru dipilih — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-consensus]
+- **BABE (Blind Assignment for Blockchain Extension)** : Algoritma block production berbasis VRF (Verifiable Random Function) — validator ditentukan secara acak untuk memproduksi blok dalam slot — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-consensus]
+- **GRANDPA (GHOST-based Recursive Ancestor Deriving Prefix Agreement)** : Finality gadget — mencapai finality secara asinkron tanpa memerlukan semua blok untuk dikonfirmasi sekaligus — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-consensus]
+- **Security Threshold** : 2/3 dari total stake (dua-pertiga) diperlukan untuk mencapai finality — melindungi dari 1/3 stake malas (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-security]
+- **Slashing Mechanism** : Validator yang melakukan aktivitas jahat atau tidak berpartisipasi dalam validasi dapat di-slashed (kehilangan sebagian stake) — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-staking]
+- **Sources** : https://wiki.polkadot.network/docs/learn-consensus (HIGH); https://wiki.polkadot.network/docs/learn-staking (HIGH)
+
+## Execution Environment
+
+- **Wasm (WebAssembly)** : Runtime Relay Chain dan parachains berbasis Substrate menggunakan WebAssembly untuk eksekusi kode runtime — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-wasm]
+- **EVM Compatibility via Parachains** : Parachains seperti Moonbeam dan Acala menyediakan lingkungan eksekusi EVM (Ethereum Virtual Machine) di atas Substrate — status aktif (HIGH) [Moonbeam Docs, https://docs.moonbeam.network/](MEDIUM) [Acala Docs, https://acala.network/developers]
+- **Wasm Smart Contracts** : Parachains mendukung smart contract berbasis WASM (misal melalui ink! dan pallet-contracts) — status aktif (HIGH) [ink! Documentation, https://use.ink/]
+- **Runtime Upgradeable** : Runtime chain berbasis Substrate dapat diupgrade tanpa hard fork melalui governance on-chain — status aktif (HIGH) [Substrate Docs, https://docs.substrate.io/maintain/runtime-upgrades/]
+- **Sources** : https://wiki.polkadot.network/docs/learn-wasm (HIGH); https://docs.substrate.io/maintain/runtime-upgrades/ (HIGH); https://use.ink/ (HIGH)
+
+## Programming Languages
+
+- **Rust** : Bahasa utama untuk pengembangan Substrate, FRAME, Polkadot SDK, dan runtime chain Polkadot — status aktif (HIGH) [Substrate Docs, https://docs.substrate.io/]
+- **ink!** : Bahasa smart contract berbasis Rust untuk chain Substrate — status aktif (HIGH) [ink! Documentation, https://use.ink/]
+- **Solidity** : Digunakan pada parachains yang kompatibel EVM seperti Moonbeam dan Acala — status aktif (HIGH) [Moonbeam Docs, https://docs.moonbeam.network/]
+- **JavaScript/TypeScript** : Digunakan untuk tooling, interface pengguna, dan off-chain services (misal polkadot.js) — status aktif (HIGH) [polkadot.js Docs, https://polkadot.js.org/docs/]
+- **Sources** : https://docs.substrate.io/ (HIGH); https://use.ink/ (HIGH); https://polkadot.js.org/docs/ (HIGH)
+
+## Development Framework
+
+- **Substrate** : Framework utama untuk membangun blockchain — menyediakan modul library, pallet system, dan tooling untuk runtime development — status aktif (HIGH) [Substrate Official, https://substrate.io/]
+- **FRAME** : Runtime library yang menyediakan pallet modul untuk fungsi standard seperti balances, staking, governance, dan treasury — status aktif (HIGH) [Substrate Docs, https://docs.substrate.io/reference/frame/]
+- **Cumulus** : Framework untuk membangun parachains — menghubungkan Substrate chain ke Relay Chain — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/build-pdk]
+- **Polkadot SDK** : Paket terpadu (sejak v1.0) yang menggabungkan Substrate, FRAME, Cumulus, dan tooling — status aktif (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk]
+- **ink!** : Smart contract framework untuk bahasa Rust — status aktif (HIGH) [ink! Documentation, https://use.ink/]
+- **polkadot.js** : JavaScript library untuk berinteraksi dengan chain Polkadot (API, keyring, utils) — status aktif (HIGH) [polkadot.js Docs, https://polkadot.js.org/docs/]
+- **Squid (Subsquid)** : Framework untuk indexer dan data transformation — digunakan untuk data on-chain — status aktif (MEDIUM) [Subsquid Docs, https://docs.subsquid.io/]
+- **GraphQL via Subquery** : Framework indexer untuk query data on-chain — status aktif (MEDIUM) [SubQuery Docs, https://academy.subquery.network/]
+- **Sources** : https://docs.substrate.io/ (HIGH); https://wiki.polkadot.network/docs/build-pdk (HIGH); https://github.com/paritytech/polkadot-sdk (HIGH); https://use.ink/ (HIGH)
+
+## Security Model
+
+- **Shared Security** : Semua parachains dilindungi oleh keamanan kriptografi dari Relay Chain validator set — tidak perlu mengamankan chain sendiri (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-security]
+- **Economic Security via NPoS** : Validator harus mengstake DOT; aktivitas jahat di-slash sampai kehilangan seluruh stake — memberikan insentif ekonomi untuk valid (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-staking]
+- **Validator Set Limit** : Maksimum ~297 validator aktif pada Polkadot (dipilih setiap era) — status aktif (HIGH) [Polkadot Stats, https://polkadot.subscan.io/](MEDIUM)
+- **BABE & GRANDPA** : Dua mekanisme terpisah untuk block production dan finality — masing-masing memberikan penjagaan berbeda (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-consensus]
+- **Cryptographic Primitives** : Menggunakan sr25519 (Schnorrkel/Ristretto) untuk signature scheme dan BLAKE2 untuk hashing — status aktif (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-cryptography]
+- **Runtime Upgrade via Governance** : Perubahan runtime harus melewati proses governance on-chain — mengurangi risiko upgrade berbahaya (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-governance]
+- **Slashing Protection** : Jika validator berperilaku jahat, mekanisme slash akan memangkas stake mereka — termasuk slash terhadap nominator yang menominasikan mereka (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-staking]
+- **Light Client Verification** : Relay Chain dapat diverifikasi tanpa full node — memungkinkan penjagaan ringan (light clients) untuk aplikasi eksternal (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-light-client]
+- **XCM Security** : Transaksi cross-chain diautentikasi via XCM format dan divalidasi oleh Relay Chain — key management dan trust model terpusat pada validator (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-xcm]
+- **Sources** : https://wiki.polkadot.network/docs/learn-security (HIGH); https://wiki.polkadot.network/docs/learn-consensus (HIGH); https://wiki.polkadot.network/docs/learn-staking (HIGH)
+
+## Audit History
+
+- **Auditor: Trail of Bits** : Tanggal: 2023-06 (dilaporkan) ; Scope: Polkadot SDK v1.0 (Substrate, FRAME, Cumulus) ; Status: Selesai — ditemukan beberapa kerentanan yang diperbaiki sebelum rilis stabil (MEDIUM) [GitHub, https://github.com/paritytech/polkadot-sdk/security/advisories]
+- **Auditor: Quarkslab** : Tanggal: 2022 (dilaporkan); Scope: BABE & GRANDPA consensus implementation ; Status: Selesai — tidak ada temuan kritis yang dipublikasikan (MEDIUM) [Quarkslab Blog, https://blog.quarkslab.com/security-assessment-for-parity-technologies.html]
+- **Auditor: NCC Group** : Tanggal: 2019-2020 (tidak dirinci) ; Scope: Substrate runtime dan pallet FRAME ; Status: Selesai — beberapa rekomendasi perbaikan diimplementasikan (MEDIUM) [NCC Group Research, https://research.nccgroup.com/]
+- **Auditor: Immunefi Bug Bounty** : Tanggal: 2020–sekarang (ongoing) ; Scope: Polkadot SDK, Substrate, dan parachain terdaftar ; Status: Aktif — hadiah hingga $1,000,000 untuk kerentanan kritis (HIGH) [Immunefi, https://immunefi.com/bounty/polkadot/]
+- **Auditor: FerretDB (perlu verifikasi)** : tidak ditemukan catatan audit independen untuk keseluruhan sistem Polkadot secara komprehensif — klaim audit hanya tercatat pada komponen tertentu (MEDIUM) [Tidak dapat diverifikasi]
+- **Sources** : https://github.com/paritytech/polkadot-sdk/security/advisories (MEDIUM); https://blog.quarkslab.com/security-assessment-for-parity-technologies.html (MEDIUM); https://immunefi.com/bounty/polkadot/ (HIGH)
+
+## Technical Upgrade History
+
+- **2020-05-26** : Mainnet Genesis — Relay Chain beroperasi dengan mode Proof-of-Authority awal (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/polkadot-history]
+- **2020-06-18** : Aktivasi NPoS — transisi dari PoA ke Nominated Proof-of-Stake (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/polkadot-history]
+- **2020-08-18** : Redemoninasi DOT — 1 DOT lama = 100 DOT baru (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-redenomination/]
+- **2020-12-18** : Aktivasi transfer token — fungsi governance penuh aktif (HIGH) [Polkadot Blog, https://polkadot.network/blog/token-transfers-enabled/]
+- **2021-11-11** : Parachain auction pertama di Polkadot — slot auction dimulai (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachain-auctions/]
+- **2021-12-18** : Parachain pertama live — lima parachain onboarding secara bertahap (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachains-live/]
+- **2022-04** : Peluncuran XCM v2 — komunikasi lintas konsensus lengkap (HIGH) [Polkadot Blog, https://polkadot.network/blog/xcm-v2/]
+- **2022-06** : Upgrade Runtime v0.9.42 — fondasi asynchronous backing (MEDIUM) [GitHub, https://github.com/paritytech/polkadot-sdk/releases]
+- **2022-11** : Peluncuran OpenGov (Governance v2) — menggantikan sistem Council (HIGH) [Polkadot Blog, https://polkadot.network/blog/opengov/]
+- **2023-04** : Rilis Polkadot SDK v1.0 — penggabungan Substrate, FRAME, Cumulus (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk/releases/tag/polkadot-v1.0.0]
+- **2023-06** : Persiapan Agile Coretime — transisi dari model slot tetap (MEDIUM) [Polkadot Blog, https://polkadot.network/blog/agile-coretime/]
+- **2024-03** : Aktivasi Asynchronous Backing — peningkatan throughput parachain (HIGH) [Polkadot Blog, https://polkadot.network/blog/async-backing/]
+- **2024-05** : Peluncuran Agile Coretime — coretime dijual sebagai bulk dan on-demand (HIGH) [Polkadot Blog, https://polkadot.network/blog/agile-coretime-launch/]
+- **2024-07** : Peluncuran XCM v3 — programmable asset transfers, remote locking (HIGH) [Polkadot Blog, https://polkadot.network/blog/xcm-v3/]
+- **2024-10** : Publikasi JAM Gray Paper — arsitektur generasi berikutnya (Polkadot 2.0) (HIGH) [Gavin Wood, https://www.gavwood.com/jam.pdf]
+- **2024-12** : Peluncuran JAM Testnet (Toaster / JamNP) — implementasi pertama JAM (MEDIUM) [GitHub, https://github.com/paritytech/jam]
+- **Sources** : https://wiki.polkadot.network/docs/polkadot-history (HIGH); https://polkadot.network/blog/ (HIGH); https://github.com/paritytech/polkadot-sdk (HIGH)
+
+## Current Technical Stack
+
+- **Runtime Language**: Rust (HIGH) [Substrate Docs, https://docs.substrate.io/]
+- **Runtime Environment**: Wasm (WebAssembly) (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-wasm]
+- **Consensus**: NPoS + BABE + GRANDPA (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-consensus]
+- **Signature Scheme**: sr25519 (Schnorrkel/Ristretto) (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-cryptography]
+- **Hash Function**: BLAKE2 (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-cryptography]
+- **Networking Protocol**: Libp2p (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-networking]
+- **RPC / API**: JSON-RPC via Substrate API (HIGH) [Substrate Docs, https://docs.substrate.io/reference/runtime-apis/]
+- **Frontend Library**: polkadot.js API (HIGH) [polkadot.js Docs, https://polkadot.js.org/docs/]
+- **Indexer**: Subscan (komersial), Subquery, Subsquid (MEDIUM) [Subscan, https://polkadot.subscan.io/]
+- **Storage**: On-chain state trie (merkle patricia trie) — penyimpanan blockchain native (HIGH) [Substrate Docs, https://docs.substrate.io/reference/frame/]
+- **Data Tooling**: Docker untuk development environment (common) (MEDIUM) [Polkadot SDK Docker, https://github.com/paritytech/polkadot-sdk/blob/master/scripts/ci/dockerfiles/]
+- **DevOps**: Kubernetes (tidak terdokumentasi resmi untuk operational deployment) — tidak dapat diverifikasi dari sumber resmi (LOW) [Tidak dapat diverifikasi]
+- **Sources** : https://docs.substrate.io/ (HIGH); https://wiki.polkadot.network/docs/learn-cryptography (HIGH); https://wiki.polkadot.network/docs/learn-networking (HIGH)
+
+## Known Technical Limitations
+
+- **Throughput Limit (pre-Async Backing)** : Relay Chain hanya dapat memfinalisasi ~100 blok per slot (6 detik) — throughput parachain terbatas sekitar ~1000-1500 transaksi per detik secara teoritis — (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-parachains]
+- **Parachain Slot Requrement (pre-Agile Coretime)** : Sebelum Agile Coretime, parachain perlu memenangkan slot auction dengan bond DOT hingga 24 bulan — menciptakan barrier to entry tinggi untuk chain kecil (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-auction]
+- **XCM Complexity** : XCM v2/v3 tidak memiliki mekanisme transaksi atomik — jika satu hop gagal, pesan dapat hilang atau memerlukan recovery manual (MEDIUM) [Polkadot Forum, https://forum.polkadot.network/t/what-are-the-limitations-of-xcm/]
+- **Staking Requirement for Validator** : Validator perlu stake minimal 2,257,000 DOT (per update 2025-02-15 estimasi) — biaya kapital tinggi untuk menjadi validator (MEDIUM) [Polkadot Stats, https://polkadot.subscan.io/]
+- **No Native Smart Contract on Relay Chain** : Relay Chain tidak mendukung smart contract — semua logika bisnis harus dijalankan di parachain (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-polkadot]
+- **Limitations of XCM v2 (pre-v3)** : Sebelum XCM v3, tidak ada dukungan untuk NFT transfer, remote locking, dan fee payment abstraction (HIGH) [Polkadot Blog, https://polkadot.network/blog/xcm-v3/]
+- **Unfinality Risk** : Jika lebih dari 1/3 validator tidak berpartisipasi, finality dapat terhenti sementara — meskipun block production tetap berjalan (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-staking]
+- **Wasm Runtime Complexity** : Upgrade runtime via Wasm memerlukan governance approval — proses yang bisa memakan waktu lebih lama dibandingkan hard fork langsung (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-governance]
+- **Sources** : https://wiki.polkadot.network/docs/learn-parachains (HIGH); https://wiki.polkadot.network/docs/learn-auction (HIGH); https://polkadot.network/blog/xcm-v3/ (HIGH)
+
+## Official Technical Resources
+
+- **Whitepaper**: https://polkadot.network/PolkaDotPaper.pdf (HIGH) [Polkadot Official] — dokumen arsitektur asli 2016.
+- **Official Website**: https://polkadot.network/ (HIGH)
+- **Wiki Documentation**: https://wiki.polkadot.network/ (HIGH)
+- **Developer Hub (Polkadot Wiki Build Section)**: https://wiki.polkadot.network/docs/build-index (HIGH)
+- **Substrate Official**: https://substrate.io/ (HIGH)
+- **Substrate Documentation**: https://docs.substrate.io/ (HIGH)
+- **Polkadot SDK (GitHub)**: https://github.com/paritytech/polkadot-sdk (HIGH)
+- **JAM Gray Paper**: https://www.gavwood.com/jam.pdf (HIGH)
+- **ink! (Smart Contract)**: https://use.ink/ (HIGH)
+- **polkadot.js API**: https://polkadot.js.org/docs/ (HIGH)
+- **Subscan Block Explorer**: https://polkadot.subscan.io/ (HIGH)
+- **Rust Documentation untuk Polkadot Runtime**: tidak ditemukan halaman resmi terpadu — terpisah di Substrate docs (MEDIUM) [Substrate Docs, https://docs.substrate.io/]
+- **Open Source Repositories**: https://github.com/paritytech/polkadot-sdk (HIGH)
+- **Sources** : https://wiki.polkadot.network/ (HIGH); https://docs.substrate.io/ (HIGH); https://polkadot.network/ (HIGH)
+
+## Summary
+
+- **Architecture** : Heterogeneous multi-chain dengan Relay Chain + parachains + XCM + shared security (HIGH)
+- **Core Components** : 13 komponen utama terdokumentasi (Relay Chain, Validator, Nominator, Collator, Parachain, Coretime, Cumulus, XCM, Substrate, FRAME, Polkadot SDK, Kusama, BABE, GRANDPA)
+- **Audit Count** : 4 audit terdokumentasi (Trail of Bits, Quarkslab, NCC Group, Immunefi Bug Bounty)
+- **Major Upgrade Count** : 16 technical upgrades terdokumentasi dari mainnet genesis hingga JAM testnet
+- **Consensus** : NPoS (BABE untuk block production, GRANDPA untuk finality)
+- **Runtime** : Wasm dengan eksekusi parallel (EVM via parachain, Wasm via ink!)
+- **Sources** : https://wiki.polkadot.network/docs/polkadot-history (HIGH); https://github.com/paritytech/polkadot-sdk (HIGH)
+
+## Open Threads
+
+- **Audit trail lengkap** tidak tersedia dalam satu daftar resmi — beberapa audit (Quarkslab, NCC Group) hanya tercatat di blog perusahaan auditor; detail temuan dan tanggal pastinya tidak dipublikasikan secara terpusat.
+- **Cloud infrastructure stack** (seperti Kubernetes atau Docker deployment untuk validator) tidak didokumentasikan resmi oleh Parity — tidak dapat diverifikasi dari sumber resmi.
+- **JAM (Polkadot 2.0)** masih dalam tahap testnet dan gray paper — spesifikasi final dapat berubah; implementasi produksi belum live.
+- **Agile Coretime** baru live penuh pada 2024 — dokumentasi penggunaan on-demand coretime diperbarui bertahap; beberapa API dan tooling masih berubah.
+- **XCM v3** diumumkan rilis 2024-07, namun detail lengkap spesifikasi dan contoh kasus penggunaan belum tersedia di wiki dalam format final.
+- **Validasi angka "50+ parachain"** bergantung pada data on-chain waktu-nyata — jumlah berubah terus; perlu cross-check dengan Subscan pada cutoff tertentu.
+- **Status audit FerretDB dan beberapa audit komponen kecil** tidak ditemukan — kemungkinan tidak ada atau tidak dipublikasikan; jangan asumsikan ada tanpa verifikasi.
+- **Pengukuran throughput** bervariasi antara sumber (sebelum dan setelah Async Backing) — angka pasti tergantung pada konfigurasi parachain dan beban jaringan.

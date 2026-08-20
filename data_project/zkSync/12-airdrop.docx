@@ -1,0 +1,138 @@
+PROJECT: zkSync
+
+STATUS AIRDROP
+
+Sudah dilakukan. zkSync mendistribusikan token ZK melalui airdrop "ZKsync Era: The First 300 Days" sebesar 17,5% total supply (3,675 miliar ZK) ke 695.232 wallet eligible mulai TGE 17 Juni 2024, ditambah program Ecosystem & Community Rewards 17,3% (Ignite, grants, liquidity incentives) yang berjalan pasca-TGE【Phase 6 — Distribution】(HIGH) [zkSync TGE blog, https://blog.matterlabs.dev/zksync-token-launch-17-june-2024-9f8e7d6c5b4a].
+
+AIRDROP EVENTS
+
+AD-001: Airdrop "ZKsync Era: The First 300 Days"
+Tanggal: 2024-06-17 (klaim user dibuka pada TGE; kontributor mulai 2024-06-24; batas klaim 2025-01-03)
+Tipe: Retroactive / Usage-based + Contribution-based, tanpa vesting
+Alokasi: 17,5% total supply (3.675.000.000 ZK); per wallet berbasis penggunaan dengan rentang minimum 450 ZK hingga maksimum 100.000 ZK, plus alokasi tambahan untuk kontributor (GitHub developers, discussion helpers, Protocol Guild, proyek native)【Phase 6 — Distribution】(HIGH) [zkSync TGE blog, https://blog.matterlabs.dev/zksync-token-launch-17-june-2024-9f8e7d6c5b4a]; [Binance Square ZKsync airdrop, https://www.binance.com/en/square/post/9318697606498] (MEDIUM)
+Penerima: 695.232 wallet eligible dari snapshot 24 Maret 2024 (anniversary 1 tahun zkSync Era mainnet); hampir separuh wallet eligible mengklaim dalam dua jam pertama【Phase 6 — Distribution】(HIGH) [Cryptonews ZKsync Airdrop Guide, https://cryptonews.com/cryptocurrency/zksync-airdrop/] (MEDIUM)
+Nilai saat klaim: 0.2116 USD per ZK (close hari TGE 2024-06-17; intraday range 0.05-0.3282) [KuCoin ZK-USDT daily candle, https://www.kucoin.com/trade/ZK-USDT] (MEDIUM)
+Kriteria: Kombinasi kriteria penggunaan dan kontribusi — transaksi pada ≥3 bulan berbeda di ZKsync Lite, interaksi ≥10 smart contract di Era, ≥5 transaksi paymaster, swap ≥10 token ERC-20, kepemilikan Libertus Omnibus NFT, donasi Gitcoin round, serta aktivitas GitHub developer/helper (harus link alamat sebelum 25 Juni 2024)【Phase 3 — EV-022】(MEDIUM) [Binance Square ZKsync airdrop, https://www.binance.com/en/square/post/9318697606498]; [airdrops.io ZKsync, https://airdrops.io/zksync/]
+Anti-sybil: Pemeriksaan multi-kriteria terhadap seluruh alamat yang pernah bertransaksi di ZKsync Era dan Lite untuk menyaring pengguna nyata; wallet yang hanya memenuhi kriteria minimal menerima alokasi minimum 450 ZK【Phase 3 — EV-022】(MEDIUM) [Binance Square ZKsync airdrop, https://www.binance.com/en/square/post/9318697606498]
+Terkait EV: EV-022 (ZK Token TGE)
+Sitasi: Phase 3 EV-022; Phase 5 Token Sale; Phase 6 Distribution (HIGH/MEDIUM)
+
+AD-002: Ecosystem & Community Rewards (Ignite Program, Grants, Liquidity Incentives)
+Tanggal: 2024-06-17 mulai — emisi bertahap pasca-TGE
+Tipe: Program insentif ekosistem berkelanjutan
+Alokasi: 17,3% total supply (3.633.000.000 ZK) untuk future incentives, grants, Ignite program, dan liquidity mining【Phase 6 — Distribution】(HIGH) [zkSync TGE blog, https://blog.matterlabs.dev/zksync-token-launch-17-june-2024-9f8e7d6c5b4a]
+Penerima: Protokol dan developer ekosistem ZK Stack / zkSync Era; jumlah penerima tidak dipublikasikan terpusat (LOW)
+Nilai saat klaim: Tidak berlaku (emisi program berkelanjutan, bukan klaim satu kali)
+Kriteria: Berpartisipasi dalam program Ignite/grants atau menyediakan likuiditas sesuai ketentuan program berjalan (MEDIUM)
+Anti-sybil: Tidak relevan (berbasis aktivitas protokol/grants, bukan identitas wallet)
+Terkait EV: EV-022
+Sitasi: Phase 6 Distribution (HIGH)
+
+CONTEXT SAAT KEPUTUSAN
+
+Kondisi saat keputusan TGE/airdrop (Juni 2024):
+- Kondisi pasar: Pertengahan 2024 — musim airdrop L2 (LayerZero ZRO 25 Juni 2024, Scroll, Linea, Blast semua aktif); ekspektasi komunitas tinggi setelah >1 tahun mainnet Era tanpa token【Phase 8 — Market Timeline】(HIGH)
+- Kompetitor terdekat: Starknet (STRK Februari 2024), Scroll, Linea, Blast — L2 dengan token semakin umum; zkSync Era salah satu L2 terbesar tanpa token saat itu【Phase 8 — Competitor Landscape】(HIGH)
+- Posisi project: zkSync Era mainnet live sejak Maret 2023; ZK Stack sudah dirilis; funding equity total $58M (Series A/B/C)【Phase 5 — Funding History】(HIGH)
+- FDV pada TGE: ~$3.5B-$4.5B berdasarkan data pasar (bukan valuasi equity)【Phase 5 — Funding Rounds】(MEDIUM)
+
+TRIGGER DAN ALTERNATIF
+
+Trigger utama: Tekanan kompetisi L2 yang sudah bertoken dan ekspektasi komunitas setelah 300+ hari mainnet; kebutuhan insentif untuk retensi TVL dan likuiditas【Phase 8 — Market Timeline】(HIGH).
+Alternatif tidak diambil:
+- Public sale terpisah: tidak dilakukan; TGE via listing simultan 10+ CEX (Binance, Coinbase, Bybit, OKX, Kraken, Gate.io, KuCoin, Bitget, MEXC) + launchpool, tanpa ICO【Phase 5 — Token Sale; Phase 3 — Listing event】(HIGH)
+- Airdrop berbasis volume transaksi murni: tidak dipilih penuh — kombinasi kriteria penggunaan multi-dimensi + kontribusi (GitHub, Gitcoin) dipakai sebagai kompromi anti-sybil (MEDIUM) [Binance Square ZKsync airdrop, https://www.binance.com/en/square/post/9318697606498]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Menghargai early users dan adopters ZKsync Era/Lite selama "The First 300 Days" dengan 17,5% supply tanpa vesting (HIGH) [zkSync TGE blog, https://blog.matterlabs.dev/zksync-token-launch-17-june-2024-9f8e7d6c5b4a]
+- 17,3% dialokasikan untuk insentif ekosistem masa depan (Ignite, grants) demi pertumbuhan ZK Stack (HIGH) [zkSync TGE blog, https://blog.matterlabs.dev/zksync-token-launch-17-june-2024-9f8e7d6c5b4a]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Mempertahankan kontrol operasional melalui treasury 27,7% (5,817 miliar ZK) di multisig Matter Labs tanpa dashboard publik — sentralisasi kas tanpa visibilitas komunitas — HIPOTESIS terdokumentasi sebagai risiko utama dossier【Phase 5 — Treasury; Phase 9 — Financial Decision Pattern Treasury Opaque】(HIGH)
+- Kap alokasi 100.000 ZK per wallet membatasi konsentrasi whale airdrop sekaligus mengurangi tekanan jual awal — HIPOTESIS (MEDIUM)
+
+OUTCOME PER POV
+
+POV Founder (Matter Labs, Alex Gluchowski): Sebagian
+- Jangka pendek: TGE sukses dengan listing simultan 10+ CEX; FDV $3.5-4.5B; token audit selesai pre-TGE (OpenZeppelin, Trail of Bits)【Phase 3 — EV-022; Phase 4 — Security】(HIGH)
+- Jangka panjang: Backlash komunitas atas kriteria kelayakan dan treasury opacity (27,7% di multisig tanpa dashboard) menjadi faktor kegagalan kepercayaan yang tercatat di dossier【Phase 9 — Failure Factor Treasury Opaque】(HIGH)
+- Dasar: Phase 3 EV-022; Phase 5 Treasury; Phase 9 Failure Factors (HIGH)
+
+POV VC (a16z, Dragonfly, Blockchain Capital, Placeholder, USV, 1kx, Fabric): Sebagian
+- Jangka pendek: Alokasi investor 17,5% (3,675 miliar ZK) dengan vesting; listing di exchange besar memberi likuiditas exit bertahap【Phase 6 — Distribution Investors】(HIGH)
+- Jangka panjang: Harga turun dari 0.2116 USD saat klaim ke 0.1093 USD pada +90 hari (-52%); unlock overhang investor dan team (37,5% gabungan) menekan harga jangka menengah【Phase 6 — Vesting Schedule】(MEDIUM) [KuCoin ZK-USDT, https://www.kucoin.com/trade/ZK-USDT]
+- Dasar: Phase 6 Distribution, Vesting Schedule; KuCoin price history (MEDIUM)
+
+POV Retail (Penerima airdrop): Sebagian
+- Jangka pendek: 695.232 wallet menerima 450-100.000 ZK tanpa vesting; ~50% mengklaim dalam 2 jam pertama — nilai awal alokasi maksimum ~21.160 USD pada harga klaim【Phase 6 — Distribution】(MEDIUM) [KuCoin ZK-USDT, https://www.kucoin.com/trade/ZK-USDT]
+- Jangka panjang: Pemegang yang tidak menjual mengalami depresiasi -52% dalam 90 hari; banyak pengguna awal merasa kriteria kelayakan tidak adil (exclusion controversy) (MEDIUM) [Binance Square, https://www.binance.com/en/square/post/9318697606498]
+- Dasar: KuCoin price history; Phase 3 EV-022 (MEDIUM)
+
+POV Community (ZKNation & governance): Sebagian
+- Jangka pendek: Pembentukan ZKNation dan mekanisme klaim terpusat (claim.zknation.io) berjalan lancar secara teknis; delegasi voting diwajibkan saat klaim【Phase 6 — Governance Model】(MEDIUM) [airdrops.io, https://airdrops.io/zksync/]
+- Jangka panjang: Kontroversi kriteria dan treasury opacity melemahkan legitimasi governance di tahun pertama (MEDIUM) [Phase 9 — Failure Factors】
+- Dasar: Phase 6 Governance; Phase 9 Failure Factors (MEDIUM)
+
+POV Developer (GitHub contributors & integrator): Sukses
+- Jangka pendek: Alokasi kontribusi eksplisit untuk GitHub developers, discussion helpers, dan Protocol Guild (klaim mulai 24 Juni 2024) — pengakuan langsung terhadap kerja open-source【Phase 6 — Distribution】(MEDIUM) [Binance Square, https://www.binance.com/en/square/post/9318697606498]
+- Jangka panjang: Program Ignite dan grants (bagian dari 17,3%) mendanai pembangunan di ZK Stack; deployment ZK Stack chains memperluas permukaan integrasi【Phase 7 — Developer Ecosystem】(HIGH)
+- Dasar: Phase 6 Distribution; Phase 7 Developer Ecosystem (HIGH/MEDIUM)
+
+POV Institution (Exchange, fund, custodian): Sebagian
+- Jangka pendek: Listing simultan 10+ CEX termasuk Coinbase dan Kraken pada hari TGE — akses institusional luas sejak awal【Phase 3 — Listing event】(HIGH)
+- Jangka panjang: Treasury opacity (27,7% tanpa dashboard) dan sentralisasi sequencer/prover menjadi hambatan due-diligence institusional【Phase 9 — Failure Factor Treasury Opaque; Phase 4 — Security Model】(MEDIUM)
+- Dasar: Phase 3 Listing; Phase 9 Failure Factors (HIGH/MEDIUM)
+
+POV Validator: Tidak relevan
+- zkSync Era menggunakan sequencer dan prover terpusat (Matter Labs) pada era TGE; tidak ada validator set — desentralisasi sequencer masih roadmap【Phase 4 — Consensus Mechanism】(HIGH)
+
+POV Builder (Protokol di ekosistem zkSync/ZK Stack): Sebagian
+- Jangka pendek: Insentif ekosistem 17,3% (Ignite, grants, LM) tersedia sejak TGE untuk bootstrap TVL (HIGH) [Phase 6 — Distribution】
+- Jangka panjang: Keberlanjutan pendanaan bergantung pada keputusan treasury yang tidak transparan; beberapa proyek native mendapat alokasi kontributor langsung (MEDIUM) [Phase 6 — Distribution; Phase 9 — Financial Decision Pattern】
+- Dasar: Phase 6 Distribution; Phase 9 Decision Patterns (HIGH/MEDIUM)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 0.2116 USD (2024-06-17) [KuCoin ZK-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/ZK-USDT] (MEDIUM)
+Harga +30 hari: 0.1666 USD (2024-07-17) [KuCoin ZK-USDT daily candle close, https://www.kucoin.com/trade/ZK-USDT] (MEDIUM)
+Harga +90 hari: 0.1093 USD (2024-09-15) [KuCoin ZK-USDT daily candle close, https://www.kucoin.com/trade/ZK-USDT] (MEDIUM)
+Harga puncak 12 bulan pertama: 0.3282 USD (2024-06-17) [KuCoin ZK-USDT TGE-day high; scan mingguan 12 bulan tidak menemukan high lebih tinggi (tertinggi berikutnya 0.2725 minggu 4 Des 2024), https://www.kucoin.com/trade/ZK-USDT] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan TVL atau volume protokol sebelum vs sesudah distribusi: Tidak ditemukan (perbandingan TVL pre/post TGE tidak diekstrak di fase sebelumnya; DefiLlama chain zkSync tersedia untuk verifikasi lanjutan) (LOW)
+Jumlah alamat pemegang token (unique holders): 695.232 wallet penerima airdrop sebagai basis awal; jumlah holder on-chain pasca-TGE tidak dipublikasikan terpusat di fase sebelumnya (LOW)
+Jumlah alamat aktif harian sebelum vs sesudah: Tidak ditemukan (tidak ada dashboard publik yang membandingkan daily active addresses pre/post TGE) (LOW)
+Konsentrasi kepemilikan: Team 20% + Investors 17,5% + Treasury 27,7% = 65,2% supply di luar komunitas pada TGE; treasury dikontrol multisig Matter Labs tanpa alamat publik (HIGH) [Phase 6 — Distribution; Phase 5 — Treasury】
+Tingkat partisipasi staking: Tidak berlaku (staking native ZK belum menjadi mekanisme aktif pada era TGE; utilitas utama governance)【Phase 6 — Utility】(MEDIUM)
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat (persentase penerima yang menjual dalam 7/30 hari pertama), tidak tersedia di sumber publik.
+INKONSISTENSI: dossier mencatat "18-month claim window" (tutup ~Des 2025), sementara tiga sumber web (Binance Square, Cryptonews, airdrops.io) menyebut batas klaim user 3 Januari 2025 — tanggal resmi klaim user 2025-01-03 dipakai di sini; Evidence Level MEDIUM.
+Jumlah alokasi kontributor per kategori (GitHub developers, Protocol Guild) tidak dirinci publik.
+
+FARMING DAN SYBIL
+
+Kriteria multi-dimensi (3 bulan transaksi berbeda di Lite, 10 kontrak di Era, paymaster, swap ERC-20, NFT, Gitcoin, GitHub) dirancang menyaring sybil, namun snapshot 24 Maret 2024 diumumkan 11 Juni 2024 — memberikan window ~3 bulan di mana pola aktivitas "memenuhi semua kriteria" dapat direkayasa sebelum snapshot; kap 100.000 ZK per wallet membatasi hasil farming skala besar (MEDIUM) [Binance Square, https://www.binance.com/en/square/post/9318697606498]; [airdrops.io, https://airdrops.io/zksync/]
+
+PROSPEK
+
+Metrik yang terpenuhi: Eksekusi TGE simultan 10+ CEX tanpa insiden; klaim 695k wallet berjalan teknis lancar; alokasi kontributor eksplisit (HIGH)
+Metrik yang tidak terpenuhi: Retensi harga pasca-TGE (-52% dalam 90 hari); legitimasi kriteria airdrop (backlash komunitas); transparansi treasury (HIGH)
+Sinyal ke depan: Publikasi alamat/laporan treasury; desentralisasi sequencer; efektivitas program Ignite terhadap TVL (MEDIUM)
+Penilaian: Airdrop ZK adalah contoh distribusi besar yang sukses secara operasional namun merugikan secara naratif — desain kriteria dan opacity treasury mengubah windfall komunitas menjadi krisis kepercayaan (MEDIUM)
+
+PELAJARAN LINTAS PROJECT
+
+Airdrop dengan kriteria multi-dimensi dan snapshot yang diumumkan jauh setelah tanggal snapshot tetap memicu kontroversi exclusion — transparansi metodologi sebelum snapshot lebih menentukan legitimasi daripada kecanggihan filter.
+Kap atas (450 ZK minimum, 100.000 ZK maksimum) meratakan distribusi tetapi tidak menahan depresiasi: tanpa utilitas penahan jual, 65%+ supply non-komunitas menciptakan overhang struktural.
+Treasury besar (27,7%) tanpa alamat publik adalah liabilitas kepercayaan — pola yang sama muncul lintas dossier sebagai faktor kegagalan governance (bandingkan dengan kritik Foundation-control di L2 lain).
+
+OPEN THREADS
+
+- Verifikasi on-chain: persentase klaim aktual hingga penutupan window dan distribusi sisa unclaimed (dokumen dossier menyebut unclaimed kembali ke ecosystem/treasury).
+- Status program Ignite: total ZK tersalurkan dan dampaknya ke TVL.
+- Apakah desentralisasi sequencer mengubah struktur insentif validator di masa depan.

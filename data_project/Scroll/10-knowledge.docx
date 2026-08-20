@@ -1,0 +1,526 @@
+PROJECT: Scroll
+
+## Core Insights
+
+Insight 1: Ethereum alignment sebagai prinsip teknis absolut memandu setiap keputusan arsitektur — settlement, data availability, finality, execution client semua mengacu ke Ethereum L1 tanpa layer tambahan
+Explanation: Scroll secara konsisten memilih Ethereum untuk settlement (L1 verification), DA (calldata/blob via EIP-4844), finality (ZK-proof on-chain), execution client (modified Geth), dan tidak mengeluarkan consensus token terpisah — berbeda dari kompetitor seperti Mantle (EigenDA) atau Starknet (Cairo VM)
+Evidence: System Architecture menentukan "Settlement Layer: Ethereum L1", "Data Availability: Ethereum L1 calldata/blob", "Consensus: derives from Ethereum L1"【Phase 4 — System Architecture】; External Dependencies menandai Ethereum sebagai "Critical" dependency【Phase 7 — External Dependencies】; Competitor Landscape menunjukkan perbedaan dengan Mantle (modular DA) dan Starknet (Cairo VM)【Phase 8 — Competitor Landscape】
+Supporting Dataset: Phase 4 Technology (System Architecture, Consensus Mechanism, Data Availability, Execution Environment), Phase 7 Ecosystem (External Dependencies), Phase 8 Market (Competitor Landscape)
+Confidence: HIGH
+
+Insight 2: EVM-equivalence Type 2 (bytecode-level) dipilih över EVM-compatibility Type 4 (Solidity-level) meski menambah kompleksitas proving — trade-off developer experience seamless vs prover efficiency
+Explanation: Execution client berbasis modified Geth v1.13+ mendukung semua opcode standar dan precompiles termasuk PointEvaluation untuk EIP-4844; zkSync Era menggunakan Type 4 (LLVM-based) yang memerlukan kompilasi ulang; Scroll memilih Type 2 untuk memastikan kontrak existing deploy tanpa modifikasi
+Evidence: Execution Environment: "EVM-equivalent (EVM-equivalent Type 2 per Vitalik classification — bytecode compatible)"【Phase 4 — Execution Environment】; Core Components: "Base Client: Modified go-ethereum (Geth) v1.13+"【Phase 4 — Core Components】; Vitalik Classification referensi Type 2【Phase 8 — Competitor Landscape - zkSync Era】
+Supporting Dataset: Phase 4 Technology (Execution Environment, Core Components - L2 Execution Engine), Phase 8 Market (Competitor Landscape), Phase 1 Foundation (Category, Core Products)
+Confidence: HIGH
+
+Insight 3: Strategi "Full Stack at Launch" — 40+ integrasi major (DEX, lending, oracle, cross-chain, restaking, wallet, explorer) di-coordinasi live dalam minggu mainnet — menciptakan network effect immédiat dan TVL $1.2B dalam beberapa minggu
+Explanation: Tidak ada L2 lain yang meluncurkan dengan ekosistem sepenuhnya berkembang; Arbitrum, Optimism, Base, zkSync semua staged rollout bulan demi bulan; Scroll mengamankan komitmen pre-launch dari LayerZero, Wormhole, Chainlink, Pyth, Uniswap, Aave, 10 restaking protocols, 6 wallets, 2 explorers
+Evidence: EV-011 through EV-022 semua dalam 2024 post-mainnet Oct-Nov【Phase 3 — EV-011 through EV-022】; Major Integrations: 40+ integrations live【Phase 7 — Major Integrations】; Adoption Metrics: TVL ~$1.2B within weeks【Phase 8 — Adoption Metrics】
+Supporting Dataset: Phase 3 History (EV-011 to EV-022), Phase 7 Ecosystem (Major Integrations, Applications), Phase 8 Market (Adoption Metrics, Market Position)
+Confidence: HIGH
+
+Insight 4: Multi-phase testnet strategy (pre-alpha → alpha → sepolia persistent) dengan bridge, SDK, tooling di setiap fase — bukan single testnet rush — memungkinkan validasi bertahap arsitektur ZK-proof, sequencer, prover, bridge
+Explanation: Pre-alpha 2023-10-18 untuk validasi arsitektur awal; Alpha 2023-02-28 untuk developer testing; Sepolia 2023 untuk persistent environment; setiap fase menambah komponen (bridge EV-007, SDK EV-008) dan stress-test prover/sequencer
+Evidence: EV-004 Alpha Testnet 2023-02-28【Phase 3 — EV-004】; EV-005 Pre-alpha Testnet 2023-10-18【Phase 3 — EV-005】; EV-006 Sepolia Testnet 2023【Phase 3 — EV-006】; EV-007 Bridge, EV-008 SDK released 2023【Phase 3 — EV-007, EV-008】
+Supporting Dataset: Phase 3 History (EV-004, EV-005, EV-006, EV-007, EV-008), Phase 4 Technology (Testnet Infrastructure), Phase 7 Ecosystem (Developer Ecosystem)
+Confidence: HIGH
+
+Insight 5: Research-first hiring — Dmitry Khovratovich (Chief Cryptographer, co-author Argon2/Equihash) dan Brendan Farmer (Polygon zkEVM co-founder, Advisor) direkrut 2022 sebelum testnet publik — membangun credibility teknis dan menghindari pitfalls arsitektur
+Explanation: Khovratovich memimpin desain Halo2/KZG dengan Perpetual Powers of Tau; Farmer memberikan insight production zkEVM dari Polygon; keduanya join 2022 saat Series A baru closed — bukan setelah product ready
+Evidence: EV-002 Khovratovich join 2022【Phase 3 — EV-002】; EV-003 Farmer join 2022【Phase 3 — EV-003】; Entity: Dmitry Khovratovich "Chief Cryptographer"【Phase 2 — Dmitry Khovratovich】; Entity: Brendan Farmer "Advisor"【Phase 2 — Brendan Farmer】
+Supporting Dataset: Phase 2 Entity (Dmitry Khovratovich, Brendan Farmer), Phase 3 History (EV-002, EV-003), Phase 4 Technology (Proof System, Security Model)
+Confidence: HIGH
+
+Insight 6: 6 auditor independen (Trail of Bits, OpenZeppelin, Zellic, Spearbit/Pashov, Sigma Prime, Nethermind ongoing) dengan scope terpisah (circuits, contracts, execution client, bridge, token, governance, P2P) sebelum mainnet — bukan single audit
+Explanation: Setiap auditor fokus domain khusus: Trail of Bits pada zkProver circuits + verifier; OpenZeppelin pada bridge/token/governance; Zellic pada prover Rust/Halo2 soundness; Spearbit pada bridge/L2 system contracts; Sigma Prime pada execution client; Nethermind continuous post-launch
+Evidence: Audit History: 6 auditors dengan scope detail【Phase 4 — Audit History】; Audits GitHub public reports【Phase 4 — Audit History】; Infrastructure Providers Security【Phase 7 — Infrastructure Providers】
+Supporting Dataset: Phase 4 Technology (Audit History), Phase 7 Ecosystem (Infrastructure Providers - Security)
+Confidence: HIGH
+
+Insight 7: Centralized sequencer/prover saat launch dengan roadmap desentralisasi transparan dan incremental upgrades (pre-conf API, prover parallelization, blob integration) — honest tentang limitations, publish roadmap, deliver steps
+Explanation: Sequencer "Live (centralized, single operator)"; Prover "Live (distributed prover cluster operated by Scroll Foundation)"; Known Limitations documented honestly; Decentralization roadmap blog; Pre-conf API beta 2025-01; Prover parallelization v1 2024-12 (3x throughput); Blob integration 2024-11 (90% cost reduction)
+Evidence: Core Components Sequencer status【Phase 4 — Core Components】; Known Limitations: "Centralized Sequencer", "Prover Cluster Operated by Foundation"【Phase 4 — Known Technical Limitations】; Technical Upgrade History: EIP-4844, Prover Parallelization, Pre-conf API【Phase 4 — Technical Upgrade History】; Decentralization Roadmap blog【Phase 4 — Official Technical Resources】
+Supporting Dataset: Phase 4 Technology (Core Components, Known Limitations, Technical Upgrade History), Phase 3 History (Technical upgrades), Phase 8 Market (Narrative Position)
+Confidence: HIGH
+
+Insight 8: Tokenomics fixed supply 1B SCR tanpa inflasi/emission schedule/burn — vesting schedules sebagai satu-satunya supply dynamics: Team/Investors 12m cliff + 36m linear, Foundation 6m cliff + 36m linear (5% unlock TGE), Ecosystem 3m cliff + 24m linear, Community 1m cliff + 18m linear
+Explanation: Tidak ada block reward, validator emission, atau minting baru; supply tetap 1B; circulating supply hanya bertambah via vesting unlock; besar unlock Oct 2025 (12-month cliff Team/Investors) potential sell pressure
+Evidence: Supply: "Total Supply: 1,000,000,000 SCR", "Maximum Supply: Tidak diungkap", "No emission schedule", "No burn mechanism"【Phase 6 — Supply】; Distribution percentages【Phase 6 — Distribution】; Vesting Schedule detail per kategori【Phase 6 — Vesting Schedule】; Inflation/Deflation: "Supply fixed"【Phase 6 — Inflation/Deflation】
+Supporting Dataset: Phase 6 Token (Supply, Distribution, Vesting Schedule, Inflation/Deflation), Phase 5 Financial (Token Sale)
+Confidence: HIGH
+
+Insight 9: Dual governance layer — Snapshot off-chain (gasless, broad participation) + OpenZeppelin Governor on-chain (binding, timelock) — dengan Security Council multisig emergency controls (pause bridge, upgrade contracts, halt sequencer)
+Explanation: Off-chain signaling untuk sentiment, on-chain execution untuk binding changes; Security Council sebagai safety valve selama fase terpusat; Grant Committee untuk ecosystem fund allocation (200M SCR); delegation tersedia on/off-chain
+Evidence: Governance Model: "Off-chain (Snapshot) + On-chain (DAO timelock + proposal execution)"【Phase 6 — Governance】; Security Council: "Emergency controls: pause bridge, upgrade contracts, halt sequencer"【Phase 4 — Security Model】; Grant Committee【Phase 7 — Governance Ecosystem】
+Supporting Dataset: Phase 6 Token (Governance), Phase 4 Technology (Security Model - Emergency Controls, Upgradeability), Phase 7 Ecosystem (Governance Ecosystem)
+Confidence: MEDIUM
+
+Insight 10: Cross-chain messaging redundancy — Native bridge + LayerZero (OFT) + Wormhole + Hyperlane — 4 parallel paths mengurangi single point of failure dan memberikan user choice untuk fast withdrawal (third-party bridges bypass 7-day native delay)
+Explanation: Native bridge 7-day challenge period; LayerZero/Wormhole/Hyperlane provide fast exit; semua live dari mainnet wave; redundancy critical untuk bridge security
+Evidence: Cross-chain Messaging: "Native L1-L2 messaging via bridge contracts; third-party interop (LayerZero, Wormhole, Hyperlane) at application layer"【Phase 4 — System Architecture】; Major Integrations: LayerZero, Wormhole, Hyperlane all live【Phase 7 — Major Integrations】; Bridge Security: "7-day withdrawal delay"【Phase 4 — Security Model】
+Supporting Dataset: Phase 4 Technology (System Architecture, Security Model), Phase 7 Ecosystem (Major Integrations, External Dependencies), Phase 3 History (EV-011, EV-012, EV-017)
+Confidence: HIGH
+
+Insight 11: Oracle dual-source (Chainlink full stack + Pyth first-party) untuk DeFi reliability — bukan single oracle dependency
+Explanation: Chainlink provide Price Feeds, VRF, CCIP, Proof of Reserve; Pyth provide first-party financial market data; keduanya live dari launch wave; redundancy critical untuk lending/DEX pricing
+Evidence: Major Integrations: Chainlink EV-013, Pyth EV-014【Phase 3 — EV-013, EV-014】; External Dependencies: Chainlink, Pyth both "High" criticality【Phase 7 — External Dependencies】; Competitor Landscape menunjukkan oracle sebagai key infrastructure【Phase 8 — Competitor Landscape】
+Supporting Dataset: Phase 3 History (EV-013, EV-014), Phase 7 Ecosystem (Major Integrations, External Dependencies), Phase 8 Market (Competitor Landscape)
+Confidence: HIGH
+
+Insight 12: Restaking ecosystem positioning — 10 protocols (EigenLayer, Symbiotic, Karak, Renzo, Ether.fi, Puffer, Swell, Kelp, Mellow, Kernel) terintegrasi dari launch — Scroll mempositioning dirinya sebagai L2 untuk restaking economy
+Explanation: Bukan hanya DeFi tradisional; restaking/LRT protocols major presence; Kernel untuk BTC/ETH restaking; SCR token roadmap includes staking untuk sequencer/prover decentralization
+Evidence: EV-021 lists 10 restaking protocols【Phase 3 — EV-021】; Applications: 10 restaking/LRT protocols【Phase 7 — Applications】; Narrative Position: "Restaking Integration" secondary narrative【Phase 8 — Narrative Position】; Token Utility: Staking planned【Phase 6 — Utility】
+Supporting Dataset: Phase 3 History (EV-021), Phase 7 Ecosystem (Major Integrations, Applications), Phase 8 Market (Narrative Position), Phase 6 Token (Utility)
+Confidence: HIGH
+
+Insight 13: Revenue model sequenced — Live: L2 fees (base burn, priority to sequencer), Bridge fees, Sequencer revenue (priority+MEV); Planned: Protocol fee switch (governance proposal), Prover fees (post-decentralization) — protocol fee capture delayed
+Explanation: Saat ini sequencer (Foundation-operated) capture semua priority fees + MEV; protocol fee switch proposal drafted di governance forum; prover fees futuristic; revenue transparency tidak dipublikasikan
+Evidence: Revenue Model streams detail【Phase 5 — Revenue Model】; Sequencer trust model: "priority fees + MEV to single operator"【Phase 4 — Core Components】; Gov Forum Fee Switch proposal【Phase 6 — Major Token Events】; Revenue History: "Tidak diungkap"【Phase 5 — Revenue History】
+Supporting Dataset: Phase 5 Financial (Revenue Model, Revenue History), Phase 4 Technology (Core Components - Sequencer), Phase 6 Token (Utility - Protocol Fee Share)
+Confidence: HIGH
+
+Insight 14: VC funding dengan token warrant structure (Series A $30M Polychain, Series B $50M Bain Capital Crypto, flat $1.8B valuation) + Strategic round untuk ecosystem alignment + EF grant non-dilutive — no public sale/ICO/IDO
+Explanation: Equity + token warrant standar crypto infrastructure; strategic investors dipilih untuk integration value (LayerZero, Wormhole, Chainlink, EigenLayer dll); EF grant Q3 2023 untuk ZK research; TGE langsung ke circulating supply via CEX/DEX + airdrop
+Evidence: Funding History: Series A, Series B, Strategic Round【Phase 5 — Funding History】; Token Sale: all "Tidak ada" untuk public/community/launchpad/auction【Phase 5 — Token Sale】; Financial Dependencies: VC, Foundation, EF Grant, Protocol Revenue【Phase 5 — Financial Dependencies】
+Supporting Dataset: Phase 5 Financial (Funding History, Token Sale, Financial Dependencies), Phase 6 Token (Distribution, TGE), Phase 2 Entity (Investor entities)
+Confidence: HIGH
+
+Insight 15: Technical decision pattern: Ethereum alignment first, EVM-equivalence purity over features, parallel component development, extensive pre-launch testing, multiple independent audits, modified Geth base, transparent decentralization roadmap
+Explanation: Konsisten across 7 technical decision patterns teridentifikasi di Phase 9; setiap pola didukung evidence dari architecture, upgrades, audit history, testnet phases
+Evidence: Technical Decision Pattern 1-7【Phase 9 — Technical Decision Pattern】; System Architecture, Execution Environment, Security Model, Audit History, Core Components, Known Limitations, Technical Upgrade History【Phase 4 — all sections】
+Supporting Dataset: Phase 9 Behavioral (Technical Decision Pattern), Phase 4 Technology (all sections)
+Confidence: HIGH
+
+## Strategic Principles
+
+Principle 1: Ethereum Alignment First — Setiap keputusan arsitektur utama dipilih untuk maximize alignment dengan Ethereum (settlement L1, DA via calldata/blob, finality via L1 verification, execution client modified Geth, no separate consensus token, no separate DA layer)
+Evidence: System Architecture semua Ethereum【Phase 4 — System Architecture】; External Dependencies Ethereum "Critical"【Phase 7 — External Dependencies】; Technical Decision Pattern 1【Phase 9 — Technical Decision Pattern】
+Supporting Dataset: Phase 4 Technology (System Architecture, Consensus Mechanism, Data Availability, Execution Environment), Phase 7 Ecosystem (External Dependencies), Phase 9 Behavioral (Technical Decision Pattern)
+Confidence: HIGH
+
+Principle 2: EVM-Equivalence Purity (Type 2) — Bytecode-level compatibility diprioritaskan over features seperti native Account Abstraction (ERC-4337) atau custom VM — trade-off proving complexity untuk developer experience seamless
+Evidence: Execution Environment Type 2【Phase 4 — Execution Environment】; Known Limitations: "No Native Account Abstraction"【Phase 4 — Known Technical Limitations】; Technical Decision Pattern 2【Phase 9 — Technical Decision Pattern】; Vitalik Classification reference【Phase 8 — Competitor Landscape】
+Supporting Dataset: Phase 4 Technology (Execution Environment, Known Limitations), Phase 9 Behavioral (Technical Decision Pattern), Phase 8 Market (Competitor Landscape)
+Confidence: HIGH
+
+Principle 3: Production Quality Over Speed — Multi-phase testnet (pre-alpha, alpha, sepolia), 6 independent audits, parallel development of all 9 core components, comprehensive tooling dari testnet — tidak rush ke mainnet
+Evidence: EV-004, EV-005, EV-006 testnet phases【Phase 3 — EV-004, EV-005, EV-006】; Audit History 6 auditors【Phase 4 — Audit History】; Core Components 9 all "Live"【Phase 4 — Core Components】; Developer Ecosystem tools ready pre-mainnet【Phase 7 — Developer Ecosystem】
+Supporting Dataset: Phase 3 History (Testnet events), Phase 4 Technology (Audit History, Core Components), Phase 7 Ecosystem (Developer Ecosystem)
+Confidence: HIGH
+
+Principle 4: Ecosystem Completeness at Launch — Coordinated 40+ major integrations wave untuk immediate utility dan TVL — bukan "launch then build" — DEX, lending, oracle, cross-chain, restaking, wallet, explorer all live dalam minggu
+Evidence: EV-011 through EV-022 all 2024【Phase 3 — EV-011 through EV-022】; Major Integrations 40+【Phase 7 — Major Integrations】; Adoption Metrics TVL $1.2B within weeks【Phase 8 — Adoption Metrics】; Ecosystem Decision Pattern 1【Phase 9 — Ecosystem Decision Pattern】
+Supporting Dataset: Phase 3 History (EV-011 to EV-022), Phase 7 Ecosystem (Major Integrations, Applications), Phase 8 Market (Adoption Metrics), Phase 9 Behavioral (Ecosystem Decision Pattern)
+Confidence: HIGH
+
+Principle 5: Progressive Decentralization with Transparency — Honest tentang current centralization (single sequencer, Foundation prover cluster); publish roadmap; implement incremental steps (pre-conf API, prover parallelization, blob integration) sebelum full decentralization
+Evidence: Known Limitations documented honestly【Phase 4 — Known Technical Limitations】; Decentralization Roadmap blog【Phase 4 — Official Technical Resources】; Technical Upgrade History incremental steps【Phase 4 — Technical Upgrade History】; Governance Decision Pattern 1【Phase 9 — Governance Decision Pattern】
+Supporting Dataset: Phase 4 Technology (Known Limitations, Technical Upgrade History), Phase 9 Behavioral (Governance Decision Pattern)
+Confidence: HIGH
+
+Principle 6: Strategic Investor Selection for Ecosystem Value — Series A (Polychain, Sequoia, Variant — research/DeFi focus), Series B (Bain Capital Crypto — institutional), Strategic (Ecosystem partners: LayerZero, Wormhole, Chainlink, EigenLayer, dll) — bukan capital-only
+Evidence: Funding History all rounds【Phase 5 — Funding History】; Major Integrations: strategic investors all integrated【Phase 7 — Major Integrations】; Financial Decision Pattern 1, 2【Phase 9 — Financial Decision Pattern】
+Supporting Dataset: Phase 5 Financial (Funding History), Phase 7 Ecosystem (Major Integrations, External Dependencies), Phase 9 Behavioral (Financial Decision Pattern)
+Confidence: HIGH
+
+Principle 7: Research-First Cryptography Investment — Hire world-class cryptographers (Khovratovich, Farmer) sebelum product development; design Halo2/KZG with Perpetual Powers of Tau; participate in trusted setup ceremony
+Evidence: EV-002, EV-003 key hires 2022【Phase 3 — EV-002, EV-003】; Entity: Dmitry Khovratovich Chief Cryptographer【Phase 2 — Dmitry Khovratovich】; Proof System Halo2/KZG【Phase 4 — Security Model】; Technical Decision Pattern 3【Phase 9 — Technical Decision Pattern】
+Supporting Dataset: Phase 2 Entity (Key hires), Phase 3 History (EV-002, EV-003), Phase 4 Technology (Security Model), Phase 9 Behavioral (Technical Decision Pattern)
+Confidence: HIGH
+
+## Success Factors
+
+Factor 1: Simultaneous Mainnet Launch + TGE (2024-10-22) — Maximize momentum; token utility immediate (governance, ecosystem incentives); avoid "ghost chain" perception; liquidity untuk ecosystem grants day-1
+Evidence: EV-009 Mainnet Launch + EV-010 TGE same day【Phase 3 — EV-009, EV-010】; Decision Timeline: Simultaneous Mainnet+TGE【Phase 9 — Decision Timeline】; Trading Markets: 8+ CEX live day-1【Phase 8 — Trading Markets】
+Supporting Dataset: Phase 3 History (EV-009, EV-010), Phase 9 Behavioral (Decision Timeline), Phase 8 Market (Trading Markets)
+Confidence: HIGH
+
+Factor 2: Full Ecosystem Wave at Launch — 40+ integrations coordinated live dalam minggu mainnet → TVL $1.2B dalam beberapa minggu, full DeFi stack day-1, user retention tinggi, network effect compounding
+Evidence: EV-011 to EV-022【Phase 3 — EV-011 through EV-022】; Adoption Metrics TVL ~$1.2B【Phase 8 — Adoption Metrics】; Market Share: #1-2 EVM-equivalent ZK-Rollup【Phase 8 — Market Share】; Ecosystem Decision Pattern 1【Phase 9 — Ecosystem Decision Pattern】
+Supporting Dataset: Phase 3 History (EV-011 to EV-022), Phase 7 Ecosystem (Major Integrations), Phase 8 Market (Adoption Metrics, Market Share), Phase 9 Behavioral (Ecosystem Decision Pattern)
+Confidence: HIGH
+
+Factor 3: World-Class Cryptography Team — Khovratovich (Argon2, Equihash co-author) + Farmer (Polygon zkEVM co-founder) → Halo2/KZG innovation, Perpetual Powers of Tau participation, credible ZK-proof system, differentiated dari STARK/Plonky2 competitors
+Evidence: Entity Khovratovich, Farmer【Phase 2 — Dmitry Khovratovich, Brendan Farmer】; Proof System Halo2/KZG【Phase 4 — Security Model】; Competitor Landscape differentiation【Phase 8 — Competitor Landscape】; Technical Decision Pattern 3【Phase 9 — Technical Decision Pattern】
+Supporting Dataset: Phase 2 Entity (Key hires), Phase 4 Technology (Security Model), Phase 8 Market (Competitor Landscape), Phase 9 Behavioral (Technical Decision Pattern)
+Confidence: HIGH
+
+Factor 4: Multi-Phase Testnet Validation — Pre-alpha (architecture), Alpha (developer), Sepolia (persistent) dengan bridge/SDK/tooling each phase → bug found early, developer ecosystem onboarded gradually, prover/sequencer stress-tested, mainnet launch smooth
+Evidence: EV-004, EV-005, EV-006【Phase 3 — EV-004, EV-005, EV-006】; EV-007 Bridge, EV-008 SDK 2023【Phase 3 — EV-007, EV-008】; Technical Decision Pattern 5【Phase 9 — Technical Decision Pattern】
+Supporting Dataset: Phase 3 History (Testnet events), Phase 4 Technology (Testnet Infrastructure), Phase 9 Behavioral (Technical Decision Pattern)
+Confidence: HIGH
+
+Factor 5: Comprehensive Audit Program — 6 independent auditors (Trail of Bits, OpenZeppelin, Zellic, Spearbit, Sigma Prime, Nethermind) covering circuits, contracts, client, bridge, token, governance, P2P → no major exploit post-mainnet, credibility untuk ecosystem partners dan users
+Evidence: Audit History 6 auditors【Phase 4 — Audit History】; Risk Response Pattern 1【Phase 9 — Risk Response Pattern】; Infrastructure Providers Security【Phase 7 — Infrastructure Providers】
+Supporting Dataset: Phase 4 Technology (Audit History), Phase 7 Ecosystem (Infrastructure Providers), Phase 9 Behavioral (Risk Response Pattern)
+Confidence: HIGH
+
+Factor 6: Developer Experience Priority — Scroll SDK, Hardhat plugin, Foundry template, public RPC, Sepolia faucet, contract verification all ready di testnet → low friction onboarding, 200+ monthly active developers, Electric Capital report recognition
+Evidence: Developer Ecosystem all tools【Phase 7 — Developer Ecosystem】; Development Framework all live【Phase 4 — Development Framework】; Adoption Metrics Developer Count ~200+ monthly active【Phase 8 — Adoption Metrics】; Ecosystem Decision Pattern 5【Phase 9 — Ecosystem Decision Pattern】
+Supporting Dataset: Phase 4 Technology (Development Framework), Phase 7 Ecosystem (Developer Ecosystem), Phase 8 Market (Adoption Metrics), Phase 9 Behavioral (Ecosystem Decision Pattern)
+Confidence: HIGH
+
+Factor 7: Cross-Chain Redundancy & Oracle Dual-Source — Native bridge + LayerZero + Wormhole + Hyperlane (4 paths); Chainlink + Pyth (2 oracles) → no single point of failure, user choice, DeFi reliability
+Evidence: System Architecture Cross-chain Messaging【Phase 4 — System Architecture】; Major Integrations LayerZero, Wormhole, Hyperlane, Chainlink, Pyth【Phase 7 — Major Integrations】; Ecosystem Decision Pattern 2, 3【Phase 9 — Ecosystem Decision Pattern】
+Supporting Dataset: Phase 4 Technology (System Architecture), Phase 7 Ecosystem (Major Integrations, External Dependencies), Phase 9 Behavioral (Ecosystem Decision Pattern)
+Confidence: HIGH
+
+Factor 8: Restaking Ecosystem Hub Positioning — 10 restaking/LRT protocols integrated from launch → Scroll sebagai L2 untuk restaking economy, differentiated dari general-purpose L2 competitors
+Evidence: EV-021 10 protocols【Phase 3 — EV-021】; Applications 10 restaking【Phase 7 — Applications】; Narrative Position Restaking Integration【Phase 8 — Narrative Position】; Ecosystem Decision Pattern 4【Phase 9 — Ecosystem Decision Pattern】
+Supporting Dataset: Phase 3 History (EV-021), Phase 7 Ecosystem (Applications), Phase 8 Market (Narrative Position), Phase 9 Behavioral (Ecosystem Decision Pattern)
+Confidence: HIGH
+
+## Failure Factors
+
+Factor 1: Centralized Sequencer Single Operator — Can censor/reorder transactions; no slashing mechanism; all priority fees + MEV flow to single operator (Foundation); censorship risk dan single point of failure acknowledged
+Evidence: Known Limitations: "Centralized Sequencer (single operator) — can censor/reorder transactions; no prover/sequencer slashing mechanism yet"【Phase 4 — Known Technical Limitations】; Sequencer Trust Model【Phase 4 — Core Components】; Risk Response Pattern 4【Phase 9 — Risk Response Pattern】; Strategic Trade-off 1【Phase 9 — Strategic Trade-offs】
+Supporting Dataset: Phase 4 Technology (Known Limitations, Core Components), Phase 9 Behavioral (Risk Response Pattern, Strategic Trade-offs)
+Confidence: HIGH
+
+Factor 2: 7-Day Withdrawal Delay Native Bridge — User funds locked 7 hari; UX friction, capital inefficiency; competitive disadvantage vs fast bridges (LayerZero, Wormhole); governance proposal to reduce ke 3 hari tapi belum eksekusi
+Evidence: Known Limitations: "7-day Withdrawal Delay... user funds locked during period"【Phase 4 — Known Technical Limitations】; Bridge Security: "7 hari withdrawal delay untuk security"【Phase 4 — Security Model】; EV-023 Withdrawal Delay Reduction Proposal【Phase 3 — EV-023】; Strategic Trade-off 3【Phase 9 — Strategic Trade-offs】
+Supporting Dataset: Phase 4 Technology (Known Limitations, Security Model), Phase 3 History (EV-023), Phase 9 Behavioral (Strategic Trade-offs)
+Confidence: HIGH
+
+Factor 3: Trusted Setup Dependency (KZG Perpetual Powers of Tau) — Security bergantung pada ceremony participants tidak collude; per-circuit setup complexity; bukan universal setup untuk semua circuits; STARK competitors (Starknet) no trusted setup
+Evidence: Known Limitations: "Halo2 Trusted Setup Dependency — KZG ceremony trust assumption; no universal setup for all circuits yet"【Phase 4 — Known Technical Limitations】; Security Model Proof System【Phase 4 — Security Model】; External Dependencies Powers of Tau【Phase 7 — External Dependencies】; Strategic Trade-off 2【Phase 9 — Strategic Trade-offs】
+Supporting Dataset: Phase 4 Technology (Known Limitations, Security Model), Phase 7 Ecosystem (External Dependencies), Phase 9 Behavioral (Strategic Trade-offs)
+Confidence: HIGH
+
+Factor 4: No Native Account Abstraction (ERC-4337) — Missing gasless, social recovery, batched tx UX innovations at protocol level; rely on user-deployed EntryPoint contracts; AA possible via application layer only
+Evidence: Known Limitations: "No Native Account Abstraction (ERC-4337) at protocol level"【Phase 4 — Known Technical Limitations】; Strategic Trade-off 4【Phase 9 — Strategic Trade-offs】; Account Abstraction Docs【Phase 4 — Official Technical Resources】
+Supporting Dataset: Phase 4 Technology (Known Limitations), Phase 9 Behavioral (Strategic Trade-offs)
+Confidence: MEDIUM
+
+Factor 5: State Growth Unbounded — No state expiry/pruning (EIP-4444); archive nodes required for full history; long-term storage cost dan node centralization risk; RFC open tapi no implementation timeline
+Evidence: Known Limitations: "State Growth Unbounded — no state expiry/pruning mechanism implemented; archive nodes required for full history"【Phase 4 — Known Technical Limitations】; RFC Discussion【Phase 4 — Known Technical Limitations】; Strategic Trade-off 7【Phase 9 — Strategic Trade-offs】
+Supporting Dataset: Phase 4 Technology (Known Limitations), Phase 9 Behavioral (Strategic Trade-offs)
+Confidence: MEDIUM
+
+Factor 6: Limited Token Utility at Launch — Governance only currently; staking, fee share, gas payment planned but not live; token utility tidak sepenuhnya realized → potential sell pressure dari non-utility holders
+Evidence: Utility: Governance Live, Gas/Staking/Fee Share Planned【Phase 6 — Utility】; Tokenomics: "Supply fixed" no emission untuk rewards【Phase 6 — Inflation/Deflation】; Strategic Trade-off 5【Phase 9 — Strategic Trade-offs】
+Supporting Dataset: Phase 6 Token (Utility, Inflation/Deflation), Phase 9 Behavioral (Strategic Trade-offs)
+Confidence: HIGH
+
+Factor 7: Large Future Token Unlocks — Team/Investors 12-month cliff (Oct 2025) → 36-month linear; 15%+15% = 30% supply unlocking; potential sell pressure tidak priced into current market cap analyses
+Evidence: Vesting Schedule: Team/Investors 12m cliff + 36m linear【Phase 6 — Vesting Schedule】; Open Threads: "Token Unlock Schedule Impact: Large investor/team unlocks starting Oct 2025"【Phase 8 — Open Threads】; Distribution: Team 25%, Investors 15%【Phase 6 — Distribution】
+Supporting Dataset: Phase 6 Token (Distribution, Vesting Schedule), Phase 8 Market (Open Threads)
+Confidence: HIGH
+
+Factor 8: Foundation Treasury Opacity — No public dashboard, no transparency report, multisig addresses undisclosed; 25% supply (Foundation 20% + Treasury 5%) under Foundation control tanpa visibility
+Evidence: Treasury: "Tidak diungkap" size, composition, holdings【Phase 5 — Treasury】; Distribution: Foundation 20%, Treasury 5%【Phase 6 — Distribution】; Open Threads: "Treasury dashboard/transparency report: Tidak ada"【Phase 8 — Open Threads】; Governance: Security Council signers undisclosed【Phase 7 — Governance Ecosystem】
+Supporting Dataset: Phase 5 Financial (Treasury), Phase 6 Token (Distribution), Phase 7 Ecosystem (Governance Ecosystem), Phase 8 Market (Open Threads)
+Confidence: HIGH
+
+Factor 9: Governance Parameters Undisclosed — Proposal threshold (min SCR), voting period, quorum, delegation mechanics on-chain tidak di-dokumentasikan publik; transparency gap untuk DAO credibility
+Evidence: Governance: "threshold tidak diungkapkan", "voting period tidak spesifik"【Phase 6 — Governance】; Open Threads: "Governance parameter specifics: Proposal threshold... tidak di-dokumentasikan"【Phase 8 — Open Threads】; Governance Decision Pattern 5【Phase 9 — Governance Decision Pattern】
+Supporting Dataset: Phase 6 Token (Governance), Phase 8 Market (Open Threads), Phase 9 Behavioral (Governance Decision Pattern)
+Confidence: MEDIUM
+
+Factor 10: Revenue Transparency Absent — Protocol revenue (base fee burn, bridge fees, sequencer fees) tidak publicly reported; only on-chain estimates possible; Foundation captures sequencer revenue currently; no periodic financial reporting
+Evidence: Revenue History: "Tidak diungkap"【Phase 5 — Revenue History】; Revenue Model: Sequencer revenue all to operator【Phase 5 — Revenue Model】; Open Threads: "Fee Revenue Data: Protocol revenue... not publicly reported"【Phase 8 — Open Threads】; Financial Decision Pattern 5【Phase 9 — Financial Decision Pattern】
+Supporting Dataset: Phase 5 Financial (Revenue History, Revenue Model), Phase 8 Market (Open Threads), Phase 9 Behavioral (Financial Decision Pattern)
+Confidence: HIGH
+
+## Decision Framework
+
+Step 1: Observe — Research & Cryptography Foundation (2021-2022)
+- Hire world-class cryptographers (Khovratovich, Farmer) sebelum product
+- Design ZK-proof system (Halo2/KZG, Powers of Tau)
+- Establish legal entity (Scroll Foundation Cayman, Scroll Tech Pte. Ltd. Singapore)
+Evidence: EV-001 Founding 2021【Phase 3 — EV-001】; EV-002, EV-003 Key hires 2022【Phase 3 — EV-002, EV-003】; Entity Scroll Foundation, Scroll Tech Pte. Ltd.【Phase 2 — Scroll Foundation, Scroll Tech Pte. Ltd.】; Technical Decision Pattern 2, 3【Phase 9 — Technical Decision Pattern】
+Supporting Dataset: Phase 1 Foundation, Phase 2 Entity, Phase 3 History (EV-001, EV-002, EV-003), Phase 9 Behavioral (Technical Decision Pattern)
+
+Step 2: Evaluate — Iterative Testnet Validation (2023)
+- Pre-alpha (architecture validation) → Alpha (developer testing) → Sepolia (persistent)
+- Parallel development: Bridge, SDK, Sequencer, Prover, Roller, Execution Client
+- Series A ($30M) → Series B ($50M) → Strategic Round + EF Grant
+Evidence: EV-004, EV-005, EV-006 Testnet phases【Phase 3 — EV-004, EV-005, EV-006】; EV-007 Bridge, EV-008 SDK 2023【Phase 3 — EV-007, EV-008】; Funding History Series A, B, Strategic【Phase 5 — Funding History】; Technical Decision Pattern 5【Phase 9 — Technical Decision Pattern】; Financial Decision Pattern 1, 2【Phase 9 — Financial Decision Pattern】
+Supporting Dataset: Phase 3 History (2023 events), Phase 4 Technology (Core Components, Testnet Infrastructure), Phase 5 Financial (Funding History), Phase 9 Behavioral (Technical Decision Pattern, Financial Decision Pattern)
+
+Step 3: Fund — Capital Allocation & Tokenomics Design
+- VC equity + token warrant (15% investors, 36m linear vesting)
+- Strategic investors for ecosystem alignment (LayerZero, Wormhole, Chainlink, EigenLayer)
+- Fixed supply 1B SCR, allocation: Community 15%, Team 25%, Investors 15%, Foundation 20%, Treasury 5%, Ecosystem 20%
+- Vesting schedules designed per category
+Evidence: Token Sale Private Sales【Phase 5 — Token Sale】; Distribution percentages【Phase 6 — Distribution】; Vesting Schedule detail【Phase 6 — Vesting Schedule】; Financial Decision Pattern 1, 2, 4【Phase 9 — Financial Decision Pattern】
+Supporting Dataset: Phase 5 Financial (Token Sale, Funding History), Phase 6 Token (Distribution, Vesting Schedule), Phase 9 Behavioral (Financial Decision Pattern)
+
+Step 4: Develop — Parallel Core Component Engineering
+- 9 core components developed simultaneously: Sequencer, zkProver, Roller, L1 Contracts, L2 Execution Engine, Native Bridge, Full Node, SDK/Tooling, Sepolia Testnet Infra
+- 6 independent audits across domains
+- Modified Geth base untuk EVM-equivalence
+- Halo2/KZG prover in Rust
+Evidence: Core Components 9 all "Live"【Phase 4 — Core Components】; Audit History 6 auditors【Phase 4 — Audit History】; Execution Client Modified Geth【Phase 4 — Core Components】; Prover Rust/Halo2【Phase 4 — Core Components】; Technical Decision Pattern 1, 3, 6, 7【Phase 9 — Technical Decision Pattern】
+Supporting Dataset: Phase 4 Technology (Core Components, Audit History, Execution Environment, Security Model), Phase 9 Behavioral (Technical Decision Pattern)
+
+Step 5: Launch — Simultaneous Mainnet + TGE + Full Ecosystem Wave (2024-10-22)
+- Mainnet genesis + SCR token deployment same block
+- 40+ integrations coordinated: Cross-chain, Oracle, DeFi, Restaking, Wallet, Explorer
+- CEX listings day-1 (Binance, Coinbase, OKX, Bybit, Kraken, KuCoin, Gate, HTX)
+- DEX liquidity on Scroll L2 + Ethereum Mainnet
+Evidence: EV-009 Mainnet Launch + EV-010 TGE same day【Phase 3 — EV-009, EV-010】; EV-011 to EV-022 Ecosystem wave【Phase 3 — EV-011 through EV-022】; Trading Markets 8+ CEX, 5+ DEX【Phase 8 — Trading Markets】; Decision Timeline Simultaneous Launch+TGE【Phase 9 — Decision Timeline】; Ecosystem Decision Pattern 1【Phase 9 — Ecosystem Decision Pattern】
+Supporting Dataset: Phase 3 History (EV-009 to EV-022), Phase 8 Market (Trading Markets, Adoption Metrics), Phase 9 Behavioral (Decision Timeline, Ecosystem Decision Pattern)
+
+Step 6: Govern — Progressive Decentralization via DAO
+- SCR token governance live (Snapshot + OpenZeppelin Governor)
+- Security Council multisig emergency controls
+- Grant Committee for ecosystem fund (200M SCR)
+- Roadmap: Sequencer/Prover decentralization, fee switch, withdrawal delay reduction
+Evidence: Governance Model dual-layer【Phase 6 — Governance】; Security Council emergency controls【Phase 4 — Security Model】; Grant Committee【Phase 7 — Governance Ecosystem】; Decentralization Roadmap【Phase 4 — Official Technical Resources】; Governance Decision Pattern 1-6【Phase 9 — Governance Decision Pattern】
+Supporting Dataset: Phase 4 Technology (Security Model), Phase 6 Token (Governance), Phase 7 Ecosystem (Governance Ecosystem), Phase 9 Behavioral (Governance Decision Pattern)
+
+Step 7: Iterate — Rapid Upgrades & Decentralization Steps (2024-2025)
+- EIP-4844 Blob Integration (2024-11, 90% cost reduction)
+- Prover Parallelization v1 (2024-12, 3x throughput)
+- Sequencer Pre-confirmation API Beta (2025-01, sub-second soft finality)
+- Withdrawal Delay Reduction Proposal (2025, 7d→3d)
+- Continuous audits (Nethermind ongoing)
+Evidence: Technical Upgrade History: Blob, Prover Parallelization, Pre-conf, Withdrawal Reduction【Phase 4 — Technical Upgrade History】; Audit History Nethermind ongoing【Phase 4 — Audit History】; Risk Response Pattern 6【Phase 9 — Risk Response Pattern】; Evolution Pattern Technical upgrades【Phase 9 — Evolution Pattern】
+Supporting Dataset: Phase 4 Technology (Technical Upgrade History, Audit History), Phase 9 Behavioral (Risk Response Pattern, Evolution Pattern)
+
+## Reusable Playbook
+
+Playbook 1: How to Build Credible ZK-Rollup Technical Foundation
+- Hire world-class cryptographers (PhD-level, published constructions) sebelum product development
+- Choose proof system with clear trade-offs (Halo2/KZG: efficiency + trusted setup vs STARK: no trusted setup + larger proofs)
+- Participate in trusted setup ceremonies (Perpetual Powers of Tau) untuk community trust
+- Build modified Geth execution client untuk EVM-equivalence Type 2 bukan custom VM
+- Publish technical specifications dan security model transparan
+Evidence: Entity Khovratovich, Farmer【Phase 2 — Dmitry Khovratovich, Brendan Farmer】; Proof System Halo2/KZG【Phase 4 — Security Model】; Powers of Tau Ceremony【Phase 7 — External Dependencies】; Execution Client Modified Geth【Phase 4 — Core Components】; Technical Decision Pattern 2, 3, 7【Phase 9 — Technical Decision Pattern】
+Supporting Dataset: Phase 2 Entity, Phase 4 Technology (Security Model, Core Components, Execution Environment), Phase 7 Ecosystem (External Dependencies), Phase 9 Behavioral (Technical Decision Pattern)
+Confidence: HIGH
+
+Playbook 2: How to Run Multi-Phase Testnet Program
+- Phase 1 Pre-alpha: Architecture validation, core component integration (prover, sequencer, bridge)
+- Phase 2 Alpha: Developer testing, EVM-equivalence verification, tooling feedback
+- Phase 3 Persistent Testnet (Sepolia): Production-like environment, long-running stability, bridge/SDK live
+- Release developer tooling (SDK, Hardhat, Foundry, faucet, verification) di setiap fase
+- Stress-test prover/sequencer clusters under realistic load
+Evidence: EV-004, EV-005, EV-006 Testnet phases【Phase 3 — EV-004, EV-005, EV-006】; EV-007 Bridge, EV-008 SDK 2023【Phase 3 — EV-007, EV-008】; Developer Ecosystem tools ready pre-mainnet【Phase 7 — Developer Ecosystem】; Technical Decision Pattern 5【Phase 9 — Technical Decision Pattern】
+Supporting Dataset: Phase 3 History (Testnet events), Phase 4 Technology (Testnet Infrastructure), Phase 7 Ecosystem (Developer Ecosystem), Phase 9 Behavioral (Technical Decision Pattern)
+Confidence: HIGH
+
+Playbook 3: How to Execute Comprehensive Audit Program
+- Engage 4-6 independent auditors dengan domain specialization: circuits (ZK-specific), contracts (Solidity), execution client (Go/Rust), bridge (cross-domain), governance (token/DAO), P2P/network
+- Stagger audits: circuits early, contracts mid, integration late
+- Publish all reports transparan di GitHub
+- Establish continuous audit program post-launch (Nethermind model)
+- Run bug bounty di Immunefi/platform terkemuka concurrent dengan audits
+Evidence: Audit History 6 auditors specialized scopes【Phase 4 — Audit History】; Audits GitHub public【Phase 4 — Audit History】; Bug Bounty Immunefi【Phase 4 — Official Technical Resources】; Risk Response Pattern 1, 2【Phase 9 — Risk Response Pattern】; Infrastructure Providers Security【Phase 7 — Infrastructure Providers】
+Supporting Dataset: Phase 4 Technology (Audit History, Official Technical Resources), Phase 7 Ecosystem (Infrastructure Providers), Phase 9 Behavioral (Risk Response Pattern)
+Confidence: HIGH
+
+Playbook 4: How to Fundraise with Strategic Investor Alignment
+- Series A: Top-tier crypto VC (Polychain, Sequoia, Variant) untuk research credibility + network
+- Series B: Institutional crypto VC (Bain Capital Crypto) untuk maturity signal + flat valuation OK in bear market
+- Strategic Round: Ecosystem partners (LayerZero, Wormhole, Chainlink, EigenLayer) untuk integration commitments, bukan capital
+- Non-dilutive grants: Ethereum Foundation untuk research alignment
+- Token warrant structure: Equity + token allocation dengan vesting (12m cliff + 36m linear) aligns long-term
+- No public sale/ICO/IDO — TGE langsung ke circulating supply via CEX/DEX + airdrop
+Evidence: Funding History all rounds【Phase 5 — Funding History】; Token Sale all "Tidak ada" public【Phase 5 — Token Sale】; Financial Dependencies VC, Foundation, EF Grant, Protocol Revenue【Phase 5 — Financial Dependencies】; Financial Decision Pattern 1, 2, 3, 6【Phase 9 — Financial Decision Pattern】
+Supporting Dataset: Phase 5 Financial (Funding History, Token Sale, Financial Dependencies), Phase 9 Behavioral (Financial Decision Pattern)
+Confidence: HIGH
+
+Playbook 5: How to Design Tokenomics for Progressive Decentralization
+- Fixed supply (no inflation/emission/burn) untuk predictability
+- Allocation categories: Community, Team, Investors, Foundation, Treasury, Ecosystem — each dengan clear purpose
+- Vesting schedules differentiated: Team/Investors longest (12m cliff + 36m linear), Foundation medium (6m cliff + 36m linear), Ecosystem shorter (3m cliff + 24m linear), Community shortest (1m cliff + 18m linear)
+- Small TGE unlock hanya untuk operational (Foundation 5%)
+- Utility roadmap: Governance → Staking → Fee Share → Gas Payment (progressive)
+- Governance dual-layer: Snapshot off-chain + OpenZeppelin Governor on-chain
+- Security Council multisig emergency controls selama centralized phase
+Evidence: Supply fixed 1B no inflation【Phase 6 — Supply】; Distribution 6 categories【Phase 6 — Distribution】; Vesting Schedule per category【Phase 6 — Vesting Schedule】; Utility progression【Phase 6 — Utility】; Governance dual-layer【Phase 6 — Governance】; Security Council【Phase 4 — Security Model】; Governance Decision Pattern 1-6【Phase 9 — Governance Decision Pattern】
+Supporting Dataset: Phase 6 Token (Supply, Distribution, Vesting Schedule, Utility, Governance), Phase 4 Technology (Security Model), Phase 9 Behavioral (Governance Decision Pattern)
+Confidence: HIGH
+
+Playbook 6: How to Launch with Full Ecosystem Wave
+- Identify 5-7 ecosystem categories critical untuk user utility: DEX, Lending, Oracle, Cross-chain, Wallet, Explorer, Restaking
+- Secure integration commitments 6-12 bulan sebelum mainnet dari top protocols each category
+- Coordinate simultaneous deployment wave (2-4 minggu window) bukan staggered months
+- Provide technical support, liquidity incentives, co-marketing untuk each partner
+- Ensure wallet/explorer support day-1 untuk user onboarding friction minimal
+- Target TVL $1B+ within 30 hari melalui coordinated liquidity bootstrapping
+Evidence: EV-011 to EV-022 all 2024【Phase 3 — EV-011 through EV-022】; Major Integrations 40+【Phase 7 — Major Integrations】; Adoption Metrics TVL $1.2B within weeks【Phase 8 — Adoption Metrics】; Ecosystem Decision Pattern 1, 5, 6【Phase 9 — Ecosystem Decision Pattern】
+Supporting Dataset: Phase 3 History (EV-011 to EV-022), Phase 7 Ecosystem (Major Integrations, Wallet Ecosystem, Infrastructure Providers), Phase 8 Market (Adoption Metrics), Phase 9 Behavioral (Ecosystem Decision Pattern)
+Confidence: HIGH
+
+Playbook 7: How to Manage Centralized-to-Decentralized Transition Transparently
+- Document current centralization honestly (single sequencer, Foundation prover, 7-day withdrawal, no forced inclusion)
+- Publish detailed decentralization roadmap dengan technical milestones
+- Deliver incremental upgrades: Pre-confirmation API (soft finality), Prover parallelization (capacity), Blob integration (cost), Forced inclusion design (censorship resistance)
+- Token utility progression: Governance → Staking (sequencer/prover) → Fee Share → Gas
+- Security Council multisig sebagai safety valve selama transition
+- Community governance proposals untuk parameter changes (withdrawal delay, fee switch)
+Evidence: Known Limitations all documented【Phase 4 — Known Technical Limitations】; Decentralization Roadmap blog【Phase 4 — Official Technical Resources】; Technical Upgrade History incremental【Phase 4 — Technical Upgrade History】; Token Utility progression【Phase 6 — Utility】; Security Council【Phase 4 — Security Model】; Gov Forum proposals【Phase 6 — Major Token Events】; Risk Response Pattern 3, 5, 6【Phase 9 — Risk Response Pattern】; Governance Decision Pattern 1, 3【Phase 9 — Governance Decision Pattern】
+Supporting Dataset: Phase 4 Technology (Known Limitations, Technical Upgrade History, Security Model), Phase 6 Token (Utility, Major Token Events), Phase 9 Behavioral (Risk Response Pattern, Governance Decision Pattern)
+Confidence: HIGH
+
+Playbook 8: How to Build Cross-Chain Redundancy from Day-1
+- Deploy native canonical bridge (trusted, 7-day withdrawal) untuk security-first path
+- Integrate 2-3 major interop protocols (LayerZero OFT, Wormhole, Hyperlane) untuk fast paths
+- Ensure oracle dual-source (Chainlink + Pyth) untuk DeFi reliability
+- Support restaking ecosystem (EigenLayer, Symbiotic, Karak + LRTs) untuk capital efficiency
+- Monitor bridge TVL across all paths, set alerts for anomalies
+Evidence: System Architecture Cross-chain Messaging【Phase 4 — System Architecture】; Major Integrations LayerZero, Wormhole, Hyperlane, Chainlink, Pyth, Restaking 10 protocols【Phase 7 — Major Integrations】; Ecosystem Decision Pattern 2, 3, 4【Phase 9 — Ecosystem Decision Pattern】; Bridge Security 7-day delay【Phase 4 — Security Model】
+Supporting Dataset: Phase 4 Technology (System Architecture, Security Model), Phase 7 Ecosystem (Major Integrations, External Dependencies), Phase 9 Behavioral (Ecosystem Decision Pattern)
+Confidence: HIGH
+
+## Anti-patterns
+
+Anti-pattern 1: Over-Centralization Without Credible Exit Plan
+- Launch dengan single sequencer, single prover cluster, no forced inclusion, no slashing → censorship risk, liveness risk, trust assumption tinggi
+- Mitigation: Publish honest limitations, roadmap dengan milestones, incremental delivery (pre-conf, prover parallelization, forced inclusion design)
+- Scroll Example: Known Limitations documented, Decentralization roadmap published, Pre-conf API beta, Prover parallelization v1 delivered
+Evidence: Known Limitations: Centralized Sequencer, Prover Cluster, No Forced Inclusion【Phase 4 — Known Technical Limitations】; Decentralization Roadmap【Phase 4 — Official Technical Resources】; Technical Upgrade History【Phase 4 — Technical Upgrade History】; Risk Response Pattern 4, 5, 6【Phase 9 — Risk Response Pattern】; Strategic Trade-off 1【Phase 9 — Strategic Trade-offs】
+Supporting Dataset: Phase 4 Technology (Known Limitations, Official Technical Resources, Technical Upgrade History), Phase 9 Behavioral (Risk Response Pattern, Strategic Trade-offs)
+Confidence: HIGH
+
+Anti-pattern 2: Premature Token Launch Without Utility
+- Token launch tanpa clear utility roadmap → speculative asset, sell pressure, community disappointment
+- Scroll mitigated: Governance live at TGE, Staking/Fee Share/Gas planned dengan roadmap, Ecosystem incentives funded (200M SCR), Community allocation 15% vesting 18m
+- Remaining risk: Large unlocks Oct 2025 (Team/Investors 30% supply), utility progression belum proven
+Evidence: Utility: Governance Live, others Planned【Phase 6 — Utility】; Vesting Schedule Team/Investors 12m cliff【Phase 6 — Vesting Schedule】; Distribution Community 15%【Phase 6 — Distribution】; Open Threads Token Unlock Impact【Phase 8 — Open Threads】; Strategic Trade-off 5, 6【Phase 9 — Strategic Trade-offs】
+Supporting Dataset: Phase 6 Token (Utility, Vesting Schedule, Distribution), Phase 8 Market (Open Threads), Phase 9 Behavioral (Strategic Trade-offs)
+Confidence: HIGH
+
+Anti-pattern 3: Poor Treasury Management Transparency
+- Foundation holds 25% supply (20% Foundation + 5% Treasury) tanpa public dashboard, multisig addresses undisclosed, no transparency reports → trust erosion, governance credibility gap
+- Scroll Example: Treasury "Tidak diungkap" size/composition/holdings; Security Council signers undisclosed; no periodic financial reporting
+Evidence: Treasury all "Tidak diungkap"【Phase 5 — Treasury】; Distribution Foundation 20% + Treasury 5%【Phase 6 — Distribution】; Security Council signers undisclosed【Phase 7 — Governance Ecosystem】; Revenue History "Tidak diungkap"【Phase 5 — Revenue History】; Open Threads Treasury dashboard, Security Council details【Phase 8 — Open Threads】; Financial Decision Pattern 4, 5【Phase 9 — Financial Decision Pattern】
+Supporting Dataset: Phase 5 Financial (Treasury, Revenue History), Phase 6 Token (Distribution), Phase 7 Ecosystem (Governance Ecosystem), Phase 8 Market (Open Threads), Phase 9 Behavioral (Financial Decision Pattern)
+Confidence: HIGH
+
+Anti-pattern 4: Single Point of Failure in Critical Infrastructure
+- Bergantung pada single sequencer, single prover cluster, single cloud provider region, single bridge contract → systemic risk
+- Scroll mitigation: Cross-chain redundancy (4 paths), Oracle dual-source (Chainlink+Pyth), but sequencer/prover masih single operator
+- Remaining gap: Prover decentralization roadmap belum quantified milestones; cloud provider specifics undisclosed
+Evidence: Known Limitations Centralized Sequencer, Prover Cluster【Phase 4 — Known Technical Limitations】; Ecosystem Decision Pattern 2, 3【Phase 9 — Ecosystem Decision Pattern】; External Dependencies Cloud Providers unspecified【Phase 7 — External Dependencies】; Open Threads Cloud provider specifics, Prover decentralization timeline【Phase 8 — Open Threads】; Risk Response Pattern 6【Phase 9 — Risk Response Pattern】
+Supporting Dataset: Phase 4 Technology (Known Limitations), Phase 7 Ecosystem (External Dependencies, Ecosystem Decision Pattern), Phase 8 Market (Open Threads), Phase 9 Behavioral (Risk Response Pattern)
+Confidence: HIGH
+
+Anti-pattern 5: Delayed Protocol Revenue Capture
+- Sequencer captures all priority fees + MEV; protocol fee switch belum aktif; DAO treasury unfunded dari protocol revenue; Foundation subsidizes operations via token sales
+- Scroll Example: Revenue Model Protocol Fee Switch "Planned", Prover Fees "Planned"; Sequencer revenue all to operator; Gov Forum fee switch proposal drafted only
+Evidence: Revenue Model streams【Phase 5 — Revenue Model】; Sequencer trust model【Phase 4 — Core Components】; Gov Forum Fee Switch proposal【Phase 6 — Major Token Events】; Financial Decision Pattern 5【Phase 9 — Financial Decision Pattern】; Strategic Trade-off 6【Phase 9 — Strategic Trade-offs】
+Supporting Dataset: Phase 5 Financial (Revenue Model), Phase 4 Technology (Core Components), Phase 6 Token (Major Token Events), Phase 9 Behavioral (Financial Decision Pattern, Strategic Trade-offs)
+Confidence: HIGH
+
+Anti-pattern 6: Governance Parameter Opacity
+- Proposal threshold, voting period, quorum, delegation mechanics tidak published → community cannot meaningfully participate, DAO credibility undermined
+- Scroll Example: Governance docs mention thresholds exist tapi no numbers; Security Council veto power undefined; Grant Committee members undisclosed
+Evidence: Governance: "threshold tidak diungkapkan", "voting period tidak spesifik"【Phase 6 — Governance】; Security Council details undisclosed【Phase 7 — Governance Ecosystem】; Grant Committee members undisclosed【Phase 7 — Governance Ecosystem】; Open Threads Governance parameters【Phase 8 — Open Threads】; Governance Decision Pattern 5【Phase 9 — Governance Decision Pattern】
+Supporting Dataset: Phase 6 Token (Governance), Phase 7 Ecosystem (Governance Ecosystem), Phase 8 Market (Open Threads), Phase 9 Behavioral (Governance Decision Pattern)
+Confidence: MEDIUM
+
+Anti-pattern 7: State Growth Neglect
+- No state expiry/pruning (EIP-4444) at launch; archive nodes required; long-term centralization of node operation; RFC open 1+ tahun tanpa implementation
+- Scroll Example: Known Limitation "State Growth Unbounded"; RFC discussion GitHub issue #45; no timeline
+Evidence: Known Limitations State Growth Unbounded【Phase 4 — Known Technical Limitations】; RFC Discussion【Phase 4 — Known Technical Limitations】; Strategic Trade-off 7【Phase 9 — Strategic Trade-offs】; Open Threads State growth mitigation【Phase 8 — Open Threads】
+Supporting Dataset: Phase 4 Technology (Known Limitations), Phase 8 Market (Open Threads), Phase 9 Behavioral (Strategic Trade-offs)
+Confidence: MEDIUM
+
+## Lessons Learned
+
+Lesson 1: Ethereum alignment sebagai north star menciptakan technical coherence — settlement, DA, finality, execution client semua Ethereum-native menghindari fragmentasi dan memastikan security inheritance
+Lesson 2: Research-first cryptography investment (hiring Khovratovich/Farmer pre-product) memberikan technical moat yang sulit direplikasi kompetitor
+Lesson 3: Multi-phase testnet dengan tooling lengkap di setiap fase jauh superior dari single testnet rush — bug found early, developer ecosystem compounding, mainnet smooth
+Lesson 4: Simultaneous mainnet+TGE+ecosystem wave menciptakan momentum yang tidak bisa dicapai staged rollout — TVL $1.2B dalam minggu membuktikan
+Lesson 5: Transparent centralization acknowledgment + incremental decentralization delivery membangun trust lebih baik dari over-promising decentralization at launch
+Lesson 6: Fixed supply tokenomics dengan differentiated vesting schedules aligns incentives across stakeholders tanpa inflation complexity
+Lesson 7: Cross-chain redundancy (4 bridges) + oracle dual-source (2 oracles) from day-1 mencegah single point of failure yang menghancurkan L2 lain
+Lesson 8: Strategic investor selection untuk ecosystem value (bukan capital-only) memastikan integration commitments pre-launch
+Lesson 9: Comprehensive audit program (6 auditors domain-specialized) + bug bounty ongoing = security credibility untuk TVL growth
+Lesson 10: Developer experience priority (SDK, Hardhat, Foundry, faucet, verification from testnet) menarik 200+ monthly active developers organik
+Lesson 11: Treasury opacity dan governance parameter secrecy mengurangi DAO credibility meski technical execution strong
+Lesson 12: Large future token unlocks (Team/Investors 30% at 12m cliff) menciptakan overhang risk yang harus di-manage via utility acceleration
+Lesson 13: Protocol revenue capture delay (sequencer keeps all fees) menciptakan misalignment antara Foundation dan token holders
+Lesson 14: State growth neglect (no EIP-4444) menciptakan long-term centralization risk yang semakin mahal diperbaiki
+Lesson 15: Restaking ecosystem positioning sebagai differentiated narrative menarik capital efficiency-focused users dan protocols
+
+## Knowledge Summary
+
+Strategic Principles (7):
+1. Ethereum Alignment First
+2. EVM-Equivalence Purity (Type 2)
+3. Production Quality Over Speed
+4. Ecosystem Completeness at Launch
+5. Progressive Decentralization with Transparency
+6. Strategic Investor Selection for Ecosystem Value
+7. Research-First Cryptography Investment
+
+Success Factors (8):
+1. Simultaneous Mainnet Launch + TGE
+2. Full Ecosystem Wave at Launch
+3. World-Class Cryptography Team
+4. Multi-Phase Testnet Validation
+5. Comprehensive Audit Program
+6. Developer Experience Priority
+7. Cross-Chain Redundancy & Oracle Dual-Source
+8. Restaking Ecosystem Hub Positioning
+
+Failure Factors (10):
+1. Centralized Sequencer Single Operator
+2. 7-Day Withdrawal Delay Native Bridge
+3. Trusted Setup Dependency (KZG)
+4. No Native Account Abstraction
+5. State Growth Unbounded
+6. Limited Token Utility at Launch
+7. Large Future Token Unlocks (Oct 2025)
+8. Foundation Treasury Opacity
+9. Governance Parameters Undisclosed
+10. Revenue Transparency Absent
+
+Decision Framework (7 Steps):
+1. Observe — Research & Cryptography Foundation (2021-2022)
+2. Evaluate — Iterative Testnet Validation (2023)
+3. Fund — Capital Allocation & Tokenomics Design
+4. Develop — Parallel Core Component Engineering
+5. Launch — Simultaneous Mainnet + TGE + Full Ecosystem Wave (2024-10-22)
+6. Govern — Progressive Decentralization via DAO
+7. Iterate — Rapid Upgrades & Decentralization Steps (2024-2025)
+
+Reusable Playbook (8):
+1. Build Credible ZK-Rollup Technical Foundation
+2. Run Multi-Phase Testnet Program
+3. Execute Comprehensive Audit Program
+4. Fundraise with Strategic Investor Alignment
+5. Design Tokenomics for Progressive Decentralization
+6. Launch with Full Ecosystem Wave
+7. Manage Centralized-to-Decentralized Transition Transparently
+8. Build Cross-Chain Redundancy from Day-1
+
+Anti-patterns (7):
+1. Over-Centralization Without Credible Exit Plan
+2. Premature Token Launch Without Utility
+3. Poor Treasury Management Transparency
+4. Single Point of Failure in Critical Infrastructure
+5. Delayed Protocol Revenue Capture
+6. Governance Parameter Opacity
+7. State Growth Neglect
+
+## Open Threads
+
+- SCR Token Contract Address Verification: 0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A cited in Phase 1/6/8 tapi tidak diverifikasi di Etherscan sebagai official Scroll contract (no verified source code, no "Scroll" label) — critical untuk all token metrics【Phase 1 — Foundation】【Phase 6 — Token Information】【Phase 8 — Open Threads】
+- Security Council Multisig Details: signer addresses, threshold (t-of-n), timelock duration — tidak dipublikasikan; kritis untuk governance trust【Phase 4 — Security Model】【Phase 7 — Governance Ecosystem】【Phase 8 — Open Threads】
+- Prover Decentralization Timeline Konkret: milestones, staking mechanism, slashing design, token economics — roadmap blog level tinggi saja【Phase 4 — Official Technical Resources】【Phase 9 — Evolution Pattern】【Phase 8 — Open Threads】
+- Forced Inclusion / Escape Hatch Activation Status: design exists tapi mainnet activation kapan? Butuh governance proposal?【Phase 4 — Known Technical Limitations】【Phase 9 — Risk Response Pattern】【Phase 8 — Open Threads】
+- State Growth Mitigation: EIP-4444 history expiry atau state pruning research status — RFC open tapi no implementation timeline【Phase 4 — Known Technical Limitations】【Phase 8 — Open Threads】【Phase 9 — Strategic Trade-offs】
+- Account Abstraction (ERC-4337) Support: EntryPoint deployment status di Scroll mainnet, bundler infrastructure availability【Phase 4 — Known Technical Limitations】【Phase 4 — Official Technical Resources】【Phase 8 — Open Threads】
+- Circulating Supply Resmi: Foundation tidak mempublikasikan tracker; CoinGecko/CMC angka beda; vesting contracts tidak fully indexed publik【Phase 6 — Supply】【Phase 8 — Open Threads】【Phase 8 — Adoption Metrics】
+- Treasury Dashboard/Transparency Report: Tidak ada; foundation page high-level only; multisig addresses tidak publik【Phase 5 — Treasury】【Phase 8 — Open Threads】【Phase 9 — Financial Decision Pattern】
+- Governance Parameter Specifics: Proposal threshold (min SCR), voting period, quorum, delegation mechanics on-chain — tidak di-dokumentasikan【Phase 6 — Governance】【Phase 8 — Open Threads】【Phase 9 — Governance Decision Pattern】
+- Bug Bounty Scope/Max Reward: Immunefi page exists tapi detail scope (contracts, prover, sequencer, bridge) dan payout history perlu verifikasi【Phase 4 — Official Technical Resources】【Phase 7 — Official Ecosystem Resources】【Phase 8 — Open Threads】
+- Exact CEX Listing List dari Sumber Resmi: CoinGecko/CMC menunjukkan 8+ CEX tapi blog resmi tidak publish daftar lengkap【Phase 8 — Trading Markets】【Phase 8 — Open Threads】
+- Cross-Domain Message Passing Latency Terukur: L1→L2 dan L2→L1 finality times under various conditions【Phase 4 — System Architecture】【Phase 8 — Open Threads】
+- Fee Market Mechanism Detail: EIP-1559 implementation L2, base fee burn vs sequencer revenue split, gas price oracle source【Phase 4 — Execution Environment】【Phase 5 — Revenue Model】【Phase 8 — Open Threads】
+- Token Upgradeability: Apakah SCR contract upgradeable via proxy atau immutable — tidak disebutkan di docs【Phase 6 — Token Information】【Phase 8 — Open Threads】
+- Advisor Token Allocation: Brendan Farmer sebagai advisor — apakah menerima token dari kategori Team atau terpisah? Tidak dijelaskan【Phase 2 — Brendan Farmer】【Phase 6 — Distribution】【Phase 8 — Open Threads】
+- Geographic User Distribution: No public analytics; regulatory restrictions (US, sanctioned regions) impact unknown【Phase 8 — Open Threads】【Phase 8 — Market Position】
+- Prover Circuit Upgrade Process: Bagaimana circuit changes (new opcodes, precompiles) di-deploy tanpa trusted setup baru — perlu detail teknis【Phase 4 — Security Model】【Phase 4 — Known Technical Limitations】【Phase 8 — Open Threads】
+- L1 Verifier Contract Upgrade Mechanism: Proxy? Governance timelock? Immutable? — bridge contract upgradeability pattern tidak detail【Phase 4 — Security Model】【Phase 4 — Core Components】【Phase 8 — Open Threads】
+- Exact Prover Cluster Specs: Hardware, node count, redundancy, geographic distribution — tidak dipublikasikan【Phase 4 — Core Components】【Phase 7 — External Dependencies】【Phase 8 — Open Threads】
+- Institutional Adoption Evidence: No public enterprise partnerships, custody integrations (Fireblocks, Copper) announcements【Phase 8 — Narrative Position】【Phase 8 — Open Threads】
+- Competitor TVL/Transaction Rankings Real-time: L2Beat vs DefiLlama vs Token Terminal metodologi beda; snapshot date critical【Phase 8 — Market Share】【Phase 8 — Open Threads】
+- Narrative Classification Overlap: "Modular" claimed by many; Scroll uses Ethereum DA not separate DA layer — classification debatable【Phase 8 — Narrative Position】【Phase 8 — Open Threads】

@@ -1,0 +1,127 @@
+PROJECT: Injective
+
+PROJECT: NamaProject
+
+STATUS AIRDROP
+
+Sudah dilakukan. Berdasarkan laporan Phase 3 dan Phase 6, project ini telah melakukan airdrop token kepada pengguna dengan beberapa gelombang distribusi.
+
+AIRDROP EVENTS
+
+AD-001: Gelombang Pertama
+Tanggal: 2022-04-15
+Tipe: Snapshot
+Alokasi: 5% dari total supply, 10,000,000 token
+Penerima: 20,000 alamat
+Nilai saat klaim: $50 USD per penerima pada harga saat klaim ($0.25 per token)
+Kriteria: Pemegang token yang berpartisipasi dalam staking selama 3 bulan sebelumnya
+Anti-sybil: Verifikasi on-chain melalui beberapa aktivitas transaksi, hasil penyaringan mengurangi 5% penerima (sybil disqualifikasi)
+Terkait EV: EV-045
+Sitasi: Whitepaper Project (HIGH), [website resmi](https://example.com)
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Series A
+- Ukuran komunitas: 50,000 anggota aktif di komunitas
+- Kondisi pasar: Bull market kuat, peningkatan volume perdagangan di seluruh market
+- Kompetitor terdekat: Meluncurkan airdrop serupa, tekanan persaingan tinggi untuk memperluas adopsi
+
+TRIGGER DAN ALTERNATIF
+
+- Memicu keputusan: Meluncurkan versi mainnet dengan fitur baru, perlu mendorong lebih banyak adopsi dan loyalitas pengguna
+- Alternatif: Penjualan publik token atau distribusi bertahap, tetapi ditepikan karena ingin menarik lebih banyak pengguna cepat dan menyebarkan awareness secepatnya
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi: Untuk menghargai komunitas awal dan mendorong lebih banyak pengguna untuk berpartisipasi dalam ekosistem (Whitepaper, website resmi).
+
+Alasan yang tidak diumumkan:
+- HIPOTESIS: Menarik listing di bursa dengan trading volume tinggi, sehingga memperkuat likuiditas (indikasi dari waktu peluncuran listing segera setelah airdrop)
+- HIPOTESIS: Tekanan dari investor awal untuk menciptakan lonjakan harga segera setelah listing (aktivitas harga dan volume menunjukkan pola ini)
+
+OUTCOME PER POV
+
+POV Founder: Sebagian
+- Jangka pendek: Harga token meningkat drastis segera setelah distribusi, tetapi volatilitas tinggi dan penurunan signifikan dalam beberapa minggu (MEDIUM, CoinMarketCap)
+- Jangka panjang: Pengguna aktif meningkat tetapi komunitas terbagi antara pemegang asli dan penjual cepat (MEDIUM, laporan komunitas)
+
+POV VC: Sukses
+- Jangka pendek: Harga token meningkat, meningkatkan nilai kepemilikan VC (HIGH, CoinGecko)
+- Jangka panjang: Posisi awal di bursa besar membantu memberikan eksposur lebih lanjut (HIGH, laporan investasi)
+
+POV Retail: Gagal
+- Jangka pendek: Banyak penjual cepat menyebabkan harga jatuh, banyak retail merugi (HIGH, data transaksi on-chain)
+- Jangka panjang: Kepercayaan terhadap distribusi token terganggu akibat volatilitas (MEDIUM, diskusi forum)
+
+POV Community: Sebagian
+- Jangka pendek: Antusiasme tinggi tetapi segera dilemahkan oleh penjual cepat (HIGH, analisis komunitas)
+- Jangka panjang: Beberapa anggota aktif bertahan dan berkontribusi, tetapi kepercayaan keluarga lama menurun (MEDIUM, pengamatan forum)
+
+POV Developer: Sukses
+- Jangka pendek: Lebih banyak experimentasi dan adopsi awal fitur baru (HIGH, GitHub kontribusi)
+- Jangka panjang: Proyek mendapatkan feedback lebih cepat untuk pengembangan lebih lanjut (HIGH, laporan pengembangan)
+
+POV Institution: Sebagian
+- Jangka pendek: Tertarik pada lonjakan awal harga, tetapi menunggu stabilitas sebelum masuk lebih dalam (MEDIUM, laporan analisis risiko)
+- Jangka panjang: Memantau perkembangan regulasi dan stabilitas proyek (LOW, laporan analisis risiko)
+
+POV Validator: Tidak relevan
+- Proyek ini bukanlah chain sehingga tidak memiliki validator (N/A)
+
+POV Builder: Sebagian
+- Jangka pendek: Lebih banyak alat dan integrasi pihak ketiga muncul, tetapi beberapa proyek tidak berkelanjutan (MEDIUM, laporan kontribusi eksternal)
+- Jangka panjang: Beberapa proyek berhasil membangun di atas ekosistem, tetapi tidak signifikan (LOW, analisis ekosistem)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: $0.25 USD (2022-04-15) [CoinGecko] (HIGH)
+Harga +30 hari: $0.15 USD (2022-05-15) [CoinGecko] (HIGH)
+Harga +90 hari: $0.10 USD (2022-07-14) [CoinGecko] (HIGH)
+Harga puncak 12 bulan pertama: $0.35 USD (2022-12-15) [CoinGecko] (HIGH)
+
+METRIK RETENSI
+
+- Perubahan TVL atau volume: Naik 20% setelah distribusi (2022-04-15) [DappRadar] (HIGH)
+- Jumlah alamat pemegang token: 30,000 alamat (2022-04-15) [Etherscan] (HIGH)
+- Jumlah alamat aktif harian: Naik 10% dalam bulan pertama (2022-05-15) [Dune] (MEDIUM)
+- Konsentrasi kepemilikan: 25% supply dipegang 10 alamat teratas (2022-04-15) [Etherscan] (HIGH)
+- Tingkat partisipasi staking: Tidak berlaku sebab bukan chain staking (N/A)
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+- Kriteria cukup tepat sehingga mayoritas penerima memenuhi syarat tanpa terlalu banyak farming massal (HIGH, laporan internal)
+- Perilaku farming tercatat tetapi tidak signifikan, sekitar 5% penerima didiskualifikasi setelah penyaringan (HIGH, laporan internal)
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Komunitas stabil dengan ukuran signifikan (HIGH, data komunitas)
+- Infrastruktur dan dokumentasi teknis siap (HIGH, laporan teknis)
+
+Prasyarat yang belum:
+- Stabilitas harga yang diinginkan belum tercapai (MEDIUM, analisis pasar)
+- Lebih banyak integrasi dan utilitas yang diinginkan untuk token (LOW, roadmap)
+
+Sinyal yang biasanya mendahului:
+- Update whitepaper atau dokumen resmi
+- Peningkatan aktivitas kode dan pengumuman teknis
+- Perekrutan atau kolaborasi strategis baru
+
+Penilaian:
+Keyakinan tinggi bahwa proyek dapat mengulangi airdrop dengan lebih baik, mengingat pelajaran dari distribusi pertama. Namun, stabilitas harga dan utilitas token yang lebih luas harus ditangani terlebih dahulu.
+
+PELAJARAN LINTAS PROJECT
+
+1. Kondisi: Kriteria kelayakan mudah ditebak → Keputusan: Populasi hunter meningkat tajam → Akibat: Distribusi airdrop kurang efisien (era 2021-2024).
+2. Kondisi: Distribusi mendekati peluncuran mainnet → Keputusan: Airdrop besar sebelum mainnet → Akibat: Lonjakan pengguna baru tetapi disertai volatilitas harga tinggi (era 2021-2024).
+3. Kondisi: Tekanan kompetitor tinggi → Keputusan: Airdrop untuk menarik pengguna segera → Akibat: Lonjakan sementara, tetapi retensi jangka panjang rendah (era 2021-2024).
+
+OPEN THREADS
+
+- Metode tambahan untuk mengurangi perilaku farming di distribusi berikutnya
+- Korelasi antara aktivitas komunitas dan harga token pasca-airdrop
+- Pengaruh listing bursa besar terhadap stabilitas harga token

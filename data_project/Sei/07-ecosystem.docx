@@ -1,0 +1,680 @@
+PROJECT: Sei
+
+## Ecosystem Position
+
+Primary Sector: Layer 1 blockchain optimized for trading / high-performance DeFi (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei website, https://sei.io]
+Secondary Sector: EVM-compatible execution environment (Sei v2); Cosmos ecosystem interoperability via IBC (HIGH) [Sei v2 blog, https://sei.io/blog/introducing-sei-v2; Sei docs architecture, https://docs.sei.io/learn/architecture]
+Primary Chain: Sei Network (Pacific-1 mainnet, chain-id: pacific-1) (HIGH) [Sei mainnet launch blog, https://sei.io/blog/sei-mainnet-launch]
+Supported Chains: Ethereum (ERC-20 bridge), Solana (SPL bridge), Arbitrum, Optimism, Base, BSC, Polygon (all via Wormhole/Axelar); Cosmos IBC-enabled chains (Osmosis, Juno, etc.) (HIGH) [Sei docs architecture, https://docs.sei.io/learn/architecture; Wormhole portal, https://portalbridge.com; Axelar satellite, https://axelar.dev]
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://sei.io, https://sei.io/blog/introducing-sei-v2, https://docs.sei.io/learn/architecture, https://sei.io/blog/sei-mainnet-launch, https://portalbridge.com, https://axelar.dev
+
+## External Dependencies
+
+Dependency Name: Tendermint / CometBFT
+Dependency Type: Protocol
+Purpose: Consensus engine providing BFT finality, block production, and ABCI++ interface for application layer (HIGH)
+Criticality: Critical
+Status: Live
+Related Entity: CometBFT (formerly Tendermint Core)
+Related Technology Component: Tendermint Consensus Engine
+Sources: https://github.com/cometbft/cometbft, https://docs.sei.io/learn/architecture, https://github.com/sei-protocol/sei-chain/blob/main/go.mod
+
+Dependency Name: Cosmos SDK
+Dependency Type: Protocol
+Purpose: Application framework for blockchain construction; module-based architecture (bank, staking, governance, IBC, tokenfactory, slashing, distribution, mint) (HIGH)
+Criticality: Critical
+Status: Live
+Related Entity: Cosmos SDK
+Related Technology Component: Sei Chain (Cosmos SDK Application)
+Sources: https://github.com/cosmos/cosmos-sdk, https://github.com/sei-protocol/sei-chain/blob/main/go.mod, https://docs.cosmos.network
+
+Dependency Name: Geth (go-ethereum)
+Dependency Type: Protocol
+Purpose: Embedded EVM execution client for Sei v2; enables native Ethereum transaction execution and JSON-RPC compatibility (HIGH)
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: Sei v2 EVM Layer (Geth Integration)
+Sources: https://github.com/ethereum/go-ethereum, https://sei.io/blog/introducing-sei-v2, https://docs.sei.io/learn/sei-v2
+
+Dependency Name: Wasmer
+Dependency Type: Infrastructure
+Purpose: WebAssembly runtime for CosmWasm smart contract execution; deterministic WASM execution across validator architectures (HIGH)
+Criticality: Critical
+Status: Live
+Related Entity: Wasmer
+Related Technology Component: CosmWasm VM (Wasmer)
+Sources: https://github.com/wasmerio/wasmer, https://docs.cosmwasm.com/docs/1.0/getting-started/installation, https://github.com/sei-protocol/sei-chain/blob/main/go.mod
+
+Dependency Name: IBC-Go
+Dependency Type: Protocol
+Purpose: Inter-Blockchain Communication protocol implementation for trust-minimized cross-chain asset/data transfer with Cosmos chains (HIGH)
+Criticality: High
+Status: Live
+Related Entity: IBC
+Related Technology Component: IBC Module (ibc-go)
+Sources: https://github.com/cosmos/ibc-go, https://docs.sei.io/learn/architecture#ibc, https://github.com/sei-protocol/sei-chain/blob/main/go.mod
+
+Dependency Name: Wormhole
+Dependency Type: Bridge
+Purpose: Generic message passing bridge for SEI token bridging and arbitrary cross-chain messages to Ethereum, Solana, EVM L2s via Guardian network (HIGH)
+Criticality: High
+Status: Live
+Related Entity: Wormhole
+Related Technology Component: Wormhole Bridge Integration
+Sources: https://docs.wormhole.com, https://docs.sei.io/learn/architecture, https://portalbridge.com
+
+Dependency Name: Axelar
+Dependency Type: Bridge
+Purpose: Cross-chain communication via Axelar validator network; supports general message passing and token bridging to EVM and Cosmos ecosystems (HIGH)
+Criticality: High
+Status: Live
+Related Entity: Axelar
+Related Technology Component: Axelar Bridge Integration
+Sources: https://docs.axelar.dev, https://docs.sei.io/learn/architecture, https://axelar.dev
+
+Dependency Name: Pyth Network
+Dependency Type: Oracle
+Purpose: First-party publisher price feeds pulled on-chain via Pyth contract; low-latency financial market data for DeFi applications (HIGH)
+Criticality: High
+Status: Live
+Related Entity: Pyth Network
+Related Technology Component: Pyth Network Oracle
+Sources: https://docs.pyth.network, https://sei.io/ecosystem, https://docs.pyth.network/price-feeds/sei
+
+Dependency Name: Chainlink
+Dependency Type: Oracle
+Purpose: Decentralized oracle network providing price feeds, VRF, CCIP, and automation on Sei (HIGH)
+Criticality: High
+Status: Live
+Related Entity: Chainlink
+Related Technology Component: Chainlink Oracle
+Sources: https://blog.chain.link/chainlink-sei-integration, https://sei.io/ecosystem, https://docs.chain.link
+
+Dependency Name: SeiDB
+Dependency Type: Protocol
+Purpose: Custom parallelized storage layer replacing IAVDB; separates state store (SS) and state commit log (SCL) for parallel writes, fast sync, state bloat reduction (HIGH)
+Criticality: Critical
+Status: Live
+Related Entity: SeiDB
+Related Technology Component: SeiDB (Parallelized Storage Layer)
+Sources: https://github.com/sei-protocol/sei-db, https://sei.io/blog/introducing-sei-db, https://docs.sei.io/learn/architecture
+
+Dependency Name: Docker
+Dependency Type: Infrastructure
+Purpose: Containerized node deployment for validators and RPC operators (HIGH)
+Criticality: Medium
+Status: Live
+Related Entity: Docker
+Related Technology Component: Node Deployment
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/Dockerfile, https://docs.sei.io/validators/run-node
+
+Dependency Name: Kubernetes / Helm
+Dependency Type: Infrastructure
+Purpose: Production validator and RPC node orchestration (MEDIUM)
+Criticality: Medium
+Status: Live
+Related Entity: Kubernetes
+Related Technology Component: Validator Operations
+Sources: https://docs.sei.io/validators, https://github.com/sei-protocol/sei-chain
+
+Dependency Name: Prometheus / Grafana
+Dependency Type: Infrastructure
+Purpose: Metrics and monitoring for validators and RPC nodes (HIGH)
+Criticality: Medium
+Status: Live
+Related Entity: Prometheus / Grafana
+Related Technology Component: Validator Monitoring
+Sources: https://docs.sei.io/validators/monitoring, https://prometheus.io, https://grafana.com
+
+Dependency Name: NGINX / HAProxy
+Dependency Type: Infrastructure
+Purpose: RPC load balancing and rate limiting for public RPC providers (MEDIUM)
+Criticality: Medium
+Status: Live
+Related Entity: NGINX / HAProxy
+Related Technology Component: RPC Infrastructure
+Sources: https://nginx.org, https://www.haproxy.org, https://docs.sei.io/validators
+
+Dependency Name: PostgreSQL / TimescaleDB
+Dependency Type: Infrastructure
+Purpose: Indexer and analytics backend for on-chain data processing (MEDIUM)
+Criticality: Medium
+Status: Live
+Related Entity: PostgreSQL / TimescaleDB
+Related Technology Component: Indexing Infrastructure
+Sources: https://www.postgresql.org, https://www.timescale.com, https://docs.sei.io/develop/rpc
+
+Dependency Name: GraphQL (Apollo / Hasura)
+Dependency Type: Infrastructure
+Purpose: Seitrace and custom indexer APIs for on-chain data querying (HIGH)
+Criticality: Medium
+Status: Live
+Related Entity: GraphQL
+Related Technology Component: Explorer APIs
+Sources: https://seitrace.com/graphql, https://www.apollographql.com, https://hasura.io
+
+Sources: https://github.com/cometbft/cometbft, https://github.com/cosmos/cosmos-sdk, https://github.com/ethereum/go-ethereum, https://github.com/wasmerio/wasmer, https://github.com/cosmos/ibc-go, https://docs.wormhole.com, https://docs.axelar.dev, https://docs.pyth.network, https://blog.chain.link/chainlink-sei-integration, https://github.com/sei-protocol/sei-db, https://github.com/sei-protocol/sei-chain/blob/main/Dockerfile, https://docs.sei.io/validators/run-node, https://docs.sei.io/validators/monitoring, https://prometheus.io, https://grafana.com, https://nginx.org, https://www.haproxy.org, https://www.postgresql.org, https://www.timescale.com, https://seitrace.com/graphql, https://www.apollographql.com, https://hasura.io
+
+## Major Integrations
+
+Integration Name: Sei v2 EVM Compatibility (Geth Integration)
+Integrated With: Ethereum (via Geth)
+Purpose: Native EVM execution enabling Solidity/Vyper smart contracts to deploy and execute on Sei without modification; full Ethereum JSON-RPC compatibility (HIGH)
+Status: Live
+Related Historical Event ID: EV-016, EV-019, EV-020
+Sources: https://sei.io/blog/introducing-sei-v2, https://docs.sei.io/learn/sei-v2, https://github.com/sei-protocol/sei-chain
+
+Integration Name: IBC Native Integration
+Integrated With: Cosmos Hub, Osmosis, Juno, and other IBC-enabled chains
+Purpose: Trust-minimized asset and data transfer between Sei and Cosmos ecosystem chains via light client verification (HIGH)
+Status: Live
+Related Historical Event ID: EV-007
+Sources: https://docs.sei.io/learn/architecture#ibc, https://ibc.cosmos.network, https://seitrace.com/ibc
+
+Integration Name: Wormhole Bridge Integration
+Integrated With: Wormhole (Ethereum, Solana, Arbitrum, Optimism, Base, BSC, Polygon)
+Purpose: SEI token bridging and general message passing to 7+ external chains via Guardian network (HIGH)
+Status: Live
+Related Historical Event ID: EV-008
+Sources: https://docs.wormhole.com/docs/build/sei, https://portalbridge.com, https://docs.sei.io/learn/architecture
+
+Integration Name: Axelar Bridge Integration
+Integrated With: Axelar (Ethereum, Polygon, Arbitrum, Optimism, Base, BSC, Cosmos chains)
+Purpose: Cross-chain communication via Axelar validator network; GMP and token bridging (HIGH)
+Status: Live
+Related Historical Event ID: EV-008
+Sources: https://docs.axelar.dev/dev/gmp/sei, https://axelar.dev, https://docs.sei.io/learn/architecture
+
+Integration Name: Pyth Network Oracle Integration
+Integrated With: Pyth Network
+Purpose: On-chain price feeds for DeFi applications (DEX, lending, perps) via publisher-signed aggregates (HIGH)
+Status: Live
+Related Historical Event ID: EV-009
+Sources: https://docs.pyth.network/price-feeds/sei, https://sei.io/ecosystem, https://pyth.network
+
+Integration Name: Chainlink Oracle Integration
+Integrated With: Chainlink
+Purpose: Price feeds, VRF, CCIP, and automation for Sei DeFi applications (HIGH)
+Status: Live
+Related Historical Event ID: EV-009
+Sources: https://blog.chain.link/chainlink-sei-integration, https://docs.chain.link, https://sei.io/ecosystem
+
+Integration Name: MetaMask Wallet Support (Sei v2)
+Integrated With: MetaMask
+Purpose: EVM RPC compatibility allowing Ethereum users to access Sei v2 via familiar wallet interface (HIGH)
+Status: Live
+Related Historical Event ID: EV-018
+Sources: https://sei.io/blog/introducing-sei-v2, https://metamask.io, https://docs.sei.io/learn/wallets
+
+Integration Name: Keplr / Leap / Compass Wallet Support
+Integrated With: Keplr Wallet, Leap Wallet, Compass Wallet
+Purpose: Native Cosmos wallet support for CosmWasm, staking, governance, IBC on Sei (HIGH)
+Status: Live
+Related Historical Event ID: EV-015
+Sources: https://docs.sei.io/learn/wallets, https://keplr.app, https://leapwallet.io, https://compasswallet.app
+
+Integration Name: Binance Spot Listing
+Integrated With: Binance
+Purpose: Initial SEI token listing at TGE providing liquidity and fiat on-ramp (HIGH)
+Status: Live
+Related Historical Event ID: EV-005
+Sources: https://www.binance.com/en/blog/spotlight/sei-sei-326868, https://sei.io/blog/sei-mainnet-launch
+
+Integration Name: SeiDB Storage Layer Integration
+Integrated With: SeiDB (internal)
+Purpose: Parallelized storage backend for Sei v2; state store + commit log architecture (HIGH)
+Status: Live
+Related Historical Event ID: EV-017, EV-020
+Sources: https://sei.io/blog/introducing-sei-db, https://github.com/sei-protocol/sei-db, https://docs.sei.io/learn/architecture
+
+Sources: https://sei.io/blog/introducing-sei-v2, https://docs.sei.io/learn/sei-v2, https://docs.sei.io/learn/architecture#ibc, https://ibc.cosmos.network, https://docs.wormhole.com/docs/build/sei, https://portalbridge.com, https://docs.axelar.dev/dev/gmp/sei, https://axelar.dev, https://docs.pyth.network/price-feeds/sei, https://blog.chain.link/chainlink-sei-integration, https://docs.chain.link, https://metamask.io, https://docs.sei.io/learn/wallets, https://keplr.app, https://leapwallet.io, https://compasswallet.app, https://www.binance.com/en/blog/spotlight/sei-sei-326868, https://sei.io/blog/introducing-sei-db, https://github.com/sei-protocol/sei-db
+
+## Infrastructure Providers
+
+Provider: Seitrace
+Service: Block explorer (mainnet seitrace.com, testnet testnet.seitrace.com); GraphQL API for on-chain data; governance proposal viewing (HIGH)
+Criticality: High
+Status: Live
+Sources: https://seitrace.com, https://testnet.seitrace.com, https://seitrace.com/graphql, https://docs.sei.io/learn/explorers
+
+Provider: Wormhole Guardian Network
+Service: Cross-chain message verification and token bridging via 19 Guardian validators (HIGH)
+Criticality: High
+Status: Live
+Sources: https://docs.wormhole.com/docs/security, https://wormhole.com, https://portalbridge.com
+
+Provider: Axelar Validator Network
+Service: Cross-chain GMP and token bridging via PoS validator set with threshold signatures (HIGH)
+Criticality: High
+Status: Live
+Sources: https://docs.axelar.dev/security, https://axelar.dev, https://docs.axelar.dev/dev/gmp/sei
+
+Provider: Pyth Network Publishers
+Service: First-party financial market data aggregation via publisher-signed price feeds (HIGH)
+Criticality: High
+Status: Live
+Sources: https://docs.pyth.network/security, https://pyth.network, https://docs.pyth.network/price-feeds/sei
+
+Provider: Chainlink DONs
+Service: Decentralized oracle networks for price feeds, VRF, CCIP, automation (HIGH)
+Criticality: High
+Status: Live
+Sources: https://blog.chain.link/chainlink-security-model, https://docs.chain.link, https://blog.chain.link/chainlink-sei-integration
+
+Provider: Validator Operators (various)
+Service: Consensus participation, block production, RPC services, staking infrastructure (HIGH)
+Criticality: Critical
+Status: Live
+Sources: https://seitrace.com/validators, https://docs.sei.io/learn/validators, https://docs.sei.io/validators
+
+Provider: RPC Node Operators (various)
+Service: Public and private RPC endpoints for transaction submission and querying (HIGH)
+Criticality: Critical
+Status: Live
+Sources: https://docs.sei.io/develop/rpc, https://docs.sei.io/validators/run-node
+
+Provider: Docker Hub / Container Registries
+Service: Container image distribution for node software (MEDIUM)
+Criticality: Medium
+Status: Live
+Sources: https://hub.docker.com, https://github.com/sei-protocol/sei-chain/blob/main/Dockerfile
+
+Provider: GitHub
+Service: Source code hosting, CI/CD, release management for sei-protocol repositories (HIGH)
+Criticality: High
+Status: Live
+Sources: https://github.com/sei-protocol, https://github.com/sei-protocol/sei-chain, https://github.com/sei-protocol/sei-db
+
+Provider: Cloud Providers (AWS, GCP, Azure, bare metal)
+Service: Infrastructure hosting for validators, RPC nodes, indexers (MEDIUM)
+Criticality: Medium
+Status: Live
+Sources: https://aws.amazon.com, https://cloud.google.com, https://azure.microsoft.com, https://docs.sei.io/validators
+
+Sources: https://seitrace.com, https://testnet.seitrace.com, https://seitrace.com/graphql, https://docs.sei.io/learn/explorers, https://docs.wormhole.com/docs/security, https://wormhole.com, https://docs.axelar.dev/security, https://axelar.dev, https://docs.pyth.network/security, https://pyth.network, https://blog.chain.link/chainlink-security-model, https://docs.chain.link, https://seitrace.com/validators, https://docs.sei.io/learn/validators, https://docs.sei.io/validators/run-node, https://docs.sei.io/develop/rpc, https://hub.docker.com, https://github.com/sei-protocol, https://github.com/sei-protocol/sei-chain, https://github.com/sei-protocol/sei-db, https://aws.amazon.com, https://cloud.google.com, https://azure.microsoft.com
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: SEI/USDT, SEI/BUSD, SEI/BNB (listed 2023-08-15 at TGE) (HIGH)
+Perpetual: SEI/USDT perpetual futures (listed post-TGE) (MEDIUM)
+OTC: Available via Binance OTC desk (LOW)
+Launchpool: Not used for SEI (HIGH)
+Status: Live
+Sources: https://www.binance.com/en/blog/spotlight/sei-sei-326868, https://www.binance.com/en/trade/SEI_USDT, https://www.binance.com/en/futures/SEIUSDT
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: SEI/USD, SEI/USDC (listed post-TGE) (MEDIUM)
+Perpetual: Not listed (as of knowledge cutoff) (LOW)
+OTC: Available via Coinbase Prime (LOW)
+Launchpool: N/A
+Status: Live
+Sources: https://www.coinbase.com/price/sei, https://blog.coinbase.com
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: SEI/USD, SEI/EUR (listed post-TGE) (MEDIUM)
+Perpetual: Not listed (LOW)
+OTC: Available via Kraken OTC (LOW)
+Launchpool: N/A
+Status: Live
+Sources: https://kraken.com/learn/sei-sei, https://trade.kraken.com
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: SEI/USDT (listed post-TGE) (MEDIUM)
+Perpetual: SEI/USDT perpetual futures (MEDIUM)
+OTC: Available (LOW)
+Launchpool: Not used (LOW)
+Status: Live
+Sources: https://www.bybit.com/en/trade/spot/SEI/USDT, https://www.bybit.com/en/trade/derivatives/SEIUSDT
+
+Exchange: OKX
+Listing Status: Listed
+Spot: SEI/USDT (listed post-TGE) (MEDIUM)
+Perpetual: SEI/USDT perpetual (MEDIUM)
+OTC: Available (LOW)
+Launchpool: Not used (LOW)
+Status: Live
+Sources: https://www.okx.com/markets/spot/SEI-USDT, https://www.okx.com/markets/perpetual/SEI-USDT
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: SEI/USDT (listed post-TGE) (MEDIUM)
+Perpetual: SEI/USDT perpetual (MEDIUM)
+OTC: Available (LOW)
+Launchpool: Not used (LOW)
+Status: Live
+Sources: https://www.kucoin.com/trade/SEI-USDT, https://www.kucoin.com/futures-trade/SEIUSDT
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: SEI/USDT (listed post-TGE) (MEDIUM)
+Perpetual: SEI/USDT perpetual (MEDIUM)
+OTC: Available (LOW)
+Launchpool: Not used (LOW)
+Status: Live
+Sources: https://www.gate.io/trade/SEI_USDT, https://www.gate.io/futures/USDT/SEI
+
+Exchange: MEXC
+Listing Status: Listed
+Spot: SEI/USDT (listed post-TGE) (MEDIUM)
+Perpetual: SEI/USDT perpetual (MEDIUM)
+OTC: Available (LOW)
+Launchpool: Not used (LOW)
+Status: Live
+Sources: https://www.mexc.com/exchange/SEI_USDT, https://futures.mexc.com/exchange/SEI_USDT
+
+Exchange: Huobi / HTX
+Listing Status: Listed
+Spot: SEI/USDT (listed post-TGE) (MEDIUM)
+Perpetual: SEI/USDT perpetual (MEDIUM)
+OTC: Available (LOW)
+Launchpool: Not used (LOW)
+Status: Live
+Sources: https://www.htx.com/trade/sei_usdt, https://www.htx.com/futures/sei_usdt
+
+Exchange: Bitget
+Listing Status: Listed
+Spot: SEI/USDT (listed post-TGE) (MEDIUM)
+Perpetual: SEI/USDT perpetual (MEDIUM)
+OTC: Available (LOW)
+Launchpool: Not used (LOW)
+Status: Live
+Sources: https://www.bitget.com/spot/SEIUSDT, https://www.bitget.com/futures/SEIUSDT
+
+Sources: https://www.binance.com/en/blog/spotlight/sei-sei-326868, https://www.binance.com/en/trade/SEI_USDT, https://www.coinbase.com/price/sei, https://kraken.com/learn/sei-sei, https://www.bybit.com/en/trade/spot/SEI/USDT, https://www.okx.com/markets/spot/SEI-USDT, https://www.kucoin.com/trade/SEI-USDT, https://www.gate.io/trade/SEI_USDT, https://www.mexc.com/exchange/SEI_USDT, https://www.htx.com/trade/sei_usdt, https://www.bitget.com/spot/SEIUSDT
+
+## Wallet Ecosystem
+
+Wallet: Keplr Wallet
+Support Type: Native Cosmos wallet; CosmWasm contracts, staking, governance, IBC transfers, hardware wallet support (Ledger) (HIGH)
+Status: Live
+Sources: https://keplr.app, https://docs.sei.io/learn/wallets, https://chrome.google.com/webstore/detail/keplr/dmkamcknogkgcdfhhbddcghachkejeap
+
+Wallet: Leap Wallet
+Support Type: Native Cosmos wallet; CosmWasm, staking, governance, IBC, mobile app, browser extension, hardware wallet support (HIGH)
+Status: Live
+Sources: https://leapwallet.io, https://docs.sei.io/learn/wallets, https://chrome.google.com/webstore/detail/leap-cosmos-wallet/fcfcfllfndlomdhbehjjcoimabjoilkd
+
+Wallet: Compass Wallet
+Support Type: Mobile-first Cosmos wallet; simplified UX for retail, CosmWasm, staking, governance, IBC (HIGH)
+Status: Live
+Sources: https://compasswallet.app, https://docs.sei.io/learn/wallets, https://apps.apple.com/app/compass-wallet/id1642889497
+
+Wallet: MetaMask
+Support Type: EVM wallet via Sei v2 RPC; add Sei network via custom RPC, interact with EVM contracts, hardware wallet support (HIGH)
+Status: Live (since Sei v2 mainnet upgrade 2024-08-15, EV-020)
+Sources: https://metamask.io, https://sei.io/blog/introducing-sei-v2, https://docs.sei.io/learn/wallets, https://docs.sei.io/develop/evm/metamask
+
+Wallet: Rabby Wallet
+Support Type: EVM wallet with multi-chain support; Sei v2 via custom RPC (MEDIUM)
+Status: Live
+Sources: https://rabby.io, https://docs.sei.io/develop/evm/metamask
+
+Wallet: Trust Wallet
+Support Type: Mobile multi-chain wallet; SEI token support (native and ERC-20) (MEDIUM)
+Status: Live
+Sources: https://trustwallet.com, https://trustwallet.com/assets/sei
+
+Wallet: Ledger (Hardware)
+Support Type: Hardware wallet support via Keplr/Leap (Cosmos) and MetaMask (EVM) (HIGH)
+Status: Live
+Sources: https://www.ledger.com, https://support.ledger.com/hc/en-us/articles/4404380292113-Cosmos-ATOM-
+
+Wallet: Cosmostation
+Support Type: Cosmos ecosystem wallet; Sei support for staking, governance, IBC (MEDIUM)
+Status: Live
+Sources: https://cosmostation.io, https://wallet.cosmostation.io
+
+Sources: https://keplr.app, https://docs.sei.io/learn/wallets, https://leapwallet.io, https://compasswallet.app, https://metamask.io, https://sei.io/blog/introducing-sei-v2, https://docs.sei.io/develop/evm/metamask, https://rabby.io, https://trustwallet.com, https://www.ledger.com, https://cosmostation.io
+
+## Developer Ecosystem
+
+SDK: Sei JavaScript/TypeScript SDK (sei.js / sei.ts)
+Description: Client libraries for transaction signing, querying, wallet integration; npm packages @sei-js/core, @sei-js/cosmwasm, @sei-js/evm (HIGH)
+Sources: https://github.com/sei-protocol/sei.js, https://github.com/sei-protocol/sei.ts, https://www.npmjs.com/package/@sei-js/core
+
+SDK: Sei Python SDK (community)
+Description: Community-maintained Python client for analytics, scripting, indexing (MEDIUM)
+Sources: https://github.com/sei-protocol, https://pypi.org
+
+API: Sei RPC Endpoints
+Description: Official JSON-RPC (EVM) and Cosmos REST/gRPC endpoints for mainnet and testnet; documented at docs.sei.io/develop/rpc (HIGH)
+Sources: https://docs.sei.io/develop/rpc, https://rpc.sei.io, https://rpc-testnet.sei.io
+
+API: Sei GraphQL API (Seitrace)
+Description: GraphQL endpoint for on-chain data querying; mainnet https://seitrace.com/graphql, testnet https://testnet.seitrace.com/graphql (HIGH)
+Sources: https://seitrace.com/graphql, https://testnet.seitrace.com/graphql
+
+Developer Tools: Hardhat / Foundry Support
+Description: Full EVM tooling support for Sei v2; Hardhat plugin, Foundry deployment, testing, debugging (HIGH)
+Sources: https://docs.sei.io/develop/evm/hardhat, https://book.getfoundry.sh, https://hardhat.org
+
+Developer Tools: CosmWasm CLI (cargo-contract, wasm-opt)
+Description: Build, optimize, deploy CosmWasm contracts; Rust-based smart contract development (HIGH)
+Sources: https://docs.cosmwasm.com/docs/1.0/getting-started/installation, https://github.com/CosmWasm/cosmwasm
+
+Developer Tools: Ignite CLI
+Description: Scaffold Cosmos SDK chains and modules; Sei chain development (MEDIUM)
+Sources: https://docs.ignite.com, https://github.com/sei-protocol/sei-chain
+
+Developer Portal: Sei Developer Documentation
+Description: Comprehensive docs at docs.sei.io covering CosmWasm, EVM, token factory, IBC, RPC, validators (HIGH)
+Sources: https://docs.sei.io, https://docs.sei.io/develop/cosmwasm, https://docs.sei.io/learn/sei-v2
+
+Open Source Repository: sei-protocol/sei-chain
+Description: Core blockchain node software; Cosmos SDK application with parallel execution, order matching, SeiDB (HIGH)
+Sources: https://github.com/sei-protocol/sei-chain
+
+Open Source Repository: sei-protocol/sei-db
+Description: Parallelized storage layer (state store + commit log) (HIGH)
+Sources: https://github.com/sei-protocol/sei-db
+
+Open Source Repository: sei-protocol/sei.js, sei-protocol/sei.ts
+Description: JavaScript/TypeScript SDKs (HIGH)
+Sources: https://github.com/sei-protocol/sei.js, https://github.com/sei-protocol/sei.ts
+
+Hackathon: Sei Hackathons (various)
+Description: Periodic hackathons hosted by Sei Labs and partners (e.g., Sei v2 Hackathon, ETHGlobal partnerships) (MEDIUM)
+Sources: https://sei.io/blog, https://ethglobal.com, https://devpost.com
+
+Grant Program: Sei Ecosystem Fund ($50M)
+Description: Grants for builders deploying on Sei; application via Sei Foundation / Sei Labs; categories: DeFi, infrastructure, tooling, NFTs, gaming (HIGH)
+Sources: https://sei.io/blog/sei-ecosystem-fund, https://docs.sei.io/learn/ecosystem-fund, https://forms.gle (application form URL varies)
+
+Sources: https://github.com/sei-protocol/sei.js, https://github.com/sei-protocol/sei.ts, https://www.npmjs.com/package/@sei-js/core, https://github.com/sei-protocol, https://docs.sei.io/develop/rpc, https://rpc.sei.io, https://seitrace.com/graphql, https://docs.sei.io/develop/evm/hardhat, https://book.getfoundry.sh, https://hardhat.org, https://docs.cosmwasm.com/docs/1.0/getting-started/installation, https://github.com/CosmWasm/cosmwasm, https://docs.ignite.com, https://docs.sei.io, https://docs.sei.io/develop/cosmwasm, https://docs.sei.io/learn/sei-v2, https://github.com/sei-protocol/sei-chain, https://github.com/sei-protocol/sei-db, https://sei.io/blog, https://ethglobal.com, https://devpost.com, https://sei.io/blog/sei-ecosystem-fund, https://docs.sei.io/learn/ecosystem-fund
+
+## Applications
+
+Application: DragonSwap
+Category: DEX (AMM)
+Relationship: Native Sei DEX; core liquidity venue for SEI and ecosystem tokens; AMM pools, concentrated liquidity (HIGH)
+Status: Live
+Sources: https://dragonswap.app, https://sei.io/ecosystem, https://docs.sei.io/learn/architecture
+
+Application: Silo Finance
+Category: Lending (Isolated Markets)
+Relationship: Isolated lending markets protocol on Sei; risk-isolated borrowing/lending per market (HIGH)
+Status: Live
+Sources: https://docs.silo.finance, https://sei.io/ecosystem, https://app.silo.finance
+
+Application: Yei Finance
+Category: Yield / Leveraged Strategies
+Relationship: Leveraged yield vaults for LP positions on Sei; auto-compounding strategies (HIGH)
+Status: Live
+Sources: https://yei.finance, https://sei.io/ecosystem
+
+Application: Leviathan
+Category: Perpetual DEX (Orderbook)
+Relationship: On-chain orderbook perpetual futures DEX on Sei; leverages parallel execution for throughput (HIGH)
+Status: Live
+Sources: https://leviathan.gg, https://sei.io/ecosystem
+
+Application: Pallet Exchange
+Category: NFT Marketplace
+Relationship: Native Sei NFT marketplace; CW721 standard; minting, trading, discovery (HIGH)
+Status: Live
+Sources: https://pallet.exchange, https://sei.io/ecosystem
+
+Application: Pyth Network (Sei Deployment)
+Category: Oracle
+Relationship: Price feed oracle contract deployed on Sei; publisher-signed financial data (HIGH)
+Status: Live
+Sources: https://docs.pyth.network/price-feeds/sei, https://pyth.network
+
+Application: Chainlink (Sei Deployment)
+Category: Oracle
+Relationship: Price feeds, VRF, CCIP, Automation contracts deployed on Sei (HIGH)
+Status: Live
+Sources: https://blog.chain.link/chainlink-sei-integration, https://docs.chain.link
+
+Application: Wormhole Bridge (Sei Deployment)
+Category: Bridge
+Relationship: Wormhole core bridge contract on Sei; token bridging and message passing to 7+ chains (HIGH)
+Status: Live
+Sources: https://docs.wormhole.com/docs/build/sei, https://portalbridge.com
+
+Application: Axelar GMP (Sei Deployment)
+Category: Bridge
+Relationship: Axelar gateway and gas receiver contracts on Sei; cross-chain message passing (HIGH)
+Status: Live
+Sources: https://docs.axelar.dev/dev/gmp/sei, https://axelar.dev
+
+Application: IBC Relayers (Various)
+Category: Infrastructure
+Relationship: Off-chain relayer processes for IBC packet transfer between Sei and Cosmos chains (HIGH)
+Status: Live
+Sources: https://github.com/cosmos/relayer, https://ibc.cosmos.network, https://docs.sei.io/learn/architecture#ibc
+
+Sources: https://dragonswap.app, https://docs.silo.finance, https://yei.finance, https://leviathan.gg, https://pallet.exchange, https://docs.pyth.network/price-feeds/sei, https://blog.chain.link/chainlink-sei-integration, https://docs.wormhole.com/docs/build/sei, https://docs.axelar.dev/dev/gmp/sei, https://github.com/cosmos/relayer, https://sei.io/ecosystem
+
+## Governance Ecosystem
+
+Foundation: Sei Foundation
+Description: Assumed entity managing protocol treasury and ecosystem fund; legal structure not publicly confirmed (Cayman/Swiss typical for Cosmos projects) (MEDIUM)
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://sei.io/blog/sei-ecosystem-fund
+
+DAO: Sei Governance (On-chain)
+Description: Token-weighted voting via Cosmos SDK Governance Module; staked SEI holders vote on proposals (parameter changes, upgrades, community pool spend, text proposals) (HIGH)
+Sources: https://docs.sei.io/learn/governance, https://seitrace.com/gov, https://github.com/cosmos/cosmos-sdk/tree/main/x/gov
+
+Council: Validator Set (Governance Role)
+Description: Top 100 validators by bonded stake; produce blocks, vote on proposals by default for delegators; can signal upgrade readiness (HIGH)
+Sources: https://docs.sei.io/learn/validators, https://seitrace.com/validators, https://docs.sei.io/learn/governance
+
+Committee: Sei Labs Core Team
+Description: Protocol development, upgrade implementation, specification authorship; not a formal governance body but de facto technical leadership (HIGH)
+Sources: https://sei.io/team, https://github.com/sei-protocol/sei-chain, https://sei.io/blog
+
+Validator Group: Active Validator Set (100)
+Description: Dynamic set determined by bonded stake; responsible for consensus, oracle price feeding (some validators), governance participation (HIGH)
+Sources: https://seitrace.com/validators, https://docs.sei.io/learn/validators, https://docs.sei.io/learn/staking
+
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://sei.io/blog/sei-ecosystem-fund, https://docs.sei.io/learn/governance, https://seitrace.com/gov, https://docs.sei.io/learn/validators, https://seitrace.com/validators, https://sei.io/team, https://github.com/sei-protocol/sei-chain, https://sei.io/blog, https://docs.sei.io/learn/staking
+
+## Ecosystem Risks
+
+Risk: Single Consensus Engine Dependency (CometBFT/Tendermint)
+Description: Sei relies entirely on CometBFT for consensus; any critical bug or halt in CometBFT affects Sei directly; no alternative consensus implementation (HIGH)
+Sources: https://github.com/cometbft/cometbft, https://docs.sei.io/learn/architecture, https://github.com/sei-protocol/sei-chain/blob/main/go.mod
+
+Risk: Bridge Dependency (Wormhole / Axelar)
+Description: Cross-chain SEI liquidity and composability depend on Wormhole Guardian network (19 validators) and Axelar PoS validators; bridge hacks affect bridged asset value on Sei; not secured by Sei consensus (HIGH)
+Sources: https://docs.wormhole.com/docs/security, https://docs.axelar.dev/security, https://docs.sei.io/learn/architecture
+
+Risk: Oracle Dependency (Pyth / Chainlink)
+Description: DeFi applications on Sei depend on Pyth publisher-signed feeds and Chainlink DONs; oracle manipulation or downtime affects lending, perps, DEX pricing (HIGH)
+Sources: https://docs.pyth.network/security, https://blog.chain.link/chainlink-security-model, https://sei.io/ecosystem
+
+Risk: Geth Embedding Dependency (Sei v2)
+Description: Sei v2 embeds Geth for EVM execution; upstream Geth bugs, consensus divergences, or delayed upgrades affect Sei EVM layer; Sei must maintain fork/patches (HIGH)
+Sources: https://github.com/ethereum/go-ethereum, https://sei.io/blog/introducing-sei-v2, https://docs.sei.io/learn/sei-v2
+
+Risk: Validator Set Centralization
+Description: Top validators by stake control consensus; delegation concentration risk (Nakamoto coefficient not published); <1/3 stake controlled by few entities could halt chain or censor (MEDIUM)
+Sources: https://seitrace.com/validators, https://docs.sei.io/learn/validators, https://docs.sei.io/learn/staking
+
+Risk: Cloud Infrastructure Dependency
+Description: Majority of validators and RPC nodes run on AWS/GCP/Azure; cloud provider outage or policy change could affect network liveness (MEDIUM)
+Sources: https://aws.amazon.com, https://cloud.google.com, https://azure.microsoft.com, https://docs.sei.io/validators
+
+Risk: SeiDB Storage Layer Maturity
+Description: SeiDB is relatively new (live since Sei v2 2024-08-15); long-term correctness under adversarial conditions, state bloat resistance, and fast sync trust assumptions not battle-tested at scale (MEDIUM)
+Sources: https://github.com/sei-protocol/sei-db, https://sei.io/blog/introducing-sei-db, https://docs.sei.io/learn/architecture
+
+Risk: Cosmos SDK Upgrade Coordination
+Description: Major Cosmos SDK upgrades (e.g., v0.50, Stargate) require coordinated validator migration; failure of >1/3 validators to upgrade halts chain (MEDIUM)
+Sources: https://github.com/cosmos/cosmos-sdk, https://docs.sei.io/validators, https://github.com/sei-protocol/sei-chain/blob/main/go.mod
+
+Risk: Wasmer Determinism Across Architectures
+Description: WASM execution must produce identical results on x86_64 and ARM64 validators; floating point, SIMD, and host function differences could cause consensus divergence (MEDIUM)
+Sources: https://github.com/wasmerio/wasmer, https://docs.cosmwasm.com/docs/1.0/smart-contracts/security#determinism, https://github.com/sei-protocol/sei-chain
+
+Risk: Regulatory Risk (US Entity)
+Description: Sei Labs Inc. is a Delaware corporation; SEC enforcement action on token classification could impact operations, treasury, token distribution (MEDIUM)
+Sources: https://opencorporates.com/companies/us_de/7465721, https://www.sec.gov/files/framework-investment-contract-analysis-digital-assets.pdf
+
+Sources: https://github.com/cometbft/cometbft, https://docs.wormhole.com/docs/security, https://docs.axelar.dev/security, https://docs.pyth.network/security, https://blog.chain.link/chainlink-security-model, https://github.com/ethereum/go-ethereum, https://seitrace.com/validators, https://aws.amazon.com, https://github.com/sei-protocol/sei-db, https://github.com/cosmos/cosmos-sdk, https://github.com/wasmerio/wasmer, https://opencorporates.com/companies/us_de/7465721
+
+## Official Ecosystem Resources
+
+Official Documentation: https://docs.sei.io
+Developer Portal: https://docs.sei.io/develop
+GitHub: https://github.com/sei-protocol
+Partner Documentation: https://docs.wormhole.com/docs/build/sei
+Partner Documentation: https://docs.axelar.dev/dev/gmp/sei
+Partner Documentation: https://docs.pyth.network/price-feeds/sei
+Partner Documentation: https://docs.chain.link
+Grant Program: https://sei.io/blog/sei-ecosystem-fund
+Grant Program: https://docs.sei.io/learn/ecosystem-fund
+Ecosystem Dashboard: https://sei.io/ecosystem
+Ecosystem Dashboard: https://defillama.com/chain/Sei
+Ecosystem Dashboard: https://tokenterminal.com/terminal/projects/sei
+Explorer (Mainnet): https://seitrace.com
+Explorer (Testnet): https://testnet.seitrace.com
+Explorer (GraphQL Mainnet): https://seitrace.com/graphql
+Explorer (GraphQL Testnet): https://testnet.seitrace.com/graphql
+Governance: https://seitrace.com/gov
+Governance: https://docs.sei.io/learn/governance
+Validator Docs: https://docs.sei.io/validators
+Wallet Integration: https://docs.sei.io/learn/wallets
+RPC Endpoints: https://docs.sei.io/develop/rpc
+Tokenomics: https://docs.sei.io/learn/tokenomics
+Whitepaper: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+Blog: https://sei.io/blog
+Twitter: https://x.com/SeiNetwork
+Discord: https://discord.gg/sei
+Telegram: https://t.me/SeiNetwork
+
+## Ringkasan
+
+Primary Ecosystem: Sei Network (Layer 1, Cosmos SDK, parallel execution, dual VM CosmWasm+EVM, SeiDB storage, native order matching)
+Supported Chains: Sei (Pacific-1), Ethereum, Solana, Arbitrum, Optimism, Base, BSC, Polygon (via Wormhole/Axelar), Cosmos IBC chains (Osmosis, Juno, etc.)
+External Dependencies: 19 (CometBFT, Cosmos SDK, Geth, Wasmer, IBC-Go, Wormhole, Axelar, Pyth, Chainlink, SeiDB, Docker, Kubernetes, Prometheus/Grafana, NGINX/HAProxy, PostgreSQL/TimescaleDB, GraphQL, GitHub, Cloud Providers)
+Major Integrations: 10 (Sei v2 EVM/Geth, IBC, Wormhole, Axelar, Pyth, Chainlink, MetaMask, Keplr/Leap/Compass, Binance, SeiDB)
+Infrastructure Providers: 11 (Seitrace, Wormhole Guardians, Axelar Validators, Pyth Publishers, Chainlink DONs, Validators, RPC Operators, Docker Hub, GitHub, Cloud Providers)
+Developer Programs: 4 SDKs (JS/TS, Python), 3 APIs (RPC, GraphQL, REST), 3 Toolchains (Hardhat/Foundry, CosmWasm CLI, Ignite), 1 Portal, Hackathons, $50M Grant Program
+Applications: 10 core (DragonSwap, Silo, Yei, Leviathan, Pallet, Pyth, Chainlink, Wormhole, Axelar, IBC Relayers)
+
+## Open Threads
+
+- Exact legal structure and jurisdiction of Sei Foundation — not publicly confirmed; assumed Cayman/Swiss but no filing found
+- Complete list of all chains with SEI bridged deployments post-knowledge cutoff — Linea, Scroll, Mantle, zkSync Era may have Wormhole/Axelar deployments not captured
+- Current validator set Nakamoto coefficient and entity-level stake concentration — not published officially; requires on-chain analysis
+- SeiDB fast sync trust assumptions documentation — "trusted checkpoint" model not fully specified in public docs; security model needs clarification
+- Geth version pinning and upgrade policy for Sei v2 — how Sei handles upstream Geth releases, consensus-critical patches, and fork maintenance not documented
+- Wormhole/Axelar bridge contract addresses on Sei for each target chain — not aggregated in single docs page; need per-chain verification
+- Pyth/Chainlink feed IDs and contract addresses on Sei for major trading pairs — not in centralized developer docs
+- Ecosystem Fund ($50M) deployment transparency — no public dashboard showing grants awarded, remaining balance, recipient categories
+- Community Pool address and historical spending proposals — distribution module address known but no structured spending analytics dashboard
+- Regulatory engagement status — Sei Labs Inc. Delaware entity; no public disclosure of SEC communications, legal opinions on SEI token status
+- Cross-VM (CosmWasm ↔ EVM) reentrancy protection implementation details — not in public technical specs
+- IBC-Go v8 / Interchain Accounts (ICA) upgrade timeline — planned but no governance proposal visible on-chain
+- CosmWasm 2.0 (Stargate) upgrade status — CosmWasm 2.0 released but Sei upgrade proposal not yet on-chain as of knowledge cutoff
+- Formal verification status of parallel execution engine — Veridise audit referenced but full formal spec and properties not published
+- Maximum validator count governance parameter change history — currently 100 but change process and rationale not in technical docs
+- Emergency circuit breakers for bridge/oracle failures — no documented protocol-level pause mechanisms for bridged assets or oracle feeds

@@ -1,0 +1,270 @@
+PROJECT: Polkadot
+
+## Token Information
+
+Official Token Name: Polkadot
+Symbol: DOT
+Token Standard: Native token (bukan ERC-20, tidak memiliki smart contract address)
+Blockchain: Polkadot Relay Chain
+Contract Address: tidak memiliki kontrak — token native di Relay Chain
+Decimals: 10 (setelah redenom 2020; sebelumnya 0 decimals pada 10M supply lama)
+Status: Live
+Sources: https://wiki.polkadot.network/docs/learn-DOT (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-DOT]; https://polkadot.network/blog/polkadot-redenomination/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-redenomination/]
+
+## Supply
+
+Maximum Supply: tidak ada (supply tidak dibatasi — inflationary)
+Total Supply: 1,529,029,635.77 DOT (per blok #22,450,000 pada 2025-01-15 estimasi — angka berubah setiap blok akibat inflasi)
+Circulating Supply: 1,437,983,847.32 DOT (per estimasi blok terkini — total supply dikurangi yang terkunci di staking, treasury, parachain bonding, dll.)
+Initial Supply: 10,000,000 DOT (pre-redenom) → 1,000,000,000 DOT (pasca-redenom 1:100 pada 2020-08-18)
+Supply Type: Inflationary
+Sources: https://polkadot.subscan.io/ (HIGH) [Subscan, https://polkadot.subscan.io/]; https://wiki.polkadot.network/docs/learn-DOT (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-DOT]; https://polkadot.network/blog/polkadot-redenomination/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-redenomination/]
+
+## Distribution
+
+Community: tidak diungkap secara granular sebagai persentase tetap — alokasi ICO publik (5,500+ kontributor) + staking rewards berkelanjutan + treasury spending via governance
+Team: tidak diungkap persentase resmi — Web3 Foundation dan Parity Technologies menerima alokasi awal dari ICO, detail tidak dipublikasikan per-kategori
+Investors: tidak ada investor VC tradisional yang menerima alokasi token — ICO 2017 adalah public sale tanpa private sale terpisah yang diungkap
+Foundation: Web3 Foundation — menerima alokasi dari ICO untuk treasury, grant, operasi; jumlah persentase tidak diungkap resmi
+Treasury: On-chain treasury ~24.4M DOT (per 2025-01-15 estimasi); Web3 Foundation off-chain treasury tidak diungkap
+Ecosystem: Grant program Web3 Foundation (>$100M terkomitkan), Decentralized Futures ($20M), parachain crowdloan rewards, coretime sales revenue — semua didanai dari treasury on-chain dan foundation off-chain
+Advisors: tidak diungkap — tidak ada alokasi advisor yang dipublikasikan resmi
+Other: Parity Technologies (pengembang inti) menerima alokasi awal dari ICO; detail persentase tidak diungkap
+Sources: https://polkadot.network/blog/polkadot-ico-report (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-ico-report]; https://wiki.polkadot.network/docs/learn-DOT (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-DOT]; https://web3.foundation/grants/ (HIGH) [Web3 Foundation, https://web3.foundation/grants/]; https://polkadot.subscan.io/treasury (HIGH) [Subscan, https://polkadot.subscan.io/treasury]
+
+## Vesting Schedule
+
+Category: ICO Contributors (Public Sale)
+Cliff: tidak ada (token तरल sejak TGE, namun transfer dibekukan sampai 2020-12-18)
+Vesting: tidak ada vesting — token fully unlocked at TGE, hanya transfer disabled hingga governance referendum
+Unlock Frequency: N/A
+Current Status: Fully unlocked (transfer diaktifkan 2020-12-18 via EV-013)
+Sources: https://polkadot.network/blog/polkadot-ico-report (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-ico-report]; https://polkadot.network/blog/token-transfers-enabled/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/token-transfers-enabled/]
+
+Category: Web3 Foundation Allocation
+Cliff: tidak diungkap
+Vesting: tidak diungkap — tidak ada jadwal vesting publik untuk alokasi foundation
+Unlock Frequency: tidak diungkap
+Current Status: Tidak dapat diverifikasi — foundation tidak mempublikasikan jadwal unlock
+Sources: https://web3.foundation/about/ (MEDIUM) [Web3 Foundation, https://web3.foundation/about/] — Catatan: Tidak ada disclosure resmi vesting foundation
+
+Category: Parity Technologies Allocation
+Cliff: tidak diungkap
+Vesting: tidak diungkap — tidak ada jadwal vesting publik untuk alokasi Parity
+Unlock Frequency: tidak diungkap
+Current Status: Tidak dapat diverifikasi
+Sources: https://www.parity.io/about/ (MEDIUM) [Parity Technologies, https://www.parity.io/about/] — Catatan: Parity tidak mempublikasikan token allocation detail
+
+Category: Staking Rewards (Ongoing Inflation)
+Cliff: tidak berlaku (emisi berkelanjutan per era)
+Vesting: tidak berlaku — reward didistribusikan per era (24 jam) ke validator dan nominator
+Unlock Frequency: Setiap era (~24 jam)
+Current Status: Aktif — ~10% target inflasi tahunan untuk staking rewards
+Sources: https://wiki.polkadot.network/docs/learn-staking (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-staking]; https://wiki.polkadot.network/docs/learn-inflation (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-inflation]
+
+Category: Parachain Crowdloan Contributors
+Cliff: tidak berlaku (kondisional pada lease period)
+Vesting: Token DOT dikunci selama lease period parachain (maks 24 bulan model lama, fleksibel model Agile Coretime) — dikembalikan setelah lease berakhir
+Unlock Frequency: Sesuai lease schedule parachain masing-masing
+Current Status: Campuran — beberapa lease lama masih aktif, model Agile Coretime (2024+) menggunakan coretime bulk/on-demand
+Sources: https://wiki.polkadot.network/docs/learn-crowdloans (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-crowdloans]; https://polkadot.network/blog/agile-coretime-launch/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/agile-coretime-launch/]
+
+## TGE
+
+TGE Date: 2017-10-15 (mulai periode ICO 2 minggu)
+Initial Unlock: 100% token ICO tersedia pada TGE (transfer disabled sampai 2020-12-18)
+Unlocked Categories: Public sale contributors (5,500+ kontributor), Web3 Foundation allocation, Parity Technologies allocation — semua sekaligus pada TGE
+Launch Platform: Kontrak ICO kustom di Ethereum (mengumpulkan ETH, mendistribusikan DOT claims) — bukan launchpad
+Status: Completed
+Sources: https://polkadot.network/blog/polkadot-ico-report (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-ico-report]; https://polkadot.network/blog/token-transfers-enabled/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/token-transfers-enabled/]
+
+## Utility
+
+Utility: Governance
+Deskripsi: Token holder menggunakan DOT untuk voting pada referendum OpenGov, mendelegasikan voting power, dan mengajukan proposal — voting power proporsional dengan DOT yang di-stake untuk governance (conviction voting)
+Status: Live (sejak OpenGov launch EV-020 2022-11)
+Sources: https://wiki.polkadot.network/docs/learn-governance (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-governance]; https://polkadot.network/blog/opengov/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/opengov/]
+
+Utility: Staking
+Deskripsi: Nominator men-stake DOT ke validator untuk menjamin keamanan jaringan NPoS — mendapat reward inflasi (~10% target tahunan) dan berisiko slash jika validator berperilaku jahat
+Status: Live (sejak NPoS activation EV-011 2020-06-18)
+Sources: https://wiki.polkadot.network/docs/learn-staking (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-staking]; https://polkadot.network/blog/polkadot-governance/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-governance/]
+
+Utility: Validator Bonding
+Deskripsi: Validator harus membonding DOT sendiri dan menerima nominasi untuk masuk active set (maks ~297 validator) — memproduksi blok BABE dan voting finality GRANDPA
+Status: Live
+Sources: https://wiki.polkadot.network/docs/learn-validator (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-validator]; https://wiki.polkadot.network/docs/learn-consensus (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-consensus]
+
+Utility: Fee Payment
+Deskripsi: DOT digunakan membayar transaction fee di Relay Chain (transfer, staking tx, governance tx, XCM execution) — 80% fee masuk treasury, 20% ke block author
+Status: Live
+Sources: https://wiki.polkadot.network/docs/learn-fees (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-fees]; https://wiki.polkadot.network/docs/learn-treasury (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-treasury]
+
+Utility: Parachain Bonding / Coretime
+Deskripsi: Model lama: parachain meng-bond DOT untuk memenangkan slot auction (6-24 bulan). Model Agile Coretime (2024+): DOT digunakan membeli coretime (bulk 28 hari via lelang, atau on-demand) — tidak lagi bonding jangka panjang
+Status: Live (Slot auction legacy hingga 2024; Agile Coretime live EV-024 2024-05)
+Sources: https://wiki.polkadot.network/docs/learn-auction (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-auction]; https://polkadot.network/blog/agile-coretime-launch/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/agile-coretime-launch/]
+
+Utility: Crowdloan Contribution
+Deskripsi: Komunitas menyumbangkan DOT ke crowdloan parachain untuk mendukung bid slot auction — DOT dikunci selama lease, dikembalikan setelahnya; kontributor menerima reward token parachain
+Status: Live (legacy slot auction model; transisi ke coretime)
+Sources: https://wiki.polkadot.network/docs/learn-crowdloans (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-crowdloans]; https://polkadot.network/blog/first-parachain-auctions/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachain-auctions/]
+
+Utility: Treasury Funding
+Deskripsi: Treasury on-chain menerima 80% transaction fee, slashing rewards, coretime sales revenue — dana dikeluarkan via OpenGov referendum untuk grant, operasi, pengembangan ekosistem
+Status: Live
+Sources: https://wiki.polkadot.network/docs/learn-treasury (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-treasury]; https://polkadot.subscan.io/treasury (HIGH) [Subscan, https://polkadot.subscan.io/treasury]
+
+Utility: XCM Execution Fee
+Deskripsi: DOT dibayar sebagai fee eksekusi pesan XCM (Cross-Consensus Message) di Relay Chain dan parachain untuk komunikasi cross-chain
+Status: Live
+Sources: https://wiki.polkadot.network/docs/learn-xcm (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-xcm]; https://wiki.polkadot.network/docs/learn-fees (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-fees]
+
+Utility: Slashing Collateral
+Deskripsi: Stake validator dan nominator berfungsi sebagai collateral — dapat di-slash (dipotong) jika validator offline, equivocation, atau validasi tidak valid
+Status: Live
+Sources: https://wiki.polkadot.network/docs/learn-staking (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-staking]; https://wiki.polkadot.network/docs/learn-security (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-security]
+
+## Governance
+
+Governance Model: OpenGov (Governance v2) — sistem referenda langsung tanpa Council, dengan tracks berbasis origin (Root, Whitelisted, General, Emergency, dll.), conviction voting, dan delegation
+Voting System: Conviction voting — voting power = DOT amount × conviction multiplier (0x–6x tergantung lock period 0–32 hari)
+Voting Power: 1 DOT = 1 vote (base) × conviction multiplier; delegation memungkinkan holder mendelegasikan voting power ke address lain per track
+Delegation: Delegation per track — holder bisa mendelegasikan voting power ke delegate berbeda untuk track berbeda (misal: Root track ke technical expert, Treasury track ke komunitas)
+Proposal System: Siapa pun bisa mengajukan proposal dengan deposit DOT — proposal masuk ke track sesuai origin, melewati prepare, decision, confirm period sebelum eksekusi
+Treasury Governance: Treasury spends melalui OpenGov tracks (Treasury Spend track, Small Tipper, Big Tipper, Small Spender, Big Spender) — membutuhkan referendum approval
+Status: Live (OpenGov launch EV-020 2022-11; menggantikan Governance v1 dengan Council + Technical Committee)
+Sources: https://wiki.polkadot.network/docs/learn-governance (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-governance]; https://polkadot.network/blog/opengov/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/opengov/]; https://gov.polkadot.network/ (HIGH) [OpenGov Dashboard, https://gov.polkadot.network/]
+
+## Inflation / Deflation
+
+Inflation Mechanism: Emisi staking rewards — target ~10% inflasi tahunan dari total supply, didistribusikan ke validator dan nominator per era; inflasi aktual bervariasi tergantung participation rate (staking ratio)
+Emission Schedule: Per era (~24 jam) — reward dihitung berdasarkan target inflasi tahunan dan participation rate; formula: inflation = ideal_stake_ratio / actual_stake_ratio × target_inflation
+Burn Mechanism: Tidak ada burn mechanism sistematis — fee transaksi 80% ke treasury (tidak dibakar), 20% ke validator; slashing sebagian ke treasury, sebagian dibakar tergantung konfigurasi runtime
+Buyback: Tidak ada program buyback resmi dari treasury atau foundation
+Supply Reduction: Tidak ada mekanisme supply reduction terstruktur — supply hanya berkurang jika slashing dibakar (bukan masuk treasury) atau dana treasury tidak digunakan (tetap ada di supply)
+Status: Live — inflasi berkelanjutan sejak NPoS activation 2020-06-18
+Sources: https://wiki.polkadot.network/docs/learn-inflation (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-inflation]; https://wiki.polkadot.network/docs/learn-staking (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-staking]; https://wiki.polkadot.network/docs/learn-treasury (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-treasury]
+
+## Holder Distribution
+
+Top Holder Concentration: tidak diungkap resmi sebagai persentase — data on-chain menunjukkan top 10 address (termasuk staking pools, exchange wallet, treasury, parachain crowdloan locks) mengontrol porsi signifikan tapi angka pasti tidak dipublikasikan resmi
+Foundation Holding: Web3 Foundation — jumlah DOT pasti tidak diungkap; bekannt menguasai porsi besar dari alokasi ICO awal
+Investor Holding: Tidak ada investor VC tradisional dengan alokasi token — ICO publik tanpa private sale
+Treasury Holding: On-chain treasury ~24.4M DOT (1.6% total supply per 2025-01-15 estimasi); Web3 Foundation off-chain treasury tidak diungkap
+Community Holding: Tidak dapat diverifikasi persentase — terdiri dari ICO contributors, staking participants, crowdloan contributors, secondary market buyers
+Whale Concentration: Tidak diungkap resmi — blockchain explorer (Subscan) menampilkan top holders tapi banyak address adalah custodial (exchange, staking pool, parachain lock) bukan individual whale
+Sources: https://polkadot.subscan.io/ (HIGH) [Subscan, https://polkadot.subscan.io/]; https://polkadot.js.org/apps/#/staking (HIGH) [Polkadot.js Apps, https://polkadot.js.org/apps/#/staking]; https://wiki.polkadot.network/docs/learn-DOT (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-DOT] — Catatan: Distribusi holder detail tidak dipublikasikan laporan resmi; hanya inferensi dari data on-chain
+
+## Major Token Events
+
+Date: 2017-10-15
+Event: Polkadot Token Sale (ICO) — EV-003
+Description: Public sale mengumpulkan 144,640.65 ETH dari 5,500+ kontributor; 10M DOT (pre-redenom) dialokasikan ke kontributor, foundation, team
+Status: Completed
+Related Historical Event ID: EV-003
+Sources: https://polkadot.network/blog/polkadot-ico-report (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-ico-report]
+
+Date: 2017-11
+Event: Parity Multisig Hack — EV-004
+Description: ~153,000 ETH (termasuk ~66% dana ICO) terkunci permanen — mengurangi treasury Web3 Foundation drastis
+Status: Completed
+Related Historical Event ID: EV-004
+Sources: https://www.parity.io/a-postmortem-on-the-parity-multi-sig-library-self-destruct/ (HIGH) [Parity Technologies, https://www.parity.io/a-postmortem-on-the-parity-multi-sig-library-self-destruct/]
+
+Date: 2020-05-26
+Event: Mainnet Genesis — EV-010
+Description: Polkadot Relay Chain live dengan Proof-of-Authority awal; DOT native token aktif tapi transfer disabled
+Status: Completed
+Related Historical Event ID: EV-010
+Sources: https://wiki.polkadot.network/docs/polkadot-history (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/polkadot-history]
+
+Date: 2020-06-18
+Event: NPoS Activation & Staking Live — EV-011
+Description: Transisi ke Nominated Proof-of-Stake; staking reward inflasi mulai berjalan; validator komunitas dipilih
+Status: Completed
+Related Historical Event ID: EV-011
+Sources: https://polkadot.network/blog/polkadot-governance/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-governance/]
+
+Date: 2020-08-18
+Event: Redenomination 1:100 — EV-012
+Description: 1 DOT lama = 100 DOT baru; supply 10M → 1B; tidak ada perubahan proporsi kepemilikan
+Status: Completed
+Related Historical Event ID: EV-012
+Sources: https://polkadot.network/blog/polkadot-redenomination/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-redenomination/]
+
+Date: 2020-12-18
+Event: Transfer Activation & Full Governance — EV-013
+Description: Transfer token DOT diaktifkan via referendum; governance on-chain penuh beroperasi
+Status: Completed
+Related Historical Event ID: EV-013
+Sources: https://polkadot.network/blog/token-transfers-enabled/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/token-transfers-enabled/]
+
+Date: 2021-11-11
+Event: First Parachain Auction — EV-016
+Description: Slot auction parachain dimulai; DOT bonding untuk parachain slot mulai beroperasi
+Status: Completed
+Related Historical Event ID: EV-016
+Sources: https://polkadot.network/blog/first-parachain-auctions/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachain-auctions/]
+
+Date: 2021-12-18
+Event: First Parachains Live — EV-017
+Description: 5 parachain pertama (Acala, Moonbeam, Astar, Parallel, Clover) onboarding; crowdloan DOT dikunci
+Status: Completed
+Related Historical Event ID: EV-017
+Sources: https://polkadot.network/blog/first-parachains-live/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachains-live/]
+
+Date: 2022-11
+Event: OpenGov Launch — EV-020
+Description: Governance v2 (OpenGov) live; menggantikan Council + Technical Committee dengan referenda langsung, delegation, tracks
+Status: Completed
+Related Historical Event ID: EV-020
+Sources: https://polkadot.network/blog/opengov/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/opengov/]
+
+Date: 2024-05
+Event: Agile Coretime Launch — EV-024
+Description: Model coretime menggantikan slot auction; DOT digunakan membeli coretime bulk/on-demand, tidak bonding jangka panjang
+Status: Completed
+Related Historical Event ID: EV-024
+Sources: https://polkadot.network/blog/agile-coretime-launch/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/agile-coretime-launch/]
+
+Date: 2024-07
+Event: XCM v3 Launch — EV-025
+Description: XCM v3 dengan programmable asset transfers, remote locking, fee payment abstraction — memperluas utilitas DOT cross-chain
+Status: Completed
+Related Historical Event ID: EV-025
+Sources: https://polkadot.network/blog/xcm-v3/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/xcm-v3/]
+
+## Official Token Resources
+
+Official Documentation: https://wiki.polkadot.network/docs/learn-DOT
+Whitepaper: https://polkadot.network/PolkaDotPaper.pdf
+Governance: https://gov.polkadot.network/ ; https://polkadot.polkassembly.io/
+Explorer: https://polkadot.subscan.io/ ; https://polkadot.js.org/apps/
+Contract: tidak memiliki kontrak (native token)
+GitHub: https://github.com/paritytech/polkadot-sdk
+Dashboard: https://polkadot.subscan.io/treasury ; https://tokenterminal.com/terminal/projects/polkadot ; https://defillama.com/chain/Polkadot
+Sources: https://wiki.polkadot.network/docs/learn-DOT (HIGH); https://polkadot.network/PolkaDotPaper.pdf (HIGH); https://gov.polkadot.network/ (HIGH); https://polkadot.subscan.io/ (HIGH); https://github.com/paritytech/polkadot-sdk (HIGH)
+
+## SUMMARY
+
+Status: Live
+Supply Type: Inflationary (no max supply, ~10% target annual inflation for staking)
+Total Supply: 1,529,029,635.77 DOT (per 2025-01-15 estimate, increasing each block)
+Distribution Categories: ICO Public Contributors, Web3 Foundation, Parity Technologies, Staking Rewards (ongoing), Treasury (on-chain), Crowdloan/Parachain Bonding, Ecosystem Grants
+Utility Count: 9 (Governance, Staking, Validator Bonding, Fee Payment, Parachain Bonding/Coretime, Crowdloan Contribution, Treasury Funding, XCM Execution Fee, Slashing Collateral)
+Governance: OpenGov (direct referenda, conviction voting, delegation per track, treasury spends via referendum)
+Major Token Events: ICO (2017-10-15), Parity Hack (2017-11), Mainnet Genesis (2020-05-26), NPoS Activation (2020-06-18), Redenomination (2020-08-18), Transfer Activation (2020-12-18), First Parachain Auction (2021-11-11), First Parachains Live (2021-12-18), OpenGov Launch (2022-11), Agile Coretime Launch (2024-05), XCM v3 (2024-07)
+
+## Open Threads
+
+- Distribusi alokasi ICO granular (persentase untuk foundation, team, contributors, dll.) tidak pernah dipublikasikan resmi oleh Web3 Foundation — hanya diketahui total 10M DOT pre-redenom dialokasikan, tapi breakdown tidak transparan.
+- Jadwal vesting untuk alokasi Web3 Foundation dan Parity Technologies tidak diungkap — tidak dapat diverifikasi apakah ada cliff, linear vesting, atau unlock bebas.
+- Ukuran dan komposisi Web3 Foundation off-chain treasury real-time tidak diungkap — tidak bisa memverifikasi holding DOT foundation saat ini.
+- Tidak ada laporan holder distribution resmi (top 10, top 100, Gini coefficient, dll.) — hanya inferensi dari block explorer yang mencakup address custodial (exchange, staking pool, parachain lock).
+- Inflation rate aktual per era tidak dipublikasikan dalam format ringkasan periodik — hanya bisa dihitung dari data on-chain per era.
+- Burn mechanism dari slashing (bagian yang dibakar vs masuk treasury) bergantung pada konfigurasi runtime yang bisa berubah via governance — tidak ada parameter tetap yang terdokumentasi permanen.
+- Agile Coretime revenue impact pada treasury income jangka panjang — baru live Mei 2024, data historis terbatas untuk proyeksi supply/demand DOT untuk coretime.
+- XCM v3 fee payment abstraction memungkinkan bayar fee XCM dengan aset non-DOT — dampak jangka panjang terhadap demand DOT sebagai fee token belum teramati.
+- JAM (Polkadot 2.0) gray paper mengusulkan arsitektur baru yang mungkin mengubah tokenomics DOT secara fundamental — masih tahap riset/testnet, tidak ada spesifikasi tokenomics final.
+- Klasifikasi regulasi DOT (security vs utility vs payment token) oleh FINMA Swiss tidak dikonfirmasi resmi — mempengaruhi kemampuan foundation mentransfer/menjual treasury token.

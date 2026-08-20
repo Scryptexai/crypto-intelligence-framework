@@ -1,0 +1,126 @@
+PROJECT: Yearn Finance
+
+STATUS AIRDROP
+
+Sudah dilakukan. Yearn Finance mendistribusikan SELURUH 30.000 YFI supply awal melalui fair launch berbasis liquidity provision selama ~1 minggu pada minggu ketiga Juli 2020 — tiga pool distribusi: Curve yPool, YFI/DAI Balancer, dan YFI/yPool-LP Balancer; tanpa premine, tanpa alokasi founder/tim, tanpa VC, tanpa ICO; Andre Cronje tidak mengambil satu token pun. Ini adalah distribusi fair launch paling kanonik di era DeFi. (HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]; (HIGH) [Bitstamp Andre Cronje profile, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]
+
+AIRDROP EVENTS
+
+AD-001: Fair Launch Distribution (3 Liquidity Pools)
+Tanggal: 2020-07 (minggu ketiga; distribusi berlangsung ~1 minggu)
+Tipe: Liquidity-provision based fair launch (bukan retroactive, bukan claim portal)
+Alokasi: 30.000 YFI (100% supply awal) — dibagi proporsional ke penyedia likuiditas di 3 pool: Curve yPool, YFI/DAI Balancer, YFI/yPool-LP Balancer (HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]
+Penerima: Liquidity provider yang menyetor aset ke ketiga pool selama periode distribusi; jumlah penerima unik tidak dipublikasikan resmi (LOW)
+Nilai saat klaim: Tidak berlaku dalam bentuk klaim satu kali — YFI mengalir (accrue) ke LP selama periode distribusi; harga pasar terbentuk bersamaan di DEX/CEX (lihat HARGA PASCA-DISTRIBUSI untuk titik terverifikasi terdekat)
+Kriteria: Menyediakan likuiditas di pool eligible selama window distribusi — tidak ada syarat lain, tidak ada pendaftaran (HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]
+Anti-sybil: Tidak diperlukan — distribusi berbasis kontribusi likuiditas riil (dana nyata harus disetor); farming modal besar mungkin namun berbiaya nyata (HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]
+Terkait EV: EV-002 (Fair launch YFI)
+Sitasi: Phase 3 EV-002; Phase 6 Distribution (HIGH)
+
+CONTEXT SAAT KEPUTUSAN
+
+Kondisi saat keputusan fair launch (Juli 2020):
+- Kondisi pasar: "DeFi Summer" 2020 — ledakan yield farming; Compound baru meluncurkan COMP (Juni 2020) memicu perang insentif token; likuiditas DeFi tumbuh eksponensial (MEDIUM) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]
+- Posisi project: Vault yEarn sudah dipakai organik tanpa token; deposit ~$8 juta sebelum pengumuman token (HIGH) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]
+- Kompetitor terdekat: Agregator yield awal (belum banyak); protokol lending dengan token insentif (COMP) sebagai pembanding model distribusi (MEDIUM)
+- Trigger: Cronje memilih distribusi tanpa mengambil alokasi pribadi — keputusan filosofis yang kemudian menjadi identitas proyek ("I didn't build this for it to make money" ethos) (HIGH) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]
+
+TRIGGER DAN ALTERNATIF
+
+Trigger utama: Memberi insentif likuiditas dan kepemilikan komunitas tanpa mengorbankan prinsip desentralisasi — sekaligus membedakan Yearn dari model COMP yang VC-backed (HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/].
+Alternatif tidak diambil:
+- Private sale/VC funding: ditolak eksplisit — nol modal ventura (HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]
+- Alokasi tim/founder: ditolak — Cronje berwenang mengambil alokasi namun memilih nol (HIGH) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]
+- ICO/public sale: tidak dilakukan (HIGH) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Distribusi adil ke penyedia likuiditas; kepemilikan komunitas sejak hari pertama (HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]
+- YFI sebagai token governance untuk mengarahkan protokol (HIGH) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Kelangkaan ekstrem (30.000 supply) dipilih untuk memaksimalkan nilai governance per token, bukan untuk spekulasi harga — efek harga >BTC adalah konsekuensi, bukan desain yang diumumkan — HIPOTESIS (MEDIUM)
+- Tanpa alokasi tim, keberlanjutan pendanaan kontributor belum terpecahkan saat launch — baru diselesaikan 2021 via minting governance 6.666 YFI (indikatif bahwa masalah ini tidak terantisipasi penuh) — HIPOTESIS (MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]
+
+OUTCOME PER POV
+
+POV Founder (Andre Cronje): Sukses
+- Jangka pendek: Deposit platform melonjak dari ~$8 juta ke ~$300 juta pasca pengumuman token; Yearn menjadi pusat atensi DeFi Summer (HIGH) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]
+- Jangka panjang: Status kultus dan kredibilitas abadi sebagai arsitek fair launch; namun Cronje tidak memiliki YFI secara alokasi dan kemudian mengurangi keterlibatan (2021) — imbal hasil baginya reputasional, bukan finansial langsung dari distribusi (HIGH) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]
+- Dasar: Phase 3 EV-002, EV-004 (HIGH)
+
+POV VC: Tidak relevan
+- Fair launch secara eksplisit tanpa venture capital — tidak ada alokasi investor; verdict Tidak relevan (HIGH) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]
+
+POV Retail (LP penerima distribusi): Sukses
+- Jangka pendek: LP menerima YFI dengan basis biaya oportunitas likuiditas (bukan pembelian) — harga naik dari kisaran puluhan USD saat distribusi ke ~$39.754 pada 14 September 2020 (candle terverifikasi terdekat; KuCoin baru listing 14 Sep 2020) — apresiasi >100x dalam ~2 bulan bagi yang memegang (MEDIUM) [KuCoin YFI-USDT, https://www.kucoin.com/trade/YFI-USDT]
+- Jangka panjang: Pemegang hingga Mei 2021 melihat high $94.899 (wick KuCoin 12 Mei 2021); volatilitas ekstrem sepanjang perjalanan (MEDIUM) [KuCoin YFI-USDT, https://www.kucoin.com/trade/YFI-USDT]
+- Dasar: KuCoin price history (MEDIUM)
+
+POV Community (Pengguna & governance awal): Sukses
+- Jangka pendek: Komunitas pemilik token terbentuk instan; governance YFI aktif sejak awal (HIGH) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]
+- Jangka panjang: DAO terbukti mampu bertahan tanpa founder penuh (transisi 2021) dan menyelesaikan keputusan sulit (minting 6.666 YFI, anggaran) — model governance matang (MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]
+- Dasar: Phase 3 EV-004, EV-005 (HIGH/MEDIUM)
+
+POV Developer (Engineer & strategist ekosistem): Sebagian
+- Jangka pendek: Tidak ada program grants formal saat fair launch; developer bergabung organik (MEDIUM)
+- Jangka panjang: Pendanaan kontributor baru tersedia setelah minting 2021; era v3 membuka strategi permissionless bagi pihak ketiga (MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]
+- Dasar: Phase 3 EV-005, EV-007 (MEDIUM)
+
+POV Institution (Exchange & fund awal): Sebagian
+- Jangka pendek: Listing cepat di CEX besar (termasuk Binance) memberi fee volume tinggi dari volatilitas YFI (MEDIUM) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]
+- Jangka panjang: YFI menjadi aset prestise ultra-low-supply di portofolio DeFi; namun tanpa revenue share ke holder, kasus institusional jangka panjang terbatas (MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]
+- Dasar: Phase 8 Trading Markets (MEDIUM)
+
+POV Validator: Tidak relevan
+- Yearn bukan blockchain dan tidak memiliki validator set — keamanan mewarisi Ethereum; verdict Tidak relevan (HIGH) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]
+
+POV Builder (Protokol yang berintegrasi dengan vault Yearn): Sebagian
+- Jangka pendek: Integrasi vault memberi protokol target (Curve, Aave, dll.) likuiditas tambahan otomatis (MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]
+- Jangka panjang: Hubungan simbiosis (terutama Curve Wars via Convex/Votium) bertahan lintas siklus (MEDIUM) [Cryptohopper, https://www.cryptohopper.com/currencies/detail?currency=YFI]
+- Dasar: Phase 2 Entities (MEDIUM)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 39753.87 USD (2020-09-14) [KuCoin YFI-USDT daily candle close — candle terverifikasi terdekat; KuCoin baru me-listing YFI 14 Sep 2020, sementara distribusi fair launch terjadi minggu ketiga Juli 2020 dengan harga awal kisaran puluhan USD yang tidak tercakup candle exchange ini, https://www.kucoin.com/trade/YFI-USDT] (MEDIUM)
+Harga +30 hari: 39753.87 USD (2020-09-14) [KuCoin YFI-USDT daily candle close — titik +30 hari sesungguhnya (pertengahan Agustus 2020) jatuh sebelum listing KuCoin; candle terverifikasi terdekat dipakai, https://www.kucoin.com/trade/YFI-USDT] (MEDIUM)
+Harga +90 hari: 14047.26 USD (2020-10-17) [KuCoin YFI-USDT daily candle close, https://www.kucoin.com/trade/YFI-USDT] (MEDIUM)
+Harga puncak 12 bulan pertama: 94899.40 USD (2021-05-12) [KuCoin YFI-USDT daily candle high (volatilitas ekstrem Mei 2021; volume hari itu 183 YFI — catat sebagai wick exchange-specific; agregator umum menyebut ATH ~$43-44k Sep 2020 dari data lintas-venue yang berbeda), https://www.kucoin.com/trade/YFI-USDT] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan deposit sebelum vs sesudah distribusi: Deposit platform melonjak dari ~$8 juta ke ~$300 juta pasca pengumuman token (HIGH) [Bitstamp, https://www.bitstamp.net/learn/people-profiles/andre-cronje/]
+Jumlah alamat pemegang token (unique holders): Tidak ditemukan (tidak dipublikasikan resmi; distribusi ke LP pool tanpa daftar penerima publik) (LOW)
+Jumlah alamat aktif harian sebelum vs sesudah: Tidak ditemukan (tidak ada dashboard publik era 2020 di sumber yang diakses) (LOW)
+Konsentrasi kepemilikan: Distribusi awal luas (LP-based) namun konsentrasi sekunder terbentuk via perdagangan; treasury DAO + posisi veYFI menjadi holder besar di era berikutnya — data top-holder on-chain tidak dikutip di sumber sekunder (LOW)
+Tingkat partisipasi staking: veYFI/yLockers (sejak 2022) menjadi mekanisme lock; angka partisipasi tidak dipublikasikan di sumber yang diakses (LOW)
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: distribusi via LP pool tanpa daftar penerima publik — analisis per-alamat memerlukan rekonstruksi on-chain transfer YFI minggu Juli 2020.
+Harga hari-hari pertama fair launch (Juli 2020) tidak tercakup exchange yang datanya diakses riset ini (KuCoin listing 14 Sep 2020).
+INKONSISTENSI rekor harga: ~$43k Sep 2020 (agregator umum) vs $94.899 Mei 2021 (KuCoin, volume kecil) — keduanya dicatat di Conflict Register C-003.
+
+FARMING DAN SYBIL
+
+Fair launch berbasis likuiditas riil: farming memerlukan penyetoran dana nyata ke pool eligible selama window distribusi — biaya ekonomi nyata membuat sybil tanpa modal tidak relevan; whale dapat mengakumulasi porsi besar dengan modal besar (konsekuensi desain yang diterima). Pasca-launch, akumulasi sekunder via pasar bebas terjadi tanpa batasan (MEDIUM) [FinanceFeeds, https://financefeeds.com/what-is-a-crypto-fair-launch/]
+
+PROSPEK
+
+Metrik yang terpenuhi: Distribusi 100% supply awal tersalurkan tanpa insiden; lonjakan deposit 37x; legitimasi fair launch abadi sebagai referensi industri (HIGH)
+Metrik yang tidak terpenuhi: Keberlanjutan pendanaan tim tidak terantisipasi (baru selesai 2021 via minting kontroversial); ketiadaan alokasi founder menciptakan ketergantungan pada goodwill kontributor (MEDIUM)
+Sinyal ke depan: Peran veYFI dalam retensi holder; keputusan supply tambahan via governance; kontribusi vault v3 terhadap treasury (MEDIUM)
+Penilaian: Fair launch YFI adalah distribusi paling bersih secara prinsip di dataset ini — outcome LP spektakuler, founder nol-kepemilikan namun reputasi maksimal — dengan satu kelemahan struktural: tanpa rencana pendanaan tim, DAO harus memilih minting (mengubah prinsip fixed supply) dua belas bulan kemudian (MEDIUM)
+
+PELAJARAN LINTAS PROJECT
+
+Fair launch tanpa alokasi tim menghasilkan legitimasi maksimum tetapi menunda masalah pendanaan — Yearn menyelesaikannya dengan minting 22% supply tambahan via governance, preseden bahwa "fixed supply" adalah keputusan yang dapat dibatalkan governance itu sendiri.
+Distribusi berbasis likuiditas riil (bukan klaim) menghilangkan masalah sybil tanpa mekanisme filter apa pun — biaya modal nyata adalah anti-sybil paling efektif.
+Kelangkaan supply ekstrem (30.000 token) menciptakan dinamika harga yang terlepas dari fundamental — YFI menjadi aset prestise; analisis token ultra-low-supply harus memisahkan harga-per-unit dari valuasi tersirat.
+
+OPEN THREADS
+
+- Harga YFI hari-hari pertama fair launch (Juli 2020) dari arsip exchange yang listing saat itu (di luar sumber yang diakses riset ini)
+- Jumlah unik LP penerima distribusi (rekonstruksi on-chain)
+- Dampak minting 6.666 YFI terhadap harga dan sentimen (event study)

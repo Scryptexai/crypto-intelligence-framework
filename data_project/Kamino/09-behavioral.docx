@@ -1,267 +1,417 @@
 PROJECT: Kamino Finance
 
+Strategic Objectives
+
 1. Menjadi infrastruktur DeFi inti (blue chip) di Solana dengan suite produk terintegrasi Vaults, Lending, Leverage, dan Liquidation
+· Evidence: TVL >$1B (peak $1.5B) menempatkan Kamino di top 3 Solana DeFi (Phase 8 Market Position); multi-product live sejak 2022-2024 (Phase 3 EV-002, EV-004, EV-007, EV-019)
+· Supporting Dataset: Phase 3 History, Phase 8 Market Position, Phase 4 Core Components
 
-· Evidence: TVL konsisten >$1B sejak awal 2024, mencapai puncak ~$1.5B Maret 2024 (Phase 8 Market Position, DefiLlama); Produk berkelanjutan dirilis: Vaults v1 (EV-002), K-Lend (EV-004), Multiply (EV-007), Liquidate (EV-019) — membangun tumpukan DeFi lengkap on-chain
-· Supporting Dataset: Phase 3 (EV-002, EV-004, EV-007, EV-019), Phase 8 (Market Position, Adoption Metrics), Phase 4 (Core Components)
+2. Membangun real yield berbasis fee switch yang mengalir ke KMNO stakers (veKMNO) untuk menciptakan value accrual token
+· Evidence: Fee switch diaktifkan via Governance Proposal #1 Mei 2024 (Phase 3 EV-017); revenue streams dari 4 produk (Vaults, K-Lend, Multiply, Liquidate) terdokumentasi (Phase 5 Revenue Model)
+· Supporting Dataset: Phase 3 EV-017, Phase 5 Revenue Model, Phase 6 Utility Staking
 
-2. Desentralisasi progresif melalui DAO on-chain (Realms) dengan token governance KMNO dan fee switch untuk alignment pemangku kepentingan
+3. Desentralisasi progresif melalui DAO on-chain (Realms) yang mengontrol treasury, parameter protokol, dan upgrade authority
+· Evidence: Kamino DAO formed April 2024 (Phase 3 EV-016); Realms governance active dengan proposals fee switch, season 4, treasury buyback (Phase 3 EV-017, EV-020, EV-021); upgrade authority multisig Squads v3 (Phase 4 Security Model)
+· Supporting Dataset: Phase 3 EV-016, EV-017, EV-020, EV-021, Phase 4 Security Model, Phase 7 Governance Ecosystem
 
-· Evidence: Kamino DAO dibentuk EV-016 (April 2024) di Realms; Fee Switch diaktifkan via Proposal #1 EV-017 (Mei 2024) mendistribusikan protocol fee ke veKMNO stakers; Treasury dikendalikan DAO multisig (Squads v3)
-· Supporting Dataset: Phase 3 (EV-016, EV-017), Phase 6 (Governance, Utility), Phase 2 (Entity: Kamino DAO, KMNO Token)
+4. Ekspansi ekosistem melalui integrasi mendalam dengan infrastruktur Solana (Jupiter, Wormhole, Pyth, Jito, Marinade) dan CEX listing global
+· Evidence: Integrasi Jupiter sejak 2022-06 (Phase 3 EV-003), Wormhole NTT 2024-06 (EV-018), Pyth/Switchboard oracle (Phase 4 Dependencies); Multi-CEX listing TGE same-day 5 bursa (Phase 3 EV-013, EV-014, EV-015)
+· Supporting Dataset: Phase 3 EV-003, EV-018, Phase 4 Dependencies, Phase 7 Major Integrations, Phase 8 Trading Markets
 
-3. Membangun flywheel insentif berkelanjutan melalui Points Program (Season 1-4) yang mentransisi dari off-chain points ke on-chain token emission
+5. Retensi pengguna jangka panjang melalui program insentif berkelanjutan (Points Season 1-4) yang berevolusi dari off-chain ke on-chain emission
+· Evidence: Points Season 1-3 pre-TGE drive TVL growth (Phase 3 EV-009, EV-010, EV-011); Season 4 post-TGE on-chain KMNO emission (Phase 3 EV-020); Tensor partnership cross-protocol loop (EV-009)
+· Supporting Dataset: Phase 3 EV-009, EV-010, EV-011, EV-020, Phase 6 Token Events
 
-· Evidence: Points Season 1 (EV-009) dengan Tensor partnership mendorong adopsi awal; Season 2-3 (EV-010, EV-011) ekspansi kategori; Season 4 (EV-020) post-TGE menggunakan on-chain KMNO emission program — mengubah model retention dari mercenary ke alignment jangka panjang
-· Supporting Dataset: Phase 3 (EV-009, EV-010, EV-011, EV-020), Phase 6 (Utility: Incentive/Reward), Phase 8 (Narrative: Points/Incentive Program)
+Decision Timeline
 
-4. Memanfaatkan ekosistem Solana (LSD: mSOL, JitoSOL; DEX: Jupiter, Raydium, Orca; Oracle: Pyth) sebagai lapisan dasar bukan membangun dari nol
+Keputusan: Pendirian Kamino Finance Ltd. di BVI sebagai entitas hukum (2022)
+· Trigger: Perlu legal wrapper untuk operasi protokol DeFi, pengelolaan risiko hukum, dan fondasi bisnis sebelum mainnet launch
+· Evidence: Terms of Service menunjukkan entitas BVI (Phase 1 Foundation, Phase 2 Entity Kamino Finance Ltd.)
+· Decision: Mendaftarkan perusahaan di British Virgin Islands sebagai entitas pendiri protokol
+· Immediate Result: Dasar hukum untuk pengembangan Vaults v1 dan operasi awal
+· Long-term Impact: Struktur legal tetap BVI + tim anonim; belum ada legal wrapper DAO terpisah (Cayman/Swiss) per Phase 2 Open Threads
+· Supporting Dataset: Phase 1 Foundation, Phase 2 Entity Kamino Finance Ltd., Phase 3 EV-001
 
-· Evidence: Vaults mendeploy posisi CLMM di Raydium/Orca (Phase 4 Core Components); K-Lend & Multiply menggunakan Pyth sebagai oracle primer (Phase 4 Security Model); Multiply memanfaatkan Jupiter flashloan (Phase 4 Technical Upgrade History EV-007); Wormhole NTT untuk cross-chain (EV-018)
-· Supporting Dataset: Phase 4 (Core Components, External Dependencies), Phase 7 (Major Integrations, External Dependencies), Phase 3 (EV-003, EV-007, EV-018)
+Keputusan: Mainnet Launch Vaults v1 CLMM Auto-Rebalancing tanpa testnet publik terpisah (2022-03)
+· Trigger: Peluang pasar CLMM di Solana (Raydium/Orca baru launch); kebutuhan time-to-market cepat
+· Evidence: Blog "Introducing Kamino" Maret 2022 (Phase 3 EV-002); tidak ada catatan testnet di Phase 1/3
+· Decision: Deploy langsung ke mainnet Solana dengan vaults SOL/USDC, mSOL/SOL, JitoSOL/SOL
+· Immediate Result: TVL awal masuk; posisi sebagai first-mover CLMM manager otomatis
+· Long-term Impact: Menjadi fondasi produk utama; Vaults v2 upgrade 2023-01 (EV-002 upgrade) menambah auto-compound & multi-pool
+· Supporting Dataset: Phase 3 EV-002, Phase 4 Technical Upgrade History Vaults v1→v2
 
-5. Meluncurkan token KMNO dengan distribusi berbasis kontribusi (points holders) dan listing multi-CEX same-day untuk likuiditas instan dan distribusi global
+Keputusan: Integrasi Jupiter sebagai routing swap default untuk Vault rebalancing (2022-06)
+· Trigger: Kebutuhan best execution untuk rebalancing berkala vault CLMM; Jupiter sebagai aggregator terdepan Solana
+· Evidence: Kamino Blog Jupiter Integration (Phase 3 EV-003); Jupiter Docs integrations (Phase 2 Entity Jupiter)
+· Decision: Embed Jupiter Swap API v6 ke Vaults Program untuk semua operasi swap rebalancing
+· Immediate Result: Efisiensi eksekusi swap meningkat; dependency kritis ke Jupiter terbentuk
+· Long-term Impact: Jupiter menjadi dependency kritis (Phase 4 Dependencies, Phase 7 Major Integrations); Multiply kemudian juga menggunakan Jupiter flashloan (EV-007)
+· Supporting Dataset: Phase 3 EV-003, Phase 4 Dependencies Jupiter, Phase 7 Integration Jupiter
 
-· Evidence: TGE 10 April 2024 (EV-012) claim live untuk Points Season 1-3 holders, team, investor, treasury; Listing bersamaan di Binance, Coinbase, Bybit, Gate.io, KuCoin (EV-013, EV-014, EV-015) — strategi "fair launch" via points + CEX liquidity bootstrap
-· Supporting Dataset: Phase 3 (EV-012, EV-013, EV-014, EV-015), Phase 6 (TGE, Distribution, Major Token Events), Phase 8 (Trading Markets)
+Keputusan: Launch K-Lend v1 Pooled Lending (2022-09)
+· Trigger: Ekspansi produk dari vault-only ke full DeFi stack; permintaan pengguna untuk borrow gegen vault positions
+· Evidence: Kamino Docs K-Lend Overview (Phase 3 EV-004); Phase 4 Core Components K-Lend Program
+· Decision: Deploy program lending pooled terpisah dengan utilization-based rate model, multiple reserves (SOL, USDC, mSOL, JitoSOL)
+· Immediate Result: Pasar lending baru live; TVL lending tumbuh; fondasi untuk Multiply leverage
+· Long-term Impact: K-Lend v2 2024-03 menambah isolation mode & dynamic curves (Phase 4 EV-022 upgrade); terintegrasi Multiply & Liquidate
+· Supporting Dataset: Phase 3 EV-004, Phase 4 Core Components K-Lend, Phase 4 Technical Upgrade History K-Lend v2
 
-Keputusan: Pendirian Kamino Finance Ltd. di British Virgin Islands (2022)
-· Trigger: Perlu entitas hukum untuk operasikan protokol DeFi, mengelola kontrak, compliance, dan fundraising sebelum mainnet launch
-· Evidence: Terms of Service menyebut Kamino Finance Ltd. BVI (Phase 1 Foundation); Phase 2 Entity mencatat Kamino Finance Ltd. sebagai legal entity
-· Decision: Mendaftarkan perusahaan di BVI sebagai entitas induk protokol
-· Immediate Result: Dasar hukum untuk pengembangan Vaults v1 dan Seed funding 2022
-· Long-term Impact: Structured entity untuk investor (Multicoin, Jump, Solana Ventures) dan regulatory wrapper; namun tim tetap anonim — tension antara legal entity dan anonymous team
-· Supporting Dataset: Phase 1 (Foundation), Phase 2 (Entity: Kamino Finance Ltd.), Phase 3 (EV-001)
+Keputusan: Audit berlapis (Kudelski Feb 2023, Neodyme Mei 2023, Sec3 Okt 2023) sebelum setiap produk mayor launch
+· Trigger: Keamanan dana pengguna prioritas; regulasi DeFi makin ketat; reputasi "blue chip" membutuhkan audit trail
+· Evidence: Phase 3 EV-005, EV-006, EV-008; Phase 4 Audit History 5 audit total
+· Decision: Komisi audit ke 3 firma berbeda (Kudelski, Neodyme, Sec3) untuk Vaults, K-Lend, Multiply, Liquidate
+· Immediate Result: Temuan critical/high diperbaiki pre-launch; laporan ringkas dipublikasikan
+· Long-term Impact: Audit trail lengkap membangun trust; Immunefi bug bounty $100k max (Phase 4 Security Model); re-audit pada upgrade mayor (K-Lend v2, Liquidate)
+· Supporting Dataset: Phase 3 EV-005, EV-006, EV-008, Phase 4 Audit History, Phase 4 Security Model
 
-Keputusan: Mainnet Launch Vaults v1 CLMM Auto-Rebalancing (2022-03)
-· Trigger: Solana DeFi memerlukan manajemen CLMM otomatis; Raydium CLMM/Orca Whirlpool baru tersedia; peluang first-mover
-· Evidence: Blog "Introducing Kamino" Maret 2022 (Phase 3 EV-002); Phase 4 Core Components: Vaults Program
-· Decision: Deploy Vaults v1 program ke Solana mainnet dengan auto-rebalance positions
-· Immediate Result: TVL awal masuk; produk pertama live; fondasi untuk suite produk lanjutan
-· Long-term Impact: Menjadi core product yang mendefinisikan Kamino; evolusi ke v2 (2023-01) dengan auto-compound & multi-pool
-· Supporting Dataset: Phase 3 (EV-002), Phase 4 (Technical Upgrade History EV-002, Core Components)
+Keputusan: Launch Multiply Leveraged Vaults dengan auto-loop (2023-07)
+· Trigger: Permintaan leverage yield pada LSD/SOL pairs; kompetitor MarginFi/DeltaPrime menawarkan leverage; K-Lend reserves menyediakan borrow capacity
+· Evidence: Kamino Blog Multiply Launch (Phase 3 EV-007); Phase 4 Core Components Multiply Program
+· Decision: Deploy Multiply Program otomatisasi supply→borrow→supply loop dengan health factor management, Jupiter flashloan entry/exit
+· Immediate Result: Produk leverage vault live; TVL Multiply tumbuh; user base power-user tertarik
+· Long-term Impact: Multiply v2 2024-06 health factor improvement (Phase 4 EV-025); menjadi pendorong TVL peak $1.5B; fee revenue stream baru
+· Supporting Dataset: Phase 3 EV-007, Phase 4 Core Components Multiply, Phase 4 Technical Upgrade History Multiply v2
 
-Keputusan: Luncurkan K-Lend v1 Pooled Lending (2022-09)
-· Trigger: Perlu lapisan lending native untuk support leverage (Multiply) dan yield strategies; kompetitor Solend, MarginFi sudah ada
-· Evidence: Phase 3 EV-004; Phase 4 Core Components: K-Lend Program; Phase 4 Technical Upgrade History K-Lend v1
-· Decision: Deploy K-Lend program dengan utilization-based interest rate model, multiple reserves (SOL, USDC, mSOL, JitoSOL)
-· Immediate Result: Lending market live; fondasi untuk Multiply leverage vaults
-· Long-term Impact: K-Lend v2 (2024-03) menambah isolation mode, dynamic curves; menjadi revenue source via interest spread
-· Supporting Dataset: Phase 3 (EV-004), Phase 4 (Core Components, Technical Upgrade History), Phase 5 (Revenue Model)
+Keputusan: Points Season 1 dengan Tensor Partnership (2023-11)
+· Trigger: Pre-TGE user acquisition & retention; Tensor NFT marketplace populer; cross-protocol incentive loop novelty
+· Evidence: Kamino Blog Tensor Partnership (Phase 3 EV-009); Phase 2 Entity Tensor
+· Decision: Kolaborasi Points Season 1 Kamino + Tensor simultan; pengguna farm kedua protokol
+· Immediate Result: Lonjakan TVL & aktivitas baru; ~100k+ wallets eligible TGE claim (Phase 8 Adoption Metrics)
+· Long-term Impact: Model Points Season 2-3 lanjutan (EV-010, EV-011); Season 4 post-TGE on-chain emission (EV-020); template retention program
+· Supporting Dataset: Phase 3 EV-009, EV-010, EV-011, EV-020, Phase 8 Adoption Metrics
 
-Keputusan: Integrasi Jupiter Aggregator untuk Vault Rebalancing & Multiply Flashloans (2022-06, 2023-07)
-· Trigger: Butuh swap routing efisien untuk vault rebalance & flashloan liquidity untuk Multiply entry/exit
-· Evidence: Phase 3 EV-003 (Jupiter Integration); Phase 4 Core Components: Multiply Program menggunakan Jupiter flashloan; Phase 7 Major Integrations: Jupiter
-· Decision: Integrasi Jupiter Swap API v6 & Terminal sebagai routing default & flashloan provider
-· Immediate Result: Vault rebalance lebih efisien; Multiply launch dengan flashloan support
-· Long-term Impact: Ketergantungan kritis pada Jupiter (Phase 7 External Dependencies: Critical); alignment ekosistem Solana
-· Supporting Dataset: Phase 3 (EV-003, EV-007), Phase 4 (Core Components, Technical Upgrade History), Phase 7 (Major Integrations, External Dependencies)
+Keputusan: Token Generation Event KMNO 10B supply + Multi-CEX Listing same-day (2024-04-10)
+· Trigger: Maturity protokol (TVL >$1B, 4 produk live, DAO ready); investor/team liquidity event; market window Solana bull run
+· Evidence: Kamino X TGE Announcement (Phase 3 EV-012); Binance/Coinbase/Bybit/Gate.io/KuCoin announcements (EV-013, EV-014, EV-015); Solscan mint (Phase 1 Token Contract)
+· Decision: Mint 10B KMNO SPL Token-2022; claim live untuk points holders, team, investor, treasury; listing 5 CEX utama hari yang sama
+· Immediate Result: KMNO transferable; price discovery immediate; deep CEX liquidity day-1; circulating supply terbentuk
+· Long-term Impact: Fee switch activation Mei 2024 (EV-017); DAO governance live (EV-016); Season 4 emission (EV-020); treasury buyback proposal (EV-021)
+· Supporting Dataset: Phase 3 EV-012, EV-013, EV-014, EV-015, Phase 6 TGE, Phase 6 Token Events
 
-Keputusan: Luncurkan Kamino Multiply (Leveraged Vaults Auto-Loop) (2023-07)
-· Trigger: Permintaan pengguna untuk leverage yield otomatis; K-Lend sudah menyediakan borrow; peluang produk diferensiasi vs competitor
-· Evidence: Phase 3 EV-007; Phase 4 Core Components: Multiply Program; Phase 4 Technical Upgrade History Multiply v1
-· Decision: Deploy Multiply program mengotomatisasi looping (supply→borrow→supply) dengan health factor management & Jupiter flashloan
-· Immediate Result: Produk leverage vaults live; menarik TVL signifikan untuk LSD pairs (JitoSOL, mSOL)
-· Long-term Impact: Multiply v2 (2024-06) improvement health factor; menjadi revenue source (borrow interest + management fees); risiko liquidation management → mendorong Liquidate program
-· Supporting Dataset: Phase 3 (EV-007), Phase 4 (Core Components, Technical Upgrade History), Phase 5 (Revenue Model), Phase 8 (Narrative: Leveraged Yield)
-
-Keputusan: Audit Berulang dengan Multi-Auditor (Kudelski 2023-02, Neodyme 2023-05, Sec3 2023-10, Re-audit 2024)
-· Trigger: Keamanan dana pengguna prioritas; produk baru (Multiply, Liquidate) memerlukan validasi; regulasi/standar DeFi Solana
-· Evidence: Phase 3 EV-005, EV-006, EV-008; Phase 4 Audit History (5 audits total); Phase 4 Security Model
-· Decision: Mengontrak auditor ternama (Kudelski, Neodyme, Sec3) untuk setiap major release; re-audit pada upgrade besar (K-Lend v2, Liquidate, Multiply v2)
-· Immediate Result: Temuan critical/high diperbaiki pre-deployment; laporan ringkas dipublikasikan
-· Long-term Impact: Reputasi keamanan tinggi; bug bounty Immunefi $100k max; tidak ada exploit mayor post-launch (Phase 8 Open Threads)
-· Supporting Dataset: Phase 3 (EV-005, EV-006, EV-008), Phase 4 (Audit History, Security Model), Phase 7 (Infrastructure Providers)
-
-Keputusan: Token Generation Event KMNO dengan Claim Points Holders & Multi-CEX Listing Same-Day (2024-04-10)
-· Trigger: Matangnya protokol (TVL >$1B), DAO readiness, komunitas menunggu token; butuh likuiditas instan & price discovery
-· Evidence: Phase 3 EV-012, EV-013, EV-014, EV-015; Phase 6 TGE, Major Token Events; Phase 8 Trading Markets
-· Decision: Mint 10B KMNO; claim live untuk Points Season 1-3, team, investor, treasury; listing bersamaan Binance, Coinbase, Bybit, Gate.io, KuCoin
-· Immediate Result: KMNO transferable; pasar sekunder terbentuk; likuiditas CEX mendalam day-1; distribusi global instan
-· Long-term Impact: Tokenomics fixed supply 10B; fee switch activation (EV-017) memberi utility staking; Season 4 emission (EV-020) dari treasury allocation; governance DAO aktif
-· Supporting Dataset: Phase 3 (EV-012-015), Phase 6 (TGE, Distribution, Major Token Events), Phase 8 (Trading Markets, Liquidity)
-
-Keputusan: Pembentukan Kamino DAO di Realms & Governance On-Chain (2024-04-15)
-· Trigger: Post-TGE memerlukan governance terdesentralisasi untuk parameter protokol, treasury, upgrade authority
-· Evidence: Phase 3 EV-016; Phase 6 Governance; Phase 2 Entity: Kamino DAO; Phase 7 Governance Ecosystem
-· Decision: Deploy DAO di Realms (SPL Governance); treasury menerima alokasi KMNO; proposal on-chain untuk parameter & spending
-· Immediate Result: Governance live; Proposal #1 Fee Switch (EV-017) dilewati Mei 2024
-· Long-term Impact: Progresif decentralization; upgrade authority masih multisig tim (Phase 4 Known Limitations); treasury management via proposal (EV-021 buyback)
-· Supporting Dataset: Phase 3 (EV-016), Phase 6 (Governance), Phase 2 (Entity: Kamino DAO), Phase 7 (Governance Ecosystem)
+Keputusan: Formasi Kamino DAO di Realms (SPL Governance) (2024-04-15)
+· Trigger: Post-TGE decentralization roadmap; community ownership; regulatory trend DAO-first
+· Evidence: Governance Forum & Realms launch (Phase 3 EV-016); Phase 2 Entity Kamino DAO; Phase 7 Governance Ecosystem
+· Decision: Deploy DAO di Realms; treasury alokasi KMNO; proposal system on-chain; multisig Squads v3 execution
+· Immediate Result: Governance on-chain live; proposal #1 fee switch diajukan & lulus (EV-017)
+· Long-term Impact: Semua parameter protokol (fee, emission, upgrade) terkontrol DAO; treasury management proposal aktif (EV-021)
+· Supporting Dataset: Phase 3 EV-016, EV-017, Phase 2 Entity Kamino DAO, Phase 7 Governance Ecosystem
 
 Keputusan: Aktivasi Fee Switch via Proposal #1 (2024-05)
-· Trigger: Janji tokenomics "real yield" ke KMNO holders; DAO formed, treasury funded, revenue streams live
-· Evidence: Phase 3 EV-017; Phase 6 Utility: Staking/Fee Switch; Phase 5 Revenue Model (Protocol Fee Switch); Phase 8 Narrative: Real Yield
-· Decision: Governance vote mengaktifkan fee switch mengarahkan sebagian protocol fees (Vaults, K-Lend, Multiply, Liquidate) ke veKMNO stakers
-· Immediate Result: Staker KMNO mulai menerima fee distribution; veKMNO voting power aktif
-· Long-term Impact: Alignment token holder-protocol; insentif staking & locking; tekanan beli KMNO untuk yield; narrative "Real Yield" tervalidasi
-· Supporting Dataset: Phase 3 (EV-017), Phase 6 (Utility, Governance), Phase 5 (Revenue Model), Phase 8 (Narrative)
+· Trigger: Janji tokenomics "real yield"; community pressure post-TGE; DAO governance live
+· Evidence: Governance Forum Proposal #1 (Phase 3 EV-017); Realms Vote Record (Phase 3 EV-017); Phase 6 Utility Staking
+· Decision: Vote on-chain mengaktifkan fee switch mengarahkan portion protocol fees ke KMNO stakers (veKMNO)
+· Immediate Result: Stakers mulai menerima fee distribution; veKMNO voting power active
+· Long-term Impact: Value accrual token KMNO terealisasi; staking participation rate jadi metrik kunci (Phase 6 Open Threads); buyback proposal lanjutan (EV-021)
+· Supporting Dataset: Phase 3 EV-017, Phase 6 Utility Staking, Phase 6 Token Events EV-017
 
-Keputusan: Integrasi Wormhole NTT untuk Cross-Chain Vault Deposits (2024-06)
-· Trigger: Narasi multi-chain & restaking; pengguna ingin deposit aset non-native (ETH, USDC Ethereum) ke vault tanpa bridging manual
-· Evidence: Phase 3 EV-018; Phase 4 Core Components (Cross-chain: Wormhole NTT); Phase 7 External Dependencies (Wormhole: High), Major Integrations
-· Decision: Adopsi Wormhole Native Token Transfers (NTT) untuk bridging aset non-native ke Solana vault
-· Immediate Result: Cross-chain deposit UX seamless; vault multichain menjadi mungkin
-· Long-term Impact: Ketergantungan pada Wormhole NTT (Critical/High); ekspansi addressable market ke pengguna Ethereum/EVM; risiko bridge exploit
-· Supporting Dataset: Phase 3 (EV-018), Phase 4 (System Architecture, Core Components), Phase 7 (External Dependencies, Major Integrations)
+Keputusan: Integrasi Wormhole NTT untuk Cross-chain Vault Deposits (2024-06)
+· Trigger: Narrative multi-chain/Restaking; pengguna ingin deposit ETH/USDC Ethereum ke vault Solana; Wormhole NTT matang
+· Evidence: Kamino Blog Cross-chain Vault (Phase 3 EV-018); Wormhole NTT Docs (Phase 2 Entity Wormhole, Phase 7 Dependency Wormhole)
+· Decision: Adopsi Wormhole Native Token Transfers untuk bridging aset non-native ke Kamino Vaults
+· Immediate Result: Cross-chain deposit UX seamless; vault multichain awal live
+· Long-term Impact: Dependency ke Wormhole NTT registry (Phase 4 Known Limitations); emerging narrative cross-chain DeFi (Phase 8 Narrative)
+· Supporting Dataset: Phase 3 EV-018, Phase 4 Dependencies Wormhole, Phase 7 Integration Wormhole NTT, Phase 8 Narrative Cross-chain
 
-Keputusan: Luncurkan Liquidate Program (Permissionless Liquidation Marketplace) (2024-08)
-· Trigger: Multiply & K-Lend memerlukan liquidation efisien; bad debt risk; MEV democratization narrative
-· Evidence: Phase 3 EV-019; Phase 4 Core Components: Liquidate Program; Phase 4 Technical Upgrade History Liquidate v1; Phase 8 Narrative: Liquidation Marketplace
-· Decision: Deploy Liquidate program terpisah dengan Dutch auction discount curve, permissionless keeper registration
-· Immediate Result: Liquidator bersaing; bad debt risk turun; transparansi on-chain
-· Long-term Impact: Revenue source baru (liquidation fees); mengurangi ketergantungan pada keeper internal; komponen infrastruktur DeFi lengkap
-· Supporting Dataset: Phase 3 (EV-019), Phase 4 (Core Components, Technical Upgrade History), Phase 5 (Revenue Model), Phase 8 (Narrative)
+Keputusan: Launch Liquidate Program Permissionless Marketplace (2024-08)
+· Trigger: Bad debt risk di K-Lend/Multiply; MEV liquidation tersentralisasi ke bot internal; permintaan permissionless competition
+· Evidence: Kamino Blog Liquidate Launch (Phase 3 EV-019); Phase 4 Core Components Liquidate Program; Phase 4 Technical Upgrade History Liquidate Launch
+· Decision: Deploy program terpisah Liquidate dengan Dutch auction discount curve, permissionless keeper registration
+· Immediate Result: Liquidator bersaing terbuka; bad debt risk turun; transparansi on-chain
+· Long-term Impact: Revenue stream baru (liquidation fees); MEV democratization narrative (Phase 8 Narrative); parameter auction fixed until governance change (Phase 4 Known Limitations)
+· Supporting Dataset: Phase 3 EV-019, Phase 4 Core Components Liquidate, Phase 4 Technical Upgrade History, Phase 8 Narrative Liquidation
 
-Keputusan: Points Season 4 — Transisi ke On-Chain KMNO Emission (2024-10)
-· Trigger: Post-TGE, points off-chain tidak sustainable; butuh incentive alignment dengan tokenomics; retention pasca-airdrop
-· Evidence: Phase 3 EV-020; Phase 6 Utility: Incentive/Reward (Season 4); Phase 4 Technical Upgrade History Season 4 Emission Program; Phase 8 Narrative: Points/Incentive
-· Decision: Deploy on-chain emission program untuk Season 4 rewards (vault, lend, multiply, referral) menggantikan off-chain Merkle root
-· Immediate Result: Rewards KMNO on-chain verified; tidak perlu trust indexer; emission parameter controlled by DAO
-· Long-term Impact: Sustainable incentive loop; treasury KMNO terkuras seiring emission (butuh buyback proposal EV-021); data transparan
-· Supporting Dataset: Phase 3 (EV-020), Phase 6 (Utility, Inflation/Deflation), Phase 4 (Technical Upgrade History), Phase 8 (Narrative)
+Keputusan: Points Season 4 On-chain KMNO Emission (2024-10)
+· Trigger: Post-TGE token utility diperlukan; off-chain points tidak scalable/transparent; emission dari treasury allocation
+· Evidence: Kamino Blog Season 4 (Phase 3 EV-020); Governance Forum Season 4 Parameters (Phase 3 EV-020); Phase 6 Inflation/Emission
+· Decision: Deploy program emisi KMNO on-chain untuk rewards vault/lend/multiply/referral; ganti Merkle root claim
+· Immediate Result: Rewards real-time on-chain; KMNO utility tambahan; Season 4 ongoing
+· Long-term Impact: Emission schedule dari treasury (bukan inflation); buyback proposal untuk offset (EV-021); sustainable tokenomics test
+· Supporting Dataset: Phase 3 EV-020, Phase 6 Inflation/Emission, Phase 6 Token Events EV-020
 
-Keputusan: Proposal Treasury Buyback & Burn (2024-12)
-· Trigger: Season 4 emission mengurangi treasury; komunitas meminta deflationary pressure; fee switch revenue tersedia
-· Evidence: Phase 3 EV-021; Phase 6 Inflation/Deflation (Buyback Proposed); Phase 5 Financial Risk (Treasury Concentration); Phase 8 Market Timeline
-· Decision: Governance proposal mengusulkan alokasi treasury revenue untuk buyback KMNO di pasar & burn
-· Immediate Result: Diskusi forum berlangsung; belum dieksekusi menunggu quorum
-· Long-term Impact: Jika dilewatkan → deflationary mechanism, support harga, align treasury management dengan token holders
-· Supporting Dataset: Phase 3 (EV-021), Phase 6 (Inflation/Deflation, Major Token Events), Phase 5 (Financial Risk), Phase 8 (Market Timeline)
+Keputusan: Treasury Buyback & Burn Proposal (2024-12)
+· Trigger: Community demand deflationary pressure; treasury KMNO besar; fee switch revenue accumulating
+· Evidence: Governance Forum Treasury Proposal (Phase 3 EV-021); Realms Proposal Status (Phase 3 EV-021); Phase 6 Inflation Buyback Proposed
+· Decision: Proposal on-chain alokasi treasury revenue untuk buyback KMNO di pasar & burn
+· Immediate Result: Diskusi komunitas berlangsung; belum dieksekusi menunggu quorum
+· Long-term Impact: Jika lulus, supply reduction mechanism aktif; treasury diversification pressure (Phase 5 Financial Risk)
+· Supporting Dataset: Phase 3 EV-021, Phase 6 Inflation Buyback, Phase 5 Financial Risk Treasury Concentration
 
-Pola 1: Arsitektur Monolitik On-Chain di Solana SVM dengan Komposabilitas CPI
+Evolution Pattern
 
-· Decision Pattern: Semua core logic (Vaults, K-Lend, Multiply, Liquidate, Token, Staking) di-deploy sebagai program Anchor/Rust terpisah namun saling terintegrasi via Cross-Program Invocation (CPI) di Solana mainnet — tidak menggunakan appchain, rollup, atau off-chain computation untuk state transitions
-· Evidence: Phase 4 System Architecture (SVM monolitik); Core Components (9 programs terpisah); Execution Environment (SVM, BPF Loader Upgradeable); Phase 7 External Dependencies (Solana: Critical)
-· Supporting Dataset: Phase 4 (System Architecture, Core Components, Execution Environment), Phase 7 (External Dependencies)
+Perubahan Strategi: Dari Single Product (Vaults) ke Full DeFi Stack Terintegrasi
+· Evidence: 2022 Vaults only (EV-002) → 2022 K-Lend added (EV-004) → 2023 Multiply leverage (EV-007) → 2024 Liquidate marketplace (EV-019); setiap produk memperkuat yang lain (Vaults supply K-Lend, K-Lend enable Multiply, Liquidate secure K-Lend/Multiply)
+· Supporting Dataset: Phase 3 History EV-002, EV-004, EV-007, EV-019; Phase 4 Core Components 4 core programs
 
-Pola 2: Upgrade Bertahap dengan Multi-Audit Pre-Deployment
+Perubahan Teknologi: Upgrade Bertahap dengan Audit Pre-Launch
+· Evidence: Vaults v1→v2 (2023-01), K-Lend v1→v2 (2024-03), Multiply v1→v2 (2024-06); setiap major upgrade didahului audit (Kudelski/Neodyme/Sec3) (Phase 3 EV-005, EV-006, EV-008, Phase 4 Audit History)
+· Supporting Dataset: Phase 3 EV-005, EV-006, EV-008, Phase 4 Technical Upgrade History, Phase 4 Audit History
 
-· Decision Pattern: Setiap major product launch (Vaults v1→v2, K-Lend v1→v2, Multiply v1→v2, Liquidate v1) didahului audit oleh minimal 1 auditor ternama (Kudelski, Neodyme, Sec3); upgrade authority multisig (Squads v3) mengontrol deployment
-· Evidence: Phase 3 Security Events (EV-005, EV-006, EV-008, re-audit 2024); Phase 4 Audit History (5 audits), Technical Upgrade History (10 major upgrades), Security Model (Multisig upgrade authority), Known Limitations (upgrade authority masih multisig tim)
-· Supporting Dataset: Phase 3 (EV-005, EV-006, EV-008), Phase 4 (Audit History, Technical Upgrade History, Security Model, Known Limitations)
+Perubahan Tokenomics: Dari Points Off-chain ke Token On-chain dengan Fee Switch
+· Evidence: Season 1-3 off-chain Merkle root (EV-009, EV-010, EV-011) → TGE KMNO 10B fixed supply (EV-012) → Fee switch activation (EV-017) → Season 4 on-chain emission (EV-020) → Buyback proposal (EV-021); evolusi dari "promise" ke "real yield" terverifikasi
+· Supporting Dataset: Phase 3 EV-009, EV-010, EV-011, EV-012, EV-017, EV-020, EV-021; Phase 6 Token Events, Phase 6 Inflation/Deflation
 
-Pola 3: Oracle Layering — Pyth Primary + Switchboard Fallback
+Perubahan Governance: Dari Team-Controlled ke DAO On-chain dengan Multisig Timelock
+· Evidence: Program upgrade authority multisig tim inti (Phase 4 Security Model) → DAO Realms formed April 2024 (EV-016) → Proposal #1 fee switch passed (EV-017) → Treasury proposals active (EV-021); upgrade authority belum fully DAO-timelocked (Phase 4 Known Limitations)
+· Supporting Dataset: Phase 3 EV-016, EV-017, EV-021; Phase 4 Security Model, Phase 4 Known Limitations, Phase 7 Governance Ecosystem
 
-· Decision Pattern: Semua pricing kritis (K-Lend rates, Multiply health factor, Liquidate auction, Vault rebalance) menggunakan Pyth pull oracle sebagai primary dengan Switchboard V2 sebagai fallback; staleness threshold & confidence interval checks di-enforce on-chain
-· Evidence: Phase 4 Security Model (Oracle Security), Core Components (K-Lend, Multiply, Liquidate, Vaults OracleConfig), Known Limitations (Pyth update frequency dependency), Phase 7 External Dependencies (Pyth: Critical, Switchboard: High)
-· Supporting Dataset: Phase 4 (Security Model, Core Components, Known Limitations), Phase 7 (External Dependencies)
+Perubahan Ekosistem: Dari Solana-Native ke Cross-Chain via Wormhole NTT
+· Evidence: 2022-2023 pure Solana assets (SOL, mSOL, JitoSOL) → 2024-06 Wormhole NTT integration (EV-018) untuk ETH, USDC Ethereum; dependency baru ke Wormhole guardians & NTT registry
+· Supporting Dataset: Phase 3 EV-018, Phase 4 Dependencies Wormhole, Phase 7 Integration Wormhole NTT, Phase 8 Narrative Cross-chain
 
-Pola 4: Komposabilitas Ekosistem — Build di Atas Primitif Solana, Bukan Membangun dari Nol
+Technical Decision Pattern
 
-· Decision Pattern: Vaults menggunakan Raydium CLMM & Orca Whirlpool pools; Multiply menggunakan Jupiter flashloan & swap; K-Lend reserves menggunakan mSOL (Marinade), JitoSOL (Jito); Wormhole NTT untuk bridging; tidak membangun AMM, LSD, atau bridge sendiri
-· Evidence: Phase 4 Core Components (Vaults CPI ke Raydium/Orca, Multiply Jupiter integration); Phase 7 Major Integrations (Jupiter, Raydium, Orca, Marinade, Jito, Wormhole); External Dependencies (Raydium/Orca, Jupiter, Marinade, Jito, Wormhole all High/Critical)
-· Supporting Dataset: Phase 4 (Core Components), Phase 7 (Major Integrations, External Dependencies)
+Pola 1: Modular Program Architecture dengan CPI Integration
+· Decision Pattern: Setiap produk (Vaults, K-Lend, Multiply, Liquidate, Token, Staking) sebagai program Anchor/Rust terpisah dengan PDA accounts; saling terintegrasi via Cross-Program Invocation (CPI) bukan monolith
+· Evidence: Phase 4 Core Components 9 programs terpisah; Phase 4 System Architecture "monolitik on-chain dengan komponen off-chain"; GitHub repo per program (kamino-vaults, kamino-lend, kamino-multiply, kamino-liquidate)
+· Supporting Dataset: Phase 4 Core Components, Phase 4 System Architecture, Phase 4 Execution Environment
 
-Pola 5: Account Model PDA-Centric dengan Token Extensions (Token-2022)
+Pola 2: Dependency pada Infrastructure Solana Native (Pyth, Jupiter, SPL Token-2022)
+· Decision Pattern: Memilih infrastructure terbaik di Solana (Pyth oracle, Jupiter swap/flashloan, SPL Token-2022 extensions) daripada build sendiri; accept dependency risk untuk speed & quality
+· Evidence: Phase 4 Dependencies Pyth (Critical), Jupiter (Critical), SPL Token-2022 (KMNO token); Phase 7 Major Integrations Jupiter, Pyth, Wormhole; Phase 4 Known Limitations oracle staleness & Jupiter dependency
+· Supporting Dataset: Phase 4 Dependencies, Phase 7 Major Integrations, Phase 4 Known Limitations
 
-· Decision Pattern: State management menggunakan PDA (Program Derived Address) untuk positions, obligations, stakes; KMNO token menggunakan SPL Token-2022 dengan transfer hook untuk fee switch, metadata pointer
-· Evidence: Phase 4 Core Components (PDA accounts untuk Vaults, K-Lend, Multiply); KMNO Token Program (Token-2022 Extensions); Security Model (PDA access control); Known Limitations (10KB account size limit)
-· Supporting Dataset: Phase 4 (Core Components, Security Model, Known Limitations), Phase 6 (Token Information: Token-2022)
+Pola 3: Upgrade Authority Multisig Squads v3 (Belum Fully Immutable/DAO-Timelocked)
+· Decision Pattern: Program upgrade authority di multisig Squads v3 dikontrol tim inti; DAO governance Realms mengontrol parameter tapi bukan upgrade code langsung; timelock proposal di forum tapi tidak on-chain enforced
+· Evidence: Phase 4 Security Model "Upgrade authority disimpan di Multisig (Squads v3) dikendalikan tim inti — bukan fully immutable"; Phase 4 Known Limitations "Program upgrade authority masih bersifat multisig tim inti"; Phase 7 Infrastructure Providers Squads Protocol
+· Supporting Dataset: Phase 4 Security Model, Phase 4 Known Limitations, Phase 7 Infrastructure Providers
 
-Pola 1: Seed Funding Satu Ronde (2022) + Grant Solana Foundation — Tidak Ada Follow-on Round
+Pola 4: Off-chain Indexer + On-chain Merkle Root untuk Points (Season 1-3) → Fully On-chain Emission (Season 4)
+· Decision Pattern: Awalnya trusted off-chain indexer hitung points, commit Merkle root on-chain untuk claim (gas efficient, flexible) → post-TGE migrasi ke program emisi on-chain (transparent, verifiable, composable)
+· Evidence: Phase 3 EV-009, EV-010, EV-011 (Season 1-3 off-chain); EV-020 (Season 4 on-chain); Phase 4 Core Components Points Program; Phase 4 Known Limitations "Points Season 1-3 calculation sepenuhnya off-chain — tidak ada verifikasi on-chain hingga Merkle root commit"
+· Supporting Dataset: Phase 3 EV-009, EV-010, EV-011, EV-020, Phase 4 Core Components, Phase 4 Known Limitations
 
-· Decision Pattern: Fundraising hanya Seed 2022 (Multicoin, Jump, Solana Ventures) + ecosystem grant; tidak ada Series A/B publik; operasi didanai protocol revenue & DAO treasury post-TGE
-· Evidence: Phase 5 Funding History (Seed 2022 undisclosed amount, Grant); Financial Dependencies (VC investors, Foundation grants, Protocol revenue, DAO treasury); Phase 2 Investors (Multicoin, Jump, Solana Ventures); Phase 3 No funding events post-2022
-· Supporting Dataset: Phase 5 (Funding History, Financial Dependencies), Phase 2 (Investors), Phase 3 (History - no funding events post-2022)
+Pola 5: Rust/Anchor + TypeScript SDK + Yellowstone gRPC Indexing Stack
+· Decision Pattern: Smart contract Rust/Anchor; client TypeScript SDK; real-time indexing Yellowstone gRPC/Geyser; Docker/GitHub Actions CI/CD; standard Solana toolchain
+· Evidence: Phase 4 Programming Languages, Development Framework, Current Technical Stack; GitHub repo structure (Phase 4 Official Technical Resources)
+· Supporting Dataset: Phase 4 Programming Languages, Phase 4 Development Framework, Phase 4 Current Technical Stack, Phase 4 Official Technical Resources
 
-Pola 2: Revenue Diversification Multi-Product Sejak Awal
+Financial Decision Pattern
 
-· Decision Pattern: Membangun 4 revenue stream paralel: Vault fees (management + performance), K-Lend interest spread, Multiply borrow interest + management fees, Liquidate fees — mengurangi ketergantungan single product
-· Evidence: Phase 5 Revenue Model (4 named streams live); Phase 3 Product launches (EV-002 Vaults, EV-004 K-Lend, EV-007 Multiply, EV-019 Liquidate); Phase 8 Narrative (Real Yield/Fee Switch)
-· Supporting Dataset: Phase 5 (Revenue Model), Phase 3 (EV-002, EV-004, EV-007, EV-019), Phase 8 (Narrative)
+Pola 1: Single Seed Round (2022) + Grants + Protocol Revenue → No Follow-on Funding
+· Decision Pattern: Seed round 2022 dari Multicoin, Jump, Solana Ventures (amount undisclosed) + Solana Foundation grants → post-launch fully funded by protocol revenue (Vault fees, K-Lend spread, Multiply fees, Liquidate fees) + DAO treasury KMNO allocation; tidak ada Series A/B publik
+· Evidence: Phase 5 Funding History hanya 1 Seed round + 1 Grant; Phase 5 Fundraising Mechanism "VC Funding: Seed round 2022... tidak ada ronde pendanaan baru sejak Seed 2022"; Phase 5 Financial Risk "Funding Dependency on Early Investors: Tidak ada ronde pendanaan baru sejak Seed 2022"
+· Supporting Dataset: Phase 5 Funding History, Phase 5 Fundraising Mechanism, Phase 5 Financial Risk
 
-Pola 3: Treasury DAO Denominated KMNO dengan Proposal Buyback untuk Diversifikasi
+Pola 2: Treasury Denominated Primarily in Native Token (KMNO) dengan Fee Switch Revenue Flow
+· Decision Pattern: Treasury DAO menerima alokasi KMNO di TGE (EV-016); fee switch mengarahkan protocol revenue ke stakers (EV-017) bukan treasury; treasury composition tidak transparan (Phase 5 Treasury); buyback proposal untuk convert revenue ke KMNO buyback (EV-021)
+· Evidence: Phase 5 Treasury "Treasury Composition: Tidak diungkap... Native Token Holdings: KMNO... alokasi treasury DAO tidak dipublikasikan"; Phase 3 EV-016, EV-017, EV-021; Phase 5 Financial Risk "Treasury Concentration: Treasury sebagian besar denominasi KMNO"
+· Supporting Dataset: Phase 5 Treasury, Phase 3 EV-016, EV-017, EV-021, Phase 5 Financial Risk
 
-· Decision Pattern: Treasury sebagian besar KMNO (native token); EV-021 proposal buyback & burn menggunakan protocol revenue untuk diversifikasi & deflationary pressure
-· Evidence: Phase 5 Treasury (Composition undisclosed, KMNO heavy), Financial Risk (Treasury Concentration), Fundraising Mechanism (DAO Treasury post-TGE); Phase 3 EV-021; Phase 6 Inflation/Deflation (Buyback Proposed)
-· Supporting Dataset: Phase 5 (Treasury, Financial Risk, Fundraising Mechanism), Phase 3 (EV-021), Phase 6 (Inflation/Deflation)
+Pola 3: Revenue Transparency Minimal (No Public Reports, On-chain Only)
+· Decision Pattern: Tidak mempublikasikan laporan revenue bulanan/kuartalan; revenue data hanya on-chain (fee receiver accounts, program fees); third-party (DefiLlama, Token Terminal) mengestimasi dari on-chain
+· Evidence: Phase 5 Revenue History "Tidak diungkap... no public revenue reports, no transparency dashboard"; Phase 5 Official Financial Resources tidak ada Transparency Report; Phase 8 Open Threads "Protocol Revenue (Fees) Historical: tidak dipublikasikan resmi"
+· Supporting Dataset: Phase 5 Revenue History, Phase 5 Official Financial Resources, Phase 8 Open Threads
 
-Pola 4: Tokenomics Fixed Supply (10B) dengan Emisi Hanya dari Alokasi Treasury/Ecosystem (Bukan Mint Baru)
+Pola 4: Token Allocation Opaque (No Public Breakdown Percentages)
+· Decision Pattern: Kategori alokasi diketahui (community, team, investor, treasury, ecosystem) tapi persentase exact tidak dipublikasikan; on-chain vesting accounts visible tapi tidak dilabeli resmi
+· Evidence: Phase 6 Distribution "persentase exact tidak dipublikasikan resmi"; Phase 6 Vesting Schedule "tidak diketahui" untuk semua kategori; Phase 6 Open Threads "Persentase alokasi token exact per kategori... tidak dipublikasikan resmi"
+· Supporting Dataset: Phase 6 Distribution, Phase 6 Vesting Schedule, Phase 6 Open Threads
 
-· Decision Pattern: Max supply = Total supply = Initial mint 10B KMNO; Season 4 emission sourced dari treasury allocation yang sudah di-mint TGE; tidak ada inflationary minting mechanism di token program
-· Evidence: Phase 6 Supply (Fixed, Max 10B), Inflation/Deflation (No protocol inflation, emission from treasury), Token Information (Token-2022, no mint authority mentioned); Phase 3 EV-012 (TGE 10B mint), EV-020 (Season 4 on-chain emission from treasury)
-· Supporting Dataset: Phase 6 (Supply, Inflation/Deflation, Token Information), Phase 3 (EV-012, EV-020)
+Ecosystem Decision Pattern
 
-Pola 5: Transparansi Finansial Terbatas — No Public Revenue Reports, Transparency Dashboard Minimal
+Pola 1: Deep Integration dengan Solana Core Infrastructure (Jupiter, Pyth, Jito, Marinade) sebagai Dependency Strategis
+· Decision Pattern: Build pada infrastructure terbaik Solana bukan kompetisi; Jupiter untuk swap/flashloan (Critical), Pyth untuk oracle (Critical), JitoSOL/mSOL sebagai core assets (High), Wormhole untuk cross-chain (High)
+· Evidence: Phase 4 Dependencies Critical/High ratings; Phase 7 Major Integrations Jupiter, Pyth, Wormhole, Jito, Marinade; Phase 2 Entities Jupiter, Marinade Finance, Jito Labs, Wormhole, Pyth Network
+· Supporting Dataset: Phase 4 Dependencies, Phase 7 Major Integrations, Phase 2 Entities
 
-· Decision Pattern: Tidak mempublikasikan laporan pendapatan bulanan/kuartalan; treasury dashboard hanya Realms raw token accounts; DefiLlama/Token Terminal third-party data saja
-· Evidence: Phase 5 Revenue History (Undisclosed), Official Financial Resources (No Transparency Report), Treasury Dashboard (Realms only); Phase 8 Open Threads (Revenue historical, Circulating supply verification)
-· Supporting Dataset: Phase 5 (Revenue History, Official Financial Resources), Phase 8 (Open Threads, Adoption Metrics)
+Pola 2: Partnership Incentive-Driven (Tensor Points Season 1) untuk User Acquisition Cross-Protocol
+· Decision Pattern: Kolaborasi points program dengan protokol komplementer (Tensor NFT marketplace) menciptakan loop farming; bukan integrasi teknis tapi incentive alignment
+· Evidence: Phase 3 EV-009 Tensor Partnership; Phase 2 Entity Tensor; Phase 7 Applications Tensor; Phase 8 Narrative Points/Incentive
+· Supporting Dataset: Phase 3 EV-009, Phase 2 Entity Tensor, Phase 7 Applications, Phase 8 Narrative
 
-Pola 1: Deep Integration dengan Ekosistem Solana Core (Jupiter, Pyth, Raydium/Orca, Marinade, Jito) sebagai Keputusan Strategis Bukan Tactical
+Pola 3: Multi-CEX Listing Strategy TGE Same-Day untuk Liquidity & Distribution Maximization
+· Decision Pattern: Koordinasi listing 5 CEX utama (Binance, Coinbase, Bybit, Gate.io, KuCoin) hari TGE yang sama; bukan sequential listing; memastikan deep liquidity immediate & global distribution
+· Evidence: Phase 3 EV-013, EV-014, EV-015 same date 2024-04-10; Phase 8 Trading Markets 5 CEX live; Phase 2 Entities Binance, Coinbase, Bybit, Gate.io, KuCoin
+· Supporting Dataset: Phase 3 EV-013, EV-014, EV-015, Phase 8 Trading Markets, Phase 2 Entities
 
-· Decision Pattern: Setiap produk inti bergantung pada infrastruktur ekosistem: Vaults→Raydium/Orca, K-Lend/Multiply→Pyth, Multiply→Jupiter, Assets→Marinade/Jito; integrasi dibangun ke dalam arsitektur produk bukan sebagai afterthought
-· Evidence: Phase 7 External Dependencies (Solana, Pyth, Jupiter, Raydium/Orca, Marinade, Jito all Critical/High); Major Integrations (Jupiter, Wormhole, Tensor, Phantom, Backpack, CEXs); Phase 4 Core Components (CPI calls ke Raydium/Orca, Jupiter flashloan, Pyth oracle)
-· Supporting Dataset: Phase 7 (External Dependencies, Major Integrations), Phase 4 (Core Components, System Architecture)
+Pola 4: Wallet Ecosystem Broad Support (Phantom, Backpack, Solflare, Glow, Trust, Exodus, Ledger) Tanpa Eksklusivitas
+· Decision Pattern: Integrasi wallet sebisa banyak via Wallet Adapter standard; Phantom & Backpack mendapat fitur tambahan (xNFT, native UX) tapi tidak eksklusif
+· Evidence: Phase 7 Wallet Ecosystem 7 wallets supported; Phase 2 Entities Phantom, Backpack; Phase 7 Applications Phantom, Backpack
+· Supporting Dataset: Phase 7 Wallet Ecosystem, Phase 2 Entities, Phase 7 Applications
 
-Pola 2: Partnership Incentive Alignment via Points/Token Co-Farming (Tensor Season 1, Season 3 Jito)
+Pola 5: Developer Ecosystem Open Source Core Programs + Internal Infrastructure
+· Decision Pattern: Core programs (Vaults, K-Lend, Multiply, Liquidate) open source di GitHub; SDK, IDL, docs publik; tapi indexer, bots, frontend partial private; tidak ada grant program resmi besar selain DAO proposal (EV-021)
+· Evidence: Phase 7 Developer Ecosystem GitHub org, SDK, API, IDL; "Partial — core programs open source, some infrastructure private"; Phase 3 EV-021 DAO Grants proposed
+· Supporting Dataset: Phase 7 Developer Ecosystem, Phase 3 EV-021
 
-· Decision Pattern: Points Season 1 diklaim bersama Tensor (NFT marketplace) menciptakan cross-protocol loop; Season 3 bonus JitoSOL/restaking vaults alignment dengan Jito narrative
-· Evidence: Phase 3 EV-009 (Tensor Partnership), EV-011 (Season 3 Jito); Phase 7 Major Integrations (Tensor, Jito); Phase 8 Narrative (Points/Incentive, LSD/Restaking)
-· Supporting Dataset: Phase 3 (EV-009, EV-011), Phase 7 (Major Integrations), Phase 8 (Narrative)
+Governance Decision Pattern
 
-Pola 3: Multi-Wallet & Multi-CEX Strategy untuk Distribusi & Akses Global
+Pola 1: Token-Weighted Voting via Realms (SPL Governance) dengan veKMNO dari Staking
+· Decision Pattern: 1 KMNO = 1 vote (staked → veKMNO); delegation supported; proposal creation threshold & quorum parameterized; execution via Squads multisig after vote pass
+· Evidence: Phase 6 Governance "Token-weighted voting via Realms... 1 KMNO = 1 vote (staked KMNO/veKMNO)"; Phase 3 EV-016 DAO Formation; Phase 7 Governance Ecosystem Kamino DAO
+· Supporting Dataset: Phase 6 Governance, Phase 3 EV-016, Phase 7 Governance Ecosystem
 
-· Decision Pattern: Native integration Phantom, Backpack (xNFT), Solflare, Glow, Ledger; TGE listing 5 CEX utama (Binance, Coinbase, Bybit, Gate.io, KuCoin) same-day untuk likuiditas & geographic reach
-· Evidence: Phase 7 Wallet Ecosystem (7 wallets supported), Exchange Ecosystem (5 CEX + 3 DEX), Major Integrations (Phantom, Backpack, Multi-CEX); Phase 3 EV-013, EV-014, EV-015
-· Supporting Dataset: Phase 7 (Wallet Ecosystem, Exchange Ecosystem, Major Integrations), Phase 3 (EV-013, EV-014, EV-015)
+Pola 2: Progressive Decentralization — Parameter Control First, Upgrade Authority Later
+· Decision Pattern: DAO mengontrol parameter (fee switch, emission, treasury spending) sejak Day 1 post-TGE; upgrade authority masih multisig tim inti (Squads v3); timelock/DAO upgrade proposal di forum tapi belum on-chain enforced
+· Evidence: Phase 3 EV-017 Fee Switch (parameter), EV-020 Season 4 params, EV-021 Treasury spending; Phase 4 Security Model "Upgrade authority disimpan di Multisig... bukan fully immutable"; Phase 4 Known Limitations "Program upgrade authority masih bersifat multisig tim inti"
+· Supporting Dataset: Phase 3 EV-017, EV-020, EV-021, Phase 4 Security Model, Phase 4 Known Limitations
 
-Pola 4: Cross-Chain Expansion via Wormhole NTT (Bukan Native Multi-Chain Deployment)
+Pola 3: Active Governance Cycle — Proposals Berkala (Fee Switch, Season 4, Treasury Buyback)
+· Decision Pattern: Rata-rata 1 major proposal per kuartal post-TGE; proposal #1 Mei 2024 (fee switch), Season 4 Okt 2024 (emission), Treasury Buyback Des 2024; community forum diskusi aktif sebelum on-chain
+· Evidence: Phase 3 EV-017 (Mei 2024), EV-020 (Okt 2024), EV-021 (Des 2024); Phase 6 Governance "Status: Active"; Phase 7 Governance Ecosystem DAO active
+· Supporting Dataset: Phase 3 EV-017, EV-020, EV-021, Phase 6 Governance, Phase 7 Governance Ecosystem
 
-· Decision Pattern: Ekspansi multi-chain dilakukan melalui Wormhole NTT bridging aset non-native ke vault Solana, bukan deploy program ke chain lain (Eclipse, Sonic, EVM L2)
-· Evidence: Phase 3 EV-018 (Wormhole NTT Integration); Phase 4 System Architecture (Cross-chain: Wormhole NTT); Phase 7 External Dependencies (Wormhole: High), Major Integrations (Wormhole NTT); Phase 8 Open Threads (Multi-chain expansion plans)
-· Supporting Dataset: Phase 3 (EV-018), Phase 4 (System Architecture), Phase 7 (External Dependencies, Major Integrations), Phase 8 (Open Threads)
+Pola 4: Treasury Management via Proposal — No Autonomous Budget
+· Decision Pattern: Treasury tidak punya budget otonom; setiap pengeluaran (grants, buyback, strategic) butuh proposal & vote; custodian Squads multisig eksekusi pasca-vote
+· Evidence: Phase 3 EV-021 Treasury Buyback Proposal "masih diskusi menunggu quorum"; Phase 5 Treasury "Treasury Custodian: Kamino DAO Multisig (Squads v3)"; Phase 6 Governance "Treasury Governance: DAO Treasury... controlled by Realms governance; spending proposals require vote"
+· Supporting Dataset: Phase 3 EV-021, Phase 5 Treasury, Phase 6 Governance
 
-Pola 5: Developer Ecosystem Open Source Partial dengan SDK/IDL Public
+Risk Response Pattern
 
-· Decision Pattern: Core programs open source (GitHub mono-repo); SDK TypeScript, Anchor IDL, Developer Docs publik; tapi indexer, bots, frontend infra teilweise private
-· Evidence: Phase 7 Developer Ecosystem (SDK, API, IDL, Open Source Repo, Developer Portal, Hackathon, Grants); Phase 4 Current Technical Stack (GitHub Actions, Docker); Phase 2 Entity (GitHub repo)
-· Supporting Dataset: Phase 7 (Developer Ecosystem), Phase 4 (Current Technical Stack), Phase 2 (Entity: Repository)
+Pola 1: Pre-emptive Multi-Auditor Security Reviews Sebelum Setiap Major Launch/Upgrade
+· Decision Pattern: Komisi audit ke 3 firma berbeda (Kudelski, Neodyme, Sec3) untuk setiap produk/upgrade mayor; temuan critical/high wajib diperbaiki pre-deploy; re-audit pada upgrade v2
+· Evidence: Phase 3 EV-005 (Kudelski Vaults/K-Lend Feb 2023), EV-006 (Neodyme Mei 2023), EV-008 (Sec3 Okt 2023); Phase 4 Audit History 5 audits total; Phase 4 Security Model "Audit Coverage: Multiple audits... temuan Critical/High diperbaiki via program upgrade"
+· Trigger: Major product launch (Vaults, K-Lend, Multiply, Liquidate) atau major upgrade (K-Lend v2, Multiply v2, Liquidate v1)
+· Response: Engage auditors → remediate findings → deploy → publish summary
+· Result: Zero major exploits post-launch (Phase 8 Open Threads "Security Incident History: tidak ada insiden keamanan mayor tercatat"); Immunefi bug bounty $100k max active
+· Supporting Dataset: Phase 3 EV-005, EV-006, EV-008, Phase 4 Audit History, Phase 4 Security Model, Phase 8 Open Threads
 
-Pola 1: Governance Progresif — DAO Formation Post-TGE dengan Realms (SPL Governance)
+Pola 2: Oracle Redundancy (Pyth Primary + Switchboard Fallback) untuk Mitigasi Price Feed Failure
+· Decision Pattern: K-Lend & Multiply menggunakan Pyth pull oracle primary; Switchboard V2 fallback configured; staleness threshold & confidence interval checks on-chain; tidak single point of failure oracle
+· Evidence: Phase 4 Dependencies Pyth (Critical), Switchboard (High); Phase 4 Security Model "Oracle Security: Pyth pull oracle... Switchboard V2 pull feeds sebagai fallback; staleness threshold & confidence interval checks"; Phase 4 Known Limitations "Multiply health factor calculation bergantung pada Pyth price feed update frequency... selama volatility ekstrem health factor bisa stale sebentar"
+· Trigger: Oracle staleness, price manipulation risk, network congestion
+· Response: Dual oracle architecture dengan fallback logic di program code
+· Result: Tidak ada bad debt akibat oracle failure tercatat; tapi known limitation stale health factor saat volatility ekstrem
+· Supporting Dataset: Phase 4 Dependencies, Phase 4 Security Model, Phase 4 Known Limitations
 
-· Decision Pattern: DAO dibangun setelah token live (EV-016 April 2024), menggunakan Realms on-chain; token-weighted voting (1 KMNO = 1 vote via veKMNO); delegation supported; proposal execution via multisig/timelock
-· Evidence: Phase 3 EV-016, EV-017; Phase 6 Governance (Model, Voting System, Delegation, Proposal System, Treasury Governance); Phase 2 Entity (Kamino DAO); Phase 7 Governance Ecosystem (DAO, Realms)
-· Supporting Dataset: Phase 3 (EV-016, EV-017), Phase 6 (Governance), Phase 2 (Entity: Kamino DAO), Phase 7 (Governance Ecosystem)
+Pola 3: Permissionless Liquidation Marketplace (Liquidate Program) untuk Mitigasi Bad Debt & MEV Centralization
+· Decision Pattern: Alih-alih liquidator internal/whitelisted, deploy permissionless Dutch auction marketplace; siapa pun bisa jadi liquidator; kompetisi menekan discount & memastikan efisiensi
+· Evidence: Phase 3 EV-019 Liquidate Launch; Phase 4 Core Components Liquidate Program; Phase 4 Security Model "Liquidation Protection: Health factor real-time check; Dutch auction discount curve mencegah toxic liquidation; permissionless liquidator registration"; Phase 8 Narrative Liquidation Marketplace
+· Trigger: Bad debt accumulation risk di K-Lend/Multiply; MEV liquidation profit tersentralisasi ke few bots
+· Response: Deploy Liquidate program v1 Agustus 2024; Dutch auction parameters fixed until governance change
+· Result: Bad debt risk turun; liquidator competition live; revenue stream baru; parameter auction belum adaptif (Known Limitation)
+· Supporting Dataset: Phase 3 EV-019, Phase 4 Core Components, Phase 4 Security Model, Phase 8 Narrative
 
-Pola 2: Fee Switch sebagai Mekanisme Alignment Token Holder — Protocol Revenue Sharing via veKMNO
+Pola 4: Regulatory Compliance via BVI Entity + CEX Listing Standards (Coinbase) + Anonymous Team
+· Decision Pattern: Entitas hukum BVI (Kamino Finance Ltd.) untuk legal wrapper; Coinbase listing menandakan compliance bar tinggi; tim tetap anonim (pseudonim) tanpa doxxing; tidak ada legal wrapper DAO terpisah (Cayman/Swiss) yet
+· Evidence: Phase 1 Foundation "Founding Entity: Kamino Finance Ltd. (BVI)"; Phase 2 Entity Kamino Finance Ltd. "Legal entity"; Phase 3 EV-014 Coinbase Listing; Phase 2 Entity Kamino Team "sepenuhnya pseudonim"; Phase 2 Open Threads "Identitas legal pendiri... tetap sepenuhnya pseudonim... perlu verifikasi apakah ada entitas hukum tambahan"
+· Trigger: Global regulatory uncertainty (securities law, AML, DeFi regulation)
+· Response: BVI entity + compliance untuk CEX listing + anonymous core team; DAO governance sebagai decentralization signal
+· Result: Operational continuity maintained; Coinbase/US access achieved; regulatory risk remains open (Phase 5 Financial Risk "Regulatory & Legal Risk: Entitas BVI + tim anonim — ketidakpastian regulasi global")
+· Supporting Dataset: Phase 1 Foundation, Phase 2 Entities, Phase 3 EV-014, Phase 5 Financial Risk, Phase 2 Open Threads
 
-· Decision Pattern: Fee switch diaktifkan via Proposal #1 (EV-017 Mei 2024) setelah DAO formed; portion of protocol fees (Vaults, K-Lend, Multiply, Liquidate) directed to KMNO stakers (veKMNO); menciptakan real yield narrative
-· Evidence: Phase 3 EV-017; Phase 6 Utility (Staking/Fee Switch), Governance; Phase 5 Revenue Model (Protocol Fee Switch); Phase 8 Narrative (Real Yield/Fee Switch)
-· Supporting Dataset: Phase 3 (EV-017), Phase 6 (Utility, Governance), Phase 5 (Revenue Model), Phase 8 (Narrative)
+Pola 5: Market Downturn Response — Product Expansion & Incentive Programs (Points) untuk Retensi TVL
+· Decision Pattern: Saat bear market 2022-2023, fokus product shipping (K-Lend, Multiply) + Points Season 1-3 pre-TGE untuk drive TVL; post-TGE Season 4 on-chain emission untuk retain liquidity
+· Evidence: Phase 3 timeline 2022-2023 product launches during bear; EV-009, EV-010, EV-011 Points Seasons drive TVL growth; Phase 8 Market Timeline TVL peak $1.5B Mar 2024 pre-TGE; Phase 8 Adoption Metrics TVL ~$1.2B Oct 2024 post-TGE
+· Trigger: Crypto winter 2022-2023, TVL pressure, user retention challenge
+· Response: Ship lending & leverage products; launch points programs dengan escalating rewards; Tensor partnership cross-protocol
+· Result: TVL growth melalui bear market; successful TGE dengan deep liquidity; post-TGE TVL retention via Season 4
+· Supporting Dataset: Phase 3 History 2022-2024, Phase 3 EV-009, EV-010, EV-011, EV-020, Phase 8 Market Timeline, Phase 8 Adoption Metrics
 
-Pola 3: Parameter Protocol Diatur via On-Chain Proposal (K-Lend v2 Isolation Mode, Season 4 Emission, Liquidate Parameters)
+Recurring Behavioral Pattern
 
-· Decision Pattern: Upgrade produk & parameter risiko (isolation mode, rate curves, emission rates, auction curves) melalui governance proposal & vote, bukan unilateral team decision
-· Evidence: Phase 3 EV-020 (Season 4 parameters), EV-021 (Treasury proposal); Phase 4 Technical Upgrade History (K-Lend v2, Multiply v2, Liquidate launch via governance); Phase 6 Governance (Proposal System); Phase 8 Narrative (DAO Governance)
-· Supporting Dataset: Phase 3 (EV-020, EV-021), Phase 4 (Technical Upgrade History), Phase 6 (Governance), Phase 8 (Narrative)
+Pola 1: Ship Product → Audit → Launch → Iterate (v2) dengan Audit Ulang
+· Evidence: Vaults v1 (Mar 2022) → Kudelski/Neodyme audit (Feb-Mei 2023) → Vaults v2 (Jan 2023, actually before audit? timeline check: EV-002 Mar 2022 launch, EV-002 upgrade v2 2023-01, EV-005 Kudelski Feb 2023 — so v2 before audit? But audit covered v1/v2); K-Lend v1 (Sep 2022) → audit → K-Lend v2 (Mar 2024) → re-audit; Multiply v1 (Jul 2023) → Sec3 audit (Oct 2023) → Multiply v2 (Jun 2024) → re-audit; Liquidate v1 (Aug 2024) → Neodyme audit (Jun 2024 pre-launch). Pattern: audit sering overlap dengan upgrade cycle.
+· Supporting Dataset: Phase 3 EV-002, EV-004, EV-007, EV-019, EV-005, EV-006, EV-008, Phase 4 Technical Upgrade History, Phase 4 Audit History
 
-Pola 4: Upgrade Authority Masih Multisig Tim (Squads v3) — Belum Fully Decentralized ke DAO
+Pola 2: Integrasi dengan Market Leader Solana (Jupiter, Jito, Marinade, Pyth) sebagai Default Choice
+· Evidence: Jupiter swap/flashloan (EV-003, EV-007), JitoSOL core asset (EV-002, EV-011), mSOL core asset (EV-002), Pyth oracle (all lending/leverage), Wormhole NTT (EV-018); tidak build alternative sendiri
+· Supporting Dataset: Phase 3 EV-003, EV-007, EV-002, EV-011, EV-018, Phase 4 Dependencies, Phase 7 Major Integrations
 
-· Decision Pattern: Program upgrade authority dipegang Squads v3 multisig tim inti; DAO mengontrol treasury & parameter tapi belum upgrade authority; tim anonim — centralization risk acknowledged
-· Evidence: Phase 4 Security Model (Program Authority multisig tim), Known Limitations (Upgrade authority multisig tim, bukan immutable/timelock DAO); Phase 2 Entity (Kamino Team anonim); Phase 7 Infrastructure Providers (Squads v3 Critical)
-· Supporting Dataset: Phase 4 (Security Model, Known Limitations), Phase 2 (Entity: Kamino Team), Phase 7 (Infrastructure Providers)
+Pola 3: Incentive Program Berkelanjutan (Points Season 1→2→3→4) dengan Eskalasi Kompleksitas
+· Evidence: Season 1 (Nov 2023) basic vault/lend points + Tensor; Season 2 (Jan 2024) multiply/borrow/referral categories + multiplier; Season 3 (Mar 2024) Jito/restaking bonus; Season 4 (Oct 2024) on-chain KMNO emission; setiap season tambah kategori & mekanisme baru
+· Supporting Dataset: Phase 3 EV-009, EV-010, EV-011, EV-020, Phase 6 Token Events
 
-Pola 5: Treasury Spending via Governance Proposal (Buyback, Grants, Emission Adjustments)
+Pola 4: Governance Proposal Berkala Major Parameter (Fee Switch, Emission, Treasury) Setiap ~Kuartal
+· Evidence: Proposal #1 Mei 2024 (Fee Switch), Season 4 params Okt 2024, Treasury Buyback Des 2024; forum diskusi aktif antar proposal
+· Supporting Dataset: Phase 3 EV-017, EV-020, EV-021, Phase 6 Governance, Phase 7 Governance Ecosystem
 
-· Decision Pattern: Semua pengeluaran treasury (buyback EV-021, grants proposed, season 4 emission) memerlukan proposal & vote DAO; tidak ada discretionary spending oleh tim
-· Evidence: Phase 3 EV-021 (Buyback proposal), EV-020 (Season 4 emission params via governance); Phase 6 Governance (Treasury Governance); Phase 5 Fundraising Mechanism (DAO Treasury); Phase 7 Governance Ecosystem (DAO)
-· Supporting Dataset: Phase 3 (EV-020, EV-021), Phase 6 (Governance), Phase 5 (Fundraising Mechanism), Phase 7 (Governance Ecosystem)
+Pola 5: Transparansi On-chain > Off-chain Reporting (Revenue, Treasury, Token Distribution)
+· Evidence: Revenue tidak ada laporan publik (Phase 5 Revenue History); treasury composition tidak transparan (Phase 5 Treasury); token allocation percentages tidak dipublikasikan (Phase 6 Distribution); semua data tersedia on-chain (program accounts, token accounts, governance votes) tapi butuh technical skill untuk query
+· Supporting Dataset: Phase 5 Revenue History, Phase 5 Treasury, Phase 6 Distribution, Phase 6 Open Threads, Phase 8 Open Threads
 
-Pola 1: Security-First — Multi-Audit, Bug Bounty, No Major Exploit Response Needed
+Strategic Trade-offs
 
-· Decision Pattern: Proaktif: 5 audits (Kudelski 2x, Neodyme 2x, Sec3 1x) pre/post major launches; Immunefi bug bounty $100k max; tidak ada insiden keamanan mayor post-launch yang memerlukan emergency response (Phase 8 Open Threads: no security incident recorded)
-· Evidence: Phase 3 Security Events (EV-005, EV-006, EV-008, re-audits); Phase 4 Audit History (5 audits), Security Model (Bug Bounty Immunefi), Known Limitations; Phase 8 Open Threads (Security Incident History)
-· Supporting Dataset: Phase 3 (EV-005, EV-006, EV-008), Phase 4 (Audit History, Security Model, Known Limitations), Phase 8 (Open Threads)
+Trade-off 1: Desentralisasi Upgrade Authority vs Kecepatan Eksekusi & Keamanan Tim Inti
+· Decision: Upgrade authority tetap di multisig Squads v3 tim inti (bukan DAO timelock atau immutable)
+· Trade-off: Kecepatan patch critical bug & upgrade koordinasi lebih cepat (tim inti bisa deploy cepat) dikorbankan untuk desentralisasi penuh; risiko sentralisasi upgrade authority (Phase 4 Known Limitations)
+· Evidence: Phase 4 Security Model "Upgrade authority disimpan di Multisig (Squads v3) dikendalikan tim inti — bukan fully immutable"; Phase 4 Known Limitations "Program upgrade authority masih bersifat multisig tim inti — risiko sentralisasi upgrade"
+· Supporting Dataset: Phase 4 Security Model, Phase 4 Known Limitations
 
-Pola 2: Oracle Risk Mitigation — Dual Oracle (Pyth + Switchboard) dengan Staleness Checks
+Trade-off 2: Off-chain Points Calculation (Season 1-3) vs On-chain Verifiability
+· Decision: Season 1-3 points dihitung off-chain oleh indexer tepercaya, hanya Merkle root di-commit on-chain
+· Trade-off: Gas efficiency & fleksibilitas kategori reward tinggi (bisa ubah logic tanpa deploy) dikorbankan untuk trust-minimization; pengguna harus percaya operator indexer (Phase 4 Known Limitations)
+· Evidence: Phase 3 EV-009, EV-010, EV-011 off-chain; Phase 4 Core Components Points Program; Phase 4 Known Limitations "Points Season 1-3 calculation sepenuhnya off-chain — tidak ada verifikasi on-chain hingga Merkle root commit"
+· Supporting Dataset: Phase 3 EV-009, EV-010, EV-011, Phase 4 Core Components, Phase 4 Known Limitations
 
-· Decision Pattern: Mitigasi risiko oracle single point of failure via fallback Switchboard; on-chain staleness threshold & confidence interval enforcement; health factor calculation buffer
-· Evidence: Phase 4 Security Model (Oracle Security), Known Limitations (Pyth update frequency dependency); Phase 7 External Dependencies (Pyth Critical, Switchboard High); Phase 8 Ecosystem Risks (Oracle Dependency Pyth/Switchboard Confirmed)
-· Supporting Dataset: Phase 4 (Security Model, Known Limitations), Phase 7 (External Dependencies), Phase 8 (Ecosystem Risks)
+Trade-off 3: Single-Chain (Solana Only) Focus vs Multi-Chain Expansion
+· Decision: Semua produk deploy hanya di Solana; cross-chain hanya via Wormhole NTT untuk asset bridging (bukan deploy protokol ke chain lain)
+· Trade-off: Fokus resource & liquidity di Solana (deep integration, composability maksimal) dikorbankan untuk market size multi-chain; risiko sistemik Solana outage/regulatory mempengaruhi 100% operasi (Phase 8 Ecosystem Risks)
+· Evidence: Phase 4 System Architecture "Sepenuhnya berjalan di Solana mainnet"; Phase 7 Ecosystem Risks "Single Chain Dependency — Solana... risiko sistemik Solana mempengaruhi 100% operasi"; Phase 8 Ecosystem Risks Single Chain Dependency
+· Supporting Dataset: Phase 4 System Architecture, Phase 7 Ecosystem Risks, Phase 8 Ecosystem Risks
 
-Pola 3: Liquidation Marketplace Sebagai Respons Terhadap Bad Debt Risk dari Leverage Products
+Trade-off 4: Treasury Concentrated in Native Token (KMNO) vs Stablecoin Diversification
+· Decision: Treasury DAO sebagian besar KMNO (TGE allocation); fee switch revenue ke stakers bukan treasury; tidak ada diversification program ke stablecoin/yield-bearing assets yet
+· Trade-off: Alignment token holder & treasury (value capture KMNO) dikorbankan untuk runway stability; bear market KMNO price drop mengurangi treasury value drastis (Phase 5 Financial Risk)
+· Evidence: Phase 5 Treasury "Native Token Holdings: KMNO... alokasi treasury DAO tidak dipublikasikan"; Phase 5 Financial Risk "Treasury Concentration: Treasury sebagian besar denominasi KMNO — nilai bergantung pada harga KMNO"; Phase 3 EV-021 Buyback proposal sebagai response
+· Supporting Dataset: Phase 5 Treasury, Phase 5 Financial Risk, Phase 3 EV-021
 
-· Decision Pattern: Liquidate program (EV-019) dirilis setelah Multiply & K-Lend mature; permissionless Dutch auction liquidator competition mengurangi bad debt & MEV centralization
-·
+Trade-off 5: Anonymous Core Team vs Institutional Trust & Regulatory Clarity
+· Decision: Tim inti tetap pseudonim (@kamino_finance); entitas hukum BVI saja; Coinbase listing achieved tanpa doxxing tim
+· Trade-off: Privasi & keamanan tim dijaga; regulatory risk & institutional trust terbatas (tidak ada legal wrapper DAO Cayman/Swiss); investor/partner due diligence terbatas (Phase 2 Open Threads, Phase 5 Financial Risk)
+· Evidence: Phase 1 Foundation "Founders: anonim/pseudonim"; Phase 2 Entity Kamino Team "sepenuhnya pseudonim"; Phase 2 Open Threads "Identitas legal pendiri... tetap sepenuhnya pseudonim"; Phase 5 Financial Risk "Regulatory & Legal Risk: Entitas BVI + tim anonim"
+· Supporting Dataset: Phase 1 Foundation, Phase 2 Entity Kamino Team, Phase 2 Open Threads, Phase 5 Financial Risk
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. Product Shipping Velocity & Quality: Launch produk berkualitas (Vaults, K-Lend, Multiply, Liquidate) dengan audit pre-launch; iterate cepat v2 berdasarkan feedback & data
+2. Real Yield & Token Value Accrual: Fee switch activation, staking rewards, buyback proposal — buktikan KMNO bukan governance-only token
+3. Ecosystem Integration Depth: Jadi "hub" DeFi Solana terintegrasi Jupiter, Pyth, Jito, Marinade, Wormhole — bukan silo
+4. Progressive Decentralization: DAO parameter control first, upgrade authority later; community ownership nyata via veKMNO
+5. User Retention via Incentive Evolution: Points program berkelanjutan berevolusi off-chain → on-chain emission
+
+Cara Mengambil Keputusan:
+- Data-driven dari on-chain metrics (TVL, volume, health factor, oracle staleness)
+- Community signaling via governance forum sebelum proposal on-chain
+- Security-first: audit wajib pre-launch, multi-auditor, bug bounty tinggi
+- Dependency strategy: build on best-of-breed Solana infra (Jupiter, Pyth, SPL) bukan NIH
+- Incremental decentralization: parameter → treasury → upgrade authority
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Solana Ecosystem Dynamics (Jupiter updates, JitoSOL adoption, Pyth oracle reliability, Wormhole NTT maturity)
+2. Competitive Landscape (Orca, Raydium, Solend, MarginFi, Drift, Meteora moves)
+3. Token Holder Sentiment (governance forum, fee switch demand, buyback pressure)
+4. Regulatory Environment (CEX listing requirements, BVI entity constraints, anonymous team risk)
+5. Technical Constraints (Solana compute limits, account size limits, oracle latency)
+
+Pola Evolusi:
+Phase 1 (2022): Single Product (Vaults CLMM) → Product-Market Fit
+Phase 2 (2022-2023): Stack Expansion (K-Lend, Multiply) → Full DeFi Suite
+Phase 3 (2023-2024): Incentive & Security Hardening (Points, Multi-audits) → TGE Readiness
+Phase 4 (2024+): Tokenization & Decentralization (TGE, DAO, Fee Switch, On-chain Emission) → Sustainable Protocol
+
+Kekuatan Utama:
+- Deep technical moat: CLMM auto-rebalance, pooled lending isolation mode, leverage automation, permissionless liquidation
+- Best-in-class Solana integrations: Jupiter, Pyth, Jito, Marinade, Wormhole, Phantom, Backpack
+- Real revenue multiple streams: Vault fees, lending spread, multiply fees, liquidation fees
+- Active DAO governance dengan real parameter control
+- Strong CEX liquidity (Binance, Coinbase, Bybit, Gate.io, KuCoin)
+- Zero major exploits track record
+
+Kelemahan Utama:
+- Upgrade authority centralized (multisig tim inti)
+- Token allocation & treasury opacity (no public percentages, no transparency reports)
+- Single-chain dependency (Solana only)
+- Oracle & bridge dependency risk (Pyth, Wormhole)
+- Anonymous team limits institutional adoption & regulatory clarity
+- Points Season 1-3 off-chain trust assumption
+- Liquidate auction parameters fixed non-adaptive
+- No formal verification (audit only)
+
+Open Threads
+
+- Upgrade Authority Decentralization Timeline: Apakah & kapan upgrade authority akan dipindahkan ke DAO timelock/immutable? Tidak ada roadmap publik (Phase 4 Known Limitations, Phase 7 Governance Ecosystem)
+- Token Allocation Transparency: Persentase exact team/investor/community/treasury/ecosystem belum dipublikasikan; on-chain vesting accounts unlabeled (Phase 6 Distribution, Phase 6 Vesting Schedule, Phase 6 Open Threads)
+- Fee Switch Parameter Exact (bps): Proposal #1 mengaktifkan tapi persentase teknis fee ke stakers vs treasury tidak tercantum di forum/Realms (Phase 3 EV-017, Phase 6 Utility Staking, Phase 6 Open Threads)
+- Treasury Composition & Diversification Plan: Realms treasury view hanya raw token accounts; tidak ada breakdown stablecoin/yield-bearing/KMNO; tidak ada diversification proposal selain buyback (Phase 5 Treasury, Phase 5 Financial Risk, Phase 3 EV-021)
+- K-Lend v2 Isolation Mode Migration untuk Reserve Lama (SOL, USDC, mSOL, JitoSOL): Hanya reserve baru yang isolation mode; reserve lama pooled → kontagion risk (Phase 4 Known Limitations, Phase 4 Technical Upgrade History K-Lend v2)
+- Oracle Staleness Threshold Exact Values: Dokumentasi menyebut "staleness check" tapi tidak angka pasti slots (Phase 4 Known Limitations, Phase 4 Security Model)
+- Liquidate Dutch Auction Parameters: Starting discount, end discount, duration tidak terdokumentasi publik (Phase 4 Known Limitations, Phase 3 EV-019)
+- Points Season 1-3 Indexer Decentralization Plan: Akan di-decentralisasi via multiple indexer/ZK proof? (Phase 4 Known Limitations, Phase 3 EV-009, EV-010, EV-011)
+- Wormhole NTT Asset Registry Expansion Process: Kamino mengusulkan aset baru ke Wormhole DAO atau menunggu? (Phase 4 Known Limitations, Phase 3 EV-018)
+- Formal Verification Roadmap: Tidak ada Certora/Coq verification untuk core math (rebalancing, health factor, rate curves) — hanya audit manual (Phase 4 Known Limitations, Phase 4 Audit History)
+- Disaster Recovery / Pause Mechanism: Apakah ada circuit breaker / pause authority di program? Tidak terdokumentasi (Phase 4 Known Limitations)
+- Regulatory Strategy Post-Coinbase: Legal wrapper DAO (Cayman/Swiss) atau tetap BVI only? Tim doxxing plan? (Phase 2 Open Threads, Phase 5 Financial Risk)
+- Perpetual/Futures Listing Roadmap: Tidak ada KMNO perpetual di CEX utama per Okt 2024 (Phase 8 Open Threads)
+- Geographic User Distribution & KYC Data: Tidak ada data pengguna per wilayah (Phase 8 Open Threads)

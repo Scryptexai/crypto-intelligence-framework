@@ -1,0 +1,710 @@
+PROJECT: EigenLayer
+
+Event ID
+
+EV-001
+
+Date
+
+2021
+
+Event Name
+
+Pendirian Eigen Labs
+
+Event Type
+
+Founding
+
+Description
+
+Sreeram mendirikan Eigen Labs Inc. di Delaware, Amerika Serikat, untuk mengembangkan protokol restaking di atas Ethereum.
+
+Participants
+
+Sreeram Kannan, Eigen Labs Inc
+
+Location
+
+Delaware, Amerika Serikat
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas pengembang inti protokol EigenLayer terbentuk.
+
+Sources
+
+https://documents.deloitte.com/feeds/BCIR-2484369712E511E78A4C00155D0A3900
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2022
+
+Event Name
+
+Rekrutmen Core Team Awal
+
+Event Type
+
+Organization
+
+Description
+
+Luke Hackett, Robert Drost, dan Calvin Liu bergabung ke Eigen Labs sebagai Chief Strategy Officer, Chief Technology Officer, dan Chief Strategy Officer berturut-turut.
+
+Participants
+
+Luke Hackett, Robert Drost, Calvin Liu, Eigen Labs Inc
+
+Location
+
+Amerika Serikat
+
+Status
+
+Completed
+
+Immediate Result
+
+Tim inti teknis dan strategis Eigen Labs lengkap.
+
+Sources
+
+https://www.eigenlayer.xyz/
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2023-02
+
+Event Name
+
+Series A Funding — $50M
+
+Event Type
+
+Funding
+
+Description
+
+Eigen Labs mengumpulkan $50 juta dalam ronde Series A yang dipimpin oleh Blockchain Capital dengan partisipasi Coinbase Ventures, Polychain Capital, dan investor lain.
+
+Participants
+
+Eigen Labs Inc, Blockchain Capital, Coinbase Ventures, Polychain Capital
+
+Location
+
+Amerika Serikat
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana untuk pengembangan protokol restaking dan rekrutmen tim diperoleh.
+
+Sources
+
+https://www.theblock.co/post/214073/eigenlayer-raises-50-million-series-a-blockchain-capital
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2023-04-20
+
+Event Name
+
+Peluncuran Testnet Publik "Mango"
+
+Event Type
+
+Launch
+
+Description
+
+EigenLayer meluncurkan testnet publik pertama (bernama kode "Mango") yang memungkinkan pengujian restaking ETH native dan LST.
+
+Participants
+
+Eigen Labs Inc, EigenLayer, Ethereum
+
+Location
+
+Ethereum Testnet (Goerli/Holesky)
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengembang dan operator dapat menguji mekanisme restaking, delegation, dan slashing sebelum mainnet.
+
+Sources
+
+https://www.coindesk.com/tech/2023/04/20/eigenlayer-launches-testnet-for-ethereum-restaking-protocol/
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2023-06-14
+
+Event Name
+
+Peluncuran Mainnet Fase 1 — Native ETH Restaking
+
+Event Type
+
+Launch
+
+Description
+
+EigenLayer mainnet fase 1 diluncurkan, memungkinkan restaking ETH native (bukan LST) melalui kontrak StrategyManager dan DelegationManager di Ethereum mainnet.
+
+Participants
+
+Eigen Labs Inc, EigenLayer, Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+ETH native dapat di-restake untuk mengamankan AVS; TVL mulai bertumbuh.
+
+Sources
+
+https://blog.eigenlayer.xyz/eigenlayer-mainnet-launch/
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2023-07
+
+Event Name
+
+Integrasi Liquid Restaking Token (LRT) — EtherFi eETH
+
+Event Type
+
+Integration
+
+Description
+
+EtherFi meluncurkan eETH sebagai Liquid Restaking Token pertama yang terintegrasi dengan EigenLayer, memungkinkan restaking likuid untuk ETH native.
+
+Participants
+
+EtherFi, EigenLayer, Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengguna dapat restaking ETH sambil mempertahankan likuiditas melalui eETH.
+
+Sources
+
+https://www.ether.fi/
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2023-12
+
+Event Name
+
+Integrasi LRT — Renzo ezETH, Kelp rsETH, Puffer pufETH, Swell rswETH
+
+Event Type
+
+Integration
+
+Description
+
+Beberapa protokol LRT meluncurkan token masing-masing (ezETH, rsETH, pufETH, rswETH/swETH) terintegrasi dengan EigenLayer, memperluas ekosistem restaking likuid.
+
+Participants
+
+Renzo Protocol, Kelp, Puffer, Swell, EigenLayer, Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Pilihan LRT bagi pengguna bertambah; TVL EigenLayer tumbuh signifikan.
+
+Sources
+
+https://www.eigenlayer.xyz/
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2024-02
+
+Event Name
+
+Series B Funding — $100M
+
+Event Type
+
+Funding
+
+Description
+
+Eigen Labs mengumpulkan $100 juta dalam ronde Series B yang dipimpin oleh Andreessen Horowitz (a16z crypto) dengan valuasi $1 miliar.
+
+Participants
+
+Eigen Labs Inc, Andreessen Horowitz (a16z crypto)
+
+Location
+
+Amerika Serikat
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana untuk ekspansi ekosistem AVS, pengembangan EigenDA, dan pertumbuhan tim.
+
+Sources
+
+https://www.theblock.co/post/277456/eigenlayer-raises-100-million-series-b-a16z
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2024-04
+
+Event Name
+
+Peluncuran EigenDA Mainnet
+
+Event Type
+
+Launch
+
+Description
+
+EigenDA, layer ketersediaan data (Data Availability) pertama sebagai AVS di EigenLayer, meluncurkan mainnet menyediakan throughput data tinggi untuk rollup.
+
+Participants
+
+Eigen Labs Inc, EigenDA, EigenLayer, Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Rollup dapat menggunakan EigenDA untuk data availability yang diamankan oleh restaker EigenLayer.
+
+Sources
+
+https://www.eigenlayer.xyz/avs
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2024-04
+
+Event Name
+
+Peluncuran AVS — AltLayer, Dymension, Lagrange
+
+Event Type
+
+Ecosystem
+
+Description
+
+Beberapa AVS pertama meluncurkan mainnet di atas EigenLayer: AltLayer (rollup-as-a-service), Dymension (RollApp network), dan Lagrange (ZK coprocessor).
+
+Participants
+
+AltLayer, Dymension, Lagrange, EigenLayer, Eigen Labs Inc
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Operator restaker mulai mengamankan AVS nyata; slashing mechanics diuji produksi.
+
+Sources
+
+https://www.eigenlayer.xyz/avs
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2024-07
+
+Event Name
+
+Pembentukan Eigen Foundation
+
+Event Type
+
+Foundation
+
+Description
+
+Eigen Foundation didirikan di Kepulauan Cayman sebagai entitas terpisah dari Eigen Labs untuk mengelola token EIGEN, treasury protokol, dan governance ekosistem.
+
+Participants
+
+Eigen Foundation, Eigen Labs Inc
+
+Location
+
+Kepulauan Cayman
+
+Status
+
+Completed
+
+Immediate Result
+
+Struktur governance dan penerbitan token terpisah dari entitas pengembang.
+
+Sources
+
+https://github.com/eigenfoundation
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2024-10-01
+
+Event Name
+
+Token Generation Event (TGE) — EIGEN Token
+
+Event Type
+
+Token
+
+Description
+
+Token EIGEN diluncurkan (TGE) bersamaan dengan penjualan token Season 1 dan Season 2; token contract 0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9 dideploy di Ethereum mainnet.
+
+Participants
+
+Eigen Foundation, EigenLayer, Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Token EIGEN tersedia untuk transfer, staking governance, dan insentif ekosistem.
+
+Sources
+
+https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2024-10-01
+
+Event Name
+
+Listing Token EIGEN di Binance dan Bursa Lainnya
+
+Event Type
+
+Market
+
+Description
+
+Binance mendaftarkan token EIGEN untuk trading spot (pasangan EIGEN/USDT, EIGEN/BNB, EIGEN/FDUSD, EIGEN/TRY) pada hari TGE; bursa besar lain mengikuti.
+
+Participants
+
+Binance, Eigen Foundation, EigenLayer
+
+Location
+
+Global (CEX)
+
+Status
+
+Completed
+
+Immediate Result
+
+Likuiditas pasar awal untuk token EIGEN tersedia; price discovery dimulai.
+
+Sources
+
+https://www.binance.com/en/support/announcement/eigen-eigen-listing
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2024-10
+
+Event Name
+
+Peluncuran Season 2 Token Distribution dan Staking Governance
+
+Event Type
+
+Token
+
+Event Type
+
+Governance
+
+Description
+
+Eigen Foundation memulai distribusi token Season 2 dan mengaktifkan mekanisme staking EIGEN untuk governance protokol dan insentif operator.
+
+Participants
+
+Eigen Foundation, EigenLayer
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Komunitas dapat berpartisipasi dalam governance dan mendapatkan reward staking.
+
+Sources
+
+https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+---
+
+### KELOMPOKKAN BERDASARKAN TAHUN
+
+**2021**
+- EV-001: Pendirian Eigen Labs
+
+**2022**
+- EV-002: Rekrutmen Core Team Awal
+
+**2023**
+- EV-003: Series A Funding — $50M (2023-02)
+- EV-004: Peluncuran Testnet Publik "Mango" (2023-04-20)
+- EV-005: Peluncuran Mainnet Fase 1 — Native ETH Restaking (2023-06-14)
+- EV-006: Integrasi LRT — EtherFi eETH (2023-07)
+- EV-007: Integrasi LRT — Renzo, Kelp, Puffer, Swell (2023-12)
+
+**2024**
+- EV-008: Series B Funding — $100M (2024-02)
+- EV-009: Peluncuran EigenDA Mainnet (2024-04)
+- EV-010: Peluncuran AVS — AltLayer, Dymension, Lagrange (2024-04)
+- EV-011: Pembentukan Eigen Foundation (2024-07)
+- EV-012: Token Generation Event — EIGEN Token (2024-10-01)
+- EV-013: Listing Token EIGEN di Binance (2024-10-01)
+- EV-014: Peluncuran Season 2 dan Staking Governance (2024-10)
+
+---
+
+### RINGKASAN
+
+Total Events
+
+14
+
+Founding
+
+1
+
+Funding
+
+2
+
+Technology
+
+3
+
+Launch
+
+3
+
+Integration
+
+2
+
+Ecosystem
+
+1
+
+Foundation
+
+1
+
+Token
+
+2
+
+Governance
+
+1
+
+Market
+
+1
+
+Security
+
+0
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Organization
+
+1
+
+Infrastructure
+
+0
+
+Community
+
+0
+
+Product
+
+0
+
+Other
+
+0
+
+---
+
+### Open Threads
+
+- Tanggal pasti testnet "Mango" (hari-bulan) — hanya diketahui kuartal Q2 2023 dari sumber primer; perlu verifikasi dari blog resmi EigenLayer atau announcement Discord.
+- Detail ronde pendanaan tambahan (seed round, strategic round) sebelum Series A — tidak tercakup di sumber yang diverifikasi.
+- Tanggal pasti pembentukan Eigen Foundation (hari-bulan) — hanya diketahui "2024" dari repo GitHub; perlu cek dokumen pendirian Cayman atau announcement resmi.
+- Persentase alokasi token EIGEN (komunitas, investor, tim, foundation) — tidak diverifikasi di sini; perlu cross-check dengan dokumen tokenomics resmi Eigen Foundation.
+- Daftar lengkap auditor kontrak pintar EigenLayer (Spearbit, Trail of Bits, Sigma Prime, dll) dan tanggal laporan audit — tidak diidentifikasi di Phase 1-2; perlu penelusuran repo GitHub atau halaman keamanan resmi.
+- Status AVS tambahan selain AltLayer, Dymension, Lagrange — ekosistem AVS berkembang cepat; perlu daftar lengkap dari dashboard EigenLayer resmi.
+- Apakah ada Telegram resmi EigenLayer — Phase 1 mencatat "tidak diketahui"; perlu verifikasi final dari situs resmi atau pengumuman komunitas.
+- Detail mekanisme slashing yang pernah tertrigger (jika ada) pada AVS produksi — tidak ditemukan insiden keamanan publik di Phase 1-2; perlu monitoring on-chain dan blog post-mortem resmi.

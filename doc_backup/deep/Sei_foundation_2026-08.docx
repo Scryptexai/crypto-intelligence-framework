@@ -1,0 +1,29 @@
+PROJECT: Sei
+Official Name: Sei (HIGH) [Sei website https://sei.io]
+Symbol: SEI (HIGH) [CoinGecko https://www.coingecko.com/en/coins/sei-network]
+Category: Layer 1 blockchain optimized for trading / high-performance DeFi (HIGH) [Sei whitepaper https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei website https://sei.io]
+Founding Entity: Sei Labs Inc., Delaware, USA (HIGH) [Sei Labs LinkedIn https://www.linkedin.com/company/seilabs; Delaware corporate registry via OpenCorporates https://opencorporates.com/companies/us_de/7465721]
+Founders: Jayendra Jog (Co-founder, CEO); Dan Edlebeck (Co-founder, COO) (HIGH) [Sei Labs team page https://sei.io/team; Jayendra Jog Twitter https://x.com/jayendra_jog; Dan Edlebeck Twitter https://x.com/danedlebeck]
+Core Team: ~50+ engineers and operators (estimated, not officially disclosed) (MEDIUM) [Sei Labs LinkedIn employee count https://www.linkedin.com/company/seilabs/people; various team members listed on https://sei.io/team]
+Country: United States (HIGH) [Sei Labs incorporation Delaware https://opencorporates.com/companies/us_de/7465721; team location references in interviews]
+Launch Date - Testnet: 2022-03-15 (Atlantic-1 testnet) (HIGH) [Sei blog https://sei.io/blog/introducing-sei-testnet; GitHub releases https://github.com/sei-protocol/sei-chain/releases/tag/v0.1.0]
+Launch Date - Mainnet: 2023-08-15 (Pacific-1 mainnet) (HIGH) [Sei blog https://sei.io/blog/sei-mainnet-launch; CoinGecko historical data https://www.coingecko.com/en/coins/sei-network]
+Launch Date - TGE: 2023-08-15 (coincident with mainnet launch) (HIGH) [Sei blog https://sei.io/blog/sei-mainnet-launch; Binance announcement https://www.binance.com/en/blog/spotlight/sei-sei-326868]
+Main Products: Sei Layer 1 blockchain (Pacific-1); SeiDB (parallelized storage layer); Sei v2 (EVM-compatible upgrade with Geth integration); Sei Native (CosmWasm smart contracts) (HIGH) [Sei docs https://docs.sei.io; Sei v2 announcement https://sei.io/blog/introducing-sei-v2; GitHub repos https://github.com/sei-protocol/sei-chain; https://github.com/sei-protocol/sei-db]
+Official Website: https://sei.io (HIGH)
+Repository: https://github.com/sei-protocol/sei-chain (HIGH) [GitHub org https://github.com/sei-protocol]
+Documentation: https://docs.sei.io (HIGH)
+Social - X/Twitter: @SeiNetwork (HIGH) [https://x.com/SeiNetwork]
+Social - Discord: https://discord.gg/sei (HIGH) [Invite link from official website footer]
+Social - Telegram: @SeiNetwork (HIGH) [https://t.me/SeiNetwork]
+Block Explorer: https://seitrace.com (mainnet); https://testnet.seitrace.com (testnet) (HIGH) [Seitrace official explorer linked from docs.sei.io]
+Token Contract: SEI native on Sei chain (denom: usei); ERC-20 on Ethereum (0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5); SPL on Solana (wormhole wrapped) (HIGH) [Sei docs tokenomics https://docs.sei.io/learn/tokenomics; Etherscan https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5; Wormhole token bridge]
+Chain(s): Sei Network (native Cosmos-SDK chain, Pacific-1); SEI token also bridged to Ethereum, Solana, Arbitrum, Optimism, Base, BSC, Polygon via Wormhole and Axelar (HIGH) [Sei docs https://docs.sei.io/learn/architecture; Wormhole portal https://portalbridge.com; Axelar satellite]
+Ecosystem: DeFi (DEXes: DragonSwap, Silo, Yei Finance, Leviathan); Infrastructure (oracles: Pyth, Chainlink; bridges: Wormhole, Axelar, IBC); Tooling (wallets: Keplr, Leap, Compass, Metamask via Sei v2); NFT marketplaces (Pallet Exchange) (HIGH) [Sei ecosystem page https://sei.io/ecosystem; Sei v2 EVM ecosystem https://sei.io/blog/sei-v2-ecosystem]
+
+Open Threads
+- Exact core team headcount not officially published — only LinkedIn estimates available
+- Whether Sei Labs has additional legal entities outside Delaware (e.g., foundation in Cayman/Switzerland) — not confirmed in public filings
+- Complete list of all chain deployments for SEI token (wormhole/axelar bridged versions) — may have newer deployments post-knowledge cutoff
+- TGE token distribution breakdown (team, investors, community, foundation percentages) — whitepaper references but exact current vesting schedules need on-chain verification
+- Current status of Sei v2 upgrade rollout (fully live vs. phased) — announced but completion status needs verification

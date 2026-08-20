@@ -43,6 +43,51 @@ Every Ingest session archives its source in `doc_backup/` first, so a future re-
 3. **Check the index before adding** a project — `examples/DatasetIndex.md` is the dedup guard and map.
 4. **`docs/` stays documentation-only.** Knowledge goes to `examples/` (history) or `tracking/` (live).
 5. **Commit + push** to the working branch when a unit of work is done. Update the index in the same commit.
+6. **Read `docs/Protocol/Lessons.md` before changing pipeline code or a data contract.** Nine failure
+   classes this project has already paid for, each with the rule it produced. Most of them happened
+   *twice* before being written down. Add an entry whenever a mistake costs more than ten minutes.
+
+## Acquisition readiness — what "done" means here
+
+**This dataset is built to be sold**, to a VC or entity via Acquire.com or a similar B2B marketplace
+(maintainer, 2026-08-10). That is not a distant business detail; it changes the acceptance criteria for
+every change made in this repo, because the buyer inherits the repo *and* the Supabase project exactly
+as they stand.
+
+Four consequences, in the order they bite:
+
+**1. Transferable without its authors.** A new owner must be able to run the pipeline from the README
+alone. Any step that only works because someone remembers a detail is a defect. Every constant that was
+derived from measurement carries the measurement in a comment — that is why the code reads the way it
+does, and it should stay that way.
+
+**2. No dev debris — in the repo or in the database.** Scratch folders, abandoned tables, test rows,
+duplicate schemas. Two known examples: `reset/tmp_test/` (stale scaffolds that already corrupted an
+audit — see Lessons L2) and the `cif_patterns` / `cif_backtests` / `cif_decision_events` tables, which
+belong to the older AirdropOS schema in a *different* Supabase project and are not part of this one.
+**Cleanup happens after the dataset is complete, not during** — the exception being anything already
+known to be irrelevant, which can go now.
+
+**3. Column and table names are part of the product.** A buyer reads the schema before the data. Every
+column must mean exactly what its name says, be typed correctly, and be reachable from a documented
+contract in `tools/extract_*.py`. A new table needs its columns agreed before it is created, not
+patched afterwards — the frontend team reads these too.
+
+**4. Security is the top constraint, and writes are where it lives.** The database is written by exactly
+one path: `tools/sync_supabase.py`, holding a service-role key that exists only in the environment.
+Everything else is read-only. Concretely:
+
+- **Never** put a credential in a tracked file, a commit message, a log line, or a chat message. It has
+  already happened three times here (`.env` committed twice, an API key pasted into chat once) and each
+  one requires rotating the key — the repo's history is part of what gets handed over.
+- **RLS on, policies explicit.** Client-facing tables grant `SELECT` to `anon` and nothing more. A table
+  with RLS enabled and no policy is closed, which is the correct default for anything the frontend owns
+  (`users`, `saved_views`, `notes`).
+- **No `SECURITY DEFINER` function reachable by `anon` or `authenticated`** unless it is deliberately
+  public — it bypasses RLS by design.
+- Run `get_advisors(type="security")` after any schema change; it catches exactly these.
+- The write path stays deterministic and reviewable. Never put an LLM between the extractors and the
+  database.
 
 ## How the knowledge is meant to be used
 

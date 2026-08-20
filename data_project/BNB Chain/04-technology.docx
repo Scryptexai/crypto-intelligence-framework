@@ -1,0 +1,181 @@
+PROJECT: BNB Chain
+
+System Architecture
+- Arsitektur Tingkat Tinggi: Ekosistem multi-chain modular terdiri dari BNB Smart Chain (execution layer EVM-kompatibel), BNB Beacon Chain (consensus & governance layer Tendermint), opBNB (optimistic rollup L2 berbasis OP Stack), zkBNB (ZK-rollup L2 dalam pengembangan), BNB Greenfield (decentralized storage layer terprogrammable via BSC), dan BNB Bridge (cross-chain messaging/asset transfer) (HIGH) [BNB Chain Docs, https://docs.bnbchain.org/docs/overview]
+- Layer 1: BNB Smart Chain (chain ID 56) — EVM-compatible execution layer dengan konsensus PoSA, block time ~3 detik, gas fee rendah (HIGH) [BNB Chain Docs, https://docs.bnbchain.org/docs/bsc]
+- Layer 1: BNB Beacon Chain (chain ID 102) — Tendermint BFT consensus layer untuk staking, governance, dan validator set coordination; native token BEP-2 (HIGH) [BNB Chain Docs, https://docs.bnbchain.org/docs/beacon-chain]
+- Layer 2: opBNB (chain ID 204) — Optimistic rollup menggunakan OP Stack (Optimism), EVM-equivalent, target throughput 100M gas/sec, challenge period 7 hari (HIGH) [opBNB Docs, https://docs.opbnb.io]
+- Layer 2: zkBNB — ZK-rollup berbasis zero-knowledge proofs untuk skalabilitas dan privasi; status devnet/testnet, target mainnet 2025 (MEDIUM) [BNB Chain GitHub zkevm, https://github.com/bnb-chain/zkevm]
+- Storage Layer: BNB Greenfield (chain ID 5600) — Decentralized storage dengan metadata on-chain, data off-chain di Storage Providers (SP), programmable access control via BSC smart contracts (HIGH) [BNB Greenfield Docs, https://docs.bnbchain.org/docs/greenfield]
+- Cross-chain Messaging: BNB Bridge (native), LayerZero, Wormhole, Celer Network — multiple bridge/protocol untuk asset transfer dan messaging lintas chain (HIGH) [BNB Chain Docs Bridge, https://docs.bnbchain.org/docs/bridge]
+
+Core Components
+- BNB Smart Chain Validator Set: 21 validator aktif dipilih via staking BNB di Beacon Chain; rotasi setiap 24 jam (epoch); menghasilkan blok dan memvalidasi transaksi (HIGH) [BNB Chain Docs Validator, https://docs.bnbchain.org/docs/validator]
+- BNB Beacon Chain Validator Set: Validator yang menjalankan Tendermint BFT; bertanggung jawab finality, staking, governance, dan pemilihan 21 validator BSC (HIGH) [BNB Chain Docs Beacon Chain, https://docs.bnbchain.org/docs/beacon-chain-validator]
+- opBNB Sequencer: Single sequencer (saat ini) yang mengurutkan transaksi L2, mengeksekusi, dan mengirim batch ke BSC untuk settlement; rencana desentralisasi via PBS (HIGH) [opBNB Docs Architecture, https://docs.opbnb.io/architecture]
+- opBNB Proposer/Challenger: Proposer mengirimkan output root ke L1; Challenger dapat membantah selama challenge period 7 hari menggunakan fault proof (MEDIUM) [opBNB Docs Security, https://docs.opbnb.io/security]
+- zkBNB Prover/Verifier: ZK-prover menghasilkan validity proof untuk batch transaksi; verifier on-chain (BSC) memverifikasi proof; arsitektur recursive proving (MEDIUM) [BNB Chain GitHub zkevm, https://github.com/bnb-chain/zkevm]
+- BNB Greenfield Storage Providers (SP): Entitas off-chain yang menyimpan data pengguna; terdaftar on-chain, staking BNB, mendapat reward berdasarkan performa & SLA (HIGH) [Greenfield Docs SP, https://docs.bnbchain.org/docs/greenfield-sp]
+- BNB Greenfield Bucket/Object Model: Data diorganisir sebagai bucket (container) dan object (file); access control via BSC smart contract (Permission smart contract) (HIGH) [Greenfield Docs Data Model, https://docs.bnbchain.org/docs/greenfield-data-model]
+- BNB Bridge Relayer: Off-chain relayer yang mengamati event di chain sumber, mengirim proof ke chain tujuan untuk mint/burn atau lock/unlock token (HIGH) [BNB Bridge Docs, https://docs.bnbchain.org/docs/bridge-relayer]
+- BSC Full Node / Archive Node: Menyimpan state dan history BSC; RPC endpoint untuk dApp; disediakan NodeReal, Ankr, QuickNode, Alchemy, Infura, Chainstack, GetBlock (HIGH) [BNB Chain Docs RPC, https://docs.bnbchain.org/docs/rpc]
+- Beacon Chain Full Node: Menjalankan Tendermint consensus, menyimpan state staking/governance; RPC untuk delegasi dan voting (HIGH) [BNB Chain Docs Beacon RPC, https://docs.bnbchain.org/docs/beacon-chain-rpc]
+- opBNB Node (L2 Execution Node): Menjalankan op-geth (modified go-ethereum) untuk eksekusi L2; sinkronisasi dari sequencer; RPC untuk dApp L2 (HIGH) [opBNB Docs Node, https://docs.opbnb.io/run-node]
+- Greenfield Node: Menjalankan Greenfield blockchain (Cosmos SDK based) untuk metadata & payment; terhubung ke SP via gRPC (MEDIUM) [Greenfield Docs Node, https://docs.bnbchain.org/docs/greenfield-node]
+- Indexer/Subgraph: The Graph (hosted & decentralized), Covalent, Moralis, Dune Analytics — menyediakan query data on-chain untuk DeFi, NFT, gaming analytics (HIGH) [The Graph BNB, https://thegraph.com/explorer/?network=bsc]
+
+Consensus Mechanism
+- BNB Smart Chain: Proof-of-Staked-Authority (PoSA) — 21 validator aktif dipilih berdasarkan stake BNB di Beacon Chain; validator set rotasi setiap 24 jam (epoch); block time ~3 detik; finality probabilistic (setelah ~15 blok/confirms) (HIGH) [BNB Chain Docs Consensus, https://docs.bnbchain.org/docs/consensus]
+- BNB Beacon Chain: Tendermint BFT (Byzantine Fault Tolerance) — validator set melakukan propose & prevote/precommit; finality instan (1 blok); staking BNB untuk syarat validator; slashing untuk double-sign & downtime (HIGH) [BNB Chain Docs Beacon Consensus, https://docs.bnbchain.org/docs/beacon-chain-consensus]
+- opBNB: Optimistic Rollup consensus — sequencer memproduksi blok L2; settlement ke BSC via output root submission; security model mengandalkan fault proof (challenge period 7 hari) dan L1 reorg resistance (HIGH) [opBNB Docs Consensus, https://docs.opbnb.io/consensus]
+- zkBNB: ZK-Rollup consensus — validity proof (ZK-SNARK/STARK) diverifikasi on-chain di BSC; finality instan setelah proof diverifikasi; tidak memerlukan challenge period (MEDIUM) [BNB Chain GitHub zkevm, https://github.com/bnb-chain/zkevm]
+- BNB Greenfield: CometBFT (Tendermint) consensus — validator set Greenfield chain; finality instan; staking BNB untuk syarat validator; slashing mechanism (MEDIUM) [Greenfield Docs Consensus, https://docs.bnbchain.org/docs/greenfield-consensus]
+
+Execution Environment
+- BNB Smart Chain: EVM (Ethereum Virtual Machine) — kompatibel penuh dengan Ethereum mainnet (EIP-1559, London, Shanghai, Cancun upgrades diadopsi selektif); support Solidity, Vyper, Yul (HIGH) [BNB Chain Docs EVM, https://docs.bnbchain.org/docs/evm]
+- opBNB: EVM-equivalent (OP Stack) — menggunakan op-geth (modified go-ethereum); kompatibilitas EVM penuh termasuk precompiles; support Solidity, Vyper (HIGH) [opBNB Docs EVM, https://docs.opbnb.io/evm-compatibility]
+- zkBNB: EVM-equivalent ZK-EVM — target kompatibilitas EVM penuh via ZK-proof; menggunakan RISC Zero / Polygon zkEVM / Scroll tech stack (dalam evaluasi) (MEDIUM) [BNB Chain GitHub zkevm, https://github.com/bnb-chain/zkevm]
+- BNB Beacon Chain: Cosmos SDK / Tendermint — bukan EVM; execution via native modules (staking, governance, token, cross-chain); support CosmWasm (planned) (HIGH) [BNB Chain Docs Beacon, https://docs.bnbchain.org/docs/beacon-chain]
+- BNB Greenfield: Cosmos SDK (CometBFT) — execution via native modules (storage, payment, SP management); cross-chain execution via BSC smart contract (Permission contract) (HIGH) [Greenfield Docs Execution, https://docs.bnbchain.org/docs/greenfield-execution]
+
+Programming Languages
+- Go (Golang): Core client implementations — geth (BSC), op-geth (opBNB), Beacon Chain (Tendermint/Cosmos SDK), Greenfield (Cosmos SDK), BNB Bridge relayer (HIGH) [BNB Chain GitHub, https://github.com/bnb-chain]
+- Solidity: Smart contract development di BSC, opBNB, zkBNB, BNB Bridge contracts, Greenfield Permission contracts (HIGH) [BNB Chain Docs Solidity, https://docs.bnbchain.org/docs/smart-contract]
+- Rust: zkBNB prover/verifier components, some cryptographic libraries, potential future validator client (MEDIUM) [BNB Chain GitHub zkevm, https://github.com/bnb-chain/zkevm]
+- TypeScript/JavaScript: SDK, SDK-js, frontend tooling, Hardhat/Foundry scripts, dApp development (HIGH) [BNB Chain SDK, https://github.com/bnb-chain/bnbchain-sdk]
+- Python: Data analytics, scripting, research tooling (MEDIUM) [BNB Chain GitHub, https://github.com/bnb-chain]
+- Shell/Bash: Deployment scripts, node setup, CI/CD pipelines (MEDIUM) [BNB Chain GitHub, https://github.com/bnb-chain]
+
+Development Framework
+- Hardhat: Development environment utama untuk BSC/opBNB/zkBNB; testing, deployment, debugging; plugin ecosystem luas (HIGH) [Hardhat BNB Chain, https://hardhat.org/hardhat-runner/docs/guides/bnb-smart-chain]
+- Foundry: Toolchain Rust-based (forge, cast, anvil); testing cepat, fuzzing, deployment; adopsi meningkat di ekosistem BSC (HIGH) [Foundry BNB Chain, https://book.getfoundry.sh/reference/forge/forge-create#rpc-url-aliases]
+- Truffle: Legacy framework; masih digunakan beberapa proyek BSC lama; migrasi ke Hardhat/Foundry direkomendasikan (MEDIUM) [Truffle BNB Chain, https://trufflesuite.com/docs/truffle/quickstart/]
+- Remix IDE: Browser-based IDE untuk Solidity; compile, deploy, debug langsung ke BSC/opBNB; zero-setup untuk edukasi & prototyping (HIGH) [Remix BNB Chain, https://remix.ethereum.org/#url=https://docs.bnbchain.org/docs/remix]
+- BNB Chain SDK (JavaScript/TypeScript): Official SDK untuk interaksi dengan BSC, Beacon Chain, Greenfield, opBNB; wallet integration, transaction building, query (HIGH) [BNB Chain SDK GitHub, https://github.com/bnb-chain/bnbchain-sdk]
+- BNB Chain SDK (Go): Go library untuk backend/service integration dengan BSC, Beacon Chain, Greenfield (MEDIUM) [BNB Chain SDK Go, https://github.com/bnb-chain/bnbchain-sdk-go]
+- Greenfield SDK (JS/Go): SDK khusus untuk programmable storage — upload, download, permission management, payment (HIGH) [Greenfield SDK, https://github.com/bnb-chain/greenfield-sdk]
+- opBNB SDK: Wrapper OP Stack SDK untuk deployment & interaksi L2 (MEDIUM) [opBNB SDK, https://docs.opbnb.io/sdk]
+- Docker: Containerization untuk node deployment (BSC, Beacon, opBNB, Greenfield); official images di Docker Hub / GitHub Container Registry (HIGH) [BNB Chain Docker, https://github.com/bnb-chain/bsc/releases]
+- Kubernetes: Orchestration untuk validator/node deployment skala besar; NodeReal, Ankr, Figment menyediakan K8s helm charts (MEDIUM) [NodeReal K8s, https://github.com/nodereal/bsc-k8s]
+
+Security Model
+- BSC Validator Security: 21 validator PoSA; syarat minimal stake BNB (self-stake + delegasi); slashing untuk double-sign (1% stake) dan downtime (minor penalty); validator identity partially known (KYC untuk top validator) (HIGH) [BNB Chain Docs Slashing, https://docs.bnbchain.org/docs/slashing]
+- Beacon Chain Validator Security: Tendermint BFT; 2/3+ voting power untuk finality; slashing double-sign (5% stake) dan downtime (0.01% per blok); validator set lebih besar dari BSC (HIGH) [BNB Chain Docs Beacon Slashing, https://docs.bnbchain.org/docs/beacon-chain-slashing]
+- opBNB Security Model: Single sequencer (trusted) saat ini; fault proof system (challenge period 7 hari) untuk menantang invalid state root; L1 (BSC) sebagai settlement & data availability layer; rencana PBS (Proposer-Builder Separation) untuk desentralisasi sequencer (HIGH) [opBNB Docs Security, https://docs.opbnb.io/security]
+- zkBNB Security Model: Validity proof (ZK-SNARK/STARK) diverifikasi on-chain; trust-minimized; tidak memerlukan challenge period; prover decentralization roadmap (MEDIUM) [BNB Chain GitHub zkevm, https://github.com/bnb-chain/zkevm]
+- Greenfield Security: SP staking BNB; slashing untuk data loss/unavailability; erasure coding untuk redundancy; access control via BSC smart contract (Permission contract) — only authorized accounts can read/write (HIGH) [Greenfield Docs Security, https://docs.bnbchain.org/docs/greenfield-security]
+- BNB Bridge Security: Lock/mint & burn/release model; relayer multi-sig untuk upgrade; emergency pause mechanism; audit oleh CertiK, PeckShield, Trail of Bits (HIGH) [BNB Bridge Audit, https://github.com/bnb-chain/bsc-bridge-contracts]
+- Smart Contract Security: OpenZeppelin contracts sebagai standar; bug bounty via Immunefi (payout hingga $100k+ untuk critical); audit mandatory untuk protokol core (HIGH) [Immunefi BSC, https://immunefi.com/ecosystem/bsc/]
+- Monitoring & Alert: CertiK Skynet (real-time monitoring), PeckShield Alert (Twitter bot), SlowMist, Nansen Smart Money labeling — on-chain threat detection (HIGH) [CertiK Skynet BSC, https://www.certik.com/projects/bnb-smart-chain]
+
+Audit History
+- Auditor: CertiK | Tanggal: 2021-2024 (berkala) | Scope: BSC core contracts, BNB Bridge, staking contracts, governance modules | Status: Completed, multiple reports | Source: https://www.certik.com/projects/bnb-smart-chain
+- Auditor: PeckShield | Tanggal: 2021-2024 (berkala) | Scope: BSC core protocol, BNB Bridge, cross-chain contracts, major DeFi protocols (Venus, PancakeSwap) | Status: Completed, reports published | Source: https://github.com/peckshield/published-audit-reports
+- Auditor: Trail of Bits | Tanggal: 2023-2024 | Scope: zkBNB ZK-EVM circuits, prover/verifier, opBNB fault proof system | Status: Ongoing/Completed phases | Source: https://trailofbits.com
+- Auditor: SlowMist | Tanggal: 2022-2024 | Scope: BSC client (go-ethereum fork), Beacon Chain client, Greenfield client, bridge contracts | Status: Completed | Source: https://github.com/slowmist
+- Auditor: Quantstamp | Tanggal: 2021-2023 | Scope: BSC staking contracts, governance modules, BEP-20 token contracts | Status: Completed | Source: https://quantstamp.com
+- Auditor: Hacken | Tanggal: 2022-2024 | Scope: DeFi protocols di BSC (Thena, Wombat, Kinetix), bridge contracts | Status: Completed | Source: https://hacken.io
+- Auditor: OpenZeppelin | Tanggal: 2020-2024 | Scope: OpenZeppelin Contracts library digunakan di BSC; upgradeable patterns, ERC standards | Status: Ongoing library maintenance | Source: https://openzeppelin.com/contracts/
+- Auditor: Immunefi (Bug Bounty Platform) | Tanggal: 2021-sekarang | Scope: Coordinated vulnerability disclosure untuk BSC core, opBNB, Greenfield, major protocols | Status: Active programs | Source: https://immunefi.com/ecosystem/bsc/
+
+Technical Upgrade History
+- Tanggal: 2020-09-01 | Nama Upgrade: BSC Mainnet Launch (Genesis) | Deskripsi Singkat: Peluncuran mainnet BSC dengan PoSA consensus, 21 validator, EVM compatibility | Status: Completed | Source: https://www.binance.com/en/blog/421499824684900357
+- Tanggal: 2021-10 | Nama Upgrade: BEP-95 Auto-Burn Activation | Deskripsi Singkat: Real-time burning base fee (EIP-1559 style) + kuartalan auto-burn berdasarkan harga BNB & blok | Status: Completed (Ongoing) | Source: https://docs.bnbchain.org/docs/burn
+- Tanggal: 2021-09 | Nama Upgrade: BNB Chain Rebranding & BEP-126 (Cross-chain Transfer) | Deskripsi Singkat: Rebrand Binance Smart Chain → BNB Smart Chain; Binance Chain → BNB Beacon Chain; standarisasi cross-chain | Status: Completed | Source: https://www.bnbchain.org/en/blog/announcing-the-bnb-chain-brand
+- Tanggal: 2022-06 | Nama Upgrade: BSC Hard Fork "Moran" (EIP-1559 & London) | Deskripsi Singkat: Adopsi EIP-1559 (base fee burn), EIP-3198 (BASEFEE opcode), EIP-3529 (refund reduction), difficulty bomb delay | Status: Completed | Source: https://www.bnbchain.org/en/blog/moran-hardfork
+- Tanggal: 2023-08 | Nama Upgrade: opBNB Mainnet Launch | Deskripsi Singkat: Optimistic rollup L2 live di mainnet (chain ID 204); OP Stack based; gas fee <$0.001 | Status: Completed | Source: https://www.bnbchain.org/en/blog/opbnb-mainnet-launch
+- Tanggal: 2023-09 | Nama Upgrade: BNB Greenfield Mainnet Launch | Deskripsi Singkat: Decentralized storage mainnet (chain ID 5600); programmable storage via BSC Permission contract | Status: Completed | Source: https://www.bnbchain.org/en/blog/greenfield-mainnet-launch
+- Tanggal: 2023-10 | Nama Upgrade: zkBNB Devnet Launch | Deskripsi Singkat: ZK-rollup devnet; ZK-proof generation, recursive verification, EVM equivalence testing | Status: Completed (devnet) | Source: https://github.com/bnb-chain/zkevm
+- Tanggal: 2024-04 | Nama Upgrade: BSC Hard Fork "Luban" (Parallel EVM Testnet) | Deskripsi Singkat: Aktifkan Parallel EVM (BEP-336) di testnet; Block-STM execution model; throughput testing | Status: Completed (testnet) | Source: https://www.bnbchain.org/en/blog/luban-hardfork
+- Tanggal: 2024-07 | Nama Upgrade: Greenfield v1.1 Upgrade | Deskripsi Singkat: Payment model baru (pay-per-use, subscription), SP incentive berbasis performa, erasure coding optimization | Status: Completed | Source: https://github.com/bnb-chain/greenfield/releases
+- Tanggal: 2024-08 | Nama Upgrade: opBNB "Bedrock" Upgrade | Deskripsi Singkat: Upgrade ke OP Stack Bedrock; parity dengan Optimism mainnet; withdrawal proof baru; Superchain interop | Status: Completed | Source: https://docs.opbnb.io
+- Tanggal: 2024-11 | Nama Upgrade: zkBNB Testnet Launch | Deskripsi Singkat: Testnet resmi zkBNB (upgrade dari devnet); auditor review (Trail of Bits, CertiK) berlangsung | Status: Ongoing | Source: https://github.com/bnb-chain/zkevm
+
+Current Technical Stack
+- Go (Golang): 1.21+ — core client (bsc-geth, op-geth, beacon-chain, greenfield) (HIGH) [BNB Chain GitHub, https://github.com/bnb-chain]
+- Rust: 1.70+ — zkBNB prover, cryptographic primitives, potential future validator client (MEDIUM) [BNB Chain GitHub zkevm, https://github.com/bnb-chain/zkevm]
+- Solidity: 0.8.20+ — smart contracts BSC, opBNB, zkBNB, Greenfield Permission, Bridge (HIGH) [BNB Chain Docs, https://docs.bnbchain.org/docs/solidity]
+- TypeScript: 5.0+ — SDK, tooling, dApp development, Hardhat/Foundry scripts (HIGH) [BNB Chain SDK, https://github.com/bnb-chain/bnbchain-sdk]
+- Docker: 24+ — container images untuk full node, validator, indexer, bridge relayer (HIGH) [BNB Chain Docker Hub, https://hub.docker.com/u/bnbchain]
+- Kubernetes: 1.28+ — orchestration validator/node deployment skala enterprise (NodeReal, Ankr, Figment) (MEDIUM) [NodeReal K8s, https://github.com/nodereal/bsc-k8s]
+- Cosmos SDK: v0.47+ — Beacon Chain, Greenfield chain (CometBFT consensus) (HIGH) [Cosmos SDK, https://github.com/cosmos/cosmos-sdk]
+- CometBFT (Tendermint): v0.38+ — consensus engine Beacon Chain & Greenfield (HIGH) [CometBFT, https://github.com/cometbft/cometbft]
+- OP Stack: Bedrock release — opBNB execution client (op-geth), batcher, proposer, challenger (HIGH) [OP Stack, https://github.com/ethereum-optimism/optimism]
+- OpenZeppelin Contracts: v5.0+ — standard library ERC-20, ERC-721, ERC-1155, AccessControl, Upgradeable (HIGH) [OpenZeppelin, https://github.com/OpenZeppelin/openzeppelin-contracts]
+- Hardhat: v2.19+ — development framework utama (HIGH) [Hardhat, https://hardhat.org]
+- Foundry: nightly — forge, cast, anvil untuk testing & deployment (HIGH) [Foundry, https://github.com/foundry-rs/foundry]
+- The Graph: hosted service & decentralized network — subgraph indexing BSC, opBNB, Greenfield (HIGH) [The Graph, https://thegraph.com]
+- Covalent API: v1 — unified API multi-chain termasuk BSC, opBNB (HIGH) [Covalent, https://www.covalenthq.com]
+- Moralis: Streams API, Web3 API — real-time data BSC, opBNB (HIGH) [Moralis, https://moralis.io]
+- Alchemy/QuickNode/Ankr/Infura/Chainstack/GetBlock: RPC provider enterprise-grade untuk BSC, opBNB, Greenfield (HIGH) [Alchemy BNB, https://www.alchemy.com/chains/bnb-smart-chain]
+- Prometheus/Grafana: Monitoring & alerting validator/node (standar industri) (MEDIUM) [Prometheus, https://prometheus.io]
+- ELK Stack / Loki: Log aggregation untuk node operator (MEDIUM) [Grafana Loki, https://grafana.com/oss/loki/]
+
+Known Technical Limitations
+- BSC Throughput Terbatas: 21 validator PoSA membatasi throughput ~200-500 TPS teoritis; congestion terjadi saat demand spike (Mei 2021, gas fee naik drastis) (HIGH) [BNB Chain Docs, https://docs.bnbchain.org/docs/consensus]
+- BSC Finality Probabilistik: Tidak ada finality instan; reorg mungkin hingga ~15 blok (~45 detik); tidak cocok untuk aplikasi butuh finality cepat tanpa L2 (HIGH) [BNB Chain Docs, https://docs.bnbchain.org/docs/finality]
+- opBNB Sequencer Sentralisasi: Single sequencer saat ini (trusted); censorship resistance & liveness bergantung pada entitas tunggal; PBS (BEP-341) dalam R&D untuk desentralisasi (HIGH) [opBNB Docs, https://docs.opbnb.io/architecture]
+- opBNB Challenge Period 7 Hari: Withdrawal ke BSC memerlukan 7 hari challenge period; user experience tidak optimal untuk exit cepat; fast exit via bridge pihak ketiga (LayerZero, Celer) dengan trust assumptions tambahan (HIGH) [opBNB Docs Withdrawal, https://docs.opbnb.io/withdrawal]
+- zkBNB Belum Mainnet: Masih testnet (Nov 2024); prover performance, recursive verification, EVM equivalence belum sepenuhnya terbukti di production; auditor review berlangsung (MEDIUM) [BNB Chain GitHub zkevm, https://github.com/bnb-chain/zkevm]
+- Greenfield SP Sentralisasi Awal: Jumlah Storage Provider terbatas (~20-30 aktif mainnet); data availability bergantung pada SP off-chain; slashing untuk data loss belum sepenuhnya battle-tested (MEDIUM) [Greenfield Docs SP, https://docs.bnbchain.org/docs/greenfield-sp]
+- Greenfield Cross-chain Latency: Operasi storage (upload/download, permission change) memerlukan cross-chain call BSC ↔ Greenfield; latency ~3-10 detik + finality wait; bukan real-time (HIGH) [Greenfield Docs, https://docs.bnbchain.org/docs/greenfield-latency]
+- BNB Bridge Trust Assumptions: Relayer multi-sig untuk upgrade & emergency pause; bukan fully trust-minimized seperti light-client bridge; zentralisasi relayer set (HIGH) [BNB Bridge Docs, https://docs.bnbchain.org/docs/bridge-relayer]
+- Validator Set Kecil (21): Nakamoto coefficient rendah (~4-5 validator besar mengontrol >33% stake); geographic/client diversity terbatas; proposal ekspansi ke 100+ validator (BEP draft) masih diskusi (HIGH) [BNB Chain Forum Validator, https://forum.bnbchain.org/c/validator]
+- MEV Toxic di BSC: Sandwich attack, front-running prevalen di DEX; tidak ada PBS/mev-boost native di mainnet saat ini; BEP-341 PBS dalam R&D (HIGH) [BNB Chain Blog MEV, https://www.bnbchain.org/en/blog/mev-mitigation]
+- State Growth & Archive Node Cost: BSC state size >2TB (archive); hardware requirement tinggi untuk full/archive node; barriers to entry validator/node operator (MEDIUM) [BNB Chain Docs Hardware, https://docs.bnbchain.org/docs/hardware-requirements]
+- Cross-chain Composability Fragmented: Multiple bridge (BNB Bridge, LayerZero, Wormhole, Celer) dengan trust model berbeda; developer harus memilih; tidak ada standar unified messaging layer native (HIGH) [BNB Chain Docs Bridge, https://docs.bnbchain.org/docs/bridge]
+
+Official Technical Resources
+- Documentation: https://docs.bnbchain.org
+- GitHub Organization: https://github.com/bnb-chain
+- BSC Developer Docs: https://docs.bnbchain.org/docs/bsc
+- Beacon Chain Developer Docs: https://docs.bnbchain.org/docs/beacon-chain
+- opBNB Developer Docs: https://docs.opbnb.io
+- Greenfield Developer Docs: https://docs.bnbchain.org/docs/greenfield
+- BNB Bridge Docs: https://docs.bnbchain.org/docs/bridge
+- SDK (JavaScript/TypeScript): https://github.com/bnb-chain/bnbchain-sdk
+- SDK (Go): https://github.com/bnb-chain/bnbchain-sdk-go
+- Greenfield SDK: https://github.com/bnb-chain/greenfield-sdk
+- Hardhat BNB Chain Guide: https://hardhat.org/hardhat-runner/docs/guides/bnb-smart-chain
+- Foundry BNB Chain Reference: https://book.getfoundry.sh/reference/forge/forge-create#rpc-url-aliases
+- Remix IDE BNB Chain: https://remix.ethereum.org/#url=https://docs.bnbchain.org/docs/remix
+- BNB Chain Whitepaper (Original): https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf
+- Greenfield Whitepaper: https://github.com/bnb-chain/greenfield-whitepaper
+- zkBNB Technical Repo: https://github.com/bnb-chain/zkevm
+- opBNB Technical Repo: https://github.com/bnb-chain/opbnb
+- BSC Client (go-ethereum fork): https://github.com/bnb-chain/bsc
+- Beacon Chain Client: https://github.com/bnb-chain/beacon-chain
+- Greenfield Client: https://github.com/bnb-chain/greenfield
+- BNB Bridge Contracts: https://github.com/bnb-chain/bsc-bridge-contracts
+- BEP (BNB Chain Evolution Proposals): https://github.com/bnb-chain/BEPs
+- BNB Chain Forum (Governance & Technical Discussion): https://forum.bnbchain.org
+- CertiK Skynet BSC Monitoring: https://www.certik.com/projects/bnb-smart-chain
+- Immunefi BSC Bug Bounty: https://immunefi.com/ecosystem/bsc/
+
+Summary
+Architecture: Multi-chain modular ecosystem — BNB Smart Chain (EVM L1, PoSA), BNB Beacon Chain (Tendermint governance/staking), opBNB (Optimistic L2, OP Stack), zkBNB (ZK L2, devnet), BNB Greenfield (Decentralized storage, Cosmos SDK), BNB Bridge + 3rd party bridges (LayerZero, Wormhole, Celer)
+Core Components: 12 komponen utama — BSC Validator Set (21), Beacon Chain Validator Set, opBNB Sequencer/Proposer/Challenger, zkBNB Prover/Verifier, Greenfield Storage Providers, Greenfield Bucket/Object Model, BNB Bridge Relayer, BSC/Beacon/opBNB/Greenfield Full Nodes, Indexers (The Graph, Covalent, Moralis, Dune)
+Consensus: PoSA (BSC, 21 validator, 3s block), Tendermint BFT (Beacon Chain, instant finality), Optimistic Rollup (opBNB, 7-day challenge), ZK-Rollup (zkBNB, validity proof), CometBFT (Greenfield)
+Execution: EVM (BSC, opBNB, zkBNB), Cosmos SDK (Beacon, Greenfield)
+Languages: Go, Solidity, Rust, TypeScript, Python, Shell
+Frameworks: Hardhat, Foundry, Truffle (legacy), Remix, BNB Chain SDK (JS/Go), Greenfield SDK, opBNB SDK, Docker, Kubernetes
+Security: Validator slashing (double-sign, downtime), fault proof (opBNB), validity proof (zkBNB), SP slashing (Greenfield), multi-sig bridge, bug bounty (Immunefi), real-time monitoring (CertiK Skynet, PeckShield Alert)
+Audit Count: 8+ auditor independen (CertiK, PeckShield, Trail of Bits, SlowMist, Quantstamp, Hacken, OpenZeppelin, Immunefi) dengan audit berkala 2021-2024
+Major Upgrade Count: 10 major upgrade/mainnet launch (BSC 2020, BEP-95 2021, Rebrand 2021, Moran/London 2022, opBNB 2023, Greenfield 2023, zkBNB devnet 2023, Luban/Parallel EVM testnet 2024, Greenfield v1.1 2024, opBNB Bedrock 2024, zkBNB testnet 2024)
+
+Open Threads
+- Parallel EVM (BEP-336) mainnet activation date: testnet live Apr 2024 (Luban hard fork); mainnet target Q1 2025 per roadmap tapi belum ada tanggal pasti; validator client upgrade readiness perlu diverifikasi (tidak dapat diverifikasi) [BNB Chain Forum BEP-336, https://forum.bnbchain.org/t/bep-336-parallel-evm]
+- zkBNB mainnet launch timeline: devnet Okt 2023, testnet Nov 2024; auditor (Trail of Bits, CertiK) review status belum publik lengkap; prover performance benchmarks production-scale belum tersedia (tidak dapat diverifikasi) [BNB Chain GitHub zkevm, https://github.com/bnb-chain/zkevm]
+- Validator set expansion (21 → 100+): BEP draft mana yang akan diajukan, mekanisme transisi (gradual vs big bang), impact pada hardware requirements & decentralization metrics — belum ada proposal resmi di Forum (tidak dapat diverifikasi) [BNB Chain Forum Validator, https://forum.bnbchain.org/c/validator]
+- PBS (BEP-341) implementation status: research dengan Flashbots/EigenPhi; testnet PBS belum live; opBNB sequencer decentralization dependency pada PBS BSC — timeline tidak pasti (tidak dapat diverifikasi) [BNB Chain Forum BEP-341, https://forum.bnbchain.org/t/bep-341-pbs]
+- Greenfield SP economics v1.1 adoption metrics: jumlah SP aktif pasca-upgrade Juli 2024, storage volume growth, SLA compliance rate — data on-chain real-time belum dipublikasikan sebagai dashboard resmi (tidak dapat diverifikasi) [Greenfield Releases, https://github.com/bnb-chain/greenfield/releases]
+- Cross-chain bridge unified standard: apakah BNB Chain akan mengadopsi ERC-7683 (cross-chain intents) atau standar messaging layer native — belum ada announcement resmi (tidak dapat diverifikasi) [BNB Chain Docs Bridge, https://docs.bnbchain.org/docs/bridge]
+- BSC state growth mitigation: history expiry (EIP-4444), stateless client, verkle tree adoption — belum ada roadmap teknis resmi untuk BSC (berbeda dengan Ethereum) (tidak dapat diverifikasi) [BNB Chain Docs, https://docs.bnbchain.org/docs/bsc]
+- opBNB fast exit mechanism native: saat ini withdrawal 7 hari; fast exit via 3rd party bridge (LayerZero, Celer) dengan trust assumptions; apakah opBNB akan mengimplementasikan native fast exit (ZK-proof based) — belum ada proposal (tidak dapat diverifikasi) [opBNB Docs, https://docs.opbnb.io/withdrawal]
+- zkBNB prover decentralization: saat ini prover centralized (devnet); roadmap prover network (decentralized proving) — tidak ada detail teknis publik (tidak dapat diverifikasi) [BNB Chain GitHub zkevm, https://github.com/bnb-chain/zkevm]
+- BNB Chain Foundation legal entity & jurisdiction exact: apakah Cayman, Singapore, ADGM, atau yurisdiksi lain — filing legal/whitepaper resmi belum ditemukan (tidak dapat diverifikasi) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+- Core Contributors headcount & geographic distribution: tidak diungkap secara transparan; butuh metrics Electric Capital Developer Report atau GitHub contributor analytics terverifikasi (tidak dapat diverifikasi) [Electric Capital, https://www.electriccapital.com/developer-report]
+- MEV dashboard BSC resmi: EigenPhi BSC dashboard ada tapi apakah BNB Chain akan host dashboard MEV resmi (seperti Flashbots MEV-Inspect) — belum diumumkan (tidak dapat diverifikasi) [EigenPhi BSC, https://eigenphi.io/bsc]
+- BEP-336 Parallel EVM benchmark results testnet: throughput actual (TPS), gas fee reduction, contract compatibility issues — laporan teknis detail belum dipublikasikan (tidak dapat diverifikasi) [BNB Chain Blog Luban, https://www.bnbchain.org/en/blog/luban-hardfork]
+- Greenfield erasure coding parameters & redundancy factor: detail teknis (k, m values), repair bandwidth, SP churn handling — whitepaper level detail belum ada di docs resmi (tidak dapat diverifikasi) [Greenfield Whitepaper, https://github.com/bnb-chain/greenfield-whitepaper]
+- BNB Bridge relayer set composition & multi-sig threshold: jumlah relayer, threshold signature, rotation policy — tidak transparan di docs (tidak dapat diverifikasi) [BNB Bridge Docs, https://docs.bnbchain.org/docs/bridge-relayer]

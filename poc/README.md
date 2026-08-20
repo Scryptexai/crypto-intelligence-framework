@@ -11,10 +11,22 @@ structured data; the app reads that data. (Reasoning stays rule-based here — a
 
 ```
 poc/
-├── intake.html    # the PoC UI (open in a browser)
-├── data.js        # AUTO-GENERATED: window.CIF = {projects, patterns, meta}
-├── projects.json  # AUTO-GENERATED project roster + tags
-└── patterns.json  # AUTO-GENERATED pattern catalogue
+├── intake.html          # the PoC UI (open in a browser)
+├── data.js              # AUTO-GENERATED: window.CIF = {projects, patterns, meta}
+├── cif.json             # AUTO-GENERATED cif-export/1 bundle (meta + projects + patterns)
+├── projects.json        # AUTO-GENERATED project roster + tags
+├── patterns.json        # AUTO-GENERATED pattern catalogue
+├── benchmarks.json      # backtest scorecards (tools/backtest.py)
+├── entities.json        # extract_entities.py: entity blocks per dossier
+├── relationships.json   # extract_relationships.py: grounded edges (project-entity + entity-mention)
+├── events.json          # extract_events.py: timeline events per dossier
+├── decision_events.json # extract_decision_events.py: the atomic causal units
+├── knowledge.json       # extract_knowledge.py: insights & pattern candidates
+├── behavior.json        # extract_behavior.py: strategic/decision/risk patterns
+├── qa.json              # extract_qa.py: CIF Validation Reports (Phase 11)
+├── airdrop.json         # extract_airdrop.py: Phase 12 profiles (status, events, 8-POV, prices)
+├── conflicts.json       # extract_conflicts.py: two-source conflicts (hand + strict patterns)
+└── sentiment.json       # sentiment dossiers (currently none)
 ```
 
 ## How to run

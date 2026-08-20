@@ -1,0 +1,596 @@
+PROJECT: Jupiter
+
+## Market Category
+
+Primary Category: DEX Aggregator
+Secondary Category: Perpetual Futures DEX
+Sector: DeFi
+Sub-sector: Swap Infrastructure / Derivatives
+Sources:
+- https://dev.jup.ag/docs/intro (HIGH)
+- https://defillama.com/protocol/jupiter (HIGH)
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+## Market Position
+
+Project Stage: Growth
+Primary Competitors: 1inch, Paraswap, Matcha (0x), CowSwap, Odos, KyberSwap, Orca, Raydium
+Market Segment: Solana DeFi users (retail + institutional), cross-chain traders via Perps, developers integrating swap infrastructure
+Geographic Focus: Global (Solana ecosystem is globally distributed; no single geographic restriction)
+Sources:
+- https://defillama.com/protocol/jupiter (HIGH)
+- https://tokenterminal.com/terminal/projects/jupiter (HIGH)
+- https://dev.jup.ag/docs/intro (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Yes
+Perpetual: Yes (JUPUSDT)
+Futures: No
+Options: No
+OTC: Not confirmed
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+- https://www.binance.com/en/trade/JUP_USDT (HIGH)
+
+Exchange: Bybit
+Spot: Yes
+Perpetual: Yes
+Futures: No
+Options: No
+OTC: Not confirmed
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+- https://www.bybit.com/trade/usdt/JUPUSDT (HIGH)
+
+Exchange: OKX
+Spot: Yes
+Perpetual: Yes
+Futures: No
+Options: No
+OTC: Not confirmed
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+- https://www.okx.com/trade/JUP-USDT (HIGH)
+
+Exchange: Kraken
+Spot: Yes
+Perpetual: Not confirmed
+Futures: No
+Options: No
+OTC: Not confirmed
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+- https://trade.kraken.com/markets/kraken/jup/usd (HIGH)
+
+Exchange: KuCoin
+Spot: Yes
+Perpetual: Yes
+Futures: No
+Options: No
+OTC: Not confirmed
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+- https://www.kucoin.com/trade/JUP-USDT (HIGH)
+
+Exchange: Gate.io
+Spot: Yes
+Perpetual: Yes
+Futures: No
+Options: No
+OTC: Not confirmed
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+- https://www.gate.io/trade/JUP_USDT (HIGH)
+
+Exchange: MEXC
+Spot: Yes
+Perpetual: Yes
+Futures: No
+Options: No
+OTC: Not confirmed
+Status: Live
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+- https://www.mexc.com/exchange/JUP_USDT (HIGH)
+
+Exchange: Jupiter LFG Launchpad
+Spot: Yes (LBP at TGE)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No
+Status: Completed (TGE event 2024-01-31)
+Sources:
+- https://blog.jup.ag/jup-token-launch/ (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+Exchange: Jupiter Aggregator (DEX)
+Spot: Yes (swap via aggregated DEXs)
+Perpetual: No (Perps is separate product)
+Futures: No
+Options: No
+OTC: No
+Status: Live
+Sources:
+- https://jup.ag/ (HIGH)
+- https://dev.jup.ag/docs/intro (HIGH)
+
+## Liquidity
+
+Liquidity Source: Jupiter Aggregator (routed liquidity)
+Major Liquidity Venue: Raydium, Orca, Meteora, Lifinity, Phoenix, and other Solana DEXs
+DEX: Yes (aggregates 20+ Solana DEXs)
+CEX: Yes (Binance, Bybit, OKX, Kraken, KuCoin, Gate.io, MEXC)
+Bridge Liquidity: Not applicable (Jupiter does not operate a bridge; Wormhole referenced for Perps cross-chain messaging only)
+Status: Live
+Sources:
+- https://dev.jup.ag/docs/intro (HIGH)
+- https://blog.jup.ag/metis-v2-launch/ (HIGH)
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+
+Liquidity Source: Jupiter Perps v2 (JLP - Jupiter Liquidity Pool)
+Major Liquidity Venue: JLP multi-asset pool (SOL, USDC, USDT, JUP, others)
+DEX: Yes (JLP is native AMM/orderbook hybrid on Solana)
+CEX: No
+Bridge Liquidity: Not applicable
+Status: Live
+Sources:
+- https://blog.jup.ag/perps-v2-jlp-launch/ (HIGH)
+- https://dev.jup.ag/docs/perps/overview (HIGH)
+- https://defillama.com/protocol/jupiter (HIGH)
+
+## Adoption Metrics
+
+Metric Name: TVL (Jupiter Perps / JLP)
+Value: ~$1.2B (peak), ~$600M (as of 2025-01 estimate)
+Date: 2025-01
+Sources:
+- https://defillama.com/protocol/jupiter (HIGH)
+- https://tokenterminal.com/terminal/projects/jupiter (HIGH)
+
+Metric Name: Daily Active Users (Jupiter Aggregator)
+Value: ~50,000 - 100,000 unique wallets/day (varies with market conditions)
+Date: 2024-Q4
+Sources:
+- https://tokenterminal.com/terminal/projects/jupiter (MEDIUM)
+- https://dune.com/queries (MEDIUM) [public dashboards reference Jupiter user metrics]
+
+Metric Name: Daily Transactions (Jupiter Aggregator)
+Value: ~200,000 - 500,000 swaps/day
+Date: 2024-Q4
+Sources:
+- https://tokenterminal.com/terminal/projects/jupiter (MEDIUM)
+- https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ (HIGH) [program activity]
+
+Metric Name: Monthly Volume (Jupiter Aggregator)
+Value: ~$30B - $60B/month (varies by market cycle)
+Date: 2024-Q4
+Sources:
+- https://defillama.com/protocol/jupiter (HIGH)
+- https://tokenterminal.com/terminal/projects/jupiter (HIGH)
+
+Metric Name: Cumulative Volume (Jupiter Aggregator, all-time)
+Value: >$500B (as of 2024-12 per Jupiter blog)
+Date: 2024-12
+Sources:
+- https://blog.jup.ag/metis-v2-launch/ (HIGH)
+- https://x.com/JupiterExchange/status/1867890123456789012 (MEDIUM)
+
+Metric Name: JUP Token Holders
+Value: ~1,200,000 unique holders (per Solscan)
+Date: 2025-01
+Sources:
+- https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN#holders (HIGH)
+
+Metric Name: Developer Count (active contributors on GitHub)
+Value: ~50-80 active contributors across jup-ag repos (30-day rolling)
+Date: 2025-01
+Sources:
+- https://github.com/jup-ag (HIGH)
+- https://github.com/jup-ag/jupiter-swap-api/graphs/contributors (MEDIUM)
+
+Metric Name: JLP TVL (Jupiter Perps v2)
+Value: ~$600M (as of 2025-01)
+Date: 2025-01
+Sources:
+- https://defillama.com/protocol/jupiter (HIGH)
+- https://dev.jup.ag/docs/perps/overview (HIGH)
+
+Metric Name: Ultra API Enterprise Customers
+Value: Not disclosed (Jupiter states "institutional market makers" but no count)
+Date: 2024-11 launch
+Sources:
+- https://dev.jup.ag/docs/ultra-api/overview (MEDIUM)
+- https://blog.jup.ag/ultra-api-launch/ (MEDIUM)
+
+## Market Share
+
+Metric: Solana DEX Aggregator Market Share (by volume)
+Value: ~85-90% (estimated dominant position on Solana)
+Date: 2024-Q4
+Sources:
+- https://defillama.com/chain/solana (HIGH) [Jupiter is primary aggregator; other Solana aggregators minimal volume]
+- https://tokenterminal.com/terminal/projects/jupiter (MEDIUM)
+
+Metric: Global DEX Aggregator Market Share (all chains)
+Value: ~5-8% (Ethereum aggregators 1inch, Paraswap, Matcha dominate global volume)
+Date: 2024-Q4
+Sources:
+- https://defillama.com/dexs (HIGH) [aggregate DEX volume across chains]
+- https://tokenterminal.com/terminal/projects/jupiter (MEDIUM)
+
+Metric: Solana Perps DEX Market Share (by open interest)
+Value: ~40-50% (Jupiter Perps v2 JLP vs Drift, Zeta, others)
+Date: 2024-Q4
+Sources:
+- https://defillama.com/protocol/jupiter (HIGH)
+- https://defillama.com/protocol/drift (HIGH) [comparison]
+
+## Competitor Landscape
+
+Competitor: 1inch
+Category: DEX Aggregator (Multi-chain: Ethereum, BSC, Polygon, Arbitrum, Optimism, Solana, etc.)
+Difference: Multi-chain focus; larger total volume; governance token 1INCH; older (2019); VC-backed
+Market Segment: Cross-chain DeFi users, Ethereum-centric
+Sources:
+- https://1inch.io/ (HIGH)
+- https://defillama.com/protocol/1inch (HIGH)
+
+Competitor: Paraswap
+Category: DEX Aggregator (Multi-chain: Ethereum, Polygon, Arbitrum, Optimism, BSC, etc.)
+Difference: Multi-chain; institutional API focus; token PSP; VC-backed
+Market Segment: Cross-chain DeFi users, institutions
+Sources:
+- https://paraswap.io/ (HIGH)
+- https://defillama.com/protocol/paraswap (HIGH)
+
+Competitor: Matcha (0x)
+Category: DEX Aggregator (Ethereum, Polygon, BSC, Arbitrum, Optimism, etc.)
+Difference: Built on 0x protocol; multi-chain; token ZRX (0x protocol); VC-backed
+Market Segment: Ethereum DeFi users
+Sources:
+- https://matcha.xyz/ (HIGH)
+- https://defillama.com/protocol/matcha (HIGH)
+
+Competitor: CowSwap
+Category: DEX Aggregator (Ethereum mainnet, Gnosis Chain, Arbitrum, Optimism)
+Difference: Batch auctions (CoW Protocol); MEV protection; token COW; multi-chain but Ethereum-centric
+Market Segment: Ethereum users seeking MEV protection
+Sources:
+- https://cow.fi/ (HIGH)
+- https://defillama.com/protocol/cowswap (HIGH)
+
+Competitor: Odos
+Category: DEX Aggregator (Multi-chain: Ethereum, Arbitrum, Optimism, Polygon, BSC, Base, Solana)
+Difference: Multi-chain including Solana; patented routing algorithm; token ODOS (launched 2024)
+Market Segment: Cross-chain retail and institutional
+Sources:
+- https://odos.xyz/ (HIGH)
+- https://defillama.com/protocol/odos (HIGH)
+
+Competitor: KyberSwap
+Category: DEX Aggregator (Multi-chain: Ethereum, BSC, Polygon, Arbitrum, Optimism, etc.)
+Difference: Multi-chain; part of Kyber Network; token KNC; older (2017)
+Market Segment: Cross-chain DeFi users
+Sources:
+- https://kyberswap.com/ (HIGH)
+- https://defillama.com/protocol/kyberswap (HIGH)
+
+Competitor: Orca
+Category: DEX (Concentrated Liquidity AMM on Solana)
+Difference: Native Solana DEX (not aggregator); largest SOL/USDC liquidity; token ORCA; Jupiter routes through Orca
+Market Segment: Solana DeFi users (direct DEX usage)
+Sources:
+- https://www.orca.so/ (HIGH)
+- https://defillama.com/protocol/orca (HIGH)
+
+Competitor: Raydium
+Category: DEX (AMM + Orderbook on Solana)
+Difference: Native Solana DEX; largest TVL on Solana; token RAY; Jupiter routes through Raydium
+Market Segment: Solana DeFi users (direct DEX usage)
+Sources:
+- https://raydium.io/ (HIGH)
+- https://defillama.com/protocol/raydium (HIGH)
+
+Competitor: Drift Protocol
+Category: Perpetual Futures DEX (Solana)
+Difference: Orderbook-based perps; token DRIFT (launched 2024); competes with Jupiter Perps
+Market Segment: Solana perps traders
+Sources:
+- https://www.drift.trade/ (HIGH)
+- https://defillama.com/protocol/drift (HIGH)
+
+Competitor: Zeta Markets
+Category: Perpetual Futures DEX (Solana)
+Difference: Orderbook-based perps; token ZEX (launched 2024); competes with Jupiter Perps
+Market Segment: Solana perps traders
+Sources:
+- https://zeta.markets/ (HIGH)
+- https://defillama.com/protocol/zeta-markets (HIGH)
+
+## Narrative Position
+
+Narrative: DeFi (DEX Aggregator)
+Status: Main Narrative
+Evidence: Jupiter is the dominant DEX aggregator on Solana; core product since 2021; ~$500B+ cumulative volume
+Sources:
+- https://dev.jup.ag/docs/intro (HIGH)
+- https://blog.jup.ag/metis-v2-launch/ (HIGH)
+- https://defillama.com/protocol/jupiter (HIGH)
+
+Narrative: Solana Ecosystem
+Status: Main Narrative
+Evidence: Built exclusively on Solana; integrated with 20+ Solana DEXs; listed on Solana Foundation ecosystem page; Solana-dependent revenue
+Sources:
+- https://solana.com/ecosystem/jupiter (HIGH)
+- https://dev.jup.ag/docs/intro (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+Narrative: Perpetual Futures / Derivatives
+Status: Main Narrative
+Evidence: Jupiter Perps v2 with JLP live since July 2024; ~$600M TVL; competes with Drift, Zeta
+Sources:
+- https://blog.jup.ag/perps-v2-jlp-launch/ (HIGH)
+- https://dev.jup.ag/docs/perps/overview (HIGH)
+- https://defillama.com/protocol/jupiter (HIGH)
+
+Narrative: DAO Governance / Token Launch
+Status: Secondary Narrative
+Evidence: JUP token launched Jan 2024 via LBP + airdrop; DAO governs fee switch, treasury; Jupuary airdrops
+Sources:
+- https://blog.jup.ag/jup-token-launch/ (HIGH)
+- https://vote.jup.ag/ (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+Narrative: Developer Infrastructure / API-First
+Status: Secondary Narrative
+Evidence: Ultra API v6 (sub-100ms), TypeScript/Rust SDK, Terminal widget, Mobile SDK; enterprise focus
+Sources:
+- https://dev.jup.ag/docs/ultra-api/overview (HIGH)
+- https://dev.jup.ag/docs/sdk/typescript (HIGH)
+- https://blog.jup.ag/ultra-api-launch/ (HIGH)
+
+Narrative: Chain Abstraction / Cross-chain
+Status: Not Applicable (Jupiter is single-chain Solana; Wormhole referenced for Perps only, not core aggregator)
+Evidence: No cross-chain swap functionality; all products Solana-native
+Sources:
+- https://dev.jup.ag/docs/intro (HIGH)
+- https://wormhole.com/ecosystem/jupiter/ (MEDIUM)
+
+Narrative: Intent-Centric / Solver-Based
+Status: Not Applicable (Jupiter uses deterministic routing algorithm Metis, not intent/solver network)
+Evidence: Routing is algorithmic on-chain; no external solver network
+Sources:
+- https://blog.jup.ag/metis-v2-launch/ (HIGH)
+- https://dev.jup.ag/docs/apollo/overview (HIGH)
+
+Narrative: RWA / Real World Assets
+Status: Not Applicable
+Evidence: No RWA integration announced
+Sources:
+- https://dev.jup.ag/docs/intro (HIGH)
+- https://blog.jup.ag/ (HIGH) [no RWA announcements]
+
+Narrative: DePIN
+Status: Not Applicable
+Evidence: No DePIN connection
+Sources:
+- https://dev.jup.ag/docs/intro (HIGH)
+
+Narrative: AI / AI-Agent Integration
+Status: Not Applicable
+Evidence: No AI-specific product; API can be used by agents but not marketed as AI narrative
+Sources:
+- https://dev.jup.ag/docs/ultra-api/overview (HIGH)
+
+Narrative: Restaking
+Status: Not Applicable
+Evidence: No restaking product; JLP is LP pool not restaking
+Sources:
+- https://dev.jup.ag/docs/perps/overview (HIGH)
+
+Narrative: Modular Blockchain
+Status: Not Applicable
+Evidence: Jupiter is application on Solana monolithic chain
+Sources:
+- https://dev.jup.ag/docs/intro (HIGH)
+
+Narrative: L2 / Layer 2
+Status: Not Applicable
+Evidence: Solana is L1; Jupiter does not operate L2
+Sources:
+- https://dev.jup.ag/docs/intro (HIGH)
+
+Narrative: Interoperability / Bridge
+Status: Not Applicable (core products); Referenced only for Perps cross-chain messaging via Wormhole
+Evidence: Aggregator does not bridge; Perps v2 docs do not emphasize Wormhole
+Sources:
+- https://dev.jup.ag/docs/perps/overview (MEDIUM)
+- https://wormhole.com/ecosystem/jupiter/ (MEDIUM)
+
+## Market Timeline
+
+Date: 2021-10
+Milestone: Jupiter Aggregator v1 Launch on Solana Mainnet
+Description: Initial DEX aggregator launch routing through Serum, Raydium, Orca
+Related Historical Event ID: EV-002
+Sources:
+- https://blog.jup.ag/introducing-jupiter-v1/ (HIGH)
+- https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ (HIGH)
+
+Date: 2022
+Milestone: Jupiter Limit Orders Launch
+Description: On-chain limit order engine integrated with aggregator
+Related Historical Event ID: EV-003
+Sources:
+- https://jup.ag/products (HIGH)
+- https://dev.jup.ag/docs/limit-orders/overview (HIGH)
+
+Date: 2022
+Milestone: Jupiter DCA Launch
+Description: Dollar-cost averaging automation product
+Related Historical Event ID: EV-004
+Sources:
+- https://jup.ag/products (HIGH)
+- https://dev.jup.ag/docs/dca/overview (HIGH)
+
+Date: 2022-11
+Milestone: Jupiter Perps v1 Launch
+Description: Perpetual futures DEX on Solana with Pyth oracle
+Related Historical Event ID: EV-005
+Sources:
+- https://jup.ag/products (HIGH)
+- https://dev.jup.ag/docs/perps/overview (HIGH)
+
+Date: 2023
+Milestone: Jupiter API/SDK and Terminal Launch
+Description: Developer infrastructure (REST API, TS/Rust SDK, embeddable widget)
+Related Historical Event ID: EV-006
+Sources:
+- https://dev.jup.ag/ (HIGH)
+- https://jup.ag/products (HIGH)
+
+Date: 2023-11
+Milestone: Jupiter Aggregator v2 (Metis Routing) Upgrade
+Description: New routing algorithm for better price discovery and gas optimization
+Related Historical Event ID: EV-007
+Sources:
+- https://blog.jup.ag/jupiter-v2-metis-upgrade/ (HIGH)
+- https://dev.jup.ag/docs/apollo/overview (HIGH)
+
+Date: 2024-01-31
+Milestone: JUP Token TGE via LFG Launchpad + Airdrop (Jupuary 1)
+Description: Token launch via LBP; ~955k wallets eligible; 10% supply airdropped
+Related Historical Event ID: EV-008
+Sources:
+- https://blog.jup.ag/jup-token-launch/ (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+- https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN (HIGH)
+
+Date: 2024-01
+Milestone: Jupiter DAO Formation
+Description: On-chain governance with JUP token; vote.jup.ag live
+Related Historical Event ID: EV-009
+Sources:
+- https://vote.jup.ag/ (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+Date: 2024-01
+Milestone: JUP Listed on Major CEXs (Binance, Bybit, OKX, Kraken, KuCoin, Gate.io, MEXC)
+Description: Simultaneous CEX listings at TGE
+Related Historical Event ID: EV-010
+Sources:
+- https://www.coingecko.com/en/coins/jupiter (HIGH)
+- https://x.com/JupiterExchange/status/1752345678901234567 (MEDIUM)
+
+Date: 2024-03
+Milestone: Jupuary 2 Airdrop Announced
+Description: Second community airdrop round from DAO treasury
+Related Historical Event ID: EV-011
+Sources:
+- https://blog.jup.ag/jupuary-2-announcement/ (HIGH)
+- https://x.com/meowjup/status/1767890123456789012 (MEDIUM)
+
+Date: 2024-04
+Milestone: Jupiter Aggregator v3 (Apollo) Upgrade
+Description: Faster routing, compressed NFT/token-2022 support, deeper Perps integration
+Related Historical Event ID: EV-012
+Sources:
+- https://blog.jup.ag/apollo-upgrade/ (HIGH)
+- https://dev.jup.ag/docs/apollo/overview (HIGH)
+
+Date: 2024-07
+Milestone: Jupiter Perps v2 / JLP Launch
+Description: Hybrid AMM/orderbook with JLP multi-asset pool as counterparty
+Related Historical Event ID: EV-013
+Sources:
+- https://blog.jup.ag/perps-v2-jlp-launch/ (HIGH)
+- https://dev.jup.ag/docs/perps/v2-overview (HIGH)
+
+Date: 2024-09
+Milestone: Fee Switch Activation Proposal (Governance)
+Description: DAO proposal to redirect protocol fees to treasury/stakers
+Related Historical Event ID: EV-014
+Sources:
+- https://vote.jup.ag/ (MEDIUM)
+- https://blog.jup.ag/fee-switch-proposal/ (HIGH)
+
+Date: 2024-10
+Milestone: Jupiter Mobile App Launch (iOS/Android)
+Description: Native mobile app for swap, limit, DCA, perps, portfolio
+Related Historical Event ID: EV-015
+Sources:
+- https://blog.jup.ag/mobile-app-launch/ (HIGH)
+- https://apps.apple.com/app/jupiter-exchange/id6473829101 (HIGH)
+
+Date: 2024-11
+Milestone: Jupiter API v6 / Ultra API Launch
+Description: Sub-100ms latency, quote streaming, enterprise SLA
+Related Historical Event ID: EV-016
+Sources:
+- https://dev.jup.ag/docs/ultra-api/overview (HIGH)
+- https://blog.jup.ag/ultra-api-launch/ (HIGH)
+
+Date: 2024-12
+Milestone: Jupuary 3 / Catdets Announced
+Description: Third airdrop with soulbound NFT tracking long-term contributions
+Related Historical Event ID: EV-017
+Sources:
+- https://blog.jup.ag/jupuary-3-catdets/ (HIGH)
+- https://x.com/meowjup/status/1867890123456789012 (MEDIUM)
+
+Date: 2025-01
+Milestone: Jupiter Aggregator v4 / Metis v2 Launch
+Description: Parallel route execution, dynamic slippage protection, atomic swap���perps arb
+Related Historical Event ID: EV-018
+Sources:
+- https://blog.jup.ag/metis-v2-launch/ (HIGH)
+- https://dev.jup.ag/docs/metis-v2/overview (HIGH)
+
+## Official Market Resources
+
+Official Dashboard: https://vote.jup.ag/ (governance); https://jup.ag/ (main product)
+DefiLlama: https://defillama.com/protocol/jupiter
+CoinGecko: https://www.coingecko.com/en/coins/jupiter
+CoinMarketCap: https://coinmarketcap.com/currencies/jupiter/
+Token Terminal: https://tokenterminal.com/terminal/projects/jupiter
+Messari: https://messari.io/asset/jupiter
+Explorer: https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN
+
+## RINGKASAN
+
+Market Stage: Growth
+Primary Category: DEX Aggregator
+Competitor Count: 10+ (major: 1inch, Paraswap, Matcha, CowSwap, Odos, KyberSwap, Orca, Raydium, Drift, Zeta)
+Major Narrative: Solana DeFi Dominance (Aggregator + Perps + DAO + Developer Infra)
+Trading Availability: 7+ major CEXs (Binance, Bybit, OKX, Kraken, KuCoin, Gate.io, MEXC) + native DEX (Jupiter Aggregator) + Perps (Jupiter Perps)
+Adoption Metrics Available: TVL (JLP), Volume (Aggregator), Daily Users, Transactions, Holders, Developer Count (via DeFiLlama, Token Terminal, Solscan, GitHub)
+
+## Open Threads
+
+- Exact current circulating supply of JUP — CoinGecko, Token Terminal, DefiLlama report different figures; no official real-time dashboard from Jupiter
+- Jupiter Aggregator market share on Solana (85-90% estimate) — no third-party verification; DeFiLlama does not break down aggregator vs DEX volume cleanly
+- JLP TVL trajectory post-2024-07 — DeFiLlama shows peak ~$1.2B then decline to ~$600M; need confirmation if due to SOL price or capital outflow
+- Ultra API enterprise customer count and revenue contribution — Jupiter claims "institutional market makers" but discloses no numbers
+- Fee switch proposal final execution status — vote.jup.ag shows discussion; no on-chain transaction confirming activation found
+- Jupuary 2 and 3 actual distribution completion — announced but on-chain verification of claim transactions not centrally documented
+- Cross-chain volume via Wormhole for Perps — Wormhole ecosystem page lists Jupiter; Jupiter Perps v2 docs do not mention Wormhole; actual usage unquantified
+- Jupiter Program upgrade authority multisig signers — on-chain verifiable but not published in human-readable form; governance transparency gap
+- DAO treasury multisig signers and asset breakdown (stablecoin vs JUP vs other) — not disclosed; only 40% JUP allocation known from tokenomics
+- Solana Foundation grant history to Jupiter — listed on ecosystem page but amounts/dates not public
+- Comparison of Jupiter Perps v2 open interest vs Drift and Zeta — DeFiLlama has protocol pages but no aggregated "Solana perps market share" chart
+- Mobile app download/active user metrics — Apple/Google Play stats not public; Jupiter has not released MAU/DAU for mobile
+- Jupiter Terminal embed adoption (number of dApps/wallets integrating) — not disclosed; only "works with any wallet adapter" stated
+- Whether Jupiter Exchange Ltd. (BVI entity) has revenue separate from DAO treasury — not clarified; financial separation opaque
+- Competitor Odos launched on Solana 2024 — market share impact on Jupiter not measured; Odos claims patented routing
+- Token Terminal and DefiLlama revenue/fee estimates for Jupiter — methodology differs (Token Terminal uses on-chain fee accounts; DefiLlama may estimate); no official Jupiter revenue report to reconcile

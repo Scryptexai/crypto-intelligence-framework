@@ -1,0 +1,142 @@
+PROJECT: Sei
+
+STATUS AIRDROP
+
+Sudah dilakukan
+
+Sei telah melakukan distribusi token tanpa pembayaran melalui airdrop yang diumumkan bersamaan dengan mainnet launch pada 2023-08-15. Distribusi ini merupakan bagian dari alokasi Community (48% dari total supply) dan dilakukan dalam satu gelombang utama sebagai airdrop retroaktif + insentif testnet (HIGH) [Sei blog mainnet launch, https://sei.io/blog/sei-mainnet-launch; Sei blog tokenomics, https://sei.io/blog/sei-tokenomics]
+
+AIRDROP EVENTS
+
+AD-001: Airdrop Mainnet Launch / Testnet & Genesis Community
+- Tanggal: 2023-08-15
+- Tipe: Retroactive (testnet participation, early community, genesis stakes, NFT holders) + Snapshot (pemegang aset tertentu sebelum mainnet)
+- Alokasi: Tidak ditemukan (mengacu pada persentase dari Community 48% = 4,800,000,000 SEI, tapi alokasi spesifik untuk airdrop dibandingkan dengan ecosystem fund / liquidity mining tidak dipecah dalam whitepaper maupun blog) (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei blog tokenomics, https://sei.io/blog/sei-tokenomics]
+- Penerima: Tidak ditemukan (jumlah alamat pasti tidak dipublikasikan; klaim "ratusan ribu alamat" dilaporkan di berbagai media namun tanpa angka resmi) (LOW) [CoinDesk reporting, https://www.coindesk.com/business/2023/08/15/sei-network-token-listing-marks-mainnet-launch/]
+- Nilai saat klaim: Tidak ditemukan per penerima (harga SEI saat TGE diperkirakan $0.15-$0.20; kalau total airdrop diasumsikan 1-2% supply untuk testnet/community, nilai per alamat bervariasi) (LOW) [CoinGecko historical price, https://www.coingecko.com/en/coins/sei-network]
+- Kriteria: Partisipasi aktif di testnet Atlantic-1 (transaksi, validator, smart contract deployment); pemegang NFT Genesis dari koleksi resmi (misalnya "Sei Network Genesis NFTs" yang diberikan saat testnet); anggota komunitas awal yang terdaftar sejak 2022; staker genesis (yang mendelegasikan sebelum TGE) tidak secara eksplisit disebut tapi diduga termasuk (MEDIUM) [Sei blog testnet, https://sei.io/blog/introducing-sei-testnet; Sei NFT collections, https://sei.io/blog]
+- Anti-sybil: Tidak ditemukan (tidak ada mekanisme yang diumumkan secara detail seperti proof-of-humanity, volume minimum transaksi, atau durasi interaksi; kemungkinan menggunakan filter aktivitas testnet namun tidak dipublikasikan) (MEDIUM) [Tidak ada sumber resmi yang merinci]
+- Terkait EV: EV-004 (Mainnet + TGE), EV-002 (Testnet Atlantic-1), EV-003 (GitHub v0.1.0)
+- Sitasi: (HIGH) [Sei blog mainnet launch https://sei.io/blog/sei-mainnet-launch];
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Sei Labs Inc. telah mengumpulkan $35M (Series A $5M + Series B $30M) pada 2022; tidak ada follow-on funding diumumkan setelahnya; modal VC digunakan untuk pengembangan hingga mainnet (HIGH) [Sei blog Series A, https://sei.io/blog/sei-raises-5m-series-a; Phase 5 Financial]
+- Ukuran komunitas: Sebelum mainnet, komunitas Sei tumbuh melalui incentivized testnet (Atlantic-1) dengan validator set ~100 aktif; jumlah follower X/Twitter saat itu diperkirakan 200K-300K, follower Discord/Telegram puluhan ribu (tidak diumumkan resmi) (MEDIUM) [Sei Twitter, https://x.com/SeiNetwork; perkiraan dari wave social]
+- Kondisi pasar: Agustus 2023 adalah periode bull market moderat untuk token baru; ETH di ~$1,800, BTC di ~$29K; narrative L1 parallel execution baru mulai naik (Solana memantul dari krisis FTX, Aptos/Sui baru launch) (HIGH) [CoinGecko market data, https://www.coingecko.com/global-charts]
+- Kompetitor terdekat: Aptos (airdrop besar di 2022 dengan $200M+ ecosystem fund), Sui (mainnet + airdrop 2023), dan Cosmos chains seperti Injective/Celestia yang menggunakan airdrop retroaktif sebagai strategi bootstrap; Binance Launchpool menjadi mekanisme populer untuk distribusi token (MEDIUM) [Phase 8 Market: Competitor Landscape]
+- Keputusan airdrop tidak dapat dipisahkan dari kebutuhan likuiditas saat TGE: Binance listing simultan memerlukan initial airdrop untuk menciptakan circulating supply dan volume (HIGH) [Phase 3 EV-005]
+
+TRIGGER DAN ALTERNATIF
+
+- Trigger utama: Mainnet launch (EV-004) dan kebutuhan untuk menciptakan initial circulating supply tanpa public sale; airdrop menjadi katalis untuk menarik perhatian pasar, membangun komunitas, dan memberikan token kepada mereka yang telah berpartisipasi di testnet sehingga tidak menghadapi risiko regulasi "securities sale" (HIGH) [Sei blog mainnet launch, https://sei.io/blog/sei-mainnet-launch; Phase 5 Financial:: Fundraising Mechanism]
+- Trigger sekunder: Pre-announcement minggu-minggu sebelum TGE untuk membangun FOMO dan volume; Binance listing membutuhkan token unlocked untuk trading (HIGH) [Binance announcement, https://www.binance.com/en/blog/spotlight/sei-sei-326868]
+- Alternatif yang tersedia tapi tidak diambil:
+  - Public sale (ICO/IDO) — ditolak, diduga untuk menghindari regulatory risk (SEC Howey Test) dan karena sudah ada investor VC (HIGH) [Phase 5 Financial:: Token Sale — no public sale]
+  - Distribusi bertahap yang lebih panjang (misalnya via liquidity mining program) — tidak digunakan sebagai mekanisme utama; airdrop langsung dipilih sebagai bootstrap cepat (MEDIUM) [Phase 9 Behavioral:: Financial Decision Pattern]
+  - Tidak airdrop sama sekali — berarti circulating supply saat TGE sangat rendah, tekanan jual terkendali, tapi ekosistem tidak ter-bootstrap dan Binance listing kurang liquid (MEDIUM)
+  - Binance Launchpool (stake BNB untuk farming) — tidak digunakan; SEI langsung listed spot (HIGH) [Binance announcement, https://www.binance.com/en/blog/spotlight/sei-sei-326868]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Sei memulai mainnet, token SEI sekarang live. Untuk merayakannya, kami melakukan distribusi kepada partisipan testnet dan komunitas awal sebagai bentuk terima kasih." (parafrase, diumumkan di blog dan X) (HIGH) [Sei blog mainnet launch, https://sei.io/blog/sei-mainnet-launch]
+- "Airdrop bertujuan untuk desentralisasi kepemilikan token dan memastikan kualitas jaringan didukung oleh pengguna nyata." (pernyataan serupa di blog tokenomics) (HIGH) [Sei blog tokenomics, https://sei.io/blog/sei-tokenomics]
+
+Alasan yang tidak diumumkan (HIPOTESIS dengan evidence):
+- HIPOTESIS: Menciptakan circulating supply yang cukup untuk memenuhi syarat listing Binance / bursa lain. Data: Binance listing simultaneous diumumkan hari yang sama; bursa membutuhkan minimum liquid supply untuk market making (MEDIUM) [Phase 3 EV-005]
+- HIPOTESIS: Mengurangi tekanan regulasi dengan memberikan token gratis (bukan penjualan) sehingga tidak dianggap "investment contract" oleh SEC. Data: tidak ada public sale/ICO; equity + token deal hanya kepada VC terdaftar; airdrop adalah non-cash distribution (HIGH) [Phase 5 Financial:: Fundraising Mechanism]
+
+OUTCOME PER POV
+
+POV Founder (Jayendra Jog, Dan Edlebeck): Sukses
+- Jangka pendek: TGE 2023-08-15 menghasilkan price discovery yang sehat ($0.15-$0.20) tanpa gangguan teknis; Binance listing menciptakan volume tinggi; mainnet stabil (tidak ada halt dalam 3 bulan pertama) (HIGH) [Seitrace mainnet status; CoinGecko historical data]
+- Jangka panjang: Sei berhasil membangun ekosistem dengan TVL $380M+ pada Q4 2024; Sei v2 upgrade sukses; founding team tetap mengendalikan development narrative (MEDIUM) [Phase 8 Market:: Adoption Metrics]
+- Dasar: (HIGH) [Sei blog; Phase 8 Market]
+
+POV VC (Multicoin Capital, Jump Crypto, Delphi Digital): Sukses
+- Jangka pendek: Token allocation 22% untuk investor; harga SEI di atas harga pembelian (jika ada, tidak diungkap) sepanjang 2023-Q4; exit liquidity tersedia untuk market maker investors (MEDIUM) [Phase 6 Distribution:: Investors 22%]
+- Jangka panjang: Sei v2 meningkatkan valuation narrative; VC tetap memegang sebagian besar allocation dengan unlock bertahap hingga 2027; tidak ada funding round tambahan yang diumumkan (MEDIUM) [Phase 5 Funding History]
+- Dasar: (MEDIUM) [Phase 5 Financial; Phase 6 Token]
+
+POV Retail (penerima airdrop testnet/community): Sebagian
+- Jangka pendek: Penerima yang menjual saat TGE mendapat ~$0.15-$0.20; penerima yang menahan selama bull Q4 2023 bisa mendapat hingga $0.30+; tapi banyak yang tidak tahu airdrop atau gagal klaim karena kriteria tidak jelas (MEDIUM) [CoinGecko historical price; forum community Sei]
+- Jangka panjang: Sei harga turun di 2024 (range $0.20-$0.40 setelah v2), sehingga early sellers tidak rugi besar tapi juga tidak gain besar; penerima yang staking mendapatkan rewards (~7% inflasi) (MEDIUM) [Phase 6 Inflation]
+- Dasar: (MEDIUM) [CoinGecko; Sei governance]
+
+POV Community (pengguna aktif testnet Atlantic-1): Sukses
+- Jangka pendek: Partisipan testnet aktif (yang melakukan transaksi atau menjadi validator) menerima token langsung saat mainnet; merasa dihargai loyalty (HIGH) [Sei blog testnet]
+- Jangka panjang: Banyak yang menjadi validator/delegator atau pengguna aplikasi DeFi post-mainnet; komunitas inti tetap aktif di Discord/Telegram (MEDIUM) [Phase 7 Community]
+- Dasar: (MEDIUM) [Sei Discord]
+
+POV Developer (pembangun aplikasi di Sei): Sebagian
+- Jangka pendek: Developer yang membangun di testnet mendapat airdrop kecil tapi tidak signifikan dibandingkan biaya development; belum ada airdrop khusus developer (HIGH) [Sei ecosystem fund blog; Phase 7 Grant Program]
+- Jangka panjang: Sei Ecosystem Fund $50M menjadi insentif utama, bukan airdrop; developer EVM baru tertarik post-Sei v2 (MEDIUM) [Phase 5 Ecosystem Fund]
+- Dasar: (MEDIUM) [Phase 5 Financial; Phase 7 Ecosystem]
+
+POV Institution (institutional traders / market maker): Sukses
+- Jangka pendek: Binance listing menyediakan liquidity; market maker investors (Wintermute, Jane Street, Flow Traders) mendapat token allocation dari Series A/B dan bisa market-make sejak hari pertama (MEDIUM) [Phase 5 Investor List]
+- Jangka panjang: Institutional interest terbatas (tidak ada custody support tingkat tinggi); tapi perp volume $500M-$1.5B daily menunjukkan partisipasi traders (MEDIUM) [Phase 8 Adoption Metrics]
+- Dasar: (MEDIUM) [Phase 8 Market]
+
+POV Validator (operator node 100 aktif): Sukses
+- Jangka pendek: Validator yang berpartisipasi di testnet Atlantic-1 mendapat airdrop genesis; staking participation 65-70% dari circulating supply, menunjukkan insentif kuat (HIGH) [Phase 8 Adoption Metrics]
+- Jangka panjang: Validator set stabil di 100 aktif; commission income dari staking; tidak ada keluhan publik besar (MEDIUM) [Seitrace validators]
+- Dasar: (HIGH) [Phase 8; Seitrace]
+
+POV Builder (tim aplikasi seperti DragonSwap, Leviathan): Sebagian
+- Jangka pendek: Builder tidak terima airdrop token langsung; mereka terima insentif via Ecosystem Fund $50M yang mulai cair setelah mainnet (MEDIUM) [Phase 5 Ecosystem Fund]
+- Jangka panjang: Diluncurkan dalam cluster, mereka berkembang dengan TVL Sei; beberapa go-to-market sukses (DragonSwap, Leviathan) (MEDIUM) [Phase 9 Recurring Behavioral Pattern]
+- Dasar: (MEDIUM) [Phase 9 Behavioral]
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 0.18 USD (2023-08-15) [CoinGecko, https://www.coingecko.com/en/coins/sei-network] (MEDIUM)
+Harga +30 hari: 0.11 USD (2023-09-14) [CoinGecko, https://www.coingecko.com/en/coins/sei-network] (MEDIUM)
+Harga +90 hari: 0.42 USD (2023-11-15) [CoinGecko, https://www.coingecko.com/en/coins/sei-network] (MEDIUM)
+Harga puncak 12 bulan pertama: 1.20 USD (2024-01-05) [CoinGecko, https://www.coingecko.com/en/coins/sei-network] (MEDIUM)
+
+METRIK RETENSI
+
+- TVL Sei setelah distribusi: ~$80M (2023-08-31), ~$300M (2023-12-31), puncak ~$650M (2024-03) [DefiLlama, https://defillama.com/chain/Sei] (MEDIUM)
+- Unique holders SEI: ~1.2M (2023-10), ~2.5M (2024-10) (perkiraan dari explorer dan Dune) (MEDIUM) [Seitrace, https://seitrace.com; Dune Analytics, https://dune.com]
+- Daily active addresses: ~5K-10K (2023-09), ~20K-30K (2024-Q3) (MEDIUM) [Seitrace, https://seitrace.com; Token Terminal]
+- Konsentrasi kepemilikan (top 10 alamat): diperkirakan 35-40% supply termasuk vesting contracts dan exchange wallets; tidak dipublikasikan resmi (MEDIUM) [Etherscan SEI ERC-20 holders, https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5]
+- Staking participation rate: ~65-70% dari circulating supply (2024-Q3) (HIGH) [Token Terminal, https://tokenterminal.com/terminal/projects/sei]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+- Kriteria airdrop Sei (testnet participation, early community) tidak sepenuhnya dapat diprediksi publik sebelum mainnet; namun partisipasi testnet jelas diumumkan dan mendorong aktivitas di Atlantic-1 sebagai bentuk farming (HIGH) [Phase 3 EV-002]
+- Tidak ada laporan resmi tentang jumlah sybil yang didiskualifikasi; tidak ada mekanisme anti-sybil yang dipublikasikan seperti verifikasi akun, minimum duration, atau proof-of-humanity (MEDIUM) [Tidak ada sumber resmi]
+- Kesimpulan: populasi hunter 2023 sudah matang, kemungkinan sebagian besar airdrop diterima oleh akun-akun yang aktif melakukan transaksi testnet tanpa menjadi pengguna nyata pasca-mainnet (LOW-MEDIUM) [inferensi, tidak ada data]
+- Setelah airdrop, tidak ada program points program berkelanjutan diumumkan oleh Sei Labs (tidak seperti LayerZero yang punya multiple seasons), sehingga farming hanya terjadi pada fase testnet (HIGH) [Phase 3 History]
+
+PROSPEK
+
+- Prasyarat yang sudah terpenuhi: Sei v2 EVM upgrade live (2024-08), komunitas DeFi aktif, validator set stabil, ecosystem fund $50M berjalan (HIGH) [Phase 3 EV-020; Phase 7 Ecosystem]
+- Prasyarat yang belum: Belum ada pengumuman airdrop gelombang kedua; tidak ada program points/snapshot on-chain yang berjalan; tidak ada kontrak distribusi baru yang teridentifikasi (MEDIUM) [Scan governance proposals, https://seitrace.com/gov]
+- Sinyal yang biasanya mendahului: Pengumuman di blog resmi tentang "retroactive rewards" atau "community incentives"; munculnya halaman eligibility checker di situs resmi; aktivitas snapshot on-chain via governance proposal; rekrutmen untuk program "community growth" roles (MEDIUM) [Phase 9 Behavioral; pattern dari project lain di era sama]
+- Penilaian: Airdrop gelombang kedua POSSIBLE tapi belum ada sinyal kuat saat ini. Jika terjadi, kemungkinan diarahkan ke pengguna EVM (post-Sei v2) atau partisipan DeFi aktif, bukan lagi testnet. Keyakinan: MEDIUM untuk kemungkinan airdrop di masa depan, tapi tanpa data resmi tidak bisa dipastikan.
+
+PELAJARAN LINTAS PROJECT
+
+1. Ketika airdrop diumumkan bersamaan dengan mainnet launch dan Binance listing (era 2023, populasi hunter matang), airdrop menjadi katalis likuiditas dan harga yang efektif, tapi tekanan jual 30 hari pertama signifikan (-40% dari harga klaim) — menunjukkan bahwa airdrop besar sering diikuti koreksi awal karena penerima yang tidak loyal menjual cepat. (MEDIUM) [CoinGecko data; Phase 8 Market]
+2. Ketika kriteria airdrop tidak dipublikasikan secara detail sebelum snapshot (hanya testnet participation), risiko sybil tetap tinggi tapi tidak terukur; dampaknya adalah alamat bengkak tanpa pengguna nyata — mengakibatkan metrik aktivitas pasca-mainnet mengecewakan relative terhadap jumlah penerima. (MEDIUM) [Phase 7 Daily Active Users; tidak ada data resmi]
+3. Ketika tim memilih airdrop retroaktif daripada public sale (dengan alasan regulasi dan desentralisasi), efek distributor adalah terhindar dari SEC, tapi menumbuhkan ekosistem bergantung pada insentif jangka pendek; project harus berinvestasi di ecosystem fund (post-airdrop) untuk mempertahankan builder, seperti yang dilakukan Sei dengan $50M. (HIGH) [Phase 5 Ecosystem Fund]
+4. Dalam era 2023-2024, airdrop satu gelombang tanpa program points lanjutan menghasilkan retensi lebih rendah dibandingkan project yang menggunakan multiple seasons (misalnya LayerZero); Sei tidak memiliki mekanisme "farming" berkelanjutan sehingga komunitas pasca-airdrop perlu dipertahankan lewat utilitas protokol (staking, DeFi) bukan reward spekulatif. (MEDIUM) [Phase 8 Adoption Metrics; Phase 9 Behavioral]
+
+OPEN THREADS
+
+- Alokasi persis airdrop sebagai persentase dari total supply tidak pernah dipecah (whitepaper hanya menyebut Community 48%, tidak memisahkan airdrop vs ecosystem fund vs liquidity mining) — perlu analisis on-chain genesis distribution untuk memisahkan.
+- Jumlah penerima airdrop yang memenuhi syarat tidak dipublikasikan; klaim "ratusan ribu" belum diverifikasi dari sumber resmi.
+- Mekanisme anti-sybil yang digunakan (jika ada) tidak pernah dijelaskan di blog atau dokumentasi; kemungkinan menggunakan filter aktivitas testnet namun tidak didokumentasikan.
+- Apakah staker genesis (sebelum mainnet) menerima airdrop tambahan di luar testnet participants — tidak diputuskan dari sumber yang ada.
+- Harga saat klaim pada airdrop tidak dapat dihitung per-alamat karena tidak ada distribusi token individual yang diumumkan; estimasi di atas berdasar harga pasar umum.
+- Tidak ada data retensi per-cohort (berapa persen penerima yang masih memegang setelah 90 hari); hanya tersedia agregat TVL dan holders.
+- Sei Foundation (yang mungkin mengelola airdrop atau ecosystem fund) tidak memiliki legal entity terkonfirmasi publik — hal ini mempengaruhi transparansi distribusi.
+- Apakah airdrop kedua direncanakan untuk pengguna EVM post-Sei v2 — tidak ada indikasi resmi, tapi pola Sei v2 adoption mungkin memerlukan insentif serupa.
+- Pengaruh airdrop terhadap komunitas pasca-mainnet tidak terukur secara terpisah dari efek listing Binance dan pendanaan VC — sulit dipisahkan kausalitasnya.

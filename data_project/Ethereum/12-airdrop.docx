@@ -1,0 +1,128 @@
+PROJECT: Ethereum
+
+STATUS AIRDROP
+
+Belum ada
+Ethereum tidak pernah mendistribusikan ETH melalui airdrop, points program, retroactive reward, atau mekanisme gratis sejenis. Seluruh distribusi awal terjadi via Ether Crowdsale berbayar (2014-07-22 s.d. 2014-09-02) yang menjual 60.000.000 ETH kepada >9.000 peserta untuk 31.529 BTC, ditambah 12.000.000 ETH dialokasikan ke Ethereum Foundation dan early contributors pada genesis block【Phase 3 — EV-005】【Phase 3 — EV-006】【Phase 6 — Distribution】【Phase 6 — TGE】. Emisi berkelanjutan hanya melalui PoW mining rewards (2015-2022) dan PoS validator rewards (2020-sekarang)【Phase 3 — EV-008】【Phase 3 — EV-020】【Phase 3 — EV-026】【Phase 6 — Inflation/Deflation】.
+
+AIRDROP EVENTS
+
+Tidak ada event airdrop untuk ETH native. Blok ini sengaja dikosongkan karena tidak ada distribusi gratis dalam sejarah protokol.
+
+CONTEXT SAAT KEPUTUSAN
+
+Tahap funding: Pre-launch, tanpa dana VC; satu-satunya pendanaan adalah Ether Crowdsale publik 42 hari yang mengumpulkan 31.529 BTC (~$18,3 juta pada harga Juli 2014)【Phase 5 — Funding History】【Phase 3 — EV-005】【Phase 3 — EV-006】.
+Ukuran komunitas: >9.000 pembeli crowdsale; komunitas pengembang awal ~8 co-founder + kontributor teknis; belum ada pengguna mainnet karena jaringan belum live【Phase 3 — EV-002】【Phase 2 — Entity: 8 co-founder】.
+Kondisi pasar: Bitcoin $600-$650 area Juli 2014; tidak ada L1 smart contract platform lain yang live; narrative "Bitcoin 2.0" / "World Computer" baru diperkenalkan【Phase 8 — Market Timeline】【Phase 1 — Category】.
+Kompetitor terdekat: Tidak ada L1 programmable blockchain live pada 2014; NXT (2013) dan BitShares (2014) ada tapi arsitektur berbeda; Ethereum adalah first-mover untuk Turing-complete smart contract platform【Phase 8 — Competitor Landscape】.
+Keputusan distribusi: Tim founding memilih public sale berbasis BTC (fair launch, no VC, no private sale) alih-alih airdrop atau gratis distribution. Alasan: butuh dana pengembangan, menghindari security law risk dengan menjual utility token, dan menciptakan komunitas yang "invested" secara finansial【Phase 5 — Fundraising Mechanism】【Phase 9 — Financial Decision Pattern Pola 1】.
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Kebutuhan dana pengembangan protokol sebelum mainnet launch; keinginan distribusi merata tanpa investor institusional yang bisa mendominasi governance awal【Phase 5 — Funding History】【Phase 9 — Financial Decision Pattern Pola 1】.
+Alternatif yang tidak diambil:
+- Airdrop gratis ke komunitas Bitcoin / early adopter: tidak dipilih karena butuh capex besar (dev team, audit, legal, infra) dan tidak ada revenue stream selain token sale【Phase 5 — Financial Dependencies】.
+- Private sale / VC round: tidak diambil secara disengaja untuk menghindari token concentration, unlock schedule pressure, dan regulatory risk (Howey test)【Phase 5 — Token Sale】【Phase 9 — Financial Decision Pattern Pola 1】.
+- Fair launch murni (seperti Bitcoin mining dari genesis): tidak memungkinkan karena Ethereum butuh capital expenditure sebelum genesis (paid developers, testnet, audit, legal entity Swiss foundation)【Phase 3 — EV-003】【Phase 3 — EV-004】【Phase 5 — Funding History】.
+Alternatif internal tidak terdokumentasi: Tidak ada catatan resmi (blog, meeting notes, whitepaper revisi) yang membahas airdrop sebagai opsi yang dievaluasi serius. Whitepaper 2013 hanya menyebut "ether sale" sebagai mekanisme distribusi awal【Phase 3 — EV-001】【Phase 1 — Whitepaper】.
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Ether akan dijual dalam public sale untuk mendanai pengembangan Ethereum Foundation dan membayar pengembang" — Whitepaper & crowdsale announcement 2014【Phase 3 — EV-001】【Phase 3 — EV-005】 (HIGH) [Ethereum Blog, https://blog.ethereum.org/2014/07/22/launching-the-ether-sale; Whitepaper, https://ethereum.org/en/whitepaper/].
+- "Tidak ada pre-mine untuk founder; 12M ETH untuk Foundation dan early contributors yang membangun protokol" — Frontier launch blog 2015【Phase 3 — EV-008】 (HIGH) [Ethereum Blog, https://blog.ethereum.org/2015/07/22/frontier-is-coming; Messari, https://messari.io/asset/ethereum/profile].
+- "Distribusi harus fair dan terbuka; siapa saja bisa beli dengan BTC pada harga yang sama (dengan decay linier)" — Crowdsale terms【Phase 3 — EV-005】 (HIGH) [Ethereum Blog, https://blog.ethereum.org/2014/07/22/launching-the-ether-sale].
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- HIPOTESIS: Hindari klasifikasi sekuritas (Howey test) dengan menjual ETH sebagai "fuel" untuk computation, bukan investment contract — meskipun SEC kemudian mengevaluasi status ETH bertahun-tahun【Phase 5 — Financial Risk】【Phase 8 — Market Timeline (ETF approval 2024)】 (MEDIUM) [SEC vs Ethereum investigation reports 2023-2024; https://www.sec.gov/].
+- HIPOTESIS: Butuh treasury BTC/ETH untuk membayar pengembang full-time (Gavin Wood, Jeffrey Wilcke, dll.) selama 1+ tahun sebelum revenue protocol ada — airdrop tidak memberikan cash flow【Phase 5 — Financial Dependencies】【Phase 2 — Entity: Gavin Wood, Jeffrey Wilcke】 (MEDIUM) [Ethereum Blog, https://blog.ethereum.org/2014/06/17/ethereum-foundation-developer-update].
+- HIPOTESIS: Menciptakan "skin in the game" bagi early holders — pembeli crowdsake memiliki insentif finansial untuk mendukung jaringan, berbeda dengan penerima airdrop yang sering dump segera【Phase 9 — Behavioral Summary (Prioritas: credible neutrality, distribusi merata)】 (LOW) [Inferensi dari pola keputusan fair launch; tidak ada pernyataan eksplisit].
+- HIPOTESIS: Menghindari Sybil attack yang akan masif jika airdrop diumumkan sebelum mainnet — tidak ada identity/reputation layer pada 2014 untuk filter penerima【Phase 9 — Risk Response Pattern (belum ada Sybil defense)】 (LOW) [Inferensi dari keterbatasan teknis era 2014; tidak ada sumber primer].
+
+OUTCOME PER POV
+
+POV Founder: Sukses
+- Jangka pendek: 31.529 BTC terkumpul; 60M ETH tersebar ke >9.000 alamat; dana cukup untuk 1+ tahun pengembangan hingga mainnet【Phase 3 — EV-006】 (HIGH) [Ethereum Blog, https://blog.ethereum.org/2014/09/02/ether-sale-ends-raised-31500-btc].
+- Jangka panjang: Distribusi token paling merata di antara L1 besar (no VC unlock overhang); EF treasury mendanai protocol development 10+ tahun via grants; tidak ada tekanan jual dari investor early【Phase 10 — Knowledge K-001】【Phase 5 — Treasury】 (HIGH) [Messari, https://messari.io/asset/ethereum/profile; EF Annual Report 2023, https://ethereum.foundation/annual-report-2023/].
+- Dasar: Crowdsale data + 10 tahun on-chain history + EF grants track record.
+
+POV VC: Tidak berkaitan (Tidak ada VC round)
+- Jangka pendek: Tidak ada alokasi VC, tidak ada SAFT, tidak ada lockup — VC tidak berpartisipasi pada distribusi awal【Phase 5 — Token Sale】 (HIGH) [Messari, https://messari.io/asset/ethereum/profile].
+- Jangka panjang: VC masuk belakangan via ekosistem (Consensys Series A 2015+, infrastructure providers, L2 teams) — bukan via protokol token【Phase 2 — Entity: Consensys】【Phase 7 — Infrastructure Providers】 (HIGH) [Consensys, https://consensys.net/; Messari, https://messari.io/project/consensys/profile].
+- Dasar: Funding history menunjukkan 0 VC di crowdsale; semua VC investment post-genesis di layer aplikasi/infra.
+
+POV Retail: Sebagian
+- Jangka pendek: Pembeli crowdsale mendapatkan 2000 ETH/BTC (harga ~$0,30/ETH) — ROI ekstrem bagi yang hold hingga hari ini【Phase 6 — Token Sale】 (HIGH) [Ethereum Blog, https://blog.ethereum.org/2014/07/22/launching-the-ether-sale; CoinGecko, https://www.coingecko.com/en/coins/ethereum].
+- Jangka panjang: Retail yang tidak beli di crowdsale harus beli di pasar sekunder (CEX/DEX) dengan harga lebih tinggi; tidak ada kesempatan "free entry" via airdrop【Phase 6 — TGE】【Phase 8 — Trading Markets】 (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/ethereum#markets].
+- Dasar: Crowdsale price vs current price; no airdrop history.
+
+POV Community: Sukses
+- Jangka pendek: Komunitas awal terbentuk dari pembeli yang termotivasi finansial — "skin in the game" menciptakan alignment panjang【Phase 9 — Behavioral Summary】 (MEDIUM) [Inferensi dari distribusi fair launch; tidak ada survei komunitas 2014].
+- Jangka panjang: Komunitas Ethereum tumbuh organik via pengembangan, bukan via incentive farming; cultura "BUIDL" bukan "farm"【Phase 7 — Developer Ecosystem】【Phase 8 — Adoption Metrics (6,200+ full-time dev)】 (HIGH) [Electric Capital, https://www.electriccapital.com/developer-report; Ethereum.org, https://ethereum.org/en/developers/].
+- Dasar: Developer count tertinggi crypto; komunitas tidak bergantung token incentive.
+
+POV Developer: Sukses
+- Jangka pendek: Dana crowdsale membayar pengembang inti (Geth, cpp-ethereum, Python client, research) selama masa pra-mainnet【Phase 3 — EV-004】【Phase 3 — EV-008】【Phase 5 — Financial Dependencies】 (HIGH) [Ethereum Blog, https://blog.ethereum.org/2014/06/17/ethereum-foundation-developer-update].
+- Jangka panjang: EF grants (> $100M kumulatif) + Protocol Guild + ecosystem grants mendanai open-source development berkelanjutan tanpa inflasi token tambahan【Phase 5 — Funding History】【Phase 7 — Grant Programs】【Phase 10 — Knowledge K-004】 (HIGH) [EF ESP, https://esp.ethereum.foundation/; Protocol Guild, https://protocolguild.org/].
+- Dasar: Grant programs terdokumentasi; developer metrics tertinggi.
+
+POV Institution: Tidak diketahui (pada era 2014)
+- Jangka pendek: Institusi tidak berpartisipasi di crowdsale 2014 (terlalu dini, regulasi belum jelas, custody belum matang)【Phase 8 — Market Timeline】 (MEDIUM) [Historical context: no institutional crypto custody 2014].
+- Jangka panjang: Institusi masuk via Spot ETH ETF (Juli 2024), CME futures (2021), custodian (Coinbase Prime, Fireblocks, Fidelity) — semua beli di pasar sekunder【Phase 8 — Market Timeline (2024-05-23, 2024-07-23)】【Phase 8 — Exchange Ecosystem】 (HIGH) [SEC 19b-4 approvals; CME Group, https://www.cmegroup.com/markets/cryptocurrencies/ether.html].
+- Dasar: ETF approval 2024; CME derivatives history; custodian offerings.
+
+POV Validator: Tidak berkaitan (pada era 2014)
+- Jangka pendek: Validator set tidak ada (PoW mining dimulai 2015-07-30; PoS Beacon Chain 2020-12-01)【Phase 3 — EV-008】【Phase 3 — EV-020】 (HIGH) [Ethereum Blog, https://blog.ethereum.org/2015/07/22/frontier-is-coming; Beaconcha.in, https://beaconcha.in/genesis].
+- Jangka panjang: Validator economics sepenuhnya terpisah dari distribusi awal — staking rewards dari issuance + tips + MEV, bukan dari airdrop【Phase 4 — Consensus Mechanism】【Phase 6 — Inflation/Deflation】 (HIGH) [Consensus Specs, https://github.com/ethereum/consensus-specs; Ultrasound.money, https://ultrasound.money/].
+- Dasar: Consensus mechanism specs; on-chain revenue data.
+
+POV Builder: Sukses
+- Jangka pendek: Builder early (The DAO, Augur, MakerDAO 2015-2017) membeli ETH di pasar untuk gas dan collateral — tidak ada free allocation【Phase 7 — Applications】 (MEDIUM) [Historical: early dApps launched post-Frontier].
+- Jangka panjang: Ekosistem builder terbesar crypto (Uniswap, Aave, Lido, EigenLayer, dll.) dibangun di atas settlement layer yang sudah terdistribusi — tidak ada dependency pada airdrop untuk user acquisition【Phase 7 — Applications】【Phase 8 — Adoption Metrics (800+ DeFi protocols)】 (HIGH) [DefiLlama, https://defillama.com/chain/Ethereum; Electric Capital, https://www.electriccapital.com/developer-report].
+- Dasar: App ecosystem metrics; no builder airdrop from protocol.
+
+METRIK RETENSI
+
+Tidak ditemukan — tidak ada airdrop untuk diukur retensinya. Metrik yang relevan adalah retensi pembeli crowdsale dan validator:
+- Persentase alamat genesis (72M ETH allocation) yang masih aktif: tidak dihitung resmi; estimasi on-chain menunjukkan sebagian besar ETH genesis telah berpindah tangan berkali-kali【Phase 6 — Holder Distribution】 (MEDIUM) [Etherscan, https://etherscan.io/token/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee#balances; Nansen/Arkham estimates].
+- Validator retention: >90% validator aktif terus memvalidasi sejak activation; exit queue terkelola【Phase 8 — Adoption Metrics (1.05M+ validator)】 (HIGH) [Beaconcha.in, https://beaconcha.in/; Rated Network, https://www.rated.network/].
+- Harga ETH pada genesis (2015-07-30): ~$0,93 (first trade Kraken) → +30 hari: ~$1,20 → +90 hari: ~$0,90 (volatilitas tinggi)【Phase 8 — Market Timeline】 (MEDIUM) [CoinGecko historical; Kraken first trade data].
+
+FARMING DAN SYBIL
+
+Tidak berlaku — tidak ada airdrop, tidak ada snapshot, tidak ada kriteria kelayakan yang bisa di-farm.
+Catatan terkait: Pada era 2014, tidak ada Sybil resistance untuk crowdsale (siapa saja bisa beli BTC sesuai kuota); namun karena pembayaran diperlukan (BTC), biaya Sybil attack = harga BTC, membuatnya tidak ekonomis untuk mass-create wallet【Phase 3 — EV-005】 (MEDIUM) [Inferensi dari mekanisme paid sale].
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Distribusi token sudah sangat merata (no single entity >5% supply; Lido stETH ~28% staked ETH tapi bukan protocol allocation)【Phase 6 — Holder Distribution】【Phase 10 — Knowledge K-001】 (HIGH).
+- Protokol sudah mature, tidak butuh user acquisition via incentive【Phase 1 — Category: Mature】【Phase 8 — Adoption Metrics】 (HIGH).
+- Treasury EF ada (meski transparansi rendah) untuk mendanai development tanpa token emission tambahan【Phase 5 — Treasury】【Phase 10 — Knowledge K-010】 (MEDIUM).
+
+Prasyarat yang belum (dan kemungkinan besar tidak akan terpenuhi untuk ETH native):
+- Alasan protokol untuk mendistribusikan ETH gratis: tidak ada. ETH sudah memiliki utility native (gas, staking, collateral, unit of account) dan pasar likuid【Phase 6 — Utility】【Phase 8 — Liquidity】 (HIGH).
+- Regulatory clarity untuk airdrop native asset: SEC sudah mengklasifikasikan ETH sebagai commodity (via Spot ETF approval), tapi airdrop bisa memicu pertanyaan baru tentang "free distribution = security offering"【Phase 8 — Market Timeline (ETF 2024)】【Phase 5 — Financial Risk】 (MEDIUM).
+- Teknis: Airdrop ke 260M+ alamat unik historical akan memerlukan gas cost astronomis (~$100M+ pada gas price saat ini) tanpa manfaat protokol【Phase 8 — Adoption Metrics (260M+ unique wallets)】 (HIGH).
+
+Sinyal yang biasanya mendahului (jika ada airdrop di layer lain, bukan ETH native):
+- L2 / application layer: Token baru (misal ARB, OP, ZK, STRK) melakukan airdrop retroaktif ke user bridge/transaction history — sinyal: deploy snapshot contract, anuncio "season", snapshot block height announcement【Phase 7 — Major Integrations (Arbitrum, Optimism, zkSync, Starknet)】 (HIGH) [L2Beat, https://l2beat.com/; respective L2 blogs].
+- Infrastructure: Points program (LayerZero, Linea, Scroll, dll.) — sinyal: announcement campaign, Galxe/Quest platform integration, snapshot date leak【Phase 7 — Infrastructure Providers】 (MEDIUM) [Respective project announcements].
+
+Penilaian: Kemungkinan airdrop ETH native = **hampir nol (0-1%)**. ETH adalah native asset Layer 1 yang sudah fully distributed, memiliki utility intrinsic, dan tidak butuh bootstrapping user. Setiap "airdrop" yang diklaim untuk ETH native hampir pasti scam. Analisis airdrop relevan hanya untuk token L2/application layer di atas Ethereum (ARB, OP, ZK, STRK, LINEA, dll.) yang sudah terjadi atau diumumkan. Tingkat keyakinan: 99% berdasarkan 10 tahun history tanpa airdrop + fundamental tokenomics. Akan berubah hanya jika: (a) hard fork kontroversial menciptakan chain baru dengan token baru (seperti ETC 2016), atau (b) protokol memutuskan redistribusi supply via governance (tidak ada mekanisme on-chain untuk ini, dan EF menolak kontrol protokol)【Phase 3 — EV-012】【Phase 10 — Knowledge K-004, K-010】.
+
+PELAJARAN LINTAS PROJECT
+
+Ketika project memiliki capital expenditure tinggi sebelum launch (paid devs, audit, legal, infra) dan tidak ada revenue stream selain token, public sale berbasis crypto (BTC/ETH) lebih aman dari airdrop — menghindari Sybil, memberikan treasury, dan menciptakan holder yang "invested" (Era 2014-2016, Ethereum, NXT, BitShares).
+Ketika distribusi awal terjadi via paid sale tanpa VC unlock, token menghindari overhang supply yang menekan harga bertahun-tahun — Ethereum tidak pernah mengalami "VC unlock cliff" seperti Solana, Aptos, Sui, Arbitrum (Era 2014-sekarang, Ethereum vs L1/L2 modern).
+Ketika utility token native (gas, staking, collateral) sudah live dan adopted sebelum airdrop dipertimbangkan, airdrop tidak menambah adoption tapi hanya menciptakan sell pressure — ETH tidak butuh airdrop karena utility sudah terbukti (Era 2015-sekarang, Ethereum vs L2 tokens yang airdrop sebelum product-market fit).
+Ketika governance off-chain social consensus (bukan token voting), airdrop tidak diperlukan untuk "decentralize governance" — Ethereum mencapai credible neutrality tanpa token-weighted voting (Era 2016-sekarang, post-DAO fork governance model).
+Ketika project memilih fair launch (paid public sale) dan menolak airdrop, komunitas yang terbentuk cenderung builder-oriented bukan mercenary-oriented — developer retention Ethereum tertinggi crypto tanpa token incentive untuk coding (Era 2014-sekarang, Electric Capital data).
+
+OPEN THREADS
+
+- Apakah ada diskusi internal tim founding 2013-2014 tentang airdrop yang tidak terdokumentasi publik? (Tidak ditemukan di whitepaper, blog, meeting logs yang tersedia).
+- Berapa persen persis dari 12M ETH "Foundation/early contributors" yang pergi ke masing-masing co-founder (Vitalik, Gavin, Jeffrey, Charles, Anthony, Mihai, Amir, Joseph) — tidak pernah diungkap resmi【Phase 6 — Distribution】【Phase 11 — Conflict C-003】.
+- Apakah EF pernah mempertimbangkan airdrop ETH ke pengguna testnet Olympic (2015) sebagai reward? (Olympic menawarkan bounty bug 25.000 ETH tapi bukan airdrop umum)【Phase 3 — EV-007】.
+- Jika Ethereum hard fork kontroversial terjadi di masa depan (mirip DAO fork 2016), apakah chain minoritas akan mendapat token baru via airdrop ke holder ETH? (ETC 2016: holder ETH mendapat ETC 1:1 via chain split, bukan airdrop kontrak)【Phase 3 — EV-012】.
+- Bagaimana perlakuan pajak airdrop ETH (jika pernah terjadi) di berbagai yurisdiksi — relevan untuk analisis L2 token airdrop tapi bukan ETH native.

@@ -1,0 +1,921 @@
+PROJECT: Injective
+
+## Ecosystem Position
+
+Primary Sector: Layer-1 blockchain untuk decentralized finance / cross-chain derivatives exchange (HIGH) [Injective Documentation, https://docs.injective.network/learn/products/]
+Secondary Sector: DeFi infrastructure, synthetic assets, decentralized exchange, interoperability (HIGH) [Injective Documentation, https://docs.injective.network/learn/architecture/]
+Primary Chain: Injective Chain (native Cosmos SDK L1) (HIGH) [Injective Blog Mainnet Launch, https://blog.injective.com/injective-mainnet-launch/]
+Supported Chains: Ethereum (ERC-20 bridge), Osmosis (IBC), Celestia (IBC), Neutron (IBC), Cosmos Hub (IBC), dydX (IBC), Stride (IBC), Axelar (IBC), and other IBC-connected chains (HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/; Injective Docs Bridge, https://docs.injective.network/learn/bridge/]
+Sources: https://docs.injective.network/learn/products/; https://docs.injective.network/learn/architecture/; https://blog.injective.com/injective-mainnet-launch/; https://docs.injective.network/ecosystem/; https://docs.injective.network/learn/bridge/
+
+## External Dependencies
+
+Dependency Name: Tendermint Core / CometBFT
+Dependency Type: Protocol
+Purpose: Consensus engine BFT Proof-of-Stake untuk Injective Chain; finality ~1 detik
+Criticality: Critical
+Status: Live
+Related Entity: Tendermint / CometBFT
+Related Technology Component: Tendermint Core Consensus Engine
+Sources: https://docs.injective.network/learn/architecture/; https://github.com/InjectiveLabs/injective-core/blob/master/go.mod; https://docs.tendermint.com/master/spec/consensus/consensus.html
+
+Dependency Name: Cosmos SDK
+Dependency Type: SDK
+Purpose: Application framework modular untuk blockchain; modul standar (auth, bank, staking, governance, distribution, slashing, ibc, wasm, peggy, exchange, oracle, auction, insurance, mint, fees)
+Criticality: Critical
+Status: Live
+Related Entity: Cosmos SDK
+Related Technology Component: Cosmos SDK Base App
+Sources: https://docs.injective.network/learn/architecture/; https://github.com/InjectiveLabs/injective-core/blob/master/go.mod; https://docs.cosmos.network/
+
+Dependency Name: IBC-Go
+Dependency Type: Protocol
+Purpose: Implementasi Inter-Blockchain Communication untuk transfer token, packet forwarding, interchain accounts antara Injective dan rantai Cosmos lain
+Criticality: Critical
+Status: Live
+Related Entity: Cosmos
+Related Technology Component: IBC Module (x/ibc-core, x/ibc-apps)
+Sources: https://docs.injective.network/learn/architecture/; https://github.com/InjectiveLabs/injective-core/blob/master/go.mod; https://github.com/cosmos/ibc-go
+
+Dependency Name: CosmWasm (wasmd)
+Dependency Type: Protocol
+Purpose: WebAssembly VM untuk eksekusi smart contract (Rust → WASM); support CW20, CW721, CW1155, IBC callbacks
+Criticality: High
+Status: Live (enabled since v1.2 upgrade 2022-08)
+Related Entity: CosmWasm
+Related Technology Component: CosmWasm VM (x/wasm)
+Sources: https://docs.injective.network/develop/cosmwasm/; https://github.com/InjectiveLabs/injective-core/tree/master/x/wasm; https://github.com/CosmWasm/cosmwasm
+
+Dependency Name: Peggy Bridge
+Dependency Type: Bridge
+Purpose: Bridge bidirectional Ethereum ↔ Injective untuk ERC-20 INJ dan aset lain; validator set sebagai relayer/attester dengan threshold signature 2/3+
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: Peggy Bridge (x/peggy)
+Sources: https://docs.injective.network/learn/bridge/; https://github.com/InjectiveLabs/injective-core/tree/master/x/peggy; https://github.com/InjectiveLabs/peggy-contracts
+
+Dependency Name: Ethereum
+Dependency Type: Chain
+Purpose: Chain tujuan bridge ERC-20 INJ (kontrak 0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30); Peggy contracts di Ethereum mainnet
+Criticality: High
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: Peggy Bridge (x/peggy), ERC-20 INJ contract
+Sources: https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30; https://docs.injective.network/learn/bridge/; https://github.com/InjectiveLabs/peggy-contracts
+
+Dependency Name: Osmosis
+Dependency Type: Chain
+Purpose: DEX AMM terkemuka di Cosmos; partner IBC utama untuk likuiditas cross-chain dan routing perdagangan via saluran IBC
+Criticality: High
+Status: Live
+Related Entity: Osmosis
+Related Technology Component: IBC Module (x/ibc-apps transfer)
+Sources: https://docs.injective.network/ecosystem/; https://osmosis.zone/; https://blog.injective.com/ (IBC integration announcements)
+
+Dependency Name: Celestia
+Dependency Type: Chain
+Purpose: Modular data availability layer; partner IBC untuk ketersediaan data dan skalabilitas rollup di ekosistem Injective
+Criticality: Medium
+Status: Live
+Related Entity: Celestia
+Related Technology Component: IBC Module (x/ibc-apps transfer)
+Sources: https://docs.injective.network/ecosystem/; https://blog.celestia.org/; https://blog.injective.com/ (IBC integration announcements)
+
+Dependency Name: Neutron
+Dependency Type: Chain
+Purpose: Smart contract platform cross-chain di Cosmos; partner IBC untuk interoperabilitas kontrak pintar (CosmWasm) dan DeFi komposabel
+Criticality: Medium
+Status: Live
+Related Entity: Neutron
+Related Technology Component: IBC Module (x/ibc-apps transfer), Interchain Accounts (ICA)
+Sources: https://docs.injective.network/ecosystem/; https://blog.neutron.org/; https://blog.injective.com/interchain-accounts/
+
+Dependency Name: Binance
+Dependency Type: Exchange / Infrastructure Provider
+Purpose: Launchpad IEO distributor (2020), CEX listing partner (spot & perpetual), liquidity provider, market maker coordination
+Criticality: High
+Status: Live
+Related Entity: Binance
+Related Technology Component: INJ token distribution, CEX liquidity
+Sources: https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad; https://www.binance.com/en/trade/INJ_USDT; https://blog.injective.com/injective-ecosystem-fund/
+
+Dependency Name: Jump Crypto
+Dependency Type: Infrastructure Provider / Market Maker
+Purpose: Market maker utama, investor, ekosistem fund contributor, liquidity provider untuk Injective Exchange
+Criticality: High
+Status: Live
+Related Entity: Jump Crypto
+Related Technology Component: Exchange liquidity, market making
+Sources: https://blog.injective.com/injective-ecosystem-fund/; https://jumpcrypto.com/portfolio/; https://docs.injective.network/learn/exchange/
+
+Dependency Name: Protobuf (gogoproto)
+Dependency Type: SDK
+Purpose: Serialisasi state, gRPC, REST gateway untuk chain dan indexer
+Criticality: High
+Status: Live
+Related Entity: Protobuf
+Related Technology Component: Protobuf serialization, gRPC/REST API
+Sources: https://github.com/InjectiveLabs/injective-core/tree/master/proto; https://docs.cosmos.network/main/build/building-modules/protobuf.html
+
+Dependency Name: PostgreSQL + GraphQL (Hasura/Apollo)
+Dependency Type: Infrastructure
+Purpose: Indexer API untuk query historis orderbook, trades, accounts
+Criticality: Medium
+Status: Live
+Related Entity: Indexer infrastructure
+Related Technology Component: Indexer / GraphQL API
+Sources: https://github.com/InjectiveLabs/indexer; https://docs.injective.network/develop/api/
+
+Dependency Name: Docker / Kubernetes
+Dependency Type: Infrastructure
+Purpose: Node deployment, devnet, testnet, validator infrastructure, managed services
+Criticality: Medium
+Status: Live
+Related Entity: Docker / Kubernetes
+Related Technology Component: Node deployment, validator infrastructure
+Sources: https://github.com/InjectiveLabs/injective-core/tree/master/docker; https://docs.injective.network/develop/node/; https://docs.injective.network/validate/
+
+Dependency Name: Prometheus + Grafana
+Dependency Type: Infrastructure
+Purpose: Monitoring validator/node metrics
+Criticality: Medium
+Status: Live
+Related Entity: Prometheus / Grafana
+Related Technology Component: Validator monitoring
+Sources: https://docs.injective.network/validate/monitoring/; https://docs.injective.network/develop/node/
+
+Dependency Name: GitHub Actions
+Dependency Type: Infrastructure
+Purpose: CI/CD untuk build, test, release binary
+Criticality: Low
+Status: Live
+Related Entity: GitHub
+Related Technology Component: CI/CD pipeline
+Sources: https://github.com/InjectiveLabs/injective-core/actions
+
+Dependency Name: Ignite CLI (formerly Starport)
+Dependency Type: SDK
+Purpose: Scaffolding modul Cosmos SDK untuk pengembangan
+Criticality: Low
+Status: Live
+Related Entity: Ignite
+Related Technology Component: Module scaffolding
+Sources: https://ignite.com/cli; https://docs.injective.network/develop/
+
+Dependency Name: React + TypeScript + Vite
+Dependency Type: SDK
+Purpose: Frontend framework untuk Helix, Injective Hub, Bridge UI
+Criticality: Medium
+Status: Live
+Related Entity: React / TypeScript / Vite
+Related Technology Component: Helix Frontend, Injective Hub, Bridge UI
+Sources: https://github.com/InjectiveLabs/helix-app/blob/main/package.json; https://github.com/InjectiveLabs/injective-hub/blob/main/package.json; https://github.com/InjectiveLabs/injective-bridge-ui
+
+Dependency Name: Axelar
+Dependency Type: Bridge / Protocol
+Purpose: General message passing bridge untuk cross-chain communication beyond IBC; terintegrasi via IBC ke Axelar
+Criticality: Medium
+Status: Live
+Related Entity: Axelar
+Related Technology Component: IBC Module (x/ibc-apps transfer), cross-chain messaging
+Sources: https://docs.injective.network/ecosystem/; https://axelar.network/; https://blog.injective.com/ (Axelar integration announcements)
+
+Dependency Name: Stride
+Dependency Type: Chain
+Purpose: Liquid staking zone di Cosmos; IBC partner untuk staked INJ (stINJ) liquidity
+Criticality: Medium
+Status: Live
+Related Entity: Stride
+Related Technology Component: IBC Module (x/ibc-apps transfer)
+Sources: https://docs.injective.network/ecosystem/; https://stride.zone/; https://blog.injective.com/ (Stride integration announcements)
+
+Dependency Name: dydX
+Dependency Type: Chain
+Purpose: Orderbook DEX chain di Cosmos; IBC partner untuk cross-chain trading arbitrase
+Criticality: Medium
+Status: Live
+Related Entity: dydX
+Related Technology Component: IBC Module (x/ibc-apps transfer)
+Sources: https://docs.injective.network/ecosystem/; https://dydx.exchange/; https://blog.injective.com/ (dydX IBC announcements)
+
+## Major Integrations
+
+Integration Name: Injective ↔ Osmosis IBC Channel
+Integrated With: Osmosis
+Purpose: Transfer aset native (INJ, OSMO, USDC, dll.) dan routing likuiditas cross-chain DEX antara Injective Exchange (orderbook) dan Osmosis (AMM)
+Status: Live
+Related Historical Event ID: EV-013
+Sources: https://docs.injective.network/ecosystem/; https://osmosis.zone/; https://blog.injective.com/ (IBC integration announcements)
+
+Integration Name: Injective ↔ Celestia IBC Channel
+Integrated With: Celestia
+Purpose: Transfer aset dan data availability untuk rollup scaling di Injective via Celestia DA layer
+Status: Live
+Related Historical Event ID: EV-016
+Sources: https://docs.injective.network/ecosystem/; https://blog.celestia.org/; https://blog.injective.com/ (IBC integration announcements)
+
+Integration Name: Injective ↔ Neutron IBC Channel
+Integrated With: Neutron
+Purpose: Interoperabilitas smart contract CosmWasm cross-chain, Interchain Accounts (ICA), DeFi komposabel
+Status: Live
+Related Historical Event ID: EV-017
+Sources: https://docs.injective.network/ecosystem/; https://blog.neutron.org/; https://blog.injective.com/interchain-accounts/
+
+Integration Name: Injective ↔ Ethereum Peggy Bridge
+Integrated With: Ethereum
+Purpose: Bridge bidirectional ERC-20 INJ dan aset lain (USDC, USDT, WETH, dll.) antara Ethereum mainnet dan Injective Chain native
+Status: Live
+Related Historical Event ID: EV-010
+Sources: https://docs.injective.network/learn/bridge/; https://bridge.injective.network/; https://github.com/InjectiveLabs/peggy-contracts
+
+Integration Name: Injective ↔ Axelar IBC Channel
+Integrated With: Axelar
+Purpose: General message passing dan asset transfer ke non-IBC chains (Ethereum, Polygon, Avalanche, dll.) via Axelar network
+Status: Live
+Related Historical Event ID: (tidak tercatat di Phase 3, announcement di blog)
+Sources: https://docs.injective.network/ecosystem/; https://axelar.network/; https://blog.injective.com/ (Axelar integration announcements)
+
+Integration Name: Injective ↔ Stride IBC Channel
+Integrated With: Stride
+Purpose: Liquid staking INJ (stINJ) via Stride zone; stINJ dapat digunakan di DeFi Injective sambil earning staking rewards
+Status: Live
+Related Historical Event ID: (tidak tercatat di Phase 3, announcement di blog)
+Sources: https://docs.injective.network/ecosystem/; https://stride.zone/; https://blog.injective.com/ (Stride integration announcements)
+
+Integration Name: Injective ↔ dydX IBC Channel
+Integrated With: dydX
+Purpose: Cross-chain trading arbitrase antara dua orderbook DEX (Injective Exchange dan dydX v4) via IBC
+Status: Live
+Related Historical Event ID: (tidak tercatat di Phase 3, announcement di blog)
+Sources: https://docs.injective.network/ecosystem/; https://dydx.exchange/; https://blog.injective.com/ (dydX IBC announcements)
+
+Integration Name: Injective Ecosystem Fund Grants
+Integrated With: Binance, Pantera Capital, Jump Crypto, Delphi Digital, Mark Cuban
+Purpose: Dana ekosistem untuk hibah pengembang, insentif likuiditas, dukungan proyek baru di Injective
+Status: Ongoing
+Related Historical Event ID: EV-014
+Sources: https://blog.injective.com/injective-ecosystem-fund/; https://docs.injective.network/ecosystem/
+
+Integration Name: Helix Frontend ↔ Injective Exchange
+Integrated With: Injective Exchange (on-chain module)
+Purpose: Consumer-facing trading UI untuk orderbook DEX native; order placement, cancellation, market data visualization
+Status: Live
+Related Historical Event ID: EV-011
+Sources: https://helixapp.com/; https://docs.injective.network/learn/products/; https://github.com/InjectiveLabs/helix-app
+
+Integration Name: Injective Hub ↔ Governance/Staking Modules
+Integrated With: Injective Chain (x/gov, x/staking, x/distribution)
+Purpose: Portal staking, delegasi, voting governance, validator management
+Status: Live
+Related Historical Event ID: EV-009
+Sources: https://hub.injective.network/; https://docs.injective.network/learn/products/; https://github.com/InjectiveLabs/injective-hub
+
+Integration Name: Injective Bridge UI ↔ Peggy Bridge + IBC
+Integrated With: Peggy Bridge (Ethereum), IBC channels (Cosmos chains)
+Purpose: Web interface untuk bridge aset cross-chain (Ethereum ↔ Injective ↔ IBC chains)
+Status: Live
+Related Historical Event ID: EV-010
+Sources: https://bridge.injective.network/; https://docs.injective.network/learn/bridge/; https://github.com/InjectiveLabs/injective-bridge-ui
+
+Integration Name: Talis NFT Marketplace ↔ Injective Chain
+Integrated With: Injective Chain (CosmWasm CW721/CW1155)
+Purpose: Minting, trading, royalti NFT native di Injective dengan integrasi IBC
+Status: Live
+Related Historical Event ID: EV-015
+Sources: https://talis.art/; https://docs.injective.network/ecosystem/; https://github.com/InjectiveLabs/injective-core/tree/master/x/wasm
+
+Integration Name: Frontrunner ↔ Injective Exchange
+Integrated With: Injective Exchange (on-chain orderbook)
+Purpose: Social/copy trading platform on-chain di Injective; verifikasi performa transparan
+Status: Live
+Related Historical Event ID: EV-018
+Sources: https://frontrunner.xyz/; https://docs.injective.network/ecosystem/
+
+Integration Name: Hydro Protocol ↔ Injective Chain
+Integrated With: Injective Chain (CosmWasm lending contracts)
+Purpose: Money market lending/borrowing native di Injective
+Status: Live
+Related Historical Event ID: EV-019
+Sources: https://hydroprotocol.io/; https://docs.injective.network/ecosystem/
+
+Integration Name: Mito Finance ↔ Injective Chain
+Integrated With: Injective Chain (CosmWasm vault contracts)
+Purpose: Vault strategi yield otomatis dan manajemen portofolio terdesentralisasi
+Status: Live
+Related Historical Event ID: EV-020
+Sources: https://mito.finance/; https://docs.injective.network/ecosystem/
+
+Integration Name: Black Panther ↔ Injective Exchange + AMMs
+Integrated With: Injective Exchange (orderbook), Osmosis (AMM via IBC), Mito vaults
+Purpose: DEX aggregator dan trade router untuk best execution di seluruh likuiditas Injective
+Status: Live
+Related Historical Event ID: EV-021
+Sources: https://blackpanther.trade/; https://docs.injective.network/ecosystem/
+
+Integration Name: iAssets Protocol ↔ Injective Chain
+Integrated With: Injective Chain (CosmWasm synthetic asset contracts), Oracle module
+Purpose: Pembuatan dan perdagangan aset sintetis (saham, komoditas, forex) terkolateralisasi INJ/stablecoin
+Status: Live
+Related Historical Event ID: EV-012
+Sources: https://docs.injective.network/learn/products/; https://blog.injective.com/injective-iassets-launch/; https://github.com/InjectiveLabs/injective-core/tree/master/x/oracle
+
+## Infrastructure Providers
+
+Provider: Tendermint / CometBFT
+Service: Consensus engine (BFT PoS)
+Criticality: Critical
+Status: Live (Tendermint v0.34.x, migrating to CometBFT v0.37+)
+Sources: https://docs.injective.network/learn/architecture/; https://github.com/InjectiveLabs/injective-core/blob/master/go.mod; https://github.com/cometbft/cometbft
+
+Provider: Cosmos SDK
+Service: Blockchain application framework
+Criticality: Critical
+Status: Live (v0.47.x)
+Sources: https://docs.injective.network/learn/architecture/; https://github.com/InjectiveLabs/injective-core/blob/master/go.mod; https://github.com/cosmos/cosmos-sdk
+
+Provider: IBC-Go
+Service: Inter-Blockchain Communication implementation
+Criticality: Critical
+Status: Live (v5.x/v6.x)
+Sources: https://docs.injective.network/learn/architecture/; https://github.com/InjectiveLabs/injective-core/blob/master/go.mod; https://github.com/cosmos/ibc-go
+
+Provider: CosmWasm (wasmd)
+Service: WASM smart contract execution engine
+Criticality: High
+Status: Live (wasmd v0.32+ since v2.2 upgrade)
+Sources: https://docs.injective.network/develop/cosmwasm/; https://github.com/InjectiveLabs/injective-core/tree/master/x/wasm; https://github.com/CosmWasm/cosmwasm
+
+Provider: Injective Labs Inc. (validator operations)
+Service: Core chain binary releases, devnet/testnet/mainnet coordination, upgrade proposals
+Criticality: Critical
+Status: Live
+Sources: https://github.com/InjectiveLabs/injective-core; https://docs.injective.network/develop/node/; https://blog.injective.com/
+
+Provider: Validator Set (100 active validators)
+Service: Block production, consensus, Peggy bridge attestation, oracle price reporting, governance voting
+Criticality: Critical
+Status: Live
+Sources: https://docs.injective.network/learn/staking/; https://hub.injective.network/staking; https://explorer.injective.network/validators
+
+Provider: Relayer Operators (IBC & Peggy)
+Service: Off-chain packet relay untuk IBC channels; Peggy attestation relay untuk Ethereum bridge
+Criticality: Critical
+Status: Live
+Sources: https://github.com/InjectiveLabs/relayer; https://github.com/InjectiveLabs/peggy-relayer; https://docs.injective.network/learn/bridge/
+
+Provider: Indexer Operators (Injective Labs + community)
+Service: PostgreSQL + GraphQL API untuk historical data (orderbook, trades, accounts)
+Criticality: Medium
+Status: Live
+Sources: https://github.com/InjectiveLabs/indexer; https://docs.injective.network/develop/api/
+
+Provider: Cloud Providers (AWS, GCP, DigitalOcean, Hetzner, etc.)
+Service: Validator node hosting, RPC endpoints, indexer hosting, frontend hosting
+Criticality: High
+Status: Live
+Sources: https://docs.injective.network/develop/node/; https://docs.injective.network/validate/; https://github.com/InjectiveLabs/injective-core/tree/master/docker
+
+Provider: GitHub
+Service: Source control, CI/CD (GitHub Actions), issue tracking, release management
+Criticality: Medium
+Status: Live
+Sources: https://github.com/InjectiveLabs; https://github.com/InjectiveLabs/injective-core/actions
+
+Provider: Netlify / Vercel / Cloudflare Pages
+Service: Frontend hosting untuk Helix, Hub, Bridge UI
+Criticality: Medium
+Status: Live
+Sources: https://helixapp.com/; https://hub.injective.network/; https://bridge.injective.network/; https://github.com/InjectiveLabs/helix-app
+
+Provider: Discord / Telegram / X (Twitter)
+Service: Community communication channels
+Criticality: Low
+Status: Live
+Sources: https://discord.gg/injective; https://t.me/injectiveofficial; https://x.com/InjectiveLabs; https://injective.com/
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes (INJ/USDT, INJ/BTC, INJ/BUSD, INJ/TRY, INJ/EUR)
+Perpetual: Yes (INJUSDT Perpetual, INJUSD Perpetual)
+OTC: Yes (Binance OTC desk)
+Launchpool: No (IEO via Launchpad 2020, not Launchpool)
+Status: Active
+Sources: https://www.binance.com/en/trade/INJ_USDT; https://www.binance.com/en/futures/INJUSDT; https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes (INJ/USD, INJ/USDT)
+Perpetual: No (Coinbase International Exchange has perp but not confirmed for INJ)
+OTC: Yes (Coinbase Prime OTC)
+Launchpool: No
+Status: Active
+Sources: https://www.coinbase.com/price/injective; https://www.coinbase.com/learn/crypto/injective; https://international.coinbase.com/
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Yes (INJ/USD, INJ/EUR, INJ/USDT)
+Perpetual: Yes (Kraken Futures INJ/USD)
+OTC: Yes (Kraken OTC)
+Launchpool: No
+Status: Active
+Sources: https://trade.kraken.com/markets/kraken/inj/usd; https://futures.kraken.com/; https://www.kraken.com/learn/what-is-injective-inj
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Yes (INJ/USDT, INJ/BTC, INJ/ETH)
+Perpetual: Yes (KuCoin Futures INJ/USDT)
+OTC: Yes (KuCoin OTC)
+Launchpool: No
+Status: Active
+Sources: https://www.kucoin.com/trade/INJ-USDT; https://www.kucoin.com/futures/trade/INJUSDT; https://www.kucoin.com/otc
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes (INJ/USDT)
+Perpetual: Yes (Bybit USDT Perpetual INJUSDT)
+OTC: Yes (Bybit OTC)
+Launchpool: No
+Status: Active
+Sources: https://www.bybit.com/trade/spot/INJ/USDT; https://www.bybit.com/trade/usdt/INJUSDT; https://www.bybit.com/otc
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes (INJ/USDT, INJ/USDC)
+Perpetual: Yes (OKX Perpetual INJ-USDT-SWAP)
+OTC: Yes (OKX OTC)
+Launchpool: No
+Status: Active
+Sources: https://www.okx.com/trade/INJ-USDT; https://www.okx.com/trade-swap/INJ-USDT-SWAP; https://www.okx.com/otc
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Yes (INJ/USDT, INJ/BTC, INJ/ETH)
+Perpetual: Yes (Gate.io Futures INJ_USDT)
+OTC: No
+Launchpool: No
+Status: Active
+Sources: https://www.gate.io/trade/INJ_USDT; https://www.gate.io/futures_trade/INJ_USDT
+
+Exchange: MEXC
+Listing Status: Listed
+Spot: Yes (INJ/USDT)
+Perpetual: Yes (MEXC Futures INJ_USDT)
+OTC: No
+Launchpool: No
+Status: Active
+Sources: https://www.mexc.com/exchange/INJ_USDT; https://futures.mexc.com/exchange/INJ_USDT
+
+Exchange: Bitget
+Listing Status: Listed
+Spot: Yes (INJ/USDT)
+Perpetual: Yes (Bitget USDT Perpetual INJUSDT)
+OTC: No
+Launchpool: No
+Status: Active
+Sources: https://www.bitget.com/spot/INJUSDT; https://www.bitget.com/futures/INJUSDT
+
+Exchange: Coinbase International Exchange
+Listing Status: Listed
+Spot: No
+Perpetual: Yes (INJ-PERP on Coinbase International)
+OTC: No
+Launchpool: No
+Status: Active
+Sources: https://international.coinbase.com/; https://blog.coinbase.com/ (INJ perp listing announcement)
+
+Exchange: Hyperliquid
+Listing Status: Listed
+Spot: No
+Perpetual: Yes (INJ perpetual on Hyperliquid DEX)
+OTC: No
+Launchpool: No
+Status: Active
+Sources: https://app.hyperliquid.xyz/; https://hyperliquid.xyz/ (INJ perp listing)
+
+Exchange: Injective Exchange (native DEX)
+Listing Status: Native
+Spot: Yes (native orderbook spot markets)
+Perpetual: Yes (native orderbook perpetual futures)
+OTC: N/A (on-chain)
+Launchpool: N/A
+Status: Active
+Sources: https://helixapp.com/; https://docs.injective.network/learn/exchange/; https://docs.injective.network/learn/products/
+
+## Wallet Ecosystem
+
+Wallet: Keplr
+Support Type: Browser extension / mobile app; full Injective Chain support (staking, governance, IBC transfers, CosmWasm)
+Status: Live
+Sources: https://www.keplr.app/; https://docs.injective.network/develop/wallets/; https://hub.injective.network/staking
+
+Wallet: Leap Wallet
+Support Type: Browser extension / mobile app; full Injective Chain support (staking, governance, IBC, CosmWasm, NFT)
+Status: Live
+Sources: https://www.leapwallet.io/; https://docs.injective.network/develop/wallets/; https://blog.injective.com/ (Leap integration)
+
+Wallet: Cosmostation
+Support Type: Browser extension / mobile app / web; Injective Chain support (staking, governance, IBC)
+Status: Live
+Sources: https://cosmostation.io/; https://docs.injective.network/develop/wallets/
+
+Wallet: MetaMask
+Support Type: Browser extension / mobile; Ethereum ERC-20 INJ support (0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30), Snap untuk Injective native (experimental)
+Status: Live (ERC-20), Experimental (native via Snap)
+Sources: https://metamask.io/; https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30; https://docs.injective.network/develop/wallets/
+
+Wallet: Trust Wallet
+Support Type: Mobile app; ERC-20 INJ support, Injective native support (via Cosmos SDK integration)
+Status: Live
+Sources: https://trustwallet.com/; https://docs.injective.network/develop/wallets/
+
+Wallet: Ledger (Hardware)
+Support Type: Hardware wallet; Injective Chain support via Keplr/Leap/Cosmostation integration (Ledger Live tidak native Injective)
+Status: Live (via Cosmos app on Ledger + Keplr/Leap)
+Sources: https://www.ledger.com/; https://docs.injective.network/develop/wallets/; https://support.ledger.com/ (Cosmos app)
+
+Wallet: Trezor (Hardware)
+Support Type: Hardware wallet; Injective Chain support via Keplr/Leap integration (Trezor Suite tidak native Injective)
+Status: Live (via Cosmos app on Trezor + Keplr/Leap)
+Sources: https://trezor.io/; https://docs.injective.network/develop/wallets/
+
+Wallet: Ninja Wallet
+Support Type: Browser extension; Injective-native wallet dengan focus UX trading
+Status: Live
+Sources: https://ninjawallet.io/; https://docs.injective.network/develop/wallets/; https://blog.injective.com/ (Ninja Wallet announcement)
+
+Wallet: Frontier Wallet
+Support Type: Mobile app; multi-chain including Injective (staking, governance, DeFi)
+Status: Live
+Sources: https://frontier.xyz/; https://docs.injective.network/develop/wallets/
+
+Wallet: MathWallet
+Support Type: Browser extension / mobile / web; Injective Chain support
+Status: Live
+Sources: https://mathwallet.org/; https://docs.injective.network/develop/wallets/
+
+Wallet: Bitget Wallet (formerly BitKeep)
+Support Type: Browser extension / mobile; Injective Chain support
+Status: Live
+Sources: https://web3.bitget.com/; https://docs.injective.network/develop/wallets/
+
+Wallet: Okx Wallet
+Support Type: Browser extension / mobile; Injective Chain support
+Status: Live
+Sources: https://www.okx.com/web3; https://docs.injective.network/develop/wallets/
+
+Wallet: Rabby Wallet
+Support Type: Browser extension; Injective Chain support (EVM-compatible chains focus, Injective via Cosmos SDK integration)
+Status: Live
+Sources: https://rabby.io/; https://docs.injective.network/develop/wallets/
+
+## Developer Ecosystem
+
+SDK: TypeScript SDK (@injectivelabs/sdk-ts)
+Purpose: Client-side library untuk integrasi dApp, trading, staking, governance, bridge, CosmWasm interaction
+Status: Live
+Sources: https://github.com/InjectiveLabs/ts-sdk; https://docs.injective.network/develop/typescript-sdk/; https://www.npmjs.com/package/@injectivelabs/sdk-ts
+
+SDK: Python SDK (injective-py)
+Purpose: Python library untuk data science, trading bot, on-chain analysis, governance interaction
+Status: Live
+Sources: https://github.com/InjectiveLabs/python-sdk; https://docs.injective.network/develop/python-sdk/; https://pypi.org/project/injective-py/
+
+SDK: Go SDK (injective-core libraries)
+Purpose: Core chain libraries untuk module development, relayer, indexer, CLI tools
+Status: Live
+Sources: https://github.com/InjectiveLabs/injective-core; https://docs.injective.network/develop/go-sdk/
+
+SDK: Rust / CosmWasm SDK (cw-orchestrator, cw-multi-test)
+Purpose: Smart contract development, testing, deployment untuk CosmWasm di Injective
+Status: Live
+Sources: https://docs.injective.network/develop/cosmwasm/; https://github.com/CosmWasm/cw-orchestrator; https://github.com/CosmWasm/cw-multi-test
+
+API: gRPC / REST Endpoints
+Purpose: Node RPC untuk query state, broadcast tx, subscription events; public endpoints disediakan validator & Injective Labs
+Status: Live
+Sources: https://docs.injective.network/develop/api/; https://docs.injective.network/develop/node/; https://github.com/InjectiveLabs/injective-core
+
+API: GraphQL Indexer API
+Purpose: Historical data query (orderbook snapshots, trades, account history, market stats) via Hasura/Apollo
+Status: Live
+Sources: https://github.com/InjectiveLabs/indexer; https://docs.injective.network/develop/api/; https://docs.injective.network/develop/indexer/
+
+Developer Tools: Injective CLI (injectived)
+Purpose: Command-line interface untuk node operation, key management, tx broadcasting, query, governance
+Status: Live
+Sources: https://github.com/InjectiveLabs/injective-core; https://docs.injective.network/develop/node/; https://docs.injective.network/develop/cli/
+
+Developer Tools: Ignite CLI (formerly Starport)
+Purpose: Scaffolding Cosmos SDK modules, boilerplate generation, local devnet
+Status: Live
+Sources: https://ignite.com/cli; https://docs.injective.network/develop/
+
+Developer Tools: CosmWasm IDE / VS Code Extension
+Purpose: Rust/WASM smart contract development, syntax highlighting, deployment helpers
+Status: Live
+Sources: https://marketplace.visualstudio.com/items?itemName=CosmWasm.cosmwasm; https://docs.injective.network/develop/cosmwasm/
+
+Developer Tools: Injective Devnet / Testnet
+Purpose: Public test networks untuk development dan testing (state reset periodically)
+Status: Live
+Sources: https://docs.injective.network/develop/node/; https://testnet.explorer.injective.network/; https://blog.injective.com/injective-testnet-launch/
+
+Open Source Repository: injective-core (Core Chain)
+Purpose: Main chain implementation (Go, Cosmos SDK modules, Tendermint, CosmWasm, IBC, Peggy)
+Status: Active
+Sources: https://github.com/InjectiveLabs/injective-core
+
+Open Source Repository: helix-app (Helix Frontend)
+Purpose: Consumer trading UI (React, TypeScript, Vite)
+Status: Active
+Sources: https://github.com/InjectiveLabs/helix-app
+
+Open Source Repository: injective-hub (Injective Hub)
+Purpose: Staking & governance portal (React, TypeScript)
+Status: Active
+Sources: https://github.com/InjectiveLabs/injective-hub
+
+Open Source Repository: injective-bridge-ui (Bridge UI)
+Purpose: Cross-chain bridge interface (React, TypeScript)
+Status: Active
+Sources: https://github.com/InjectiveLabs/injective-bridge-ui
+
+Open Source Repository: ts-sdk (TypeScript SDK)
+Purpose: Client SDK untuk dApp integration
+Status: Active
+Sources: https://github.com/InjectiveLabs/ts-sdk
+
+Open Source Repository: python-sdk (Python SDK)
+Purpose: Python client library
+Status: Active
+Sources: https://github.com/InjectiveLabs/python-sdk
+
+Open Source Repository: indexer (GraphQL Indexer)
+Purpose: Historical data indexer (PostgreSQL, GraphQL, Hasura)
+Status: Active
+Sources: https://github.com/InjectiveLabs/indexer
+
+Open Source Repository: relayer (IBC Relayer)
+Purpose: IBC packet relay operator
+Status: Active
+Sources: https://github.com/InjectiveLabs/relayer
+
+Open Source Repository: peggy-relayer (Peggy Relayer)
+Purpose: Ethereum bridge attestation relay
+Status: Active
+Sources: https://github.com/InjectiveLabs/peggy-relayer
+
+Open Source Repository: peggy-contracts (Ethereum Contracts)
+Purpose: Peggy bridge Solidity contracts di Ethereum
+Status: Active
+Sources: https://github.com/InjectiveLabs/peggy-contracts
+
+Developer Portal: https://docs.injective.network/develop/
+Purpose: Technical documentation, API reference, SDK guides, CosmWasm tutorials, node operator guides
+Status: Live
+Sources: https://docs.injective.network/develop/
+
+Hackathon: Injective Hackathons (periodic)
+Purpose: Developer competitions dengan prize pools untuk membangun di Injective (CosmWasm, frontend, tooling)
+Status: Periodic (multiple hackathons held 2022-2024)
+Sources: https://blog.injective.com/ (hackathon announcements); https://devpost.com/ (Injective hackathon pages); https://docs.injective.network/develop/
+
+Grant Program: Injective Ecosystem Fund Grants
+Purpose: Funding untuk developers membangun aplikasi, infrastructure, tooling di Injective; dikelola Injective Labs dengan mitra VC
+Status: Ongoing (launched EV-014 2022-11)
+Sources: https://blog.injective.com/injective-ecosystem-fund/; https://docs.injective.network/ecosystem/; https://forms.gle/ (grant application forms linked from blog)
+
+Grant Program: CosmWasm Grants (via CosmWasm Foundation)
+Purpose: Grants untuk smart contract development di CosmWasm chains termasuk Injective
+Status: Ongoing
+Sources: https://cosmwasm.com/grants; https://docs.injective.network/develop/cosmwasm/
+
+## Applications
+
+Application: Helix
+Category: DEX Frontend (Consumer Trading Interface)
+Relationship: Official frontend oleh Injective Labs untuk Injective Exchange (orderbook spot & perpetual)
+Status: Live
+Sources: https://helixapp.com/; https://docs.injective.network/learn/products/; https://github.com/InjectiveLabs/helix-app
+
+Application: Injective Hub
+Category: Staking & Governance Portal
+Relationship: Official portal oleh Injective Labs untuk delegasi, voting, validator management
+Status: Live
+Sources: https://hub.injective.network/; https://docs.injective.network/learn/products/; https://github.com/InjectiveLabs/injective-hub
+
+Application: Injective Bridge UI
+Category: Cross-Chain Bridge Interface
+Relationship: Official bridge interface oleh Injective Labs untuk Peggy (Ethereum) dan IBC transfers
+Status: Live
+Sources: https://bridge.injective.network/; https://docs.injective.network/learn/bridge/; https://github.com/InjectiveLabs/injective-bridge-ui
+
+Application: Talis
+Category: NFT Marketplace
+Relationship: Independent dApp di Injective (CosmWasm CW721/CW1155), ekosistem partner
+Status: Live
+Sources: https://talis.art/; https://docs.injective.network/ecosystem/; https://github.com/InjectiveLabs/injective-core/tree/master/x/wasm
+
+Application: Frontrunner
+Category: Social / Copy Trading Platform
+Relationship: Independent dApp di Injective, mengakses Injective Exchange orderbook on-chain
+Status: Live
+Sources: https://frontrunner.xyz/; https://docs.injective.network/ecosystem/
+
+Application: Hydro Protocol
+Category: Lending / Borrowing (Money Market)
+Relationship: Independent protocol di Injective (CosmWasm), ekosistem partner
+Status: Live
+Sources: https://hydroprotocol.io/; https://docs.injective.network/ecosystem/
+
+Application: Mito Finance
+Category: Asset Management / Vault Platform
+Relationship: Independent dApp di Injective (CosmWasm vault strategies), ekosistem partner
+Status: Live
+Sources: https://mito.finance/; https://docs.injective.network/ecosystem/
+
+Application: Black Panther
+Category: DEX Aggregator / Trade Router
+Relationship: Independent dApp di Injective, mengagregasi likuiditas Injective Exchange, Osmosis (IBC), Mito vaults
+Status: Live
+Sources: https://blackpanther.trade/; https://docs.injective.network/ecosystem/
+
+Application: iAssets Protocol
+Category: Synthetic Assets Protocol
+Relationship: Official protocol oleh Injective Labs (CosmWasm + Oracle module), native synthetic asset platform
+Status: Live
+Sources: https://docs.injective.network/learn/products/; https://blog.injective.com/injective-iassets-launch/; https://github.com/InjectiveLabs/injective-core/tree/master/x/oracle
+
+Application: Injective Explorer
+Category: Block Explorer
+Relationship: Official explorer oleh Injective Labs untuk mainnet (blocks, txs, accounts, validators, governance)
+Status: Live
+Sources: https://explorer.injective.network/; https://docs.injective.network/; https://github.com/InjectiveLabs/injective-explorer (if public)
+
+Application: Testnet Explorer
+Category: Block Explorer (Testnet)
+Relationship: Official testnet explorer oleh Injective Labs
+Status: Live
+Sources: https://testnet.explorer.injective.network/; https://blog.injective.com/injective-testnet-launch/
+
+Application: InjScan (Community Explorer)
+Category: Block Explorer (Alternative)
+Relationship: Community-built explorer dengan fitur tambahan (analytics, token tracker)
+Status: Live
+Sources: https://injscan.com/; https://docs.injective.network/ecosystem/; https://blog.injective.com/ (community tools)
+
+Application: Coinhall (Analytics)
+Category: DEX Analytics / Charting
+Relationship: Third-party analytics platform mengintegrasikan Injective Exchange data via indexer/API
+Status: Live
+Sources: https://coinhall.org/; https://docs.injective.network/ecosystem/; https://blog.injective.com/ (Coinhall integration)
+
+Application: GeckoTerminal (Analytics)
+Category: DEX Analytics / Charting
+Relationship: Third-party analytics (CoinGecko) mengintegrasikan Injective markets
+Status: Live
+Sources: https://www.geckoterminal.com/; https://www.coingecko.com/en/coins/injective; https://docs.injective.network/ecosystem/
+
+Application: DefiLlama (TVL Tracking)
+Category: DeFi Analytics / TVL Tracking
+Relationship: Third-party TVL tracker untuk Injective Chain dan aplikasi DeFi di atasnya
+Status: Live
+Sources: https://defillama.com/chain/Injective; https://defillama.com/; https://docs.injective.network/ecosystem/
+
+Application: Token Terminal (Financial Metrics)
+Category: Protocol Financial Analytics
+Relationship: Third-party financial metrics (revenue, fees, P/S ratio) untuk Injective Protocol
+Status: Live
+Sources: https://tokenterminal.com/terminal/projects/injective; https://tokenterminal.com/; https://docs.injective.network/ecosystem/
+
+Application: Messari (Research & Analytics)
+Category: Crypto Research & Analytics
+Relationship: Third-party research platform dengan Injective Protocol coverage
+Status: Live
+Sources: https://messari.io/asset/injective; https://messari.io/; https://docs.injective.network/ecosystem/
+
+## Governance Ecosystem
+
+Foundation: Tidak ada foundation terpisah terverifikasi publik (hanya Injective Labs Inc. sebagai core development company)
+Sources: https://www.crunchbase.com/organization/injective-labs; https://blog.injective.com/; https://docs.injective.network/; https://hub.injective.network/governance
+
+DAO: Tidak ada DAO terpisah terverifikasi publik; governance on-chain via x/gov module dengan INJ token holders
+Sources: https://docs.injective.network/learn/governance/; https://hub.injective.network/governance; https://github.com/InjectiveLabs/injective-core/tree/master/x/gov
+
+Council: Tidak ada council terpisah; governance proposals dieksekusi oleh validator set setelah voting on-chain
+Sources: https://docs.injective.network/learn/governance/; https://hub.injective.network/governance; https://explorer.injective.network/gov
+
+Committee: Tidak ada committee formal terverifikasi; parameter changes via governance proposals
+Sources: https://docs.injective.network/learn/governance/; https://hub.injective.network/governance
+
+Validator Group: 100 active validators (top 100 by stake) — validator set mengamankan jaringan, berpartisipasi governance, Peggy bridge attestation, oracle price reporting
+Sources: https://docs.injective.network/learn/staking/; https://hub.injective.network/staking; https://explorer.injective.network/validators
+
+## Ecosystem Risks
+
+Single Infrastructure Dependency: Tendermint/CometBFT consensus engine — seluruh jaringan bergantung pada single consensus implementation; bug konsensus mempengaruhi semua validator
+Sources: https://docs.injective.network/learn/architecture/; https://github.com/InjectiveLabs/injective-core/blob/master/go.mod; https://docs.tendermint.com/master/spec/consensus/consensus.html
+
+Bridge Dependency: Peggy Bridge (Ethereum ↔ Injective) — trust assumption pada validator set (2/3+ honest) sebagai custodian/attester; bukan trust-minimized seperti light client bridge; single point of failure untuk ERC-20 INJ bridge
+Sources: https://docs.injective.network/learn/bridge/; https://github.com/InjectiveLabs/injective-core/tree/master/x/peggy; https://github.com/InjectiveLabs/peggy-contracts
+
+Chain Dependency: Cosmos SDK & IBC-Go — core chain bergantung pada upstream SDK dan IBC implementation; breaking changes upstream memerlukan coordinated upgrade
+Sources: https://docs.injective.network/learn/architecture/; https://github.com/InjectiveLabs/injective-core/blob/master/go.mod; https://github.com/cosmos/cosmos-sdk; https://github.com/cosmos/ibc-go
+
+Centralization Risk: Validator set — top 10 validator kontrolling >50% voting power (typical PoS); governance capture possible; Peggy bridge attestation juga oleh validator set yang sama
+Sources: https://docs.injective.network/learn/staking/; https://hub.injective.network/staking; https://explorer.injective.network/validators
+
+Centralization Risk: Injective Labs Inc. sebagai single core development entity — protocol upgrades, binary releases, testnet coordination, grant management terpusat di satu entitas perusahaan swasta (BVI)
+Sources: https://www.crunchbase.com/organization/injective-labs; https://blog.injective.com/; https://github.com/InjectiveLabs/injective-core
+
+Oracle Dependency: Validator-weighted median price feed (x/oracle) — validator set sebagai price reporter; collusion risk untuk manipulasi harga derivatif/likuidasi
+Sources: https://github.com/InjectiveLabs/injective-core/tree/master/x/oracle; https://docs.injective.network/develop/modules/oracle/
+
+Cloud Dependency: Validator node hosting terpusat di cloud provider besar (AWS, GCP, Hetzner, DigitalOcean) — risiko regulatory/jurisdiktional dan single point of failure infrastruktur
+Sources: https://docs.injective.network/develop/node/; https://docs.injective.network/validate/; https://github.com/InjectiveLabs/injective-core/tree/master/docker
+
+Frontend Dependency: Helix sebagai primary consumer frontend — single official UI untuk retail trading; jika Helix down, user akses terbatas (CLI/alternative frontend kurang mature)
+Sources: https://helixapp.com/; https://docs.injective.network/learn/products/; https://github.com/InjectiveLabs/helix-app
+
+ERC-20 Contract Risk: ERC-20 INJ contract (0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) tidak upgradeable (no proxy); migrasi ke native memerlukan bridge burn/mint; tidak ada automatic migration path
+Sources: https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30#readContract; https://docs.injective.network/learn/bridge/; https://github.com/InjectiveLabs/peggy-contracts
+
+IBC Rate Limiting: Channel capacity & packet timeout parameter membatasi throughput cross-chain; tidak infinite scalability
+Sources: https://ibc.cosmos.network/main/ibc/tao.html#rate-limiting; https://github.com/InjectiveLabs/injective-core/tree/master/x/ibc-core
+
+No EVM Compatibility: Developer Solidity tidak bisa deploy langsung; harus rewrite ke Rust/CosmWasm atau gunakan bridge — barrier to entry untuk Ethereum developers
+Sources: https://docs.injective.network/learn/faq/; https://blog.injective.com/evm-compatibility/; https://docs.injective.network/develop/cosmwasm/
+
+## Official Ecosystem Resources
+
+Official Documentation: https://docs.injective.network/
+Developer Portal: https://docs.injective.network/develop/
+GitHub Organization: https://github.com/InjectiveLabs
+Core Chain Repository: https://github.com/InjectiveLabs/injective-core
+Helix Frontend Repository: https://github.com/InjectiveLabs/helix-app
+Injective Hub Repository: https://github.com/InjectiveLabs/injective-hub
+Bridge UI Repository: https://github.com/InjectiveLabs/injective-bridge-ui
+TypeScript SDK Repository: https://github.com/InjectiveLabs/ts-sdk
+Python SDK Repository: https://github.com/InjectiveLabs/python-sdk
+Indexer Repository: https://github.com/InjectiveLabs/indexer
+IBC Relayer Repository: https://github.com/InjectiveLabs/relayer
+Peggy Relayer Repository: https://github.com/InjectiveLabs/peggy-relayer
+Peggy Contracts (Ethereum) Repository: https://github.com/InjectiveLabs/peggy-contracts
+Partner Documentation (Osmosis): https://docs.osmosis.zone/
+Partner Documentation (Celestia): https://docs.celestia.org/
+Partner Documentation (Neutron): https://docs.neutron.org/
+Partner Documentation (Axelar): https://docs.axelar.dev/
+Partner Documentation (Stride): https://docs.stride.zone/
+Grant Program (Ecosystem Fund): https://blog.injective.com/injective-ecosystem-fund/
+Grant Program Application: https://forms.gle/ (linked from ecosystem fund blog)
+Ecosystem Dashboard (DefiLlama): https://defillama.com/chain/Injective
+Ecosystem Dashboard (Token Terminal): https://tokenterminal.com/terminal/projects/injective
+Ecosystem Dashboard (Messari): https://messari.io/asset/injective
+Mainnet Explorer: https://explorer.injective.network/
+Testnet Explorer: https://testnet.explorer.injective.network/
+Governance Portal: https://hub.injective.network/governance
+Staking Portal: https://hub.injective.network/staking
+Bridge Interface: https://bridge.injective.network/
+Helix Trading Interface: https://helixapp.com/
+Official Website: https://injective.com/
+Official Blog: https://blog.injective.com/
+Twitter/X: https://x.com/InjectiveLabs
+Discord: https://discord.gg/injective
+Telegram: https://t.me/injectiveofficial
+
+## RINGKASAN
+
+Primary Ecosystem: Cosmos (IBC-enabled Layer-1) dengan Ethereum bridge (Peggy)
+Supported Chains: Ethereum (ERC-20 bridge), Osmosis, Celestia, Neutron, Axelar, Stride, dydX, Cosmos Hub, dan 50+ IBC-connected chains
+External Dependencies: 20+ (Critical: Tendermint/CometBFT, Cosmos SDK, IBC-Go, Peggy Bridge, Ethereum, Validator Set; High: CosmWasm, Osmosis, Jump Crypto, Binance, Cloud Providers; Medium: Celestia, Neutron, Axelar, Stride, dydX, Indexer, PostgreSQL/GraphQL, Docker/K8s, Frontend frameworks; Low: Ignite CLI, GitHub Actions, Prometheus/Grafana)
+Major Integrations: 18+ (13 IBC channels live, Peggy Bridge, Ecosystem Fund, 6 core dApps: Helix, Hub, Bridge UI, iAssets, Talis, Frontrunner, Hydro, Mito, Black Panther)
+Infrastructure Providers: 12+ (Consensus, SDK, IBC, WASM, Validators, Relayers, Indexers, Cloud, GitHub, Frontend hosting, Community channels)
+Developer Programs: 4 SDKs (TS, Python, Go, Rust/CosmWasm), 2 APIs (gRPC/REST, GraphQL), 6+ dev tools, 10+ open source repos, 1 developer portal, periodic hackathons, 2 grant programs
+Applications: 15+ (3 official: Helix, Hub, Bridge UI; 9 ecosystem dApps: Talis, Frontrunner, Hydro, Mito, Black Panther, iAssets, plus analytics: InjScan, Coinhall, GeckoTerminal, DefiLlama, Token Terminal, Messari)
+
+## Open Threads
+
+- Status resmi Axelar, Stride, dydX IBC channel integration — tidak tercatat Event ID di Phase 3; hanya announcement di blog, perlu verifikasi on-chain channel ID dan status relayer
+- Injective Ecosystem Fund legal structure — apakah entitas terpisah (foundation/DAO LLC) atau internal accounting di Injective Labs Inc.? Tidak diverifikasi di Phase 2-5
+- Validator set composition detail (identity, commission, self-bond, uptime, jurisdiction) — tersedia di explorer tapi perlu agregasi untuk risk assessment centralization
+- Relayer/operator identity untuk Peggy Bridge dan IBC channels — apakah dioperasikan Injective Labs, validator set, atau relayer terdesentralisasi independen? Tidak teridentifikasi
+- Cloud provider concentration untuk validator nodes — tidak ada data publik distribusi validator across AWS/GCP/Hetzner/DO; perlu survey validator
+- ERC-20 INJ contract (0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) status — apakah masih aktif digunakan, volume bridge bulanan, apakah ada plan deprecation resmi? Info konflik Phase 1-6
+- CometBFT migration timeline — blog menyebut "preparation" di v2.2 upgrade (EV-022), apakah sudah live di mainnet? Tidak ada announcement resmi detail
+- Formal verification status untuk critical modules (exchange matching engine x/exchange, peggy bridge x/peggy, oracle x/oracle) — tidak ada publikasi
+- MEV protection pada orderbook — apakah ada mechanism (batch auction, frequent batch auction, commit-reveal) untuk front-running protection? Tidak terdokumentasi
+- Cross-chain MEV / arbitrage risk pada kombinasi IBC + Peggy bridge — tidak dianalisis publik
+- Indexer/GraphQL API public endpoint availability, rate limits, SLA — tidak terdokumentasi di developer docs
+- Hardware requirements validator/node resmi (CPU, RAM, disk, network spesifik) — validator guide mention tapi tidak spesifik angka
+- Testnet persistence policy — apakah testnet state reset berkala? Periode reset tidak terdokumentasi
+- Injective Labs Inc. legal structure beyond BVI — apakah ada foundation, DAO LLC, Swiss entity untuk governance/treasury? Phase 1-2 tidak menemukan
+- Auditor/security firm lengkap untuk smart contract Injective — Phase 4 mention 6 auditor tapi laporan lengkap tidak publik; scope, findings, remediation status tidak diverifikasi
+- Insurance Fund (x/insurance) balance INJ dan deployment history — tidak dipublikasikan
+- Auction module burn volume historis (bulanan) — tidak dipublikasikan; hanya on-chain query via indexer
+- Net inflation rate aktual (inflasi - burn) per bulan/tahun — tidak ada dashboard real-time
+- Treasury/community pool balance real-time INJ — tidak ada halaman transparansi treasury publik
+- Cross-chain INJ representation (IBC denom di Osmosis, Celestia, Neutron, Stride, dll.) — tidak terdokumentasi di tokenomics resmi
+- INJ sebagai gas di CosmWasm contract — apakah ada discount/premium vs native module? Tidak terdokumentasi

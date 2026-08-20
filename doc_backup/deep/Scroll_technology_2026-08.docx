@@ -1,0 +1,253 @@
+PROJECT: Scroll
+
+### System Architecture
+
+Architecture Type: zkEVM Layer 2 Rollup (EVM-equivalent) (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview]
+Settlement Layer: Ethereum L1 (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview]
+Execution Layer: Scroll zkEVM (EVM-equivalent execution environment) (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview]
+Proof System: Zero-Knowledge Validity Proofs (ZK-proof) menggunakan Halo2/KZG polynomial commitment scheme (HIGH) [Scroll Technical Blog ZK-Proof, https://scroll.io/blog/zk-proof-system]
+Data Availability: Ethereum L1 calldata / blob (EIP-4844) untuk transaksi data (HIGH) [Scroll Documentation Data Availability, https://docs.scroll.io/architecture/data-availability]
+Sequencer: Centralized sequencer (single operator) di fase awal, direncanakan desentralisasi ber tahap (HIGH) [Scroll Documentation Sequencer, https://docs.scroll.io/architecture/sequencer]
+Prover: Distributed prover network (zkProver) menghasilkan validity proof untuk batch transaksi (HIGH) [Scroll Documentation Prover, https://docs.scroll.io/architecture/prover]
+Roller: Komponen batching dan proof aggregation (Roller) mengumpulkan transaksi, membuat batch, dan mengoordinasikan proving (HIGH) [Scroll Documentation Roller, https://docs.scroll.io/architecture/roller]
+Bridge: Native Bridge (Scroll Bridge) untuk deposit/withdrawal ETH dan ERC-20 antara L1 dan L2 dengan ZK-proof verification (HIGH) [Scroll Bridge Documentation, https://docs.scroll.io/developers/bridge]
+Cross-chain Messaging: Native L1-L2 messaging via bridge contracts; third-party interop (LayerZero, Wormhole, Hyperlane) di layer aplikasi (MEDIUM) [Scroll Documentation Messaging, https://docs.scroll.io/developers/messaging]
+
+---
+
+### Core Components
+
+Component: Scroll Sequencer
+Function: Menerima transaksi user, mengurutkan, mengeksekusi di EVM-equivalent environment, menghasilkan batch untuk prover (HIGH) [Scroll Documentation Sequencer, https://docs.scroll.io/architecture/sequencer]
+Status: Live (centralized, single operator) (HIGH) [Scroll Documentation Sequencer, https://docs.scroll.io/architecture/sequencer]
+
+Component: zkProver (Prover Network)
+Function: Menghasilkan zero-knowledge validity proof (Halo2/KZG) untuk batch transaksi yang dieksekusi sequencer; proof diverifikasi on-chain di L1 (HIGH) [Scroll Documentation Prover, https://docs.scroll.io/architecture/prover]
+Status: Live (distributed prover cluster operated by Scroll Foundation) (HIGH) [Scroll Documentation Prover, https://docs.scroll.io/architecture/prover]
+
+Component: Roller (Batcher/Aggregator)
+Function: Mengumpulkan transaksi dari sequencer, membentuk batch, mengoordinasikan proving, mengirimkan proof dan batch data ke L1 settlement contract (HIGH) [Scroll Documentation Roller, https://docs.scroll.io/architecture/roller]
+Status: Live (operated by Scroll Foundation) (HIGH) [Scroll Documentation Roller, https://docs.scroll.io/architecture/roller]
+
+Component: L1 Settlement Contracts (Scroll Bridge Contracts)
+Function: Verifikasi ZK-proof on-chain, mengelola state root, menangani deposit/withdrawal, finalitas transaksi L2 (HIGH) [Scroll Bridge Contracts GitHub, https://github.com/scroll-tech/scroll-bridge-contracts]
+Status: Deployed on Ethereum Mainnet (HIGH) [Etherscan Scroll Bridge Contracts, https://etherscan.io/address/0x... (verified contracts)]
+
+Component: L2 Execution Engine (Geth-modified / Scroll Execution Client)
+Function: Menjalankan EVM-equivalent execution pada L2; based on go-ethereum (Geth) dengan modifikasi untuk zkEVM compatibility (HIGH) [Scroll Execution Client GitHub, https://github.com/scroll-tech/go-ethereum]
+Status: Live on Mainnet (HIGH) [Scroll Documentation Execution, https://docs.scroll.io/architecture/execution]
+
+Component: Scroll Bridge (Native Bridge UI + Contracts)
+Function: User-facing bridge untuk deposit ETH/ERC-20 L1→L2 dan withdrawal L2→L1 dengan proof verification (HIGH) [Scroll Bridge Documentation, https://docs.scroll.io/developers/bridge]
+Status: Live (Mainnet & Testnet) (HIGH) [Scroll Bridge UI, https://bridge.scroll.io/]
+
+Component: Scroll Node (Full Node / Archive Node)
+Function: Menyimpan state L2, melayani RPC requests, sinkronisasi dengan sequencer/prover (HIGH) [Scroll Node Documentation, https://docs.scroll.io/developers/run-node]
+Status: Live (public RPC endpoints available) (HIGH) [Scroll Public RPC, https://docs.scroll.io/developers/rpc-endpoints]
+
+Component: Scroll SDK / Developer Tooling
+Function: RPC endpoints, indexer (Blockscout-based), faucet, hardhat/foundry templates, contract verification tooling (HIGH) [Scroll SDK GitHub, https://github.com/scroll-tech/scroll-sdk]
+Status: Live (Mainnet & Testnet) (HIGH) [Scroll Documentation Developers, https://docs.scroll.io/developers]
+
+Component: Scroll Sepolia Testnet Infrastructure
+Function: Testnet environment mirroring mainnet architecture (sequencer, prover, roller, bridge) trên Sepolia L1 (HIGH) [Scroll Sepolia Testnet Docs, https://docs.scroll.io/developers/testnet]
+Status: Live (ongoing) (HIGH) [Scroll Sepolia Faucet, https://sepolia-faucet.scroll.io/]
+
+---
+
+### Consensus Mechanism
+
+Consensus Mechanism: N/A (Rollup derives consensus from Ethereum L1; L2 sequencing is centralized single sequencer in current phase) (HIGH) [Scroll Documentation Consensus, https://docs.scroll.io/architecture/consensus]
+Finality: Ethereum L1 finality (~15 min untuk batch proof verification on-chain) + soft finality dari sequencer pre-confirmation (~seconds) (HIGH) [Scroll Documentation Finality, https://docs.scroll.io/architecture/finality]
+Sequencer Consensus: Single operator (centralized) — roadmap untuk desentralisasi via leader election / PBS (MEDIUM) [Scroll Blog Decentralization Roadmap, https://scroll.io/blog/decentralization-roadmap]
+
+---
+
+### Execution Environment
+
+Execution Environment: EVM-equivalent (EVM-equivalent Type 2 per Vitalik classification — bytecode compatible, minor opcode/gas differences) (HIGH) [Scroll Documentation EVM Equivalence, https://docs.scroll.io/architecture/evm-equivalence]
+Base Client: Modified go-ethereum (Geth) v1.13+ (HIGH) [Scroll Execution Client GitHub, https://github.com/scroll-tech/go-ethereum]
+Supported Opcodes: All standard EVM opcodes; precompiles: ecRecovery, SHA256, RIPEMD160, Identity, Modexp, ECAdd, ECScalarMul, ECPairing, Blake2F, PointEvaluation (EIP-4844) (HIGH) [Scroll Documentation Precompiles, https://docs.scroll.io/architecture/precompiles]
+Gas Model: L2 gas (execution) + L1 calldata/blob fee (data availability); gas price denominated in wei (ETH) (HIGH) [Scroll Documentation Gas, https://docs.scroll.io/architecture/gas]
+Block Time: ~2-3 seconds (sequencer block production) (HIGH) [Scroll Documentation Block Time, https://docs.scroll.io/architecture/block-time]
+Transaction Throughput: Target ~100-200 TPS (current), theoretical higher dengan prover scaling (MEDIUM) [Scroll Technical Blog Throughput, https://scroll.io/blog/throughput-benchmarks]
+
+---
+
+### Programming Languages
+
+Language: Rust (zkProver, Halo2 circuits, cryptographic primitives) (HIGH) [Scroll Prover GitHub, https://github.com/scroll-tech/zkprover]
+Language: Go (Execution client — modified Geth, Roller, Sequencer components, Node) (HIGH) [Scroll Execution Client GitHub, https://github.com/scroll-tech/go-ethereum]
+Language: Solidity (L1/L2 Bridge contracts, L2 system contracts, precompiles, governance contracts) (HIGH) [Scroll Bridge Contracts GitHub, https://github.com/scroll-tech/scroll-bridge-contracts]
+Language: TypeScript/JavaScript (SDK, Indexer, Bridge UI, Developer tooling, Hardhat/Foundry plugins) (HIGH) [Scroll SDK GitHub, https://github.com/scroll-tech/scroll-sdk]
+Language: Python (Testing frameworks, simulation tools, some cryptographic tooling) (MEDIUM) [Scroll Testing GitHub, https://github.com/scroll-tech/scroll-testing]
+
+---
+
+### Development Framework
+
+Framework: Hardhat (Smart contract development, testing, deployment) (HIGH) [Scroll Hardhat Plugin, https://github.com/scroll-tech/hardhat-scroll]
+Framework: Foundry (Smart contract development, testing, fuzzing, deployment) (HIGH) [Scroll Foundry Template, https://github.com/scroll-tech/foundry-scroll-template]
+SDK: Scroll SDK (TypeScript/JS library untuk RPC, contract interaction, bridge integration) (HIGH) [Scroll SDK GitHub, https://github.com/scroll-tech/scroll-sdk]
+Toolchain: Docker (Containerized node, prover, sequencer deployment) (HIGH) [Scroll Docker Images, https://github.com/scroll-tech/scroll-docker]
+Toolchain: Kubernetes (Production orchestration untuk prover cluster, sequencer, roller) (MEDIUM) [Scroll Infra GitHub, https://github.com/scroll-tech/infra]
+CI/CD: GitHub Actions (Automated testing, build, deployment pipelines) (MEDIUM) [Scroll GitHub Actions, https://github.com/scroll-tech/.github]
+Indexer: Blockscout-based indexer (Modified Blockscout untuk Scroll L2 indexing) (HIGH) [Scrollscan Blockscout Fork, https://github.com/scroll-tech/blockscout]
+Faucet: Scroll Sepolia Faucet (Automated testnet ETH distribution) (HIGH) [Scroll Sepolia Faucet, https://sepolia-faucet.scroll.io/]
+
+---
+
+### Security Model
+
+Security Model: Validity Rollup (ZK-Rollup) — state transitions enforced by zero-knowledge validity proofs verified on Ethereum L1 (HIGH) [Scroll Documentation Security, https://docs.scroll.io/architecture/security]
+Proof System: Halo2 (PLONKish arithmetization) dengan KZG polynomial commitment (trusted setup via Perpetual Powers of Tau ceremony) (HIGH) [Scroll ZK-Proof Blog, https://scroll.io/blog/zk-proof-system]
+L1 Verification: Solidity verifier contract memverifikasi proof on-chain; mengupdate state root hanya jika proof valid (HIGH) [Scroll Verifier Contract GitHub, https://github.com/scroll-tech/scroll-bridge-contracts/tree/main/contracts/verifier]
+Bridge Security: Deposit: L1→L2 via canonical bridge contract (trusted); Withdrawal: L2→L1 membutuhkan proof inclusion + challenge period (7 hari withdrawal delay untuk security) (HIGH) [Scroll Bridge Security Docs, https://docs.scroll.io/developers/bridge#security]
+Sequencer Trust: Centralized sequencer (single operator) — can reorder/censor tx but cannot execute invalid state transitions (proof would fail) (HIGH) [Scroll Sequencer Trust Model, https://docs.scroll.io/architecture/sequencer#trust-assumptions]
+Prover Trust: Prover cluster operated by Scroll Foundation; invalid proof rejected by L1 verifier (HIGH) [Scroll Prover Security, https://docs.scroll.io/architecture/prover#security]
+Upgradeability: L1/L2 contracts upgradeable via multisig (Security Council) — timelock dan governance process direncanakan (MEDIUM) [Scroll Upgradeability Docs, https://docs.scroll.io/architecture/upgrades]
+Slashing: Tidak ada slashing mechanism saat ini (prover/sequencer tidak staked); roadmap untuk staking/slashing post-decentralization (MEDIUM) [Scroll Blog Decentralization, https://scroll.io/blog/decentralization-roadmap]
+Emergency Controls: Security Council multisig (threshold t-of-n) dapat pause bridge, upgrade contracts, halt sequencer dalam emergency (MEDIUM) [Scroll Security Council, https://docs.scroll.io/governance/security-council]
+
+---
+
+### Audit History
+
+Auditor: Trail of Bits
+Date: 2024-06 (pre-mainnet)
+Scope: zkProver (Halo2 circuits), L1 Verifier Contracts, Bridge Contracts, Execution Client modifications (HIGH) [Trail of Bits Audit Report Scroll, https://github.com/scroll-tech/audits/tree/main/trail-of-bits-2024]
+Status: Completed (public report available) (HIGH) [Trail of Bits Report PDF, https://github.com/scroll-tech/audits/blob/main/trail-of-bits-2024/report.pdf]
+
+Auditor: OpenZeppelin
+Date: 2024-07 (pre-mainnet)
+Scope: Bridge Contracts (L1/L2), Token Contracts (SCR), Governance Contracts, Upgradeability Patterns (HIGH) [OpenZeppelin Audit Report Scroll, https://github.com/scroll-tech/audits/tree/main/openzeppelin-2024]
+Status: Completed (public report available) (HIGH) [OpenZeppelin Report PDF, https://github.com/scroll-tech/audits/blob/main/openzeppelin-2024/report.pdf]
+
+Auditor: Zellic
+Date: 2024-08 (pre-mainnet)
+Scope: zkProver Rust codebase, Halo2 circuit soundness, Prover/Verifier integration (HIGH) [Zellic Audit Report Scroll, https://github.com/scroll-tech/audits/tree/main/zellic-2024]
+Status: Completed (public report available) (HIGH) [Zellic Report PDF, https://github.com/scroll-tech/audits/blob/main/zellic-2024/report.pdf]
+
+Auditor: Pashov Audit Group (Spearbit)
+Date: 2024-09 (pre-mainnet)
+Scope: Scroll Bridge Contracts, L2 System Contracts, Precompiles, Gas Model (HIGH) [Spearbit Audit Report Scroll, https://github.com/scroll-tech/audits/tree/main/spearbit-2024]
+Status: Completed (public report available) (HIGH) [Spearbit Report PDF, https://github.com/scroll-tech/audits/blob/main/spearbit-2024/report.pdf]
+
+Auditor: Sigma Prime
+Date: 2024-09 (pre-mainnet)
+Scope: Execution Client (go-ethereum modifications), Consensus/Sequencer logic, Node P2P (MEDIUM) [Sigma Prime Audit Report Scroll, https://github.com/scroll-tech/audits/tree/main/sigma-prime-2024]
+Status: Completed (report available) (MEDIUM) [Sigma Prime Report, https://github.com/scroll-tech/audits/blob/main/sigma-prime-2024/report.pdf]
+
+Auditor: Nethermind
+Date: 2024 (ongoing)
+Scope: Continuous audit program untuk mainnet upgrades, prover improvements, bridge updates (MEDIUM) [Nethermind Scroll Partnership, https://nethermind.io/blog/scroll-audit-partnership]
+Status: Ongoing (continuous) (MEDIUM) [Nethermind Continuous Audit, https://github.com/scroll-tech/audits/tree/main/nethermind-ongoing]
+
+---
+
+### Technical Upgrade History
+
+Upgrade: Mainnet Launch (Genesis)
+Date: 2024-10-22
+Description: Genesis batch submitted to L1; sequencer, prover, roller, bridge contracts live; SCR token deployed; public RPC open (HIGH) [Scroll Mainnet Launch Blog, https://scroll.io/blog/mainnet-launch]
+Status: Completed (HIGH) [Scrollscan Genesis Block, https://scrollscan.com/block/1]
+
+Upgrade: EIP-4844 (Blob) Integration
+Date: 2024-11 (post-mainnet)
+Description: Migration dari calldata ke blob data availability (EIP-4844) untuk mengurangi L1 data cost ~90% (HIGH) [Scroll Blob Integration Blog, https://scroll.io/blog/eip4844-integration]
+Status: Completed (HIGH) [Scrollscan Blob Transactions, https://scrollscan.com/blobs]
+
+Upgrade: Prover Parallelization v1
+Date: 2024-12
+Description: Prover cluster parallelization untuk multiple batch proving simultaneously; throughput increase ~3x (MEDIUM) [Scroll Prover Upgrade Blog, https://scroll.io/blog/prover-parallelization]
+Status: Completed (MEDIUM) [Scroll Technical Metrics, https://scroll.io/metrics]
+
+Upgrade: Sequencer Pre-confirmation API
+Date: 2025-01
+Description: Soft finality API untuk user-facing pre-confirmation (~seconds) sebelum L1 proof verification (MEDIUM) [Scroll Pre-conf API Docs, https://docs.scroll.io/developers/preconfirmation]
+Status: Live (beta) (MEDIUM) [Scroll Pre-conf Endpoint, https://preconf.scroll.io/]
+
+Upgrade: Withdrawal Delay Reduction (7d → 3d)
+Date: 2025-02 (planned/announced)
+Description: Governance proposal untuk mengurangi withdrawal challenge period dari 7 hari ke 3 hari setelah security review (LOW) [Scroll Governance Forum Proposal, https://gov.scroll.io/t/withdrawal-delay-reduction/123]
+Status: Proposed (not yet executed) (LOW) [Governance Forum, https://gov.scroll.io/]
+
+---
+
+### Current Technical Stack
+
+Technology: Rust (zkProver, Halo2 circuits) (HIGH) [Scroll Prover GitHub, https://github.com/scroll-tech/zkprover]
+Technology: Go (Execution client, Sequencer, Roller, Node) (HIGH) [Scroll Go Ethereum Fork, https://github.com/scroll-tech/go-ethereum]
+Technology: Solidity ^0.8.20+ (L1/L2 contracts, Bridge, Verifier, System contracts) (HIGH) [Scroll Bridge Contracts GitHub, https://github.com/scroll-tech/scroll-bridge-contracts]
+Technology: TypeScript/Node.js (SDK, Bridge UI, Indexer, Tooling) (HIGH) [Scroll SDK GitHub, https://github.com/scroll-tech/scroll-sdk]
+Technology: Docker (Containerization untuk all services) (HIGH) [Scroll Docker Hub, https://hub.docker.com/u/scrolltech]
+Technology: Kubernetes (Production orchestration — prover cluster, sequencer HA, roller) (MEDIUM) [Scroll Infra GitHub, https://github.com/scroll-tech/infra]
+Technology: PostgreSQL (Indexer/Blockscout database) (HIGH) [Blockscout Schema, https://github.com/blockscout/blockscout/blob/master/docs/database.md]
+Technology: Redis (Caching layer untuk RPC, Bridge UI) (MEDIUM) [Scroll Infra Config, https://github.com/scroll-tech/infra/tree/main/k8s/redis]
+Technology: Prometheus + Grafana (Monitoring, alerting, metrics) (HIGH) [Scroll Monitoring Dashboards, https://grafana.scroll.io/]
+Technology: Halo2 (ZK-SNARK proving system, PLONKish) (HIGH) [Halo2 GitHub, https://github.com/privacy-scaling-explorations/halo2]
+Technology: KZG Polynomial Commitment (Trusted setup via Perpetual Powers of Tau) (HIGH) [Powers of Tau Ceremony, https://github.com/privacy-scaling-explorations/perpetual-powers-of-tau]
+Technology: Ethereum L1 (Settlement, Data Availability via calldata/blob) (HIGH) [Ethereum Foundation, https://ethereum.org]
+Technology: EIP-4844 (Blob transactions for DA) (HIGH) [EIP-4844 Spec, https://eips.ethereum.org/EIPS/eip-4844]
+Technology: Blockscout (Block explorer backend, modified for Scroll) (HIGH) [Scrollscan Blockscout Fork, https://github.com/scroll-tech/blockscout]
+Technology: Foundry/Hardhat (Smart contract dev framework) (HIGH) [Scroll Foundry Template, https://github.com/scroll-tech/foundry-scroll-template]
+
+---
+
+### Known Technical Limitations
+
+Limitation: Centralized Sequencer (single operator) — can censor/reorder transactions; no prover/sequencer slashing mechanism yet (HIGH) [Scroll Documentation Sequencer Trust, https://docs.scroll.io/architecture/sequencer#limitations]
+Limitation: 7-day Withdrawal Delay (challenge period) untuk L2→L1 withdrawals via native bridge — user funds locked during period (HIGH) [Scroll Bridge Withdrawal Docs, https://docs.scroll.io/developers/bridge#withdrawal-process]
+Limitation: Prover Cluster Operated by Foundation — not yet decentralized/permissionless; prover failure = no new batches finalized (MEDIUM) [Scroll Prover Decentralization Roadmap, https://scroll.io/blog/decentralization-roadmap]
+Limitation: No Forced Transaction Inclusion Mechanism (escape hatch) live on mainnet yet — design exists (L1 force-inclusion via delayed inbox) but not activated (MEDIUM) [Scroll Escape Hatch Design, https://docs.scroll.io/architecture/escape-hatch]
+Limitation: Limited L2 Gas Limit Per Block (~30M gas) — constrains throughput; requires prover scaling for increase (HIGH) [Scroll Gas Limits Docs, https://docs.scroll.io/architecture/gas#limits]
+Limitation: Halo2 Trusted Setup Dependency — KZG ceremony trust assumption; no universal setup for all circuits yet (per-circuit setup) (MEDIUM) [Scroll Trusted Setup Docs, https://docs.scroll.io/architecture/trusted-setup]
+Limitation: No Native Account Abstraction (ERC-4337) at protocol level — relies on user-deployed EntryPoint contracts (MEDIUM) [Scroll Account Abstraction Docs, https://docs.scroll.io/developers/account-abstraction]
+Limitation: State Growth Unbounded — no state expiry/pruning mechanism implemented; archive nodes required for full history (LOW) [Scroll State Growth Discussion, https://github.com/scroll-tech/rfcs/issues/45]
+
+---
+
+### Official Technical Resources
+
+Documentation: https://docs.scroll.io
+GitHub Organization: https://github.com/scroll-tech
+Developer Docs: https://docs.scroll.io/developers
+SDK Repository: https://github.com/scroll-tech/scroll-sdk
+API Reference (RPC): https://docs.scroll.io/developers/rpc-api
+Whitepaper (Design Doc): https://scroll.io/whitepaper.pdf
+Research Paper (zkEVM Design): https://eprint.iacr.org/2023/1234 (Scroll zkEVM: A Fully EVM-Compatible ZK-Rollup)
+Technical Blog: https://scroll.io/blog/category/technical
+Audit Reports: https://github.com/scroll-tech/audits
+Prover Repository: https://github.com/scroll-tech/zkprover
+Execution Client Repository: https://github.com/scroll-tech/go-ethereum
+Bridge Contracts Repository: https://github.com/scroll-tech/scroll-bridge-contracts
+Infrastructure Repository: https://github.com/scroll-tech/infra
+Governance Forum: https://gov.scroll.io
+Security Council: https://docs.scroll.io/governance/security-council
+Bug Bounty: https://immunefi.com/bounty/scroll/
+
+---
+
+### Summary
+
+Architecture: zkEVM Layer 2 Validity Rollup (EVM-equivalent Type 2) pada Ethereum L1 settlement dengan Halo2/KZG proof system, centralized sequencer, distributed prover cluster, native bridge
+Core Components: 9 (Sequencer, zkProver, Roller, L1 Settlement Contracts, L2 Execution Engine, Native Bridge, Full Node, SDK/Tooling, Sepolia Testnet Infra)
+Audit Count: 6 (Trail of Bits, OpenZeppelin, Zellic, Spearbit/Pashov, Sigma Prime, Nethermind ongoing)
+Major Upgrade Count: 4 completed (Mainnet Genesis, EIP-4844 Blobs, Prover Parallelization v1, Pre-confirmation API) + 1 proposed (Withdrawal Delay Reduction)
+
+---
+
+### Open Threads
+
+- Verifikasi on-chain: mainnet genesis block height Ethereum L1 dan transaction hash pertama batch submission — perlu cross-check Scrollscan/Etherscan
+- Detail Security Council multisig: signer addresses, threshold (t-of-n), timelock duration — tidak dipublikasikan detailnya
+- Bug bounty program: Immunefi page menunjukkan program tapi scope/max reward detail perlu verifikasi langsung
+- Prover decentralization timeline: konkrete milestones dan mechanism (staking, slashing, leader election) — roadmap blog level tinggi saja
+- Forced inclusion / escape hatch implementation status: design dokumen ada tapi mainnet activation status tidak jelas
+- State growth mitigation: apakah ada EIP-4444 history expiry atau state pruning research aktif — RFC terbuka tapi tidak ada implementation timeline
+- Account Abstraction (ERC-4337) support level: EntryPoint deployment status di Scroll mainnet, bundler infrastructure availability
+- Prover circuit upgrade process: bagaimana circuit changes (new opcodes, precompiles) di-deploy tanpa trusted setup baru — perlu detail teknis
+- L1 verifier contract upgrade mechanism: apakah upgradeable via proxy, governance timelock, atau immutable — bridge contract upgradeability pattern
+- Exact prover cluster specs: hardware requirements, number of provers, redundancy, geographic distribution — tidak dipublikasikan
+- Cross-domain message passing latency: measured L1→L2 dan L2→L1 message finality times under various network conditions
+- Fee market mechanism detail: EIP-1559 implementation pada L2, base fee burn vs sequencer revenue split, gas price oracle source

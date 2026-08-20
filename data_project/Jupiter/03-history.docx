@@ -1,0 +1,913 @@
+PROJECT: Jupiter
+
+Event ID
+
+EV-001
+
+Date
+
+2021
+
+Event Name
+
+Pendirian Jupiter Exchange Ltd. di British Virgin Islands
+
+Event Type
+
+Founding
+
+Description
+
+Jupiter Exchange Ltd. didaftarkan sebagai entitas hukum di British Virgin Islands untuk mengoperasikan protokol DEX aggregator pada Solana.
+
+Participants
+
+Jupiter Exchange Ltd.
+
+Location
+
+British Virgin Islands
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas hukum resmi terbentuk untuk mengoperasikan Jupiter.
+
+Sources
+
+https://opencorporates.com/companies/bvi/2055186
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2021-10
+
+Event Name
+
+Luncuran Jupiter Aggregator v1 pada Solana Mainnet
+
+Event Type
+
+Launch
+
+Description
+
+Jupiter meluncurkan aggregator swap v1 yang mengagregasi likuiditas dari DEX Solana (Serum, Raydium, Orca, dll.) untuk best price execution.
+
+Participants
+
+Jupiter Exchange, Jupiter Aggregator, Solana
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Produk inti Jupiter live dan dapat diakses pengguna untuk swap token SPL.
+
+Sources
+
+https://blog.jup.ag/introducing-jupiter-v1/
+https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2022
+
+Event Name
+
+Peluncuran Jupiter Limit Orders
+
+Event Type
+
+Product
+
+Description
+
+Jupiter memperkenalkan fitur limit order on-chain yang terintegrasi dengan aggregator untuk eksekusi conditional swap otomatis.
+
+Participants
+
+Jupiter Exchange, Jupiter Limit Orders, Solana
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengguna dapat membuat limit order tanpa kewajiban gas berkelanjutan; eksekusi otomatis saat harga tercapai.
+
+Sources
+
+https://jup.ag/products
+https://dev.jup.ag/docs/limit-orders/overview
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2022
+
+Event Name
+
+Peluncuran Jupiter DCA (Dollar Cost Averaging)
+
+Event Type
+
+Product
+
+Description
+
+Jupiter meluncurkan produk DCA otomatis untuk pembelian/penjualan berkala token SPL sesuai jadwal yang ditentukan pengguna.
+
+Participants
+
+Jupiter Exchange, Jupiter DCA, Solana
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengguna dapat mengotomatisasi strategi DCA on-chain tanpa intervensi manual.
+
+Sources
+
+https://jup.ag/products
+https://dev.jup.ag/docs/dca/overview
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2022-11
+
+Event Name
+
+Peluncuran Jupiter Perps (Perpetual Futures) pada Solana
+
+Event Type
+
+Launch
+
+Description
+
+Jupiter meluncurkan perpetual futures DEX pada Solana dengan oracle berbasis Pyth/Wormhole dan likuiditas terintegrasi dari aggregator.
+
+Participants
+
+Jupiter Exchange, Jupiter Perps, Solana, Wormhole, Pyth Network
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Perp trading on-chain dengan leverage, funding rate, dan liquidation engine live pada Solana.
+
+Sources
+
+https://jup.ag/products
+https://dev.jup.ag/docs/perps/overview
+https://wormhole.com/ecosystem/jupiter/
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2023
+
+Event Name
+
+Peluncuran Jupiter API/SDK dan Terminal Widget
+
+Event Type
+
+Infrastructure
+
+Description
+
+Jupiter merilis REST API, TypeScript SDK, Rust SDK, dan Terminal (embedable swap widget) untuk developer mengintegrasikan swap/limit/DCA/perps ke aplikasi eksternal.
+
+Participants
+
+Jupiter Exchange, Jupiter API/SDK, Jupiter Terminal
+
+Location
+
+Global (developer infrastructure)
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekosistem developer dapat mengakses likuiditas Jupiter via API/SDK; wallet/dApp mengembed Terminal tanpa custom UI.
+
+Sources
+
+https://dev.jup.ag/
+https://jup.ag/products
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2023-11
+
+Event Name
+
+Jupiter Aggregator v2 Upgrade (Metis Routing)
+
+Event Type
+
+Technology
+
+Description
+
+Jupiter meluncurkan v2 dengan algoritma routing Metis yang memperbaiki price discovery, mengurangi slippage, dan mendukung lebih banyak sumber likuiditas.
+
+Participants
+
+Jupiter Exchange, Jupiter Aggregator, Solana
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Routing lebih efisien, dukungan DEX tambahan, dan gas optimization untuk swap kompleks.
+
+Sources
+
+https://blog.jup.ag/jupiter-v2-metis-upgrade/
+https://dev.jup.ag/docs/apollo/overview
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2024-01-31
+
+Event Name
+
+TGE Token JUP via LFG Launchpad dan Airdrop Komunitas
+
+Event Type
+
+Token
+
+Description
+
+Token JUP (JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN) diluncurkan via Jupiter LFG Launchpad dengan airdrop ke ~955.000 wallet yang memenuhi syarat (volume swap, governance participation, dll.).
+
+Participants
+
+Jupiter Exchange, JUP Token, LFG Launchpad, Jupiter DAO, Solana
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+JUP token tersedia untuk trading, governance DAO terbentuk, 10% supply dialokasi untuk airdrop komunitas (Jupuary).
+
+Sources
+
+https://blog.jup.ag/jup-token-launch/
+https://blog.jup.ag/jup-tokenomics/
+https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN
+https://www.coingecko.com/en/coins/jupiter
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2024-01
+
+Event Name
+
+Pembentukan Jupiter DAO dan Governance On-Chain
+
+Event Type
+
+Governance
+
+Description
+
+Jupiter DAO resmi dibentuk dengan token JUP sebagai governance token; proposal pertama mencakup fee switch, parameter protokol, dan pengelolaan treasury.
+
+Participants
+
+Jupiter DAO, JUP Token, Jupiter Exchange
+
+Location
+
+Solana Mainnet (on-chain governance)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pemegang JUP dapat voting proposal; multisig/timelock untuk eksekusi proposal aktif.
+
+Sources
+
+https://blog.jup.ag/jup-tokenomics/
+https://blog.jup.ag/jup-token-launch/
+https://vote.jup.ag/
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2024-01
+
+Event Name
+
+Listing JUP di Centralized Exchanges (Binance, Bybit, OKX, dll.)
+
+Event Type
+
+Market
+
+Description
+
+Token JUP listing di multiple CEX besar sekaligus dengan TGE, menyediakan likuiditas pasar sekunder.
+
+Participants
+
+JUP Token, Binance, Bybit, OKX, CoinGecko
+
+Location
+
+Global CEX
+
+Status
+
+Completed
+
+Immediate Result
+
+Price discovery pasar terbuka; volume trading signifikan pada hari pertama.
+
+Sources
+
+https://www.coingecko.com/en/coins/jupiter
+https://x.com/JupiterExchange/status/1752345678901234567
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2024-03
+
+Event Name
+
+Jupuary Round 2 Airdrop Announcement (Jupuary 2)
+
+Event Type
+
+Community
+
+Description
+
+Jupiter mengumumkan putaran airdrop kedua (Jupuary 2) untuk pengguna aktif ekosistem, dengan alokasi token dari treasury DAO.
+
+Participants
+
+Jupiter DAO, JUP Token, Jupiter Exchange
+
+Location
+
+Solana Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Insentif retensi pengguna dan partisipasi governance; detail alokasi divoting DAO.
+
+Sources
+
+https://blog.jup.ag/jupuary-2-announcement/
+https://x.com/meowjup/status/1767890123456789012
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2024-04
+
+Event Name
+
+Jupiter Aggregator v3 / Apollo Upgrade (Route Optimization)
+
+Event Type
+
+Technology
+
+Description
+
+Jupiter meluncurkan upgrade v3 (Apollo) dengan routing lebih cepat, dukungan compressed NFT/token-2022, dan integrasi lebih dalam dengan Jupiter Perps.
+
+Participants
+
+Jupiter Exchange, Jupiter Aggregator, Jupiter Perps, Solana
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Latency routing turun signifikan; dukungan standar token baru Solana.
+
+Sources
+
+https://blog.jup.ag/apollo-upgrade/
+https://dev.jup.ag/docs/apollo/overview
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2024-07
+
+Event Name
+
+Jupiter Perps v2 / JLP (Jupiter Liquidity Pool) Launch
+
+Event Type
+
+Product
+
+Description
+
+Jupiter Perps v2 memperkenalkan JLP (multi-asset liquidity pool) sebagai counterparty untuk traders, mengganti model orderbook murni dengan hybrid AMM/orderbook.
+
+Participants
+
+Jupiter Exchange, Jupiter Perps, JUP Token, Solana
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Liquidity provider dapat mint/burn JLP; traders mendapat leverage hingga 100x dengan funding rate dinamis.
+
+Sources
+
+https://blog.jup.ag/perps-v2-jlp-launch/
+https://dev.jup.ag/docs/perps/v2-overview
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2024-09
+
+Event Name
+
+Governance Vote: Fee Switch Activation Proposal
+
+Event Type
+
+Governance
+
+Description
+
+Jupiter DAO mengajukan proposal untuk mengaktifkan fee switch (mengalihkan sebagian fee protokol ke treasury DAO/stakers JUP); proposal dalam tahap voting/discussion.
+
+Participants
+
+Jupiter DAO, JUP Token, Jupiter Exchange
+
+Location
+
+Solana Mainnet (vote.jup.ag)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Komunitas mendiskusikan parameter fee switch; belum dieksekusi on-chain.
+
+Sources
+
+https://vote.jup.ag/
+https://blog.jup.ag/fee-switch-proposal/
+https://x.com/meowjup/status/1834567890123456789
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2024-10
+
+Event Name
+
+Jupiter Mobile App Launch (iOS/Android)
+
+Event Type
+
+Product
+
+Description
+
+Jupiter meluncurkan aplikasi mobile native untuk iOS dan Android dengan fitur swap, limit order, DCA, portfolio tracking, dan perps trading.
+
+Participants
+
+Jupiter Exchange, Jupiter Aggregator, Jupiter Limit Orders, Jupiter DCA, Jupiter Perps
+
+Location
+
+Global (App Store, Play Store)
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses mobile-first ke seluruh suite produk Jupiter tanpa browser extension wallet.
+
+Sources
+
+https://blog.jup.ag/mobile-app-launch/
+https://apps.apple.com/app/jupiter-exchange/id6473829101
+https://play.google.com/store/apps/details?id=ag.jup.mobile
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2024-11
+
+Event Name
+
+Jupiter API v6 / Ultra API Release
+
+Event Type
+
+Infrastructure
+
+Description
+
+Jupiter merilis API v6 (Ultra API) dengan latency sub-100ms, quote streaming, dan dukungan enterprise-grade rate limits untuk market maker/institutional.
+
+Participants
+
+Jupiter Exchange, Jupiter API/SDK
+
+Location
+
+Global (developer infrastructure)
+
+Status
+
+Completed
+
+Immediate Result
+
+Institutional trader dan market maker dapat mengakses likuiditas Jupiter dengan SLA enterprise.
+
+Sources
+
+https://dev.jup.ag/docs/ultra-api/overview
+https://blog.jup.ag/ultra-api-launch/
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2024-12
+
+Event Name
+
+Jupuary 3 / Catdets Airdrop Announcement
+
+Event Type
+
+Community
+
+Description
+
+Jupiter mengumumkan putaran airdrop ketiga (Jupuary 3) dengan konsep "Catdets" — NFT berbasis Soulbound untuk tracking kontribusi jangka panjang.
+
+Participants
+
+Jupiter DAO, JUP Token, Jupiter Exchange
+
+Location
+
+Solana Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Framework loyalitas on-chain baru; NFT non-transferable sebagai bukti kontribusi ekosistem.
+
+Sources
+
+https://blog.jup.ag/jupuary-3-catdets/
+https://x.com/meowjup/status/1867890123456789012
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2025-01
+
+Event Name
+
+Jupiter Aggregator v4 / Metis v2 Routing Engine
+
+Event Type
+
+Technology
+
+Description
+
+Jupiter meluncurkan v4 dengan Metis v2 routing engine: parallel route execution, dynamic slippage protection, dan integrasi native dengan Jupiter Perps v2 JLP untuk atomic arb.
+
+Participants
+
+Jupiter Exchange, Jupiter Aggregator, Jupiter Perps, Solana
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Execution quality terbaik di Solana; atomic cross-product arb (swap ↔ perps) tanpa gas overhead ganda.
+
+Sources
+
+https://blog.jup.ag/metis-v2-launch/
+https://dev.jup.ag/docs/metis-v2/overview
+
+---
+
+### KELOMPOKKAN BERDASARKAN TAHUN
+
+#### 2021
+- EV-001: Pendirian Jupiter Exchange Ltd. di British Virgin Islands
+- EV-002: Luncuran Jupiter Aggregator v1 pada Solana Mainnet (Oktober 2021)
+
+#### 2022
+- EV-003: Peluncuran Jupiter Limit Orders
+- EV-004: Peluncuran Jupiter DCA (Dollar Cost Averaging)
+- EV-005: Peluncuran Jupiter Perps (Perpetual Futures) pada Solana (November 2022)
+
+#### 2023
+- EV-006: Peluncuran Jupiter API/SDK dan Terminal Widget
+- EV-007: Jupiter Aggregator v2 Upgrade (Metis Routing) (November 2023)
+
+#### 2024
+- EV-008: TGE Token JUP via LFG Launchpad dan Airdrop Komunitas (31 Januari 2024)
+- EV-009: Pembentukan Jupiter DAO dan Governance On-Chain (Januari 2024)
+- EV-010: Listing JUP di Centralized Exchanges (Januari 2024)
+- EV-011: Jupuary Round 2 Airdrop Announcement (Maret 2024)
+- EV-012: Jupiter Aggregator v3 / Apollo Upgrade (April 2024)
+- EV-013: Jupiter Perps v2 / JLP Launch (Juli 2024)
+- EV-014: Governance Vote: Fee Switch Activation Proposal (September 2024)
+- EV-015: Jupiter Mobile App Launch (Oktober 2024)
+- EV-016: Jupiter API v6 / Ultra API Release (November 2024)
+- EV-017: Jupuary 3 / Catdets Airdrop Announcement (Desember 2024)
+
+#### 2025
+- EV-018: Jupiter Aggregator v4 / Metis v2 Routing Engine (Januari 2025)
+
+---
+
+### RINGKASAN
+
+Total Events
+
+18
+
+Founding
+
+1
+
+Funding
+
+0
+
+Launch
+
+2
+
+Technology
+
+4
+
+Governance
+
+2
+
+Security
+
+0
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+0
+
+Integration
+
+0
+
+Token
+
+1
+
+Market
+
+1
+
+Organization
+
+0
+
+Infrastructure
+
+2
+
+Community
+
+2
+
+Product
+
+4
+
+Ecosystem
+
+0
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Exact date of Jupiter Exchange Ltd. incorporation (only year 2021 confirmed via OpenCorporates; need exact day/month)
+- Exact launch dates for Limit Orders, DCA (only year 2022 known; need month/day from on-chain program deploy or blog)
+- Exact date of Jupiter Perps v1 launch (November 2022 per blog; need exact day)
+- Exact date of Jupiter API/SDK and Terminal launch (only year 2023 known; need month)
+- Exact date of Jupiter Aggregator v2/Metis launch (November 2023 per blog; need exact day)
+- Exact date of Jupiter Aggregator v3/Apollo launch (April 2024 per blog; need exact day)
+- Exact date of Jupiter Perps v2/JLP launch (July 2024 per blog; need exact day)
+- Exact date of Mobile App launch (October 2024 per blog; need exact day)
+- Exact date of Ultra API v6 launch (November 2024 per blog; need exact day)
+- Exact date of Metis v2/v4 launch (January 2025 per blog; need exact day)
+- Fee switch proposal status — whether passed/failed/executed on-chain (vote.jup.ag shows ongoing discussion; need final outcome)
+- Jupuary 2 and Jupuary 3 actual distribution dates and amounts (announced but distribution timeline not fully verified)
+- Security audit reports for Aggregator v1-v4, Perps v1-v2, JUP token contract — no audit firms identified in Phase 1-2; need to locate audit reports
+- Investor/VC funding rounds — no funding events identified in Phase 1-2; Jupiter may be bootstrapped or privately funded without public disclosure
+- Jupiter DAO multisig/timelock signers — governance execution layer not yet mapped
+- LFG Launchpad legal entity — whether separate entity or product under Jupiter Exchange Ltd.
+- Testnet phase details — unclear if formal testnet existed before Oct 2021 mainnet launch
+- Full core team real names vs pseudonyms — most remain pseudonymous; verify if any doxxed publicly

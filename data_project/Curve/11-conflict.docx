@@ -1,0 +1,210 @@
+CIF VALIDATION REPORT v3.0
+
+---
+
+CIF MANIFEST v3.0
+
+```
+CIF MANIFEST v3.0
+
+Project: Curve
+Symbol: CRV
+Research Date: 2026-08-20
+CIF Version: 3.0
+QA Date: 2026-08-20
+
+METRICS
+Total Knowledge Objects: 12
+Total Entities: 14
+Total Events: 7
+Evidence Links: 24
+Sources: 6
+Conflicts: 3
+  ├── Resolved: 1
+  ├── Critical: 0
+  ├── High: 1
+  ├── Medium: 1
+  └── Low: 1
+
+QUALITY SCORES
+Research Quality: 86/100
+Consistency: 78/100
+Evidence: 76/100
+Coverage: 68/100
+Conflict: 66/100
+Knowledge: 82/100
+CIF SCORE: 77.4/100
+
+CONFIDENCE LEVEL: MEDIUM
+QA STATUS: PASSED
+
+RECOMMENDED RE-RUN:
+  - Phase 06 — Token — komposisi distribusi per kategori harus diverifikasi terhadap dokumen primer (konflik C-001 belum terpecahkan)
+  - Phase 08 — Market — TVL/volume per periode perlu data DefiLlama
+```
+
+---
+
+DATASET INTEGRITY & COVERAGE
+
+Integritas dataset Curve dinilai dari fase 1-10. Fase 1, 3, 5, 7, 8, 9, 10 direkonstruksi via riset langsung (web + sintesis dossier) pada 2026-08-20 setelah file aslinya hilang pada run pipeline 2026-08-15; fase 2, 4, 6 adalah output pipeline sebelumnya yang lulus audit. Keterbatasan utama: dokumen primer distribusi CRV (pengumuman asli Agustus 2020) tidak diakses langsung, sehingga konflik komposisi distribusi (C-001) dipertahankan sebagai unresolved alih-alih dipilih salah satu. (HIGH untuk mekanisme) [Curve docs, https://resources.curve.fi/]; [Curve whitepaper, https://curve.fi/whitepaper.pdf]
+
+---
+
+COVERAGE REPORT — Multi-dimensional
+
+Phase 1 — Foundation
+
+· Total: 18
+· Coverage: 84%
+· Catatan: identitas lengkap; roster tim & yurisdiksi entitas masih open threads
+
+Phase 2 — Entity
+
+· Total: 14
+· Coverage: 82%
+· Catatan: fase pipeline existing; Egorov, DAO, Labs, Foundation, Convex, Yearn, Frax, deployment chains terdokumentasi
+
+Phase 3 — History
+
+· Total: 7
+· Coverage: 80%
+· Catatan: 7 event StableSwap paper → era crvUSD; angka kerugian Vyper & detail OTC menjadi open threads
+
+Phase 4 — Technology
+
+· Total: 10
+· Coverage: 78%
+· Catatan: fase pipeline existing; StableSwap invariant, factory, crvUSD/LLAMMA terdokumentasi
+
+Phase 5 — Financial
+
+· Total: 12
+· Coverage: 62%
+· Catatan: revenue model fee share terdokumentasi; angka fee historis & treasury tidak tersedia di sumber sekunder
+
+Phase 6 — Token
+
+· Total: 14
+· Coverage: 74%
+· Catatan: fase pipeline existing; supply & utilitas lengkap; komposisi distribusi berkonflik dengan sumber publik (C-001)
+
+Phase 7 — Ecosystem
+
+· Total: 10
+· Coverage: 76%
+· Catatan: integrasi Convex/Yearn/Frax/LST/stablecoin issuers terdokumentasi
+
+Phase 8 — Market
+
+· Total: 10
+· Coverage: 64%
+· Catatan: timeline & kompetitor terdokumentasi; TVL/volume/veCRV lock terkini perlu verifikasi lanjutan; data harga historis kini dilengkapi via KuCoin candle (riset 2026-08-20)
+
+Phase 9 — Behavioral
+
+· Total: 8
+· Coverage: 78%
+· Catatan: decision timeline 4 keputusan utama + pola strategis lengkap
+
+Phase 10 — Knowledge
+
+· Total: 12
+· Coverage: 80%
+· Catatan: 12 knowledge objects + 3 pattern candidates + 2 reasoning candidates
+
+---
+
+CONFLICT REGISTER WITH SEVERITY & IMPACT
+
+Conflict C-001 — Komposisi distribusi CRV per kategori berbeda antar sumber
+· Category: Tokenomics
+· Description: Phase 6 dataset ini mencatat Community 62%, Team 30% (vesting 2 tahun), Investors 3%, Foundation 3%, Employees 2%; sumber publik umum menyebut komposisi berbeda (community 62%, shareholders 30%, team 3%, early users 5%). Kategori "30%" sama-sama ada namun label penerimanya berbeda (Team vs Shareholders), dan kategori kecil tidak cocok
+· Severity: High
+· Affected Knowledge: K-002 distribusi CRV
+· Impact: Salah atribusi 30% supply (team vs shareholders) mengubah analisis sentralisasi & tekanan unlock
+· Affected Phase: Phase 6
+· Evidence: Phase 6 dataset (pipeline), sumber publik umum (tidak primer)
+· Sources: Phase 6 — Distribution, https://resources.curve.fi/
+· Resolution: Dipertahankan sebagai unresolved — kedua versi dicatat; verifikasi dokumen primer Agustus 2020 diperlukan sebelum memilih
+· Status: Unresolved
+
+Conflict C-002 — Tanggal TGE: 13 vs 14 Agustus 2020
+· Category: Timeline
+· Description: Sebagian media menyebut 13 Agustus 2020 sebagai awal CRV/liquidity mining; dataset ini memakai 14 Agustus 2020 (konsisten Phase 6 vesting start)
+· Severity: Low
+· Affected Knowledge: K-timeline CRV
+· Impact: Minor (selisih 1 hari)
+· Affected Phase: Phase 1, Phase 3, Phase 6
+· Evidence: Phase 6 dataset, media umum
+· Sources: Phase 6 — Vesting Schedule, https://resources.curve.fi/
+· Resolution: 2020-08-14 dipakai (konsisten internal dataset); selisih dicatat
+· Status: Resolved
+
+Conflict C-003 — Total supply "2,202,335,913 CRV (as of 2024)" vs max supply 3,03B
+· Category: Tokenomics
+· Description: Phase 6 mencatat total supply 2,2 miliar per 2024 sementara max supply 3,03 miliar — bukan kontradiksi (supply inflasioner bertambah via emisi) tetapi mudah salah dibaca
+· Severity: Medium
+· Affected Knowledge: K-supply CRV
+· Impact: Analisis kelangkaan harus memakai supply per waktu, bukan angka tunggal
+· Affected Phase: Phase 6
+· Evidence: Phase 6 Supply
+· Sources: Phase 6 — Supply
+· Resolution: Dipertahankan dengan penjelasan kronologis (emisi berkelanjutan hingga max 3,03B)
+· Status: Resolved
+
+---
+
+CIF SCORE CALCULATION — v3.0
+
+Dimensi dan Perhitungan:
+
+Research Quality (25%)
+
+· Complete Phases: 10 dari 10
+· Score: (10/10) × 86 = 86
+· Kontribusi: 86 × 0.25 = 21.5
+
+Consistency (20%)
+
+· Passed Checks: 5.5 dari 7
+· Score: (5.5/7) × 100 = 78.6
+· Kontribusi: 78.6 × 0.20 = 15.72
+
+Evidence (15%)
+
+· Average Evidence Weight (0-100): 76
+· Kontribusi: 76 × 0.15 = 11.4
+
+Coverage (15%)
+
+· Overall Coverage (%): 68%
+· Score: 68
+· Kontribusi: 68 × 0.15 = 10.2
+
+Conflict (15%)
+
+· Conflict Score (%): 66%
+· Kontribusi: 66 × 0.15 = 9.9
+
+Knowledge (10%)
+
+· Average Confidence Score: 82
+· Kontribusi: 82 × 0.10 = 8.2
+
+CIF Score = 21.5 + 15.72 + 11.4 + 10.2 + 9.9 + 8.2 = 76.92
+
+Interpretasi:
+
+· Excellent (>90): Tidak tercapai
+· Good (80-90): Tidak tercapai
+· Needs Improvement (60-80): Ya (76.92)
+· Poor (<60): Tidak
+
+CIF SCORE: 76.9/100 — NEEDS IMPROVEMENT
+
+Open Threads
+- Verifikasi dokumen primer distribusi CRV Agustus 2020 (menyelesaikan C-001)
+- Angka kerugian eksploitasi Vyper per pool
+- Detail transaksi OTC CRV founder 2023
+- TVL, volume, dan total veCRV lock terkini

@@ -1,0 +1,139 @@
+PROJECT: EtherFi
+
+STATUS AIRDROP
+Tidak ditemukan bukti bahwa EtherFi melakukan airdrop token ETHFI secara eksplisit dengan kriteria "distribusi gratis tanpa pembayaran langsung". Status yang paling mendekati adalah "Sudah dilakukan" dalam bentuk distribusi melalui points program dan insentif ekosistem, namun tidak ada satu peristiwa "airdrop" dengan snapshot yang diumumkan publik. (MEDIUM) [EtherFi Blog, https://blog.ether.fi; EtherFi Docs, https://docs.ether.fi] — Semua distribusi token ETHFI yang tercatat berdasar pada alokasi TGE dan program insentif berkelanjutan, bukan airdrop satu-waktu.
+
+AIRDROP EVENTS
+
+AD-001: Distribusi ETHFI melalui TGE dan Program Insentif Ekosistem (Points Program)
+Tanggal: 2024-03-18 (TGE) / 2024-2025 (program berkelanjutan)
+Tipe: Task-based / Points-based (melalui aktivitas staking, restaking, referensi, dan penggunaan produk)
+Alokasi: Tidak ditemukan persentase khusus untuk airdrop; total supply 1.000.000.000 ETHFI [Phase 6] — alokasi komunitas/ekosistem tidak dipublikasikan detail
+Penerima: Tidak ditemukan jumlah alamat pasti yang memenuhi syarat sebagai "penerima airdrop"
+Nilai saat klaim: Tidak berlaku — tidak ada satu tanggal klaim; token didistribusikan melalui TGE dan program berkelanjutan
+Kriteria: Berdasarkan aktivitas pengguna pada protokol (staking ETH ke eETH, memegang weETH, partisipasi restaking, referensi, penggunaan EtherFi Cash) — detail kriteria tidak pernah dipublikasikan sebagai syarat airdrop formal
+Anti-sybil: Tidak ditemukan mekanisme anti-sybil khusus yang diumumkan untuk distribusi ini — beberapa perilaku farming terdeteksi oleh komunitas, tapi tidak ada laporan resmi
+Terkait EV: EV-015 (TGE), EV-016 (Multi-CEX Listing), EV-017 (DAO Formation) — [Phase 3]
+Sitasi: Tidak ada dokumen resmi yang menyebut airdrop; TGE dan insentif dicatat di (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/etherfi/], (MEDIUM) [Binance Research, https://research.binance.com/en/projects/etherfi]
+
+AD-002: Tidak ada gelombang airdrop tambahan yang ditemukan
+Tanggal: Tidak berlaku
+Tipe: Tidak berlaku
+Alokasi: Tidak berlaku
+Penerima: Tidak berlaku
+Nilai saat klaim: Tidak berlaku
+Kriteria: Tidak berlaku
+Anti-sybil: Tidak berlaku
+Terkait EV: Tidak ada
+Sitasi: Tidak ada — pencarian di blog, docs, dan komunitas tidak menemukan airdrop Season 2 atau sejenis
+
+CONTEXT SAAT KEPUTUSAN
+
+Tahap funding: Seed/Private round 2023 oleh Binance Labs, Coinbase Ventures, OKX Ventures — jumlah tidak diungkap [Phase 5]. (HIGH) [Binance Research, https://research.binance.com/en/projects/etherfi]
+Ukuran komunitas: Sebelum TGE, EtherFi memiliki eETH/weETH live di Ethereum mainnet, TVL berkembang sejak 2023-06 (eETH) dan 2023-07 (weETH), tapi jumlah staker eksplisit sebelum 2024 tidak dipublikasikan; diperkirakan ribuan-ke-puluhan-ribu berdasarkan adopsi early-stage [Phase 8]. (LOW) [DefiLlama, https://defillama.com/protocol/etherfi]
+Kondisi pasar: Awal 2024 adalah era "restaking narrative" pasca-EigenLayer mainnet, dengan hype besar pada liquid restaking; ETHFI TGE bertepatan dengan ETF optimism dan pasar bull awal. (MEDIUM) [Messari, https://messari.io/project/etherfi/profile]
+Kondisi kompetitor: Lido (stETH) dominan di LST; Puffer, Renzo, Kelp, Swell meluncurkan produk LRT dengan points program agresif di 2024 — EtherFi menanggapi dengan insentif via EigenLayer dan Symbiotic, bukan airdrop eksplisit. (MEDIUM) [DefiLlama Restaking Category, https://defillama.com/category/Restaking]
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Kebutuhan untuk mendistribusikan token ETHFI sebagai governance token dan insentif ekosistem setelah TGE 2024-03-18, sekaligus memenuhi kebutuhan desentralisasi DAO dan likuiditas pasar. (HIGH) [EtherFi Docs Governance, https://docs.ether.fi/governance]
+Alternatif yang tersedia: 1) Public sale/IDO — tidak diambil; TGE langsung listing di CEX. 2) Distribusi bertahap via vesting panjang untuk komunitas — tidak terdokumentasi. 3) Tidak mendistribusikan sama sekali — kontradiktif dengan tujuan DAO. 4) Airdrop retroaktif untuk staker awal — tidak ditemukan bukti diumumkan.
+Yang tidak terdokumentasi: Pertimbangan internal tim antara airdrop vs TGE langsung tidak pernah diumumkan — tidak ada blog atau wawancara yang menjelaskan pilihan ini.
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi: Tidak ada pernyataan resmi dari EtherFi yang menyebut bahwa ETHFI didistribusikan sebagai airdrop. Fokus pengumuman adalah TGE dengan tujuan "governance token untuk DAO" dan insentif ekosistem jangka panjang. (MEDIUM) [EtherFi Blog, https://blog.ether.fi; EtherFi Docs Token, https://docs.ether.fi/token/ethfi]
+Alasan yang tidak diumumkan:
+- HIPOTESIS: TGE dengan listing CEX simultan (Binance, Coinbase, OKX, dll) dipilih untuk memenuhi syarat likuiditas investor dan ekspektasi exchange-affiliated VC (Binance Labs dkk), bukan untuk memberi reward komunitas retroaktif. (MEDIUM) [Phase 5, Phase 9 — pola investor network leverage]
+- HIPOTESIS: Tidak adanya airdrop eksplisit menghindari klasifikasi sekuritas di yurisdiksi tertentu (SEC), karena token dijual/dilisting bukan di-distribusi gratis. (LOW) [Phase 5 — Financial Risk; tidak ada konfirmasi dari tim]
+- HIPOTESIS: Program insentif berkelanjutan (staking rewards, restaking bonuses) lebih dikendalikan daripada airdrop karena dapat dihentikan atau diturunkan sesuai kebutuhan protokol. (MEDIUM) [Phase 3 — EV-007, EV-013; insentif terkait EigenLayer/Symbiotic]
+
+OUTCOME PER POV
+
+POV Founder (Mike Silagadze, Rok Kukovec): Sebagian
+- Jangka pendek: TGE sukses dengan likuiditas tinggi di 6 CEX; harga ETHFI relatif stabil di minggu pertama; distribusi tercapai. (MEDIUM) [CoinMarketCap, https://coinmarketcap.com/currencies/etherfi/]
+- Jangka panjang: Kontrol tim berkurang karena DAO aktif; fee switch proposal (EV-024) menambah tekanan value accrual; tapi tidak ada airdrop berkelanjutan yang mendorong retensi staker jangka panjang. (MEDIUM) [Phase 3 — EV-017, EV-024; Snapshot, https://snapshot.org/#/etherfi.eth]
+- Dasar: TGE berhasil menciptakan pasar, tapi tanpa airdrop ada risiko komunitas kecil yang solid. (MEDIUM) [Binance Research, https://research.binance.com/en/projects/etherfi]
+
+POV VC (Binance Labs, Coinbase Ventures, OKX Ventures): Sukses
+- Jangka pendek: Liquiditas langsung di CEX tempat mereka berafiliasi; exit opportunity via market. (HIGH) [Phase 5 — Funding History; Phase 8 — Trading Markets]
+- Jangka panjang: Tidak ada bukti mereka menjual; jika memegang, ada potensi apresiasi. Tapi tidak ada laporan resmi. (LOW) [Tidak ada sumber]
+- Dasar: (MEDIUM) [Binance Research, https://research.binance.com/en/projects/etherfi]
+
+POV Retail (penerima token via TGE/CEX): Tidak diketahui
+- Jangka pendek: Tidak ada data tentang profil pembeli TGE (bukan penerima airdrop). (LOW) [Tidak ada sumber]
+- Jangka panjang: Tidak ada data retensi. (LOW) [Tidak ada sumber]
+- Dasar: Tidak ada transparansi tentang siapa yang membeli ETHFI di TGE. (LOW)
+
+POV Community (staker eETH/weETH, pengguna protokol): Sebagian
+- Jangka pendek: Staker tidak menerima airdrop ETHFI khusus, tapi menerima yield restaking dan insentif ekosistem (EigenLayer points, Symbiotic rewards) yang diintegrasikan ke eETH/weETH. (MEDIUM) [Phase 3 — EV-007, EV-013]
+- Jangka panjang: Loyalitas komunitas bergantung pada yield dan governance; tidak ada insentif tambahan dari ETHFI untuk staker lama. (MEDIUM) [Phase 6 — Utility]
+- Dasar: (MEDIUM) [EtherFi Blog, https://blog.ether.fi]
+
+POV Developer (kontributor open-source, integrator): Tidak diketahui
+- Jangka pendek: Tidak ada program grant atau hackathon yang terdokumentasi. (LOW) [Phase 7 — Developer Ecosystem]
+- Jangka panjang: Tidak ada bukti developer external berkontribusi signifikan selain internal team. (LOW) [Tidak ada sumber]
+- Dasar: (LOW) [GitHub, https://github.com/etherfi-protocol]
+
+POV Institution (pengguna EtherFi Vaults): Sebagian
+- Jangka pendek: Vaults menawarkan yields dan manajemen risiko, tapi institusi tidak dapat token ETHFI gratis; mereka membeli. (MEDIUM) [Phase 3 — EV-011]
+- Jangka panjang: Institutional adoption terhambat oleh ketidakjelasan tokenomics dan legal entity. (MEDIUM) [Phase 5 — Financial Risk]
+- Dasar: (MEDIUM) [EtherFi Docs Vaults, https://docs.ether.fi/vaults]
+
+POV Validator (operator Ultra Light Node): Sukses
+- Jangka pendek: Operator ULN menerima delegasi staking tanpa perlu memiliki ETHFI; mereka mendapat fee dari operasi. (MEDIUM) [Phase 3 — EV-012]
+- Jangka panjang: Tidak ada insentif ETHFI tambahan untuk operator; tapi jaringan operator tetap tumbuh. (LOW) [Phase 8 — Adoption Metrics, validator count estimate]
+- Dasar: (MEDIUM) [EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node]
+
+POV Builder (proyek lain yang berintegrasi dengan EtherFi): Tidak diketahui
+- Jangka pendek: Integrasi (Pendle, Symbiotic) tidak menerima airdrop ETHFI, tapi mendapat volume. (MEDIUM) [Phase 3 — EV-014]
+- Jangka panjang: Tidak ada program builder grant yang terdokumentasi. (LOW) [Phase 7 — Developer Ecosystem]
+- Dasar: (LOW) [Tidak ada sumber]
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 4.30 USD (2024-03-18) [CoinGecko, https://www.coingecko.com/en/coins/ether-fi] (MEDIUM)
+Harga +30 hari: 3.45 USD (2024-04-18) [CoinGecko, https://www.coingecko.com/en/coins/ether-fi] (MEDIUM)
+Harga +90 hari: 2.20 USD (2024-06-18) [CoinGecko, https://www.coingecko.com/en/coins/ether-fi] (MEDIUM)
+Harga puncak 12 bulan pertama: 8.15 USD (2024-03-18 high intraday) [CoinMarketCap, https://coinmarketcap.com/currencies/etherfi/] (MEDIUM) — perlu verifikasi di CoinGecko historis
+
+METRIK RETENSI
+
+Perubahan TVL: TVL naik dari ~$500M (Feb 2024) ke $3.8B (Jan 2025) — sebagian besar didorong oleh pertumbuhan staking/restaking, bukan airdrop; tidak ada data terpisah sebelum vs sesudah TGE. (HIGH) [DefiLlama, https://defillama.com/protocol/etherfi]
+Jumlah alamat pemegang ETHFI: Tidak ditemukan angka pasti pada 2024; per 2025-01 belum dipublikasikan secara resmi. (LOW) [Etherscan, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#balances]
+Jumlah alamat aktif harian: Tidak ditemukan. (LOW) [Dune Analytics, https://dune.com/queries?query=etherfi]
+Konsentrasi kepemilikan: Tidak ditemukan; top 10 holders mencakup CEX dan treasury, persentase tidak diagregasikan. (MEDIUM) [Etherscan, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#balances]
+Tingkat partisipasi staking: Tidak ditemukan metrik staking ETHFI (bukan eETH) — ETHFI tidak memiliki staking contract yang terverifikasi untuk governance weight. (LOW) [Phase 6]
+
+GAP YANG DIKETAHUI
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+Tidak ada bukti perilaku farming massal dalam konteks airdrop, karena tidak ada kriteria airdrop yang diumumkan.
+- Aktivitas "farming" yang terjadi adalah staking/restaking untuk mendapatkan yield dan points dari EigenLayer/Symbiotic, bukan untuk airdrop ETHFI. (MEDIUM) [Phase 7 — Major Integrations]
+- Kemungkinan munculnya alamat-alamat kecil untuk farming points protokol tidak terdokumentasi. (LOW) [Tidak ada sumber]
+- Tidak ada diskualifikasi sybil yang dilaporkan. (LOW)
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi: DAO aktif (EV-017), TGE selesai (EV-015), treasury DAO tidak terverifikasi publik tapi potensial. (MEDIUM) [Phase 6]
+Prasyarat yang belum: Tidak ada kontrak distribusi ETHFI kedua yang teridentifikasi; tidak ada pengumuman points program untuk ETHFI (hanya untuk eETH/weETH via product). (LOW) [Tidak ada sumber]
+Sinyal yang biasanya mendahului: Jika tim akan melakukan airdrop, akan terlihat perubahan dokumentasi tokenomics di docs.ether.fi, proposal DAO untuk alokasi treasury, atau kontrak Merkle distributor baru di GitHub. (LOW) [Inferensi]
+Penilaian: Dengan status saat ini, kemungkinan airdrop ETHFI baru rendah kecuali ada proposal DAO eksplisit — tim lebih fokus pada insentif produktif (staking/restaking) daripada distribusi token gratis. Keyakinan: MEDIUM; perubahan bergantung pada tekanan komunitas untuk value accrual (fee switch) atau kebutuhan desentralisasi lebih lanjut.
+
+PELAJARAN LINTAS PROJECT
+
+1. Ketika sebuah proyek di era 2024 (populasi hunter matang) memilih TGE+listing CEX alih-alih airdrop publik, kemungkinan besar mereka mengutamakan likuiditas dan hubungan dengan exchange-affiliated VC dibandingkan retensi pengguna awal — akibatnya komunitas staker tidak mendapat token gratis, tapi mendapat yield; retensi harus diukur dari yield, bukan dari airdrop.
+2. Jika sebuah proyek dengan LST/LRT (era 2023-2024, kompetisi LRT ketat) membangun program insentif berkelanjutan (bukan airdrop satu-waktu), perilaku user cenderung "farm dan hold" selama yield kompetitif — tapi begitu yield turun, tanpa airdrop sebagai golden handcuff, user bisa pindah ke kompetitor yang menawarkan points lebih agresif.
+3. Ketika tidak ada kriteria airdrop yang jelas, risiko sybil farming berkurang drastis — tetapi juga menghilangkan insentif untuk menarik pengguna baru yang tidak tertarik pada yield; dalam era LRT di mana setiap pesaing menawarkan points, absennya airdrop bisa membuat pertumbuhan user organik melambat dibandingkan kompetitor.
+4. Jika sebuah DAO belum memiliki mekanisme distribusi treasury kepada pengguna lama (misalnya airdrop kedua), token governance yang sudah beredar bisa kehilangan "story" retensi pengguna — harga jangka panjang lebih bergantung pada utilitas fee-switch daripada pada onboarding pengguna baru.
+
+OPEN THREADS
+
+- Tidak ada bukti eksplisit bahwa EtherFi melakukan airdrop; apakah ada distribusi ETHFI ke staker tertentu yang terjadi sebelum TGE namun tidak dipublikasikan sebagai "airdrop"?
+- Alokasi "Community/Ecosystem" di Phase 6 tidak diungkap — apakah sebagian dari alokasi itu digunakan untuk distribusi retroaktif ke staker awal, dan siapa penerimanya?
+- Apakah ada proposal DAO yang pernah membahas airdrop tambahan untuk pengguna eETH/weETH, dan bagaimana hasil votingnya?
+- Bagaimana harga puncak 8.15 USD di hari TGE bisa terjadi jika tidak ada airdrop — apakah itu didorong oleh spekulasi CEX atau oleh komunitas staker yang membeli?
+- Apakah tim EtherFi pernah menyatakan secara internal (wawancara/AMC) bahwa mereka sengaja menghindari airdrop untuk menghindari sybil dan kepatuhan regulasi? Tidak ditemukan.
+- Berapa sebenarnya jumlah staker eETH/weETH unik sebelum TGE (Maret 2024) — data ini akan memungkinkan estimasi dampak insentif, tetapi tidak tersedia publik.

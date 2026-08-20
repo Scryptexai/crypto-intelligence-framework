@@ -1,0 +1,207 @@
+PROJECT: Ethereum
+
+## Funding History
+
+Funding Round: Ether Crowdsale (Public Sale)
+Date: 2014-07-22 hingga 2014-09-02
+Amount: 31.529 BTC
+Currency: BTC
+Lead Investor: Tidak ada (penjualan publik terbuka)
+Participating Investors: >9.000 peserta individu
+Valuation: Tidak diumumkan (tidak ada mekanisme valuasi tradisional)
+Funding Type: Public Sale
+Status: Completed
+Sources: https://blog.ethereum.org/2014/07/22/launching-the-ether-sale ; https://blog.ethereum.org/2014/09/02/ether-sale-ends-raised-31500-btc ; https://messari.io/asset/ethereum/profile
+
+Funding Round: Ethereum Foundation Grants Program (Ongoing)
+Date: 2018–sekarang
+Amount: >$100M total teralokasi (kumulatif hingga 2023)
+Currency: USD
+Lead Investor: Ethereum Foundation (Stiftung)
+Participating Investors: Tidak berlaku (program hibah)
+Valuation: Tidak berlaku
+Funding Type: Grant
+Status: Ongoing
+Sources: https://esp.ethereum.foundation/ ; https://ethereum.foundation/annual-report-2023/ ; https://blog.ethereum.org/2024/01/23/ef-grants-update-q4-2023
+
+Funding Round: Devcon / Community Grants / Ecosystem Support Program
+Date: 2015–sekarang
+Amount: Tidak diungkap secara agregat per tahun
+Currency: USD / ETH
+Lead Investor: Ethereum Foundation
+Participating Investors: Tidak berlaku
+Valuation: Tidak berlaku
+Funding Type: Grant
+Status: Ongoing
+Sources: https://esp.ethereum.foundation/ ; https://blog.ethereum.org/2022/01/18/ecosystem-support-program-update
+
+## Treasury
+
+Current Treasury Size: Tidak diungkap secara real-time; laporan tahunan EF 2023 menunjukkan aset ~$1,6M (tertulis dalam laporan keuangan Swiss foundation, namun angka ini tidak mencakup seluruh holding on-chain EF yang tidak dipublikasikan detailnya)
+Treasury Composition: Campuran ETH, BTC, stablecoin (USDC/DAI), dan fiat (CHF/USD); proporsi pasti tidak dipublikasikan
+Stablecoin Holdings: Tidak diungkap rincian jumlah per aset
+Native Token Holdings: Tidak diungkap jumlah ETH yang dimiliki EF secara spesifik; blockchain analyst memperkirakan alamat terkait EF memegang >200k ETH (estimasi eksternal, bukan data resmi)
+Other Assets: Tidak diungkap
+Treasury Custodian: Ethereum Foundation (Stiftung) — entitas hukum Swiss; manajemen aset internal + custodian institusional (detail tidak dipublikasikan)
+Sources: https://ethereum.foundation/annual-report-2023/ ; https://www.stiftungsregister.ch/de/stiftung/ethereum-stiftung ; https://blog.ethereum.org/2024/01/23/ef-grants-update-q4-2023
+
+## Revenue Model
+
+Revenue Stream: Protocol Fees (Base Fee Burn - EIP-1559)
+Status: Live
+Description: Base fee dari setiap transaksi dibakar (burn) secara on-chain; bukan pendapatan yang masuk ke treasury melainkan pengurangan supply ETH; sejak London (Agustus 2021) >3,5M ETH terbakar
+Sources: https://eips.ethereum.org/EIPS/eip-1559 ; https://ultrasound.money/ ; https://blog.ethereum.org/2021/07/15/london-mainnet-announcement
+
+Revenue Stream: Validator Rewards (Consensus Layer Issuance)
+Status: Live
+Description: Emisi ETH baru untuk validator (beacon chain rewards); ~0,5%–0,8% inflasi netto per tahun pasca-Merge; dibayar ke validator, bukan ke treasury EF
+Sources: https://ethereum.org/en/upgrades/merge/ ; https://beaconcha.in/ ; https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md
+
+Revenue Stream: Priority Tips (EIP-1559 Priority Fee)
+Status: Live
+Description: Tip/priority fee dibayar ke block proposer (validator); bukan pendapatan protokol atau EF
+Sources: https://eips.ethereum.org/EIPS/eip-1559 ; https://ethereum.org/en/developers/docs/gas/
+
+Revenue Stream: MEV (Maximal Extractable Value) — Proposer Revenue via MEV-Boost
+Status: Live
+Description: Validator menerima payment dari builder via MEV-Boost untuk block space; >90% blok melalui MEV-Boost; pendapatan ke validator individu, bukan protokol
+Sources: https://flashbots.net/ ; https://mevboost.pics/ ; https://github.com/flashbots/mev-boost-specs
+
+Revenue Stream: Blob Fees (EIP-4844 Blob Gas Market)
+Status: Live (sejak Dencun, Maret 2024)
+Description: Blob gas fee dibayar oleh L2 untuk data availability; base fee blob dibakar (burn), tidak masuk treasury
+Sources: https://eips.ethereum.org/EIPS/eip-4844 ; https://ethereum.org/en/upgrades/dencun/ ; https://blog.ethereum.org/2024/03/13/dencun-announcement
+
+Revenue Stream: Ethereum Foundation Treasury Yield / Investment Returns
+Status: Live
+Description: Return dari pengelolaan aset treasury (staking ETH treasury, yield stablecoin, dll.); detail tidak dipublikasikan
+Sources: https://ethereum.foundation/annual-report-2023/ ; https://blog.ethereum.org/2024/01/23/ef-grants-update-q4-2023
+
+Revenue Stream: Enterprise Services (Consensys, Infura, Alchemy, dll.) — Bukan pendapatan protokol Ethereum
+Status: Live
+Description: Pendapatan entitas komersial terpisah (Consensys, Infura, Alchemy) dari layanan RPC, tooling, L2; bukan revenue protokol Ethereum atau EF
+Sources: https://consensys.net/ ; https://www.infura.io/ ; https://www.alchemy.com/
+
+## Revenue History
+
+Tidak diungkap secara agregat untuk protokol Ethereum (base fee burn on-chain terlihat tapi bukan "revenue" akuntansi; validator rewards on-chain; EF financial report hanya mencakup operasional foundation, bukan protokol)
+Sources: https://ethereum.foundation/annual-report-2023/ ; https://ultrasound.money/ ; https://beaconcha.in/
+
+## Fundraising Mechanism
+
+Mechanism: Public Sale (Ether Crowdsale 2014)
+Description: Penjualan ETH langsung ke publik via Bitcoin selama 42 hari; tanpa VC, tanpa private sale terstruktur modern
+Sources: https://blog.ethereum.org/2014/07/22/launching-the-ether-sale ; https://messari.io/asset/ethereum/profile
+
+Mechanism: Foundation Grants (Ecosystem Support Program)
+Description: EF mendistribusikan dana dari treasury crowdsale ke pengembang, peneliti, komunitas via program hibah
+Sources: https://esp.ethereum.foundation/ ; https://blog.ethereum.org/2022/01/18/ecosystem-support-program-update
+
+Mechanism: Protocol Revenue (Burn & Issuance)
+Description: Mekanisme ekonomi protokol (EIP-1559 burn, PoS issuance) mengatur supply ETH; bukan fundraising tradisional
+Sources: https://eips.ethereum.org/EIPS/eip-1559 ; https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md
+
+Mechanism: Bootstrapping / Community Funding
+Description: Pengembangan awal didanai crowdsale; pengembangan lanjutan didanai EF grants + kontribusi korporat (Consensys, Nethermind, Prysmatic Labs, dll.) yang menginvestasikan resource sendiri
+Sources: https://blog.ethereum.org/2014/09/02/ether-sale-ends-raised-31500-btc ; https://consensys.net/ ; https://nethermind.io/ ; https://prysmaticlabs.com/
+
+## Token Sale
+
+Private Sale: Tidak ada private sale terpisah sebelum crowdsale; sejumlah alokasi early contributors (12M ETH) dialokasikan ke founding team, EF, dan kontributor awal — bukan penjualan
+Public Sale: Ether Crowdsale (2014-07-22 s.d. 2014-09-02)
+Status: Completed
+Amount Raised: 31.529 BTC (~$18,3 juta pada harga saat itu)
+Currency: BTC
+Tokens Sold: 60.000.000 ETH (60 juta)
+Price: 2000 ETH/BTC (awal hari 1-14), kemudian linear decay ke 1337 ETH/BTC
+Sources: https://blog.ethereum.org/2014/07/22/launching-the-ether-sale ; https://blog.ethereum.org/2014/09/02/ether-sale-ends-raised-31500-btc ; https://messari.io/asset/ethereum/profile
+
+Launchpad: Tidak ada (platform sendiri)
+Auction: Tidak ada
+Community Sale: Crowdsale bersifat community sale terbuka
+Sources: https://blog.ethereum.org/2014/07/22/launching-the-ether-sale
+
+## Financial Dependencies
+
+Dependency: Ethereum Foundation Treasury (Crowdsale Proceeds)
+Description: Dana utama pengembangan protokol, riset, grants, operasional EF berasal dari treasury crowdsale 2014 (BTC/ETH) + pengelolaan aset berkelanjutan
+Type: Foundation
+Sources: https://ethereum.org/en/foundation/ ; https://ethereum.foundation/annual-report-2023/ ; https://blog.ethereum.org/2014/09/02/ether-sale-ends-raised-31500-btc
+
+Dependency: Corporate Contributors (Client Teams, Infrastructure Providers)
+Description: Consensys (Besu, Teku, Infura, MetaMask), Nethermind, Prysmatic Labs, Sigma Prime, ChainSafe, Erigon/Thorax, Flashbots, Alchemy, dll. menginvestasikan resource engineering sendiri; tidak bergantung dana EF penuh
+Type: Revenue (Corporate) / Technical-Integration
+Sources: https://consensys.net/ ; https://nethermind.io/ ; https://prysmaticlabs.com/ ; https://sigmaprime.io/ ; https://chainsafe.io/ ; https://erigon.tech/ ; https://flashbots.net/ ; https://www.alchemy.com/
+
+Dependency: Validator Staking Capital
+Description: Keamanan jaringan bergantung pada >1 juta validator yang mengunci 32+ ETH masing-masing (~32M+ ETH total staked); capital berasal dari validator individu, staking pool (Lido, Coinbase, Rocket Pool), exchange
+Type: Protocol Revenue / Staking Capital
+Sources: https://beaconcha.in/ ; https://ethereum.org/en/staking/ ; https://lido.fi/ ; https://rocketpool.net/
+
+Dependency: Grant Programs (EF ESP, Devcon Grants, Community Grants)
+Description: Hibah berkelanjutan dari EF ke ekosistem; tidak jaminan permanen
+Type: Grant
+Sources: https://esp.ethereum.foundation/ ; https://blog.ethereum.org/2022/01/18/ecosystem-support-program-update
+
+## Financial Risk
+
+Risk: Treasury Concentration in Native Asset (ETH)
+Description: Mayoritas treasury EF denominasi dalam ETH; volatilitas harga memengaruhi daya beli operasional dan grant; dikonfirmasi dalam laporan keuangan Swiss foundation dan wawancara EF leadership
+Source Type: Laporan Resmi / Disclosure
+Sources: https://ethereum.foundation/annual-report-2023/ ; https://www.stiftungsregister.ch/de/stiftung/ethereum-stiftung ; https://blog.ethereum.org/2022/09/15/the-merge-is-done (Vitalik Buterin statement on treasury management)
+
+Risk: Revenue Decline Risk (Fee Market Volatility)
+Description: Base fee burn dan validator rewards bergantung pada aktivitas jaringan; bear market menurunkan fee revenue dan staking yield; tidak ada revenue guaranteed
+Source Type: Governance / Protocol Design
+Sources: https://eips.ethereum.org/EIPS/eip-1559 ; https://ultrasound.money/ ; https://ethereum.org/en/roadmap/scaling/
+
+Risk: Funding Dependency on EF Grants for Core Protocol Research
+Description: Riset protokol inti (sharding, verkle trees, PBS, quantum resistance) sangat bergantung pada EF grants; jika treasury EF menipis, riset terganggu; dikonfirmasi dalam EF annual report dan blog
+Source Type: Laporan Resmi
+Sources: https://ethereum.foundation/annual-report-2023/ ; https://blog.ethereum.org/2024/01/23/ef-grants-update-q4-2023 ; https://github.com/ethereum/research
+
+Risk: Legal / Regulatory Financial Risk (OFAC Sanctions, Securities Law)
+Description: Sanksi OFAC ke Tornado Cash (2022), investigasi SEC terkait status ETH sebagai security (2023-2024), regulasi MiCA EU, potensi klasifikasi staking sebagai security; menciptakan ketidakpastian hukum untuk EF, validator, dan ekosistem
+Source Type: Regulator / Disclosure
+Sources: https://home.treasury.gov/policy-issues/financial-sanctions/sanctions-programs-and-country-information (OFAC Tornado Cash 2022-08-08) ; https://www.sec.gov/ ; https://www.esma.europa.eu/ (MiCA) ; https://blog.ethereum.org/2023/04/12/shanghai-announcement (EF statement on regulatory engagement)
+
+Risk: Client Development Funding Sustainability
+Description: Beberapa client team (Nethermind, Prysmatic Labs, Sigma Prime, ChainSafe, Erigon) bergantung pada venture funding atau revenue layanan enterprise; tidak ada funding protokol terjamin; risiko jika VC funding kering
+Source Type: Governance / Disclosure (wawancara publik team leads)
+Sources: https://nethermind.io/ ; https://prysmaticlabs.com/ ; https://sigmaprime.io/ ; https://chainsafe.io/ ; https://erigon.tech/ ; https://www.theblock.co/post/2022/alchemy-valuation (contoh funding landscape)
+
+## Official Financial Resources
+
+Official Blog: https://blog.ethereum.org/
+Transparency Report: https://ethereum.foundation/annual-report-2023/
+Treasury Dashboard: Tidak tersedia (tidak ada dashboard treasury real-time publik resmi EF)
+Governance: https://github.com/ethereum/pm (Core Dev Calls) ; https://eips.ethereum.org/ (EIP Process)
+Messari: https://messari.io/asset/ethereum/profile
+Token Terminal: https://tokenterminal.com/terminal/projects/ethereum
+DefiLlama: https://defillama.com/chain/Ethereum
+CryptoRank: https://cryptorank.io/price/ethereum
+Whitepaper: https://ethereum.org/en/whitepaper/
+Ethereum Foundation Grants: https://esp.ethereum.foundation/
+Ethereum Foundation Blog: https://blog.ethereum.org/category/ef-update/
+Swiss Foundation Registry: https://www.stiftungsregister.ch/de/stiftung/ethereum-stiftung
+
+## Summary
+
+Total Funding Raised: 31.529 BTC (~$18,3 juta pada Juli-September 2014) via Ether Crowdsale; tidak ada ronde VC/private sale tradisional selanjutnya
+Funding Rounds: 1 Public Sale (2014) + Ongoing Grant Programs (EF ESP, Devcon, Community Grants)
+Treasury Status: Tidak diungkap secara real-time; laporan tahunan EF 2023 menunjukkan aset ~$1,6M (angka laporan Swiss foundation, tidak komprehensif untuk holding on-chain); holding ETH besar diperkirakan analyst tapi tidak dikonfirmasi resmi
+Revenue Sources: Protocol-level: Base fee burn (EIP-1559), validator issuance, priority tips, MEV (ke validator), blob fees (EIP-4844 burn); Entity-level: EF treasury yield, corporate contributor revenue (Consensys, Infura, Alchemy, client teams) — terpisah dari protokol
+Revenue Availability: On-chain data transparan untuk fee burn, issuance, MEV (via beaconcha.in, ultrasound.money, mevboost.pics); EF financial report tahunan untuk operasional foundation; tidak ada laporan revenue protokol konsolidasi
+
+## Open Threads
+
+- Jumlah pasti ETH, BTC, stablecoin, dan fiat yang dimiliki Ethereum Foundation saat ini — tidak dipublikasikan secara real-time atau rinci; hanya laporan tahunan Swiss foundation ringkas
+- Proporsi treasury EF yang di-stake vs liquid vs diversified — tidak dikonfirmasi resmi
+- Revenue EF dari staking treasury ETH sendiri — tidak diungkap terpisah dari laporan keuangan umum
+- Apakah EF memiliki debt/liabilitas jangka panjang — tidak diungkap
+- Valuasi implisit EF atau protokol — tidak berlaku/tiada mekanisme valuasi tradisional
+- Rincian alokasi 12M ETH "early contributors/Foundation" dari genesis — tidak dipublikasikan per penerima individual atau entitas
+- Sustainability funding untuk client teams independen (Nethermind, Prysmatic, Sigma Prime, ChainSafe, Erigon) jika VC market kering — tidak ada data publik komprehensif
+- Impact regulasi (SEC, MiCA, OFAC) pada treasury EF dan operasional validator — perkembangan berkelanjutan, belum ada resolusi final
+- Mekanisme funding protokol pasca-EF (jika EF sunset) — tidak ada rencana resmi dipublikasikan
+- Cross-check angka ">$100M grants allocated" dari EF annual report vs on-chain grant distribution tracking — perlu verifikasi independen

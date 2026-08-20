@@ -1,0 +1,321 @@
+PROJECT: Polygon
+
+## Token Information
+
+Official Token Name: Polygon Ecosystem Token
+Symbol: POL
+Token Standard: ERC-20 (Ethereum mainnet); Native token pada Polygon PoS (precompile address 0x1010); ERC-20 pada Polygon zkEVM, CDK chains
+Blockchain: Ethereum (L1 settlement); Polygon PoS; Polygon zkEVM; Polygon CDK chains; AggLayer
+Contract Address: POL (Ethereum mainnet): 0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6 (HIGH) [Etherscan, https://etherscan.io/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6]; MATIC (legacy, Ethereum): 0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0 (HIGH) [Etherscan, https://etherscan.io/token/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0]; MATIC (PoS native): 0x0000000000000000000000000000000000001010 (HIGH) [Polygon PoS Docs, https://dev.polygon.technology/polygon-pos/]
+Decimals: 18 (HIGH) [Etherscan POL, https://etherscan.io/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6]
+Status: Live (POL); Legacy (MATIC — migration ongoing) (HIGH) [Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/]
+Sources: Polygon 2.0 Tokenomics Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon 2.0 Token Migration Blog, https://blog.polygon.technology/polygon-2-0-token-migration/; Etherscan POL, https://etherscan.io/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6
+
+## Supply
+
+Maximum Supply: Tidak tetap (dynamic supply dengan emisi bertahap) — POL tidak memiliki hard cap; total supply bertambah melalui emisi staking dan treasury (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+Total Supply: 10.000.000.000 POL (initial supply saat migrasi 1:1 dari MATIC max supply) — supply bertambah seiring emisi (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/]
+Circulating Supply: ~9.3M POL (per data on-chain Oktober 2024, masih awal migrasi) — angka berubah harian; MATIC circulating ~9.3B (pre-migrasi) (MEDIUM) [CoinGecko POL, https://www.coingecko.com/en/coins/polygon-ecosystem-token; Polygonscan POL Holders, https://polygonscan.com/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6]
+Initial Supply: 10.000.000.000 MATIC (max supply MATIC per whitepaper 2019) — migrasi 1:1 ke POL sehingga initial POL supply = 10B (HIGH) [Matic Whitepaper, https://github.com/maticnetwork/whitepaper; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+Supply Type: Inflationary (dynamic) — emisi tahunan 2% dari total supply (target) untuk staking rewards + 1% untuk community treasury; laju emisi menurun ke 1% total seiring waktu (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+Sources: Polygon 2.0 Tokenomics Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Matic Network Whitepaper, https://github.com/maticnetwork/whitepaper; Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/; Etherscan POL, https://etherscan.io/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6
+
+## Distribution
+
+Community: Alokasi community/ecosystem: ~23% dari initial supply (termasuk airdrop, reward, grants) — detail persentase per sub-kategori tidak dipublikasikan lengkap (MEDIUM) [Binance Research Matic, https://research.binance.com/en/projects/matic-network; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+Team: Alokasi tim dan advisor: ~16% dari initial supply (vesting 4 tahun dengan cliff 1 tahun per whitepaper MATIC) — status migrasi ke POL mengikuti jadwal vesting asli (HIGH) [Matic Whitepaper, https://github.com/maticnetwork/whitepaper; Binance Research Matic, https://research.binance.com/en/projects/matic-network]
+Investors: Alokasi investor (seed, private, strategic): ~38% dari initial supply (termasuk IEO 19%, strategic round 2022, dll) — vesting bervariasi per ronde (HIGH) [Binance Research Matic, https://research.binance.com/en/projects/matic-network; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+Foundation: Polygon Foundation / Ecosystem Treasury: ~22% dari initial supply (whitepaper: "Foundation Reserve" 22%) — mengelola grants, ekosistem, treasury (HIGH) [Matic Whitepaper, https://github.com/maticnetwork/whitepaper; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+Treasury: Termasuk dalam Foundation Reserve (22%) dan community treasury emisi 1%/tahun — POL 2.0 menambahkan community treasury terpisah yang menerima 1% emisi tahunan (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/]
+Ecosystem: Termasuk dalam Community (23%) dan Foundation (22%) — tidak ada kategori "Ecosystem" terpisah di whitepaper asli; POL 2.0 menambahkan community treasury untuk ecosystem grants (HIGH) [Matic Whitepaper, https://github.com/maticnetwork/whitepaper; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+Advisors: Termasuk dalam Team/Advisor 16% — tidak dibedakan terpisah di whitepaper (MEDIUM) [Matic Whitepaper, https://github.com/maticnetwork/whitepaper]
+Other: Kontrak bridge, staking rewards (pre-POL 2.0), liquidity provision — tidak ada alokasi terpisah di whitepaper; POL 2.0 mengubah model reward ke emisi protokol (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+Sources: Matic Network Whitepaper, https://github.com/maticnetwork/whitepaper; Binance Research Matic Network, https://research.binance.com/en/projects/matic-network; Polygon 2.0 Tokenomics Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/
+
+## Vesting Schedule
+
+Category: Team & Advisors
+Cliff: 1 tahun (per whitepaper MATIC 2019)
+Vesting: 4 tahun total (linear monthly setelah cliff)
+Unlock Frequency: Bulanan
+Current Status: Sebagian besar vested (TGE April 2019 + 4 tahun = April 2023) — sisa unlock minor jika ada ekstensi (HIGH) [Matic Whitepaper, https://github.com/maticnetwork/whitepaper; Binance Research Matic, https://research.binance.com/en/projects/matic-network]
+
+Category: Investors (Seed / Private Sale)
+Cliff: 6–12 bulan (bervariasi per ronde)
+Vesting: 12–24 bulan linear
+Unlock Frequency: Bulanan
+Current Status: Sebagian besar vested (round awal 2019, strategic 2022 dengan vesting 12–18 bulan) — strategic round 2022 kemungkinan masih ada unlock hingga 2024 (MEDIUM) [Binance Research Matic, https://research.binance.com/en/projects/matic-network; Reuters Polygon Funding, https://www.reuters.com/technology/polygon-raises-450-mln-sequoia-capital-india-2022-02-07/]
+
+Category: Investors (IEO Public Sale / Binance Launchpad)
+Cliff: 0 (unlock langsung saat TGE)
+Vesting: Tidak ada (fully unlocked at TGE)
+Unlock Frequency: N/A
+Current Status: Fully unlocked sejak April 2019 (HIGH) [Binance Research Matic, https://research.binance.com/en/projects/matic-network]
+
+Category: Foundation / Ecosystem Reserve
+Cliff: Tidak diterapkan (pengelolaan treasury)
+Vesting: Tidak ada vesting protokol; dikelola oleh Polygon Foundation / Community Council melalui governance
+Unlock Frequency: Sesuai proposal governance
+Current Status: Aktif — dana digunakan untuk grants, ekosistem, operasi (HIGH) [Matic Whitepaper, https://github.com/maticnetwork/whitepaper; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/]
+
+Category: Community / Ecosystem Rewards (Pre-POL 2.0 staking rewards)
+Cliff: N/A
+Vesting: Distribusi terus-menerus melalui staking rewards (MATIC era) — digantikan oleh emisi POL 2.0
+Unlock Frequency: Per epoch/checkpoint
+Current Status: Beralih ke model emisi POL 2.0 (2% staking + 1% treasury) sejak migrasi 2024 (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+
+Category: POL 2.0 Emisi Staking (2%/tahun)
+Cliff: N/A (emisi protokol berkelanjutan)
+Vesting: N/A (minted per block/epoch ke validator dan delegator)
+Unlock Frequency: Per checkpoint (~34 menit)
+Current Status: Live sejak migrasi POL 2024 (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+
+Category: POL 2.0 Community Treasury Emisi (1%/tahun)
+Cliff: N/A
+Vesting: N/A (minted ke community treasury contract)
+Unlock Frequency: Per block/epoch
+Current Status: Live sejak migrasi POL 2024 — dikelola oleh Polygon Community Council (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/]
+Sources: Matic Network Whitepaper, https://github.com/maticnetwork/whitepaper; Binance Research Matic Network, https://research.binance.com/en/projects/matic-network; Polygon 2.0 Tokenomics Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Reuters Polygon Funding, https://www.reuters.com/technology/polygon-raises-450-mln-sequoia-capital-india-2022-02-07/
+
+## TGE
+
+TGE Date: 2019-04-24 (IEO Binance Launchpad untuk MATIC) (HIGH) [Binance Research Matic, https://research.binance.com/en/projects/matic-network]
+Initial Unlock: ~1.900.000.000 MATIC (19% dari max supply 10B) dilepaskan ke publik IEO; sisanya terkunci per vesting schedule (HIGH) [Binance Research Matic, https://research.binance.com/en/projects/matic-network]
+Unlocked Categories: IEO Participants (19%); Team/Advisor (0% — cliff 1 tahun); Investors Private/Seed (0% — cliff 6–12 bulan); Foundation Reserve (0% — dikelola treasury); Community/Ecosystem (0% — belum didistribusikan) (HIGH) [Matic Whitepaper, https://github.com/maticnetwork/whitepaper; Binance Research Matic, https://research.binance.com/en/projects/matic-network]
+Launch Platform: Binance Launchpad (IEO) (HIGH) [Binance Research Matic, https://research.binance.com/en/projects/matic-network]
+Status: Completed (MATIC TGE); POL Migration TGE: 2024-01 (mulai migrasi 1:1 MATIC ke POL via kontrak migrasi) — ongoing (HIGH) [Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/]
+Sources: Binance Research Matic Network, https://research.binance.com/en/projects/matic-network; Matic Network Whitepaper, https://github.com/maticnetwork/whitepaper; Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/
+
+## Utility
+
+Utility: Gas Fee (Polygon PoS)
+Deskripsi: POL digunakan sebagai native gas token untuk transaksi di Polygon PoS (menggantikan MATIC sejak migrasi 2024)
+Status: Live
+Sources: Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/; Polygon PoS Docs, https://dev.polygon.technology/polygon-pos/
+
+Utility: Gas Fee (Polygon zkEVM)
+Deskripsi: POL digunakan sebagai gas token di Polygon zkEVM pasca-migrasi (sebelumnya ETH untuk gas L2)
+Status: Live (sejak migrasi POL 2024)
+Sources: Polygon zkEVM Docs, https://dev.polygon.technology/polygon-zkevm/; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/
+
+Utility: Gas Fee (Polygon CDK Chains)
+Deskripsi: POL diwajibkan sebagai gas token untuk semua app-chain yang dibangun dengan Polygon CDK dan terhubung ke AggLayer
+Status: Planned / Early Live (per roadmap EV-091 target 2027 full enforcement)
+Sources: Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/
+
+Utility: Staking (Polygon PoS Validator)
+Deskripsi: Validator harus men-stake POL di kontrak staking di Ethereum untuk berpartisipasi dalam consensus PoS dan mendapatkan reward; delegator juga bisa men-delegate POL ke validator
+Status: Live (migrasi dari MATIC staking ke POL staking 2024)
+Sources: Polygon Staking, https://staking.polygon.technology/; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon PoS Docs, https://dev.polygon.technology/polygon-pos/
+
+Utility: Staking Rewards (Protocol Emission)
+Deskripsi: Emisi POL 2%/tahun dari total supply didistribusikan sebagai staking rewards ke validator dan delegator melalui kontrak staking
+Status: Live (sejak migrasi POL 2024)
+Sources: Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Staking, https://staking.polygon.technology/
+
+Utility: Governance (Polygon 2.0 Two-House Governance)
+Deskripsi: POL holder berpartisipasi dalam governance melalui Polygon Community Council (House 1) dan Polygon Senate (House 2) — voting power proporsional dengan POL yang di-stake/delegate
+Status: Live (Community Council aktif; Senate implementasi EV-090 target 2027)
+Sources: Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Polygon Forum, https://forum.polygon.technology/; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/
+
+Utility: Community Treasury Funding
+Deskripsi: Emisi POL 1%/tahun dialokasikan ke Community Treasury yang dikelola oleh Community Council untuk grants, ekosistem, insentif
+Status: Live (sejak migrasi POL 2024)
+Sources: Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Polygon Forum, https://forum.polygon.technology/
+
+Utility: Bridge Fee (Canonical Bridge)
+Deskripsi: POL digunakan untuk membayar fee bridging aset antara Ethereum dan Polygon PoS/zkEVM/CDK chains via canonical bridge dan AggLayer
+Status: Live
+Sources: Polygon Bridge, https://bridge.polygon.technology/; Polygon zkEVM Bridge Docs, https://dev.polygon.technology/polygon-zkevm/bridge/; AggLayer Docs, https://dev.polygon.technology/agglayer/
+
+Utility: AggLayer Unified Liquidity / Pessimistic Proofs
+Deskripsi: POL digunakan dalam mekanisme pessimistic proofs dan unified liquidity di AggLayer (detail ekonomi: bond, slash, fee sharing — belum sepenuhnya terdokumentasi publik)
+Status: Planned / Early Live (AggLayer mainnet beta 2024)
+Sources: AggLayer Docs, https://dev.polygon.technology/agglayer/; Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/
+
+Utility: Polygon ID / Credential Verification
+Deskripsi: POL potensial digunakan untuk fee verifikasi ZK credential di Polygon ID (belum dikonfirmasi sebagai utility utama; saat ini verifikasi gratis / dibayar oleh issuer)
+Status: Planned / Unconfirmed
+Sources: Polygon ID Docs, https://dev.polygon.technology/polygon-id/; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/
+
+Utility: Validator Commission
+Deskripsi: Validator menerima commission dari delegator rewards (persentase ditetapkan validator) — dibayar dalam POL
+Status: Live
+Sources: Polygon Staking, https://staking.polygon.technology/; Polygon PoS Docs, https://dev.polygon.technology/polygon-pos/
+Sources: Polygon 2.0 Tokenomics Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/; Polygon Staking, https://staking.polygon.technology/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Polygon PoS Docs, https://dev.polygon.technology/polygon-pos/; Polygon zkEVM Docs, https://dev.polygon.technology/polygon-zkevm/; Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/; Polygon Bridge, https://bridge.polygon.technology/; AggLayer Docs, https://dev.polygon.technology/agglayer/; Polygon ID Docs, https://dev.polygon.technology/polygon-id/; Polygon Forum, https://forum.polygon.technology/
+
+## Governance
+
+Governance Model: Two-House Governance (Polygon 2.0) — Polygon Community Council (House 1: representasi token holder yang men-stake/delegate POL) dan Polygon Senate (House 2: representasi kontributor teknis, ekosistem, institution) (HIGH) [Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Polygon Forum, https://forum.polygon.technology/]
+Voting System: On-chain voting melalui snapshot / governor contracts — proposal memerlukan quorum dan majority sesuai kategori (parameter upgrade, treasury spend, emergency) (HIGH) [Polygon Forum, https://forum.polygon.technology/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/]
+Voting Power: Berbasis POL yang di-stake atau di-delegate (voting power = staked POL + delegated POL) — tidak ada quadratic voting saat ini (HIGH) [Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Polygon Forum, https://forum.polygon.technology/]
+Delegation: POL holder bisa mendelegate voting power ke delegate (validator, entity, individu) tanpa transfer custody — delegasi on-chain via staking contract (HIGH) [Polygon Staking, https://staking.polygon.technology/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/]
+Proposal System: Polygon Improvement Proposals (PIPs) untuk parameter protokol; Community Treasury Proposals (CTPs) untuk pengeluaran treasury; Emergency Proposals untuk kritikal — submission via forum, discussion, on-chain vote (HIGH) [Polygon Forum, https://forum.polygon.technology/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/]
+Treasury Governance: Community Treasury (emisi 1%/tahun + Foundation Reserve) dikelola oleh Community Council melalui CTPs — Senate memiliki veto/approval untuk pengeluaran besar dan parameter protokol (HIGH) [Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Forum, https://forum.polygon.technology/]
+Status: Live (Community Council aktif sejak 2024; Senate implementasi bertahap target 2027 per EV-090) (HIGH) [Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Polygon Forum, https://forum.polygon.technology/]
+Sources: Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Polygon Forum, https://forum.polygon.technology/; Polygon 2.0 Tokenomics Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Staking, https://staking.polygon.technology/
+
+## Inflation / Deflation
+
+Inflation Mechanism: Emisi protokol POL 2% per tahun dari total supply untuk staking rewards + 1% per tahun untuk Community Treasury (total 3% initial inflation rate) — laju emisi staking direncanakan menurun ke 1%/tahun seiring waktu (total inflation target 2%/tahun: 1% staking + 1% treasury) (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+Emission Schedule: Continuous per block/epoch — staking rewards minted per checkpoint (~34 menit) ke validator/delegator; treasury emissions minted per block ke community treasury contract (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Staking, https://staking.polygon.technology/]
+Burn Mechanism: EIP-1559 fee burn di Polygon PoS (base fee dibakar) — berlaku untuk gas fee POL di PoS; zkEVM dan CDK chains mungkin mengadopsi mekanisme serupa (HIGH) [Polygon PoS Network Upgrade Blog, https://blog.polygon.technology/polygon-pos-network-upgrade/; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+Buyback: Tidak ada program buyback resmi yang diumumkan — POL 2.0 tokenomics tidak menyebut buyback; treasury growth melalui emisi dan fee revenue (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/]
+Supply Reduction: Net supply change = Emisi (2% staking + 1% treasury) - Burn (EIP-1559 base fee) - Slashing (belum live on-chain untuk PoS) — apakah deflationary atau inflationary bergantung pada usage dan burn rate (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon PoS Network Upgrade, https://blog.polygon.technology/polygon-pos-network-upgrade/]
+Status: Live (emisi POL 2% + 1% sejak migrasi 2024; burn EIP-1559 PoS live 2024) (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/; Polygon PoS Network Upgrade, https://blog.polygon.technology/polygon-pos-network-upgrade/]
+Sources: Polygon 2.0 Tokenomics Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon PoS Network Upgrade Blog, https://blog.polygon.technology/polygon-pos-network-upgrade/; Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/; Polygon Staking, https://staking.polygon.technology/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/
+
+## Holder Distribution
+
+Top Holder Concentration: Top 10 holder POL (Ethereum mainnet contract) mengontrol ~40-50% supply (termasuk bridge contracts, staking contract, exchange wallets, foundation multisig) — perlu analisis on-chain real-time untuk angka pasti (MEDIUM) [Etherscan POL Holders, https://etherscan.io/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6#balances; Polygonscan POL Holders, https://polygonscan.com/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6]
+Foundation Holding: Polygon Foundation / Treasury multisig mengontrol ~22% initial supply (Foundation Reserve) + community treasury emisi — alamat spesifik tidak dipublikasikan secara konsolidasi (MEDIUM) [Matic Whitepaper, https://github.com/maticnetwork/whitepaper; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+Investor Holding: Investor strategic (Sequoia, SoftBank, Galaxy, dll) + early investor — estimasi ~38% initial supply (vesting sebagian besar selesai) — alamat investor individual tidak dipublikasikan (MEDIUM) [Binance Research Matic, https://research.binance.com/en/projects/matic-network; Reuters Polygon Funding, https://www.reuters.com/technology/polygon-raises-450-mln-sequoia-capital-india-2022-02-07/]
+Treasury Holding: Termasuk Foundation Reserve (22%) + Community Treasury (emisi 1%/tahun) + Bridge contract holdings + Staking contract holdings — total tidak dikonsolidasikan publik (MEDIUM) [Matic Whitepaper, https://github.com/maticnetwork/whitepaper; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+Community Holding: Retail holder, delegator, validator, ekosistem developer — estimasi ~23% initial supply (community allocation) + airdrop/reward historis + pembelian pasar — tidak ada snapshot resmi (MEDIUM) [Matic Whitepaper, https://github.com/maticnetwork/whitepaper; Binance Research Matic, https://research.binance.com/en/projects/matic-network]
+Whale Concentration: High — bridge contracts, staking contract, exchange cold wallets, foundation multisig dominan top holders; retail distribution terfragmentasi (MEDIUM) [Etherscan POL Holders, https://etherscan.io/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6#balances; Polygonscan POL Holders, https://polygonscan.com/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6]
+Sources: Etherscan POL Token Holders, https://etherscan.io/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6#balances; Polygonscan POL Token Holders, https://polygonscan.com/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6; Matic Network Whitepaper, https://github.com/maticnetwork/whitepaper; Binance Research Matic Network, https://research.binance.com/en/projects/matic-network; Polygon 2.0 Tokenomics Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Reuters Polygon Funding, https://www.reuters.com/technology/polygon-raises-450-mln-sequoia-capital-india-2022-02-07/
+
+## Major Token Events
+
+Date: 2019-04-24
+Event: TGE / IEO Binance Launchpad (MATIC)
+Description: Initial Exchange Offering 1.9B MATIC (19% supply) di harga $0.00263; listing Binance segera setelahnya
+Status: Completed
+Related Historical Event ID: EV-004, EV-005
+Sources: Binance Research Matic, https://research.binance.com/en/projects/matic-network; CoinMarketCap Polygon, https://coinmarketcap.com/currencies/polygon/
+
+Date: 2020-05-29
+Event: Mainnet Launch Polygon PoS (MATIC as native gas/staking)
+Description: Polygon PoS mainnet live; MATIC menjadi native token untuk gas dan staking validator
+Status: Completed
+Related Historical Event ID: EV-012
+Sources: Polygon Blog Mainnet Launch, https://blog.polygon.technology/matic-mainnet-launch/; Polygonscan, https://polygonscan.com/
+
+Date: 2021-02
+Event: Rebrand Matic Network → Polygon
+Description: Perluasan visi ke multi-chain scaling; token symbol tetap MATIC
+Status: Completed
+Related Historical Event ID: EV-016
+Sources: Polygon Blog Introducing Polygon 2.0, https://blog.polygon.technology/introducing-polygon-2-0/; Forbes Polygon Founders, https://www.forbes.com/sites/rachelwolfson/2021/09/09/polygon-co-founders/
+
+Date: 2022-02-07
+Event: Strategic Funding Round $450M (Token Allocation)
+Description: Private token sale ke Sequoia Capital India, SoftBank Vision Fund 2, Galaxy Digital, dll — alokasi token dengan vesting 12–18 bulan
+Status: Completed
+Related Historical Event ID: EV-026
+Sources: Reuters Polygon Funding, https://www.reuters.com/technology/polygon-raises-450-mln-sequoia-capital-india-2022-02-07/; Polygon Blog 450M Funding, https://blog.polygon.technology/polygon-450m-funding/
+
+Date: 2023-08
+Event: POL Tokenomics Announcement (Polygon 2.0)
+Description: Pengumuman token POL menggantikan MATIC, emisi 2% staking + 1% treasury, governance dua kamar, migrasi 1:1
+Status: Completed
+Related Historical Event ID: EV-042
+Sources: Polygon 2.0 Tokenomics Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Blog Introducing Polygon 2.0, https://blog.polygon.technology/introducing-polygon-2-0/
+
+Date: 2024-01
+Event: POL Migration Start (MATIC → POL 1:1)
+Description: Kontrak migrasi dibuka; user bisa mengkonversi MATIC ke POL; POL menjadi gas token PoS
+Status: Ongoing
+Related Historical Event ID: EV-046
+Sources: Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/; Polygonscan Migration Contract, https://polygonscan.com/
+
+Date: 2024-02
+Event: AggLayer Mainnet Beta Launch
+Description: AggLayer live menghubungkan PoS dan zkEVM; POL digunakan dalam unified bridging dan pessimistic proofs
+Status: Ongoing
+Related Historical Event ID: EV-047
+Sources: Polygon Blog AggLayer Mainnet Beta, https://blog.polygon.technology/agglayer-mainnet-beta/; Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/
+
+Date: 2024-09
+Event: POL Listing Major Exchanges (Coinbase, Binance, dll)
+Description: POL terdaftar di exchange utama dengan dukungan konversi otomatis MATIC→POL
+Status: Completed
+Related Historical Event ID: EV-054
+Sources: Coinbase Blog Listing Polygon, https://blog.coinbase.com/listing-polygon; Binance POL Trading, https://www.binance.com/en/trade/POL_USDT
+
+Date: 2024-11
+Event: Governance Proposal Fee Structure & Staking Adjustments
+Description: Proposal governance untuk menyesuaikan fee burn, staking reward parameter, validator commission untuk POL
+Status: Completed
+Related Historical Event ID: EV-056
+Sources: Polygon Forum, https://forum.polygon.technology/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/
+
+Date: 2026-01 (Projected)
+Event: Full MATIC → POL Transition Complete
+Description: Semua chain Polygon menggunakan POL; MATIC dihentikan; migrasi 1:1 selesai
+Status: Planned
+Related Historical Event ID: EV-070
+Sources: Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/
+
+Date: 2026-03 (Projected)
+Event: POL Emission Reduction (Staking Economics Improvement)
+Description: Penurunan laju emisi staking dari 2% ke 1%/tahun per tokenomics roadmap
+Status: Planned
+Related Historical Event ID: EV-072
+Sources: Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Forum, https://forum.polygon.technology/
+
+Date: 2026-12 (Projected)
+Event: Polygon Foundation Legal Entity Launch
+Description: Pemisahan governance dan treasury ke Polygon Foundation nirlaba
+Status: Planned
+Related Historical Event ID: EV-080
+Sources: Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Crunchbase Polygon Foundation, https://www.crunchbase.com/organization/polygon-foundation
+
+Date: 2027-09 (Projected)
+Event: Two-House Governance Full Implementation (Senate + Assembly)
+Description: Polygon Senate dan Assembly aktif penuh untuk governance protokol dan treasury
+Status: Planned
+Related Historical Event ID: EV-090
+Sources: Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Polygon Forum, https://forum.polygon.technology/
+
+Date: 2027-10 (Projected)
+Event: POL Mandatory Gas Token for All CDK Chains
+Description: Semua app-chain CDK wajib menggunakan POL sebagai gas token
+Status: Planned
+Related Historical Event ID: EV-091
+Sources: Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/
+Sources: Binance Research Matic Network, https://research.binance.com/en/projects/matic-network; Polygon Blog Mainnet Launch, https://blog.polygon.technology/matic-mainnet-launch/; Polygon Blog Introducing Polygon 2.0, https://blog.polygon.technology/introducing-polygon-2-0/; Reuters Polygon Funding, https://www.reuters.com/technology/polygon-raises-450-mln-sequoia-capital-india-2022-02-07/; Polygon 2.0 Tokenomics Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/; Polygon Blog AggLayer Mainnet Beta, https://blog.polygon.technology/agglayer-mainnet-beta/; Coinbase Blog Listing Polygon, https://blog.coinbase.com/listing-polygon; Binance POL Trading, https://www.binance.com/en/trade/POL_USDT; Polygon Forum, https://forum.polygon.technology/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/; Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/; Crunchbase Polygon Foundation, https://www.crunchbase.com/organization/polygon-foundation
+
+## Official Token Resources
+
+Official Documentation: https://blog.polygon.technology/polygon-2-0-tokenomics/
+Whitepaper: https://github.com/maticnetwork/whitepaper (Matic Network Whitepaper 2019 — untuk MATIC tokenomics asli)
+Governance: https://forum.polygon.technology/
+Explorer (Ethereum): https://etherscan.io/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6
+Explorer (Polygon PoS): https://polygonscan.com/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6
+Contract (Ethereum POL): https://etherscan.io/address/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6
+Contract (Ethereum MATIC Legacy): https://etherscan.io/address/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0
+Contract (PoS Native MATIC): https://polygonscan.com/address/0x0000000000000000000000000000000000001010
+GitHub (Core Contracts): https://github.com/0xPolygon/contracts
+GitHub (Staking Contracts): https://github.com/0xPolygon/staking-contracts
+Dashboard (Staking): https://staking.polygon.technology/
+Dashboard (Migration): https://migrate.polygon.technology/ (jika ada) / via Polygon Portal
+Sources: Polygon 2.0 Tokenomics Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Matic Network Whitepaper, https://github.com/maticnetwork/whitepaper; Polygon Forum, https://forum.polygon.technology/; Etherscan POL, https://etherscan.io/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6; Polygonscan POL, https://polygonscan.com/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6; GitHub 0xPolygon Contracts, https://github.com/0xPolygon/contracts; Polygon Staking Dashboard, https://staking.polygon.technology/
+
+## RINGKASAN
+
+Status: Live (POL) / Legacy Migration Ongoing (MATIC→POL)
+Supply Type: Inflationary (Dynamic) — 2% staking + 1% treasury emission per tahun, menurun ke 1%+1% target
+Total Supply: 10.000.000.000 POL (initial at migration) + emisi berkelanjutan
+Distribution Categories: Team/Advisor (~16%), Investors (~38%), Foundation/Treasury (~22%), Community/Ecosystem (~23%), POL 2.0 Emisi (Staking 2%/tahun, Treasury 1%/tahun)
+Utility Count: 10+ (Gas PoS, Gas zkEVM, Gas CDK, Staking Validator, Staking Rewards, Governance Voting, Community Treasury Funding, Bridge Fees, AggLayer Pessimistic Proofs, Validator Commission)
+Governance: Two-House (Community Council + Senate) — voting power berbasis staked/delegated POL, on-chain proposal system (PIPs, CTPs)
+Major Token Events: IEO 2019, Mainnet 2020, Rebrand 2021, $450M Strategic 2022, POL Tokenomics Announcement 2023, Migration Start 2024, AggLayer Beta 2024, Exchange Listings 2024, Full Transition Target 2026, Foundation Launch Target 2026, Senate Implementation Target 2027, CDK Gas Mandate Target 2027
+
+## Open Threads
+
+- Persentase alokasi detail POL 2.0 (staking rewards, ecosystem grants, treasury, team, investor) tidak dipublikasikan dalam tabel eksplisit di blog tokenomics — hanya garis besar "2% staking, 1% treasury" dan referensi ke alokasi MATIC asli; perlu cross-check ke proposal governance on-chain atau dokumen legal Polygon Foundation
+- Vesting schedule investor strategic round 2022 ($450M) — cliff, durasi, unlock frequency tidak diumumkan publik; hanya diketahui "vesting 12–18 bulan" dari laporan Reuters; perlu konfirmasi dari Polygon Labs atau investor
+- Alamat multisig Foundation / Community Treasury / Polygon Labs treasury tidak dikonsolidasikan dalam satu dashboard publik — holder distribution analysis memerlukan clustering on-chain manual
+- Mekanisme pessimistic proofs AggLayer: detail ekonomi (bond amount, slash conditions, fee sharing ke POL holder) belum terdokumentasi lengkap di docs resmi
+- Status on-chain slashing untuk Polygon PoS validator — whitepaper dan staking docs menyebut slashing tapi implementasi "social slashing via governance" belum live on-chain; apakah POL 2.0 mengaktifkan slashing otomatis?
+- POL sebagai gas token di Polygon Miden (STARK rollup, non-EVM) — apakah Miden akan menggunakan POL atau token terpisah / native fee market; tidak disebutkan di tokenomics
+- Community Treasury emisi 1%/tahun: apakah ada cap atau sunset clause? Atau emisi berkelanjutan selamanya? Blog tokenomics tidak menyebut batas waktu
+- EIP-1559 burn rate di Polygon PoS vs emisi 3%/tahun — apakah net supply deflationary pada usage tertentu? Tidak ada simulasi atau dashboard publik
+- Polygon Foundation legal entity (EV-080 target 2026): status pendaftaran, yurisdiksi, pemisahan treasury dari Polygon Technology Pte. Ltd. — belum ada pengumuman resmi detail
+- Migrasi MATIC ke POL: persentase supply yang sudah bermigrasi per Oktober 2024 tidak dipublikasikan; kontrak migrasi masih terbuka tapi tidak ada statistik real-time resmi
+- zkEVM decentralized sequencer tokenomics: apakah POL akan digunakan untuk sequencer selection/staking (shared sequencer)? Roadmap menciona tapi spec detail belum ada
+- CDK chains mandatory POL gas (EV-091): mekanisme enforcement (smart contract level? social consensus?) dan timeline implementasi tidak rinci
+- Tokenomics adjustment process: governance proposal untuk mengubah parameter emisi/burn — threshold, quorum, timelock tidak terdokumentasi terpusat
+- Auditor/security firm untuk POL token contract dan migration contract — tidak tercantum di audit history Phase 4; perlu verifikasi
+- Market maker / liquidity provider arrangement untuk POL di exchange — tidak diungkapkan (common practice tapi relevan untuk token distribution analysis)

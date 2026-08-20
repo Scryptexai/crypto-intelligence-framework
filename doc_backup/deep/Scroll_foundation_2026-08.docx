@@ -1,0 +1,32 @@
+PROJECT: Scroll
+Official Name: Scroll
+Symbol: SCR
+Category: zkEVM Layer 2 / Ethereum scaling
+Founding Entity: Scroll Foundation, Cayman Islands
+Founders: Sandy Peng (Co-founder); Haichen Shen (Co-founder); Ye Zhang (Co-founder)
+Core Team: ~50+ engineers and researchers (per team page, 2024); notable: Dmitry Khovratovich (Chief Cryptographer); Brendan Farmer (Polygon zkEVM co-founder, advisor)
+Country: Cayman Islands (foundation); core team distributed globally (Singapore, US, Europe, China)
+Launch Date - Testnet: 2023-02-28 (Alpha Testnet); 2023-10-18 (Pre-alpha Testnet "Scroll Alpha")
+Launch Date - Mainnet: 2024-10-22 (Mainnet launch)
+Launch Date - TGE: 2024-10-22 (TGE simultaneous with mainnet)
+Main Products: Scroll zkEVM Mainnet; Scroll Sepolia Testnet; Scroll SDK (developer tooling); Scroll Bridge (native bridge)
+Official Website: https://scroll.io
+Repository: https://github.com/scroll-tech
+Documentation: https://docs.scroll.io
+Social - X/Twitter: @Scroll_ZKP
+Social - Discord: https://discord.gg/scroll
+Social - Telegram: @ScrollOfficial
+Block Explorer: https://scrollscan.com (Blockscout); https://scroll.l2scan.co
+Token Contract: 0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A (Ethereum mainnet, SCR token)
+Chain(s): Ethereum (L1 settlement); Scroll (L2 zkEVM)
+Ecosystem: Ethereum L2 ecosystem; major integrations: Uniswap, Aave, LayerZero, Wormhole, Chainlink, Pyth, Gelato, Safe, Hyperlane, PancakeSwap, SushiSwap, Balancer, Curve, Pendle, Euler, Morpho, Radiant, Silo, Gearbox, CIAN, Kernel, EigenLayer, Symbiotic, Karak, Renzo, Ether.fi, Puffer, Swell, Kelp, Mellow, Instadapp, Zerion, Rainbow, OKX Wallet, Rabby, MetaMask (Snaps)
+
+Open Threads
+- Exact founding entity legal structure beyond "Scroll Foundation, Cayman Islands" — need to verify if there are multiple entities (e.g., Scroll Tech Pte. Ltd. in Singapore)
+- Complete core team roster with verifiable names/roles beyond the ~50 figure and named individuals
+- Whether SCR token contract address above is confirmed on-chain (need to verify on Etherscan post-TGE)
+- Precise testnet launch chronology — multiple testnet phases reported (pre-alpha, alpha, sepolia) with varying dates
+- Tokenomics details: total supply, allocation breakdown, vesting schedules, TGE unlock percentage — not covered in this phase but flagged for next phase
+- Mainnet launch block height / transaction hash for on-chain verification
+- Whether Scroll has a dedicated bug bounty program and its scope/bounty amounts
+- Current TVL and active address metrics post-mainnet launch

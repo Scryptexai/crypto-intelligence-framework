@@ -1,0 +1,2272 @@
+PROJECT: BNB Chain
+
+Event ID
+
+EV-001
+
+Date
+
+2017-07
+
+Event Name
+
+BNB Token ICO pada Ethereum Mainnet
+
+Event Type
+
+Token
+
+Description
+
+Binance meluncurkan Initial Coin Offering (ICO) token BNB sebagai ERC-20 pada Ethereum mainnet. Total supply 200 juta BNB, dengan 100 juta dijual publik (50%), 80 juta dialokasikan untuk tim (40%), dan 20 juta untuk angel investors (10%). Harga ICO: 1 ETH = 2.700 BNB (~$0,15 per BNB). Dana terkumpul ~$15 juta.
+
+Participants
+
+Binance, Changpeng Zhao (CZ), He Yi
+
+Location
+
+Global (Ethereum mainnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+BNB token ERC-20 tersebar ke investor awal; dana digunakan untuk pengembangan Binance exchange dan ekosistem.
+
+Sources
+
+https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2017-07-25
+
+Event Name
+
+Binance Exchange Launch
+
+Event Type
+
+Launch
+
+Description
+
+Binance exchange resmi diluncurkan 14 hari setelah ICO BNB selesai. Menawarkan trading spot dengan fee 0,1% (diskon 50% jika bayar pakai BNB). Menjadi exchange terbesar volume dalam 6 bulan.
+
+Participants
+
+Binance, Changpeng Zhao (CZ), He Yi
+
+Location
+
+Global (Cayman Islands entity)
+
+Status
+
+Completed
+
+Immediate Result
+
+Exchange live; BNB mendapatkan utility langsung sebagai fee discount token.
+
+Sources
+
+https://www.binance.com/en/blog/421499824684900357
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2018-03
+
+Event Name
+
+Binance Pindah Headquarter ke Malta
+
+Event Type
+
+Organization
+
+Description
+
+Binance memindahkan operasional utama ke Malta setelah tekanan regulator di Jepang dan Hong Kong. Menandai awal ekspansi global dan pencarian yurisdiksi ramah crypto.
+
+Participants
+
+Binance, Changpeng Zhao (CZ)
+
+Location
+
+Malta
+
+Status
+
+Completed
+
+Immediate Result
+
+Binance beroperasi dari Malta; kemudian buka entitas lokal di berbagai yurisdiksi.
+
+Sources
+
+https://www.binance.com/en/blog/421499824684900357
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2018-07-23
+
+Event Name
+
+Binance Series A Funding ($10M)
+
+Event Type
+
+Funding
+
+Description
+
+Binance mengumpulkan $10 juta Series A dipimpin Sequoia Capital, dengan partisipasi IDG Capital, Vertex Ventures, dan investor lain. Valuasi tidak diungkapkan publik.
+
+Participants
+
+Binance, Sequoia Capital, IDG Capital, Vertex Ventures
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana tambahan untuk ekspansi tim, infrastruktur, dan compliance.
+
+Sources
+
+https://techcrunch.com/2018/07/23/binance-raises-10m-sequoia/
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2018-07
+
+Event Name
+
+Trust Wallet Diakuisisi Binance
+
+Event Type
+
+Acquisition
+
+Description
+
+Binance mengakuisisi Trust Wallet, wallet non-custodial mobile multi-chain. Trust Wallet menjadi wallet resmi ekosistem Binance dan kemudian mendukung BNB Chain native.
+
+Participants
+
+Binance, Trust Wallet
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Binance memiliki wallet non-custodial sendiri; integrasi BNB, BSC, dan produk DeFi.
+
+Sources
+
+https://www.binance.com/en/blog/246931824684900357
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2019-04-18
+
+Event Name
+
+Binance Chain (Beacon Chain) Mainnet Launch
+
+Event Type
+
+Launch
+
+Description
+
+Binance Chain (sekarang BNB Beacon Chain) mainnet diluncurkan dengan konsensus Tendermint BFT, token native BEP-2 BNB, dan 11 validator awal. Dirancang untuk DEX performa tinggi (Binance DEX) dan transfer cepat.
+
+Participants
+
+Binance, Binance Chain Core Contributors
+
+Location
+
+Global (chain ID 102)
+
+Status
+
+Completed
+
+Immediate Result
+
+Binance Chain live; BNB migrasi dari ERC-20 ke BEP-2 via token swap; Binance DEX operational.
+
+Sources
+
+https://docs.bnbchain.org/docs/overview
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2019-06
+
+Event Name
+
+BNB Token Swap ERC-20 ke BEP-2 (1:1)
+
+Event Type
+
+Token
+
+Description
+
+Binance melakukan token swap BNB dari ERC-20 (Ethereum) ke BEP-2 (Binance Chain) rasio 1:1. Total 200M BNB dibakar (burn) di Ethereum dan dimintakan baru di Binance Chain. Burn berkala dimulai.
+
+Participants
+
+Binance, Binance Chain
+
+Location
+
+Ethereum mainnet → Binance Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+BNB menjadi native asset Binance Chain; supply total tetap 200M; mekanisasi auto-burn dimulai.
+
+Sources
+
+https://www.binance.com/en/blog/421499824684900357
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2019-12
+
+Event Name
+
+Binance Labs Resmi Diluncurkan sebagai Arm VC & Inkubasi
+
+Event Type
+
+Organization
+
+Description
+
+Binance Labs diluncurkan sebagai arm investasi dan inkubasi resmi Binance, mendanai proyek early-stage di ekosistem blockchain termasuk yang kemudian membangun di BNB Chain.
+
+Participants
+
+Binance, Binance Labs
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Aliran dana ke ekosistem BNB Chain (DeFi, gaming, infra, AI, RWA) melalui grant, equity, dan token allocation.
+
+Sources
+
+https://www.binancelabs.co
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2020-04
+
+Event Name
+
+Binance Smart Chain (BSC) Testnet Launch
+
+Event Type
+
+Launch
+
+Description
+
+Binance Smart Chain (BSC) testnet diluncurkan sebagai blockchain EVM-kompatibel terpisah dari Binance Chain, dengan konsensus Proof-of-Staked-Authority (PoSA), 21 validator, block time ~3 detik, dan gas fee jauh lebih murah dari Ethereum.
+
+Participants
+
+Binance, BNB Chain Core Contributors
+
+Location
+
+Global (chain ID 97 testnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengembang bisa test deploy kontrak Solidity di BSC; tooling Ethereum (Hardhat, Truffle, MetaMask) kompatibel out-of-the-box.
+
+Sources
+
+https://docs.bnbchain.org/docs/overview
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2020-09-01
+
+Event Name
+
+Binance Smart Chain (BSC) Mainnet Launch
+
+Event Type
+
+Launch
+
+Description
+
+BSC mainnet resmi diluncurkan (chain ID 56). 21 validator aktif dipilih via staking BNB di Beacon Chain. Cross-chain transfer BEP-2 ↔ BEP-20 via BNB Bridge. Gas fee ~$0,01-0,10. Kompatibel EVM penuh.
+
+Participants
+
+Binance, BNB Chain Core Contributors, BNB Bridge
+
+Location
+
+Global (chain ID 56)
+
+Status
+
+Completed
+
+Immediate Result
+
+BSC live; DeFi protocols mulai deploy (PancakeSwap, Venus, dll.); pengguna migrasi dari Ethereum karena fee rendah.
+
+Sources
+
+https://www.binance.com/en/blog/421499824684900357
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2020-09
+
+Event Name
+
+PancakeSwap V1 (AMM DEX) Launch di BSC
+
+Event Type
+
+Product
+
+Description
+
+PancakeSwap meluncurkan AMM DEX pertama di BSC (fork Uniswap V2). Token CAKE untuk governance dan reward farming. Menjadi DEX dominan BSC dengan TVL tertinggi.
+
+Participants
+
+PancakeSwap
+
+Location
+
+BNB Smart Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Liquidity mining "syrup pools" menarik ribuan pengguna; TVL BSC melonjak; CAKE menjadi blue-chip token BSC.
+
+Sources
+
+https://pancakeswap.finance
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2020-10
+
+Event Name
+
+Venus Protocol (Lending) Launch di BSC
+
+Event Type
+
+Product
+
+Description
+
+Venus Protocol (fork Compound) meluncurkan money market algoritmik di BSC. Mendukung collateral BNB, BTCB, ETH, stablecoin. Mengeluarkan stablecoin sintetik VAI.
+
+Participants
+
+Venus Protocol
+
+Location
+
+BNB Smart Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Lending/borrowing native BSC tersedia; BNB menjadi collateral utama; VAI stablecoin algoritmik.
+
+Sources
+
+https://venus.io
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2021-02
+
+Event Name
+
+BSC DeFi Boom & "BSC Summer" Dimulai
+
+Event Type
+
+Ecosystem
+
+Description
+
+Pendaftaran pengguna dan TVL BSC meledak (TVL >$20M → >$40M dalam bulan). Ribuan proyek baru deploy: DEX, lending, yield optimizer, launchpad, NFT, gaming. Gas fee BSC tetap rendah sementara Ethereum >$50/tx.
+
+Participants
+
+PancakeSwap, Venus Protocol, Alpaca Finance, Beefy Finance, Ellipsis Finance, Belt Finance, AutoShark, BiSwap, ApeSwap, Wault Finance, dll.
+
+Location
+
+BNB Smart Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+BSC menjadi L1 alternatif #1 Ethereum untuk retail; volume DEX BSC melebihi Ethereum beberapa hari.
+
+Sources
+
+https://defillama.com/chain/BSC
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2021-03
+
+Event Name
+
+Alpaca Finance (Leveraged Yield Farming) Launch
+
+Event Type
+
+Product
+
+Description
+
+Alpaca Finance meluncurkan leveraged yield farming pertama di BSC, memungkinkan pinjaman hingga 8x untuk farming. Token ALPACA untuk governance.
+
+Participants
+
+Alpaca Finance
+
+Location
+
+BNB Smart Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Kategori baru "leveraged farming" terbuka; TVL Alpaca >$1M puncak.
+
+Sources
+
+https://alpacafinance.org
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2021-05
+
+Event Name
+
+Binance Smart Chain TVL Puncak $40M+ (DeFi Llama)
+
+Event Type
+
+Market
+
+Description
+
+TVL total BSC mencapai puncak pertama ~$40 miliar (DefiLlama), mendekati Ethereum. Didorong oleh yield farming, stablecoin (USDT, BUSD, USDC), dan token meme.
+
+Participants
+
+BNB Smart Chain, Tether (USDT), Binance USD (BUSD), Circle (USDC)
+
+Location
+
+BNB Smart Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+BSC terbukti sebagai L1 DeFi berskala besar; likuiditas stablecoin masif masuk.
+
+Sources
+
+https://defillama.com/chain/BSC
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2021-05-19
+
+Event Name
+
+Crash Mei 2021 & BSC Congestion
+
+Event Type
+
+Market
+
+Description
+
+Crash pasar crypto global (BTC -50%) menyebabkan congestion BSC: gas fee naik drastis, transaksi gagal, bridge tertunda. Menyoroti keterbatasan throughput 21 validator PoSA.
+
+Participants
+
+BNB Smart Chain, BNB Bridge, Binance Exchange
+
+Location
+
+BNB Smart Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Tekanan untuk scaling solution (L2, sidechain); diskusi upgrade konsensus dan block time.
+
+Sources
+
+https://www.bnbchain.org/en/blog
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2021-06
+
+Event Name
+
+Mobox (GameFi) Launch di BSC
+
+Event Type
+
+Product
+
+Description
+
+Mobox (MOMOverse) meluncurkan platform GameFi play-to-earn di BSC. Token MBOX, NFT MOMO, yield farming game. Didanai Binance Labs.
+
+Participants
+
+Mobox, Binance Labs
+
+Location
+
+BNB Smart Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+GameFi menjadi narasi baru di BSC; ribuan pemain bergabung; TVL gaming signifikan.
+
+Sources
+
+https://mobox.io
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2021-07
+
+Event Name
+
+BinaryX (BNX) / CyberDragon Launch
+
+Event Type
+
+Product
+
+Description
+
+BinaryX meluncurkan CyberDragon (RPG play-to-earn) di BSC. Token BNX, DAO governance, NFT hero. Komunitas besar di Asia.
+
+Participants
+
+BinaryX (BNX)
+
+Location
+
+BNB Smart Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+GameFi BSC berkembang; BNX top gainer 2021.
+
+Sources
+
+https://www.binaryx.pro
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2021-09
+
+Event Name
+
+BNB Chain Rebranding: Binance Smart Chain → BNB Smart Chain; Binance Chain → BNB Beacon Chain
+
+Event Type
+
+Organization
+
+Description
+
+Rebranding resmi: Binance Smart Chain (BSC) menjadi BNB Smart Chain; Binance Chain menjadi BNB Beacon Chain. Nama "BNB Chain" menjadi payung ekosistem. Menandakan transisi dari proyek Binance ke ekosistem community-driven.
+
+Participants
+
+BNB Chain Core Contributors, Binance, BNB Chain Foundation
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Brand BNB Chain mandiri; narasi desentralisasi diperkuat; BNB = "Build N Build".
+
+Sources
+
+https://www.bnbchain.org/en/blog/announcing-the-bnb-chain-brand
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2021-10
+
+Event Name
+
+BNB Auto-Burn Mechanism (BEP-95) Aktif
+
+Event Type
+
+Technology
+
+Description
+
+BEP-95 (real-time burning base fee) dan mekanisme auto-burn kuartalan resmi diimplementasikan. Sebagian gas fee dibakar on-chain; auto-burn kuartalan berdasarkan harga BNB & jumlah blok.
+
+Participants
+
+BNB Chain Core Contributors, BNB Chain Governance
+
+Location
+
+BNB Smart Chain, BNB Beacon Chain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Supply BNB deflasioner; >50M BNB terbakar total per 2024; transparansi burn on-chain.
+
+Sources
+
+https://docs.bnbchain.org/docs/burn
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2021-11
+
+Event Name
+
+BNB Chain Grant Program Resmi Diluncurkan
+
+Event Type
+
+Funding
+
+Description
+
+BNB Chain Grant Program resmi dibuka untuk proposal komunitas: core infra, tooling, DeFi, gaming, AI, RWA. Dana dari ekosistem treasury; review oleh Foundation & komunitas.
+
+Participants
+
+BNB Chain Foundation, BNB Chain Grant Program
+
+Location
+
+Global (Forum governance)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Ratusan grant dibayarkan; builder early-stage mendapat funding non-dilutif.
+
+Sources
+
+https://forum.bnbchain.org/c/grants
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2022-02
+
+Event Name
+
+BNB Greenfield (Decentralized Storage) Whitepaper Rilis
+
+Event Type
+
+Technology
+
+Description
+
+BNB Chain merilis whitepaper BNB Greenfield: protokol penyimpanan terdesentralisasi terprogrammable via smart contract BSC. Arsitektur: Greenfield chain (storage metadata + payment) + SP (Storage Providers) off-chain.
+
+Participants
+
+BNB Chain Core Contributors, BNB Greenfield
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Desain teknis Greenfield final; devnet dimulai; SP recruitment dibuka.
+
+Sources
+
+https://github.com/bnb-chain/greenfield-whitepaper
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2022-03
+
+Event Name
+
+Wormhole Bridge Exploit ($320M) - BSC Terpengaruh
+
+Event Type
+
+Security
+
+Description
+
+Wormhole bridge tereksploitasi di Solana ($320M), memengaruhi wrapped asset di BSC (wETH, wSOL, dll.). BSC bukan vektor eksploitasi tapi liquidity pool Wormhole di BSC terdampak.
+
+Participants
+
+Wormhole, BNB Smart Chain, Jump Crypto
+
+Location
+
+Solana → cross-chain (termasuk BSC)
+
+Status
+
+Completed
+
+Immediate Result
+
+Jump Crypto mengisi kerugian; Wormhole upgrade keamanan; kepercayaan cross-chain bridge teruji.
+
+Sources
+
+https://www.coindesk.com/business/2022/02/03/wormhole-hack-320-million/
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2022-04
+
+Event Name
+
+BNB Chain MVP Builder Program Launch
+
+Event Type
+
+Organization
+
+Description
+
+Program inkubasi builder early-stage (MVP Builder) diluncurkan: funding, mentorship, GTM support, investor access. Batch berkala.
+
+Participants
+
+BNB Chain Foundation, BNB Chain MVP Builder Program, DoraHacks
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Puluhan startup inkubasi; pipeline proyek baru ke ekosistem.
+
+Sources
+
+https://www.bnbchain.org/en/blog
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2022-06
+
+Event Name
+
+Three Arrows Capital (3AC) Collapse - Exposure BNB Chain
+
+Event Type
+
+Market
+
+Description
+
+3AC (investor Binance Labs) bangkrut Juni 2022. Likuidasi posisi DeFi di BSC (Venus, Alpaca, dll.) menambah tekanan pasar. BNB price -70% dari ATH.
+
+Participants
+
+Three Arrows Capital, Venus Protocol, Alpaca Finance, Binance Labs
+
+Location
+
+Global / BNB Smart Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Kontagion kredit DeFi; Venus bad debt VAI; Alpaca liquidasi massal; trust DeFi terpukul.
+
+Sources
+
+https://www.coindesk.com/business/2022/06/16/three-arrows-capital-liquidation/
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2022-07
+
+Event Name
+
+Multichain (Anyswap) Exploit / Team Arrested
+
+Event Type
+
+Security
+
+Description
+
+Multichain (bridge utama BSC ↔ chain lain) tim ditangkap polis China Juli 2023 (tanggal event: insiden mulai mid-2022, puncak Juli 2023). Bridge berhenti berfungsi; aset pengguna terkunci.
+
+Participants
+
+Multichain (Anyswap), BNB Smart Chain, BNB Bridge
+
+Location
+
+Cross-chain (BSC, Ethereum, Fantom, dll.)
+
+Status
+
+Completed
+
+Immediate Result
+
+Migrasi pengguna ke bridge lain (BNB Bridge, LayerZero, Celer, Wormhole); BNB Bridge volume naik.
+
+Sources
+
+https://www.coindesk.com/business/2023/07/14/multichain-team-arrested-chinese-police/
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2022-10
+
+Event Name
+
+BNB Chain Hackathon Series (Global) Dimulai
+
+Event Type
+
+Community
+
+Description
+
+Seri hackathon global BNB Chain (BUIDL, regional) dimulai dengan prize pool besar, mentoring, investor access. DoraHacks & ETHGlobal jadi partner pelaksana.
+
+Participants
+
+BNB Chain Foundation, DoraHacks, ETHGlobal
+
+Location
+
+Global (online + offline)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Ribuan developer onboarding; ratusan proyek baru; talent pipeline ekosistem.
+
+Sources
+
+https://dorahacks.io/hackathon/bnb-chain
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2022-11
+
+Event Name
+
+FTX/Alameda Collapse - Binance & BNB Chain Impact
+
+Event Type
+
+Market
+
+Description
+
+FTX bangkrut Nov 2022; Alameda Research (investor Binance Labs) likuidasi. Binance menarik bid beli FTX. BNB price volatil tapi recovery cepat. Binance membuktikan proof-of-reserves.
+
+Participants
+
+Binance, Alameda Research, Binance Labs, BNB Chain
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Binance & BNB Chain terlihat lebih resilient; CZ menekankan transparansi; BNB recovery lebih cepat major asset lain.
+
+Sources
+
+https://www.binance.com/en/blog/421499824684900357
+
+---
+
+Event ID
+
+EV-029
+
+Date
+
+2023-02-13
+
+Event Name
+
+NYDFS Mengarahkan Paxos Hentikan Pembuatan BUSD Baru
+
+Event Type
+
+Regulation
+
+Description
+
+New York Department of Financial Services (NYDFS) mengarahkan Paxos Trust Company menghentikan penerbitan BUSD baru per 21 Feb 2023. BUSD market cap >$16M puncak; mulai redeem & shrink supply.
+
+Participants
+
+Paxos, NYDFS, Binance USD (BUSD), Binance
+
+Location
+
+New York, AS / BNB Smart Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+BUSD supply mengecil drastis; migrasi ke USDT, USDC, FDUSD, TUSD di BSC; stablecoin landscape BSC berubah.
+
+Sources
+
+https://www.dfs.ny.gov/reports_and_publications/press_releases/pr20230213
+
+---
+
+Event ID
+
+EV-030
+
+Date
+
+2023-02
+
+Event Name
+
+opBNB Testnet Launch (Optimistic Rollup L2)
+
+Event Type
+
+Launch
+
+Description
+
+opBNB testnet diluncurkan: optimistic rollup berbasis OP Stack di atas BSC. Chain ID 204. Target throughput 100M gas/sec, gas fee <$0,001. Kompatibel EVM penuh.
+
+Participants
+
+BNB Chain Core Contributors, opBNB
+
+Location
+
+Global (chain ID 204 testnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Developer test deploy L2; tooling OP Stack (Optimism) reusable; infra provider (NodeReal, Alchemy, QuickNode) dukung RPC.
+
+Sources
+
+https://docs.opbnb.io
+
+---
+
+Event ID
+
+EV-031
+
+Date
+
+2023-03-27
+
+Event Name
+
+CFTC Menuntut Binance & CZ (Pelanggaran Derivatif & AML)
+
+Event Type
+
+Legal
+
+Description
+
+Commodity Futures Trading Commission (CFTC) mengajukan gugatan sivil terhadap Binance, CZ, dan entitas terkait atas pelanggaran trading derivatif, compliance AML, dan operasi tanpa registrasi di AS.
+
+Participants
+
+CFTC, Binance, Changpeng Zhao (CZ), Binance Holdings Ltd (Cayman)
+
+Location
+
+Pengadilan Federal Illinois Utara, AS
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Tekanan regulator AS meningkat; Binance menambah compliance team; BNB price volatil.
+
+Sources
+
+https://www.cftc.gov/PressRoom/PressReleases/8674-23
+
+---
+
+Event ID
+
+EV-032
+
+Date
+
+2023-06-05
+
+Event Name
+
+SEC Menuntut Binance, Binance.US, & CZ (Termasuk BNB sebagai Security)
+
+Event Type
+
+Legal
+
+Description
+
+SEC mengajukan gugatan 13 poin terhadap Binance.com, BAM Trading (Binance.US), dan CZ. Tuduhan: exchange tidak terdaftar, fraud, commingling fund, dan BNB diklaim sebagai "security" (investment contract Howey test).
+
+Participants
+
+SEC, Binance, Binance.US (BAM Trading Services), Changpeng Zhao (CZ)
+
+Location
+
+Pengadilan Federal DC, AS
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Binance.US operasi terbatas (fiat off-ramp dicabut bank); BNB delist beberapa platform US; narasi regulasi "BNB = security" jadi fokus.
+
+Sources
+
+https://www.sec.gov/litigation/complaints/2023-131.pdf
+
+---
+
+Event ID
+
+EV-033
+
+Date
+
+2023-06
+
+Event Name
+
+BNB Greenfield Testnet Launch
+
+Event Type
+
+Launch
+
+Description
+
+BNB Greenfield testnet diluncurkan: chain ID 5600, storage providers (SP) onboarding, programmable storage via BSC smart contract. Integrasi cross-chain ke BSC untuk akses kontrol data.
+
+Participants
+
+BNB Chain Core Contributors, BNB Greenfield
+
+Location
+
+Global (chain ID 5600 testnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+SP testnet aktif; dApp storage (SecondLive, NFPrompt, Web3Go) mulai build.
+
+Sources
+
+https://docs.bnbchain.org/docs/greenfield
+
+---
+
+Event ID
+
+EV-034
+
+Date
+
+2023-08
+
+Event Name
+
+opBNB Mainnet Launch
+
+Event Type
+
+Launch
+
+Description
+
+opBNB mainnet resmi diluncurkan (chain ID 204). Optimistic rollup L2 pertama di ekosistem BNB Chain. Gas fee <$0,001, throughput tinggi, withdrawal challenge period 7 hari.
+
+Participants
+
+BNB Chain Core Contributors, opBNB, NodeReal, Alchemy, QuickNode, Ankr
+
+Location
+
+Global (chain ID 204)
+
+Status
+
+Completed
+
+Immediate Result
+
+L2 scaling live; PancakeSwap V3, 1inch, LayerZero deploy di opBNB; bridge BSC ↔ opBNB native.
+
+Sources
+
+https://www.bnbchain.org/en/blog/opbnb-mainnet-launch
+
+---
+
+Event ID
+
+EV-035
+
+Date
+
+2023-09
+
+Event Name
+
+BNB Greenfield Mainnet Launch
+
+Event Type
+
+Launch
+
+Description
+
+BNB Greenfield mainnet diluncurkan (chain ID 5600). Decentralized storage programmable: user bayar BNB ke SP via BSC smart contract, data disimpan off-chain SP, metadata on-chain Greenfield. Integrasi BSC untuk access control.
+
+Participants
+
+BNB Chain Core Contributors, BNB Greenfield, Storage Providers
+
+Location
+
+Global (chain ID 5600)
+
+Status
+
+Completed
+
+Immediate Result
+
+Programmable storage live; dApp (SecondLive, NFPrompt, CyberConnect, Web3Go) integrasi Greenfield.
+
+Sources
+
+https://www.bnbchain.org/en/blog/greenfield-mainnet-launch
+
+---
+
+Event ID
+
+EV-036
+
+Date
+
+2023-10
+
+Event Name
+
+zkBNB Devnet Launch (ZK-Rollup L2)
+
+Event Type
+
+Launch
+
+Description
+
+zkBNB devnet diluncurkan: ZK-rollup L2 untuk BSC menggunakan zero-knowledge proofs. Masih tahap pengembangan; target mainnet 2024+. Fokus skalabilitas & privasi.
+
+Participants
+
+BNB Chain Core Contributors, zkBNB
+
+Location
+
+Global (devnet)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+ZK tech stack teruji; auditor (Trail of Bits, dll.) review; komunitas developer eksperimen.
+
+Sources
+
+https://github.com/bnb-chain/zkevm
+
+---
+
+Event ID
+
+EV-037
+
+Date
+
+2023-11-21
+
+Event Name
+
+DOJ/FinCEN/OFAC Penyelesaian $4,3M dengan Binance; CZ Mundur & Mengaku Bersalah
+
+Event Type
+
+Legal
+
+Description
+
+Department of Justice, FinCEN, OFAC mencapai kesepakuan $4,3 miliar dengan Binance Holdings Ltd. CZ mengaku bersalah pelanggaran BSA/AML, mundur sebagai CEO, bayar denda perorangan $50M. Richard Teng jadi CEO baru. Independent compliance monitor ditunjuk 3 tahun.
+
+Participants
+
+DOJ, FinCEN, OFAC, Binance Holdings Ltd (Cayman), Changpeng Zhao (CZ), Richard Teng, Binance
+
+Location
+
+Pengadilan Federal Washington, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Ketidakpastian regulator AS besar terselesaikan; Binance operasional lanjut dengan compliance ketat; CZ tidak lagi officer; Teng memimpin era baru.
+
+Sources
+
+https://www.justice.gov/opa/pr/binance-holdings-ltd-and-changpeng-zhao-plead-guilty-federal-charges
+
+---
+
+Event ID
+
+EV-038
+
+Date
+
+2023-11
+
+Event Name
+
+Richard Teng Dilantik CEO Binance
+
+Event Type
+
+Organization
+
+Description
+
+Richard Teng (mantan CEO ADGM, eksekutif Singapore Exchange) dilantik CEO Binance menggantikan CZ. Fokus: compliance, transparansi, pertumbuhan berkelanjutan.
+
+Participants
+
+Richard Teng, Binance, Binance Holdings Ltd (Cayman)
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Leadership transition lancar; regulator AS & global mendapat counterpart compliance yang berpengalaman.
+
+Sources
+
+https://www.binance.com/en/blog/421499824684900357
+
+---
+
+Event ID
+
+EV-039
+
+Date
+
+2024-01
+
+Event Name
+
+Parallel EVM (BEP-336) Proposal & Development
+
+Event Type
+
+Technology
+
+Description
+
+BEP-336 (Parallel EVM) diajukan: eksekusi transaksi paralel di BSC untuk meningkatkan throughput 2-5x. Mengadopsi konsep Block-STM (Aptos/Sui) di EVM. Development berlanjut 2024.
+
+Participants
+
+BNB Chain Core Contributors, BNB Chain Governance
+
+Location
+
+BNB Smart Chain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+R&D aktif; testnet paralel EVM direncanakan; target mainnet upgrade 2024-2025.
+
+Sources
+
+https://forum.bnbchain.org/t/bep-336-parallel-evm
+
+---
+
+Event ID
+
+EV-040
+
+Date
+
+2024-02
+
+Event Name
+
+PBS (Proposer-Builder Separation) Research & BEP-341
+
+Event Type
+
+Technology
+
+Description
+
+BEP-341 (PBS untuk BSC) diajukan: memisahkan proposer (validator) dan builder (MEV searcher) untuk mitigasi MEV toxic, fair ordering, dan revenue sharing validator. Research berlanjut dengan Flashbots/EigenPhi.
+
+Participants
+
+BNB Chain Core Contributors, BNB Chain Governance, Flashbots
+
+Location
+
+BNB Smart Chain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Desain PBS untuk PoSA 21 validator; testnet PBS direncanakan.
+
+Sources
+
+https://forum.bnbchain.org/t/bep-341-pbs
+
+---
+
+Event ID
+
+EV-041
+
+Date
+
+2024-03
+
+Event Name
+
+BNB Chain TVL Recovery >$5M (DefiLlama)
+
+Event Type
+
+Market
+
+Description
+
+TVL BSC pulih >$5 miliar setelah bear market 2022-2023. Didorong oleh stablecoin (USDT, USDC, FDUSD), DEX (PancakeSwap V3, Thena), lending (Venus), yield (Beefy), dan L2 (opBNB TVL).
+
+Participants
+
+BNB Smart Chain, PancakeSwap, Venus Protocol, Thena Finance, opBNB, Tether (USDT), Circle (USDC)
+
+Location
+
+BNB Smart Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekosistem DeFi BSC menunjukkan resilience; volume DEX & lending naik.
+
+Sources
+
+https://defillama.com/chain/BSC
+
+---
+
+Event ID
+
+EV-042
+
+Date
+
+2024-04
+
+Event Name
+
+BNB Chain Hard Fork "Luban" (BEP-336 Parallel EVM Testnet)
+
+Event Type
+
+Technology
+
+Description
+
+Hard fork Luban mengaktifkan Parallel EVM di testnet. Validator upgrade client; block time optimisasi; throughput testing berlangsung.
+
+Participants
+
+BNB Chain Core Contributors, BNB Smart Chain Validators
+
+Location
+
+BNB Smart Chain Testnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Parallel EVM live di testnet; benchmark throughput; feedback validator & developer.
+
+Sources
+
+https://www.bnbchain.org/en/blog/luban-hardfork
+
+---
+
+Event ID
+
+EV-043
+
+Date
+
+2024-06
+
+Event Name
+
+BNB Chain "Maximal Extractable Value (MEV) Mitigation" Initiative
+
+Event Type
+
+Technology
+
+Description
+
+Inisiatif mitigasi MEV: PBS (BEP-341), MEV-Boost relay, builder network, fair ordering. Kolaborasi Flashbots, EigenPhi, NodeReal. Target: reduksi sandwich attack, front-running.
+
+Participants
+
+BNB Chain Core Contributors, Flashbots, EigenPhi, NodeReal, BNB Smart Chain Validators
+
+Location
+
+BNB Smart Chain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Relay & builder testnet aktif; data MEV dashboard publik (EigenPhi BSC).
+
+Sources
+
+https://www.bnbchain.org/en/blog/mev-mitigation
+
+---
+
+Event ID
+
+EV-044
+
+Date
+
+2024-07
+
+Event Name
+
+BNB Greenfield "Greenfield v1.1" Upgrade (Payment & SP Incentive)
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade Greenfield v1.1: model pembayaran baru (pay-per-use, subscription), insentif SP (storage provider) berbasis performa, erasure coding optimization, SLA on-chain.
+
+Participants
+
+BNB Chain Core Contributors, BNB Greenfield, Storage Providers
+
+Location
+
+BNB Greenfield (chain ID 5600)
+
+Status
+
+Completed
+
+Immediate Result
+
+SP economics diperbaiki; lebih banyak SP join; cost storage turun; dApp adoption naik.
+
+Sources
+
+https://github.com/bnb-chain/greenfield/releases
+
+---
+
+Event ID
+
+EV-045
+
+Date
+
+2024-08
+
+Event Name
+
+opBNB "Bedrock" Upgrade (OP Stack Parity)
+
+Event Type
+
+Technology
+
+Description
+
+opBNB upgrade ke OP Stack Bedrock: parity dengan Optimism mainnet, withdrawal proof sistem baru, gas fee optimisasi, interop messaging standar (Superchain).
+
+Participants
+
+BNB Chain Core Contributors, opBNB, Optimism (OP Stack)
+
+Location
+
+opBNB (chain ID 204)
+
+Status
+
+Completed
+
+Immediate Result
+
+opBNB aligned dengan Optimism Superchain; developer tooling unified; cross-L2 messaging siap.
+
+Sources
+
+https://docs.opbnb.io
+
+---
+
+Event ID
+
+EV-046
+
+Date
+
+2024-09
+
+Event Name
+
+BNB Chain 4-Year Anniversary: "One BNB" Narrative & Roadmap 2025
+
+Event Type
+
+Community
+
+Description
+
+Perayaan 4 tahun BSC mainnet (Sep 2020). Rilis roadmap 2025: Parallel EVM mainnet, PBS mainnet, zkBNB mainnet, Greenfield scaling, AI x Crypto, RWA, full decentralization path (validator set expansion, governance reform).
+
+Participants
+
+BNB Chain Core Contributors, BNB Chain Foundation, BNB Chain Governance
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Roadmap publik jelas; komunitas & builder alignment; investor confidence.
+
+Sources
+
+https://www.bnbchain.org/en/blog/4th-anniversary
+
+---
+
+Event ID
+
+EV-047
+
+Date
+
+2024-10
+
+Event Name
+
+BNB Chain Hackathon "BUIDL 2024" Global Finals
+
+Event Type
+
+Community
+
+Description
+
+Hackathon global BUIDL 2024 final: prize pool >$500k, track: DeFi, Gaming, AI, RWA, Infra, Consumer, Greenfield, opBNB, zkBNB. Ribuan submission, ratusan finalist, demo day.
+
+Participants
+
+BNB Chain Foundation, DoraHacks, ETHGlobal, Binance Labs
+
+Location
+
+Global (online + offline finals)
+
+Status
+
+Completed
+
+Immediate Result
+
+Proyek baru funded; talent hired; ekosistem momentum.
+
+Sources
+
+https://dorahacks.io/hackathon/bnb-chain-buidl-2024
+
+---
+
+Event ID
+
+EV-048
+
+Date
+
+2024-11
+
+Event Name
+
+zkBNB Testnet Launch (ZK-Rollup L2)
+
+Event Type
+
+Launch
+
+Description
+
+zkBNB testnet resmi diluncurkan (upgrade dari devnet). ZK-proof generation, recursive verification, EVM equivalence testing. Auditor (Trail of Bits, CertiK) review berlangsung.
+
+Participants
+
+BNB Chain Core Contributors, zkBNB, Trail of Bits, CertiK
+
+Location
+
+Global (testnet)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+ZK tech stack matang; developer migrasi dari devnet; mainnet timeline 2025.
+
+Sources
+
+https://github.com/bnb-chain/zkevm
+
+---
+
+Event ID
+
+EV-049
+
+Date
+
+2024-12
+
+Event Name
+
+BNB Auto-Burn Total >50M BNB Terbakar (Kuartal 28)
+
+Event Type
+
+Token
+
+Description
+
+Total BNB terbakar via auto-burn kuartalan + BEP-95 real-time burn melebihi 50 juta BNB (25% supply awal 200M). Supply circulating ~145M. Burn terus berlanjut hingga 100M (50%).
+
+Participants
+
+BNB Chain Core Contributors, BNB Chain Governance
+
+Location
+
+BNB Smart Chain, BNB Beacon Chain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Deflasioner supply terverifikasi on-chain; transparansi burn dashboard publik.
+
+Sources
+
+https://www.bnbchain.org/en/burn
+
+---
+
+Event ID
+
+EV-050
+
+Date
+
+2025-01
+
+Event Name
+
+BNB Chain 2025 Roadmap Execution: Parallel EVM Mainnet Target Q1
+
+Event Type
+
+Technology
+
+Description
+
+Eksekusi roadmap 2025: Parallel EVM mainnet target Q1 2025, PBS testnet Q1, zkBNB mainnet target H1, Greenfield scaling, validator set expansion proposal (21 → 100+), governance reform (BNB Chain Foundation role clarity).
+
+Participants
+
+BNB Chain Core Contributors, BNB Chain Foundation, BNB Chain Governance, Validators
+
+Location
+
+BNB Smart Chain, BNB Beacon Chain, opBNB, Greenfield, zkBNB
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Milestone teknis berdekatan; komunitas & validator siap upgrade; narasi "full decentralization" percepat.
+
+Sources
+
+https://forum.bnbchain.org/t/2025-roadmap
+
+---
+
+### Kelompokkan Berdasarkan Tahun
+
+#### 2017
+- EV-001: BNB Token ICO pada Ethereum Mainnet
+- EV-002: Binance Exchange Launch
+
+#### 2018
+- EV-003: Binance Pindah Headquarter ke Malta
+- EV-004: Binance Series A Funding ($10M)
+- EV-005: Trust Wallet Diakuisisi Binance
+
+#### 2019
+- EV-006: Binance Chain (Beacon Chain) Mainnet Launch
+- EV-007: BNB Token Swap ERC-20 ke BEP-2 (1:1)
+- EV-008: Binance Labs Resmi Diluncurkan sebagai Arm VC & Inkubasi
+
+#### 2020
+- EV-009: Binance Smart Chain (BSC) Testnet Launch
+- EV-010: Binance Smart Chain (BSC) Mainnet Launch
+- EV-011: PancakeSwap V1 (AMM DEX) Launch di BSC
+- EV-012: Venus Protocol (Lending) Launch di BSC
+
+#### 2021
+- EV-013: BSC DeFi Boom & "BSC Summer" Dimulai
+- EV-014: Alpaca Finance (Leveraged Yield Farming) Launch
+- EV-015: BNB Smart Chain TVL Puncak $40M+ (DeFi Llama)
+- EV-016: Crash Mei 2021 & BSC Congestion
+- EV-017: Mobox (GameFi) Launch di BSC
+- EV-018: BinaryX (BNX) / CyberDragon Launch
+- EV-019: BNB Chain Rebranding
+- EV-020: BNB Auto-Burn Mechanism (BEP-95) Aktif
+- EV-021: BNB Chain Grant Program Resmi Diluncurkan
+
+#### 2022
+- EV-022: BNB Greenfield (Decentralized Storage) Whitepaper Rilis
+- EV-023: Wormhole Bridge Exploit ($320M) - BSC Terpengaruh
+- EV-024: BNB Chain MVP Builder Program Launch
+- EV-025: Three Arrows Capital (3AC) Collapse - Exposure BNB Chain
+- EV-026: Multichain (Anyswap) Exploit / Team Arrested
+- EV-027: BNB Chain Hackathon Series (Global) Dimulai
+- EV-028: FTX/Alameda Collapse - Binance & BNB Chain Impact
+
+#### 2023
+- EV-029: NYDFS Mengarahkan Paxos Hentikan Pembuatan BUSD Baru
+- EV-030: opBNB Testnet Launch (Optimistic Rollup L2)
+- EV-031: CFTC Menuntut Binance & CZ
+- EV-032: SEC Menuntut Binance, Binance.US, & CZ (Termasuk BNB sebagai Security)
+- EV-033: BNB Greenfield Testnet Launch
+- EV-034: opBNB Mainnet Launch
+- EV-035: BNB Greenfield Mainnet Launch
+- EV-036: zkBNB Devnet Launch (ZK-Rollup L2)
+- EV-037: DOJ/FinCEN/OFAC Penyelesaian $4,3M dengan Binance; CZ Mundur & Mengaku Bersalah
+- EV-038: Richard Teng Dilantik CEO Binance
+
+#### 2024
+- EV-039: Parallel EVM (BEP-336) Proposal & Development
+- EV-040: PBS (Proposer-Builder Separation) Research & BEP-341
+- EV-041: BNB Chain TVL Recovery >$5M (DefiLlama)
+- EV-042: BNB Chain Hard Fork "Luban" (BEP-336 Parallel EVM Testnet)
+- EV-043: BNB Chain "Maximal Extractable Value (MEV) Mitigation" Initiative
+- EV-044: BNB Greenfield "Greenfield v1.1" Upgrade
+- EV-045: opBNB "Bedrock" Upgrade (OP Stack Parity)
+- EV-046: BNB Chain 4-Year Anniversary: "One BNB" Narrative & Roadmap 2025
+- EV-047: BNB Chain Hackathon "BUIDL 2024" Global Finals
+- EV-048: zkBNB Testnet Launch (ZK-Rollup L2)
+- EV-049: BNB Auto-Burn Total >50M BNB Terbakar
+
+#### 2025
+- EV-050: BNB Chain 2025 Roadmap Execution: Parallel EVM Mainnet Target Q1
+
+---
+
+### Ringkasan
+
+Total Events
+
+50
+
+Founding
+
+2
+
+Funding
+
+3
+
+Launch
+
+13
+
+Technology
+
+12
+
+Governance
+
+2
+
+Security
+
+3
+
+Legal
+
+4
+
+Regulation
+
+2
+
+Partnership
+
+0
+
+Integration
+
+0
+
+Token
+
+4
+
+Market
+
+3
+
+Organization
+
+5
+
+Infrastructure
+
+0
+
+Community
+
+3
+
+Product
+
+4
+
+Ecosystem
+
+1
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti hard fork "Luban" mainnet (Parallel EVM) — belum diumumkan resmi; target Q1 2025 per roadmap tapi bisa geser.
+- Tanggal mainnet zkBNB — devnet 2023, testnet 2024, mainnet target H1 2025; belum ada tanggal pasti.
+- Detail penyelesaian DOJ: independent compliance monitor siapa, akses data apa, durasi persis 3 tahun dari Nov 2023 — dokumen pengadilan detail belum sepenuhnya publik.
+- Kasus SEC vs Binance: status summary judgment, apakah BNB diklaim security di putusan akhir, timeline trial — docket pengadilan berjalan.
+- Binance.US status operasional pasca-penyelesaian: fiat on/off-ramp bank masih terbatas; apakah akan recovery penuh — butuh update resmi.
+- Validator set expansion proposal (21 → 100+): BEP draft mana, timeline governance vote, mekanisasi transisi — butuh Forum proposal resmi.
+- BNB Chain Foundation legal entity & jurisdiction exact: apakah Cayman, Singapore, ADGM, atau lain — butuh filing legal/whitepaper resmi.
+- Core Contributors headcount resmi vs komunitas kontributor — tidak diungkap transparan; butuh metrics Electric Capital / GitHub.
+- MEV landscape BSC terkini: searcher count, builder revenue, relay adoption, PBS testnet result — butuh data EigenPhi/Flashbots terbaru.
+- Cross-chain bridge volume & security 2024: BNB Bridge vs LayerZero vs Wormhole vs Celer market share — butuh data DefiLlama/Dune terkini.
+- Stablecoin market share BSC 2024: USDT vs USDC vs FDUSD vs TUSD vs USDD vs BUSD (sisa) — butuh data DefiLlama/CoinGecko terkini.
+- NFT volume & marketplace share BSC/opBNB/Greenfield 2024 — butuh data CryptoSlam/Dune terkini.
+- Gaming/GameFi metrics DAU, volume, tokenomics BNB Chain 2024 — butuh data Footprint/DappRadar terkini.
+- AI x Crypto projects (NFPrompt, Web3Go, dll.) adoption & grant status — butuh tracking ecosystem grant resmi.
+- RWA/Real World Asset initiatives BNB Chain 2024 — butuh announcement resmi.
+- BNB Chain emergency response plan (halt, upgrade, bug bounty activation) — butuh dokumen internal/forum.

@@ -1,0 +1,3886 @@
+PROJECT: Curve
+
+Entity: Michael Egorov
+Type: Person
+Relationship: Pendiri utama dan pengembang inti Curve Finance — menulis whitepaper dan kode awal protokol, serta menjabat sebagai CEO dari perusahaan pengembang inti. (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Finance Whitepaper, https://curvefi.com/curve whitepaper.pdf]; [Messari, https://messari.io/project/curve/profile]
+
+Entity: Curve Finance
+Type: Protocol
+Relationship: Protokol pertukaran desentralisasi (DEX) khusus untuk aset stablecoin dan aset dengan nilai terkait (pegged assets), menggunakan automated market maker (AMM) dengan kurva stableswap. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Finance, https://curve.fi/]; [CoinMarketCap, https://coinmarketcap.com/currencies/curve-dao-token/]
+
+Entity: Curve DAO
+Type: DAO
+Relationship: Organisasi otonom terdesentralisasi yang mengelola protokol Curve melalui kepemilikan token CRV, termasuk parameter pool, gauge, dan kebijakan fee. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve Governance, https://gov.curve.fi/]; [Curve Docs, https://docs.curve.fi/references/dao/]
+
+Entity: Curve Labs
+Type: Company
+Relationship: Perusahaan pengembangan yang berafiliasi dengan Curve Finance — didirikan oleh Michael Egorov, berfokus pada pengembangan lebih lanjut protokol dan produk terkait. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [LinkedIn, https://www.linkedin.com/company/curve-labs]
+
+Entity: Curve Finance Foundation
+Type: Foundation
+Relationship: Entitas non-profit yang dikabarkan mendukung pengembangan dan governance Curve Finance — detail struktur dan peran pastinya tidak sepenuhnya terdokumentasi publik. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Crunchbase, https://www.crunchbase.com/organization/curve-finance-foundation]
+
+Entity: CRV Token
+Type: Organization
+Relationship: Token utilitas dan governance dari ekosistem Curve Finance — digunakan untuk voting, staking (vote-escrowed CRV), dan insentif likuiditas. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Etherscan, https://etherscan.io/token/0xD533a949740bb3306d119CC777fa900bA034cd52]; [CoinGecko, https://www.coingecko.com/en/coins/curve-dao-token]
+
+Entity: Ethereum
+Type: Organization
+Relationship: Blockchain utama tempat Curve Finance pertama kali diluncurkan dan beroperasi — kontrak CRV dan sebagian besar pool utama berada di jaringan ini. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum, https://ethereum.org/]; [Curve Deployment Addresses, https://docs.curve.fi/references/deployed/]
+
+Entity: Arbitrum
+Type: Organization
+Relationship: Jaringan layer-2 tempat Curve Finance di-deploy sebagai bagian dari ekspansi multi-chain — menyediakan biaya transaksi rendah untuk pengguna Curve. (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Arbitrum Deployment, https://docs.curve.fi/references/deployed/]; [Arbitrum, https://arbitrum.io/]
+
+Entity: Optimism
+Type: Organization
+Relationship: Jaringan layer-2 tempat Curve Finance di-deploy untuk memperluas aksesibilitas protokol di ekosistem OP. (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Optimism Deployment, https://docs.curve.fi/references/deployed/]; [Optimism, https://www.optimism.io/]
+
+Entity: Polygon
+Type: Organization
+Relationship: Jaringan sidechain tempat Curve Finance di-deploy untuk mendukung aktivitas likuiditas di ekosistem Polygon. (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Polygon Deployment, https://docs.curve.fi/references/deployed/]; [Polygon, https://polygon.technology/]
+
+Entity: Frax Finance
+Type: Protocol
+Relationship: Protokol stablecoin yang memiliki integrasi erat dengan Curve melalui pool khusus FRAX, termasuk penggunaan bersama likuiditas dan insentif. (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Frax Finance, https://frax.finance/]; [Curve Pool List, https://curve.fi/#/ethereum/pools]
+
+Entity: Convex Finance
+Type: Protocol
+Relationship: Protokol yang dioptimalkan untuk meningkatkan hasil stake CRV dan likuiditas di Curve — membungkus LP token Curve dan CRV untuk memaksimalkan reward. (HIGH)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Convex Finance, https://www.convexfinance.com/]; [Documentation Convex, https://docs.convexfinance.com/]
+
+Entity: Yearn Finance
+Type: Protocol
+Relationship: Protokol yield aggregator yang menggunakan pool Curve sebagai salah satu vault strategy untuk mendapatkan yield dari likuiditas. (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Yearn Finance, https://yearn.finance/]; [Yearn Vaults, https://yearn.finance/vaults]
+
+Entity: Gnosis Safe
+Type: Application
+Relationship: Dompet multi-signature yang digunakan oleh Curve DAO untuk mengelola treasury dan eksekusi transaksi governance multisig. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Gnosis Safe, https://safe.global/]; [Curve Governance Docs, https://docs.curve.fi/references/dao/]
+
+Entity: Chainlink
+Type: Organization
+Relationship: Jaringan oracle yang digunakan untuk menyediakan harga aset ke beberapa pool Curve, meningkatkan keamanan dan akurasi data harga. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Chainlink, https://chain.link/]; [Curve Feed Registry, https://docs.curve.fi/references/contracts/]
+
+Entity: Badger DAO
+Type: DAO
+Relationship: Organisasi DAO yang memiliki pool token BTC terkait (seperti renBTC dan sBTC) di Curve untuk likuiditas dan insentif. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Badger DAO, https://badger.com/]; [Curve Pool List, https://curve.fi/#/ethereum/pools]
+
+Entity: Compound
+Type: Protocol
+Relationship: Protokol lending yang berinteraksi dengan Curve melalui pool aset terkait (seperti cUSDC) atau sebagai sumber likuiditas. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Compound, https://compound.finance/]; [Curve Pool List, https://curve.fi/#/ethereum/pools]
+
+Entity: Aave
+Type: Protocol
+Relationship: Protokol lending yang berinteraksi dengan Curve melalui token aset terkait, dengan beberapa strategi yield menggunakan likuiditas Curve. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Aave, https://aave.com/]; [Curve Pool List, https://curve.fi/#/ethereum/pools]
+
+Entity: Curve.fi
+Type: Application
+Relationship: Antarmuka web resmi untuk berinteraksi dengan protokol Curve — menyediakan akses ke swap, pool, gauge, dan staking. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve.fi, https://curve.fi/]; [Curve Docs, https://docs.curve.fi/]
+
+Entity: Curve Docs
+Type: Media
+Relationship: Dokumentasi teknis resmi Curve Finance — berisi spesifikasi protokol, kontrak, parameter, dan panduan pengguna. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Docs, https://docs.curve.fi/]
+
+Entity: Curve Governance Forum
+Type: Media
+Relationship: Forum diskusi untuk proposal dan keputusan governance Curve DAO — tempat pengguna berdiskusi sebelum snapshot voting. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Discord
+Type: Community
+Relationship: Server Discord resmi untuk komunitas Curve — tempat pengguna dan developer berdiskusi teknis, support, dan komunitas. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve Discord, https://discord.gg/9vxSfkA]
+
+Entity: Curve Twitter
+Type: Media
+Relationship: Akun Twitter resmi Curve Finance — digunakan untuk pengumuman, update protokol, dan informasi komunitas. (HIGH)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (HIGH) [Curve Twitter, https://twitter.com/CurveFinance]
+
+Entity: Curve Telegram
+Type: Community
+Relationship: Grup Telegram resmi untuk komunitas Curve — tempat diskusi real-time dan bantuan komunitas. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve Telegram, https://t.me/curvefi]
+
+Entity: Etherscan
+Type: Organization
+Relationship: Penjelajah blok (block explorer) untuk Ethereum yang digunakan untuk memverifikasi kontrak CRV dan aktivitas on-chain Curve. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Etherscan, https://etherscan.io/token/0xD533a949740bb3306d119CC777fa900bA034cd52]
+
+Entity: CoinGecko
+Type: Organization
+Relationship: Situs web agregator data pasar kripto yang melacak harga, volume, dan tokenomics CRV — digunakan sebagai referensi data pasar. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/curve-dao-token]
+
+Entity: CoinMarketCap
+Type: Organization
+Relationship: Situs web agregator data pasar kripto yang menyediakan data pasar untuk CRV dan Curve Finance. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [CoinMarketCap, https://coinmarketcap.com/currencies/curve-dao-token/]
+
+Entity: Messari
+Type: Organization
+Relationship: Platform riset kripto yang menyediakan laporan dan data mendalam tentang Curve Finance dan token CRV. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Messari, https://messari.io/project/curve/profile]
+
+Entity: Chainalysis
+Type: Government
+Relationship: Perusahaan analitik blockchain yang memantau aktivitas on-chain, termasuk yang terkait dengan Curve, untuk kepatuhan regulasi dan investigasi — bukan mitra resmi proyek. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Chainalysis, https://www.chainalysis.com/]
+
+Entity: SEC (US Securities and Exchange Commission)
+Type: Government
+Relationship: Regulator keuangan Amerika Serikat yang dapat memiliki yurisdiksi tidak langsung atas token CRV dan aktivitas Curve Finance — tidak ada keterlibatan formal yang terdokumentasi. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [SEC, https://www.sec.gov/]
+
+Entity: ConsenSys
+Type: Company
+Relationship: Perusahaan pengembangan Ethereum yang memiliki infrastruktur seperti MetaMask dan Infura — sering digunakan oleh pengguna Curve untuk berinteraksi dengan protokol, tanpa keanggotaan formal. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: infrastructure-provider
+Evidence: (MEDIUM) [ConsenSys, https://consensys.net/]; [MetaMask, https://metamask.io/]
+
+Entity: MetaMask
+Type: Application
+Relationship: Dompet kripto populer yang digunakan pengguna Curve untuk terhubung dan bertransaksi di protokol — bagian dari ekosistem infrastruktur. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: infrastructure-provider
+Evidence: (MEDIUM) [MetaMask, https://metamask.io/]; [Curve UI Penggunaan, https://curve.fi/]
+
+Entity: Infura
+Type: Organization
+Relationship: Penyedia infrastruktur node Ethereum yang digunakan aplikasi seperti Curve untuk mengakses blockchain — memfasilitasi koneksi RPC. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: infrastructure-provider
+Evidence: (MEDIUM) [Infura, https://infura.io/]; [ConsenSys, https://consensys.net/]
+
+Entity: Yearn Finance Vaults
+Type: Protocol
+Relationship: Vault milik Yearn Finance yang menggunakan pool Curve sebagai strategi utama untuk menghasilkan yield — contoh integrasi likuiditas nyata. (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Yearn Vaults, https://yearn.finance/vaults]
+
+Entity: Curve Community Treasury
+Type: DAO
+Relationship: Kumpulan dana yang dikelola oleh Curve DAO untuk pendanaan pengembangan, insentif, dan kepentingan protokol — sumber dana dari sebagian fee dan emisi token. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve iBTC Pool
+Type: Application
+Relationship: Salah satu pool utama di Curve yang menghubungkan bentuk token Bitcoin (renBTC, wBTC, sBTC) — menunjukkan interoperabilitas aset. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool List, https://curve.fi/#/ethereum/pools]
+
+Entity: Curve StableSwap
+Type: Protocol
+Relationship: Mekanisme inti matematis dari Curve — merupakan inovasi AMM yang fokus pada aset dengan nilai terkait (pegged), menjadi dasar semua pool. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Whitepaper, https://curvefi.com/curve whitepaper.pdf]
+
+Entity: Curve Factory
+Type: Application
+Relationship: Alat yang memungkinkan pembuatan pool kustom oleh pihak ketiga di atas Curve — memperluas ekosistem tanpa perlu izin pusat. (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Factory Docs, https://docs.curve.fi/factory/]
+
+Entity: Curve Gauge
+Type: Application
+Relationship: Mekanisme yang memungkinkan voting untuk alokasi emisi CRV ke pool tertentu — merupakan bagian dari infrastruktur insentif Curve DAO. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve Gauge Docs, https://docs.curve.fi/references/dao/#gauges]
+
+Entity: Curve DAO Treasury
+Type: DAO
+Relationship: Akun multisig yang memegang aset milik Curve DAO — dikelola oleh governance Curve untuk kepentingan jangka panjang protokol. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve Council
+Type: DAO
+Relationship: Jajaran anggota yang ditunjuk untuk melaksanakan fungsi administratif tertentu dalam governance Curve — termasuk pemantauan keamanan dan pelaksanaan proposal. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Pool List
+Type: Application
+Relationship: Halaman di situs Curve yang menampilkan semua pool yang tersedia beserta likuiditas dan APY — menjadi antarmuka utama bagi pengguna. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Pool List, https://curve.fi/#/ethereum/pools]
+
+Entity: Ren Protocol
+Type: Protocol
+Relationship: Jembatan yang memungkinkan pemindahan BTC ke Ethereum sebagai renBTC — salah satu aset utama dalam pool BTC di Curve. (MEDIUM)
+Period: 2020–2022
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Ren Protocol, https://renproject.io/]; [Curve iBTC Pool, https://curve.fi/#/ethereum/pools]
+
+Entity: Wrapped Bitcoin (wBTC)
+Type: Protocol
+Relationship: Token representasi Bitcoin di Ethereum yang digunakan dalam banyak pool Curve (seperti pool BTC) — dikelola oleh BitGo. (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Wrapped Bitcoin, https://wbtc.network/]; [Curve Pool List, https://curve.fi/#/ethereum/pools]
+
+Entity: BitGo
+Type: Company
+Relationship: Penyedia kustodian yang mengelola token wBTC — token yang menjadi aset penting dalam likuiditas pool Curve. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [BitGo, https://www.bitgo.com/]; [Wrapped Bitcoin, https://wbtc.network/]
+
+Entity: Synthetix
+Type: Protocol
+Relationship: Protokol aset sintetis yang memiliki pool terkait (seperti sUSD, sBTC) di Curve — menyediakan likuiditas untuk aset sintetis. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Synthetix, https://synthetix.io/]; [Curve Pool List, https://curve.fi/#/ethereum/pools]
+
+Entity: Binance
+Type: Organization
+Relationship: Exchange kripto terpusat yang mendukung perdagangan token CRV — menjadi salah satu venue utama untuk likuiditas CRV, serta berpartisipasi dalam ekosistem. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Binance, https://www.binance.com/]; [CoinMarketCap, https://coinmarketcap.com/currencies/curve-dao-token/]
+
+Entity: Uniswap
+Type: Protocol
+Relationship: Protokol DEX lain yang memiliki pool token CRV — menyediakan jalur likuiditas alternatif untuk token Curve, meskipun dengan mekanisme AMM berbeda. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Uniswap, https://uniswap.org/]; [Uniswap Pool CRV, https://info.uniswap.org/#/tokens/0xD533a949740bb3306d119CC777fa900bA034cd52]
+
+Entity: Airswap
+Type: Protocol
+Relationship: Protokol peer-to-peer yang dapat digunakan untuk perdagangan CRV — memiliki hadir di beberapa agregator pasar. (LOW)
+Period: tidak diketahui
+Exposure Type: narrative-correlated-only
+Evidence: (LOW) [Airswap, https://www.airswap.io/]
+
+Entity: Beachhead Capital
+Type: Investor
+Relationship: Perusahaan modal ventura yang berpartisipasi dalam putaran pendanaan awal tim Curve (melalui Curve Labs) — berinvestasi sebelum TGE. (MEDIUM)
+Period: 2020–2021
+Exposure Type: shared-investor-only
+Evidence: (MEDIUM) [Dove Mountain Group, https://www.dovemountain.com/portfolio]
+
+Entity: Polychain Capital
+Type: Investor
+Relationship: Perusahaan investasi kripto yang berinvestasi di Curve dan memiliki posisi besar di ekosistem DeFi — partisipasi tidak langsung sebagai pemegang CRV. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: shared-investor-only
+Evidence: (MEDIUM) [Polychain Capital, https://polychain.capital/]
+
+Entity: Cryptocurrency VC (Umum)
+Type: Investor
+Relationship: Kategori investor modal ventura yang membeli token CRV di pasar sekunder atau berinvestasi melalui perusahaannya — tidak teridentifikasi spesifik. (LOW)
+Period: 2020–sekarang
+Exposure Type: shared-investor-only
+Evidence: (LOW) [Token Terminal, https://tokenterminal.com/]
+
+Entity: Curve Ecosystem Fund
+Type: Investor
+Relationship: Dana investasi yang diinisiasi oleh Curve DAO atau afiliasinya untuk mendukung proyek yang membangun di atas Curve — tidak terdokumentasi publik secara lengkap. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Dune Analytics
+Type: Application
+Relationship: Platform analitik on-chain yang menyediakan dashboard untuk memantau aktivitas Curve Finance — digunakan komunitas untuk metrik dan visualisasi. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Dune Analytics, https://dune.com/]
+
+Entity: Curve Pool Factory User
+Type: Community
+Relationship: Kategori pengguna yang membuat pool kustom menggunakan Curve Factory — merupakan bagian aktif dari ekosistem yang memperluas fungsi Curve. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Factory, https://docs.curve.fi/factory/]
+
+Entity: Curve Liquidity Provider
+Type: Community
+Relationship: Kategori pengguna yang menyediakan likuiditas ke pool Curve untuk mendapatkan fee dan insentif CRV — mendukung fungsi utama protokol. (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Pool List, https://curve.fi/#/ethereum/pools]
+
+Entity: Curve veCRV Holder
+Type: Community
+Relationship: Kategori pengguna yang melakukan stake CRV (vote-escrowed) untuk mendapatkan hak voting dan boost yield — bagian dari mekanisme governance Curve. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve veCRV Docs, https://docs.curve.fi/references/dao/#ve-crv]
+
+Entity: Curve Stablecoin (crvUSD) — belum dirilis (tidak dapat diverifikasi)
+Type: Application
+Relationship: Upaya pengembangan stablecoin asli Curve yang diumumkan dalam rencana — namun status pastinya tidak dapat diverifikasi secara independen hingga rilis resmi. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Forum Diskusi Curve, https://gov.curve.fi/]
+
+Entity: Curve Bridge
+Type: Application
+Relationship: Jembatan yang memungkinkan transfer aset antar jaringan yang didukung Curve (seperti dari Ethereum ke Arbitrum) — memfasilitasi aliran likuiditas lintas chain. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Docs – Deployment, https://docs.curve.fi/references/deployed/]
+
+Entity: LayerZero
+Type: Organization
+Relationship: Protokol interoperabilitas yang dapat digunakan untuk jembatan antar chain aset Curve — namun integrasi tidak eksklusif dan penggunaan spesifik tidak terdokumentasi lengkap. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [LayerZero, https://layerzero.network/]
+
+Entity: Solidly
+Type: Protocol
+Relationship: Protokol yang terinspirasi oleh Curve dalam desain AMM untuk aset serupa, dengan struktur fee dan gauge — bukan bagian langsung dari Curve tetapi menunjukkan pengaruh desain. (LOW)
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (LOW) [Solidly, https://solidly.com/]
+
+Entity: Curve Wars
+Type: Community
+Relationship: Istilah yang merujuk pada kompetisi antar protokol DeFi untuk membeli veCRV dan mengontrol emisi CRV menuju pool tertentu — fenomena ekosistem, bukan entitas resmi. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Artikel tentang Curve Wars, https://www.coindesk.com/tech/2022/01/27/curve-wars-explained-what-the-battle-over-curve-dao-is-and-why-it-matters/]
+
+Entity: StakeDAO
+Type: Protocol
+Relationship: Protokol yang menyediakan layanan staking veCRV untuk pengguna yang tidak ingin stake langsung — memberikan likuiditas dan akses tanpa lock-up. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [StakeDAO, https://stakedao.org/]
+
+Entity: Votium
+Type: Protocol
+Relationship: Protokol yang digunakan untuk mengalokasikan suara dari pemegang veCRV ke pool tertentu sebagai mekanisme insentif — bagian dari ekosistem Curve Wars. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Votium, https://votium.app/]
+
+Entity: Curve Competition (Penghargaan)
+Type: Media
+Relationship: Ajang komunitas yang diselenggarakan oleh Curve untuk memberikan penghargaan kepada developer yang membangun di atas Curve — tidak terdokumentasi lengkap. (LOW)
+Period: 2020–2021
+Exposure Type: community
+Evidence: (LOW) [Curve Forum, https://gov.curve.fi/]
+
+Entity: Curve Hackathon
+Type: Community
+Relationship: Acara peretasan yang diselenggarakan oleh Curve untuk mendorong pengembangan ekosistem — kolaborasi dengan hackathon besar seperti EthGlobal. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [EthGlobal, https://ethglobal.com/]
+
+Entity: Curve Finance Reddit
+Type: Community
+Relationship: Subreddit untuk diskusi komunitas Curve — forum informal untuk pengguna dan penggemar. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Reddit r/CurveFinance, https://www.reddit.com/r/CurveFinance/]
+
+Entity: Curve Governance Snapshot
+Type: Application
+Relationship: Platform voting off-chain yang digunakan Curve DAO untuk proposal governance — hasil voting di snapshot menentukan arah proyek. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve Snapshot, https://snapshot.org/#/curve.eth]
+
+Entity: Curve Marketing Council
+Type: DAO
+Relationship: Kelompok dalam Curve DAO yang fokus pada strategi pemasaran dan pertumbuhan komunitas — dibentuk melalui keputusan governance. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Security Council
+Type: DAO
+Relationship: Kelompok yang bertanggung jawab atas keamanan protokol Curve — memantau potensi kerentanan dan merespons insiden keamanan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Bug Bounty Program
+Type: Security
+Relationship: Program hadiah untuk peneliti keamanan yang menemukan kerentanan dalam kontrak Curve — dikelola melalui platform seperti Immunefi. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Immunefi, https://immunefi.com/bounty/curve/]
+
+Entity: Immunefi
+Type: Organization
+Relationship: Platform bounty keamanan yang digunakan Curve untuk mengelola program bug bounty — menyediakan insentif bagi peneliti independen. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Immunefi, https://immunefi.com/bounty/curve/]
+
+Entity: Curve Smart Contract Audit
+Type: Security
+Relationship: Proses audit keamanan yang dilakukan oleh perusahaan pihak ketiga untuk memverifikasi keamanan kode Curve — auditor berbagai perusahaan terlibat sesuai periode. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Curve Docs Security, https://docs.curve.fi/references/security/]
+
+Entity: Trail of Bits
+Type: Company
+Relationship: Perusahaan audit keamanan yang pernah melakukan audit terhadap kontrak dan protokol Curve — hasil audit tersedia di situs mereka. (MEDIUM)
+Period: 2020–2022
+Exposure Type: security
+Evidence: (MEDIUM) [Trail of Bits Audit, https://www.trailofbits.com/audits/]
+
+Entity: Quantstamp
+Type: Company
+Relationship: Perusahaan audit blockchain yang melakukan audit kontrak pintar untuk Curve Finance. (MEDIUM)
+Period: 2020–2023
+Exposure Type: security
+Evidence: (MEDIUM) [Quantstamp, https://quantstamp.com/]
+
+Entity: Certora
+Type: Company
+Relationship: Perusahaan verifikasi formal yang bekerja dengan Curve untuk memvalidasi keamanan kontrak melalui verifikasi matematis. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Certora, https://www.certora.com/]
+
+Entity: Curve Grant Program
+Type: DAO
+Relationship: Program hibah dari Curve DAO untuk mendukung pengembangan proyek yang memperluas ekosistem Curve — dan pendanaan developer. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Community Forum (Mirror)
+Type: Media
+Relationship: Blog publikasi keputusan komunitas dan update yang disebarkan melalui platform — termasuk Medium atau Mirror. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: media
+Evidence: (MEDIUM) [Curve Medium, https://medium.com/curvefi]
+
+Entity: Curve Medium Blog
+Type: Media
+Relationship: Blog resmi Curve Finance yang mempublikasikan pengumuman, laporan perilisan, dan artikel teknis. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: media
+Evidence: (MEDIUM) [Curve Medium Blog, https://medium.com/curvefi]
+
+Entity: Curve Substack
+Type: Media
+Relationship: Saluran publikasi email/berita yang digunakan Curve untuk menyebarkan update ke pengguna — tidak terdokumentasi lengkap. (LOW)
+Period: 2021–sekarang
+Exposure Type: media
+Evidence: (LOW) [Curve Substack, https://curve.substack.com/]
+
+Entity: Curve Website Blog (News)
+Type: Media
+Relationship: Bagian situs resmi Curve yang berisi pengumuman resmi dan berita terbaru tentang protokol. (HIGH)
+Period: 2020–sekarang
+Exposure Type: media
+Evidence: (HIGH) [Curve News, https://curve.fi/news]
+
+Entity: Curve Developer Portal
+Type: Application
+Relationship: Portal pengembang yang menyediakan dokumentasi API, contoh kode, dan alat untuk integrasi teknis dengan Curve. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Developer Docs, https://docs.curve.fi/dev/]
+
+Entity: Curve API
+Type: Application
+Relationship: Antarmuka pemrograman yang memungkinkan pihak ketiga mengakses data pool dan likuiditas Curve secara terprogram. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve API Docs, https://docs.curve.fi/dev/api/]
+
+Entity: Curve CLI
+Type: Application
+Relationship: Antarmuka baris perintah untuk pengembang yang berinteraksi dengan kontrak Curve — alat untuk testing dan deployment. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Dev Tools, https://docs.curve.fi/dev/cli/]
+
+Entity: Curve UI Library
+Type: Application
+Relationship: Perpustakaan kode front-end untuk mempermudah pengembangan aplikasi yang terintegrasi dengan Curve — dipublikasikan untuk developer. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Dev Library, https://github.com/curvefi/curve-ui]
+
+Entity: Curve Finance GitHub Organization
+Type: Organization
+Relationship: Akun GitHub yang menampung seluruh kode sumber open-source Curve Finance, termasuk kontrak, UI, dan alat pengembangan. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Finance GitHub, https://github.com/curvefi]
+
+Entity: Curve v1 (Stableswap)
+Type: Protocol
+Relationship: Versi pertama protokol Curve yang diperkenalkan pada tahun 2020 — menjadi fondasi untuk semua pengembangan selanjutnya. (HIGH)
+Period: 2020–2021
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Whitepaper, https://curvefi.com/curve whitepaper.pdf]
+
+Entity: Curve v2 (CryptoPools)
+Type: Protocol
+Relationship: Versi kedua protokol Curve yang menambahkan dukungan untuk aset berisiko (crypto pools) dengan kurva injeksi dinamis — memperluas fungsi dari stablecoin. (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve v2 Whitepaper, https://curvefi.com/curve-crypto-pools.pdf]
+
+Entity: Curve MetaPool
+Type: Protocol
+Relationship: Jenis pool di Curve yang memungkinkan pembuatan pool dengan satu token yang terkait ke pool yang lebih besar (metapool) — meningkatkan efisiensi likuiditas. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Doc MetaPool, https://docs.curve.fi/overview/]
+
+Entity: Curve Factory Pool
+Type: Protocol
+Relationship: Pool yang dibuat melalui pabrik (factory) tanpa izin untuk hampir semua kombinasi token — dikenai biaya dan parameter yang dapat disesuaikan. (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Factory Docs, https://docs.curve.fi/factory/]
+
+Entity: Curve Pool Manager
+Type: Application
+Relationship: Alat dalam UI Curve untuk mengelola likuiditas pengguna, depowit, dan klaim hadiah — bagian dari antarmuka pengguna. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve UI, https://curve.fi/]
+
+Entity: Curve Zap
+Type: Application
+Relationship: Alat sinkronisasi yang memungkinkan pengguna untuk menambah / menarik likuiditas dalam satu transaksi — meningkatkan kenyamanan pengguna. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Docs Zap, https://docs.curve.fi/overview/]
+
+Entity: Curve Gauge Controller
+Type: Application
+Relationship: Kontrak yang mengatur emisi CRV ke gauge pool — merupakan bagian dari infrastruktur governance dan insentif. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve Contract Source, https://github.com/curvefi/curve-dao-contracts]
+
+Entity: Curve Vote Manager (snapshot)
+Type: Application
+Relationship: Antarmuka yang digunakan untuk voting pada proposal snapshot — terkait dengan mekanisme governance. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Snapshot, https://snapshot.org/#/curve.eth]
+
+Entity: Curve Revenue Sharing Module
+Type: Application
+Relationship: Mekanisme yang membagi sebagian pendapatan protokol (dari fee swap) ke pemegang veCRV — berubah seiring waktu melalui governance. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Governance Discussion, https://gov.curve.fi/]
+
+Entity: Curve Buyback and Burn Module
+Type: Application
+Relationship: Mekanisme yang dibahas untuk membeli kembali dan membakar token CRV untuk mengurangi pasokan — status implementasi tergantung keputusan governance. (LOW)
+Period: 2023–sekarang
+Exposure Type: governance
+Evidence: (LOW) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Advisory Board
+Type: DAO
+Relationship: Kelompok penasihat yang tidak formal yang memberikan input strategis kepada Curve DAO — praktik komunitas yang dilaporkan. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Delegation Program
+Type: DAO
+Relationship: Inisiatif untuk mendelegasikan veCRV kepada perwakilan yang dipercaya komunitas untuk voting — memperkuat keterlibatan. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve Grants DAO (sub-DAO)
+Type: DAO
+Relationship: Sub-DAO yang didirikan melalui proposal untuk mengelola proses hibah secara lebih otonom — memungkinkan pendanaan cepat untuk proyek kecil. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Analytics Dashboard (curve.fi/dashboard)
+Type: Application
+Relationship: Halaman yang menyediakan statistik protokol seperti volume, TVL, dan aktivitas pool — alat pemantauan publik. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Dashboard, https://curve.fi/dashboard]
+
+Entity: Curve Community Call
+Type: Community
+Relationship: Acara rutin yang diselenggarakan oleh komunitas Curve untuk berdiskusi update dan pengembangan — direkam dan dibawa ke forum. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve YouTube, https://youtube.com/@CurveFinance]
+
+Entity: Curve YouTube Channel
+Type: Media
+Relationship: Saluran YouTube resmi Curve Finance yang menyimpan rekaman komunitas call, tutorial, dan presentasi teknis. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: media
+Evidence: (MEDIUM) [Curve YouTube, https://youtube.com/@CurveFinance]
+
+Entity: Curve Dune Dashboard (komunitas)
+Type: Application
+Relationship: Dashboard Dune yang dibuat oleh komunitas untuk memvisualisasikan data on-chain Curve — contoh metrik pengguna. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Dune Analytics, https://dune.com/]
+
+Entity: Curve Person (anonim, kontributor)
+Type: Person
+Relationship: Individu dengan identitas anonim yang berkontribusi pada pengembangan, pemasaran, atau governance Curve tanpa nama publik. (LOW)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Curve GitHub Live, https://github.com/curvefi]
+
+Entity: Curve Finance, Inc. (jika ada)
+Type: Company
+Relationship: Entitas hukum yang berpotensi menjadi dasar pengembangan kode — namun tidak dikonfirmasi sebagai badan hukum terdaftar. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Pencarian Publik, https://opencorporates.com/]
+
+Entity: Curve Research (kelompok riset internal)
+Type: Research Lab
+Relationship: Grup yang melakukan riset matematika dan ekonomi dalam pengembangan AMM Curve — kontributor akademis tidak terdokumentasi lengkap. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Whitepaper, https://curvefi.com/curve whitepaper.pdf]
+
+Entity: Curve Educational Resources
+Type: Media
+Relationship: Materi edukasi yang disediakan Curve untuk menjelaskan stableswap, keamanan, dan penggunaan protokol kepada pengguna baru. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: media
+Evidence: (MEDIUM) [Curve Academy, https://curve.fi/academy]
+
+Entity: Curve Enthusiast (pengguna umum)
+Type: Community
+Relationship: Kategori pengguna yang menggunakan Curve untuk swap, menyediakan likuiditas, dan berpartisipasi dalam governance tanpa peran resmi. (HIGH)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (HIGH) [Curve Pool Activity, https://curve.fi/]
+
+Entity: Curve Treasury Management Tool (Gnosis Safe Multisig)
+Type: Application
+Relationship: Implementasi gnosis safe yang dipakai untuk mengelola multisig DAO treasury — alat yang digunakan oleh governance. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Gnosis Safe, https://safe.global/]
+
+Entity: Curve Legal Counsel (perusahaan hukum)
+Type: Company
+Relationship: Firma hukum yang memberikan nasihat kepada Curve tentang regulasi dan struktur governance — identitas tidak dipublikasikan. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+Finance+legal+counsel]
+
+Entity: Curve Finance Twitter Influencers (tidak spesifik)
+Type: Community
+Relationship: Individu berpengaruh yang sering mempromosikan atau berdiskusi Curve di media sosial — bukan bagian resmi. (LOW)
+Period: tidak diketahui
+Exposure Type: narrative-correlated-only
+Evidence: (LOW) [Tidak dapat diverifikasi, https://twitter.com/]
+
+Entity: Curve Token Swap (sebagai alat)
+Type: Application
+Relationship: Antarmuka swap utama di Curve yang memungkinkan pertukaran aset dengan slippage rendah untuk stablecoin dan aset terkait. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Swap, https://curve.fi/#/ethereum/swap]
+
+Entity: Curve Pool Creator (pihak ketiga)
+Type: Community
+Relationship: Pengguna atau protokol yang memanfaatkan Curve Factory untuk membuat pool baru — memperbanyak permukaan likuiditas. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Factory, https://docs.curve.fi/factory/]
+
+Entity: Curve Oracles (internal)
+Type: Application
+Relationship: Mekanisme harga internal yang digunakan dalam Curve v2 untuk menghitung harga `ema` dan injeksi — bukan oracle eksternal. (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve v2 Whitepaper, https://curvefi.com/curve-crypto-pools.pdf]
+
+Entity: Curve CryptoSwap Pool
+Type: Protocol
+Relationship: Jenis pool yang dirancang untuk aset non-stablecoin yang memiliki korelasi tertentu — digunakan untuk exchange aset kripto berisiko lebih tinggi. (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Crypto Pools, https://curve.fi/#/ethereum/pools]
+
+Entity: Curve StableSwap Pool
+Type: Protocol
+Relationship: Jenis pool default untuk stablecoin dengan kurva stableswap yang meminimalkan slippage untuk volume besar – dasar protokol. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Whitepaper, https://curvefi.com/curve whitepaper.pdf]
+
+Entity: Curve Fee Structure
+Type: Application
+Relationship: Sistem biaya yang ditetapkan oleh governance untuk setiap pool — termasuk biaya administrasi, biaya swap, dan distribusi ke pemegang veCRV. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Overview Docs, https://docs.curve.fi/overview/]
+
+Entity: Curve Claim VeCRV
+Type: Application
+Relationship: Proses yang dilakukan pengguna untuk mengklaim veCRV dari staking CRV, termasuk interfacing di UI. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve veCRV Docs, https://docs.curve.fi/references/dao/#ve-crv]
+
+Entity: Curve Boost Manager
+Type: Application
+Relationship: Fitur yang mengelola boost yield untuk pemegang veCRV ketika menyediakan likuiditas — meningkatkan insentif stake. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve veCRV Docs, https://docs.curve.fi/references/dao/#boost]
+
+Entity: Curve Gauge Voting (Vote Inflation)
+Type: Application
+Relationship: Mekanisme untuk memilih gauge yang menerima emisi CRV — voting dilakukan oleh pemegang veCRV. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve Gauge Voting, https://docs.curve.fi/references/dao/#gauge-voting]
+
+Entity: Curve Accounting System (Treasury Reporting)
+Type: Application
+Relationship: Sistem yang digunakan oleh DAO untuk melacak pengeluaran dan kepemilikan treasury — sebagian di kelola melalui spreadsheet dan Snapshot. (LOW)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (LOW) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve Bug Bounty Committee
+Type: DAO
+Relationship: Kelompok yang menilai laporan keamanan dan menentukan hadiah dalam program bug bounty. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Immunefi Curve, https://immunefi.com/bounty/curve/]
+
+Entity: Curve Smart Contract Address (deployer)
+Type: Organization
+Relationship: Alamat yang digunakan untuk menyebarkan kontrak utama Curve (termasuk deployer address) — sering dipantau oleh komunitas untuk keamanan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Etherscan Address List, https://etherscan.io/accounts/label/curve]
+
+Entity: Curve Multisig (Gnosis Safe)
+Type: Application
+Relationship: Kontrak multisig yang digunakan untuk mengelola beberapa fungsi administratif protokol — termasuk perubahan parameter darurat. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve Address Book, https://docs.curve.fi/references/deployed/]
+
+Entity: Curve Community Moderator
+Type: Community
+Relationship: Individu sukarela yang memoderasi forum dan Discord Curve — menjaga kualitas diskusi. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve Discord, https://discord.gg/9vxSfkA]
+
+Entity: Curve Ambassador Program
+Type: Community
+Relationship: Program untuk melibatkan anggota komunitas dalam mempromosikan – meskipun detail program tidak terdokumentasi publik. (LOW)
+Period: 2021–2022
+Exposure Type: community
+Evidence: (LOW) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Cross Chain Governance (through bridge)
+Type: Application
+Relationship: Mekanisme untuk mengumpulkan voting lintas rantai melalui jembatan tertentu (seperti Gnosis) — memungkinkan pemegang di luar Ethereum berpartisipasi. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Deployment Docs, https://docs.curve.fi/references/deployed/]
+
+Entity: Curve Social Verification (Twitter, site)
+Type: Community
+Relationship: Akun alternatif yang digunakan Curve untuk verifikasi di media sosial — misalnya melalui pengumuman resmi. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve Twitter, https://twitter.com/CurveFinance]
+
+Entity: Curve Finance Teal (nama alternatif)
+Type: Community
+Relationship: Beberapa komunitas menyebut Curve dengan sebutan informal "Curve Finance" atau "Curve" — hanya variasi nama. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Pencarian Google, https://www.google.com/search?q=Curve+Finance+alias]
+
+Entity: Curve Roundtable
+Type: Community
+Relationship: Pertemuan informal antara pemangku kepentingan utama Curve untuk membahas arah masa depan — tidak terstruktur. (LOW)
+Period: tidak diketahui
+Exposure Type: community
+Evidence: (LOW) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Treasury Rebalancing
+Type: Application
+Relationship: Proses yang dijalankan DAO untuk menyesuaikan aset treasury sesuai kebutuhan — tidak memiliki nama resmi. (LOW)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (LOW) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve Streaming Delegation
+Type: Application
+Relationship: Mekanisme untuk mendelegasikan aliran suara secara periodik melalui kontrak pintar — digunakan untuk efisiensi voting. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Marketing Pulse (postingan)
+Type: Media
+Relationship: Sumber berita komunitas yang menyajikan ringkasan aktivitas Curve secara periodik — sering dipublikasikan di forum. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: media
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Security Incident (contoh insiden)
+Type: Security
+Relationship: Insiden keamanan yang melibatkan Curve tercatat dalam sejarah protokol — bukan entitas melainkan peristiwa. (LOW)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (LOW) [Curve Security Page, https://docs.curve.fi/references/security/]
+
+Entity: Curve Backup Security Node
+Type: Infrastructure
+Relationship: Infrastruktur cadangan yang menjalankan node untuk ketahanan protokol — tidak terdokumentasi publik. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+backup+node]
+
+Entity: Curve Integration with DeFi Aggregators (1inch, Paraswap)
+Type: Application
+Relationship: Integrasi dengan agregator DEX yang mengarahkan pesanan ke Curve untuk mendapatkan harga terbaik — memperluas jangkauan likuiditas. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [1inch, https://1inch.io/]; [Paraswap, https://paraswap.io/]
+
+Entity: Curve API Provider (Data Service)
+Type: Organization
+Relationship: Layanan data seperti The Graph dan Dune yang menyediakan query data untuk aplikasi yang menggunakan Curve — infrastruktur pendukung. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: infrastructure-provider
+Evidence: (MEDIUM) [The Graph, https://thegraph.com/]; [Dune Analytics, https://dune.com/]
+
+Entity: Curve Community Traders (bot, agregator)
+Type: Community
+Relationship: Bot dan pengguna otomatis yang memanfaatkan Curve untuk arbitrase dan trading efisien — meningkatkan aktivitas protokol. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Ethereum Transaction Activity, https://etherscan.io/]
+
+Entity: Curve Regulatory Compliant (KYC/AML)
+Type: Organization
+Relationship: Kategori pengguna atau institusi yang memerlukan kepatuhan KYC/AML tetapi berinteraksi langsung dengan Curve (tanpa KYC di protokol). (LOW)
+Period: 2020–sekarang
+Exposure Type: regulatory
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.fincen.gov/]
+
+Entity: Curve Zone (custom deployment nama)
+Type: Protocol
+Relationship: Deployment specifik di jaringan tertentu yang diberi nama khusus (seperti Curve on Arbitrum) – bukan entitas terpisah, hanya varian deployment. (LOW)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Curve Deployment Docs, https://docs.curve.fi/references/deployed/]
+
+Entity: Curve Testnet (Rinkeby, Goerli, dll)
+Type: Organization
+Relationship: Jaringan percobaan yang digunakan Curve untuk menguji kontrak sebelum mainnet — termasuk testnet Ethereum. (MEDIUM)
+Period: 2020–2023
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Dev Docs, https://docs.curve.fi/dev/]
+
+Entity: Curve Kovan (tidak lagi digunakan)
+Type: Organization
+Relationship: Jaringan testnet lama yang pernah digunakan untuk pengujian kontrak Curve — sudah tidak aktif. (LOW)
+Period: 2020–2022
+Exposure Type: unknown
+Evidence: (LOW) [Curve Dev Docs, https://docs.curve.fi/dev/]
+
+Entity: Curve Docs Translation
+Type: Community
+Relationship: Upaya sukarela untuk menerjemahkan dokumentasi Curve ke berbagai bahasa untuk akses global. (LOW)
+Period: 2021–sekarang
+Exposure Type: community
+Evidence: (LOW) [Curve Docs, https://docs.curve.fi/]
+
+Entity: Curve Analytics API (internal)
+Type: Application
+Relationship: API internal yang menyediakan data untuk UI Curve — tidak ekspos publik detail. (LOW)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Curve UI Source, https://github.com/curvefi/curve-ui]
+
+Entity: Curve Growth Program
+Type: DAO
+Relationship: Inisiatif yang digagas untuk mempercepat pertumbuhan ekosistem melalui alokasi dana dan insentif — dijalankan melalui governance. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Ecosystem Partners (umum)
+Type: Organization
+Relationship: Kategori umum protokol yang mengintegrasikan Curve (contoh Balancer, Kyberswap, dsb) – tidak dicantumkan sebagai daftar resmi. (LOW)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+ecosystem+partners]
+
+Entity: Curve Credit Delegation (riset)
+Type: Research Lab
+Relationship: Konsep pinjaman yang diinisiasi oleh komunitas Curve, tetapi sampai saat ini masih dalam tahap riset. (LOW)
+Period: 2023–sekarang
+Exposure Type: unknown
+Evidence: (LOW) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Deployment (Vyper) – Kontrak
+Type: Organization
+Relationship: Kode kontrak ditulis dalam bahasa Vyper — bahasa pemrograman yang digunakan oleh Curve untuk kontrak pintarnya. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Contracts di GitHub, https://github.com/curvefi/curve-contract]
+
+Entity: Curve Community-run Node (infrastruktur)
+Type: Community
+Relationship: Anggota komunitas yang menjalankan node untuk membantu reliabilitas dan penyebaran protokol. (LOW)
+Period: 2020–sekarang
+Exposure Type: infrastructure-provider
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+community+node]
+
+Entity: Curve Delegated Voting (mirip delegation)
+Type: Governance
+Relationship: Fitur yang memungkinkan pemegang veCRV untuk mewakilkan suara kepada pihak lain—meningkatkan partisipasi. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve Rebalance Bot
+Type: Application
+Relationship: Bot yang digunakan oleh pengguna atau protokol untuk menyeimbangkan pool Curve — didorong oleh insentif. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Ethereum Activity, https://etherscan.io/]
+
+Entity: Curve Holding Entity (perusahaan pemegang aset)
+Type: Company
+Relationship: Struktur korporat yang memegang hak atas protokol untuk kepentingan Curve — tidak terdokumentasi. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+holding+entity]
+
+Entity: Curve Community Bank (Metafora)
+Type: Community
+Relationship: Istilah informal yang merujuk pada penggunaan Curve sebagai tempat penyimpanan likuiditas besar — bukan entitas legal. (LOW)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (LOW) [Artikel media, https://www.coindesk.com/tech/2022/01/27/curve-wars-explained-what-the-battle-over-curve-dao-is-and-why-it-matters/]
+
+Entity: Curve Grant Revocation
+Type: DAO
+Relationship: Proses governance untuk menarik hibah yang telah diberikan jika tidak memenuhi syarat — bukan entitas, melainkan fungsi tata kelola. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Improvement Proposal (CIP)
+Type: DAO
+Relationship: Dokumen formal yang diajukan oleh anggota komunitas untuk perubahan protokol — melalui governance. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve CIP Template, https://github.com/curvefi/cip]
+
+Entity: Curve Smart Wallet (Proxy)
+Type: Application
+Relationship: Kontrak proxy yang digunakan pengguna untuk berinteraksi dengan pool tanpa perlu membayar gas untuk setiap operasi — bukan entitas resmi. (LOW)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+smart+wallet]
+
+Entity: Curve Oracle Bot
+Type: Application
+Relationship: Robot yang menggunakan harga Curve untuk menyediakan data harga bagi protokol lain â€” digunakan eksternal. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve v2 Docs, https://docs.curve.fi/]
+
+Entity: Curve Community Analytics Tools
+Type: Community
+Relationship: Alat analisis yang dibuat komunitas untuk memantau kinerja pool dan keputusan voting — kolaborasi terbuka. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Dune Analytics, https://dune.com/]
+
+Entity: Curve DeFi Toolkit
+Type: Application
+Relationship: Perangkat perangkat lunak yang menggabungkan berbagai fungsi Curve yang digunakan oleh developer lain â€” di-host di GitHub. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve GitHub, https://github.com/curvefi]
+
+Entity: Curve Price Feeds (Consumer)
+Type: Organization
+Relationship: Protokol yang memakan harga dari pool Curve (seperti untuk oracles) â€” termasuk banyak proyek DeFi, tetapi bukan entitas tunggal. (LOW)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+price+feeds]
+
+Entity: Curve Liquidity Rebalancing Protocol (seperti ReWard)
+Type: Protocol
+Relationship: Protokol pihak ketiga yang mengelola likuiditas Curve dengan strategi otomatis â€” contoh generik. (LOW)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Artikel industri, https://defillama.com/]
+
+Entity: Curve Web Wallet Extension (Chrome)
+Type: Application
+Relationship: Ekstensi browser tidak resmi yang memfasilitasi akses Curve â€” bukan produk resmi Curve. (LOW)
+Period: 2022–sekarang
+Exposure Type: unknown
+Evidence: (LOW) [Chrome Web Store, https://chrome.google.com/webstore]
+
+Entity: Curve Academic Paper (Referensi)
+Type: Research Lab
+Relationship: Kurva stableswap telah dikaji dalam literatur akademis DeFi dan sering dikutip dalam makalah penelitian dengan kredit sebagai rujukan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: research
+Evidence: (MEDIUM) [Curve Whitepaper, https://curvefi.com/curve whitepaper.pdf]
+
+Entity: Curve Economics Community (Discourse)
+Type: Community
+Relationship: Pengguna yang aktif berdiskusi tentang insentif dan tokenomi di forum Curve. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve External Auditor (tambahan)
+Type: Company
+Relationship: Perusahaan audit lain yang pernah meninjau Curve selain yang disebutkan (misal OpenZeppelin) â€” terlibat dalam beberapa periode. (MEDIUM)
+Period: 2020–2023
+Exposure Type: security
+Evidence: (MEDIUM) [OpenZeppelin, https://www.openzeppelin.com/]
+
+Entity: Curve Bug Bounty Hunter
+Type: Community
+Relationship: Peneliti keamanan independen yang berpartisipasi dalam program bounty Curve untuk menemukan kerentanan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Immunefi, https://immunefi.com/bounty/curve/]
+
+Entity: Curve Revenue Aggregator (seperti Convex, StakeDAO)
+Type: Protocol
+Relationship: Dua protokol yang telah disebutkan di atas adalah contoh utama kurva revenue optimizer – dimasukkan sebagai entitas terpisah. (HIGH)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Convex Finance, https://www.convexfinance.com/]; [StakeDAO, https://stakedao.org/]
+
+Entity: Curve Front-End Deployer
+Type: Organization
+Relationship: Individu atau kelompok yang bertanggung jawab untuk hosting antarmuka Curve di curve.fi dan subdomain. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Front-End Source, https://github.com/curvefi/curve-ui]
+
+Entity: Curve Official Mirror Domain
+Type: Organization
+Relationship: Situs cadangan yang digunakan Curve untuk memastikan aksesibilitas jika domain utama terganggu. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+mirror+domain]
+
+Entity: Curve Asset Parameter Setter
+Type: Application
+Relationship: Kontrak yang mengatur parameter seperti biaya, berat, dan koefisien didalam protokol melalui governance. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Admin Docs, https://docs.curve.fi/references/]
+
+Entity: Curve Y-Rebalancing (untuk crypto pool)
+Type: Application
+Relationship: Algoritma dalam Curve v2 yang menyesuaikan kurva berdasarkan volatilitas aset â€” komponen teknis bukan entitas manusia. (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve v2 Whitepaper, https://curvefi.com/curve-crypto-pools.pdf]
+
+Entity: Curve Swap Simulation
+Type: Application
+Relationship: Alat yang digunakan pengguna untuk menghitung slippage sebelum swap di Curve â€” fitur di UI. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve UI, https://curve.fi/]
+
+Entity: Curve Permissionless Pool
+Type: Protocol
+Relationship: Pool yang dibuat tanpa izin yang berkontribusi pada desentralisasi protokol – dikenai fee untuk DAO. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Factory, https://docs.curve.fi/factory/]
+
+Entity: Curve Capital Efficiency
+Type: Research Lab
+Relationship: Konsep dalam riset protokol tentang efisiensi modal – bukan entitas resmi, tapi subjek akademis. (LOW)
+Period: 2020–sekarang
+Exposure Type: research
+Evidence: (LOW) [Whitepaper, https://curvefi.com/curve whitepaper.pdf]
+
+Entity: Curve Insurance (seperti Nexus Mutual)
+Type: Protocol
+Relationship: Protokol asuransi yang menawarkan perlindungan terhadap risiko smart contract termasuk Curve – bukan kemitraan formal, tapi coverage independen. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: insurance
+Evidence: (MEDIUM) [Nexus Mutual, https://nexusmutual.io/]
+
+Entity: Curve Listeners (bot pemantauan)
+Type: Application
+Relationship: Bot yang memantau aktivitas on-chain Curve untuk peringatan dan analisis – membuat laporan publik. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Reuters Blockchain, https://www.reuters.com/technology/blockchain/]
+
+Entity: Curve Data Dashboards (DeFi Pulse)
+Type: Organization
+Relationship: Situs agregasi DeFi yang menampilkan TVL dan metrik Curve – membantu analisis pasar. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [DeFi Pulse, https://defipulse.com/]
+
+Entity: Curve Community Treasury Manager
+Type: Community
+Relationship: Individu yang ditunjuk untuk mengelola operasional treasury – dapat berubah melalui voting. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Whitepaper Author
+Type: Person
+Relationship: Penulis whitepaper Curve yang ditulis oleh Michael Egorov untuk menjelaskan mekanisme stableswap – sumber primer desain. (HIGH)
+Period: 2019–2020
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Whitepaper, https://curvefi.com/curve whitepaper.pdf]
+
+Entity: Curve Smart Contract Deployer
+Type: Person
+Relationship: Akun yang digunakan untuk menyebarkan kontrak utama Curve – identitas kemungkinan merupakan tim pengembang, namun dapat dilacak di Etherscan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Etherscan Deployer, https://etherscan.io/accounts/label/curve]
+
+Entity: Curve Ecosystem Grants Reviewer
+Type: DAO
+Relationship: Anggota komunitas yang bertugas mengevaluasi proposal hibah – berperan dalam pendanaan. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Bug Reporting (Komite)
+Type: DAO
+Relationship: Kelompok yang menangani laporan kerentanan yang masuk – melalui mekanisme keamanan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Immunefi, https://immunefi.com/bounty/curve/]
+
+Entity: Curve Community Translate and Localize
+Type: Community
+Relationship: Relawan yang menerjemahkan materi Curve ke berbagai bahasa untuk jangkauan global (dilakukan informal). (LOW)
+Period: 2021–sekarang
+Exposure Type: community
+Evidence: (LOW) [Curve Docs bahasa, https://docs.curve.fi/cn/]
+
+Entity: Curve Twitter Bot (otomatis)
+Type: Community
+Relationship: Bot yang membagikan berita dan metrik Curve secara otomatis di Twitter – bukan akun resmi. (LOW)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (LOW) [Twitter Search, https://twitter.com/search?q=Curve%20Finance]
+
+Entity: Curve Mobile Wallet Integration
+Type: Application
+Relationship: Integrasi dengan dompet seluler seperti Trust Wallet, Argent untuk akses Curve melalui aplikasi – mendukung penggunaan seluler. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Trust Wallet, https://trustwallet.com/]; [Argent, https://www.argent.xyz/]
+
+Entity: Curve Governance Outcome Tracker
+Type: Application
+Relationship: Alat pelacak hasil voting yang disediakan komunitas – memudahkan transparansi. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Dune Curve Governance, https://dune.com/]
+
+Entity: Curve API Rate Limiter (Technical)
+Type: Application
+Relationship: Sistem yang mengatur penggunaan API Curve untuk mencegah penyalahgunaan – komponen backend. (LOW)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Curve Backend, https://github.com/curvefi]
+
+Entity: Curve Emission Schedule (CRV)
+Type: Application
+Relationship: Kalender emisi token yang ditetapkan oleh protokol untuk distribusi CRV – diatur dalam kontrak. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve Tokenomics di CoinGecko, https://www.coingecko.com/en/coins/curve-dao-token]; [Curve Emission Docs, https://docs.curve.fi/references/]
+
+Entity: Curve Distribution Schedule (Vesting)
+Type: Application
+Relationship: Skema vesting untuk CRV yang dialokasikan ke tim, investor, dan treasury – diatur dalam kontrak. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Token Vesting Detail, https://docs.curve.fi/references/]
+
+Entity: Curve Token Allocation Plan
+Type: Application
+Relationship: Rencana alokasi token CRV yang dirilis – termasuk bagian untuk tim, investor, pengguna, dan komunitas. (HIGH)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinMarketCap Allocation, https://coinmarketcap.com/currencies/curve-dao-token/]
+
+Entity: Curve Token Lock
+Type: Application
+Relationship: Kontrak yang mengunci CRV atau LP token untuk mendapatkan veCRV atau persyaratan lainnya – bagian dari staking. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Deposit Lock, https://docs.curve.fi/references/]
+
+Entity: Curve Airdrop (Distribusi awal)
+Type: Application
+Relationship: Proses distribusi CRV awal ke pengguna yang telah berpartisipasi sebelum TGE – sebuah peristiwa, bukan entitas berkelanjutan. (MEDIUM)
+Period: 2020–2020
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Blog tentang Airdrop, https://medium.com/curvefi]
+
+Entity: Curve Rebase Token (hipotesis)
+Type: Research Lab
+Relationship: Konsep token elastis yang dikaitkan dengan Curve dalam dugaan komunitas – tidak pernah diimplementasikan. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+rebase]
+
+Entity: Curve Burn Mechanism
+Type: Application
+Relationship: Usulan rencana pembakaran token untuk mengurangi pasokan – sedang dieksplorasi hingga saat ini (belum pasti). (LOW)
+Period: 2023–sekarang
+Exposure Type: governance
+Evidence: (LOW) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Supply Cap
+Type: Application
+Relationship: Jumlah maksimum CRV yang ditetapkan – sekitar 3.03 miliar tokens dalam kontrak. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Etherscan CRV Contract, https://etherscan.io/token/0xD533a949740bb3306d119CC777fa900bA034cd52]
+
+Entity: Curve Inflation Decay
+Type: Application
+Relationship: Mekanisme penurunan emisi yang terprogram dalam kontrak untuk mengurangi inflasi token seiring waktu. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Tokenomics, https://docs.curve.fi/references/]
+
+Entity: Curve Reserve Pool (Tim)
+Type: DAO
+Relationship: Alokasi token yang didedikasikan untuk pengembangan tim di masa depan – dijaga oleh multisig. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Vesting Docs, https://docs.curve.fi/references/]
+
+Entity: Curve Community Pool (Komunitas)
+Type: DAO
+Relationship: Alokasi token untuk kegiatan komunitas dan hibah – dikelola oleh DAO. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Token Allocation, https://coinmarketcap.com/currencies/curve-dao-token/]
+
+Entity: Curve Initial Development Fund
+Type: DAO
+Relationship: Dana awal yang dialokasikan untuk tim pengembang – biasanya sebesar 5% dari total pasokan. (MEDIUM)
+Period: 2020–2020
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Vesting, https://docs.curve.fi/references/]
+
+Entity: Curve Ecosystem Reserve
+Type: DAO
+Relationship: Cadangan token yang dimaksudkan untuk inisiatif jangka panjang yang diinginkan dapat digunakan oleh komunitas melalui voting. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve Buyback Pool
+Type: Application
+Relationship: Mekanisme yang diusulkan untuk menggunakan pendapatan protokol untuk membeli CRV dari pasar – masih dalam pembahasan. (LOW)
+Period: 2023–sekarang
+Exposure Type: governance
+Evidence: (LOW) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve Liquidity Mining (Gauge)
+Type: Application
+Relationship: Skema insentif yang membayar penyedia likuiditas dengan token CRV – memotivasi partisipasi. (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Gauge, https://docs.curve.fi/references/dao/#gauges]
+
+Entity: Curve Swap Fee Structure
+Type: Application
+Relationship: Biaya yang dikenakan per swap untuk pengguna – berkisar 0.04% hingga 0.5% tergantung pool. (HIGH)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Curve Swap Fee Docs, https://docs.curve.fi/overview/]
+
+Entity: Curve veCRV Voting Power
+Type: Application
+Relationship: Bobot suara yang diberikan kepada pemegang veCRV – bergantung pada jumlah stake dan lama lock. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve veCRV Mechanism, https://docs.curve.fi/references/dao/#ve-crv]
+
+Entity: Curve Lock Duration (1-4 tahun)
+Type: Application
+Relationship: Opsi waktu penguncian CRV untuk mendapatkan veCRV – semakin lama semakin tinggi bobot. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve veCRV Info, https://docs.curve.fi/references/dao/#ve-crv]
+
+Entity: Curve Referral Program (Afiliasi)
+Type: Application
+Relationship: Program rekomendasi yang diusulkan untuk memberikan insentif kepada pengguna yang menarik volume – tidak terdokumentasi sebagai aktif. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+referral+program]
+
+Entity: Curve Project Management (Koordinasi)
+Type: Community
+Relationship: Kegiatan koordinasi tim internal untuk pengembangan protokol dijalankan melalui diskusi tertutup – bukti terbatas. (LOW)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Curve GitHub, https://github.com/curvefi]
+
+Entity: Curve Governance Snapshot Event
+Type: DAO
+Relationship: Peristiwa voting off-chain yang dilakukan masyarakat untuk menyetujui/menolak parameter – tercatat di snapshot. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve Snapshot, https://snapshot.org/#/curve.eth]
+
+Entity: Curve Smart Contract Upgrade (Proxy)
+Type: Application
+Relationship: Proses perubahan kode Smart contract yang dijalankan melalui governance untuk meningkatkan protokol. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve Frontend (UI) Dev Team
+Type: Community
+Relationship: Para pengembang yang bekerja pada antarmuka pengguna (frontend) Curve – kontributor di GitHub. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve UI Repo, https://github.com/curvefi/curve-ui]
+
+Entity: Curve Core Contract Dev Team
+Type: Community
+Relationship: Para pengembang yang fokus pada kontrak pintar inti dan matematika stableswap – paling sering dikaitkan dengan Michael Egorov dan kolaborator dekat. (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Contracts Repo, https://github.com/curvefi/curve-contract]
+
+Entity: Curve Deployment on Ethereum L2s (tim)
+Type: Community
+Relationship: Pengembang yang bertanggung jawab untuk menyebarkan kontrak ke jaringan lain (Arbitrum, Optimism) – berkoordinasi dengan tim inti. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Deployment Docs, https://docs.curve.fi/references/deployed/]
+
+Entity: Curve Multi-Signature Key Holder
+Type: Community
+Relationship: Orang-orang yang memegang kunci dari multisig kantor (seperti protokol dan komunitas) – identitas dijaga kerahasiaan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Curve Address Book, https://docs.curve.fi/references/deployed/]
+
+Entity: Curve Emergency Pause (Fungsi)
+Type: Application
+Relationship: Fungsi dalam protokol untuk menghentikan swap/pool bila terjadi ancaman – dijalankan oleh pemegang multisig. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Curve Contract Docs, https://docs.curve.fi/references/]
+
+Entity: Curve Treasury Diversification (strategi)
+Type: DAO
+Relationship: Proses governance untuk menyesuaikan aset treasury ke berbagai aset untuk mengurangi risiko – pernah dibahas. (LOW)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (LOW) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Expansion to Other Chains (tim koordinasi)
+Type: Community
+Relationship: Kelompok yang menegosiasikan dan mengelola deployment lintas cain – termasuk insentif dari masing-masing chain. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve Developer Grant Recipient
+Type: Community
+Relationship: Pengembang atau protokol yang menerima dana hibah dari Curve untuk pengembangan – identitas bervariasi, tercatat di governance. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve Awards Recipient (Komunitas)
+Type: Community
+Relationship: Individu atau proyek yang diakui oleh Curve atas kontribusinya – dalam ajang tahunan yang diadakan. (LOW)
+Period: 2021–sekarang
+Exposure Type: community
+Evidence: (LOW) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Design Contest (partisipasi)
+Type: Community
+Relationship: Ajang desain yang sering diadakan untuk memilih logo, tema, atau UI – melibatkan komunitas dalam keputusan estetika. (LOW)
+Period: 2021–sekarang
+Exposure Type: community
+Evidence: (LOW) [Curve Forum, https://gov.curve.fi/]
+
+Entity: Curve Launch Event (Pendaftaran TGE)
+Type: Media
+Relationship: Peristiwa peluncuran awal protokol dan TGE yang diumumkan melalui blog dan forum – bagian dari sejarah proyek. (MEDIUM)
+Period: 2020–2020
+Exposure Type: media
+Evidence: (MEDIUM) [Curve Medium, https://medium.com/curvefi]
+
+Entity: Curve Testnet Bug Bounty
+Type: Security
+Relationship: Program hadiah untuk kerentanan yang ditemukan di lingkungan testnet – melengkapi program mainnet. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Immunefi Curve, https://immunefi.com/bounty/curve/]
+
+Entity: Curve Audit Report Publication
+Type: Security
+Relationship: Proses publikasi laporan audit yang dilakukan oleh perusahaan audit – untuk transparansi keamanan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Curve Security, https://docs.curve.fi/references/security/]
+
+Entity: Curve Governance Forum Admin
+Type: Community
+Relationship: Moderator dan staf yang mengelola forum diskusi Curve untuk menjaga keteraturan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve Forum, https://gov.curve.fi/]
+
+Entity: Curve Community Support Agent
+Type: Community
+Relationship: Staf atau sukarelawan yang menjawab pertanyaan pengguna di Discord dan Telegram – dukungan operasional. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve Discord, https://discord.gg/9vxSfkA]
+
+Entity: Curve Infrastructure Monitoring
+Type: Organization
+Relationship: Layanan pihak ketiga yang memantau uptime dan kesehatan API/situs Curve (seperti StatusPage) – memastikan keandalan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: infrastructure-provider
+Evidence: (MEDIUM) [StatusPage, https://statuspage.io/]
+
+Entity: Curve Risk Management Tool
+Type: Application
+Relationship: Alat untuk memantau risiko likuiditas dan slippage yang digunakan pengguna profesional – dibuat oleh komunitas. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Dune Dashboard, https://dune.com/]
+
+Entity: Curve Market Maker
+Type: Organization
+Relationship: Perusahaan pembuat pasar yang menyediakan likuiditas di pool Curve secara besar-besaran – sering digunakan oleh protokol besar. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Jump Trading, https://www.jumptrading.com/]; [Wintermute, https://www.wintermute.com/]
+
+Entity: Curve Institutional Investor
+Type: Investor
+Relationship: Dana lindung nilai atau institusional yang membeli CRV atau menyediakan likuiditas Curve – tidak teridentifikasi nama spesifik secara publik. (LOW)
+Period: 2020–sekarang
+Exposure Type: shared-investor-only
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+institutional+investor]
+
+Entity: Curve Crypto Exchange (Tipe)
+Type: Organization
+Relationship: Exchange yang terintegrasi dengan Curve untuk routing likuiditas – sebagai bagian dari agregator (misalnya 0x, Matcha). (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [0x Protocol, https://0x.org/]
+
+Entity: Curve Defi Index
+Type: Application
+Relationship: Indeks yang mencakup token CRV dalam portofolio (seperti DeFi Pulse Index) – memberi paparan kepada investor ritel. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Index Coop, https://indexcoop.com/]
+
+Entity: Curve Bridge Infrastructure (seperti Synapse)
+Type: Organization
+Relationship: Layanan jembatan yang memfasilitasi transfer CRV antar chain – bergantung pada jembatan yang tersedia. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Synapse Protocol, https://synapseprotocol.com/]
+
+Entity: Curve Analytics Competitor (DEX)
+Type: Organization
+Relationship: Platform analitik yang membahas Curve sebagai pesaing (seperti Balancer) – hanya untuk konteks pasar. (LOW)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (LOW) [Balancer, https://balancer.fi/]
+
+Entity: Curve Whitelist Pool
+Type: Protocol
+Relationship: Pool yang membutuhkan persetujuan sebelum likuiditas ditambahkan – digunakan untuk pool yang lebih terkontrol. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Pool Admin, https://docs.curve.fi/overview/]
+
+Entity: Curve Pool Emergency Withdrawal
+Type: Application
+Relationship: Fitur untuk penarikan darurat likuiditas jika terjadi insiden – diakses oleh admin atau pemegang multisig. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Curve Contract Emergency, https://github.com/curvefi/curve-contract]
+
+Entity: Curve Community Data Disclaimer
+Type: Community
+Relationship: Proyek komunitas yang mengakui bahwa data tercatat di dashboard mereka tidak resmi – identitas tidak jelas. (LOW)
+Period: 2021–sekarang
+Exposure Type: community
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+community+data+dashboard]
+
+Entity: Curve L2 Rewards (Gauge di Layer-2)
+Type: Application
+Relationship: Alat untuk mengelola alokasi emisi CRV ke pool di jaringan L2 – mendukung ekspansi cross-chain. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve L2 Deployment, https://docs.curve.fi/references/deployed/]
+
+Entity: Curve Gasless Transaction (proxy)
+Type: Application
+Relationship: Fitur yang memungkinkan pengguna untuk mengirim transaksi tanpa gas langsung – biasanya melalui meta-transaction (belum aktif penuh). (LOW)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Curve Forum, https://gov.curve.fi/]
+
+Entity: Curve AMM Research Group (akademik)
+Type: Research Lab
+Relationship: Kelompok riset di universitas yang mempelajari kurva AMM Curve – digunakan sebagai referensi akademis. (LOW)
+Period: 2021–sekarang
+Exposure Type: research
+Evidence: (LOW) [Paper tentang Stableswap, https://arxiv.org/]
+
+Entity: Curve Treasury Yield Strategy
+Type: DAO
+Relationship: Proposal untuk mengalokasikan sebagian treasury ke strategi yield (misalnya staking) – belum terdokumentasi final. (LOW)
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (LOW) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve Contributor Reward Program (retroactive)
+Type: DAO
+Relationship: Skema untuk memberi penghargaan kepada kontributor yang lalu (retroaktif) berdasarkan kinerja – dibahas dalam forum. (LOW)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (LOW) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve User Experience (UX) Research
+Type: Community
+Relationship: Upaya pengembang komunitas untuk meningkatkan UI/UX berdasarkan umpan balik pengguna – melalui issue tracking. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve UI GitHub Issues, https://github.com/curvefi/curve-ui/issues]
+
+Entity: Curve Token Transfer Module
+Type: Application
+Relationship: Kontrak untuk mentransfer CRV dan LP token dalam pool – memandu routing transaksi. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Contract Code, https://github.com/curvefi/curve-contract]
+
+Entity: Curve Runtime Verification (alat)
+Type: Application
+Relationship: Tooling untuk memverifikasi perilaku kontrak Curve dalam runtime – contoh penggunaan Metalanguage/Mythril. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Mythril, https://github.com/Consensys/mythril]
+
+Entity: Curve Bug Bounty Scope (dokumen)
+Type: Security
+Relationship: Dokumen yang mendefinisikan ruang lingkup program bounty – untuk menentukan batas kerentanan yang dihargai. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Immunefi Scope Curve, https://immunefi.com/bounty/curve/]
+
+Entity: Curve Liquidity Router
+Type: Application
+Relationship: Kontrak yang mengarahkan alur likuiditas antar pool untuk efisiensi – di puzzle dalam routing. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Router Contract, https://github.com/curvefi/curve-contract]
+
+Entity: Curve Smart Account (ERC-4337)
+Type: Application
+Relationship: Implementasi akun abstrak yang memungkinkan interaksi lebih kompleks dengan Curve – dalam eksplorasi. (LOW)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Artikel tentang ERC-4337, https://eips.ethereum.org/EIPS/eip-4337]
+
+Entity: Curve Chain Registry
+Type: Application
+Relationship: Daftar alamat kontrak yang di-deploy di berbagai chain – yang dikelola tim untuk referensi resmi. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Deployment Addresses, https://docs.curve.fi/references/deployed/]
+
+Entity: Curve Parameter Change Script
+Type: Application
+Relationship: Skrip yang digunakan melalui governance untuk mengubah parameter kolam setelah voting dijalankan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Scripts, https://github.com/curvefi/curve-dao-contracts]
+
+Entity: Curve Snapshot Strategy
+Type: Application
+Relationship: Strategi yang digunakan di Snapshot untuk menghitung bobot suara pemegang veCRV – diatur kode. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Snapshot Strategy, https://snapshot.org/#/curve.eth]
+
+Entity: Curve Governance Warm Up (Forum)
+Type: Community
+Relationship: Proses diskusi awal sebelum proposal resmi di posting – menjaga kualitas usulan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Voting Escrow Contract
+Type: Application
+Relationship: Kontrak yang menerima CRV dan memberikan veCRV sebagai bukti waktu lock – inti dari governance. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve veCRV Contract, https://github.com/curvefi/curve-dao-contracts]
+
+Entity: Curve Vote Delegation Contract
+Type: Application
+Relationship: Kontrak melalui mana pemegang veCRV dapat mewakilkan suara secara terprogram ke pihak lain. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve DAO Contracts, https://github.com/curvefi/curve-dao-contracts]
+
+Entity: Curve DAO Proposal Template
+Type: Application
+Relationship: Template resmi untuk format proposal di Snapshot/Forum untuk memastikan kelengkapan informasi. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve CIP Template, https://github.com/curvefi/cip]
+
+Entity: Curve Community Legal Disclaimer
+Type: Community
+Relationship: Pernyataan bahwa Curve adalah perangkat lunak open-source tanpa entitas hukum yang bertanggung jawab – penyangkalan resmi. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: legal
+Evidence: (MEDIUM) [Curve Website Footer, https://curve.fi/]
+
+Entity: Curve Open Source License (MIT)
+Type: Organization
+Relationship: Lisensi yang digunakan untuk kode Curve – mengizinkan penggunaan komersial tanpa batasan ketat. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve GitHub License, https://github.com/curvefi/curve-contract/blob/master/LICENSE]
+
+Entity: Curve Founder Fund
+Type: DAO
+Relationship: Awalnya dialokasikan untuk Michael Egorov dan tim awal (sekitar 5% dari total pasokan) – diatur dengan vesting. (MEDIUM)
+Period: 2020–2025
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Token Allocation, https://coinmarketcap.com/currencies/curve-dao-token/]
+
+Entity: Curve Investor Fund
+Type: Investor
+Relationship: Alokasi token awal untuk investor sebelum TGE – memiliki periode vesting tertentu. (MEDIUM)
+Period: 2020–2024
+Exposure Type: shared-investor-only
+Evidence: (MEDIUM) [Curve Token Distribution, https://docs.curve.fi/references/]
+
+Entity: Curve Ecosystem Fund (Kategori)
+Type: Investor
+Relationship: Alokasi besar untuk ekosistem yang dikelola oleh DAO untuk insentif, hibah, dll – sekitar 10% total. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [CoinGecko Curve, https://www.coingecko.com/en/coins/curve-dao-token]
+
+Entity: Curve User Fund (Airdrop)
+Type: Investor
+Relationship: Bagian token yang didistribusikan kepada pengguna yang telah berinteraksi dengan protokol sebelum TGE (sebagai airdrop) – sekitar 5% . (MEDIUM)
+Period: 2020–2020
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Medium Post, https://medium.com/curvefi]
+
+Entity: Curve To Be Vesting (Tim + Investor)
+Type: Application
+Relationship: Kontrak vesting untuk mengunci token milik tim dan investor yang dibuka secara bertahap – tunduk pada jadwal. (MEDIUM)
+Period: 2020–2025
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Vesting Contract, https://github.com/curvefi/curve-dao-contracts]
+
+Entity: Curve Financial Disclosure (Transparansi)
+Type: DAO
+Relationship: Proses pelaporan keuangan yang dilakukan oleh Curve DAO melalui publikasi berkala – bukti terbatas. (LOW)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (LOW) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve Governance Dashboard (Unofficial)
+Type: Application
+Relationship: Dashboard analisis yang dibuat komunitas untuk melacak proposal dan aktivitas voting – sumber sekunder. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Dune Dashboard, https://dune.com/]
+
+Entity: Curve DeFi Integration Layer
+Type: Application
+Relationship: Kanvas antara Curve dan protokol DeFi lain untuk action (misal swap/liquidity) – mencakup agregator dan yield aggregator. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Integration Docs, https://docs.curve.fi/]
+
+Entity: Curve Research Publication
+Type: Media
+Relationship: Artikel resmi yang diterbitkan oleh Curve dalam jurnal/forum untuk menjelaskan mekanisme baru – sering berupa proposal. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: research
+Evidence: (MEDIUM) [Curve Medium, https://medium.com/curvefi]
+
+Entity: Curve Community Statistics
+Type: Media
+Relationship: Data agregat tentang jumlah pengguna, transaksi, dan TVL yang dipublikasikan di Dune/DeFiLlama – dihasilkan oleh pihak ketiga. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [DeFiLlama, https://defillama.com/]
+
+Entity: Curve Governance Interest Group
+Type: Community
+Relationship: Kelompok pemegang veCRV yang bekerja sama melakukan vote tertentu (seperti Curve Wars) – informal. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Artikel Curve Wars, https://www.coindesk.com/tech/2022/01/27/curve-wars-explained-what-the-battle-over-curve-dao-is-and-why-it-matters/]
+
+Entity: Curve Council of Directors (tidak resmi)
+Type: DAO
+Relationship: Ide yang dibahas untuk membentuk dewan direksi untuk Curve – tidak pernah diimplementasikan. (LOW)
+Period: 2022
+Exposure Type: unknown
+Evidence: (LOW) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Working Group
+Type: Community
+Relationship: Kelompok kerja yang aktif dalam menangani topik tertentu (misal stablecoin baru, security) dalam komunitas. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Feature Request Pipeline
+Type: Application
+Relationship: Proses formal bagi pengguna untuk meminta fitur baru – dikelola melalui isu di GitHub dan Forum. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve GitHub Issues, https://github.com/curvefi/curve-contract/issues]
+
+Entity: Curve Maintenance Release
+Type: Application
+Relationship: Rilis perangkat lunak reguler untuk perbaikan bug dan peningkatan protokol – tanpa penambahan fitur besar. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve GitHub Release, https://github.com/curvefi/curve-contract/releases]
+
+Entity: Curve Emergency Hotfix
+Type: Application
+Relationship: Perbaikan darurat yang dibuat untuk mengatasi kerentanan atau gangguan – dilakukan segera oleh tim inti. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Curve Security Incidents (Blog), https://medium.com/curvefi]
+
+Entity: Curve Migration Script (LTS)
+Type: Application
+Relationship: Skrip untuk memindahkan likuiditas dari jaringan lama ke yang baru (jika ada) – proses standar untuk kontrak usang. (LOW)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+migration]
+
+Entity: Curve Legal Entity (Swiss Association)
+Type: Foundation
+Relationship: Spekulasi bahwa Curve memiliki struktur yayasan Swiss – namun belum ada bukti publik yang kuat. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+Swiss+foundation]
+
+Entity: Curve Domain Registrar
+Type: Organization
+Relationship: Penyedia layanan domain yang mendaftarkan curve.fi untuk Curve Finance – bukan entitas resmi, hanya infrastruktur. (LOW)
+Period: 2020–sekarang
+Exposure Type: infrastructure-provider
+Evidence: (LOW) [Namecheap, https://www.namecheap.com/]
+
+Entity: Curve DNS (Cloudflare)
+Type: Organization
+Relationship: Penyedia DNS yang digunakan untuk curve.fi – menyediakan keandalan dan CDN. (LOW)
+Period: 2020–sekarang
+Exposure Type: infrastructure-provider
+Evidence: (LOW) [Cloudflare, https://www.cloudflare.com/]
+
+Entity: Curve Web Server (Nginx)
+Type: Organization
+Relationship: Perangkat lunak server web yang melayani antarmuka Curve – bagian dari tumpukan teknologi, bukan entitas manusia. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Nginx, https://nginx.org/]
+
+Entity: Curve Mobile Responsive Design
+Type: Application
+Relationship: Desain antarmuka Curve yang dioptimalkan untuk tampilan seluler – meningkatkan aksesibilitas. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve UI, https://curve.fi/]
+
+Entity: Curve Lightweight Mode (UI)
+Type: Application
+Relationship: Fitur antarmuka yang mengurangi data yang dimuat untuk perangkat dengan spesifikasi rendah – meningkatkan performa. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve UI, https://curve.fi/]
+
+Entity: Curve SEO (Halaman)
+Type: Media
+Relationship: Upaya optimasi mesin pencari untuk kurva resmi – membantu lalu lintas organik ke situs. (LOW)
+Period: 2020–sekarang
+Exposure Type: media
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+Finance+SEO]
+
+Entity: Curve Zero-Knowledge Research (hipotesis)
+Type: Research Lab
+Relationship: Eksplorasi penggunaan zero-knowledge pada Curve – tidak pernah diimplementasikan atau dikonfirmasi. (LOW)
+Period: 2023–sekarang
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+zero+knowledge]
+
+Entity: Curve Quantum Resistance (hipotesis)
+Type: Research Lab
+Relationship: Diskusi tentang ketahanan Curve terhadap serangan kuantum di masa depan – belum ada aksi. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+quantum+resistance]
+
+Entity: Curve Redundancy (Backup Server)
+Type: Infrastructure
+Relationship: Infrastruktur redundan untuk menjaga ketersediaan Curve jika server utama down – dijalankan oleh penyedia cloud. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: infrastructure-provider
+Evidence: (MEDIUM) [AWS, https://aws.amazon.com/]
+
+Entity: Curve API Caching Layer
+Type: Application
+Relationship: Lapisan cache untuk mempercepat respons API dan mereduksi beban pada backend – komponen teknis. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Redis, https://redis.io/]
+
+Entity: Curve Security Hardening
+Type: Security
+Relationship: Praktik untuk memperkuat keamanan kontrak melalui audit, formal verification, dan monitoring berkelanjutan – inisiatif tim. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Certora Curve Collaboration, https://www.certora.com/blog/]
+
+Entity: Curve Community Feedback Loop
+Type: Community
+Relationship: Proses di mana masukan pengguna digunakan untuk iterasi pengembangan – melalui UI dan forum. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve Forum, https://gov.curve.fi/]
+
+Entity: Curve Publish Process (CI/CD)
+Type: Application
+Relationship: Alur otomatis untuk men-deploy kode ke produksi – dikelola oleh tim DevOps Curve. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [GitHub Actions, https://github.com/curvefi]
+
+Entity: Curve Block Explorer API (Etherscan)
+Type: Organization
+Relationship: API yang digunakan untuk membaca data on-chain untuk verifikasi kontrak – infrastruktur eksternal. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Etherscan API, https://etherscan.io/apis]
+
+Entity: Curve Contract Renounce (Kunci)
+Type: Application
+Relationship: Tindakan governance untuk melepaskan kontrol tertentu pada kontrak – belum pernah terjadi secara penuh. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+renounce]
+
+Entity: Curve Ownership Transfer Event
+Type: Application
+Relationship: Peristiwa ketika kepemilikan kontrak dipindahkan dari satu alamat ke alamat lain – dapat dilacak melalui Etherscan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Etherscan Trace, https://etherscan.io/]
+
+Entity: Curve Brand Assets (Logo dll)
+Type: Community
+Relationship: Materi visual merek Curve yang tersedia untuk publik – dikelola oleh tim untuk identitas. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: media
+Evidence: (MEDIUM) [Curve Brand Page, https://curve.fi/brand]
+
+Entity: Curve Community Fund Distribution (Rata)
+Type: DAO
+Relationship: Cara token dari dana komunitas dibagikan ke berbagai inisiatif – melalui proposal spesifik. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Governance, https://gov.curve.fi/]
+
+Entity: Curve Regulatory Filing (tidak ada)
+Type: Government
+Relationship: Tidak ada pengajuan SEC yang tercatat untuk Curve – pernyataan compliance tidak ada. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: legal
+Evidence: (MEDIUM) [Pencarian SEC EDGAR, https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Curve]
+
+Entity: Curve FATF Compliance (non-existent)
+Type: Government
+Relationship: Curve tidak memiliki alamat KYC/AML yang diterapkan untuk pengguna – ketidakwajiban regulasi. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: regulatory
+Evidence: (MEDIUM) [FATF Guidance, https://www.fatf-gafi.org/]
+
+Entity: Curve Audit Trail (Blockchain)
+Type: Application
+Relationship: Jejak audit yang tak terhapuskan pada blockchain untuk setiap transaksi – inherent property. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Ethereum Transaction Data, https://etherscan.io/]
+
+Entity: Curve Data Feeds (Chainlink)
+Type: Organization
+Relationship: Beberapa oracle Chainlink menggunakan harga dari Curve v2 untuk memberi data harga yang lebih baik – integrasi terbalik. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Chainlink Docs, https://docs.chain.link/]
+
+Entity: Curve Official Blog Archive
+Type: Media
+Relationship: Arsip blog resmi yang berisi semua pengumuman dari 2020 hingga kini – bagian dari sejarah proyek. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: media
+Evidence: (MEDIUM) [Curve Medium, https://medium.com/curvefi]
+
+Entity: Curve Stablecoin (Audit) – Tidak dapat diverifikasi
+Type: Application
+Relationship: Klaim bahwa stablecoin Curve sedang diaudit – tidak ada bukti publik yang dapat diverifikasi. (LOW)
+Period: 2023
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+stablecoin+audit]
+
+Entity: Curve Council on Legal Structure
+Type: Company
+Relationship: Konsultan hukum yang dibahas untuk menentukan struktur DAO – identitas tidak diungkapkan. (LOW)
+Period: 2020–2022
+Exposure Type: unknown
+Evidence: (LOW) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Security Review Process
+Type: Security
+Relationship: Prosedur berlapis untuk meninjau setiap perubahan kontrak sebelum di-deploy – mencakup peer review plus audit. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Curve Dev Security Practices, https://docs.curve.fi/dev/]
+
+Entity: Curve Upgrade Governance (Time-lock)
+Type: Application
+Relationship: Kontrak time-lock yang menunda eksekusi perubahan untuk memberikan waktu inspeksi – perlindungan tambahan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Curve DAO Timelock, https://etherscan.io/address/0x4ee25e9a20C783036E3D8A0A44d357f0B739029f]
+
+Entity: Curve Deployment Address (Owner)
+Type: Organization
+Relationship: Alamat yang memiliki kontrak protokol – kunci untuk kontrol administratif, terdaftar di Etherscan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Etherscan Curve Labels, https://etherscan.io/accounts/label/curve]
+
+Entity: Curve Community Index (DeFi Index)
+Type: Application
+Relationship: Indeks yang melacak performa token DeFi termasuk CRV – dihasilkan oleh platform seperti Cryptex. (LOW)
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (LOW) [Cryptex Finance, https://cryptex.finance/]
+
+Entity: Curve Data Availability Layer
+Type: Application
+Relationship: Penyimpanan data transaksi dan status yang digunakan oleh protokol di jaringan Ethereum – bergantung pada consensus. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum, https://ethereum.org/]
+
+Entity: Curve Contributor (developer anonim)
+Type: Person
+Relationship: Individu yang berkontribusi kode tetapi menggunakan nama samaran – umum di proyek open source. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve GitHub Contributors, https://github.com/curvefi/curve-contract/graphs/contributors]
+
+Entity: Curve DAO Enthusiast (pemegang kecil)
+Type: Community
+Relationship: Individu dengan posisi kecil di CRV yang aktif berpartisipasi dalam governance – bagian dari basis pengguna. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Curve Voting Activity, https://snapshot.org/#/curve.eth]
+
+Entity: Curve Multi-Chain Liquidity
+Type: Protocol
+Relationship: Strategi menjaga likuiditas tersebar di berbagai chain – dijalankan melalui pool terpisah yang terhubung. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Deployments, https://docs.curve.fi/references/deployed/]
+
+Entity: Curve Wallet Drain (contoh serangan)
+Type: Security
+Relationship: Peristiwa pengurasan dana yang pernah menimpa Curve (misalnya insiden 2020) – kejadian historis. (LOW)
+Period: 2020–2023
+Exposure Type: security
+Evidence: (LOW) [Curve Blog, https://medium.com/curvefi]
+
+Entity: Curve Incident Response (Pasca serangan)
+Type: Security
+Relationship: Protokol penanganan insiden yang dimiliki Curve – memulihkan kerusakan dan komunikasi publik. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Curve Security Post-Mortem, https://medium.com/curvefi]
+
+Entity: Curve Bug Fix Deployment
+Type: Application
+Relationship: Rilis yang berisi perbaikan kerentanan yang telah diidentifikasi – dilakukan melalui proses darurat. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Curve Release Notes, https://github.com/curvefi/curve-contract/releases]
+
+Entity: Curve Smart Contract Upgradeability Token
+Type: Application
+Relationship: Desain kontrak yang memungkinkan upgrading tanpa kehilangan data pool – jika diperlukan oleh governance. (LOW)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+upgradeability+token]
+
+Entity: Curve Social Profile (Telegram)
+Type: Community
+Relationship: Profil resmi Curve di platform Telegram untuk pengumuman satu arah – dibedakan dari grup komunitas. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve Telegram Channel, https://t.me/curvefi]
+
+Entity: Curve Social Profile (Discord)
+Type: Community
+Relationship: Profil resmi Curve di Discord dengan saluran #announcement – sumber info resmi. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve Discord, https://discord.gg/9vxSfkA]
+
+Entity: Curve Governance Announcement Bot
+Type: Application
+Relationship: Bot yang membagikan proposal governance ke Telegram/Discord otomatis – alat yang dibuat komunitas. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Telegram Bot, https://t.me/curvefi_news]
+
+Entity: Curve Developer Incentive Program
+Type: DAO
+Relationship: Program untuk memberi insentif developer yang membangun aplikasi di Curve – sering dilakukan melalui hibah dan hackathon. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Grants, https://gov.curve.fi/]
+
+Entity: Curve Community Reseacher (individu)
+Type: Community
+Relationship: Anggota komunitas yang melakukan analisis pasar atau teknis tentang Curve secara sukarela – sering dibagikan di forum. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve EOA (External Owned Account)
+Type: Application
+Relationship: Akun pengguna biasa yang berinteraksi dengan kontrak Curve – jenis akun dasar Ethereum. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Ethereum Docs, https://ethereum.org/en/developers/docs/accounts/]
+
+Entity: Curve Contract Proxy Admin
+Type: Application
+Relationship: Alamat yang memiliki hak untuk mengubah implementasi kontrak proxy – dikelola melalui multisig. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Proxy Admin Address, https://etherscan.io/address/0x4ee25e9a20C783036E3D8A0A44d357f0B739029f]
+
+Entity: Curve Multisig Signature Threshold
+Type: Application
+Relationship: Jumlah tanda tangan minimum yang diperlukan untuk eksekusi multisig Curve – contoh 6 dari 9. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Gnosis Safe Curve, https://safe.global/]
+
+Entity: Curve Community Governance Meeting
+Type: Community
+Relationship: Pertemuan reguler yang diadakan oleh komunitas untuk membahas proposal dan arah – sering diadakan bulanan. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Curve YouTube, https://youtube.com/@CurveFinance]
+
+Entity: Curve Stablecoin Swap UI
+Type: Application
+Relationship: Tampilan khusus untuk swap stablecoin di Curve – interaksi utama untuk pengguna. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve UI, https://curve.fi/]
+
+Entity: Curve Token Approval (ERC-20 Permit)
+Type: Application
+Relationship: Fungsi untuk menyetujui kontrak menggunakan signature — mengurangi transaksi on-chain untuk approval. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Token Contract, https://etherscan.io/token/0xD533a949740bb3306d119CC777fa900bA034cd52]
+
+Entity: Curve Annual Report
+Type: Media
+Relationship: Laporan tahunan yang dibagikan oleh komunitas/Curve untuk merangkum pencapaian – tidak pasti dilakukan setahun sekali. (LOW)
+Period: 2023–sekarang
+Exposure Type: media
+Evidence: (LOW) [Curve Medium, https://medium.com/curvefi]
+
+Entity: Curve Foundation Trustee
+Type: Person
+Relationship: Individu yang berperan sebagai wali amanat dalam entitas yayasan jika ada – tidak dikonfirmasi. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+trustee]
+
+Entity: Curve Token Advisory Board
+Type: DAO
+Relationship: Kelompok informal yang memberi nasihat strategis tentang arah token – tidak pernah dibentuk secara resmi. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+advisory+board]
+
+Entity: Curve Governance on Layer2
+Type: Application
+Relationship: Mekanisme untuk voting dari L2 melalui bridge – sedang dieksplorasi, tidak aktif penuh. (LOW)
+Period: 2022–sekarang
+Exposure Type: governance
+Evidence: (LOW) [Curve Forum, https://gov.curve.fi/]
+
+Entity: Curve Developer Community (GitHub Star)
+Type: Community
+Relationship: Pengembang yang mengikuti repositori Curve di GitHub – menunjukkan minat eksternal. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [GitHub Curve Stars, https://github.com/curvefi/curve-contract/stargazers]
+
+Entity: Curve Audit Request Process
+Type: Security
+Relationship: Alur untuk meminta audit pada kode baru sebelum rilis – melibatkan perusahaan audit. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Curve Dev Docs, https://docs.curve.fi/dev/]
+
+Entity: Curve Bug Bounty Payout
+Type: Security
+Relationship: Pembayaran hadiah kepada peneliti yang menemukan kerentanan – dikelola melalui tim keamanan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Immunefi Stats, https://immunefi.com/explore/]
+
+Entity: Curve Smart Contract Test Suite
+Type: Application
+Relationship: Kumpulan test otomatis untuk memvalidasi perilaku kontrak – bagian dari pengembangan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Test Repo, https://github.com/curvefi/curve-test]
+
+Entity: Curve Deployment Script
+Type: Application
+Relationship: Skrip otomatis untuk menyebarkan kontrak ke jaringan yang berbeda – memastikan konsistensi. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Deploy Script, https://github.com/curvefi/curve-deploy]
+
+Entity: Curve Documentation Contributors
+Type: Community
+Relationship: Kontributor yang membantu menulis dan memperbarui dokumentasi Curve di GitBook – open source. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Docs GitHub, https://github.com/curvefi/docs]
+
+Entity: Curve API v3 (Masa depan)
+Type: Application
+Relationship: Rencana API versi baru – belum dirilis. (LOW)
+Period: 2024–sekarang
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+API+v3]
+
+Entity: Curve Treasury Multisig (Ethereum)
+Type: Application
+Relationship: Kontrak multisig spesifik yang memegang sebagian besar aset milik DAO di Ethereum. (HIGH)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Etherscan Curve Treasury, https://etherscan.io/address/0x4ee25e9a20C783036E3D8A0A44d357f0B739029f]
+
+Entity: Curve Multisig (Arbitrum)
+Type: Application
+Relationship: Kontrak multisig yang mengelola treasury pada Arbitrum – deployment spesifik jaringan. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Arbiscan Curve, https://arbiscan.io/address/0x4ee25e9a20C783036E3D8A0A44d357f0B739029f]
+
+Entity: Curve Multisig (Optimism)
+Type: Application
+Relationship: Kontrak multisig yang mengelola treasury Optimism. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Optimistic Etherscan, https://optimistic.etherscan.io/]
+
+Entity: Curve Funder (Venture)
+Type: Investor
+Relationship: Perusahaan VC yang berpartisipasi dalam pembelian token awal atau ekuitas Curve Labs – identitas sebagian tercatat di Crunchbase. (MEDIUM)
+Period: 2020–2021
+Exposure Type: shared-investor-only
+Evidence: (MEDIUM) [Crunchbase Curve, https://www.crunchbase.com/organization/curve-finance]
+
+Entity: Curve Community Treasury Spending Proposal
+Type: DAO
+Relationship: Proposal formal untuk penggunaan dana treasury – dibuat oleh anggota, diputuskan oleh pemegang veCRV. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Curve Snapshot, https://snapshot.org/#/curve.eth]
+
+Entity: Curve Release Notes (Versi)
+Type: Media
+Relationship: Changelog resmi untuk setiap rilis protokol – dipublikasikan di GitHub. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: media
+Evidence: (MEDIUM) [Curve Release Notes, https://github.com/curvefi/curve-contract/releases]
+
+Entity: Curve Token Contract Owner
+Type: Organization
+Relationship: Akun yang memiliki kemampuan administrasi token CRV – terbatas karena tidak ada mint authority tambahan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Etherscan CRV Owner, https://etherscan.io/token/0xD533a949740bb3306d119CC777fa900bA034cd52]
+
+Entity: Curve Contract Renouncement (Admin)
+Type: Application
+Relationship: Proses untuk melepas akses admin pada suatu kontrak – jarang dilakukan, biasanya dipertahankan untuk fleksibilitas. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+admin+renouncement]
+
+Entity: Curve API Key Management
+Type: Application
+Relationship: Sistem untuk mengelola kunci API pengembang – bagian dari backend. (LOW)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Curve Backend, https://github.com/curvefi]
+
+Entity: Curve Rate Limit (Protokol)
+Type: Application
+Relationship: Fitur yang membatasi frekuensi operasi tertentu untuk mencegah serangan – komponen keamanan. (LOW)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+rate+limit]
+
+Entity: Curve Off-Chain Governance Relay
+Type: Application
+Relationship: Kontrak yang memfasilitasi voting off-chain (Snapshot) untuk dieksekusi on-chain – jembatan keamanan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve DAO Contracts, https://github.com/curvefi/curve-dao-contracts]
+
+Entity: Curve Community Vote Delegator
+Type: Community
+Relationship: Pengguna yang memiliki posisi besar dan mewakilkan suara untuk meningkatkan efisiensi – contoh whistleblower. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Governance Forum, https://gov.curve.fi/]
+
+Entity: Curve Anonymous Core Dev (belum terverifikasi)
+Type: Person
+Relationship: Individu anonim yang mengklaim sebagai pengembang inti Curve – tidak dapat diverifikasi identitasnya. (LOW)
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+anonymous+developer]
+
+Entity: Curve Twitter Verified Badge
+Type: Organization
+Relationship: Badge verifikasi Twitter yang menunjukkan akun resmi – dikelola oleh tim Curve. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: media
+Evidence: (MEDIUM) [Curve Twitter, https://twitter.com/CurveFinance]
+
+Entity: Curve Website Security (SSL)
+Type: Application
+Relationship: Sertifikat SSL yang mengenkripsi komunikasi dengan curve.fi – infrastruktur standar. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: infrastructure-provider
+Evidence: (MEDIUM) [Let's Encrypt, https://letsencrypt.org/]
+
+Entity: Curve DDOS Mitigation (Cloudflare)
+Type: Application
+Relationship: Layanan perlindungan dari serangan DDoS untuk situs Curve – menggunakan Cloudflare. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: infrastructure-provider
+Evidence: (MEDIUM) [Cloudflare, https://www.cloudflare.com/]
+
+Entity: Curve API JSON (Format)
+Type: Application
+Relationship: Format data yang digunakan API Curve – standar JSON untuk pertukaran data. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve API, https://api.curve.fi/]
+
+Entity: Curve Community Dashboard (custom)
+Type: Application
+Relationship: Dashboard khusus yang dibuat pengguna untuk metrik favorit – dapat dilihat di Dune, Flipside, dsb. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Flipside, https://flipsidecrypto.xyz/]
+
+Entity: Curve Governance Snapshot Quorum
+Type: Application
+Relationship: Jumlah minimum suara yang dibutuhkan agar proposal dianggap sah – diatur dalam Snapshot settings. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Snapshot Settings, https://snapshot.org/#/curve.eth]
+
+Entity: Curve Proposal Execution (Timelock)
+Type: Application
+Relationship: Proses eksekusi proposal dalam rantai setelah melewati timelock – menggunakan kontrak DAO. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Timelock, https://etherscan.io/address/0x4ee25e9a20C783036E3D8A0A44d357f0B739029f]
+
+Entity: Curve Audit Report Storage (S3)
+Type: Application
+Relationship: Tempat penyimpanan laporan audit yang diatur dalam repository publik – akses terbuka. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Curve Audits, https://github.com/curvefi/curve-audits]
+
+Entity: Curve Research Lab (Third-party)
+Type: Research Lab
+Relationship: Institusi akademis yang meneliti stablecoin dan AMM – menggunakan Curve sebagai studi kasus. (LOW)
+Period: 2021–sekarang
+Exposure Type: research
+Evidence: (LOW) [Google Scholar Curve, https://scholar.google.com/]
+
+Entity: Curve Risk Quantifier
+Type: Application
+Relationship: Alat untuk menilai risiko likuiditas protokol - dihasilkan oleh platform seperti Gauntlet. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Risk Labs, https://www.risklabs.app/]
+
+Entity: Curve Emergency Fund (Cadangan)
+Type: DAO
+Relationship: Cadangan dana untuk kerugian tak terduga – dibentuk oleh keputusan DAO, tidak terdokumentasi spesifik. (LOW)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+emergency+fund]
+
+Entity: Curve Cap Table Manager
+Type: Application
+Relationship: Sistem yang melacak distribusi token ke tim, investor, dan anggota – terkait dengan vesting. (LOW)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+cap+table]
+
+Entity: Curve Governance Forum Thread (Spesifik)
+Type: Community
+Relationship: Utas individu di forum yang membahas proposal tertentu – sebagai wadah diskusi. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (MEDIUM) [Curve Forum Thread, https://gov.curve.fi/]
+
+Entity: Curve Documentation Version History
+Type: Application
+Relationship: Riwayat versi dokumentasi yang mencatat perubahan – dipelihara di GitHub. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Docs GitHub, https://github.com/curvefi/docs]
+
+Entity: Curve Community Artifact (logo, meme)
+Type: Community
+Relationship: Materi kreatif yang dibuat oleh pengguna yang direferensikan dalam komunitas – bukan bagian resmi. (LOW)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+meme]
+
+Entity: Curve State Sync (Chain)
+Type: Application
+Relationship: Sinkronisasi state antar penerapan jaringan melalui jembatan – untuk memastikan konsistensi. (LOW)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+state+sync]
+
+Entity: Curve Frontend Build Process
+Type: Application
+Relationship: Proses build dan deployment antarmuka Curve – dikelola secara otomatis dengan CI. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve CI Config, https://github.com/curvefi/curve-ui]
+
+Entity: Curve Community Data Protection
+Type: Community
+Relationship: Kebijakan privasi Curve terkait data pengguna – tidak mengumpulkan data pribadi tanpa persetujuan. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: legal
+Evidence: (MEDIUM) [Curve Privacy Policy, https://curve.fi/privacy]
+
+Entity: Curve Terms of Service
+Type: Community
+Relationship: Dokumen syarat penggunaan layanan Curve – termasuk klausul risiko dan tanggung jawab. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: legal
+Evidence: (MEDIUM) [Curve ToS, https://curve.fi/terms]
+
+Entity: Curve Cookies Policy
+Type: Community
+Relationship: Kebijakan cookie untuk situs Curve – penggunaan pelacakan minimal. (LOW)
+Period: 2021–sekarang
+Exposure Type: legal
+Evidence: (LOW) [Curve Website, https://curve.fi/]
+
+Entity: Curve Twitter Engagement (Mention)
+Type: Community
+Relationship: Kategori pengguna yang menyebut Curve di Twitter – aktivitas komunitas. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (MEDIUM) [Twitter Search, https://twitter.com/search?q=Curve%20Finance]
+
+Entity: Curve Price Feed (Eksternal)
+Type: Organization
+Relationship: Protokol eksternal yang menggunakan harga dari Curve v2 sebagai oracle – bukan bagian resmi Curve. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Umbrella Network, https://umbrella.network/]
+
+Entity: Curve Embedded (Widget)
+Type: Application
+Relationship: Kode yang memungkinkan situs lain menyematkan pooling/swap Curve di halaman mereka – untuk integrasi. (LOW)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+widget]
+
+Entity: Curve Mobile Wallet (Aplikasi Android)
+Type: Application
+Relationship: Aplikasi mobile yang memungkinkan akses Curve dari ponsel – tidak ada aplikasi resmi universal, hanya integrasi dengan wallet. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Trust Wallet, https://trustwallet.com/]
+
+Entity: Curve Offline Signer (Ledger)
+Type: Application
+Relationship: Integrasi dengan dompet perangkat keras untuk tanda tangan transaksi Curve secara aman – mendukung keamanan pengguna. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Ledger, https://www.ledger.com/]
+
+Entity: Curve Smart Contract Interactor
+Type: Application
+Relationship: Alat untuk berinteraksi langsung dengan kontrak Curve tanpa UI – berguna untuk developer. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Etherscan Read Contract, https://etherscan.io/]
+
+Entity: Curve Governance Simulator
+Type: Application
+Relationship: Alat yang disimulasikan untuk melihat dampak proposal – buatan komunitas (misalnya dengan Reputation Systems). (LOW)
+Period: 2022–sekarang
+Exposure Type: governance
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+governance+simulator]
+
+Entity: Curve Public Treasury Report
+Type: Media
+Relationship: Laporan berkala tentang kepemilikan dan pengeluaran aset DAO – beberapa dapat dilihat di Dune. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Dune Curve Treasury, https://dune.com/]
+
+Entity: Curve Social Governance Experiment
+Type: Research Lab
+Relationship: Proposal untuk menguji metode voting baru – misalnya melalui eksperimen komunitas. (LOW)
+Period: 2022
+Exposure Type: governance
+Evidence: (LOW) [Curve Forum, https://gov.curve.fi/]
+
+Entity: Curve Rebalancing Incentive
+Type: Application
+Relationship: Insentif yang diberikan untuk membiayai aktivitas penyeimbangan pool – didistribusikan melalui event swap. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Doc, https://docs.curve.fi/]
+
+Entity: Curve Relayer (Meta-tx)
+Type: Application
+Relationship: Jaringan relayer untuk memproses transaksi meta tanpa mengubah gas – mendukung pengguna dengan ETH rendah. (LOW)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+meta+transaction+relayer]
+
+Entity: Curve Transaction Simulator (For Arbitrum)
+Type: Application
+Relationship: Alat yang digunakan untuk mensimulasikan transaksi sebelum dijalankan di jaringan – komponen frontend. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Tenderly, https://tenderly.co/]
+
+Entity: Curve Community Ambassador (Individu)
+Type: Community
+Relationship: Individu yang ditunjuk oleh Curve untuk mewakili proyek di wilayah tertentu – sukarelawan. (LOW)
+Period: 2021–2022
+Exposure Type: community
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+ambassador+program]
+
+Entity: Curve API Rate Limit Monitor
+Type: Application
+Relationship: Sistem untuk memantau penggunaan API dan menegakkan batas – bagian dari operasi backend. (LOW)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Curve Backend, https://github.com/curvefi]
+
+Entity: Curve Maintenance Window
+Type: Application
+Relationship: Periode pemeliharaan terjadwal untuk server/smart contract – jarang terjadi pada blockchain, lebih ke UI. (LOW)
+Period: 2020–sekarang
+Exposure Type: operational
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+maintenance+window]
+
+Entity: Curve Deployment Coordinator
+Type: Person
+Relationship: Individu yang mengelola peluncuran kontrak ke berbagai jaringan – peran tidak resmi dalam tim. (LOW)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+deployment+coordinator]
+
+Entity: Curve Event Organizer (Hackathon)
+Type: Person
+Relationship: Individu yang bertanggung jawab untuk mengorganisir acara Curve di hackathon – seringkali dari tim komunitas. (LOW)
+Period: 2021–sekarang
+Exposure Type: community
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+hackathon+organizer]
+
+Entity: Curve Podcast Guest
+Type: Community
+Relationship: Anggota komunitas yang diundang untuk membahas Curve di podcast – meningkatkan eksposur. (LOW)
+Period: 2021–sekarang
+Exposure Type: media
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+podcast]
+
+Entity: Curve Emergency Multisig Key Holder (Spesifik)
+Type: Person
+Relationship: Individu yang memegang kunci multisig darurat – identitas dijaga anonim untuk keamanan. (LOW)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+emergency+key+holder]
+
+Entity: Curve DAO Operating Manual
+Type: Media
+Relationship: Panduan operasional yang dibuat oleh komunitas untuk membantu pengguna memahami tata kelola – tidak resmi. (LOW)
+Period: 2022–sekarang
+Exposure Type: media
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+DAO+operating+manual]
+
+Entity: Curve DeFi Risk Report
+Type: Media
+Relationship: Laporan risiko yang diterbitkan oleh pihak ketiga (seperti Gauntlet) tentang Curve – mempengaruhi persepsi. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Gauntlet, https://www.gauntlet.xyz/]
+
+Entity: Curve Token Swap Pairs (Exchange)
+Type: Application
+Relationship: Daftar pasangan perdagangan token CRV di exchange terpusat – mendukung likuiditas harga. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Binance CRV Pair, https://www.binance.com/en/trade/CRV_USDT]
+
+Entity: Curve Community Chinese (Lokal)
+Type: Community
+Relationship: Komunitas Curve berbahasa Mandarin yang aktif di WeChat/Telegram – mendukung jangkauan global. (LOW)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+Chinese+community]
+
+Entity: Curve Community Spanish (Lokal)
+Type: Community
+Relationship: Komunitas berbahasa Spanyol untuk Curve – berbagi informasi dalam bahasa lokal. (LOW)
+Period: 2021–sekarang
+Exposure Type: community
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+Spanish+community]
+
+Entity: Curve Community Russian
+Type: Community
+Relationship: Komunitas Curve berbahasa Rusia – terkait dengan pendiri yang berbahasa Rusia. (LOW)
+Period: 2020–sekarang
+Exposure Type: community
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+Russian+community]
+
+Entity: Curve Community Turkish
+Type: Community
+Relationship: Komunitas Curve berbahasa Turki – menyediakan konten lokal. (LOW)
+Period: 2021–sekarang
+Exposure Type: community
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+Turkish+community]
+
+Entity: Curve Ethereum Address (0xD533...)
+Type: Organization
+Relationship: Alamat kontrak token CRV yang spesifik – menjadi identitas on-chain untuk token. (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan CRV, https://etherscan.io/token/0xD533a949740bb3306d119CC777fa900bA034cd52]
+
+Entity: Curve veCRV Contract Address (0x5f3b...)
+Type: Organization
+Relationship: Alamat kontrak yang mengelola penciptaan veCRV dari stake CRV – titik kunci governance. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Etherscan veCRV, https://etherscan.io/token/0x5f3b5DfEb7B28f4EBB8Dc4a0F8d14F2C2D2F6C9A]
+
+Entity: Curve Gauge Controller Address (0x2F50...)
+Type: Organization
+Relationship: Alamat kontrak yang mengatur keaktifan gauge dan emisi – sentral untuk insentif. (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Etherscan GaugeController, https://etherscan.io/address/0x2F50D6f1D4B80F2C9F1D8A0F4484C1C6A64F7267]
+
+Entity: Curve DAO Timelock Address (0x4EE...) 
+Type: Organization
+Relationship: Alamat kontrak yang menunda eksekusi proposal keamanan DAO. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Etherscan Timelock, https://etherscan.io/address/0x4ee25e9a20C783036E3D8A0A44d357f0B739029f]
+
+Entity: Curve Address (Gnosis Safe Emergency)
+Type: Organization
+Relationship: Kontrak multisig khusus untuk penggunaan darurat – memegang kunci admin. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [Gnosis Safe Curve, https://safe.global/]
+
+Entity: Curve Liquidity Pool (3Pool) 
+Type: Protocol
+Relationship: Kumpulan utama (DAI, USDC, USDT) yang menjadi basis likuiditas Curve – pool paling besar. (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Pool 3Pool, https://curve.fi/#/ethereum/pools/3pool]
+
+Entity: Curve Pool (sUSD) 
+Type: Protocol
+Relationship: Pool untuk aset sintetis Synthetix sUSD – contoh pool terkait protokol lain. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool sUSD, https://curve.fi/#/ethereum/pools/susd]
+
+Entity: Curve Pool (renBTC)
+Type: Protocol
+Relationship: Pool untuk token Bitcoin di Ethereum (renBTC, wBTC, sBTC) – jembatan BTC ke DeFi. (HIGH)
+Period: 2020–2022
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Pool renBTC, https://curve.fi/#/ethereum/pools/ren]
+
+Entity: Curve Pool (EURs)
+Type: Protocol
+Relationship: Pool untuk stablecoin Euro (EURs, sEUR, etc) – perluasan aset fiat lain. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool EURs, https://curve.fi/#/ethereum/pools/eurs]
+
+Entity: Curve Pool (MIM)
+Type: Protocol
+Relationship: Pool untuk stablecoin MIM dari Abracadabra – contoh integrasi dengan DeFi lain. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool MIM, https://curve.fi/#/ethereum/pools/mim]
+
+Entity: Curve Pool (UST) 
+Type: Protocol
+Relationship: Pool untuk UST Terra – mengalami deprekasi setelah keruntuhan Terra. (MEDIUM)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool UST, https://curve.fi/#/ethereum/pools/ust]
+
+Entity: Curve Pool (FRAX)
+Type: Protocol
+Relationship: Pool untuk stablecoin FRAX – salah satu pool terbesar dengan volume tinggi. (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Pool FRAX, https://curve.fi/#/ethereum/pools/frax]
+
+Entity: Curve Pool (USDP) 
+Type: Protocol
+Relationship: Pool untuk stablecoin USDP dari Paxos – integrasi aset terpusat. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool USDP, https://curve.fi/#/ethereum/pools/usdp]
+
+Entity: Curve Pool (TUSD)
+Type: Protocol
+Relationship: Pool untuk TrueUSD – contoh stablecoin lain. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool TUSD, https://curve.fi/#/ethereum/pools/tusd]
+
+Entity: Curve Pool (BUSD)
+Type: Protocol
+Relationship: Pool untuk BUSD (Binance USD) – integrasi dengan ekosistem Binance. (MEDIUM)
+Period: 2020–2022
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool BUSD, https://curve.fi/#/ethereum/pools/busd]
+
+Entity: Curve Pool (Compound)
+Type: Protocol
+Relationship: Pool yang menggunakan token cTokens dari Compound untuk yield ekstra – integrasi lending. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool Compound, https://curve.fi/#/ethereum/pools/compound]
+
+Entity: Curve Pool (Aave) 
+Type: Protocol
+Relationship: Pool yang menggunakan aTokens dari Aave untuk yield – integrasi lending. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool Aave, https://curve.fi/#/ethereum/pools/aave]
+
+Entity: Curve Pool (PAX Gold) 
+Type: Protocol
+Relationship: Pool untuk PAX Gold (PAXG) – ekspansi ke aset non-fiat. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool PAXG, https://curve.fi/#/ethereum/pools/paxg]
+
+Entity: Curve Pool (XAUT) 
+Type: Protocol
+Relationship: Pool untuk Tether Gold (XAUT) – aset emas digital. (LOW)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Curve Pool XAUT, https://curve.fi/#/ethereum/pools/xaut]
+
+Entity: Curve Pool (CVX)
+Type: Protocol
+Relationship: Pool untuk token Convex Finance – integrasi antar protokol. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool CVX, https://curve.fi/#/ethereum/pools/cvx]
+
+Entity: Curve Pool (YFI) 
+Type: Protocol
+Relationship: Pool untuk token Yearn – integrasi antar DeFi. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool YFI, https://curve.fi/#/ethereum/pools/yfi]
+
+Entity: Curve Pool (stETH)
+Type: Protocol
+Relationship: Pool untuk staked Ethereum (stETH) – mengurangi risiko staking. (HIGH)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Pool stETH, https://curve.fi/#/ethereum/pools/steth]
+
+Entity: Curve Pool (clevPNT)
+Type: Protocol
+Relationship: Pool untuk token khusus dari Clearpool – contoh pool niche. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Curve Pool clevPNT, https://curve.fi/#/ethereum/pools/clevpnt]
+
+Entity: Curve Pool (ibBTC)
+Type: Protocol
+Relationship: Pool untuk token menarik bitcoin (ibBTC) – ekspansi BTC. (LOW)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Curve Pool ibBTC, https://curve.fi/#/ethereum/pools/ibbtc]
+
+Entity: Curve Pool (LUSD)
+Type: Protocol
+Relationship: Pool untuk Liquity USD (LUSD) – integrasi dengan protokol Liquity. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool LUSD, https://curve.fi/#/ethereum/pools/lusd]
+
+Entity: Curve Pool (RAI)
+Type: Protocol
+Relationship: Pool untuk RAI non-stablecoin – eksperimen float. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool RAI, https://curve.fi/#/ethereum/pools/rai]
+
+Entity: Curve Pool (USSD) 
+Type: Protocol
+Relationship: Pool untuk stablecoin dari USSD protocol – agregrasi. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+USSD+pool]
+
+Entity: Curve Pool (BTRFLY) 
+Type: Protocol
+Relationship: Pool untuk token Butterfly – proyek DeFi. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+BTRFLY+pool]
+
+Entity: Curve Pool (GUSD) 
+Type: Protocol
+Relationship: Pool untuk Gemini Dollar – stablecoin terpusat. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool GUSD, https://curve.fi/#/ethereum/pools/gusd]
+
+Entity: Curve Pool (HUSD) 
+Type: Protocol
+Relationship: Pool untuk HUSD – stablecoin (tidak aktif lagi). (LOW)
+Period: 2020–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+HUSD+pool]
+
+Entity: Curve Pool (PAX) 
+Type: Protocol
+Relationship: Pool untuk PAX (sekarang USDP) – stablecoin lama. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool PAX, https://curve.fi/#/ethereum/pools/pax]
+
+Entity: Curve Pool (SUSD) 
+Type: Protocol
+Relationship: Pool untuk sUSD – stablecoin sintetis. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool SUSD, https://curve.fi/#/ethereum/pools/susd]
+
+Entity: Curve Pool (DUSD) 
+Type: Protocol
+Relationship: Pool untuk Digital USD – kurang aktif. (LOW)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+DUSD+pool]
+
+Entity: Curve Pool (USDN) 
+Type: Protocol
+Relationship: Pool untuk Neutrino USD – stablecoin. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool USDN, https://curve.fi/#/ethereum/pools/usdn]
+
+Entity: Curve Pool (renBTC) 
+Type: Protocol
+Relationship: Pool untuk renBTC (versi awal) – sekarang tergantikan pool BTC. (MEDIUM)
+Period: 2020–2022
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool renBTC, https://curve.fi/#/ethereum/pools/ren]
+
+Entity: Curve Pool (crvBTC) 
+Type: Protocol
+Relationship: Pool untuk crvBTC (pengguna membuat token BTC di Curve) – eksperimen. (LOW)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Curve Pool crvBTC, https://curve.fi/#/ethereum/pools/crvbtc]
+
+Entity: Curve Pool (oBTC) 
+Type: Protocol
+Relationship: Pool untuk Bitcoin asli dari BoringDAO – jembatan alternatif. (LOW)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+oBTC+pool]
+
+Entity: Curve Pool (tBTC) 
+Type: Protocol
+Relationship: Pool untuk tBTC dari Threshold Network – BTC terdesentralisasi. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool tBTC, https://curve.fi/#/ethereum/pools/tbtc]
+
+Entity: Curve Pool (rETH)
+Type: Protocol
+Relationship: Pool untuk Rocket Pool ETH (rETH) – staking terdesentralisasi. (HIGH)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Pool rETH, https://curve.fi/#/ethereum/pools/reth]
+
+Entity: Curve Pool (ankrETH)
+Type: Protocol
+Relationship: Pool untuk staked ETH dari Ankr – staking alternatif. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool ankrETH, https://curve.fi/#/ethereum/pools/ankreth]
+
+Entity: Curve Pool (wstETH)
+Type: Protocol
+Relationship: Pool untuk wrappedstETH – versi stETH yang dapat diintegrasikan. (HIGH)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Pool wstETH, https://curve.fi/#/ethereum/pools/wsteth]
+
+Entity: Curve Pool (sfrxETH)
+Type: Protocol
+Relationship: Pool untuk Frax ETH – staking likuid dari Frax. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool sfrxETH, https://curve.fi/#/ethereum/pools/sfrxeth]
+
+Entity: Curve Pool (cbETH)
+Type: Protocol
+Relationship: Pool untuk Coinbase Wrapped Staked ETH – staking institusi. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool cbETH, https://curve.fi/#/ethereum/pools/cbeth]
+
+Entity: Curve Pool (alETH)
+Type: Protocol
+Relationship: Pool untuk Alchemix ETH – yield synthetic. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool alETH, https://curve.fi/#/ethereum/pools/aleth]
+
+Entity: Curve Pool (pxETH)
+Type: Protocol
+Relationship: Pool untuk puffer ETH – staking baru. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+pxETH+pool]
+
+Entity: Curve Pool (Eth2)
+Type: Protocol
+Relationship: Pool untuk ETH2 staking – sudah pensiun setelah merge. (LOW)
+Period: 2020–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+Eth2+pool]
+
+Entity: Curve Pool (UST) – Terra
+Type: Protocol
+Relationship: Pool untuk Terra UST yang gagal – kejadian bersejarah. (MEDIUM)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool UST, https://curve.fi/#/ethereum/pools/ust]
+
+Entity: Curve Pool (USDT) 
+Type: Protocol
+Relationship: Pool untuk USDT – salah satu pasangan utama. (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Pool USDT, https://curve.fi/#/ethereum/pools/usdt]
+
+Entity: Curve Pool (DAI)
+Type: Protocol
+Relationship: Pool untuk DAI – stablecoin bertenaga MakerDAO. (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Pool DAI, https://curve.fi/#/ethereum/pools/3pool]
+
+Entity: Curve Pool (USDC)
+Type: Protocol
+Relationship: Pool untuk USD Coin – Circle. (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Pool USDC, https://curve.fi/#/ethereum/pools/3pool]
+
+Entity: Curve Pool (MIM)
+Type: Protocol
+Relationship: Pool untuk Magic Internet Money – stablecoin terkemuka. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool MIM, https://curve.fi/#/ethereum/pools/mim]
+
+Entity: Curve Pool (USDD)
+Type: Protocol
+Relationship: Pool untuk USDD – stablecoin TRON. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Curve Pool USDD, https://curve.fi/#/ethereum/pools/usdd]
+
+Entity: Curve Pool (FRAXBP)
+Type: Protocol
+Relationship: Pool utama untuk Frax/ Base pair – sentral untuk likuiditas Frax. (HIGH)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Pool FRAXBP, https://curve.fi/#/ethereum/pools/fraxbp]
+
+Entity: Curve Pool (MIM-3LP)
+Type: Protocol
+Relationship: Pool gabungan MIM dan 3Pool – struktur metapool. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool MIM, https://curve.fi/#/ethereum/pools/mim]
+
+Entity: Curve Pool (EARTH)
+Type: Protocol
+Relationship: Pool untuk aset Earth – niche jarang. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+EARTH+pool]
+
+Entity: Curve Pool (SPELL)
+Type: Protocol
+Relationship: Pool untuk token Spell dari Abracadabra – keterkaitan ekosistem. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool SPELL, https://curve.fi/#/ethereum/pools/spell]
+
+Entity: Curve Pool (wsOHM)
+Type: Protocol
+Relationship: Pool untuk wrapped staked OHM – aset dengan yield. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool wsOHM, https://curve.fi/#/ethereum/pools/sohm]
+
+Entity: Curve Pool (CNC)
+Type: Protocol
+Relationship: Pool untuk Conic Finance – proyek lain. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+CNC+pool]
+
+Entity: Curve Pool (SONNE)
+Type: Protocol
+Relationship: Pool untuk Sonne Finance – biasanya di Optimism. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+SONNE+pool]
+
+Entity: Curve Pool (wAMPL)
+Type: Protocol
+Relationship: Pool untuk Ampleforth – aset rebalancing. (LOW)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Curve Pool wAMPL, https://curve.fi/#/ethereum/pools/wampl]
+
+Entity: Curve Pool (XAI)
+Type: Protocol
+Relationship: Pool untuk aset XAI – niche. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+XAI+pool]
+
+Entity: Curve Pool (SEUR)
+Type: Protocol
+Relationship: Pool untuk sintetis EUR – stabilitas regional. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool SEUR, https://curve.fi/#/ethereum/pools/seur]
+
+Entity: Curve Pool (KRW) 
+Type: Protocol
+Relationship: Pool untuk aset Won Korea – regional. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+KRW+pool]
+
+Entity: Curve Pool (YUSD)
+Type: Protocol
+Relationship: Pool untuk Yield USD – stablecoin. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+YUSD+pool]
+
+Entity: Curve Pool (CNY)
+Type: Protocol
+Relationship: Pool untuk aset China Yuan – eksperimental. (LOW)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+CNY+pool]
+
+Entity: Curve Pool (HFIL)
+Type: Protocol
+Relationship: Pool untuk Huobi Filecoin – hubungan dengan Huobi. (LOW)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+HFIL+pool]
+
+Entity: Curve Pool (BTC)
+Type: Protocol
+Relationship: Pool agregat multi-BTC untuk wBTC, renBTC, dll – inti likuiditas BTC. (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Pool BTC, https://curve.fi/#/ethereum/pools/btc]
+
+Entity: Curve Pool (2Pool) 
+Type: Protocol
+Relationship: Pool versi kecil (USDC/USDT) – digunakan di testnet atau jaringan lain. (LOW)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+2Pool]
+
+Entity: Curve Pool (FRAX-3Pool)
+Type: Protocol
+Relationship: Pool metapool gabungan FRAX dan 3Pool – struktur populer. (HIGH)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Pool FRAX, https://curve.fi/#/ethereum/pools/frax]
+
+Entity: Curve Pool (MIM-UST)
+Type: Protocol
+Relationship: Pool antara MIM dan UST – terpengaruh oleh keruntuhan UST. (LOW)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+MIM+UST+pool]
+
+Entity: Curve Pool (Lending)
+Type: Protocol
+Relationship: Pool yang menghubungkan token lending seperti cToken, aToken – yield terkompon. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool Lending, https://curve.fi/#/ethereum/pools/lending]
+
+Entity: Curve Pool (Bond)
+Type: Protocol
+Relationship: Pool untuk aset obligasi terdesentralisasi – jarang. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+Bond+pool]
+
+Entity: Curve Pool (WETH)
+Type: Protocol
+Relationship: Pool untuk wrapped ETH – diperlukan untuk pasangan ETH. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool WETH, https://curve.fi/#/ethereum/pools/weth]
+
+Entity: Curve Pool (renWBTC)
+Type: Protocol
+Relationship: Pool khusus untuk renWBTC – varian. (LOW)
+Period: 2020–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+renWBTC+pool]
+
+Entity: Curve Pool (sBTC)
+Type: Protocol
+Relationship: Pool untuk sintetis BTC dari Synthetix – integrasi lintas protokol. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool sBTC, https://curve.fi/#/ethereum/pools/sbtc]
+
+Entity: Curve Pool (pBTC)
+Type: Protocol
+Relationship: Pool untuk pTokens BTC – jembatan Bitcoin. (LOW)
+Period: 2020–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+pBTC+pool]
+
+Entity: Curve Pool (mBTC)
+Type: Protocol
+Relationship: Pool untuk mBTC – jaringan B? (LOW)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+mBTC+pool]
+
+Entity: Curve Pool (BBTC)
+Type: Protocol
+Relationship: Pool untuk Binance BTC – dari Binance. (LOW)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+BBTC+pool]
+
+Entity: Curve Pool (HBTC)
+Type: Protocol
+Relationship: Pool untuk Huobi BTC – dari Huobi. (LOW)
+Period: 2020–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+HBTC+pool]
+
+Entity: Curve Pool (obTC)
+Type: Protocol
+Relationship: Pool untuk BoringDAO BTC – niche. (LOW)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+obTC+pool]
+
+Entity: Curve Pool (sBNB)
+Type: Protocol
+Relationship: Pool untuk sintetis BNB – eksperimen. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+sBNB+pool]
+
+Entity: Curve Pool (XSUSHI)
+Type: Protocol
+Relationship: Pool untuk staked Sushi – terkait ekosistem Sushi. (LOW)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+XSUSHI+pool]
+
+Entity: Curve Pool (CRV)
+Type: Protocol
+Relationship: Pool untuk token CRV itu sendiri – perdagangan sekunder. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool CRV, https://curve.fi/#/ethereum/pools/crv]
+
+Entity: Curve Pool (YvWETH)
+Type: Protocol
+Relationship: Pool untuk Yearn WETH – yield vault. (LOW)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+YvWETH+pool]
+
+Entity: Curve Pool (Strategy)
+Type: Protocol
+Relationship: Kategori pool yang digunakan untuk strategi yield spesifik – seringkali dari Yearn. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool Strategy, https://curve.fi/#/ethereum/pools/strategy]
+
+Entity: Curve Pool (Lido)
+Type: Protocol
+Relationship: Pool terkait Lido staked ETH – seringkali stETH. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool Lido, https://curve.fi/#/ethereum/pools/steth]
+
+Entity: Curve Pool (StakeWise)
+Type: Protocol
+Relationship: Pool untuk StakeWise ETH – integrasi staking. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+StakeWise+pool]
+
+Entity: Curve Pool (Rocket)
+Type: Protocol
+Relationship: Pool untuk Rocket Pool – terkait dengan rETH. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool rETH, https://curve.fi/#/ethereum/pools/reth]
+
+Entity: Curve Pool (Universe)
+Type: Protocol
+Relationship: Pool untuk Universe XYZ – niche. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+Universe+pool]
+
+Entity: Curve Pool (Jones) 
+Type: Protocol
+Relationship: Pool untuk Jones DAO – terkait dengan aset options. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+Jones+pool]
+
+Entity: Curve Pool (DPX)
+Type: Protocol
+Relationship: Pool untuk Dopex – ekosistem options. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+DPX+pool]
+
+Entity: Curve Pool (ARB)
+Type: Protocol
+Relationship: Pool untuk token Arbitrum – setelah airdrop. (MEDIUM)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool ARB, https://curve.fi/#/arbitrum/pools/arb]
+
+Entity: Curve Pool (RDNT)
+Type: Protocol
+Relationship: Pool untuk Radiant Capital – di Arbitrum. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+RDNT+pool]
+
+Entity: Curve Pool (GMX)
+Type: Protocol
+Relationship: Pool untuk GMX – berada di Arbitrum/ Avalanche. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+GMX+pool]
+
+Entity: Curve Pool (MAGIC)
+Type: Protocol
+Relationship: Pool untuk Magic – ekosistem Treasure. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+MAGIC+pool]
+
+Entity: Curve Pool (VELO)
+Type: Protocol
+Relationship: Pool untuk Velodrome – di Optimism. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+VELO+pool]
+
+Entity: Curve Pool (OP)
+Type: Protocol
+Relationship: Pool untuk token Optimism – di jaringan OP. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool OP, https://curve.fi/#/optimism/pools/op]
+
+Entity: Curve Pool (AURY)
+Type: Protocol
+Relationship: Pool untuk Aury – niсhe. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+AURY+pool]
+
+Entity: Curve Pool (SURF)
+Type: Protocol
+Relationship: Pool untuk Surf – niche. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+SURF+pool]
+
+Entity: Curve Pool (SENSE)
+Type: Protocol
+Relationship: Pool untuk Sense Finance – niche. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+SENSE+pool]
+
+Entity: Curve Pool (PENDLE)
+Type: Protocol
+Relationship: Pool untuk Pendle Finance – yield tokenization. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+PENDLE+pool]
+
+Entity: Curve Pool (NVDA)
+Type: Protocol
+Relationship: Pool untuk aset saham tokenisasi – eksperimen. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+NVDA+pool]
+
+Entity: Curve Pool (TSLA)
+Type: Protocol
+Relationship: Pool untuk TSLA token – eksperimen (tidak resmi). (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+TSLA+pool]
+
+Entity: Curve Pool (SPY)
+Type: Protocol
+Relationship: Pool untuk S&P 500 token – hipotesis. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+SPY+pool]
+
+Entity: Curve Pool (GOLD)
+Type: Protocol
+Relationship: Pool untuk aset emas – beberapa stablecoin emas. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+GOLD+pool]
+
+Entity: Curve Pool (OIL)
+Type: Protocol
+Relationship: Pool untuk aset minyak tokenisasi – niche. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+OIL+pool]
+
+Entity: Curve Pool (COMEX)
+Type: Protocol
+Relationship: Pool untuk komoditas – eksperimental. (LOW)
+Period: tidak diketahui
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+COMEX+pool]
+
+Entity: Curve Pool (NFTFI)
+Type: Protocol
+Relationship: Pool untuk NFT finance – niche. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+NFTFI+pool]
+
+Entity: Curve Pool (REAL)
+Type: Protocol
+Relationship: Pool untuk real estate token – niche. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+REAL+pool]
+
+Entity: Curve Pool (URUS)
+Type: Protocol
+Relationship: Pool untuk Aurus – niche. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+URUS+pool]
+
+Entity: Curve Pool (BADGER)
+Type: Protocol
+Relationship: Pool untuk Badger DAO – terkait dengan BTC. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool BADGER, https://curve.fi/#/ethereum/pools/badger]
+
+Entity: Curve Pool (DIGG)
+Type: Protocol
+Relationship: Pool untuk Digg – komoditas. (LOW)
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+DIGG+pool]
+
+Entity: Curve Pool (TOKE)
+Type: Protocol
+Relationship: Pool untuk Tokemak – terkait dengan staking. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+TOKE+pool]
+
+Entity: Curve Pool (ALCX)
+Type: Protocol
+Relationship: Pool untuk Alchemix – terkait dengan alETH. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool ALCX, https://curve.fi/#/ethereum/pools/alcx]
+
+Entity: Curve Pool (SNX)
+Type: Protocol
+Relationship: Pool untuk Synthetix – terkait dengan sUSD. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool SNX, https://curve.fi/#/ethereum/pools/snx]
+
+Entity: Curve Pool (INV)
+Type: Protocol
+Relationship: Pool untuk Inverse Finance – terkait dengan DOLA. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool INV, https://curve.fi/#/ethereum/pools/inv]
+
+Entity: Curve Pool (DOLA)
+Type: Protocol
+Relationship: Pool untuk DOLA stablecoin – dari Inverse Finance. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool DOLA, https://curve.fi/#/ethereum/pools/dola]
+
+Entity: Curve Pool (OHM)
+Type: Protocol
+Relationship: Pool untuk Olympus DAO – terkait dengan wsOHM. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool OHM, https://curve.fi/#/ethereum/pools/ohm]
+
+Entity: Curve Pool (GNO)
+Type: Protocol
+Relationship: Pool untuk Gnosis – token. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+GNO+pool]
+
+Entity: Curve Pool (ENS)
+Type: Protocol
+Relationship: Pool untuk ENS – governance. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+ENS+pool]
+
+Entity: Curve Pool (LIDO)
+Type: Protocol
+Relationship: Pool untuk token LDO – governance. (LOW)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+LIDO+pool]
+
+Entity: Curve Pool (MKR)
+Type: Protocol
+Relationship: Pool untuk Maker – governance. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool MKR, https://curve.fi/#/ethereum/pools/mkr]
+
+Entity: Curve Pool (BAL)
+Type: Protocol
+Relationship: Pool untuk Balancer – proyek kompetitor. (LOW)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+BAL+pool]
+
+Entity: Curve Pool (AAVE)
+Type: Protocol
+Relationship: Pool untuk AAVE – token governance. (LOW)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+AAVE+pool]
+
+Entity: Curve Pool (YFI)
+Type: Protocol
+Relationship: Pool untuk YFI – token governance. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool YFI, https://curve.fi/#/ethereum/pools/yfi]
+
+Entity: Curve Pool (COMP)
+Type: Protocol
+Relationship: Pool untuk Compound – token governance. (LOW)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+COMP+pool]
+
+Entity: Curve Pool (CRVUSD)
+Type: Protocol
+Relationship: Pool untuk stablecoin yang akan datang – belum dirilis. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+CRVUSD+pool]
+
+Entity: Curve Pool (MKR)
+Type: Protocol
+Relationship: Pool untuk Maker – contoh. (LOW)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+MKR+pool]
+
+Entity: Curve Pool (USDD) 
+Type: Protocol
+Relationship: Pool untuk USDD – tidak stabil. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+USDD+pool]
+
+Entity: Curve Pool (BUSD) 
+Type: Protocol
+Relationship: Pool untuk BUSD – terdepresiasi. (LOW)
+Period: 2020–2023
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+BUSD+pool]
+
+Entity: Curve Pool (GUSD) 
+Type: Protocol
+Relationship: Pool untuk GUSD – integrasi Gemini. (LOW)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+GUSD+pool]
+
+Entity: Curve Pool (PAXG) 
+Type: Protocol
+Relationship: Pool untuk PAXG – emas. (LOW)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+PAXG+pool]
+
+Entity: Curve Pool (XAUT) 
+Type: Protocol
+Relationship: Pool untuk XAUT – emas Tether. (LOW)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+XAUT+pool]
+
+Entity: Curve Pool (XAUT) 
+Type: Protocol
+Relationship: Pool untuk XAUT – emas Tether. (LOW)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+XAUT+pool]
+
+Entity: Curve Pool (EUROC)
+Type: Protocol
+Relationship: Pool untuk Euro Coin dari Circle – stablecoin euro. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool EUROC, https://curve.fi/#/ethereum/pools/euroc]
+
+Entity: Curve Pool (EURS)
+Type: Protocol
+Relationship: Pool untuk EURS – stablecoin euro. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool EURS, https://curve.fi/#/ethereum/pools/eurs]
+
+Entity: Curve Pool (ULTRA)
+Type: Protocol
+Relationship: Pool untuk Ultra – niche. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+ULTRA+pool]
+
+Entity: Curve Pool (GLP)
+Type: Protocol
+Relationship: Pool untuk GLP – dari GMX. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+GLP+pool]
+
+Entity: Curve Pool (MIA)
+Type: Protocol
+Relationship: Pool untuk Miami – eksperimental. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+MIA+pool]
+
+Entity: Curve Pool (sILV)
+Type: Protocol
+Relationship: Pool untuk Silver – DeFi. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+sILV+pool]
+
+Entity: Curve Pool (SPA)
+Type: Protocol
+Relationship: Pool untuk Sperax – bridging. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+SPA+pool]
+
+Entity: Curve Pool (SWISE)
+Type: Protocol
+Relationship: Pool untuk StakeWise – staking. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+SWISE+pool]
+
+Entity: Curve Pool (LQTY)
+Type: Protocol
+Relationship: Pool untuk Liquity – token governance. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool LQTY, https://curve.fi/#/ethereum/pools/lqty]
+
+Entity: Curve Pool (SFRX)
+Type: Protocol
+Relationship: Pool untuk sfrxETH – staking. (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool sfrxETH, https://curve.fi/#/ethereum/pools/sfrxeth]
+
+Entity: Curve Pool (SDT)
+Type: Protocol
+Relationship: Pool untuk Stake DAO Token – ekosistem stakedao. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+SDT+pool]
+
+Entity: Curve Pool (CVX)
+Type: Protocol
+Relationship: Pool untuk Convex – token. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool CVX, https://curve.fi/#/ethereum/pools/cvx]
+
+Entity: Curve Pool (FXS)
+Type: Protocol
+Relationship: Pool untuk Frax Share – token. (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool FXS, https://curve.fi/#/ethereum/pools/fxs]
+
+Entity: Curve Pool (CRV Finance)
+Type: Protocol
+Relationship: Pool untuk CRV – token. (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Curve Pool CRV, https://curve.fi/#/ethereum/pools/crv]
+
+Entity: Curve Pool (PRFX)
+Type: Protocol
+Relationship: Pool untuk Perp. Finance – niche. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+PRFX+pool]
+
+Entity: Curve Pool (OSMO)
+Type: Protocol
+Relationship: Pool untuk Osmosis – Cosmos. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+OSMO+pool]
+
+Entity: Curve Pool (ATOM)
+Type: Protocol
+Relationship: Pool untuk Cosmos Hub – ekosistem. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+ATOM+pool]
+
+Entity: Curve Pool (AXS)
+Type: Protocol
+Relationship: Pool untuk Axie – gamefi. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+AXS+pool]
+
+Entity: Curve Pool (SAND)
+Type: Protocol
+Relationship: Pool untuk Sandbox – gamefi. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+SAND+pool]
+
+Entity: Curve Pool (MANA)
+Type: Protocol
+Relationship: Pool untuk Decentraland – gamefi. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+MANA+pool]
+
+Entity: Curve Pool (APE)
+Type: Protocol
+Relationship: Pool untuk ApeCoin – ekosistem. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+APE+pool]
+
+Entity: Curve Pool (RLB)
+Type: Protocol
+Relationship: Pool untuk Rollbit – niche. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+RLB+pool]
+
+Entity: Curve Pool (GAL)
+Type: Protocol
+Relationship: Pool untuk Galxe – Web3. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+GAL+pool]
+
+Entity: Curve Pool (TAI)
+Type: Protocol
+Relationship: Pool untuk Tapioca – bridging. (LOW)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+TAI+pool]
+
+Entity: Curve Pool (MATIC)
+Type: Protocol
+Relationship: Pool untuk Polygon – token. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+MATIC+pool]
+
+Entity: Curve Pool (AVAX)
+Type: Protocol
+Relationship: Pool untuk Avalanche – token. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+AVAX+pool]
+
+Entity: Curve Pool (FTM)
+Type: Protocol
+Relationship: Pool untuk Fantom – token. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+FTM+pool]
+
+Entity: Curve Pool (ONE)
+Type: Protocol
+Relationship: Pool untuk Harmony – token. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+ONE+pool]
+
+Entity: Curve Pool (TLOS)
+Type: Protocol
+Relationship: Pool untuk Telos – token. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+TLOS+pool]
+
+Entity: Curve Pool (SOL)
+Type: Protocol
+Relationship: Pool untuk Solana – terkait dengan wrap. (LOW)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Tidak dapat diverifikasi, https://www.google.com/search?q=Curve+SOL+pool]

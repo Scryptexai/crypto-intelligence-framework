@@ -1,0 +1,488 @@
+PROJECT: Linea
+
+Strategic Objectives
+
+1. Menjadi zkEVM Layer 2 paling setara dengan Ethereum (Type 1 equivalence)
+· Evidence: Linea meluncurkan sebagai Type 2 zkEVM (EV-005) dan mencapai Type 1 equivalence di testnet November 2024 (EV-019) dengan target mainnet Q1 2025; dokumentasi teknis menegaskan "full Ethereum equivalence" sebagai diferensiasi utama vs optimistic rollup dan zkEVM Type 4 seperti zkSync
+· Supporting Dataset: Phase 3 EV-005, EV-019; Phase 4 Architecture, Execution Environment, Technical Upgrade History
+
+2. Desentralisasi progresif melalui Foundation dan DAO tanpa token pre-launch
+· Evidence: Mainnet diluncurkan "fair launch" tanpa token dan tanpa alokasi VC (EV-005); Linea Foundation dibentuk Agustus 2024 (EV-016) sebagai non-profit independen; TGE dan DAO direncanakan Q1 2025 (EV-020) dengan airdrop berbasis Voyage LXP bukan public sale
+· Supporting Dataset: Phase 3 EV-005, EV-016, EV-020; Phase 6 Token Information, Distribution, Governance; Phase 7 Governance Ecosystem
+
+3. Membangun ekosistem DeFi dan cross-chain terbesar di zkEVM melalui program insentif berkelanjutan
+· Evidence: Voyage Season 1-4 (EV-007, EV-010, EV-013, EV-018) menarik >500k wallet, TVL puncak $600M, 500+ protokol; integrasi 4 lapisan cross-chain messaging (LayerZero, Axelar, Wormhole, Chainlink CCIP) (EV-008, EV-009); grant program via Foundation
+· Supporting Dataset: Phase 3 EV-007, EV-008, EV-009, EV-010, EV-013, EV-018; Phase 7 Major Integrations, Applications, Developer Ecosystem
+
+4. Mengurangi biaya transaksi drastis melalui inovasi prover (Boojum) dan EIP-4844
+· Evidence: Boojum upgrade Maret 2024 mengurangi biaya proving ~90% dan finality dari ~3 jam ke ~15 menit (EV-011); EIP-4844 support aktif segera pasca-Dencun Maret 2024 menurunkan median gas L2 <$0.01 (EV-012)
+· Supporting Dataset: Phase 3 EV-011, EV-012; Phase 4 Technical Upgrade History, Current Technical Stack
+
+5. Mempertahankan keamanan via audit berlapis dan upgradeability terkendali
+· Evidence: 3 audit pre-mainnet (Trail of Bits, OpenZeppelin, Sigma Prime) (EV-006); respons cepat exploit bridge Juni 2024 dengan pause ~48 jam dan emergency upgrade (EV-014); timelock multisig untuk upgrade kontrak L1
+· Supporting Dataset: Phase 3 EV-006, EV-014; Phase 4 Security Model, Audit History
+
+Decision Timeline
+
+Keputusan: Memulai riset internal zkEVM di Consensys (2020)
+· Trigger: Kebutuhan scaling Ethereum yang mempertahankan EVM equivalence dan keamanan L1 via ZK proofs
+· Evidence: Consensys R&D memulai riset zero-knowledge proof untuk Layer 2 (Phase 1 Foundation)
+· Decision: Alokasikan tim peneliti ZK dan arsitek Ethereum internal untuk desain arsitektur Vortex prover berbasis PLONK
+· Immediate Result: Fondasi teknis untuk Linea zkEVM termasuk arsitektur prover dan desain rollup
+· Long-term Impact: Menjadi basis seluruh stack teknis Linea hingga Type 1 equivalence
+· Supporting Dataset: Phase 3 EV-001; Phase 4 Architecture, Core Components
+
+Keputusan: Finalisasi arsitektur Type 2 zkEVM dengan Vortex prover PLONK (2021)
+· Trigger: Hasil riset 2020 menunjukkan PLONK feasible untuk EVM equivalence praktis
+· Evidence: Arsitektur finalized: Type 2 zkEVM, Vortex prover PLONK, DA di Ethereum L1, bridge native (Phase 3 EV-002)
+· Decision: Commit ke Type 2 (bukan Type 1 atau Type 4) sebagai sweet spot launch; Type 1 sebagai target jangka panjang
+· Immediate Result: Spesifikasi teknis lengkap untuk implementasi testnet
+· Long-term Impact: Memungkinkan launch mainnet 2023 dengan kompatibilitas EVM tinggi; roadmap Type 1 terealisasi 2024
+· Supporting Dataset: Phase 3 EV-002; Phase 4 Architecture, Execution Environment
+
+Keputusan: Launch private testnet Alpha untuk validator dan mitra awal (2022-03)
+· Trigger: Arsitektur siap diuji dalam kondisi live dengan beban nyata
+· Evidence: Private testnet Alpha untuk validator dan mitra ekosistem awal (Phase 3 EV-003)
+· Decision: Buka akses terbatas untuk menguji prover, sequencer, bridge contracts sebelum public
+· Immediate Result: Validasi arsitektur prover dan sequencer; umpan balik untuk optimisasi gas
+· Long-term Result: Mengurangi risiko bug kritis di public testnet dan mainnet
+· Supporting Dataset: Phase 3 EV-003; Phase 4 Development Framework
+
+Keputusan: Launch public testnet di Ethereum Goerli (2023-03-28)
+· Trigger: Private testnet stabil; butuh stress test skala besar dan onboarding developer
+· Evidence: Public testnet Goerli terbuka untuk developer dan pengguna umum (Phase 3 EV-004)
+· Decision: Deploy ke Goerli testnet Ethereum dengan bridge ETH/ERC20 dan tooling lengkap
+· Immediate Result: >100k wallet unik, >1M transaksi bulan pertama; ekosistem early projects bermigrasi
+· Long-term Impact: Membangun komunitas developer dan pengguna sebelum mainnet; mengidentifikasi bug skala besar
+· Supporting Dataset: Phase 3 EV-004; Phase 7 Developer Ecosystem, Applications
+
+Keputusan: Mainnet Alpha fair launch tanpa token dan tanpa alokasi VC (2023-07-18)
+· Trigger: Teknologi production-ready; ingin menghindari kritik "VC chain" dan membangun kepercayaan komunitas
+· Evidence: Mainnet Alpha diluncurkan dengan fair launch (no token, no VC allocation) (Phase 3 EV-005)
+· Decision: Launch mainnet dengan EIP-4844 ready, bridge canonical, 50+ protokol day-one, zero token
+· Immediate Result: TVL >$20M minggu pertama; >50 protokol live; bridge canonical >$50M volume minggu pertama
+· Long-term Impact: Reputasi "fair launch" membedakan Linea dari Base, Arbitrum, Optimism; fondasi untuk Voyage points program
+· Supporting Dataset: Phase 3 EV-005; Phase 6 Token Information, Distribution; Phase 8 Market Position
+
+Keputusan: Menyelesaikan audit komprehensif pre-mainnet dari 3 firma top-tier (2023-07)
+· Trigger: Kebutuhan kepercayaan institusional dan keamanan before mainnet dengan TVL signifikan
+· Evidence: Audit Trail of Bits, OpenZeppelin, Sigma Prime mencakup contracts, circuits, prover (Phase 3 EV-006)
+· Decision: Invest waktu dan biaya untuk audit berlapis sebelum mainnet; publish laporan transparan
+· Immediate Result: Semua findings critical/high resolved sebelum mainnet; laporan dipublikasikan
+· Long-term Impact: Standar keamanan tinggi membangun kepercayaan DeFi protocols untuk deploy; mitigasi exploit awal
+· Supporting Dataset: Phase 3 EV-006; Phase 4 Audit History, Security Model
+
+Keputusan: Meluncurkan Voyage Season 1 sebagai program insentif berbasis poin (LXP) tanpa token (2023-08)
+· Trigger: Butuh mendorong adopsi dan likuiditas tanpa token native (pre-TGE)
+· Evidence: Voyage Season 1 launched dengan sistem poin LXP berbasis aktivitas on-chain (Phase 3 EV-007)
+· Decision: Gunakan points system (LXP) sebagai proxy untuk future token allocation; reward aktivitas nyata
+· Immediate Result: >500k wallet unik berpartisipasi; TVL puncak >$400M; >20M transaksi selama season
+· Long-term Impact: Membuat model "points-to-airdrop" yang ditiru proyek lain; membangun komunitas loyal pre-TGE
+· Supporting Dataset: Phase 3 EV-007; Phase 6 Major Token Events; Phase 7 Applications, Voyage Program
+
+Keputusan: Mengintegrasikan 4 lapisan cross-chain messaging sekaligus (2023-10 hingga 2023-11)
+· Trigger: Ekosistem butuh likuiditas cross-chain; tidak bergantung single bridge
+· Evidence: LayerZero, Axelar, Wormhole integrated Oktober 2023 (EV-008); Chainlink CCIP November 2023 (EV-009)
+· Decision: Integrasi resmi 4 protokol messaging terbesar secara paralel; bukan exclusive partnership
+· Immediate Result: Cross-chain volume >$100M bulan pertama; >20 protokol omnichain deploy; >30 protokol DeFi pakai Chainlink feeds
+· Long-term Impact: Linea menjadi hub cross-chain paling terhubung di zkEVM; mengurangi risiko single bridge failure
+· Supporting Dataset: Phase 3 EV-008, EV-009; Phase 7 Major Integrations, External Dependencies
+
+Keputusan: Launch Voyage Season 2 dengan LXP-L untuk liquidity providers (2024-01)
+· Trigger: Season 1 sukses tapi butuh insentif likuiditas berkelanjutan bukan hanya aktivitas transaksi
+· Evidence: Voyage Season 2 dengan mekanisme LXP diperluas dan LXP-L untuk likuiditas (Phase 3 EV-010)
+· Decision: Tambahkan multiplicator untuk LP dan ekosistem DeFi; perpanjang program
+· Immediate Result: TVL stabil >$300M; >1M active wallets bulanan; >500 protokol terintegrasi
+· Long-term Impact: Membuktikan points program bisa sustain liquidity bukan hanya hype awal
+· Supporting Dataset: Phase 3 EV-010; Phase 6 Major Token Events; Phase 8 Adoption Metrics
+
+Keputusan: Mengaktifkan Boojum prover upgrade (PLONK recursive proving) (2024-03)
+· Trigger: Biaya proving tinggi dan finality ~3 jam menghambat UX DeFi dan throughput
+· Evidence: Boojum mengurangi biaya proving ~90% dan finality dari ~3 jam ke ~15 menit (Phase 3 EV-011)
+· Decision: Deploy recursive proving system yang telah diuji ekstensif di testnet
+· Immediate Result: Gas fee L2 turun >80%; throughput naik 10x; finality cepat untuk UX DeFi
+· Long-term Impact: Memungkinkan Linea bersaing dengan optimistic rollup pada finality; fondasi untuk EIP-4844 support
+· Supporting Dataset: Phase 3 EV-011; Phase 4 Technical Upgrade History, Prover
+
+Keputusan: Mengaktifkan EIP-4844 blob support segera pasca-Dencun (2024-03-13)
+· Trigger: Ethereum Dencun upgrade live; blob transactions menawarkan >90% DA cost reduction
+· Evidence: Linea aktifkan blob support segera setelah Dencun; median gas L2 <$0.01 (Phase 3 EV-012)
+· Decision: Prioritaskan engineering resources untuk blob integration day-one; tidak menunggu kompetitor
+· Immediate Result: Blob utilization >60% minggu pertama; median gas fee L2 <$0.01
+· Long-term Impact: Linea menjadi salah satu L2 paling efisien biaya; menarik user sensitif gas
+· Supporting Dataset: Phase 3 EV-012; Phase 4 Architecture, Technical Upgrade History
+
+Keputusan: Launch Voyage Season 3 "Surge" dengan focus real usage dan quest platform (2024-04)
+· Trigger: Musim "airdrop farming" muncul; butuh filter user nyata vs bot/sybil
+· Evidence: Season 3 Surge dengan Galxe/Zealy quest, anti-sybil, Surge Points untuk DeFi utama (Phase 3 EV-013)
+· Decision: Pindah dari volume-based ke quality-based rewards; integrasi proof-of-humanity
+· Immediate Result: TVL puncak >$600M (Maret 2024); >2M active wallets; >50M transaksi bulanan
+· Long-term Impact: Menetapkan standar anti-sybil untuk points program; data quality untuk airdrop allocation
+· Supporting Dataset: Phase 3 EV-013; Phase 6 Major Token Events; Phase 7 Major Integrations
+
+Keputusan: Emergency pause sequencer dan upgrade bridge pasca exploit $6.8M (2024-06)
+· Trigger: Eksploitasi canonical message service memungkinkan pencurian ~$6.8M via manipulasi proof message
+· Evidence: Bridge dipause ~48 jam; sequencer restart dengan upgraded contracts; post-mortem published (Phase 3 EV-014)
+· Decision: Tindakan cepat: pause bridge, halt sequencer, deploy emergency fix, audit tambahan
+· Immediate Result: Bridge dipause ~48 jam; $6.8M lost (tidak direcover); post-mortem transparan; audit tambahan
+· Long-term Impact: Meningkatkan kepercayaan via transparansi; hardening bridge contracts; mempengaruhi roadmap decentralization
+· Supporting Dataset: Phase 3 EV-014; Phase 4 Security Model, Technical Upgrade History; Phase 7 Ecosystem Risks
+
+Keputusan: Mengumumkan pembentukan Linea Foundation independen (2024-08)
+· Trigger: Perlu entitas legal non-profit untuk mengelola treasury, grants, governance, decentralisasi post-Consensys
+· Evidence: Foundation formation announced August 2024 sebagai entitas independen non-profit (Phase 3 EV-016)
+· Decision: Spin-off dari Consensys ke foundation terpisah (Cayman/BVI typical); kelola ecosystem grants, TGE coordination
+· Immediate Result: Struktur governance formalisasi; persiapan untuk token/DAO di masa depan
+· Long-term Impact: Memisahkan pengembangan protokol dari kepentingan korporat Consensys; enabling true DAO governance
+· Supporting Dataset: Phase 3 EV-016; Phase 6 Governance; Phase 7 Governance Ecosystem
+
+Keputusan: Mempublikasikan roadmap deskentralisasi prover 3 tahap (2024-09)
+· Trigger: Prover saat ini fully centralized (Consensys-operated); butuh credible path ke decentralization
+· Evidence: Roadmap: Phase 1 permissioned provers, Phase 2 proof marketplace, Phase 3 decentralized proving network dengan staking (Phase 3 EV-017)
+· Decision: Publish detailed technical roadmap dengan timeline 2025; RFP untuk operator eksternal
+· Immediate Result: Spesifikasi teknis prover network; RFP untuk operator prover eksternal
+· Long-term Impact: Menetapkan ekspektasi komunitas dan investor; pressure untuk deliver Phase 1 2025
+· Supporting Dataset: Phase 3 EV-017; Phase 4 Security Model, Known Technical Limitations
+
+Keputusan: Mengumumkan Voyage Season 4 sebagai final pre-TGE season dengan anti-sybil ketat (2024-10)
+· Trigger: TGE mendekat; butuh final snapshot yang fair dan sybil-resistant untuk airdrop allocation
+· Evidence: Season 4 fokus "real users" dengan anti-sybil ketat, proof-of-humanity, reward berbasis kontribusi nyata (Phase 3 EV-018)
+· Decision: Desain season paling ketat: proof-of-humanity, Galxe/Zealy integration, no volume farming
+· Immediate Result: Persiapan komunitas untuk TGE; mekanisme airdrop allocation finalized
+· Long-term Impact: Menentukan distributio token awal; reputasi fairness critical untuk token launch
+· Supporting Dataset: Phase 3 EV-018; Phase 6 TGE, Distribution, Major Token Events
+
+Keputusan: Mencapai zkEVM Type 1 equivalence di testnet (2024-11)
+· Trigger: Target teknis jangka panjang sejak 2021; diferensiasi vs Scroll, Polygon zkEVM
+· Evidence: Type 1 equivalence achieved di testnet: semua opcode, precompiles, block structure identik L1 (Phase 3 EV-019)
+· Decision: Invest engineering untuk full equivalence; target mainnet Q1 2025
+· Immediate Result: Developer bisa copy-paste kontrak Ethereum tanpa modifikasi; tooling 100% kompatibel
+· Long-term Impact: Menghapus hambatan migrasi dari Ethereum L1; posisi teknis terkuat di kategori zkEVM
+· Supporting Dataset: Phase 3 EV-019; Phase 4 Execution Environment, Technical Upgrade History
+
+Keputusan: Merencanakan TGE dan DAO launch Q1 2025 (2025-Q1 target)
+· Trigger: Semua prasyarat terpenuhi: foundation, roadmap decentralization, Type 1 equivalence, Voyage 4 seasons
+· Evidence: TGE dengan allocation: Voyage participants, ecosystem grants, foundation, core contributors, investor (Phase 3 EV-020)
+· Decision: Fair launch token via airdrop (no public sale); DAO governance aktif bersamaan; staking untuk prover decentralization
+· Immediate Result: Token live; governance proposals aktif; staking untuk prover decentralization dimulai
+· Long-term Impact: Transisi dari Consensys-controlled ke community-governed; value accrual ke token holders
+· Supporting Dataset: Phase 3 EV-020; Phase 6 Token Information, Distribution, Vesting, Governance; Phase 7 Governance Ecosystem
+
+Evolution Pattern
+
+Perubahan Strategi: Dari "Consensys internal project" ke "Independent Foundation-governed Protocol"
+· Fase 2020-2023: Linea dikembangkan sepenuhnya internal Consensys R&D; funding, staffing, decision-making semua Consensys (EV-001, EV-002, EV-003, EV-004, EV-005)
+· Fase 2024: Pembentukan Linea Foundation (EV-016) memisahkan governance dari Consensys; Foundation mengelola treasury, grants, TGE coordination
+· Fase 2025 (target): DAO launch mengalihkan kekuasaan ke token holders; Consensys menjadi core contributor biasa
+· Evidence: Phase 3 EV-001, EV-005, EV-016, EV-020; Phase 2 Entity (Consensys vs Linea Foundation); Phase 7 Governance Ecosystem
+
+Perubahan Teknologi: Dari Type 2 zkEVM menuju Type 1 Equivalence via Upgrade Bertahap
+· 2021: Arsitektur Type 2 finalized (EV-002) — minor differences dari Ethereum L1
+· 2024-03: Boojum prover upgrade (EV-011) — recursive proving untuk efisiensi
+· 2024-03: EIP-4844 support (EV-012) — blob DA untuk cost reduction
+· 2024-11: Type 1 equivalence testnet (EV-019) — full opcode/precompile/block parity
+· 2025-Q1 target: Type 1 mainnet deployment
+· Evidence: Phase 3 EV-002, EV-011, EV-012, EV-019; Phase 4 Execution Environment, Technical Upgrade History
+
+Perubahan Tokenomics: Dari "No Token" ke "Fair Launch via Points Program" ke "DAO Governance Token"
+· 2023-07: Mainnet launch explicit "no token, no VC allocation" (EV-005)
+· 2023-08 hingga 2024-10: 4 seasons Voyage LXP points program (EV-007, EV-010, EV-013, EV-018) — points sebagai proxy airdrop
+· 2025-Q1: TGE dengan 10B supply, airdrop ke Voyage participants, DAO governance (EV-020)
+· Evidence: Phase 3 EV-005, EV-007, EV-010, EV-013, EV-018, EV-020; Phase 6 Token Information, Distribution, Major Token Events
+
+Perubahan Keamanan: Dari "Audit Pre-Launch" ke "Continuous Security Hardening Post-Exploit"
+· 2023-07: 3 audit firma top-tier pre-mainnet (EV-006) — proactive
+· 2024-06: Bridge exploit $6.8M (EV-014) — reactive emergency response
+· 2024-06+: Emergency upgrade, additional audits, post-mortem transparan — hardening berkelanjutan
+· Evidence: Phase 3 EV-006, EV-014; Phase 4 Audit History, Security Model, Known Technical Limitations
+
+Perubahan Ekosistem: Dari "Build In-House" ke "Integrate Best-of-Breed Cross-chain"
+· 2023-07: Canonical bridge native only (EV-005)
+· 2023-10: LayerZero, Axelar, Wormhole integrated (EV-008) — multi-bridge strategy
+· 2023-11: Chainlink CCIP + full stack (EV-009) — oracle + messaging
+· 2024: 4 lapisan messaging live simultan — redundancy dan user choice
+· Evidence: Phase 3 EV-005, EV-008, EV-009; Phase 7 Major Integrations, External Dependencies
+
+Technical Decision Pattern
+
+Pola 1: Ethereum Alignment First — Prioritaskan kompatibilitas Ethereum penuh di atas optimisasi proprietary
+· Decision Pattern: Setiap keputusan arsitektur utama dievaluasi terhadap "apakah ini mendekatkan ke Ethereum L1 behavior?" — Type 2 launch (EV-005) → Type 1 equivalence target (EV-019) → EIP-4844 day-one support (EV-012) → canonical bridge menggunakan Merkle proofs native Ethereum
+· Evidence: Type 1 equivalence dicapai testnet Nov 2024 (EV-019); EIP-4844 aktif segera pasca-Dencun (EV-012); besu-based execution client mempertahankan EVM behavior; tidak ada custom opcode atau precompile non-standard
+· Supporting Dataset: Phase 3 EV-005, EV-011, EV-012, EV-019; Phase 4 Architecture, Execution Environment, Technical Upgrade History
+
+Pola 2: Upgrade Bertahap dengan Pengujian Ekstensif di Testnet Sebelum Mainnet
+· Decision Pattern: Setiap upgrade besar (Boojum, EIP-4844, Type 1) diuji di testnet/public testnet berbulan-bulan sebelum mainnet; private alpha → public Goerli → mainnet alpha → sequential upgrades
+· Evidence: Private testnet Alpha 2022-03 (EV-003); Public testnet Goerli 2023-03 (EV-004); Mainnet 2023-07 (EV-005); Boojum testnet testing sebelum mainnet Maret 2024 (EV-011); Type 1 testnet Nov 2024 sebelum mainnet Q1 2025 (EV-019)
+· Supporting Dataset: Phase 3 EV-003, EV-004, EV-005, EV-011, EV-019; Phase 4 Technical Upgrade History
+
+Pola 3: Modular Architecture dengan Prover Terpisah (Vortex/Boojum) dari Execution Client
+· Decision Pattern: Prover (Rust, PLONK) dikembangkan terpisah dari execution client (Besu-based Go); memungkinkan upgrade prover tanpa hard fork execution layer; Boojum upgrade hanya prover layer
+· Evidence: linea-prover repo terpisah dari linea-contracts dan execution client (Phase 4 Core Components, GitHub repos); Boojum upgrade mengubah proving system tanpa mengubah EVM semantics
+· Supporting Dataset: Phase 4 Core Components, Current Technical Stack, Technical Upgrade History; Phase 7 Open Source Repository
+
+Pola 4: Data Availability di Ethereum L1 sebagai Non-Negotiable (Calldata → Blobs)
+· Decision Pattern: Semua transaction data harus posted ke Ethereum L1; pre-4844 via calldata, post-4844 via blobs; tidak ada validium atau DA layer alternatif; force-exit mechanism bergantung pada L1 DA
+· Evidence: Architecture docs menegaskan "Data Availability: Ethereum L1" (Phase 4 Architecture); EIP-4844 support day-one (EV-012); 7-day force-exit delay via L1 contracts
+· Supporting Dataset: Phase 3 EV-012; Phase 4 Architecture, Security Model, Known Technical Limitations
+
+Pola 5: Centralized Sequencer dengan Roadmap Desentralisasi Explisit (Bukan Promosi Vague)
+· Decision Pattern: Terima centralized sequencer sebagai trade-off launch speed; publish detailed 3-phase prover decentralization roadmap (EV-017) dengan teknis spesifik: permissioned → marketplace → staking network
+· Evidence: Prover decentralization roadmap published Sept 2024 (EV-017); sequencer masih single Consensys-operated per Nov 2024; roadmap memiliki Phase 1/2/3 dengan deliverables teknis
+· Supporting Dataset: Phase 3 EV-017; Phase 4 Architecture, Security Model, Known Technical Limitations
+
+Financial Decision Pattern
+
+Pola 1: Self-Funded via Consensys Treasury — Tidak Ada Fundraising Eksternal untuk Protocol Development
+· Decision Pattern: Seluruh pengembangan 2020-2024 didanai internal Consensys; tidak ada Series A/B, tidak ada token sale, tidak ada SAFT; investor allocation hanya muncul di TGE plan (15-20%) sebagai reward untuk Consensys investors
+· Evidence: Phase 5 Funding History menunjukkan "tidak ditemukan data fundraising eksternal"; Phase 6 Distribution shows "Investors: 15-20% planned" sebagai bagian dari Consensys allocation; Phase 3 EV-005 "fair launch no VC allocation"
+· Supporting Dataset: Phase 5 Financial (all sections); Phase 6 Distribution, Vesting; Phase 3 EV-005
+
+Pola 2: Revenue Model Berbasis Bridge Fees dan L2 Gas (Pre-TGE) — Tidak Ada Token Value Accrual
+· Decision Pattern: Pre-TGE, revenue berasal dari: bridge fees (canonical bridge), L2 gas fees (paid in bridged ETH), potential sequencer MEV; tidak ada fee switch ke token holders karena token tidak exist
+· Evidence: Phase 5 Revenue Model tidak memiliki data konkret; Phase 4 Known Limitations "No Native Token Pre-TGE — gas paid in ETH bridged from L1"; Phase 6 Utility "Fee Payment (Gas): Potential future use... not confirmed for TGE launch"
+· Supporting Dataset: Phase 4 Known Technical Limitations; Phase 5 Revenue Model; Phase 6 Utility
+
+Pola 3: Treasury Management Via Foundation (Post-August 2024) — Transisi dari Consensys Treasury
+· Decision Pattern: Foundation formation (EV-016) memisahkan treasury protocol dari corporate treasury Consensys; Foundation mengelola grants, ecosystem funding, TGE coordination
+· Evidence: Phase 3 EV-016 "Foundation mengelola treasury dan program ekosistem"; Phase 6 Distribution "Foundation: 25-30% planned"; Phase 7 Governance Ecosystem "Foundation: non-profit entity managing ecosystem treasury"
+· Supporting Dataset: Phase 3 EV-016; Phase 6 Distribution; Phase 7 Governance Ecosystem
+
+Pola 4: Ecosystem Incentives via Points Program (Voyage) Bukan Direct Token Emissions
+· Decision Pattern: 4 seasons Voyage (EV-007, EV-010, EV-013, EV-018) menggunakan off-chain points (LXP) yang nanti dikonversi ke token allocation; menghindari regulatory risk direct token emissions pre-TGE; mengontrol distribution via snapshot
+· Evidence: Phase 3 EV-007, EV-010, EV-013, EV-018; Phase 6 Major Token Events; Phase 7 Applications (Voyage Program)
+· Supporting Dataset: Phase 3 EV-007, EV-010, EV-013, EV-018; Phase 6 Major Token Events
+
+Pola 5: Post-Exploit Financial Response — Tidak Ada User Reimbursement, Fokus Hardening
+· Decision Pattern: Bridge exploit Juni 2024 ($6.8M loss) — tidak ada reimbursement ke user; response: pause, upgrade, audit tambahan, transparan post-mortem; financial loss diabsorb oleh protocol/Consensys
+· Evidence: Phase 3 EV-014 "$6.8M lost (tidak direcover)"; Phase 4 Security Model "Bridge dipause ~48 jam; sequencer restarted dengan upgraded contracts"; Phase 7 Ecosystem Risks "Bridge exploit demonstrated vulnerability"
+· Supporting Dataset: Phase 3 EV-014; Phase 4 Security Model; Phase 7 Ecosystem Risks
+
+Ecosystem Decision Pattern
+
+Pola 1: Multi-Bridge Strategy — Integrasi 4 Cross-chain Messaging Layer Sekaligus untuk Redundancy
+· Decision Pattern: Bukan exclusive partnership dengan satu bridge; integrasi LayerZero, Axelar, Wormhole, Chainlink CCIP secara paralel (EV-008, EV-009); masing-masing serve different use case (OFT, GMP, xAsset, CCIP)
+· Evidence: Phase 3 EV-008, EV-009; Phase 7 Major Integrations (4 cross-chain integrations live); Phase 7 External Dependencies (4 bridge/protocol dependencies rated High criticality)
+· Supporting Dataset: Phase 3 EV-008, EV-009; Phase 7 Major Integrations, External Dependencies, Applications
+
+Pola 2: Developer Experience Parity dengan Ethereum — Tooling Standard Tanpa Modifikasi
+· Decision Pattern: Hardhat, Foundry, MetaMask, standard RPC API bekerja out-of-the-box; Linea SDK sebagai helper bukan replacement; Type 1 equivalence target memastikan zero code change migration
+· Evidence: Phase 4 Development Framework (Hardhat, Foundry, Linea SDK); Phase 7 Developer Ecosystem (5 SDK/Tools, standard Ethereum tooling compatible); Phase 3 EV-019 "Developer bisa copy-paste kontrak Ethereum tanpa modifikasi"
+· Supporting Dataset: Phase 4 Development Framework; Phase 7 Developer Ecosystem; Phase 3 EV-019
+
+Pola 3: Ecosystem Growth via Structured Incentive Programs (Voyage) dengan Evolusi Anti-Sybil
+· Decision Pattern: Season 1: volume-based → Season 2: LP-focused → Season 3: quality/quest-based (Galxe/Zealy) → Season 4: proof-of-humanity; setiap iterasi menambah lapisan anti-sybil berdasarkan lesson learned
+· Evidence: Phase 3 EV-007, EV-010, EV-013, EV-018; Phase 6 Major Token Events; Phase 7 Major Integrations (Galxe, Zealy)
+· Supporting Dataset: Phase 3 EV-007, EV-010, EV-013, EV-018; Phase 6 Major Token Events; Phase 7 Major Integrations
+
+Pola 4: Infrastructure Provider Diversification — Self-Operated Critical Path + Third-party RPC/Indexing
+· Decision Pattern: Consensys operate sequencer, prover, canonical bridge relayers (critical path); RPC via Alchemy, Infura, QuickNode, Chainstack (4 providers); Indexing via The Graph; Explorer via Blockscout instance
+· Evidence: Phase 7 Infrastructure Providers (8 providers verified); Phase 4 Core Components (Sequencer, Prover, RPC/API Nodes, Indexer)
+· Supporting Dataset: Phase 4 Core Components; Phase 7 Infrastructure Providers, External Dependencies
+
+Pola 5: DeFi-First Ecosystem Curation — Major DEX dan Primitif Deployed Day-One
+· Decision Pattern: SyncSwap, Velocore, HorizonDEX live mainnet day-one (EV-005); Echo, Foil, options protocols kemudian; Voyage incentives fokus DeFi protocols; lending, perps, structured products targeted
+· Evidence: Phase 3 EV-005 "50+ protokol live pada hari peluncuran"; Phase 7 Applications (4 Major DEXs, 1 Options, cross-chain infra); Phase 8 Adoption Metrics "500+ protocols deployed"
+· Supporting Dataset: Phase 3 EV-005; Phase 7 Applications; Phase 8 Adoption Metrics
+
+Governance Decision Pattern
+
+Pola 1: Progressive Decentralization — Dari Corporate Control ke Foundation ke DAO
+· Decision Pattern: 3 fase governance: (1) 2020-2024: Consensys full control (sequencer, prover, contracts upgrade via multisig); (2) 2024-2025: Linea Foundation independent non-profit manages treasury, grants, TGE; (3) 2025+: DAO token-holder governance dengan delegated voting
+· Evidence: Phase 3 EV-005 (Consensys launch), EV-016 (Foundation formed), EV-020 (DAO launch at TGE); Phase 6 Governance (DAO model, token-weighted voting, delegation); Phase 7 Governance Ecosystem (Foundation, DAO, Security Council, Prover Committee)
+· Supporting Dataset: Phase 3 EV-005, EV-016, EV-020; Phase 6 Governance; Phase 7 Governance Ecosystem
+
+Pola 2: Security Council / Timelock Multisig untuk Emergency Upgrade — Centralized Safety Valve
+· Decision Pattern: L1 rollup contracts upgradeable via timelock multisig (Consensys-controlled pre-Foundation); digunakan untuk emergency bridge upgrade Juni 2024 (EV-014); post-Foundation transition ke Foundation/DAO control
+· Evidence: Phase 3 EV-014 "emergency upgrade deployed"; Phase 4 Security Model "Upgradeability — L1 rollup contracts upgradeable via timelock multisig"; Phase 7 Governance Ecosystem "Security Council (transitioning to Foundation/DAO)"
+· Supporting Dataset: Phase 3 EV-014; Phase 4 Security Model; Phase 7 Governance Ecosystem
+
+Pola 3: Governance Minimization di Layer 2 — Tidak Ada L2 Validator Set atau On-chain Governance Pre-DAO
+· Decision Pattern: Tidak ada validator voting, tidak ada L2 parameter governance pre-TGE; semua protocol parameters (gas, block time, prover config) dikontrol sequencer/prover operator; governance hanya di L1 contracts via multisig dan future DAO
+· Evidence: Phase 4 Consensus Mechanism "N/A (Layer 2 rollup — no independent consensus)"; Phase 7 Governance Ecosystem "Validator Group: N/A"; Phase 6 Governance "DAO launch at TGE"
+· Supporting Dataset: Phase 4 Consensus Mechanism; Phase 6 Governance; Phase 7 Governance Ecosystem
+
+Pola 4: Prover Decentralization Governance Terpisah dari Protocol Governance
+· Decision Pattern: Roadmap prover decentralization (EV-017) memiliki governance sendiri: Prover Decentralization Committee untuk operator selection, staking parameters, slashing; terpisah dari DAO protocol governance
+· Evidence: Phase 3 EV-017 "Prover Decentralization Committee (Planned)"; Phase 7 Governance Ecosystem "Committee: Prover Decentralization Committee (Planned)"; Phase 4 Security Model "Prover Decentralization — roadmap Phase 1-3"
+· Supporting Dataset: Phase 3 EV-017; Phase 4 Security Model; Phase 7 Governance Ecosystem
+
+Pola 5: Transparansi via Public Audit Reports dan Post-Mortem — Governance via Information Symmetry
+· Decision Pattern: Semua audit reports dipublikasikan (linea-audits repo); bridge exploit post-mortem published; technical roadmap published; no closed-door governance pre-DAO
+· Evidence: Phase 4 Audit History (3 major audits public); Phase 3 EV-014 "post-mortem dipublikasikan"; Phase 3 EV-017 "roadmap dipublikasikan"; Phase 7 Official Resources (GitHub audits repo)
+· Supporting Dataset: Phase 4 Audit History; Phase 3 EV-014, EV-017; Phase 7 Official Technical Resources
+
+Risk Response Pattern
+
+Pola 1: Emergency Intervention oleh Security Council pada Bridge Exploit
+· Decision Pattern: Ketika canonical bridge dieksploitasi ($6.8M), immediate response: pause bridge contracts, halt sequencer, deploy emergency upgrade dalam ~48 jam
+· Evidence: Phase 3 EV-014 "Bridge dipause ~48 jam; sequencer restarted dengan upgraded contracts"; Phase 4 Security Model "Canonical Bridge Security — paused during June 2024 exploit, upgraded with additional checks"
+· Trigger: Eksploitasi canonical message service memungkinkan manipulasi proof message
+· Response: Pause bridge ~48 jam; halt sequencer; emergency upgrade contracts; engage additional auditors; publish post-mortem
+· Result: Bridge restarted dengan hardening; $6.8M lost tidak direcover; transparansi meningkatkan kepercayaan; audit tambahan dikontrakkan
+· Supporting Dataset: Phase 3 EV-014; Phase 4 Security Model, Technical Upgrade History; Phase 7 Ecosystem Risks
+
+Pola 2: Proactive Security Hardening via Layered Audits Pre-Launch
+· Decision Pattern: Sebelum mainnet, komision 3 audit firma top-tier (Trail of Bits, OpenZeppelin, Sigma Prime) mencakup contracts, circuits, prover; resolve all critical/high findings
+· Evidence: Phase 3 EV-006 "Semua findings critical/high resolved sebelum mainnet; laporan audit dipublikasikan transparan"; Phase 4 Audit History (3 audits completed pre-mainnet)
+· Trigger: Persiapan mainnet dengan TVL signifikan expected; kebutuhan kepercayaan institusional
+· Response: Invest dalam audit berlapis pre-launch; publish reports transparan
+· Result: Zero critical vulnerability di mainnet launch; standar keamanan tinggi menarik DeFi protocols
+· Supporting Dataset: Phase 3 EV-006; Phase 4 Audit History
+
+Pola 3: Technical Upgrade sebagai Response ke Competitive Pressure (Gas/Finality)
+· Decision Pattern: Boojum prover upgrade (EV-011) dan EIP-4844 support (EV-012) dideploy cepat untuk menjawab kompetitor (Base, Arbitrum, Optimism) yang menawarkan low fee dan fast finality
+· Evidence: Phase 3 EV-011 "Gas fee L2 turun >80%; throughput naik 10x; finality cepat untuk UX DeFi"; EV-012 "Median gas fee L2 <$0.01"; Phase 8 Competitor Landscape (Base, Arbitrum, Optimism semua low fee)
+· Trigger: Kompetitor L2 menawarkan biaya rendah dan finality cepat; user sensitif gas
+· Response: Deploy recursive proving (Boojum) dan blob DA (EIP-4844) segera tersedia
+· Result: Linea median gas <$0.01; finality ~15 menit; kompetitif vs optimistic rollup
+· Supporting Dataset: Phase 3 EV-011, EV-012; Phase 4 Technical Upgrade History; Phase 8 Competitor Landscape
+
+Pola 4: Anti-Sybil Evolution pada Incentive Program sebagai Response ke Farming
+· Decision Pattern: Voyage Season 1-2 volume-based → Season 3 quest-based (Galxe/Zealy) → Season 4 proof-of-humanity; setiap season menambah lapisan anti-sybil berdasarkan attack vector yang teramati
+· Evidence: Phase 3 EV-007, EV-010, EV-013, EV-018; Phase 7 Major Integrations (Galxe, Zealy); Phase 6 Major Token Events
+· Trigger: Airdrop farming dan sybil attack pada Season 1-2 mengurangi allocation fairness
+· Response: Integrasi quest platform, proof-of-humanity, quality-based rewards
+· Result: Data quality lebih tinggi untuk TGE allocation; reputasi fairness; model ditiru proyek lain
+· Supporting Dataset: Phase 3 EV-007, EV-010, EV-013, EV-018; Phase 6 Major Token Events; Phase 7 Major Integrations
+
+Pola 5: Foundation Formation sebagai Response ke Centralization Critique dan Regulatory Clarity
+· Decision Pattern: Setelah 1 tahun mainnet,形成 independent non-profit Foundation untuk memisahkan protocol governance dari Consensys corporate interest; persiapan regulatory untuk TGE/DAO
+· Evidence: Phase 3 EV-016 "Foundation formation announced"; Phase 7 Governance Ecosystem "Foundation: non-profit entity managing ecosystem treasury, grants, governance, decentralization roadmap"
+· Trigger: Kritik "Consensys-controlled chain"; kebutuhan legal wrapper untuk token issuance; persiapan DAO governance
+· Response: Spin-off Foundation (Cayman/BVI typical); independent board; manage treasury, grants, TGE
+· Result: Governance structure formalized; credible path to DAO; regulatory readiness
+· Supporting Dataset: Phase 3 EV-016; Phase 7 Governance Ecosystem, Ecosystem Risks
+
+Recurring Behavioral Pattern
+
+Pola 1: Launch Early dengan MVP, Upgrade Agresif Berdasarkan Real Usage Data
+· Pattern: Private alpha (2022) → Public testnet (2023-03) → Mainnet alpha (2023-07) → Boojum (2024-03) → EIP-4844 (2024-03) → Type 1 testnet (2024-11) → Type 1 mainnet (2025-Q1); setiap upgrade didorong oleh bottleneck teramati di production
+· Evidence: Phase 3 EV-003, EV-004, EV-005, EV-011, EV-012, EV-019; Phase 4 Technical Upgrade History
+· Frequency: 6 major upgrades dalam ~2.5 tahun post-mainnet; interval ~4-6 bulan
+
+Pola 2: Multi-Provider Strategy untuk Critical Infrastructure — Tidak Single Source
+· Pattern: 4 cross-chain messaging (LayerZero, Axelar, Wormhole, CCIP); 4 RPC providers (Alchemy, Infura, QuickNode, Chainstack); 3 audit firms; multiple wallet integrations; canonical bridge + 3rd party bridges
+· Evidence: Phase 7 External Dependencies (4 cross-chain High), Infrastructure Providers (4 RPC High), Major Integrations; Phase 4 Audit History (3 firms)
+· Frequency: Konsisten di semua layer infrastruktur
+
+Pola 3: Points Program Sebagai Pre-TGE Distribution Mechanism dengan Iterasi Anti-Sybil
+· Pattern: Voyage Season 1 (Aug 2023) → Season 2 (Jan 2024) → Season 3 (Apr 2024) → Season 4 (Oct 2024); setiap season: lebih ketat anti-sybil, lebih fokus real usage, lebih terintegrasi quest platform
+· Evidence: Phase 3 EV-007, EV-010, EV-013, EV-018; Phase 6 Major Token Events; Phase 7 Major Integrations (Galxe, Zealy)
+· Frequency: ~3-4 bulan per season; 4 seasons total pre-TGE
+
+Pola 4: Transparansi Radikal pada Security Incident dan Technical Roadmap
+· Pattern: Semua audit reports public (linea-audits repo); bridge exploit post-mortem published dalam hari; prover decentralization roadmap published detail teknis; Type 1 equivalence progress public
+· Evidence: Phase 4 Audit History; Phase 3 EV-014 "post-mortem dipublikasikan"; EV-017 "roadmap dipublikasikan"; EV-019 "milestone achieved di testnet"
+· Frequency: Setiap major security event dan technical milestone
+
+Pola 5: Ethereum-Native Design Choices — Menolak Shortcut Proprietary
+· Pattern: Type 2/1 zkEVM (bukan Type 4 custom VM); Besu-based execution (bukan custom client); EIP-4844 blobs (bukan validium/DA layer); canonical bridge Merkle proofs (bukan trusted bridge); PLONK proving (standard ZK framework)
+· Evidence: Phase 4 Architecture, Execution Environment, Core Components; Phase 3 EV-002, EV-011, EV-012, EV-019
+· Frequency: Setiap keputusan arsitektur utama
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi vs Time-to-Market dan Keamanan Launch
+· Decision: Launch dengan centralized sequencer dan prover (Consensys-operated) untuk mainnet Juli 2023; roadmap decentralization published 14 bulan kemudian (Sept 2024)
+· Trade-off: Korban desentralisasi awal (single point of failure sequencer/prover) demi launch cepat dengan keamanan terverifikasi (3 audits) dan fair launch reputation; user trust via "no token, no VC" kompensasi centralisasi
+· Evidence: Phase 3 EV-005 "fair launch no VC allocation"; EV-017 "roadmap published Sept 2024"; Phase 4 Known Technical Limitations "Centralized Sequencer", "Prover Centralization"; Phase 8 Market Position "fair launch membedakan Linea"
+· Supporting Dataset: Phase 3 EV-005, EV-017; Phase 4 Known Technical Limitations; Phase 8 Market Position
+
+Trade-off 2: Type 2 zkEVM Launch vs Type 1 Equivalence — Pragmatisme vs Idealisme
+· Decision: Launch sebagai Type 2 (minor differences dari Ethereum) Juli 2023; target Type 1 Q1 2025 (20 bulan kemudian)
+· Trade-off: Terima minor incompatibility (gas costs, block structure, some precompile behavior) demi launch 2023; invest engineering 20+ bulan untuk full equivalence; Scroll dan Polygon zkEVM juga Type 2 launch
+· Evidence: Phase 3 EV-002 "Type 2 zkEVM finalized"; EV-005 "Type 2 zkEVM pertama production-ready"; EV-019 "Type 1 equivalence testnet Nov 2024"; Phase 4 Execution Environment "Type 2 mainnet, Type 1 testnet"
+· Supporting Dataset: Phase 3 EV-002, EV-005, EV-019; Phase 4 Execution Environment
+
+Trade-off 3: No Native Token (Pre-TGE) vs Independent Fee Market dan Value Accrual
+· Decision: Gas paid in bridged ETH; no token burn, no staking rewards, no fee switch ke holders pre-TGE
+· Trade-off: Korban token value accrual dan independent fee market demi "fair launch" narrative, regulatory simplicity, dan menghindari "VC token" criticism; user experience bergantung pada L1 gas price
+· Evidence: Phase 3 EV-005 "no token, no VC allocation"; Phase 4 Known Limitations "No Native Token Pre-TGE"; Phase 6 Utility "Fee Payment: Potential future use... not confirmed"; Phase 8 Narrative Position "fair launch"
+· Supporting Dataset: Phase 3 EV-005; Phase 4 Known Technical Limitations; Phase 6 Utility; Phase 8 Narrative Position
+
+Trade-off 4: Canonical Bridge Upgradeability vs Immutability — Safety Valve vs Trust Minimization
+· Decision: Bridge contracts upgradeable via timelock multisig; digunakan untuk emergency fix Juni 2024
+· Trade-off: Korban trust minimization (upgrade key exists) demi ability to patch critical bugs; June 2024 exploit membuktikan upgradeability necessary tapi juga attack vector
+· Evidence: Phase 3 EV-014 "emergency upgrade deployed"; Phase 4 Security Model "Upgradeability — L1 rollup contracts upgradeable via timelock multisig"; Phase 7 Ecosystem Risks "Bridge Upgrade Risk"
+· Supporting Dataset: Phase 3 EV-014; Phase 4 Security Model; Phase 7 Ecosystem Risks
+
+Trade-off 5: Multi-Bridge Integration vs Unified Security Model — Redundancy vs Complexity
+· Decision: Integrasi 4 cross-chain messaging layer (LayerZero, Axelar, Wormhole, CCIP) masing-masing dengan trust assumptions berbeda
+· Trade-off: Korban unified security model dan user simplicity demi liquidity redundancy dan user choice; tidak ada canonical "best" bridge; developer harus pilih; security surface area 4x
+· Evidence: Phase 3 EV-008, EV-009; Phase 7 Major Integrations (4 live), External Dependencies (4 High), Ecosystem Risks "Cross-chain Messaging Bridge Dependency"
+· Supporting Dataset: Phase 3 EV-008, EV-009; Phase 7 Major Integrations, External Dependencies, Ecosystem Risks
+
+Trade-off 6: Consensys Operational Control vs Credible Neutrality — Corporate Efficiency vs Decentralization Perception
+· Decision: Consensys operate sequencer, prover, core dev, security response, pre-Foundation treasury; Foundation formed Aug 2024 (13 bulan post-mainnet)
+· Trade-off: Korban credible neutrality perception (kritis di crypto) demi execution speed, coordinated upgrades, funded development; Foundation formation mitigasi tapi transition incomplete
+· Evidence: Phase 2 Entity (Consensys sebagai parent); Phase 3 EV-016 "Foundation formation announced"; Phase 7 Ecosystem Risks "Consensys Operational Dependency"; Phase 8 Market Position "Consensys-backed"
+· Supporting Dataset: Phase 2 Entity; Phase 3 EV-016; Phase 7 Ecosystem Risks; Phase 8 Market Position
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. Ethereum Equivalence (Type 1) — diferensiasi teknis utama, setiap upgrade mengarah ke sini
+2. Fair Launch Reputation — no token, no VC allocation, points-based airdrop, Foundation independence
+3. DeFi Ecosystem Depth — 500+ protocols, major DEX day-one, sustained incentive programs
+4. Cost/Performance Leadership — Boojum + EIP-4844 = median gas <$0.01, finality ~15 min
+5. Cross-chain Connectivity — 4 messaging layers integrated, canonical bridge + alternatives
+
+Cara Mengambil Keputusan:
+- Data-driven dari production usage (upgrade berdasarkan bottleneck real)
+- Multi-stakeholder input tapi Consensys final say pre-Foundation (sequencer, prover, contracts)
+- Transparan pada technical roadmap dan security incident (publish post-mortem, audit reports)
+- Iteratif pada incentive design (Voyage seasons evolve berdasarkan attack vector)
+- Conservative pada security (3 audits pre-launch, emergency upgrade capability retained)
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Competitive Landscape (Base, Arbitrum, Optimism, Scroll, zkSync) — mendorong gas/finality upgrades
+2. Security Incidents (bridge exploit) — mendorong hardening, transparency, Foundation formation
+3. Community Expectations (airdrop fairness, decentralization) — mendorong Voyage evolution, Foundation, DAO
+4. Ethereum Roadmap (Dencun/EIP-4844, future upgrades) — alignment wajib, day-one support
+5. Regulatory Environment — no token pre-TGE, Foundation legal wrapper, points not securities
+
+Pola Evolusi:
+- Fase 1 (2020-2023): R&D → Architecture → Testnet → Mainnet (Consensys internal, technology-first)
+- Fase 2 (2023-2024): Ecosystem Growth → Voyage 1-3 → Technical Upgrades (Boojum, 4844) → Security Hardening (exploit response)
+- Fase 3 (2024-2025): Institutionalization → Foundation → Type 1 Equivalence → TGE/DAO → Prover Decentralization
+
+Kekuatan Utama:
+- Technical Execution: Deliver complex ZK tech on schedule (Type 1 testnet, Boojum, 4844 day-one)
+- Ecosystem Traction: 500+ protocols, $1B+ bridge volume, 3M+ wallets organic + incentivized
+- Cross-chain Leadership: 4 messaging layers integrated, canonical bridge + alternatives
+- Transparency: Public audits, post-mortems, detailed roadmaps
+- Fair Launch Credibility: No token, no VC, points program, Foundation independence
+
+Kelemahan Utama:
+- Centralization: Single sequencer, permissioned prover, upgrade keys held by Consensys/Founcation
+- Bridge Risk: Canonical bridge exploited ($6.8M), upgradeable contracts, 4 external bridges with different trust models
+- No Revenue Model Pre-TGE: Fully Consensys-funded, no fee switch, sustainability question post-TGE
+- TGE Execution Risk: Fair launch via airdrop only (no public sale), complex LXP conversion, no price discovery mechanism
+- Prover Decentralization Unproven: Roadmap published but Phase 1 not live, operator economics unknown
+
+Open Threads
+
+- Exact Linea Foundation legal jurisdiction (Cayman/BVI/other) tidak dikonfirmasi resmi — hanya announcement date diketahui (Phase 3 EV-016, Phase 7 Governance Ecosystem)
+- TGE exact date dan token contract address belum diverifikasi on-chain per knowledge cutoff — hanya "Q1 2025 target" (Phase 3 EV-020, Phase 6 TGE)
+- Bridge exploit exact root cause technical details (fungsi kontrak spesifik) — post-mortem menyebut "canonical message service" tapi forensic detail tidak public (Phase 3 EV-014, Phase 4 Security Model)
+- Prover decentralization Phase 1 operator selection criteria, staking requirements, onboarding timeline — roadmap published tapi implementation details tidak rilis (Phase 3 EV-017, Phase 4 Security Model, Phase 7 Governance Ecosystem)
+- Type 1 equivalence mainnet deployment exact date dan migration procedure — "Q1 2025" announced tapi no specific date atau upgrade process documented (Phase 3 EV-019, Phase 4 Technical Upgrade History)
+- Consensys investor allocation percentage di TGE — tidak disclosed public (Phase 6 Distribution, Phase 5 Financial)
+- Apakah Linea punya native token sebelum TGE (wrapped ETH used as gas) — confirmed no native token pre-TGE tapi beberapa sumber spekulasi otherwise (Phase 4 Known Limitations, Phase 6 Token Information)
+- Exact TVL peak numbers untuk setiap Voyage season — sources cite ranges, not precise daily peaks (Phase 3 EV-007, EV-010, EV-013, Phase 8 Adoption Metrics)
+- Voyage LXP-to-LINEA conversion formula tidak dipublikasikan — hanya "LXP determines allocation" stated (Phase 6 Major Token Events, Distribution)
+- Apakah LINEA token akan digunakan untuk gas di TGE atau nanti — described as "potential" not committed (Phase 6 Utility, Phase 8 Open Threads)
+- Prover staking mechanics (minimum stake, slashing conditions, rewards) tidak specified — roadmap only (Phase 3 EV-017, Phase 6 Utility)
+- Investor allocation breakdown di TGE (which VCs, exact percentages) tidak disclosed (Phase 6 Distribution, Phase 5 Financial)
+- Consensys exact allocation dalam kategori "Team" tidak separated (Phase 6 Distribution)
+- Cross-chain messaging integration security model comparison (native vs LayerZero vs Axelar vs Wormhole vs CCIP) tidak comparatively documented (Phase 7 Major Integrations, Ecosystem Risks)
+- Linea Foundation grant program specific criteria, application process, committee composition — announced tapi details tidak published (Phase 7 Developer Ecosystem, Governance Ecosystem)
+- Prover hardware requirements dan cost structure untuk decentralized network operators — tidak published (Phase 4 Known Limitations, Phase 7 Open Threads)
+- Apakah Type 1 equivalence requires state migration atau genesis reset — tidak clarified (Phase 3 EV-019, Phase 4 Technical Upgrade History)
+- Canonical bridge upgrade governance post-Foundation — timelock parameters dan Foundation control transition tidak specified (Phase 3 EV-016, Phase 4 Security Model, Phase 7 Governance Ecosystem)
+- Force-exit mechanism detailed specification (7-day delay, L1 contract interaction flow) — referenced tapi tidak fully documented di developer docs (Phase 4 Known Limitations, Phase 7 Open Threads)
+- RPC provider decentralization roadmap (if any) — tidak mentioned di public docs (Phase 7 Infrastructure Providers, Ecosystem Risks)
+- Emergency governance powers (multisig override, timelock parameters) untuk DAO — tidak published (Phase 6 Governance, Phase 7 Governance Ecosystem)
+- Delegation mechanics untuk governance (delegate rewards, revocation, minimum stake) — tidak detailed (Phase 6 Governance, Phase 7 Governance Ecosystem)
+- Treasury management strategy post-TGE (stablecoin allocation, yield strategies, diversification) — tidak specified (Phase 5 Financial, Phase 6 Distribution, Phase 8 Open Threads)
+- Archive node hardware requirements dan official provider SLAs — tidak published (Phase 4 Known Limitations, Phase 7 Infrastructure Providers)

@@ -1,0 +1,166 @@
+PROJECT: Irys
+
+STATUS AIRDROP
+
+Belum ada. Token IRYS belum di-deploy (pre-TGE) sesuai Phase 6 Token Information, sehingga tidak ada distribusi token mainnet tanpa pembayaran. Program Incentivized Testnet Phase 1 (Jan 2024, EV-004) menggunakan token testnet untuk simulasi staking/reward, namun Phase 6 Open Threads mencatat tidak ada klarifikasi konversi token testnet ke mainnet token【Phase 6 — Major Token Events】【Phase 6 — Open Threads】.
+
+AIRDROP EVENTS
+
+Tidak ada event airdrop mainnet untuk dilaporkan. Token IRYS status pre-TGE, contract address "belum di-deploy", TGE date "belum dijadwalkan resmi"【Phase 6 — Token Information】【Phase 6 — TGE】. Incentivized Testnet Phase 1 (AD-Testnet-001 di bawah) bukan airdrop mainnet.
+
+AD-Testnet-001: Incentivized Testnet Phase 1
+Tanggal: 2024-01
+Tipe: Task-based / Points-based (simulasi staking dan reward dengan token testnet)
+Alokasi: Tidak ditemukan (token testnet, bukan mainnet supply)
+Penerima: Tidak ditemukan (jumlah wallet yang memenuhi syarat testnet tidak dipublikasikan)
+Nilai saat klaim: N/A (token testnet tidak bernilai pasar)
+Kriteria: Menjalankan validator, menguji provenance layer, partisipasi ekonomi token testnet — detail spesifik tidak dipublikasikan【Phase 3 — EV-004】【Phase 6 — Major Token Events】
+Anti-sybil: Tidak ditemukan (mekanisme penyaringan testnet tidak terdokumentasi)
+Terkait EV: EV-004
+Sitasi: https://blog.irys.xyz/irys-incentivized-testnet (MEDIUM); https://docs.irys.xyz (MEDIUM)
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Tidak diungkap (Phase 5 Funding History seluruhnya "Tidak diungkap")【Phase 5 — Funding History】.
+- Ukuran komunitas: Discord, X/Twitter, Telegram aktif sejak 2023 (EV-003), namun metrik kuantitatif (DAU, wallet unik, developer count) tidak tersedia【Phase 7 — Developer Ecosystem】【Phase 8 — Adoption Metrics】.
+- Kondisi pasar: Mainnet launch Mar 2024 (EV-006) dalam fase early/pre-TGE; kompetitor (Arweave, Filecoin, Celestia, EigenDA, Avail, 0G, Walrus) beberapa sudah memiliki token live【Phase 8 — Market Position】【Phase 8 — Competitor Landscape】.
+- Apa yang sedang dilakukan kompetitor: Celestia (TIA airdrop Feb 2024), EigenDA (EIGEN airdrop 2024), 0G (testnet berinsentif 2024) — semua menggunakan airdrop/retroactive reward untuk bootstrap komunitas dan validator【Phase 8 — Competitor Landscape】.
+
+TRIGGER DAN ALTERNATIF
+
+Trigger yang terlihat dari data:
+- Mainnet launch (EV-006, Mar 2024) menciptakan kebutuhan mendistribusikan token ke validator, builder, dan early adopter untuk mengaktifkan utility staking, governance, dan storage payment【Phase 6 — Utility】.
+- Tekanan kompetitor: Celestia, EigenDA, Avail, 0G semuanya melakukan airdrop/retroactive distribution 2023-2024 untuk menarik liquidity dan mindshare【Phase 8 — Competitor Landscape】.
+- Kebutuhan desentralisasi: Governance terpusat di Bundlr Labs (K-005), validator set undisclosed (C-003), airdrop bisa menjadi langkah menuju progressive decentralization【Phase 9 — Governance Decision Pattern】【Phase 7 — Governance Ecosystem】.
+
+Alternatif yang tersedia tapi tidak diambil (belum):
+- Public token sale (ICO/IDO/launchpad) — Phase 5 Token Sale "Tidak diungkap"【Phase 5 — Token Sale】.
+- Distribusi bertahap via liquidity mining / staking rewards tanpa airdrop upfront — belum terevidasi.
+- Tidak mendistribusikan sama sekali (hanya team/investor) — bertentangan dengan tokenomics yang mencantumkan "Community" sebagai kategori alokasi【Phase 6 — Distribution】.
+
+Catatan: Alternatif internal tim tidak terdokumentasi; di atas adalah inferensi dari struktur tokenomics dan pola industri era 2024.
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Tidak ada pengumuman resmi mengenai airdrop mainnet. Tokenomics hanya menyatakan kategori alokasi "Community" (Planned, persentase tidak diungkap) dan utility "Incentive/Reward" (Planned)【Phase 6 — Distribution】【Phase 6 — Utility】.
+- Testnet Phase 1 dinyatakan untuk "menguji ekonomi token, performa validator, dan lapisan provenance" — bukan sebagai airdrop mainnet【Phase 3 — EV-004】.
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Menghindari klasifikasi sekuritas: Airdrop ke pengguna AS tanpa KYC berisiko Howey test; tim mungkin menunggu framework regulasi yang lebih jelas atau menggunakan struktur "points program" terlebih dahulu (HIPOTESIS, MEDIUM)【Phase 9 — Behavioral: Minimal Quantitative Transparency】.
+- Memenuhi syarat listing CEX: Beberapa bursa besar menuntun distribusi komunitas minimal (mis. >10% supply) sebelum listing; alokasi "Community" di tokenomics mungkin untuk keperluan ini (HIPOTESIS, MEDIUM)【Phase 6 — Distribution】【Phase 8 — Trading Markets】.
+- Mengontrol sell pressure: Zero financial transparency (K-003) dan tidak ada vesting schedule publik (Phase 6 Vesting Schedule) mengindikasikan tim ingin kendali penuh atas unlock timing; airdrop tanpa vesting ketat bisa menimbulkan dump massal (HIPOTESIS, MEDIUM)【Phase 6 — Vesting Schedule】【Phase 9 — Financial Decision Pattern】.
+- Menunggu TGE timing yang optimal: Pre-TGE status berarti tokenomics numerik (alokasi %, vesting, TGE date) belum final; airdrop biasanya diumumkan bersamaan atau pasca-TGE (HIPOTESIS, HIGH)【Phase 6 — TGE】【Phase 6 — Distribution】.
+- Validator set opacity: Genesis validator undisclosed (C-003); airdrop ke validator memerlukan registry publik yang belum ada (HIPOTESIS, MEDIUM)【Phase 7 — Governance Ecosystem】【Phase 8 — Adoption Metrics】.
+
+OUTCOME PER POV
+
+POV Founder: Tidak diketahui
+- Jangka pendek: N/A (belum ada airdrop)
+- Jangka panjang: N/A
+- Dasar: Belum ada event airdrop mainnet; status pre-TGE【Phase 6 — Token Information】
+
+POV VC: Tidak diketahui
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Investor entity tidak teridentifikasi di Phase 2; funding history undisclosed【Phase 2 — Entities】【Phase 5 — Funding History】
+
+POV Retail: Tidak diketahui
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Belum ada token mainnet untuk diklaim atau dijual【Phase 6 — Token Information】
+
+POV Community: Tidak diketahui
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Komunitas testnet (Discord, X, Telegram) aktif tapi tidak ada metrik konversi ke mainnet【Phase 7 — Developer Ecosystem】【Phase 7 — Infrastructure Providers】
+
+POV Developer: Tidak diketahui
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: SDK, CLI, Docs, Gateway first-party ready sejak 2023; developer menunggu token untuk integrasi storage payment【Phase 7 — Developer Ecosystem】【Phase 4 — Development Framework】
+
+POV Institution: Tidak diketahui
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Tidak ada data on-chain, audit, atau transparency report untuk due diligence institusional【Phase 4 — Audit History】【Phase 5 — Official Financial Resources】
+
+POV Validator: Tidak diketahui
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Validator set genesis undisclosed; slashing conditions undocumented; staking mechanism di Ethereum belum live【Phase 7 — Governance Ecosystem】【Phase 4 — Security Model】【Phase 6 — Utility】
+
+POV Builder: Tidak diketahui
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Builder mengintegrasikan via SDK/API tanpa token; provenance layer live tapi incentive token belum【Phase 7 — Major Integrations】【Phase 6 — Utility】
+
+METRIK RETENSI
+
+Semua metrik di bawah "Tidak ditemukan" karena tidak ada airdrop mainnet:
+- Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan
+- Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan
+- Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ditemukan
+- Perubahan TVL atau volume sebelum vs sesudah: Tidak ditemukan (TVL tidak tersedia pre-TGE)【Phase 8 — Adoption Metrics】
+- Harga token pada klaim, +30 hari, +90 hari: Tidak ditemukan (token belum live)【Phase 8 — Trading Markets】
+
+FARMING DAN SYBIL
+
+Tidak ada data farming/sybil mainnet karena belum ada airdrop. Testnet Phase 1:
+- Apakah kriteria bisa ditebak: Detail kriteria testnet tidak dipublikasikan, hanya tujuan umum "menguji ekonomi token, performa validator, provenance layer"【Phase 3 — EV-004】.
+- Perilaku farming massal: Tidak terevidasi (tidak ada laporan publik tentang sybil attack pada testnet).
+- Alamat yang didiskualifikasi: Tidak dipublikasikan.
+- Perubahan kriteria pasca-pengamatan: Tidak terevidasi.
+
+Catatan: Era 2024 populasi hunter matang; testnet berinsentif tanpa anti-sybil transparan berisiko menarik wallet farm bukan validator/builder真实【Phase 9 — Recurring Pattern 3】.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Mainnet live dengan validator aktif, provenance layer, gateway, explorer (EV-006, EV-007, EV-008)【Phase 3 — EV-006】【Phase 3 — EV-007】【Phase 3 — EV-008】.
+- Tokenomics dipublikasikan dengan kategori "Community" dan utility "Incentive/Reward" (meski tanpa detail numerik)【Phase 6 — Distribution】【Phase 6 — Utility】.
+- Developer tooling matang (SDK, CLI, Gateway, Explorer, Docs) first-party ready sejak 2023【Phase 7 — Developer Ecosystem】【Phase 4 — Development Framework】.
+- Komunitas channel (Discord, X, Telegram, Blog) aktif sejak 2023【Phase 2 — Entities】【Phase 3 — EV-003】.
+- Incentivized Testnet Phase 1 selesai, data validator performance dan economics terkumpul【Phase 3 — EV-004】【Phase 6 — Major Token Events】.
+
+Prasyarat yang belum:
+- Token contract deploy di Ethereum (contract address "belum di-deploy")【Phase 6 — Token Information】.
+- TGE date dijadwalkan resmi ("belum dijadwalkan resmi")【Phase 6 — TGE】.
+- Alokasi persentase "Community" dan vesting schedule finalisasi【Phase 6 — Distribution】【Phase 6 — Vesting Schedule】.
+- Governance model / DAO formation (masih "belum terbentuk")【Phase 6 — Governance】【Phase 7 — Governance Ecosystem】.
+- Public security audit (consensus, cryptography, smart contracts)【Phase 4 — Audit History】【Phase 7 — Ecosystem Risks】.
+- Validator set / registry publik (genesis validator undisclosed)【Phase 7 — Governance Ecosystem】【Phase 8 — Adoption Metrics】.
+- Wallet ecosystem support terdokumentasi (MetaMask, WalletConnect, dll.)【Phase 7 — Wallet Ecosystem】.
+- Exchange listing commitment (CEX/DEX) untuk likuiditas pasca-airdrop【Phase 8 — Trading Markets】.
+
+Sinyal yang biasanya mendahului:
+- Perubahan dokumentasi tokenomics: penambahan halaman "Token Distribution", "Claim Process", "Vesting Schedule" di docs.irys.xyz/tokenomics.
+- Deploy kontrak token IRYS di Ethereum mainnet (terverifikasi di Etherscan) — ini sinyal terkuat TGE mendekat.
+- Pengumuman snapshot date atau "points program" berujung token (mirip Celestia/EigenDA pre-airdrop).
+- Perekrutan community manager / airdrop coordinator di job board Irys.
+- Auditor mengumumkan audit completion untuk Irys L1 / token contracts.
+- Validator set registry publik di explorer.irys.xyz atau docs.
+- Partnership CEX diumumkan (binance, coinbase, bybit, okx, dll. listing announcement).
+
+Penilaian: Airdrop/retroactive rewardemainnet IRYS sangat mungkin (keyakinan: TINGGI) mengingat: (1) kategori "Community" di tokenomics, (2) pola industri 2024 kompetitor semua melakukan airdrop, (3) kebutuhan mendesentralisasikan governance dari centralized Bundlr Labs, (4) utility staking/governance memerlukan token tersebar. Namun TIMING tidak bisa diprediksi karena: (a) zero financial transparency (K-003) menyembunyikan runway dan tekanan investor, (b) technical opacity (K-007) — audit dan consensus spec belum publiek, (c) validator set opacity (C-003) mencegah fair distribution ke validator, (d) regulatory environment US (Bundlr Labs berbasis US) memperlambat keputusan airdrop ke retail US. Sinyal paling konkret akan menjadi token contract deploy di Ethereum + halaman claim/vesting di docs resmi.
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika project meluncurkan mainnet tanpa token (pre-TGE) dan kategori "Community" ada di tokenomics tapi tanpa persentase/vesting (era 2024, modular L1 dengan dependency eksternal kritis), airdrop hampir pasti akan datang tapi timing dikontrol sepenuhnya tim — retail tidak bisa memaksa jadwal.
+- Ketika validator set genesis undisclosed dan slashing conditions undocumented (era 2024, custom L1 tanpa audit publik), airdrop ke validator tidak bisa dieksekusi adil — tim harus mempublikasikan registry terlebih dahulu atau mengalihkan alokasi community ke builder/user.
+- Ketika project memiliki zero financial transparency (funding, treasury, investor undisclosed) dan centralized governance (single entity, no foundation/DAO), airdrop struktur dan alokasi akan diputuskan unilateral tanpa community input — berbeda dengan proyek yang sudah memiliki DAO aktif.
+- Ketika kompetitor langsung (Celestia, EigenDA, Avail, 0G) semuanya melakukan airdrop 2023-2024 dengan snapshot criteria yang bisa ditebak (>30 hari sebelum), hunter population akan memfarm testnet/mainnet aktivitas secara massal — project yang anti-sybil lemah akan mendistribusikan token ke sybil bukan user nyata.
+- Ketika project menggunakan "Incentivized Testnet" dengan token testnet tapi tidak mengklarifikasi konversi ke mainnet token (era 2024), early tester tidak memiliki kepastian insentif — menciptakan kepercayaan rendah untuk partisipasi testnet berikutnya.
+
+OPEN THREADS
+
+- Apakah token testnet Incentivized Testnet Phase 1 akan dapat dikonversi/claim ke token mainnet IRYS post-TGE? (Phase 6 Open Threads)
+- Berapa persentase total supply yang dialokasikan ke "Community", dan apa vesting schedule-nya? (Phase 6 Distribution, Vesting Schedule)
+- Kapan TGE date resmi diumumkan, dan apakah airdrop bersamaan dengan TGE atau pasca-TGE? (Phase 6 TGE)
+- Apakah validator set genesis akan dipublikasikan sebelum airdrop untuk memastikan distribusi adil ke validator? (C-003, Phase 7 Governance Ecosystem)
+- Apakah public security audit akan diselesaikan sebelum TGE/airdrop? (Phase 4 Audit History, Phase 7 Ecosystem Risks)
+- Apakah Irys akan menggunakan "points program" (seperti EigenLayer/EigenDA) sebelum airdrop, atau snapshot langsung? (Tidak terdokumentasi)
+- Bagaimana tim akan menangani regulasi AS (Howey test) untuk airdrop ke retail US? (Bundlr Labs berbasis US, Phase 1 Foundation)
+- Apakah ada private sale/strategic round yang sudah terjadi tapi undisclosed, yang vesting-nya akan bertabrakan dengan airdrop unlock? (Phase 5 Funding History, Phase 6 Vesting Schedule)
+- Wallet ecosystem mana yang akan didukung untuk claim (MetaMask, WalletConnect, Rainbow, Ledger, dll.)? (Phase 7 Wallet Ecosystem)
+- Apakah akan ada anti-sybil on-chain (Gitcoin Passport, Proof of Humanity, dll.) atau off-chain (KYC, social graph)? (Tidak terdokumentasi)

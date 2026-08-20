@@ -1,0 +1,82 @@
+PROJECT: Curve
+
+## Funding History
+
+Funding Round: Seed/Pre-seed era pra-TGE
+Date: 2019–2020 (pra-TGE)
+Amount: tidak dipublikasikan angka pastinya di sumber sekunder yang diakses
+Currency: USD
+Lead Investor: tidak diungkap resmi
+Participating Investors: investor awal yang tercatat dalam alokasi token (kategori investors pada distribusi CRV — persentase versi dataset Phase 6 menyebut 3%; sumber publik lain menyebut komposisi berbeda — lihat Conflict Register Phase 11)
+Valuation: tidak diungkap
+Funding Type: Seed equity/token agreement
+Status: Completed
+Sources: Phase 6 — Distribution (MEDIUM)
+Sources: https://resources.curve.fi/ (MEDIUM)
+
+Funding Round: Tidak ada public sale/ICO
+Date: tidak ada
+Amount: $0
+Currency: USD
+Lead Investor: tidak ada
+Participating Investors: tidak ada
+Valuation: tidak berlaku
+Funding Type: tidak ada penjualan publik — distribusi via emisi liquidity mining + alokasi vesting
+Status: Confirmed
+Sources: Phase 6 — Token (HIGH)
+
+## Treasury
+
+Current Treasury Size: dikelola Curve DAO/Foundation — angka pasti tidak dipublikasikan terpusat di sumber sekunder; komposisi mencakup CRV dan aset protokol (LOW)
+Treasury Composition: CRV + stablecoin/aset lain (tidak dirinci publik) (LOW)
+Stablecoin Holdings: tidak diungkap (LOW)
+Native Token Holdings: signifikan (alokasi vesting & DAO) (LOW)
+Other Assets: tidak diungkap (LOW)
+Treasury Custodian: multi-sig DAO/Foundation (detail alamat tidak dikutip) (LOW)
+
+## Revenue Model
+
+Primary Revenue Source: Fee swap pool — sebagian fee dialokasikan ke pemegang veCRV (fee share) dan/atau LP sesuai desain pool (HIGH) [Curve whitepaper Fee Distribution, https://curve.fi/whitepaper.pdf]
+Secondary Revenue Source: Fee crvUSD (mint/burn/stability) dan Curve Lend (era 2023+) (MEDIUM) [Curve docs, https://resources.curve.fi/]
+Token Revenue: veCRV menerima bagian fee (dalam bentuk aset pool atau CRV tergantung mekanisme) — value accrual utama token (HIGH) [Curve whitepaper, https://curve.fi/whitepaper.pdf]
+Revenue Currency: stablecoin/aset pool + CRV
+
+## Revenue History
+
+Metric: Fee swap (agregat)
+Date: 2020–2026
+Value: tidak dikutip angka per periode di sumber sekunder riset ini — verifikasi dashboard Curve/DefiLlama diperlukan (LOW)
+
+## Fundraising Mechanism
+
+Public Sale: tidak ada (HIGH) [Phase 6 — Token】
+Token Emission: liquidity mining via gauge dimulai TGE 2020-08-14 dengan kurva emisi menurun; max supply 3.030.303.030 CRV (HIGH) [Phase 6 — Supply】
+Launchpad: tidak ada (HIGH)
+
+## Token Sale
+
+Private Sale Token: alokasi investor pra-TGE dengan vesting 2 tahun (era distribusi awal); detail harga tidak dipublikasikan (LOW) [Phase 6 — Distribution】
+Equity vs Token: struktur hubungan equity Curve Labs vs token tidak dipublikasikan resmi (LOW)
+
+## Financial Dependencies
+
+Dependency 1: Pendapatan fee bergantung volume swap stablecoin — kompetisi dari DEX lain dan stablecoin native chain lain memengaruhi basis fee (MEDIUM) [Phase 8 — Competitor Landscape】
+Dependency 2: Nilai CRV terkait permintaan gauge voting (Curve Wars) — melemahnya Convex/bribe market memengaruhi permintaan lock CRV (MEDIUM) [Phase 2 — Entity】
+Dependency 3: Keamanan smart contract — insiden Vyper 2023 menunjukkan risiko dependensi tooling pihak ketiga (HIGH) [Phase 3 — EV-006】
+
+## Financial Risk
+
+Risk 1: Konsentrasi CRV di vesting kontrak & whale — tekanan jual saat unlock (MEDIUM) [Phase 6 — Holder Distribution】
+Risk 2: Risiko keamanan kontrak pool & dependensi Vyper (HIGH) [Phase 3 — EV-006】
+Risk 3: crvUSD menambah eksposur risiko stablecoin/likuidasi (MEDIUM) [Phase 3 — EV-005】
+
+## Official Financial Resources
+
+- https://resources.curve.fi (HIGH)
+- https://curve.fi/whitepaper.pdf (HIGH)
+- Dashboard gauge/DAO ( Curve.fi ) (HIGH)
+
+Open Threads
+- Angka fee protokol per kuartal
+- Saldo & komposisi treasury DAO terverifikasi on-chain
+- Detail harga alokasi investor pra-TGE

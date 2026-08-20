@@ -1,0 +1,46 @@
+PROJECT: BNB Chain
+
+## Market Category
+
+Primary Category: Layer 1 Blockchain (EVM-compatible) dengan Multi-Chain Ecosystem
+- Evidence: (HIGH) [BNB Chain Docs, https://docs.bnbchain.org/docs/overview]
+
+Secondary Category: Layer 2 Scaling Solutions (Optimistic Rollup, ZK-Rollup) + Decentralized Storage Protocol
+- Evidence: (HIGH) [opBNB Docs, https://docs.opbnb.io]; [BNB Chain GitHub zkevm, https://github.com/bnb-chain/zkevm]; [Greenfield Docs, https://docs.bnbchain.org/docs/greenfield]
+
+Sector: Blockchain Infrastructure
+- Evidence: (HIGH) [BNB Chain Docs, https://docs.bnbchain.org/docs/overview]
+
+Sub-sector: 
+- Smart Contract Platform (EVM)
+- Staking & Governance Chain (Tendermint)
+- Optimistic Rollup L2
+- ZK-Rollup L2 (devnet)
+- Decentralized Storage
+- Cross-chain Bridge Infrastructure
+- Evidence: (HIGH) [BNB Chain Docs, https://docs.bnbchain.org/docs/overview]; [opBNB Docs, https://docs.opbnb.io]; [Greenfield Docs, https://docs.bnbchain.org/docs/greenfield]
+
+Sources: [BNB Chain Docs, https://docs.bnbchain.org/docs/overview]; [opBNB Docs, https://docs.opbnb.io]; [Greenfield Docs, https://docs.bnbchain.org/docs/greenfield]
+
+## Market Position
+
+Project Stage: Mature
+- Evidence: Mainnet live sejak September 2020 (BSC), rebranding 2021, multi-chain ecosystem operational, TVL recovery >$5B (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog/4th-anniversary]; [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+Primary Competitors:
+- Ethereum (Layer 1 EVM utama)
+- Solana (Layer 1 high-throughput)
+- Polygon (EVM L2/sidechain ecosystem)
+- Avalanche (EVM-compatible L1)
+- Arbitrum (Optimistic Rollup L2 di Ethereum)
+- Optimism (Optimistic Rollup L2, OP Stack origin)
+- Base (Optimistic Rollup L2, OP Stack, Coinbase)
+- Evidence: (HIGH) [DefiLlama Chains, https://defillama.com/chains]; [Messari, https://messari.io]
+
+Market Segment: Retail & institutional DeFi, GameFi, NFT, AI x Crypto, RWA, Consumer Apps di Asia Tenggara, Asia Timur, Amerika Latin, Afrika, Timur Tengah
+- Evidence: (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog]; [Binance Regional Entities, https://www.binance.com/en/access-restriction]
+
+Geographic Focus: Global dengan fokus pasar emerging markets (Asia Tenggara, Asia Timur, Amerika Latin, Afrika, Timur Tengah) melalui entitas lokal Binance
+- Evidence: (HIGH) [Binance Global Access, https://www.binance.com/en/access-restriction]; [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+Sources: [BNB

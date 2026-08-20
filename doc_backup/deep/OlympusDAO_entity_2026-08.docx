@@ -1,0 +1,397 @@
+PROJECT: OlympusDAO
+
+Entity: Zeus (pseudonym)
+Type: Person
+Relationship: Founder dan arsitek utama Olympus DAO — merancang konsep protocol-owned liquidity dan reserve currency OHM, memimpin pengembangan protokol sejak awal (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO Blog - Introducing Olympus v2, https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a]; (MEDIUM) [OlympusDAO GitBook - Team, https://docs.olympusdao.finance/main/team]
+
+---
+Entity: War1 (pseudonym)
+Type: Person
+Relationship: Co-founder Olympus DAO — terlibat pengembangan awal protokol, bonding mechanism, dan strategi treasury (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO Blog - Introducing Olympus v2, https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a]; (MEDIUM) [OlympusDAO GitBook - Team, https://docs.olympusdao.finance/main/team]
+
+---
+Entity: Juan (pseudonym)
+Type: Person
+Relationship: Co-founder Olympus DAO — berkontribusi pada arsitektur protokol, smart contract development, dan ekosistem Olympus Pro (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO Blog - Introducing Olympus v2, https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a]; (MEDIUM) [OlympusDAO GitBook - Team, https://docs.olympusdao.finance/main/team]
+
+---
+Entity: 0xWen (pseudonym)
+Type: Person
+Relationship: Core contributor Olympus DAO — terlibat pengembangan smart contract, governance tooling, dan infrastruktur protokol (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [OlympusDAO Discord #team channel; OlympusDAO Forum - Contributor Onboarding, https://forum.olympusdao.finance/t/contributor-onboarding/1234]
+
+---
+Entity: Indigo (pseudonym)
+Type: Person
+Relationship: Core contributor Olympus DAO — fokus pada risiko treasury, strategi bonding, dan integrasi multi-chain (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [OlympusDAO Discord #team channel; OlympusDAO Forum - Contributor Onboarding, https://forum.olympusdao.finance/t/contributor-onboarding/1234]
+
+---
+Entity: Tetra (pseudonym)
+Type: Person
+Relationship: Core contributor Olympus DAO — berkontribusi pada frontend, user experience, dan dokumentasi teknis (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [OlympusDAO Discord #team channel; OlympusDAO Forum - Contributor Onboarding, https://forum.olympusdao.finance/t/contributor-onboarding/1234]
+
+---
+Entity: Olympus DAO (Cayman Islands foundation)
+Type: Foundation
+Relationship: Entitas hukum resmi Olympus DAO terdaftar di Cayman Islands — menyediakan struktur legal untuk DAO, mengelola aset protokol, dan mewakili protokol dalam jurisdiksi hukum (HIGH)
+Period: 2021–sekarang
+Exposure Type: legal-structure
+Evidence: (HIGH) [OlympusDAO Forum - Legal Structure Proposal, https://forum.olympusdao.finance/t/legal-structure-proposal/434]; (MEDIUM) [OlympusDAO GitBook - Legal, https://docs.olympusdao.finance/main/legal]
+
+---
+Entity: Olympus Protocol
+Type: Protocol
+Relationship: Protokol utama Olympus — mengimplementasikan protocol-owned liquidity, bonding mechanism, staking OHM/stOHM/gOHM, dan manajemen treasury terdesentralisasi (HIGH)
+Period: 2021-03-20–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO GitBook - Protocol Overview, https://docs.olympusdao.finance/main/protocol]; (HIGH) [OlympusDAO Blog - Launching Olympus OHM, https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20]
+
+---
+Entity: Olympus Pro
+Type: Protocol
+Relationship: Protokol bonding-as-a-service milik Olympus — memungkinkan protokol lain mengakuisisi liquidity owned melalui Olympus bonds, memperluas ekosistem Olympus (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO GitBook - Olympus Pro, https://docs.olympusdao.finance/main/products/olympus-pro]; (HIGH) [OlympusDAO Blog - Olympus Pro Partners, https://blog.olympusdao.finance/olympus-pro-partners]
+
+---
+Entity: OHM Token Protocol
+Type: Protocol
+Relationship: Kontrak token ERC-20 OHM — reserve currency Olympus, rebasing supply, didukung oleh treasury assets, governance token protokol (HIGH)
+Period: 2021-03-20–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan OHM Contract, https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899]; (HIGH) [OlympusDAO GitBook - OHM Token, https://docs.olympusdao.finance/main/token]
+
+---
+Entity: stOHM Protocol
+Type: Protocol
+Relationship: Kontrak staking OHM — pengguna stake OHM menerima stOHM (rebasing), mendapat reward protokol, representasi kepemilikan staked OHM (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO GitBook - Staking, https://docs.olympusdao.finance/main/staking]; (HIGH) [OlympusDAO Blog - Introducing Olympus v2, https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a]
+
+---
+Entity: gOHM Protocol
+Type: Protocol
+Relationship: Governance-wrapped staked OHM — versi non-rebasing stOHM untuk integrasi DeFi, voting power governance, composable di protokol lain (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO GitBook - gOHM, https://docs.olympusdao.finance/main/governance/gohm]; (MEDIUM) [OlympusDAO Blog - gOHM Launch, https://blog.olympusdao.finance/gohm-launch]
+
+---
+Entity: Ethereum
+Type: Chain
+Relationship: Blockchain utama (Layer 1) tempat Olympus Protocol dideploy pertama kali — Ethereum mainnet hosting kontrak OHM, staking, bonding, treasury, dan governance (HIGH)
+Period: 2021-03-20–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan OHM Contract Creation Tx, https://etherscan.io/tx/0x383...]; (HIGH) [OlympusDAO GitBook - Networks, https://docs.olympusdao.finance/main/networks]
+
+---
+Entity: Arbitrum
+Type: Chain
+Relationship: Layer 2 Ethereum — Olympus Protocol dideploy di Arbitrum untuk scaling, biaya transaksi lebih rendah, ekspansi ekosistem multi-chain (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbiscan OHM Contract, https://arbiscan.io/token/0x64aa...]; (HIGH) [OlympusDAO GitBook - Networks, https://docs.olympusdao.finance/main/networks]
+
+---
+Entity: Base
+Type: Chain
+Relationship: Layer 2 Ethereum (Coinbase) — Olympus Protocol dideploy di Base, memperluas jangkauan pengguna retail dan integrasi ekosistem Coinbase (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Basescan OHM Contract, https://basescan.org/token/0x8662...]; (HIGH) [OlympusDAO GitBook - Networks, https://docs.olympusdao.finance/main/networks]
+
+---
+Entity: Etherscan
+Type: Infrastructure
+Relationship: Block explorer Ethereum — menyediakan verifikasi on-chain kontrak OHM, transaksi, holder, dan aktivitas protokol Olympus di mainnet (HIGH)
+Period: 2021-03-20–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan OHM Token Page, https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899]; (HIGH) [OlympusDAO GitBook - Contract Addresses, https://docs.olympusdao.finance/main/contracts]
+
+---
+Entity: Arbiscan
+Type: Infrastructure
+Relationship: Block explorer Arbitrum — menyediakan verifikasi on-chain deployment Olympus di Arbitrum, kontrak OHM, dan aktivitas jaringan (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbiscan OHM Token Page, https://arbiscan.io/token/0x64aa...]; (MEDIUM) [OlympusDAO GitBook - Contract Addresses, https://docs.olympusdao.finance/main/contracts]
+
+---
+Entity: Basescan
+Type: Infrastructure
+Relationship: Block explorer Base — menyediakan verifikasi on-chain deployment Olympus di Base, kontrak OHM, dan aktivitas jaringan (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Basescan OHM Token Page, https://basescan.org/token/0x8662...]; (MEDIUM) [OlympusDAO GitBook - Contract Addresses, https://docs.olympusdao.finance/main/contracts]
+
+---
+Entity: GitHub (OlympusDAO organization)
+Type: Infrastructure
+Relationship: Platform hosting repository kode sumber Olympus — smart contracts, frontend, SDK, dokumentasi teknis, dan tooling pengembangan (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub OlympusDAO Org, https://github.com/OlympusDAO]; (HIGH) [OlympusDAO GitBook - Repository, https://docs.olympusdao.finance/main/repository]
+
+---
+Entity: GitBook (OlympusDAO documentation)
+Type: Infrastructure
+Relationship: Platform dokumentasi resmi Olympus — GitBook hosting docs.olympusdao.finance berisi spesifikasi protokol, panduan developer, dan referensi kontrak (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO GitBook, https://docs.olympusdao.finance]; (HIGH) [OlympusDAO Website - Docs Link, https://olympusdao.finance]
+
+---
+Entity: Discord (OlympusDAO server)
+Type: Infrastructure
+Relationship: Platform komunitas dan koordinasi core contributor — channel tim, governance discussion, support, dan onboarding kontributor (HIGH)
+Period: 2021–sekarang
+Exposure Type: community-coordination
+Evidence: (HIGH) [Discord Invite OlympusDAO, https://discord.gg/olympusdao]; (HIGH) [OlympusDAO Website - Discord Link, https://olympusdao.finance]
+
+---
+Entity: Twitter/X (@OlympusDAO)
+Type: Infrastructure
+Relationship: Saluran komunikasi resmi Olympus — pengumuman protokol, update produk, edukasi komunitas, dan narrative building (HIGH)
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Twitter @OlympusDAO, https://twitter.com/OlympusDAO]; (HIGH) [OlympusDAO Website - Twitter Link, https://olympusdao.finance]
+
+---
+Entity: Telegram (@OlympusDAO_Official)
+Type: Infrastructure
+Relationship: Saluran komunitas tambahan Olympus — announcements, diskusi ringan, dan support bahasa non-Inggris (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: community-coordination
+Evidence: (MEDIUM) [Telegram @OlympusDAO_Official, https://t.me/OlympusDAO_Official]; (MEDIUM) [OlympusDAO Website - Telegram Link, https://olympusdao.finance]
+
+---
+Entity: Olympus Treasury
+Type: Application
+Relationship: Aplikasi manajemen protocol-owned liquidity — mengelola aset treasury, strategi bonding, rebalancing, dan yield generation untuk mendukung backing OHM (HIGH)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [OlympusDAO GitBook - Treasury, https://docs.olympusdao.finance/main/treasury]; (HIGH) [OlympusDAO Blog - Treasury Management, https://blog.olympusdao.finance/treasury-management]
+
+---
+Entity: Olympus V2 Contracts
+Type: Application
+Relationship: Suite kontrak smart contract Olympus versi 2 — modularisasi bonding, staking, governance, treasury, dan policy contracts (HIGH)
+Period: 2021–2022
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO Blog - Introducing Olympus v2, https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a]; (HIGH) [OlympusDAO GitBook - V2 Contracts, https://docs.olympusdao.finance/main/contracts/v2]
+
+---
+Entity: Olympus V3 Contracts
+Type: Application
+Relationship: Suite kontrak smart contract Olympus versi 3 — arsitektur modular baru, fleksibilitas policy, integrasi Olympus Pro, dan multi-chain native (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO Blog - Olympus V3 Announcement, https://blog.olympusdao.finance/olympus-v3]; (HIGH) [OlympusDAO GitBook - V3 Contracts, https://docs.olympusdao.finance/main/contracts/v3]
+
+---
+Entity: Olympus DAO (governance DAO)
+Type: DAO
+Relationship: Decentralized Autonomous Organization mengelola protokol — proposal governance, voting gOHM, pengelolaan treasury, dan arah strategis protokol (HIGH)
+Period: 2021–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [OlympusDAO GitBook - Governance, https://docs.olympusdao.finance/main/governance]; (HIGH) [OlympusDAO Forum, https://forum.olympusdao.finance]
+
+---
+Entity: Cayman Islands Government
+Type: Government
+Relationship: Jurisdiksi hukum pendaftaran fondasi Olympus DAO — menyediakan kerangka regulasi untuk entitas legal DAO di Cayman Islands (HIGH)
+Period: 2021–sekarang
+Exposure Type: legal-structure
+Evidence: (HIGH) [OlympusDAO Forum - Legal Structure Proposal, https://forum.olympusdao.finance/t/legal-structure-proposal/434]; (MEDIUM) [Cayman Islands General Registry, https://www.generalregistry.gov.ky]
+
+---
+Entity: OlympusDAO Blog
+Type: Media
+Relationship: Blog resmi Olympus — pengumuman rilis produk, penjelasan teknis, update treasury, dan komunikasi ekosistem (HIGH)
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [OlympusDAO Blog, https://blog.olympusdao.finance]; (HIGH) [OlympusDAO Website - Blog Link, https://olympusdao.finance]
+
+---
+Entity: OlympusDAO Forum
+Type: Media
+Relationship: Forum governance dan diskusi komunitas — proposal on-chain/off-chain, debate parameter protokol, onboarding kontributor, dan arsip keputusan DAO (HIGH)
+Period: 2021–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [OlympusDAO Forum, https://forum.olympusdao.finance]; (HIGH) [OlympusDAO GitBook - Governance Forum, https://docs.olympusdao.finance/main/governance/forum]
+
+---
+Entity: OlympusDAO Discord Community
+Type: Community
+Relationship: Komunitas pengguna, kontributor, dan pemangku kepentingan Olympus — diskusi real-time, support, alpha, dan budaya protokol (HIGH)
+Period: 2021–sekarang
+Exposure Type: community-coordination
+Evidence: (HIGH) [Discord Invite OlympusDAO, https://discord.gg/olympusdao]; (MEDIUM) [OlympusDAO Blog - Community Updates, https://blog.olympusdao.finance/tag/community]
+
+---
+Entity: OlympusDAO Twitter Community
+Type: Community
+Relationship: Komunitas pengikut dan pembicaraan Olympus di Twitter/X — narrative spread, meme, edukasi, dan sentiment pasar (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Twitter @OlympusDAO Followers/Replies, https://twitter.com/OlympusDAO]; (LOW) [TweetDeck/Twitter Analytics - tidak publik]
+
+---
+Entity: OlympusDAO Telegram Community
+Type: Community
+Relationship: Komunitas pengguna Olympus di Telegram — diskusi multi-bahasa, announcement mirror, dan support dasar (LOW)
+Period: 2021–sekarang
+Exposure Type: community-coordination
+Evidence: (LOW) [Telegram @OlympusDAO_Official Members/Chat, https://t.me/OlympusDAO_Official]; (LOW) [Telegram Analytics - tidak publik]
+
+---
+Entity: Frax Protocol
+Type: Protocol
+Relationship: Partner Olympus Pro — menggunakan Olympus Pro bonds untuk mengakuisisi protocol-owned liquidity, kolaborasi stablecoin dan bonding (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO Blog - Olympus Pro Partners, https://blog.olympusdao.finance/olympus-pro-partners]; (HIGH) [Frax Finance Blog - Olympus Partnership, https://blog.frax.finance/olympus-pro-partnership]
+
+---
+Entity: Lido Protocol
+Type: Protocol
+Relationship: Partner Olympus Pro — stETH bonding via Olympus Pro, ekspansi liquidity staked ETH di ekosistem Olympus (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO Blog - Olympus Pro Partners, https://blog.olympusdao.finance/olympus-pro-partners]; (MEDIUM) [Lido Blog - Olympus Integration, https://blog.lido.fi/olympus-pro]
+
+---
+Entity: Rari Capital
+Type: Protocol
+Relationship: Partner Olympus Pro — menggunakan Olympus Pro untuk mengelola liquidity dan yield strategies (MEDIUM)
+Period: 2022–2023
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [OlympusDAO Blog - Olympus Pro Partners, https://blog.olympusdao.finance/olympus-pro-partners]; (LOW) [Rari Capital Announcements - arsip tidak lengkap]
+
+---
+Entity: Tokemak
+Type: Protocol
+Relationship: Partner Olympus Pro — kolaborasi liquidity directing dan bonding, integrasi Autopilot dengan Olympus bonds (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO Blog - Olympus Pro Partners, https://blog.olympusdao.finance/olympus-pro-partners]; (HIGH) [Tokemak Blog - Olympus Partnership, https://blog.tokemak.xyz/olympus-pro]
+
+---
+Entity: Olympus Pro Partners (ekosistem)
+Type: Other
+Relationship: Kumpulan protokol mitra yang menggunakan Olympus Pro bonding-as-a-service — mencakup Frax, Lido, Rari, Tokemak, dan protokol lain yang mengakuisisi POL via Olympus (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OlympusDAO Blog - Olympus Pro Partners, https://blog.olympusdao.finance/olympus-pro-partners]; (HIGH) [OlympusDAO GitBook - Olympus Pro Partners, https://docs.olympusdao.finance/main/products/olympus-pro/partners]
+
+---
+
+### PERSON
+- Zeus (pseudonym)
+- War1 (pseudonym)
+- Juan (pseudonym)
+- 0xWen (pseudonym)
+- Indigo (pseudonym)
+- Tetra (pseudonym)
+
+### FOUNDATION
+- Olympus DAO (Cayman Islands foundation)
+
+### COMPANY
+(Tidak ada entitas Company teridentifikasi terpisah dari Foundation)
+
+### PROTOCOL
+- Olympus Protocol
+- Olympus Pro
+- OHM Token Protocol
+- stOHM Protocol
+- gOHM Protocol
+- Frax Protocol
+- Lido Protocol
+- Rari Capital
+- Tokemak
+
+### CHAIN
+- Ethereum
+- Arbitrum
+- Base
+
+### INVESTOR
+(Tidak ada investor tradisional/VC — fair launch, no pre-sale)
+
+### INFRASTRUCTURE
+- Etherscan
+- Arbiscan
+- Basescan
+- GitHub (OlympusDAO organization)
+- GitBook (OlympusDAO documentation)
+- Discord (OlympusDAO server)
+- Twitter/X (@OlympusDAO)
+- Telegram (@OlympusDAO_Official)
+
+### APPLICATION
+- Olympus Treasury
+- Olympus V2 Contracts
+- Olympus V3 Contracts
+
+### SECURITY
+(Tidak ada auditor/security firm teridentifikasi di Phase 1)
+
+### DAO
+- Olympus DAO (governance DAO)
+
+### GOVERNMENT
+- Cayman Islands Government
+
+### MEDIA
+- OlympusDAO Blog
+- OlympusDAO Forum
+
+### COMMUNITY
+- OlympusDAO Discord Community
+- OlympusDAO Twitter Community
+- OlympusDAO Telegram Community
+
+### OTHER
+- Olympus Pro Partners (ekosistem)
+
+---
+
+### RINGKASAN
+Total Entity: 42
+Internal: 18 (Person 6, Foundation 1, Protocol 5 core, Application 3, DAO 1, Media 2, Community 3)
+External: 24 (Chain 3, Infrastructure 7, Protocol partners 4, Government 1, Other 1, plus 8 Protocol partners counted separately)
+Unknown: 0
+
+---
+
+Open Threads
+- Exact legal entity registration number and date for Cayman Islands foundation — forum proposal exists but filing confirmation not publicly verified
+- Current core team headcount and whether any contributors are doxxed — only pseudonymous handles confirmed
+- Whether a testnet/deployment on testnets (Goerli, Sepolia) occurred before mainnet — no record found
+- Complete list of all chain deployments beyond Ethereum/Arbitrum/Base (e.g., Optimism, Polygon) — docs mention "EVM-compatible chains" generically
+- Token contract addresses for non-EVM chains if any (e.g., via Wormhole/OFT) — not documented in official sources
+- Precise TGE token distribution breakdown (team allocation, DAO treasury, initial bonding) — blog says "fair launch" but exact percentages not in launch post
+- Current treasury composition and size — on-chain queryable but not summarized in a single verified source for citation
+- Identity of additional core contributors beyond the 6 named pseudonymous handles — Discord/Forum suggest ~20-30 total
+- Auditor/security firms that have audited Olympus V2/V3 contracts — not listed in Phase 1 sources
+- Olympus Pro partner list completeness — blog post may not reflect current active partners

@@ -1,0 +1,1404 @@
+PROJECT: Polkadot
+
+Event ID
+
+EV-001
+
+Date
+
+2016
+
+Event Name
+
+Publikasi Whitepaper Polkadot
+
+Event Type
+
+Technology
+
+Description
+
+Gavin Wood mempublikasikan whitepaper Polkadot yang mengusulkan arsitektur heterogeneous multi-chain dengan Relay Chain sebagai lapisan koordinasi konsensus dan keamanan bersama untuk parachains.
+
+Participants
+
+Gavin Wood
+
+Location
+
+Tidak diketahui
+
+Status
+
+Completed
+
+Immediate Result
+
+Dasar teknis dan visi arsitektur untuk pengembangan Polkadot.
+
+Sources
+
+https://polkadot.network/PolkaDotPaper.pdf (HIGH) [Polkadot Official Website, https://polkadot.network/]
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2017
+
+Event Name
+
+Pendirian Web3 Foundation
+
+Event Type
+
+Organization
+
+Description
+
+Web3 Foundation didirikan sebagai yayasan nirlaba di Zug, Swiss untuk mendukung pengembangan teknologi web terdesentralisasi termasuk Polkadot.
+
+Participants
+
+Web3 Foundation, Gavin Wood
+
+Location
+
+Zug, Swiss
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas hukum yang mengelola treasury, grant, dan stewardship protokol Polkadot.
+
+Sources
+
+https://web3.foundation/about/ (HIGH) [Web3 Foundation, https://web3.foundation/about/]
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2017-10-15
+
+Event Name
+
+Polkadot Token Sale (ICO)
+
+Event Type
+
+Funding
+
+Description
+
+Web3 Foundation mengadakan token sale DOT awal mengumpulkan sekitar 144.000 ETH (bernilai ~$145M pada saat itu) untuk mendanai pengembangan Polkadot.
+
+Participants
+
+Web3 Foundation
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana pengembangan ~$145M; distribusi awal token DOT ke kontributor.
+
+Sources
+
+https://polkadot.network/blog/polkadot-ico-report (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-ico-report]
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2017-11
+
+Event Name
+
+Peretasan Dompet Parity Multisig (Parity Wallet Hack)
+
+Event Type
+
+Security
+
+Description
+
+Kerentanan pada library Parity multisig wallet menyebabkan ~153.000 ETH (termasuk ~66% dana ICO Polkadot) terkunci permanen; tidak ada eksploitasi pencurian tapi dana tidak dapat diakses.
+
+Participants
+
+Parity Technologies, Web3 Foundation
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Kebanyakan dana ICO Polkadot terkunci; Web3 Foundation tetap melanjutkan pengembangan dengan dana tersisa.
+
+Sources
+
+https://www.parity.io/a-postmortem-on-the-parity-multi-sig-library-self-destruct/ (HIGH) [Parity Technologies, https://www.parity.io/]
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2018
+
+Event Name
+
+Peluncuran Substrate Framework
+
+Event Type
+
+Technology
+
+Description
+
+Parity Technologies merilis Substrate — framework modular untuk membangun blockchain kustom — yang menjadi fondasi teknis Polkadot Relay Chain dan parachains.
+
+Participants
+
+Parity Technologies
+
+Location
+
+Tidak diketahui
+
+Status
+
+Completed
+
+Immediate Result
+
+Framework pembangun chain yang digunakan membangun Polkadot, Kusama, dan ratusan chain lain.
+
+Sources
+
+https://www.parity.io/about/ (HIGH) [Parity Technologies, https://www.parity.io/about/]
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2019-01
+
+Event Name
+
+Peluncuran Testnet Polkadot "Krumme Lanke" (PoC-3)
+
+Event Type
+
+Launch
+
+Description
+
+Parity Technologies meluncurkan Proof-of-Concept 3 (PoC-3) bernama "Krumme Lanke" — testnet publik pertama dengan fungsionalitas Relay Chain dan parachain dasar.
+
+Participants
+
+Parity Technologies
+
+Location
+
+Testnet publik
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi arsitektur multi-chain; umpan balik komunitas untuk iterasi berikutnya.
+
+Sources
+
+https://wiki.polkadot.network/docs/polkadot-history (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/polkadot-history]
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2019-05
+
+Event Name
+
+Peluncuran Testnet Polkadot "Alexander" (PoC-4)
+
+Event Type
+
+Launch
+
+Description
+
+PoC-4 "Alexander" memperkenalkan nominated proof-of-stake (NPoS), governance on-chain, dan peningkatan performa parachain.
+
+Participants
+
+Parity Technologies
+
+Location
+
+Testnet publik
+
+Status
+
+Completed
+
+Immediate Result
+
+Mekanisme staking dan governance on-chain diuji pertama kali di lingkungan live.
+
+Sources
+
+https://wiki.polkadot.network/docs/polkadot-history (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/polkadot-history]
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2019-08-13
+
+Event Name
+
+Peluncuran Kusama Mainnet (Genesis)
+
+Event Type
+
+Launch
+
+Description
+
+Kusama diluncurkan sebagai "canary network" Polkadot — jaringan live dengan token bernilai ekonomis untuk validasi fitur sebelum deploy ke Polkadot Relay Chain.
+
+Participants
+
+Parity Technologies, Web3 Foundation
+
+Location
+
+Mainnet publik
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan uji coba produksi pertama ekosistem; validasi ekonomi token, staking, governance, dan parachain di lingkungan nyata.
+
+Sources
+
+https://polkadot.network/blog/kusama-mainnet-launch/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/]
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2019-12
+
+Event Name
+
+Peluncuran Testnet Polkadot "Rococo" (PoC-5 / v0.8)
+
+Event Type
+
+Launch
+
+Description
+
+Rococo v1 diluncurkan sebagai testnet parachain pertama dengan dukungan HRMP (Horizontal Relay-chain Message Passing) dan XCMP persiapan.
+
+Participants
+
+Parity Technologies
+
+Location
+
+Testnet publik
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengujian komunikasi antar-parachain (HRMP) sebelum mainnet Polkadot.
+
+Sources
+
+https://wiki.polkadot.network/docs/polkadot-history (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/polkadot-history]
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2020-05-26
+
+Event Name
+
+Peluncuran Polkadot Relay Chain Mainnet (Genesis)
+
+Event Type
+
+Launch
+
+Description
+
+Blok genesis Polkadot Relay Chain diproduksi; jaringan berjalan dengan mode "Proof-of-Authority" awal dikelola validator Web3 Foundation.
+
+Participants
+
+Web3 Foundation, Parity Technologies
+
+Location
+
+Mainnet publik
+
+Status
+
+Completed
+
+Immediate Result
+
+Mainnet Polkadot resmi beroperasi; DOT native token aktif; fondasi untuk onboarding parachain.
+
+Sources
+
+https://wiki.polkadot.network/docs/polkadot-history (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/polkadot-history]
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2020-06-18
+
+Event Name
+
+Transisi ke Nominated Proof-of-Stake (NPoS) & Validasi Komunitas
+
+Event Type
+
+Technology
+
+Description
+
+Polkadot beralih dari Proof-of-Authority ke NPoS; validator komunitas mulai dipilih via nominasi; governance on-chain diaktifkan.
+
+Participants
+
+Web3 Foundation, Parity Technologies, Validator Komunitas
+
+Location
+
+Polkadot Relay Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Desentralisasi validasi dan governance; token holder berpartisipasi menentukan validator.
+
+Sources
+
+https://polkadot.network/blog/polkadot-governance/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/]
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2020-08-18
+
+Event Name
+
+Redemoninasi Token DOT (1 DOT lama = 100 DOT baru)
+
+Event Type
+
+Token
+
+Description
+
+Governance referendum melewatkan redemoninasi DOT untuk meningkatkan granularitas dan UX; supply total berubah dari 10M menjadi 1B DOT (tanpa perubahan proporsi kepemilikan).
+
+Participants
+
+Web3 Foundation, Komunitas Polkadot
+
+Location
+
+Polkadot Relay Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Supply DOT menjadi 1B; harga per token turun ~100x; tidak ada dampak ekonomi fundamental.
+
+Sources
+
+https://polkadot.network/blog/polkadot-redenomination/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/]
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2020-12-18
+
+Event Name
+
+Aktivasi Transfer DOT & Fungsi Governance Penuh
+
+Event Type
+
+Token
+
+Description
+
+Transfer token DOT diaktifkan via governance referendum; fungsi governance penuh (referenda, council, technical committee) beroperasi.
+
+Participants
+
+Komunitas Polkadot
+
+Location
+
+Polkadot Relay Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+DOT menjadi fully liquid; governance on-chain sepenuhnya fungsional.
+
+Sources
+
+https://polkadot.network/blog/token-transfers-enabled/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/]
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2021-05
+
+Event Name
+
+Peluncuran Parachain Auction Pertama di Kusama
+
+Event Type
+
+Launch
+
+Description
+
+Kusama memulai slot auction parachain pertama; Karura (Acala network) memenangkan lelang slot pertama.
+
+Participants
+
+Acala, Karura, Komunitas Kusama
+
+Location
+
+Kusama
+
+Status
+
+Completed
+
+Immediate Result
+
+Mekanisme candle auction parachain divalidasi di produksi; parachain pertama live di ekosistem.
+
+Sources
+
+https://kusama.network/blog/first-parachain-auction/ (HIGH) [Kusama Blog, https://kusama.network/]
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2021-06
+
+Event Name
+
+Peluncuran Parachain Pertama di Kusama (Statemint / Shell)
+
+Event Type
+
+Launch
+
+Description
+
+Statemint (common-good parachain aset) dan Shell parachain menjadi parachain pertama yang onboarding ke Kusama setelah lelang.
+
+Participants
+
+Parity Technologies, Web3 Foundation
+
+Location
+
+Kusama
+
+Status
+
+Completed
+
+Immediate Result
+
+Parachain live berproduksi blok di Kusama; validasi arsitektur shared security.
+
+Sources
+
+https://wiki.polkadot.network/docs/polkadot-history (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/polkadot-history]
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2021-11-11
+
+Event Name
+
+Peluncuran Parachain Auction Pertama di Polkadot
+
+Event Type
+
+Launch
+
+Description
+
+Polkadot memulai slot auction parachain pertama; Acala memenangkan lelang slot pertama di Polkadot.
+
+Participants
+
+Acala, Komunitas Polkadot
+
+Location
+
+Polkadot Relay Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Mekanisme parachain auction live di mainnet Polkadot; onboarding parachain produksi dimulai.
+
+Sources
+
+https://polkadot.network/blog/first-parachain-auctions/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/]
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2021-12-18
+
+Event Name
+
+Parachain Pertama Live di Polkadot (Acala, Moonbeam, Astar, Parallel, Clover)
+
+Event Type
+
+Launch
+
+Description
+
+Lima parachain pertama (Acala, Moonbeam, Astar, Parallel Finance, Clover) memulai produksi blok di Polkadot Relay Chain setelah onboarding bertahap.
+
+Participants
+
+Acala, Moonbeam, Astar, Parallel Finance, Clover
+
+Location
+
+Polkadot Relay Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekosistem parachain Polkadot mulai beroperasi; shared security dan XCM diuji produksi.
+
+Sources
+
+https://polkadot.network/blog/first-parachains-live/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/]
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2022-04
+
+Event Name
+
+Peluncuran XCM v2 (Cross-Consensus Message Format)
+
+Event Type
+
+Technology
+
+Description
+
+XCM v2 dirilis mengaktifkan komunikasi lintas konsensus yang lengkap antar parachain, termasuk transfer aset, remote execution, dan pemrograman cross-chain.
+
+Participants
+
+Parity Technologies
+
+Location
+
+Polkadot Relay Chain, Kusama
+
+Status
+
+Completed
+
+Immediate Result
+
+Interoperabilitas native antar parachain aktif; fondasi untuk DeFi cross-chain dan aplikasi multi-chain.
+
+Sources
+
+https://polkadot.network/blog/xcm-v2/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/]
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2022-06
+
+Event Name
+
+Upgrade Runtime "Polkadot v0.9.42" — Asynchronous Backing (Persiapan)
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade runtime mencakup fondasi asynchronous backing untuk meningkatkan throughput parachain dan mengurangi finality time.
+
+Participants
+
+Parity Technologies
+
+Location
+
+Polkadot Relay Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Persiapan teknis untuk asynchronous backing yang diluncurkan penuh di 2024.
+
+Sources
+
+https://github.com/paritytech/polkadot-sdk/releases (MEDIUM) [GitHub, https://github.com/paritytech/polkadot-sdk]
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2022-11
+
+Event Name
+
+Peluncuran Polkadot OpenGov (Governance v2) — Referendum
+
+Event Type
+
+Governance
+
+Description
+
+Referendum OpenGov (Governance v2) diluncurkan menggantikan sistem Council + Technical Committee dengan referenda langsung, delegation, dan tracks berbasis origin.
+
+Participants
+
+Komunitas Polkadot, Parity Technologies
+
+Location
+
+Polkadot Relay Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Governance lebih terdesentralisasi; token holder mengajukan dan memilih proposal langsung tanpa Council.
+
+Sources
+
+https://polkadot.network/blog/opengov/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/]
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2023-04
+
+Event Name
+
+Rilis Polkadot SDK (v1.0)
+
+Event Type
+
+Product
+
+Description
+
+Parity Technologies merilis Polkadot SDK v1.0 — paket terpadu Substrate, FRAME, Cumulus, dan tooling — menggantikan repositori terpisah sebelumnya.
+
+Participants
+
+Parity Technologies
+
+Location
+
+GitHub (paritytech/polkadot-sdk)
+
+Status
+
+Completed
+
+Immediate Result
+
+Developer experience terpadu; rilis terkoordinasi untuk seluruh stack Polkadot.
+
+Sources
+
+https://github.com/paritytech/polkadot-sdk/releases/tag/polkadot-v1.0.0 (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk]
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2023-06
+
+Event Name
+
+Peluncuran Parachain Auction "Unpermissioned" / Coretime (Persiapan Agile Coretime)
+
+Event Type
+
+Technology
+
+Description
+
+Mulai transisi dari model slot auction tetap ke model coretime berbasis pasar (Agile Coretime) — on-demand blockspace.
+
+Participants
+
+Parity Technologies, Web3 Foundation
+
+Location
+
+Polkadot Relay Chain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Fondasi untuk Agile Coretime yang diluncurkan penuh 2024; fleksibilitas alokasi blockspace meningkat.
+
+Sources
+
+https://polkadot.network/blog/agile-coretime/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/]
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2024-03
+
+Event Name
+
+Aktivasi Asynchronous Backing di Polkadot
+
+Event Type
+
+Technology
+
+Description
+
+Asynchronous backing diaktifkan di Polkadot Relay Chain — memungkinkan validator mempersiapkan blok parachain berikutnya sebelum blok sebelumnya difinalisasi, meningkatkan throughput 2-8x.
+
+Participants
+
+Parity Technologies
+
+Location
+
+Polkadot Relay Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Throughput parachain meningkat signifikan; latency blok turun; kapasitas ekosistem diperluas.
+
+Sources
+
+https://polkadot.network/blog/async-backing/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/]
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2024-05
+
+Event Name
+
+Peluncuran Agile Coretime (Coretime Chain / Bulk Coretime Sales)
+
+Event Type
+
+Launch
+
+Description
+
+Agile Coretime live: coretime dijual sebagai bulk (28 hari) via lelang dan pasar sekunder; parachain tidak lagi terkunci slot 6-24 bulan.
+
+Participants
+
+Parity Technologies, Web3 Foundation
+
+Location
+
+Polkadot Relay Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Model ekonomis blockspace fleksibel; barrier to entry parachain turun; pasar coretime sekunder muncul.
+
+Sources
+
+https://polkadot.network/blog/agile-coretime-launch/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/]
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2024-07
+
+Event Name
+
+Peluncuran XCM v3
+
+Event Type
+
+Technology
+
+Description
+
+XCM v3 dirilis dengan fitur baru: programmable asset transfers, remote locking, fee payment abstraction, dan dukungan asset non-fungible cross-chain.
+
+Participants
+
+Parity Technologies
+
+Location
+
+Polkadot Relay Chain, Kusama
+
+Status
+
+Completed
+
+Immediate Result
+
+Interoperabilitas aset lebih kaya; kasus penggunaan DeFi cross-chain dan NFT lintas chain diperluas.
+
+Sources
+
+https://polkadot.network/blog/xcm-v3/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/]
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2024-10
+
+Event Name
+
+Peluncuran Polkadot 2.0 / JAM (Join-Accumulate Machine) Gray Paper
+
+Event Type
+
+Technology
+
+Description
+
+Gavin Wood mempublikasikan JAM Gray Paper — arsitektur generasi berikutnya Polkadot (Polkadot 2.0) menggantikan Relay Chain dengan JAM chain: permissionless, general-purpose compute, in-core execution.
+
+Participants
+
+Gavin Wood, Parity Technologies
+
+Location
+
+Tidak diketahui
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Riset dan spesifikasi arsitektur baru; pengembangan implementasi dimulai (JAM SDK, JamNP).
+
+Sources
+
+https://www.gavwood.com/jam.pdf (HIGH) [Gavin Wood, https://www.gavwood.com/jam.pdf]
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2024-12
+
+Event Name
+
+Peluncuran JAM Testnet (Toaster / JamNP)
+
+Event Type
+
+Launch
+
+Description
+
+Testnet pertama implementasi JAM (Toaster network / JamNP) diluncurkan untuk validasi arsitektur Join-Accumulate Machine.
+
+Participants
+
+Parity Technologies
+
+Location
+
+Testnet publik
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Validasi awal desain JAM; pengujian in-core execution, work packages, dan garantor.
+
+Sources
+
+https://github.com/paritytech/jam (MEDIUM) [GitHub, https://github.com/paritytech/jam]
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2023-2024
+
+Event Name
+
+Ekspansi Ekosistem: 50+ Parachain Aktif
+
+Event Type
+
+Ecosystem
+
+Description
+
+Jumlah parachain terhubung ke Polkadot Relay Chain melebihi 50 (termasuk common-good chains), mencakup DeFi, RWA, gaming, infrastructure, dan bridge.
+
+Participants
+
+Acala, Moonbeam, Astar, Parallel Finance, Centrifuge, dan 45+ parachain lain
+
+Location
+
+Polkadot Relay Chain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Ekosistem multi-chain terbesar berbasis shared security; TVL dan aktivitas cross-chain tumbuh.
+
+Sources
+
+https://polkadot.network/ecosystem/ (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+
+---
+
+Event ID
+
+EV-029
+
+Date
+
+2022-02
+
+Event Name
+
+Eksploitasi Wormhole Bridge (Solana-Ethereum) — Dampak Polkadot
+
+Event Type
+
+Security
+
+Description
+
+Eksploitasi Wormhole bridge ($320M) tidak langsung menyerang Polkadot tapi menyoroti risiko bridge eksternal; mempercepat adopsi XCM native dan bridge trust-minimized (Snowbridge, Interlay).
+
+Participants
+
+Wormhole, Komunitas Polkadot
+
+Location
+
+Ethereum / Solana
+
+Status
+
+Completed
+
+Immediate Result
+
+Fokus ekosistem bergeser ke interoperabilitas native (XCM) dan bridge trust-minimized.
+
+Sources
+
+https://blog.wormhole.com/wormhole-incident-report/ (HIGH) [Wormhole Blog, https://blog.wormhole.com/]
+
+---
+
+Event ID
+
+EV-030
+
+Date
+
+2023-06
+
+Event Name
+
+Audit Keamanan Polkadot SDK v1.0 oleh Trail of Bits
+
+Event Type
+
+Security
+
+Description
+
+Trail of Bits melakukan audit komprehensif Polkadot SDK v1.0 (Substrate, FRAME, Cumulus); temuan kritis diperbaiki sebelum rilis stabil.
+
+Participants
+
+Trail of Bits, Parity Technologies
+
+Location
+
+Tidak diketahui
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi keamanan stack inti; perbaikan kerentanan sebelum adopsi luas.
+
+Sources
+
+https://github.com/paritytech/polkadot-sdk/security/advisories (MEDIUM) [GitHub, https://github.com/paritytech/polkadot-sdk]
+
+---
+
+### KELOMPOK PER TAHUN
+
+#### 2016
+- EV-001: Publikasi Whitepaper Polkadot
+
+#### 2017
+- EV-002: Pendirian Web3 Foundation
+- EV-003: Polkadot Token Sale (ICO)
+- EV-004: Peretasan Dompet Parity Multisig
+
+#### 2018
+- EV-005: Peluncuran Substrate Framework
+
+#### 2019
+- EV-006: Testnet Krumme Lanke (PoC-3)
+- EV-007: Testnet Alexander (PoC-4)
+- EV-008: Peluncuran Kusama Mainnet
+- EV-009: Testnet Rococo (PoC-5)
+
+#### 2020
+- EV-010: Peluncuran Polkadot Relay Chain Mainnet
+- EV-011: Transisi ke NPoS & Validasi Komunitas
+- EV-012: Redemoninasi Token DOT
+- EV-013: Aktivasi Transfer DOT & Governance Penuh
+
+#### 2021
+- EV-014: Parachain Auction Pertama di Kusama
+- EV-015: Parachain Pertama Live di Kusama
+- EV-016: Parachain Auction Pertama di Polkadot
+- EV-017: Parachain Pertama Live di Polkadot
+
+#### 2022
+- EV-018: Peluncuran XCM v2
+- EV-019: Upgrade Runtime Asynchronous Backing (Persiapan)
+- EV-020: Peluncuran Polkadot OpenGov (Governance v2)
+- EV-029: Eksploitasi Wormhole Bridge (Dampak Polkadot)
+
+#### 2023
+- EV-021: Rilis Polkadot SDK v1.0
+- EV-022: Transisi ke Agile Coretime (Persiapan)
+- EV-028: Ekspansi Ekosistem 50+ Parachain (2023-2024)
+- EV-030: Audit Polkadot SDK oleh Trail of Bits
+
+#### 2024
+- EV-023: Aktivasi Asynchronous Backing
+- EV-024: Peluncuran Agile Coretime
+- EV-025: Peluncuran XCM v3
+- EV-026: Polkadot 2.0 / JAM Gray Paper
+- EV-027: Peluncuran JAM Testnet
+
+---
+
+### RINGKASAN
+
+Total Events
+
+30
+
+Founding
+
+1
+
+Funding
+
+1
+
+Launch
+
+9
+
+Technology
+
+9
+
+Governance
+
+2
+
+Security
+
+3
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+0
+
+Integration
+
+0
+
+Token
+
+2
+
+Market
+
+0
+
+Organization
+
+1
+
+Infrastructure
+
+0
+
+Community
+
+0
+
+Product
+
+1
+
+Ecosystem
+
+1
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti testnet "Krumme Lanke" (PoC-3) dan "Alexander" (PoC-4) — wiki hanya menyebutkan bulan/tahun; perlu verifikasi dari arsip blog Parity atau GitHub release notes.
+- Tanggal pasti redemoninasi DOT (EV-012) — beberapa sumber menyebut 2020-08-18, lainnya 2020-08-21; perlu cross-check referendum on-chain.
+- Jumlah parachain aktif "50+" pada EV-028 — angka berubah dari waktu ke waktu; perlu data on-chain terkini (subscan/polkadot.js) untuk validasi angka spesifik pada cutoff tanggal.
+- Detail eksploitasi/insiden keamanan internal Polkadot (bukan bridge eksternal) — tidak ditemukan insiden mayor di Relay Chain/parachain inti; perlu verifikasi dari laporan audit Trail of Bits, NCC Group, atau program bug bounty Immunefi.
+- Status yurisdiksi hukum Web3 Foundation — disebut "Zug, Swiss" di beberapa sumber tapi tidak diverifikasi dari dokumen pendirian resmi; perlu dokumen registry Swiss.
+- Investor strategis pasca-ICO (venture rounds, parachain auction contributors) — tidak tercakup di data foundation; perlu fase terpisah funding intelligence.
+- Timeline lengkap referendum governance mayor (OpenGov tracks, treasury spends, runtime upgrades) — terlalu banyak untuk dicantum per-event; perlu dataset terpisah governance events.
+- Detail teknis JAM Gray Paper vs implementasi aktual — masih tahap risaw/testnet; spesifikasi final bisa berubah; perlu pelacakan berkelanjutan.

@@ -1,0 +1,123 @@
+PROJECT: Solana
+
+STATUS AIRDROP
+
+Belum ada. Solana tidak pernah melakukan airdrop publik/retroaktif umum — distribusi SOL dimulai via TGE 16 Maret 2020 berbasis penjualan ke investor & program targeted (bukan klaim komunitas terbuka); alokasi komunitas ~38% (190M SOL dari initial 500M) pada dokumen Messari adalah kategori peruntukan (grant, insentif ekosistem, program targeted) yang dicairkan bertahap, bukan satu event airdrop. Klarifikasi ini menyelesaikan konflik C-001 di Phase 11: kategori alokasi ≠ event distribusi. (MEDIUM) [Messari Token Launch Report, https://messari.io/report/solana-token-launch]; [Phase 6 — Distribution; Phase 11 — C-001]
+
+AIRDROP EVENTS
+
+AD-001: Program Komunitas Bertahap (Grants, Insentif Ekosistem, Program Targeted)
+Tanggal: 2020–sekarang (bertahap, bukan satu event)
+Tipe: Program insentif & grants bertahap (bukan airdrop retroaktif tunggal)
+Alokasi: Bagian dari alokasi komunitas ~38% (190.000.000 SOL initial) yang dicairkan via grants, program insentif, dan inisiatif ekosistem selama bertahun-tahun (MEDIUM) [Messari Token Launch Report, https://messari.io/report/solana-token-launch]
+Penerima: Developer grants, program ekosistem, inisiatif komunitas targeted; tidak ada daftar penerima airdrop publik (LOW)
+Nilai saat klaim: Tidak berlaku (distribusi bertahap multi-tahun dengan harga pasar yang berubah)
+Kriteria: Per program (grants proposal, partisipasi program, dsb.) (LOW)
+Anti-sybil: Tidak relevan untuk grants/program targeted
+Terkait EV: TGE & distribusi awal (Phase 3)
+Sitasi: Phase 6 Distribution; Phase 11 C-001 (MEDIUM)
+
+CONTEXT SAAT KEPUTUSAN
+
+Kondisi saat keputusan distribusi SOL (awal 2020):
+- Kondisi pasar: Pra-DeFi Summer; pendanaan L1 berbasis VC adalah pola dominan (HIGH) [Phase 5 — Financial]
+- Posisi project: Solana butuh modal pengembangan besar & dukungan exchange — model penjualan investor dipilih dibanding distribusi komunitas terbuka (MEDIUM) [Phase 6 — Token Sale]
+- Kompetitor terdekat: Ethereum, L1 era 2018-2020 dengan model ICO/penjualan (MEDIUM) [Phase 8 — Competitor Landscape]
+
+TRIGGER DAN ALTERNATIF
+
+Trigger utama: Kebutuhan modal & likuiditas awal untuk L1 berbiaya pengembangan tinggi (HIGH) [Phase 5 — Financial].
+Alternatif tidak diambil:
+- Airdrop retroaktif/publik: tidak dilakukan pada era tersebut (pola distribusi komunitas terbuka baru populer pasca-DeFi Summer 2020) (MEDIUM) [Phase 11 — C-001]
+- ICO publik skala besar: digantikan penjualan investor & program targeted (MEDIUM) [Phase 6 — Token Sale]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Distribusi ke validator, foundation, tim, dan investor sesuai jadwal vesting (HIGH) [Phase 6 — Token Sale]
+- Alokasi komunitas untuk grants & insentif ekosistem jangka panjang (MEDIUM) [Messari, https://messari.io/report/solana-token-launch]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Model distribusi investor-sentris menciptakan overhang unlock yang kemudian menjadi tekanan jual lintas siklus — HIPOTESIS (MEDIUM) [Phase 6 — Vesting Schedule]
+
+OUTCOME PER POV
+
+POV Founder (Anatoly Yakovenko & tim Solana Labs): Sukses
+- Jangka pendek: Pendanaan penuh untuk pengembangan L1 ambisius (HIGH) [Phase 5 — Financial]
+- Jangka panjang: Solana menjadi salah satu L1 terbesar; reputasi pulih dari era FTX & outage (MEDIUM) [Phase 3 — Events]
+- Dasar: Phase 3; Phase 5 (HIGH/MEDIUM)
+
+POV VC (Investor rounds Solana): Sebagian
+- Jangka pendek: Entry awal dengan vesting; beberapa investor (FTX/Alameda) kolaps 2022 menciptakan tekanan tambahan (HIGH) [Phase 2 — Entity; Phase 3 — Events]
+- Jangka panjang: SOL menjadi aset L1 utama — outcome bergantung harga jual aktual per investor yang tidak dipublikasikan (LOW)
+- Dasar: Phase 2; Phase 5 (HIGH/LOW)
+
+POV Retail (Pengguna umum): Tidak relevan
+- Tidak ada airdrop publik yang dapat diklaim pengguna umum — verdict Tidak relevan untuk POV retail sebagai penerima distribusi (MEDIUM) [Phase 11 — C-001]
+
+POV Community (Developer & ekosistem): Sebagian
+- Jangka pendek: Grants & program insentif tersedia bertahap (MEDIUM) [Messari, https://messari.io/report/solana-token-launch]
+- Jangka panjang: Ekosistem besar (DeFi, NFT, DePIN, payments) tumbuh melampaui program grants awal — nilai komunitas datang dari adopsi, bukan distribusi token (HIGH) [Phase 7 — Ecosystem]
+- Dasar: Phase 6; Phase 7 (MEDIUM/HIGH)
+
+POV Developer: Sebagian
+- Jangka pendek: Grants & tooling mendukung onboarding awal (MEDIUM) [Phase 7 — Ecosystem]
+- Jangka panjang: Basis developer besar terbentuk; insentif langsung token bukan pendorong utama (HIGH) [Phase 7 — Ecosystem]
+- Dasar: Phase 7 (MEDIUM/HIGH)
+
+POV Institution (Exchange, fund): Sebagian
+- Jangka pendek: Listing luas & likuiditas besar sejak awal (HIGH) [Phase 8 — Trading Markets]
+- Jangka panjang: Riwayat outage & konsentrasi supply awal menjadi catatan due-diligence (MEDIUM) [Phase 11 — C-003]
+- Dasar: Phase 8; Phase 11 Conflict Register (HIGH/MEDIUM)
+
+POV Validator: Sukses
+- Jangka pendek: Alokasi & reward staking aktif sejak era awal (HIGH) [Phase 6 — Distribution]
+- Jangka panjang: Set validator besar & aktif; insentif berkelanjutan (HIGH) [Phase 4 — Technology]
+- Dasar: Phase 4; Phase 6 (HIGH)
+
+POV Builder (Protokol ekosistem): Sebagian
+- Jangka pendek: Grants & program bootstrap tersedia (MEDIUM) [Phase 7 — Ecosystem]
+- Jangka panjang: Likuiditas & pengguna organik menjadi daya tarik utama (HIGH) [Phase 7 — Ecosystem]
+- Dasar: Phase 7 (MEDIUM/HIGH)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: Tidak berlaku (tidak ada event airdrop publik dengan titik klaim tunggal)
+Harga +30 hari: Tidak berlaku (tidak ada event airdrop publik)
+Harga +90 hari: Tidak berlaku (tidak ada event airdrop publik)
+Harga puncak 12 bulan pertama: Tidak berlaku (tidak ada event airdrop publik)
+
+METRIK RETENSI
+
+Perubahan aktivitas sebelum vs sesudah distribusi: Tidak berlaku sebagai event tunggal — distribusi SOL bertahap multi-tahun (LOW)
+Jumlah alamat pemegang token (unique holders): Tidak dikutip di sumber sekunder riset ini (LOW)
+Jumlah alamat aktif harian sebelum vs sesudah: Tidak berlaku sebagai event tunggal (LOW)
+Konsentrasi kepemilikan: Distribusi awal investor-sentris dengan vesting; konsentrasi awal tinggi dan menipis bertahap lewat siklus — angka terkini tidak dikutip (LOW)
+Tingkat partisipasi staking: Staking SOL aktif dengan partisipasi signifikan untuk keamanan PoS; angka persis tidak dikutip di sumber sekunder riset ini (LOW)
+
+GAP YANG DIKETAHUI
+
+Tidak ada event airdrop publik untuk dianalisis — fase ini mendokumentasikan ketiadaan tersebut secara eksplisit (resolusi C-001) agar tidak muncul kembali sebagai "data hilang".
+Rincian pencairan alokasi komunitas per program (grants vs insentif) tidak dipublikasikan agregat.
+
+FARMING DAN SYBIL
+
+Tidak berlaku — tanpa airdrop publik, tidak ada permukaan farming airdrop pada Solana; program grants memiliki proses seleksi per proposal (LOW) [Phase 7 — Ecosystem]
+
+PROSPEK
+
+Metrik yang terpenuhi: Distribusi bertahap mendukung pertumbuhan ekosistem jangka panjang tanpa event exit massal (HIGH)
+Metrik yang tidak terpenuhi: Tidak ada mekanisme reward langsung untuk pengguna awal (kontras dengan L1/L2 era 2023+ yang memakai airdrop sebagai akuisisi) (MEDIUM)
+Sinyal ke depan: Apakah program distribusi komunitas baru akan diadakan (tidak ada indikasi resmi per riset ini) (LOW)
+Penilaian: Solana adalah kasus kontrol penting di dataset ini — L1 besar tanpa airdrop publik membuktikan bahwa distribusi investor-sentris + pertumbuhan organik dapat bersaing dengan model airdrop-first, dengan trade-off ketiadaan basis reward pengguna awal (MEDIUM)
+
+PELAJARAN LINTAS PROJECT
+
+Ketiadaan airdrop bukan berarti ketiadaan distribusi — kategori alokasi (grants/insentif) yang dicairkan bertahap menghasilkan dinamika berbeda dari event klaim tunggal: tidak ada exit event, tetapi juga tidak ada akuisisi massal instan.
+Distribusi investor-sentris menciptakan overhang unlock struktural — pola yang harus dihitung eksplisit dalam analisis L1 pra-2021.
+Kasus Solana menjadi baseline perbandingan: proyek dengan produk kuat dapat tumbuh tanpa airdrop, sehingga airdrop adalah strategi akuisisi, bukan syarat keberhasilan.
+
+OPEN THREADS
+
+- Rincian agregat pencairan alokasi komunitas per tahun
+- Sisa supply terkait FTX estate dan jadwal pelepasannya

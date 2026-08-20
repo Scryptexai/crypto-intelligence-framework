@@ -23,3 +23,11 @@
 2026-08-08T06:54:33.092325+00:00	MegaETH	verify_10_phases failed	{'entities': 18, 'events': 11, 'decisions': 7, 'knowledge': 0}
 2026-08-08T08:46:51.477982+00:00	Movement Labs	verify_10_phases failed	{'entities': 25, 'events': 10, 'decisions': 9, 'knowledge': 0}
 2026-08-08T16:22:04.505018+00:00	Aave	verify_10_phases failed	{'entities': 82, 'events': 32, 'decisions': 0, 'knowledge': 33}
+2026-08-12T22:08:31.046417+00:00	Walrus	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 6, 'knowledge': 41}
+2026-08-13T01:50:12.212249+00:00	Yearn Finance	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 8, 'knowledge': 76}
+2026-08-13T14:03:15.022718+00:00	Walrus	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 6, 'knowledge': 41}
+2026-08-13T14:08:15.286608+00:00	Yearn Finance	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 8, 'knowledge': 76}
+2026-08-13T23:54:27.528960+00:00	Linea	verify_10_phases failed	{'entities': 0, 'events': 20, 'decisions': 18, 'knowledge': 52}
+2026-08-14T08:09:45.157064+00:00	Walrus	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 6, 'knowledge': 41}
+2026-08-14T08:14:45.276516+00:00	Yearn Finance	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 8, 'knowledge': 76}
+2026-08-14T08:43:33.382501+00:00	Linea	verify_10_phases failed	{'entities': 0, 'events': 20, 'decisions': 18, 'knowledge': 52}
