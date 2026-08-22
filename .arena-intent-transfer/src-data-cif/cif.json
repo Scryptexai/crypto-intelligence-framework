@@ -1,17 +1,10 @@
 {
   "meta": {
     "schema": "cif-export/1",
-<<<<<<< HEAD
-    "generated": "2026-08-22 03:43 UTC",
-    "projects": 66,
-    "deep": 60,
-    "summary": 6,
-=======
     "generated": "2026-08-20 06:19 UTC",
     "projects": 60,
     "deep": 60,
     "summary": 0,
->>>>>>> origin/myarena
     "sentiment": 0,
     "patterns": 16,
     "source": "examples/DatasetIndex.md + examples/PatternRegistry.md + examples/Sentiment/"
@@ -709,90 +702,6 @@
         "l2",
         "airdrop"
       ]
-<<<<<<< HEAD
-    },
-    {
-      "n": "Pendle",
-      "tier": "Summary",
-      "file": "examples/Pioneer/Pendle.md",
-      "cat": "DeFi / Yield Tokenization (PT/YT)",
-      "era": "2021–",
-      "tags": [
-        "defi",
-        "airdrop",
-        "restaking",
-        "liquid-staking",
-        "amm",
-        "governance",
-        "shared-security"
-      ]
-    },
-    {
-      "n": "Algorand",
-      "tier": "Summary",
-      "file": "examples/Pioneer/Algorand.md",
-      "cat": "Layer 1 / Pure Proof-of-Stake",
-      "era": "2019–",
-      "tags": [
-        "l1",
-        "airdrop",
-        "governance",
-        "mining"
-      ]
-    },
-    {
-      "n": "Tron",
-      "tier": "Summary",
-      "file": "examples/Pioneer/Tron.md",
-      "cat": "Layer 1 / DPoS, stablecoin settlement",
-      "era": "2017–",
-      "tags": [
-        "l1",
-        "airdrop",
-        "first-mover",
-        "stablecoin"
-      ]
-    },
-    {
-      "n": "Toncoin",
-      "tier": "Summary",
-      "file": "examples/Pioneer/Toncoin.md",
-      "cat": "Layer 1 / PoS (asal PoW Giver), Telegram",
-      "era": "2020–",
-      "tags": [
-        "l1",
-        "airdrop",
-        "mining",
-        "pivot"
-      ]
-    },
-    {
-      "n": "Kaspa",
-      "tier": "Summary",
-      "file": "examples/Pioneer/Kaspa.md",
-      "cat": "Layer 1 / PoW BlockDAG (GHOSTDAG)",
-      "era": "2021–",
-      "tags": [
-        "l1",
-        "airdrop",
-        "mining",
-        "l2"
-      ]
-    },
-    {
-      "n": "Hedera",
-      "tier": "Summary",
-      "file": "examples/Pioneer/Hedera.md",
-      "cat": "Layer 1 enterprise / Hashgraph aBFT",
-      "era": "2019–",
-      "tags": [
-        "l1",
-        "airdrop",
-        "governance",
-        "mining"
-      ]
-=======
->>>>>>> origin/myarena
     }
   ],
   "patterns": [
