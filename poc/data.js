@@ -2,17 +2,10 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-<<<<<<< HEAD
-    "generated": "2026-08-22 03:43 UTC",
+    "generated": "2026-08-22 03:45 UTC",
     "projects": 66,
     "deep": 60,
     "summary": 6,
-=======
-    "generated": "2026-08-20 06:19 UTC",
-    "projects": 60,
-    "deep": 60,
-    "summary": 0,
->>>>>>> origin/myarena
     "sentiment": 0,
     "patterns": 16,
     "source": "examples/DatasetIndex.md + examples/PatternRegistry.md + examples/Sentiment/"
@@ -710,7 +703,6 @@ window.CIF = {
         "l2",
         "airdrop"
       ]
-<<<<<<< HEAD
     },
     {
       "n": "Pendle",
@@ -792,8 +784,6 @@ window.CIF = {
         "governance",
         "mining"
       ]
-=======
->>>>>>> origin/myarena
     }
   ],
   "patterns": [
