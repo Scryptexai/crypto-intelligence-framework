@@ -772,5 +772,56 @@
       "governance",
       "mining"
     ]
+  },
+  {
+    "n": "Internet Computer",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Internet Computer.md",
+    "cat": "Layer 1 / canister smart contracts",
+    "era": "2021–",
+    "tags": [
+      "l1",
+      "airdrop"
+    ]
+  },
+  {
+    "n": "MultiversX",
+    "tier": "Summary",
+    "file": "examples/Pioneer/MultiversX.md",
+    "cat": "Layer 1 / Adaptive State Sharding",
+    "era": "2020–",
+    "tags": [
+      "l1",
+      "airdrop",
+      "bridge",
+      "pivot"
+    ]
+  },
+  {
+    "n": "Fantom",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Fantom.md",
+    "cat": "Layer 1 / Lachesis aBFT → Sonic",
+    "era": "2019–",
+    "tags": [
+      "l1",
+      "airdrop",
+      "pivot",
+      "migration"
+    ]
+  },
+  {
+    "n": "Celo",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Celo.md",
+    "cat": "L1 mobile payments → Ethereum L2",
+    "era": "2020–",
+    "tags": [
+      "l1",
+      "l2",
+      "airdrop",
+      "stablecoin",
+      "pivot"
+    ]
   }
 ]

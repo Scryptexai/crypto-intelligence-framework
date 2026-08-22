@@ -676,3 +676,12 @@ _Tier: Summary · breadth batch pertama pasca-reset; riset web publik dengan pro
 | 4 | Toncoin | Layer 1 / PoS (asal PoW Giver), Telegram | 2020– | Web research (CCN, Bitget, Reflexivity), 2026-08-20 | `Pioneer/Toncoin.md` | publik (tautan di dossier) |
 | 5 | Kaspa | Layer 1 / PoW BlockDAG (GHOSTDAG) | 2021– | Web research (Coinstancy, Grokipedia, BYDFi), 2026-08-20 | `Pioneer/Kaspa.md` | publik (tautan di dossier) |
 | 6 | Hedera | Layer 1 enterprise / Hashgraph aBFT | 2019– | Web research (Hedera Council, Upay), 2026-08-20 | `Pioneer/Hedera.md` | publik (tautan di dossier) |
+
+## Pioneer Batch 04 (Summary tier — web research langsung, 2026-08-22)
+
+| # | Project | Category | Era | Source | File | Raw source |
+|---|---------|----------|-----|--------|------|-----------|
+| 7 | Internet Computer | Layer 1 / canister smart contracts | 2021– | Web research (NYT, The Block, Flitpay), 2026-08-22 | `Pioneer/Internet Computer.md` | publik (tautan di dossier) |
+| 8 | MultiversX | Layer 1 / Adaptive State Sharding | 2020– | Web research (Bitstamp, Grokipedia, Giottus), 2026-08-22 | `Pioneer/MultiversX.md` | publik (tautan di dossier) |
+| 9 | Fantom | Layer 1 / Lachesis aBFT → Sonic | 2019– | Web research (Dextools, Grokipedia, BeInCrypto), 2026-08-22 | `Pioneer/Fantom.md` | publik (tautan di dossier) |
+| 10 | Celo | L1 mobile payments → Ethereum L2 | 2020– | Web research (OKX, Nebeus, NDAX), 2026-08-22 | `Pioneer/Celo.md` | publik (tautan di dossier) |
