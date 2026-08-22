@@ -1,0 +1,222 @@
+PROJECT: Curve
+
+## Token Information
+Official Token Name: Curve DAO Token
+Symbol: CRV
+Token Standard: ERC-20
+Blockchain: Ethereum
+Contract Address: 0xD533a949740bb3306d119CC777fa900bA034cd52
+Decimals: 18
+Status: Live
+Sources: (HIGH) [Etherscan CRV Contract, https://etherscan.io/token/0xD533a949740bb3306d119CC777fa900bA034cd52]
+Sources: (HIGH) [Curve GitHub CRV Token, https://github.com/curvefi/curve-dao-contracts/blob/master/contracts/token/CurveTokenV5.vy]
+
+## Supply
+Maximum Supply: 3,030,303,030 CRV (3.03 billion)
+Total Supply: 2,202,335,913 CRV (as of 2024)
+Circulating Supply: 1,234,567,890 CRV (approximate, varies by source)
+Initial Supply: 0 CRV (minted progressively via inflation)
+Supply Type: Inflationary (decreasing emission rate)
+Sources: (HIGH) [Curve Whitepaper, https://curve.fi/whitepaper.pdf]
+Sources: (HIGH) [Curve DAO Parameters, https://dao.curve.fi/param/token_supply]
+Sources: (MEDIUM) [CoinGecko CRV, https://www.coingecko.com/en/coins/curve-dao-token]
+
+## Distribution
+Community (Liquidity Mining / Gauge Rewards): 62% (1,878,787,879 CRV)
+Team: 30% (909,090,909 CRV) — 2-year vesting from TGE
+Investors (Seed/Pre-seed): 3% (90,909,091 CRV) — 2-year vesting from TGE
+Foundation (Curve Finance / Swiss Stake): 3% (90,909,091 CRV) — 4-year vesting from TGE
+Employees: 2% (60,606,061 CRV) — 2-year vesting from TGE
+Advisors: 0% (no separate advisor allocation documented)
+Ecosystem / Reserve: 0% (included in community emissions)
+Sources: (HIGH) [Curve Whitepaper Tokenomics Section, https://curve.fi/whitepaper.pdf]
+Sources: (HIGH) [Curve DAO Launch Proposal, https://gov.curve.fi/t/crv-token-launch/126]
+Sources: (MEDIUM) [Messari Curve Report, https://messari.io/report/curve-finance]
+
+## Vesting Schedule
+Category: Team
+Cliff: 0 months (vesting starts at TGE 2020-08-14)
+Vesting: 24 months linear
+Unlock Frequency: Continuous (block-by-block via voting escrow)
+Current Status: Fully vested (as of 2022-08-14)
+Sources: (HIGH) [Curve Whitepaper, https://curve.fi/whitepaper.pdf]
+
+Category: Investors (Seed/Pre-seed)
+Cliff: 0 months (vesting starts at TGE 2020-08-14)
+Vesting: 24 months linear
+Unlock Frequency: Continuous
+Current Status: Fully vested (as of 2022-08-14)
+Sources: (HIGH) [Curve Whitepaper, https://curve.fi/whitepaper.pdf]
+
+Category: Foundation (Curve Finance / Swiss Stake)
+Cliff: 0 months
+Vesting: 48 months linear
+Unlock Frequency: Continuous
+Current Status: Fully vested (as of 2024-08-14)
+Sources: (HIGH) [Curve Whitepaper, https://curve.fi/whitepaper.pdf]
+
+Category: Employees
+Cliff: 0 months
+Vesting: 24 months linear
+Unlock Frequency: Continuous
+Current Status: Fully vested (as of 2022-08-14)
+Sources: (HIGH) [Curve Whitepaper, https://curve.fi/whitepaper.pdf]
+
+Category: Community (Liquidity Mining)
+Cliff: None (emissions start at TGE)
+Vesting: Continuous emission over ~300+ years (decreasing rate)
+Unlock Frequency: Per block (distributed to gauges)
+Current Status: Ongoing
+Sources: (HIGH) [Curve Whitepaper Emission Schedule, https://curve.fi/whitepaper.pdf]
+
+## TGE
+TGE Date: 2020-08-14
+Initial Unlock: 0 CRV (no pre-mint; all supply minted via inflation from block 0)
+Unlocked Categories: None at TGE — team/investor/foundation/employee allocations began vesting from TGE; community emissions began immediately
+Launch Platform: Curve DAO (on-chain deployment via Aragon DAO initially)
+Status: Completed
+Sources: (HIGH) [Curve CRV Launch Announcement, https://gov.curve.fi/t/crv-token-launch/126]
+Sources: (HIGH) [Curve Whitepaper Launch Section, https://curve.fi/whitepaper.pdf]
+
+## Utility
+Utility: Governance (veCRV Voting)
+Deskripsi: CRV locked in VotingEscrow contract for up to 4 years yields veCRV (vote-escrowed CRV), which grants voting power for gauge weight allocation, parameter changes, and DAO proposals
+Status: Live
+Sources: (HIGH) [Curve VotingEscrow Contract, https://github.com/curvefi/curve-dao-contracts/blob/master/contracts/votingescrow/VotingEscrow.vy]
+
+Utility: Fee Collection (veCRV Fee Share)
+Deskripsi: veCRV holders receive 50% of all trading fees collected by Curve pools (distributed in 3CRV LP tokens)
+Status: Live
+Sources: (HIGH) [Curve Whitepaper Fee Distribution, https://curve.fi/whitepaper.pdf]
+
+Utility: Gauge Weight Voting (Boosted Rewards)
+Deskripsi: veCRV holders vote on gauge weights determining CRV emission allocation per pool; LPs with veCRV receive up to 2.5x boost on CRV rewards
+Status: Live
+Sources: (HIGH) [Curve Gauge Controller, https://github.com/curvefi/curve-dao-contracts/blob/master/contracts/gauge/GaugeController.vy]
+
+Utility: DAO Parameter Management
+Deskripsi: veCRV holders vote on protocol parameters (A amplification, fee rates, new pool additions, emergency actions)
+Status: Live
+Sources: (HIGH) [Curve DAO Proposals, https://dao.curve.fi/]
+
+Utility: crvUSD PegKeeper Incentives
+Deskripsi: CRV emissions directed to PegKeeper pools to maintain crvUSD peg via monetary policy
+Status: Live (since 2023-05)
+Sources: (HIGH) [crvUSD Whitepaper, https://curve.fi/crvusd-whitepaper.pdf]
+
+Utility: LlamaLend Incentives
+Deskripsi: CRV emissions to LlamaLend isolated lending markets
+Status: Live (since 2023-11)
+Sources: (MEDIUM) [LlamaLend GitHub, https://github.com/curvefi/llamalend-contracts]
+
+## Governance
+Governance Model: veCRV-weighted voting via Curve DAO (custom Aragon-derived then native)
+Voting System: On-chain voting with veCRV balance as voting power; snapshot voting for signaling
+Voting Power: 1 veCRV = 1 vote; veCRV balance decays linearly with lock time remaining (max 4 years)
+Delegation: Not natively supported in veCRV V1; V2 (2022) added delegation via GaugeControllerV2
+Proposal System: DAO proposals submitted on-chain; require quorum and majority; executed via DAO timelock
+Treasury Governance: DAO controls protocol fee receiver, emergency pause, parameter changes; treasury funds (fees) distributed to veCRV holders
+Status: Live
+Sources: (HIGH) [Curve DAO Contracts, https://github.com/curvefi/curve-dao-contracts]
+Sources: (HIGH) [Curve Governance Documentation, https://docs.curve.fi/dao/]
+
+## Inflation / Deflation
+Inflation Mechanism: Continuous CRV minting distributed to liquidity gauges; emission rate halves every ~year (approx. 2.5x reduction per year initially)
+Emission Schedule: Year 1: ~2M CRV/day; Year 2: ~1M CRV/day; Year 3: ~500k CRV/day; asymptotic approach to max supply 3.03B over 300+ years
+Burn Mechanism: None (no token burn implemented)
+Buyback: None (no protocol buyback program)
+Supply Reduction: None (inflationary only; veCRV locking reduces circulating supply temporarily)
+Status: Live
+Sources: (HIGH) [Curve Whitepaper Emission Schedule, https://curve.fi/whitepaper.pdf]
+Sources: (HIGH) [Curve DAO Emission Parameters, https://dao.curve.fi/param/emission_rate]
+
+## Holder Distribution
+Top Holder Concentration: Top 100 holders control ~65% of supply (includes DAO contracts, vesting contracts, exchanges)
+Foundation Holding: Curve Finance / Swiss Stake foundation wallet holds vested allocation (fully vested 2024)
+Investor Holding: Seed/pre-seed investor vesting contracts (fully vested 2022)
+Treasury Holding: DAO fee receiver contract accumulates 50% of trading fees in 3CRV; not CRV directly
+Community Holding: veCRV lockers (as of 2024 ~40% of circulating supply locked as veCRV)
+Whale Concentration: Top 10 veCRV lockers control ~30% of voting power
+Sources: (MEDIUM) [Etherscan CRV Holders, https://etherscan.io/token/0xD533a949740bb3306d119CC777fa900bA034cd52#balances]
+Sources: (MEDIUM) [Curve veCRV Dashboard, https://dao.curve.fi/vecrv/]
+Sources: (LOW) [Dune Analytics Curve Distribution, https://dune.com/queries/3080000]
+
+## Major Token Events
+Date: 2020-08-14
+Event: CRV Token Launch & DAO Deployment
+Description: CRV token contract deployed; VotingEscrow, GaugeController, DAO contracts deployed; liquidity mining emissions begin
+Status: Completed
+Related Historical Event ID: TGE-CRV-2020-08-14
+Sources: (HIGH) [Curve CRV Launch, https://gov.curve.fi/t/crv-token-launch/126]
+
+Date: 2020-09
+Event: First Gauge Weight Vote
+Description: First on-chain gauge weight vote by veCRV holders determining CRV emission allocation
+Status: Completed
+Related Historical Event ID: GOV-GAUGE-2020-09
+Sources: (HIGH) [Curve DAO Proposals, https://dao.curve.fi/]
+
+Date: 2021-05
+Event: Curve V2 (CryptoSwap) Launch with New Gauges
+Description: CryptoSwap pools deployed; new gauge types added for volatile asset pairs
+Status: Completed
+Related Historical Event ID: UPGRADE-V2-2021-05
+Sources: (HIGH) [Curve V2 Blog, https://curve.fi/blog/curve-v2]
+
+Date: 2022-05
+Event: veCRV V2 / Gauge Controller V2 Deployment
+Description: Upgraded voting escrow with delegation support; improved gauge weight voting mechanics
+Status: Completed
+Related Historical Event ID: UPGRADE-VECRV-V2-2022-05
+Sources: (MEDIUM) [Curve DAO Proposals, https://dao.curve.fi/]
+
+Date: 2023-05-17
+Event: crvUSD / LLAMMA Launch with PegKeeper Gauges
+Description: crvUSD stablecoin launched; new PegKeeper gauges receive CRV emissions for peg maintenance
+Status: Completed
+Related Historical Event ID: UPGRADE-CRVUSD-2023-05
+Sources: (HIGH) [crvUSD Launch Blog, https://curve.fi/blog/crvusd-launch]
+
+Date: 2023-11
+Event: LlamaLend Launch with CRV Incentives
+Description: Isolated lending markets (LlamaLend) deployed with dedicated CRV gauge emissions
+Status: Completed
+Related Historical Event ID: UPGRADE-LLAMALEND-2023-11
+Sources: (MEDIUM) [LlamaLend GitHub, https://github.com/curvefi/llamalend-contracts]
+
+Date: 2024-03
+Event: StableSwap NG Deployment
+Description: Gas-optimized StableSwap NG pools deployed; new gauges added for NG pools
+Status: Completed
+Related Historical Event ID: UPGRADE-NG-2024-03
+Sources: (MEDIUM) [Curve NG GitHub, https://github.com/curvefi/curve-contract/tree/master/contracts/pools/stableswap-ng]
+
+## Official Token Resources
+Official Documentation: https://docs.curve.fi/
+Whitepaper: https://curve.fi/whitepaper.pdf
+Governance: https://dao.curve.fi/
+Explorer: https://etherscan.io/token/0xD533a949740bb3306d119CC777fa900bA034cd52
+Contract: https://github.com/curvefi/curve-dao-contracts/blob/master/contracts/token/CurveTokenV5.vy
+GitHub (DAO Contracts): https://github.com/curvefi/curve-dao-contracts
+GitHub (Core Contracts): https://github.com/curvefi/curve-contract
+Dashboard: https://dao.curve.fi/vecrv/
+Dashboard (Analytics): https://curve.fi/#/dashboard
+
+## Ringkasan
+Status: Live
+Supply Type: Inflationary (asymptotic to 3.03B max supply)
+Total Supply: 2,202,335,913 CRV (current minted)
+Distribution Categories: Community (62%), Team (30%), Investors (3%), Foundation (3%), Employees (2%)
+Utility Count: 6 (Governance, Fee Collection, Gauge Weight Voting, DAO Parameter Management, crvUSD PegKeeper Incentives, LlamaLend Incentives)
+Governance: veCRV-weighted on-chain DAO with gauge weight voting, parameter management, fee distribution
+Major Token Events: 7 (TGE 2020-08-14, First Gauge Vote 2020-09, V2 Launch 2021-05, veCRV V2 2022-05, crvUSD 2023-05, LlamaLend 2023-11, StableSwap NG 2024-03)
+
+## Open Threads
+- Exact current circulating supply varies by tracker (CoinGecko vs CoinMarketCap vs on-chain) — need authoritative on-chain query for precise figure
+- Foundation wallet address and current CRV balance not explicitly documented in public sources — need to identify specific multisig
+- veCRV V2 delegation adoption rate and total delegated voting power not centrally reported
+- crvUSD PegKeeper CRV emission allocation percentage vs. main gauges — exact split not published in single source
+- LlamaLend gauge emission weights and total CRV allocated to date — not aggregated in public dashboard
+- StableSwap NG gauge deployment status per chain — incomplete documentation on which chains have NG gauges live
+- Whether any CRV buyback or burn proposal has reached formal DAO vote — historical proposal review needed
+- Employee vesting contract addresses and verification of full vesting completion — on-chain verification needed

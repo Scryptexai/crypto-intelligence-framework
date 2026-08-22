@@ -1,0 +1,27 @@
+PROJECT: Curve
+Official Name: Curve Finance
+Symbol: CRV
+Category: DeFi Automated Market Maker — stableswap/DEX optimal untuk aset bernilai serupa (stablecoin, wrapped assets, LST)
+Founding Entity: Tidak ada entitas korporat pendiri formal — proyek dimulai oleh Michael Egorov dan berkembang dengan Curve DAO sebagai pemegang governance; Curve Labs dan Curve Finance Foundation mendukung pengembangan (MEDIUM) [Curve docs & repositori, https://github.com/curvefi]
+Founders: Michael Egorov (founder; fisikawan Rusia; co-founder NuCypher sebelum fokus penuh ke Curve) (HIGH) [Curve GitHub, https://github.com/curvefi]; (MEDIUM) [Curve whitepaper, https://curve.fi/whitepaper.pdf]
+Core Team: Kontributor inti pseudonim dan publik lintas yurisdiksi; komposisi lengkap tidak dipublikasikan sebagai roster resmi (LOW)
+Country: Terdesentralisasi global; Foundation berorientasi yurisdiksi netral (MEDIUM)
+Launch Date - Testnet: tidak ada fase testnet formal terpisah era 2019-2020 — iterasi langsung ke mainnet Ethereum (pola umum DeFi awal) (LOW)
+Launch Date - Mainnet: Januari 2020 (pool stableswap pertama live di Ethereum) (HIGH) [Curve whitepaper, https://curve.fi/whitepaper.pdf]
+Launch Date - TGE: 2020-08-14 (CRV token launch & liquidity mining dimulai; konsisten dengan Phase 6 dataset ini) (HIGH) [Phase 6 — Token; Curve docs, https://resources.curve.fi/]
+Main Products: StableSwap pools (3pool, stETH, dll.); Factory pools (permissionless); Crypto pools (Tricrypto); veCRV (vote-escrow governance + fee share + boost); crvUSD stablecoin (2023); Curve Lend; multi-chain deployments (Arbitrum, Optimism, Polygon, dll.) (HIGH) [Curve docs, https://resources.curve.fi/]
+Official Website: https://curve.fi (HIGH)
+Repository: https://github.com/curvefi (HIGH) [GitHub Curve, https://github.com/curvefi]
+Documentation: https://resources.curve.fi (HIGH)
+Social - X/Twitter: @CurveFinance (HIGH)
+Social - Discord: https://discord.gg/curve (MEDIUM)
+Social - Telegram: tidak ada kanal Telegram resmi utama (MEDIUM)
+Block Explorer: https://etherscan.io (kontrak pool & token di Ethereum) + explorer chain deployment lain (HIGH)
+Token Contract: 0xD533a949740bb3306d119CC777fa900bA034cd522b (CRV ERC-20 di Ethereum) (MEDIUM) [Etherscan CRV, https://etherscan.io/token/0xD533a949740bb3306d119CC777fa900bA034cd522b]
+Chain(s): Ethereum (utama) + Arbitrum, Optimism, Polygon, dan deployment lain via factory (HIGH) [Phase 2 — Entity; Curve docs, https://resources.curve.fi/]
+Ecosystem: DeFi Ethereum & multi-chain — integrasi erat dengan Convex (akumulasi veCRV), Yearn (vault Curve LP), Frax, protokol LST (Lido stETH pool historis terbesar), stablecoin issuers (USDT/USDC/DAI/FRAX) (HIGH) [Phase 2 — Entity]
+
+Open Threads
+- Roster kontributor inti resmi
+- Entitas legal Curve Labs & Foundation (yurisdiksi pasti)
+- Tanggal persis pool pertama Januari 2020

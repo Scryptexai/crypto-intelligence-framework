@@ -1,0 +1,30 @@
+PROJECT: Jupiter
+Official Name: Jupiter (JUP) (HIGH) [Jupiter Station, https://station.jup.ag/]
+Symbol: JUP (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/jupiter]
+Category: DEX aggregator / swap infrastructure (HIGH) [Jupiter Docs, https://dev.jup.ag/]
+Founding Entity: Jupiter Exchange Ltd., British Virgin Islands (MEDIUM) [OpenCorporates, https://opencorporates.com/companies/bvi/2055186; Jupiter Terms, https://jup.ag/terms]
+Founders: Meow (pseudonym — founder/CEO) (HIGH) [Meow Twitter, https://x.com/meowjup; Jupiter Blog, https://blog.jup.ag/]
+Core Team: ~30-40 verified contributors (engineering, product, growth) — names not fully public; key public: Meow (CEO), Rolex (CFO/COO, pseud.), Slorg (Head of Product, pseud.), Worm (Head of Engineering, pseud.) (MEDIUM) [Jupiter Careers, https://jup.ag/careers; Meow Twitter threads, https://x.com/meowjup]
+Country: British Virgin Islands (legal entity); team distributed globally (HIGH) [OpenCorporates, https://opencorporates.com/companies/bvi/2055186]
+Launch Date - Testnet: tidak diketahui (no public testnet phase distinct from mainnet iteration)
+Launch Date - Mainnet: Oktober 2021 (initial swap aggregator launch on Solana mainnet) (HIGH) [Jupiter Blog v1 launch, https://blog.jup.ag/introducing-jupiter-v1/; Solscan program deploy, https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ]
+Launch Date - TGE: 31 Januari 2024 (JUP token launch via LFG launchpad & airdrop) (HIGH) [Jupiter Blog JUP launch, https://blog.jup.ag/jup-token-launch/; CoinGecko, https://www.coingecko.com/en/coins/jupiter]
+Main Products: Jupiter Aggregator (swap routing); Jupiter Limit Orders; Jupiter DCA (Dollar Cost Averaging); Jupiter Perps (perpetual futures on Solana); Jupiter API/SDK (developer infrastructure); Jupiter Terminal (widget); JUP Token (governance) (HIGH) [Jupiter Products page, https://jup.ag/products; Jupiter Docs, https://dev.jup.ag/]
+Official Website: https://jup.ag/ (HIGH)
+Repository: https://github.com/jup-ag (HIGH) [GitHub org, https://github.com/jup-ag]
+Documentation: https://dev.jup.ag/ (HIGH)
+Social - X/Twitter: @JupiterExchange (HIGH) [X.com, https://x.com/JupiterExchange]
+Social - Discord: https://discord.gg/jup (HIGH) [Jupiter site footer, https://jup.ag/]
+Social - Telegram: @JupiterExchangeAnnouncements (announcement channel) (MEDIUM) [Telegram, https://t.me/JupiterExchangeAnnouncements]
+Block Explorer: Solscan (https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN) (HIGH) [Solscan JUP token, https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN]
+Token Contract: JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN (Solana SPL) (HIGH) [Solscan, https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN; Jupiter Tokenomics, https://blog.jup.ag/jup-tokenomics/]
+Chain(s): Solana (primary); cross-chain via Wormhole integration for Perps/oracle (HIGH) [Jupiter Docs chains, https://dev.jup.ag/docs/intro; Wormhole integration, https://wormhole.com/ecosystem/jupiter/]
+Ecosystem: Solana DeFi (HIGH) [Solana Foundation ecosystem page, https://solana.com/ecosystem/jupiter]
+
+Open Threads
+- Exact founding entity jurisdiction (BVI confirmed via OpenCorporates; need to confirm if any subsidiary in another jurisdiction)
+- Full core team real names vs pseudonyms — most remain pseudonymous; verify if any doxxed publicly
+- Testnet phase details — unclear if formal testnet existed before Oct 2021 mainnet launch
+- JUP token contract upgradeability / admin keys — verify multisig / timelock setup on-chain
+- Revenue/fee switch status — Jupiter has discussed fee switch in governance; need on-chain verification of current status
+- Exact team headcount — "30-40" from careers page; need more precise or recent figure

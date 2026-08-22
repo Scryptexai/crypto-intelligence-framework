@@ -1,0 +1,124 @@
+PROJECT: Linea
+
+Entity: ConsenSys
+Type: Organization
+Relationship: Perusahaan induk pengembang Linea (dibangun internal sejak 2022, tanpa fundraising terpisah untuk Linea); menyediakan infrastruktur, tim engineering, dan pendanaan penuh; pemegang alokasi token 15% supply (10,8 miliar LINEA) dengan lock 5 tahun
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [The Block TGE coverage, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]; (MEDIUM) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+
+---
+Entity: Joseph Lubin
+Type: Person
+Relationship: Founder ConsenSys dan co-founder Ethereum; induk organisasi yang mendirikan dan mendanai Linea
+Period: 2014–sekarang (ConsenSys); Linea sejak inkubasi ~2022
+Exposure Type: governance
+Evidence: (HIGH) [CoinMarketCap Academy Linea, https://coinmarketcap.com/academy/article/linea-network-defi-voyage]
+
+---
+Entity: Nicolas Liochon
+Type: Person
+Relationship: Global Lead/GM Linea di ConsenSys; memimpin strategi dan peluncuran jaringan termasuk TGE 2025
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [ConsenSys public communications & media coverage TGE, https://linea.build]
+
+---
+Entity: Linea Association (Linea Consortium)
+Type: Foundation
+Relationship: Entitas nirlaba berbasis Swiss yang mengawasi governance dan roadmap desentralisasi token LINEA; mengelola Linea Consortium Ecosystem Fund (75% supply, ~54 miliar LINEA, terkunci 10 tahun); anggota konsorsium meliputi ConsenSys, Eigen Labs, ENS Labs, SharpLink, dan Status
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Bitrue LINEA Tokenomics, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]; (MEDIUM) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+
+---
+Entity: MetaMask
+Type: Product
+Relationship: Wallet Ethereum milik ConsenSys dengan integrasi native Linea (default network availability); saluran distribusi pengguna utama — klaim airdrop LINEA dilakukan dari alamat pemegang LXP/LXP-L yang terhubung via wallet seperti MetaMask
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [CoinMarketCap Academy, https://coinmarketcap.com/academy/article/linea-network-defi-voyage]; (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]
+
+---
+Entity: Infura
+Type: Product
+Relationship: Layanan node/RPC ConsenSys yang menyediakan infrastruktur developer untuk Linea (endpoint RPC resmi ekosistem)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Phemex Academy, https://phemex.com/academy/what-is-linea-zkevm-scaling-solution]
+
+---
+Entity: Eigen Labs
+Type: Organization
+Relationship: Anggota Linea Consortium (pengelola ekosistem fund bersama ConsenSys, ENS Labs, SharpLink, Status)
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+
+---
+Entity: ENS Labs
+Type: Organization
+Relationship: Anggota Linea Consortium (pengelola ekosistem fund)
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+
+---
+Entity: Status
+Type: Organization
+Relationship: Anggota Linea Consortium (pengelola ekosistem fund)
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+
+---
+Entity: SharpLink
+Type: Organization
+Relationship: Anggota Linea Consortium (pengelola ekosistem fund)
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+
+---
+Entity: Linea Ecosystem Investment Alliance
+Type: Organization
+Relationship: Aliansi 30+ venture capital yang dibentuk ConsenSys untuk mendanai builder di ekosistem Linea (grants/investasi ekosistem, bukan ekuitas Linea)
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [CoinMarketCap Academy, https://coinmarketcap.com/academy/article/linea-network-defi-voyage]
+
+---
+Entity: Ethereum (L1)
+Type: Protocol
+Relationship: Layer settlement Linea — zkEVM rollup memposting validity proofs ke Ethereum; keamanan Linea diturunkan dari Ethereum L1; gas dibayar dalam ETH
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [eco.com, https://eco.com/support/en/articles/15183705-what-is-linea-consensys-zkevm-l2-in-2026]
+
+---
+Entity: ParaFi Capital
+Type: Investor
+Relationship: Lead investor Series C (Nov 2021) dan Series D (Mar 2022) ConsenSys — pendanaan induk yang membiayai pengembangan Linea; tidak ada investasi langsung ke Linea sebagai entitas terpisah
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Private Equity Wire, https://www.privateequitywire.co.uk/consensys-raises-usd450m-series-d-funding-round-led-parafi-capital/]
+
+---
+Entity: Binance
+Type: Exchange
+Relationship: Exchange terpusat yang me-listing LINEA pada/sekitar TGE September 2025; salah satu venue likuiditas utama token
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [BingX LINEA listing analysis (menyebut listing CEX termasuk Binance pada TGE), https://bingx.com/en/learn/article/what-is-linea-tokenomics-and-listing-price-prediction]
+
+---
+Entity: Intract
+Type: Organization
+Relationship: Platform quest/campaign mitra program Linea DeFi Voyage dan kampanye insentif ekosistem (LXP accumulation)
+Period: 2023–2024
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [CoinMarketCap Academy, https://coinmarketcap.com/academy/article/linea-network-defi-voyage]
+
+Open Threads
+- Daftar lengkap anggota Linea Ecosystem Investment Alliance (30+ VC) — tidak dirinci di sumber yang diakses
+- Entitas hukum operasional Linea di bawah ConsenSys (anak perusahaan khusus vs proyek internal) — belum terkonfirmasi dokumen legal

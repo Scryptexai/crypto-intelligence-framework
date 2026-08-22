@@ -90,7 +90,7 @@ def parse_index():
     """Parse examples/DatasetIndex.md tables into a de-duped project roster (Deep wins over Summary)."""
     rows = INDEX.read_text(encoding="utf-8").splitlines()
     projects = {}
-    path_re = re.compile(r"([A-Za-z0-9_./-]+\.md)")
+    path_re = re.compile(r"([A-Za-z0-9_./][A-Za-z0-9_./ -]*\.md)")  # spaces allowed: multi-word project filenames
     for ln in rows:
         s = ln.strip()
         if not s.startswith("|"):
@@ -102,18 +102,21 @@ def parse_index():
         # roster rows have an id like D1 / 1 / 12 in the first column
         if not re.match(r"^(D?\d+)$", idc):
             continue
-        m = path_re.search(s)
-        if not m:
-            continue
-        fpath = m.group(1)
-        # only project files, not analyses
-        if "Analysis" in fpath or "Registry" in fpath:
-            continue
-        if fpath.startswith("CaseStudies/"):
-            tier = "Deep"
-        elif fpath.startswith("Pioneer/"):
-            tier = "Summary"
-        else:
+        # A row may mention other .md files before the dossier path (e.g. a
+        # "see reset/README.md" note in the Source cell) -- take the first
+        # match that is actually a project dossier.
+        fpath = tier = None
+        for m in path_re.finditer(s):
+            cand = m.group(1)
+            if "Analysis" in cand or "Registry" in cand:
+                continue
+            if cand.startswith("CaseStudies/"):
+                fpath, tier = cand, "Deep"
+                break
+            if cand.startswith("Pioneer/"):
+                fpath, tier = cand, "Summary"
+                break
+        if not fpath:
             continue
         name = cells[1]
         cat = cells[2] if len(cells) > 2 else ""
@@ -233,7 +236,9 @@ def main():
     OUT.mkdir(exist_ok=True)
     meta = {
         "schema": "cif-export/1",
-        "generated": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
+        # Timezone-aware; utcnow() is deprecated and printed a DeprecationWarning on every run.
+        # Identical output string -- the format already said UTC explicitly.
+        "generated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "projects": len(projects),
         "deep": sum(1 for p in projects if p["tier"] == "Deep"),
         "summary": sum(1 for p in projects if p["tier"] == "Summary"),

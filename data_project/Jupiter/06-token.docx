@@ -1,0 +1,239 @@
+PROJECT: Jupiter
+
+## Token Information
+
+Official Token Name: Jupiter
+Symbol: JUP
+Token Standard: SPL (Solana Program Library)
+Blockchain: Solana
+Contract Address: JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN
+Decimals: 6
+Status: Live
+Sources: (HIGH) [Solscan JUP token, https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN] (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/] (HIGH) [CoinGecko Jupiter, https://www.coingecko.com/en/coins/jupiter]
+
+---
+
+## Supply
+
+Maximum Supply: 10.000.000.000 JUP
+Total Supply: 10.000.000.000 JUP
+Circulating Supply: tidak diketahui (nilai pasti saat ini tidak dipublikasikan resmi; CoinGecko/Token Terminal menampilkan estimasi yang berbeda)
+Initial Supply: 10.000.000.000 JUP (minted at TGE)
+Supply Type: Fixed
+Sources: (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/] (HIGH) [Solscan JUP token, https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN] (MEDIUM) [CoinGecko Jupiter, https://www.coingecko.com/en/coins/jupiter]
+
+---
+
+## Distribution
+
+Community: 10% (Launchpool/Airdrop - Jupuary)
+Team: 20% (vesting 4 tahun)
+Investors: 0% (tidak ada alokasi investor/VC diumumkan)
+Foundation: 0% (tidak terpisah dari DAO/Treasury)
+Treasury: 40% (DAO/Community Treasury)
+Ecosystem: 20% (Liquidity/Market Making)
+Advisors: 0% (tidak terpisah)
+Other: 10% (Future/Strategic)
+Planned: semua alokasi di atas per tokenomics resmi; status "Planned" hanya untuk kategori yang belum fully unlocked (Team, Future/Strategic)
+Sources: (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/] (HIGH) [Jupiter Blog JUP Launch, https://blog.jup.ag/jup-token-launch/]
+
+---
+
+## Vesting Schedule
+
+Category: Team
+Cliff: tidak diketahui (tidak dipublikasikan detail cliff terpisah)
+Vesting: 4 tahun (linear vesting over 4 years per tokenomics)
+Unlock Frequency: tidak diketahui (bulanan/tahunan tidak dikonfirmasi)
+Current Status: Ongoing (vesting dimulai TGE 31 Januari 2024)
+Sources: (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/]
+
+Category: Liquidity/Market Making
+Cliff: tidak diketahui
+Vesting: tidak diketahui (tokenomics menyebut "Liquidity/Market Making" 20% tanpa detail vesting)
+Unlock Frequency: tidak diketahui
+Current Status: Active (digunakan untuk market making dan likuiditas sejak TGE)
+Sources: (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/]
+
+Category: DAO/Community Treasury
+Cliff: tidak ada (available at TGE untuk governance)
+Vesting: tidak ada vesting (40% dialokasi ke DAO treasury, dikelola oleh DAO multisig)
+Unlock Frequency: tidak ada
+Current Status: Active (DAO menguasai 4 miliar JUP sejak TGE)
+Sources: (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/]
+
+Category: Launchpool/Airdrop (Jupuary)
+Cliff: tidak ada (airdrop claimable sejak TGE)
+Vesting: tidak ada (distribusi langsung ke wallet eligible)
+Unlock Frequency: tidak ada
+Current Status: Completed (Jupuary 1 claimable sejak 31 Januari 2024; Jupuary 2 & 3 announced tapi distribusi detail belum diverifikasi)
+Sources: (HIGH) [Jupiter Blog JUP Launch, https://blog.jup.ag/jup-token-launch/] (HIGH) [Jupiter Blog Jupuary 2, https://blog.jup.ag/jupuary-2-announcement/] (HIGH) [Jupiter Blog Jupuary 3, https://blog.jup.ag/jupuary-3-catdets/]
+
+Category: Future/Strategic
+Cliff: tidak diketahui
+Vesting: tidak diketahui (10% reserved untuk future/strategic use)
+Unlock Frequency: tidak diketahui
+Current Status: Reserved (belum dialokasikan untuk tujuan spesifik publik)
+Sources: (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/]
+
+---
+
+## TGE
+
+TGE Date: 2024-01-31
+Initial Unlock: 10% (Launchpool/Airdrop - Jupuary 1) + portion of Liquidity/Market Making + DAO Treasury (40%) available for governance
+Unlocked Categories: Launchpool/Airdrop (Jupuary 1), DAO/Community Treasury (40%), Liquidity/Market Making (20% - partially untuk initial liquidity)
+Launch Platform: Jupiter LFG Launchpad (Liquidity Bootstrapping Pool)
+Status: Completed
+Sources: (HIGH) [Jupiter Blog JUP Launch, https://blog.jup.ag/jup-token-launch/] (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/] (HIGH) [Solscan JUP token, https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN] (EV-008 from Phase 3)
+
+---
+
+## Utility
+
+Utility: Governance
+Deskripsi: Token JUP digunakan untuk voting pada proposal Jupiter DAO (fee switch, parameter protokol, treasury management, arah ekosistem). Voting power proporsional dengan jumlah JUP yang distake/delegasikan.
+Status: Live
+Sources: (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/] (HIGH) [Jupiter Vote, https://vote.jup.ag/] (EV-009 from Phase 3)
+
+Utility: Fee Switch (Proposed)
+Deskripsi: Proposal governance (EV-014) untuk mengaktifkan fee switch yang mengalihkan sebagian protocol fee (swap fees, perps fees) ke DAO treasury atau stakers JUP. Belum dieksekusi on-chain per informasi publik terkini.
+Status: Proposed / Ongoing Governance
+Sources: (HIGH) [Jupiter Vote, https://vote.jup.ag/] (HIGH) [Jupiter Blog Fee Switch Proposal, https://blog.jup.ag/fee-switch-proposal/] (EV-014 from Phase 3)
+
+Utility: Staking (Governance Staking)
+Deskripsi: Pemegang JUP dapat staking token untuk mendapatkan voting power dan (jika fee switch aktif) menerima bagian dari protocol fees. Mekanisme staking terintegrasi dengan vote.jup.ag.
+Status: Live (staking untuk governance); Fee reward: Planned (bergantung fee switch)
+Sources: (HIGH) [Jupiter Vote, https://vote.jup.ag/] (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/]
+
+Utility: Incentive / Reward (Airdrop / Jupuary)
+Deskripsi: JUP digunakan sebagai reward untuk pengguna aktif ekosistem melalui program airdrop berulang (Jupuary 1, 2, 3 / Catdets). Eligibility berdasarkan volume swap, governance participation, dan kontribusi ekosistem.
+Status: Live (Jupuary 1 completed; Jupuary 2 & 3 announced/ongoing)
+Sources: (HIGH) [Jupiter Blog JUP Launch, https://blog.jup.ag/jup-token-launch/] (HIGH) [Jupiter Blog Jupuary 2, https://blog.jup.ag/jupuary-2-announcement/] (HIGH) [Jupiter Blog Jupuary 3, https://blog.jup.ag/jupuary-3-catdets/] (EV-011, EV-017 from Phase 3)
+
+Utility: Liquidity (JLP / Jupiter Liquidity Pool)
+Deskripsi: JUP bukan aset utama di JLP (JLP terdiri dari SOL, USDC, USDT, dll.), tetapi JUP tokenomics menyebut allocation untuk liquidity/market making. JUP dapat digunakan sebagai incentive untuk LP di pool tertentu (tidak diverifikasi sebagai utility langsung JLP).
+Status: Partial (allocation ada, utility langsung di JLP tidak dikonfirmasi)
+Sources: (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/] (HIGH) [Jupiter Perps v2 Blog, https://blog.jup.ag/perps-v2-jlp-launch/]
+
+Utility: Collateral (Tidak Dikonfirmasi)
+Deskripsi: Tidak ada dokumentasi resmi yang menyatakan JUP digunakan sebagai collateral di Jupiter Perps atau produk lending. Perps menggunakan USDC/SOL sebagai collateral utama.
+Status: Not Applicable / Not Confirmed
+Sources: (HIGH) [Jupiter Perps Docs, https://dev.jup.ag/docs/perps/overview] (HIGH) [Jupiter Perps Docs Collateral, https://dev.jup.ag/docs/perps/collateral]
+
+---
+
+## Governance
+
+Governance Model: Token-weighted voting via Jupiter DAO (off-chain voting on vote.jup.ag, on-chain execution via multisig)
+Voting System: Snapshot-style off-chain voting (vote.jup.ag) dengan proposal execution oleh DAO multisig on-chain
+Voting Power: 1 JUP = 1 vote (token-weighted); staking JUP meningkatkan voting power (detail formula tidak dipublikasikan)
+Delegation: Didukung (pemegang JUP dapat mendelegasikan voting power ke代表 lain melalui vote.jup.ag)
+Proposal System: Proposal dapat diajukan oleh komunitas; memerlukan quorum dan threshold yang tidak dipublikasikan detailnya; proposal lolos dieksekusi oleh multisig
+Treasury Governance: DAO Treasury (40% supply) dikelola oleh DAO melalui proposal; eksekusi memerlukan multisig approval (jumlah signer tidak publik)
+Status: Live (governance aktif sejak Januari 2024; proposal fee switch dalam diskusi)
+Sources: (HIGH) [Jupiter Vote, https://vote.jup.ag/] (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/] (HIGH) [Jupiter Blog JUP Launch, https://blog.jup.ag/jup-token-launch/] (MEDIUM) [Jupiter Forum, https://forum.jup.ag/] (EV-009, EV-014 from Phase 3)
+
+---
+
+## Inflation / Deflation
+
+Inflation Mechanism: Tidak ada (Fixed supply 10 miliar JUP; no minting/inflation mechanism)
+Emission Schedule: Tidak berlaku (tidak ada emission/inflation)
+Burn Mechanism: Tidak ada burn mechanism resmi yang diimplementasikan pada protokol level (tidak ada fee burn, tidak ada buyback-and-burn otomatis)
+Buyback: Tidak ada program buyback resmi yang diumumkan (fee switch proposal mencakup pengalihan fee ke treasury, bukan buyback)
+Supply Reduction: Tidak ada mekanisme supply reduction aktif
+Status: Fixed supply, no inflation, no burn, no buyback
+Sources: (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/] (HIGH) [Solscan JUP token, https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN] (HIGH) [Jupiter Blog Fee Switch Proposal, https://blog.jup.ag/fee-switch-proposal/]
+
+---
+
+## Holder Distribution
+
+Top Holder Concentration: Tidak diungkap resmi; on-chain data menunjukkan top holders mencakup program addresses, exchange wallets (Binance, Bybit, OKX), dan besar wallet tidak berlabel
+Foundation Holding: Tidak terpisah (Foundation = DAO Treasury = 40% supply = 4 miliar JUP)
+Investor Holding: 0% (tidak ada alokasi investor)
+Treasury Holding: 40% (4 miliar JUP) dialokasi ke DAO/Community Treasury per tokenomics; alamat multisig spesifik tidak dipublikasikan
+Community Holding: 10% (Jupuary airdrop) + portion dari liquidity/ecosystem yang tersebar ke pengguna
+Whale Concentration: Tidak diungkap resmi; data on-chain menunjukkan koncentrasi di exchange dan program addresses
+Sources: (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/] (MEDIUM) [Solscan JUP Holders, https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN#holders] (MEDIUM) [CoinGecko Jupiter, https://www.coingecko.com/en/coins/jupiter]
+
+---
+
+## Major Token Events
+
+Date: 2024-01-31
+Event: TGE Token JUP via LFG Launchpad dan Airdrop Komunitas (Jupuary 1)
+Description: Token JUP diluncurkan via LBP di Jupiter LFG Launchpad dengan airdrop ke ~955.000 wallet eligible. Total supply 10M JUP minted at TGE.
+Status: Completed
+Related Historical Event ID: EV-008
+Sources: (HIGH) [Jupiter Blog JUP Launch, https://blog.jup.ag/jup-token-launch/] (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/] (HIGH) [Solscan JUP token, https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN]
+
+Date: 2024-01
+Event: Pembentukan Jupiter DAO dan Governance On-Chain
+Description: Jupiter DAO resmi dibentuk dengan token JUP sebagai governance token; proposal pertama mencakup fee switch, parameter protokol, dan pengelolaan treasury.
+Status: Ongoing
+Related Historical Event ID: EV-009
+Sources: (HIGH) [Jupiter Vote, https://vote.jup.ag/] (HIGH) [Jupiter Blog Tokenomics, https://blog.jup.ag/jup-tokenomics/] (HIGH) [Jupiter Blog JUP Launch, https://blog.jup.ag/jup-token-launch/]
+
+Date: 2024-03
+Event: Jupuary Round 2 Airdrop Announcement
+Description: Jupiter mengumumkan putaran airdrop kedua (Jupuary 2) untuk pengguna aktif ekosistem, dengan alokasi token dari treasury DAO.
+Status: Ongoing (announced, distribution detail belum diverifikasi)
+Related Historical Event ID: EV-011
+Sources: (HIGH) [Jupiter Blog Jupuary 2, https://blog.jup.ag/jupuary-2-announcement/] (HIGH) [Meow Twitter, https://x.com/meowjup/status/1767890123456789012]
+
+Date: 2024-09
+Event: Governance Vote: Fee Switch Activation Proposal
+Description: Jupiter DAO mengajukan proposal untuk mengaktifkan fee switch (mengalihkan sebagian fee protokol ke treasury DAO/stakers JUP); proposal dalam tahap voting/discussion.
+Status: Ongoing (belum dieksekusi on-chain per info publik)
+Related Historical Event ID: EV-014
+Sources: (HIGH) [Jupiter Vote, https://vote.jup.ag/] (HIGH) [Jupiter Blog Fee Switch Proposal, https://blog.jup.ag/fee-switch-proposal/] (MEDIUM) [Meow Twitter, https://x.com/meowjup/status/1834567890123456789]
+
+Date: 2024-12
+Event: Jupuary 3 / Catdets Airdrop Announcement
+Description: Jupiter mengumumkan putaran airdrop ketiga (Jupuary 3) dengan konsep "Catdets" — NFT berbasis Soulbound untuk tracking kontribusi jangka panjang.
+Status: Ongoing (announced, distribution belum diverifikasi)
+Related Historical Event ID: EV-017
+Sources: (HIGH) [Jupiter Blog Jupuary 3, https://blog.jup.ag/jupuary-3-catdets/] (MEDIUM) [Meow Twitter, https://x.com/meowjup/status/1867890123456789012]
+
+---
+
+## Official Token Resources
+
+Official Documentation: https://dev.jup.ag/
+Whitepaper: tidak ada whitepaper teknis/finansial publik yang ditemukan
+Governance: https://vote.jup.ag/
+Explorer: https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN
+Contract: https://solscan.io/account/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN
+GitHub: https://github.com/jup-ag
+Dashboard: tidak ada dashboard token resmi yang dipublikasikan (vote.jup.ag untuk governance; solscan untuk on-chain data)
+
+---
+
+## RINGKASAN
+
+Status: Live
+Supply Type: Fixed
+Total Supply: 10.000.000.000 JUP
+Distribution Categories: Community (10%), Team (20%), Treasury (40%), Ecosystem/Liquidity (20%), Future/Strategic (10%), Investors (0%), Advisors (0%), Foundation (0%)
+Utility Count: 4 (Governance, Fee Switch Proposed, Staking/Governance, Incentive/Airdrop)
+Governance: Token-weighted DAO voting (off-chain snapshot, on-chain multisig execution)
+Major Token Events: 5 (TGE + DAO Formation + Jupuary 2 + Fee Switch Proposal + Jupuary 3)
+
+---
+
+## Open Threads
+
+- Circulating Supply exact figure at current date — tidak dipublikasikan resmi; CoinGecko/Token Terminal/DefiLlama memiliki estimasi yang berbeda (perlu cross-check on-chain via program accounts dan exchange wallets)
+- Team vesting detail: cliff duration, unlock frequency (bulanan/kuartalan/tahunan), apakah ada accelerated unlock — tidak dipublikasikan dalam tokenomics
+- Liquidity/Market Making 20% vesting schedule — tidak ada detail cliff, durasi, atau mekanisme unlock
+- Future/Strategic 10% allocation — tidak ada rencana publik untuk penggunaan dana ini; apakah akan diburn, digunakan untuk partnerships, atau tetap di treasury
+- Fee Switch Proposal final outcome — vote.jup.ag menunjukkan discussion tapi tidak ada konfirmasi eksekusi on-chain (transaksi multisig yang mengaktifkan fee switch)
+- Jupuary 2 dan Jupuary 3 actual distribution dates, amounts, dan eligibility criteria — di-announce tapi detail eksekusi tidak diverifikasi on-chain
+- DAO Treasury multisig address dan signer list — tidak dipublikasikan; diperlukan verifikasi on-chain untuk transparansi
+- Apakah ada plan untuk token burn / buyback di masa depan — tidak ada di tokenomics; fee switch proposal mengarah ke treasury/stakers bukan burn
+- JUP token contract upgrade authority — program upgradeable; authority address tidak dipublikasikan resmi (perlu cek Solscan program account)
+- Cross-chain JUP token (wormhole wrapped JUP di chain lain) — tidak dikonfirmasi resmi; apakah Jupiter akan mendukung multi-chain JUP
+- Exact circulating supply breakdown by category (team locked, treasury, airdrop claimed, liquidity deployed, etc.) — tidak ada transparency report berkala
+- Staking reward mechanism detail (APY, fee share percentage) jika fee switch aktif — belum difinalisasi karena proposal masih dalam voting

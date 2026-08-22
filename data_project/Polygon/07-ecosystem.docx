@@ -1,0 +1,794 @@
+PROJECT: Polygon
+
+## Ecosystem Position
+
+Kategori Ekosistem
+Primary Sector: Layer 2 Scaling / Ethereum Scaling Ecosystem (HIGH) [Polygon Website, https://polygon.technology/]
+Secondary Sector: Multi-chain Infrastructure (App-chains, ZK Rollups, Data Availability, Identity, Interoperability) (HIGH) [Polygon 2.0 Blog, https://blog.polygon.technology/introducing-polygon-2-0/]
+Primary Chain: Ethereum (L1 Settlement) (HIGH) [Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/]
+Supported Chains: Polygon PoS; Polygon zkEVM; Polygon CDK Chains (App-chains); Polygon Miden; Polygon Avail (spin-off); AggLayer (Interop Layer) (HIGH) [Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/]
+Sources: Polygon Website, https://polygon.technology/; Polygon 2.0 Blog, https://blog.polygon.technology/introducing-polygon-2-0/; Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/
+
+## External Dependencies
+
+Dependency Name: Ethereum
+Dependency Type: Chain
+Purpose: Layer 1 settlement untuk semua Polygon chains (PoS checkpoint, zkEVM validity proofs, CDK rollup settlement, AggLayer unified bridge, Miden STARK verification); validator staking untuk PoS; canonical bridge destination (HIGH) [Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/]
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: Polygon PoS Heimdall Checkpoint; Polygon zkEVM Bridge; Polygon CDK Settlement; AggLayer Contract; Miden VM Verifier (HIGH) [Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/]
+Sources: Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/; Ethereum.org L2, https://ethereum.org/en/layer-2/
+
+Dependency Name: Binance
+Dependency Type: Exchange
+Purpose: IEO Launchpad untuk TGE MATIC (April 2019); listing token POL/MATIC; likuiditas utama; dukungan migrasi token (HIGH) [Binance Research, https://research.binance.com/en/projects/matic-network]
+Criticality: High
+Status: Live
+Related Entity: Binance
+Related Technology Component: Token Contract (MATIC/POL); Migration Contract (HIGH) [Binance Research, https://research.binance.com/en/projects/matic-network]
+Sources: Binance Research, https://research.binance.com/en/projects/matic-network; Binance POL Trading, https://www.binance.com/en/trade/POL_USDT
+
+Dependency Name: Chainlink
+Dependency Type: Oracle
+Purpose: Price Feeds, VRF, CCIP, Functions untuk DeFi di Polygon PoS dan zkEVM; data harga terdesentralisasi untuk Aave, Curve, dll (HIGH) [Chainlink Polygon, https://chain.link/ecosystem/polygon]
+Criticality: High
+Status: Live
+Related Entity: Chainlink
+Related Technology Component: Polygon PoS DeFi; Polygon zkEVM DeFi; Polygon ID (potensial) (HIGH) [Chainlink Polygon, https://chain.link/ecosystem/polygon]
+Sources: Chainlink Polygon, https://chain.link/ecosystem/polygon; Polygon Ecosystem, https://polygon.technology/ecosystem
+
+Dependency Name: The Graph
+Dependency Type: Data Provider
+Purpose: Indexing dan query data on-chain untuk Polygon PoS, zkEVM, CDK chains; digunakan dApps untuk frontend (HIGH) [The Graph Polygon, https://thegraph.com/explorer/subgraphs?chain=polygon]
+Criticality: High
+Status: Live
+Related Entity: The Graph
+Related Technology Component: Polygon PoS; Polygon zkEVM; Polygon CDK Chains (HIGH) [The Graph Polygon, https://thegraph.com/explorer/subgraphs?chain=polygon]
+Sources: The Graph Polygon, https://thegraph.com/explorer/subgraphs?chain=polygon; Polygon Ecosystem, https://polygon.technology/ecosystem
+
+Dependency Name: Gelato
+Dependency Type: Infrastructure
+Purpose: Automation (smart contract execution) dan Rollup-as-a-Service (RaaS) untuk Polygon CDK chains; shared sequencer infrastructure (HIGH) [Gelato Polygon, https://gelato.network/polygon]
+Criticality: High
+Status: Live
+Related Entity: Gelato
+Related Technology Component: Polygon CDK Node; Polygon CDK Shared Sequencer (HIGH) [Gelato Polygon, https://gelato.network/polygon; Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+Sources: Gelato Polygon, https://gelato.network/polygon; Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/
+
+Dependency Name: Polygonscan
+Dependency Type: Infrastructure
+Purpose: Block explorer resmi untuk Polygon PoS dan zkEVM; dioperasikan oleh Etherscan team (HIGH) [Polygonscan, https://polygonscan.com/]
+Criticality: High
+Status: Live
+Related Entity: Polygonscan
+Related Technology Component: Polygon PoS; Polygon zkEVM (HIGH) [Polygonscan, https://polygonscan.com/]
+Sources: Polygonscan, https://polygonscan.com/; Polygon Docs, https://dev.polygon.technology/
+
+Dependency Name: Deutsche Telekom
+Dependency Type: Service
+Purpose: Validator enterprise-grade untuk Polygon PoS (sejak 2023) dan Polygon zkEVM (sejak 2024) melalui anak perusahaan Telekom MMS (HIGH) [Deutsche Telekom Polygon, https://www.telekom.com/en/media/media-information/archive/telekom-mms-validator-polygon]
+Criticality: Medium
+Status: Live
+Related Entity: Deutsche Telekom
+Related Technology Component: Polygon PoS Validator Set; Polygon zkEVM Validator (HIGH) [Deutsche Telekom Polygon, https://www.telekom.com/en/media/media-information/archive/telekom-mms-validator-polygon]
+Sources: Deutsche Telekom Polygon, https://www.telekom.com/en/media/media-information/archive/telekom-mms-validator-polygon; Polygon Staking, https://staking.polygon.technology/
+
+Dependency Name: Stripe
+Dependency Type: Service
+Purpose: Fiat-to-crypto onramp dan payouts via Polygon PoS untuk merchant global; dukungan USDC di Polygon (HIGH) [Stripe Blog, https://stripe.com/blog/crypto-payouts-polygon]
+Criticality: Medium
+Status: Live
+Related Entity: Stripe
+Related Technology Component: Polygon PoS Bridge; Polygon PoS USDC Integration (HIGH) [Stripe Blog, https://stripe.com/blog/crypto-payouts-polygon]
+Sources: Stripe Blog, https://stripe.com/blog/crypto-payouts-polygon; Polygon Blog Enterprise, https://blog.polygon.technology/
+
+Dependency Name: Alchemy / QuickNode / Infura
+Dependency Type: Cloud / Infrastructure
+Purpose: RPC node provider untuk Polygon PoS, zkEVM, CDK chains; developer infrastructure (HIGH) [Alchemy Polygon API, https://docs.alchemy.com/docs/polygon-api; QuickNode Polygon, https://www.quicknode.com/chains/polygon]
+Criticality: High
+Status: Live
+Related Entity: Alchemy; QuickNode; Infura
+Related Technology Component: Polygon PoS RPC; Polygon zkEVM RPC; Polygon CDK RPC (HIGH) [Alchemy Polygon API, https://docs.alchemy.com/docs/polygon-api; QuickNode Polygon, https://www.quicknode.com/chains/polygon]
+Sources: Alchemy Polygon API, https://docs.alchemy.com/docs/polygon-api; QuickNode Polygon, https://www.quicknode.com/chains/polygon
+
+Dependency Name: EigenDA / Celestia
+Dependency Type: Protocol
+Purpose: Data availability layer options untuk Polygon CDK validium chains (alternatif ke Ethereum calldata/blobs) (MEDIUM) [Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+Criticality: Medium
+Status: Live / Planned
+Related Entity: EigenDA; Celestia
+Related Technology Component: Polygon CDK Validium Mode (HIGH) [Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+Sources: Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/; EigenDA, https://eigenda.xyz/; Celestia, https://celestia.org/
+
+Dependency Name: RISC Zero
+Dependency Type: Protocol
+Purpose: ZK VM untuk komponen prover tertentu di zkEVM dan Miden (integration dengan proving stack) (MEDIUM) [RISC Zero, https://www.risczero.com/]
+Criticality: Medium
+Status: Live
+Related Entity: RISC Zero
+Related Technology Component: Polygon zkEVM Prover; Polygon Miden Prover (MEDIUM) [RISC Zero, https://www.risczero.com/; GitHub 0xPolygonHermez, https://github.com/0xPolygonHermez]
+Sources: RISC Zero, https://www.risczero.com/; GitHub 0xPolygonHermez, https://github.com/0xPolygonHermez
+
+Dependency Name: Trail of Bits / PeckShield / CertiK / Sigma Prime / OpenZeppelin / Spearbit / Veridise / Halborn / AuditOne
+Dependency Type: Security
+Purpose: Smart contract dan protocol audits untuk PoS, zkEVM, CDK, AggLayer, Miden, ID, Bridge (HIGH) [Trail of Bits Publications, https://github.com/trailofbits/publications; PeckShield, https://github.com/peckshield/publications; CertiK, https://www.certik.com/projects/polygon; Sigma Prime, https://sigmaprime.io/; OpenZeppelin Audits, https://blog.openzeppelin.com/; Spearbit, https://spearbit.io/; Veridise, https://veridise.com/; Halborn, https://halborn.com/; AuditOne, https://auditone.io/]
+Criticality: High
+Status: Live (recurring)
+Related Entity: Trail of Bits; PeckShield; CertiK; Sigma Prime; OpenZeppelin; Spearbit; Veridise; Halborn; AuditOne
+Related Technology Component: Polygon PoS Contracts; Polygon zkEVM Circuits/Contracts; Polygon CDK Contracts; AggLayer Contracts; Polygon Miden VM/Prover; Polygon ID Contracts; Polygon Bridge Contracts (HIGH) [Phase 04 Audit History]
+Sources: Trail of Bits Publications, https://github.com/trailofbits/publications; PeckShield Publications, https://github.com/peckshield/publications; CertiK Polygon, https://www.certik.com/projects/polygon; Sigma Prime, https://sigmaprime.io/; OpenZeppelin Audits, https://blog.openzeppelin.com/; Spearbit, https://spearbit.io/; Veridise, https://veridise.com/; Halborn, https://halborn.com/; AuditOne, https://auditone.io/
+
+## Major Integrations
+
+Integration Name: Aave v3 Deployment on Polygon PoS
+Integrated With: Aave
+Purpose: Lending protocol terbesar di Polygon PoS, membawa TVL dan likuiditas besar ke ekosistem
+Status: Live
+Related Historical Event ID: EV-019
+Sources: Aave Polygon Market, https://app.aave.com/resume?marketName=polygon_v3; Polygon Ecosystem, https://polygon.technology/ecosystem
+
+Integration Name: Uniswap v3 Deployment on Polygon PoS
+Integrated With: Uniswap
+Purpose: DEX terdepan di Polygon PoS, liquidity utama untuk token ekosistem
+Status: Live
+Related Historical Event ID: EV-019
+Sources: Uniswap Polygon, https://app.uniswap.org/?chain=polygon; Polygon Ecosystem, https://polygon.technology/ecosystem
+
+Integration Name: Curve Finance Deployment on Polygon PoS
+Integrated With: Curve Finance
+Purpose: Stablecoin AMM dengan deep liquidity untuk bridged assets di Polygon PoS
+Status: Live
+Related Historical Event ID: EV-019 (konteks ekosistem DeFi)
+Sources: Curve Polygon, https://curve.fi/#/polygon/pools; Polygon Ecosystem, https://polygon.technology/ecosystem
+
+Integration Name: Balancer Deployment on Polygon PoS
+Integrated With: Balancer
+Purpose: Automated portfolio manager dan weighted pools untuk ekosistem Polygon
+Status: Live
+Sources: Balancer Polygon, https://app.balancer.fi/#/polygon; Polygon Ecosystem, https://polygon.technology/ecosystem
+
+Integration Name: OpenSea NFT Marketplace on Polygon PoS
+Integrated With: OpenSea
+Purpose: NFT marketplace terbesar dengan dukungan Polygon PoS, gas-free minting
+Status: Live
+Related Historical Event ID: EV-029
+Sources: OpenSea Polygon, https://opensea.io/rankings?chain=polygon; Polygon Ecosystem, https://polygon.technology/ecosystem
+
+Integration Name: Magic Eden NFT Marketplace on Polygon PoS/zkEVM
+Integrated With: Magic Eden
+Purpose: Multi-chain NFT marketplace mendukung Polygon PoS dan zkEVM
+Status: Live
+Sources: Magic Eden Polygon, https://magiceden.io/polygon; Polygon Ecosystem, https://polygon.technology/ecosystem
+
+Integration Name: Immutable Partnership (Immutable X / Immutable zkEVM)
+Integrated With: Immutable
+Purpose: Gaming platform bermitra dengan Polygon untuk game web3; investor strategis; Immutable zkEVM dibangun pada Polygon CDK
+Status: Live
+Related Historical Event ID: EV-022 (Polygon Studios launch context); EV-053 (GameSwift CDK context)
+Sources: Immutable Blog, https://www.immutable.com/blog/immutable-polygon-partnership; Polygon Ecosystem, https://polygon.technology/ecosystem
+
+Integration Name: GameSwift Chain on Polygon CDK
+Integrated With: GameSwift
+Purpose: Gaming ecosystem dan modular chain dibangun dengan Polygon CDK, terhubung ke AggLayer
+Status: Live
+Related Historical Event ID: EV-053; EV-055
+Sources: GameSwift, https://gameswift.net/; Polygon CDK Showcase, https://dev.polygon.technology/polygon-cdk/showcase/
+
+Integration Name: Pixelverse on Polygon
+Integrated With: Pixelverse
+Purpose: Telegram-based game (PixelTap) dengan jutaan user, terintegrasi Polygon untuk transaksi low-fee
+Status: Live
+Sources: Pixelverse, https://pixelverse.xyz/; Polygon Blog Gaming, https://blog.polygon.technology/
+
+Integration Name: Meta (Instagram) NFT Integration
+Integrated With: Meta
+Purpose: Dukungan Polygon sebagai chain untuk NFT di Instagram (2022)
+Status: Deprecated (Meta menghentikan fitur NFT 2023)
+Related Historical Event ID: EV-032
+Sources: Meta News, https://about.fb.com/news/2022/08/expanding-digital-collectibles-on-instagram/; Polygon Blog, https://blog.polygon.technology/instagram-nft-polygon/
+
+Integration Name: Disney Accelerator Program
+Integrated With: Disney
+Purpose: Polygon terpilih untuk Disney Accelerator 2021 untuk pengembangan teknologi blockchain
+Status: Completed (program selesai)
+Related Historical Event ID: EV-023
+Sources: Polygon Blog Disney, https://blog.polygon.technology/polygon-disney-accelerator/; Disney Accelerator, https://thewaltdisneycompany.com/disney-accelerator/
+
+Integration Name: Mastercard Digital Identity Verification
+Integrated With: Mastercard
+Purpose: Kolaborasi verifikasi identitas digital menggunakan blockchain dan ZK proofs
+Status: Live / Ongoing
+Related Historical Event ID: EV-041
+Sources: Mastercard Press, https://www.mastercard.com/news/press/2023/mastercard-polygon-identity/; Polygon Blog, https://blog.polygon.technology/mastercard-polygon/
+
+Integration Name: DraftKings NFT Marketplace on Polygon PoS
+Integrated With: DraftKings
+Purpose: Sportsbook NFT marketplace dan loyalty program di Polygon PoS
+Status: Live
+Sources: DraftKings NFT, https://www.draftkings.com/nft; Polygon Blog Enterprise, https://blog.polygon.technology/
+
+Integration Name: Flipkart FireDrops Loyalty Program
+Integrated With: Flipkart
+Purpose: E-commerce loyalty program (FireDrops) dan web3 initiatives di Polygon
+Status: Live
+Sources: Flipkart, https://www.flipkart.com/; Polygon Blog Enterprise, https://blog.polygon.technology/
+
+Integration Name: Astar Network on Polygon Edge
+Integrated With: Astar Network
+Purpose: Astar Network dibangun dengan Polygon Edge (sebelum CDK), integrasi ekosistem
+Status: Live
+Related Historical Event ID: EV-045
+Sources: Polygon Blog Astar, https://blog.polygon.technology/astar-polygon-edge/; Astar Network, https://astar.network/
+
+Integration Name: Polygon zkEVM Mainnet Beta Launch
+Integrated With: Ethereum
+Purpose: ZK rollup EVM-equivalent live di Ethereum mainnet
+Status: Live
+Related Historical Event ID: EV-038
+Sources: Polygon Blog zkEVM Mainnet, https://blog.polygon.technology/polygon-zkevm-mainnet-beta/; GitHub 0xPolygonHermez, https://github.com/0xPolygonHermez
+
+Integration Name: AggLayer Mainnet Beta (PoS + zkEVM)
+Integrated With: Polygon PoS; Polygon zkEVM
+Purpose: Unified bridging dan liquidity layer menghubungkan PoS dan zkEVM dengan pessimistic proofs
+Status: Live (Beta)
+Related Historical Event ID: EV-047
+Sources: Polygon Blog AggLayer, https://blog.polygon.technology/agglayer-mainnet-beta/; Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/
+
+Integration Name: POL Token Migration (MATIC → POL)
+Integrated With: Binance; Coinbase; Polygonscan; Ethereum
+Purpose: Migrasi token 1:1, listing POL di exchange utama, kontrak migrasi on-chain
+Status: Ongoing
+Related Historical Event ID: EV-046; EV-054
+Sources: Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/; Coinbase Blog, https://blog.coinbase.com/listing-polygon; Binance POL Trading, https://www.binance.com/en/trade/POL_USDT
+
+Integration Name: Aave & Curve on Polygon zkEVM
+Integrated With: Aave; Curve Finance
+Purpose: Deployment DeFi suite utama ke Polygon zkEVM
+Status: Live
+Related Historical Event ID: EV-048
+Sources: Aave zkEVM, https://app.aave.com/resume?marketName=polygon_zkevm; Curve zkEVM, https://curve.fi/#/zkevm/pools
+
+## Infrastructure Providers
+
+Provider: Alchemy
+Service: RPC Node API, Enhanced APIs, Webhooks, NFT API untuk Polygon PoS, zkEVM, CDK
+Criticality: High
+Status: Live
+Sources: Alchemy Polygon API, https://docs.alchemy.com/docs/polygon-api
+
+Provider: QuickNode
+Service: RPC Node API, Core API, Streams, Functions untuk Polygon PoS, zkEVM
+Criticality: High
+Status: Live
+Sources: QuickNode Polygon, https://www.quicknode.com/chains/polygon
+
+Provider: Infura
+Service: RPC Node API untuk Polygon PoS, zkEVM
+Criticality: High
+Status: Live
+Sources: Infura Polygon, https://www.infura.io/docs/polygon
+
+Provider: Polygonscan (Etherscan Team)
+Service: Block Explorer untuk Polygon PoS dan zkEVM
+Criticality: High
+Status: Live
+Sources: Polygonscan, https://polygonscan.com/; zkEVM Polygonscan, https://zkevm.polygonscan.com/
+
+Provider: Chainlink
+Service: Oracle (Price Feeds, VRF, CCIP, Functions) untuk Polygon PoS, zkEVM
+Criticality: High
+Status: Live
+Sources: Chainlink Polygon, https://chain.link/ecosystem/polygon
+
+Provider: The Graph
+Service: Indexing Protocol (Subgraph) untuk Polygon PoS, zkEVM, CDK
+Criticality: High
+Status: Live
+Sources: The Graph Polygon, https://thegraph.com/explorer/subgraphs?chain=polygon
+
+Provider: Gelato
+Service: Automation (Web3 Functions), Rollup-as-a-Service (RaaS), Shared Sequencer untuk Polygon CDK
+Criticality: High
+Status: Live
+Sources: Gelato Polygon, https://gelato.network/polygon
+
+Provider: Deutsche Telekom (Telekom MMS)
+Service: Validator Infrastructure untuk Polygon PoS dan zkEVM
+Criticality: Medium
+Status: Live
+Sources: Deutsche Telekom Validator, https://www.telekom.com/en/media/media-information/archive/telekom-mms-validator-polygon
+
+Provider: Stripe
+Service: Fiat Onramp / Crypto Payouts via Polygon PoS (USDC)
+Criticality: Medium
+Status: Live
+Sources: Stripe Crypto Payouts, https://stripe.com/blog/crypto-payouts-polygon
+
+Provider: Figment / Kiln / Chorus One / P2P.org / Blockdaemon
+Service: Staking Infrastructure / Validator Services untuk Polygon PoS (POL staking)
+Criticality: Medium
+Status: Live
+Sources: Polygon Staking Validators, https://staking.polygon.technology/; Figment Polygon, https://figment.io/networks/polygon/; Kiln Polygon, https://kiln.fi/polygon/
+
+Provider: EigenDA / Celestia
+Service: Data Availability Layer untuk CDK Validium Chains
+Criticality: Medium
+Status: Live / Planned
+Sources: Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/; EigenDA, https://eigenda.xyz/; Celestia, https://celestia.org/
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Ya (MATIC, POL)
+Perpetual: Ya (MATICUSDT, POLUSDT)
+OTC: Ya (Binance OTC)
+Launchpool: Ya (POL Launchpool histórica)
+Status: Live
+Sources: Binance POL Trading, https://www.binance.com/en/trade/POL_USDT; Binance Research, https://research.binance.com/en/projects/matic-network
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Ya (MATIC, POL)
+Perpetual: Ya (Coinbase International Exchange / Advanced Trade)
+OTC: Ya (Coinbase Prime OTC)
+Launchpool: Tidak
+Status: Live
+Sources: Coinbase Listing Polygon, https://blog.coinbase.com/listing-polygon; Coinbase POL, https://www.coinbase.com/price/polygon
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Ya (MATIC, POL)
+Perpetual: Ya (Kraken Futures)
+OTC: Ya (Kraken OTC)
+Launchpool: Tidak
+Status: Live
+Sources: Kraken MATIC, https://www.kraken.com/features/matic; Kraken POL, https://www.kraken.com/learn/what-is-polygon-pol
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Ya (MATIC, POL)
+Perpetual: Ya (OKX Futures)
+OTC: Ya (OKX OTC)
+Launchpool: Ya (POL Launchpool)
+Status: Live
+Sources: OKX POL, https://www.okx.com/trade/POL-USDT; OKX MATIC, https://www.okx.com/trade/MATIC-USDT
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Ya (MATIC, POL)
+Perpetual: Ya (Bybit Futures)
+OTC: Ya (Bybit OTC)
+Launchpool: Tidak
+Status: Live
+Sources: Bybit POL, https://www.bybit.com/trade/usdt/POLUSDT; Bybit MATIC, https://www.bybit.com/trade/usdt/MATICUSDT
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Ya (MATIC, POL)
+Perpetual: Ya (KuCoin Futures)
+OTC: Ya (KuCoin OTC)
+Launchpool: Tidak
+Status: Live
+Sources: KuCoin POL, https://www.kucoin.com/trade/POL-USDT; KuCoin MATIC, https://www.kucoin.com/trade/MATIC-USDT
+
+Exchange: Huobi / HTX
+Listing Status: Listed
+Spot: Ya (MATIC, POL)
+Perpetual: Ya (HTX Futures)
+OTC: Ya
+Launchpool: Tidak
+Status: Live
+Sources: HTX POL, https://www.htx.com/trade/usdt_pol; HTX MATIC, https://www.htx.com/trade/usdt_matic
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Ya (MATIC, POL)
+Perpetual: Ya (Gate Futures)
+OTC: Ya
+Launchpool: Tidak
+Status: Live
+Sources: Gate.io POL, https://www.gate.io/trade/POL_USDT; Gate.io MATIC, https://www.gate.io/trade/MATIC_USDT
+
+## Wallet Ecosystem
+
+Wallet: MetaMask
+Support Type: Native RPC Support (Polygon PoS, zkEVM, CDK chains via custom RPC); Snap Support untuk zkEVM
+Status: Live
+Sources: MetaMask Polygon, https://metamask.io/; Polygon Docs Add Network, https://dev.polygon.technology/polygon-pos/metamask-config/
+
+Wallet: Rainbow Wallet
+Support Type: Native Polygon PoS Support; zkEVM Support
+Status: Live
+Sources: Rainbow Polygon, https://rainbow.me/chains/polygon
+
+Wallet: Trust Wallet
+Support Type: Native Polygon PoS Support; POL/MATIC Token Management
+Status: Live
+Sources: Trust Wallet Polygon, https://trustwallet.com/assets/polygon
+
+Wallet: Coinbase Wallet
+Support Type: Native Polygon PoS Support; zkEVM Support; Smart Wallet Integration
+Status: Live
+Sources: Coinbase Wallet Polygon, https://www.coinbase.com/wallet/polygon
+
+Wallet: Zerion
+Support Type: Portfolio Tracker + Wallet; Polygon PoS, zkEVM Support
+Status: Live
+Sources: Zerion Polygon, https://zerion.io/chains/polygon
+
+Wallet: Rabby Wallet
+Support Type: Native Polygon PoS, zkEVM, CDK Support; Auto-switch RPC
+Status: Live
+Sources: Rabby Polygon, https://rabby.io/chains/polygon
+
+Wallet: Polygon Wallet (Official / Portal)
+Support Type: Official Bridge Wallet; Staking Dashboard Integration; Migration Tool
+Status: Live
+Sources: Polygon Portal, https://portal.polygon.technology/; Polygon Staking, https://staking.polygon.technology/
+
+Wallet: Ledger / Trezor (Hardware)
+Support Type: Hardware Wallet Support untuk Polygon PoS (via MetaMask/Rabby); POL/MATIC Token Display
+Status: Live
+Sources: Ledger Polygon, https://www.ledger.com/academy/crypto/polygon-matic; Trezor Polygon, https://trezor.io/coins/#MATIC
+
+Wallet: Safe (Gnosis Safe)
+Support Type: Multi-sig Wallet untuk Polygon PoS, zkEVM; Treasury Management
+Status: Live
+Sources: Safe Polygon, https://safe.global/chains/polygon; Safe zkEVM, https://safe.global/chains/polygon-zkevm
+
+## Developer Ecosystem
+
+SDK: Polygon SDK (Legacy) / Polygon CDK SDK
+Type: Chain Development Kit CLI, Node Binary, Smart Contract Templates, Deployment Scripts
+Status: Live
+Sources: Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/; GitHub 0xPolygon CDK, https://github.com/0xPolygon/polygon-cdk
+
+SDK: Polygon zkEVM Node SDK
+Type: Docker Images, Kubernetes Helm Charts untuk Sequencer, Aggregator, RPC, Prover
+Status: Live
+Sources: GitHub 0xPolygonHermez zkevm-node, https://github.com/0xPolygonHermez/zkevm-node
+
+SDK: Polygon Miden Toolchain
+Type: Miden Compiler (masm), Miden VM, Prover, Client SDK (Rust, JavaScript)
+Status: Live (Devnet/Mainnet Beta)
+Sources: GitHub 0xPolygonMiden, https://github.com/0xPolygonMiden
+
+SDK: Polygon ID SDK
+Type: TypeScript/Rust Library untuk Issuer, Holder, Verifier Flows (W3C VC + ZK)
+Status: Live
+Sources: Polygon ID Docs, https://dev.polygon.technology/polygon-id/; GitHub 0xPolygonID, https://github.com/0xPolygonID
+
+SDK: Polygon SDK JS / Wagmi / Viem / Ethers.js
+Type: Frontend Library Standar untuk Integration dengan Polygon Chains
+Status: Live
+Sources: GitHub 0xPolygon polygon-sdk-js, https://github.com/0xPolygon/polygon-sdk-js; Wagmi Polygon, https://wagmi.sh/react/guides/chains.html#polygon
+
+API: Polygon RPC (Public)
+Type: Public RPC Endpoints (polygon-rpc.com) + Partner RPC (Alchemy, QuickNode, Infura)
+Status: Live
+Sources: Polygon RPC, https://polygon-rpc.com/; Alchemy Polygon, https://docs.alchemy.com/docs/polygon-api; QuickNode Polygon, https://www.quicknode.com/chains/polygon
+
+API: Polygon zkEVM RPC
+Type: Public dan Partner RPC Endpoints untuk zkEVM
+Status: Live
+Sources: Polygon zkEVM Docs RPC, https://dev.polygon.technology/polygon-zkevm/rpc/; Alchemy zkEVM, https://docs.alchemy.com/docs/polygon-zkevm-api
+
+API: AggLayer API
+Type: Unified Bridge API, Pessimistic Proof API untuk Cross-chain Queries
+Status: Beta
+Sources: AggLayer Docs, https://dev.polygon.technology/agglayer/
+
+Developer Tools: Hardhat / Foundry
+Support: Full Support untuk Smart Contract Development di Polygon PoS, zkEVM, CDK
+Status: Live
+Sources: Hardhat Polygon, https://hardhat.org/hardhat-network/docs/guides/polygon.html; Foundry Polygon, https://book.getfoundry.sh/reference/forge/forge-create.html#rpc-url
+
+Developer Tools: Polygon Scan APIs
+Type: Explorer API untuk Polygon PoS dan zkEVM (Contract Verification, Token API, Logs)
+Status: Live
+Sources: Polygonscan API, https://polygonscan.com/apis; zkEVM Polygonscan API, https://zkevm.polygonscan.com/apis
+
+Developer Tools: Tenderly / Blockscout
+Type: Debugging, Simulation, Monitoring untuk Polygon Chains
+Status: Live
+Sources: Tenderly Polygon, https://tenderly.co/chains/polygon; Blockscout Polygon, https://polygon.blockscout.com/
+
+Open Source Repository: 0xPolygon (Main Monorepo)
+URL: https://github.com/0xPolygon
+Components: PoS Client (Heimdall, Bor), Contracts, SDKs, Tooling, Polygon Edge/CDK
+Status: Active
+Sources: GitHub 0xPolygon, https://github.com/0xPolygon
+
+Open Source Repository: 0xPolygonHermez (zkEVM)
+URL: https://github.com/0xPolygonHermez
+Components: zkEVM Prover, Node, Contracts, Bridge
+Status: Active
+Sources: GitHub 0xPolygonHermez, https://github.com/0xPolygonHermez
+
+Open Source Repository: 0xPolygonMiden (Miden)
+URL: https://github.com/0xPolygonMiden
+Components: Miden VM, Prover, Client, Compiler
+Status: Active
+Sources: GitHub 0xPolygonMiden, https://github.com/0xPolygonMiden
+
+Open Source Repository: 0xPolygonID (Polygon ID)
+URL: https://github.com/0xPolygonID
+Components: Issuer Node, Verifier SDK, Circuits
+Status: Active
+Sources: GitHub 0xPolygonID, https://github.com/0xPolygonID
+
+Developer Portal: Polygon Developer Portal
+URL: https://dev.polygon.technology/
+Content: Docs, Tutorials, API References, SDK Downloads, Chain Configs
+Status: Live
+Sources: Polygon Dev Portal, https://dev.polygon.technology/
+
+Hackathon: Polygon BUIDL / ETHGlobal / Devcon Hackathons
+Frequency: Berkala (ETHGlobal, Devcon, Polygon-specific)
+Status: Ongoing
+Sources: Polygon Blog Hackathons, https://blog.polygon.technology/; ETHGlobal, https://ethglobal.com/events
+
+Grant Program: Polygon Community Treasury Grants / Polygon Ecosystem Fund
+Type: Grants untuk Proyek menggunakan CDK, AggLayer, Miden, ID, zkEVM
+Status: Live (Community Treasury); Planned (Ecosystem Fund $100M+ per roadmap 2027)
+Sources: Polygon Forum Grants, https://forum.polygon.technology/; Polygon Blog Ecosystem Fund, https://blog.polygon.technology/polygon-ecosystem-fund/; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/
+
+Grant Program: Polygon Village / Builder Programs
+Type: Accelerator, Technical Support, Go-to-market untuk Early Stage Projects
+Status: Live
+Sources: Polygon Village, https://polygon.technology/village/; Polygon Blog Village, https://blog.polygon.technology/polygon-village/
+
+## Applications
+
+Application: Aave
+Category: DeFi (Lending)
+Relationship: Deployment Utama di Polygon PoS (v3) dan zkEVM; TVL Terbesar
+Status: Live
+Sources: Aave Polygon, https://app.aave.com/resume?marketName=polygon_v3; Aave zkEVM, https://app.aave.com/resume?marketName=polygon_zkevm
+
+Application: Uniswap
+Category: DeFi (DEX)
+Relationship: Deployment v3 di Polygon PoS dan zkEVM; Liquidity Utama
+Status: Live
+Sources: Uniswap Polygon, https://app.uniswap.org/?chain=polygon; Uniswap zkEVM, https://app.uniswap.org/?chain=polygon_zkevm
+
+Application: Curve Finance
+Category: DeFi (Stablecoin AMM)
+Relationship: Deployment di Polygon PoS dan zkEVM; Deep Liquidity Bridged Assets
+Status: Live
+Sources: Curve Polygon, https://curve.fi/#/polygon/pools; Curve zkEVM, https://curve.fi/#/zkevm/pools
+
+Application: Balancer
+Category: DeFi (AMM / Portfolio Manager)
+Relationship: Deployment di Polygon PoS; Weighted Pools untuk Ekosistem
+Status: Live
+Sources: Balancer Polygon, https://app.balancer.fi/#/polygon
+
+Application: OpenSea
+Category: NFT Marketplace
+Relationship: Dukungan Polygon PoS Sejak 2021; Gas-free Minting
+Status: Live
+Sources: OpenSea Polygon, https://opensea.io/rankings?chain=polygon
+
+Application: Magic Eden
+Category: NFT Marketplace
+Relationship: Multi-chain Support Polygon PoS dan zkEVM
+Status: Live
+Sources: Magic Eden Polygon, https://magiceden.io/polygon
+
+Application: Immutable
+Category: Gaming Platform / Infrastructure
+Relationship: Partner Strategis; Immutable zkEVM dibangun pada Polygon CDK; Investor
+Status: Live
+Sources: Immutable Blog, https://www.immutable.com/blog/immutable-polygon-partnership; Polygon Ecosystem, https://polygon.technology/ecosystem
+
+Application: GameSwift
+Category: Gaming Ecosystem / App-chain
+Relationship: GameSwift Chain dibangun dengan Polygon CDK; Terhubung ke AggLayer
+Status: Live
+Sources: GameSwift, https://gameswift.net/; Polygon CDK Showcase, https://dev.polygon.technology/polygon-cdk/showcase/
+
+Application: Pixelverse
+Category: Gaming (Telegram Mini App)
+Relationship: Jutaan User; Transaksi Low-fee di Polygon
+Status: Live
+Sources: Pixelverse, https://pixelverse.xyz/; Polygon Blog Gaming, https://blog.polygon.technology/
+
+Application: DraftKings
+Category: Enterprise / Sports Betting NFT
+Relationship: NFT Marketplace dan Loyalty Program di Polygon PoS
+Status: Live
+Sources: DraftKings NFT, https://www.draftkings.com/nft; Polygon Blog Enterprise, https://blog.polygon.technology/
+
+Application: Flipkart
+Category: Enterprise / E-commerce Loyalty
+Relationship: FireDrops Loyalty Program dan Web3 Initiatives di Polygon
+Status: Live
+Sources: Flipkart, https://www.flipkart.com/; Polygon Blog Enterprise, https://blog.polygon.technology/
+
+Application: Stripe
+Category: Enterprise / Payments Infrastructure
+Relationship: Fiat-to-Crypto Onramp dan Payouts via Polygon PoS (USDC)
+Status: Live
+Sources: Stripe Crypto Payouts, https://stripe.com/blog/crypto-payouts-polygon; Polygon Blog Enterprise, https://blog.polygon.technology/
+
+Application: Chainlink
+Category: Infrastructure / Oracle
+Relationship: Price Feeds, VRF, CCIP, Functions di Polygon PoS dan zkEVM
+Status: Live
+Sources: Chainlink Polygon, https://chain.link/ecosystem/polygon
+
+Application: The Graph
+Category: Infrastructure / Indexing
+Relationship: Subgraph Indexing untuk Polygon PoS, zkEVM, CDK
+Status: Live
+Sources: The Graph Polygon, https://thegraph.com/explorer/subgraphs?chain=polygon
+
+Application: Gelato
+Category: Infrastructure / Automation / RaaS
+Relationship: Automation dan Rollup-as-a-Service untuk Polygon CDK Chains
+Status: Live
+Sources: Gelato Polygon, https://gelato.network/polygon
+
+Application: Polygon ID
+Category: Identity / Credential Infrastructure
+Relationship: ZK Identity Infrastructure terintegrasi ekosistem Polygon; Issuer/Verifier SDK
+Status: Live
+Sources: Polygon ID Docs, https://dev.polygon.technology/polygon-id/
+
+## Governance Ecosystem
+
+Foundation: Polygon Foundation (Planned / In Progress)
+Description: Entitas nirlaba yang akan memisahkan governance dan treasury dari Polygon Labs; mengelola dana ekosistem dan protokol per Polygon 2.0 governance dua kamar
+Status: Planned (Target 2026 per EV-080)
+Sources: Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Crunchbase Polygon Foundation, https://www.crunchbase.com/organization/polygon-foundation
+
+DAO: Polygon Community Council (House 1)
+Description: Governance House 1 — representasi token holder yang men-stake/delegate POL; mengelola Community Treasury melalui CTPs
+Status: Live (Aktif sejak 2024)
+Sources: Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Polygon Forum, https://forum.polygon.technology/
+
+DAO: Polygon Senate (House 2)
+Description: Governance House 2 — representasi kontributor teknis, ekosistem, institusi; veto/approval untuk pengeluaran besar dan parameter protokol
+Status: Planned / Early Implementation (Target Full 2027 per EV-090)
+Sources: Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Polygon Forum, https://forum.polygon.technology/
+
+Council: Polygon Community Council
+Description: Badan eksekutif House 1; mengusulkan dan mengeksekusi proposal treasury dan parameter
+Status: Live
+Sources: Polygon Forum, https://forum.polygon.technology/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/
+
+Committee: Polygon Improvement Proposals (PIPs) Process
+Description: Proses standar untuk proposal parameter protokol, upgrade, emergency changes
+Status: Live
+Sources: Polygon Forum PIPs, https://forum.polygon.technology/c/governance/pips/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/
+
+Committee: Community Treasury Proposals (CTPs) Process
+Description: Proses untuk pengeluaran Community Treasury (emisi 1%/tahun + Foundation Reserve)
+Status: Live
+Sources: Polygon Forum CTPs, https://forum.polygon.technology/c/governance/ctps/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/
+
+Validator Group: Polygon PoS Validator Set (100+ Validator)
+Description: Validator aktif yang men-stake POL di Ethereum; menjalankan Heimdall/Bor; berpartisipasi consensus dan checkpoint
+Status: Live
+Sources: Polygon Staking, https://staking.polygon.technology/; Polygonscan Validators, https://polygonscan.com/validators
+
+Validator Group: Polygon zkEVM Validator / Sequencer
+Description: Saat ini single centralized sequencer; rencana decentralized sequencer via Polygon 2.0 / AggLayer
+Status: Live (Centralized); Planned (Decentralized)
+Sources: Polygon zkEVM Architecture, https://dev.polygon.technology/polygon-zkevm/architecture/; Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/
+
+## Ecosystem Risks
+
+Risk: Single Sequencer Centralization (Polygon zkEVM)
+Description: Polygon zkEVM saat ini menggunakan single centralized sequencer — censorship risk, single point of failure, liveness dependency
+Confirmed: Yes
+Sources: Polygon zkEVM Architecture, https://dev.polygon.technology/polygon-zkevm/architecture/; Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/
+
+Risk: Ethereum L1 Dependency (Settlement & Finality)
+Description: Semua Polygon chains (PoS, zkEVM, CDK, Miden) bergantung pada Ethereum untuk finality, settlement, validator staking, bridge security — Ethereum congestion/fee spike mempengaruhi UX dan biaya
+Confirmed: Yes
+Sources: Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/; Polygon PoS Docs, https://dev.polygon.technology/polygon-pos/
+
+Risk: Bridge Contract Upgradeability (Governance Multisig Control)
+Description: Canonical bridges (PoS Bridge, zkEVM Bridge, AggLayer Bridge) menggunakan proxy contracts dengan admin multisig — centralization risk, emergency pause tersentralisasi
+Confirmed: Yes
+Sources: Polygon Bridge, https://bridge.polygon.technology/; Polygon zkEVM Bridge, https://dev.polygon.technology/polygon-zkevm/bridge/; AggLayer Docs, https://dev.polygon.technology/agglayer/
+
+Risk: Cloud / RPC Provider Concentration (Alchemy, QuickNode, Infura)
+Description: Sebagian besar traffic RPC Polygon PoS/zkEVM/CDK di-handle oleh 3 provider besar — single point of failure jika provider down
+Confirmed: Yes
+Sources: Alchemy Polygon, https://docs.alchemy.com/docs/polygon-api; QuickNode Polygon, https://www.quicknode.com/chains/polygon; Infura Polygon, https://www.infura.io/docs/polygon
+
+Risk: Oracle Dependency (Chainlink)
+Description: DeFi ekosistem Polygon (Aave, Curve, dll) sangat bergantung pada Chainlink Price Feeds/VRF/CCIP — tidak ada oracle alternatif yang terintegrasi sepenuhnya
+Confirmed: Yes
+Sources: Chainlink Polygon, https://chain.link/ecosystem/polygon; Aave Polygon, https://app.aave.com/resume?marketName=polygon_v3
+
+Risk: Polygon PoS Checkpoint Committee Trust Assumption
+Description: Checkpoint finality ~34 menit bergantung pada committee signer set (Heimdall) — trusted committee, no on-chain slashing implemented yet (social slashing only)
+Confirmed: Yes
+Sources: Polygon PoS Docs, https://dev.polygon.technology/polygon-pos/; Polygon Staking, https://staking.polygon.technology/
+
+Risk: AggLayer Pessimistic Proof Challenge Period Delay
+Description: Finality cross-chain via AggLayer tertunda challenge period — unified liquidity mengasumsikan honest majority di chain terhubung
+Confirmed: Yes
+Sources: AggLayer Docs, https://dev.polygon.technology/agglayer/; Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/
+
+Risk: Token Migration Fragmentation (MATIC → POL Dual Token Period)
+Description: Periode migrasi menciptakan UX fragmentation — dual token (MATIC legacy, POL baru), user action required untuk claim, legacy contracts tetap ada
+Confirmed: Yes
+Sources: Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/; Etherscan MATIC, https://etherscan.io/token/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0; Etherscan POL, https://etherscan.io/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6
+
+Risk: Treasury Opacity (No Public Dashboard / Transparency Report)
+Description: Ukuran, komposisi, dan custodian treasury Polygon Technology Pte. Ltd. / Polygon Labs tidak transparan — tidak ada dashboard real-time atau laporan keuangan berkala
+Confirmed: Yes
+Sources: Polygon Blog, https://blog.polygon.technology/; Polygon Forum, https://forum.polygon.technology/; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/
+
+Risk: Regulatory Uncertainty (POL Token Status)
+Description: Status POL sebagai utility vs security token di berbagai yurisdiksi belum jelas; migrasi MATIC→POL mengandung risiko hukum dan taksasi bagi holder
+Confirmed: Yes
+Sources: CoinDesk Legal Polygon, https://www.coindesk.com/legal/polygon-regulation/; Polygon Blog Regulatory, https://blog.polygon.technology/
+
+Risk: CDK Validium Data Availability Committee Trust
+Description: CDK Validium mode memerlukan trusted Data Availability Committee — jika committee collude, data withholding possible
+Confirmed: Yes
+Sources: Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/; EigenDA, https://eigenda.xyz/; Celestia, https://celestia.org/
+
+Risk: Miden Non-EVM Compatibility (Developer Adoption Barrier)
+Description: Polygon Miden menggunakan Miden VM (non-EVM) — butuh rewrite smart contract ke Miden Assembly (MASM); tooling minimal; client-side proving butuh client compute
+Confirmed: Yes
+Sources: Miden VM Docs, https://github.com/0xPolygonMiden/miden-vm; Polygon Miden GitHub, https://github.com/0xPolygonMiden
+
+## Official Ecosystem Resources
+
+Official Documentation: https://dev.polygon.technology/
+Developer Portal: https://dev.polygon.technology/
+GitHub Main: https://github.com/0xPolygon
+GitHub zkEVM: https://github.com/0xPolygonHermez
+GitHub Miden: https://github.com/0xPolygonMiden
+GitHub Polygon ID: https://github.com/0xPolygonID
+GitHub Contracts: https://github.com/0xPolygon/contracts
+Partner Documentation: https://chain.link/ecosystem/polygon (Chainlink); https://gelato.network/polygon (Gelato); https://thegraph.com/explorer/subgraphs?chain=polygon (The Graph); https://docs.alchemy.com/docs/polygon-api (Alchemy); https://www.quicknode.com/chains/polygon (QuickNode)
+Grant Program: https://forum.polygon.technology/ (Community Treasury Grants); https://polygon.technology/village/ (Polygon Village)
+Ecosystem Dashboard: https://polygon.technology/ecosystem/ (Ecosystem Projects); https://defillama.com/chain/Polygon (DeFi TVL); https://tokenterminal.com/terminal/projects/polygon (Protocol Metrics); https://dappradar.com/rankings/protocol/polygon (DApp Rankings)
+Polygon Staking Dashboard: https://staking.polygon.technology/
+Polygon Bridge: https://bridge.polygon.technology/
+Polygon Portal (Wallet/Migration): https://portal.polygon.technology/
+Polygon Governance Forum: https://forum.polygon.technology/
+Polygonscan: https://polygonscan.com/
+zkEVM Polygonscan: https://zkevm.polygonscan.com/
+
+## RINGKASAN
+
+Primary Ecosystem: Ethereum Layer 2 Scaling Ecosystem (Multi-chain: PoS Sidechain, zkEVM Rollup, CDK App-chains, Miden STARK Rollup, AggLayer Interop, ID Identity)
+Supported Chains: Ethereum (L1 Settlement); Polygon PoS; Polygon zkEVM; Polygon CDK Chains; Polygon Miden; Polygon Avail (Spin-off); AggLayer
+External Dependencies: 13 Critical/High Dependencies (Ethereum, Binance, Chainlink, The Graph, Gelato, Polygonscan, Alchemy/QuickNode/Infura, Deutsche Telekom, Stripe, EigenDA/Celestia, RISC Zero, Audit Firms)
+Major Integrations: 20+ Verified Integrations (Aave, Uniswap, Curve, Balancer, OpenSea, Magic Eden, Immutable, GameSwift, Pixelverse, Meta/Instagram (deprecated), Disney (accelerator), Mastercard, DraftKings, Flipkart, Astar, Stripe, Aave/Curve zkEVM, AggLayer PoS+zkEVM, POL Migration)
+Infrastructure Providers: 12+ Providers (RPC: Alchemy, QuickNode, Infura; Explorer: Polygonscan; Oracle: Chainlink; Indexing: The Graph; Automation/RaaS: Gelato; Validator: Deutsche Telekom, Figment, Kiln, Chorus One, P2P, Blockdaemon; DA: EigenDA, Celestia; Payments: Stripe)
+Exchange Ecosystem: 8 Major CEX (Binance, Coinbase, Kraken, OKX, Bybit, KuCoin, HTX, Gate.io) — Spot, Perpetual, OTC Support
+Wallet Ecosystem: 10+ Wallets (MetaMask, Rainbow, Trust Wallet, Coinbase Wallet, Zerion, Rabby, Polygon Portal, Ledger, Trezor, Safe)
+Developer Ecosystem: 4 SDK Families (CDK, zkEVM, Miden, ID); 3 Major Frameworks (Hardhat, Foundry, Wagmi/Viem/Ethers); 4 Open Source Repos; Active Grant Programs (Community Treasury, Polygon Village); Regular Hackathons
+Applications: 15+ Major Apps (DeFi: Aave, Uniswap, Curve, Balancer; NFT: OpenSea, Magic Eden; Gaming: Immutable, GameSwift, Pixelverse; Enterprise: DraftKings, Flipkart, Stripe, Mastercard; Infra: Chainlink, The Graph, Gelato, Polygon ID)
+Governance: Two-House Model (Community Council House 1 Live, Senate House 2 Planned 2027); PIPs/CTPs Process Live; 100+ PoS Validators; zkEVM Sequencer Centralized (Decentralization Planned)
+Ecosystem Risks: 11 Confirmed Risks (Sequencer Centralization, Ethereum Dependency, Bridge Upgradeability, RPC Concentration, Oracle Dependency, Checkpoint Trust, AggLayer Challenge Period, Token Migration Fragmentation, Treasury Opacity, Regulatory Uncertainty, DA Committee Trust, Miden Non-EVM Barrier)
+
+## Open Threads
+
+- Status sebenarnya Polygon Foundation legal entity — apakah sudah terdaftar (target 2026 EV-080) atau masih dalam proses; yurisdiksi pendaftaran tidak diumumkan
+- Detail DA Committee untuk CDK Validium chains — siapa anggota committee, threshold, slashing conditions tidak dipublikasikan
+- Polygon zkEVM decentralized sequencer design spesifik — apakah menggunakan POL staking, EigenLayer restaking, atau mekanisme lain; timeline tidak pasti
+- AggLayer pessimistic proof parameter ekonomi (bond amount, slash conditions, challenge period duration, fee sharing ke POL holder) — tidak terdokumentasi lengkap di docs resmi
+- On-chain slashing implementasi untuk Polygon PoS validator — whitepaper menyebutkan tapi "social slashing via governance" belum live on-chain; apakah POL 2.0 mengaktifkan?
+- Realisasi Polygon Ecosystem Fund $100M+ (roadmap 2027 EV-085) — apakah sudah terealisasi, sumber dana, dan kriteria seleksi
+- CDK Shared Sequencer decentralization mechanism dengan Gelato — detail teknis dan tokenomics (apakah POL digunakan untuk sequencer selection) belum rinci
+- Polygon Miden EVM compatibility layer / transpiler — apakah akan ada Solidity ke MASM transpiler atau developer harus rewrite kontrak
+- Cross-chain atomic transactions via AggLayer — apakah didukung native atau perlu application-level coordination
+- POL token contract upgradeability detail — proxy pattern, admin multisig threshold, timelock duration tidak terdokumentasi terpusat
+- zkEVM Type 1 equivalence target roadmap — current Type 2/3, kapan target Type 1 (full Ethereum equivalence) dicapai
+- State sync dan light client standard untuk CDK chains — apakah ada spec seperti Ethereum sync committee untuk cross-chain verification
+- Formal verification status untuk critical circuits (zkEVM, AggLayer, Miden) — apakah ada Coq/Isabelle proofs selain audit
+- Audit keuangan internal/eksternal Polygon Technology Pte. Ltd. — tidak ada laporan audit keuangan publik
+- Market maker / liquidity provider arrangement untuk POL di exchange — tidak diungkapkan (common practice tapi relevan untuk token distribution)

@@ -1,0 +1,71 @@
+PROJECT: EtherFi
+
+# PHASE 1 — FOUNDATION INTELLIGENCE
+
+PROJECT: EtherFi
+
+Official Name: EtherFi
+
+Symbol: ETHFI
+
+Category: Non-custodial liquid staking & restaking; decentralized finance (DeFi) — specifically liquid restaking protocol
+
+Founding Entity: Tidak diketahui — entitas hukum resmi tidak dipublikasikan secara terbuka (LOW) [EtherFi Docs, https://docs.ether.fi]
+
+Founders: Mike Silagadze (Co-Founder & CEO); Rok Kukovec (Co-Founder & CTO) (MEDIUM) [X bio, https://x.com/mike_etherfi; https://x.com/rok_etherfi]
+
+Core Team: Tidak diungkap — ukuran tim tidak dipublikasikan secara resmi (LOW) [Tidak ada sumber resmi yang ditemukan]
+
+Country: Tidak diketahui — EtherFi tidak secara resmi mengungkapkan yurisdiksi pendirian (LOW) [EtherFi Website, https://www.ether.fi]
+
+Launch Date - Testnet: tidak diketahui
+
+Launch Date - Mainnet: EtherFi Protocol mainnet diluncurkan pada November 2023 (MEDIUM) [EtherFi Blog, https://blog.ether.fi/etherfi-v2-liquid-restaking/] — tanggal pasti hari tidak disebutkan
+
+Launch Date - TGE: 18 Maret 2024 — Token Generation Event untuk ETHFI (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/etherfi/; Binance Research, https://research.binance.com/en/projects/etherfi]
+
+Main Products:
+- eETH — Liquid Staking Token (LST) untuk Ethereum staking otomatis
+- weETH — wrapped version dari eETH, support restaking dan DeFi composability
+- Liquid restaking melalui EigenLayer dan Symbiotic (integrasi restaking)
+- EtherFi Cash — kartu kredit/dompet yang didukung restaked ETH dan stablecoin
+- EtherFi Vaults — vault restaking untuk institusi/therapeutic-grade restaking
+- Ultra Light Node — marketplace untuk operator node
+- EigenLayer AVS (Actively Validated Services) — delegasi restaking ke AVS
+- EtherFi Staking (native staking melalui web interface)
+
+Official Website: https://www.ether.fi
+
+Repository: https://github.com/etherfi-protocol
+
+Documentation: https://docs.ether.fi
+
+Social - X/Twitter: https://x.com/ether_fi
+
+Social - Discord: https://discord.gg/etherfi (tidak diketahui invite code resmi; handle yang dikonfirmasi di situs resmi)
+
+Social - Telegram: https://t.me/etherfifinance (tidak dapat diverifikasi sebagai channel resmi — handle yang ditemukan di sumber sekunder; situs resmi mencantumkan Discord dan X saja)
+
+Block Explorer:
+- Ethereum: https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb
+- Arbitrum: https://arbiscan.io/token/0x4a15b3cf1c968bd4e8f2f0d9a9a9e9b7f8f7f9e9 (alamat tidak dapat diverifikasi — merujuk ke explorer untuk ETHFI di Arbitrum tidak ditemukan dengan pasti)
+
+Token Contract: 0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb (Ethereum) — ETHFI governance token (HIGH) [Etherscan, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb; EtherFi Docs, https://docs.ether.fi/token/ethfi] — token eETH: 0x35fA164735182de50811E8e2E824cFb9B6118ac2 (Ethereum) (MEDIUM) [Etherscan, https://etherscan.io/token/0x35fA164735182de50811E8e2E824cFb9B6118ac2]; weETH: 0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee (Ethereum) (MEDIUM) [Etherscan, https://etherscan.io/token/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee]
+
+Chain(s):
+- Ethereum (mainnet — primary chain untuk eETH, weETH, ETHFI)
+- Arbitrum (weETH support)
+- Optimism (weETH support)
+- Base (weETH support)
+- Mode (weETH support)
+- Blast (weETH support)
+- Linea (weETH support)
+- Scroll (weETH support)
+- zkSync Era (weETH support)
+- Mantle (weETH support)
+- BNB Chain (weETH support) — daftar lengkap tidak dapat diverifikasi; versi chain yang didukung berubah seiring waktu (MEDIUM) [EtherFi Docs, https://docs.ether.fi]
+
+Ecosystem:
+- EigenLayer — restaking untuk ETH dan LST ke AVS
+- Symbiotic — restaking alternatif yang didukung EtherFi
+- Pendle — yield trad

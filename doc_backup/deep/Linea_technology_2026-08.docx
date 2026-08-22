@@ -1,0 +1,248 @@
+PROJECT: Linea
+
+## System Architecture
+
+Architecture Type: zkEVM Layer 2 Rollup (Type 2 zkEVM, targeting Type 1 equivalence) (HIGH) [https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum]
+Settlement Layer: Ethereum Mainnet (L1) — all transaction data and validity proofs posted to Ethereum (HIGH) [https://linea.build/blog/linea-mainnet-alpha-is-live]
+Execution Layer: Linea zkEVM (L2) — EVM-compatible execution environment with zero-knowledge proof generation (HIGH) [https://consensys.net/blog/linea/introducing-linea-the-zkevm-for-ethereum]
+Data Availability: Ethereum L1 calldata (pre-EIP-4844) and EIP-4844 blob transactions (post-Dencun upgrade, March 2024) (HIGH) [https://linea.build/blog/linea-eip4844-support]
+Proving System: Vortex prover (PLONK-based) with Boojum recursive proving upgrade (activated March 2024) reducing proving cost ~90% and finality from ~3 hours to ~15 minutes (HIGH) [https://linea.build/blog/boojum-prover-upgrade]
+Bridge Architecture: Canonical Message Service (native bridge) using Merkle proofs and L1 message service contracts; supplemented by LayerZero, Axelar, Wormhole, and Chainlink CCIP for cross-chain messaging (HIGH) [https://linea.build/blog/linea-x-layerzero]
+Sequencer: Centralized sequencer operated by Consensys (as of knowledge cutoff); decentralization roadmap published targeting permissioned provers → proof marketplace → fully decentralized proving network with staking (HIGH) [https://linea.build/blog/prover-decentralization-roadmap]
+Cross-chain Messaging: Native canonical bridge + LayerZero + Axelar + Wormhole + Chainlink CCIP integrated (HIGH) [https://blog.chain.link/chainlink-ccip-live-linea-mainnet]
+
+## Core Components
+
+Component: Sequencer
+Function: Orders transactions, executes blocks, submits batches to L1; currently single sequencer operated by Consensys
+Status: Live (centralized); decentralization planned via prover network roadmap
+Sources: https://linea.build/blog/prover-decentralization-roadmap
+
+Component: Prover (Vortex / Boojum)
+Function: Generates zero-knowledge proofs (PLONK-based) for batch validity; Boojum upgrade added recursive proving for cost/latency reduction
+Status: Live (Boojum active since March 2024)
+Sources: https://linea.build/blog/boojum-prover-upgrade
+
+Component: Canonical Bridge (Message Service)
+Function: Trust-minimized bridge for ETH/ERC20 and arbitrary messages between L1 and L2 using Merkle proofs and L1 contracts
+Status: Live; paused ~48 hours during June 2024 exploit, upgraded and restarted
+Sources: https://linea.build/blog/linea-bridge-incident-postmortem
+
+Component: L1 Rollup Contracts
+Function: Verify validity proofs, manage state roots, process deposits/withdrawals, handle force-exit mechanism
+Status: Live on Ethereum Mainnet
+Sources: https://github.com/Consensys/linea-contracts
+
+Component: L2 Execution Client (Besu-based)
+Function: Executes transactions in EVM-compatible environment; modified Hyperledger Besu client for zkEVM
+Status: Live
+Sources: https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum
+
+Component: RPC / API Nodes
+Function: Provide JSON-RPC access for users and dApps; operated by Consensys and third-party providers (Alchemy, Infura, QuickNode, etc.)
+Status: Live
+Sources: https://linea.build/docs/infrastructure/providers
+
+Component: Indexer / Subgraph
+Function: Index on-chain data for querying; The Graph subgraph and custom indexers available
+Status: Live
+Sources: https://thegraph.com/explorer/subgraphs?chain=linea
+
+Component: Cross-chain Messaging Integrations
+Function: LayerZero (OFT, ONFT), Axelar (GMP), Wormhole (xAsset), Chainlink CCIP — enable asset transfer and arbitrary messaging
+Status: Live (all four integrated 2023-2024)
+Sources: https://linea.build/blog/linea-x-layerzero
+
+## Consensus Mechanism
+
+Consensus Mechanism: N/A (Layer 2 rollup — no independent consensus; security derives from Ethereum L1 via validity proofs)
+Details: Sequencer orders transactions; prover generates ZK proofs verified by L1 smart contracts; no validator set or BFT consensus on L2
+Sources: https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum
+
+## Execution Environment
+
+Execution Environment: EVM (Type 2 zkEVM — EVM-equivalent with minor differences; Type 1 equivalence achieved on testnet November 2024, mainnet target Q1 2025)
+Precompiles: Supports Ethereum precompiles (ecRecover, SHA256, RIPEMD160, identity, modexp, ecAdd, ecMul, ecPairing, blake2f, point evaluation for EIP-4844)
+Opcode Support: Full Ethereum opcode support at Type 1; Type 2 has minor differences in gas costs and block structure
+Sources: https://linea.build/blog/linea-type1-equivalence
+
+## Programming Languages
+
+Language: Rust — core prover (Vortex/Boojum), cryptographic circuits, recursion logic
+Evidence: (HIGH) [https://github.com/Consensys/linea-prover]
+Language: Solidity — L1/L2 smart contracts (bridge, rollup, message service, system contracts)
+Evidence: (HIGH) [https://github.com/Consensys/linea-contracts]
+Language: TypeScript / JavaScript — SDK, developer tooling, indexer, frontend libraries
+Evidence: (HIGH) [https://github.com/Consensys/linea-sdk]
+Language: Go — Besu-based execution client modifications, some infrastructure components
+Evidence: (MEDIUM) [https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum]
+
+## Development Framework
+
+Framework: Hardhat / Foundry — smart contract development and testing (standard Ethereum tooling compatible)
+Evidence: (HIGH) [https://linea.build/docs/developer-tools/hardhat]
+Framework: Linea SDK (TypeScript) — official SDK for transaction building, bridge interactions, contract deployment
+Evidence: (HIGH) [https://github.com/Consensys/linea-sdk]
+Framework: Hyperledger Besu (modified) — execution client base
+Evidence: (HIGH) [https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum]
+Framework: PLONK / Halo2 — proving system cryptographic framework (Vortex prover uses PLONK)
+Evidence: (HIGH) [https://linea.build/blog/boojum-prover-upgrade]
+Toolchain: Docker / Kubernetes — infrastructure deployment for sequencer, prover, RPC nodes
+Evidence: (MEDIUM) [https://linea.build/docs/infrastructure/node-requirements]
+Toolchain: GitHub Actions / CI/CD — automated testing and deployment pipelines
+Evidence: (MEDIUM) [https://github.com/Consensys/linea-contracts/actions]
+
+## Security Model
+
+Security Model: Validity Proofs (ZK-SNARKs) — every batch verified by L1 smart contract via PLONK proof; no trust assumption on sequencer/prover for correctness
+Evidence: (HIGH) [https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum]
+Security Model: Data Availability on Ethereum L1 — all transaction data posted to L1 (calldata pre-4844, blobs post-4844); enables force-exit and censorship resistance
+Evidence: (HIGH) [https://linea.build/blog/linea-eip4844-support]
+Security Model: Canonical Bridge Security — Merkle proof verification on L1; paused during June 2024 exploit, upgraded with additional checks
+Evidence: (HIGH) [https://linea.build/blog/linea-bridge-incident-postmortem]
+Security Model: Audit Coverage — pre-mainnet audits by Trail of Bits, OpenZeppelin, Sigma Prime covering contracts, circuits, prover; post-exploit additional audits
+Evidence: (HIGH) [https://github.com/Consensys/linea-audits]
+Security Model: Upgradeability — L1 rollup contracts upgradeable via timelock multisig (Consensys-controlled pre-foundation); Foundation to manage post-formation
+Evidence: (MEDIUM) [https://linea.build/blog/linea-foundation-announcement]
+Security Model: Prover Decentralization — roadmap: Phase 1 permissioned provers, Phase 2 proof marketplace, Phase 3 decentralized proving network with staking
+Evidence: (HIGH) [https://linea.build/blog/prover-decentralization-roadmap]
+
+## Audit History
+
+Auditor: Trail of Bits
+Date: 2023 (pre-mainnet, July)
+Scope: Smart contracts (bridge, rollup, prover verification), circuits, prover implementation
+Status: Completed; critical/high findings resolved before mainnet launch
+Sources: https://github.com/Consensys/linea-audits
+
+Auditor: OpenZeppelin
+Date: 2023 (pre-mainnet, July)
+Scope: Smart contracts, bridge contracts, system contracts
+Status: Completed; findings addressed
+Sources: https://github.com/Consensys/linea-audits
+
+Auditor: Sigma Prime
+Date: 2023 (pre-mainnet, July)
+Scope: Circuits, prover implementation, cryptographic primitives
+Status: Completed; findings addressed
+Sources: https://github.com/Consensys/linea-audits
+
+Auditor: Additional post-exploit audits (firms not fully disclosed)
+Date: 2024-06 onward (after June bridge exploit)
+Scope: Bridge contracts, canonical message service, prover integration
+Status: Completed; emergency upgrade deployed
+Sources: https://linea.build/blog/linea-bridge-incident-postmortem
+
+## Technical Upgrade History
+
+Date: 2024-03
+Upgrade Name: Boojum Prover Upgrade (PLONK Recursive Proving)
+Description: Activated Boojum recursive proving system reducing proving cost ~90% and finality latency from ~3 hours to ~15 minutes; prepared for EIP-4844
+Status: Completed
+Sources: https://linea.build/blog/boojum-prover-upgrade
+
+Date: 2024-03-13
+Upgrade Name: EIP-4844 (Proto-Danksharding) Support Activation
+Description: Enabled blob transaction support immediately after Ethereum Dencun upgrade; reduced L2 gas fees >90%, median fee <$0.01
+Status: Completed
+Sources: https://linea.build/blog/linea-eip4844-support
+
+Date: 2024-06
+Upgrade Name: Bridge Emergency Upgrade (Post-Exploit)
+Description: Emergency upgrade to canonical message service contracts after $6.8M exploit; added validation checks, paused bridge ~48 hours
+Status: Completed
+Sources: https://linea.build/blog/linea-bridge-incident-postmortem
+
+Date: 2024-11
+Upgrade Name: zkEVM Type 1 Equivalence (Testnet)
+Description: Achieved full Ethereum equivalence (Type 1) on testnet — all opcodes, precompiles, block structure identical to L1; mainnet target Q1 2025
+Status: Testnet completed; mainnet pending
+Sources: https://linea.build/blog/linea-type1-equivalence
+
+## Current Technical Stack
+
+Technology: Rust (prover, circuits)
+Sources: https://github.com/Consensys/linea-prover
+
+Technology: Solidity (smart contracts)
+Sources: https://github.com/Consensys/linea-contracts
+
+Technology: TypeScript (SDK, tooling)
+Sources: https://github.com/Consensys/linea-sdk
+
+Technology: Hyperledger Besu (modified execution client)
+Sources: https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum
+
+Technology: PLONK / Halo2 (proving system)
+Sources: https://linea.build/blog/boojum-prover-upgrade
+
+Technology: Docker / Kubernetes (infrastructure orchestration)
+Sources: https://linea.build/docs/infrastructure/node-requirements
+
+Technology: Ethereum L1 (settlement, data availability)
+Sources: https://linea.build/blog/linea-mainnet-alpha-is-live
+
+Technology: EIP-4844 Blobs (data availability post-March 2024)
+Sources: https://linea.build/blog/linea-eip4844-support
+
+Technology: The Graph / Subgraphs (indexing)
+Sources: https://thegraph.com/explorer/subgraphs?chain=linea
+
+Technology: LayerZero / Axelar / Wormhole / Chainlink CCIP (cross-chain messaging)
+Sources: https://linea.build/blog/linea-x-layerzero
+
+## Known Technical Limitations
+
+Limitation: Centralized Sequencer — single sequencer operated by Consensys; no forced transaction inclusion mechanism beyond L1 force-exit (7-day delay)
+Evidence: (HIGH) [https://linea.build/blog/prover-decentralization-roadmap]
+
+Limitation: Prover Centralization — proving currently permissioned (Consensys-operated); decentralization roadmap Phase 1 (permissioned external provers) not yet live
+Evidence: (HIGH) [https://linea.build/blog/prover-decentralization-roadmap]
+
+Limitation: Type 2 zkEVM (Mainnet) — minor differences from Ethereum L1 in gas costs, block structure, some precompile behavior; Type 1 equivalence only on testnet as of November 2024
+Evidence: (HIGH) [https://linea.build/blog/linea-type1-equivalence]
+
+Limitation: Bridge Upgrade Risk — canonical bridge contracts upgradeable via timelock multisig; June 2024 exploit demonstrated vulnerability in message verification logic
+Evidence: (HIGH) [https://linea.build/blog/linea-bridge-incident-postmortem]
+
+Limitation: Withdrawal Finality Delay — ~15 minutes (post-Boojum) for proof generation + L1 verification; 7-day challenge period for forced exits via L1
+Evidence: (MEDIUM) [https://linea.build/blog/boojum-prover-upgrade]
+
+Limitation: No Native Token (Pre-TGE) — gas paid in ETH bridged from L1; no fee market mechanism independent of L1 basefee
+Evidence: (HIGH) [https://linea.build/blog/linea-mainnet-alpha-is-live]
+
+Limitation: Limited Historical Data Access — archive nodes require significant storage; not all RPC providers offer full archive
+Evidence: (MEDIUM) [https://linea.build/docs/infrastructure/providers]
+
+## Official Technical Resources
+
+Documentation: https://linea.build/docs
+Developer Docs: https://linea.build/docs/developers
+GitHub (Contracts): https://github.com/Consensys/linea-contracts
+GitHub (Prover): https://github.com/Consensys/linea-prover
+GitHub (SDK): https://github.com/Consensys/linea-sdk
+GitHub (Audits): https://github.com/Consensys/linea-audits
+Blog (Technical Announcements): https://linea.build/blog
+RPC Endpoints: https://linea.build/docs/infrastructure/providers
+Explorer: https://lineascan.build
+Bridge UI: https://bridge.linea.build
+
+## Summary
+
+Architecture: zkEVM Layer 2 Rollup (Type 2, targeting Type 1) on Ethereum; PLONK-based ZK proofs (Vortex/Boojum); EIP-4844 blob DA; centralized sequencer with prover decentralization roadmap
+Core Components: 8 (Sequencer, Prover, Canonical Bridge, L1 Rollup Contracts, L2 Execution Client, RPC/API Nodes, Indexer, Cross-chain Messaging Integrations)
+Audit Count: 3 major pre-mainnet audits (Trail of Bits, OpenZeppelin, Sigma Prime) + post-exploit audits
+Major Upgrade Count: 4 (Boojum Prover, EIP-4844, Bridge Emergency Upgrade, Type 1 Equivalence Testnet)
+
+## Open Threads
+
+- Exact technical specification of Boojum recursive proving circuit architecture — not fully documented publicly
+- Prover decentralization Phase 1 operator selection criteria, staking requirements, and onboarding timeline — roadmap published but implementation details not released
+- Type 1 equivalence mainnet deployment exact date and migration procedure — "Q1 2025" announced but no specific date or upgrade process documented
+- Canonical bridge upgrade governance post-Foundation formation — timelock multisig parameters and Foundation control transition not specified
+- Force-exit mechanism detailed specification (7-day delay, L1 contract interaction) — referenced but not fully documented in developer docs
+- Exact prover hardware requirements and cost structure for decentralized prover network — not published
+- Whether Type 1 equivalence requires state migration or genesis reset — not clarified
+- Cross-chain messaging integration security model differences (native bridge vs LayerZero vs Axelar vs Wormhole vs CCIP) — not comparatively documented
+- Transaction fee market design post-TGE (if native token used for gas) — not specified
+- Archive node hardware requirements and official provider SLAs — not published

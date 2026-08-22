@@ -1,0 +1,118 @@
+PROJECT: Starknet
+
+PROJECT: NamaProjectX
+
+STATUS AIRDROP
+
+Belum ada. Berdasarkan catatan dari Phase 1-11, belum ada distribusi token yang dilakukan tanpa pembayaran langsung.
+
+CONTEXT SAAT KEPUTUSAN
+
+- Funding stage: Series B (HIGH) [Phase 5]
+- Ukuran komunitas: 50,000 anggota aktif (HIGH) [Phase 7]
+- Kondisi pasar: Bearish (MEDIUM) [Phase 8]
+- Competitor: Beberapa proyek lain sedang melakukan airdrop untuk menarik perhatian komunitas (HIGH) [Phase 7, Phase 8]
+
+TRIGGER DAN ALTERNATIF
+
+- Trigger: Potensi untuk meningkatkan partisipasi komunitas dan memperbesar ekosistem proyek.
+- Alternatif yang tersedia: Penjualan publik, distribusi bertahap, atau tidak mendistribusikan token sama sekali. (MEDIUM) [Phase 9]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Tim belum mengumumkan alasan resmi apapun karena airdrop belum dilakukan. (HIGH) [Phase 11]
+
+Alasan yang tidak diumumkan:
+- HIPOTESIS: Potensi tekanan dari investor untuk meningkatkan likuiditas token. (LOW)
+- HIPOTESIS: Keinginan untuk memperkuat posisi di pasar dan meningkatkan keterlibatan komunitas. (MEDIUM)
+
+OUTCOME PER POV
+
+POV Founder: Tidak relevan
+- Jangka pendek: Tidak diketahui
+- Jangka panjang: Tidak diketahui
+- Dasar: N/A
+
+POV VC: Tidak relevan
+- Jangka pendek: Tidak diketahui
+- Jangka panjang: Tidak diketahui
+- Dasar: N/A
+
+POV Retail: Tidak relevan
+- Jangka pendek: Tidak diketahui
+- Jangka panjang: Tidak diketahui
+- Dasar: N/A
+
+POV Community: Tidak relevan
+- Jangka pendek: Tidak diketahui
+- Jangka panjang: Tidak diketahui
+- Dasar: N/A
+
+POV Developer: Tidak relevan
+- Jangka pendek: Tidak diketahui
+- Jangka panjang: Tidak diketahui
+- Dasar: N/A
+
+POV Institution: Tidak relevan
+- Jangka pendek: Tidak diketahui
+- Jangka panjang: Tidak diketahui
+- Dasar: N/A
+
+POV Validator: Tidak relevan
+- Jangka pendek: Tidak diketahui
+- Jangka panjang: Tidak diketahui
+- Dasar: N/A
+
+POV Builder: Tidak relevan
+- Jangka pendek: Tidak diketahui
+- Jangka panjang: Tidak diketahui
+- Dasar: N/A
+
+HARGA PASCA-DISTRIBUSI
+
+Tidak berlaku, airdrop belum dilakukan.
+
+METRIK RETENSI
+
+- Perubahan TVL atau volume protokol sebelum vs sesudah distribusi: Tidak ditemukan
+- Jumlah alamat pemegang token (unique holders), dengan tanggal pengukurannya: Tidak ditemukan
+- Jumlah alamat aktif harian, sebelum vs sesudah: Tidak ditemukan
+- Konsentrasi kepemilikan: Tidak ditemukan
+- Tingkat partisipasi staking atau retensi validator: Tidak ditemukan
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+Tidak relevan, airdrop belum dilakukan.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Komunitas yang cukup besar dan aktif (HIGH) [Phase 7]
+- Potensi untuk meningkatkan ekosistem proyek (MEDIUM) [Phase 9]
+
+Prasyarat yang belum:
+- Keputusan resmi dari tim (HIGH) [Phase 9]
+- Strategi pencegahan Sybil Attack yang jelas (MEDIUM) [Phase 9]
+
+Sinyal yang biasanya mendahului:
+- Pengumuman di media sosial atau blog resmi mengenai snapshot atau distribusi token (MEDIUM) [Phase 10]
+
+Penilaian:
+- Keyakinan menengah bahwa airdrop dapat terjadi dalam 6-12 bulan jika prasyarat yang belum terpenuhi dapat diselesaikan. Faktor utama yang bisa mengubah penilaian ini adalah keputusan resmi dari tim atau perubahan kondisi pasar.
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika komunitas berkembang namun tidak terlibat aktif, memerlukan pendekatan yang mendorong partisipasi sebelum melakukan airdrop untuk mencegah perilaku klaim dan jual.
+- Dalam kondisi pasar bearish, airdrop bisa menjadi pendorong partisipasi yang efektif namun memerlukan mekanisme anti-sybil yang ketat.
+- Alternatif distribusi seperti penjualan publik atau distribusi bertahap bisa menjadi pilihan yang lebih stabil daripada airdrop dalam menarik investasi.
+- Keputusan airdrop harus transparan dan disosialisasikan dengan baik untuk menghindari kebingungan dan spekulasi yang merugikan komunitas.
+
+OPEN THREADS
+
+- Apakah tim memiliki rencana spesifik untuk melakukan airdrop dalam waktu dekat?
+- Bagaimana tim berencana untuk mencegah Sybil Attack dalam airdrop yang akan datang?

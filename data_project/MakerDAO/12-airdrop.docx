@@ -1,0 +1,131 @@
+PROJECT: MakerDAO
+
+STATUS AIRDROP
+
+Belum ada — MakerDAO tidak pernah melakukan distribusi token gratis (airdrop, points program, retroactive reward, lockdrop, atau mekanisme sejenis) untuk MKR, DAI, atau SKY. Distribusi MKR awal hanya melalui private sale 2017-Q1, team, foundation, dan community development fund yang didistribusikan bertahap via governance rewards, DSR incentives, dan grant【Phase 5 Funding History】【Phase 6 Token Distribution】. SKY didistribusikan via migrasi 1:24.000 dari MKR holders yang memilih migrasi, bukan airdrop【Phase 3 EV-020】【Phase 6 Token SKY Supply】.
+
+AIRDROP EVENTS
+
+Tidak ada event airdrop yang tercatat. Semua distribusi token terjadi melalui mekanisme lain:
+- MKR: Private sale 2017-Q1, team/foundation allocation, community development fund (bertahap via on-chain incentives)
+- DAI: Dimintai pengguna via Vault (mint/burn), tidak didistribusikan gratis
+- SKY: Migrasi dari MKR 1:24.000 (konversi, bukan airdrop)
+
+CONTEXT SAAT KEPUTUSAN
+
+Tidak ada keputusan airdrop untuk dianalisis. Konteks distribusi token awal (2017-2018):
+- Tahap funding: Hanya private sale $1M 2017-Q1, zero VC series, zero public sale【Phase 5 Funding History】
+- Ukuran komunitas: Early DeFi adopter, pengembang, dan investor strategis — belum ada retail massal
+- Kondisi pasar: Pre-DeFi Summer (2020), Ethereum baru berusia 2-3 tahun, stablecoin terdesentralisasi konsep baru
+- Kompetitor: Tidak ada CDP stablecoin lain live; Synthetix (sUSD) baru launch 2018, Liquity 2021, Frax 2020
+
+TRIGGER DAN ALTERNATIF
+
+Tidak ada trigger airdrop. Alternatif distribusi yang dievaluasi dan diambil:
+- Private sale ke investor strategis (diambil) — untuk funding pengembangan awal
+- Community development fund (diambil) — untuk ekosistem jangka panjang via governance rewards, DSR, grant
+- Public sale / ICO / IDO (tidak diambil) — Foundation memilih tidak melakukan public sale; MKR price discovery via Uniswap v1 organic 2018-01【Phase 3 EV-006】
+- Airdrop ke pengguna Ethereum / early adopter (tidak diambil) — tidak terdokumentasi sebagai pertimbangan; model CDP membutuhkan collateral, tidak cocok untuk airdrop demand generation
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Maker Foundation memilih model private sale + community fund untuk mendanai pengembangan tanpa tekanan short-term dari public investor【Phase 5 Fundraising Mechanism】【Phase 3 EV-004】
+- DAI dirancang sebagai stablecoin yang dimintai (minted) via collateral, bukan didistribusikan — utility datang dari penggunaan Vault, bukan kepemilikan token gratis【Phase 1 Category】【Phase 4 Core Components Vat】
+- SKY migrasi dari MKR holders existing — value accrual via fee switch untuk stakers, tidak perlu airdrop untuk bootstrap komunitas【Phase 3 EV-017】【Phase 6 Token SKY Utility】
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Menghindari klasifikasi sekuritas: Private sale ke accredited investor + tidak ada public distribution mengurangi risiko Howey Test pada era pre-guidance SEC 2019 (HIPOTESIS) [Medium] [Phase 5 Financial Risk Legal Financial Risk]
+- Model CDP membutuhkan pengguna yang memahami risiko likuidasi — airdrop menarik user yang tidak peduli fundamental protokol (HIPOTESIS) [Medium] [Phase 9 Behavioral Summary Kekuatan Utama: battle-tested]
+- MKR sebagai recapitalization resource (Flop mint saat deficit) — distribusi luas ke tangan lemah bisa memperburuk dilusi saat krisis (HIPOTESIS) [Medium] [Phase 6 Utility MKR Recapitalization]
+- Foundation dissolution 2021 dirancang sejak awal — community fund allocation cukup untuk incentive jangka panjang tanpa airdrop (HIPOTESIS) [High] [Phase 3 EV-011] [Phase 5 Fundraising Mechanism]
+
+OUTCOME PER POV
+
+POV Founder: Tidak diketahui (tidak ada airdrop untuk dinilai)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Tidak ada event airdrop
+
+POV VC: Tidak diketahui (tidak ada airdrop untuk dinilai)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Tidak ada event airdrop
+
+POV Retail: Tidak diketahui (tidak ada airdrop untuk dinilai)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Tidak ada event airdrop
+
+POV Community: Tidak diketahui (tidak ada airdrop untuk dinilai)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Tidak ada event airdrop
+
+POV Developer: Tidak diketahui (tidak ada airdrop untuk dinilai)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Tidak ada event airdrop
+
+POV Institution: Tidak diketahui (tidak ada airdrop untuk dinilai)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Tidak ada event airdrop
+
+POV Validator: Tidak berlaku (Maker tidak memiliki validator set sendiri; bergantung pada Ethereum/L2 validators)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Phase 4 Consensus Mechanism — N/A
+
+POV Builder: Tidak diketahui (tidak ada airdrop untuk dinilai)
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Tidak ada event airdrop
+
+METRIK RETENSI
+
+Tidak ditemukan — tidak ada airdrop untuk diukur retensinya.
+
+FARMING DAN SYBIL
+
+Tidak berlaku — tidak ada airdrop, tidak ada kriteria kelayakan yang bisa di-farm, tidak ada snapshot yang memicu perilaku farming.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Token governance (MKR) dan stablecoin (DAI) live >7 tahun dengan product-market fit terbukti【Phase 8 Adoption Metrics】
+- Komunitas governance aktif (20-40% MKR participation)【Phase 8 Adoption Metrics Governance Participation】
+- SubDAO ecosystem (Spark, Sky) dengan fee flow ke Treasury【Phase 3 EV-016, EV-019】【Phase 5 Revenue Model Spark Fee Flow】
+- Legal wrapper (Cayman Foundation) untuk compliance【Phase 3 EV-013】【Phase 2 Entity MakerDAO Cayman Foundation】
+- Multi-chain canonical deployments (7 chain)【Phase 3 EV-015, EV-018】【Phase 4 Technology Canonical Bridge】
+
+Prasyarat yang belum terpenuhi:
+- Kebutuhan bootstrap user base baru — DAI sudah $5.3B supply, MKR holders terdistribusi, SKY migrasi dari existing holders【Phase 8 Adoption Metrics】
+- Regulatory clarity untuk airdrop token governance — SEC stance pada airdrop masih ambigu【Phase 5 Financial Risk Legal Financial Risk】【Phase 11 Open Thread OT-08】
+- Tokenomics SKY fee switch belum live — airdrop SKY sebelum fee switch bisa dilihat sebagai distribution tanpa utility【Phase 6 Token SKY Inflation/Deflation】【Phase 3 EV-020】
+- Tidak ada kompetitor yang berhasil airdrop stablecoin/CDP token sebagai preseden — Liquity (LUSD) tidak airdrop, Frax (FXS) tidak airdrop, Aave (GHO) tidak airdrop【Phase 8 Competitor Landscape】
+
+Sinyal yang biasanya mendahului:
+- Pengumuman snapshot date di governance forum / blog resmi
+- Deploy kontrak distribusi (MerkleDistributor atau serupa) di GitHub deployments repo
+- Perubahan dokumentasi tokenomics mencakup "community allocation" baru
+- Rekrutan team growth/marketing untuk campaign airdrop
+- Diskusi di forum tentang "retroactive rewards untuk early Vault users / DSR depositors / governance participants"
+
+Penilaian: Kemungkinan airdrop MakerDAO rendah (<20% dalam 12-24 bulan). Alasan: (1) DAI tidak memerlukan airdrop untuk adopsi — sudah dominant stablecoin terdesentralisasi; (2) MKR/SKY holders sudah tersebar via private sale, community fund, migrasi; (3) Model CDP menarik user via yield (DSR/SSR) dan borrowing utility, bukan token gratis; (4) Endgame fokus pada fee switch untuk SKY stakers, bukan airdrop; (5) Regulatory risk airdrop governance token tinggi di era MiCA/SEC enforcement. Keyakinan: Medium (berdasarkan pola behavioral Phase 9: project ini memilih sistemik upgrade daripada marketing stunt). Akan berubah jika: (a) SKY fee switch gagal menarik staker, (b) Kompetitor (Ethena USDe, Ondo USDY) mendapat traction massal via incentive program, (c) Regulatory clarity mengizinkan airdrop compliant.
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika protokol sudah memiliki product-market fit dan revenue sustainable tanpa token incentive (Maker: 7 tahun, $7B TVL, self-funded), airdrop tidak diperlukan untuk bootstrap dan justru menambah regulatory surface area tanpa ROI jelas — berlaku untuk mature DeFi blue-chip (era 2020+).
+- Ketika token governance memiliki fungsi recapitalization (MKR Flop mint saat deficit), distribusi luas ke tangan lemah via airdrop meningkatkan risiko governance attack dan dilusi ekstrem saat krisis — berlaku untuk CDP/overcollateralized stablecoin protocols (era 2019+).
+- Ketika stablecoin dimintai via collateral (DAI via Vault) bukan didistribusikan, user acquisition datang dari yield competitiveness (DSR/SSR) dan borrowing cost, bukan token gratis — berlaku untuk semua CDP stablecoin (Liquity, Abracadabra, Frax v2, GHO).
+- Ketika migrasi token (MKR→SKY) terjadi 1:1 dari existing holders, airdrop ke address baru menciptakan dual-class holders (migrasi vs airdrop) yang mempersulit governance alignment — berlaku untuk token migration events (era 2023+).
+- Ketika legal wrapper sudah ada (Cayman Foundation) dan RWA vaults memerlukan KYC/AML, airdrop anon ke address arbitrer menciptakan compliance conflict dengan tradfi counterparties (BlockTower, Coinbase Prime) — berlaku untuk hybrid DeFi-TradFi protocols (era 2022+).
+
+OPEN THREADS
+
+- Tidak ada data airdrop untuk diverifikasi — seluruh analisis berdasarkan ketidakhadiran evidence di Phase 1-11
+- Apakah ada proposal airdrop di forum governance yang tidak terekseskusi (MIP draft yang tidak maju ke poll) — butuh search forum.makerdao.com dengan keyword "airdrop", "retroactive", "distribution"
+- Apakah community development fund allocation pernah digunakan untuk program mirip airdrop (misal: gas rebate, onboarding bonus) — butuh audit treasury spending per Core Unit Growth budget
+- Parameter SKY fee switch final — jika fee switch live dan yield kompetitif, airdrop SKY jadi redundan; jika fee switch delayed, airdrop bisa jadi consideration untuk retention — butuh update Phase 3 EV-020, Phase 6 Token SKY
+- Regulatory guidance spesifik untuk airdrop governance token di yurisdiksi Cayman/US/EU — butuh legal memo dari MakerDAO Cayman Foundation counsel

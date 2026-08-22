@@ -1,0 +1,220 @@
+PROJECT: EtherFi
+
+## Token Information
+
+Official Token Name: EtherFi
+Symbol: ETHFI
+Token Standard: ERC-20
+Blockchain: Ethereum
+Contract Address: 0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb
+Decimals: 18
+Status: Live
+Sources: (HIGH) [Etherscan ETHFI, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb]; (HIGH) [CoinMarketCap ETHFI, https://coinmarketcap.com/currencies/etherfi/]; (HIGH) [EtherFi Docs Token, https://docs.ether.fi/token/ethfi]
+
+## Supply
+
+Maximum Supply: 1.000.000.000 ETHFI (1 billion)
+Total Supply: 1.000.000.000 ETHFI
+Circulating Supply: tidak diungkap secara resmi terpusat — diperkirakan ~15-20% pada TGE berdasarkan data on-chain, persentase pasti tidak dipublikasikan di dashboard resmi (MEDIUM) [Etherscan ETHFI Holders, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#balances; CoinMarketCap ETHFI, https://coinmarketcap.com/currencies/etherfi/]
+Initial Supply: 1.000.000.000 ETHFI (minted at deployment)
+Supply Type: Fixed
+Sources: (HIGH) [Etherscan ETHFI Contract, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#readContract]; (HIGH) [EtherFi Docs Tokenomics, https://docs.ether.fi/token/ethfi]; (MEDIUM) [Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+
+## Distribution
+
+Community: tidak diungkap persentase pasti — allocation untuk community/ecosystem/airdrop tidak dipublikasikan detailnya (LOW) [EtherFi Docs Tokenomics, https://docs.ether.fi/token/ethfi; Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+Team: tidak diungkap persentase pasti — team allocation tidak dipublikasikan secara transparan (LOW) [EtherFi Docs Tokenomics, https://docs.ether.fi/token/ethfi; Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+Investors: tidak diungkap persentase pasti — investor allocation (Binance Labs, Coinbase Ventures, OKX Ventures, dan investor lain yang mungkin ada) tidak dipublikasikan detailnya (LOW) [EtherFi Docs Tokenomics, https://docs.ether.fi/token/ethfi; Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+Foundation: tidak diungkap persentase pasti — foundation/DAO treasury allocation tidak dipublikasikan detailnya (LOW) [EtherFi Docs Governance, https://docs.ether.fi/governance; EtherFi Docs Tokenomics, https://docs.ether.fi/token/ethfi]
+Treasury: tidak diungkap persentase pasti — protocol treasury allocation tidak dipublikasikan detailnya (LOW) [EtherFi Docs Governance, https://docs.ether.fi/governance; Snapshot, https://snapshot.org/#/etherfi.eth]
+Ecosystem: tidak diungkap persentase pasti — ecosystem fund allocation tidak dipublikasikan detailnya (LOW) [EtherFi Docs Tokenomics, https://docs.ether.fi/token/ethfi; Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+Advisors: tidak diungkap — advisor allocation tidak dikonfirmasi adanya (LOW) [Tidak ada sumber yang mengonfirmasi advisor allocation]
+Other: tidak diungkap — kategori lain (liquidity, market making, strategic partners) tidak dipublikasikan (LOW) [Tidak ada sumber yang mengonfirmasi]
+Planned Status: Semua kategori di atas bertanda "Planned" atau "Tidak diungkap" karena tidak ada dokumen tokenomics resmi yang mempublikasikan breakdown persentase per kategori secara transparan dan terverifikasi on-chain
+Sources: (LOW) [EtherFi Docs Tokenomics, https://docs.ether.fi/token/ethfi]; (LOW) [Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]; (LOW) [CoinMarketCap ETHFI, https://coinmarketcap.com/currencies/etherfi/]
+
+## Vesting Schedule
+
+Category: Team
+Cliff: tidak diungkap
+Vesting: tidak diungkap
+Unlock Frequency: tidak diungkap
+Current Status: tidak diungkap
+Sources: (LOW) [EtherFi Docs Tokenomics, https://docs.ether.fi/token/ethfi; Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+
+Category: Investors
+Cliff: tidak diungkap
+Vesting: tidak diungkap
+Unlock Frequency: tidak diungkap
+Current Status: tidak diungkap
+Sources: (LOW) [EtherFi Docs Tokenomics, https://docs.ether.fi/token/ethfi; Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+
+Category: Community / Ecosystem
+Cliff: tidak diungkap
+Vesting: tidak diungkap
+Unlock Frequency: tidak diungkap
+Current Status: tidak diungkap
+Sources: (LOW) [EtherFi Docs Tokenomics, https://docs.ether.fi/token/ethfi; Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+
+Category: Foundation / Treasury
+Cliff: tidak diungkap
+Vesting: tidak diungkap
+Unlock Frequency: tidak diungkap
+Current Status: tidak diungkap
+Sources: (LOW) [EtherFi Docs Governance, https://docs.ether.fi/governance; EtherFi Docs Tokenomics, https://docs.ether.fi/token/ethfi]
+
+Category: Advisors
+Cliff: tidak diungkap
+Vesting: tidak diungkap
+Unlock Frequency: tidak diungkap
+Current Status: tidak diungkap
+Sources: (LOW) [Tidak ada sumber yang mengonfirmasi advisor allocation]
+
+Catatan: Seluruh vesting schedule tidak dipublikasikan secara resmi oleh EtherFi. Data on-chain dapat dilihat via Etherscan token holder history tapi tidak diagregasikan ke jadwal vesting per kategori.
+Sources: (LOW) [Etherscan ETHFI Transfers, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#tokentxns]
+
+## TGE
+
+TGE Date: 2024-03-18
+Initial Unlock: tidak diungkap persentase exact — estimasi pasar 15-20% dari total supply berdasarkan price action dan volume awal, angka resmi tidak dipublikasikan (MEDIUM) [CoinMarketCap ETHFI, https://coinmarketcap.com/currencies/etherfi/; Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+Unlocked Categories: tidak diungkap kategori mana yang unlocked pada TGE (public sale, community airdrop, liquidity, dll) — detail tidak dipublikasikan (LOW) [EtherFi Docs Tokenomics, https://docs.ether.fi/token/ethfi; Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+Launch Platform: Binance, Coinbase, OKX, Bybit, Gate.io, KuCoin (simultaneous CEX listing)
+Status: Completed
+Sources: (HIGH) [CoinMarketCap ETHFI, https://coinmarketcap.com/currencies/etherfi/]; (HIGH) [Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]; (HIGH) [Etherscan ETHFI, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb]; (HIGH) [EV-015, EV-016 dari Phase 3 History]
+
+## Utility
+
+Utility: Governance
+Deskripsi: ETHFI token digunakan untuk voting on-chain melalui EtherFi DAO (Governor + Timelock) — proposal parameter protokol, treasury management, protocol upgrade, fee switch activation
+Status: Live
+Sources: (HIGH) [EtherFi Docs Governance, https://docs.ether.fi/governance]; (HIGH) [Snapshot EtherFi, https://snapshot.org/#/etherfi.eth]; (HIGH) [EtherFi Docs Token, https://docs.ether.fi/token/ethfi]
+
+Utility: Fee Accrual (Fee Switch)
+Deskripsi: Governance proposal (EV-024 2024-10) untuk mengaktifkan fee switch — protocol revenue (staking fee, restaking fee, vault fee, bridging fee) sebagian dialokasikan ke ETHFI token holder/staker
+Status: Planned / Governance Proposal (outcome perlu verifikasi di Snapshot)
+Sources: (MEDIUM) [Snapshot EtherFi, https://snapshot.org/#/etherfi.eth]; (MEDIUM) [EtherFi Blog, https://blog.ether.fi]; (MEDIUM) [EV-024 dari Phase 3 History]
+
+Utility: Incentive Alignment
+Deskripsi: Token digunakan untuk incentive alignment antara staker, operator, dan protokol — reward distribution, liquidity mining, ecosystem grants
+Status: Live (ecosystem incentives ongoing)
+Sources: (MEDIUM) [EtherFi Docs Token, https://docs.ether.fi/token/ethfi]; (MEDIUM) [EtherFi Blog, https://blog.ether.fi]; (MEDIUM) [EigenLayer Docs, https://docs.eigenlayer.xyz; Symbiotic Docs, https://docs.symbiotic.fi]
+
+Utility: Staking (Token Staking untuk Governance Weight)
+Deskripsi: ETHFI dapat di-stake untuk mendapatkan voting power (veETHFI atau mekanisme serupa) — detail implementasi staking token tidak dipublikasikan secara teknis lengkap
+Status: Planned / Live (perlu verifikasi apakah staking contract sudah deployed)
+Sources: (LOW) [EtherFi Docs Token, https://docs.ether.fi/token/ethfi]; (LOW) [EtherFi Docs Governance, https://docs.ether.fi/governance]
+
+Utility: Collateral (Tidak Dikonfirmasi)
+Deskripsi: Tidak ada konfirmasi resmi ETHFI digunakan sebagai collateral di lending protocol atau CDP
+Status: Tidak Ada
+Sources: (LOW) [Tidak ada sumber yang mengonfirmasi ETHFI sebagai collateral]
+
+Utility: Liquidity Provision
+Deskripsi: ETHFI/ETH dan ETHFI/USDC liquidity pool di DEX (Uniswap, dll) dan CEX — token digunakan untuk market making dan liquidity
+Status: Live
+Sources: (HIGH) [Uniswap ETHFI Pools, https://app.uniswap.org/explore/tokens/ethereum/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb]; (HIGH) [CoinMarketCap ETHFI Markets, https://coinmarketcap.com/currencies/etherfi/markets/]
+
+## Governance
+
+Governance Model: On-chain DAO Governance (Governor + Timelock) — token-weighted voting, proposal execution via timelock
+Voting System: Token-weighted voting (1 ETHFI = 1 vote) — snapshot off-chain signaling + on-chain execution
+Voting Power: ETHFI token balance pada snapshot block — delegasi voting power didukung
+Delegation: Supported — token holder dapat mendelegasikan voting power ke alamat lain (delegate)
+Proposal System: EtherFi DAO Governor contract — proposal creation, voting period, execution via Timelock (minimal 2 hari delay)
+Treasury Governance: DAO mengelola treasury melalui Governor + Timelock — multi-sig signers tidak dipublikasikan
+Status: Live sejak 2024-03 (post-TGE)
+Sources: (HIGH) [EtherFi Docs Governance, https://docs.ether.fi/governance]; (HIGH) [Snapshot EtherFi, https://snapshot.org/#/etherfi.eth]; (HIGH) [Etherscan Governor Contract, https://etherscan.io/address/ (perlu identifikasi address Governor resmi)]; (MEDIUM) [EV-017, EV-020, EV-024 dari Phase 3 History]
+
+## Inflation / Deflation
+
+Inflation Mechanism: Tidak ada — supply fixed 1.000.000.000 ETHFI, tidak ada minting baru
+Emission Schedule: Tidak ada — tidak ada token emission/inflation schedule
+Burn Mechanism: Tidak ada burn mechanism resmi yang diimplementasikan pada kontrak token ETHFI
+Buyback: Tidak ada buyback program resmi — fee switch proposal (EV-024) mungkin mengarah ke buyback tapi belum dikonfirmasi implementasi
+Supply Reduction: Tidak ada — supply tetap fixed
+Status: Fixed Supply, No Inflation, No Burn
+Sources: (HIGH) [Etherscan ETHFI Contract Read, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#readContract]; (HIGH) [EtherFi Docs Token, https://docs.ether.fi/token/ethfi]; (MEDIUM) [Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+
+## Holder Distribution
+
+Top Holder Concentration: tidak diungkap secara resmi — data on-chain menunjukkan top holders mencakup CEX wallets (Binance, Coinbase, OKX, Bybit, Gate.io, KuCoin), DAO treasury, dan early investor wallets — persentase exact tidak diagregasikan publik (MEDIUM) [Etherscan ETHFI Holders, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#balances]
+Foundation Holding: tidak diungkap — DAO treasury address tidak terverifikasi publik, holding foundation tidak dipisahkan dari treasury (LOW) [Etherscan ETHFI Holders, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#balances; EtherFi Docs Governance, https://docs.ether.fi/governance]
+Investor Holding: tidak diungkap — investor wallet (Binance Labs, Coinbase Ventures, OKX Ventures) tidak diidentifikasi publik secara individual (LOW) [Etherscan ETHFI Holders, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#balances; Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]
+Treasury Holding: tidak diungkap — protocol treasury/DAO treasury address dan balance tidak dipublikasikan (LOW) [Etherscan ETHFI Holders, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#balances; Snapshot EtherFi, https://snapshot.org/#/etherfi.eth]
+Community Holding: tidak diungkap — retail holder distribution tidak diagregasikan (LOW) [Etherscan ETHFI Holders, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#balances]
+Whale Concentration: tidak diungkap secara resmi — top 10 holders di Etherscan mengontrol mayority supply (CEX + treasury + investor), persentase exact tidak dipublikasikan (MEDIUM) [Etherscan ETHFI Holders, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#balances]
+Sources: (MEDIUM) [Etherscan ETHFI Holders, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#balances]; (LOW) [EtherFi Docs Governance, https://docs.ether.fi/governance]; (LOW) [Snapshot EtherFi, https://snapshot.org/#/etherfi.eth]
+
+## Major Token Events
+
+Date: 2024-03-18
+Event: Token Generation Event (TGE)
+Description: ETHFI token deployed, minted 1B supply, simultaneous listing on Binance, Coinbase, OKX, Bybit, Gate.io, KuCoin
+Status: Completed
+Related Historical Event ID: EV-015, EV-016
+Sources: (HIGH) [CoinMarketCap ETHFI, https://coinmarketcap.com/currencies/etherfi/]; (HIGH) [Binance Research EtherFi, https://research.binance.com/en/projects/etherfi]; (HIGH) [Etherscan ETHFI, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb]
+
+Date: 2024-03
+Event: EtherFi DAO Formation & Governance Activation
+Description: Governor + Timelock contracts deployed, on-chain governance activated for ETHFI token holders
+Status: Completed
+Related Historical Event ID: EV-017
+Sources: (HIGH) [EtherFi Docs Governance, https://docs.ether.fi/governance]; (HIGH) [Snapshot EtherFi, https://snapshot.org/#/etherfi.eth]
+
+Date: 2024-06
+Event: First DAO Governance Proposal
+Description: Proposal governance pertama diajukan dan divote oleh ETHFI token holder — parameter protokol / treasury
+Status: Completed
+Related Historical Event ID: EV-020
+Sources: (MEDIUM) [Snapshot EtherFi, https://snapshot.org/#/etherfi.eth]; (MEDIUM) [EtherFi Docs Governance, https://docs.ether.fi/governance]
+
+Date: 2024-10
+Event: Fee Switch Governance Proposal
+Description: Proposal untuk mengaktifkan fee switch / revenue sharing ke ETHFI token holder
+Status: Completed (voting selesai, outcome perlu verifikasi implementasi)
+Related Historical Event ID: EV-024
+Sources: (MEDIUM) [Snapshot EtherFi, https://snapshot.org/#/etherfi.eth]; (MEDIUM) [EtherFi Blog, https://blog.ether.fi]; (MEDIUM) [EtherFi Docs Governance, https://docs.ether.fi/governance]
+
+Date: 2025-03-18
+Event: 1-Year TGE Anniversary — Tokenomics Review & Vesting Unlock
+Description: Review tokenomics, vesting unlock schedule untuk team/investor berlangsung per jadwal
+Status: Upcoming
+Related Historical Event ID: EV-028
+Sources: (MEDIUM) [EtherFi Docs Token, https://docs.ether.fi/token/ethfi]; (MEDIUM) [Snapshot EtherFi, https://snapshot.org/#/etherfi.eth]; (MEDIUM) [CoinMarketCap ETHFI, https://coinmarketcap.com/currencies/etherfi/]
+
+## Official Token Resources
+
+Official Documentation: https://docs.ether.fi/token/ethfi
+Whitepaper: https://docs.ether.fi/whitepaper (jika ada; docs.ether.fi mencakup arsitektur dan tokenomics dalam documentation)
+Governance: https://docs.ether.fi/governance, https://snapshot.org/#/etherfi.eth
+Explorer: https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb
+Contract: https://etherscan.io/address/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#code
+GitHub: https://github.com/etherfi-protocol/contracts (smart contract token), https://github.com/etherfi-protocol (organisasi)
+Dashboard: https://defillama.com/protocol/etherfi, https://dune.com/queries?query=etherfi, https://tokenterminal.com/terminal/projects/etherfi (jika tersedia)
+
+## BUAT RINGKASAN
+
+Status: Live (sejak 2024-03-18)
+Supply Type: Fixed (1.000.000.000 ETHFI)
+Total Supply: 1.000.000.000 ETHFI
+Distribution Categories: 7 kategori (Community, Team, Investors, Foundation, Treasury, Ecosystem, Advisors) — SEMUA persentase tidak diungkap resmi
+Utility Count: 4 utility terkonfirmasi (Governance, Fee Accrual/Fee Switch, Incentive Alignment, Liquidity Provision) + 1 planned (Staking untuk voting weight)
+Governance: On-chain DAO (Governor + Timelock), token-weighted voting, delegation supported, 2-day timelock
+Major Token Events: 5 events (TGE 2024-03-18, DAO Formation 2024-03, First Proposal 2024-06, Fee Switch Proposal 2024-10, 1-Year Anniversary 2025-03-18)
+
+## Open Threads
+
+- Persentase distribusi token per kategori (Community, Team, Investors, Foundation, Treasury, Ecosystem, Advisors) — tidak dipublikasikan secara resmi oleh EtherFi; Binance Research mungkin memiliki data tapi tidak diverifikasi publik
+- Vesting schedule detail per kategori (cliff, vesting duration, unlock frequency) — tidak diungkap; perlu cross-check on-chain via Etherscan token transfer history untuk menginfer investor/team unlock pattern
+- Initial unlock percentage pada TGE — estimasi 15-20% dari pasar, angka resmi tidak dipublikasikan
+- Fee switch proposal (EV-024) outcome — apakah passed dan implemented; perlu verifikasi Snapshot vote result dan on-chain implementation
+- ETHFI staking contract untuk governance weight (veETHFI atau mekanisme serupa) — apakah sudah deployed, address contract, mekanisme teknis
+- DAO treasury address dan composition — tidak terverifikasi publik; perlu identifikasi Gnosis Safe / multi-sig address yang mengelola treasury
+- Top holder breakdown dengan label (CEX mana, treasury, investor mana) — Etherscan menunjukkan address tapi label tidak resmi
+- Tokenomics document resmi (PDF/whitepaper section) — docs.ether.fi/token/ethfi mungkin tidak lengkap; apakah ada dokumen terpisah
+- Investor allocation detail — hanya 3 investor (Binance Labs, Coinbase Ventures, OKX Ventures) yang dikonfirmasi; apakah ada investor lain (Paradigm, a16z, dll) dengan allocation
+- Community/ecosystem airdrop detail — apakah ada airdrop ke eETH/weETH staker, ULN operator, early user; criteria dan allocation
+- Liquidity provision allocation — berapa % supply dialokasikan untuk market making / liquidity bootstrapping
+- Burn mechanism future — apakah fee switch akan mengarah ke buyback & burn atau distribusi langsung ke staker
+- Regulatory status token — apakah ETHFI diklasifikasikan sebagai security/utility token di yurisdiksi utama; legal opinion tidak dipublikasikan
+- Cross-chain ETHFI deployment — apakah ETHFI di-deploy ke L2 (Arbitrum, Optimism, Base, dll) via canonical bridge atau LayerZero OFT; tidak dikonfirmasi

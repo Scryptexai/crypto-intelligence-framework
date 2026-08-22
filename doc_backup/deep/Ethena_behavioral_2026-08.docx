@@ -1,312 +1,443 @@
 PROJECT: Ethena
 
-1. Membangun synthetic dollar crypto-native (USDe) yang delta-neutral, scalable, dan censorship-resistant
+Strategic Objectives
 
-· Evidence: Visi "Internet Bond" dan arsitektur delta-neutral hedging staked ETH + perpetual futures short positions diperkenalkan sejak blog pertama (EV-003) dan diluncurkan mainnet (EV-005) — Phase 1, Phase 3 EV-003, EV-005
-· Supporting Dataset: Phase 1, Phase 3 EV-003, EV-005, Phase 4 System Architecture
+1. Membangun synthetic dollar (USDe) yang delta-neutral, scalable, dan censorship-resistant sebagai alternatif stablecoin tradisional
+· Evidence: Visi "Internet Bond" diperkenalkan sejak blog pertama (EV-003), arsitektur delta-neutral hedging engine menjadi core teknologi (Phase 4 Core Components), USDe tidak bergantung overcollateralization seperti DAI atau RWA seperti USDY (Phase 8 Competitor Landscape)
+· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-003, Phase 4 System Architecture, Phase 8 Market Position
 
-2. Menciptakan yield-bearing primitive (sUSDe) sebagai "Internet Bond" untuk infrastruktur yield DeFi
+2. Menciptakan yield-bearing primitive (sUSDe) yang composable di seluruh ekosistem DeFi multi-chain
+· Evidence: sUSDe diluncurkan bersamaan mainnet (EV-005, EV-006), integrasi cepat ke Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra dalam bulan yang sama (EV-016 hingga EV-023), ekspansi ke 7 chain via LayerZero OFT dan Wormhole (EV-007, EV-008, EV-009, EV-021)
+· Supporting Dataset: Phase 3 EV-005 to EV-023, Phase 7 Major Integrations, Phase 7 External Dependencies
 
-· Evidence: sUSDe diluncurkan bersamaan mainnet USDe (EV-006) sebagai ERC-4626 non-rebasing vault yang mengakumulasi funding rate yield; posisi sebagai yield primitive dikonfirmasi integrasi luas (Pendle, Morpho, Aave, Equilibria, Spectra, Ethereal) — Phase 3 EV-006, Phase 7 Major Integrations
-· Supporting Dataset: Phase 3 EV-006, Phase 7 Major Integrations, Phase 4 Core Components
+3. Mendistribusikan ownership dan governance ke komunitas melalui ENA token dan DAO
+· Evidence: TGE 15% unlock termasuk 5% community airdrop (EV-011), DAO launch bersamaan dengan Snapshot voting dan timelock (EV-012), proposal parameter update dieksekusi (EV-030), fee switch proposal dalam diskusi (EV-033)
+· Supporting Dataset: Phase 3 EV-011, EV-012, EV-030, EV-033, Phase 6 Governance, Phase 6 Distribution
 
-3. Desentralisasi progresif melalui DAO governance (ENA token) dengan timelock execution
+4. Menarik adopsi institutional melalui custody grade infrastructure dan compliance
+· Evidence: Integrasi Copper ClearLoop dan Fireblocks (EV-027, EV-028), strategic investor termasuk CEX terregulasi (Gemini, Deribit, Bybit, OKX), BVI entity untuk legal wrapper
+· Supporting Dataset: Phase 3 EV-027, EV-028, Phase 2 Investor entities, Phase 7 Infrastructure Providers
 
-· Evidence: ENA TGE (EV-011) bersamaan peluncuran Ethena DAO (EV-012) di Snapshot dengan timelock 48 jam; proposal parameter sudah dieksekusi (EV-030 insurance fund update) dan fee switch dalam diskusi (EV-033) — Phase 3 EV-011, EV-012, EV-030, EV-033, Phase 6 Governance
-· Supporting Dataset: Phase 3 EV-011, EV-012, EV-030, EV-033, Phase 6 Governance
+5. Menjadi protokol yield infrastructure dominan di DeFi melalui network effect integrasi
+· Evidence: sUSDe terintegrasi ke lending (Aave, Morpho), yield tokenization (Pendle, Spectra, Equilibria), margin trading (Ethereal) — menciptakan demand struktural untuk sUSDe sebagai collateral dan yield source
+· Supporting Dataset: Phase 7 Major Integrations, Phase 8 Adoption Metrics (70-75% USDe staked), Phase 8 Narrative Position
 
-4. Ekspansi multi-chain agresif via LayerZero OFT (EVM) dan Wormhole (Solana) untuk composability
-
-· Evidence: Deployment ke 6 EVM chain (Arbitrum, Optimism, Base, Mantle, BNB Chain) + Solana dalam 3 bulan post-mainnet (EV-007, EV-008, EV-009, EV-021) — Phase 3 EV-007, EV-008, EV-009, EV-021, Phase 4 Cross-chain Messaging
-· Supporting Dataset: Phase 3 EV-007, EV-008, EV-009, EV-021, Phase 4 Cross-chain Messaging, Phase 7 Infrastructure Providers
-
-5. Institutional onboarding melalui custody integration (Copper ClearLoop, Fireblocks) untuk mint/redeem skala besar
-
-· Evidence: Integrasi Copper (EV-027) dan Fireblocks (EV-028) di Q3 2024 ditargetkan institutional access; blog "Institutional Onboarding" menerbitkan workflow — Phase 3 EV-027, EV-028, Phase 7 Infrastructure Providers
-· Supporting Dataset: Phase 3 EV-027, EV-028, Phase 7 Infrastructure Providers, Phase 2 Entity (Copper, Fireblocks)
-
-6. Deep DeFi composability melalui integrasi native di lending, yield tokenization, stableswap, dan margin trading
-
-· Evidence: Integrasi bersamaan Q2 2024 ke Pendle (EV-016), Morpho (EV-017), Aave v3 (EV-018), Curve (EV-019), Equilibria (EV-020), Ethereal (EV-022), Spectra (EV-023) — Phase 3 EV-016 to EV-023, Phase 7 Major Integrations
-· Supporting Dataset: Phase 3 EV-016 to EV-023, Phase 7 Major Integrations, Phase 7 Applications
+Decision Timeline
 
 Keputusan: Pendirian Ethena Labs Ltd. di British Virgin Islands (2023)
-· Trigger: Perlu entitas legal untuk fundraising, IP ownership, dan employment agreements sebelum pengembangan protokol
-· Evidence: Crunchbase mencatat entity incorporation; The Block melaporkan Series A melalui entity ini — Phase 2 Entity (Ethena Labs Ltd.), Phase 3 EV-001
-· Decision: Mendirikan perusahaan di BVI sebagai operator protokol
-· Immediate Result: Entity legal terbentuk, memungkinkan Series A fundraising
-· Long-term Impact: Struktur hukum tetap BVI-centric; tidak ada foundation terpisah teridentifikasi
-· Supporting Dataset: Phase 2 Entity (Ethena Labs Ltd.), Phase 3 EV-001, Phase 5 Funding History
+· Trigger: Perlu entity legal untuk fundraising, token issuance, dan compliance sebelum pengembangan protokol
+· Evidence: Crunchbase dan The Block konfirmasi entity BVI (Phase 2 Entity: Ethena Labs Ltd., Phase 3 EV-001)
+· Decision: Mendirikan perusahaan di BVI sebagai parent company protokol
+· Immediate Result: Memungkinkan Series A fundraising $14M (EV-002)
+· Long-term Impact: Struktur legal tetap digunakan hingga sekarang; tidak ada entity Cayman/Singapore publik (Open Threads Phase 2)
+· Supporting Dataset: Phase 2 Entity Ethena Labs Ltd., Phase 3 EV-001, Phase 1 Foundation
 
-Keputusan: Series A $14M dipimpin Dragonfly Capital dengan strategic investors CEX/market maker (2023)
-· Trigger: Butuh capital untuk tim (~30+), infrastructure, audit, go-to-market; strategic investors menyediakan liquidity hedging
-· Evidence: The Block melaporkan ronde dengan Dragonfly lead, partisipasi Deribit, Bybit, OKX Ventures, Gemini, Huobi, Arthur Hayes — Phase 2 Entity (Investors), Phase 3 EV-002, Phase 5 Funding History
-· Decision: Mengambil funding dari VC tradisional + strategic CEX/market maker
-· Immediate Result: $14M terkumpul; investor menjadi liquidity provider hedging engine
-· Long-term Impact: Ketergantungan finansial & operasional pada investor strategis (CEX futures liquidity, market making)
-· Supporting Dataset: Phase 2 Entity (Investors), Phase 3 EV-002, Phase 5 Funding History, Phase 5 Financial Dependencies
+Keputusan: Series A $14M dipimpin Dragonfly Capital dengan strategic investors CEX/Market Maker (2023)
+· Trigger: Butuh capital untuk pengembangan protokol dan strategic partnership untuk hedging engine liquidity
+· Evidence: The Block melaporkan investor: Dragonfly, Arthur Hayes, Deribit, Bybit, OKX Ventures, Gemini, Huobi (Phase 3 EV-002, Phase 2 Investors)
+· Decision: Mengambil funding dari VC lead + strategic investors yang menyediakan futures liquidity
+· Immediate Result: Dana $14M terkumpul; investor CEX menjadi counterparty hedging engine
+· Long-term Impact: Dependency pada CEX investor untuk liquidity hedging (Phase 4 Known Limitations), alignment incentives investor-protocol
+· Supporting Dataset: Phase 3 EV-002, Phase 2 Investors, Phase 4 Hedging Engine, Phase 5 Financial Dependencies
 
-Keputusan: Private beta testnet USDe di Ethereum mainnet (2024-01)
-· Trigger: Validasi arsitektur mint/redeem dan hedging engine dengan real capital sebelum public launch
-· Evidence: Blog mainnet launch menyebut private beta Januari 2024 — Phase 3 EV-004, Phase 4 System Architecture
-· Decision: Menggunakan mainnet untuk testnet (bukan testnet terpisah) dengan peserta terbatas
-· Immediate Result: Teknis tervalidasi; mainnet launch 1 bulan kemudian
-· Long-term Impact: Pendekatan "mainnet-first" mempercepat time-to-market tapi dengan risk real funds
-· Supporting Dataset: Phase 3 EV-004, Phase 4 System Architecture
+Keputusan: Arsitektur delta-neutral hedging dengan off-chain engine + on-chain settlement (2023-2024)
+· Trigger: Perlu scalable hedging real-time yang tidak mungkin fully on-chain karena gas dan latency
+· Evidence: Hedging Engine disebut "Off-chain/On-chain Hybrid" di Phase 4, CEX API digunakan untuk eksekusi short perp (Deribit, Bybit, Binance, OKX)
+· Decision: Memisahkan hedging execution (off-chain, centralized operators) dari settlement (on-chain smart contracts)
+· Immediate Result: Mainnet launch Feb 2024 berhasil handle volume besar
+· Long-term Impact: Centralized execution risk (Phase 4 Known Limitations), CEX counterparty risk, regulatory exposure
+· Supporting Dataset: Phase 4 Core Components Hedging Engine, Phase 4 Known Limitations, Phase 7 External Dependencies (Deribit, Bybit, Binance, OKX)
 
-Keputusan: Mainnet launch USDe + sUSDe bersamaan (2024-02-19)
-· Trigger: Produk siap setelah private beta; window pasar bullish Q1 2024
-· Evidence: Blog launch resmi tanggal 19 Feb 2024; Dune dashboard supply mulai tanggal tersebut — Phase 3 EV-005, EV-006, Phase 4 Core Components
-· Decision: Meluncurkan USDe (mint/redeem) dan sUSDe (staking yield) dalam satu hari
-· Immediate Result: Protocol live, supply mulai tumbuh, yield terakumulasi
-· Long-term Impact: sUSDe menjadi yield primitive dari hari pertama; komposisi DeFi cepat
-· Supporting Dataset: Phase 3 EV-005, EV-006, Phase 4 Core Components, Phase 8 Market Timeline
+Keputusan: LayerZero OFT untuk cross-chain native transfer di EVM chains (Maret 2024)
+· Trigger: Butuh cross-chain transfer USDe/ENA tanpa wrapped token untuk capital efficiency dan UX
+· Evidence: EV-007 LayerZero OFT Integration, deployment ke 5 L2 + BNB Chain simultan (EV-008, EV-009)
+· Decision: Adopsi LayerZero v2 OFT standard dengan DVN custom configuration
+· Immediate Result: Native cross-chain transfer live di 6 EVM chains
+· Long-term Impact: Menjadi showcase OFT adoption; menambah dependency LayerZero DVN security (Phase 4 Known Limitations)
+· Supporting Dataset: Phase 3 EV-007, EV-008, EV-009, Phase 4 Cross-chain Messaging, Phase 7 External Dependencies LayerZero
 
-Keputusan: LayerZero OFT integration untuk cross-chain native transfer (2024-03)
-· Trigger: Butuh multi-chain deployment tanpa wrapped token fragmentation; LayerZero v2 OFT mature
-· Evidence: Blog announcement integration; deployment simultan ke 5 L2 + BNB Chain — Phase 3 EV-007, EV-008, EV-009, Phase 4 Cross-chain Messaging
-· Decision: Mengadopsi LayerZero OFT standard untuk ENA dan USDe di semua EVM chain
-· Immediate Result: Native cross-chain transfer live di 6 chain EVM
-· Long-term Impact: Menjadi showcase LayerZero OFT; dependency kritis pada LayerZero DVN configuration
-· Supporting Dataset: Phase 3 EV-007, EV-008, EV-009, Phase 4 Cross-chain Messaging, Phase 7 Infrastructure Providers
+Keputusan: Wormhole wrapped token untuk Solana deployment (Mei 2024)
+· Trigger: Solana non-EVM, tidak kompatibel LayerZero OFT; butuh akses ekosistem Solana DeFi
+· Evidence: EV-021 Deployment Solana via Wormhole, wrapped USDe/ENA (bukan native SPL program)
+· Decision: Menggunakan Wormhole token bridge sebagai wrapped asset, bukan native deployment
+· Immediate Result: Akses ke Jupiter, Kamino, Solana DeFi
+· Long-term Impact: Bridge risk tambahan (Phase 4 Known Limitations), tidak ada hedging engine native Solana, fragmented liquidity
+· Supporting Dataset: Phase 3 EV-021, Phase 4 Wormhole Adapter, Phase 4 Known Limitations, Phase 7 External Dependencies Wormhole
 
-Keputusan: ENA TGE + DAO launch bersamaan (2024-04-02)
-· Trigger: Tokenomics ready; butuh governance untuk parameter protocol; community distribution Season 1 complete
-· Evidence: Blog TGE; Snapshot space created same day; 15% supply unlocked — Phase 3 EV-011, EV-012, Phase 6 TGE, Phase 6 Governance
-· Decision: Generate full supply 100M ENA, unlock 15% (community 5%, foundation/ecosystem ~10%), activate DAO
-· Immediate Result: Governance live, token tradable, Binance Launchpool same day
-· Long-term Impact: Progressive decentralization dimulai; team/investor 45% supply vesting 4yr dengan 1yr cliff
-· Supporting Dataset: Phase 3 EV-011, EV-012, Phase 6 TGE, Phase 6 Governance, Phase 6 Vesting Schedule
+Keputusan: TGE ENA dengan 15% unlock, DAO launch bersamaan, no public sale (April 2024)
+· Trigger: Perlu token untuk governance, incentive, dan liquidity; hindari regulatory risk public sale
+· Evidence: EV-011 TGE, EV-012 DAO Launch, Binance Launchpool farming bukan sale (Phase 3, Phase 6 TGE)
+· Decision: Token generation event dengan distribusi ke community (5% airdrop), foundation, ecosystem; governance live day-1
+· Immediate Result: ENA liquid di Binance/Coinbase/Kraken; DAO operational; 15% circulating
+· Long-term Impact: High FDV/low float dynamics; vesting cliff besar April 2025 (Team 20%, Investors 25%); fee switch proposal sebagai value capture mechanism (EV-033)
+· Supporting Dataset: Phase 3 EV-011, EV-012, EV-013, EV-014, EV-015, Phase 6 TGE, Phase 6 Vesting, Phase 6 Governance
 
-Keputusan: Major CEX listings (Binance, Coinbase, Kraken) dalam minggu TGE (2024-04)
-· Trigger: Liquidity access untuk community & investors; price discovery; regulatory clarity via Coinbase
-· Evidence: Announcement masing-masing exchange April 2024; Binance Launchpool farming ENA — Phase 3 EV-013, EV-014, EV-015, Phase 8 Trading Markets
-· Decision: Coordinated listing di top 3 global exchange + Launchpool
-· Immediate Result: Deep liquidity immediate; retail access global + US regulated
-· Long-term Impact: Price stability & volume; dependency pada CEX untuk liquidity ENA
-· Supporting Dataset: Phase 3 EV-013, EV-014, EV-015, Phase 8 Trading Markets, Phase 8 Exchange Ecosystem
+Keputusan: Triple audit bersamaan (OpenZeppelin, Zellic, Spearbit) Juni 2024
+· Trigger: Protocol live dengan $B TVL, butuh security validation sebelum scaling lebih lanjut
+· Evidence: EV-024, EV-025, EV-026 audit reports published; scope: core, cross-chain, governance
+· Decision: Mengkontrak 3 firma audit top-tier paralel untuk coverage komprehensif
+· Immediate Result: Audit reports publik, findings addressed, credibility meningkat
+· Long-term Impact: Standard keamanan tinggi; ongoing audit rotation policy tidak dikonfirmasi (Open Threads Phase 2)
+· Supporting Dataset: Phase 3 EV-024, EV-025, EV-026, Phase 4 Audit History, Phase 2 Security entities
 
-Keputusan: Core DeFi integrations batch (Pendle, Morpho, Aave, Curve, Equilibria) Q2 2024
-· Trigger: Butuh composability untuk sUSDe sebagai yield primitive; partner ready untuk integration
-· Evidence: Semua integration announced April-May 2024; Ethena ecosystem page lists semua — Phase 3 EV-016 to EV-020, EV-022, EV-023, Phase 7 Major Integrations
-· Decision: Parallel integration ke lending (Morpho, Aave), yield tokenization (Pendle, Spectra, Equilibria), stableswap (Curve), margin (Ethereal)
-· Immediate Result: sUSDe usable across DeFi stack dari bulan 2 protokol
-· Long-term Impact: sUSDe menjadi collateral/yield standard; protocol stickiness tinggi; revenue share discussions (fee switch)
-· Supporting Dataset: Phase 3 EV-016 to EV-023, Phase 7 Major Integrations, Phase 7 Applications
+Keputusan: Integrasi institutional custody (Copper, Fireblocks) Juli 2024
+· Trigger: Butuh onboarding institutional untuk mint/redeem large size USDe
+· Evidence: EV-027 Copper, EV-028 Fireblocks announcements; blog "institutional onboarding"
+· Decision: Partner dengan 2 custody provider utama untuk ClearLoop dan wallet infrastructure
+· Immediate Result: Institutional access enabled
+· Long-term Impact: Diversifikasi user base dari retail DeFi ke institutional; compliance readiness
+· Supporting Dataset: Phase 3 EV-027, EV-028, Phase 7 Infrastructure Providers, Phase 2 Companies Copper/Fireblocks
 
-Keputusan: Solana deployment via Wormhole wrapped token (2024-05)
-· Trigger: Expand ke non-EVM largest DeFi ecosystem; Wormhole bridge mature
-· Evidence: Docs chain-deployments; Wormhole scan shows wrapped deployment — Phase 3 EV-021, Phase 4 Cross-chain Messaging, Phase 7 Infrastructure Providers
-· Decision: Deploy wrapped USDe/ENA di Solana via Wormhole (bukan native SPL program)
-· Immediate Result: Access ke Jupiter, Kamino, Solana DeFi
-· Long-term Impact: Bridge risk tambahan (Wormhole Guardian Set); no native hedging engine di Solana
-· Supporting Dataset: Phase 3 EV-021, Phase 4 Cross-chain Messaging, Phase 7 Infrastructure Providers, Phase 4 Known Technical Limitations
+Keputusan: Governance parameter update via DAO (Agustus 2024)
+· Trigger: Perlu adjust insurance fund allocation dan funding rate cap berdasarkan data real-world
+· Evidence: EV-030 proposal executed via Snapshot + timelock
+· Decision: DAO mengubah parameter protokol pertama kali melalui proses governance penuh
+· Immediate Result: Parameter updated on-chain via timelock
+· Long-term Impact: Membuktikan governance works; prelude ke fee switch proposal (EV-033)
+· Supporting Dataset: Phase 3 EV-030, Phase 6 Governance, Phase 3 EV-033
 
-Keputusan: Triple audit (OpenZeppelin, Zellic, Spearbit) Q2 2024
-· Trigger: Pre-mainnet security validation; cross-chain complexity; governance upgradeability risk
-· Evidence: Audit reports published Juni 2024; GitHub audits repo — Phase 3 EV-024, EV-025, EV-026, Phase 4 Audit History
-· Decision: Engage 3 auditor independen untuk scope berbeda (core, cross-chain, governance)
-· Immediate Result: Findings fixed pre/post mainnet; credibility tinggi
-· Long-term Impact: Audit standard untuk upgrade future; ongoing security budget
-· Supporting Dataset: Phase 3 EV-024, EV-025, EV-026, Phase 4 Audit History, Phase 4 Security Model
+Keputusan: Season 2 "Sats" campaign multi-chain incentive (Oktober 2024)
+· Trigger: USDe supply turun dari peak $3.4B, butuh stimulasi adopsi multi-chain
+· Evidence: EV-031 launch, EV-032 supply stabil $2.5-3B setelah koreksi
+· Decision: Program incentive ENA untuk liquidity provider dan user di protokol partner across chains
+· Immediate Result: Incentive berjalan, supply stabil
+· Long-term Impact: Membuat flywheel incentive berkelanjutan; dependency pada ENA emissions untuk growth
+· Supporting Dataset: Phase 3 EV-031, EV-032, Phase 6 Utility Incentive, Phase 8 Adoption Metrics
 
-Keputusan: Institutional custody integration (Copper, Fireblocks) Q3 2024
-· Trigger: Institutional demand untuk mint/redeem USDe skala besar; compliance & custody grade
-· Evidence: Blog institutional onboarding Juli 2024; Copper ClearLoop, Fireblocks API — Phase 3 EV-027, EV-028, Phase 7 Infrastructure Providers
-· Decision: Integrasi Copper ClearLoop dan Fireblocks untuk institutional workflow
-· Immediate Result: Onboarding institutional dipermudah
-· Long-term Impact: Revenue diversification (institutional volume); regulatory surface area meningkat
-· Supporting Dataset: Phase 3 EV-027, EV-028, Phase 7 Infrastructure Providers, Phase 5 Financial Dependencies
+Evolution Pattern
 
-Keputusan: Governance parameter update via DAO (Insurance Fund, Funding Rate Cap) 2024-08
-· Trigger: Protocol maturation; butuh risk parameter adjustment berdasarkan data real
-· Evidence: Snapshot proposal executed; timelock execution — Phase 3 EV-030, Phase 6 Governance
-· Decision: DAO vote update insurance fund allocation rate dan funding rate cap
-· Immediate Result: Parameter on-chain updated via timelock
-· Long-term Impact: Precedent governance effectiveness; fee switch proposal next
-· Supporting Dataset: Phase 3 EV-030, Phase 6 Governance, Phase 4 Security Model
+Perubahan Strategi: Dari single-chain (Ethereum) ke multi-chain native (7 chains) dalam 3 bulan
+· Evidence: Mainnet Feb 2024 hanya Ethereum (EV-005); Maret 2024 LayerZero OFT ke 5 L2 + BNB Chain (EV-007, EV-008, EV-009); Mei 2024 Solana via Wormhole (EV-021)
+· Supporting Dataset: Phase 3 EV-005, EV-007, EV-008, EV-009, EV-021, Phase 4 Cross-chain Messaging
 
-Keputusan: Season 2 "Sats" incentive campaign launch (2024-10)
-· Trigger: Post-peak supply correction; butuh maintain adoption multi-chain; competitor incentives
-· Evidence: Blog announcement Oct 2024; Snapshot proposals untuk allocation — Phase 3 EV-031, Phase 6 Utility, Phase 8 Market Timeline
-· Decision: Multi-chain incentive program dengan ENA rewards untuk LP/user partner protocol
-· Immediate Result: Incentive live across chains
-· Long-term Impact: Sustainable demand driver untuk sUSDe; DAO treasury spend rate
-· Supporting Dataset: Phase 3 EV-031, Phase 6 Utility, Phase 8 Market Timeline
+Perubahan Teknologi: Hedging engine tetap off-chain centralized; tidak ada pergerakan ke on-chain/DEX-only hedging
+· Evidence: Phase 4 Known Limitations mencatat "Centralized hedging execution" sebagai limitation sejak awal; tidak ada upgrade announcement untuk on-chain hedging (Phase 3 tidak ada event hedging engine upgrade)
+· Supporting Dataset: Phase 4 Hedging Engine, Phase 4 Known Limitations, Phase 3 History (no hedging upgrade event)
 
-Keputusan: Fee switch proposal (ENA staking yield) discussion (2024-12)
-· Trigger: Token holder demand untuk value accrual; protocol revenue significant; governance maturity
-· Evidence: Snapshot proposal discussion Dec 2024; governance forum — Phase 3 EV-033, Phase 6 Utility, Phase 6 Governance
-· Decision: Propose aktivasi fee switch: staker ENA receive protocol revenue share
-· Immediate Result: Discussion phase; not executed yet
-· Long-term Impact: Jika passed, ENA utility fundamental berubah; regulatory scrutiny potential
-· Supporting Dataset: Phase 3 EV-033, Phase 6 Utility, Phase 6 Governance
+Perubahan Tokenomics: Fee switch dari "tidak ada" ke "proposal stage" (Des 2024)
+· Evidence: Phase 6 Inflation/Deflation menyatakan "Tidak ada buyback, fee switch proposal EV-033 discussion stage"; EV-033 December 2024 proposal
+· Supporting Dataset: Phase 3 EV-033, Phase 6 Inflation/Deflation, Phase 6 Utility Staking
 
-## Evolution Pattern
+Perubahan Governance: Dari founder-controlled ke DAO dengan timelock day-1
+· Evidence: EV-012 DAO launch bersamaan TGE; timelock 48h; Snapshot voting; proposal pertama EV-030 executed Agustus 2024
+· Supporting Dataset: Phase 3 EV-012, EV-030, Phase 6 Governance
 
-Dari pendirian entity (2023) ke Series A strategic raise → private beta mainnet (Jan 2024) → mainnet launch dual product USDe+sUSDe (Feb) → cross-chain infrastructure LayerZero (Mar) → TGE+DAO+CEX listings batch (Apr) → DeFi integration wave batch (Apr-May) → Solana via Wormhole (May) → triple audit (Jun) → institutional custody (Jul) → supply peak $3.4B (Aug) → governance parameter update (Aug) → incentive season 2 (Oct) → fee switch proposal (Dec). Pola: eksekusi paralel track (tech, BD, legal, marketing) dengan kecepatan tinggi; setiap milestone membuka pintu milestone berikutnya; dependency management ketat (audit sebelum peak TVL, custody sebelum institutional push, governance sebelum fee switch).
+Perubahan Market Position: Dari "synthetic dollar baru" ke "DeFi yield infrastructure primitive" (Q2-Q3 2024)
+· Evidence: Integrasi beruntun Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra dalam April-Mei 2024 (EV-016 to EV-023); Narrative Position Phase 8 menunjukkan "DeFi Yield Infrastructure" sebagai Main Narrative
+· Supporting Dataset: Phase 3 EV-016 to EV-023, Phase 8 Narrative Position, Phase 7 Major Integrations
 
-## Technical Decision Pattern
+Perubahan Financial: Dari VC-funded ke protocol-revenue-sustained (target)
+· Evidence: Series A $14M hanya funding terverifikasi (Phase 5); Protocol yield menjadi revenue utama (Phase 5 Revenue Model); Fee switch proposal untuk capture value ke ENA holders (EV-033)
+· Supporting Dataset: Phase 5 Funding History, Phase 5 Revenue Model, Phase 3 EV-033
 
-Pola 1: Hybrid Off-chain Hedging + On-chain Settlement
-· Decision Pattern: Hedging engine (short perp futures) dijalankan off-chain oleh tim/market maker; mint/redeem/settlement on-chain via smart contract
-· Evidence: Architecture docs menjelaskan hedging engine off-chain; CEX API dependency (Deribit, Bybit, OKX, Binance); Wintermute/GSR sebagai executor — Phase 4 Core Components (Hedging Engine), Phase 4 Known Technical Limitations, Phase 2 Entity (Deribit, Bybit, Wintermute)
-· Supporting Dataset: Phase 4 Core Components, Phase 4 Known Technical Limitations, Phase 2 Entity
+Technical Decision Pattern
 
-Pola 2: LayerZero OFT untuk EVM Cross-chain, Wormhole untuk Non-EVM
-· Decision Pattern: Native cross-chain via LayerZero OFT standard di semua EVM chain; wrapped token via Wormhole untuk Solana
-· Evidence: Blog LayerZero integration; deployment 6 EVM chain simultan; Wormhole scan Solana deployment — Phase 3 EV-007, EV-008, EV-009, EV-021, Phase 4 Cross-chain Messaging
-· Supporting Dataset: Phase 3 EV-007, EV-008, EV-009, EV-021, Phase 4 Cross-chain Messaging, Phase 7 Infrastructure Providers
+Pola 1: Ethereum Alignment First — Deploy Ethereum Mainnet Sebelum L2/Non-EVM
+· Decision Pattern: Semua core contracts deploy Ethereum mainnet pertama, lalu extend ke L2 via LayerZero OFT dan Solana via Wormhole wrapped
+· Evidence: EV-005 Mainnet Ethereum Feb 2024; EV-007/008/009 LayerZero deployment Maret 2024; EV-021 Solana Mei 2024; Phase 4 Architecture "Ethereum Mainnet (primary)"
+· Supporting Dataset: Phase 3 EV-005, EV-007, EV-008, EV-009, EV-021, Phase 4 System Architecture
 
-Pola 3: Chainlink Oracle untuk Semua Pricing & Risk Data
-· Decision Pattern: Single oracle provider (Chainlink) untuk ETH/USD, stETH/ETH, funding rate data di semua chain
-· Evidence: Docs architecture oracles; Chainlink data feeds integration — Phase 4 Core Components (Chainlink Oracle Adapter), Phase 4 System Architecture, Phase 2 Entity (Chainlink)
-· Supporting Dataset: Phase 4 Core Components, Phase 4 System Architecture, Phase 2 Entity
+Pola 2: Off-chain Hedging Execution dengan On-chain Settlement
+· Decision Pattern: Delta-neutral hedging dilakukan off-chain oleh operators (Wintermute, GSR, tim Ethena) menggunakan CEX API; on-chain hanya settlement mint/redeem dan accounting
+· Evidence: Phase 4 Hedging Engine "Off-chain/On-chain Hybrid"; Phase 4 Known Limitations "Centralized hedging execution"; Phase 7 External Dependencies Deribit, Bybit, Binance, OKX sebagai CEX liquidity
+· Supporting Dataset: Phase 4 Core Components Hedging Engine, Phase 4 Known Limitations, Phase 7 External Dependencies
+
+Pola 3: LayerZero OFT untuk EVM Cross-chain, Wormhole untuk Non-EVM
+· Decision Pattern: Native cross-chain (OFT) untuk chain EVM-compatible; wrapped bridge (Wormhole) untuk Solana
+· Evidence: EV-007 LayerZero OFT Integration untuk 6 EVM chains; EV-021 Wormhole Solana deployment; Phase 4 Cross-chain Messaging dua adapter terpisah
+· Supporting Dataset: Phase 3 EV-007, EV-021, Phase 4 Cross-chain Messaging, Phase 7 External Dependencies LayerZero, Wormhole
 
 Pola 4: UUPS Upgradeable Contracts dengan Timelock Governance
-· Decision Pattern: Semua core contract upgradeable via UUPS proxy; upgrade memerlukan timelock 48h + governance approval
-· Evidence: OpenZeppelin audit covers upgradeability; timelock controller deployed at TGE — Phase 4 Security Model, Phase 4 Technical Upgrade History, Phase 3 EV-012
-· Supporting Dataset: Phase 4 Security Model, Phase 4 Technical Upgrade History, Phase 3 EV-012
+· Decision Pattern: Core contracts menggunakan UUPS proxy (OpenZeppelin); upgrade memerlukan timelock 48h + governance approval
+· Evidence: Phase 4 Security Model "UUPS via OpenZeppelin Upgrades"; Phase 4 Security Model "Timelock controller (48 jam delay)"; Phase 3 EV-012 DAO launch dengan timelock; Phase 2 Security OpenZeppelin auditor
+· Supporting Dataset: Phase 4 Security Model, Phase 3 EV-012, Phase 2 Security OpenZeppelin
 
-Pola 5: Triple Audit Strategy (Core, Cross-chain, Governance)
-· Decision Pattern: 3 auditor independen untuk scope terpisah: OpenZeppelin (core), Zellic (cross-chain), Spearbit (governance/upgrades)
-· Evidence: Audit reports Juni 2024 masing-masing scope — Phase 3 EV-024, EV-025, EV-026, Phase 4 Audit History
-· Supporting Dataset: Phase 3 EV-024, EV-025, EV-026, Phase 4 Audit History
+Pola 5: Chainlink Oracle untuk Semua Pricing Critical Path
+· Decision Pattern: Semua price feed (ETH/USD, stETH/ETH, funding rate) menggunakan Chainlink Data Feeds; tidak ada oracle alternatif atau TWAP on-chain sebagai primary
+· Evidence: Phase 4 Chainlink Oracle Adapter; Phase 4 Security Model "Chainlink Data Feeds dengan decentralized oracle network"; EV-010 Chainlink Integration; Phase 7 External Dependencies Chainlink Critical
+· Supporting Dataset: Phase 4 Core Components Chainlink Oracle Adapter, Phase 4 Security Model, Phase 3 EV-010, Phase 7 External Dependencies
 
-Pola 6: ERC-4626 Vault Standard untuk sUSDe (Non-rebasing)
-· Decision Pattern: sUSDe sebagai ERC-4626 vault non-rebasing; share price naik mengakumulasi yield
-· Evidence: Docs susde; Etherscan contract — Phase 4 Core Components (sUSDe Staking Contract), Phase 3 EV-006
-· Supporting Dataset: Phase 4 Core Components, Phase 3 EV-006
+Pola 6: Triple Audit Paralel Sebelum Major Scaling
+· Decision Pattern: Mengkontrak 3 auditor top-tier (OpenZeppelin, Zellic, Spearbit) bersamaan untuk scope berbeda (core, cross-chain, governance) sebelum TVL peak
+· Evidence: EV-024, EV-025, EV-026 Juni 2024; Phase 4 Audit History 3 audits same month; TVL peak Agustus 2024 (EV-029) setelah audit selesai
+· Supporting Dataset: Phase 3 EV-024, EV-025, EV-026, Phase 4 Audit History, Phase 3 EV-029
 
-## Financial Decision Pattern
+Financial Decision Pattern
 
-Pola 1: Single Series A Strategic Raise dengan Investor-Operator Alignment
-· Decision Pattern: Hanya satu ronde fundraising ($14M Series A) dari investor yang sekaligus operational partner (CEX liquidity, market making, hedging venue)
-· Evidence: The Block report 7 investor: Dragonfly (VC), Arthur Hayes (advisor), Deribit/Bybit/OKX (CEX hedging), Gemini/Huobi (CEX/strategic) — Phase 2 Entity (Investors), Phase 3 EV-002, Phase 5 Funding History
-· Supporting Dataset: Phase 2 Entity, Phase 3 EV-002, Phase 5 Funding History, Phase 5 Financial Dependencies
+Pola 1: Single Round VC Funding dengan Strategic Investor Liquidity Alignment
+· Decision Pattern: Hanya Series A $14M terverifikasi; investor dipilih tidak hanya capital tapi juga liquidity provider untuk hedging engine (Deribit, Bybit, OKX, Binance) dan market maker (Wintermute, GSR)
+· Evidence: Phase 5 Funding History hanya 1 round; Phase 2 Investors include CEX dan market maker; Phase 3 EV-002 The Block article; Phase 7 External Dependencies Deribit/Bybit/OKX/Binance Critical untuk hedging
+· Supporting Dataset: Phase 5 Funding History, Phase 2 Investors, Phase 3 EV-002, Phase 7 External Dependencies
 
-Pola 2: Protocol Revenue dari Funding Rate (No Token Inflation)
-· Decision Pattern: Revenue model murni dari delta-neutral yield (funding rate + basis); ENA fixed supply 100M, no emission, no inflation
-· Evidence: Blog introducing Ethena; tokenomics fixed supply; Dune dashboard yield tracking — Phase 1, Phase 4 Core Components, Phase 5 Revenue Model, Phase 6 Inflation/Deflation
-· Supporting Dataset: Phase 1, Phase 4 Core Components, Phase 5 Revenue Model, Phase 6 Inflation/Deflation
+Pola 2: Protocol Revenue dari Funding Rate sebagai Primary Business Model
+· Decision Pattern: Tidak ada fee mint/redeem signifikan sebagai revenue driver; yield dari funding rate perp futures menjadi revenue engine, dialokasikan ke sUSDe (70-75% supply staked), insurance fund, dan DAO treasury
+· Evidence: Phase 5 Revenue Model "Protocol Yield dari Delta-Neutral Hedging"; Phase 8 Adoption Metrics "sUSDe Staked ~70-75%"; Phase 4 Architecture yield distribution; Phase 6 Utility fee switch proposal untuk capture value
+· Supporting Dataset: Phase 5 Revenue Model, Phase 8 Adoption Metrics, Phase 4 System Architecture, Phase 6 Utility
 
-Pola 3: Treasury Opacity (No Transparency Report)
-· Decision Pattern: Tidak mempublikasikan treasury composition, burn rate, runway, insurance fund size real-time
-· Evidence: Tidak ada transparency report, treasury dashboard, atau financial statements publik — Phase 5 Treasury, Phase 5 Official Financial Resources
-· Supporting Dataset: Phase 5 Treasury, Phase 5 Official Financial Resources, Phase 5 Financial Risk
+Pola 3: Treasury Opacity — No Transparency Report atau Dashboard Publik
+· Decision Pattern: Treasury composition, size, management tidak diungkap; hanya DAO treasury allocation (15% ENA) diketahui dari tokenomics
+· Evidence: Phase 5 Treasury "tidak diungkap"; Phase 5 Official Financial Resources "Transparency Report: tidak tersedia, Treasury Dashboard: tidak tersedia"; Phase 6 Distribution Foundation 15% tanpa detail usage
+· Supporting Dataset: Phase 5 Treasury, Phase 5 Official Financial Resources, Phase 6 Distribution
 
-Pola 4: Insurance Fund sebagai Risk Buffer On-chain
-· Decision Pattern: On-chain contract mengumpulkan portion yield untuk negative funding rate scenarios; DAO-governed parameter
-· Evidence: Docs insurance fund; governance proposal EV-030 update parameter — Phase 4 Core Components (Insurance Fund Contract), Phase 3 EV-030, Phase 5 Financial Risk
-· Supporting Dataset: Phase 4 Core Components, Phase 3 EV-030, Phase 5 Financial Risk
+Pola 4: ENA Token sebagai Governance + Incentive, Bukan Revenue Share (Saat Ini)
+· Decision Pattern: ENA utility saat ini governance voting dan incentive distribution; fee switch proposal (EV-033) akan mengubah ini tapi belum dieksekusi
+· Evidence: Phase 6 Utility Governance live, Staking "Planned Fee Switch", Incentive live; Phase 3 EV-033 proposal stage Des 2024; Phase 6 Inflation/Deflation "Tidak ada buyback"
+· Supporting Dataset: Phase 6 Utility, Phase 3 EV-033, Phase 6 Inflation/Deflation
 
-Pola 5: Ecosystem Allocation untuk Liquidity Seeding & Incentives
-· Decision Pattern: 10% supply (10M ENA) untuk ecosystem incentives; digunakan untuk Pendle, Morpho, Equilibria, Spectra programs via DAO proposals
-· Evidence: Tokenomics blog; Snapshot proposals for incentive allocation — Phase 6 Distribution, Phase 6 Vesting Schedule (Ecosystem), Phase 3 EV-031
-· Supporting Dataset: Phase 6 Distribution, Phase 6 Vesting Schedule, Phase 3 EV-031
+Pola 5: Vesting Cliff Besar April 2025 (Team 20% + Investors 25% = 45% Supply)
+· Decision Pattern: Team dan investors vesting identik: 1 year cliff, 4 year linear; cliff April 2025 akan unlock 45% total supply secara bertahap bulanan
+· Evidence: Phase 6 Vesting Schedule Team cliff 12 bulan April 2025, Investors cliff 12 bulan April 2025; Phase 6 Distribution Team 20%, Investors 25%
+· Supporting Dataset: Phase 6 Vesting Schedule, Phase 6 Distribution
 
-## Ecosystem Decision Pattern
+Ecosystem Decision Pattern
 
-Pola 1: Aggressive Multi-chain Deployment Paralel (7 Chain dalam 3 Bulan)
-· Decision Pattern: Deploy protokol penuh (USDe, sUSDe, ENA) ke 6 EVM chain + Solana secara berurutan cepat post-mainnet
-· Evidence: EV-008 (Arbitrum, Optimism, Base, Mantle), EV-009 (BNB Chain), EV-021 (Solana) semua Mar-Mei 2024 — Phase 3 EV-008, EV-009, EV-021, Phase 7 Infrastructure Providers
-· Supporting Dataset: Phase 3 EV-008, EV-009, EV-021, Phase 7 Infrastructure Providers, Phase 4 Cross-chain Messaging
+Pola 1: Integrasi Cepat ke DeFi Primitive Terbesar (Lending, Yield Tokenization, Stableswap) dalam Bulan Pertama
+· Evidence: EV-016 Pendle, EV-017 Morpho, EV-018 Aave, EV-019 Curve, EV-020 Equilibria semua April 2024 (1-2 bulan post-mainnet); Phase 7 Major Integrations 7 integrasi core dalam Q2 2024
+· Supporting Dataset: Phase 3 EV-016 to EV-020, Phase 7 Major Integrations, Phase 8 Market Timeline
 
-Pola 2: Deep DeFi Stack Integration Batch (Lending + Yield Tokenization + Stableswap + Margin)
-· Decision Pattern: Integrasi simultan ke seluruh layer DeFi: lending (Aave, Morpho), yield tokenization (Pendle, Spectra, Equilibria), stableswap (Curve), margin (Ethereal)
-· Evidence: EV-016 to EV-023 सभी April-Mei 2024; ecosystem page terpusat — Phase 3 EV-016 to EV-023, Phase 7 Major Integrations, Phase 7 Applications
-· Supporting Dataset: Phase 3 EV-016 to EV-023, Phase 7 Major Integrations, Phase 7 Applications
+Pola 2: Cross-chain Expansion Sebagai Growth Lever Utama
+· Evidence: 7 chains dalam 3 bulan (Maret-Mei 2024): 5 L2 + BNB Chain via LayerZero OFT (EV-007, EV-008, EV-009), Solana via Wormhole (EV-021); Phase 8 Narrative "Multi-chain Interoperability" sebagai Secondary Narrative
+· Supporting Dataset: Phase 3 EV-007, EV-008, EV-009, EV-021, Phase 8 Narrative Position
 
-Pola 3: Strategic Investor = Operational Partner
-· Decision Pattern: Memilih investor yang menyediakan infrastructure kritis: Deribit/Bybit/OKX (hedging venue), Wintermute/GSR (market making), Copper/Fireblocks (custody)
-· Evidence: The Block investor list; subsequent integration announcements — Phase 2 Entity (Investors), Phase 3 EV-002, Phase 5 Financial Dependencies, Phase 7 Infrastructure Providers
-· Supporting Dataset: Phase 2 Entity, Phase 3 EV-002, Phase 5 Financial Dependencies, Phase 7 Infrastructure Providers
+Pola 3: Institutional Custody Partnership Sebelum Regulatory Clarity
+· Evidence: EV-027 Copper, EV-028 Fireblocks Juli 2024; Phase 5 Financial Risk "Legal/Regulatory Financial Risk" dicatat tapi tidak menghentikan institutional push; Phase 2 Companies Copper/Fireblocks
+· Supporting Dataset: Phase 3 EV-027, EV-028, Phase 5 Financial Risk, Phase 2 Companies
 
-Pola 4: Custody Partnership untuk Institutional Gateway
-· Decision Pattern: Integrasi Copper ClearLoop dan Fireblocks sebagai dual custody provider untuk institutional mint/redeem
-· Evidence: EV-027, EV-028 Juli 2024; blog institutional onboarding — Phase 3 EV-027, EV-028, Phase 7 Infrastructure Providers
-· Supporting Dataset: Phase 3 EV-027, EV-028, Phase 7 Infrastructure Providers
+Pola 4: Market Maker Agreement dengan Strategic Investor (Wintermute, GSR)
+· Evidence: Wintermute dan GSR terdaftar sebagai investor Series A (Phase 2 Investors) DAN market maker (Phase 2 Applications, Phase 7 External Dependencies); Phase 3 EV-002 The Block mention Wintermute
+· Supporting Dataset: Phase 2 Investors, Phase 2 Applications, Phase 3 EV-002, Phase 7 External Dependencies Wintermute/GSR
 
-Pola 5: Incentive-driven Adoption via Seasonal Campaigns
-· Decision Pattern: Season 1 (airdrop pre-TGE), Season 2 "Sats" (post-peak multi-chain incentives), planned Season 3; ENA rewards via DAO proposals
-· Evidence: Blog TGE (Season 1); EV-031 Oct 2024 (Season 2); governance proposals — Phase 3 EV-011, EV-031, Phase 6 Utility, Phase 6 Governance
-· Supporting Dataset: Phase 3 EV-011, EV-031, Phase 6 Utility, Phase 6 Governance
+Pola 5: Ecosystem Allocation (10% ENA) Digunakan untuk Incentive Program Terstruktur (Season 1, Season 2 "Sats")
+· Evidence: Phase 6 Distribution Ecosystem 10%; Phase 3 EV-011 Season 1 airdrop 5% (part of community); EV-031 Season 2 "Sats" campaign Oktober 2024; Phase 6 Utility Incentive live
+· Supporting Dataset: Phase 6 Distribution, Phase 3 EV-011, EV-031, Phase 6 Utility
 
-## Governance Decision Pattern
+Governance Decision Pattern
 
-Pola 1: Off-chain Voting (Snapshot) + On-chain Execution (Timelock)
-· Decision Pattern: Gasless voting di Snapshot (ethena.eth); proposal dieksekusi via timelock 48h oleh guardian/multisig
-· Evidence: Blog TGE; Snapshot space; timelock controller — Phase 3 EV-012, Phase 6 Governance, Phase 4 Security Model
+Pola 1: Off-chain Voting (Snapshot) dengan On-chain Execution (Timelock) Day-1
+· Decision Pattern: DAO launch bersamaan TGE (EV-012) dengan Snapshot gasless voting + 48h timelock execution; tidak ada on-chain voting contract live
+· Evidence: Phase 3 EV-012 DAO Launch; Phase 6 Governance "Snapshot (ERC-20 voting power), timelock controller (48 jam delay)"; Phase 4 Security Model "Timelock controller (48 jam delay) untuk governance-executed changes"
 · Supporting Dataset: Phase 3 EV-012, Phase 6 Governance, Phase 4 Security Model
 
-Pola 2: Progressive Parameter Control via DAO
-· Decision Pattern: Mulai dari parameter risk (insurance fund, funding rate cap EV-030) menuju economic parameter (fee switch EV-033)
-· Evidence: Snapshot proposals executed/discussion — Phase 3 EV-030, EV-033, Phase 6 Governance
+Pola 2: Parameter Update Sebagai First Governance Action (Bukan Treasury Spending)
+· Decision Pattern: Proposal pertama dieksekusi (EV-030 Agustus 2024) adalah parameter update insurance fund dan funding rate cap; bukan treasury allocation atau upgrade kontrak
+· Evidence: Phase 3 EV-030 "Parameter Update Insurance Fund dan Funding Rate Cap"; Phase 6 Governance "Proposal meliputi parameter protokol (fee, insurance fund, collateral factor)"
+· Supporting Dataset: Phase 3 EV-030, Phase 6 Governance
+
+Pola 3: Fee Switch Proposal sebagai Value Capture Mechanism untuk ENA (Diskusi Des 2024)
+· Decision Pattern: Proposal EV-033 mengusulkan aktivasi fee switch dimana staker ENA menerima protocol revenue; masih discussion stage, belum vote
+· Evidence: Phase 3 EV-033 "ENA Tokenomics Update dan Staking Rewards"; Phase 6 Utility Staking "Planned Fee Switch"; Phase 6 Inflation/Deflation "Proposal fee switch membahas distribusi revenue ke staker, bukan buyback"
+· Supporting Dataset: Phase 3 EV-033, Phase 6 Utility, Phase 6 Inflation/Deflation
+
+Pola 4: Delegation Support via Snapshot Standard (No veToken/Quadratic)
+· Decision Pattern: Voting power = ENA balance + delegated ENA; tidak ada vote-escrow (veENA), quadratic voting, atau boost mechanisms
+· Evidence: Phase 6 Governance "Tidak ada quadratic voting atau vote-escrow (veENA) saat ini"; Phase 6 Governance "Delegation: Supported via Snapshot delegation UI"
+· Supporting Dataset: Phase 6 Governance
+
+Pola 5: Guardian/Multisig Emergency Pause Sebelum DAO Maturity
+· Decision Pattern: Admin control via multi-sig (Gnosis Safe) untuk emergency pause; DAO parameter changes via timelock; upgrade authority multisig + timelock
+· Evidence: Phase 4 Security Model "Multi-signature wallet (Gnosis Safe) untuk emergency pause"; Phase 4 Security Model "Upgrade memerlukan timelock + governance approval"
+· Supporting Dataset: Phase 4 Security Model
+
+Risk Response Pattern
+
+Pola 1: Insurance Fund Sebagai Buffer Otomatis untuk Negative Funding Rate
+· Decision Pattern: Protocol mengalokasikan portion yield ke insurance fund contract on-chain; DAO mengatur parameter allocation rate dan funding rate cap via governance (EV-030)
+· Evidence: Phase 4 Core Components Insurance Fund Contract; Phase 3 EV-030 governance parameter update; Phase 5 Financial Risk "Insurance Fund Insufficiency" sebagai risiko; Phase 4 Known Limitations "Funding rate risk - negative funding rate berkelanjutan dapat mengurangi yield sUSDe dan menguras insurance fund"
+· Trigger: Negative funding rate berkelanjutan (bear market)
+· Response: Insurance fund menampung loss; DAO bisa adjust parameter (EV-030)
+· Result: Belum diuji di stress event besar (March 2020 style); fund size tidak transparan (Open Threads Phase 5)
+· Supporting Dataset: Phase 4 Core Components, Phase 3 EV-030, Phase 5 Financial Risk, Phase 4 Known Limitations
+
+Pola 2: Multi-audit Sebagai Preemptive Security Response
+· Decision Pattern: Triple audit (OpenZeppelin, Zellic, Spearbit) Juni 2024 sebelum TVL peak Agustus 2024; bukan reaction to exploit tapi proactive
+· Evidence: Phase 3 EV-024, EV-025, EV-026 Juni 2024; Phase 3 EV-029 TVL peak Agustus 2024; Phase 4 Audit History 3 audits completed
+· Trigger: Pre-mainnet scaling, TVL growth cepat
+· Response: Kontrak 3 auditor paralel untuk coverage komprehensif
+· Result: Audit reports publik, findings addressed, credibility untuk institutional onboarding (EV-027, EV-028 Juli 2024)
+· Supporting Dataset: Phase 3 EV-024, EV-025, EV-026, EV-029, Phase 4 Audit History
+
+Pola 3: CEX Dependency Mitigation via Diversification (Multiple CEX Hedging Venue)
+· Decision Pattern: Hedging engine menggunakan multiple CEX (Deribit, Bybit, OKX, Binance) + DEX (Hyperliquid via Ethereal); tidak single-venue dependency
+· Evidence: Phase 4 Hedging Engine "CEX (Deribit, Bybit, OKX, Binance) dan DEX (Hyperliquid, Vertex)"; Phase 7 External Dependencies Deribit/Bybit/OKX/Binance Critical; Phase 4 Known Limitations "Dependency pada CEX... jika CEX menutup posisi atau API down, hedging engine tidak bisa rebalance"
+· Trigger: CEX API down, regulatory action, liquidity crunch di satu venue
+· Response: Diversifikasi ke multiple venue; Ethereal integration untuk Hyperliquid access (EV-022)
+· Result: Belum diuji simultaneous multi-CEX failure; Hyperliquid/DEX sebagai fallback partial
+· Supporting Dataset: Phase 4 Hedging Engine, Phase 7 External Dependencies, Phase 4 Known Limitations, Phase 3 EV-022
+
+Pola 4: Bridge Risk Acceptance dengan Dual-bridge Strategy (LayerZero + Wormhole)
+· Decision Pattern: Menerima bridge risk sebagai trade-off untuk multi-chain expansion; menggunakan LayerZero OFT (native) untuk EVM dan Wormhole (wrapped) untuk Solana; audit Zellic cover cross-chain
+· Evidence: Phase 4 Known Limitations "Cross-chain messaging risk - LayerZero DVN configuration dan Wormhole Guardian Set menambahkan trust assumptions"; Phase 3 EV-025 Zellic audit cross-chain; Phase 7 External Dependencies LayerZero/Wormhole Critical
+· Trigger: Bridge exploit, DVN/Guardian failure, message passing delay
+· Response: Audit coverage (Zellic); DVN custom config; tidak ada fallback bridge atau emergency pause cross-chain transfer terdocumentasi
+· Result: Risk accepted untuk growth; Solana deployment wrapped token menambah risk layer
+· Supporting Dataset: Phase 4 Known Limitations, Phase 3 EV-025, Phase 7 External Dependencies
+
+Pola 5: Supply Stabilization via Incentive Program (Season 2 "Sats") Post-Peak Correction
+· Decision Pattern: Setelah USDe supply turun dari peak $3.4B (Agustus 2024) ke $2.5-3B, launch Season 2 incentive Oktober 2024 untuk stimulasi demand
+· Evidence: Phase 3 EV-029 Peak Aug 2024; EV-032 Supply stabil $2.5-3B post-koreksi; EV-031 Season 2 "Sats" launch Okt 2024
+· Trigger: Market correction, supply contraction, yield compression
+· Response: Multi-chain incentive program dengan ENA rewards untuk LP dan user protokol partner
+· Result: Supply stabil di rentang $2.5-3B (EV-032); incentive berkelanjutan sebagai growth lever
+· Supporting Dataset: Phase 3 EV-029, EV-031, EV-032, Phase 8 Adoption Metrics
+
+Recurring Behavioral Pattern
+
+Pola 1: Speed-to-Market dengan MVP Lalu Iterate via Governance/Integration
+· Evidence: Mainnet launch Feb 2024 (EV-005) dengan core features only; DAO launch day-1 TGE (EV-011/012); 7 DeFi integrasi dalam 2 bulan (EV-016 to EV-023); 7 chains dalam 3 bulan (EV-007/008/009/021); parameter update via governance 4 bulan post-launch (EV-030); fee switch proposal 8 bulan post-launch (EV-033)
+· Supporting Dataset: Phase 3 EV-005, EV-011, EV-012, EV-016 to EV-023, EV-007, EV-008, EV-009, EV-021, EV-030, EV-033
+
+Pola 2: Strategic Investor Selection untuk Dual Purpose (Capital + Liquidity/Infrastructure)
+· Evidence: Series A investors include Deribit, Bybit, OKX (CEX futures liquidity), Wintermute, GSR (market making), Copper, Fireblocks (custody infrastructure) — semua juga menjadi operational dependency (Phase 2 Investors, Phase 7 External Dependencies)
+· Supporting Dataset: Phase 2 Investors, Phase 3 EV-002, Phase 7 External Dependencies, Phase 5 Financial Dependencies
+
+Pola 3: Multi-chain Expansion sebagai Primary Growth Vector Post-PMF
+· Evidence: Setelah Ethereum mainnet PMF (TVL growth), immediate expansion: LayerZero OFT ke 6 EVM chains Maret 2024, Wormhole Solana Mei 2024; Season 2 "Sats" multi-chain incentive Okt 2024
+· Supporting Dataset: Phase 3 EV-007, EV-008, EV-009, EV-021, EV-031, Phase 8 Market Timeline
+
+Pola 4: DeFi Composability via Integration dengan Primitive Terbesar per Kategori
+· Evidence: Lending: Aave (largest pooled) + Morpho (largest isolated); Yield Tokenization: Pendle (largest) + Spectra; Stableswap: Curve (largest); Margin: Ethereal (Hyperliquid ecosystem); Auto-compound: Equilibria (on Pendle)
+· Supporting Dataset: Phase 3 EV-016 to EV-023, Phase 7 Major Integrations, Phase 8 Competitor Landscape
+
+Pola 5: Governance Parameter Tuning Sebagai Primary DAO Activity (Bukan Treasury Management)
+· Evidence: EV-030 first executed proposal = parameter update; EV-033 discussion = fee switch parameter; tidak ada treasury spending proposal tercatat di Phase 3
 · Supporting Dataset: Phase 3 EV-030, EV-033, Phase 6 Governance
 
-Pola 3: Community Incentive Allocation via Governance
-· Decision Pattern: ENA ecosystem/community allocation (25%+10% = 35%) didistribusikan melalui DAO proposals per program/season
-· Evidence: Tokenomics; Season 2 proposal; governance forum — Phase 6 Distribution, Phase 3 EV-031, Phase 6 Governance
-· Supporting Dataset: Phase 6 Distribution, Phase 3 EV-031, Phase 6 Governance
+Strategic Trade-offs
 
-Pola 4: Delegation-enabled Voting Power
-· Decision Pattern: Snapshot delegation support; 1 ENA = 1 vote; no quadratic/ve tokenomics yet
-· Evidence: Snapshot UI delegation; governance docs — Phase 6 Governance, Phase 2 Entity (Ethena DAO)
-· Supporting Dataset: Phase 6 Governance, Phase 2 Entity
+Trade-off 1: Desentralisasi Hedging Execution vs Scalability & Capital Efficiency
+· Decision: Hedging engine off-chain centralized (Wintermute, GSR, tim Ethena) menggunakan CEX API; bukan on-chain automated via DEX
+· Trade-off: Mengorbankan desentralisasi dan trust-minimization untuk latency rendah, liquidity tinggi, dan capital efficiency (tidak perlu overcollateralize hedging positions)
+· Evidence: Phase 4 Hedging Engine "Off-chain/On-chain Hybrid"; Phase 4 Known Limitations "Centralized hedging execution... menimbulkan counterparty risk dan kebutuhan trust"; Phase 7 External Dependencies Deribit/Bybit/Binance/OKX Critical
+· Supporting Dataset: Phase 4 Core Components, Phase 4 Known Limitations, Phase 7 External Dependencies
 
-## Risk Response Pattern
+Trade-off 2: Cross-chain Native (LayerZero OFT) vs Bridge Risk (Wormhole Wrapped) untuk Solana
+· Decision: EVM chains pakai OFT native; Solana pakai Wormhole wrapped token
+· Trade-off: Mengorbankan security uniformity dan native UX di Solana untuk speed-to-market dan akses ekosistem Solana DeFi
+· Evidence: Phase 3 EV-007 LayerZero OFT native; EV-021 Wormhole wrapped; Phase 4 Known Limitations "Solana deployment menggunakan wrapped token via Wormhole... menambahkan bridge risk dan tidak memiliki hedging engine native di Solana"
+· Supporting Dataset: Phase 3 EV-007, EV-021, Phase 4 Known Limitations, Phase 4 Cross-chain Messaging
 
-Pola 1: Insurance Fund untuk Negative Funding Rate Event
-· Decision Pattern: On-chain insurance fund mengakumulasi protocol yield sebagai buffer; parameter update via governance (EV-030)
-· Trigger: Negative funding rate berkelanjutan (bear market) mengurangi yield sUSDe dan menguras reserve
-· Response: Allocate portion yield ke insurance fund; DAO dapat update allocation rate dan funding rate cap
-· Result: Fund live; parameter updated Aug 2024; size real-time tidak transparan
-· Supporting Dataset: Phase 4 Core Components (Insurance Fund Contract), Phase 3 EV-030, Phase 5 Financial Risk, Phase 4 Known Technical Limitations
+Trade-off 3: Fixed Supply Token (No Inflation) vs Ongoing Incentive Budget (Ecosystem Allocation + Fee Switch)
+· Decision: ENA fixed 100M, no inflation, no burn; incentive dari ecosystem allocation (10%) dan future fee switch
+· Trade-off: Mengorbankan sustainable incentive budget tanpa token emissions untuk token scarcity narrative; bergantung protocol revenue capture via fee switch (belum live) dan finite ecosystem allocation
+· Evidence: Phase 6 Inflation/Deflation "Fixed Supply, No Inflation, No Burn"; Phase 6 Distribution Ecosystem 10%; Phase 3 EV-031 Season 2 menggunakan ENA rewards; Phase 3 EV-033 fee switch proposal
+· Supporting Dataset: Phase 6 Inflation/Deflation, Phase 6 Distribution, Phase 3 EV-031, EV-033
 
-Pola 2: Multi-audit + Bug Bounty (Planned) untuk Security Risk
-· Decision Pattern: Triple audit pre/post mainnet; bug bounty program tidak diverifikasi publik (Immunefi)
-· Trigger: Smart contract risk, upgradeability risk, cross-chain bridge risk
-· Response: Engage OpenZeppelin, Zellic, Spearbit; UUPS dengan timelock; monitoring tidak dipublikasikan
-· Result: Audit reports published; no major exploit to date
-· Supporting Dataset: Phase 3 EV-024, EV-025, EV-026, Phase 4 Audit History, Phase 4 Security Model, Phase 4 Known Technical Limitations
+Trade-off 4: Institutional Custody Integration vs Permissionless Ethos
+· Decision: Partner Copper ClearLoop dan Fireblocks untuk institutional onboarding; memerlukan KYC/AML, bukan permissionless
+· Trade-off: Mengorbankan fully permissionless access untuk institutional capital dan compliance readiness
+· Evidence: Phase 3 EV-027, EV-028; Phase 7 Infrastructure Providers Copper/Fireblocks; Phase 5 Financial Risk "Legal/Regulatory Financial Risk"; Phase 8 Narrative "Institutional Onboarding" Secondary Narrative
+· Supporting Dataset: Phase 3 EV-027, EV-028, Phase 7 Infrastructure Providers, Phase 5 Financial Risk, Phase 8 Narrative Position
 
-Pola 3: Diversified Hedging Venues (Multi-CEX + DEX) untuk Counterparty Risk
-· Decision Pattern: Hedging engine menggunakan multiple CEX (Deribit, Bybit, OKX, Binance) + DEX (Hyperliquid via Ethereal)
-· Trigger: Single CEX failure (API down, regulatory action, liquidity crunch)
-· Response: Multi-venue execution; market maker partnerships (Wintermute, GSR)
-· Result: Operational redundancy; but tetap centralized execution dependency
-· Supporting Dataset: Phase 4 Core Components (Hedging Engine), Phase 2 Entity (Deribit, Bybit, OKX, Binance, Wintermute, GSR), Phase 4 Known Technical Limitations
+Trade-off 5: DAO Governance Off-chain (Snapshot) vs On-chain Execution Security
+· Decision: Voting off-chain gasless via Snapshot; execution on-chain via timelock; tidak ada on-chain voting contract
+· Trade-off: Mengorbankan on-chain vote verifiability dan censorship resistance untuk UX (gasless) dan participation rate; timelock sebagai security mitigation
+· Evidence: Phase 6 Governance "Off-chain voting via Snapshot... on-chain execution melalui Timelock Controller"; Phase 4 Security Model "Timelock controller (48 jam delay) untuk governance-executed changes"
+· Supporting Dataset: Phase 6 Governance, Phase 4 Security Model
 
-Pola 4: Emergency Pause via Multisig untuk Critical Failure
-· Decision Pattern: Admin control via Gnosis Safe multisig untuk emergency pause; timelock untuk governance changes
-· Trigger: Critical bug, oracle manipulation, bridge exploit
-· Response: Multisig dapat pause mint/redeem/hedging; timelock 48h untuk upgrade
-· Result: Mechanism exists; not tested in production
-· Supporting Dataset: Phase 4 Security Model, Phase 4 Known Technical Limitations, Phase 2 Entity (Ethena Labs Ltd.)
+Trade-off 6: Transparency Treasury vs Competitive Opacity
+· Decision: Tidak mempublikasikan treasury composition, size, management; tidak ada transparency report
+· Trade-off: Mengorbankan community trust dan accountability untuk competitive advantage (tidak reveal runway, strategy, holdings ke competitor)
+· Evidence: Phase 5 Treasury "tidak diungkap"; Phase 5 Official Financial Resources "Transparency Report: tidak tersedia, Treasury Dashboard: tidak tersedia"; Phase 6 Distribution Foundation 15% tanpa detail usage
+· Supporting Dataset: Phase 5 Treasury, Phase 5 Official Financial Resources, Phase 6 Distribution
 
-Pola 5: Cross-chain Risk Mitigation via Auditor Specialization
-· Decision Pattern: Zellic audit khusus cross-chain (LayerZero OFT, Wormhole); DVN configuration custom
-· Trigger: Bridge exploit risk (LayerZero DVN, Wormhole Guardian Set)
-· Response: Dedicated cross-chain audit; custom DVN config; monitoring via LayerZero Scan/Wormhole Scan
-· Result: Audit completed; config live; ongoing dependency risk
-· Supporting Dataset: Phase 3 EV-025, Phase 4 Audit History, Phase 4 Cross-chain Messaging, Phase 4 Known Technical Limitations
+Behavioral Summary
 
-## Recurring Behavioral Pattern
+Prioritas Utama Proyek:
+1. Product-market fit synthetic dollar (USDe) via delta-neutral hedging — achieved Feb 2024 mainnet
+2. Yield primitive adoption (sUSDe) via DeFi composability — achieved via 7 major integrations Q2 2024
+3. Multi-chain distribution untuk liquidity dan user acquisition — achieved 7 chains Q2 2024
+4. Governance decentralization — launched day-1 TGE, first parameter update Aug 2024
+5. Institutional onboarding — custody integrations Jul 2024
+6. Token value capture — fee switch proposal Dec 2024 (in progress)
 
-Pola 1: Parallel Execution Across All Tracks (Tech, BD, Legal, Marketing)
-· Decision Pattern: Setiap milestone major diikuti simultaneous execution: mainnet launch + sUSDe + blog + docs; TGE + DAO + CEX listings + Launchpool; integrations batch 7 protokol sekaligus
-· Evidence: Timeline Phase 3 menunjukkan clustering events dalam minggu/bulan yang sama — Phase 3 (all events), Phase 8 Market Timeline
-· Supporting Dataset: Phase 3, Phase 8 Market Timeline
+Cara Mengambil Keputusan:
+- Founder-led strategic direction (Guy Young) dengan operational execution oleh core contributors
+- Data-driven parameter tuning (governance proposals berdasarkan protocol metrics)
+- Speed-first: deploy MVP, iterate via governance dan integration
+- Strategic investor alignment: pilih investor yang juga operational dependency
+- Risk acceptance dengan mitigation: bridge risk, CEX dependency, centralized hedging diterima tapi didiversifikasi/diaudit
 
-Pola 2: Strategic Investor Selection untuk Operational Synergy
-· Decision Pattern: Setiap investor Series A memiliki peran operasional: Deribit/Bybit/OKX (hedging venue), Wintermute/GSR (market making), Copper/Fireblocks (custody), Dragonfly (strategic), Arthur Hayes (advisor)
-· Evidence: Investor list vs subsequent integration announcements — Phase 2 Entity (Investors), Phase 3 EV-002, Phase 5 Financial Dependencies, Phase 7 Infrastructure Providers
-· Supporting Dataset: Phase 2 Entity, Phase 3 EV-002, Phase 5 Financial Dependencies, Phase 7 Infrastructure Providers
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Capital efficiency dan scalability (hedging engine design, cross-chain choice)
+2. DeFi composability (integration priority dengan primitive terbesar)
+3. Investor/partner strategic value (beyond capital: liquidity, custody, market making)
+4. Time-to-market (parallel execution: multi-chain, multi-integration, multi-audit)
+5. Regulatory pragmatism (BVI entity, institutional custody, no public sale)
 
-Pola 3: Governance-first Token Launch (DAO Active at TGE)
-· Decision Pattern: Tidak seperti banyak protokol yang delay governance; Ethena launch DAO + timelock + Snapshot di hari TGE yang sama
-· Evidence: EV-011 (TGE) dan EV-012 (DAO launch) same date 2024-04-02 — Phase 3 EV-011, EV-012, Phase 6 Governance
-· Supporting Dataset: Phase 3 EV-011, EV-012, Phase 6 Governance
+Pola Evolusi:
+- Phase 0 (2023): Founding, fundraising, vision setting
+- Phase 1 (Feb-Apr 2024): Core product launch (USDe, sUSDe, ENA, DAO) — Ethereum only
+- Phase 2 (Mar-May 2024): Explosive horizontal scaling — 7 chains, 7 DeFi integrations, 3 audits
+- Phase 3 (Jun-Aug 2024): Security hardening, institutional infra, TVL peak
+- Phase 4 (Aug-Dec 2024): Governance maturation, supply stabilization, value capture proposal
 
-Pola 4: Composability-first Product Design (sUSDe sebagai Primitive)
-· Decision Pattern: sUSDe dirancang dari awal sebagai ER
+Kekuatan Utama:
+- Delta-neutral architecture unik dan scalable (bukan overcollateralized)
+- DeFi composability network effect (sUSDe sebagai yield primitive terintegrasi luas)
+- Strategic investor alignment menciptakan moat liquidity dan infrastructure
+- Multi-chain native deployment (LayerZero OFT) bukan wrapped token di EVM
+- Governance live day-1 dengan real parameter control
+- Triple audit pre-scaling memberikan credibility institutional
+
+Kelemahan Utama:
+- Centralized hedging execution (single point of failure, trust requirement)
+- CEX dependency untuk liquidity perp futures (counterparty, regulatory risk)
+- Bridge risk dual-bridge (LayerZero DVN + Wormhole Guardian) tanpa emergency circuit breaker terdocumentasi
+- Treasury opacity (no transparency report, dashboard)
+- Large vesting cliff April 2025 (45% supply) — potential sell pressure
+- Fee switch belum live — ENA value capture speculative
+- Insurance fund size tidak transparan — unknown loss absorption capacity
+- No on-chain voting contract — Snapshot dependency
+- Solana deployment wrapped-only — fragmented liquidity, no native hedging
+
+Open Threads
+
+- Exact legal entity structure beyond "Ethena Labs Ltd. (BVI)" — whether additional operating entities (Cayman, Singapore) exist (Phase 2 Open Threads)
+- Full core team headcount dan apakah "core contributors" list exhaustive (Phase 2 Open Threads)
+- Testnet launch specifics: public testnet before private beta Jan 2024? (Phase 2 Open Threads)
+- ENA token contract deployments on non-EVM chains (Solana via Wormhole — native SPL atau wrapped?) (Phase 2 Open Threads)
+- Official governance forum canonical URL (governance.ethena.fi vs snapshot.org) (Phase 2 Open Threads)
+- "Internet Bond" distinct product brand vs marketing term untuk sUSDe yield (Phase 2 Open Threads)
+- Complete Series A investor list beyond 7 named (additional angels?) (Phase 2 Open Threads)
+- Auditor rotation policy (ongoing vs one-time) (Phase 2 Open Threads)
+- Market maker exclusivity arrangements (Wintermute/GSR formal agreements?) (Phase 2 Open Threads)
+- Custody provider coverage beyond Copper/Fireblocks (Anchorage, BitGo?) (Phase 2 Open Threads)
+- Chainlink oracle feed addresses specific per chain (Phase 4 Open Threads)
+- DeFi integration revenue sharing/incentive arrangements detail (Phase 4 Open Threads)
+- Regulatory status USDe di major jurisdictions (US, EU, UK, SG) — no public legal opinion (Phase 4 Open Threads)
+- ENA token unlock schedule monthly detail untuk team/investors (Phase 4 Open Threads)
+- Insurance fund size real-time dan management (Phase 4 Open Threads, Phase 5 Open Threads)
+- Cross-chain messaging risk: LayerZero DVN config, Wormhole guardian set untuk Ethena (Phase 4 Open Threads)
+- Hedging engine off-chain technical detail: architecture, failure recovery, latency SLA (Phase 4 Open Threads)
+- Bug bounty program resmi (Immunefi?) — reward tier, scope (Phase 4 Open Threads)
+- Monitoring/alerting stack (Tenderly, Forta, custom) (Phase 4 Open Threads)
+- Formal verification status (Certora/Run?) (Phase 4 Open Threads)
+- Disaster recovery/emergency shutdown procedure detail (Phase 4 Open Threads)
+- Cross-chain rebalancing mechanism: USDe supply dan backing collateral balance antar chain (Phase 4 Open Threads)
+- sUSDe ERC-4626 compliance detail (Phase 4 Open Threads)
+- Insurance fund investment strategy (idle vs deployed ke Aave/Morpho) (Phase 4 Open Threads, Phase 5 Open Threads)
+- Pre-seed/angel funding amount sebelum Series A (Phase 5 Open Threads)
+- Series A valuation (Phase 5 Open Threads)
+- Treasury composition real-time (Phase 5 Open Threads)
+- Monthly burn rate Ethena Labs Ltd. (Phase 5 Open Threads)
+- Runway calculation (Phase 5 Open Threads)
+- Protocol fee revenue historical aggregation (Phase 5 Open Threads)
+- Ecosystem foundation grants (Arbitrum, Optimism, Base, EF?) (Phase 5 Open Threads)
+- Legal/compliance cost (Phase 5 Open Threads)
+- Audit costs (Phase 5 Open Threads)
+- Market maker agreement terms (fee/rebate?) (Phase 5 Open Threads)
+- Custody fee arrangement Copper/Fireblocks (Phase 5 Open Threads)
+- DAO treasury management strategy (invested ke Aave/Morpho?) (Phase 5 Open Threads)
+- Cross-chain messaging fee revenue share dengan LayerZero/Wormhole (Phase 5 Open Threads)
+- Regulatory reserve/fine provision (Phase 5 Open Threads)
+- Real-time DAU/transaction count/unique users mint/redeem/stake (Phase 8 Open Threads)
+- Developer count (Electric Capital/GitHub) specific Ethena (Phase 8 Open Threads)
+- Bridge volume aggregated LayerZero/Wormhole (Phase 8 Open Threads)
+- ENA token velocity/turnover metrics (Phase 8 Open Threads)
+- Institutional adoption metrics (count, volume via Copper/Fireblocks) (Phase 8 Open Threads)
+- Revenue breakdown (protocol fees vs yield to sUSDe vs insurance fund) (Phase 8 Open Threads)
+- Competitor TVL/yield comparison real-time (Phase 8 Open Threads)
+- Geographic user distribution (Phase 8 Open Threads)
+- Derivatives open interest ENA perp across CEX aggregated (Phase 8 Open Threads)
+- ENA staking participation rate (if fee switch activated) (Phase 8 Open Threads)
+- Regulatory impact on market access (US persons restricted? KYC for mint?) (Phase 8 Open Threads)

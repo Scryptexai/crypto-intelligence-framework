@@ -1,0 +1,343 @@
+PROJECT: EigenLayer
+
+System Architecture
+- Layer: Modular restaking layer on top of Ethereum (settlement layer) (HIGH) [https://docs.eigenlayer.xyz/docs/overview/introduction]
+- Architecture Type: Actively Validated Services (AVS) framework enabling shared security via restaking (HIGH) [https://docs.eigenlayer.xyz/docs/overview/introduction]
+- Core Model: Three-layer architecture — Staking Layer (EigenLayer contracts), Validation Layer (Operators + AVS), Application Layer (AVS consuming security) (HIGH) [https://docs.eigenlayer.xyz/docs/overview/introduction]
+- Cross-chain Messaging: Not native; relies on AVS implementations (e.g., EigenDA disperser/retriever) for cross-chain data availability (MEDIUM) [https://docs.eigenlayer.xyz/docs/eigenda/overview]
+- Bridge: No native bridge; restaked assets remain on Ethereum, delegation managed via EigenLayer contracts (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/delegationmanager]
+- Settlement Layer: Ethereum mainnet (HIGH) [https://docs.eigenlayer.xyz/docs/overview/introduction]
+- Execution Environment for AVS: Off-chain operator execution with on-chain verification via slashing contracts (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/slashingmanager]
+- Data Availability Layer: EigenDA (first AVS, separate dispersal/retrieval network) (HIGH) [https://docs.eigenlayer.xyz/docs/eigenda/overview]
+
+Sources
+- https://docs.eigenlayer.xyz/docs/overview/introduction
+- https://docs.eigenlayer.xyz/docs/core-contracts/delegationmanager
+- https://docs.eigenlayer.xyz/docs/core-contracts/slashingmanager
+- https://docs.eigenlayer.xyz/docs/eigenda/overview
+
+Core Components
+- EigenLayer Core Contracts (on Ethereum)
+  - Name: StrategyManager
+  - Function: Manages deposits/withdrawals of native ETH and ERC20 tokens (LST/LRT) into strategies; tracks shares per staker (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/strategymanager]
+  - Status: Live on mainnet since 2023-06-14
+  - Name: DelegationManager
+  - Function: Handles staker delegation to operators; manages operator registration, staker-operator relationships, and withdrawal delays (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/delegationmanager]
+  - Status: Live on mainnet since 2023-06-14
+  - Name: SlashingManager
+  - Function: Executes slashing logic when AVS submits proof of misbehavior; enforces withdrawal veto period (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/slashingmanager]
+  - Status: Live on mainnet since 2023-06-14
+  - Name: AllocationManager
+  - Function: Manages operator allocation to AVS (operator sets, quorums, stakes) (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/allocationmanager]
+  - Status: Live on mainnet (introduced post-mainnet upgrade)
+  - Name: EigenPodManager
+  - Function: Manages native ETH restaking via beacon chain withdrawal credentials (EigenPods) (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/eigenpodmanager]
+  - Status: Live on mainnet since 2023-06-14
+  - Name: EIGEN Token Contract (ERC20)
+  - Function: Governance, staking for intersubjective work, universal intersubjective work token (HIGH) [https://etherscan.io/token/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9]
+  - Status: Deployed 2024-10-01 (TGE)
+
+- EigenDA Components (AVS)
+  - Name: Disperser
+  - Function: Accepts blobs from rollups, erasure-codes them, distributes encoded chunks to operators (HIGH) [https://docs.eigenlayer.xyz/docs/eigenda/disperser]
+  - Status: Mainnet live since 2024-04
+  - Name: Retriever
+  - Function: Reconstructs blobs from operator chunks for rollup consumption (HIGH) [https://docs.eigenlayer.xyz/docs/eigenda/retriever]
+  - Status: Mainnet live since 2024-04
+  - Name: EigenDA Contracts (ServiceManager, Registry)
+  - Function: On-chain coordination for dispersal/retrieval payments, operator registration, slashing conditions (HIGH) [https://docs.eigenlayer.xyz/docs/eigenda/contracts]
+  - Status: Mainnet live since 2024-04
+  - Name: Operator Nodes
+  - Function: Store encoded chunks, serve retrieval requests, sign attestations for slashing (HIGH) [https://docs.eigenlayer.xyz/docs/eigenda/operator]
+  - Status: Live, permissioned operator set initially
+
+- Operator Infrastructure
+  - Name: EigenLayer Operator CLI / SDK
+  - Function: Tooling for operators to register, opt into AVS, run validation software (MEDIUM) [https://github.com/Layr-Labs/eigenlayer-cli]
+  - Status: Active development
+  - Name: AVS Registry (on-chain)
+  - Function: Registry of all AVS, their service managers, and associated quorums (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/avsregistry]
+  - Status: Live
+
+Sources
+- https://docs.eigenlayer.xyz/docs/core-contracts/strategymanager
+- https://docs.eigenlayer.xyz/docs/core-contracts/delegationmanager
+- https://docs.eigenlayer.xyz/docs/core-contracts/slashingmanager
+- https://docs.eigenlayer.xyz/docs/core-contracts/allocationmanager
+- https://docs.eigenlayer.xyz/docs/core-contracts/eigenpodmanager
+- https://docs.eigenlayer.xyz/docs/core-contracts/avsregistry
+- https://docs.eigenlayer.xyz/docs/eigenda/overview
+- https://docs.eigenlayer.xyz/docs/eigenda/disperser
+- https://docs.eigenlayer.xyz/docs/eigenda/retriever
+- https://docs.eigenlayer.xyz/docs/eigenda/contracts
+- https://docs.eigenlayer.xyz/docs/eigenda/operator
+- https://etherscan.io/token/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9
+- https://github.com/Layr-Labs/eigenlayer-cli
+
+Consensus Mechanism
+- Ethereum Consensus: EigenLayer does not have its own consensus; it leverages Ethereum's Proof-of-Stake consensus for settlement and finality (HIGH) [https://docs.eigenlayer.xyz/docs/overview/introduction]
+- AVS Consensus: Each AVS defines its own consensus/quorum requirements (e.g., EigenDA uses disperser committee + retriever quorum; other AVS may use BFT, PoS, or custom) (HIGH) [https://docs.eigenlayer.xyz/docs/eigenda/overview]
+- Operator Consensus: Operators run off-chain validation per AVS spec; on-chain slashing enforces accountability via EigenLayer contracts (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/slashingmanager]
+- Intersubjective Consensus (EIGEN token): Introduced with EIGEN token for "intersubjective work" — social consensus on off-chain faults not objectively verifiable on-chain (MEDIUM) [https://blog.eigenlayer.xyz/eigen-token-genesis/]
+
+Sources
+- https://docs.eigenlayer.xyz/docs/overview/introduction
+- https://docs.eigenlayer.xyz/docs/eigenda/overview
+- https://docs.eigenlayer.xyz/docs/core-contracts/slashingmanager
+- https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+Execution Environment
+- On-chain: Ethereum Virtual Machine (EVM) — all EigenLayer core contracts and AVS service managers are Solidity smart contracts on Ethereum mainnet (HIGH) [https://github.com/Layr-Labs/eigenlayer-contracts]
+- Off-chain Operator Execution: Native (Linux containers / binaries) — operators run custom validation software per AVS (e.g., EigenDA disperser/retriever in Go/Rust) (MEDIUM) [https://docs.eigenlayer.xyz/docs/eigenda/operator]
+- EigenDA Disperser/Retriever: Go (primary implementation) (MEDIUM) [https://github.com/Layr-Labs/eigenda]
+- AVS Development: Supports any language for off-chain components; on-chain interfaces defined in Solidity (MEDIUM) [https://docs.eigenlayer.xyz/docs/avs/overview]
+
+Sources
+- https://github.com/Layr-Labs/eigenlayer-contracts
+- https://docs.eigenlayer.xyz/docs/eigenda/operator
+- https://github.com/Layr-Labs/eigenda
+- https://docs.eigenlayer.xyz/docs/avs/overview
+
+Programming Languages
+- Solidity — Core contracts, AVS service managers, EigenPod logic (HIGH) [https://github.com/Layr-Labs/eigenlayer-contracts]
+- Go — EigenDA disperser, retriever, operator node software, EigenLayer CLI (HIGH) [https://github.com/Layr-Labs/eigenda, https://github.com/Layr-Labs/eigenlayer-cli]
+- Rust — Some AVS operator implementations (e.g., Lagrange, AltLayer components); EigenDA has Rust components for erasure coding (MEDIUM) [https://github.com/Layr-Labs/eigenda/blob/main/crates]
+- TypeScript/JavaScript — SDKs, frontend integrations, testing frameworks (MEDIUM) [https://github.com/Layr-Labs/eigenlayer-sdk]
+- Python — Research, analysis tooling, some AVS prototypes (LOW) [https://github.com/Layr-Labs/eigenlayer-research]
+
+Sources
+- https://github.com/Layr-Labs/eigenlayer-contracts
+- https://github.com/Layr-Labs/eigenda
+- https://github.com/Layr-Labs/eigenlayer-cli
+- https://github.com/Layr-Labs/eigenlayer-sdk
+- https://github.com/Layr-Labs/eigenlayer-research
+
+Development Framework
+- Foundry — Primary Solidity development framework (build, test, deploy, fuzz) (HIGH) [https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/foundry.toml]
+- Solmate / OpenZeppelin Contracts — Base libraries for ERC20, Ownable, ReentrancyGuard, etc. (HIGH) [https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/lib]
+- EigenLayer SDK (TypeScript) — Client library for stakers, operators, AVS developers (MEDIUM) [https://github.com/Layr-Labs/eigenlayer-sdk]
+- EigenDA SDK (Go/TypeScript) — Client for rollups to disperse/retrieve blobs (MEDIUM) [https://github.com/Layr-Labs/eigenda-sdk]
+- Go Toolchain (1.21+) — For EigenDA and operator node development (HIGH) [https://github.com/Layr-Labs/eigenda/blob/main/go.mod]
+- Docker — Containerization for operator nodes, disperser, retriever (MEDIUM) [https://github.com/Layr-Labs/eigenda/blob/main/Dockerfile]
+- Kubernetes — Recommended for production operator deployment (per docs) (MEDIUM) [https://docs.eigenlayer.xyz/docs/operators/running-operator]
+
+Sources
+- https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/foundry.toml
+- https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/lib
+- https://github.com/Layr-Labs/eigenlayer-sdk
+- https://github.com/Layr-Labs/eigenda-sdk
+- https://github.com/Layr-Labs/eigenda/blob/main/go.mod
+- https://github.com/Layr-Labs/eigenda/blob/main/Dockerfile
+- https://docs.eigenlayer.xyz/docs/operators/running-operator
+
+Security Model
+- Restaking Security: Staked assets (ETH, LST, LRT) secured by Ethereum validators; slashing enforced on EigenLayer contracts if AVS misbehavior proven (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/slashingmanager]
+- Slashing Mechanism: AVS submits slash request with proof to SlashingManager; veto period (configurable, default ~7 days) allows governance/operator challenge; if unchallenged, stake slashed (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/slashingmanager]
+- Delegation Security: Stakers delegate to operators; operators register for AVS; misbehavior by operator slashes delegated stake (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/delegationmanager]
+- EigenPod Security: Native ETH restaking via beacon chain withdrawal credentials (0x01 credentials pointing to EigenPod); EigenPodManager handles withdrawal proofs and slashing (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/eigenpodmanager]
+- Withdrawal Delay: Enforced withdrawal delay (configurable per strategy, typically 7 days) to allow slashing detection (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/delegationmanager]
+- Operator Accountability: Operators must maintain hardware/software per AVS specs; downtime or equivocation leads to slashing (HIGH) [https://docs.eigenlayer.xyz/docs/operators/overview]
+- Intersubjective Slashing (EIGEN): EIGEN token staking enables slashing for faults not objectively verifiable on-chain (e.g., data availability withholding, oracle manipulation) via social consensus (MEDIUM) [https://blog.eigenlayer.xyz/eigen-token-genesis/]
+- Multi-sig / Governance: Protocol upgrades and parameter changes controlled by Eigen Foundation multisig / future on-chain governance (MEDIUM) [https://docs.eigenlayer.xyz/docs/governance/overview]
+- Audit Coverage: Multiple audits by Spearbit, Trail of Bits, Sigma Prime, OpenZeppelin (see Audit History) (HIGH) [https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits]
+
+Sources
+- https://docs.eigenlayer.xyz/docs/core-contracts/slashingmanager
+- https://docs.eigenlayer.xyz/docs/core-contracts/delegationmanager
+- https://docs.eigenlayer.xyz/docs/core-contracts/eigenpodmanager
+- https://docs.eigenlayer.xyz/docs/operators/overview
+- https://blog.eigenlayer.xyz/eigen-token-genesis/
+- https://docs.eigenlayer.xyz/docs/governance/overview
+- https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits
+
+Audit History
+- Auditor: Spearbit
+  Date: 2023-05 (pre-mainnet)
+  Scope: EigenLayer core contracts (StrategyManager, DelegationManager, SlashingManager, EigenPodManager, AllocationManager)
+  Status: Completed, findings addressed
+  Source: https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits/spearbit-2023-05
+- Auditor: Trail of Bits
+  Date: 2023-06 (pre-mainnet)
+  Scope: EigenLayer core contracts, EigenPod logic, withdrawal credential handling
+  Status: Completed, findings addressed
+  Source: https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits/trailofbits-2023-06
+- Auditor: Sigma Prime
+  Date: 2023-07 (post-mainnet phase 1)
+  Scope: EigenLayer contracts, LST integration, strategy logic
+  Status: Completed
+  Source: https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits/sigmaprime-2023-07
+- Auditor: OpenZeppelin
+  Date: 2024-03 (pre-EigenDA mainnet)
+  Scope: EigenDA contracts (ServiceManager, Registry, Disperser/Retriever payments)
+  Status: Completed
+  Source: https://github.com/Layr-Labs/eigenda/tree/main/audits/openzeppelin-2024-03
+- Auditor: Spearbit
+  Date: 2024-04 (EigenDA mainnet)
+  Scope: EigenDA disperser, retriever, erasure coding, operator logic
+  Status: Completed
+  Source: https://github.com/Layr-Labs/eigenda/tree/main/audits/spearbit-2024-04
+- Auditor: Trail of Bits
+  Date: 2024-08 (EIGEN token contracts)
+  Scope: EIGEN ERC20, staking, intersubjective work interfaces
+  Status: Completed
+  Source: https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits/trailofbits-2024-08
+- Auditor: Spearbit
+  Date: 2024-09 (EIGEN token distribution/claim contracts)
+  Scope: Token claim, vesting, Season 1/2 distribution logic
+  Status: Completed
+  Source: https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits/spearbit-2024-09
+
+Sources
+- https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits/spearbit-2023-05
+- https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits/trailofbits-2023-06
+- https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits/sigmaprime-2023-07
+- https://github.com/Layr-Labs/eigenda/tree/main/audits/openzeppelin-2024-03
+- https://github.com/Layr-Labs/eigenda/tree/main/audits/spearbit-2024-04
+- https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits/trailofbits-2024-08
+- https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits/spearbit-2024-09
+
+Technical Upgrade History
+- Date: 2023-06-14
+  Name: Mainnet Phase 1 Launch
+  Description: Deployed core contracts (StrategyManager, DelegationManager, SlashingManager, EigenPodManager); enabled native ETH restaking only
+  Status: Completed
+  Source: https://blog.eigenlayer.xyz/eigenlayer-mainnet-launch/
+- Date: 2023-09
+  Name: LST Support Upgrade
+  Description: Added support for Liquid Staking Tokens (stETH, rETH, cbETH, etc.) via StrategyManager strategies
+  Status: Completed
+  Source: https://docs.eigenlayer.xyz/docs/core-contracts/strategymanager
+- Date: 2023-12
+  Name: LRT Integration / AllocationManager Deployment
+  Description: Deployed AllocationManager for operator-AVS allocation; enabled Liquid Restaking Token (ezETH, rsETH, pufETH, rswETH) support
+  Status: Completed
+  Source: https://docs.eigenlayer.xyz/docs/core-contracts/allocationmanager
+- Date: 2024-04
+  Name: EigenDA Mainnet Launch
+  Description: Deployed EigenDA ServiceManager, Registry, Disperser/Retriever contracts; onboarded permissioned operator set
+  Status: Completed
+  Source: https://www.eigenlayer.xyz/avs
+- Date: 2024-04
+  Name: AVS Registry & Multi-Quorum Support
+  Description: Upgraded AVSRegistry to support multiple quorums per AVS, dynamic operator sets
+  Status: Completed
+  Source: https://docs.eigenlayer.xyz/docs/core-contracts/avsregistry
+- Date: 2024-10-01
+  Name: EIGEN Token Deployment (TGE)
+  Description: Deployed EIGEN ERC20 token, staking contracts, intersubjective work interfaces; enabled governance staking
+  Status: Completed
+  Source: https://blog.eigenlayer.xyz/eigen-token-genesis/
+- Date: 2024-10
+  Name: Season 2 Distribution & Governance Activation
+  Description: Activated token claim for Season 2, EIGEN staking for governance, operator reward streams
+  Status: Ongoing
+  Source: https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+Sources
+- https://blog.eigenlayer.xyz/eigenlayer-mainnet-launch/
+- https://docs.eigenlayer.xyz/docs/core-contracts/strategymanager
+- https://docs.eigenlayer.xyz/docs/core-contracts/allocationmanager
+- https://www.eigenlayer.xyz/avs
+- https://docs.eigenlayer.xyz/docs/core-contracts/avsregistry
+- https://blog.eigenlayer.xyz/eigen-token-genesis/
+
+Current Technical Stack
+- Ethereum Mainnet — Settlement & execution layer for all core contracts (HIGH) [https://docs.eigenlayer.xyz/docs/overview/introduction]
+- Solidity 0.8.x — Smart contract language (HIGH) [https://github.com/Layr-Labs/eigenlayer-contracts]
+- Foundry — Build, test, fuzz, deploy framework (HIGH) [https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/foundry.toml]
+- Go 1.21+ — EigenDA disperser, retriever, operator node, CLI (HIGH) [https://github.com/Layr-Labs/eigenda/blob/main/go.mod]
+- Rust — Erasure coding library (eigenDA), some AVS operator components (MEDIUM) [https://github.com/Layr-Labs/eigenda/blob/main/crates]
+- TypeScript — EigenLayer SDK, EigenDA SDK, frontend tooling (MEDIUM) [https://github.com/Layr-Labs/eigenlayer-sdk]
+- Docker — Container images for operator, disperser, retriever (MEDIUM) [https://github.com/Layr-Labs/eigenda/blob/main/Dockerfile]
+- Kubernetes — Recommended orchestration for production operators (MEDIUM) [https://docs.eigenlayer.xyz/docs/operators/running-operator]
+- Prometheus / Grafana — Monitoring stack for operators (per docs) (MEDIUM) [https://docs.eigenlayer.xyz/docs/operators/monitoring]
+- IPFS — Not used by core protocol; some AVS may use for metadata (LOW) [https://docs.eigenlayer.xyz/docs/avs/overview]
+- Arweave — Not used by core protocol (LOW) [https://docs.eigenlayer.xyz/docs/avs/overview]
+- EigenDA — Data availability layer (AVS) used by rollups (HIGH) [https://docs.eigenlayer.xyz/docs/eigenda/overview]
+- Chainlink — Not a core dependency; some AVS may integrate for oracle data (LOW) [https://docs.eigenlayer.xyz/docs/avs/overview]
+- Cosmos SDK — Not used (N/A)
+- EigenLayer — Self (protocol) (HIGH)
+
+Sources
+- https://docs.eigenlayer.xyz/docs/overview/introduction
+- https://github.com/Layr-Labs/eigenlayer-contracts
+- https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/foundry.toml
+- https://github.com/Layr-Labs/eigenda/blob/main/go.mod
+- https://github.com/Layr-Labs/eigenda/blob/main/crates
+- https://github.com/Layr-Labs/eigenlayer-sdk
+- https://github.com/Layr-Labs/eigenda/blob/main/Dockerfile
+- https://docs.eigenlayer.xyz/docs/operators/running-operator
+- https://docs.eigenlayer.xyz/docs/operators/monitoring
+- https://docs.eigenlayer.xyz/docs/avs/overview
+- https://docs.eigenlayer.xyz/docs/eigenda/overview
+
+Known Technical Limitations
+- Withdrawal Delay: Mandatory ~7-day withdrawal delay for unstaking (configurable but required for slashing window) limits capital efficiency (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/delegationmanager]
+- Operator Permissioning: EigenDA and early AVS use permissioned operator sets; permissionless operator registration not yet fully decentralized (MEDIUM) [https://docs.eigenlayer.xyz/docs/eigenda/operator]
+- Slashing Subjectivity: Intersubjective slashing (EIGEN token) relies on social consensus; not objectively enforceable on-chain — introduces governance/trust assumptions (MEDIUM) [https://blog.eigenlayer.xyz/eigen-token-genesis/]
+- Single Settlement Chain: Currently only Ethereum mainnet; no native multi-chain deployment (though AVS can be cross-chain) (HIGH) [https://docs.eigenlayer.xyz/docs/overview/introduction]
+- EigenDA Throughput Ceiling: Current disperser throughput limited by operator committee size and erasure coding parameters; not horizontally scalable beyond committee (MEDIUM) [https://docs.eigenlayer.xyz/docs/eigenda/overview]
+- No Native Cross-chain Messaging: AVS must implement their own bridging/messaging; EigenLayer provides only shared security (HIGH) [https://docs.eigenlayer.xyz/docs/avs/overview]
+- Gas Costs: All slashing, delegation, allocation operations on Ethereum L1 — high gas costs during congestion (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/slashingmanager]
+- EigenPod Exit Queue: Native ETH restaking withdrawals subject to Ethereum validator exit queue + EigenLayer withdrawal delay (compound delay) (HIGH) [https://docs.eigenlayer.xyz/docs/core-contracts/eigenpodmanager]
+- AVS Development Complexity: Building an AVS requires custom off-chain software, on-chain contracts, operator recruitment, and slashing logic — high barrier to entry (MEDIUM) [https://docs.eigenlayer.xyz/docs/avs/overview]
+- Upgradeability Risk: Core contracts upgradeable via proxy (Eigen Foundation multisig); centralization risk until on-chain governance fully live (MEDIUM) [https://docs.eigenlayer.xyz/docs/governance/overview]
+
+Sources
+- https://docs.eigenlayer.xyz/docs/core-contracts/delegationmanager
+- https://docs.eigenlayer.xyz/docs/eigenda/operator
+- https://blog.eigenlayer.xyz/eigen-token-genesis/
+- https://docs.eigenlayer.xyz/docs/overview/introduction
+- https://docs.eigenlayer.xyz/docs/eigenda/overview
+- https://docs.eigenlayer.xyz/docs/avs/overview
+- https://docs.eigenlayer.xyz/docs/core-contracts/slashingmanager
+- https://docs.eigenlayer.xyz/docs/core-contracts/eigenpodmanager
+- https://docs.eigenlayer.xyz/docs/governance/overview
+
+Official Technical Resources
+- Documentation: https://docs.eigenlayer.xyz/
+- GitHub (Core Contracts): https://github.com/Layr-Labs/eigenlayer-contracts
+- GitHub (EigenDA): https://github.com/Layr-Labs/eigenda
+- GitHub (Operator CLI): https://github.com/Layr-Labs/eigenlayer-cli
+- GitHub (EigenLayer SDK - TypeScript): https://github.com/Layr-Labs/eigenlayer-sdk
+- GitHub (EigenDA SDK): https://github.com/Layr-Labs/eigenda-sdk
+- Developer Docs (AVS Development): https://docs.eigenlayer.xyz/docs/avs/overview
+- Developer Docs (Operator Guide): https://docs.eigenlayer.xyz/docs/operators/overview
+- Whitepaper (EigenLayer Restaking): https://www.eigenlayer.xyz/eigenlayer-whitepaper.pdf
+- Research Paper (EigenDA): https://arxiv.org/abs/2310.09111
+- Blog (Technical Announcements): https://blog.eigenlayer.xyz/
+- Token Contract (Etherscan): https://etherscan.io/token/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9
+- Audit Reports: https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits
+
+Sources
+- https://docs.eigenlayer.xyz/
+- https://github.com/Layr-Labs/eigenlayer-contracts
+- https://github.com/Layr-Labs/eigenda
+- https://github.com/Layr-Labs/eigenlayer-cli
+- https://github.com/Layr-Labs/eigenlayer-sdk
+- https://github.com/Layr-Labs/eigenda-sdk
+- https://docs.eigenlayer.xyz/docs/avs/overview
+- https://docs.eigenlayer.xyz/docs/operators/overview
+- https://www.eigenlayer.xyz/eigenlayer-whitepaper.pdf
+- https://arxiv.org/abs/2310.09111
+- https://blog.eigenlayer.xyz/
+- https://etherscan.io/token/0xec53bF9167f50cDEB3aE105fA56099AA5b8fB2c9
+- https://github.com/Layr-Labs/eigenlayer-contracts/tree/main/audits
+
+RINGKASAN
+Architecture: Modular restaking layer on Ethereum enabling shared security via Actively Validated Services (AVS); three-layer model (Staking, Validation, Application); EigenDA as first AVS for data availability
+Core Components: 10+ core contracts (StrategyManager, DelegationManager, SlashingManager, AllocationManager, EigenPodManager, AVSRegistry, EIGEN Token); EigenDA components (Disperser, Retriever, ServiceManager, Registry, Operator nodes); Operator CLI/SDK
+Audit Count: 7 completed audits (Spearbit x3, Trail of Bits x2, Sigma Prime x1, OpenZeppelin x1) covering core contracts, EigenDA, EIGEN token
+Major Upgrade Count: 7 major upgrades (Mainnet Phase 1, LST Support, LRT/AllocationManager, EigenDA Mainnet, AVS Registry Multi-Quorum, EIGEN TGE, Season 2/Governance)
+
+Open Threads
+- Exact erasure coding parameters (k, n) for EigenDA current mainnet configuration — documentation references configurable values but current production parameters not explicitly published in docs
+- Permissionless operator registration timeline for EigenDA — roadmap mentions "progressive decentralization" but no concrete date or criteria published
+- Intersubjective slashing implementation details for EIGEN token — whitepaper describes concept but on-chain contracts for intersubjective work verification not fully documented in public SDK
+- Cross-AVS slashing correlation — whether slashing in one AVS affects stake allocated to other AVS (isolation vs. shared stake model) — docs imply isolation via AllocationManager but not explicitly confirmed
+- EigenDA horizontal scaling roadmap — current committee-based design has throughput ceiling; DAS (Data Availability Sampling) or sharding plans mentioned in research but not in official roadmap
+- Gas optimization efforts for core contracts — no public EIP-4844 (blob) integration plan for EigenLayer contracts despite EigenDA using blobs
+- Formal verification status of core contracts — audits completed but no public formal verification (e.g., Certora, K-framework) reports found
+- AVS template/framework maturity — "AVS SDK" referenced but no official cookie-cutter framework released; each AVS builds custom off-chain stack
+- Operator hardware requirements specification — docs give guidelines but no official minimum spec enforcement or benchmarking standards
+- Slashing veto period governance — who controls veto period duration per AVS; current default 7 days but parameter change process not fully documented

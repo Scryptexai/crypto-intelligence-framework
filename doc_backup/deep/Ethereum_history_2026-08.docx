@@ -1,0 +1,1468 @@
+PROJECT: Ethereum
+
+Event ID
+
+EV-001
+
+Date
+
+2013-11
+
+Event Name
+
+Publikasi Whitepaper Ethereum oleh Vitalik Buterin
+
+Event Type
+
+Founding
+
+Description
+
+Vitalik Buterin mempublikasikan whitepaper Ethereum yang mengusulkan platform blockchain turing-complete dengan bahasa scripting built-in untuk aplikasi terdesentralisasi.
+
+Participants
+
+Vitalik Buterin
+
+Location
+
+Online (publikasi melalui Bitcoin Magazine dan mailing list kriptografi)
+
+Status
+
+Completed
+
+Immediate Result
+
+Dokumen visi teknis yang menarik perhatian pengembang dan investor awal; dasar rekrutmen co-founder tim founding.
+
+Sources
+
+https://github.com/ethereum/wiki/wiki/White-Paper
+https://ethereum.org/en/whitepaper/
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2014-01
+
+Event Name
+
+Pengumuman Proyek Ethereum di Konferensi Bitcoin Miami
+
+Event Type
+
+Founding
+
+Description
+
+Vitalik Buterin mempresentasikan konsep Ethereum secara publik pertama kali di North American Bitcoin Conference di Miami, menarik Gavin Wood, Jeffrey Wilcke, dan lainnya bergabung.
+
+Participants
+
+Vitalik Buterin, Gavin Wood, Jeffrey Wilcke, Charles Hoskinson, Anthony Di Iorio, Mihai Alisie, Amir Chetrit, Joseph Lubin
+
+Location
+
+Miami, Florida, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Pembentukan tim founding inti 8 orang; dimulainya pengembangan protokol dan persiapan crowdsale.
+
+Sources
+
+https://www.youtube.com/watch?v=6aCbCq7YTzg
+https://blog.ethereum.org/2014/02/04/ethereum-at-the-north-american-bitcoin-conference
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2014-06
+
+Event Name
+
+Pendirian Ethereum Foundation (Stiftung) di Zug, Swiss
+
+Event Type
+
+Organization
+
+Description
+
+Ethereum Foundation didirikan sebagai yayasan non-profit di Zug, Swiss untuk mengelola pengembangan protokol, hibuan, dan aset hasil crowdsale.
+
+Participants
+
+Ethereum Foundation (Stiftung), Vitalik Buterin, Gavin Wood, Jeffrey Wilcke, Joseph Lubin, Mihai Alisie
+
+Location
+
+Zug, Swiss
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas hukum resmi untuk menerima dana crowdsale, mengontrak pengembang, dan mengelola properti intelektual Ethereum.
+
+Sources
+
+https://ethereum.org/en/foundation/
+https://www.stiftungsregister.ch/de/stiftung/ethereum-stiftung
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2014-06
+
+Event Name
+
+Publikasi Yellow Paper oleh Gavin Wood
+
+Event Type
+
+Technology
+
+Description
+
+Gavin Wood menerbitkan Ethereum Yellow Paper (spesifikasi teknis formal protokol Ethereum dan EVM), menjadi referensi implementasi klien pertama.
+
+Participants
+
+Gavin Wood
+
+Location
+
+Online (GitHub repository ethereum/yellowpaper)
+
+Status
+
+Completed
+
+Immediate Result
+
+Spesifikasi teknis formal yang memungkinkan pengembangan klien independen (C++, Go, Python) secara paralel.
+
+Sources
+
+https://ethereum.github.io/yellowpaper/paper.pdf
+https://github.com/ethereum/yellowpaper
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2014-07-22
+
+Event Name
+
+Dimulainya Ether Crowdsale (Penjualan Publik)
+
+Event Type
+
+Funding
+
+Event Name
+
+Dimulainya Ether Crowdsale (Penjualan Publik)
+
+Event Type
+
+Funding
+
+Description
+
+Ethereum Foundation meluncurkan penjualan publik ETH selama 42 hari, menerima BTC dan mengumpulkan ~31.500 BTC (~$18,3 juta saat itu) dari >9.000 peserta.
+
+Participants
+
+Ethereum Foundation (Stiftung), Vitalik Buterin, Gavin Wood, Jeffrey Wilcke, Joseph Lubin
+
+Location
+
+Online (website crowdsale Ethereum)
+
+Status
+
+Completed
+
+Immediate Result
+
+60 juta ETH dialokasikan ke pembeli crowdsale; 12 juta ETH untuk dana pengembangan Foundation dan early contributors; pembiayaan awal pengembangan protokol.
+
+Sources
+
+https://blog.ethereum.org/2014/07/22/launching-the-ether-sale
+https://messari.io/asset/ethereum/profile
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2014-09-02
+
+Event Name
+
+Berakhirnya Ether Crowdsale
+
+Event Type
+
+Funding
+
+Description
+
+Crowdsale resmi ditutup setelah 42 hari; total 31.529 BTC terkumpul (~$18,3 juta); distribusi ETH ke peserta dijadwalkan pada genesis block.
+
+Participants
+
+Ethereum Foundation (Stiftung)
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana pengembangan terkumpul; alokasi token genesis finalisasi; persiapan testnet Olympic.
+
+Sources
+
+https://blog.ethereum.org/2014/09/02/ether-sale-ends-raised-31500-btc
+https://messari.io/asset/ethereum/profile
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2015-05-09
+
+Event Name
+
+Peluncuran Testnet Olympic
+
+Event Type
+
+Launch
+
+Description
+
+Testnet publik pertama "Olympic" diluncurkan untuk stress testing protokol, menawarkan hadiah 25.000 ETH (satu kali) dan 2.500 ETH (empat kali) untuk penemu bug kritis.
+
+Participants
+
+Ethereum Foundation, Gavin Wood, Jeffrey Wilcke, tim klien C++/Go/Python
+
+Location
+
+Global (jaringan P2P)
+
+Status
+
+Completed
+
+Immediate Result
+
+Penemuan dan perbaikan bug konsensus, DoS, dan eksekusi sebelum mainnet; validasi arsitektur multi-klien.
+
+Sources
+
+https://blog.ethereum.org/2015/05/09/olympic-frontier-test-network
+https://blog.ethereum.org/2015/06/03/olympic-rewards
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2015-07-30
+
+Event Name
+
+Peluncuran Mainnet Ethereum (Frontier) - Genesis Block
+
+Event Type
+
+Launch
+
+Description
+
+Blok genesis Ethereum (block 0) ditambangkan; mainnet Frontier resmi live dengan chain ID 1; 72 juta ETH tersebar (60 juta crowdsale + 12 juta Foundation/early).
+
+Participants
+
+Ethereum Foundation, Jeffrey Wilcke (Geth), Gavin Wood (cpp-ethereum), tim klien Python
+
+Location
+
+Global (jaringan P2P)
+
+Status
+
+Completed
+
+Immediate Result
+
+Blockchain Ethereum live; penambangan blok pertama; distribusi ETH crowdsale final; awal ekosistem dApp dan penambangan PoW.
+
+Sources
+
+https://blog.ethereum.org/2015/07/22/frontier-is-coming
+https://etherscan.io/block/0
+https://ethereum.org/en/history/
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2015-08-07
+
+Event Name
+
+Rilis Klien Geth v1.0.0 (Stabil Pertama)
+
+Event Type
+
+Technology
+
+Description
+
+Tim Go-Ethereum merilis Geth v1.0.0 "Frontier" stabil; menjadi klien eksekusi dominan hingga saat ini.
+
+Participants
+
+Jeffrey Wilcke, Peter Szilagyi, tim Go-Ethereum
+
+Location
+
+GitHub (github.com/ethereum/go-ethereum)
+
+Status
+
+Completed
+
+Immediate Result
+
+Klien Go siap produksi; fondasi dominasi market share Geth di jaringan utama.
+
+Sources
+
+https://github.com/ethereum/go-ethereum/releases/tag/v1.0.0
+https://blog.ethereum.org/2015/08/07/geth-1-0-released
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2016-03-14
+
+Event Name
+
+Hard Fork Homestead (Blok 1.150.000)
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade protokol pertama mayor: Homestead mengaktifkan EIP-2 (cek harga gas), EIP-7 (DELEGATECALL), EIP-8 (network ID), menghapus "frontier thaw", menandakan keluar dari fase eksperimen.
+
+Participants
+
+Ethereum Foundation, Vitalik Buterin, Gavin Wood, Jeffrey Wilcke, tim klien
+
+Location
+
+Global (jaringan P2P)
+
+Status
+
+Completed
+
+Immediate Result
+
+Protokol distabilkan; fondasi keamanan untuk pertumbuhan ekosistem awal (DAO, token).
+
+Sources
+
+https://blog.ethereum.org/2016/02/29/homestead-release
+https://eips.ethereum.org/EIPS/eip-606
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2016-06-17
+
+Event Name
+
+Serangan The DAO (Eksploit Reentrancy)
+
+Event Type
+
+Security
+
+Description
+
+Kontrak The DAO (inekubator dana terdesentralisasi) dieksploitasi melalui kerentanan reentrancy; ~3,6 juta ETH (~$50 juta saat itu) disedot ke child DAO penyerang.
+
+Participants
+
+The DAO (Slock.it), penyerang tidak diketahui, komunitas Ethereum, Ethereum Foundation
+
+Location
+
+On-chain (kontrak The DAO: 0xbb9bc244d798123fde783fcc1c72d3bb8c189413)
+
+Status
+
+Completed
+
+Immediate Result
+
+Krisis kepercayaan besar; perdebatan komunitas keras tentang immutable vs intervensi; memicu hard fork kontroversial.
+
+Sources
+
+https://www.coindesk.com/learn/2016/06/25/understanding-the-dao-attack/
+https://blog.ethereum.org/2016/06/17/critical-update-re-dao-vulnerability
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2016-07-20
+
+Event Name
+
+Hard Fork DAO (Blok 1.920.000) - Pembentukan Ethereum Classic
+
+Event Type
+
+Technology
+
+Description
+
+Hard fork non-standar untuk mengembalikan dana The DAO ke kontrak penarikan (withdraw contract); rantai minoritas menolak fork dan melanjutkan sebagai Ethereum Classic (ETC).
+
+Participants
+
+Ethereum Foundation, Vitalik Buterin, tim klien, penambang, komunitas, bursa
+
+Location
+
+Global (jaringan P2P)
+
+Status
+
+Completed
+
+Immediate Result
+
+~3,6 juta ETH dikembalikan ke pemegang DAO token di chain Ethereum (ETH); lahirnya Ethereum Classic (ETC) sebagai chain terpisah dengan filosofi "code is law".
+
+Sources
+
+https://blog.ethereum.org/2016/07/20/hard-fork-completed
+https://ethereumclassic.org/
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2016-10-18
+
+Event Name
+
+Hard Fork Tanger Whistle (Blok 2.463.000) - Anti-DoS
+
+Event Type
+
+Technology
+
+Description
+
+Hard fork darurat untuk meningkatkan biaya operasi IO-heavy (EXCODECOPY, BALANCE, CALL) dan membersihkan state bloat akibat serangan DoS berulang (Shanghai attacks).
+
+Participants
+
+Ethereum Foundation, Vitalik Buterin, tim klien, penambang
+
+Location
+
+Global (jaringan P2P)
+
+Status
+
+Completed
+
+Immediate Result
+
+Serangan DoS dihentikan; jaringan stabil kembali; biaya gas disesuaikan untuk operasi state-access.
+
+Sources
+
+https://blog.ethereum.org/2016/10/18/faq-upcoming-ethereum-hard-fork
+https://eips.ethereum.org/EIPS/eip-150
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2016-11-22
+
+Event Name
+
+Hard Fork Spurious Dragon (Blok 2.675.000) - Pembersihan State
+
+Event Type
+
+Technology
+
+Description
+
+Hard fork kedua anti-DoS: menghapus ~20 juta akun kosong (state clearing), menambah proteksi replay attack (EIP-155), mengurangi refund SSTORE (EIP-158).
+
+Participants
+
+Ethereum Foundation, Vitalik Buterin, tim klien
+
+Location
+
+Global (jaringan P2P)
+
+Status
+
+Completed
+
+Immediate Result
+
+Ukuran state dikurangi signifikan; perlindungan replay attack lintas chain; fondasi untuk pertumbuhan 2017.
+
+Sources
+
+https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon
+https://eips.ethereum.org/EIPS/eip-155
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2017-03-14
+
+Event Name
+
+Peluncuran Enterprise Ethereum Alliance (EEA)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Enterprise Ethereum Alliance diluncurkan dengan 30 anggota pendiri (Microsoft, JPMorgan, Intel, BP, dll.) untuk standarisasi Ethereum enterprise.
+
+Participants
+
+Enterprise Ethereum Alliance, Microsoft, JPMorgan, Intel, BP, Consensys, dll.
+
+Location
+
+New York, AS (pengumuman)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Validasi enterprise untuk teknologi Ethereum; percepatan adopsi permissioned/consortium berbasis Ethereum (Quorum, Besu).
+
+Sources
+
+https://entethalliance.org/
+https://www.coindesk.com/business/2017/02/28/microsoft-jpmorgan-join-enterprise-ethereum-alliance/
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2017-10-16
+
+Event Name
+
+Hard Fork Byzantium (Blok 4.370.000) - Fase Metropolis Bagian 1
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade Metropolis bagian 1: EIP-100 (difficulty bomb delay), EIP-140/196/197/198 (precompile kriptografi), EIP-649 (pengurangan block reward 5→3 ETH, delay ice age), EIP-658 (status receipt).
+
+Participants
+
+Ethereum Foundation, Vitalik Buterin, tim klien, penambang
+
+Location
+
+Global (jaringan P2P)
+
+Status
+
+Completed
+
+Immediate Result
+
+Fungsi kriptografi baru untuk privacy/scaling (zk-SNARKs); penurunan inflasi; penundaan difficulty bomb.
+
+Sources
+
+https://blog.ethereum.org/2017/10/12/byzantium-hard-fork
+https://eips.ethereum.org/EIPS/eip-609
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2019-02-28
+
+Event Name
+
+Hard Fork Constantinople (Blok 7.280.000) - Bagian Metropolis 2
+
+Event Type
+
+Technology
+
+Description
+
+Constantinople (direncanakan Januari, ditunda karena bug reentrancy EIP-1283): EIP-145 (bitwise shifting), EIP-1014 (CREATE2), EIP-1052 (EXTCODEHASH), EIP-1234 (block reward 3→2 ETH, delay ice age 12 bulan).
+
+Participants
+
+Ethereum Foundation, Vitalik Buterin, tim klien (Geth, Parity, dll.), penambang
+
+Location
+
+Global (jaringan P2P)
+
+Status
+
+Completed
+
+Immediate Result
+
+CREATE2 memungkinkan counterfactual deployment; penurunan inflasi; fondasi untuk state channels dan L2.
+
+Sources
+
+https://blog.ethereum.org/2019/02/22/ethereum-constantinople-hard-fork
+https://eips.ethereum.org/EIPS/eip-1013
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2019-12-07
+
+Event Name
+
+Hard Fork Istanbul (Blok 9.069.000)
+
+Event Type
+
+Technology
+
+Description
+
+Istanbul: EIP-152 (BLAKE2 precompile), EIP-1108 (penurunan biaya gas precompile kriptografi), EIP-1344 (CHAINID opcode), EIP-1884 (peningkatan biaya gas state access), EIP-2028 (penurunan biaya calldata), EIP-2200 (net gas metering SSTORE).
+
+Participants
+
+Ethereum Foundation, Vitalik Buterin, tim klien, penambang
+
+Location
+
+Global (jaringan P2P)
+
+Status
+
+Completed
+
+Immediate Result
+
+Optimasi biaya untuk L2 (calldata murah); interoperabilitas Zcash/Layer 2; penyesuaian ekonomi gas.
+
+Sources
+
+https://blog.ethereum.org/2019/11/20/istanbul-hard-fork
+https://eips.ethereum.org/EIPS/eip-1679
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2020-01-01
+
+Event Name
+
+Pendirian Beacon Chain Deposit Contract (Mainnet)
+
+Event Type
+
+Technology
+
+Description
+
+Kontrak deposit Beacon Chain (0x00000000219ab540356cBB839Cbe05303d7705Fa) dideploy di mainnet Ethereum; memungkinkan staking ETH untuk validator PoS.
+
+Participants
+
+Ethereum Foundation, Danny Ryan, tim riset EF, tim klien konsensus
+
+Location
+
+Mainnet Ethereum (on-chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Dimulainya fase deposit validator untuk Beacon Chain; target 16.384 validator (524.288 ETH) untuk genesis.
+
+Sources
+
+https://blog.ethereum.org/2020/11/04/eth2-quick-update-no-19
+https://etherscan.io/address/0x00000000219ab540356cBB839Cbe05303d7705Fa
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2020-12-01
+
+Event Name
+
+Peluncuran Beacon Chain (Phase 0) - Genesis PoS
+
+Event Type
+
+Launch
+
+Description
+
+Beacon Chain (Consensus Layer) genesis pada epoch 0 dengan 21.063 validator aktif (674.016 ETH staked); memulai bukti konsensus Proof-of-Stake berjalan paralel dengan PoW.
+
+Participants
+
+Ethereum Foundation, Danny Ryan, Justin Drake, tim klien konsensus (Prysm, Lighthouse, Teku, Nimbus, Lodestar), validator genesis
+
+Location
+
+Global (jaringan P2P Beacon Chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Proof-of-Stake live; validator menghasilkan blok beacon; fondasi untuk The Merge.
+
+Sources
+
+https://blog.ethereum.org/2020/11/27/eth2-genesis-confirmed
+https://beaconcha.in/genesis
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2021-04-15
+
+Event Name
+
+Hard Fork Berlin (Blok 12.244.000)
+
+Event Type
+
+Technology
+
+Description
+
+Berlin: EIP-2565 (penurunan biaya gas ModExp), EIP-2929 (peningkatan biaya gas state access), EIP-2718 (typed transaction envelope), EIP-2930 (access list transactions).
+
+Participants
+
+Ethereum Foundation, Tim Beiko, tim klien, penambang
+
+Location
+
+Global (jaringan P2P)
+
+Status
+
+Completed
+
+Immediate Result
+
+Persiapan untuk EIP-1559 (London); tipe transaksi baru; optimisasi biaya kriptografi.
+
+Sources
+
+https://blog.ethereum.org/2021/03/08/ethereum-berlin-upgrade-announcement
+https://eips.ethereum.org/EIPS/eip-2929
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2021-08-05
+
+Event Name
+
+Hard Fork London (Blok 12.965.000) - EIP-1559
+
+Event Type
+
+Technology
+
+Description
+
+London: EIP-1559 (mekanisme fee market base fee + tip, burning base fee), EIP-3198 (BASEFEE opcode), EIP-3529 (pengurangan gas refund), EIP-3541 (rejected 0xEF prefix), EIP-3554 (delay difficulty bomb ke Des 2021).
+
+Participants
+
+Ethereum Foundation, Tim Beiko, Vitalik Buterin, tim klien, penambang
+
+Location
+
+Global (jaringan P2P)
+
+Status
+
+Completed
+
+Immediate Result
+
+Fee market prediktif; mekanisme deflasioner (burn ETH); pengalaman UX transaksi diperbaiki; >3,5 juta ETH terbakar sejak peluncuran.
+
+Sources
+
+https://blog.ethereum.org/2021/07/15/london-mainnet-announcement
+https://ultrasound.money/
+https://eips.ethereum.org/EIPS/eip-1559
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2021-10-27
+
+Event Name
+
+Upgrade Altair (Beacon Chain) - Epoch 74.240
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade pertama Beacon Chain: penyesuaian parameter inactivity leak, peningkatan reward sinkronisasi komite, penambahan dukungan light client (sync committees), persiapan untuk Merge.
+
+Participants
+
+Ethereum Foundation, Danny Ryan, tim klien konsensus, validator
+
+Location
+
+Beacon Chain (Consensus Layer)
+
+Status
+
+Completed
+
+Immediate Result
+
+Keamanan konsensus ditingkatkan; fondasi light client trust-minimized; persiapan transisi PoW→PoS.
+
+Sources
+
+https://blog.ethereum.org/2021/10/20/altair-announcement
+https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/beacon-chain.md
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2022-03-15
+
+Event Name
+
+Peluncuran Testnet Kiln (Merge Shadow Fork)
+
+Event Type
+
+Launch
+
+Description
+
+Testnet Kiln diluncurkan sebagai "Merge devnet" publik terakhir sebelum mainnet; mensimulasikan transisi PoW→PoS penuh dengan Total Terminal Difficulty (TTD) konfigurasi.
+
+Participants
+
+Ethereum Foundation, Tim Beiko, tim klien eksekusi & konsensus
+
+Location
+
+Testnet Kiln (chain ID 1337802)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi end-to-end Merge; interop testing klien; finalisasi spesifikasi Bellatrix/Paris.
+
+Sources
+
+https://blog.ethereum.org/2022/03/15/kiln-merge-testnet
+https://github.com/eth-clients/merge-testnets
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2022-09-06
+
+Event Name
+
+Upgrade Bellatrix (Beacon Chain) - Epoch 144.896
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade konsensus (Bellatrix) mempersiapkan Merge: fork choice rule beralih ke PoS, validasi ExecutionPayload, penonaktifkan PoW pada consensus layer.
+
+Participants
+
+Ethereum Foundation, Danny Ryan, tim klien konsensus, validator
+
+Location
+
+Beacon Chain (Consensus Layer)
+
+Status
+
+Completed
+
+Immediate Result
+
+Consensus layer siap untuk Merge; validator memvalidasi execution payload; TTD trigger dikonfigurasi.
+
+Sources
+
+https://blog.ethereum.org/2022/08/24/bellatrix-announcement
+https://github.com/ethereum/consensus-specs/blob/dev/specs/bellatrix/beacon-chain.md
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2022-09-15
+
+Event Name
+
+The Merge (Paris) - Transisi Proof-of-Work ke Proof-of-Stake
+
+Event Type
+
+Technology
+
+Description
+
+Execution layer (Paris) dipicu oleh Total Terminal Difficulty (TTD 58750000000000000000000) pada blok 15.537.393; Ethereum beralih sepenuhnya ke Proof-of-Stake; penghentian penambangan PoW; pengurangan emisi ETH ~90% (~0,5%/tahun inflasi netto).
+
+Participants
+
+Ethereum Foundation, Tim Beiko, Danny Ryan, Vitalik Buterin, tim klien eksekusi & konsensus, seluruh jaringan validator, penambang, komunitas
+
+Location
+
+Global (Mainnet Ethereum)
+
+Status
+
+Completed
+
+Immediate Result
+
+Konsensus PoS final; emisi ETH drastis turun; keamanan ekonomi berbasis staking; fondasi untuk sharding/withdrawals.
+
+Sources
+
+https://blog.ethereum.org/2022/09/15/the-merge-is-done
+https://ethereum.org/en/upgrades/merge/
+https://eips.ethereum.org/EIPS/eip-3675
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2023-04-12
+
+Event Name
+
+Upgrade Shanghai/Capella (Blok 17.034.870 / Epoch 194.048) - Penarikan Staking
+
+Event Type
+
+Technology
+
+Description
+
+Shanghai (execution) + Capella (consensus): EIP-3675 (withdrawal credentials 0x01), EIP-3855 (PUSH0), EIP-3860 (limit initcode), EIP-4895 (system-level withdrawal), EIP-6049 (deprecate SELFDESTRUCT). Memungkinkan penarikan ETH staked (partial & full).
+
+Participants
+
+Ethereum Foundation, Tim Beiko, Danny Ryan, tim klien, validator
+
+Location
+
+Mainnet Ethereum (Execution + Consensus Layer)
+
+Status
+
+Completed
+
+Immediate Result
+
+>18 juta ETH dapat ditarik; likuiditas staking terwujud; munculnya Liquid Staking Tokens (stETH, rETH) dominan.
+
+Sources
+
+https://blog.ethereum.org/2023/03/28/shanghai-announcement
+https://eips.ethereum.org/EIPS/eip-4895
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2024-03-13
+
+Event Name
+
+Upgrade Dencun (Cancun/Deneb) - Blok 19.426.587 / Epoch 269.568 - Proto-Danksharding
+
+Event Type
+
+Technology
+
+Description
+
+Dencun: EIP-4844 (blob transactions / proto-danksharding), EIP-1153 (transient storage), EIP-4788 (beacon block root di EVM), EIP-5656 (MCOPY), EIP-6780 (SELFDESTRUCT only same tx). Blob space mengurangi biaya L2 >90%.
+
+Participants
+
+Ethereum Foundation, Tim Beiko, Vitalik Buterin, Dankrad Feist, Justin Drake, tim klien, operator L2 (Arbitrum, Optimism, Base, zkSync, dll.)
+
+Location
+
+Mainnet Ethereum (Execution + Consensus Layer)
+
+Status
+
+Completed
+
+Immediate Result
+
+Biaya transaksi L2 turun drastis; throughput data ~1-2 MB/slot; fondasi untuk full Danksharding (Danksharding roadmap).
+
+Sources
+
+https://blog.ethereum.org/2024/03/13/dencun-announcement
+https://eips.ethereum.org/EIPS/eip-4844
+https://www.theblock.co/post/285000/ethereum-dencun-upgrade-live
+
+---
+
+Event ID
+
+EV-029
+
+Date
+
+2024-05
+
+Event Name
+
+Rilis Spesifikasi Pectra (Prague/Electra) - Devnet Testing
+
+Event Type
+
+Technology
+
+Description
+
+Spesifikasi upgrade Pectra (Prague execution + Electra consensus) difinalisasi untuk devnet: EIP-7251 (max effective balance 2048 ETH), EIP-7002 (execution layer triggerable exit), EIP-7549 (komite sinkronisasi per slot), EIP-7685 (execution layer requests), EIP-2537 (precompile BLS12-381), EIP-2935 (history log).
+
+Participants
+
+Ethereum Foundation, Tim Beiko, Danny Ryan, tim klien, validator, peneliti EF
+
+Location
+
+Devnet (Pectra-devnet-0, 1, 2...), spesifikasi GitHub consensus-specs/execution-specs
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Persiapan upgrade besar berikutnya (target mainnet 2025); konsolidasi validator, efisiensi konsensus, account abstraction native (EIP-7702 dipisah).
+
+Sources
+
+https://github.com/ethereum/consensus-specs/tree/dev/specs/pectra
+https://github.com/ethereum/execution-specs/tree/master/src/upgrades/pectra
+https://blog.ethereum.org/2024/07/11/pectra-devnet-0
+
+---
+
+Event ID
+
+EV-030
+
+Date
+
+2017-06-12
+
+Event Name
+
+Pembentukan Consensys sebagai Venture Studio Ethereum
+
+Event Type
+
+Organization
+
+Description
+
+Joseph Lubin mendirikan Consensys secara formal; menjadi venture studio utama membangun infrastruktur (MetaMask, Infura, Truffle, Besu, Linea) dan mendukung ekosistem.
+
+Participants
+
+Joseph Lubin, Consensys
+
+Location
+
+Brooklyn, New York, AS (kantor awal)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pembangunan tooling pengembang standar industri; MetaMask >30 juta pengguna; Infura backbone RPC; Besu klien enterprise.
+
+Sources
+
+https://consensys.net/about/
+https://messari.io/project/consensys/profile
+
+---
+
+Event ID
+
+EV-031
+
+Date
+
+2016-08
+
+Event Name
+
+Peluncuran Infura (Layanan RPC Ethereum)
+
+Event Type
+
+Infrastructure
+
+Description
+
+Infura diluncurkan (awalnya oleh ETHLabs, kemudian diakuisisi Consensys); menyediakan akses API node Ethereum terkelola; menjadi backbone infrastruktur untuk dApp, wallet, L2.
+
+Participants
+
+Infura, Consensys, Michael Wuechner, EGAL
+
+Location
+
+Global (cloud infrastructure)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Mengurangi barrier menjalankan node; >90% traffic dApp melewati Infura pada puncak; risiko sentralisasi infrastruktur.
+
+Sources
+
+https://www.infura.io/
+https://consensys.net/blog/infura/infura-joins-consensys/
+
+---
+
+Event ID
+
+EV-032
+
+Date
+
+2020-08
+
+Event Name
+
+Peluncuran Alchemy (Platform Pengembang Ethereum)
+
+Event Type
+
+Infrastructure
+
+Description
+
+Alchemy meluncurkan platform pengembang dengan Enhanced APIs, NFT API, Notify; kompetitor utama Infura; adopsi cepat oleh OpenSea, Dapper Labs, Adobe.
+
+Participants
+
+Alchemy, Nikil Viswanathan, Joe Lau
+
+Location
+
+San Francisco, AS
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Diversifikasi penyedia RPC; fitur developer experience unggulan; valuasi >$10M (2022).
+
+Sources
+
+https://www.alchemy.com/
+https://www.theblock.co/post/2022/alchemy-valuation
+
+---
+
+Event ID
+
+EV-033
+
+Date
+
+2020-11
+
+Event Name
+Pembentukan Flashbots (Organisasi Riset MEV)
+
+Event Type
+
+Organization
+
+Description
+
+Flashbots dibentuk untuk mengatasi MEV (Maximal Extractable Value): membangun MEV-Boost (relay/builder), SUAVE, mendorong PBS (Proposer-Builder Separation) transparan.
+
+Participants
+
+Flashbots, Phil Daian, Stephane Gosselin, dan kontributor riset
+
+Location
+
+Global (remote organization)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+>90% blok Ethereum melalui MEV-Boost; transparansi MEV; penelitian PBS terintegrasi ke roadmap protokol.
+
+Sources
+
+https://flashbots.net/
+https://github.com/flashbots
+
+---
+
+Event ID
+
+EV-034
+
+Date
+
+2022-08-08
+
+Event Name
+
+Sanksi OFAC AS terhadap Tornado Cash
+
+Event Type
+
+Regulation
+
+Description
+
+Departemen Perbendaharaan AS (OFAC) menyanksi protokol privacy Tornado Cash dan alamat kontrak terkait; memicu debat sensur protokol, kompliance validator, dan hak privasi.
+
+Participants
+
+OFAC (US Treasury), Tornado Cash, validator Ethereum, Flashbots, komunitas
+
+Location
+
+AS / Global (on-chain impact)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Beberapa builder/relay menyensor transaksi Tornado Cash; diskusi PBS dan resistance to censorship; tantangan

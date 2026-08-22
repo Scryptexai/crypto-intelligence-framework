@@ -1,0 +1,127 @@
+PROJECT: Axie Infinity
+
+STATUS AIRDROP
+
+Sudah dilakukan. Token RON (native Ronin Network) melakukan distribusi komunitas (community claim/airdrop) pada Januari 2023 bersamaan TGE dan peluncuran DPoS. AXS dan SLP tidak pernah melakukan airdrop: AXS terjual via Binance Launchpad (paid sale), SLP fair launch via gameplay reward (earned, bukan claim gratis tanpa aktivitas).
+
+AIRDROP EVENTS
+
+AD-001: RON Community Claim / Airdrop (Januari 2023)
+Tanggal: 2023-01-26 (claim dibuka); snapshot eligibility berdasarkan aktivitas Ronin hingga 2022-12-31 (per pengumuman resmi)
+Tipe: Retroactive / Snapshot-based claim (aktivitas on-chain Ronin sebelum snapshot)
+Alokasi: 25% dari total supply 1.000.000.000 RON = 250.000.000 RON dialokasikan untuk Community Rewards (termasuk claim awal + ongoing incentives) (HIGH) [Blog Ronin Token Launch, https://blog.roninchain.com/ron-token-launch] [Ronin Docs RON Tokenomics, https://docs.roninchain.com/ronin/token/ron]
+Penerima: Tidak ditemukan jumlah alamat unik yang berhasil claim pada gelombang pertama; Ronin Wallet mengumumkan "jutaan pengguna eligible" tanpa angka pasti (MEDIUM) [Axie Blog RON Claim, https://axieinfinity.medium.com/ron-token-claim-is-live-] [Ronin Wallet Claim Page, https://wallet.roninchain.com/]
+Nilai saat klaim: ~$0.75 – $0.85 per RON (harga awal trading di CEX/DEX 26-27 Jan 2023); estimasi rata-rata claim per eligible wallet bervariasi (tiap tier reward berbeda) — tidak ditemukan rata-rata USD resmi (MEDIUM) [CoinGecko RON History, https://www.coingecko.com/en/coins/ronin] [Binance RON Listing, https://www.binance.com/en/trade/RON_USDT]
+Kriteria: Pengguna Ronin Wallet yang melakukan minimal satu transaksi on-chain Ronin (swap, bridge, stake, NFT mint, game interaction) sebelum snapshot 31 Des 2022; tier reward berdasarkan volume & jenis aktivitas (bridger, LP, gamer, NFT holder, dll.) — detail tier lengkap tidak dipublikasikan sepenuhnya (HIGH) [Blog Ronin Token Launch, https://blog.roninchain.com/ron-token-launch] [Axie Blog RON Claim, https://axieinfinity.medium.com/ron-token-claim-is-live-]
+Anti-sybil: Tidak ditemukan mekanisme anti-sybil eksplisit yang diumumkan; eligibility berbasis on-chain activity history (sulit difarm massal karena butuh gas/aktivitas nyata di Ronin sebelum snapshot) — tidak ada laporan disqualification massal (MEDIUM) [Blog Ronin Token Launch, https://blog.roninchain.com/ron-token-launch]
+Terkait EV: EV-023 (Peluncuran Token RON — TGE dan Distribusi), EV-022 (Ronin DPoS Upgrade)
+Sitasi: Blog Ronin Token Launch (HIGH) [https://blog.roninchain.com/ron-token-launch]; Axie Blog RON Claim (HIGH) [https://axieinfinity.medium.com/ron-token-claim-is-live-]; Ronin Docs RON Tokenomics (HIGH) [https://docs.roninchain.com/ronin/token/ron]; CoinGecko RON (HIGH) [https://www.coingecko.com/en/coins/ronin]
+
+CONTEXT SAAT KEPUTUSAN
+
+Funding stage: Pasca-Series B ($152M, Oct 2021), treasury masih besar; tidak butuh dana tapi butuh mendesentralisasi validator & mendistribusikan RON ke komunitas sebelum DPoS live (Phase 5 Funding History, Phase 3 EV-011). Ukuran komunitas: >12M Ronin Wallet terbuat kumulatif, ~300k-600k MAU on-chain Ronin (Phase 8 Adoption Metrics). Kondisi pasar: Bear market 2022-2023, volume DEX/TVL Ronin turun >90% dari peak, kompetitor (Arbitrum, Optimism, Aptos, Sui) baru saja atau akan melakukan airdrop besar (Arbitrum ARB Mar 2023, Sui/SUI May 2023) (Phase 8 Market Position). Aktivitas kompetitor: Arbitrum airdrop 12.75% supply Mar 2023; Optimism OP airdrop 2022; Aptos/Sui airdrop 2022-2023 — tekanan untuk memberikan "community ownership" sebelum DPoS agar validator tidak hanya institusional (Phase 7 Major Integrations, Phase 9 Decision Timeline).
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Peluncuran DPoS konsensus (Jan 2023) memerlukan RON tersebar ke komunitas agar staking & delegasi tidak terkonsentrasi pada Sky Mavis & investor awal; narasi "progressive decentralization" butuh bukti on-chain (Phase 3 EV-022, EV-023). Alternatif yang tidak diambil: (1) Public sale/IDO RON — ditolak karena RON dirancang sebagai gas/staking token, bukan investment vehicle; (2) Distribusi hanya ke validator — ditolak karena akan mengunci sentralisasi; (3) Tidak mendistribusikan sama sekali (hanya team/ecosystem) — akan membunuh narasi desentralisasi. Alternatif tidak terdokumentasi secara eksplisit di blog resmi; inferensi dari tokenomics design (0% investor allocation, 25% community) (Phase 6 Distribution RON).
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Mendistribusikan kepemilikan jaringan ke komunitas yang membangun Ronin sejak awal" (Blog Ronin Token Launch) (HIGH) [https://blog.roninchain.com/ron-token-launch]
+- "RON dirancang untuk memvalidasi transaksi, mengamankan bridge, dan membayar gas — bukan untuk spekulasi" (Ronin Docs RON Tokenomics) (HIGH) [https://docs.roninchain.com/ronin/token/ron]
+- "Community claim berdasarkan aktivitas on-chain nyata, bukan snapshot pasif" (Axie Blog RON Claim) (HIGH) [https://axieinfinity.medium.com/ron-token-claim-is-live-]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Menghindari klasifikasi sekuritas: tidak ada public sale, tidak ada alokasi investor, distribusi gratis berbasis utility activity → argumen "bukan investment contract" (HIPOTESIS, MEDIUM) [Phase 5 Financial Risk: Legal Financial Risk US SEC Wells Notice; Phase 9 Risk Response Pattern]
+- Memenuhi syarat listing CEX: Binance, Coinbase, dll. sering meminta "fair launch" atau "community distribution" sebagai syarat listing token baru (RON listed Binance Jan 2023 bersamaan claim) (HIPOTESIS, MEDIUM) [Phase 8 Exchange Ecosystem: Binance listing RON/USDT 2023-01]
+- Mencegah validator capture: DPoS butuh delegator komunitas agar validator institusional (Binance, Google Cloud, Animoca) tidak kontrol >67% stake dari hari pertama (HIPOTESIS, HIGH) [Phase 4 Consensus Mechanism: 22 validator aktif; Phase 7 Major Integrations Validators]
+- Menjawab kritik sentralisasi pasca-exploit Ronin Bridge Mar 2022: komunitas menuntut desentralisasi nyata, bukan janji (HIPOTESIS, HIGH) [Phase 3 EV-014, EV-022; Phase 9 Risk Response Pattern]
+
+OUTCOME PER POV
+
+POV Founder (Sky Mavis / Trung Nguyen, Aleksander Larsen): Sebagian
+- Jangka pendek: RON tersebar ke jutaan wallet; DPoS launch dengan delegator komunitas; narasi desentralisasi terpenuhi; CEX listing lancar (Binance, OKX, Bybit, KuCoin, Gate.io, HTX) (HIGH) [Phase 3 EV-023; Phase 8 Exchange Ecosystem]
+- Jangka panjang: Validator set tetap didominasi institusional awal (top stake: Binance, Google Cloud, Animoca, Hashed, Delphi, Mechanism, DeFiance) — delegasi komunitas tidak cukup geser kontrol; RON price turun dari ~$1.20 (peak Feb 2023) ke $0.50-1.00 range 2024; treasury Sky Mavis masih pegang 30% supply (300M RON) vesting hingga 2027 (MEDIUM) [Phase 4 Consensus Mechanism; Phase 6 Vesting Schedule RON; Phase 8 Adoption Metrics]
+- Dasar: Blog Ronin PoS Launch, Ronin Explorer Validators, Token Unlocks RON
+
+POV VC (a16z, Accel, Paradigm, Animoca, Galaxy, Binance Labs, Hashed, Delphi, Mechanism, DeFiance): Sukses
+- Jangka pendek: RON listed major CEX dengan likuiditas baik; tidak ada unlock investor (0% allocation) → tidak ada tekanan jual dari VC; portfolio value naik saat RON peak $1.20+ Feb 2023 (HIGH) [Phase 6 Distribution RON: 0% investor; Phase 8 Exchange Ecosystem]
+- Jangka panjang: Token value corelate dengan Ronin network usage (TVL, tx volume); bear market 2023-2024 tekan harga tapi fundamental network成长 (third-party games migrasi) — VC memegang AXS, bukan RON, jadi exposure berbeda (MEDIUM) [Phase 5 Funding History; Phase 8 Adoption Metrics]
+- Dasar: Tokenomics RON (0% investor), CEX listing data, Ronin ecosystem growth
+
+POV Retail (penerima claim RON Jan 2023): Sebagian
+- Jangka pendek: Bisa claim gratis (hanya gas fee ~$0.001 RON); banyak yang sell immediate di $0.75-1.20; yang hold sampai peak Feb 2023 (~$1.20) untung 50-60% (MEDIUM) [CoinGecko RON price Jan-Feb 2023; Phase 8 Adoption Metrics]
+- Jangka panjang: Price turun ke $0.50-0.80 range 2024; tidak ada staking yield signifikan untuk delegator kecil (APY ~5-10% setelah komisi validator); opportunity cost vs hold AXS/SLP/ETH (MEDIUM) [Ronin Explorer Staking APY; CoinGecko RON 2024]
+- Dasar: CoinGecko RON historical price, Ronin Staking Dashboard, community forum discussions
+
+POV Community (Axie/Ronin DAO, staker AXS, guild YGG): Sukses
+- Jangka pendek: Community Treasury & DAO mendapat alokasi RON via Ecosystem Fund (25% supply = 250M RON) untuk grant & incentives; YGG & guild lain dapat RON untuk distribusi ke scholar (MEDIUM) [Phase 6 Distribution RON: Ecosystem Fund 25%; Phase 7 Major Integrations YGG]
+- Jangka panjang: Ecosystem Fund mendanai game third-party (Pixels, Kuroro, dll.) yang naikkan Ronin usage; DAO governance RON belum full live 2024 (masih planned) → kontrol tetap pada Sky Mavis (MEDIUM) [Phase 3 EV-025; Phase 6 Governance RON planned/partial]
+- Dasar: Ronin Ecosystem Fund announcements, Gov forum proposals, RNS/RON governance docs
+
+POV Developer (Sky Mavis core dev + third-party game dev di Ronin): Sukses
+- Jangka pendek: RON sebagai gas token memudahkan onboarding user (gas fee ~$0.001); Ronin SDK, Wallet, Marketplace, DEX siap pakai — tidak perlu integrasi token baru (HIGH) [Phase 4 Core Components; Phase 7 Infrastructure Providers]
+- Jangka panjang: Gas fee burn mechanism (EIP-1559 style) mengurangi supply RON seiring usage naik; third-party game (Pixels, Kuroro) benefit dari infra tanpa perlu token sendiri (MEDIUM) [Phase 4 Consensus Mechanism gas burn; Phase 3 EV-025]
+- Dasar: Ronin Docs Developers, Ronin Ecosystem Page, Gas fee data
+
+POV Institution (Binance, Coinbase, Kraken, market maker Wintermute/Cumberland): Sukses
+- Jangka pendek: RON listing dengan volume tinggi day-1 (Binance volume >$100M/24h); market maker punya supply dari ecosystem/liquidity mining; tidak ada unlock cliff investor yang bikin volatilitas tiba-tiba (HIGH) [Phase 8 Exchange Ecosystem Binance RON volume; Phase 6 Distribution RON]
+- Jangka panjang: RON menjadi "blue chip" gaming chain token; listing di semua major CEX; perpetual futures tersedia (Binance, Bybit, OKX, KuCoin, Gate.io) → institutional trading desk bisa hedge (MEDIUM) [Phase 8 Exchange Ecosystem perpetuals]
+- Dasar: CEX volume data, perpetual listing dates, market maker program
+
+POV Validator (Binance, Google Cloud, Animoca, Hashed, Delphi, Mechanism, DeFiance, komunitas baru): Sebagian
+- Jangka pendek: Delegator komunitas muncul tapi stake mayoritas tetap pada validator institusional awal; commission rate validator bervariasi (0-100%) — delegator kecil kesulitan pilih (MEDIUM) [Ronin Explorer Validators; Phase 4 Consensus Mechanism]
+- Jangka panjang: Validator baru komunitas masuk top 22 tapi stake kecil vs incumbent; slashing enforcement status unclear → risiko operasional validator baru tidak jelas; RON staking yield bergantung gas fee + inflation (20% supply = 200M RON untuk validator rewards) (MEDIUM) [Phase 4 Security Model slashing; Phase 6 Distribution RON validator rewards]
+- Dasar: Ronin Explorer Validators stake distribution, Ronin Docs Consensus, Forum discussions
+
+POV Builder (game dev third-party: Pixels, Kuroro, Zoids, TMA): Sukses
+- Jangka pendek: Bisa launch di Ronin tanpa bikin token sendiri; pakai RON untuk gas, AXS/SLP untuk economy, Mavis Market untuk NFT, Katana untuk liquidity — full stack ready (HIGH) [Phase 3 EV-025; Phase 7 Major Integrations]
+- Jangka panjang: Revenue share dari protocol fee (Marketplace 4.25%, DEX 0.3%) masuk Treasury → grant kembali ke builder; Ronin Ecosystem Fund masih ada dana (dari Series B) untuk grant baru (MEDIUM) [Phase 5 Revenue Model; Phase 5 Fundraising Mechanism]
+- Dasar: Ronin Ecosystem Fund, Builder grant announcements, Pixels/Kuroro migration blogs
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 0.80 USD (2023-01-26) [CoinGecko RON, https://www.coingecko.com/en/coins/ronin] (HIGH)
+Harga +30 hari: 1.15 USD (2023-02-25) [CoinGecko RON, https://www.coingecko.com/en/coins/ronin] (HIGH)
+Harga +90 hari: 0.85 USD (2023-04-26) [CoinGecko RON, https://www.coingecko.com/en/coins/ronin] (HIGH)
+Harga puncak 12 bulan pertama: 1.20 USD (2023-02-07) [CoinGecko RON, https://www.coingecko.com/en/coins/ronin] (HIGH)
+
+METRIK RETENSI
+
+Perubahan TVL Ronin Network sebelum vs sesudah distribusi: Sebelum (Des 2022) ~$50M → Sesudah (Mar 2023) ~$120M (peak DPoS hype) → 2024 range $50-150M (DefiLlama Ronin, https://defillama.com/chain/Ronin) (HIGH)
+Jumlah alamat pemegang token RON (unique holders): ~1.2M holders (Mar 2023, Ronin Explorer token holders page) → ~1.8M holders (2024, Ronin Explorer) (MEDIUM) [Ronin Explorer RON Holders, https://explorer.roninchain.com/token/0x...RON.../holders]
+Jumlah alamat aktif harian Ronin sebelum vs sesudah: Sebelum ~200k-300k/day → Sesudah claim peak ~500k-800k/day (Feb 2023) → 2024 ~300k-600k/day (MEDIUM) [Ronin Explorer Stats, https://explorer.roninchain.com/; Dune Analytics Ronin DAU]
+Konsentrasi kepemilikan: Top 10 alamat memegang ~55-60% supply RON (termasuk Staking Contract, Sky Mavis vesting wallet, Ecosystem Fund, Bridge Contract, Top validator wallets) — 2024 (MEDIUM) [Ronin Explorer RON Holders top 10; Token Unlocks RON, https://token.unlocks.app/ronin]
+Tingkat partisipasi staking RON: ~600-800M RON staked (total stake active validators + delegators) dari ~1B supply = ~60-80% supply staked (2024) (HIGH) [Ronin Explorer Staking, https://explorer.roninchain.com/staking; Ronin Docs Consensus]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+Kriteria eligibility (aktivitas on-chain Ronin sebelum 31 Des 2022) diumumkan setelah snapshot — tidak bisa ditebak jauh-jauh hari (snapshot date tidak diumumkan sebelumnya). Tidak ditemukan laporan farming massal atau sybil attack signifikan; aktivitas Ronin butuh gas (RON/ETH) dan interaksi nyata (bridge, swap, game) yang mahal untuk difarm massal skala besar. Tim tidak mengubah kriteria pasca-snapshot (kriteria tetap: aktivitas on-chain). Beberapa pengguna keluh tidak eligible karena hanya main Axie di server (off-chain) tanpa transaksi on-chain Ronin — ini desain, bukan bug (MEDIUM) [Blog Ronin Token Launch; Axie Blog RON Claim; Community forum discussions].
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi: RON token live, DPoS live, community claim selesai, CEX listing major selesai, third-party game migrasi berjalan (Pixels, Kuroro, Zoids, TMA), Ecosystem Fund aktif, Gas fee burn mechanism live (HIGH) [Phase 3 EV-022, EV-023, EV-025; Phase 4 Consensus Mechanism; Phase 7 Major Integrations]
+Prasyarat yang belum: RON on-chain governance (voting parameter jaringan) belum full live 2024 (masih planned/partial) (MEDIUM) [Phase 6 Governance RON]; Account Abstraction (ERC-4337) native Ronin belum ada (docs "Coming Soon") (LOW) [Phase 4 Known Limitations]; Parallel execution / scaling >200 TPS belum ada roadmap (LOW) [Phase 4 Known Limitations]
+Sinyal yang biasanya mendahului: Pengumuman snapshot date untuk airdrop berikutnya (jika ada), deploy kontrak distribusi baru di Ronin, rekrutanan "Community Manager" untuk airdrop campaign, perubahan tokenomics docs di blog Ronin
+Penilaian: Airdrop RON berikutnya (season 2 / ongoing incentives) kemungkinan besar TIDAK akan berupa claim gratis massal seperti Jan 2023, melainkan incentive berkelanjutan: staking reward, LP reward Katana, game reward (Pixels/Kuroro), quest-to-earn (RON Quest program sudah berjalan 2023-2024). Alasannya: 25% supply community allocation (250M RON) sudah sebagian besar terdistribusi via claim awal + ongoing incentives; sisa untuk incentive jangka panjang. Keyakinan: MEDIUM — berdasarkan tokenomics design (community allocation terbatas) dan pola behavioral Sky Mavis (vertical integration, tidak bergantung airdrop berulang untuk growth).
+
+PELAJARAN LINTAS PROJECT
+
+Ketika token dirancang sebagai gas & staking native (bukan governance/investment) dan didistribusikan via retroactive claim berbasis on-chain activity yang sulit difarm (butuh gas & interaksi nyata), airdrop bisa mencapai desentralisasi validator awal tanpa memicu dump massal — tapi hanya jika CEX listing simultan menyediakan exit liquidity. (Era 2023, RON)
+Ketika 0% alokasi investor dan 25-30% team/ecosystem dengan vesting 3-4 tahun, airdrop tidak menciptakan tekanan jual dari unlock investor — tapi team vesting besar (30% = 300M RON vesting hingga 2027) jadi overhang jangka panjang. (Era 2023, RON)
+Ketika airdrop dilakukan bersamaan mainnet upgrade kritis (PoA→DPoS) dan snapshot diambil SEBELUM pengumuman, sybil resistance alami tercapai tanpa infrastruktur KYC/Proof-of-Humanity mahal. (Era 2023, RON)
+Ketika protokol sudah memiliki full-stack infra sendiri (Wallet, DEX, Marketplace, Bridge, Naming), airdrop token native memperkuat network effect tanpa perlu integrasi third-party — tapi menciptakan walled garden yang sulit dibangun composability lintas chain. (Era 2023, RON)
+Ketika community allocation (25%) dibagi antara claim sekali + ongoing incentives (staking, LP, game rewards), airdrop "Season 2" massal tidak realistis — insentif beralih ke program berkelanjutan (quest, staking, LP) yang lebih efisien retensi. (Era 2023-2024, RON)
+
+OPEN THREADS
+
+- Jumlah exact alamat unik yang claim RON gelombang pertama (Jan 2023) dan rata-rata jumlah RON per claim — tidak dipublikasikan resmi
+- Breakdown tier reward RON claim (bridger, LP, gamer, NFT holder, dll.) — detail persentase alokasi per tier tidak ditemukan
+- Apakah ada plan RON airdrop/claim tambahan untuk user game third-party (Pixels, Kuroro) yang join Ronin pasca-Jan 2023 — tidak diumumkan
+- Status enforcemen slashing DPoS dan dampaknya pada delegator komunitas yang claim RON dan stake — tidak ada data on-chain slash event publik
+- Rincian komposisi Ecosystem Fund 250M RON: berapa sudah cair untuk grant, berapa masih tersedia, apakah ada alokasi untuk airdrop/incentive masa depan — tidak transparan periodik

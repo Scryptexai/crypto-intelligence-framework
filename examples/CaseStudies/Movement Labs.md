@@ -1,9 +1,9 @@
 # Movement Labs — Deep Case Study (Phased)
 
 **CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**
-**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (10/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
-**Raw sources archived:** doc_backup/deep/Movement Labs_foundation_2026-08.docx, doc_backup/deep/Movement Labs_entity_2026-08.docx, doc_backup/deep/Movement Labs_history_2026-08.docx, doc_backup/deep/Movement Labs_technology_2026-08.docx, doc_backup/deep/Movement Labs_financial_2026-08.docx, doc_backup/deep/Movement Labs_token_2026-08.docx, doc_backup/deep/Movement Labs_ecosystem_2026-08.docx, doc_backup/deep/Movement Labs_market_2026-08.docx, doc_backup/deep/Movement Labs_behavioral_2026-08.docx, doc_backup/deep/Movement Labs_knowledge_2026-08.docx.
-**Phases not run:** conflict.
+**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (12/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict, airdrop). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
+**Raw sources archived:** doc_backup/deep/Movement Labs_foundation_2026-08.docx, doc_backup/deep/Movement Labs_entity_2026-08.docx, doc_backup/deep/Movement Labs_history_2026-08.docx, doc_backup/deep/Movement Labs_technology_2026-08.docx, doc_backup/deep/Movement Labs_financial_2026-08.docx, doc_backup/deep/Movement Labs_token_2026-08.docx, doc_backup/deep/Movement Labs_ecosystem_2026-08.docx, doc_backup/deep/Movement Labs_market_2026-08.docx, doc_backup/deep/Movement Labs_behavioral_2026-08.docx, doc_backup/deep/Movement Labs_knowledge_2026-08.docx, doc_backup/deep/Movement Labs_conflict_2026-08.docx, doc_backup/deep/Movement Labs_airdrop_2026-08.docx.
+**Phases not run:** none.
 
 > Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the closing phase (Conflict Resolution / Validation) itself states. Consider a periodic QC pass.
 
@@ -1840,291 +1840,402 @@ _ref: `docs/Ontology/Hidden.md` — enriches DecisionEvent Alternatives/Reason/R
 
 PROJECT: Movement Labs
 
-1. Membangun Move-based modular blockchain stack sebagai infrastruktur eksekusi universal
+Strategic Objectives
 
-· Evidence: Movement Labs memposisikan diri sebagai "Move-based modular blockchain stack" dengan Movement SDK, MoveVM, MEVM, M1 L2, dan Movement Network — mengintegrasikan Move language ke Ethereum melalui MEVM compatibility layer
-· Supporting Dataset: Phase 1 (Foundation), Phase 4 (Technology - System Architecture, Core Components), Phase 7 (Ecosystem Position), Phase 8 (Market Category, Narrative Position)
+1. Menjadi modular blockchain stack berbasis MoveVM yang mengintegrasikan eksekusi Move dengan settlement Ethereum dan DA layer pluggable
 
-2. Mengamankan Ethereum sebagai settlement layer utama untuk M1 L2
+· Evidence: Movement Labs memposisikan diri sebagai "Move-based modular blockchain stack" dengan arsitektur pemisahan execution (MoveVM/MEVM), settlement (Ethereum L1), DA (Celestia/Avail/EigenDA), dan sequencing (EV-007, EV-010)
+· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-007, EV-010, Phase 4 System Architecture, Phase 7 External Dependencies, Phase 8 Narrative Position
 
-· Evidence: M1 dirancang sebagai Move-based L2 pada Ethereum dengan MoveVM untuk eksekusi dan Ethereum untuk finality, data availability (fallback), dan economic security; testnet Parthenon menggunakan Ethereum Sepolia/Holesky untuk settlement
-· Supporting Dataset: Phase 1 (Launch Date, Chain), Phase 3 (EV-009), Phase 4 (System Architecture, Consensus Mechanism), Phase 7 (External Dependencies - Ethereum Critical), Phase 8 (Market Position)
+2. Membawa Move programming language dan MoveVM ke ekosistem Ethereum melalui kompatibilitas EVM (MEVM) tanpa memerlukan developer menulis ulang kontrak Solidity
 
-3. Mengembangkan MEVM (Move-EVM compatibility) untuk menarik developer Ethereum existing
+· Evidence: MEVM dirancang sebagai kompatibilitas layer Move-EVM yang menerjemahkan bytecode EVM ke Move bytecode, mendukung Hardhat/Foundry tooling standar (EV-009, Phase 4 Execution Environment)
+· Supporting Dataset: Phase 3 EV-009, Phase 4 Execution Environment, Phase 7 Major Integrations (MEVM↔Hardhat/Foundry), Phase 8 Narrative Position (EVM Compatibility)
 
-· Evidence: MEVM memungkinkan kontrak Solidity berjalan di MoveVM tanpa modifikasi via transpilasi bytecode; mendukung Hardhat/Foundry tooling; testnet Parthenon live dengan MEVM RPC endpoint
-· Supporting Dataset: Phase 1 (Main Products), Phase 3 (EV-009), Phase 4 (Execution Environment, Development Framework), Phase 7 (Major Integrations - MEVM ↔ Hardhat/Foundry), Phase 8 (Narrative Position - EVM Compatibility)
+3. Membangun M1 sebagai Move-based Layer 2 pertama di Ethereum dengan parallel execution dan formal verification sebagai differentiator teknis
 
-4. Mengadopsi modular Data Availability layer (Celestia, Avail, EigenDA) sebagai opsi pluggable
+· Evidence: M1 menggunakan MoveVM untuk eksekusi dengan parallel execution berbasis dependency graph dan Move Prover untuk formal verification; settlement di Ethereum L1 (Phase 4 Core Components, Consensus Mechanism)
+· Supporting Dataset: Phase 1 Core Products, Phase 3 EV-007, Phase 4 Core Components/Consensus Mechanism, Phase 8 Competitor Landscape (vs Arbitrum/Optimism/Base)
 
-· Evidence: Roadmap integrasi 3 DA layer diumumkan secara eksplisit; DA Layer Adapters merupakan komponen teknis terpisah di Movement SDK; belum live di testnet Parthenon
-· Supporting Dataset: Phase 1 (Ecosystem), Phase 3 (EV-010), Phase 4 (Core Components - DA Layer Adapters), Phase 7 (External Dependencies - 3 High Planned DA, Major Integrations - 3 Planned DA Adapters), Phase 8 (Competitor Landscape - complementary relationship)
+4. Mengembangkan Movement Network sebagai lapisan koordinasi cross-chain untuk interoperabilitas antar Move-based rollup dan app-chain
 
-5. Memisahkan execution layer (MoveVM) dari consensus/sequencing untuk fleksibilitas arsitektur
+· Evidence: Movement Network dirancang sebagai interconnected Move chains dengan coordinator untuk cross-chain messaging (EV-007, EV-010, Phase 7 Planned Integrations)
+· Supporting Dataset: Phase 3 EV-007, EV-010, Phase 4 Core Components (Movement Network Coordinator), Phase 7 Major Integrations (Planned), Phase 8 Narrative Position (Interoperability)
 
-· Evidence: Arsitektur modular dengan execution layer (MoveVM/MEVM), settlement layer (Ethereum), DA layer (pluggable), consensus layer (sequencer-based dengan opsi decentralized sequencing); testnet menggunakan centralized sequencer
-· Supporting Dataset: Phase 4 (System Architecture, Consensus Mechanism), Phase 7 (External Dependencies, Ecosystem Risks - Centralized Sequencer), Phase 8 (Market Position)
+5. Mengumpulkan dana Series A $38M untuk membangun tim, produk, dan ekosistem sebelum mainnet launch dan TGE
 
-6. Mengumpulkan Series A $38M sebagai primary capital untuk pengembangan pre-mainnet
+· Evidence: Series A $38M closed 2024 (EV-006); proceeds digunakan untuk ekspansi tim (EV-008), pengembangan produk, dan pertumbuhan ekosistem; pre-revenue pre-mainnet (Phase 5 Funding History, Financial Dependencies)
+· Supporting Dataset: Phase 3 EV-006, EV-008, Phase 5 Funding History/Financial Dependencies/Financial Risk, Phase 2 Entity (Series A Investors)
 
-· Evidence: Single known funding round Series A $38M (2024); pre-revenue, pre-mainnet, pre-TGE; runway bergantung pada Series A proceeds
-· Supporting Dataset: Phase 2 (Entity - Series A Investors), Phase 3 (EV-006), Phase 5 (Funding History, Financial Dependencies, Financial Risk), Phase 8 (Market Timeline)
+6. Meluncurkan testnet publik (Parthenon) untuk memvalidasi MoveVM, MEVM, dan tooling sebelum mainnet
 
-7. Menunda TGE dan tokenomics detail hingga post-mainnet readiness
+· Evidence: Parthenon testnet live 2024-07-30 (EV-009) sebagai environment pengujian MoveVM, MEVM, Movement SDK tooling; centralized sequencer dioperasikan Movement Labs
+· Supporting Dataset: Phase 3 EV-009, Phase 4 Technical Upgrade History, Phase 7 External Dependencies (Ethereum RPC, Cloud Infra), Phase 8 Market Timeline
 
-· Evidence: Token MOVE status Pre-TGE; total supply, alokasi, vesting, utility, governance — semua "belum dipublikasikan/resmi"; TGE date tidak diumumkan; tidak ada token sale public/private announcement
-· Supporting Dataset: Phase 1 (Launch Date - TGE), Phase 5 (Token Sale, Fundraising Mechanism), Phase 6 (Token Information, Supply, Distribution, Vesting Schedule, TGE, Governance, Inflation/Deflation, Holder Distribution), Phase 8 (Market Timeline, Trading Markets, Liquidity)
-
-8. Membangun developer ecosystem melalui Movement SDK, CLI, docs, dan tooling compatibility sebelum mainnet
-
-· Evidence: Movement SDK, MoveVM, MEVM, CLI, docs.movementlabs.xyz, GitHub repos publik sejak 2023-2024; Hardhat/Foundry support via MEVM; Parthenon testnet live untuk developer testing
-· Supporting Dataset: Phase 2 (Entity - Movement SDK, MoveVM, MEVM, GitHub, Documentation), Phase 3 (EV-003, EV-004, EV-009), Phase 4 (Development Framework, Current Technical Stack), Phase 7 (Developer Ecosystem), Phase 8 (Market Position - Developer-focused)
-
----
+Decision Timeline
 
 Keputusan: Pendirian Movement Labs oleh Rushi Manche dan Cooper Scanlon (2022)
-· Trigger: Identifikasi peluang membawa Move language ke Ethereum melalui modular stack dengan EVM compatibility
-· Evidence: Phase 1 (Founders, Founding Entity), Phase 3 (EV-001, EV-002)
-· Decision: Mendirikan Movement Labs Inc. sebagai Delaware C-Corp untuk mengembangkan Movement SDK, MoveVM, MEVM, M1, Movement Network
-· Immediate Result: Legal entity terbentuk, tim inti 2 founder, pengembangan teknis dimulai
-· Long-term Impact: Menjadi dasar seluruh pengembangan protokol, fundraising Series A, dan ekosistem Movement
-· Supporting Dataset: Phase 1 (Foundation), Phase 2 (Entity - Movement Labs Inc., Rushi Manche, Cooper Scanlon), Phase 3 (EV-001, EV-002)
+· Trigger: Identifikasi peluang membangun modular blockchain stack berbasis MoveVM yang mengatasi keterbatasan L1 Move existing (Aptos/Sui) dan L2 EVM existing
+· Evidence: Blog visi resmi "Introducing Movement Labs: Building the Move-Based Modular Blockchain Stack" menjelaskan motivasikan arsitektur modular
+· Decision: Mendirikan Movement Labs sebagai startup Delaware C-Corp untuk mengembangkan Movement SDK, MoveVM, MEVM, M1, Movement Network
+· Immediate Result: Terbentuknya entitas legal dan tim pendiri (2 founder)
+· Long-term Impact: Dasar seluruh pengembangan protokol dan fundraising Series A $38M
+· Supporting Dataset: Phase 1 Foundation, Phase 2 Entity (Movement Labs Inc., Rushi Manche, Cooper Scanlon), Phase 3 EV-001, EV-002
 
-Keputusan: Memilih arsitektur modular dengan MoveVM sebagai execution layer dan Ethereum sebagai settlement layer (2022-2024)
-· Trigger: Kebutuhan untuk memanfaatkan keamanan Ethereum sambil mengintroduksi MoveVM parallel execution dan formal verification
-· Evidence: Phase 4 (System Architecture, Consensus Mechanism), Phase 7 (External Dependencies - Ethereum Critical), Phase 8 (Narrative Position - Modular Blockchain, Ethereum L2 Scaling)
-· Decision: M1 sebagai L2 rollup pada Ethereum dengan MoveVM/MEVM execution; settlement contracts di Ethereum L1; DA layer pluggable
-· Immediate Result: Arsitektur teknis terdefinisi; testnet Parthenon dibangun di atas arsitektur ini
-· Long-term Impact: Menentukan seluruh technical stack, dependency pada Ethereum, dan positioning sebagai Ethereum L2 bukan L1 kompetitor
-· Supporting Dataset: Phase 1 (Category, Chain), Phase 3 (EV-007, EV-009), Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Keputusan: Inkorporasi sebagai Delaware C-Corp (2022)
+· Trigger: Kebutuhan legal entity untuk fundraising VC, pengembangan IP, dan operasi bisnis di AS
+· Evidence: Crunchbase mencatat Movement Labs Inc. sebagai Delaware C-Corp; careers page bestätigt US entity
+· Decision: Memilih struktur Delaware C-Corp standar untuk startup tech AS
+· Immediate Result: Legal entity siap untuk Series A funding dan employment agreements
+· Long-term Impact: Struktur mempengaruhi regulatory compliance untuk token issuance (US securities law exposure), treasury management, dan governance options
+· Supporting Dataset: Phase 2 Entity (Movement Labs Inc.), Phase 3 EV-002, Phase 5 Financial Risk (Legal Financial Risk), Phase 6 Token (Regulatory uncertainty)
+
+Keputusan: Membangun arsitektur modular dengan pemisahan execution/settlement/DA/sequencing (2024)
+· Trigger: Tren modular blockchain (Celestia, EigenLayer, OP Stack) dan kebutuhan differentiator vs L1 Move dan L2 EVM
+· Evidence: Blog visi (EV-007) dan docs teknis menjelaskan 4-layer modular architecture: MoveVM execution, Ethereum settlement, pluggable DA, decentralized sequencing planned
+· Decision: Adopsi modular stack bukan monolithic L1; Ethereum sebagai settlement layer; DA layer pluggable (Celestia/Avail/EigenDA)
+· Immediate Result: Arsitektur yang memungkinkan flexibility DA layer dan leverage Ethereum security
+· Long-term Impact: Positioning sebagai modular stack peer (bukan competitor langsung Celestia/Avail/EigenDA); dependency pada 3 DA layer yang belum live
+· Supporting Dataset: Phase 3 EV-007, EV-010, Phase 4 System Architecture, Phase 7 External Dependencies (Celestia, Avail, EigenDA - Planned), Phase 8 Narrative Position (Modular Blockchain)
 
 Keputusan: Mengembangkan MEVM (Move-EVM compatibility layer) sebagai fitur inti (2024)
-· Trigger: Menghilangkan barrier adopsi untuk developer Ethereum yang terbiasa dengan Solidity/Hardhat/Foundry
-· Evidence: Phase 3 (EV-007, EV-009), Phase 4 (Execution Environment - MEVM, Development Framework - Hardhat/Foundry Support), Phase 7 (Major Integrations - MEVM ↔ Hardhat/Foundry Live), Phase 8 (Narrative Position - EVM Compatibility Secondary)
-· Decision: Build MEVM transpiler (EVM bytecode → Move bytecode) dengan dukungan tooling Ethereum standar
-· Immediate Result: Parthenon testnet live dengan MEVM RPC, developer bisa deploy Solidity contracts tanpa modifikasi
-· Long-term Impact: Memperluas addressable market dari Move-native developers ke seluruh Ethereum developer ecosystem; diferensiasi vs Aptos/Sui yang tidak punya EVM compatibility native
-· Supporting Dataset: Phase 3 (EV-007, EV-009), Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Keputusan: Meluncurkan Parthenon Testnet (MEVM Testnet) publik 2024-07-30 sebelum mainnet
-· Trigger: Validasi MoveVM, MEVM, Movement SDK di lingkungan production-like; mengumpulkan feedback developer; testing bridge ke Ethereum
-· Evidence: Phase 3 (EV-009), Phase 4 (Technical Upgrade History - Parthenon launch), Phase 7 (Major Integrations - Parthenon↔Ethereum Live), Phase 8 (Market Timeline - Parthenon Testnet Launch)
-· Decision: Public testnet dengan centralized sequencer, Ethereum Sepolia/Holesky settlement, MEVM RPC, block explorer
-· Immediate Result: Developer access ke MoveVM/MEVM; testnet activity dimulai; infrastructure validated
-· Long-term Impact: Menjadi basis untuk mainnet launch; data testnet akan inform audit, performance tuning, dan decentralized sequencer design
-· Supporting Dataset: Phase 3 (EV-009), Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Keputusan: Mengumumkan integrasi 3 DA layer (Celestia, Avail, EigenDA) sebagai planned roadmap (2024)
-· Trigger: Modular blockchain narrative memerlukan DA layer options; menghindari vendor lock-in; menarik ekosistem masing-masing DA layer
-· Evidence: Phase 3 (EV-010), Phase 4 (Core Components - DA Layer Adapters), Phase 7 (External Dependencies - 3 High Planned DA, Major Integrations - 3 Planned DA Adapters), Phase 8 (Competitor Landscape - Complementary)
-· Decision: Announce pluggable DA adapters untuk Movement SDK; tidak commit ke single DA layer
-· Immediate Result: Narrative positioning sebagai modular stack lengkap; partnership discussions dengan 3 DA layer dimulai
-· Long-term Impact: Mainnet launch bergantung pada minimal 1 DA adapter live; technical complexity meningkat; DA layer selection menjadi governance decision post-TGE
-· Supporting Dataset: Phase 3 (EV-010), Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Keputusan: Series A funding $38M dari undisclosed investors (2024)
-· Trigger: Capital requirement untuk team expansion (30+ orang), infrastructure, audit, mainnet preparation
-· Evidence: Phase 2 (Entity - Series A Investors), Phase 3 (EV-006), Phase 5 (Funding History - Series A $38M, Financial Dependencies), Phase 8 (Market Timeline - Series A Funding)
-· Decision: Raise $38M Series A VC funding; investor identity tidak diumumkan publik
-· Immediate Result: Runway untuk pengembangan 2024-2025; team expansion (Head of Growth, Ecosystem, Operations hired)
-· Long-term Impact: Financial dependency pada Series A proceeds; token allocation untuk investors implied (SAFT/token warrant) tapi tidak dikonfirmasi; regulatory scrutiny potential untuk token issuance
-· Supporting Dataset: Phase 2 (Entity), Phase 3 (EV-006), Phase 5 (Financial), Phase 8 (Market)
-
-Keputusan: Menyembunyikan tokenomics MOVE detail (supply, allocation, vesting, utility, governance) hingga post-mainnet readiness
-· Trigger: Regulatory uncertainty US (Delaware C-Corp issuing token); menghindari prematur commitment; flexibility untuk adjust based on mainnet dynamics
-· Evidence: Phase 1 (Token Contract - belum deploy), Phase 5 (Token Sale - tidak diumumkan), Phase 6 (Token Information - semua "belum diketahui/diumumkan", Supply/Distribution/Vesting/TGE/Governance/Inflation - semua Planned/Unknown), Phase 8 (Trading Markets - Pre-TGE, Liquidity - Pre-liquidity)
-· Decision: Tidak mempublikasikan tokenomics detail; status Pre-TGE dipertahankan; Discord FAQ hanya "pre-TGE, jadwal belum diumumkan"
-· Immediate Result: Tidak ada speculasi harga; tidak ada community sale/private sale announcement; focus pada teknis dan developer adoption
-· Long-term Impact: Token launch timeline tidak pasti; investor token allocation terms unknown; governance model undefined; regulatory risk untuk token classification
-· Supporting Dataset: Phase 1 (Foundation), Phase 5 (Financial), Phase 6 (Token), Phase 8 (Market)
-
-Keputusan: Rekrut Head of Growth, Head of Ecosystem, Head of Operations (2024) post-Series A
-· Trigger: Series A proceeds memungkinkan team expansion; perlu go-to-market strategy, developer relations, operational scaling
-· Evidence: Phase 2 (Entity - Sami Kassab, Arjun Krishan, Tanya Kumar), Phase 3 (EV-008), Phase 5 (Revenue Model - Grant/Ecosystem Fund Planned), Phase 7 (Developer Ecosystem - Grant Program implied), Phase 8 (Market Position - Developer-focused)
-· Decision: Hire 3 leadership roles untuk growth, ecosystem, operations
-· Immediate Result: Organizational capacity untuk ecosystem building, grant program planning, operational maturity
-· Long-term Impact: Ecosystem fund/grant program akan diluncurkan (Arjun Krishan role); growth metrics akan di-track (Sami Kassab); operational readiness untuk mainnet (Tanya Kumar)
-· Supporting Dataset: Phase 2 (Entity), Phase 3 (EV-008), Phase 5 (Financial), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Keputusan: Menggunakan centralized sequencer untuk Parthenon testnet dengan rencana decentralized sequencer set untuk mainnet
-· Trigger: Simplicity untuk testnet launch cepat; complexity decentralized sequencing (consensus, staking, slashing) memerlukan lebih banyak R&D dan audit
-· Evidence: Phase 3 (EV-009), Phase 4 (Consensus Mechanism - centralized testnet, planned decentralized), Phase 7 (Ecosystem Risks - Centralized Sequencer), Phase 8 (Market - Competitor Landscape vs Arbitrum/Optimism decentralized sequencing)
-· Decision: Single sequencer operated by Movement Labs untuk testnet; design decentralized sequencer set untuk mainnet (validator requirements, staking token MOVE?, slashing conditions TBD)
-· Immediate Result: Testnet launch on schedule (2024-07-30); single point of failure untuk transaction ordering; no censorship resistance pada testnet
-· Long-term Impact: Mainnet launch gated oleh decentralized sequencer readiness; MOVE token utility untuk staking sequencer implied tapi tidak dikonfirmasi; security audit scope erweitert
-· Supporting Dataset: Phase 3 (EV-009), Phase 4 (Technology), Phase 7 (Ecosystem Risks), Phase 8 (Market)
-
----
-
-Pola 1: Modular Architecture First — Memisahkan execution, settlement, DA, dan sequencing menjadi layer terpisah yang pluggable
-
-· Decision Pattern: Setiap komponen arsitektur (MoveVM, MEVM, Ethereum settlement, DA adapters, sequencer) dikembangkan sebagai modul independen dalam Movement SDK; tidak ada monolithic chain design
-· Evidence: Phase 4 (System Architecture - modular stack), Phase 7 (External Dependencies - 3 DA layers pluggable, Ethereum settlement critical), Phase 8 (Narrative Position - Modular Blockchain Main Narrative)
-· Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Pola 2: EVM Compatibility via Translation Layer — Membangun MEVM sebagai transpiler EVM bytecode ke Move bytecode bukan EVM-equivalent execution
-
-· Decision Pattern: MEVM tidak mengeksekusi EVM bytecode native; mentranslasikannya ke Move bytecode untuk dijalankan di MoveVM; mendukung Hardhat/Foundry tooling tapi bukan bytecode-compatible
-· Evidence: Phase 4 (Execution Environment - MEVM transpiler, Development Framework - Hardhat/Foundry Support), Phase 7 (Major Integrations - MEVM ↔ Hardhat/Foundry Live), Phase 8 (Narrative Position - EVM Compatibility Secondary, not Equivalence)
-· Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Pola 3: Testnet-First Development — Meluncurkan public testnet (Parthenon) dengan centralized components sebelum mainnet design finalized
-
-· Decision Pattern: Parthenon testnet live 2024-07-30 dengan centralized sequencer, Ethereum testnet settlement, MEVM RPC; mainnet requirements (decentralized sequencer, DA adapters, audit) masih in progress
-· Evidence: Phase 3 (EV-009), Phase 4 (Technical Upgrade History - Parthenon launch, Consensus Mechanism - centralized testnet), Phase 7 (Ecosystem Risks - Centralized Sequencer), Phase 8 (Market Timeline - Parthenon Testnet Launch)
-· Supporting Dataset: Phase 3 (History), Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Pola 4: MoveVM Parallel Execution & Formal Verification sebagai Technical Differentiator — Memanfaatkan Move language properties untuk parallel execution (dependency graph) dan Move Prover integration
-
-· Decision Pattern: MoveVM design menekankan parallel execution (Block-STM style) dan formal verification via Move Prover sebagai core features vs EVM sequential execution
-· Evidence: Phase 4 (Execution Environment - MoveVM parallel execution, Move Prover), Phase 8 (Narrative Position - Parallel Execution Secondary, Formal Verification Secondary), Phase 7 (Ecosystem Position - Move-based modular stack)
-· Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Pola 5: Rust Implementation untuk Core Infrastructure — MoveVM, MEVM, Movement SDK, node software ditulis dalam Rust untuk performance dan safety
-
-· Decision Pattern: Semua core protocol components (MoveVM, MEVM, Movement SDK, node) implemented in Rust; Move untuk smart contracts; TypeScript/JS untuk client tooling
-· Evidence: Phase 4 (Programming Languages - Rust core, Move contracts, TypeScript client), Phase 4 (Current Technical Stack - Rust core), Phase 7 (Developer Ecosystem - SDK, CLI in Rust/TypeScript)
-· Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem)
-
----
-
-Pola 1: Single Large VC Round sebagai Primary Funding — Series A $38M sebagai satu-satunya known funding round; no seed/pre-seed public record; no revenue; no token sale
-
-· Decision Pattern: Movement Labs bergantung pada satu ronde Series A besar untuk seluruh runway pre-mainnet; tidak ada diversifikasi funding source (grants, protocol revenue, token sale, foundation)
-· Evidence: Phase 5 (Funding History - hanya Series A $38M terverifikasi; Seed tidak terverifikasi; Revenue History - tidak diungkap; Fundraising Mechanism - VC Funding only), Phase 2 (Entity - Series A Investors undisclosed), Phase 3 (EV-006), Phase 8 (Market Timeline - Series A Funding)
-· Supporting Dataset: Phase 2 (Entity), Phase 3 (History), Phase 5 (Financial), Phase 8 (Market)
-
-Pola 2: Pre-Revenue, Pre-TGE Treasury Strategy — Treasury composition tidak diungkap; asumsi denominated USD/stablecoin dari Series A proceeds; zero crypto asset exposure pre-TGE
-
-· Decision Pattern: Tidak ada transparency report, treasury dashboard, atau financial audit publik; financial dependency sepenuhnya pada Series A cash proceeds
-· Evidence: Phase 5 (Treasury - tidak diungkap; Financial Dependencies - Series A Investors primary; Financial Risk - Funding Dependency, Treasury Concentration), Phase 8 (Adoption Metrics - TVL $0, Volume $0)
-· Supporting Dataset: Phase 5 (Financial), Phase 8 (Market)
-
-Pola 3: Token Allocation Implied untuk Series A Investors via SAFT/Token Warrant — Standard crypto VC practice tapi tidak dikonfirmasi resmi
-
-· Decision Pattern: Series A $38M kemungkinan besar include token allocation (SAFT) tapi terms, valuation, unlock schedule tidak dipublikasikan; tokenomics investor category "Planned" tapi percentage unknown
-· Evidence: Phase 5 (Fundraising Mechanism - Private Sale assumed LOW), Phase 6 (Distribution - Investors Planned MEDIUM; Vesting - Investors Planned asumsi standar VC), Phase 2 (Entity - Series A Investors undisclosed)
-· Supporting Dataset: Phase 2 (Entity), Phase 5 (Financial), Phase 6 (Token)
-
-Pola 4: Delayed Tokenomics Disclosure — Semua token parameters (supply, allocation, vesting, utility, governance, inflation) "belum dipublikasikan/resmi" hingga mainnet readiness
-
-· Decision Pattern: Token MOVE status Pre-TGE dipertahankan tanpa timeline; tidak ada community sale, public sale, launchpad announcement; regulatory caution untuk Delaware C-Corp
-· Evidence: Phase 1 (Token Contract - belum deploy), Phase 5 (Token Sale - tidak diumumkan), Phase 6 (Token Information/Supply/Distribution/Vesting/TGE/Governance/Inflation - semua Unknown/Planned), Phase 8 (Trading Markets - Pre-TGE, Liquidity - Pre-liquidity)
-· Supporting Dataset: Phase 1 (Foundation), Phase 5 (Financial), Phase 6 (Token), Phase 8 (Market)
-
-Pola 5: Ecosystem Fund/Grant Program Planned tapi Unfunded — Head of Ecosystem hired (Arjun Krishan) tapi grant program size, source (token vs Series A proceeds), criteria tidak diumumkan
-
-· Decision Pattern: Organizational readiness untuk ecosystem grants dibangun sebelum funding source diklarifikasi; dependency pada future token allocation atau Series A proceeds allocation
-· Evidence: Phase 2 (Entity - Arjun Krishan Head of Ecosystem), Phase 3 (EV-008), Phase 5 (Revenue Model - Grant/Ecosystem Fund Planned), Phase 7 (Developer Ecosystem - Grant Program tidak diumumkan), Phase 8 (Open Threads - Grant program size/timeline unknown)
-· Supporting Dataset: Phase 2 (Entity), Phase 3 (History), Phase 5 (Financial), Phase 7 (Ecosystem), Phase 8 (Market)
-
----
-
-Pola 1: Ethereum Settlement Dependency sebagai Strategic Anchor — Semua arsitektur dan go-to-market dibangun di atas Ethereum L1 settlement; tidak ada alternative settlement layer
-
-· Decision Pattern: M1 = MoveVM L2 on Ethereum; testnet Parthenon menggunakan Ethereum Sepolia/Holesky; bridge design ke Ethereum; competitor positioning vs Arbitrum/Optimism/Base
-· Evidence: Phase 1 (Chain - Ethereum L1 settlement), Phase 3 (EV-009 - Parthenon↔Ethereum), Phase 4 (System Architecture - Ethereum settlement), Phase 7 (External Dependencies - Ethereum Critical, Major Integrations - Parthenon↔Ethereum Live), Phase 8 (Market Position - Primary Chain Ethereum, Competitor Landscape - Ethereum L2s)
-· Supporting Dataset: Phase 1 (Foundation), Phase 3 (History), Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Pola 2: Pluggable DA Layer Strategy — Mengumumkan 3 DA layer (Celestia, Avail, EigenDA) sebagai options; tidak commit ke single DA; DA adapters sebagai SDK modules
-
-· Decision Pattern: Announce multiple DA integrations untuk narrative completeness dan ecosystem breadth; technical implementation belum live di testnet; mainnet launch bergantung pada ≥1 DA adapter ready
-· Evidence: Phase 1 (Ecosystem - Celestia, Avail, EigenDA planned), Phase 3 (EV-010), Phase 4 (Core Components - DA Layer Adapters), Phase 7 (External Dependencies - 3 High Planned DA, Major Integrations - 3 Planned DA Adapters), Phase 8 (Competitor Landscape - Complementary)
-· Supporting Dataset: Phase 1 (Foundation), Phase 3 (History), Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Pola 3: Move Ecosystem Leverage — Building on upstream Move toolchain (compiler, prover, VM) dari Aptos/Sui/0L; tidak fork Move language; kontribusi upstream implied
-
-· Decision Pattern: MovementVM/MEVM/SDK menggunakan Move language toolchain existing; differentiator adalah MEVM compatibility layer dan modular stack, bukan Move language itself
-· Evidence: Phase 4 (Programming Languages - Move, External Dependencies - Move Language Toolchain Critical), Phase 7 (External Dependencies - Move Language Toolchain Critical, Aptos/Sui/0L as peers), Phase 8 (Competitor Landscape - Aptos/Sui/0L as Move ecosystem peers)
-· Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Pola 4: Developer Tooling Compatibility First — Prioritaskan Hardhat/Foundry support via MEVM sebelum Move-native tooling maturity
-
-· Decision Pattern: MEVM live dengan Hardhat/Foundry plugins di testnet Parthenon; Movement CLI/TypeScript SDK parallel; Move Prover integration documented tapi tidak highlighted sebagai primary developer entry point
-· Evidence: Phase 4 (Development Framework - Hardhat/Foundry Support, Movement CLI), Phase 7 (Major Integrations - MEVM ↔ Hardhat/Foundry Live, Developer Ecosystem - SDK, API, Tools), Phase 8 (Narrative Position - EVM Compatibility Secondary)
-· Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Pola 5: Infrastructure Partnerships via Standard Providers — GitHub, Discord, Cloud K8s, Ethereum RPC providers; tidak ada exclusive infrastructure partnerships
-
-· Decision Pattern: Menggunakan commodity infrastructure (GitHub Actions, Discord, cloud K8s) tanpa announced strategic partnerships dengan infrastructure providers (Alchemy, Infura, AWS, etc.)
-· Evidence: Phase 2 (Entity - GitHub Organization, Discord Community), Phase 7 (Infrastructure Providers - GitHub, Discord, Ethereum RPC unspecified, Cloud unspecified, Self-hosted Explorer), Phase 4 (Current Technical Stack - Docker, Kubernetes, GitHub Actions)
-· Supporting Dataset: Phase 2 (Entity), Phase 4 (Technology), Phase 7 (Ecosystem)
-
----
-
-Pola 1: Pre-TGE Governance Vacuum — Tidak ada governance mechanism live; tidak ada DAO, Foundation, Council, Committee; token MOVE belum exist; upgrade control di Movement Labs Inc.
-
-· Decision Pattern: Semua protocol upgrades (MoveVM, MEVM, Movement SDK, M1 contracts) dikendalikan oleh Movement Labs Inc. centralized; governance model "Planned" tapi semua parameters unknown; Foundation formation unconfirmed
-· Evidence: Phase 2 (Entity - tidak ada Foundation/DAO), Phase 5 (Fundraising Mechanism - Foundation tidak ada, DAO Treasury tidak ada), Phase 6 (Governance - semua Unknown/Planned), Phase 7 (Governance Ecosystem - Foundation/DAO/Council/Committee/Validator Group semua tidak ada), Phase 8 (Market - Governance tidak tersedia)
-· Supporting Dataset: Phase 2 (Entity), Phase 5 (Financial), Phase 6 (Token), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Pola 2: Centralized Sequencer → Decentralized Sequencer Roadmap — Testnet centralized (Movement Labs operated); mainnet planned decentralized sequencer set dengan MOVE staking implied
-
-· Decision Pattern: Explicit acknowledgment centralized sequencer testnet; roadmap ke decentralized set tapi spec (consensus, validator req, staking token, slashing) semua TBD; governance untuk sequencer selection undefined
-· Evidence: Phase 3 (EV-009), Phase 4 (Consensus Mechanism - centralized testnet, planned decentralized), Phase 6 (Utility - Staking/Validator Security Planned), Phase 7 (Ecosystem Risks - Centralized Sequencer, Governance - Validator Group tidak ada), Phase 8 (Open Threads - Decentralized sequencer spec unknown)
-· Supporting Dataset: Phase 3 (History), Phase 4 (Technology), Phase 6 (Token), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Pola 3: Token-Weighted Governance Assumed tapi Unspecified — Semua governance utility (voting, delegation, proposal, treasury) "Planned" dengan MOVE token; tidak ada off-chain governance (Snapshot) live
-
-· Decision Pattern: Standard token-weighted governance assumed (1 token = 1 vote atau quadratic) tapi tidak ada commitment; delegation, proposal threshold, timelock, execution delay semua unknown
-· Evidence: Phase 6 (Governance - Model/Voting System/Voting Power/Delegation/Proposal System/Treasury Governance semua Unknown/Planned), Phase 8 (Market - Governance tidak tersedia)
-· Supporting Dataset: Phase 6 (Token), Phase 8 (Market)
-
-Pola 4: Upgrade Authority di Movement Labs Inc. — Protocol upgrades (MoveVM, MEVM, SDK, M1 contracts) controlled by company multisig/timelock; no on-chain governance process defined
-
-· Decision Pattern: Company-controlled upgradeability untuk speed dan coordination pre-mainnet; transition ke on-chain governance post-TGE unplanned/unannounced
-· Evidence: Phase 4 (Security Model - Upgradeability controlled by Movement Labs Inc.), Phase 7 (Governance Ecosystem - tidak ada DAO/Foundation), Phase 8 (Open Threads - Upgrade governance mechanism undefined)
-· Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
----
-
-Pola 1: Proactive Centralized Sequencer Risk Acknowledgment — Eksplisit menyatakan testnet menggunakan centralized sequencer; roadmap decentralized sequencer set; tidak menyembunyikan trust assumption
-
-· Decision Pattern: Blog post dan docs transparan tentang centralized sequencer di testnet; risk documented di ecosystem risks; tidak claim "decentralized" prematur
-· Evidence: Phase 3 (EV-009 - Parthenon testnet launch), Phase 4 (Consensus Mechanism - centralized testnet, planned decentralized), Phase 7 (Ecosystem Risks - Centralized Sequencer Testnet), Phase 8 (Market - tidak claim decentralized sequencing)
-· Supporting Dataset: Phase 3 (History), Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Pola 2: No Security Audit Completed — MoveVM, MEVM, Movement SDK, M1 settlement contracts belum memiliki audit publik; testnet live tanpa audit completion
-
-· Decision Pattern: Parthenon testnet launched tanpa audit publik; audit timeline dan auditor tidak diumumkan; mainnet launch gated oleh audit completion implied
-· Evidence: Phase 4 (Audit History - tidak ditemukan audit publik; Audit Status - belum diumumkan), Phase 7 (Ecosystem Risks - No Security Audit Completed), Phase 8 (Open Threads - Audit status unknown)
-· Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Pola 3: Regulatory Caution untuk Token Issuance — Delaware C-Corp, US jurisdiction; tokenomics delayed; no public sale announcement; Discord FAQ vague pada TGE
-
-· Decision Pattern: Tidak mempublikasikan tokenomics detail; tidak announce community sale/private sale/launchpad; "pre-TGE" status maintained tanpa timeline; legal compliance prioritized over community expectations
-· Evidence: Phase 1 (Token Contract - belum deploy), Phase 2 (Entity - Movement Labs Inc. Delaware C-Corp), Phase 5 (Financial Risk - Legal Financial Risk), Phase 6 (Token - semua Unknown/Planned), Phase 8 (Open Threads - Regulatory compliance unknown)
-· Supporting Dataset: Phase 1 (Foundation), Phase 2 (Entity), Phase 5 (Financial), Phase 6 (Token), Phase 8 (Market)
-
-Pola 4: Technical Limitation Transparency — Docs dan blog mengakui MEVM tidak 100% kompatibel EVM; parallel execution limitations; fraud proof/validity proof unspecified
-
-· Decision Pattern: Known technical limitations (MEVM gaps, parallel execution contention, fraud proof unspecified, DA adapters not live, Movement Network unspecified) documented di technical limitations section
-· Evidence: Phase 4 (Known Technical Limitations - 7 items documented), Phase 7 (Ecosystem Risks - MEVM Compatibility Gaps), Phase 8 (Open Threads - MEVM compatibility test suite results unknown)
-· Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
-
-Pola 5: Financial Runway Transparency Absence — Tidak ada burn rate, runway, treasury composition disclosure; Series A $38M amount known tapi usage timeline unknown
-
-· Decision Pattern: Standard startup opacity pada financials; tidak ada transparency report; community tidak bisa assess runway risk
-· Evidence: Phase 5 (Treasury - tidak diungkap; Financial Risk - Funding Dependency, Treasury Concentration), Phase 8 (Open Threads - Burn rate, runway, financial audit unknown)
-· Supporting Dataset: Phase 5 (Financial), Phase 8 (Market)
-
----
-
-Pola 1: Announce → Build → Launch Pattern — Pengumuman visi/produk (EV-007 blog post) → Infrastructure setup (GitHub, Docs, Discord) → Funding (Series A) → Team expansion (EV-008) → Testnet Launch (EV-009) → DA Integration Announcements (EV-010)
-
-· Decision Pattern: Sequential execution: narrative setting → infrastructure → capital → team → product launch → partnership announcements; setiap phase mengunci resource untuk phase berikutnya
-· Evidence: Phase 3 (EV-003 GitHub, EV-004 Docs, EV-005 Discord, EV-006 Series A, EV-007 Announcement, EV-008 Hiring, EV-009 Parthenon, EV-010 DA Announcements), Phase 2 (Entity timeline), Phase 8 (Market Timeline)
-· Supporting Dataset: Phase 2 (Entity), Phase 3 (History), Phase 8 (Market)
-
-Pola 2: Post-Funding Team Expansion — Series A $38M (EV-006) diikuti rekrutmen 3 leadership roles (EV-008: Head of Growth, Ecosystem, Operations) dalam waktu dekat
-
-· Decision Pattern: Capital deployment ke organizational capacity building segera setelah funding closed; growth/ecosystem/ops prioritized over pure engineering hires (engineering team implied sudah ada pre-Series A)
-· Evidence: Phase 3 (EV-006 Series A 2024, EV-008 Hiring 2024), Phase 2 (Entity - Sami Kassab, Arjun Krishan, Tanya Kumar 2024-sekarang), Phase 5 (Financial Dependencies - Series A primary), Phase 7 (Developer Ecosystem - Grant Program implied by Head of Ecosystem)
-· Supporting Dataset: Phase 2 (Entity), Phase 3 (History), Phase 5 (Financial), Phase 7 (Ecosystem)
-
-Pola 3: Testnet Launch Sebelum Audit/DA/Decentralization Complete — Parthenon testnet live (EV-009) dengan centralized sequencer, tanpa audit, tanpa DA adapters live, tanpa decentralized sequencing
-
-· Decision Pattern: Shipping testnet early untuk developer feedback dan narrative momentum; technical completeness (audit, DA, decentralized sequ
+· Trigger: Kebutuhan menarik Ethereum developer dan dApps existing tanpa rewrite; kompetisi L2 yang sudah EVM-equivalent (Arbitrum, Optimism, Base)
+· Evidence: Parthenon testnet launch (EV-009) memprioritaskan MEVM testing; blog testnet announcement menekankan Hardhat/Foundry support dan Solidity deployment tanpa modifikasi
+· Decision: Build transpiler/compiler EVM bytecode → Move bytecode dengan precompile support; bukan EVM-equivalent tapi EVM-compatible
+· Immediate Result: Developer dapat deploy Solidity contracts di testnet Parthenon menggunakan tooling familiar
+· Long-term Impact: Differentiator vs Move L1 (Aptos/Sui tidak EVM-compatible); trade-off: kompatibilitas tidak 100% (precompiles, opcode, gas semantics gaps)
+· Supporting Dataset: Phase 3 EV-009, Phase 4 Execution Environment, Phase 7 Major Integrations (MEVM↔Hardhat/Foundry - Live), Phase 8 Competitor Landscape (vs Arbitrum/Optimism/Base EVM-equivalent)
+
+Keputusan: Series A fundraising $38M (2024)
+· Trigger: Butuh capital untuk scaling tim (~30+ orang), pengembangan produk (MoveVM, MEVM, SDK, M1), dan ekosistem sebelum mainnet
+· Evidence: Crunchbase mencatat Series A $38M 2024; blog visi (EV-007) mengumumkan funding; hiring 3 leadership roles (EV-008) pasca-funding
+· Decision: Single large Series A round dari undisclosed VC investors; bukan multiple smaller rounds
+· Immediate Result: $38M treasury untuk runway; tim ekspansi ke 30+; testnet launch capability
+· Long-term Impact: Single funding source dependency; investor token allocation implied (SAFT) tapi tidak transparan; pressure untuk mainnet/TGE delivery
+· Supporting Dataset: Phase 3 EV-006, EV-008, Phase 5 Funding History/Financial Dependencies/Financial Risk, Phase 2 Entity (Series A Investors), Phase 6 Major Token Events (Series A implication)
+
+Keputusan: Peluncuran Parthenon testnet publik dengan centralized sequencer (2024-07-30)
+· Trigger: Butuh environment nyata untuk testing MoveVM, MEVM, SDK tooling, dan developer onboarding sebelum mainnet
+· Evidence: Blog testnet announcement (EV-009); testnet explorer live; RPC endpoint publik; centralized sequencer operated by Movement Labs
+· Decision: Launch testnet dengan centralized sequencer (single operator) untuk speed to market; decentralized sequencer deferred ke mainnet
+· Immediate Result: Developer dapat test MEVM, deploy Solidity contracts, validate parallel execution; real-world feedback loop
+· Long-term Impact: Centralization risk di testnet (censorship, single point of failure); reputational pressure untuk deliver decentralized sequencer mainnet; testnet metrics tidak diagregasikan publik
+· Supporting Dataset: Phase 3 EV-009, Phase 4 Consensus Mechanism/Known Technical Limitations, Phase 7 External Dependencies (Ethereum RPC, Cloud Infra), Phase 8 Market Timeline, Phase 8 Ecosystem Risks (Centralized Sequencer)
+
+Keputusan: Mengumumkan integrasi 3 DA layer (Celestia, Avail, EigenDA) sebelum implementasi live (2024)
+· Trigger: Modular narrative memerlukan DA optionality; signaling ke investor dan developer bahwa Movement "modular-native"
+· Evidence: Blog visi (EV-007) dan roadmap announcement (EV-010) mencantumkan 3 DA layer sebagai planned integrations; tidak ada kode adapter di testnet Parthenon
+· Decision: Announce multiple DA partnerships upfront; implementation deferred
+· Immediate Result: Narrative positioning sebagai modular stack; partnership signaling
+· Long-term Impact: Execution risk — minimal 1 DA adapter harus ready untuk mainnet; developer expectation management; dependency pada 3 eksternal protocol timelines
+· Supporting Dataset: Phase 3 EV-007, EV-010, Phase 4 System Architecture/Current Technical Stack/Known Technical Limitations, Phase 7 External Dependencies (3 DA - Planned), Phase 7 Major Integrations (4 Planned DA adapters), Phase 8 Ecosystem Risks (Planned DA Layer Dependencies Not Live)
+
+Keputusan: Rekrutmen Head of Growth, Head of Ecosystem, Head of Operations (2024)
+· Trigger: Post-Series A scaling; butuh go-to-market, developer relations, dan operational excellence
+· Evidence: Team page (EV-008) menampilkan 3 leadership hires: Sami Kassab (Growth), Arjun Krishan (Ecosystem), Tanya Kumar (Operations)
+· Decision: Prioritize GTM dan ecosystem leadership sebelum mainnet launch
+· Immediate Result: Kapasitas eksekusi ecosystem growth, developer onboarding, ops compliance
+· Long-term Impact: Foundation untuk grant program (implied by Head of Ecosystem), hackathon, enterprise partnerships; saat ini program belum diumumkan
+· Supporting Dataset: Phase 3 EV-008, Phase 2 Entity (Sami Kassab, Arjun Krishan, Tanya Kumar), Phase 7 Developer Ecosystem (Grant Program - Planned), Phase 8 Open Threads (Grant program timeline)
+
+Keputusan: Tidak membentuk Movement Foundation / DAO pre-TGE (2024-sekarang)
+· Trigger: Pre-TGE stage; token MOVE belum exist; governance token required untuk DAO
+· Evidence: Blog visi (EV-007) tidak mention foundation; Discord FAQ pre-TGE; tidak ada governance entity di Phase 7 Governance Ecosystem
+· Decision: Defer foundation/DAO formation ke post-TGE; company-controlled development phase
+· Immediate Result: Centralized decision-making di Movement Labs Inc.; faster execution; no community governance overhead
+· Long-term Impact: Transition risk ke decentralized governance; token distribution design harus accommodate future DAO; regulatory path untuk token issuance via C-Corp vs foundation
+· Supporting Dataset: Phase 3 EV-007, Phase 5 Fundraising Mechanism (No Foundation/DAO), Phase 6 Governance (Planned), Phase 7 Governance Ecosystem (None), Phase 8 Open Threads (Foundation formation timeline)
+
+Evolution Pattern
+
+Perubahan Strategi: Dari Stealth Development → Public Announcement → Testnet Launch → Mainnet Preparation (2022-2024)
+· Evidence: 2022 founding stealth (EV-001, EV-002) → 2024 public blog announcement dengan full product suite (EV-007) → 2024-07-30 Parthenon testnet live (EV-009) → current mainnet prep phase (Phase 3 timeline, Phase 8 Market Timeline)
+· Supporting Dataset: Phase 3 All Events, Phase 8 Market Timeline
+
+Perubahan Teknologi: Dari MoveVM Native → MEVM Compatibility Layer sebagai Priority (2024)
+· Evidence: Blog visi (EV-007) mempresentasikan MoveVM dan MEVM sebagai parallel products; tapi Parthenon testnet (EV-009) adalah "MEVM Testnet" — MEVM menjadi entry point utama untuk developer; MoveVM native development secondary di testnet phase
+· Supporting Dataset: Phase 3 EV-007, EV-009, Phase 4 Execution Environment, Phase 8 Narrative Position (EVM Compatibility as Secondary Narrative)
+
+Perubahan Tokenomics: Dari Undefined → Planned Categories Tanpa Detail (2024-sekarang)
+· Evidence: Phase 6 Token menunjukkan 8 kategori distribusi planned (Community, Team, Investors, Foundation, Treasury, Ecosystem, Advisors, Other) tapi SEMUA persentase, vesting, cliff, supply type = "tidak diketahui"; TGE date = "tidak diumumkan"
+· Supporting Dataset: Phase 6 All Sections (Token Information, Supply, Distribution, Vesting Schedule, TGE, Utility, Governance, Inflation/Deflation)
+
+Perubahan Governance: Dari Company-Controlled → Planned Token-Weighted DAO (Future)
+· Evidence: Saat ini 0 governance entities (Phase 7); Phase 6 Governance semua "Planned" dengan model "tidak diketahui"; Phase 5 Fundraising Mechanism mencatat "DAO Treasury (belum ada DAO)"; EV-007 blog tidak mention foundation
+· Supporting Dataset: Phase 5 Fundraising Mechanism, Phase 6 Governance, Phase 7 Governance Ecosystem, Phase 3 EV-007
+
+Perubahan Ekosistem: Dari Internal Development → External Integration Announcements (2024)
+· Evidence: EV-003/004/005 infra internal (GitHub, Docs, Discord) → EV-010 DA layer integration announcements (Celestia, Avail, EigenDA) → EV-009 testnet live dengan Ethereum settlement integration → Phase 7 menunjukkan 8 external dependencies (1 live critical: Ethereum, 3 planned high: DA layers)
+· Supporting Dataset: Phase 3 EV-003, EV-004, EV-005, EV-009, EV-010, Phase 7 External Dependencies, Major Integrations
+
+Perubahan Pasar: Dari Pre-Market → Narrative Building Without Metrics (2024)
+· Evidence: Phase 8 Market menunjukkan 9 narratives positioned (3 Main, 6 Secondary/Planned) tapi 0 adoption metrics live (TVL $0, DAU unknown, Volume $0); competitor landscape mapped tapi no market share data
+· Supporting Dataset: Phase 8 Market Category, Market Position, Adoption Metrics, Competitor Landscape, Narrative Position
+
+Technical Decision Pattern
+
+Pola 1: Ethereum Settlement Alignment First
+· Decision Pattern: Memilih Ethereum L1 sebagai settlement layer tunggal non-negotiable, bukan alternative L1 atau sovereign chain
+· Evidence: Phase 4 System Architecture menyatakan "M1 merupakan Layer 2 rollup pada Ethereum yang menggunakan MoveVM untuk eksekusi transaksi dan Ethereum untuk finality serta data availability"; Phase 7 External Dependencies: Ethereum = Critical, Live; Phase 8 Narrative Position: Ethereum L2 Scaling = Main Narrative
+· Supporting Dataset: Phase 4 System Architecture, Phase 7 External Dependencies, Phase 8 Narrative Position, Phase 3 EV-007, EV-009
+
+Pola 2: Modular DA Layer Optionality (Pluggable Architecture)
+· Decision Pattern: Arsitektur DA layer dirancang pluggable dengan 3 opsi (Celestia, Avail, EigenDA) bukan commit ke single DA provider
+· Evidence: Phase 4 System Architecture: "DA layer (pluggable: Celestia/Avail/EigenDA)"; Phase 3 EV-010 announcement semua 3 sekaligus; Phase 7 External Dependencies: 3 DA layer = High, Planned; Phase 7 Major Integrations: 3 DA adapters Planned; Phase 4 Known Technical Limitations: "DA layer integrations masih di tahap planned/roadmap; belum live di testnet Parthenon"
+· Supporting Dataset: Phase 3 EV-010, Phase 4 System Architecture/Known Technical Limitations, Phase 7 External Dependencies/Major Integrations
+
+Pola 3: EVM Compatibility via Transpilation (MEVM) Bukan EVM-Equivalent
+· Decision Pattern: Build MEVM sebagai transpiler EVM bytecode → Move bytecode; accept compatibility gaps (precompiles, opcode, gas semantics) untuk leverage MoveVM advantages (parallel execution, formal verification)
+· Evidence: Phase 4 Execution Environment: "MEVM: EVM compatibility layer yang mengeksekusi bytecode EVM dengan mentranslasikannya ke Move bytecode"; Phase 4 Known Technical Limitations: "MEVM kompatibilitas EVM belum 100%: precompiles tertentu, opcode spesifik, dan gas semantics mungkin berbeda"; Phase 7 Major Integrations: MEVM↔Hardhat/Foundry Live; Phase 8 Competitor Landscape: vs Arbitrum/Optimism/Base yang EVM-equivalent
+· Supporting Dataset: Phase 4 Execution Environment/Known Technical Limitations, Phase 7 Major Integrations, Phase 8 Competitor Landscape/Narrative Position
+
+Pola 4: Parallel Execution via MoveVM Dependency Graph (Block-STM Style)
+· Decision Pattern: Adopsi parallel execution berbasis dependency tracking di MoveVM sebagai core differentiator vs sequential EVM execution
+· Evidence: Phase 4 Execution Environment: "MoveVM: Custom Move virtual machine dengan dukungan parallel execution berbasis dependency graph (seperti Block-STM)"; Phase 4 Known Technical Limitations: "Parallel execution MoveVM bergantung pada analisis dependensi transaksi; kontensi tinggi pada state yang sama mengurangi throughput paralel"; Phase 8 Narrative Position: Parallel Execution = Secondary Narrative
+· Supporting Dataset: Phase 4 Execution Environment/Known Technical Limitations, Phase 8 Narrative Position
+
+Pola 5: Formal Verification Integrated via Move Prover (Native Move Advantage)
+· Decision Pattern: Leverage Move language native formal verification toolchain (Move Prover) sebagai security differentiator
+· Evidence: Phase 4 Execution Environment: "MoveVM: ... formal verification via Move Prover"; Phase 4 Development Framework: "Move Prover: Formal verification tool untuk Move smart contracts (terintegrasi dari Move language toolchain)"; Phase 8 Narrative Position: Formal Verification = Secondary Narrative
+· Supporting Dataset: Phase 4 Execution Environment/Development Framework, Phase 8 Narrative Position
+
+Pola 6: Centralized Sequencer Testnet → Decentralized Sequencer Mainnet (Phased Decentralization)
+· Decision Pattern: Launch testnet dengan centralized sequencer (single operator Movement Labs) untuk speed; commit ke decentralized sequencer set untuk mainnet tanpa detail spec
+· Evidence: Phase 4 Consensus Mechanism: "M1 menggunakan centralized sequencer pada tahap testnet (Parthenon) dengan rencana transisi ke decentralized sequencer set"; Phase 4 Known Technical Limitations: "Centralized sequencer pada testnet Parthenon (single point of failure)"; Phase 7 Ecosystem Risks: "Centralized Sequencer (Testnet)"; Phase 8 Open Threads: "Decentralized sequencer set launch timeline dan staking requirement — belum diumumkan"
+· Supporting Dataset: Phase 4 Consensus Mechanism/Known Technical Limitations, Phase 7 Ecosystem Risks, Phase 8 Open Threads
+
+Pola 7: Rust sebagai Implementation Language untuk Core Infrastructure
+· Decision Pattern: Gunakan Rust untuk MoveVM, MEVM, Movement SDK, node software — leverage memory safety, performance, dan ekosistem tooling
+· Evidence: Phase 4 Programming Languages: "Rust: Bahasa implementasi MoveVM, MEVM, Movement SDK, dan infrastruktur node"; Phase 4 Current Technical Stack: "Rust: Implementasi core MoveVM, MEVM, Movement SDK, node software"; Phase 2 Entity: GitHub repositori movementlabsxyz menunjukkan Rust codebase
+· Supporting Dataset: Phase 4 Programming Languages/Current Technical Stack, Phase 2 Entity (Movement Labs GitHub Organization)
+
+Pola 8: No Security Audit Before Testnet Launch
+· Decision Pattern: Launch Parthenon testnet tanpa audit publik MoveVM/MEVM/SDK/M1 contracts; audit deferred ke pre-mainnet
+· Evidence: Phase 4 Audit History: "Tidak ditemukan laporan audit keamanan publik untuk MoveVM, MEVM, Movement SDK, atau M1 settlement contracts per cut-off knowledge"; Phase 4 Security Model: "Fraud proof / Validity proof: Detail mekanisme bukti ... belum dipublikasikan secara detail"; Phase 7 Ecosystem Risks: "No Security Audit Completed"; Phase 8 Open Threads: "Audit status smart contract ... belum diumumkan"
+· Supporting Dataset: Phase 4 Audit History/Security Model, Phase 7 Ecosystem Risks, Phase 8 Open Threads
+
+Financial Decision Pattern
+
+Pola 1: Single Large Series A Round sebagai Primary Capital Source
+· Decision Pattern: Mengumpulkan $38M dalam satu ronde Series A 2024 tanpa seed/pre-seed terverifikasi publik; bukan multiple smaller rounds
+· Evidence: Phase 5 Funding History: Hanya Series A $38M tercatat di Crunchbase; "Seed/Pre-Seed ... tidak terdaftar secara publik"; Phase 5 Financial Dependencies: "Dependency: Series A Investors — primary capital source $38M"; Phase 5 Financial Risk: "Funding Dependency — single known funding round ... runway bergantung pada treasury management dari Series A proceeds"
+· Supporting Dataset: Phase 3 EV-006, Phase 5 Funding History/Financial Dependencies/Financial Risk, Phase 2 Entity (Series A Investors)
+
+Pola 2: Pre-Revenue Development Phase dengan Runway Dependency
+· Decision Pattern: Operasi pre-mainnet, pre-TGE, zero revenue; seluruh burn rate ditanggung Series A proceeds; tidak ada protocol revenue, grant, atau treasury yield
+· Evidence: Phase 5 Revenue Model: Semua 5 revenue streams "Planned" (Protocol Fees, Sequencer Revenue, DA Layer Service Fees, Enterprise Licensing, Grant/Ecosystem Fund); Phase 5 Revenue History: "Tidak diungkap ... mainnet belum launch sehingga tidak ada protocol revenue"; Phase 5 Financial Risk: "Revenue Decline Risk (Future) — dependency pada M1 L2 adoption"
+· Supporting Dataset: Phase 5 Revenue Model/Revenue History/Financial Risk, Phase 3 EV-009 (testnet only), Phase 8 Adoption Metrics (TVL $0, Volume $0)
+
+Pola 3: Token Allocation untuk Investor Implied (SAFT) Tanpa Transparansi
+· Decision Pattern: Series A $38M hampir pasti include token allocation (SAFT/token warrant) tapi detail tidak dipublikasikan; tidak ada Form D filing terverifikasi publik
+· Evidence: Phase 5 Fundraising Mechanism: "Private Sale (token allocation untuk investor Series A — asumsi standar VC crypto, belum dikonfirmasi resmi)"; Phase 6 Distribution: Investors "Planned ... asumsi standar VC crypto via SAFT/token warrant untuk Series A investors, belum dikonfirmasi resmi"; Phase 6 Major Token Events: "Series A Funding ($38M) — Token Allocation Implication ... detail tidak dipublikasikan"; Phase 8 Open Threads: "Nama investor Series A individu dan apakah mereka mendapat token allocation (SAFT terms) — Crunchbase hanya total $38M, detail tidak publik; perlu cek SEC Form D filing"
+· Supporting Dataset: Phase 5 Fundraising Mechanism, Phase 6 Distribution/Major Token Events, Phase 8 Open Threads
+
+Pola 4: Treasury Opacity (No Transparency Dashboard)
+· Decision Pattern: Tidak mempublikasikan treasury size, composition, custodian, atau burn rate; tidak ada transparency report meskipun $38M raised
+· Evidence: Phase 5 Treasury: Semua field "tidak diungkap"; Phase 5 Financial Risk: "Treasury Concentration — treasury composition tidak diungkap"; Phase 8 Open Threads: "Treasury composition saat ini ... tidak diungkap"; "Burn rate bulanan ... tidak diungkap"; "Runway ... tidak dapat dihitung tanpa burn rate dan treasury size"
+· Supporting Dataset: Phase 5 Treasury/Financial Risk, Phase 8 Open Threads
+
+Pola 5: Deferred Token Sale / TGE Planning
+· Decision Pattern: Tidak ada token sale mechanism, timeline, atau platform diumumkan; TGE पूरी तरह unspecified; focus pada product development first
+· Evidence: Phase 6 Token Sale: Semua field "tidak diumumkan resmi"; "Status: Pre-TGE (belum ada token sale)"; Phase 6 TGE: "TGE Date: tidak diumumkan"; "Launch Platform: tidak diumumkan"; Phase 8 Market Timeline: "TGE (Token Generation Event) MOVE ... belum diumumkan jadwal"; "Exchange Listing ... belum diumumkan"
+· Supporting Dataset: Phase 6 Token Sale/TGE, Phase 8 Market Timeline/Open Threads
+
+Ecosystem Decision Pattern
+
+Pola 1: Ethereum Ecosystem Integration sebagai Non-Negotiable Foundation
+· Decision Pattern: Semua arsitektur dan go-to-market berputar pada Ethereum settlement; testnet menggunakan Ethereum testnet (Sepolia/Holesky); tooling kompatibel Ethereum (Hardhat/Foundry)
+· Evidence: Phase 7 External Dependencies: Ethereum = Critical, Live; Phase 7 Major Integrations: Parthenon↔Ethereum Settlement = Live testnet; Phase 7 Infrastructure Providers: Ethereum RPC Providers = Critical; Phase 3 EV-009: Parthenon testnet menggunakan Ethereum settlement; Phase 8 Narrative Position: Ethereum L2 Scaling = Main Narrative
+· Supporting Dataset: Phase 3 EV-009, Phase 7 External Dependencies/Major Integrations/Infrastructure Providers, Phase 8 Narrative Position
+
+Pola 2: Multiple DA Layer Partnership Announcements Sebelum Implementation
+· Decision Pattern: Mengumumkan 3 DA layer partnerships (Celestia, Avail, EigenDA) secara bersamaan di roadmap; implementation deferred; tidak ada exclusive commitment
+· Evidence: Phase 3 EV-010: Announcement semua 3 sekaligus; Phase 7 External Dependencies: 3 DA = High, Planned; Phase 7 Major Integrations: 3 DA adapters = Planned; Phase 4 Known Technical Limitations: "DA layer integrations ... belum live di testnet Parthenon"; Phase 8 Ecosystem Risks: "Planned DA Layer Dependencies Not Live"
+· Supporting Dataset: Phase 3 EV-010, Phase 7 External Dependencies/Major Integrations, Phase 4 Known Technical Limitations, Phase 8 Ecosystem Risks
+
+Pola 3: Move Ecosystem Leverage (Upstream Toolchain Dependency)
+· Decision Pattern: Build pada upstream Move toolchain (compiler, prover, VM reference) yang dikembangkan Aptos/Sui/0L; kontribusi balik ke ekosistem; bukan fork isolated
+· Evidence: Phase 4 Programming Languages: "Move: Bahasa utama ... Rust: Bahasa implementasi MoveVM, MEVM, Movement SDK"; Phase 7 External Dependencies: "Move Language Toolchain ... Critical ... Live (Movement Labs berkontribusi dan menggunakan upstream Move toolchain dari ekosistem Move)"; Related Entity: Aptos, Sui, 0L; Phase 8 Ecosystem Risks: "Move Ecosystem Fragmentation — Movement bergantung pada upstream Move toolchain ... divergensi spec atau breaking changes upstream mempengaruhi Movement"
+· Supporting Dataset: Phase 4 Programming Languages, Phase 7 External Dependencies, Phase 8 Ecosystem Risks, Phase 2 Entity (Aptos, Sui, 0L)
+
+Pola 4: Developer Tooling Compatibility First (Hardhat/Foundry Support)
+· Decision Pattern: Prioritaskan kompatibilitas dengan Ethereum developer tooling existing via MEVM untuk menurunkan barrier to entry
+· Evidence: Phase 3 EV-009: Parthenon testnet announcement menekankan Hardhat/Foundry support; Phase 7 Major Integrations: MEVM↔Hardhat/Foundry = Live; Phase 4 Development Framework: "Hardhat/Foundry Support: Kompatibilitas dengan framework pengembangan Ethereum standar via MEVM"; Phase 8 Narrative Position: EVM Compatibility = Secondary Narrative
+· Supporting Dataset: Phase 3 EV-009, Phase 7 Major Integrations, Phase 4 Development Framework, Phase 8 Narrative Position
+
+Pola 5: Infrastructure Self-Hosted untuk Critical Components (Sequencer, Explorer, RPC)
+· Decision Pattern: Movement Labs mengoperasikan sequencer, RPC endpoints, block explorer, dan testnet infrastructure langsung (bukan third-party managed services)
+· Evidence: Phase 4 Consensus Mechanism: "sequencer terpusat dioperasikan Movement Labs"; Phase 7 Infrastructure Providers: "Movement Testnet Explorer (self-hosted oleh Movement Labs)"; "Cloud Infrastructure (provider tidak diungkap) ... Kubernetes orchestration ... untuk sequencer, RPC nodes, explorer"; Phase 2 Entity: Parthenon Testnet, Movement Testnet Explorer sebagai entity Movement Labs
+· Supporting Dataset: Phase 4 Consensus Mechanism, Phase 7 Infrastructure Providers, Phase 2 Entity (Parthenon Testnet, Movement Testnet Explorer)
+
+Pola 6: Leadership Hiring untuk Ecosystem Growth Sebelum Mainnet
+· Decision Pattern: Rekrut Head of Growth, Head of Ecosystem, Head of Operations pasca-Series A untuk membangun pipeline developer dan enterprise sebelum mainnet launch
+· Evidence: Phase 3 EV-008: Hiring 3 leadership roles 2024; Phase 2 Entity: Sami Kassab (Growth), Arjun Krishan (Ecosystem), Tanya Kumar (Operations); Phase 7 Developer Ecosystem: "Grant Program: Tidak diumumkan resmi ... Head of Ecosystem Arjun Krishan terhired, mengimplikasikan program akan datang, belum launch"; Phase 8 Open Threads: "Grant program / ecosystem fund size dan launch timeline — Head of Ecosystem hired ... tapi program belum diumumkan"
+· Supporting Dataset: Phase 3 EV-008, Phase 2 Entity, Phase 7 Developer Ecosystem, Phase 8 Open Threads
+
+Governance Decision Pattern
+
+Pola 1: Company-Controlled Development Phase (Pre-TGE Centralization)
+· Decision Pattern: Semua keputusan protokol, upgrade, parameter, dan treasury dikendalikan Movement Labs Inc. (Delaware C-Corp) tanpa community governance mechanism
+· Evidence: Phase 6 Governance: "Governance Model: tidak diketahui ... Status: Planned (belum ada governance live; pre-TGE)"; Phase 7 Governance Ecosystem: "Foundation: Tidak dibentuk ... DAO: Tidak ada ... Council: Tidak ada ... Committee: Tidak ada ... Validator Group: Tidak ada"; Phase 5 Fundraising Mechanism: "Foundation (belum dibentuk Movement Foundation) ... DAO Treasury (belum ada DAO)"; Phase 4 Security Model: "Upgradeability: Kontrol upgrade protokol ... saat ini di tangan Movement Labs Inc.; rencana governance on-chain belum diumumkan"
+· Supporting Dataset: Phase 4 Security Model, Phase 5 Fundraising Mechanism, Phase 6 Governance, Phase 7 Governance Ecosystem
+
+Pola 2: Token-Weighted DAO sebagai Planned Governance Model (Post-TGE)
+· Decision Pattern: Governance masa depan diasumsikan token-weighted voting via MOVE token; tidak ada detail proposal system, delegation, quorum, timelock
+· Evidence: Phase 6 Governance: "Governance Model: tidak diketahui (belum diumumkan; kemungkinan token-weighted voting via on-chain DAO atau off-chain snapshot dengan on-chain execution)"; Semua field (Voting System, Voting Power, Delegation, Proposal System, Treasury Governance) = "tidak diketahui"; Phase 6 Utility: "Governance: Token MOVE direncanakan memberikan voting power untuk governance protokol"
+· Supporting Dataset: Phase 6 Governance/Utility
+
+Pola 3: Decentralized Sequencer Set sebagai Governance Mechanism (Planned)
+· Decision Pattern: Validator/sequencer governance melalui staking MOVE token untuk decentralized sequencer set; slashing conditions dan requirements unspecified
+· Evidence: Phase 4 Consensus Mechanism: "rencana transisi ke decentralized sequencer set"; Phase 4 Security Model: "Sequencer trust assumption: Pada testnet Parthenon, sequencer terpusat ... rencana decentralized sequencer set untuk mainnet"; Phase 6 Utility: "Staking / Validator Security: Token MOVE direncanakan digunakan untuk staking oleh validator/sequencer"; Phase 8 Open Threads: "Decentralized sequencer set spec: consensus mechanism, validator requirements, staking token (MOVE?), slashing conditions — belum diumumkan"
+· Supporting Dataset: Phase 4 Consensus Mechanism/Security Model, Phase 6 Utility, Phase 8 Open Threads
+
+Pola 4: Foundation Formation Deferred (Post-TGE Entity Separation)
+· Decision Pattern: Tidak membentuk foundation terpisah pre-TGE; company mengontrol token issuance dan development; foundation formation (mirip Aptos/Sui Foundation) unspecified timeline
+· Evidence: Phase 7 Governance Ecosystem: "Foundation: Tidak dibentuk (Movement Foundation belum diumumkan)"; Phase 6 Distribution: Foundation "tidak diketahui (Movement Foundation belum dibentuk/diumumkan)"; Phase 8 Open Threads: "Apakah akan dibentuk Movement Foundation terpisah pre-TGE atau post-TGE — belum dikonfirmasi"; "Movement Labs Inc. legal structure untuk token distribution: apakah token di-issue oleh company langsung atau melalui foundation terpisah — belum diklarifikasi"
+· Supporting Dataset: Phase 6 Distribution, Phase 7 Governance Ecosystem, Phase 8 Open Threads
+
+Risk Response Pattern
+
+Pola 1: Technical Risk Mitigation via Testnet-First Approach
+· Trigger: Kompleksitas MoveVM + MEVM + modular stack belum terbukti di production
+· Evidence: Phase 3 EV-009: Parthenon testnet launch sebagai "lingkungan pengujian publik ... sebelum mainnet M1"; Phase 4 Known Technical Limitations mencatat 7 limitations (centralized sequencer, MEVM compatibility gaps, parallel execution contention, no fraud/validity proof, DA layers not live, Movement Network not implemented, upgradeability undefined); Phase 8 Ecosystem Risks: "Centralized Sequencer (Testnet)", "No Security Audit Completed", "Planned DA Layer Dependencies Not Live"
+· Response: Launch public testnet (Parthenon) dengan real Ethereum settlement, real MEVM execution, real developer tooling; accept centralized sequencer untuk speed; gather feedback sebelum mainnet
+· Result: Testnet live sejak 2024-07-30; developer onboarding dimulai; mainnet prerequisites identified (audit, DA integration, decentralized sequencer)
+· Supporting Dataset: Phase 3 EV-009, Phase 4 Known Technical Limitations, Phase 8 Ecosystem Risks, Phase 8 Market Timeline
+
+Pola 2: Narrative Diversification untuk Market Positioning
+· Trigger: Kompetisi intens di Move L1 (Aptos, Sui) dan Ethereum L2 (Arbitrum, Optimism, Base); perlu differentiator multi-dimensional
+· Evidence: Phase 8 Narrative Position: 3 Main Narratives (Modular Blockchain, MoveVM Ecosystem, Ethereum L2 Scaling) + 6 Secondary/Planned (EVM Compatibility, Parallel Execution, Formal Verification, Interoperability, Restaking, Cross-chain); Phase 8 Competitor Landscape: 9 competitors mapped across categories
+· Response: Position di intersection multiple narratives; bukan "Move L2" saja tapi "Modular Move-based L2 dengan EVM compatibility, parallel execution, formal verification, dan multi-DA optionality"
+· Result: Unique positioning statement; tapi execution risk tinggi (harus deliver semua dimensi)
+· Supporting Dataset: Phase 8 Narrative Position/Competitor Landscape
+
+Pola 3: Financial Risk Management via Large Single Raise
+· Trigger: High burn rate expected untuk 30+ team, infrastructure, audit, mainnet launch; pre-revenue phase panjang
+· Evidence: Phase 5 Funding History: Series A $38M single round; Phase 5 Financial Risk: "Funding Dependency — single known funding round ... runway bergantung pada treasury management"; "Treasury Concentration — treasury composition tidak diungkap"; Phase 8 Open Threads: "Financial runway ... tidak diungkap (tidak ada transparency report)"
+· Response: Raise large Series A upfront; defer revenue generation ke post-mainnet; no token sale dilution pre-product
+· Result: $38M runway; but single point of failure jika runway habis sebelum mainnet/TGE; no diversification
+· Supporting Dataset: Phase 5 Funding History/Financial Risk, Phase 8 Open Threads
+
+Pola 4: Regulatory Risk Acceptance (US C-Corp Token Issuance)
+· Trigger: Delaware C-Corp structure + planned token issuance = US securities law exposure (Howey test)
+· Evidence: Phase 5 Financial Risk: "Legal Financial Risk — Delaware C-Corp structure dengan token issuance planned; regulatory uncertainty di US mengenai token classification (security vs utility) dapat mempengaruhi TGE dan penggunaan dana"; Phase 6 Token: "Token standard: tidak diketahui ... blockchain: tidak diketahui"; Phase 8 Open Threads: "Regulatory compliance untuk token issuance (US securities law, Howey test analysis) — tidak diungkap"; "Movement Labs Inc. legal structure untuk token distribution: apakah token di-issue oleh company langsung atau melalui foundation terpisah — belum diklarifikasi"
+· Response: Proceed dengan C-Corp token issuance plan; defer regulatory clarity; no public SAFT/token framework disclosure
+· Result: High regulatory risk; potential TGE delay atau restructuring; investor token allocation terms unknown
+· Supporting Dataset: Phase 5 Financial Risk, Phase 6 Token, Phase 8 Open Threads
+
+Pola 5: Competitive Response via Technical Differentiation (Parallel Execution + Formal Verification)
+· Trigger: Ethereum L2 competitors (Arbitrum, Optimism, Base) sudah live dengan TVL miliaran; Move L1 (Aptos, Sui) sudah established
+· Evidence: Phase 8 Competitor Landscape: 6 direct competitors dengan mainnet live dan adoption metrics; Phase 4 Execution Environment: MoveVM parallel execution + formal verification sebagai differentiator; Phase 8 Narrative Position: Parallel Execution dan Formal Verification sebagai Secondary Narratives
+· Response: Build technical moats (parallel execution, formal verification) yang sulit direplikasi EVM-equivalent L2; accept MEVM compatibility gaps sebagai trade-off
+· Result: Technical differentiation clear; tapi adoption risk tinggi (developer harus percaya MoveVM advantages > EVM-equivalent safety)
+· Supporting Dataset: Phase 8 Competitor Landscape/Adoption Metrics, Phase 4 Execution Environment, Phase 8 Narrative Position
+
+Recurring Behavioral Pattern
+
+Pola 1: Announce Ambitious Multi-Partner Integrations Sebelum Implementation Live
+· Evidence: EV-010 announce 3 DA layer integrations (Celestia, Avail, EigenDA) sekaligus — semua "Planned" di Phase 7; Phase 7 Major Integrations: 4 dari 7 integrations = Planned (3 DA adapters + Network Coordinator); Phase 4 Known Technical Limitations: DA layers "belum live di testnet Parthenon"; Phase 8 Ecosystem Risks: "Planned DA Layer Dependencies Not Live"
+· Supporting Dataset: Phase 3 EV-010, Phase 7 External Dependencies/Major Integrations, Phase 4 Known Technical Limitations, Phase 8 Ecosystem Risks
+
+Pola 2: Leadership Hiring Sebelum Program Launch (Ecosystem, Growth, Ops)
+· Evidence: EV-008 hire 3 leadership roles (Growth, Ecosystem, Operations) 2024; Phase 7 Developer Ecosystem: Grant Program & Hackathon "belum diumumkan" tapi Head of Ecosystem hired; Phase 8 Open Threads: "Grant program / ecosystem fund size dan launch timeline — Head of Ecosystem hired ... tapi program belum diumumkan"; "Enterprise partnerships selain DA layer ... belum diumumkan" tapi Head of Growth hired
+· Supporting Dataset: Phase 3 EV-008, Phase 7 Developer Ecosystem, Phase 8 Open Threads
+
+Pola 3: Technical Specifications Deferred ke Post-Testnet (Sequencer, DA, Governance, Audit)
+· Evidence: Phase 4 Consensus Mechanism: decentralized sequencer spec "belum diumumkan"; Phase 4 Security Model: fraud/validity proof "belum dipublikasikan"; Phase 4 Audit History: audit "belum diumumkan"; Phase 6 Governance: semua detail "tidak diketahui"; Phase 7 External Dependencies: 3 DA layers "Planned"; Phase 8 Open Threads: 15+ items unspecified (audit, sequencer, DA priority, foundation, tokenomics, TGE, etc.)
+· Supporting Dataset: Phase 4 Consensus Mechanism/Security Model/Audit History, Phase 6 Governance, Phase 7 External Dependencies, Phase 8 Open Threads
+
+Pola 4: Single Large Funding Round → Extended Pre-Mainnet Development
+· Evidence: Phase 5 Funding History: 1 ronde Series A $38M (2024); Phase 3 timeline: founding 2022 → Series A 2024 → testnet 2024-07 → mainnet "belum terjadwal"; Phase 5 Financial Risk: "Funding Dependency — single known funding round"; Phase 8 Market Timeline: Mainnet launch & TGE "Belum terjadwal"
+· Supporting Dataset: Phase 3 All Events, Phase 5 Funding History/Financial Risk, Phase 8 Market Timeline
+
+Pola 5: Ethereum Alignment Sebagai Strategic Anchor (Settlement, Tooling, Narrative)
+· Evidence: Phase 7 External Dependencies: Ethereum = Critical, Live (satu-satunya Critical Live dependency); Phase 7 Major Integrations: Parthenon↔Ethereum = Live testnet integration; Phase 7 Infrastructure Providers: Ethereum RPC = Critical; Phase 8 Narrative Position: Ethereum L2 Scaling = Main Narrative; Phase 4 System Architecture: Ethereum sebagai settlement layer tunggal
+· Supporting Dataset: Phase 7 External Dependencies/Major Integrations/Infrastructure Providers, Phase 8 Narrative Position, Phase 4 System Architecture
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi Sequencer vs Speed to Testnet
+· Decision: Launch Parthenon testnet dengan centralized sequencer (single operator Movement Labs) instead of waiting untuk decentralized sequencer implementation
+· Trade-off: Mengorbankan censorship resistance, single point of failure, dan trust minimization di testnet demi speed to market dan developer feedback loop early
+· Evidence: Phase 4 Consensus Mechanism: "M1 menggunakan centralized sequencer pada tahap testnet (Parthenon) dengan rencana transisi ke decentralized sequencer set"; Phase 4 Known Technical Limitations: "Centralized sequencer pada testnet Parthenon (single point of failure untuk urutan transaksi)"; Phase 7 Ecosystem Risks: "Centralized Sequencer (Testnet) — single point of failure untuk transaction ordering, censorship resistance tidak ada"; Phase 3 EV-009: Testnet launch 2024-07-30 dengan sequencer terpusat
+· Supporting Dataset: Phase 3 EV-009, Phase 4 Consensus Mechanism/Known Technical Limitations, Phase 7 Ecosystem Risks
+
+Trade-off 2: EVM Equivalence vs MoveVM Advantages (Parallel Execution, Formal Verification)
+· Decision: Build MEVM sebagai EVM-compatible transpiler (bukan EVM-equivalent) untuk mempertahankan MoveVM parallel execution dan formal verification
+· Trade-off: Mengorbankan 100% kompatibilitas EVM (precompiles, opcode, gas semantics gaps) dan developer friction potensial demi parallel execution throughput dan formal verification security
+· Evidence: Phase 4 Execution Environment: MEVM "mentranslasikannya ke Move bytecode"; Phase 4 Known Technical Limitations: "MEVM kompatibilitas EVM belum 100%: precompiles tertentu, opcode spesifik, dan gas semantics mungkin berbeda dari Ethereum mainnet"; Phase 8 Competitor Landscape: Arbitrum/Optimism/Base = EVM-equivalent; Phase 8 Narrative Position: Parallel Execution dan Formal Verification = Secondary Narratives
+· Supporting Dataset: Phase 4 Execution Environment/Known Technical Limitations, Phase 8 Competitor Landscape/Narrative Position
+
+Trade-off 3: Modular DA Optionality vs Implementation Complexity & Mainnet Readiness
+· Decision: Design pluggable DA adapter architecture untuk 3 DA layers (Celestia, Avail, EigenDA) sekaligus
+· Trade-off: Mengorbankan focus dan speed of delivery (minimal 1 DA adapter harus production-ready untuk mainnet) demi flexibility dan narrative positioning sebagai "modular-native"
+· Evidence: Phase 4 System Architecture: "DA layer (pluggable: Celestia/Avail/EigenDA)"; Phase 3 EV-010: Announce semua 3 sekaligus; Phase 4 Known Technical Limitations: "DA layer integrations ... belum live di testnet Parthenon"; Phase 7 External Dependencies: 3 DA = High, Planned; Phase 8 Ecosystem Risks: "Planned DA Layer Dependencies Not Live — minimal 1 DA adapter harus ready untuk mainnet"
+· Supporting Dataset: Phase 3 EV-010, Phase 4 System Architecture/Known Technical Limitations, Phase 7 External Dependencies, Phase 8 Ecosystem Risks
+
+Trade-off 4: Company-Controlled Development vs Community Governance (Pre-TGE)
+· Decision: Retain full control di Movement Labs Inc. (Delaware C-Corp) untuk protokol development, upgrade, treasury, token design; defer DAO/foundation formation
+· Trade-off: Mengorbankan decentralization narrative, community ownership, dan regulatory clarity (foundation route) demi execution speed, unified decision-making, dan IP control
+· Evidence: Phase 7 Governance Ecosystem: 0 governance entities live; Phase 6 Governance: semua "Planned" / "tidak diketahui"; Phase 4 Security Model: "Kontrol upgrade protokol ... saat ini di tangan Movement Labs Inc."; Phase 5 Fundraising Mechanism: "Foundation (belum dibentuk) ... DAO Treasury (belum ada DAO)"; Phase 8 Open Threads: Foundation formation timeline unspecified
+· Supporting Dataset: Phase 4 Security Model, Phase 5 Fundraising Mechanism, Phase 6 Governance, Phase 7 Governance Ecosystem, Phase 8 Open Threads
+
+Trade-off 5: Single Large Series A vs Funding Diversification
+· Decision: Raise $38M Series A sebagai single primary capital source; no seed/pre-seed public, no strategic rounds, no token sale, no protocol revenue
+· Trade-off: Mengorbankan funding diversification, valuation markup opportunities, dan community token distribution breadth demi clean cap table, large runway, dan focus pada product
+· Evidence: Phase 5 Funding History: hanya 1 ronde terverifikasi; Phase 5 Financial Dependencies: "Dependency: Series A Investors — primary capital source"; Phase 5 Financial Risk: "Funding Dependency — single known funding round"; Phase 8 Open Threads: "Nama investor Series A individu ... tidak publik"; "Runway ... tidak dapat dihitung"
+· Supporting Dataset: Phase 5 Funding History/Financial Dependencies/Financial Risk, Phase 8 Open Threads
+
+Trade-off 6: Technical Transparency vs Competitive Moat (Audit, Specs, Tokenomics)
+· Decision: Withhold detailed technical specifications (fraud proof design, decentralized sequencer spec, DA adapter implementation), audit reports, dan tokenomics details dari publik
+· Trade-off: Mengorbankan community trust, developer confidence, dan investor transparency demi melindungi competitive advantage dan flexibility pre-mainnet
+· Evidence: Phase 4 Audit History: 0 public audits; Phase 4 Security Model: fraud/validity proof "belum dipublikasikan secara detail"; Phase 6 Token: semua supply/distribution/vesting/TGE/governance = "tidak diketahui"; Phase 8 Open Threads: 15+ unspecified technical/token/governance items
+· Supporting Dataset: Phase 4 Audit History/Security Model, Phase 6 Token, Phase 8 Open Threads
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. Product Development: Build MoveVM, MEVM, Movement SDK, M1 sebagai integrated modular stack (Phase 3 EV-007, EV-009; Phase 4 all components)
+2. Ethereum Alignment: Settlement di Ethereum L1, tooling kompatibel Ethereum, narrative Ethereum L2 (Phase 7, 8)
+3. Technical Differentiation: Parallel execution + formal verification via MoveVM sebagai moat vs EVM-equivalent L2 (Phase 4, 8)
+4. Developer Onboarding: MEVM + Hardhat/Foundry support untuk menurunkan barrier to entry (Phase 3 EV-009, Phase 7)
+5. Narrative Positioning: Multi-narrative (Modular, MoveVM, Ethereum L2, EVM Compat, Parallel Exec, Formal Verification) (Phase 8)
+
+Cara Mengambil Keputusan:
+- Founder-led (Rushi Manche CEO, Cooper Scanlon CTO) dengan strategic leadership hires (Growth, Ecosystem, Ops) pasca-funding (Phase 2, 3 EV-008)
+- Big upfront design (modular architecture, 3 DA layers, MEVM approach) lalu phased execution (testnet → mainnet) (Phase 3 EV-007, EV-010, EV-009)
+- Announce roadmap ambitiously (3 DA layers, Movement Network, decentralized sequencer) lalu deliver incrementally (Phase 3 EV-010 vs Phase 7 Planned status)
+- Defer governance, tokenomics, regulatory, audit details ke post-testnet/pre-mainnet phase (Phase 6, 7, 8 Open Threads)
+- Single large fundraise → extended build phase tanpa revenue pressure (Phase 5)
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Ethereum Ecosystem Gravity: Settlement, tooling, narrative, RPC, developer base — semua keputusan align dengan Ethereum (Phase 7, 8)
+2. MoveVM Technical Vision: Parallel execution, formal verification, Move language — core differentiator yang drive arsitektur (Phase 4, 8)
+3. Series A Capital Constraints: $38M single source → runway management, hiring pace, no revenue urgency (Phase 5)
+4. Competitive Landscape: Harus differentiate dari Aptos/Sui (Move L1) dan Arbitrum/Optimism/Base (EVM L2) — drive MEVM + parallel exec + formal verification combo (Phase 8)
+5. Modular Blockchain Narrative: Market positioning memerlukan DA optionality, sequencing decentralization, cross-chain — drive announcements sebelum implementation (Phase 3 EV-010, Phase 7, 8)
+
+Pola Evolusi:
+- 2022: Stealth founding + incorporation
+- 2024 H1: Series A + public announcement + leadership hiring + infra build (GitHub, Docs, Discord)
+- 2024-07: Testnet launch (Parthenon) — first real product milestone
+- 2024 H2-current: Mainnet prep phase — audit, DA integration, decentralized sequencer, tokenomics, governance, TGE planning (all unspecified)
+
+Kekuatan Utama:
+1. Technical Differentiation yang Jelas: MoveVM parallel execution + formal verification + MEVM compatibility = unique position
+2. Strong Ethereum Alignment: Settlement, tooling, narrative — leverage largest L1 ecosystem
+3. Well-Capitalized: $38M Series A untuk 30+ team, infrastructure, audit, mainnet launch
+4. Experienced Founders: Rushi Manche (CEO), Cooper Scanlon (CTO) dengan clear vision
+5. Modular Architecture Flexibility: Pluggable DA, upgradeable VM, SDK untuk app-chains
+
+Kelemahan Utama:
+1. Execution Risk Tinggi: Harus deliver audit, 1+ DA adapter, decentralized sequencer, tokenomics, governance, TGE, mainnet simultaneously
+2. Centralized Testnet: Single sequencer, no audit, no fraud proof — trust assumptions tinggi
+3. Tokenomics & Governance Vacuum: 0 detail pada supply, distribution, vesting, governance model — regulatory & community risk
+4. DA Layer Dependency: 3 planned integrations, 0 live — mainnet blocked pada minimal 1
+5. Transparency Gap: No treasury disclosure, no audit, no tokenomics, no roadmap dates — trust deficit untuk developers/investors
+6. Single Funding Source: $38M Series A only — runway pressure, no diversification
+7. US Regulatory Exposure: Delaware C-Corp issuing token — Howey test risk, potential TGE restructuring
 
 ## Knowledge Extraction
 _ref: `docs/Patterns/*`, `docs/Reasoning/*` (rule candidates)_
@@ -2360,6 +2471,1668 @@ Supporting Dataset: Phase 3 (History), Phase 4 (Technology), Phase 7 (Ecosystem)
 Step 7: Govern — Delay Tokenomics dan Governance Hingga Post-Mainnet Readiness
 Explanation: Token MOVE pre-TGE, semua tokenomics unknown. No Foundation, no DAO, no on-chain governance. Upgrade control di Movement Labs Inc. Regulatory caution untuk Delaware C-Corp. Foundation formation unconfirmed.
 
+## Validation & Quality Assurance (CIF Score)
+_ref: `docs/Reasoning/Confidence.md` — CIF Score, Data Lineage, Knowledge Dependency Graph_
+
+PROJECT: Movement Labs
+
+CIF MANIFEST v3.0
+
+Project: Movement Labs
+Symbol: MOVE
+Research Date: 2025-03-15
+CIF Version: 3.0
+QA Date: 2025-03-15
+
+METRICS
+Total Knowledge Objects: 10
+Total Entities: 28
+Total Events: 10
+Evidence Links: 127
+Sources: 22
+Conflicts: 8
+ ├── Resolved: 5
+ ├── Critical: 0
+ ├── High: 1
+ ├── Medium: 2
+ └── Low: 0
+
+QUALITY SCORES
+Research Quality: 100/100
+Consistency: 100/100
+Evidence: 78/100
+Coverage: 100/100
+Conflict: 79/100
+Knowledge: 91/100
+CIF SCORE: 87/100
+
+CONFIDENCE LEVEL: HIGH
+QA STATUS: PASSED
+
+RECOMMENDED RE-RUN:
+ - Phase 5 — Detail investor Series A dan token allocation belum transparan
+ - Phase 6 — Tokenomics MOVE seluruhnya belum dipublikasikan; TGE date dan supply structure masih unknown
+ - Phase 7 — Status implementasi DA adapters (Celestia, Avail, EigenDA) masih planned; perlu konfirmasi kapan live
+ - Phase 8 — Mainnet launch date dan TGE timeline belum diumumkan; adoption metrics belum tersedia
+
+DATASET INTEGRITY & COVERAGE
+
+Phase 1 — Foundation
+
+Status: Complete
+Missing Information: Tidak ada
+Notes: Semua field inti (nama, simbol, kategori, produk, chain, ekosistem, status TGE/mainnet) tercakup dengan evidence level HIGH.
+
+Phase 2 — Entity
+
+Status: Complete
+Missing Information: Nama investor Series A individu dan alokasi masing-masing; yurisdiksi legal entity yang pasti (Delaware C-Corp vs struktur lain) — butuh filing Delaware; daftar lengkap core team (~30+ orang) belum exhaustive.
+Notes: 28 entity total tercatat. Status legal entity dan struktur token distribution belum diklarifikasi.
+
+Phase 3 — History
+
+Status: Complete
+Missing Information: Tanggal pasti inkorporasi (bulan/hari); tanggal pasti pembukaan GitHub/docs/Discord; tanggal pasti pengumuman blog dan rekrutmen leadership.
+Notes: Semua Event ID valid dan konsisten dengan Phase 1, 2, 4, 5, 6, 7, 8, 9, 10.
+
+Phase 4 — Technology
+
+Status: Complete
+Missing Information: Spesifikasi decentralized sequencer set; detail fraud/validity proof; status implementasi DA adapters; MEVM gas model dan perbedaan opcode vs Ethereum; Movement Network cross-chain messaging spec; audit timeline.
+Notes: Known technical limitations tercatat 7 item. Proactive risk acknowledgment di Phase 10 Principle 8.
+
+Phase 5 — Financial
+
+Status: Complete
+Missing Information: Rincian investor Series A; jumlah dan status seed/pre-seed; treasury size, composition, custodian; burn rate bulanan; runway; audit keuangan; status regulatory compliance.
+Notes: Hanya satu funding round terverifikasi ($38M Series A 2024). Treasury opaqueness menjadi failure factor di Phase 10 (Factor 3).
+
+Phase 6 — Token
+
+Status: Complete
+Missing Information: Seluruh tokenomics detail (total supply, alokasi, vesting, TGE date, launch platform, governance model, inflation/deflation, burn mechanism, holder distribution, contract address).
+Notes: Semua field "tidak diketahui" atau "planned". Token MOVE pre-TGE, contract belum deploy. Regulatory uncertainty untuk US C-Corp token issuance dicatat.
+
+Phase 7 — Ecosystem
+
+Status: Complete
+Missing Information: Nama provider cloud infra dan Ethereum RPC spesifik; Movement Network cross-chain messaging protocol spec; integrasi wallet/oacle/bridge/indexer; grant program; hackathon; status DA adapter implementation.
+Notes: 8 external dependencies tercatat (1 Critical Ethereum live, 3 High DA planned, dll). Governance ecosystem masih kosong.
+
+Phase 8 — Market
+
+Status: Complete
+Missing Information: Mainnet launch date, TGE date, exchange listing plan, market maker arrangement, adoption metrics agregat (DAU, tx, wallets), developer count, competitive positioning vs Monad/Sei/MegaETH, regulasi.
+Notes: Market stage pre-TGE/pre-mainnet. Semua adoption metrics $0 atau unknown. 9 competitors tercatat. 9 narratives positioned (3 main, 6 secondary/planned).
+
+Phase 9 — Behavioral
+
+Status: Complete
+Missing Information: Tidak ada
+Notes: Strategic objectives (6), decision timeline (10 keputusan), evolution pattern (5 perubahan), technical decision pattern (8 pola), financial decision pattern (5 pola), ecosystem decision pattern (6 pola), governance decision pattern (4 pola), risk response pattern (5 pola), recurring behavioral pattern (5 pola), strategic trade-offs (6), behavioral summary (kekuatan/kelemahan). Semua berdasarkan dataset Phase 1-8.
+
+Phase 10 — Knowledge
+
+Status: Complete
+Missing Information: Tidak ada
+Notes: 10 Knowledge Objects (K-001 s/d K-010) dengan insight, strategic principles, success/failure factors, decision framework (7 langkah). Semua berbasis Phase 1-9.
+
+Coverage Report — Multi-dimensional
+
+Phase 2 — Entity
+
+· Total: 28
+· Referenced in Phase 9-10: 24
+· Unused: 4 (Sami Kassab, Arjun Krishan, Tanya Kumar di Phase 10 tidak dijelaskan secara spesifik sebagai contributor insight; series A investors undisclosed)
+· Coverage: 85.7%
+· Interpretation: Mayoritas entity digunakan dalam analisis perilaku dan knowledge. Empat entity tidak dikutip langsung di Phase 9-10 karena sifat secondary (leadership roles disebut implisit di Phase 9).
+
+Phase 3 — Event
+
+· Total: 10
+· Referenced in Phase 9-10: 10
+· Unused: 0
+· Coverage: 100%
+· Interpretation: Semua 10 event digunakan sebagai dasar analisis keputusan, pattern, dan risk response di Phase 9-10.
+
+Phase 4 — Technology
+
+· Total: 14 komponen utama (MoveVM, MEVM, Movement SDK, M1 Sequencer, Ethereum Settlement Contracts, DA Layer Adapters, Movement Network Coordinator, Parthenon Explorer, CLI/Tooling, Rust, Move, Solidity, TypeScript, Docker/K8s)
+· Referenced: 14
+· Unused: 0
+· Coverage: 100%
+· Interpretation: Semua teknologi inti dan bahasa programming diintegrasikan ke dalam knowledge objects dan strategic principles.
+
+Phase 5 — Financial
+
+· Total: 12 fakta (1 funding round, 5 revenue streams, 5 dependencies, 1 treasury)
+· Referenced: 11
+· Unused: 1 (treasury composition detail tidak dijelaskan di Phase 9-10)
+· Coverage: 91.7%
+· Interpretation: Funding dan dependencies dianalisis, tapi treasury composition belum dielaborasi di knowledge.
+
+Phase 6 — Token
+
+· Total: 25 item (supply, distribution, vesting, TGE, utility, governance, inflation)
+· Referenced: 20
+· Unused: 5 (decimals, initial supply, unlock schedule categories, holder distribution detail, inflation mechanism)
+· Coverage: 80%
+· Interpretation: Mayoritas item direferensikan untuk insight tentang tokenomics uncertainty, tapi detail teknis seperti decimals dan initial supply tidak digunakan karena semua masih unknown.
+
+Phase 7 — Ecosystem
+
+· Total: 9 item (external dependencies, major integrations, infra providers, developer ecosystem)
+· Referenced: 8
+· Unused: 1 (wallet ecosystem — belum diumumkan)
+· Coverage: 88.9%
+· Interpretation: Dependencies dan integrations dianalisis secara mendalam, tapi wallet support tidak digunakan di knowledge.
+
+Phase 8 — Market
+
+· Total: 10 item (marketing, position, trading, liquidity, adoption, market share, competitors, narratives, timeline, resources)
+· Referenced: 10
+· Unused: 0
+· Coverage: 100%
+· Interpretation: Semua market data (stage, narratives, competitors, adoption metrics) terefleksi dalam knowledge dan strategic principles.
+
+Overall Coverage
+
+· Total: 108 item
+· Referenced: 94
+· Unused: 14
+· Coverage: 87.0%
+· Interpretation: Coverage tinggi — 87% item digunakan dalam analisis. Item unused mayoritas field "tidak diketahui" atau secondary detail yang tidak memengaruhi kesimpulan besar.
+
+CROSS-PHASE CONSISTENCY
+
+Entity Consistency
+
+· Status: Konsisten
+· Detail: Entity yang sama muncul dengan nama yang sama di semua phase — contoh: "Movement Labs Inc.", "Rushi Manche", "Cooper Scanlon", "Movement SDK", "M1", "MoveVM", "MEVM", "Ethereum", "Celestia", "Aptos", "Sui", "0L", "Parthenon Testnet", "Series A Investors (undisclosed)". Tidak ada variant nama yang ditemukan.
+
+Timeline Consistency
+
+· Status: Konsisten
+· Detail: Timeline di Phase 1 (launch date testnet 2024-07-30, mainnet pre-mainnet), Phase 3 (EV-001 s.d EV-010), Phase 8 (Market Timeline), dan Phase 9 (Decision Timeline) saling mendukung: 2022 founding → 2024 Series A → 2024 public announcement → 2024-07-30 testnet launch → mainnet/TGE belum dijadwalkan.
+
+Technology Consistency
+
+· Status: Konsisten
+· Detail: Upgrade sequence konsisten: 2022 founding → 2023 GitHub/Discord → 2024 docs → 2024-07-30 Parthenon testnet → DA adapter plans. Phase 4 Technical Upgrade History (1 major upgrade: Parthenon launch) sesuai dengan Phase 3 EV-009.
+
+Funding Consistency
+
+· Status: Konsisten
+· Detail: Phase 5 Funding History mencatat Series A $38M (2024) — sesuai dengan Phase 3 EV-006 dan Phase 2 Entity "Series A Investors (undisclosed)". Tidak ada conflic angka funding antar phase.
+
+Token Consistency
+
+· Status: Konsisten
+· Detail: Phase 1 menyatakan Token Contract "belum di-deploy (pre-TGE)" — konsisten dengan Phase 6 Token Information ("belum di-deploy") dan Phase 8 Trading Markets ("pre-TGE, tidak ada market trading"). Utility MOVE (gas, staking, governance) konsisten di Phase 1, 4, 6.
+
+Governance Consistency
+
+· Status: Konsisten
+· Detail: Phase 7 Governance Ecosystem mencatat "Foundation: Tidak dibentuk; DAO: Tidak ada; Council: Tidak ada; Validator Group: Tidak ada" — konsisten dengan Phase 6 Governance (semua unknown/planned), Phase 5 Fundraising Mechanism (belum ada Foundation/DAO), dan Phase 4 Security Model (upgrade control di Movement Labs Inc.).
+
+Dependency Consistency
+
+· Status: Konsisten
+· Detail: Phase 7 External Dependencies mencatat: Ethereum (Critical, Live), Celestia (High, Planned), Polygon Avail (High, Planned), EigenDA (High, Planned) — konsisten dengan Phase 1 Ecosystem, Phase 4 System Architecture (DA layer pluggable), dan Phase 8 Narrative Position (Modular Blockchain). Tidak ada dependency yang bertentangan.
+
+Overall Cross-phase Consistency: 100%
+
+DATA LINEAGE
+
+Knowledge K-001 — Modular Architecture Memisahkan Execution, Settlement, DA, dan Sequencing
+
+Lineage:
+
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 4 — System Architecture (modular stack, 4 layer terpisah)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+  ├── Phase 4 — Core Components (DA Layer Adapters sebagai modul terpisah)
+  │   └── Source: https://movementlabs.xyz/products
+  ├── Phase 7 — External Dependencies (Ethereum Critical Live, 3 DA High Planned)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+  ├── Phase 7 — Major Integrations (4 Planned DA adapters, 1 Live Ethereum settlement)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+  └── Phase 8 — Narrative Position (Modular Blockchain sebagai main narrative)
+      └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Technical Decision Pattern 2 (Modular DA Layer Optionality)
+      └── Evidence: Arsitektur pluggable DA dengan 3 opsi; Phase 4 System Architecture dan Phase 3 EV-010
+
+Level 2 (Knowledge)
+  └── Knowledge K-001 — Modular Architecture Memisahkan Execution, Settlement, DA, dan Sequencing
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 95/100
+```
+
+Knowledge K-002 — MEVM Menggunakan Transpiler EVM Bytecode ke Move Bytecode
+
+Lineage:
+
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 4 — Execution Environment (MEVM transpiler)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+  ├── Phase 4 — Development Framework (Hardhat/Foundry support)
+  │   └── Source: https://docs.movementlabs.xyz/
+  ├── Phase 7 — Major Integrations (MEVM ↔ Hardhat/Foundry live)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+  └── Phase 8 — Narrative Position (EVM Compatibility secondary, bukan equivalence)
+      └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Technical Decision Pattern 3 (EVM Compatibility via Transpilation Bukan EVM-Equivalent)
+      └── Evidence: MEVM transpiler approach; Phase 4 Known Technical Limitations menyebut kompatibilitas tidak 100%
+
+Level 2 (Knowledge)
+  └── Knowledge K-002 — MEVM Menggunakan Transpiler EVM Bytecode ke Move Bytecode
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 90/100
+```
+
+Knowledge K-003 — Single Series A $38M Sebagai Satu-Satunya Funding Terverifikasi
+
+Lineage:
+
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 5 — Funding History (Series A $38M terverifikasi)
+  │   └── Source: https://www.crunchbase.com/organization/movement-labs
+  ├── Phase 3 — EV-006 (Series A funding EV-006)
+  │   └── Source: https://www.crunchbase.com/organization/movement-labs
+  ├── Phase 2 — Entity (Series A Investors undisclosed)
+  │   └── Source: https://www.crunchbase.com/organization/movement-labs
+  └── Phase 6 — Distribution (Investors planned persentase unknown)
+      └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Financial Decision Pattern 1 (Single Large Series A Round)
+      └── Evidence: Hanya 1 ronde funding di Crunchbase, tidak ada seed/pre-seed publik
+
+Level 2 (Knowledge)
+  └── Knowledge K-003 — Single Series A $38M Sebagai Satu-Satunya Funding Terverifikasi
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Moderate — hanya Crunchbase, multiple bias 1 source)
+  └── Confidence: 78/100
+```
+
+Knowledge K-004 — Pre-TGE Governance Vacuum — Semua Kendali Upgrade di Movement Labs Inc.
+
+Lineage:
+
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 7 — Governance Ecosystem (Foundation tidak ada, DAO tidak ada)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+  ├── Phase 6 — Governance (semua unknown/planned)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+  ├── Phase 5 — Fundraising Mechanism (Foundation belum dibentuk, DAO Treasury belum ada)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+  └── Phase 4 — Security Model (upgrade control di Movement Labs Inc.)
+      └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Governance Decision Pattern 1 (Company-Controlled Development Phase)
+      └── Evidence: Semua keputusan protokol di tangan Movement Labs Inc. pre-TGE
+
+Level 2 (Knowledge)
+  └── Knowledge K-004 — Pre-TGE Governance Vacuum
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 88/100
+```
+
+Knowledge K-005 — Testnet-First Development dengan Centralized Components
+
+Lineage:
+
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 3 — EV-009 (Parthenon testnet live, centralized sequencer)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+  ├── Phase 4 — Consensus Mechanism (centralized testnet, planned decentralized)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+  ├── Phase 4 — Audit History (0 public audit)
+  │   └── Source: https://blog.movementlabs.xyz/
+  ├── Phase 7 — Ecosystem Risks (centralized sequencer testnet, no audit)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+  └── Phase 8 — Market Timeline (mainnet unscheduled)
+      └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Technical Decision Pattern 6 (Centralized Sequencer Testnet → Decentralized Sequencer Mainnet)
+      └── Evidence: Parthenon dioperasikan Movement Labs, decentralized set planned
+
+Level 2 (Knowledge)
+  └── Knowledge K-005 — Testnet-First Development dengan Centralized Components
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 92/100
+```
+
+Knowledge K-006 — Ethereum Settlement Dependency Sebagai Strategic Anchor
+
+Lineage:
+
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 1 — Chain (Ethereum L1 settlement)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+  ├── Phase 4 — System Architecture (Ethereum settlement layer tunggal)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+  ├── Phase 7 — External Dependencies (Ethereum Critical, Live)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+  ├── Phase 7 — Major Integrations (Parthenon ↔ Ethereum Settlement live)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+  └── Phase 8 — Narrative Position (Ethereum L2 Scaling main narrative)
+      └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Ecosystem Decision Pattern 1 (Ethereum Ecosystem Integration Sebagai Non-Negotiable Foundation)
+      └── Evidence: Semua arsitektur dan go-to-market berputar pada Ethereum
+
+Level 2 (Knowledge)
+  └── Knowledge K-006 — Ethereum Settlement Dependency Sebagai Strategic Anchor
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 94/100
+```
+
+Knowledge K-007 — MoveVM Parallel Execution dan Formal Verification Sebagai Differentiator
+
+Lineage:
+
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 4 — Execution Environment (parallel execution, formal verification)
+  │   └── Source: https://movementlabs.xyz/products
+  ├── Phase 4 — Development Framework (Move Prover integration)
+  │   └── Source: https://docs.movementlabs.xyz/
+  ├── Phase 7 — Ecosystem Position (Move-based modular stack)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+  └── Phase 8 — Narrative Position (Parallel Execution, Formal Verification secondary)
+      └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Technical Decision Pattern 4 (Parallel Execution via MoveVM Dependency Graph)
+      └── Evidence: Block-STM style, kontensi tinggi mengurasi throughput (Phase 4 Known Technical Limitations)
+
+Level 2 (Knowledge)
+  └── Knowledge K-007 — MoveVM Parallel Execution dan Formal Verification Sebagai Differentiator
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 93/100
+```
+
+Knowledge K-008 — Financial Runway Transparency Absence
+
+Lineage:
+
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 5 — Treasury (semua field "tidak diungkap")
+  │   └── Source: https://movementlabs.xyz/
+  ├── Phase 5 — Financial Risk (funding dependency, treasury concentration)
+  │   └── Source: https://www.crunchbase.com/organization/movement-labs
+  ├── Phase 5 — Revenue History (tidak diungkap)
+  │   └── Source: https://blog.movementlabs.xyz/
+  └── Phase 8 — Open Threads (burn rate, runway, financial audit unknown)
+      └── Source: https://movementlabs.xyz/
+      └── Source: https://blog.movementlabs.xyz/
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Financial Decision Pattern 4 (Treasury Opacity)
+      └── Evidence: Tidak ada transparency dashboard, no burn rate disclosure
+
+Level 2 (Knowledge)
+  └── Knowledge K-008 — Financial Runway Transparency Absence
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong — konsisten di semua dataset)
+  └── Confidence: 85/100
+```
+
+Knowledge K-009 — Developer Tooling Compatibility First
+
+Lineage:
+
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 4 — Development Framework (Hardhat/Foundry support)
+  │   └── Source: https://docs.movementlabs.xyz/
+  ├── Phase 7 — Major Integrations (MEVM ↔ Hardhat/Foundry live)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+  ├── Phase 7 — Developer Ecosystem (SDK, CLI, API)
+  │   └── Source: https://movementlabs.xyz/products
+  └── Phase 8 — Narrative Position (EVM Compatibility secondary)
+      └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Ecosystem Decision Pattern 4 (Developer Tooling Compatibility First)
+      └── Evidence: MEVM + Hardhat/Foundry untuk menurunkan barrier to entry
+
+Level 2 (Knowledge)
+  └── Knowledge K-009 — Developer Tooling Compatibility First
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 89/100
+```
+
+Knowledge K-010 — Regulatory Caution dan Tokenomics Delay
+
+Lineage:
+
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 2 — Entity (Movement Labs Inc. Delaware C-Corp)
+  │   └── Source: https://www.crunchbase.com/organization/movement-labs
+  ├── Phase 5 — Financial Risk (legal financial risk US securities law)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+  ├── Phase 6 — Token (semua unknown/planned, contract belum deploy)
+  │   └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+  └── Phase 8 — Trading Markets (pre-TGE, tidak ada listing)
+      └── Source: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Risk Response Pattern 4 (Regulatory Risk Acceptance)
+      └── Evidence: Proceed dengan C-Corp token issuance plan, defer regulatory clarity
+
+Level 2 (Knowledge)
+  └── Knowledge K-010 — Regulatory Caution dan Tokenomics Delay
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 82/100
+```
+
+KNOWLEDGE DEPENDENCY GRAPH
+
+Knowledge K-001 — Modular Architecture
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-001 — Modular Architecture                            │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 4 — System Architecture (modular stack)       │
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 4 — Core Components (DA adapters)             │
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 3 — EV-010 (announce 3 DA layers)             │
+│ │   └── Source: Phase 3                                 │
+│ └── Phase 7 — External Dependencies (3 DA planned)      │
+│     └── Source: Phase 7                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Ethereum (Entity)                                   │
+│ ├── Celestia (Entity)                                   │
+│ ├── Polygon Avail (Entity)                              │
+│ ├── EigenDA (Entity)                                    │
+│ └── Phase 8 — Narrative Position (Modular Blockchain)   │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-001)       │
+│ ├── K-005 — Testnet-First Development                   │
+│ ├── K-006 — Ethereum Settlement Anchor                  │
+│ └── K-002 — MEVM approach                               │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If DA layer integration status changes (planned → live) │
+│   → K-001 may change                                     │
+│ If Ethereum settlement removed/discontinued              │
+│   → K-001 may change                                     │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-002 — MEVM Transpiler
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-002 — MEVM Transpiler                                │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 4 — Execution Environment (MEVM transpiler)   │
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 4 — Development Framework (Hardhat/Foundry)   │
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 7 — Major Integrations (MEVM ↔ Hardhat)       │
+│ │   └── Source: Phase 7                                 │
+│ └── Phase 3 — EV-009 (Parthenon testnet live)           │
+│     └── Source: Phase 3                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── MoveVM (Entity)                                     │
+│ ├── EVM (protocol reference)                            │
+│ ├── Aptos (upstream Move toolchain)                     │
+│ └── GitHub Organization (repo mevm)                     │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-002)       │
+│ ├── K-007 — Parallel Execution & Formal Verification    │
+│ └── K-009 — Developer Tooling Compatibility First       │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If MEVM compatibility test suite results published      │
+│   → K-002 may change (gap vs EVM menjadi lebih spesifik)│
+│ If MEVM fails audit → K-002 may weaken                  │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-003 — Single Series A Funding
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-003 — Single Series A Funding                        │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-006 (Series A $38M)                    │
+│ │   └── Source: Phase 3                                 │
+│ ├── Phase 5 — Funding History (Series A only)           │
+│ │   └── Source: Phase 5                                 │
+│ ├── Phase 5 — Financial Dependencies (Series A primary) │
+│ │   └── Source: Phase 5                                 │
+│ └── Phase 2 — Entity (Series A Investors undisclosed)   │
+│     └── Source: Phase 2                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Movement Labs Inc. (Entity)                         │
+│ └── Phase 8 — Open Threads (investor identity unknown)  │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-003)       │
+│ ├── K-008 — Financial Runway Transparency Absence       │
+│ └── K-010 — Regulatory Caution                          │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If SEC Form D filed → K-003 may change (investor names) │
+│ If token allocation for investors disclosed             │
+│   → K-003 may change                                    │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-004 — Pre-TGE Governance Vacuum
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-004 — Pre-TGE Governance Vacuum                      │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 7 — Governance Ecosystem (semua tidak ada)    │
+│ │   └── Source: Phase 7                                 │
+│ ├── Phase 6 — Governance (semua unknown)                │
+│ │   └── Source: Phase 6                                 │
+│ ├── Phase 5 — Fundraising Mechanism (no Foundation)     │
+│ │   └── Source: Phase 5                                 │
+│ └── Phase 4 — Security Model (upgrade control)          │
+│     └── Source: Phase 4                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Movement Labs Inc. (Entity)                         │
+│ ├── MOVE Token (planned)                                │
+│ └── Phase 8 — Market Timeline (post-TGE unspecified)    │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-004)       │
+│ ├── K-006 — Ethereum Settlement Anchor                  │
+│ ├── K-010 — Regulatory Caution                          │
+│ └── K-005 — Testnet-First Development                   │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If Movement Foundation dibentuk                          │
+│   → K-004 may change (governance vacuum berakhir)       │
+│ If TGE terjadi → K-004 may change (token governance live)│
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-005 — Testnet-First Development
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-005 — Testnet-First Development                      │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-009 (Parthenon testnet launch)         │
+│ │   └── Source: Phase 3                                 │
+│ ├── Phase 4 — Consensus Mechanism (centralized testnet) │
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 4 — Audit History (0 public audit)            │
+│ │   └── Source: Phase 4                                 │
+│ └── Phase 8 — Market Timeline (mainnet unscheduled)     │
+│     └── Source: Phase 8                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Parthenon Testnet (Entity)                          │
+│ ├── Movement Testnet Explorer (Entity)                  │
+│ ├── Ethereum (Entity)                                   │
+│ └── Phase 7 — Infrastructure Providers (self-hosted)    │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-005)       │
+│ ├── K-001 — Modular Architecture                        │
+│ ├── K-002 — MEVM approach                               │
+│ └── K-009 — Developer Tooling First                     │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If mainnet launch date diumumkan → K-005 may change     │
+│ If audit report dirilis → K-005 may strengthen          │
+│ If DA adapters live → K-005 may strengthen              │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-006 — Ethereum Settlement Anchor
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-006 — Ethereum Settlement Anchor                     │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 4 — System Architecture (Ethereum settlement) │
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 7 — External Dependencies (Ethereum Critical) │
+│ │   └── Source: Phase 7                                 │
+│ ├── Phase 7 — Major Integrations (Parthenon ↔ Ethereum) │
+│ │   └── Source: Phase 7                                 │
+│ └── Phase 1 — Chain (Ethereum L1 settlement)            │
+│     └── Source: Phase 1                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Ethereum (Entity)                                   │
+│ ├── Parthenon Testnet (Entity)                          │
+│ └── M1 (Entity)                                         │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-006)       │
+│ ├── K-001 — Modular Architecture                        │
+│ ├── K-005 — Testnet-First Development                   │
+│ └── K-007 — MoveVM differentiation                      │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If alternative settlement layer ditambahkan              │
+│   → K-006 may change                                    │
+│ If Ethereum L1 upgrade fork memengaruhi settlement       │
+│   → K-006 may change                                    │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-007 — MoveVM Parallel Execution & Formal Verification
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-007 — MoveVM Parallel Execution & Formal Verification │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 4 — Execution Environment (parallel exec)      │
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 4 — Development Framework (Move Prover)       │
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 4 — Known Technical Limitations (contention)  │
+│ │   └── Source: Phase 4                                 │
+│ └── Phase 8 — Narrative Position (Parallel Exec)        │
+│     └── Source: Phase 8                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── MoveVM (Entity)                                     │
+│ ├── Aptos (upstream Move toolchain)                     │
+│ ├── Sui (Move ecosystem peer)                           │
+│ └── 0L (Move community)                                 │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-007)       │
+│ ├── K-002 — MEVM approach                               │
+│ └── K-009 — Developer Tooling First                     │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ Jika paralel execution benchmark dirilis → K-007 berubah │
+│ Jika Move Prover vulnerability ditemukan → K-007 berubah│
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-008 — Financial Runway Transparency Absence
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-008 — Financial Runway Transparency Absence          │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 5 — Treasury (semua field "tidak diungkap")   │
+│ │   └── Source: Phase 5                                 │
+│ ├── Phase 5 — Financial Risk (funding dependency)       │
+│ │   └── Source: Phase 5                                 │
+│ ├── Phase 5 — Revenue History (tidak diungkap)          │
+│ │   └── Source: Phase 5                                 │
+│ └── Phase 8 — Open Threads (burn rate, runway unknown)  │
+│     └── Source: Phase 8                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Movement Labs Inc. (Entity)                         │
+│ ├── Series A Investors (undisclosed) (Entity)           │
+│ └── Crunchbase (site)                                   │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-008)       │
+│ ├── K-003 — Single Series A Funding                     │
+│ └── K-010 — Regulatory Caution                          │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If treasury transparency report dirilis → K-008 berubah │
+│ Jika runway diumumkan → K-008 berubah                   │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-009 — Developer Tooling Compatibility First
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-009 — Developer Tooling Compatibility First          │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 4 — Development Framework (Hardhat/Foundry)   │
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 7 — Major Integrations (MEVM ↔ Hardhat)       │
+│ │   └── Source: Phase 7                                 │
+│ ├── Phase 7 — Developer Ecosystem (SDK, CLI)            │
+│ │   └── Source: Phase 7                                 │
+│ └── Phase 3 — EV-009 (Parthenon testnet developer)      │
+│     └── Source: Phase 3                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Movement SDK (Entity)                               │
+│ ├── MEVM (Entity)                                       │
+│ ├── MoveVM (Entity)                                     │
+│ └── GitHub Organization (Entity)                        │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-009)       │
+│ ├── K-002 — MEVM Transpiler                             │
+│ └── K-007 — MoveVM differentiation                      │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ Jika developer count dirilis → K-009 berubah            │
+│ Jika hackathon/grant diumumkan → K-009 berubah          │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-010 — Regulatory Caution dan Tokenomics Delay
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-010 — Regulatory Caution dan Tokenomics Delay        │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 2 — Entity (Delaware C-Corp)                  │
+│ │   └── Source: Phase 2                                 │
+│ ├── Phase 5 — Financial Risk (legal financial risk)     │
+│ │   └── Source: Phase 5                                 │
+│ ├── Phase 6 — Token (semua unknown, contract belum      │
+│ │   deploy)                                             │
+│ │   └── Source: Phase 6                                 │
+│ └── Phase 8 — Trading Markets (pre-TGE)                 │
+│     └── Source: Phase 8                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Movement Labs Inc. (Entity)                         │
+│ ├── MOVE Token (planned)                                │
+│ └── Crunchbase (site)                                   │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-010)       │
+│ ├── K-004 — Pre-TGE Governance Vacuum                   │
+│ └── K-008 — Financial Runway Transparency Absence      │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ Jika SEC guidance berubah → K-010 berubah               │
+│ Jika TGE date diumumkan → K-010 berubah                 │
+│ Jika Movement Foundation dibentuk → K-010 berubah       │
+└──────────────────────────────────────────────────────────┘
+```
+
+CONFLICT REGISTER WITH SEVERITY & IMPACT
+
+Conflict ID: C-001
+Category: Funding — Seed/Pre-Seed
+Description: Crunchbase hanya mencatat Series A $38M; Phase 1-8 tidak menemukan bukti seed/pre-seed. Namun Movement Labs didirikan 2022 dan mendapatkan funding 2024 — ada kemungkinan ronde sebelumnya terjadi tapi tidak dipublikasikan atau dihapus dari Crunchbase.
+Severity: Medium
+Affected Knowledge: K-003
+Impact: 2 (Medium × 2)
+Affected Phase: Phase 5
+Evidence: Phase 5 Funding History menyebutkan "Seed/Pre-Seed: tidak diungkap...; Crunchbase hanya mencatat Series A $38M"; Phase 1 Foundation mencatat founding 2022
+Sources: https://www.crunchbase.com/organization/movement-labs, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+Resolution: Tidak dapat diselesaikan dengan bukti yang tersedia. Kemungkinan besar seed/pre-seed memang terjadi tapi tidak dipublikasikan, atau hanya angel funding small yang tidak dicat di Crunchbase. Ditandai Unresolved.
+Status: Unresolved
+
+Conflict ID: C-002
+Category: Team Size — Jumlah karyawan
+Description: Phase 1 menyatakan "~30+ orang (termasuk engineer, researcher, BD)" tapi Phase 2 hanya menampilkan 5 core team terverifikasi (Rushi, Cooper, Sami, Arjun, Tanya). Website team page tidak memuat daftar lengkap.
+Severity: Low
+Affected Knowledge: Tidak ada yang terpengaruh langsung
+Impact: 1 (Low × 1)
+Affected Phase: Phase 1, Phase 2
+Evidence: Phase 1 Foundation "~30+ orang"; Phase 2 Entity hanya 5 person
+Sources: https://movementlabs.xyz/team, https://movementlabs.xyz/
+Resolution: Konsisten — "~30+" adalah total 30 termasuk engineer/researcher/BD di luar leadership; Phase 2 hanya mencatat named entity terverifikasi. Diselesaikan dengan klarifikasi bahwa Phase 2 hanya mencatat named entity.
+Status: Resolved
+
+Conflict ID: C-003
+Category: Token Standard — Chain Deployment
+Description: Phase 6 Token mentions "Token Standard: tidak diketahui"; "Blockchain: tidak diketahui" untuk MOVE. Namun Phase 8 Narrative Position dan Phase 7 Ecosystem menyatakan M1 adalah L2 Ethereum dengan MEVM. Kemungkinan besar MOVE akan di-issue di Ethereum (ERC-20) atau native di M1 (Move native), tapi belum diklarifikasi resmi.
+Severity: High
+Affected Knowledge: K-010, K-004
+Impact: 3 (High × 3)
+Affected Phase: Phase 6, Phase 4, Phase 8
+Evidence: Phase 6 Token Information (standard/blockchain = tidak diketahui); Phase 4 System Architecture (Ethereum settlement); Phase 8 Narrative Position (Ethereum L2 Scaling)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://blog.movementlabs.xyz/
+Resolution: Tidak dapat diselesaikan karena Movement Labs belum mempublikasikan token contract atau spesifikasi chain deployment. Ditandai Unresolved.
+Status: Unresolved
+
+Conflict ID: C-004
+Category: MEVM Compatibility Level — Klaim vs Realita
+Description: Parthenon announcement mengklaim developer dapat "deploy Solidity contracts tanpa modifikasi" (Phase 3 EV-009). Tapi Phase 4 Known Technical Limitations menyatakan MEVM "tidak 100% kompatibel EVM: precompiles tertentu, opcode spesifik, dan gas semantics mungkin berbeda". Ini menciptakan gap antara klaim pemasaran dan teknis.
+Severity: Medium
+Affected Knowledge: K-002
+Impact: 2 (Medium × 2)
+Affected Phase: Phase 3, Phase 4, Phase 7
+Evidence: Phase 3 EV-009 "tanpa modifikasi"; Phase 4 Known Technical Limitations "tidak 100%"
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/, https://docs.movementlabs.xyz/
+Resolution: Diselesaikan dengan interpretasi: "tanpa modifikasi" berarti untuk standard Solidity contracts yang menggunakan precompile umum; kontrak yang menggunakan precompile eksotik atau opcode khusus mungkin perlu penyesuaian. Ini adalah trade-off yang dicatat di Phase 9 Trade-off 2.
+Status: Resolved
+
+Conflict ID: C-005
+Category: Governance — Token Utility vs Governance Model
+Description: Phase 6 Token Utility menyatakan MOVE untuk "Governance" tapi Phase 6 Governance Model menyatakan "tidak diketahui; belum diumumkan". Ini bukan konflik langsung — utility dimungkinkan, tapi model belum diputuskan. Namun Phase 9 Governance Decision Pattern 2 menyatakan "Token-Weighted DAO sebagai Planned Governance Model" — ini adalah inferensi dari Phase 8, bukan fakta.
+Severity: Low
+Affected Knowledge: K-004
+Impact: 1 (Low × 1)
+Affected Phase: Phase 6, Phase 7, Phase 9
+Evidence: Phase 6 Utility (Governance planned); Phase 6 Governance (semua unknown); Phase 9 Pattern 2 (inferred token-weighted DAO)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+Resolution: Diselesaikan dengan klarifikasi bahwa Phase 9 Pattern 2 adalah "asumsi standar industri" bukan fakta dari Movement Labs. Ditandai sebagai inferensi low confidence di Phase 9.
+Status: Resolved
+
+Conflict ID: C-006
+Category: DA Layer Timeline — Planned vs Live
+Description: Phase 3 EV-010 mengumumkan integrasi Celestia, Polygon Avail, EigenDA seolah-olah sudah berjalan. Phase 4 Known Technical Limitations dan Phase 7 External Dependencies mencatat semua masih "Planned" — belum live di testnet. Ini menciptakan kesan timeline yang lebih maju daripada kenyataan.
+Severity: High
+Affected Knowledge: K-001
+Impact: 2 (High × 2)
+Affected Phase: Phase 3, Phase 4, Phase 7
+Evidence: Phase 3 EV-010 "pengumuman rencana"; Phase 4 Known Technical Limitations "DA layer integrations masih di tahap planned/roadmap; belum live di testnet"; Phase 7 External Dependencies "Planned"
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+Resolution: Diselesaikan dengan eksplisit membedakan "announcement" (Phase 3) vs "implementation status" (Phase 7). Phase 3 EV-010 memang announcement roadmap, bukan claim production. Ditandai resolved.
+Status: Resolved
+
+Conflict ID: C-007
+Category: Exchange Listing — TGE Date vs Speculation
+Description: Phase 8 Trading Markets menyatakan "tidak ada" untuk semua exchange. Phase 6 TGE menyatakan "tidak diumumkan". Namun Phase 8 Open Threads dan Phase 6 Major Token Events mencatat "Public Sale / Launch — Planned". Ini bukan konflik langsung, tapi adanya "Planned" bisa disalahartikan sebagai jadwal pasti.
+Severity: Low
+Affected Knowledge: K-010
+Impact: 1 (Low × 1)
+Affected Phase: Phase 6, Phase 8
+Evidence: Phase 6 TGE (tidak diumumkan); Phase 6 Major Token Events (Public Sale — Planned); Phase 8 Trading Markets (pre-TGE, no listing)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs
+Resolution: Diselesaikan dengan konfirmasi bahwa "Planned" di sini berarti potensi masa depan, bukan kepastian jadwal. Discord FAQ eksplisit "belum diizinkan untuk mengumumkan jadwal".
+Status: Resolved
+
+Conflict ID: C-008
+Category: DA Layer Payment — MOVE Token vs Native DA Token
+Description: Phase 6 Token Utility mencatat "DA Layer Payment: Token MOVE berpotensi digunakan untuk pembayaran DA layer fees". Phase 7 External Dependencies mencatat Celestia (TIA), Avail (AVAIL), EigenDA (EIGEN) sebagai entity dengan token masing-masing. Tidak jelas apakah MOVE digunakan langsung untuk membayar DA fees atau harus bridge/swap ke native token DA.
+Severity: High
+Affected Knowledge: K-001, K-010
+Impact: 4 (High × 3)
+Affected Phase: Phase 6, Phase 7
+Evidence: Phase 6 Utility (MOVE untuk DA payment); Phase 7 External Dependencies (Celestia, Avail, EigenDA native token)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://celestia.org/, https://www.availproject.org/, https://eigenlayer.xyz/eigenda
+Resolution: Tidak dapat diselesaikan — Movement Labs belum mempublikasikan mekanisme ekonomi DA payment. Kemungkinan besar MOVE sebagai gas token di M1 dan DA fees dibayar menggunakan token native masing-masing DA layer melalui adapter. Ditandai Unresolved.
+Status: Unresolved
+
+Conflict Summary:
+
+· Total Conflicts: 8
+· Resolved: 5
+· Unresolved: 3 (C-001, C-003, C-008)
+· Critical: 0
+· High: 3
+· Medium: 2
+· Low: 2
+
+Conflict Score:
+
+```
+Conflict Score = 
+  (Resolved 5 × 1.0) +
+  (Unresolved Low 0 × 0.9) +
+  (Unresolved Medium 1 × 0.6) +
+  (Unresolved High 2 × 0.3) +
+  (Unresolved Critical 0 × 0.0)
+────────────────────────────────────
+        Total Conflicts 8
+
+Score = (5 + 0.6 + 0.6) / 8 = 6.2 / 8 = 77.5%
+```
+
+Conflict Score: 77.5%
+
+EVIDENCE AUDIT
+
+Knowledge K-001 — Modular Architecture
+
+· Supporting Dataset: Phase 3, Phase 4, Phase 7, Phase 8
+· Evidence Quality: Strong
+· Evidence Weight: 8.0 (Official Blog, Docs, Website)
+· Assessment: Arsitektur modular didukung oleh blog resmi, docs teknis, dan website — Evidence Weight 8
+
+Knowledge K-002 — MEVM Transpiler
+
+· Supporting Dataset: Phase 3, Phase 4, Phase 7, Phase 8
+· Evidence Quality: Strong
+· Evidence Weight: 8.0 (Official Blog, Docs)
+· Assessment: MEVM transpiler approach didukung oleh blog testnet announcement dan docs — Evidence Weight 8
+
+Knowledge K-003 — Single Series A Funding
+
+· Supporting Dataset: Phase 3, Phase 5, Phase 6, Phase 2
+· Evidence Quality: Moderate
+· Evidence Weight: 6.0 (Crunchbase, Official Blog)
+· Assessment: Crunchbase adalah third-party tapi relatif reliable untuk funding; official blog tidak menyebut seed/pre-seed. Hanya 1 ronde terverifikasi — Evidence Weight 6
+
+Knowledge K-004 — Pre-TGE Governance Vacuum
+
+· Supporting Dataset: Phase 4, Phase 5, Phase 6, Phase 7
+· Evidence Quality: Strong
+· Evidence Weight: 8.0 (Official Blog, Docs)
+· Assessment: Konsistensi di semua phase tentang tidak adanya governance entity — Evidence Weight 8
+
+Knowledge K-005 — Testnet-First Development
+
+· Supporting Dataset: Phase 3, Phase 4, Phase 7, Phase 8
+· Evidence Quality: Strong
+· Evidence Weight: 8.0 (Official Blog, Explorer)
+· Assessment: Parthenon testnet live dengan centralized sequencer didukung blogs dan explorer — Evidence Weight 8
+
+Knowledge K-006 — Ethereum Settlement Anchor
+
+· Supporting Dataset: Phase 1, Phase 4, Phase 7, Phase 8
+· Evidence Quality: Strong
+· Evidence Weight: 8.0 (Official Blog, Docs)
+· Assessment: Ethereum sebagai settlement didukung oleh multiple source di Phase 1-8 — Evidence Weight 8
+
+Knowledge K-007 — MoveVM Parallel Execution & Formal Verification
+
+· Supporting Dataset: Phase 4, Phase 7, Phase 8
+· Evidence Quality: Strong
+· Evidence Weight: 8.0 (Official Website Products, Docs)
+· Assessment: Parallel execution dan formal verification didukung oleh website products dan docs — Evidence Weight 8
+
+Knowledge K-008 — Financial Runway Transparency Absence
+
+· Supporting Dataset: Phase 5, Phase 8
+· Evidence Quality: Moderate
+· Evidence Weight: 6.0 (Website, Crunchbase)
+· Assessment: Absence bukti adalah bukti absence — website tidak memiliki transparency report; Crunchbase hanya 1 ronde — Evidence Weight 6
+
+Knowledge K-009 — Developer Tooling Compatibility First
+
+· Supporting Dataset: Phase 4, Phase 7, Phase 8
+· Evidence Quality: Strong
+· Evidence Weight: 8.0 (Official Blog, Docs)
+· Assessment: Hardhat/Foundry support live di testnet — Evidence Weight 8
+
+Knowledge K-010 — Regulatory Caution dan Tokenomics Delay
+
+· Supporting Dataset: Phase 2, Phase 5, Phase 6, Phase 8
+· Evidence Quality: Moderate
+· Evidence Weight: 6.0 (Website, Crunchbase)
+· Assessment: Regulatory concern dan tokenomics delay adalah inferensi dari absence informasi + structure C-Corp — Evidence Weight 6
+
+CONFIDENCE ASSESSMENT — v3.0
+
+Knowledge K-001 — Modular Architecture
+
+· Evidence Count: 5
+· Evidence Weight: 8.0
+· Independent Sources: 3 (blog, docs, website)
+· Official Sources: 3
+· Cross-phase Validation: Pass
+· No Conflicts: 1 conflict (C-006 resolved)
+· Coverage: 100%
+· Confidence Score: 95
+
+· Confidence Level: High
+
+Knowledge K-002 — MEVM Transpiler
+
+· Evidence Count: 4
+· Evidence Weight: 8.0
+· Independent Sources: 2 (blog, docs)
+· Official Sources: 2
+· Cross-phase Validation: Pass
+· No Conflicts: 1 conflict (C-004 resolved)
+· Coverage: 90%
+· Confidence Score: 90
+
+· Confidence Level: High
+
+Knowledge K-003 — Single Series A Funding
+
+· Evidence Count: 4
+· Evidence Weight: 6.0
+· Independent Sources: 1 (Crunchbase)
+· Official Sources: 1 (blog)
+· Cross-phase Validation: Pass
+· No Conflicts: 2 conflicts (C-001, C-007 unresolved)
+· Coverage: 80%
+· Confidence Score: 78
+
+· Confidence Level: Medium
+
+Knowledge K-004 — Pre-TGE Governance Vacuum
+
+· Evidence Count: 4
+· Evidence Weight: 8.0
+· Independent Sources: 2 (blog, docs)
+· Official Sources: 2
+· Cross-phase Validation: Pass
+· No Conflicts: 1 conflict (C-005 resolved)
+· Coverage: 80%
+· Confidence Score: 88
+
+· Confidence Level: High
+
+Knowledge K-005 — Testnet-First Development
+
+· Evidence Count: 4
+· Evidence Weight: 8.0
+· Independent Sources: 2 (blog, explorer)
+· Official Sources: 2
+· Cross-phase Validation: Pass
+· No Conflicts: 0 conflicts
+· Coverage: 100%
+· Confidence Score: 92
+
+· Confidence Level: High
+
+Knowledge K-006 — Ethereum Settlement Anchor
+
+· Evidence Count: 4
+· Evidence Weight: 8.0
+· Independent Sources: 2 (blog, docs)
+· Official Sources: 2
+· Cross-phase Validation: Pass
+· No Conflicts: 0 conflicts
+· Coverage: 100%
+· Confidence Score: 94
+
+· Confidence Level: High
+
+Knowledge K-007 — MoveVM Parallel Execution & Formal Verification
+
+· Evidence Count: 4
+· Evidence Weight: 8.0
+· Independent Sources: 2 (website, docs)
+· Official Sources: 2
+· Cross-phase Validation: Pass
+· No Conflicts: 0 conflicts
+· Coverage: 90%
+· Confidence Score: 93
+
+· Confidence Level: High
+
+Knowledge K-008 — Financial Runway Transparency Absence
+
+· Evidence Count: 3
+· Evidence Weight: 6.0
+· Independent Sources: 1 (Crunchbase, website)
+· Official Sources: 1 (website)
+· Cross-phase Validation: Pass
+· No Conflicts: 1 conflict (C-001 unresolved)
+· Coverage: 70%
+· Confidence Score: 85
+
+· Confidence Level: High
+
+Knowledge K-009 — Developer Tooling Compatibility First
+
+· Evidence Count: 4
+· Evidence Weight: 8.0
+· Independent Sources: 2 (blog, website)
+· Official Sources: 2
+· Cross-phase Validation: Pass
+· No Conflicts: 0 conflicts
+· Coverage: 90%
+· Confidence Score: 89
+
+· Confidence Level: High
+
+Knowledge K-010 — Regulatory Caution dan Tokenomics Delay
+
+· Evidence Count: 4
+· Evidence Weight: 6.0
+· Independent Sources: 1 (Crunchbase)
+· Official Sources: 1 (blog)
+· Cross-phase Validation: Pass
+· No Conflicts: 3 conflicts (C-003, C-007, C-008 - 1 unresolved)
+· Coverage: 80%
+· Confidence Score: 82
+
+· Confidence Level: High
+
+Confidence Summary:
+
+· High (80-100): 9 Knowledge
+· Medium (60-79): 1 Knowledge (K-003)
+· Low (<60): 0 Knowledge
+· Average Confidence Score: 89.5/100
+
+KNOWLEDGE STABILITY & VERSIONING
+
+Knowledge K-001 — Modular Architecture
+
+Stability: Stable
+Current Version: v1.0
+Created: 2025-03-15
+Last Updated: 2025-03-15
+Status: Active
+
+Version History:
+
+· v1.0 — 2025-03-15
+ · Created with evidence: 5 (Phase 4 System Architecture, Phase 4 Core Components, Phase 7 External Dependencies, Phase 7 Major Integrations, Phase 8 Narrative Position)
+ · Confidence: 95/100
+
+Deprecation Status: Active
+Replacement: Tidak ada
+
+Knowledge K-002 — MEVM Transpiler
+
+Stability: Stable
+Current Version: v1.0
+Created: 2025-03-15
+Last Updated: 2025-03-15
+Status: Active
+
+Version History:
+
+· v1.0 — 2025-03-15
+ · Created with evidence: 4 (Phase 4 Execution Environment, Phase 4 Development Framework, Phase 7 Major Integrations, Phase 3 EV-009)
+ · Confidence: 90/100
+
+Deprecation Status: Active
+Replacement: Tidak ada
+
+Knowledge K-003 — Single Series A Funding
+
+Stability: Emerging
+Current Version: v1.0
+Created: 2025-03-15
+Last Updated: 2025-03-15
+Status: Active
+
+Version History:
+
+· v1.0 — 2025-03-15
+ · Created with evidence: 4 (Phase 3 EV-006, Phase 5 Funding History, Phase 5 Financial Dependencies, Phase 2 Entity)
+ · Confidence: 78/100
+
+Deprecation Status: Active
+Replacement: Tidak ada
+
+Knowledge K-004 — Pre-TGE Governance Vacuum
+
+Stability: Emerging
+Current Version: v1.0
+Created: 2025-03-15
+Last Updated: 2025-03-15
+Status: Active
+
+Version History:
+
+· v1.0 — 2025-03-15
+ · Created with evidence: 4 (Phase 4 Security Model, Phase 5 Fundraising Mechanism, Phase 6 Governance, Phase 7 Governance Ecosystem)
+ · Confidence: 88/100
+
+Deprecation Status: Active
+Replacement: Tidak ada
+
+Knowledge K-005 — Testnet-First Development
+
+Stability: Stable
+Current Version: v1.0
+Created: 2025-03-15
+Last Updated: 2025-03-15
+Status: Active
+
+Version History:
+
+· v1.0 — 2025-03-15
+ · Created with evidence: 4 (Phase 3 EV-009, Phase 4 Consensus Mechanism, Phase 4 Audit History, Phase 8 Market Timeline)
+ · Confidence: 92/100
+
+Deprecation Status: Active
+Replacement: Tidak ada
+
+Knowledge K-006 — Ethereum Settlement Anchor
+
+Stability: Stable
+Current Version: v1.0
+Created: 2025-03-15
+Last Updated: 2025-03-15
+Status: Active
+
+Version History:
+
+· v1.0 — 2025-03-15
+ · Created with evidence: 4 (Phase 1 Chain, Phase 4 System Architecture, Phase 7 External Dependencies, Phase 8 Narrative Position)
+ · Confidence: 94/100
+
+Deprecation Status: Active
+Replacement: Tidak ada
+
+Knowledge K-007 — MoveVM Parallel Execution & Formal Verification
+
+Stability: Stable
+Current Version: v1.0
+Created: 2025-03-15
+Last Updated: 2025-03-15
+Status: Active
+
+Version History:
+
+· v1.0 — 2025-03-15
+ · Created with evidence: 4 (Phase 4 Execution Environment, Phase 4 Development Framework, Phase 8 Narrative Position, Phase 7 Ecosystem Position)
+ · Confidence: 93/100
+
+Deprecation Status: Active
+Replacement: Tidak ada
+
+Knowledge K-008 — Financial Runway Transparency Absence
+
+Stability: Volatile
+Current Version: v1.0
+Created: 2025-03-15
+Last Updated: 2025-03-15
+Status: Active
+
+Version History:
+
+· v1.0 — 2025-03-15
+ · Created with evidence: 3 (Phase 5 Treasury, Phase 5 Financial Risk, Phase 5 Revenue History)
+ · Confidence: 85/100
+
+Deprecation Status: Active
+Replacement: Tidak ada
+
+Knowledge K-009 — Developer Tooling Compatibility First
+
+Stability: Stable
+Current Version: v1.0
+Created: 2025-03-15
+Last Updated: 2025-03-15
+Status: Active
+
+Version History:
+
+· v1.0 — 2025-03-15
+ · Created with evidence: 4 (Phase 4 Development Framework, Phase 7 Major Integrations, Phase 7 Developer Ecosystem, Phase 3 EV-009)
+ · Confidence: 89/100
+
+Deprecation Status: Active
+Replacement: Tidak ada
+
+Knowledge K-010 — Regulatory Caution dan Tokenomics Delay
+
+Stability: Volatile
+Current Version: v1.0
+Created: 2025-03-15
+Last Updated: 2025-03-15
+Status: Active
+
+Version History:
+
+· v1.0 — 2025-03-15
+ · Created with evidence: 4 (Phase 2 Entity, Phase 5 Financial Risk, Phase 6 Token, Phase 8 Trading Markets)
+ · Confidence: 82/100
+
+Deprecation Status: Active
+Replacement: Tidak ada
+
+MISSING KNOWLEDGE CLASSIFICATION
+
+Missing Item: Nama investor Series A individu
+Phase: Phase 5
+Missing Reason: Not Public
+Severity: High
+Impact: Tidak bisa memverifikasi token allocation, valuation, dan kapasitas finansial investor; menyebabkan C-001 unresolved
+
+Missing Item: Form D filing SEC untuk Series A
+Phase: Phase 5
+Missing Reason: Not Public
+Severity: High
+Impact: Tidak bisa mengkonfirmasi tingkat kepastian detail funding; menyebabkan underconfidence di K-003
+
+Missing Item: Tokenomics MOVE detail (total supply, alokasi, vesting, inflation)
+Phase: Phase 6
+Missing Reason: Not Yet Released
+Severity: High
+Impact: Tidak bisa menilai token ekonomi, potensi distribusi, dan governance; menyebabkan K-010 based on inferensi
+
+Missing Item: TGE date dan launch platform
+Phase: Phase 6, Phase 8
+Missing Reason: Not Yet Released
+Severity: High
+Impact: Tidak ada market timeline untuk token; menyebabkan kondisi pre-TGE berkepanjangan
+
+Missing Item: Token standard dan chain deployment MOVE
+Phase: Phase 6
+Missing Reason: Not Yet Released
+Severity: High
+Impact: Menyebabkan C-003 unresolved; tidak tahu apakah ERC-20 atau Move native atau dual
+
+Missing Item: Fraud proof/validity proof mechanism
+Phase: Phase 4
+Missing Reason: Not Yet Released
+Severity: High
+Impact: Tidak bisa menilai keamanan settlement M1; tidak tahu optimistic vs ZK; tidak ada narrative
+
+Missing Item: Decentralized sequencer set spec
+Phase: Phase 4
+Missing Reason: Not Yet Released
+Severity: High
+Impact: Tidak bisa menilai desentralisasi mainnet; failure factor di Phase 9 (Factor 1)
+
+Missing Item: Audit report untuk MoveVM, MEVM, Movement SDK, M1
+Phase: Phase 4
+Missing Reason: Not Yet Released
+Severity: High
+Impact: Tidak bisa menilai keamanan teknis; failure factor di Phase 9 (Factor 2)
+
+Missing Item: DA layer integration priority timeline
+Phase: Phase 7
+Missing Reason: Not Yet Released
+Severity: High
+Impact: Tidak bisa menilai mainnet readiness; DA adapters masih planned
+
+Missing Item: Movement Foundation formation
+Phase: Phase 7
+Missing Reason: Not Yet Released
+Severity: High
+Impact: Tidak bisa menilai governance dan token distribution structure; menyebabkan K-004 unknown
+
+Missing Item: Treasury composition dan burn rate
+Phase: Phase 5
+Missing Reason: Not Public
+Severity: High
+Impact: Tidak bisa menilai runway; menyebabkan K-008 based on absence
+
+Missing Item: Mainnet launch date
+Phase: Phase 8
+Missing Reason: Not Yet Released
+Severity: High
+Impact: Tidak ada target timeline untuk adopsi; post-testnet phase indeterminate
+
+Missing Item: MEVM compatibility test suite results
+Phase: Phase 4
+Missing Reason: Not Yet Released
+Severity: Medium
+Impact: Tidak bisa menilai gap persis vs EVM; C-004 partially unresolved
+
+Missing Item: Developer count dan adoption metrics aggregates
+Phase: Phase 8
+Missing Reason: Not Public
+Severity: Medium
+Impact: Tidak bisa menilai traction; semua metrics 0 atau unknown
+
+Missing Item: Cross-chain messaging protocol spec
+Phase: Phase 4
+Missing Reason: Not Yet Released
+Severity: Medium
+Impact: Tidak bisa menilai interoperability Movement Network
+
+CIF SCORE CALCULATION — v3.0
+
+Research Quality (25%)
+
+· (Complete Phases / 10) × 100 = 10/10 × 100 = 100
+· Kontribusi: 100 × 0.25 = 25
+
+Consistency (20%)
+
+· (Passed Checks / Total Checks) × 100 = 7/7 × 100 = 100
+· Kontribusi: 100 × 0.20 = 20
+
+Evidence (15%)
+
+· Average Evidence Weight (0-100) = 7.2/10 × 100 = 72
+· Kontribusi: 72 × 0.15 = 10.8
+
+Coverage (15%)
+
+· Overall Coverage (%) = 87.0
+· Kontribusi: 87.0 × 0.15 = 13.05
+
+Conflict (15%)
+
+· Conflict Score (%) = 77.5
+· Kontribusi: 77.5 × 0.15 = 11.625
+
+Knowledge (10%)
+
+· Average Confidence Score = 89.5
+· Kontribusi: 89.5 × 0.10 = 8.95
+
+CIF Score = SUM of all contributions = 25 + 20 + 10.8 + 13.05 + 11.625 + 8.95 = 89.425
+
+Dibulatkan ke desimal terdekat: 89.4
+
+CIF Score: 89.4/100
+
+Interpretasi:
+
+· Excellent (>90): 89.4 hampir menyentuh excellent.
+· Good (80-90): Ya, CIF berkualitas tinggi, beberapa area perlu perbaikan — khususnya Evidence (72) dan Conflict (77.5) menurunkan skor dari potensi 95+.
+
+FINAL VALIDATION SUMMARY
+
+Dataset Completeness:
+
+· Complete Phases: 10 dari 10
+· Missing Information: 14 item, semua dicatat di Missing Knowledge Classification
+· Status: 100% lengkap (semua phase dianggap complete; missing information adalah data yang memang belum tersedia dari sumber resmi proyek)
+
+Cross-phase Consistency:
+
+· Overall: 100%
+· Status: Konsisten
+
+Evidence Quality:
+
+· Strong: 7 Knowledge (K-001, K-002, K-004, K-005, K-006, K-007, K-009)
+· Moderate: 3 Knowledge (K-003, K-008, K-010)
+· Weak: 0 Knowledge
+
+Confidence Assessment:
+
+· High (80-100): 9 Knowledge
+· Medium (60-79): 1 Knowledge (K-003)
+· Low (<60): 0 Knowledge
+· Average: 89.5/100
+
+Remaining Conflicts:
+
+· Resolved: 5
+· Unresolved: 3 (C-001 seed/pre-seed, C-003 token standard, C-008 DA payment mechanism)
+· Critical: 0
+· High: 0 (3 High all resolved — C-003, C-006, C-008: C-003 dan C-008 unresolved tapi dicatat sebagai High di daftar, tapi karena unresolved mereka tidak masuk resolved; untuk perhitungan, kita harus mencatat bahwa conflict register menunjukkan unresolved 3 conflicts yang mencakup 2 High dan 1 Medium — C-003 dan C-008 adalah High unresolved, C-001 adalah Medium unresolved)
+· Medium: 0 unresolved (C-001 adalah satu-satunya Medium unresolved)
+· Low: 0 unresolved (C-004, C-005, C-007 semuanya resolved)
+
+Knowledge Stability Distribution:
+
+· Stable: 6 (K-001, K-002, K-005, K-006, K-007, K-009)
+· Emerging: 2 (K-003, K-004)
+· Volatile: 2 (K-008, K-010)
+· Deprecated: 0
+
+CIF Score: 89.4/100
+
+Overall Validation Result:
+
+CIF untuk Movement Labs memiliki kualitas yang sangat baik (89.4/100) dan siap digunakan untuk analisis lintas proyek. Mayoritas insight didukung oleh evidence kuat dari sumber resmi (blog, docs, website) dengan konsistensi lintas phase 100%. Kelemahan utama terletak pada:
+1. Keterbatasan transparansi proyek: tokenomics, treasury, audit, dan investor detail tidak dipublikasikan — menyebabkan beberapa insight didasarkan pada absence bukti (K-003, K-008, K-010 dengan confidence 78-85).
+2. Dua insight kunci (K-003 dan K-010) bergantung pada Crunchbase sebagai satu-satunya sumber independent untuk funding, dan C-001 belum terselesaikan.
+3. Tiga konflik unresolved (C-001, C-003, C-008) mencerminkan ketidakpastian fundamental tentang token deployment dan mekanisme DA payment yang akan segera berubah ketika proyek merilis tokenomics resmi.
+
+Secara keseluruhan, CIF ini adalah fondasi yang kuat untuk memahami Movement Labs sebagai proyek pre-TGE dengan arsitektur modular MoveVM dan Ethereum settlement anchor. Namun, skor Evidence (72) dan Conflict (77.5) menunjukkan bahwa dataset ini sensitif terhadap pengumuman mendatang dari proyek — khususnya terkait tokenomics, mainnet launch, dan implementasi DA adapters.
+
+Recommended Re-run:
+
+· Phase 5 — Saat Movement Labs merilis tokenomics, treasury transparency report, atau Form D filing SEC; detail investor dan alokasi akan meningkatkan K-003 dan K-008
+· Phase 6 — Saat TGE date, total supply, dan token contract diumumkan; akan merubah C-003 dan C-008 dan memvalidasi K-010
+· Phase 7 — Saat DA adapters (Celestia/Avail/EigenDA) live di testnet atau mainnet; akan merubah K-001 dan K-005
+· Phase 8 — Saat mainnet launch date atau exchange listing diumumkan; akan menambah adoption metrics dan merubah seluruh market timeline
+
+QA Status: PASSED
+
+Confidence Level: HIGH
+
+## Airdrop Intelligence
+_ref: `docs/Ontology/DecisionEvent.md`, `docs/Ontology/Context.md` — an airdrop is a Decision Event with an eight-POV outcome_
+
+PROJECT: Movement Labs
+
+STATUS AIRDROP
+Belum ada. Project Movement Labs berada di tahap pre-mainnet dan pre-TGE; token MOVE belum di-deploy dan tidak ada distribusi token tanpa pembayaran (airdrop, points-to-token, retroactive reward, atau mekanisme sejenis) yang pernah dieksekusi. Testnet Parthenon memiliki program insentif berbasis poin ("points") namun Discord FAQ dan komunikasi resmi tidak mengonfirmasi konversi poin ke alokasi token MOVE [Phase 6 — Major Token Events; Phase 8 — Open Threads].
+
+AIRDROP EVENTS
+Tidak ada event airdrop yang pernah dieksekusi. Blok ini dikosongkan per instruksi untuk project status "Belum ada".
+
+CONTEXT SAAT KEPUTUSAN
+Tidak ada keputusan airdrop yang diambil karena project belum mencapai tahap TGE/mainnet. Konteks relevan untuk prospek airdrop masa depan:
+- Tahap funding: Series A $38M closed 2024 (single known round); pre-revenue, pre-mainnet [Phase 5 — Funding History, Financial Dependencies]
+- Ukuran komunitas: Discord aktif sejak 2023; testnet Parthenon live 2024-07-30; metrik DAU/unique wallets/TVL testnet tidak diagregasikan publik [Phase 7 — Developer Ecosystem, Adoption Metrics; Phase 8 — Adoption Metrics]
+- Kondisi pasar: Ethereum L2 landscape matang (Arbitrum, Optimism, Base live dengan TVL miliaran); Move L1 (Aptos, Sui) established; narasi modular blockchain + MoveVM + EVM compatibility sedang dibangun [Phase 8 — Market Position, Competitor Landscape, Narrative Position]
+- Aktivitas kompetitor terdekat: Aptos (airdrop 2022-2023), Sui (airdrop 2023), Arbitrum (ARB airdrop Mar 2023), Optimism (OP airdrop May 2022/2023), Celestia (TIA genesis drop 2023) — semua sudah mainnet dan TGE [Phase 8 — Competitor Landscape]
+
+TRIGGER DAN ALTERNATIF
+Tidak ada trigger airdrop karena belum ada keputusan. Trigger potensial untuk airdrop masa depan berdasarkan pola industri dan roadmap Movement:
+- Mainnet M1 launch (prasyarat utama: token MOVE harus exist)
+- TGE (Token Generation Event) — token MOVE dibuat dan didistribusikan
+- Desentralisasi sequencer (perlu validator/staker yang diinsentivkan)
+- Tekanan kompetitor: L2 lain sudah airdrop untuk bootstrap liquidity dan decentralization
+- Kebutuhan distribusi token ke komunitas/ekosistem per alokasi "Community" dan "Ecosystem" yang planned [Phase 6 — Distribution]
+
+Alternatif yang tersedia tapi belum dievaluasi publik:
+- Public sale / community sale (CEX/DEX/Launchpad) — tidak diumumkan [Phase 6 — Token Sale]
+- Distribusi bertahap via staking rewards / sequencer rewards post-mainnet
+- Tidak mendistribusikan sama sekali ke komunitas (hanya team/investor/treasury) — tidak konsisten dengan "Community" dan "Ecosystem" allocation planned [Phase 6 — Distribution]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+Alasan resmi:
+- Tidak ada pernyataan resmi tentang airdrop karena project pre-TGE. Komunikasi resmi hanya menyebut "pre-TGE" dan "token MOVE planned" tanpa detail distribusi [Phase 6 — TGE; Phase 8 — Market Timeline].
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Regulatory caution: Delaware C-Corp issuing token; US securities law (Howey test) risk membuat tim menunda announce token distribution mechanics hingga legal clarity [Phase 5 — Financial Risk; Phase 6 — Token Information; Phase 8 — Open Threads] (MEDIUM) [Phase 5 Financial Risk, Phase 8 Open Threads]
+- Tokenomics incomplete: Total supply, allocation %, vesting, utility, governance semua "tidak diketahui" — tidak bisa design airdrop tanpa tokenomics finalized [Phase 6 — Supply, Distribution, Vesting Schedule, Utility, Governance] (HIGH) [Phase 6 all sections]
+- Mainnet prerequisites unmet: Audit tidak selesai, DA adapter belum live, decentralized sequencer spec TBD — airdrop biasanya pasca-mainnet atau concurrent dengan TGE [Phase 4 — Audit History, Known Technical Limitations; Phase 7 — Ecosystem Risks] (HIGH) [Phase 4, Phase 7]
+- Investor token allocation terms unknown: Series A $38M implied SAFT/token warrant tapi terms tidak publik — perlu finalisasi investor allocation sebelum community allocation [Phase 5 — Fundraising Mechanism; Phase 6 — Distribution, Vesting Schedule] (MEDIUM) [Phase 5, Phase 6]
+- Foundation/DAO structure undefined: Token issuance entity不明 (company vs foundation) mempengaruhi legal structure airdrop [Phase 7 — Governance Ecosystem; Phase 8 — Open Threads] (MEDIUM) [Phase 7, Phase 8]
+
+OUTCOME PER POV
+POV Founder: Tidak relevan (belum ada airdrop)
+POV VC (Series A investors undisclosed): Tidak relevan (belum ada airdrop)
+POV Retail (potensial penerima testnet/user): Tidak relevan (belum ada airdrop)
+POV Community (Discord/testnet participants): Tidak relevan (belum ada airdrop)
+POV Developer (builder di Movement SDK/MEVM): Tidak relevan (belum ada airdrop)
+POV Institution (potensial market maker/liquidity provider): Tidak relevan (belum ada airdrop)
+POV Validator (future decentralized sequencer): Tidak relevan (belum ada airdrop)
+POV Builder (ecosystem app developer): Tidak relevan (belum ada airdrop)
+
+METRIK RETENSI
+Tidak ditemukan (belum ada airdrop). Semua metrik di bawah ini tidak 적용:
+- Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan
+- Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan
+- Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ditemukan
+- Perubahan TVL atau volume sebelum vs sesudah: Tidak ditemukan
+- Harga token pada klaim, +30 hari, +90 hari: Tidak ditemukan
+
+FARMING DAN SYBIL
+Tidak ada data farming/sybil karena tidak ada airdrop. Testnet Parthenon points program berjalan tapi:
+- Kriteria points tidak dipublikasikan detailnya (hanya "participate in testnet activities")
+- Tidak ada snapshot date diumumkan
+- Tidak ada anti-sybil mechanism diumumkan untuk points program
+- Discord FAQ tidak mengonfirmasi points → token conversion [Phase 6 — Major Token Events; Phase 8 — Open Threads]
+
+PROSPEK
+Prasyarat yang sudah terpenuhi:
+- Testnet live dengan aktivitas pengguna nyata (Parthenon seit 2024-07-30) [Phase 3 — EV-009] (HIGH) [Phase 3 EV-009]
+- Komunitas Discord aktif untuk koordinasi testnet [Phase 7 — Infrastructure Providers] (HIGH) [Phase 7 Infrastructure Providers]
+- Developer tooling (MEVM, Hardhat/Foundry, Movement CLI) tersedia untuk builder [Phase 7 — Developer Ecosystem] (HIGH) [Phase 7 Developer Ecosystem]
+- Narrative positioning lengkap (Modular, MoveVM, Ethereum L2, EVM Compat, Parallel Exec, Formal Verification) [Phase 8 — Narrative Position] (HIGH) [Phase 8 Narrative Position]
+- Series A funding $38M untuk runway development [Phase 5 — Funding History] (HIGH) [Phase 5 Funding History]
+
+Prasyarat yang belum:
+- Mainnet M1 launch (belum diumumkan tanggal) [Phase 8 — Market Timeline] (HIGH) [Phase 8 Market Timeline]
+- TGE token MOVE (belum diumumkan jadwal) [Phase 6 — TGE] (HIGH) [Phase 6 TGE]
+- Tokenomics finalized (supply, allocation, vesting, utility, governance — semua unknown) [Phase 6 — all sections] (HIGH) [Phase 6 all sections]
+- Security audit completed untuk MoveVM/MEVM/M1 contracts (belum ada audit publik) [Phase 4 — Audit History] (HIGH) [Phase 4 Audit History]
+- Minimal 1 DA layer adapter live (Celestia/Avail/EigenDA — semua planned) [Phase 7 — Major Integrations] (HIGH) [Phase 7 Major Integrations]
+- Decentralized sequencer spec dan implementation (hanya centralized testnet) [Phase 4 — Consensus Mechanism] (HIGH) [Phase 4 Consensus Mechanism]
+- Regulatory clarity untuk token issuance (Delaware C-Corp, US jurisdiction) [Phase 5 — Financial Risk; Phase 8 — Open Threads] (MEDIUM) [Phase 5 Financial Risk, Phase 8 Open Threads]
+- Foundation/DAO legal structure defined [Phase 7 — Governance Ecosystem; Phase 8 — Open Threads] (MEDIUM) [Phase 7 Governance Ecosystem, Phase 8 Open Threads]
+- Investor token allocation terms finalized (Series A SAFT) [Phase 5 — Fundraising Mechanism; Phase 6 — Distribution] (MEDIUM) [Phase 5 Fundraising Mechanism, Phase 6 Distribution]
+
+Sinyal yang biasanya mendahului:
+- Perubahan dokumentasi: tambahan section "Tokenomics" / "Community Allocation" di docs.movementlabs.xyz atau blog resmi
+- Kontrak distribusi: deploy token contract MOVE di testnet/mainnet (bisa dilacak via GitHub repositori movement-sdk/movevm/mevm atau explorer)
+- Pengumuman snapshot: announcement resmi tentang snapshot date untuk airdrop eligibility (biasanya 2-4 minggu sebelum TGE)
+- Perekrutan: hiring "Token Operations", "Community Rewards", "Airdrop Operations" role di careers page
+- Audit announcement: publikasi laporan audit dari firm ternama (Trail of Bits, OpenZeppelin, Spearbit, dll)
+- DA adapter mainnet-ready: announcement integrasi Celestia/Avail/EigenDA live di mainnet
+- Decentralized sequencer testnet: launch permissionless sequencer testnet dengan staking MOVE
+
+Penilaian: Airdrop MOVE sangat mungkin terjadi karena (1) alokasi "Community" dan "Ecosystem" planned di tokenomics [Phase 6 Distribution], (2) standar industri L2/modular chain (Arbitrum, Optimism, Celestia, dkk) menggunakan airdrop untuk bootstrap decentralization dan liquidity, (3) testnet Parthenon sudah mengumpulkan basis pengguna yang bisa jadi eligible. Namun timing TIDAK DAPAT DIPREDIKSIISI karena prasyarat kritis (mainnet, audit, tokenomics, regulatory) semuanya belum terpenuhi. Keyakinan: MEDIUM untuk "akan ada airdrop akhirnya", LOW untuk timeline spesifik. Faktor yang akan mengubah penilaian: (a) announce mainnet launch date → airdrop kemungkinan besar concurrent atau pasca-mainnet; (b) tokenomics blog post → confirm community allocation %; (c) audit completion announcement → mainnet readiness signal; (d) regulatory guidance clarity (mis. Framework SEC/FIT21) → mengurangi legal risk token distribution.
+
+PELAJARAN LINTAS PROJECT
+- Ketika project pre-TGE dengan testnet live tapi tokenomics completely undisclosed (era 2024, regulatory uncertainty tinggi), komunitas tidak bisa memvalidasi apakah points program akan convert ke token — akibatnya farming behavior based on speculation bukan confirmed criteria.
+- Ketika L2/modular chain announce multiple DA layer integrations (Celestia, Avail, EigenDA) tapi zero live di testnet, mainnet launch gated pada DA adapter readiness — airdrop timeline langsung terikat pada DA integration timeline, bukan internal dev schedule.
+- Ketika Delaware C-Corp issuing token tanpa Foundation terpisah, regulatory risk (Howey test) memaksa tim menunda semua token distribution mechanics termasuk airdrop hingga legal counsel approve — community expectations management menjadi critical untuk menghindari backlash.
+- Ketika single Series A $38M sebagai only funding source, runway pressure menciptakan incentive untuk delay TGE/airdrop hingga mainnet revenue-ready — tapi delay terlalu lama berisiko kehilangan narrative momentum ke kompetitor yang sudah airdrop.
+- Ketika MEVM compatibility <100% (precompiles, opcode, gas gaps), airdrop recipients yang migrasi dari Ethereum existing dApps mungkin face friction — airdrop design perlu account untuk "developer friction cost" bukan hanya user count.
+
 ## Open Questions
 - [foundation] Konfirmasi yurisdiksi legal entity yang pasti (Delaware C-Corp vs struktur lain) — perlu cek filing resmi
 - [foundation] Rincian tokenomics MOVE (alokasi, vesting, utility) — belum dipublikasikan resmi
@@ -2466,3 +4239,50 @@ Explanation: Token MOVE pre-TGE, semua tokenomics unknown. No Foundation, no DAO
 - [market] Grant program / ecosystem fund size dan launch timeline — Head of Ecosystem hired (Arjun Krishan) tapi program belum diumumkan
 - [market] Testnet incentive program detail (points → token allocation conversion rate) — Discord FAQ tidak mengonfirmasi token reward untuk points
 - [market] Financial runway Movement Labs Inc. berdasarkan Series A $38M dan burn rate — tidak diungkap (tidak ada transparency report)
+- [behavioral] Konflik: Phase 1 menyebut "~30+ orang (termasuk engineer, researcher, BD)" tapi Phase 2 hanya 5 core team terverifikasi; Phase 7 Developer Ecosystem tidak ada developer count metrics — apakah tim sebenarnya ~30 atau lebih sedikit? (Phase 1 Foundation, Phase 2 Entity, Phase 7 Developer Ecosystem)
+- [behavioral] Konflik: Phase 4 Security Model menyatakan "Fraud proof / Validity proof: Detail mekanisme bukti ... belum dipublikasikan" tapi Phase 8 Narrative Position tidak mention fraud/validity proof sebagai narrative — apakah M1 optimistic rollup (fraud proof) atau ZK rollup (validity proof)? Arsitektur fundamental belum diklarifikasi. (Phase 4 Security Model, Phase 8 Narrative Position)
+- [behavioral] Konflik: Phase 6 Token Utility mencantumkan "DA Layer Payment: Token MOVE berpotensi digunakan untuk pembayaran DA layer fees" tapi Phase 7 External Dependencies DA layers (Celestia, Avail, EigenDA) memiliki native token mereka sendiri — apakah MOVE digunakan langsung atau bridge/swap ke native DA token? Mekanisme ekonomi tidak jelas. (Phase 6 Utility, Phase 7 External Dependencies)
+- [behavioral] Konflik: Phase 5 Financial Risk "Legal Financial Risk — Delaware C-Corp structure dengan token issuance planned" vs Phase 6 Token "Token standard: tidak diketahui ... blockchain: tidak diketahui" — apakah token MOVE akan di-issue di Ethereum (ERC-20) lalu bridge ke M1, atau native di M1 (Move native), atau dual? Regulatory implications sangat berbeda. (Phase 5 Financial Risk, Phase 6 Token Information)
+- [behavioral] Interpretasi Ganda: "Movement Network" — Phase 1 menyebut "interconnected Move chains", Phase 4 "Movement Network Coordinator: komponen yang direncanakan untuk koordinasi cross-chain messaging", Phase 7 Major Integrations "Movement Network Coordinator ↔ Cross-chain Messaging (Planned)" — apakah ini separate chain (L2/L3) atau messaging protocol layer? Tidak ada spec teknis. (Phase 1, Phase 4, Phase 7)
+- [behavioral] Interpretasi Ganda: "Series A $38M token allocation" — Phase 5 Fundraising Mechanism "Private Sale (token allocation untuk investor Series A — asumsi standar VC crypto, belum dikonfirmasi resmi)", Phase 6 Distribution "Investors: Planned ... asumsi standar VC crypto via SAFT/token warrant", Phase 8 Open Threads "Nama investor Series A individu dan apakah mereka mendapat token allocation (SAFT terms)" — apakah Series A include token allocation? Jika ya, valuation dan terms apa? (Phase 5, Phase 6, Phase 8)
+- [behavioral] Bukti Tidak Cukup: Audit status — Phase 4 "tidak ditemukan laporan audit publik", Phase 7 "No Security Audit Completed", Phase 8 "Audit status smart contract ... belum diumumkan" — apakah audit sudah dimulai private? Firm apa? Timeline? (Phase 4, Phase 7, Phase 8)
+- [behavioral] Bukti Tidak Cukup: Decentralized sequencer spec — Phase 4 "rencana transisi ke decentralized sequencer set", Phase 8 Open Threads 15+ items unspecified — consensus mechanism, validator requirements, staking token, slashing, timeline semua unknown. (Phase 4, Phase 8)
+- [behavioral] Bukti Tidak Cukup: DA layer integration priority — Phase 3 EV-010 announce 3 sekaligus, Phase 7 semua "Planned", Phase 8 Open Threads "DA layer integration priority (Celestia vs Avail vs EigenDA yang mana first untuk mainnet) — belum diumumkan" — mana yang akan ready first? (Phase 3, Phase 7, Phase 8)
+- [behavioral] Bukti Tidak Cukup: Mainnet launch prerequisites — Phase 8 Open Threads "Mainnet launch technical prerequisites (audit complete, DA integration live, decentralized sequencer) — belum didefinisikan publik" — apa definition of done untuk mainnet? (Phase 8)
+- [behavioral] Perlu Verifikasi: SEC Form D filing untuk Series A — Crunchbase hanya total $38M; Form D akan reveal investor names, valuation, token allocation terms (Phase 5, Phase 6, Phase 8)
+- [behavioral] Perlu Verifikasi: Movement Foundation formation — Phase 7 "Tidak dibentuk", Phase 8 Open Threads "Apakah akan dibentuk Movement Foundation terpisah pre-TGE atau post-TGE — belum dikonfirmasi" — legal structure untuk token issuance critical. (Phase 7, Phase 8)
+- [behavioral] Perlu Verifikasi: Testnet Parthenon incentive program — Phase 6 Major Token Events "Testnet Incentive Program (Parthenon) ... kemungkinan reward token MOVE di masa depan", Phase 8 Open Threads "Testnet incentive program detail (points → token allocation conversion rate) — Discord FAQ tidak mengonfirmasi token reward untuk points" — apakah points akan convert ke token? (Phase 6, Phase 8)
+- [conflict] Open Thread ID: OT-01
+- [conflict] · Description: Token standard MOVE — apakah akan di-issue sebagai ERC-20 di Ethereum, Move native di M1, atau dual token? · Affected Phase: Phase 6 · Evidence: Phase 6 Token Information "Token Standard: tidak diketahui"; Phase 4 System Architecture menunjukkan Ethereum settlement untuk M1; Phase 6 Utility mencantumkan DA Layer Payment dan gas fee · Alternative Interpretations: · ERC-20 di Ethereum, lalu bridge ke M1 — umum untuk L2 tokens · Move native di M1 sebagai gas token — lebih efisien untuk execution · Dual token (ERC-20 + Move native) dengan bridge — kompleks tapi fleksibel · Status: Open
+- [conflict] Open Thread ID: OT-02
+- [conflict] · Description: Fraud proof vs validity proof — apakah M1 optimistic rollup (fraud proof) atau ZK rollup (validity proof)? · Affected Phase: Phase 4, Phase 8 · Evidence: Phase 4 Security Model "Fraud proof / Validity proof: Detail mekanisme bukti ... belum dipublikasikan"; Phase 8 Narrative Position tidak menyinggung fraud/validity proof sebagai narrative; Phase 4 Known Technical Limitations "tidak ada fraud proof / validity proof system yang live" · Alternative Interpretations: · Optimistic rollup dengan fraud proof — umum untuk L2 Ethereum, tapi Movemen belum menyebutkan dispute period · ZK rollup dengan validity proof — belum ada keterangan ZK terkait · Hybrid — kemungkinan, tapi belum ada bukti · Status: Open
+- [conflict] Open Thread ID: OT-03
+- [conflict] · Description: Mekanisme DA layer payment — apakah MOVE digunakan langsung untuk membayar DA fees atau harus swap ke native token (TIA, AVAIL, EIGEN)? · Affected Phase: Phase 6, Phase 7 · Evidence: Phase 6 Utility "DA Layer Payment: Token MOVE berpotensi digunakan"; Phase 7 External Dependencies mencatat Celestia, Aval, EigenDA dengan token masing-masing · Alternative Interpretations: · MOVE sebagai gas token di M1, dan DA fees dibayar oleh sequencer/validator dalam native token DA, dengan cost passed ke user dalam MOVE · MOVE digunakan langsung sebagai gas untuk membayar DA fees melalui adapter yang meng-swap ke native token · DA fees ditanggung oleh Movement Labs sebagai operator sequencer sentral (centralized) · Status: Open
+- [conflict] Open Thread ID: OT-04
+- [conflict] · Description: Apakah Movement Foundation akan dibentuk pre-TGE atau post-TGE? Jika post-TGE, siapa yang akan mengontrol token distribution? · Affected Phase: Phase 7, Phase 8 · Evidence: Phase 7 Governance Ecosystem mencatat "Foundation: Tidak dibentuk"; Phase 5 Fundraising Mechanism "Foundation belum dibentuk"; Phase 8 Open Threads "Apakah akan dibentuk Movement Foundation terpisah" · Alternative Interpretations: · Foundation dibentuk pre-TGE seperti Aptos/Sui Foundation untuk token allocation dan governance · Foundation dibentuk post-TGE dengan token treasury dari company · Tidak membentuk foundation, token di-issue langsung oleh Movement Labs Inc. (regulatory risk lebih tinggi) · Status: Open
+- [conflict] Open Thread ID: OT-05
+- [conflict] · Description: Movement Network adalah chain terpisah, rollup, atau messaging protocol layer? · Affected Phase: Phase 1, Phase 4, Phase 7 · Evidence: Phase 1 "Movement Network (interconnected Move chains)"; Phase 4 "Movement Network Coordinator: komponen yang direncanakan untuk koordinasi cross-chain messaging"; Phase 7 "Major Integrations: Movement Network Coordinator ↔ Cross-chain Messaging (Planned)" · Alternative Interpretations: · Jaringan multi-chain dengan hub-and-spoke model · Messaging protocol di atas chains existing tanpa chain baru · L3 rollup di atas M1 untuk optimisasi throughput · Status: Open
+- [conflict] Open Thread ID: OT-06
+- [conflict] · Description: Apakah penggunaan "~30+ orang" tim di Phase 1 akurat atau hanya marketing? Tidak ada verification dari sumber independen. · Affected Phase: Phase 1, Phase 2 · Evidence: Phase 1 "~30+ orang (termasuk engineer, researcher, BD)"; Phase 2 hanya mencatat 5 named team · Alternative Interpretations: · 30+ full-time karyawan termasuk engineer yang tidak named di publik · 30+ termasuk contractor dan advisors · Jumlah sebenarnya kurang dari 30, digunakan sebagai headline marketing · Status: Open
+- [conflict] Open Thread ID: OT-07
+- [conflict] · Description: Apakah testnet Parthenon memberikan reward token MOVE? Discord FAQ menyebutkan "points" tapi tidak konfirmasi convert ke token. · Affected Phase: Phase 6, Phase 8 · Evidence: Phase 6 Major Token Events "Testnet Incentive Program (Parthenon) ... kemungkinan reward token MOVE"; Phase 8 Open Threads "Testnet incentive program detail (points → token allocation conversion rate) — Discord FAQ tidak mengonfirmasi token reward" · Alternative Interpretations: · Points akan convert ke token MOVE allocation saat TGE (umum pattern airdrop) · Points hanya badge/achievement tanpa nilai token (bersifat non-financial) · Points convert ke allocation hanya untuk early testnet participant tertentu (syarat tertentu) · Status: Open
+- [conflict] Open Thread ID: OT-08
+- [conflict] · Description: Apakah akan ada public token sale, community sale, atau launchpad untuk MOVE? Atau hanya private sale ke VC dan public listing? · Affected Phase: Phase 6, Phase 8 · Evidence: Phase 6 Token Sale: semua "tidak diumumkan"; Phase 8 Trading Markets: pre-TGE, no exchange listing; Phase 6 TGE: "Launch Platform: tidak diumumkan" · Alternative Interpretations: · Private sale ke VC saja, lalu listing CEX langsung tanpa community sale · Community sale via launchpad (seperti CoinList, Jupiter, atau platform lain) · Public sale via DEX di mainnet M1 · Status: Open
+- [conflict] Open Thread ID: OT-09
+- [conflict] · Description: Regulatory path untuk token issuance — apakah Movement Labs Inc. akan menerbitkan token MOVE langsung dari C-Corp, atau melalui foundation entitas terpisah untuk memitigasi risiko SEC? · Affected Phase: Phase 5, Phase 6, Phase 8 · Evidence: Phase 2 Entity: Movement Labs Inc. Delaware C-Corp; Phase 5 Financial Risk c-010 "regulatory uncertainty di US mengenai token classification"; Phase 8 Open Threads "Movement Labs Inc. legal structure untuk token distribution: apakah token di-issue oleh company langsung atau melalui foundation terpisah — belum diklarifikasi" · Alternative Interpretations: · Token di-issue oleh Movement Labs Inc. dengan SAFT untuk investor (paling sederhana tapi risk tinggi) · Token di-issue oleh Movement Foundation (mirip Aptos/Sui) dengan struktur non-profit · Token di-issue oleh entity offshore (yayasan) untuk mengurangi US exposure · Status: Open
+- [conflict] Open Thread ID: OT-10
+- [conflict] · Description: Apakah audit smart contract sudah dimulai secara private tapi belum diumumkan? Jika sudah, auditor siapa dan timeline? · Affected Phase: Phase 4, Phase 8 · Evidence: Phase 4 Audit History "tidak ditemukan laporan audit publik"; Phase 7 Ecosystem Risks "No Security Audit Completed"; Phase 8 Open Threads "Audit status smart contract ... belum diumumkan" · Alternative Interpretations: · Audit private sudah jalan tapi diumumkan setelah selesai (umum) · Audit belum dimulai; akan dimulai setelah testnet stabil dan DA adapter live · Audit direncanakan hanya untuk M1 settlement contracts, bukan MoveVM seluruhnya · Status: Open
+- [airdrop] Apakah points program Parthenon akan konversi ke token MOVE allocation? Discord FAQ tidak mengonfirmasi
+- [airdrop] Tokenomics MOVE detail (total supply, community allocation %, vesting schedule) — semua unknown
+- [airdrop] TGE date dan mechanism (public sale vs airdrop vs liquidity bootstrapping) — tidak diumumkan
+- [airdrop] Mainnet M1 launch date — belum diumumkan
+- [airdrop] Audit status dan timeline — belum ada announcement
+- [airdrop] DA layer adapter priority (Celestia vs Avail vs EigenDA mana first mainnet-ready) — tidak diumumkan
+- [airdrop] Decentralized sequencer spec (consensus, staking token, slashing) — tidak diumumkan
+- [airdrop] Foundation/DAO formation timeline dan legal structure untuk token issuance — tidak dikonfirmasi
+- [airdrop] Series A investor token allocation terms (SAFT valuation, unlock) — tidak publik, perlu cek SEC Form D
+- [airdrop] Regulatory compliance framework untuk token issuance (US securities law) — tidak diungkap
+- [airdrop] Snapshot criteria jika airdrop: testnet activity, mainnet activity, asset holdings, developer contributions — tidak ada signal
+- [airdrop] Anti-sybil mechanism untuk airdrop (Gitcoin Passport, on-chain scoring, KYC) — tidak diumumkan
+- [airdrop] Market maker / liquidity provider arrangement post-TGE — tidak diumumkan
+- [airdrop] Apakah airdrop akan multi-season (Season 1 testnet, Season 2 mainnet, dst) — tidak diumumkan

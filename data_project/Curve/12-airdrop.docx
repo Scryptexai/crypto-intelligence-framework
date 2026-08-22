@@ -1,0 +1,137 @@
+PROJECT: Curve
+
+STATUS AIRDROP
+
+Sudah dilakukan. Curve tidak melakukan airdrop retroaktif klasik — distribusi CRV dimulai pada TGE 14 Agustus 2020 melalui dua jalur: (1) liquidity mining berkelanjutan via gauge (alokasi komunitas 62% dari max supply 3,03 miliar CRV, diemisikan bertahap dengan kurva menurun) dan (2) alokasi vesting untuk kategori team/investors/foundation/employees (komposisi persentase per kategori memiliki versi berbeda antar sumber — tercatat sebagai konflik C-001 di Phase 11; jangan dikutip sebagai angka final tanpa verifikasi dokumen primer). (HIGH untuk mekanisme) [Curve docs, https://resources.curve.fi/]; [Phase 6 — Distribution]; (MEDIUM untuk komposisi)
+
+AIRDROP EVENTS
+
+AD-001: Liquidity Mining via Gauge (Distribusi Komunitas 62%)
+Tanggal: 2020-08-14 mulai — emisi berkelanjutan dengan kurva menurun
+Tipe: Liquidity mining / emisi gauge (bukan klaim satu kali)
+Alokasi: 62% max supply (bagian dari 3.030.303.030 CRV) diemisikan ke pool-pool sesuai bobot gauge yang divote pemegang veCRV (HIGH) [Phase 6 — Distribution; Curve docs, https://resources.curve.fi/]
+Penerima: Liquidity provider di pool dengan gauge aktif; reward dapat di-boost hingga 2.5x dengan veCRV (HIGH) [Phase 6 — Utility]
+Nilai saat klaim: Tidak berlaku (emisi per blok/epoch; harga mengikuti pasar saat reward diterima/dijual)
+Kriteria: Menyediakan likuiditas di pool bergauge; bobot emisi per pool ditentukan gauge voting veCRV (HIGH) [Phase 6 — Utility]
+Anti-sybil: Tidak relevan secara langsung — distribusi berbasis likuiditas riil; namun farming gauge (masuk-keluar pool) mungkin secara ekonomi (LOW)
+Terkait EV: EV-002 (TGE), EV-003 (veCRV)
+Sitasi: Phase 3 EV-002; Phase 6 Distribution, Utility (HIGH)
+
+AD-002: Alokasi Vesting (Kategori Non-Komunitas)
+Tanggal: 2020-08-14 mulai — vesting 2-4 tahun sesuai kategori
+Tipe: Alokasi internal dengan vesting (team/investors/foundation/employees — label dan persentase per kategori berkonflik antar sumber; lihat Conflict Register C-001)
+Alokasi: Sisa ~38% max supply dalam kategori vesting; Phase 6 dataset mencatat Team 30% (2y), Investors 3% (2y), Foundation 3% (4y), Employees 2% (2y) — versi sumber publik umum berbeda (shareholders 30%, team 3%, early users 5%) (MEDIUM — konflik terdokumentasi) [Phase 6 — Distribution; Phase 11 — C-001]
+Penerima: Kontributor, investor awal, foundation, karyawan (identitas tidak dipublikasikan terpusat) (LOW)
+Nilai saat klaim: Tidak berlaku (pencairan vesting bertahap)
+Kriteria: Peran/kontrak dengan proyek (LOW)
+Anti-sybil: Tidak relevan (alokasi berbasis peran)
+Terkait EV: EV-002
+Sitasi: Phase 6 Distribution, Vesting Schedule (MEDIUM — dengan catatan konflik)
+
+CONTEXT SAAT KEPUTUSAN
+
+Kondisi saat keputusan distribusi CRV (Agustus 2020):
+- Kondisi pasar: "DeFi Summer" — perang insentif token pasca-COMP; likuiditas DeFi melonjak; banyak DEX/lending meluncurkan token (MEDIUM) [Phase 3 — EV-002]
+- Posisi project: Curve sudah menjadi venue stablecoin dominan dengan TVL besar sebelum ada token — distribusi dirancang untuk mengunci likuiditas, bukan bootstrap dari nol (HIGH) [Phase 1; Curve whitepaper, https://curve.fi/whitepaper.pdf]
+- Kompetitor terdekat: Uniswap (tanpa token saat itu), Balancer (BAL Juni 2020) — desain emisi gauge membedakan Curve dari model airdrop/retro (MEDIUM) [Phase 8 — Competitor Landscape]
+
+TRIGGER DAN ALTERNATIF
+
+Trigger utama: Mengunci likuiditas LP dengan insentif jangka panjang + membangun governance alokasi emisi (HIGH) [Phase 9 — Decision Timeline].
+Alternatif tidak diambil:
+- Airdrop retroaktif penuh: tidak dipilih — emisi gauge dianggap mempertahankan likuiditas lebih lama (MEDIUM) [Phase 9 — Decision Timeline]
+- Public sale: tidak dilakukan (HIGH) [Phase 5 — Fundraising Mechanism]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Emisi untuk penyedia likuiditas; governance veCRV menentukan arah emisi (HIGH) [Curve docs, https://resources.curve.fi/]
+- Value accrual via fee share ke veCRV (HIGH) [Curve whitepaper Fee Distribution, https://curve.fi/whitepaper.pdf]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Kurva emisi panjang menjaga relevansi insentif lintas siklus sekaligus menunda tekanan jual penuh alokasi internal — HIPOTESIS (MEDIUM)
+- Konsentrasi pengaruh via vesting internal + dinamika Convex kemudian menciptakan struktur kekuatan yang tidak sepenuhnya terdesentralisasi — HIPOTESIS (MEDIUM) [Phase 7 — Ecosystem Risks]
+
+OUTCOME PER POV
+
+POV Founder (Michael Egorov): Sebagian
+- Jangka pendek: Curve menjadi infrastruktur inti DeFi; CRV diluncurkan dengan likuiditas besar (HIGH) [Phase 3 — EV-002]
+- Jangka panjang: Krisis 2023 (Vyper + posisi pribadinya) menekan harga dan reputasi; OTC sale menjadi kontroversi — outcome campuran (MEDIUM) [Phase 3 — EV-006]
+- Dasar: Phase 3 EV-002, EV-006 (HIGH/MEDIUM)
+
+POV VC (Investor pra-TGE): Sebagian
+- Jangka pendek: Alokasi vesting (persentase versi berbeda antar sumber — konflik C-001) memberi eksposur pada kenaikan CRV 2021 (KuCoin: dari ~1.68 close 21 Jan 2021 ke high 4.667 pada 15 Apr 2021) (MEDIUM) [KuCoin CRV-USDT, https://www.kucoin.com/trade/CRV-USDT]
+- Jangka panjang: Depresiasi pasca-2021 dan tekanan unlock; outcome bergantung harga jual aktual yang tidak dipublikasikan (LOW)
+- Dasar: KuCoin price history; Phase 6 Distribution (MEDIUM/LOW)
+
+POV Retail (LP peserta liquidity mining): Sebagian
+- Jangka pendek: LP mendapat CRV emisi dengan basis biaya likuiditas; nilai reward tinggi saat harga CRV naik 2020-2021 (MEDIUM) [KuCoin CRV-USDT, https://www.kucoin.com/trade/CRV-USDT]
+- Jangka panjang: Emisi menurun + harga CRV jauh di bawah puncak 2021; LP yang tidak mengunci veCRV menerima tekanan jual berulang (MEDIUM) [Phase 6 — Supply; KuCoin CRV-USDT]
+- Dasar: KuCoin price history; Phase 6 (MEDIUM)
+
+POV Community (Pemegang CRV/veCRV): Sebagian
+- Jangka pendek: Governance gauge aktif; fee share ke veCRV memberi imbal hasil riil (HIGH) [Phase 6 — Utility]
+- Jangka panjang: Meredanya Curve Wars menurunkan permintaan politik gauge; nilai CRV bergantung volume swap yang juga menurun relatif (MEDIUM) [Phase 3 — EV-004; Phase 8 — Market]
+- Dasar: Phase 6 Utility; Phase 8 Market (HIGH/MEDIUM)
+
+POV Developer (Integrator pool & tooling): Sukses
+- Jangka pendek: Likuiditas Curve menjadi primitif yang dapat dikomposisi (vault, agregator, stablecoin) (HIGH) [Phase 7 — Ecosystem]
+- Jangka panjang: Factory permissionless membuka pembuatan pool/venue baru tanpa izin (MEDIUM) [Phase 4 — Technology]
+- Dasar: Phase 4; Phase 7 (HIGH/MEDIUM)
+
+POV Institution (Exchange, fund, mitra stablecoin): Sebagian
+- Jangka pendek: Listing CEX luas; venue kanonik untuk stablecoin institusional (MEDIUM) [Phase 8 — Trading Markets]
+- Jangka panjang: Insiden Vyper 2023 menambah catatan risiko due-diligence (MEDIUM) [Phase 3 — EV-006]
+- Dasar: Phase 8; Phase 3 EV-006 (MEDIUM)
+
+POV Validator: Tidak relevan
+- Curve bukan blockchain — tidak ada validator set; keamanan mewarisi chain tempat pool berada (HIGH) [Phase 1 — Foundation]
+
+POV Builder (Protokol di atas likuiditas Curve): Sebagian
+- Jangka pendek: Akses venue stableswap likuid untuk produk mereka (Convex, Yearn, Frax, issuer stablecoin) (HIGH) [Phase 7 — Ecosystem]
+- Jangka panjang: Ketergantungan pada kesehatan Curve = risiko turunan (insiden 2023 berdampak ke ekosistem) (MEDIUM) [Phase 7 — Ecosystem Risks]
+- Dasar: Phase 7 (HIGH/MEDIUM)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 1.68 USD (2021-01-21) [KuCoin CRV-USDT daily candle close — candle terverifikasi terdekat; KuCoin baru me-listing CRV 21 Jan 2021, lima bulan setelah TGE 2020-08-14; harga era distribusi Agustus 2020 tidak tercakup exchange ini, https://www.kucoin.com/trade/CRV-USDT] (MEDIUM)
+Harga +30 hari: 1.68 USD (2021-01-21) [KuCoin CRV-USDT daily candle close — titik +30 hari sesungguhnya (pertengahan September 2020) jatuh jauh sebelum listing KuCoin; candle terverifikasi terdekat dipakai, https://www.kucoin.com/trade/CRV-USDT] (MEDIUM)
+Harga +90 hari: 1.68 USD (2021-01-21) [KuCoin CRV-USDT daily candle close — titik +90 hari sesungguhnya (pertengahan November 2020) juga sebelum listing KuCoin; candle terverifikasi terdekat dipakai, https://www.kucoin.com/trade/CRV-USDT] (MEDIUM)
+Harga puncak 12 bulan pertama: 4.67 USD (2021-04-15) [KuCoin CRV-USDT daily candle high; scan mingguan Jan-Agu 2021 tidak menemukan high lebih tinggi. Catatan: coverage KuCoin dimulai 21 Jan 2021 — periode Aug 2020-Jan 2021 tidak tercakup exchange ini (harga era itu berada di bawah 4.667 berdasarkan urutan candle yang tersedia), https://www.kucoin.com/trade/CRV-USDT] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan TVL sebelum vs sesudah distribusi: TVL Curve sudah besar pra-token dan terus tumbuh pasca-TGE era 2020-2021; angka per tanggal tidak dikutip di sumber sekunder (LOW)
+Jumlah alamat pemegang token (unique holders): Tidak ditemukan (tidak dipublikasikan resmi) (LOW)
+Jumlah alamat aktif harian sebelum vs sesudah: Tidak ditemukan (LOW)
+Konsentrasi kepemilikan: Top 100 holders mengontrol ~65% supply termasuk kontrak DAO/vesting/exchange (MEDIUM) [Phase 6 — Holder Distribution]
+Tingkat partisipasi staking: Lock veCRV menjadi metrik partisipasi utama; angka terkini tidak dikutip (LOW)
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: distribusi via emisi gauge tidak memiliki daftar penerima tunggal — analisis cohort memerlukan rekonstruksi on-chain klaim reward per gauge.
+INKONSISTENSI komposisi distribusi (C-001) belum terpecahkan — angka per kategori non-komunitas tidak boleh dikutip sebagai final.
+Harga era distribusi (Agu 2020-Jan 2021) tidak tercakup exchange yang datanya diakses riset ini.
+
+FARMING DAN SYBIL
+
+Distribusi berbasis likuiditas riil: farming memerlukan modal nyata di pool gauge — biaya ekonomi menjadi penghalang sybil tanpa identitas; pola mercenary LP (masuk saat gauge tinggi, keluar saat emisi turun) adalah dinamika yang diterima dan menjadi pola lintas protokol gauge (MEDIUM) [Phase 9 — Financial Decision Pattern; Phase 10 — Pattern Candidates]
+
+PROSPEK
+
+Metrik yang terpenuhi: Likuiditas terkunci skala besar; governance gauge fungsional bertahun-tahun; value accrual fee share berjalan (HIGH)
+Metrik yang tidak terpenuhi: Retensi harga jangka panjang (CRV jauh di bawah puncak 2021); permintaan gauge pasca-Curve-Wars melemah (MEDIUM)
+Sinyal ke depan: Volume swap & fee ke veCRV; pertumbuhan crvUSD; total lock veCRV (MEDIUM)
+Penilaian: Distribusi CRV sukses mengunci likuiditas dan menciptakan mekanisme governance yang ditiru industri, namun tanpa kontrol pasokan ketat (inflasioner) dan dengan melemahnya meta-layer, retensi nilai bergantung penuh pada arus fee riil — kontras tajam dengan fair launch YFI di dataset ini (MEDIUM)
+
+PELAJARAN LINTAS PROJECT
+
+Emisi gauge mengunci likuiditas lebih lama daripada airdrop, tetapi nilai token menjadi fungsi permintaan politik internal (gauge voting) — ketika meta-layer (Convex/bribe) mendingin, permintaan struktural ikut turun.
+Konflik komposisi distribusi yang tidak terpecahkan adalah liabilitas data: 30% supply berbeda atribusi (team vs shareholders) antar sumber mengubah analisis sentralisasi — verifikasi dokumen primer harus didahulukan sebelum publikasi angka.
+Token inflasioner dengan value accrual fee share dinilai dengan arus kas (fee vs emisi), bukan kelangkaan — framework analisisnya berbeda dari token fixed/fair-launch.
+
+OPEN THREADS
+
+- Resolusi C-001 (dokumen primer distribusi Agustus 2020)
+- Total CRV terkunci veCRV & volume bribe market terkini
+- Harga CRV 2024-2026 dari sumber exchange terverifikasi (di luar window yang diambil riset ini)

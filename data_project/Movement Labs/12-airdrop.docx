@@ -1,0 +1,116 @@
+PROJECT: Movement Labs
+
+STATUS AIRDROP
+Belum ada. Project Movement Labs berada di tahap pre-mainnet dan pre-TGE; token MOVE belum di-deploy dan tidak ada distribusi token tanpa pembayaran (airdrop, points-to-token, retroactive reward, atau mekanisme sejenis) yang pernah dieksekusi. Testnet Parthenon memiliki program insentif berbasis poin ("points") namun Discord FAQ dan komunikasi resmi tidak mengonfirmasi konversi poin ke alokasi token MOVE [Phase 6 — Major Token Events; Phase 8 — Open Threads].
+
+AIRDROP EVENTS
+Tidak ada event airdrop yang pernah dieksekusi. Blok ini dikosongkan per instruksi untuk project status "Belum ada".
+
+CONTEXT SAAT KEPUTUSAN
+Tidak ada keputusan airdrop yang diambil karena project belum mencapai tahap TGE/mainnet. Konteks relevan untuk prospek airdrop masa depan:
+- Tahap funding: Series A $38M closed 2024 (single known round); pre-revenue, pre-mainnet [Phase 5 — Funding History, Financial Dependencies]
+- Ukuran komunitas: Discord aktif sejak 2023; testnet Parthenon live 2024-07-30; metrik DAU/unique wallets/TVL testnet tidak diagregasikan publik [Phase 7 — Developer Ecosystem, Adoption Metrics; Phase 8 — Adoption Metrics]
+- Kondisi pasar: Ethereum L2 landscape matang (Arbitrum, Optimism, Base live dengan TVL miliaran); Move L1 (Aptos, Sui) established; narasi modular blockchain + MoveVM + EVM compatibility sedang dibangun [Phase 8 — Market Position, Competitor Landscape, Narrative Position]
+- Aktivitas kompetitor terdekat: Aptos (airdrop 2022-2023), Sui (airdrop 2023), Arbitrum (ARB airdrop Mar 2023), Optimism (OP airdrop May 2022/2023), Celestia (TIA genesis drop 2023) — semua sudah mainnet dan TGE [Phase 8 — Competitor Landscape]
+
+TRIGGER DAN ALTERNATIF
+Tidak ada trigger airdrop karena belum ada keputusan. Trigger potensial untuk airdrop masa depan berdasarkan pola industri dan roadmap Movement:
+- Mainnet M1 launch (prasyarat utama: token MOVE harus exist)
+- TGE (Token Generation Event) — token MOVE dibuat dan didistribusikan
+- Desentralisasi sequencer (perlu validator/staker yang diinsentivkan)
+- Tekanan kompetitor: L2 lain sudah airdrop untuk bootstrap liquidity dan decentralization
+- Kebutuhan distribusi token ke komunitas/ekosistem per alokasi "Community" dan "Ecosystem" yang planned [Phase 6 — Distribution]
+
+Alternatif yang tersedia tapi belum dievaluasi publik:
+- Public sale / community sale (CEX/DEX/Launchpad) — tidak diumumkan [Phase 6 — Token Sale]
+- Distribusi bertahap via staking rewards / sequencer rewards post-mainnet
+- Tidak mendistribusikan sama sekali ke komunitas (hanya team/investor/treasury) — tidak konsisten dengan "Community" dan "Ecosystem" allocation planned [Phase 6 — Distribution]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+Alasan resmi:
+- Tidak ada pernyataan resmi tentang airdrop karena project pre-TGE. Komunikasi resmi hanya menyebut "pre-TGE" dan "token MOVE planned" tanpa detail distribusi [Phase 6 — TGE; Phase 8 — Market Timeline].
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Regulatory caution: Delaware C-Corp issuing token; US securities law (Howey test) risk membuat tim menunda announce token distribution mechanics hingga legal clarity [Phase 5 — Financial Risk; Phase 6 — Token Information; Phase 8 — Open Threads] (MEDIUM) [Phase 5 Financial Risk, Phase 8 Open Threads]
+- Tokenomics incomplete: Total supply, allocation %, vesting, utility, governance semua "tidak diketahui" — tidak bisa design airdrop tanpa tokenomics finalized [Phase 6 — Supply, Distribution, Vesting Schedule, Utility, Governance] (HIGH) [Phase 6 all sections]
+- Mainnet prerequisites unmet: Audit tidak selesai, DA adapter belum live, decentralized sequencer spec TBD — airdrop biasanya pasca-mainnet atau concurrent dengan TGE [Phase 4 — Audit History, Known Technical Limitations; Phase 7 — Ecosystem Risks] (HIGH) [Phase 4, Phase 7]
+- Investor token allocation terms unknown: Series A $38M implied SAFT/token warrant tapi terms tidak publik — perlu finalisasi investor allocation sebelum community allocation [Phase 5 — Fundraising Mechanism; Phase 6 — Distribution, Vesting Schedule] (MEDIUM) [Phase 5, Phase 6]
+- Foundation/DAO structure undefined: Token issuance entity不明 (company vs foundation) mempengaruhi legal structure airdrop [Phase 7 — Governance Ecosystem; Phase 8 — Open Threads] (MEDIUM) [Phase 7, Phase 8]
+
+OUTCOME PER POV
+POV Founder: Tidak relevan (belum ada airdrop)
+POV VC (Series A investors undisclosed): Tidak relevan (belum ada airdrop)
+POV Retail (potensial penerima testnet/user): Tidak relevan (belum ada airdrop)
+POV Community (Discord/testnet participants): Tidak relevan (belum ada airdrop)
+POV Developer (builder di Movement SDK/MEVM): Tidak relevan (belum ada airdrop)
+POV Institution (potensial market maker/liquidity provider): Tidak relevan (belum ada airdrop)
+POV Validator (future decentralized sequencer): Tidak relevan (belum ada airdrop)
+POV Builder (ecosystem app developer): Tidak relevan (belum ada airdrop)
+
+METRIK RETENSI
+Tidak ditemukan (belum ada airdrop). Semua metrik di bawah ini tidak 적용:
+- Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan
+- Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan
+- Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ditemukan
+- Perubahan TVL atau volume sebelum vs sesudah: Tidak ditemukan
+- Harga token pada klaim, +30 hari, +90 hari: Tidak ditemukan
+
+FARMING DAN SYBIL
+Tidak ada data farming/sybil karena tidak ada airdrop. Testnet Parthenon points program berjalan tapi:
+- Kriteria points tidak dipublikasikan detailnya (hanya "participate in testnet activities")
+- Tidak ada snapshot date diumumkan
+- Tidak ada anti-sybil mechanism diumumkan untuk points program
+- Discord FAQ tidak mengonfirmasi points → token conversion [Phase 6 — Major Token Events; Phase 8 — Open Threads]
+
+PROSPEK
+Prasyarat yang sudah terpenuhi:
+- Testnet live dengan aktivitas pengguna nyata (Parthenon seit 2024-07-30) [Phase 3 — EV-009] (HIGH) [Phase 3 EV-009]
+- Komunitas Discord aktif untuk koordinasi testnet [Phase 7 — Infrastructure Providers] (HIGH) [Phase 7 Infrastructure Providers]
+- Developer tooling (MEVM, Hardhat/Foundry, Movement CLI) tersedia untuk builder [Phase 7 — Developer Ecosystem] (HIGH) [Phase 7 Developer Ecosystem]
+- Narrative positioning lengkap (Modular, MoveVM, Ethereum L2, EVM Compat, Parallel Exec, Formal Verification) [Phase 8 — Narrative Position] (HIGH) [Phase 8 Narrative Position]
+- Series A funding $38M untuk runway development [Phase 5 — Funding History] (HIGH) [Phase 5 Funding History]
+
+Prasyarat yang belum:
+- Mainnet M1 launch (belum diumumkan tanggal) [Phase 8 — Market Timeline] (HIGH) [Phase 8 Market Timeline]
+- TGE token MOVE (belum diumumkan jadwal) [Phase 6 — TGE] (HIGH) [Phase 6 TGE]
+- Tokenomics finalized (supply, allocation, vesting, utility, governance — semua unknown) [Phase 6 — all sections] (HIGH) [Phase 6 all sections]
+- Security audit completed untuk MoveVM/MEVM/M1 contracts (belum ada audit publik) [Phase 4 — Audit History] (HIGH) [Phase 4 Audit History]
+- Minimal 1 DA layer adapter live (Celestia/Avail/EigenDA — semua planned) [Phase 7 — Major Integrations] (HIGH) [Phase 7 Major Integrations]
+- Decentralized sequencer spec dan implementation (hanya centralized testnet) [Phase 4 — Consensus Mechanism] (HIGH) [Phase 4 Consensus Mechanism]
+- Regulatory clarity untuk token issuance (Delaware C-Corp, US jurisdiction) [Phase 5 — Financial Risk; Phase 8 — Open Threads] (MEDIUM) [Phase 5 Financial Risk, Phase 8 Open Threads]
+- Foundation/DAO legal structure defined [Phase 7 — Governance Ecosystem; Phase 8 — Open Threads] (MEDIUM) [Phase 7 Governance Ecosystem, Phase 8 Open Threads]
+- Investor token allocation terms finalized (Series A SAFT) [Phase 5 — Fundraising Mechanism; Phase 6 — Distribution] (MEDIUM) [Phase 5 Fundraising Mechanism, Phase 6 Distribution]
+
+Sinyal yang biasanya mendahului:
+- Perubahan dokumentasi: tambahan section "Tokenomics" / "Community Allocation" di docs.movementlabs.xyz atau blog resmi
+- Kontrak distribusi: deploy token contract MOVE di testnet/mainnet (bisa dilacak via GitHub repositori movement-sdk/movevm/mevm atau explorer)
+- Pengumuman snapshot: announcement resmi tentang snapshot date untuk airdrop eligibility (biasanya 2-4 minggu sebelum TGE)
+- Perekrutan: hiring "Token Operations", "Community Rewards", "Airdrop Operations" role di careers page
+- Audit announcement: publikasi laporan audit dari firm ternama (Trail of Bits, OpenZeppelin, Spearbit, dll)
+- DA adapter mainnet-ready: announcement integrasi Celestia/Avail/EigenDA live di mainnet
+- Decentralized sequencer testnet: launch permissionless sequencer testnet dengan staking MOVE
+
+Penilaian: Airdrop MOVE sangat mungkin terjadi karena (1) alokasi "Community" dan "Ecosystem" planned di tokenomics [Phase 6 Distribution], (2) standar industri L2/modular chain (Arbitrum, Optimism, Celestia, dkk) menggunakan airdrop untuk bootstrap decentralization dan liquidity, (3) testnet Parthenon sudah mengumpulkan basis pengguna yang bisa jadi eligible. Namun timing TIDAK DAPAT DIPREDIKSIISI karena prasyarat kritis (mainnet, audit, tokenomics, regulatory) semuanya belum terpenuhi. Keyakinan: MEDIUM untuk "akan ada airdrop akhirnya", LOW untuk timeline spesifik. Faktor yang akan mengubah penilaian: (a) announce mainnet launch date → airdrop kemungkinan besar concurrent atau pasca-mainnet; (b) tokenomics blog post → confirm community allocation %; (c) audit completion announcement → mainnet readiness signal; (d) regulatory guidance clarity (mis. Framework SEC/FIT21) → mengurangi legal risk token distribution.
+
+PELAJARAN LINTAS PROJECT
+- Ketika project pre-TGE dengan testnet live tapi tokenomics completely undisclosed (era 2024, regulatory uncertainty tinggi), komunitas tidak bisa memvalidasi apakah points program akan convert ke token — akibatnya farming behavior based on speculation bukan confirmed criteria.
+- Ketika L2/modular chain announce multiple DA layer integrations (Celestia, Avail, EigenDA) tapi zero live di testnet, mainnet launch gated pada DA adapter readiness — airdrop timeline langsung terikat pada DA integration timeline, bukan internal dev schedule.
+- Ketika Delaware C-Corp issuing token tanpa Foundation terpisah, regulatory risk (Howey test) memaksa tim menunda semua token distribution mechanics termasuk airdrop hingga legal counsel approve — community expectations management menjadi critical untuk menghindari backlash.
+- Ketika single Series A $38M sebagai only funding source, runway pressure menciptakan incentive untuk delay TGE/airdrop hingga mainnet revenue-ready — tapi delay terlalu lama berisiko kehilangan narrative momentum ke kompetitor yang sudah airdrop.
+- Ketika MEVM compatibility <100% (precompiles, opcode, gas gaps), airdrop recipients yang migrasi dari Ethereum existing dApps mungkin face friction — airdrop design perlu account untuk "developer friction cost" bukan hanya user count.
+
+OPEN THREADS
+- Apakah points program Parthenon akan konversi ke token MOVE allocation? Discord FAQ tidak mengonfirmasi
+- Tokenomics MOVE detail (total supply, community allocation %, vesting schedule) — semua unknown
+- TGE date dan mechanism (public sale vs airdrop vs liquidity bootstrapping) — tidak diumumkan
+- Mainnet M1 launch date — belum diumumkan
+- Audit status dan timeline — belum ada announcement
+- DA layer adapter priority (Celestia vs Avail vs EigenDA mana first mainnet-ready) — tidak diumumkan
+- Decentralized sequencer spec (consensus, staking token, slashing) — tidak diumumkan
+- Foundation/DAO formation timeline dan legal structure untuk token issuance — tidak dikonfirmasi
+- Series A investor token allocation terms (SAFT valuation, unlock) — tidak publik, perlu cek SEC Form D
+- Regulatory compliance framework untuk token issuance (US securities law) — tidak diungkap
+- Snapshot criteria jika airdrop: testnet activity, mainnet activity, asset holdings, developer contributions — tidak ada signal
+- Anti-sybil mechanism untuk airdrop (Gitcoin Passport, on-chain scoring, KYC) — tidak diumumkan
+- Market maker / liquidity provider arrangement post-TGE — tidak diumumkan
+- Apakah airdrop akan multi-season (Season 1 testnet, Season 2 mainnet, dst) — tidak diumumkan

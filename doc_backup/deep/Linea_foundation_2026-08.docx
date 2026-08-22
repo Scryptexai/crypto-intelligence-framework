@@ -1,0 +1,28 @@
+PROJECT: Linea
+Official Name: Linea
+Symbol: LINEA
+Category: Ethereum Layer 2 / Type-2 zkEVM Rollup (validity proof ke Ethereum L1)
+Founding Entity: ConsenSys Software Inc. (pengembang & inkubator; Linea Association/Consortium sebagai entitas governance token) (HIGH) [ConsenSys Linea announcement; The Block TGE coverage, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]
+Founders: Joseph Lubin (Founder ConsenSys, Ethereum co-founder — induk organisasi Linea); kepemimpinan operasional Linea dipimpin Nicolas Liochon (Global Lead/GM Linea di ConsenSys) (HIGH untuk Lubin) [CoinMarketCap Academy Linea, https://coinmarketcap.com/academy/article/linea-network-defi-voyage]; (MEDIUM untuk Liochon) [ConsenSys public communications, https://linea.build]
+Core Team: Tim engineering ConsenSys yang didedikasikan untuk Linea (prover, sequencer, SDK); jumlah pasti tidak dipublikasikan terpisah; ConsenSys mempekerjakan ~900 orang total per Januari 2023 (MEDIUM) [Texau ConsenSys profile, https://www.texau.com/profiles/consensys]
+Country: ConsenSys berbasis di Amerika Serikat (Brooklyn/Fort Worth); Linea Association (governance token) berbasis di Swiss (HIGH) [Bitrue LINEA Tokenomics, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]; [Texau, https://www.texau.com/profiles/consensys]
+Launch Date - Testnet: Februari 2023 (developer preview testnet sebelum mainnet alpha) (MEDIUM) [eco.com Linea 2026 overview, https://eco.com/support/en/articles/15183705-what-is-linea-consensys-zkevm-l2-in-2026]
+Launch Date - Mainnet: 2023-07-11/12 (alpha mainnet publik; general availability bertahap sepanjang 2024) (HIGH) [CoinMarketCap Academy, https://coinmarketcap.com/academy/article/linea-network-defi-voyage]; [eco.com, https://eco.com/support/en/articles/15183705-what-is-linea-consensys-zkevm-l2-in-2026]
+Launch Date - TGE: 2025-09-10 (LINEA token TGE + airdrop 9,36 miliar token; claim window 90 hari hingga 9 Desember 2025) (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]; [MEXC Blog Linea Airdrop, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]
+Main Products: Linea zkEVM L2 (Type-2, EVM-equivalent); LINEA token (governance + dual-burn, bukan gas token — gas tetap ETH); Linea Consortium Ecosystem Fund; integrasi native MetaMask & Infura; Linea Voyage/Surge program insentif (HIGH) [Phemex Academy LINEA, https://phemex.com/academy/what-is-linea-zkevm-scaling-solution]; [eco.com, https://eco.com/support/en/articles/15183705-what-is-linea-consensys-zkevm-l2-in-2026]
+Official Website: https://linea.build (HIGH)
+Repository: https://github.com/Consensys (repo Linea: linea-monorepo dan terkait) (HIGH) [GitHub ConsenSys, https://github.com/Consensys]
+Documentation: https://docs.linea.build (HIGH) [Linea Docs, https://docs.linea.build]
+Social - X/Twitter: @LineaBuild (HIGH)
+Social - Discord: https://discord.gg/linea (MEDIUM)
+Social - Telegram: tidak ada kanal Telegram resmi utama (MEDIUM)
+Block Explorer: https://lineascan.build (HIGH) [Lineascan, https://lineascan.build]
+Token Contract: LINEA native di Linea L2 + representasi ERC-20 di Ethereum (alamat kontrak spesifik per dokumentasi resmi token launch) (MEDIUM) [Linea docs token, https://docs.linea.build]
+Chain(s): Linea (L2 zkEVM rollup); settlement & proof ke Ethereum L1 (HIGH) [eco.com, https://eco.com/support/en/articles/15183705-what-is-linea-consensys-zkevm-l2-in-2026]
+Ecosystem: Ethereum L2 ecosystem; DeFi (SyncSwap, Nile, ZeroLend, dll.); integrasi MetaMask/Infura; Linea Ecosystem Investment Alliance (30+ VC pendukung builder) (HIGH) [CoinMarketCap Academy, https://coinmarketcap.com/academy/article/linea-network-defi-voyage]
+
+Open Threads
+- Tanggal pasti developer preview testnet (Februari 2023 vs Maret 2023 antar sumber sekunder) — perlu verifikasi blog resmi ConsenSys
+- Alamat kontrak token LINEA di L1 dan L2 secara eksplisit (dokumentasi resmi token launch)
+- Nama lengkap core team Linea di luar Nicolas Liochon — tidak dipublikasikan terpusat
+- Status akhir token yang tidak diklaim setelah 9 Desember 2025 (mekanisme pengembalian ke Ecosystem Fund terkonfirmasi namun jumlah akhirnya belum dipublikasikan di sumber yang diakses)

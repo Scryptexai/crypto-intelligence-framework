@@ -1,0 +1,140 @@
+PROJECT: Cardano
+
+STATUS AIRDROP
+
+Belum ada
+Cardano tidak pernah melakukan airdrop token ADA kepada pengguna. Seluruh distribusi token ADA terjadi melalui: (1) penjualan voucher publik 2015-2017 (~$62M, 25,9M ADA) via Attain Alternative Strategies Ltd【Phase 5 — Funding History】【Phase 6 — Token Sale】; (2) genesis allocation pada mainnet launch 2017-09-29 ke tiga entitas pendiri (IOG 2,46B, CF 648M, Emurgo 2,07B ADA) dan reserve staking rewards 8,89B ADA【Phase 5 — Funding History】【Phase 6 — Distribution】; (3) monetary expansion protokol untuk staking rewards sejak Shelley 2020-07-29【Phase 3 — EV-011】【Phase 6 — Inflation/Deflation】; (4) Project Catalyst treasury funding untuk proyek ekosistem (voting stake-weighted, bukan airdrop ke pengguna)【Phase 3 — EV-012】【Phase 5 — Fundraising Mechanism】. Tidak ada event snapshot, points program, retroactive reward, lockdrop, atau fork yang mendistribusikan ADA gratis ke wallet pengguna.
+
+AIRDROP EVENTS
+
+Tidak ada event airdrop untuk ADA. Seluruh mekanisme distribusi terdokumentasi di Phase 3 (EV-002 voucher sale, EV-007 mainnet genesis, EV-011 staking rewards), Phase 5 (Funding History, Token Sale), Phase 6 (Distribution, Vesting Schedule, Utility).
+
+CONTEXT SAAT KEPUTUSAN
+
+Tidak berlaku — tidak ada keputusan airdrop yang diambil. Konteks distribusi token yang sebenarnya terjadi:
+- Tahap funding: Pre-launch voucher sale 2015-2017 (~$62M) → Mainnet launch 2017-09-29 dengan genesis allocation → Shelley 2020-07-29 monetary expansion untuk staking rewards【Phase 5 — Funding History】【Phase 3 — EV-002, EV-007, EV-011】
+- Ukuran komunitas: Voucher sale menarik peserta pasar Asia (utamanya Jepang) ~25,9B ADA terjual; staking participation naik ke >70% supply dalam bulan pertama Shelley【Phase 8 — Adoption Metrics】【Phase 9 — Pola 1】
+- Kondisi pasar: 2017 bull run (voucher sale berakhir Jan 2017), 2020 DeFi summer (Shelley launch), 2021 NFT/DeFi boom (Mary/Alonzo)【Phase 8 — Market】【Phase 3 — EV-013, EV-014】
+- Kompetitor terdekat: Ethereum (ICO 2014, tidak airdrop), Tezos (ICO 2017, tidak airdrop), Algorand (auction 2019, tidak airdrop) — era 2017-2020 airdrop belum jadi standar industri【Phase 8 — Competitor Landscape】
+
+TRIGGER DAN ALTERNATIF
+
+Tidak berlaku — tidak ada trigger airdrop. Alternatif distribusi yang dievaluasi dan dipilih:
+- Public voucher sale (dipilih): model hukum Swiss voucher, kompliance regulasi 2015, retail-dominant, no VC【Phase 5 — Fundraising Mechanism】【Phase 9 — Pola 1】
+- Genesis allocation ke entitas pendiri (dipilih): IOG, CF, Emurgo menerima allocation untuk operasional jangka panjang【Phase 5 — Funding History】【Phase 6 — Distribution】
+- Monetary expansion untuk staking rewards (dipilih): hardcoded diminishing schedule, incentive alignment Ouroboros Praos【Phase 6 — Inflation/Deflation】【Phase 4 — Consensus Mechanism】
+- Airdrop ke pengguna: tidak dipertimbangkan dalam desain tokenomics awal; tidak ada dokumentasi internal yang menyebut evaluasi airdrop【Phase 9 — Strategic Principles 1, 6】【Phase 10 — K-006】
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Charles Hoskinson dan Jeremy Wood menyatakan Cardano dirancang dengan "fair launch" via public voucher sale, bukan insider allocation atau airdrop【Phase 3 — EV-001】【Phase 5 — Fundraising Mechanism】(HIGH) [IOG Blog, https://inputoutput.io/en/blog/posts/2015/10/02/input-output-hong-kong-announces-new-cryptocurrency-project/]
+- Tokenomics paper (Why Cardano) menjelaskan distribusi: voucher sale, genesis entities, staking rewards reserve — tidak ada airdrop【Phase 1 — Foundation】【Phase 6 — Distribution】(HIGH) [Cardano Whitepaper, https://cardano.org/whitepaper/]
+- CIP-1694 governance actions untuk treasury withdrawals memerlukan constitutional compliance — airdrop tidak sesuai framework ini【Phase 6 — Governance】【Phase 3 — EV-022】(HIGH) [CIP-1694, https://cips.cardano.org/cips/cip1694/]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Menghindari klasifikasi sekuritas: voucher sale model Swiss (bukan token sale) + no airdrop mengurangi risiko Howey test — airdrop gratis bisa dianggap "investment of money" dengan "expectation of profits from efforts of others"【Phase 5 — Financial Risk】【Phase 9 — Pola 1】(MEDIUM) [Messari Report, https://messari.io/report/cardano-launch-and-token-distribution]
+- Menghindari sell pressure masif pasca-airdrop: airdrop hunter cenderung dump segera; Cardano memilih staking rewards (locked via delegation) untuk retention【Phase 6 — Utility - Staking】【Phase 8 — Adoption Metrics】(MEDIUM) [IOG Blog Shelley Incentives, https://iohk.io/en/blog/posts/2020/07/29/shelley-incentives/]
+- Mempertahankan treasury untuk public goods via Catalyst: treasury ~1.3B ADA dialokasikan via governance, bukan didistribusikan gratis【Phase 5 — Treasury】【Phase 3 — EV-021】(MEDIUM) [Catalyst Fund 10, https://cardano.ideascale.com/c/campaigns/25201]
+- Desain eUTXO minimum UTxO deposit (~1-2 ADA) menciptakan structural demand ADA untuk mint native assets — airdrop tidak diperlukan untuk adoption【Phase 6 — Utility - Native Asset Minting Fee】【Phase 3 — EV-013】(LOW) [IOG Blog Mary, https://iohk.io/en/blog/posts/2021/03/01/mary-hard-fork-launch/]
+
+OUTCOME PER POV
+
+POV Founder: Tidak diketahui
+- Jangka pendek: Tidak berlaku (tidak ada airdrop)
+- Jangka panjang: Distribusi via voucher sale + genesis allocation menciptakan alignment jangka panjang dengan entitas pendiri; no VC unlock cliffs menghindari sell pressure terjadwal【Phase 9 — Pola 1, Pola 2】(HIGH)
+- Dasar: Phase 9 Evolution Pattern 1, Pola 1; Phase 5 Funding History
+
+POV VC: Tidak diketahui
+- Jangka pendek: Tidak ada investor VC dalam token sale — tidak ada alokasi VC untuk dump atau hold【Phase 5 — Fundraising Mechanism】【Phase 6 — Distribution】(HIGH)
+- Jangka panjang: Tidak ada VC token unlock schedule yang menciptakan overhang pasar【Phase 5 — Financial Risk】【Phase 9 — Pola 1】(HIGH)
+- Dasar: Phase 5 Fundraising Mechanism; Phase 9 Pola 1
+
+POV Retail: Tidak diketahui
+- Jangka pendek: Voucher sale participants membeli ADA ~$0.0024/ADA (bukan gratis); mainnet launch 2017-09-29 token transferable【Phase 6 — TGE】【Phase 3 — EV-007】(HIGH)
+- Jangka panjang: Staking rewards منذ Shelley 2020 memberikan yield ~4-5% APY; minimum UTxO deposit untuk native assets menciptakan demand struktural【Phase 6 — Utility】【Phase 8 — Adoption Metrics】(HIGH)
+- Dasar: Phase 6 TGE, Utility; Phase 8 Adoption Metrics
+
+POV Community: Tidak diketahui
+- Jangka pendek: Project Catalyst Fund 1 2020-08 mulai mendistribusikan treasury ke proyek komunitas via voting (bukan airdrop ke individu)【Phase 3 — EV-012】(HIGH)
+- Jangka panjang: >100M ADA terdistribusi Fund 1-12+; CIP-1694 governance actions memungkinkan community mengarahkan treasury【Phase 3 — EV-021】【Phase 6 — Governance】(HIGH)
+- Dasar: Phase 3 EV-012, EV-021; Phase 6 Governance
+
+POV Developer: Tidak diketahui
+- Jangka pendek: Plutus smart contracts live Alonzo 2021-09-12; developer tooling berkembang (MeshJS, Aiken, Blockfrost) tanpa insentif token gratis【Phase 3 — EV-014】【Phase 7 — Developer Ecosystem】(HIGH)
+- Jangka panjang: Catalyst funding untuk developer tools (Aiken, Lucid, Helios dibangun dengan dana Catalyst)【Phase 3 — EV-030】【Phase 7 — Infrastructure Providers】(HIGH)
+- Dasar: Phase 3 EV-014, EV-030; Phase 7 Developer Ecosystem
+
+POV Institution: Tidak diketahui
+- Jangka pendek: Atala PRISM enterprise contracts (Ethiopia, Georgia, Tanzania) menggunakan ADA untuk fee/identity ops — institutional demand organik【Phase 3 — EV-027】【Phase 7 — Major Integrations】(HIGH)
+- Jangka panjang: Midnight partner chain (ZK privacy) menargetkan regulated finance — ADA sebagai bridge asset potensial【Phase 3 — EV-024】【Phase 4 — System Architecture】(MEDIUM)
+- Dasar: Phase 3 EV-027, EV-024; Phase 7 Major Integrations
+
+POV Validator: Tidak diketahui
+- Jangka pendek: SPO rewards dari fee + monetary expansion sejak Shelley 2020; ~1.100-1.200 active pools dari ~3.200 registered【Phase 8 — Adoption Metrics】【Phase 3 — EV-011】(HIGH)
+- Jangka panjang: Staking participation stabil ~62-65% circulating supply; no slashing, no lock-up — delegator retention tinggi【Phase 8 — Adoption Metrics】【Phase 10 — K-010】(HIGH)
+- Dasar: Phase 8 Adoption Metrics; Phase 10 K-010
+
+POV Builder: Tidak diketahui
+- Jangka pendek: Native assets (Mary 2021) memungkinkan builder mint token/NFT tanpa smart contract — low barrier entry【Phase 3 — EV-013】【Phase 10 — K-019】(HIGH)
+- Jangka panjang: Vasil improvements (reference inputs, inline datums) + Hydra L2 + Midnight ZK — builder tooling mature tanpa butuh airdrop incentive【Phase 3 — EV-017】【Phase 4 — Core Components】(HIGH)
+- Dasar: Phase 3 EV-013, EV-017; Phase 4 Core Components
+
+METRIK RETENSI
+
+Tidak ditemukan — tidak ada airdrop untuk diukur retensinya. Metrik yang relevan untuk distribusi ADA sebenarnya:
+- Staking participation rate: ~62-65% circulating supply staked (22B ADA dari 35.6B) sejak Shelley 2020 — retention via delegation【Phase 8 — Adoption Metrics】(HIGH)
+- Voucher sale holder behavior: tidak ada data on-chain terpisah untuk voucher holders vs genesis entities vs treasury; address labeling heuristik saja【Phase 6 — Holder Distribution】(MEDIUM)
+- Catalyst proposal success rate: ribuan proposal, ratusan didanai; builder retention tinggi via funding berkelanjutan【Phase 3 — EV-021】【Phase 7 — Developer Ecosystem】(HIGH)
+
+FARMING DAN SYBIL
+
+Tidak berlaku — tidak ada airdrop criteria untuk di-farm. Perilaku serupa:
+- Staking delegation: tidak ada sybil resistance needed — stake = voting power; delegator bebas pindah pool tiap epoch【Phase 6 — Utility - Staking】【Phase 4 — Consensus Mechanism】(HIGH)
+- Catalyst voting: stake-weighted voting (1 ADA = 1 vote); DRep delegation mencegah sybil via stake requirement【Phase 6 — Governance】【Phase 3 — EV-022】(HIGH)
+- Native asset minting: minimum UTxO deposit ~1-2 ADA per asset — cost barrier alami untuk spam【Phase 6 — Utility - Native Asset Minting Fee】【Phase 3 — EV-013】(HIGH)
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Tokenomics dengan treasury on-chain ~1.3B ADA yang dikendalikan governance CIP-1694【Phase 5 — Treasury】【Phase 6 — Governance】(HIGH)
+- Konstitusi teratifikasi (Agustus 2024) mengikat aturan pengeluaran treasury【Phase 3 — EV-023】【Phase 6 — Governance】(HIGH)
+- Komunitas DRep aktif (>1.000 DRep terdaftar per GovTool) dan SPO voting【Phase 3 — EV-034】【Phase 8 — Adoption Metrics】(HIGH)
+- Infrastruktur snapshot on-chain ada (Mithril certified snapshots, GovTool analytics)【Phase 4 — Core Components - Mithril】【Phase 7 — Infrastructure Providers】(HIGH)
+
+Prasyarat yang belum:
+- Proposal governance action (CIP-1694) untuk airdrop spesifik — belum ada proposal katalis/community yang mengusulkan airdrop ADA ke pengguna wallet【Phase 6 — Governance】【Phase 3 — EV-022】(HIGH)
+- Justifikasi constitutional compliance: airdrop harus membuktikan "public good" sesuai Konstitusi Cardano (Section 4: Treasury Management)【Phase 3 — EV-023】【Phase 6 — Governance】(MEDIUM) [Cardano Constitution, https://gov.cardano.org/constitution]
+- Analisis dampak sell pressure vs adoption — tim IOG/CF belum mempublikasikan studi ini【Phase 5 — Financial Risk】【Phase 9 — Trade-off 5】(MEDIUM)
+- Konsensus DRep + SPO + CC (3-body) untuk approve governance action treasury withdrawal untuk airdrop【Phase 6 — Governance】【Phase 4 — Security Model】(HIGH)
+
+Sinyal yang biasanya mendahului:
+- Diskusi di forum governance (Cardano Forum, GovTool, Discord) tentang "treasury diversification" atau "user acquisition via airdrop" — saat ini fokus pada stablecoin allocation, bukan airdrop【Phase 5 — Financial Risk】【Phase 8 — Narrative Position】(MEDIUM)
+- Draft CIP untuk "Treasury Distribution Mechanism" atau "Community Incentive Program" di GitHub CIPs repo【Phase 2 — Entity - Cardano Foundation】【Phase 7 — External Dependencies】(LOW)
+- Pengumuman snapshot date oleh Constitutional Committee atau DRep terpilih — belum pernah terjadi【Phase 3 — EV-034】【Phase 6 — Governance】(HIGH)
+- Perubahan parameter protokol via governance action (test case) — parameter changes pertama sudah terjadi 2024 H2 (mis. pool pledge, min fee)【Phase 3 — EV-022】【Phase 4 — Known Technical Limitations】(HIGH)
+
+Penilaian: Airdrop ADA MUNGKIN tapi TIDAK KEMUNGKINAN TINGGI di masa depan dekat (6-12 bulan). Alasan: (1) Treasury governance CIP-1694 baru matang (Chang Mei 2024, Constitution Agustus 2024); komunitas fokus pada parameter changes & Catalyst funding, bukan airdrop. (2) Konstitusi Cardano Section 4 menuntut treasury spending untuk "public goods" — airdrop ke wallet individu sulit dibuktikan sebagai public good vs funding builder/tools/infra via Catalyst. (3) Sell pressure risk tinggi: ~35B ADA circulating, ~1.3B treasury; airdrop signifikan (mis. 1% supply = 350M ADA) akan menciptakan dump masif seperti airdrop L1 lain 2023-2024. (4) Structural demand ADA sudah ada via staking rewards, minimum UTxO deposit, DeFi collateral — airdrop tidak diperlukan untuk adoption. (5) Jika terjadi, akan melalui governance action CIP-1694 penuh: proposal → CC review → DRep vote → SPO vote → enactment (minimal 5-10 epochs). Keyakinan: MEDIUM (70%) — bisa berubah jika ada proposal komunitas besar yang lolos voting Catalyst dan naik ke governance action.
+
+PELAJARAN LINTAS PROJECT
+
+Ketika project memilih public sale only (no VC, no airdrop) di era pre-2020 (ICO era), distribusi retail-dominant menciptakan komunitas aligned jangka panjang tanpa sell pressure dari unlock cliffs — tapi butuh kapital awal besar ($62M untuk Cardano) dan runway panjang sebelum mainnet.【Phase 5 — Fundraising Mechanism】【Phase 9 — Pola 1】(Era 2015-2017)
+
+Ketika staking rewards (monetary expansion) digunakan sebagai mekanisme distribusi token berkelanjutan menggantikan airdrop, retention melalui delegation yield (4-5% APY) terbukti stabil >60% participation selama 4+ tahun — berbeda dengan airdrop once-off yang retention-nya <30% setelah 90 hari.【Phase 6 — Inflation/Deflation】【Phase 8 — Adoption Metrics】【Phase 10 — K-010】(Era 2020-sekarang)
+
+Ketika treasury on-chain dikendalikan constitutional governance (CIP-1694), setiap distribusi token besar (termasuk airdrop potensial) memerlukan proposal → judicial review (CC) → legislative vote (DRep) → executive approval (SPO) — proses 5-10 epochs yang mencegah keputusan impulsif tapi juga memperlambat respons pasar.【Phase 6 — Governance】【Phase 3 — EV-022】【Phase 10 — K-015】(Era 2024-sekarang)
+
+Ketika native asset support di settlement layer (Mary 2021) memungkinkan mint token/NFT tanpa smart contract, minimum UTxO deposit (~1-2 ADA) menciptakan structural demand token native yang menggantikan peran airdrop untuk bootstrapping adoption — pengguna beli ADA untuk mint, bukan gratis dapat ADA.【Phase 3 — EV-013】【Phase 6 — Utility】【Phase 10 — K-019】(Era 2021-sekarang)
+
+Ketika project memiliki enterprise/government adoption (Atala PRISM Ethiopia, Georgia, Tanzania) yang generate organic ADA demand untuk fee/identity ops, airdrop retail tidak diperlukan untuk network effect — real-world usage menciptakan demand alami.【Phase 3 — EV-027】【Phase 7 — Major Integrations】【Phase 10 — K-009】(Era 2021-sekarang)
+
+OPEN THREADS
+
+- OT-001: Apakah akan ada proposal CIP-1694 governance action untuk airdrop ADA di masa depan? Tidak ada sinyal saat ini tapi framework governance memungkinkan
+- OT-002: Bagaimana Constitutional Committee akan menilai "public good" justification untuk airdrop vs Catalyst funding? Belum ada preseden
+- OT-003: Apakah Midnight partner chain (DUST token) akan melakukan airdrop ke ADA holders? Midnight tokenomics terpisah, bridge design belum final — kemungkinan ada tapi tidak terikat pada ADA treasury
+- OT-004: Apakah Project Catalyst akan memperkenalkan "airdrop track" untuk funding user acquisition? Fund 13+ rencana belum dipublikasikan
+- OT-005: Bagaimana Mithril certified snapshots bisa digunakan untuk snapshot airdrop yang efisien? Teknis tersedia tapi belum pernah diuji untuk use case ini
+- OT-006: Apakah staking rewards monetary expansion bisa diganti/ditambah dengan airdrop targeted ke delegator baru? Parameter change butuh governance action, CC review, constitution compliance
+- OT-007: Bagaimana regulasi MiCA/EU/SEC akan mempengaruhi keputusan airdrop ADA di masa depan? Cardano Foundation Swiss entity harus compliant
+- OT-008: Apakah ada data on-chain historis yang bisa memisahkan voucher sale holders vs genesis entities vs treasury untuk analisis airdrop eligibility? Address labeling heuristik saja, tidak ada label resmi

@@ -1,0 +1,716 @@
+PROJECT: EtherFi
+
+## Ecosystem Position
+
+Primary Sector: Liquid Restaking Protocol
+Secondary Sector: Liquid Staking Token (LST) Provider, DeFi Infrastructure, Real-World Asset (RWA) Bridge via EtherFi Cash
+Primary Chain: Ethereum
+Supported Chains: Ethereum, Arbitrum, Optimism, Base, Mode, Blast, Linea, Scroll, zkSync Era, Mantle, BNB Chain
+Sources: https://docs.ether.fi, https://blog.ether.fi/etherfi-v2-liquid-restaking/, https://defillama.com/protocol/etherfi
+
+## External Dependencies
+
+Dependency Name: EigenLayer
+Dependency Type: Protocol
+Purpose: Primary restaking layer — eETH dan weETH didelegasikan ke EigenLayer AVS melalui StrategyManager dan DelegationManager untuk restaking rewards
+Criticality: Critical
+Status: Live
+Related Entity: EigenLayer
+Related Technology Component: EigenLayer Integration (StrategyManager / DelegationManager), eETH, weETH
+Sources: https://docs.eigenlayer.xyz, https://docs.ether.fi/restaking, https://github.com/Layr-Labs/eigenlayer-contracts
+
+Dependency Name: Symbiotic
+Dependency Type: Protocol
+Purpose: Alternative restaking layer — eETH dan weETH didelegasikan ke Symbiotic Vault/Network untuk diversifikasi AVS
+Criticality: High
+Status: Live
+Related Entity: Symbiotic
+Related Technology Component: Symbiotic Integration (Vault / Network), eETH, weETH
+Sources: https://docs.symbiotic.fi, https://docs.ether.fi, https://blog.ether.fi
+
+Dependency Name: Pendle
+Dependency Type: Protocol
+Purpose: Yield trading market untuk eETH/weETH — Principal Tokens (PT) dan Yield Tokens (YT) memungkinkan fixed yield dan speculation
+Criticality: High
+Status: Live
+Related Entity: Pendle
+Related Technology Component: Pendle Integration (PT/YT market contracts), eETH, weETH
+Sources: https://docs.pendle.finance, https://blog.ether.fi, https://app.pendle.finance
+
+Dependency Name: Ethereum
+Dependency Type: Chain
+Purpose: Settlement layer utama — semua smart contract inti (eETH, weETH, ETHFI, StakeManager, Vaults, ULN, Governance) dideploy di Ethereum Mainnet
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: All core contracts (StakeManager, eETH, weETH, ETHFI, Vaults, ULN, Governor, Timelock)
+Sources: https://ethereum.org, https://etherscan.io/token/0x35fA164735182de50811E8e2E824cFb9B6118ac2, https://etherscan.io/token/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee
+
+Dependency Name: Arbitrum
+Dependency Type: Chain
+Purpose: L2 deployment untuk weETH — canonical bridge dan DeFi composability
+Criticality: High
+Status: Live
+Related Entity: Arbitrum
+Related Technology Component: weETH (Arbitrum deployment), Bridge Contracts (Arbitrum Bridge)
+Sources: https://docs.arbitrum.io, https://arbiscan.io, https://docs.ether.fi/bridging
+
+Dependency Name: Optimism
+Dependency Type: Chain
+Purpose: L2 deployment untuk weETH — OP Stack ecosystem, canonical bridge
+Criticality: High
+Status: Live
+Related Entity: Optimism
+Related Technology Component: weETH (Optimism deployment), Bridge Contracts (Optimism Portal)
+Sources: https://community.optimism.io/docs, https://optimistic.etherscan.io, https://docs.ether.fi/bridging
+
+Dependency Name: Base
+Dependency Type: Chain
+Purpose: L2 deployment untuk weETH — Coinbase ecosystem, canonical bridge
+Criticality: High
+Status: Live
+Related Entity: Base
+Related Technology Component: weETH (Base deployment), Bridge Contracts (Base Bridge)
+Sources: https://docs.base.org, https://basescan.org, https://docs.ether.fi/bridging
+
+Dependency Name: Mode
+Dependency Type: Chain
+Purpose: L2 deployment untuk weETH — DeFi-focused L2 dengan restaking incentives
+Criticality: Medium
+Status: Live
+Related Entity: Mode
+Related Technology Component: weETH (Mode deployment), Bridge Contracts
+Sources: https://docs.mode.network, https://docs.ether.fi
+
+Dependency Name: Blast
+Dependency Type: Chain
+Purpose: L2 deployment untuk weETH — native yield L2 untuk restaking composability
+Criticality: Medium
+Status: Live
+Related Entity: Blast
+Related Technology Component: weETH (Blast deployment), Bridge Contracts
+Sources: https://docs.blast.io, https://docs.ether.fi
+
+Dependency Name: Linea
+Dependency Type: Chain
+Purpose: zkEVM L2 deployment untuk weETH — ConsenSys zk-rollup ecosystem
+Criticality: Medium
+Status: Live
+Related Entity: Linea
+Related Technology Component: weETH (Linea deployment), Bridge Contracts
+Sources: https://docs.linea.build, https://lineascan.build, https://docs.ether.fi
+
+Dependency Name: Scroll
+Dependency Type: Chain
+Purpose: zkEVM L2 deployment untuk weETH — scaling Ethereum untuk restaking throughput
+Criticality: Medium
+Status: Live
+Related Entity: Scroll
+Related Technology Component: weETH (Scroll deployment), Bridge Contracts
+Sources: https://scroll.io/docs, https://scrollscan.com, https://docs.ether.fi
+
+Dependency Name: zkSync Era
+Dependency Type: Chain
+Purpose: zkEVM L2 deployment untuk weETH — Matter Labs zero-knowledge rollup
+Criticality: Medium
+Status: Live
+Related Entity: zkSync Era
+Related Technology Component: weETH (zkSync Era deployment), Bridge Contracts
+Sources: https://docs.zksync.io, https://explorer.zksync.io, https://docs.ether.fi
+
+Dependency Name: Mantle
+Dependency Type: Chain
+Purpose: Modular L2 deployment untuk weETH — EigenDA data availability untuk restaking
+Criticality: Medium
+Status: Live
+Related Entity: Mantle
+Related Technology Component: weETH (Mantle deployment), Bridge Contracts
+Sources: https://docs.mantle.xyz, https://mantlescan.xyz, https://docs.ether.fi
+
+Dependency Name: BNB Chain
+Dependency Type: Chain
+Purpose: EVM-compatible L1 deployment untuk weETH — ekspansi ke ekosistem BNB
+Criticality: Medium
+Status: Live
+Related Entity: BNB Chain
+Related Technology Component: weETH (BNB Chain deployment), Bridge Contracts
+Sources: https://docs.bnbchain.org, https://bscscan.com, https://docs.ether.fi
+
+Dependency Name: Chainlink
+Dependency Type: Oracle
+Purpose: Price Feeds untuk ETH/USD dan eETH/weETH pricing di vault liquidation logic dan risk management
+Criticality: High
+Status: Live
+Related Entity: (tidak terdaftar sebagai entity terpisah di Phase 2 — Chainlink adalah oracle provider)
+Related Technology Component: EtherFi Vaults, Chainlink Contracts (Price Feeds, Automation, CCIP)
+Sources: https://docs.chain.link, https://docs.ether.fi/vaults, https://github.com/smartcontractkit/chainlink
+
+Dependency Name: LayerZero
+Dependency Type: Bridge
+Purpose: Cross-chain messaging untuk weETH bridging (third-party bridge option) — OFT standard atau generic messaging
+Criticality: Medium
+Status: Live
+Related Entity: (tidak terdaftar sebagai entity terpisah di Phase 2)
+Related Technology Component: Bridge Contracts (weETH cross-chain), LayerZero SDK
+Sources: https://docs.layerzero.network, https://docs.ether.fi/bridging, https://github.com/LayerZero-Labs
+
+Dependency Name: Wormhole
+Dependency Type: Bridge
+Purpose: Cross-chain messaging untuk weETH bridging (third-party bridge option) — NTT atau generic messaging
+Criticality: Medium
+Status: Live
+Related Entity: (tidak terdaftar sebagai entity terpisah di Phase 2)
+Related Technology Component: Bridge Contracts (weETH cross-chain), Wormhole SDK
+Sources: https://docs.wormhole.com, https://docs.ether.fi/bridging, https://github.com/wormhole-foundation
+
+Dependency Name: Hyperlane
+Dependency Type: Bridge
+Purpose: Cross-chain messaging untuk weETH bridging (third-party bridge option) — permissionless interchain messaging
+Criticality: Medium
+Status: Live
+Related Entity: (tidak terdaftar sebagai entity terpisah di Phase 2)
+Related Technology Component: Bridge Contracts (weETH cross-chain), Hyperlane SDK
+Sources: https://docs.hyperlane.xyz, https://docs.ether.fi/bridging, https://github.com/hyperlane-xyz
+
+Dependency Name: GitHub
+Dependency Type: Infrastructure
+Purpose: Source code hosting, CI/CD, issue tracking untuk semua repository EtherFi (contracts, frontend, sdk, audits)
+Criticality: High
+Status: Live
+Related Entity: GitHub (etherfi-protocol)
+Related Technology Component: All repositories (contracts, frontend, sdk, audits)
+Sources: https://github.com/etherfi-protocol, https://github.com/etherfi-protocol/contracts, https://github.com/etherfi-protocol/frontend
+
+Dependency Name: Vercel
+Dependency Type: Cloud
+Purpose: Frontend hosting untuk app.ether.fi dan cash.ether.fi — deployment, preview, edge functions
+Criticality: High
+Status: Live
+Related Entity: (tidak terdaftar sebagai entity terpisah di Phase 2)
+Related Technology Component: EtherFi Staking Frontend, EtherFi Cash Frontend
+Sources: https://vercel.com/docs, https://app.ether.fi, https://cash.ether.fi
+
+Dependency Name: Dune Analytics
+Dependency Type: Infrastructure
+Purpose: On-chain analytics dashboard, SQL querying untuk metrik protokol (TVL, stakers, yield, bridging)
+Criticality: Medium
+Status: Live
+Related Entity: Dune Analytics
+Related Technology Component: Dune Dashboards, Dune SQL
+Sources: https://dune.com, https://dune.com/queries?query=etherfi, https://docs.dune.com
+
+Dependency Name: The Graph
+Dependency Type: Infrastructure
+Purpose: Subgraph indexing untuk event data EtherFi (jika digunakan resmi/community) — frontend data fetching
+Criticality: Low
+Status: tidak diketahui (tidak dikonfirmasi apakah subgraph resmi atau community)
+Related Entity: (tidak terdaftar sebagai entity terpisah di Phase 2)
+Related Technology Component: Frontend data layer, The Graph Subgraph
+Sources: https://thegraph.com/explorer, https://github.com/etherfi-protocol
+
+Dependency Name: OpenZeppelin
+Dependency Type: SDK / Security
+Purpose: Standard contract library (ERC-20, AccessControl, UUPSUpgradeable, ReentrancyGuard, Pausable) — keamanan dan upgradeability core contracts
+Criticality: Critical
+Status: Live
+Related Entity: (tidak terdaftar sebagai entity terpisah di Phase 2)
+Related Technology Component: All core contracts (imports OpenZeppelin Contracts v4.9+)
+Sources: https://docs.openzeppelin.com/contracts, https://github.com/etherfi-protocol/contracts
+
+Dependency Name: Foundry
+Dependency Type: SDK
+Purpose: Smart contract development framework (Forge, Cast, Anvil) — testing, fuzzing, deployment, scripting
+Criticality: High
+Status: Live
+Related Entity: (tidak terdaftar sebagai entity terpisah di Phase 2)
+Related Technology Component: Contracts repository (foundry.toml, test suite, deployment scripts)
+Sources: https://book.getfoundry.sh, https://github.com/etherfi-protocol/contracts
+
+Dependency Name: Wagmi / RainbowKit
+Dependency Type: SDK
+Purpose: Wallet connection, transaction management, account abstraction support untuk frontend
+Criticality: High
+Status: Live
+Related Entity: (tidak terdaftar sebagai entity terpisah di Phase 2)
+Related Technology Component: EtherFi Staking Frontend, EtherFi Cash Frontend, EtherFi SDK
+Sources: https://wagmi.sh, https://www.rainbowkit.com, https://github.com/etherfi-protocol/frontend
+
+Dependency Name: Viem / Ethers.js v6
+Dependency Type: SDK
+Purpose: Blockchain interaction library untuk frontend, SDK, dan scripts — RPC calls, contract reads/writes
+Criticality: High
+Status: Live
+Related Entity: (tidak terdaftar sebagai entity terpisah di Phase 2)
+Related Technology Component: EtherFi SDK, Frontend, Scripts
+Sources: https://viem.sh, https://docs.ethers.org, https://github.com/etherfi-protocol/sdk
+
+## Major Integrations
+
+Integration Name: EigenLayer Mainnet Integration
+Integrated With: EigenLayer
+Purpose: Delegasi eETH/weETH ke EigenLayer AVS melalui StrategyManager — restaking rewards otomatis, slashing risk sharing
+Status: Live
+Related Historical Event ID: EV-007
+Sources: https://docs.eigenlayer.xyz, https://docs.ether.fi/restaking, https://blog.ether.fi
+
+Integration Name: EigenLayer Specific AVS Integration (EigenDA, etc.)
+Integrated With: EigenLayer
+Purpose: Aktifkan delegasi ke AVS spesifik (EigenDA data availability, dll) — memperluas yield sources
+Status: Live
+Related Historical Event ID: EV-021
+Sources: https://docs.eigenlayer.xyz/avs, https://docs.ether.fi, https://blog.ether.fi
+
+Integration Name: Symbiotic Integration
+Integrated With: Symbiotic
+Purpose: Restaking layer alternatif — deploy Symbiotic Vault/Network integration, delegasi eETH/weETH ke Symbiotic networks
+Status: Live
+Related Historical Event ID: EV-013
+Sources: https://docs.symbiotic.fi, https://docs.ether.fi, https://blog.ether.fi
+
+Integration Name: Pendle Integration
+Integrated With: Pendle
+Purpose: Yield trading eETH/weETH via PT/YT markets — fixed yield dan speculation yield
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://docs.pendle.finance, https://blog.ether.fi, https://app.pendle.finance
+
+Integration Name: Multi-Chain weETH Deployment (Batch 1)
+Integrated With: Arbitrum, Optimism, Base, Mode, Blast
+Purpose: Deploy weETH contracts ke 5 L2 — canonical bridge + third-party bridge integration untuk DeFi composability
+Status: Live
+Related Historical Event ID: EV-018 (partial)
+Sources: https://docs.ether.fi, https://arbiscan.io, https://optimistic.etherscan.io, https://basescan.org, https://docs.ether.fi/bridging
+
+Integration Name: Multi-Chain weETH Deployment (Batch 2)
+Integrated With: Linea, Scroll, zkSync Era, Mantle, BNB Chain
+Purpose: Deploy weETH contracts ke 5 chain tambahan — ekspansi total 10+ chain
+Status: Live
+Related Historical Event ID: EV-018 (partial)
+Sources: https://docs.ether.fi, https://lineascan.build, https://scrollscan.com, https://explorer.zksync.io, https://mantlescan.xyz, https://bscscan.com
+
+Integration Name: EtherFi Cash Payment Network Integration
+Integrated With: Visa / Mastercard network (via payment processor), Stablecoin custodian
+Purpose: Kartu kredit fisik/virtual terhubung ke smart contract wallet — spending yield restaked ETH/stablecoin di dunia nyata
+Status: Live
+Related Historical Event ID: EV-010, EV-023
+Sources: https://cash.ether.fi, https://blog.ether.fi
+
+Integration Name: Binance Exchange Listing
+Integrated With: Binance Exchange
+Purpose: ETHFI token spot trading pair (ETHFI/USDT, ETHFI/BTC, dll) — liquidity pasar primer, retail on-ramp
+Status: Live
+Related Historical Event ID: EV-016
+Sources: https://www.binance.com/en/trade/ETHFI_USDT, https://research.binance.com/en/projects/etherfi
+
+Integration Name: Coinbase Exchange Listing
+Integrated With: Coinbase Exchange
+Purpose: ETHFI token spot trading — distribusi ke user base Coinbase, ekosistem Base
+Status: Live
+Related Historical Event ID: EV-016
+Sources: https://www.coinbase.com/price/etherfi, https://www.coinbase.com/ventures/portfolio
+
+Integration Name: OKX Exchange Listing
+Integrated With: OKX Exchange
+Purpose: ETHFI token spot trading — liquidity tambahan, akses pasar Asia
+Status: Live
+Related Historical Event ID: EV-016
+Sources: https://www.okx.com/trade/ETHFI-USDT, https://www.okx.com/ventures
+
+Integration Name: Bybit Exchange Listing
+Integrated With: Bybit Exchange
+Purpose: ETHFI token spot trading — ekspansi liquidity ke derivatives dan spot market global
+Status: Live
+Related Historical Event ID: EV-016
+Sources: https://www.bybit.com/trade/spot/ETHFI/USDT, https://announcements.bybit.com
+
+Integration Name: Gate.io Exchange Listing
+Integrated With: Gate.io Exchange
+Purpose: ETHFI token spot trading — dukungan listing early-stage, market making
+Status: Live
+Related Historical Event ID: EV-016
+Sources: https://www.gate.io/trade/ETHFI_USDT, https://www.gate.io/announcements
+
+Integration Name: KuCoin Exchange Listing
+Integrated With: KuCoin Exchange
+Purpose: ETHFI token spot trading — liquidity tambahan untuk pasar Asia-Pasifik
+Status: Live
+Related Historical Event ID: EV-016
+Sources: https://www.kucoin.com/trade/ETHFI-USDT, https://www.kucoin.com/news
+
+## Infrastructure Providers
+
+Provider: GitHub
+Service: Source code hosting, CI/CD (GitHub Actions), issue tracking, release management
+Criticality: High
+Status: Live
+Sources: https://github.com/etherfi-protocol, https://github.com/etherfi-protocol/contracts/actions, https://github.com/etherfi-protocol/frontend/actions
+
+Provider: Vercel
+Service: Frontend hosting (app.ether.fi, cash.ether.fi), edge functions, preview deployments
+Criticality: High
+Status: Live
+Sources: https://vercel.com/docs, https://app.ether.fi, https://cash.ether.fi
+
+Provider: Dune Analytics
+Service: On-chain analytics dashboards, SQL querying, community dashboards untuk metrik protokol
+Criticality: Medium
+Status: Live
+Sources: https://dune.com, https://dune.com/queries?query=etherfi, https://docs.dune.com
+
+Provider: Etherscan
+Service: Block explorer Ethereum — contract verification, transaction tracing, token info, API
+Criticality: High
+Status: Live
+Related Entity: Etherscan
+Sources: https://etherscan.io, https://etherscan.io/apis, https://etherscan.io/token/0x35fA164735182de50811E8e2E824cFb9B6118ac2
+
+Provider: Arbiscan
+Service: Block explorer Arbitrum — weETH verification, transaction tracing di Arbitrum
+Criticality: High
+Status: Live
+Related Entity: Arbiscan
+Sources: https://arbiscan.io, https://arbiscan.io/apis
+
+Provider: Optimistic Etherscan
+Service: Block explorer Optimism — weETH verification, transaction tracing di OP Mainnet
+Criticality: High
+Status: Live
+Related Entity: Optimistic Etherscan
+Sources: https://optimistic.etherscan.io, https://optimism.etherscan.io
+
+Provider: Basescan
+Service: Block explorer Base — weETH verification, transaction tracing di Base
+Criticality: High
+Status: Live
+Related Entity: Basescan
+Sources: https://basescan.org, https://basescan.org/apis
+
+Provider: Chainlink
+Service: Oracle Price Feeds (ETH/USD, eETH/weETH), Automation, CCIP untuk cross-chain messaging
+Criticality: High
+Status: Live
+Sources: https://docs.chain.link, https://docs.ether.fi/vaults
+
+Provider: Alchemy / Infura / QuickNode (inferensi — RPC provider tidak dikonfirmasi spesifik)
+Service: RPC node infrastructure untuk frontend, SDK, scripts, indexer — Ethereum dan L2 RPC endpoints
+Criticality: High
+Status: Live
+Sources: https://www.alchemy.com, https://www.infura.io, https://www.quicknode.com, https://github.com/etherfi-protocol/frontend
+
+Provider: Sentry / Datadog (inferensi standar industri — tidak dikonfirmasi resmi)
+Service: Error tracking, APM, monitoring untuk frontend dan backend services
+Criticality: Medium
+Status: tidak diketahui
+Sources: https://sentry.io, https://www.datadoghq.com
+
+Provider: Prometheus / Grafana (inferensi standar industri — tidak dikonfirmasi resmi)
+Service: Metrics monitoring, alerting untuk smart contract events, backend services
+Criticality: Medium
+Status: tidak diketahui
+Sources: https://prometheus.io, https://grafana.com
+
+## Exchange Ecosystem
+
+Exchange: Binance Exchange
+Listing Status: Listed
+Spot: Yes (ETHFI/USDT, ETHFI/BTC, ETHFI/BNB, ETHFI/FDUSD, ETHFI/TRY)
+Perpetual: Yes (ETHFI/USDT Perpetual)
+OTC: tidak diketahui
+Launchpool: tidak dikonfirmasi (tidak ada announcement resmi Binance Launchpool untuk ETHFI)
+Status: Live
+Sources: https://www.binance.com/en/trade/ETHFI_USDT, https://www.binance.com/en/futures/ETHFIUSDT, https://research.binance.com/en/projects/etherfi
+
+Exchange: Coinbase Exchange
+Listing Status: Listed
+Spot: Yes (ETHFI/USD, ETHFI/USDC)
+Perpetual: No (Coinbase tidak menawarkan perpetual untuk asset baru secara default)
+OTC: tidak diketahui (Coinbase Prime OTC tersedia untuk institutional)
+Launchpool: tidak dikonfirmasi (tidak ada Coinbase Launchpad announcement untuk ETHFI)
+Status: Live
+Sources: https://www.coinbase.com/price/etherfi, https://www.coinbase.com/ventures/portfolio
+
+Exchange: OKX Exchange
+Listing Status: Listed
+Spot: Yes (ETHFI/USDT, ETHFI/USDC)
+Perpetual: Yes (ETHFI/USDT Perpetual)
+OTC: tidak diketahui
+Launchpool: tidak dikonfirmasi
+Status: Live
+Sources: https://www.okx.com/trade/ETHFI-USDT, https://www.okx.com/ventures
+
+Exchange: Bybit Exchange
+Listing Status: Listed
+Spot: Yes (ETHFI/USDT)
+Perpetual: Yes (ETHFI/USDT Perpetual)
+OTC: tidak diketahui
+Launchpool: tidak dikonfirmasi
+Status: Live
+Sources: https://www.bybit.com/trade/spot/ETHFI/USDT, https://announcements.bybit.com
+
+Exchange: Gate.io Exchange
+Listing Status: Listed
+Spot: Yes (ETHFI/USDT)
+Perpetual: Yes (ETHFI/USDT Perpetual)
+OTC: tidak diketahui
+Launchpool: tidak dikonfirmasi (Gate.io Startup/Launchpad tidak announcement ETHFI)
+Status: Live
+Sources: https://www.gate.io/trade/ETHFI_USDT, https://www.gate.io/announcements
+
+Exchange: KuCoin Exchange
+Listing Status: Listed
+Spot: Yes (ETHFI/USDT)
+Perpetual: Yes (ETHFI/USDT Perpetual)
+OTC: tidak diketahui
+Launchpool: tidak dikonfirmasi (KuCoin Spotlight/BurningDrop tidak announcement ETHFI)
+Status: Live
+Sources: https://www.kucoin.com/trade/ETHFI-USDT, https://www.kucoin.com/news
+
+Exchange: Uniswap (DEX)
+Listing Status: Listed (permissionless)
+Spot: Yes (ETHFI/WETH, ETHFI/USDC pools di V2/V3)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Live
+Sources: https://app.uniswap.org/explore/tokens/ethereum/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb, https://info.uniswap.org
+
+Exchange: Curve (DEX)
+Listing Status: Listed (permissionless)
+Spot: Yes (ETHFI/stablecoin pools jika ada — perlu verifikasi pool address)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: tidak diketahui (perlu verifikasi apakah pool ETHFI resmi ada di Curve)
+Sources: https://curve.fi, https://dao.curve.fi
+
+## Wallet Ecosystem
+
+Wallet: MetaMask
+Support Type: Full support — wallet connection via Wagmi/RainbowKit, transaction signing, token display (ETHFI, eETH, weETH)
+Status: Live
+Sources: https://metamask.io, https://github.com/etherfi-protocol/frontend, https://app.ether.fi
+
+Wallet: Rainbow Wallet
+Support Type: Full support — native integration via RainbowKit, portfolio tracking untuk LST/LRT
+Status: Live
+Sources: https://rainbow.me, https://www.rainbowkit.com, https://app.ether.fi
+
+Wallet: Coinbase Wallet
+Support Type: Full support — wallet connection, Base network native support, smart wallet ready
+Status: Live
+Sources: https://www.coinbase.com/wallet, https://app.ether.fi
+
+Wallet: Rabby Wallet
+Support Type: Full support — multi-chain support untuk weETH di 10+ chain, transaction simulation
+Status: Live
+Sources: https://rabby.io, https://app.ether.fi
+
+Wallet: WalletConnect
+Support Type: Protocol support — QR code connection untuk mobile wallet ke app.ether.fi dan cash.ether.fi
+Status: Live
+Sources: https://walletconnect.com, https://app.ether.fi, https://cash.ether.fi
+
+Wallet: Ledger (Hardware)
+Support Type: Full support — hardware signing via MetaMask/Rabby/WalletConnect, blind signing protection untuk contract interaction
+Status: Live
+Sources: https://www.ledger.com, https://app.ether.fi
+
+Wallet: Trezor (Hardware)
+Support Type: Full support — hardware signing via MetaMask/Rabby, Ethereum app support
+Status: Live
+Sources: https://trezor.io, https://app.ether.fi
+
+Wallet: Safe (Gnosis Safe)
+Support Type: Multi-sig support — DAO treasury management, institutional vault access via Safe apps
+Status: Live
+Sources: https://safe.global, https://docs.ether.fi/governance, https://snapshot.org/#/etherfi.eth
+
+Wallet: Argent
+Support Type: Smart wallet support — account abstraction, social recovery, zkSync native
+Status: Live
+Sources: https://www.argent.xyz, https://app.ether.fi
+
+Wallet: Zerion
+Support Type: Portfolio tracking + wallet — DeFi dashboard dengan EtherFi position tracking (eETH, weETH, ETHFI)
+Status: Live
+Sources: https://zerion.io, https://app.zerion.io
+
+## Developer Ecosystem
+
+SDK: EtherFi SDK
+API: EtherFi SDK (TypeScript/JavaScript) — contract interaction, staking, wrapping, bridging, vault operations, governance
+Developer Tools: Foundry (Forge, Cast, Anvil) untuk smart contract dev; Hardhat untuk alternative tooling; TypeScript/Next.js untuk frontend
+Open Source Repository: https://github.com/etherfi-protocol/contracts (smart contracts), https://github.com/etherfi-protocol/frontend (frontend), https://github.com/etherfi-protocol/sdk (SDK), https://github.com/etherfi-protocol/audits (audit reports)
+Developer Portal: https://docs.ether.fi/developers (jika ada; docs.ether.fi mencakup developer docs)
+Hackathon: tidak diketahui — tidak ditemukan hackathon resmi EtherFi yang dipublikasikan (ETHGlobal, DoraHacks, dll mungkin memiliki track tapi tidak terverifikasi)
+Grant Program: tidak diketahui — tidak ditemukan grant program resmi untuk developer eksternal (EigenLayer/Symbiotic/L2 foundation grants tersedia tapi bukan EtherFi-native)
+Sources: https://github.com/etherfi-protocol, https://docs.ether.fi, https://docs.ether.fi/developers, https://book.getfoundry.sh, https://hardhat.org
+
+## Applications
+
+Application: EtherFi Staking (app.ether.fi)
+Category: Staking Interface / Web App
+Relationship: Official frontend untuk staking ETH ke eETH/weETH, portfolio tracking, yield analytics, governance voting
+Status: Live
+Sources: https://app.ether.fi, https://github.com/etherfi-protocol/frontend, https://docs.ether.fi/staking
+
+Application: EtherFi Cash (cash.ether.fi)
+Category: Real-World Spending / RWA Bridge / FinTech App
+Relationship: Non-custodial smart contract wallet terhubung ke kartu kredit fisik/virtual — spending yield restaked ETH/stablecoin
+Status: Live
+Sources: https://cash.ether.fi, https://blog.ether.fi, https://github.com/etherfi-protocol/frontend
+
+Application: EtherFi Vaults
+Category: Institutional DeFi / Vault Protocol
+Relationship: Smart contract vault untuk institutional-grade restaking — multi-AVS allocation, risk management, withdrawal queue
+Status: Live
+Sources: https://docs.ether.fi/vaults, https://blog.ether.fi, https://github.com/etherfi-protocol/contracts
+
+Application: Ultra Light Node (ULN) Marketplace
+Category: Infrastructure Marketplace / Operator Network
+Relationship: Permissionless operator registry — operator mendaftar, staker mendelegasikan eETH, operator menjalankan validator + AVS duties
+Status: Live
+Sources: https://docs.ether.fi/ultra-light-node, https://blog.ether.fi, https://github.com/etherfi-protocol/contracts
+
+Application: EtherFi Governance (Snapshot + On-chain)
+Category: Governance Platform
+Relationship: Off-chain signaling (Snapshot) + on-chain execution (Governor + Timelock) untuk ETHFI token holder
+Status: Live
+Sources: https://snapshot.org/#/etherfi.eth, https://docs.ether.fi/governance, https://github.com/etherfi-protocol/contracts
+
+Application: Pendle eETH/weETH Markets
+Category: Yield Trading / DeFi Application
+Relationship: Third-party application — PT/YT markets untuk eETH/weETH yield trading di Pendle Finance
+Status: Live
+Sources: https://app.pendle.finance, https://docs.pendle.finance, https://blog.ether.fi
+
+Application: EigenLayer Restaking Dashboard
+Category: Restaking Dashboard
+Relationship: Third-party dashboard — monitoring delegasi eETH/weETH ke EigenLayer AVS, rewards, slashing status
+Status: Live
+Sources: https://www.eigenlayer.xyz, https://docs.eigenlayer.xyz, https://app.eigenlayer.xyz
+
+Application: Symbiotic Restaking Interface
+Category: Restaking Dashboard
+Relationship: Third-party interface — monitoring delegasi ke Symbiotic networks/vaults
+Status: Live
+Sources: https://symbiotic.fi, https://docs.symbiotic.fi
+
+Application: DefiLlama EtherFi Page
+Category: Analytics Dashboard
+Relationship: Third-party TVL tracking — total value locked eETH/weETH across chains, historical charts
+Status: Live
+Sources: https://defillama.com/protocol/etherfi, https://defillama.com
+
+Application: Dune Analytics EtherFi Dashboards
+Category: Analytics Dashboard
+Relationship: Community/official dashboards — on-chain metrics (stakers, yield, TVL, bridging, governance)
+Status: Live
+Sources: https://dune.com/queries?query=etherfi, https://dune.com
+
+## Governance Ecosystem
+
+Foundation: EtherFi Foundation
+DAO: EtherFi DAO
+Council: tidak diketahui — tidak ada council terpisah yang dipublikasikan (governance via token-weighted voting semua holder)
+Committee: tidak diketahui — tidak ada committee resmi yang dipublikasikan (parameter changes via proposal)
+Validator Group: Node Operators (Permissionless Set) — operator validator permissionless via ULN marketplace, tidak ada curated validator set
+Sources: https://docs.ether.fi/governance, https://snapshot.org/#/etherfi.eth, https://docs.ether.fi/ultra-light-node, https://blog.ether.fi
+
+## Ecosystem Risks
+
+Risk: Single Restaking Layer Dependency (EigenLayer)
+Type: Protocol Dependency
+Description: Sebagian besar restaking yield dan TVL bergantung pada EigenLayer — jika EigenLayer mengalami exploit, slashing massal, atau regulatory action, EtherFi terpengaruh langsung
+Sources: https://docs.eigenlayer.xyz, https://docs.ether.fi/restaking, https://defillama.com/protocol/etherfi
+
+Risk: Alternative Restaking Layer Dependency (Symbiotic)
+Type: Protocol Dependency
+Description: Symbiotic sebagai layer kedua — risiko serupa: exploit, slashing, regulatory, atau failure to attract AVS
+Sources: https://docs.symbiotic.fi, https://docs.ether.fi
+
+Risk: Bridge Dependency (Canonical + Third-Party)
+Type: Bridge Dependency
+Description: weETH cross-chain bergantung pada canonical bridge (7 hari withdrawal Optimism/Arbitrum) dan third-party bridge (LayerZero/Wormhole/Hyperlane) dengan trust assumptions berbeda — bridge hack = loss of funds cross-chain
+Sources: https://docs.ether.fi/bridging, https://docs.layerzero.network, https://docs.wormhole.com, https://docs.hyperlane.xyz
+
+Risk: Oracle Dependency (Chainlink)
+Type: Oracle Dependency
+Description: Vault liquidation dan risk management bergantung pada Chainlink Price Feeds — oracle manipulation atau downtime dapat trigger liquidation palsu atau gagal liquidate
+Sources: https://docs.chain.link, https://docs.ether.fi/vaults
+
+Risk: Chain Dependency (Ethereum L1)
+Type: Chain Dependency
+Description: Semua core contracts di Ethereum L1 — L1 congestion, gas spike, atau consensus failure mempengaruhi seluruh protokol
+Sources: https://ethereum.org, https://docs.ether.fi
+
+Risk: Centralized Exchange Dependency (CEX Liquidity)
+Type: Liquidity Dependency
+Description: ETHFI token liquidity primer di Binance, Coinbase, OKX, Bybit, Gate.io, KuCoin — delisting atau regulatory action pada CEX mengurangi liquidity drastis
+Sources: https://www.binance.com/en/trade/ETHFI_USDT, https://www.coinbase.com/price/etherfi, https://www.okx.com/trade/ETHFI-USDT, https://www.bybit.com/trade/spot/ETHFI/USDT, https://www.gate.io/trade/ETHFI_USDT, https://www.kucoin.com/trade/ETHFI-USDT
+
+Risk: Cloud Hosting Dependency (Vercel)
+Type: Cloud Dependency
+Description: Frontend hosting di Vercel — outage Vercel = tidak bisa akses app.ether.fi dan cash.ether.fi (smart contract tetap accessible via Etherscan/CLI)
+Sources: https://vercel.com/docs, https://app.ether.fi, https://cash.ether.fi
+
+Risk: GitHub Dependency
+Type: Infrastructure Dependency
+Description: Source code, CI/CD, issue tracking di GitHub — outage atau policy change GitHub mengganggu development dan deployment
+Sources: https://github.com/etherfi-protocol, https://github.com/etherfi-protocol/contracts/actions
+
+Risk: Permissionless Operator Set (ULN)
+Type: Centralization Risk (inverse — over-decentralization risk)
+Description: Operator permissionless tanpa KYC/reputation — staker bear risk operator performance, slashing, dan MEV extraction tanpa recourse
+Sources: https://docs.ether.fi/ultra-light-node, https://blog.ether.fi
+
+Risk: Governance Timelock Delay
+Type: Centralization Risk (governance responsiveness)
+Description: Minimal 2 hari timelock untuk emergency response — critical bug/exploit memerlukan PAUSER_ROLE (multi-sig/DAO) untuk pause, tapi upgrade butuh timelock
+Sources: https://docs.ether.fi/governance, https://snapshot.org/#/etherfi.eth
+
+Risk: Smart Contract Upgradeability (UUPS Proxy)
+Type: Technical Risk
+Description: UUPS proxy upgradeability risk — storage collision, initialization bypass, admin key compromise (UPGRADER_ROLE)
+Sources: https://docs.openzeppelin.com/contracts/4.x/upgradeable#security-considerations, https://github.com/etherfi-protocol/contracts
+
+## Official Ecosystem Resources
+
+Official Documentation: https://docs.ether.fi
+Developer Portal: https://docs.ether.fi/developers
+GitHub: https://github.com/etherfi-protocol
+Partner Documentation: https://docs.eigenlayer.xyz, https://docs.symbiotic.fi, https://docs.pendle.finance, https://docs.chain.link, https://docs.layerzero.network, https://docs.wormhole.com
+Grant Program: tidak diketahui (tidak ada grant program resmi EtherFi yang dipublikasikan)
+Ecosystem Dashboard: https://defillama.com/protocol/etherfi, https://dune.com/queries?query=etherfi, https://app.eigenlayer.xyz, https://symbiotic.fi
+
+## BUAT RINGKASAN
+
+Primary Ecosystem: Liquid Restaking (EigenLayer + Symbiotic) dengan Liquid Staking Token (eETH/weETH) dan Governance Token (ETHFI)
+Supported Chains: 11 chains (Ethereum L1 + 10 L2/L1: Arbitrum, Optimism, Base, Mode, Blast, Linea, Scroll, zkSync Era, Mantle, BNB Chain)
+External Dependencies: 22 dependencies teridentifikasi (4 Critical: EigenLayer, Ethereum, OpenZeppelin, Chainlink; 8 High: Symbiotic, Pendle, Arbitrum, Optimism, Base, GitHub, Vercel, Foundry; 10 Medium/Low)
+Major Integrations: 14 integrasi utama (EigenLayer core + AVS spesifik, Symbiotic, Pendle, 2 batch multi-chain 10+ chain, 6 CEX listing, EtherFi Cash payment network)
+Infrastructure Providers: 11 provider (GitHub, Vercel, Dune, Etherscan, Arbiscan, Optimistic Etherscan, Basescan, Chainlink, RPC providers inferensi, monitoring inferensi)
+Developer Programs: SDK (TypeScript), 4 open source repo, developer docs di docs.ether.fi, no hackathon/grant program terverifikasi
+Applications: 10 aplikasi (5 first-party: Staking, Cash, Vaults, ULN, Governance; 5 third-party: Pendle, EigenLayer Dashboard, Symbiotic Interface, DefiLlama, Dune)
+
+## Open Threads
+
+- Spesifik Chainlink Price Feed address per chain untuk vault — tidak dipublikasikan terpusat; perlu query on-chain atau docs internal
+- LayerZero / Wormhole / Hyperlane contract address dan konfigurasi per chain untuk weETH bridging — docs.ether.fi/bridging tidak granular
+- The Graph subgraph status — apakah ada subgraph resmi (deployed oleh tim) atau hanya community; tidak dikonfirmasi
+- RPC provider resmi (Alchemy/Infura/QuickNode/self-hosted) — tidak dikonfirmasi di docs/frontend repo
+- Monitoring stack resmi (Sentry/Datadog/Prometheus/Grafana) — inferensi standar industri, tidak dikonfirmasi
+- Wallet support detail per chain — apakah semua wallet mendukung weETH di 10+ chain secara native (token list, logo, price feed)
+- Curve pool untuk ETHFI — apakah ada pool resmi/terverifikasi di Curve; perlu verifikasi factory address
+- Grant program ekosistem — apakah EtherFi DAO memiliki grant program untuk developer/builder (seperti EigenLayer Grants, Symbiotic Grants)
+- Hackathon participation — apakah EtherFi sponsor track di ETHGlobal, DoraHacks, atau hackathon lain
+- Auditor firm detail per audit — Phase 4 list 8 auditor tapi scope per-audit perlu cross-check ke github.com/etherfi-protocol/audits
+- Node operator identity di ULN — apakah ada dashboard publik untuk operator registered, performance metrics, slashing history
+- EtherFi Cash payment processor partner — Visa/Mastercard network via processor mana (tidak diungkap), custodian stablecoin siapa
+- Cross-chain weETH supply aggregator — apakah ada kontrak/indexer resmi yang track total supply weETH across all chains real-time
+- Governance parameter registry — daftar lengkap parameter yang bisa diubah via DAO (fee, reward split, vault risk param, operator threshold) tidak terdokumentasi terpusat
+- DAO treasury multi-sig address dan signer — tidak terverifikasi publik; perlu identifikasi Gnosis Safe address
+- Regulatory engagement status — apakah ada legal counsel, compliance framework, atau komunikasi dengan regulator (SEC, CFTC, EU MiCA)
+- Insurance fund / slashing coverage — apakah Vaults atau protokol memiliki insurance fund untuk slashing loss (Nexus Mutual, Unslashed, dll)
+- Formal verification status — apakah ada kontrak yang diverifikasi formal (Certora, Halmos, K framework) selain audit tradisional
+- Gas optimization metrics — tidak dipublikasikan (storage packing, custom errors, gas report dari Foundry test)

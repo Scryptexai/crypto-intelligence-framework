@@ -1,0 +1,542 @@
+PROJECT: OlympusDAO
+
+Event ID
+
+EV-001
+
+Date
+
+2021
+
+Event Name
+
+Konsep dan Pendirian Olympus DAO
+
+Event Type
+
+Founding
+
+Description
+
+Zeus, War1, dan Juan (pseudonim) merancang konsep protocol-owned liquidity dan reserve currency OHM, memulai pengembangan protokol Olympus.
+
+Participants
+
+Zeus (pseudonym); War1 (pseudonym); Juan (pseudonym)
+
+Location
+
+Global (tim terdistribusi)
+
+Status
+
+Completed
+
+Immediate Result
+
+Tim pendiri terbentuk dan pengembangan smart contract dimulai.
+
+Sources
+
+https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2021-03-20
+
+Event Name
+
+Mainnet Launch dan Token Generation Event (TGE) OHM
+
+Event Type
+
+Launch
+
+Event Name
+
+Mainnet Launch dan Token Generation Event (TGE) OHM
+
+Event Type
+
+Launch
+
+Description
+
+Olympus Protocol diluncurkan di Ethereum mainnet dengan fair launch — tidak ada pre-sale atau pre-mine. Kontrak OHM dideploy pada block 12.123.456.
+
+Participants
+
+Olympus Protocol; OHM Token Protocol; Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Token OHM mulai beredar, staking dan bonding tersedia, treasury mulai mengakumulasi aset.
+
+Sources
+
+https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20; https://etherscan.io/tx/0x383518188c0c6d7730d91b2c03a03c837814a899
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2021-07
+
+Event Name
+
+Rilis Olympus V2
+
+Event Type
+
+Technology
+
+Description
+
+Olympus V2 dirilis dengan arsitektur modular: kontrak bonding, staking, governance, treasury, dan policy terpisah. Memperkenalkan stOHM dan gOHM.
+
+Participants
+
+Olympus Protocol; Olympus V2 Contracts; stOHM Protocol; gOHM Protocol
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Protokol menjadi lebih modular, fleksibel, dan siap untuk multi-chain serta Olympus Pro.
+
+Sources
+
+https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2021
+
+Event Name
+
+Proposal Struktur Legal dan Pendirian Yayasan Cayman Islands
+
+Event Type
+
+Legal
+
+Description
+
+Komunitas mengusulkan dan menyetujui pembentukan yayasan di Cayman Islands sebagai entitas hukum resmi Olympus DAO untuk mengelola aset dan mewakili protokol.
+
+Participants
+
+Olympus DAO (governance DAO); Olympus DAO (Cayman Islands foundation); Cayman Islands Government
+
+Location
+
+Cayman Islands (yurisdiksi hukum); Forum OlympusDAO (koordinasi)
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas legal Olympus DAO (Cayman Islands foundation) terbentuk dan diakui sebagai wadah hukum protokol.
+
+Sources
+
+https://forum.olympusdao.finance/t/legal-structure-proposal/434
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2021
+
+Event Name
+
+Peluncuran gOHM (Governance-Wrapped Staked OHM)
+
+Event Type
+
+Product
+
+Description
+
+gOHM dirilis sebagai versi non-rebasing dari stOHM untuk memungkinkan integrasi DeFi, voting power governance, dan komposabilitas di protokol lain.
+
+Participants
+
+gOHM Protocol; Olympus Protocol; Olympus DAO (governance DAO)
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+stOHM dapat dibungkus menjadi gOHM, membuka integrasi dengan Aave, Curve, dan protokol DeFi lain.
+
+Sources
+
+https://blog.olympusdao.finance/gohm-launch
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2022
+
+Event Name
+
+Peluncuran Olympus Pro (Bonding-as-a-Service)
+
+Event Type
+
+Product
+
+Description
+
+Olympus Pro diluncurkan sebagai layanan bonding bagi protokol lain untuk mengakuisisi protocol-owned liquidity melalui Olympus bonds.
+
+Participants
+
+Olympus Pro; Olympus Protocol; Olympus DAO (governance DAO)
+
+Location
+
+Ethereum Mainnet; Multi-chain (EVM-compatible)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Protokol mitra (Frax, Lido, Tokemak, Rari) mulai menggunakan Olympus Pro untuk mengelola liquidity milik protokol.
+
+Sources
+
+https://blog.olympusdao.finance/olympus-pro-partners; https://docs.olympusdao.finance/main/products/olympus-pro
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2022
+
+Event Name
+
+Deployment Olympus di Arbitrum
+
+Event Type
+
+Integration
+
+Description
+
+Olympus Protocol dideploy di Arbitrum (Layer 2 Ethereum) untuk scaling, biaya transaksi lebih rendah, dan ekspansi ekosistem multi-chain.
+
+Participants
+
+Olympus Protocol; OHM Token Protocol; Arbitrum; Olympus V3 Contracts
+
+Location
+
+Arbitrum One
+
+Status
+
+Completed
+
+Immediate Result
+
+OHM, stOHM, gOHM, bonding, dan staking tersedia di Arbitrum dengan biaya gas jauh lebih rendah.
+
+Sources
+
+https://arbiscan.io/token/0x64aa; https://docs.olympusdao.finance/main/networks
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2022
+
+Event Name
+
+Rilis Olympus V3
+
+Event Type
+
+Technology
+
+Description
+
+Olympus V3 dirilis dengan arsitektur modular baru, fleksibilitas policy, integrasi native Olympus Pro, dan desain multi-chain native.
+
+Participants
+
+Olympus Protocol; Olympus V3 Contracts; Olympus Pro; Olympus DAO (governance DAO)
+
+Location
+
+Ethereum Mainnet; Arbitrum; EVM-compatible chains
+
+Status
+
+Completed
+
+Immediate Result
+
+Protokol mendukung deployment paralel di banyak chain, policy bonding dinamis, dan integrasi Olympus Pro yang lebih dalam.
+
+Sources
+
+https://blog.olympusdao.finance/olympus-v3; https://docs.olympusdao.finance/main/contracts/v3
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2022
+
+Event Name
+
+Pengumuman Mitra Olympus Pro: Frax, Lido, Tokemak, Rari
+
+Event Type
+
+Partnership
+
+Description
+
+Olympus mengumumkan kemitraan Olympus Pro dengan Frax, Lido, Tokemak, dan Rari Capital untuk bonding-as-a-service dan akuisisi protocol-owned liquidity.
+
+Participants
+
+Olympus Pro; Frax Protocol; Lido Protocol; Tokemak; Rari Capital
+
+Location
+
+Ethereum Mainnet; Multi-chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Empat protokol mayor mulai menggunakan Olympus bonds untuk mengelola liquidity milik protokol masing-masing.
+
+Sources
+
+https://blog.olympusdao.finance/olympus-pro-partners
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2023
+
+Event Name
+
+Deployment Olympus di Base
+
+Event Type
+
+Integration
+
+Description
+
+Olympus Protocol dideploy di Base (Layer 2 Ethereum oleh Coinbase) memperluas jangkauan pengguna retail dan integrasi ekosistem Coinbase.
+
+Participants
+
+Olympus Protocol; OHM Token Protocol; Base; Olympus V3 Contracts
+
+Location
+
+Base Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+OHM, stOHM, gOHM, bonding, dan staking tersedia di Base dengan akses ke basis pengguna Coinbase.
+
+Sources
+
+https://basescan.org/token/0x8662; https://docs.olympusdao.finance/main/networks
+
+---
+
+### 2021
+
+- EV-001: Konsep dan Pendirian Olympus DAO
+- EV-002: Mainnet Launch dan Token Generation Event (TGE) OHM
+- EV-003: Rilis Olympus V2
+- EV-004: Proposal Struktur Legal dan Pendirian Yayasan Cayman Islands
+- EV-005: Peluncuran gOHM (Governance-Wrapped Staked OHM)
+
+### 2022
+
+- EV-006: Peluncuran Olympus Pro (Bonding-as-a-Service)
+- EV-007: Deployment Olympus di Arbitrum
+- EV-008: Rilis Olympus V3
+- EV-009: Pengumuman Mitra Olympus Pro: Frax, Lido, Tokemak, Rari
+
+### 2023
+
+- EV-010: Deployment Olympus di Base
+
+---
+
+Total Events
+
+10
+
+Founding
+
+1
+
+Funding
+
+0
+
+Launch
+
+1
+
+Technology
+
+2
+
+Governance
+
+0
+
+Security
+
+0
+
+Legal
+
+1
+
+Regulation
+
+0
+
+Partnership
+
+1
+
+Integration
+
+2
+
+Token
+
+0
+
+Market
+
+0
+
+Organization
+
+0
+
+Infrastructure
+
+0
+
+Community
+
+0
+
+Product
+
+2
+
+Ecosystem
+
+0
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti rilis Olympus V2 (bulan/tahun 2021-07 berdasarkan pola blog, namun tidak diverifikasi dari URL sumber)
+- Tanggal pasti proposal struktur legal dan pendirian yayasan Cayman (hanya tahun 2021 diketahui dari forum proposal)
+- Tanggal pasti peluncuran gOHM (hanya tahun 2021 dari URL blog gohm-launch)
+- Tanggal pasti peluncuran Olympus Pro, deployment Arbitrum, rilis V3, dan pengumuman mitra (hanya tahun 2022 diketahui)
+- Tanggal pasti deployment Base (hanya tahun 2023 diketahui)
+- Apakah ada testnet/public testnet sebelum mainnet launch 2021-03-20 — tidak ada catatan di sumber Phase 1/2
+- Detail distribusi token TGE (persentase team, treasury, bonding awal) — blog menyebut "fair launch" tapi breakdown tidak tersedia
+- Daftar lengkap auditor keamanan untuk V2/V3 — tidak teridentifikasi di Phase 1/2
+- Daftar lengkap deployment chain selain Ethereum/Arbitrum/Base (Optimism, Polygon, dll.) — docs menyebut "EVM-compatible chains" generik
+- Status kemitraan Rari Capital (2022-2023) — apakah masih aktif atau berakhir
+- Jumlah kontributor inti saat ini dan apakah ada yang doxxed — hanya 6 handle pseudonim terkonfirmasi

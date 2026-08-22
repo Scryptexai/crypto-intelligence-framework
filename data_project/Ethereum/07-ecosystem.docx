@@ -1,0 +1,829 @@
+PROJECT: Ethereum
+
+## Ecosystem Position
+
+Primary Sector: Smart contract platform / Layer 1 blockchain (HIGH) [Ethereum.org, https://ethereum.org/en/what-is-ethereum/]
+Secondary Sector: Settlement layer untuk Layer 2 scaling, DeFi, NFT, DAO, infrastructure (HIGH) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report; DefiLlama Ethereum, https://defillama.com/chain/Ethereum]
+Primary Chain: Ethereum Mainnet (L1) (HIGH) [Ethereum.org - Networks, https://ethereum.org/en/developers/docs/networks/]
+Supported Chains: Sepolia (testnet); Holesky (testnet); Ethereum Classic (ETC) — chain terpisah hasil DAO fork; berbagai L2 (Arbitrum, Optimism, Base, Linea, Scroll, zkSync, Starknet, Mantle, Blast, Mode, dll.) yang settle ke Ethereum L1 (HIGH) [Ethereum.org - Networks, https://ethereum.org/en/developers/docs/networks/; L2Beat, https://l2beat.com/; Sepolia, https://sepolia.dev/; Holesky, https://holesky.ethpandaops.io/]
+Sources: https://ethereum.org/en/what-is-ethereum/ ; https://electriccapital.com/developer-report ; https://defillama.com/chain/Ethereum ; https://ethereum.org/en/developers/docs/networks/ ; https://l2beat.com/ ; https://sepolia.dev/ ; https://holesky.ethpandaops.io/
+
+## External Dependencies
+
+Dependency Name: Infura
+Dependency Type: Infrastructure
+Purpose: Penyedia RPC endpoint dan API node Ethereum terkelola; backbone akses jaringan untuk dApp, wallet, L2, dan indexer
+Criticality: Critical
+Status: Live
+Related Entity: Infura
+Related Technology Component: JSON-RPC endpoint (eth_* methods), WebSocket, Archive node access
+Sources: https://www.infura.io/ ; https://consensys.net/blog/infura/infura-joins-consensys/ ; https://messari.io/project/infura/profile
+
+Dependency Name: Alchemy
+Dependency Type: Infrastructure
+Purpose: Penyedia platform pengembang dan Enhanced APIs (NFT API, Notify, Transact); infrastruktur RPC alternatif utama
+Criticality: Critical
+Status: Live
+Related Entity: Alchemy
+Related Technology Component: JSON-RPC endpoint, Enhanced APIs, Webhook/Notify
+Sources: https://www.alchemy.com/ ; https://messari.io/project/alchemy/profile ; https://www.theblock.co/post/2022/alchemy-valuation
+
+Dependency Name: Flashbots (MEV-Boost)
+Dependency Type: Protocol / Service
+Purpose: MEV-Boost relay/builder network untuk Proposer-Builder Separation (PBS); >90% blok Ethereum dibangun via MEV-Boost; mitigasi MEV dan transparansi
+Criticality: Critical
+Status: Live
+Related Entity: Flashbots
+Related Technology Component: MEV-Boost client, Builder API, Relay, PBS (Proposer-Builder Separation)
+Sources: https://flashbots.net/ ; https://github.com/flashbots/mev-boost ; https://mevboost.pics/ ; https://github.com/flashbots/mev-boost-specs
+
+Dependency Name: Lido Finance (stETH)
+Dependency Type: Protocol / Service
+Purpose: Liquid staking token terbesar (stETH) mewakili >25% total ETH staked; memungkinkan staking tanpa 32 ETH minimum dan menjaga likuiditas
+Criticality: High
+Status: Live
+Related Entity: Lido Finance (tidak tercantum di Phase 2 sebagai entity terpisah — dicatat di Open Threads)
+Related Technology Component: stETH contract, withdrawal credentials 0x01, Node Operator registry
+Sources: https://lido.fi/ ; https://www.rated.network/ ; https://beaconcha.in/
+
+Dependency Name: Coinbase (cbETH, Validator Operations)
+Dependency Type: Exchange / Service
+Purpose: Penyedia liquid staking token cbETH; operator validator institusional besar; custodian ETH untuk staking institut
+Criticality: High
+Status: Live
+Related Entity: Coinbase (tidak tercantum di Phase 2 — dicatat di Open Threads)
+Related Technology Component: cbETH contract, validator operations, custody
+Sources: https://www.coinbase.com/cloud/staking ; https://www.rated.network/
+
+Dependency Name: Oracle Providers (Chainlink, Pyth, RedStone, API3)
+Dependency Type: Oracle
+Purpose: Data feed off-chain (harga, randomness, dll.) untuk smart contract DeFi; Chainlink dominan untuk price feeds
+Criticality: High
+Status: Live
+Related Entity: Chainlink (tidak tercantum di Phase 2 — dicatat di Open Threads)
+Related Technology Component: Price feed contracts, VRF, CCIP, Data Streams
+Sources: https://chain.link/ ; https://pyth.network/ ; https://redstone.finance/ ; https://api3.org/ ; https://defillama.com/oracles
+
+Dependency Name: Hyperledger Foundation (Besu)
+Dependency Type: Organization / Infrastructure
+Purpose: Rumah organisasi proyek Hyperledger Besu (klien eksekusi Java enterprise-grade); tata kelola, lisensi Apache 2.0, CI/CD
+Criticality: Medium
+Status: Live
+Related Entity: Hyperledger Foundation (Linux Foundation)
+Related Technology Component: Besu execution client, permissioning, privacy features
+Sources: https://www.hyperledger.org/projects/besu ; https://github.com/hyperledger/besu ; https://www.linuxfoundation.org/
+
+Dependency Name: Cloud Providers (AWS, Google Cloud, Azure, DigitalOcean, Hetzner, OVH)
+Dependency Type: Cloud
+Purpose: Hosting untuk execution/consensus client nodes, validator infrastructure, RPC providers, indexer, archive nodes
+Criticality: High
+Status: Live
+Related Entity: Tidak tercantum di Phase 2 (provider cloud umum) — dicatat di Open Threads
+Related Technology Component: Virtual machines, bare metal, Kubernetes clusters, load balancers, managed blockchain services (AWS Managed Blockchain, Google Cloud Blockchain Node Engine)
+Sources: https://aws.amazon.com/blockchain/ ; https://cloud.google.com/blockchain-node-engine ; https://azure.microsoft.com/en-us/solutions/blockchain/ ; https://www.digitalocean.com/ ; https://www.hetzner.com/ ; https://www.ovhcloud.com/
+
+Dependency Name: libp2p / devp2p
+Dependency Type: Protocol / Networking
+Purpose: Networking layer consensus (libp2p, GossipSub) dan execution (devp2p, RLPx) untuk P2P gossip, discovery, sync
+Criticality: Critical
+Status: Live
+Related Entity: Protocol Labs (libp2p), Ethereum Foundation (devp2p specs)
+Related Technology Component: GossipSub, discovery v5, DHT, RLPx transport
+Sources: https://github.com/libp2p/specs ; https://github.com/ethereum/devp2p ; https://github.com/prysmaticlabs/prysm/tree/master/libp2p ; https://github.com/ethereum/go-ethereum/tree/master/p2p
+
+Dependency Name: KZG Trusted Setup (EIP-4844)
+Dependency Type: Cryptography / Ceremony
+Purpose: Trusted setup ceremony untuk KZG commitments digunakan blob transactions (EIP-4844); ribuan kontributor menghasilkan SRS (Structured Reference String)
+Criticality: Critical (untuk blob data availability)
+Status: Completed (ceremony 2023), Live (on-chain verification)
+Related Entity: Ethereum Foundation, Ethereum Community (kontributor ceremony)
+Related Technology Component: Blob transactions, KZG commitments, blob gas market
+Sources: https://ceremony.ethereum.org/ ; https://eips.ethereum.org/EIPS/eip-4844 ; https://blog.ethereum.org/2023/01/17/kzg-ceremony-launch
+
+Dependency Name: OpenZeppelin Contracts
+Dependency Type: SDK / Library
+Purpose: Library kontrak standar (ERC20, ERC721, Ownable, AccessControl, Upgradeable) digunakan ribuan proyek; standar de facto keamanan
+Criticality: High
+Status: Live
+Related Entity: OpenZeppelin
+Related Technology Component: ERC20, ERC721, ERC1155, Ownable, AccessControl, UUPS/Transparent Proxy, Defender
+Sources: https://github.com/OpenZeppelin/openzeppelin-contracts ; https://docs.openzeppelin.com/contracts/ ; https://www.openzeppelin.com/
+
+Dependency Name: Etherscan / Blockscout
+Dependency Type: Data Provider / Explorer
+Purpose: Block explorer, API on-chain data, contract verification, token tracker; indexer utama untuk pengguna dan developer
+Criticality: High
+Status: Live
+Related Entity: Etherscan (tidak tercantum di Phase 2 — dicatat di Open Threads), Blockscout (tidak tercantum — dicatat di Open Threads)
+Related Technology Component: REST API, WebSocket, contract verification, token info, internal transactions
+Sources: https://etherscan.io/ ; https://blockscout.com/eth/mainnet/ ; https://eth.blockscout.com/
+
+Dependency Name: The Graph
+Dependency Type: Data Provider / Indexing
+Purpose: Decentralized indexing protocol untuk query data on-chain via GraphQL; subgraph untuk DeFi, NFT, DAO, dll.
+Criticality: Medium
+Status: Live
+Related Entity: The Graph (tidak tercantum di Phase 2 — dicatat di Open Threads)
+Related Technology Component: Subgraph, GraphQL API, Indexer network, Curator, Delegator
+Sources: https://thegraph.com/ ; https://github.com/graphprotocol/ ; https://messari.io/project/the-graph/profile
+
+Dependency Name: Kurtosis
+Dependency Type: Developer Tools / Testing
+Purpose: Multi-container testnet orchestration untuk integration testing network upgrades; digunakan EF dan client teams
+Criticality: Medium
+Status: Live
+Related Entity: Kurtosis (tidak tercantum di Phase 2 — dicatat di Open Threads)
+Related Technology Component: Kurtosis enclaves, Ethereum package, network simulation
+Sources: https://github.com/kurtosis-tech/kurtosis ; https://github.com/ethpandaops/kurtosis-ethereum
+
+Dependency Name: Portal Network
+Dependency Type: Protocol / Infrastructure
+Purpose: Lightweight P2P network untuk history/state access (history expiry EIP-4444); alternatif full node untuk light client
+Criticality: Low (belum production)
+Status: Planned / Development
+Related Entity: Ethereum Foundation, Portal Network contributors
+Related Technology Component: Portal wire protocol, history network, state network, gossip network
+Sources: https://github.com/ethereum/portal-network-specs ; https://ethereum.org/en/roadmap/state-expiry/
+
+## Major Integrations
+
+Integration Name: Arbitrum One (Arbitrum Rollup)
+Integrated With: Offchain Labs / Arbitrum Foundation
+Purpose: Optimistic rollup L2 dengan fraud proof; settle ke Ethereum L1; kompatibel EVM; terbesar TVL L2
+Status: Live
+Related Historical Event ID: EV-028 (Dencun upgrade mengaktifkan blob space untuk L2)
+Sources: https://arbitrum.io/ ; https://l2beat.com/scaling/arbitrum ; https://blog.ethereum.org/2024/03/13/dencun-announcement
+
+Integration Name: OP Mainnet (Optimism)
+Integrated With: OP Labs / Optimism Foundation
+Purpose: Optimistic rollup L2 (OP Stack); settle ke Ethereum L1; Superchain vision; Base, Mode, Mantle, dll. menggunakan OP Stack
+Status: Live
+Related Historical Event ID: EV-028 (Dencun upgrade mengaktifkan blob space untuk L2)
+Sources: https://www.optimism.io/ ; https://l2beat.com/scaling/optimism ; https://blog.ethereum.org/2024/03/13/dencun-announcement
+
+Integration Name: Base
+Integrated With: Coinbase
+Purpose: L2 berbasis OP Stack (Optimism); incubate oleh Coinbase; settle ke Ethereum L1; ekosistem consumer/app focus
+Status: Live
+Related Historical Event ID: EV-028 (Dencun upgrade mengaktifkan blob space untuk L2)
+Sources: https://base.org/ ; https://l2beat.com/scaling/base ; https://blog.ethereum.org/2024/03/13/dencun-announcement
+
+Integration Name: Linea
+Integrated With: Consensys
+Purpose: zkEVM rollup L2 (Type 2 zkEVM); settle ke Ethereum L1; integrasi native MetaMask, Infura; Consensys-backed
+Status: Live
+Related Historical Event ID: EV-028 (Dencun upgrade mengaktifkan blob space untuk L2)
+Sources: https://linea.build/ ; https://l2beat.com/scaling/linea ; https://consensys.net/linea/ ; https://blog.ethereum.org/2024/03/13/dencun-announcement
+
+Integration Name: zkSync Era
+Integrated With: Matter Labs
+Purpose: zkEVM rollup L2 (Type 4 zkEVM); settle ke Ethereum L1; account abstraction native; compiler LLVM-based
+Status: Live
+Related Historical Event ID: EV-028 (Dencun upgrade mengaktifkan blob space untuk L2)
+Sources: https://zksync.io/ ; https://l2beat.com/scaling/zksync-era ; https://blog.ethereum.org/2024/03/13/dencun-announcement
+
+Integration Name: Scroll
+Integrated With: Scroll Foundation
+Purpose: zkEVM rollup L2 (Type 2 zkEVM, bytecode-level compatibility); settle ke Ethereum L1; focus EVM equivalence
+Status: Live
+Related Historical Event ID: EV-028 (Dencun upgrade mengaktifkan blob space untuk L2)
+Sources: https://scroll.io/ ; https://l2beat.com/scaling/scroll ; https://blog.ethereum.org/2024/03/13/dencun-announcement
+
+Integration Name: Starknet
+Integrated With: StarkWare
+Purpose: Validity rollup (ZK-STARK) dengan Cairo VM; tidak EVM-equivalent (native Cairo); settle ke Ethereum L1; high throughput
+Status: Live
+Related Historical Event ID: EV-028 (Dencun upgrade mengaktifkan blob space untuk L2)
+Sources: https://starknet.io/ ; https://l2beat.com/scaling/starknet ; https://blog.ethereum.org/2024/03/13/dencun-announcement
+
+Integration Name: Polygon PoS / Polygon zkEVM
+Integrated With: Polygon Labs
+Purpose: Polygon PoS (sidechain dengan checkpoint ke Ethereum) dan Polygon zkEVM (Type 1 zkEVM); settle/bridge ke Ethereum L1
+Status: Live
+Related Historical Event ID: EV-028 (Dencun upgrade mengaktifkan blob space untuk L2)
+Sources: https://polygon.technology/ ; https://l2beat.com/scaling/polygon-zkevm ; https://blog.ethereum.org/2024/03/13/dencun-announcement
+
+Integration Name: Mantle
+Integrated With: Mantle Core Contributors / BitDAO
+Purpose: Optimistic rollup L2 (modular architecture, EigenDA untuk data availability); settle ke Ethereum L1; OP Stack variant
+Status: Live
+Related Historical Event ID: EV-028 (Dencun upgrade mengaktifkan blob space untuk L2)
+Sources: https://www.mantle.xyz/ ; https://l2beat.com/scaling/mantle ; https://blog.ethereum.org/2024/03/13/dencun-announcement
+
+Integration Name: Blast
+Integrated With: Blast Foundation
+Purpose: L2 dengan native yield (ETH staking yield + T-bill yield via MakerDAO); settle ke Ethereum L1; OP Stack based
+Status: Live
+Related Historical Event ID: EV-028 (Dencun upgrade mengaktifkan blob space untuk L2)
+Sources: https://blast.io/ ; https://l2beat.com/scaling/blast ; https://blog.ethereum.org/2024/03/13/dencun-announcement
+
+Integration Name: MetaMask (Wallet + Snaps)
+Integrated With: Consensys
+Purpose: Wallet non-custodial paling populer (>30M pengguna); Snaps extensibility; integrasi RPC Infura default; bridge ke L2
+Status: Live
+Related Historical Event ID: EV-030 (Pembentukan Consensys), EV-031 (Peluncuran Infura)
+Sources: https://metamask.io/ ; https://consensys.net/metamask/ ; https://snaps.metamask.io/
+
+Integration Name: Rainbow Wallet / Coinbase Wallet / Rabby / Frame
+Integrated With: Rainbow, Coinbase, Rabby Team, Frame Team
+Purpose: Wallet alternatif dengan UX berbeda; multi-chain support; Rabby fokus power user, Frame fokus hardware wallet integration
+Status: Live
+Related Historical Event ID: Tidak ada event ID spesifik di Phase 3
+Sources: https://rainbow.me/ ; https://www.coinbase.com/wallet ; https://rabby.io/ ; https://frame.sh/
+
+Integration Name: Uniswap (v2, v3, v4, UniswapX)
+Integrated With: Uniswap Labs
+Purpose: DEX terbesar di Ethereum; AMM v2/v3, hook-based v4, intent-based UniswapX; liquidity pusat DeFi
+Status: Live
+Related Historical Event ID: Tidak ada event ID spesifik di Phase 3
+Sources: https://uniswap.org/ ; https://github.com/Uniswap ; https://blog.uniswap.org/
+
+Integration Name: Aave (v2, v3, Aave V3 Ethereum Market)
+Integrated With: Aave Companies
+Purpose: Lending protocol terbesar; money market ETH, stablecoin, LST; flash loan; GHO stablecoin
+Status: Live
+Related Historical Event ID: Tidak ada event ID spesifik di Phase 3
+Sources: https://aave.com/ ; https://github.com/aave ; https://app.aave.com/
+
+Integration Name: MakerDAO / Sky (DAI/USDS, Spark, SubDAOs)
+Integrated With: MakerDAO / Sky Ecosystem
+Purpose: Stablecoin DAI/USDS terdesentralisasi; collateral ETH, LST, RWA; Spark lending; SubDAO architecture; Endgame plan
+Status: Live
+Related Historical Event ID: Tidak ada event ID spesifik di Phase 3
+Sources: https://makerdao.com/ ; https://sky.money/ ; https://spark.fi/ ; https://endgame.makerdao.com/
+
+Integration Name: Lido Finance (stETH, wstETH, Lido V2)
+Integrated With: Lido DAO / Lido Contributors
+Purpose: Liquid staking terbesar; stETH mewakili >25% ETH staked; Node Operator registry; DVT adoption (Obol, SSV)
+Status: Live
+Related Historical Event ID: Tidak ada event ID spesifik di Phase 3
+Sources: https://lido.fi/ ; https://www.rated.network/ ; https://obol.tech/ ; https://ssv.network/
+
+Integration Name: EigenLayer (Restaking)
+Integrated With: EigenLayer Labs
+Purpose: Restaking protokol; ETH/stETH restake untuk secure AVS (Actively Validated Services); eigenDA untuk data availability
+Status: Live (mainnet April 2024)
+Related Historical Event ID: Tidak ada event ID spesifik di Phase 3
+Sources: https://www.eigenlayer.xyz/ ; https://docs.eigenlayer.xyz/ ; https://www.rated.network/
+
+Integration Name: Chainlink (Price Feeds, VRF, CCIP, Data Streams)
+Integrated With: Chainlink Labs
+Purpose: Oracle network dominan; price feeds untuk DeFi, VRF untuk randomness, CCIP cross-chain messaging, Data Streams low-latency
+Status: Live
+Related Historical Event ID: Tidak ada event ID spesifik di Phase 3
+Sources: https://chain.link/ ; https://docs.chain.link/ ; https://blog.chain.link/
+
+Integration Name: The Graph (Subgraphs, Decentralized Indexing)
+Integrated With: The Graph Foundation / Edge & Node
+Purpose: Decentralized indexing; subgraph untuk Uniswap, Aave, ENS, dll.; GraphQL API; migration ke decentralized network (Sunrise)
+Status: Live
+Related Historical Event ID: Tidak ada event ID spesifik di Phase 3
+Sources: https://thegraph.com/ ; https://github.com/graphprotocol/ ; https://thegraph.com/blog/sunrise-upgrade
+
+Integration Name: ENS (Ethereum Name Service)
+Integrated With: ENS DAO / True Names Limited
+Purpose: Naming system .eth; reverse resolution; text records; integrasi wallet, dApp, browser; L2 support (L2 resolvers)
+Status: Live
+Related Historical Event ID: Tidak ada event ID spesifik di Phase 3
+Sources: https://ens.domains/ ; https://github.com/ensdomains/ ; https://docs.ens.domains/
+
+Integration Name: OpenZeppelin Defender (Security Operations)
+Integrated With: OpenZeppelin
+Purpose: Otomatisasi keamanan: monitoring, admin, relayer, autotasks, upgrade management; digunakan proyek besar
+Status: Live
+Related Historical Event ID: Tidak ada event ID spesifik di Phase 3
+Sources: https://www.openzeppelin.com/defender ; https://docs.openzeppelin.com/defender/
+
+Integration Name: Safe (Gnosis Safe / Multi-sig)
+Integrated With: Safe DAO / Safe Core Team
+Purpose: Smart contract wallet multi-sig standar; account abstraction entry point; Safe{Core} SDK, Safe{Wallet}, modules
+Status: Live
+Related Historical Event ID: Tidak ada event ID spesifik di Phase 3
+Sources: https://safe.global/ ; https://github.com/safe-global/ ; https://docs.safe.global/
+
+## Infrastructure Providers
+
+Provider: Infura
+Service: RPC endpoint (JSON-RPC, WebSocket), Archive node, Web3 API, NFT API, Gas API, Managed Ethereum nodes
+Criticality: Critical
+Status: Live
+Sources: https://www.infura.io/ ; https://consensys.net/blog/infura/infura-joins-consensys/ ; https://messari.io/project/infura/profile
+
+Provider: Alchemy
+Service: RPC endpoint (Enhanced APIs), NFT API, Notify (webhooks), Transact (transaction simulation), Account Abstraction SDK, Subgraphs
+Criticality: Critical
+Status: Live
+Sources: https://www.alchemy.com/ ; https://messari.io/project/alchemy/profile ; https://www.theblock.co/post/2022/alchemy-valuation
+
+Provider: QuickNode
+Service: RPC endpoint, Core API, Streams (real-time data), Functions (serverless), IPFS, Managed nodes
+Criticality: High
+Status: Live
+Sources: https://www.quicknode.com/ ; https://messari.io/project/quicknode/profile
+
+Provider: Chainstack
+Service: Managed nodes (Ethereum, L2), RPC endpoint, Subgraphs, IPFS, Marketplace
+Criticality: Medium
+Status: Live
+Sources: https://chainstack.com/ ; https://messari.io/project/chainstack/profile
+
+Provider: Blockdaemon
+Service: Staking infrastructure (validator operations), Node API, RPC endpoint, Institutional custody integration
+Criticality: High
+Status: Live
+Sources: https://blockdaemon.com/ ; https://messari.io/project/blockdaemon/profile
+
+Provider: Figment
+Service: Staking infrastructure (validator), Data API (Hubble), Learn platform, Protocol support
+Criticality: High
+Status: Live
+Sources: https://figment.io/ ; https://messari.io/project/figment/profile
+
+Provider: Kiln
+Service: Staking infrastructure (validator), DeFi staking integration, Enterprise staking API
+Criticality: High
+Status: Live
+Sources: https://kiln.fi/ ; https://messari.io/project/kiln/profile
+
+Provider: P2P.org / P2P Validator
+Service: Validator operations (non-custodial), Staking API, Infrastructure for institutions
+Criticality: High
+Status: Live
+Sources: https://p2p.org/ ; https://messari.io/project/p2p-org/profile
+
+Provider: Allnodes
+Service: Validator hosting, Staking dashboard, Non-custodial staking, Monitoring
+Criticality: Medium
+Status: Live
+Sources: https://www.allnodes.com/ ; https://messari.io/project/allnodes/profile
+
+Provider: StakeFish
+Service: Validator operations, Staking pool, Non-custodial staking
+Criticality: Medium
+Status: Live
+Sources: https://stake.fish/ ; https://messari.io/project/stakefish/profile
+
+Provider: Amazon Web Services (AWS)
+Service: Managed Blockchain (Ethereum), EC2 for self-managed nodes, Blockchain Node Engine (preview), KMS for key management
+Criticality: High
+Status: Live
+Sources: https://aws.amazon.com/blockchain/ ; https://aws.amazon.com/managed-blockchain/
+
+Provider: Google Cloud Platform (GCP)
+Service: Blockchain Node Engine (managed Ethereum nodes), Compute Engine, Cloud Storage for archive, Data Analytics (BigQuery public datasets)
+Criticality: High
+Status: Live
+Sources: https://cloud.google.com/blockchain-node-engine ; https://console.cloud.google.com/marketplace/details/google/blockchain-node-engine
+
+Provider: Microsoft Azure
+Service: Azure Blockchain Service (deprecated), Confidential Ledger, Managed Applications untuk Besu/Quorum, AKS for validator clusters
+Criticality: Medium
+Status: Live (Blockchain Service deprecated, tapi infra lain aktif)
+Sources: https://azure.microsoft.com/en-us/solutions/blockchain/ ; https://azuremarketplace.microsoft.com/en-us/marketplace/apps/consensys.quorum-blockchain
+
+Provider: Hetzner / OVH / DigitalOcean / Linode / Vultr
+Service: Bare metal dan VPS untuk self-hosted validator, RPC nodes, archive nodes; cost-effective untuk solo staker dan operator kecil
+Criticality: High (aggregate)
+Status: Live
+Sources: https://www.hetzner.com/ ; https://www.ovhcloud.com/ ; https://www.digitalocean.com/ ; https://www.linode.com/ ; https://www.vultr.com/
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes (ETH/USDT, ETH/BTC, ETH/BUSD, ETH/FDUSD, dll.)
+Perpetual: Yes (ETHUSDT, ETHUSD, COIN-M ETHUSD)
+OTC: Yes (Binance OTC Portal)
+Launchpool: Yes (historical ETH staking products, ETH 2.0 staking)
+Status: Live
+Sources: https://www.binance.com/en/trade/ETH_USDT ; https://www.binance.com/en/futures/ETHUSDT ; https://www.binance.com/en/otc ; https://www.binance.com/en/launchpool
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes (ETH/USD, ETH/USDC, ETH/EUR, ETH/GBP)
+Perpetual: Yes (Coinbase International Exchange ETH-PERP, Coinbase Derivatives)
+OTC: Yes (Coinbase Prime OTC)
+Launchpool: Yes (Coinbase Staking ETH, cbETH)
+Status: Live
+Sources: https://www.coinbase.com/price/ethereum ; https://international.coinbase.com/ ; https://prime.coinbase.com/ ; https://www.coinbase.com/cloud/staking
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Yes (ETH/USD, EUR, GBP, CAD, JPY, USDT, USDC)
+Perpetual: Yes (Kraken Futures ETH/USD, ETH/USDT)
+OTC: Yes (Kraken OTC Desk)
+Launchpool: Yes (Kraken Staking ETH)
+Status: Live
+Sources: https://trade.kraken.com/markets/kraken/eth/usd ; https://futures.kraken.com/ ; https://www.kraken.com/otc ; https://www.kraken.com/staking
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes (ETH/USDT, ETH/USDC)
+Perpetual: Yes (ETHUSDT, ETHUSD inverse, ETHUSDC)
+OTC: Yes (Bybit OTC)
+Launchpool: Yes (Bybit Launchpool, ETH staking products)
+Status: Live
+Sources: https://www.bybit.com/trade/spot/ETH/USDT ; https://www.bybit.com/trade/derivatives/ETHUSDT ; https://www.bybit.com/otc ; https://www.bybit.com/launchpool
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes (ETH/USDT, ETH/USDC, ETH/BTC)
+Perpetual: Yes (ETH-USDT-SWAP, ETH-USD-SWAP)
+OTC: Yes (OKX OTC)
+Launchpool: Yes (OKX Jumpstart, Earn ETH staking)
+Status: Live
+Sources: https://www.okx.com/trade/ETH-USDT ; https://www.okx.com/trade-swap/ETH-USDT-SWAP ; https://www.okx.com/otc ; https://www.okx.com/earn
+
+Exchange: Bitfinex
+Listing Status: Listed
+Spot: Yes (ETH/USD, ETH/USDT, ETH/EUR)
+Perpetual: Yes (Bitfinex Derivatives ETH/USD, ETH/USDT)
+OTC: Yes (Bitfinex OTC)
+Launchpool: No (staking via Bitfinex Staking Rewards)
+Status: Live
+Sources: https://trading.bitfinex.com/t/ETH:USD ; https://www.bitfinex.com/derivatives ; https://www.bitfinex.com/otc ; https://www.bitfinex.com/staking
+
+Exchange: Huobi / HTX
+Listing Status: Listed
+Spot: Yes (ETH/USDT, ETH/BTC, ETH/USDC)
+Perpetual: Yes (HTX Futures ETH/USDT, Coin-M ETH/USD)
+OTC: Yes (HTX OTC)
+Launchpool: Yes (HTX PrimePool, Staking)
+Status: Live
+Sources: https://www.htx.com/trade/eth_usdt ; https://www.htx.com/futures/eth_usdt ; https://www.htx.com/otc ; https://www.htx.com/earn
+
+Exchange: Uniswap (DEX)
+Listing Status: Listed (permissionless)
+Spot: Yes (ETH/USDC, ETH/USDT, ETH/DAI, ETH/WBTC, dll. — semua pair permissionless)
+Perpetual: No (Uniswap v4 hooks memungkinkan limit order, tapi bukan perpetual native)
+OTC: No (OTC via agregator seperti CoW Swap, 1inch, Matcha)
+Launchpool: No
+Status: Live
+Sources: https://app.uniswap.org/ ; https://github.com/Uniswap/v4-core ; https://www.coinbase.com/price/ethereum (DEX liquidity reference)
+
+Exchange: Curve Finance (DEX)
+Listing Status: Listed (permissionless)
+Spot: Yes (stETH/ETH, rETH/ETH, cbETH/ETH, frxETH/ETH, ETH/USDC, dll. — stable/LST pools)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Live
+Sources: https://curve.fi/ ; https://dao.curve.fi/ ; https://www.lido.fi/ (stETH pool reference)
+
+## Wallet Ecosystem
+
+Wallet: MetaMask
+Support Type: Non-custodial browser extension + mobile; EVM-compatible; Snaps extensibility; Infura RPC default; Hardware wallet support (Ledger, Trezor, GridPlus, Keystone); Account Abstraction (ERC-4337 via Snaps, EIP-7702 future)
+Status: Live
+Sources: https://metamask.io/ ; https://snaps.metamask.io/ ; https://consensys.net/metamask/ ; https://metamask.io/hardware-wallets/
+
+Wallet: Rainbow Wallet
+Support Type: Non-custodial mobile (iOS/Android); EVM multi-chain; NFT display; Social features; Hardware wallet support (Ledger); AA experimental
+Status: Live
+Sources: https://rainbow.me/ ; https://github.com/rainbow-me/rainbow
+
+Wallet: Coinbase Wallet
+Support Type: Non-custodial browser extension + mobile; Multi-chain (EVM + Solana + Bitcoin); Coinbase exchange integration; Smart wallet (AA); dApp browser
+Status: Live
+Sources: https://www.coinbase.com/wallet ; https://www.coinbase.com/wallet/smart-wallet
+
+Wallet: Rabby Wallet
+Support Type: Non-custodial browser extension; Multi-chain EVM; Transaction simulation; Hardware wallet support (Ledger, Trezor, GridPlus, Keystone); Power user focus
+Status: Live
+Sources: https://rabby.io/ ; https://github.com/DeBankDeFi/rabby-wallet
+
+Wallet: Frame
+Support Type: Non-custodial desktop (macOS/Windows/Linux) + browser companion; Hardware wallet native (Ledger, Trezor, GridPlus, Keystone); EVM; Transaction simulation; Privacy focus
+Status: Live
+Sources: https://frame.sh/ ; https://github.com/frameth/frame
+
+Wallet: Ledger (Hardware)
+Support Type: Hardware wallet (Nano S Plus, Nano X, Stax, Flex); Ledger Live app; Ethereum app; Blind signing protection; ERC-20/NFT support; Staking via Ledger Live (Lido, Kiln, Figment)
+Status: Live
+Sources: https://www.ledger.com/ ; https://www.ledger.com/ethereum-wallet ; https://www.ledger.com/staking
+
+Wallet: Trezor (Hardware)
+Support Type: Hardware wallet (Model One, Safe 3, Safe 5); Trezor Suite; Ethereum support; Shamir backup; Passphrase; Staking via Trezor Suite (EigenLayer, Kiln, etc.)
+Status: Live
+Sources: https://trezor.io/ ; https://trezor.io/coins/ETH ; https://suite.trezor.io/
+
+Wallet: Safe (Gnosis Safe)
+Support Type: Smart contract wallet multi-sig; Safe{Wallet} web/mobile; Safe{Core} SDK; Modules (Social Recovery, Sign Message, etc.); Account Abstraction entry point (ERC-4337, EIP-7702)
+Status: Live
+Sources: https://safe.global/ ; https://github.com/safe-global/ ; https://docs.safe.global/
+
+Wallet: Argent
+Support Type: Smart contract wallet (Account Abstraction native); zkSync Era L2 focus; Social recovery; Guardian; DeFi integrations; Argent X (Starknet)
+Status: Live
+Sources: https://www.argent.xyz/ ; https://github.com/argentlabs/
+
+Wallet: Braavos
+Support Type: Smart contract wallet (Account Abstraction); Starknet native; Hardware signer support; Social recovery; Multi-call; Session keys
+Status: Live
+Sources: https://braavos.app/ ; https://github.com/braavos-wallet/
+
+Wallet: Trust Wallet
+Support Type: Non-custodial mobile + browser extension; Multi-chain (EVM + non-EVM); Binance ecosystem; Staking; dApp browser; Hardware wallet support (Ledger)
+Status: Live
+Sources: https://trustwallet.com/ ; https://github.com/trustwallet/
+
+Wallet: Phantom
+Support Type: Non-custodial browser extension + mobile; Multi-chain (Solana, Ethereum, Polygon, Bitcoin); NFT focus; Hardware wallet support (Ledger)
+Status: Live
+Sources: https://phantom.app/ ; https://github.com/phantom/
+
+## Developer Ecosystem
+
+SDK: Hardhat
+Description: Development environment, testing, deployment, local network (Hardhat Network); TypeScript/JavaScript; plugin ecosystem; forking mainnet
+Sources: https://hardhat.org/ ; https://github.com/NomicFoundation/hardhat ; https://hardhat.org/hardhat-runner/docs/plugins
+
+SDK: Foundry
+Description: Rust-based toolchain (forge, cast, anvil, chisel); fast testing, fuzzing, invariant testing, cheatcodes; Solidity scripting; Anvil local testnet
+Sources: https://github.com/foundry-rs/foundry ; https://book.getfoundry.sh/ ; https://github.com/foundry-rs/forge-std
+
+SDK: ethers.js / viem
+Description: Library interaksi Ethereum (RPC, wallet, contract, utils, ENS); viem: type-safe, modular, modern alternative; ethers.js: established, v6 modular
+Sources: https://github.com/ethers-io/ethers.js ; https://viem.sh/ ; https://docs.ethers.org/v6/
+
+SDK: web3.py
+Description: Python library untuk Ethereum JSON-RPC; async support; middleware; testing utilities; integration dengan Brownie, Ape
+Sources: https://github.com/ethereum/web3.py ; https://web3py.readthedocs.io/
+
+SDK: OpenZeppelin Contracts
+Description: Library kontrak standar (ERC20, ERC721, ERC1155, Ownable, AccessControl, UUPS/Transparent Proxy, Governor, TimelockController)
+Sources: https://github.com/OpenZeppelin/openzeppelin-contracts ; https://docs.openzeppelin.com/contracts/ ; https://www.openzeppelin.com/contracts
+
+SDK: Solmate
+Description: Gas-optimized contract library (ERC20, ERC721, ERC1155, Auth, Owned, ReentrancyGuard); minimal, assembly-optimized
+Sources: https://github.com/transmissions11/solmate ; https://solmate.io/
+
+SDK: Forge Standard Library (forge-std)
+Description: Testing utilities untuk Foundry (console.log, cheatcodes vm.*, stdError, stdStorage, stdMath, test helpers)
+Sources: https://github.com/foundry-rs/forge-std ; https://book.getfoundry.sh/reference/forge-std/
+
+SDK: Solady
+Description: Gas-optimized Solidity library (Vector, ERC20, ERC721, FixedPointMath, LibBitmap, sorting);.Vector gebrauchs heavily used di Uniswap v4
+Sources: https://github.com/Vectorized/solady ; https://solady.io/
+
+API: Infura API
+Description: JSON-RPC (eth_*, debug_*, trace_*), WebSocket, Archive, NFT API, Gas API, Web3 API; rate-limited tiers
+Sources: https://www.infura.io/docs ; https://docs.infura.io/
+
+API: Alchemy API
+Description: JSON-RPC (Enhanced), NFT API, Token API, Transact API, Notify (webhooks), Subgraphs, Account Abstraction SDK, Gas Manager
+Sources: https://docs.alchemy.com/ ; https://www.alchemy.com/docs
+
+API: QuickNode API
+Description: JSON-RPC, Core API (token, NFT, transaction), Streams (real-time), Functions (serverless), IPFS gateway
+Sources: https://www.quicknode.com/docs ; https://www.quicknode.com/docs/ethereum
+
+API: The Graph API
+Description: GraphQL endpoint untuk subgraph (Uniswap, Aave, ENS, dll.); Hosted Service (legacy) + Decentralized Network (Sunrise); Gateway
+Sources: https://thegraph.com/docs/ ; https://thegraph.com/docs/en/developer/create-subgraph-hosted/ ; https://thegraph.com/blog/sunrise-upgrade
+
+API: Etherscan API
+Description: REST API untuk accounts, transactions, blocks, contracts, tokens, logs, gas tracker, contract verification; rate-limited
+Sources: https://docs.etherscan.io/ ; https://etherscan.io/apis
+
+API: Blockscout API
+Description: REST API open-source explorer; accounts, transactions, blocks, tokens, contracts, stats; self-hostable
+Sources: https://docs.blockscout.com/ ; https://github.com/blockscout/blockscout
+
+Developer Tools: Foundry (forge, cast, anvil, chisel)
+Description: Sudah tercantum di SDK; anvil = local testnet dengan fork mainnet, time travel, state manipulation, impersonation
+Sources: https://book.getfoundry.sh/reference/anvil/ ; https://book.getfoundry.sh/cheatcodes/
+
+Developer Tools: Tenderly
+Description: Debugging, simulation, monitoring, gas profiler, transaction simulator, fork mainnet, alerting, CI/CD integration
+Sources: https://tenderly.co/ ; https://docs.tenderly.co/
+
+Developer Tools: Kurtosis
+Description: Multi-container testnet orchestration; Ethereum package untuk network upgrades testing; deterministic environments
+Sources: https://github.com/kurtosis-tech/kurtosis ; https://github.com/ethpandaops/kurtosis-ethereum
+
+Developer Tools: Slither
+Description: Static analysis framework (Trail of Bits); vulnerability detection; printer; detector; Crytic integration
+Sources: https://github.com/crytic/slither ; https://www.trailofbits.com/ ; https://slither.readthedocs.io/
+
+Developer Tools: Echidna
+Description: Fuzzing/property-based testing untuk smart contracts (Trail of Bits); grammar-based fuzzing; corpus collection
+Sources: https://github.com/crytic/echidna ; https://www.trailofbits.com/ ; https://echidna.readthedocs.io/
+
+Developer Tools: Certora Prover
+Description: Formal verification tool untuk smart contracts; CVL (Certora Verification Language); prover cloud; CI/CD integration
+Sources: https://www.certora.com/ ; https://docs.certora.com/ ; https://github.com/Certora/Projects
+
+Developer Tools: Ape (ApeWorx)
+Description: Python-based development framework; plugin architecture; testing, deployment, scripting; integration dengan web3.py, Brownie-style
+Sources: https://github.com/ApeWorX/ape ; https://docs.apeworx.io/
+
+Developer Tools: Brownie
+Description: Python-based framework (legacy, maintenance mode); testing, deployment, console; digantikan Foundry/Hardhat/Ape
+Sources: https://github.com/eth-brownie/brownie ; https://eth-brownie.readthedocs.io/
+
+Developer Tools: Solidity (solc)
+Description: Compiler Solidity (C++); Yul intermediate representation; optimizer; via npm (solcjs), Docker, binary; version management (svm, foundryup)
+Sources: https://github.com/ethereum/solidity ; https://docs.soliditylang.org/ ; https://soliditylang.org/
+
+Developer Tools: Vyper
+Description: Pythonic smart contract language; formal verification friendly; compiler Python-based; security-focused; limited features vs Solidity
+Sources: https://github.com/vyperlang/vyper ; https://vyper.readthedocs.io/ ; https://vyper.fyi/
+
+Developer Tools: Yul
+Description: Intermediate language untuk inline assembly, optimizer; digunakan solc optimizer; low-level EVM control
+Sources: https://docs.soliditylang.org/en/latest/yul.html ; https://github.com/ethereum/solidity/tree/develop/yul
+
+Open Source Repository: Ethereum GitHub Organization
+Description: Repositori utama protokol: go-ethereum (Geth), consensus-specs, execution-specs, execution-apis, consensus-apis, EIPs, yellowpaper, devp2p, portal-network-specs
+Sources: https://github.com/ethereum ; https://github.com/ethereum/go-ethereum ; https://github.com/ethereum/consensus-specs ; https://github.com/ethereum/execution-specs ; https://github.com/ethereum/EIPs
+
+Open Source Repository: Client Repositories
+Description: Geth (go-ethereum), Besu (hyperledger/besu), Nethermind (NethermindEth/nethermind), Erigon (ledgerwatch/erigon), Prysm (prysmaticlabs/prysm), Lighthouse (sigp/lighthouse), Teku (Consensys/teku), Nimbus (status-im/nimbus-eth2), Lodestar (ChainSafe/lodestar), Reth (paradigmxyz/reth)
+Sources: https://github.com/ethereum/go-ethereum ; https://github.com/hyperledger/besu ; https://github.com/NethermindEth/nethermind ; https://github.com/ledgerwatch/erigon ; https://github.com/prysmaticlabs/prysm ; https://github.com/sigp/lighthouse ; https://github.com/Consensys/teku ; https://github.com/status-im/nimbus-eth2 ; https://github.com/ChainSafe/lodestar ; https://github.com/paradigmxyz/reth
+
+Open Source Repository: Tooling Repositories
+Description: Hardhat (NomicFoundation/hardhat), Foundry (foundry-rs/foundry), ethers.js (ethers-io/ethers.js), viem (wevm/viem), web3.py (ethereum/web3.py), OpenZeppelin Contracts (OpenZeppelin/openzeppelin-contracts), Slither (crytic/slither), Echidna (crytic/echidna), Kurtosis (kurtosis-tech/kurtosis)
+Sources: https://github.com/NomicFoundation/hardhat ; https://github.com/foundry-rs/foundry ; https://github.com/ethers-io/ethers.js ; https://github.com/wevm/viem ; https://github.com/ethereum/web3.py ; https://github.com/OpenZeppelin/openzeppelin-contracts ; https://github.com/crytic/slither ; https://github.com/crytic/echidna ; https://github.com/kurtosis-tech/kurtosis
+
+Developer Portal: Ethereum.org Developers
+Description: Dokumentasi resmi pengembang: tutorial, konsep, tools, standards (ERC), scaling, security, running nodes, staking
+Sources: https://ethereum.org/en/developers/ ; https://ethereum.org/en/developers/docs/
+
+Developer Portal: Ethereum Foundation Blog
+Description: Pengumuman resmi upgrade, devnet, research, grants, security, governance; tag "developers", "research", "upgrades"
+Sources: https://blog.ethereum.org/ ; https://blog.ethereum.org/category/developers/ ; https://blog.ethereum.org/category/research/
+
+Developer Portal: EthStaker
+Description: Komunitas teknis staker; guides (solo staking, DVT, monitoring), Discord, OATs, workshops, client diversity dashboard
+Sources: https://ethstaker.cc/ ; https://github.com/ethstaker/ ; https://clientdiversity.org/
+
+Developer Portal: EIPs Repository
+Description: Proses EIP (EIP-1), daftar EIP aktif/final, draft, review; Ethereum Magicians forum link; EIP editors
+Sources: https://eips.ethereum.org/ ; https://github.com/ethereum/EIPs ; https://ethereum-magicians.org/
+
+Developer Portal: EthResearch
+Description: Forum riset protokol (consensus, cryptography, scaling, economics, governance); posts dari Justin Drake, Dankrad Feist, Vitalik, dll.
+Sources: https://ethresear.ch/ ; https://github.com/ethereum/research
+
+Hackathon: ETHGlobal
+Description: Seri hackathon global (ETHGlobal Tokyo, Bangkok, Singapore, New York, London, Paris, dll.); prize pool besar; sponsor protokol besar; project showcase
+Sources: https://ethglobal.com/ ; https://ethglobal.com/events
+
+Hackathon: ETHDenver
+Description: Hackathon terbesar dunia (tahun 2024: >20.000 peserta); BUIDL week; prize pool jutaan USD; sponsor ekosistem penuh
+Sources: https://www.ethdenver.com/ ; https://buidl.ethdenver.com/
+
+Hackathon: ETHSafari / ETHLisbon / ETHTokyo / ETHSingapore / ETHBrussels / ETHRome / ETHMexico / ETHIndia / ETHBogotá / ETHKL / ETHWarsaw / ETHVietnam / ETHAccra / ETHDam / ETHGlobal events
+Description: Hackathon komunitas regional berkelanjutan; fokus lokal + global; sering produce proyek yang mendapat grants
+Sources: https://ethsafari.xyz/ ; https://ethlisbon.xyz/ ; https://ethtokyo.com/ ; https://ethsingapore.xyz/ ; https://ethbrussels.xyz/ ; https://ethrome.xyz/ ; https://ethmexico.dev/ ; https://ethindia.co/ ; https://ethbogota.com/ ; https://ethkl.com/ ; https://ethwarsaw.dev/ ; https://ethvietnam.dev/ ; https://ethaccra.xyz/ ; https://ethdam.nl/ ; https://ethglobal.com/events
+
+Grant Program: Ethereum Foundation Grants (ESP - Ecosystem Support Program)
+Description: Hibah untuk open-source research, development, community, education; kategori: research, dev tools, community, infrastructure, privacy, scaling; rolling applications
+Sources: https://esp.ethereum.foundation/ ; https://blog.ethereum.org/2022/01/18/ecosystem-support-program-update ; https://ethereum.foundation/annual-report-2023/
+
+Grant Program: Ethereum Foundation Academic Grants
+Description: Hibah untuk penelitian akademik kriptografi, konsensus, formal verification, game theory, networking; universitas/institusi riset
+Sources: https://esp.ethereum.foundation/academic-grants/ ; https://blog.ethereum.org/2023/06/20/academic-grants-round-2023
+
+Grant Program: EF Next Billion Fellowship
+Description: Program pendanaan untuk builder di negara berkembang (Global South); fokus financial inclusion, identity, governance; mentorship + funding
+Sources: https://esp.ethereum.foundation/next-billion/ ; https://blog.ethereum.org/2023/09/12/next-billion-fellows-2023
+
+Grant Program: Protocol Guild
+Description: Mekanisme funding untuk kontributor protokol inti (client developers, researchers, spec writers); weight-based allocation; donor: Lido, Uniswap, Optimism, Arbitrum, dll.
+Sources: https://protocolguild.org/ ; https://github.com/Protocol-Guild/ ; https://blog.ethereum.org/2023/03/28/protocol-guild
+
+Grant Program: Optimism RetroPGF (Retroactive Public Goods Funding)
+Description: Funding retroaktif untuk proyek yang memberikan dampak positif ke Optimism/Ethereum; badgeholder voting; ronde berkala; besarnya jutaan OP
+Sources: https://gov.optimism.io/retropgf ; https://retropgf.optimism.io/ ; https://medium.com/ethereum-optimism/retropgf
+
+Grant Program: Arbitrum DAO Grants / STIP (Short Term Incentive Program)
+Description: Grant dan insentif likuiditas untuk proyek di Arbitrum; DAO governance; STIP Backfund, LTIPP, Questbook
+Sources: https://dao.arbitrum.foundation/grants ; https://forum.arbitrum.foundation/c/grants/30 ; https://gov.arbitrum.foundation/t/stip
+
+Grant Program: Uniswap Foundation Grants
+Description: Grant untuk proyek yang memperluas Uniswap/Ethereum ekosistem; core protocol, tooling, UX, research; rolling applications
+Sources: https://uniswapfoundation.org/grants/ ; https://gov.uniswap.org/c/grants/11
+
+Grant Program: Aave Grants DAO
+Description: Grant untuk ekosistem Aave; integrasi, tooling, research, safety; community-governed
+Sources: https://aave.com/grants ; https://github.com/aave/aave-grants-dao
+
+Grant Program: Lido DAO Grants / LEGO (Lido Ecosystem Grants Organization)
+Description: Grant untuk ekosistem Lido/stETH; DVT, node operator tooling, DeFi integrations, research; LEGO committee
+Sources: https://lido.fi/grants/ ; https://gov.lido.fi/t/lego/ ; https://research.lido.fi/
+
+Grant Program: Chainlink Community Grants
+Description: Grant untuk integrasi Chainlink (Price Feeds, VRF, CCIP, Functions); builder support; hackathon prizes
+Sources: https://chain.link/community-grants ; https://blog.chain.link/chainlink-community-grant-program/
+
+Grant Program: The Graph Grants / Graph Advocates
+Description: Grant untuk subgraph development, tooling, indexing research; Graph Advocates program untuk community builders
+Sources: https://thegraph.com/grants/ ; https://thegraph.com/advocates/ ; https://github.com/graphprotocol/grants
+
+Grant Program: Filecoin Foundation / Protocol Labs Grants (related to Ethereum via storage, FVM, IPC)
+Description: Grant untuk decentralized storage, IPFS, libp2p, FVM (Filecoin EVM), IPC (InterPlanetary Consensus) — bridging ke Ethereum
+Sources: https://filecoin.io/grants/ ; https://protocol.ai/grants/ ; https://github.com/protocol/grants
+
+## Applications
+
+Application: Uniswap
+Category: DEX / AMM
+Relationship: Deployed on Ethereum Mainnet + L2 (Arbitrum, Optimism, Base, Polygon, Celo, BNB Chain); core liquidity venue; UNI governance token; hook-based v4
+Status: Live
+Sources: https://uniswap.org/ ; https://app.uniswap.org/ ; https://github.com/Uniswap ; https://l2beat.com/scaling/summary
+
+Application: Aave
+Category: Lending / Money Market
+Relationship: Deployed on Ethereum Mainnet + L2 (Arbitrum, Optimism, Base, Polygon, Avalanche, Metis, Scroll); GHO stablecoin; Aave V3; safety module
+Status: Live
+Sources: https://aave.com/ ; https://app.aave.com/ ; https://github.com/aave ; https://l2beat.com/scaling/summary
+
+Application: MakerDAO / Sky
+Category: Stablecoin / CDP / DeFi
+Relationship: Deployed on Ethereum Mainnet + L2 (Arbitrum, Optimism); DAI/USDS stablecoin; Spark lending; SubDAOs; Endgame; RWA collateral
+Status: Live
+Sources: https://makerdao.com/ ; https://sky.money/ ; https://spark.fi/ ; https://endgame.makerdao.com/
+
+Application: Lido Finance
+Category: Liquid Staking
+Relationship: Deployed on Ethereum Mainnet (stETH, wstETH); L2 bridges (Arbitrum, Optimism, zkSync, Polygon, Mantle); DVT integration (Obol, SSV); Node Operator registry
+Status: Live
+Sources: https://lido.fi/ ; https://stake.lido.fi/ ; https://www.rated.network/ ; https://obol.tech/ ; https://ssv.network/
+
+Application: EigenLayer
+Category: Restaking
+Relationship: Deployed on Ethereum Mainnet; restaking ETH/stETH; AVS (Actively Validated Services); EigenDA (data availability); operator delegation
+Status: Live (mainnet April 2024)
+Sources: https://www.eigenlayer.xyz/ ; https://docs.eigenlayer.xyz/ ; https://www.rated.network/
+
+Application: Curve Finance
+Category: DEX / Stablecoin AMM
+Relationship: Deployed on Ethereum Mainnet + L2; stETH/ETH, rETH/ETH, crvUSD stablecoin; DAO governance; gauge voting; LlamaRisk
+Status: Live
+Sources: https://curve.fi/ ; https://dao.curve.fi/ ; https://crv.usd/ ; https://github.com/curvefi/
+
+Application: Balancer
+Category: DEX / Weighted Pool / Vault
+Relationship: Deployed on Ethereum Mainnet + L2; Boosted Pools, Composable Stable Pools; Balancer V2 Vault; veBAL governance; Aura Finance integration
+Status: Live
+Sources: https://balancer.fi/ ; https://github.com/balancer/ ; https://aura.finance/
+
+Application: Convex Finance
+Category: Yield Optimizer / veCRV Wrapper
+Relationship: Deployed on Ethereum Mainnet; cvxCRV, vlCVX; bribe marketplace (Votium, Hidden Hand); boost CRV rewards tanpa lock
+Status: Live
+Sources: https://www.convexfinance.com/ ; https://github.com/convex-eth/ ; https://votium.app/ ; https://hiddenhand.finance/
+
+Application: Pendle Finance
+Category: Yield Trading / PT/YT
+Relationship: Deployed on Ethereum Mainnet + L2 (Arbitrum, Optimism); Principal Tokens (PT), Yield Tokens (YT); fixed yield; vePENDLE
+Status: Live
+Sources: https://pendle.finance/ ; https://github.com/pendle-finance/ ; https://app.pendle.finance/
+
+Application: GMX
+Category: Perpetual DEX
+Relationship: Deployed on Arbitrum + Avalanche (bukan Ethereum Mainnet native, tapi L2); GLP vault; GMX v2; synthetic leverage; low swap fees
+Status: Live
+Sources: https://gmx.io/ ; https://github.com/gmx-io/ ; https://app.gmx.io/
+
+Application: Synthetix
+Category: Derivatives / Synthetic Assets
+Relationship: Deployed on Ethereum Mainnet + Optimism (Andromeda); Perps V3; SNX staking; Kwenta frontend; Infinex; cross-chain via CCIP
+Status: Live
+Sources: https://www.synthetix.io/ ; https://github.com/Synthetixio/ ; https://kwenta.eth.link/ ; https://infinex.xyz/
+
+Application: dYdX
+Category: Perpetual DEX (Orderbook)
+Relationship: Originated on Ethereum Mainnet (StarkEx L2) → migrated to dYdX Chain (Cosmos-based appchain); bridging masih ke Ethereum; historic significance
+Status: Live (v4 on dYdX Chain), Ethereum deployment legacy
+Sources: https://dydx.exchange/ ; https://github.com/dydxprotocol/ ; https://docs.dydx.exchange/
+
+Application: 1inch
+Category: DEX Aggregator
+Relationship: Deployed on Ethereum Mainnet + L2; Fusion mode (intent-based); limit orders; RFQ; 1inch Network; Chi Gastoken (legacy)
+Status: Live
+Sources: https://1inch.io/ ; https://github.com/1inch/ ; https://app.1inch.io/
+
+Application: Matcha / 0x Protocol
+Category: DEX Aggregator / Exchange Protocol
+Relationship: Deployed on Ethereum Mainnet + L2; 0x API (swap, limit order, gasless); Matcha frontend; ZRX governance; RFQ + AMM hybrid
+Status: Live
+Sources: https://matcha.xyz/ ; https://0x.org/ ; https://github.com/0xProject/ ; https://docs.0x.org/
+
+Application: CoW Swap
+Category: DEX / Batch Auction / Solver
+Relationship: Deployed on Ethereum Mainnet + L2 (Gnosis Chain, Arbitrum, Optimism, Base); CoW Protocol; solver competition; MEV protection; surplus distribution
+Status: Live
+Sources: https://cow.fi/ ; https://github.com/gnosis/dex-services/ ; https://docs.cow.fi/
+
+Application: ENS (Ethereum Name Service)
+Category: Naming / Identity
+Relationship: Deployed on Ethereum Mainnet; .eth names; L2 resolvers (L2 registration via L1 gateway); text records; reverse resolution; ENS DAO governance
+Status: Live
+Sources: https://ens.domains/ ; https://github.com/ensdomains/ ; https://docs.ens.domains/ ; https://app.ens.domains/
+
+Application: Safe (Gnosis Safe)
+Category: Smart Contract Wallet / Multi-sig
+Relationship: Deployed on Ethereum Mainnet + L2 (Arbitrum, Optimism, Polygon, Base, Gnosis Chain, zkSync, Scroll, Linea, Mantle); Safe{Core} SDK; modules; ERC-4337/EIP-

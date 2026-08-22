@@ -1,0 +1,139 @@
+PROJECT: Wormhole
+
+STATUS AIRDROP
+
+Sudah dilakukan. Wormhole mendistribusikan token governance W melalui airdrop komunitas sebesar 6,17% total supply (617.305.000 W) ke 397.704 wallet pasca-tindakan anti-sybil, dengan klaim dibuka 3 April 2024 dan TGE/listing 15 April 2024 di Solana; alokasi komunitas total 17% termasuk kategori Guardian Nodes, kontributor, dan ekosistem yang mengklaim terpisah【Phase 6 — Distribution; Phase 5 — Funding Rounds】(HIGH) [Wormhole Blog W Token Launch, https://wormhole.com/blog/w-token-launch/; CryptoDaily Wormhole airdrop, https://cryptodaily.co.uk/2024/03/wormhole-confirms-plans-to-airdrop-617m-w-tokens-to-past-users] (MEDIUM).
+
+AIRDROP EVENTS
+
+AD-001: Community & Launch Airdrop (Pengguna Awal Lintas-Chain)
+Tanggal: 2024-04-03 (klaim dibuka 11:30 UTC, "Wormhole Wednesday"); TGE/listing 2024-04-15
+Tipe: Retroactive / Engagement-based, tanpa vesting (full unlock at claim)
+Alokasi: 6,17% total supply (617.305.000 W) dari kategori Community & Launch (17% total = 1.700.000.000 W); 500.000.000 W untuk pengguna aplikasi Wormhole di 30 chain eligible, sisanya untuk komunitas/aplikasi lain【Phase 6 — Distribution】(HIGH) [Wormhole Token Page, https://wormhole.com/token]; [CryptoDaily, https://cryptodaily.co.uk/2024/03/wormhole-confirms-plans-to-airdrop-617m-w-tokens-to-past-users] (MEDIUM)
+Penerima: 397.704 wallet unik (~400.000) pasca anti-sybil; snapshot eligibility 6 Februari 2024【Phase 6 — Distribution】(MEDIUM) [Bitpinas Wormhole Guide, https://bitpinas.com/learn-how-to-guides/wormhole-guide-airdrop-strategy/]; [CryptoDaily, https://cryptodaily.co.uk/2024/03/wormhole-confirms-plans-to-airdrop-617m-w-tokens-to-past-users]
+Nilai saat klaim: 0.6548 USD per W (close hari TGE/listing 2024-04-17 pada KuCoin; klaim dibuka 2024-04-03 sebelum listing KuCoin tersedia; intraday 0.6065-0.711) [KuCoin W-USDT daily candle, https://www.kucoin.com/trade/W-USDT] (MEDIUM)
+Kriteria: Durasi keterlibatan dengan Wormhole, volume pesan/transfer lintas-chain, konsistensi penggunaan, dan partisipasi di aplikasi ekosistem (Jupiter, Mad Lads, DeGods, Yoots, wallet Solana) di 30 chain eligible termasuk Ethereum, Solana, Sui, BNB, Aptos, Avalanche, Polygon, Base, Optimism, Arbitrum【Phase 3 — EV-016】(MEDIUM) [CryptoDaily, https://cryptodaily.co.uk/2024/03/wormhole-confirms-plans-to-airdrop-617m-w-tokens-to-past-users]
+Anti-sybil: Tindakan anti-sybil sebelum finalisasi daftar (jumlah wallet berkurang menjadi 397.704); reward per user dipecah ke seluruh wallet yang berinteraksi dengan aplikasi ekosistem (MEDIUM) [CryptoDaily, https://cryptodaily.co.uk/2024/03/wormhole-confirms-plans-to-airdrop-617m-w-tokens-to-past-users]
+Terkait EV: EV-016 (W Token TGE — Solana)
+Sitasi: Phase 3 EV-016; Phase 6 Distribution; Phase 5 Token Sale (HIGH/MEDIUM)
+
+AD-002: Alokasi Guardian Nodes, Kontributor Inti, dan Strategic Network Participants
+Tanggal: 2024-04-15 mulai (klaim terpisah per kategori; 82% total supply locked dengan unlock bertahap 4 tahun)
+Tipe: Alokasi terstruktur berbasis peran (bukan airdrop publik)
+Alokasi: Guardian Nodes (bagian dari 6 kategori alokasi), Core Contributors (Team 12% dengan cliff 12 bulan), Strategic Network Participants (Investors 15,6% dengan cliff 12 bulan), Ecosystem & Incubation 22%, Foundation 10%, DAO Treasury 23,4%【Phase 6 — Distribution; Phase 6 — Vesting Schedule】(HIGH) [Wormhole Token Page, https://wormhole.com/token]
+Penerima: 19 guardian node operators, kontributor inti, peserta jaringan strategis; identitas tidak dipublikasikan terpusat (LOW)
+Nilai saat klaim: Tidak berlaku (alokasi berbasis peran dengan vesting/cliff, bukan klaim satu kali)
+Kriteria: Peran operasional dalam jaringan (guardian), kontribusi pengembangan, atau partisipasi strategis jaringan (HIGH)
+Anti-sybil: Tidak relevan (berbasis peran terverifikasi, bukan klaim terbuka)
+Terkait EV: EV-016
+Sitasi: Phase 6 Distribution; Phase 6 Vesting Schedule (HIGH)
+
+CONTEXT SAAT KEPUTUSAN
+
+Kondisi saat keputusan TGE/airdrop (awal-pertengahan 2024):
+- Kondisi pasar: Musim airdrop infrastruktur interoperabilitas — LayerZero mempersiapkan ZRO (Juni 2024), Axelar/Across aktif; narasi "infrastruktur cross-chain bertoken" memuncak【Phase 8 — Market Timeline】(HIGH)
+- Posisi project: Wormhole beroperasi sejak 2020 sebagai proyek internal Jump Crypto tanpa fundraising eksternal terverifikasi; insiden keamanan Februari 2022 (eksploitasi ~120k wETH) ditambal dan diganti oleh Jump sebelum era ini【Phase 1 — Foundation; Phase 4 — Security】(MEDIUM)
+- Kompetitor terdekat: LayerZero (belum TGE saat itu), Axelar, Across, Stargate — kompetisi messaging lintas-chain dengan model keamanan berbeda (guardian 19 node vs DVN/relayer)【Phase 8 — Competitor Landscape】(HIGH)
+- Trigger: Kebutuhan token governance untuk DAO dan insentif jaringan, serta tekanan kompetisi interoperabilitas yang mulai bertoken【Phase 3 — EV-016】(HIGH)
+
+TRIGGER DAN ALTERNATIF
+
+Trigger utama: Aktivasi governance on-chain (Wormhole DAO) dan kebutuhan insentif ekosistem; momentum musim airdrop 2024【Phase 3 — EV-016 Immediate Result】(HIGH).
+Alternatif tidak diambil:
+- Public sale / ICO: tidak dilakukan — TGE via airdrop + listing CEX simultan tanpa penggalangan dana publik (konsisten dengan nihilnya fundraising eksternal sebelumnya)【Phase 5 — Token Sale】(HIGH)
+- Airdrop porsi lebih besar: 6,17% ke pengguna dipilih relatif konservatif dibanding kompetitor (bandingkan zkSync 17,5%); 82% supply dikunci dengan unlock 4 tahun — pilihan anti-dump sekaligus sumber kritik komunitas (MEDIUM) [Bitpinas, https://bitpinas.com/learn-how-to-guides/wormhole-guide-airdrop-strategy/]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Menghargai pengguna awal dan kontributor yang membangun Wormhole sejak 2020 di 30+ chain (HIGH) [Wormhole Blog W Token Launch, https://wormhole.com/blog/w-token-launch/]
+- Mengaktifkan governance DAO dengan W sebagai token voting dan utilitas NTT multichain (HIGH) [Phase 6 — Utility】
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Struktur 82% locked dengan vesting 4 tahun menjaga kontrol ekonomi di tangan guardian/team/investor strategis sambil meminimalkan tekanan jual awal — HIPOTESIS (MEDIUM) [Phase 6 — Vesting Schedule】
+- INKONSISTENSI: Phase 5 mencatat tidak ada fundraising eksternal terverifikasi sebelum TGE, namun distribusi mencantumkan alokasi Investors 15,6% (1,56 miliar W) — pihak investor strategis tidak diidentifikasi publik di dossier; Evidence Level LOW untuk identitas investor【Phase 5 — Funding History; Phase 6 — Distribution】
+
+OUTCOME PER POV
+
+POV Founder (Jump Crypto / Wormhole Foundation): Sebagian
+- Jangka pendek: TGE terlaksana dengan listing simultan di CEX besar (Binance, Coinbase, Bybit, OKX, KuCoin, Gate.io); DAO aktif pada TGE【Phase 3 — EV-016】(HIGH)
+- Jangka panjang: Harga turun dari 0.6548 USD (hari TGE) ke 0.2882 USD pada +90 hari (-56%); warisan insiden 2022 dan alokasi investor yang tidak transparan membebani narasi【Phase 4 — Security; Phase 6 — Distribution】(MEDIUM) [KuCoin W-USDT, https://www.kucoin.com/trade/W-USDT]
+- Dasar: Phase 3 EV-016; Phase 4 Security; KuCoin price history (HIGH/MEDIUM)
+
+POV VC: Tidak relevan
+- Dossier mencatat tidak ada fundraising eksternal (VC/private/public sale) terverifikasi sebelum TGE; kategori alokasi "Investors 15,6%" ada namun pihak dan asal-usulnya tidak teridentifikasi publik — verdict konservatif: Tidak relevan untuk POV VC tradisional (LOW) [Phase 5 — Funding History】
+
+POV Retail (Penerima airdrop 397.704 wallet): Sebagian
+- Jangka pendek: Rata-rata ~1.552 W per wallet (617,3 juta / 397.704) ≈ 1.016 USD pada harga TGE 0.6548 USD; full unlock at claim tanpa vesting【Phase 6 — Vesting Schedule Airdrop】(MEDIUM) [KuCoin W-USDT, https://www.kucoin.com/trade/W-USDT]
+- Jangka panjang: Pemegang yang tidak menjual mengalami depresiasi -56% dalam 90 hari (0.2882 USD pada 2024-07-14); sebagian komunitas menilai alokasi 6,17% kecil dibanding kompetitor (MEDIUM) [KuCoin W-USDT, https://www.kucoin.com/trade/W-USDT]
+- Dasar: KuCoin price history; Phase 6 Distribution (MEDIUM)
+
+POV Community (Pengguna lintas-chain & DAO): Sebagian
+- Jangka pendek: Klaim berjalan lancar sejak 3 April 2024; eligibility checker dan pemecahan reward multi-wallet mengurangi friksi (MEDIUM) [CryptoDaily, https://cryptodaily.co.uk/2024/03/wormhole-confirms-plans-to-airdrop-617m-w-tokens-to-past-users]
+- Jangka panjang: Partisipasi governance DAO berjalan namun konsentrasi unlock (82% locked) membatasi distribusi kekuatan voting di tahun pertama (MEDIUM) [Phase 6 — Vesting Schedule】
+- Dasar: Phase 6 Governance; CryptoDaily (MEDIUM)
+
+POV Developer (Integrator NTT & aplikasi ekosistem): Sukses
+- Jangka pendek: Alokasi Ecosystem & Incubation 22% (2,2 miliar W) tersedia untuk grants, integrasi, dan liquidity mining sejak TGE【Phase 6 — Distribution】(HIGH)
+- Jangka panjang: Native Token Transfers (NTT) memberi developer kerangka token multichain; Jupiter dan aplikasi Solana lain tumbuh di atas infrastruktur Wormhole【Phase 7 — Developer Ecosystem】(HIGH)
+- Dasar: Phase 6 Distribution; Phase 7 Developer Ecosystem (HIGH)
+
+POV Institution (Exchange, fund, custodian): Sebagian
+- Jangka pendek: Listing simultan di Binance, Coinbase, Bybit, OKX, KuCoin, Gate.io pada/dekat TGE — akses institusional luas sejak awal【Phase 3 — Listing event】(HIGH)
+- Jangka panjang: Riwayat insiden 2022 dan kategori investor strategis yang tidak transparan menjadi catatan due-diligence (MEDIUM) [Phase 4 — Security】
+- Dasar: Phase 3 Listing; Phase 4 Security (HIGH/MEDIUM)
+
+POV Validator (19 Guardian Nodes): Sukses
+- Jangka pendek: Guardian menjadi salah satu dari enam kategori alokasi resmi — peran keamanan diakui secara ekonomi sejak TGE【Phase 6 — Distribution】(HIGH)
+- Jangka panjang: Insentif W memperkuat keberlanjutan operasi guardian; model 19-node tetap terpusat relatif namun stabil sepanjang era ini【Phase 4 — Security Model】(MEDIUM)
+- Dasar: Phase 6 Distribution; Phase 4 Security Model (HIGH/MEDIUM)
+
+POV Builder (Protokol yang membangun di atas Wormhole/NTT): Sebagian
+- Jangka pendek: Program grants dan insentif likuiditas dari alokasi Ecosystem 22% tersedia (HIGH) [Phase 6 — Distribution】
+- Jangka panjang: Adopsi NTT tumbuh namun kompetisi messaging (LayerZero DVN, Axelar) menekan diferensiasi; keputusan alokasi berikutnya bergantung DAO (MEDIUM) [Phase 8 — Competitor Landscape】
+- Dasar: Phase 6 Distribution; Phase 8 Competitor Landscape (HIGH/MEDIUM)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 0.6548 USD (2024-04-15) [KuCoin W-USDT daily candle close (hari TGE/listing; klaim dibuka 2024-04-03 sebelum data KuCoin tersedia), https://www.kucoin.com/trade/W-USDT] (MEDIUM)
+Harga +30 hari: 0.5706 USD (2024-05-15) [KuCoin W-USDT daily candle close, https://www.kucoin.com/trade/W-USDT] (MEDIUM)
+Harga +90 hari: 0.2882 USD (2024-07-14) [KuCoin W-USDT daily candle close, https://www.kucoin.com/trade/W-USDT] (MEDIUM)
+Harga puncak 12 bulan pertama: 0.7769 USD (2024-05-02) [KuCoin W-USDT daily candle high; scan mingguan 12 bulan tidak menemukan high lebih tinggi, https://www.kucoin.com/trade/W-USDT] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan TVL atau volume protokol sebelum vs sesudah distribusi: Tidak ditemukan (perbandingan TVL/volume bridge pre/post TGE tidak diekstrak di fase sebelumnya) (LOW)
+Jumlah alamat pemegang token (unique holders): 397.704 wallet penerima airdrop sebagai basis awal (Februari 2024 snapshot, klaim April 2024); jumlah holder on-chain pasca-TGE tidak dipublikasikan terpusat (MEDIUM) [CryptoDaily, https://cryptodaily.co.uk/2024/03/wormhole-confirms-plans-to-airdrop-617m-w-tokens-to-past-users]
+Jumlah alamat aktif harian sebelum vs sesudah: Tidak ditemukan (tidak ada dashboard publik pre/post TGE) (LOW)
+Konsentrasi kepemilikan: 82% supply locked pada TGE (team+investors+ecosystem+foundation+treasury) dengan unlock bertahap 4 tahun; hanya 6,17% airdrop + sebagian kecil kategori lain yang beredar awal (HIGH) [Bitpinas, https://bitpinas.com/learn-how-to-guides/wormhole-guide-airdrop-strategy/]
+Tingkat partisipasi staking: Tidak berlaku (W tidak memiliki staking native pada era TGE; utilitas utama governance + NTT)【Phase 6 — Utility】(MEDIUM)
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat (persentase penjualan 7/30 hari pertama), tidak tersedia di sumber publik.
+INKONSISTENSI: "Tidak ada fundraising eksternal" (Phase 5) vs alokasi Investors 15,6% (Phase 6) — identitas strategic investors tidak teridentifikasi; Evidence Level LOW.
+INKONSISTENSI minor: dossier mencatat "claim window open since TGE (15 April)" sementara tiga sumber web menyebut klaim user dibuka 3 April 2024 — tanggal 2024-04-03 dipakai di sini (MEDIUM).
+Harga pada tanggal klaim aktual 3 April 2024 (market non-KuCoin) tidak tersedia di candle KuCoin.
+
+FARMING DAN SYBIL
+
+Snapshot 6 Februari 2024 tidak diumumkan sebelumnya sebagai tanggal pasti eligibility, namun kriteria berbasis engagement historis (durasi, volume, konsistensi) dapat dikejar sejak program Zealy/poin Wormhole berjalan awal 2024 — farming engagement mungkin terjadi pada window tersebut; tindakan anti-sybil memangkas daftar final menjadi 397.704 wallet, dan reward dipecah ke seluruh wallet per user untuk mengurangi insentif multi-wallet (MEDIUM) [CryptoDaily, https://cryptodaily.co.uk/2024/03/wormhole-confirms-plans-to-airdrop-617m-w-tokens-to-past-users]; [Bitpinas, https://bitpinas.com/learn-how-to-guides/wormhole-guide-airdrop-strategy/]
+
+PROSPEK
+
+Metrik yang terpenuhi: Eksekusi klaim 397k wallet lancar; listing simultan CEX besar; struktur unlock panjang menahan dump awal (HIGH)
+Metrik yang tidak terpenuhi: Retensi harga pasca-TGE (-56% dalam 90 hari); transparansi alokasi investor strategis (HIGH)
+Sinyal ke depan: Jadwal unlock cliff 12 bulan (April 2025) team/investors; pertumbuhan adopsi NTT; keputusan alokasi DAO dari 23,4% treasury (MEDIUM)
+Penilaian: Airdrop W disiplin secara struktur (82% locked, anti-sybil eksplisit) tetapi konservatisme alokasi pengguna (6,17%) dan depresiasi harga cepat mengubah distribusi menjadi windfall jangka pendek, bukan retensi jangka panjang (MEDIUM)
+
+PELAJARAN LINTAS PROJECT
+
+Airdrop engagement-based dengan snapshot senyap (tidak diumumkan) mengurangi farming eksplisit tetapi tidak menghilangkan kontroversi — transparan soal metodologi tetap penentu legitimasi.
+Full unlock at claim tanpa mekanisme penahan jual (staking/lock opsional) memindahkan seluruh tekanan jual ke hari-hari pertama: puncak harga justru terjadi 17 hari setelah TGE, bukan saat klaim.
+INKONSISTENSI antara "tanpa fundraising" dan alokasi investor besar adalah pola berulang yang menggerus kepercayaan — identitas strategic backers seharusnya bagian dari disclosure TGE.
+
+OPEN THREADS
+
+- Identitas pihak di balik alokasi Investors 15,6% (strategic/early backers).
+- Persentase klaim aktual dari 397.704 wallet dan distribusi sisa unclaimed.
+- Dampak cliff team/investors April 2025 terhadap harga dan governance (di luar jendela 12 bulan pertama).

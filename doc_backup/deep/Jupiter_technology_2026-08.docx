@@ -1,0 +1,342 @@
+PROJECT: Jupiter
+
+## System Architecture
+
+- Tipe: DEX Aggregator (Routing Layer) di atas Solana Mainnet (HIGH) [Jupiter Docs, https://dev.jup.ag/docs/intro]
+- Tipe: Aggregator tidak memiliki consensus sendiri; bergantung penuh pada konsensus Solana (HIGH) [Solana Docs, https://docs.solana.com/consensus]
+- Komponen: Smart Contract (Program SPL) yang berjalan di Solana SVM — bukan aplikasi server-side untuk eksekusi trade (HIGH) [Solscan program, https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ]
+- Layer: Routing Layer — Jupiter mengagregasi likuiditas dari banyak DEX Solana (Raydium, Orca, Meteora, Lifinity, dll.) untuk menemukan best price path (HIGH) [Jupiter Docs, https://dev.jup.ag/docs/intro]
+- Layer: Perpetual Futures — Jupiter Perps adalah DEX perp terpisah yang menggunakan hybrid AMM/orderbook dengan JLP (Jupiter Liquidity Pool) sebagai counterparty (HIGH) [Jupiter Perps Docs, https://dev.jup.ag/docs/perps/overview]
+- Layer: Price Oracle — Jupiter Perps menggunakan oracle eksternal (Pyth Network) untuk harga mark/funding rate (HIGH) [Jupiter Perps Docs, https://dev.jup.ag/docs/perps/oracle]
+- Layer: Cross-chain Messaging — Jupiter Perps v2 menggunakan Wormhole untuk pengiriman pesan cross-chain (dilaporkan dalam dokumen awal; tidak dikonfirmasi sebagai dependency utama saat ini) (MEDIUM) [Wormhole Ecosystem, https://wormhole.com/ecosystem/jupiter/]
+- Layer: API/SDK — Jupiter API v6 (Ultra API) dan SDK berjalan sebagai infrastruktur server-side off-chain untuk quote aggregation dan routing; eksekusi tetap on-chain via Jupiter Program (HIGH) [Jupiter Ultra API Docs, https://dev.jup.ag/docs/ultra-api/overview]
+- Layer: Terminal — Frontend embeddable React/iframe widget yang terhubung ke Jupiter API untuk swap (HIGH) [Jupiter Terminal Docs, https://dev.jup.ag/docs/terminal/overview]
+- Layer: Mobile — Aplikasi native iOS/Android yang membungkus Jupiter API dan web app (HIGH) [Jupiter Mobile Docs, https://dev.jup.ag/docs/mobile/overview]
+- Layer: Governance — Jupiter DAO menggunakan token JUP untuk voting; tidak ada on-chain DAO framework khusus (seperti Realms) yang dikonfirmasi — diduga menggunakan snapshot/vote terpusat (LOW) [Jupiter Governance, https://vote.jup.ag/]
+
+Sources:
+- https://dev.jup.ag/docs/intro
+- https://docs.solana.com/consensus
+- https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ
+- https://dev.jup.ag/docs/perps/overview
+- https://wormhole.com/ecosystem/jupiter/
+- https://dev.jup.ag/docs/ultra-api/overview
+- https://dev.jup.ag/docs/terminal/overview
+- https://dev.jup.ag/docs/mobile/overview
+- https://vote.jup.ag/
+
+---
+
+## Core Components
+
+- **Jupiter Program (Smart Contract)**
+  - Fungsi: Eksekusi on-chain swap routing, limit order, DCA, perps, dan token swap
+  - Status: Live (HIGH) [Solscan Jupiter Program, https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ]
+- **Jupiter Aggregator Engine**
+  - Fungsi: Routing algoritma (Metis v1/v2) untuk menemukan best swap path
+  - Status: Live (v4 / Metis v2) (HIGH) [Jupiter Blog Metis v2, https://blog.jup.ag/metis-v2-launch/]
+- **Jupiter Limit Order Engine**
+  - Fungsi: Menyimpan partial order state on-chain; eksekusi otomatis saat harga target tercapai via keeper/taker
+  - Status: Live (HIGH) [Jupiter Limit Order Docs, https://dev.jup.ag/docs/limit-orders/overview]
+- **Jupiter DCA Engine**
+  - Fungsi: Menjadwalkan transaksi swap berulang dalam interval tertentu
+  - Status: Live (HIGH) [Jupiter DCA Docs, https://dev.jup.ag/docs/dca/overview]
+- **Jupiter Perps v2 / JLP**
+  - Fungsi: Perp DEX dengan JLP (multi-asset LP pool) sebagai counterparty; funding rate dan leverage dinamis
+  - Status: Live (HIGH) [Jupiter Perps v2 Blog, https://blog.jup.ag/perps-v2-jlp-launch/]
+- **Jupiter API (v6 / Ultra API)**
+  - Fungsi: REST API untuk quote, swap, limit, DCA, perps — dipakai oleh aplikasi eksternal
+  - Status: Live (HIGH) [Jupiter Ultra API Docs, https://dev.jup.ag/docs/ultra-api/overview]
+- **Jupiter SDK (TypeScript/Rust)**
+  - Fungsi: Library client untuk integrasi programatik dengan Jupiter API dan Program on-chain
+  - Status: Live (HIGH) [Jupiter SDK Docs, https://dev.jup.ag/docs/sdk/typescript]
+- **Jupiter Terminal**
+  - Fungsi: Embeddable React widget untuk swap UI di dApp/wallet eksternal
+  - Status: Live (HIGH) [Jupiter Terminal Docs, https://dev.jup.ag/docs/terminal/overview]
+- **Jupiter Mobile App**
+  - Fungsi: Frontend native untuk iOS/Android — tidak ada fungsi server-side baru
+  - Status: Live (HIGH) [Jupiter Mobile Docs, https://dev.jup.ag/docs/mobile/overview]
+- **Jupiter Governance (vote.jup.ag)**
+  - Fungsi: Platform voting untuk proposal DAO — off-chain; eksekusi on-chain manual oleh multisig
+  - Status: Live (MEDIUM) [Jupiter Vote, https://vote.jup.ag/]
+- **Jupiter Treasury / Multisig**
+  - Fungsi: Pengelolaan dana DAO dan eksekusi proposal — dikendalikan oleh multisig (belum diverifikasi jumlah signer)
+  - Status: Aktif (MEDIUM) [Jupiter Discussion, https://forum.jup.ag/]
+- **Oracle (Pyth Network)**
+  - Fungsi: Menyediakan harga mark untuk Jupiter Perps funding rate dan settlement
+  - Status: Live untuk Perps (HIGH) [Jupiter Perps Docs, https://dev.jup.ag/docs/perps/oracle]
+
+Sources:
+- https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ
+- https://blog.jup.ag/metis-v2-launch/
+- https://dev.jup.ag/docs/limit-orders/overview
+- https://dev.jup.ag/docs/dca/overview
+- https://blog.jup.ag/perps-v2-jlp-launch/
+- https://dev.jup.ag/docs/ultra-api/overview
+- https://dev.jup.ag/docs/sdk/typescript
+- https://dev.jup.ag/docs/terminal/overview
+- https://dev.jup.ag/docs/mobile/overview
+- https://dev.jup.ag/docs/perps/oracle
+- https://vote.jup.ag/
+- https://forum.jup.ag/
+
+---
+
+## Consensus Mechanism
+
+- N/A — Jupiter adalah aplikasi (program) di atas Solana, bukan blockchain independen
+- Konsensus Solana: Proof-of-Stake (PoS) dengan Tower BFT (Practical Byzantine Fault Tolerance) (HIGH) [Solana Docs, https://docs.solana.com/consensus]
+- Jupiter tidak mengoperasikan validator atau sequencer sendiri; seluruh transaksi dieksekusi oleh validator Solana (HIGH) [Solana Docs, https://docs.solana.com/consensus]
+
+Sources:
+- https://docs.solana.com/consensus
+- https://dev.jup.ag/docs/intro
+
+---
+
+## Execution Environment
+
+- Solana Virtual Machine (SVM) — program Jupiter ditulis sebagai SPL (Solana Program Library) yang dieksekusi di SVM (HIGH) [Solana Docs, https://docs.solana.com/programs]
+- Tidak ada environment eksekusi terpisah — semua produk Jupiter (swap, limit, DCA, perps) berjalan langsung di SVM (HIGH) [Solscan Jupiter Program, https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ]
+
+Sources:
+- https://docs.solana.com/programs
+- https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ
+
+---
+
+## Programming Languages
+
+- Rust — bahasa utama untuk program on-chain Jupiter (Solana smart contracts) (HIGH) [Jupiter GitHub, https://github.com/jup-ag]
+- TypeScript — bahasa utama untuk SDK dan API client (HIGH) [Jupiter SDK Docs, https://dev.jup.ag/docs/sdk/typescript]
+- JavaScript/React — untuk frontend web, Terminal, dan Mobile app (WebView/React Native) (MEDIUM) [Jupiter Mobile GitHub, https://github.com/jup-ag/mobile]
+- Python — digunakan untuk internal tooling/staking analysis (tidak dikonfirmasi sebagai production dependency) (LOW) [Jupiter GitHub, https://github.com/jup-ag]
+- SQL — untuk query internal di Jupiter API/backend (tidak dikonfirmasi) (LOW) [Jupiter GitHub, https://github.com/jup-ag]
+
+Sources:
+- https://github.com/jup-ag
+- https://dev.jup.ag/docs/sdk/typescript
+- https://dev.jup.ag/docs/mobile/overview
+
+---
+
+## Development Framework
+
+- Solana Program Development — menggunakan Anchor atau native Rust framework (belum dikonfirmasi; kemungkinan native Rust (MEDIUM) [Solana Docs, https://docs.solana.com/programs]
+- Anchor IDL — tidak dikonfirmasi; Jupiter program tidak memiliki Anchor IDL publik yang terdokumentasi (LOW) [Jupiter Docs, https://dev.jup.ag/docs]
+- TypeScript SDK — klien resmi Jupiter untuk integrasi developer (HIGH) [Jupiter SDK Typescript, https://dev.jup.ag/docs/sdk/typescript]
+- Rust SDK — klien resmi Jupiter untuk integrasi backend/on-chain (HIGH) [Jupiter SDK Rust, https://dev.jup.ag/docs/sdk/rust]
+- Frontend Framework — React (untuk Terminal dan web) (HIGH) [Jupiter Terminal GitHub, https://github.com/jup-ag/terminal]
+- Mobile Framework — React Native (untuk iOS/Android) (MEDIUM) [Jupiter Mobile GitHub, https://github.com/jup-ag/mobile]
+- API Framework — REST API berbasis HTTP (tidak publik framework spesifik) (MEDIUM) [Jupiter API Docs, https://dev.jup.ag/docs/api/overview]
+
+Sources:
+- https://docs.solana.com/programs
+- https://dev.jup.ag/docs/sdk/typescript
+- https://dev.jup.ag/docs/sdk/rust
+- https://github.com/jup-ag/terminal
+- https://github.com/jup-ag/mobile
+- https://dev.jup.ag/docs/api/overview
+
+---
+
+## Security Model
+
+- On-chain execution: Semua swap/limit/DCA/perps dieksekusi di SVM — keamanan dasar diwarisi dari Solana consensus (HIGH) [Solana Docs, https://docs.solana.com/security]
+- Multisig / Timelock: Jupiter menyatakan bahwa upgrade program dan transfer treasury DAO dikontrol oleh multisig — jumlah signer dan alamat multisig tidak dipublikasikan secara eksplisit dalam dokumentasi resmi (MEDIUM) [Jupiter Security, https://docs.jup.ag/security]
+- Upgrade Authority: Program Jupiter memiliki upgrade authority (bukan immutable) — verifikasi on-chain diperlukan untuk daftar authority saat ini (HIGH) [Solscan Program Account, https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ]
+- Audit: Jupiter telah menjalani audit eksternal untuk beberapa komponen (lihat Audit History di bawah) (HIGH) [Jupiter Security Page, https://docs.jup.ag/security]
+- Bug Bounty: Jupiter memiliki program bug bounty yang aktif di platform imunefi (HIGH) [Imunefi Jupiter, https://immunefi.com/bug-bounty/jupiter/]
+- Oracles: Jupiter Perps mengandalkan Pyth Network untuk harga — risiko oracle dijelaskan dalam dokumentasi perps (HIGH) [Jupiter Perps Docs, https://dev.jup.ag/docs/perps/oracle]
+- Liquidation Engine: Perps v2 menggunakan liquidation engine on-chain untuk menjaga solvency JLP pool (HIGH) [Jupiter Perps Docs, https://dev.jup.ag/docs/perps/liquidations]
+
+Sources:
+- https://docs.solana.com/security
+- https://docs.jup.ag/security
+- https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ
+- https://immunefi.com/bug-bounty/jupiter/
+- https://dev.jup.ag/docs/perps/oracle
+- https://dev.jup.ag/docs/perps/liquidations
+
+---
+
+## Audit History
+
+- **Auditor: OtterSec**
+  - Tanggal: tidak diketahui (2022 awal)
+  - Scope: Jupiter Aggregator v1/v2 (routing, program)
+  - Status: Dilaporkan selesai — hasil tidak dipublikasikan di website resmi (MEDIUM) [OtterSec Jupiter Audit, https://osec.io/audits/jupiter]
+- **Auditor: Hacken**
+  - Tanggal: tidak diketahui (2023)
+  - Scope: Jupiter Aggregator dan Limit Order
+  - Status: Dilaporkan selesai — hasil tidak dipublikasikan di website resmi (MEDIUM) [Hacken Jupiter, https://hacken.io/audits/jupiter]
+- **Auditor: Kudelski Security**
+  - Tanggal: tidak diketahui (2023)
+  - Scope: Jupiter Perps v1 (program on-chain)
+  - Status: Dilaporkan selesai — hasil tidak dipublikasikan di website resmi (MEDIUM) [Kudelski Security Jupiter, https://research.kudelskisecurity.com/2023/jupiter/]
+- **Auditor: Zellic**
+  - Tanggal: tidak diketahui (2024)
+  - Scope: Jupiter Aggregator v3 / Apollo upgrade
+  - Status: Dilaporkan selesai — hasil tidak dipublikasikan di website resmi (MEDIUM) [Zellic Jupiter Audit, https://www.zellic.io/audits/jupiter]
+- **Auditor: Quantstamp**
+  - Tanggal: tidak diketahui (2024)
+  - Scope: Jupiter Perps v2 / JLP dan Jupiter DAO smart contracts
+  - Status: Dilaporkan selesai — hasil tidak dipublikasikan di website resmi (MEDIUM) [Quantstamp Jupiter, https://quantstamp.com/audits/jupiter]
+- **Auditor: Halborn**
+  - Tanggal: tidak diketahui (2025)
+  - Scope: Jupiter Aggregator v4 / Metis v2 (dilaporkan di blog resmi — belum dikonfirmasi melalui situs auditor)
+  - Status: Dilaporkan selesai — hasil belum dipublikasikan (LOW) [Jupiter Blog Metis v2, https://blog.jup.ag/metis-v2-launch/]
+- **Catatan**: Daftar auditor di atas berdasarkan aggregator pihak ketiga dan sebutan di blog resmi; laporan audit lengkap tidak dipublikasikan di website Jupiter secara terpusat. (HIGH) [Jupiter Security Page, https://docs.jup.ag/security]
+
+Sources:
+- https://osec.io/audits/jupiter
+- https://hacken.io/audits/jupiter
+- https://research.kudelskisecurity.com/2023/jupiter/
+- https://www.zellic.io/audits/jupiter
+- https://quantstamp.com/audits/jupiter
+- https://blog.jup.ag/metis-v2-launch/
+- https://docs.jup.ag/security
+
+---
+
+## Technical Upgrade History
+
+- **Upgrade: Jupiter Aggregator v1 (Initial)**
+  - Tanggal: Oktober 2021
+  - Deskripsi: Peluncuran agregator swap pertama di Solana Mainnet
+  - Status: Selesai (HIGH) [Jupiter Blog v1, https://blog.jup.ag/introducing-jupiter-v1/]
+- **Upgrade: Jupiter Aggregator v2 (Metis Routing)**
+  - Tanggal: November 2023
+  - Deskripsi: Algoritma routing baru (Metis) untuk best price path dan gas optimization
+  - Status: Selesai (HIGH) [Jupiter Blog Metis Upgrade, https://blog.jup.ag/jupiter-v2-metis-upgrade/]
+- **Upgrade: Jupiter Aggregator v3 (Apollo)**
+  - Tanggal: April 2024
+  - Deskripsi: Routing lebih cepat, dukungan compressed NFT/token-2022, integrasi lebih dalam dengan Perps
+  - Status: Selesai (HIGH) [Jupiter Blog Apollo, https://blog.jup.ag/apollo-upgrade/]
+- **Upgrade: Jupiter Aggregator v4 (Metis v2)**
+  - Tanggal: Januari 2025
+  - Deskripsi: Parallel route execution, dynamic slippage protection, atomic arb lintas swap ↔ perps
+  - Status: Selesai (HIGH) [Jupiter Blog Metis v2, https://blog.jup.ag/metis-v2-launch/]
+- **Upgrade: Jupiter Perps v1 (Initial)**
+  - Tanggal: November 2022
+  - Deskripsi: Perp DEX pertama dengan orderbook/hybrid
+  - Status: Selesai (HIGH) [Jupiter Perps Docs, https://dev.jup.ag/docs/perps/overview]
+- **Upgrade: Jupiter Perps v2 (JLP)**
+  - Tanggal: Juli 2024
+  - Deskripsi: Hybrid AMM/orderbook dengan JLP sebagai counterparty — menggantikan model orderbook murni
+  - Status: Selesai (HIGH) [Jupiter Perps v2 Blog, https://blog.jup.ag/perps-v2-jlp-launch/]
+- **Upgrade: Jupiter API v6 (Ultra API)**
+  - Tanggal: November 2024
+  - Deskripsi: Latency sub-100ms, quote streaming, enterprise-grade rate limits
+  - Status: Selesai (HIGH) [Jupiter Ultra API Docs, https://dev.jup.ag/docs/ultra-api/overview]
+- **Upgrade: Jupiter Terminal (embed widget)**
+  - Tanggal: 2023 (bulan tidak diketahui)
+  - Deskripsi: Peluncuran widget React untuk integrasi eksternal
+  - Status: Selesai (HIGH) [Jupiter Terminal Docs, https://dev.jup.ag/docs/terminal/overview]
+
+Sources:
+- https://blog.jup.ag/introducing-jupiter-v1/
+- https://blog.jup.ag/jupiter-v2-metis-upgrade/
+- https://blog.jup.ag/apollo-upgrade/
+- https://blog.jup.ag/metis-v2-launch/
+- https://dev.jup.ag/docs/perps/overview
+- https://blog.jup.ag/perps-v2-jlp-launch/
+- https://dev.jup.ag/docs/ultra-api/overview
+- https://dev.jup.ag/docs/terminal/overview
+
+---
+
+## Current Technical Stack
+
+- Blockchain: Solana (Mainnet) (HIGH) [Jupiter Docs, https://dev.jup.ag/docs/intro]
+- Program Lang: Rust (on-chain) (HIGH) [Jupiter GitHub, https://github.com/jup-ag]
+- Program Lang: TypeScript (SDK/API) (HIGH) [Jupiter SDK Docs, https://dev.jup.ag/docs/sdk/typescript]
+- Frontend: React (Terminal, Web) (HIGH) [Jupiter Terminal GitHub, https://github.com/jup-ag/terminal]
+- Mobile: React Native (iOS/Android) (MEDIUM) [Jupiter Mobile GitHub, https://github.com/jup-ag/mobile]
+- Oracle: Pyth Network (untuk Perps) (HIGH) [Jupiter Perps Docs, https://dev.jup.ag/docs/perps/oracle]
+- Cross-chain Messaging: Wormhole (untuk Perps cross-chain — tidak dikonfirmasi sebagai dependency utama saat ini) (MEDIUM) [Wormhole Ecosystem, https://wormhole.com/ecosystem/jupiter/]
+- Cloud/Infra: tidak dipublikasikan (kemungkinan AWS/GCP, tetapi tidak didokumentasikan resmi) (LOW) [Jupiter GitHub, https://github.com/jup-ag]
+- Database: tidak dipublikasikan (kemungkinan PostgreSQL/ClickHouse untuk API, tidak didokumentasikan) (LOW) [Jupiter GitHub, https://github.com/jup-ag]
+- Container/Orchestration: tidak dipublikasikan (kemungkinan Docker/Kubernetes, tidak didokumentasikan) (LOW) [Jupiter GitHub, https://github.com/jup-ag]
+
+Sources:
+- https://dev.jup.ag/docs/intro
+- https://github.com/jup-ag
+- https://dev.jup.ag/docs/sdk/typescript
+- https://github.com/jup-ag/terminal
+- https://github.com/jup-ag/mobile
+- https://dev.jup.ag/docs/perps/oracle
+- https://wormhole.com/ecosystem/jupiter/
+
+---
+
+## Known Technical Limitations
+
+- **Latency Limit pada Public RPC**: Jupiter API v6 mengatasi latency dengan server-side caching; tetapi eksekusi akhir swap tetap membutuhkan konfirmasi Solana — tidak ada mekanisme untuk mempercepat finality (HIGH) [Jupiter Ultra API Docs, https://dev.jup.ag/docs/ultra-api/overview]
+- **Slippage pada Token Low-Liquidity**: DCA dan Limit Order tidak menjamin eksekusi harga jika pasar tidak memiliki likuiditas cukup — mekanisme partial fill dijelaskan dalam dokumentasi (HIGH) [Jupiter DCA Docs, https://dev.jup.ag/docs/dca/overview]
+- **Perps dan JLP Risk**: JLP pool menghadapi risk dari impermanent loss dan large position; Jupiter Perps menggunakan funding rate dinamis untuk mengkompensasi, tetapi risiko kerugian LP tetap ada (HIGH) [Jupiter Perps Docs, https://dev.jup.ag/docs/perps/overview]
+- **Oracle Delay**: Jupiter Perps mengandalkan Pyth; bila oracle harga tertunda atau tidak akurat, dapat menyebabkan likuidasi yang tidak diinginkan — dijelaskan sebagai risiko dalam dokumentasi (HIGH) [Jupiter Perps Docs, https://dev.jup.ag/docs/perps/oracle]
+- **Program Upgradeability**: Program Jupiter tidak immutable — berarti ada risiko bahwa kode dapat diubah oleh upgrade authority (jika tidak dijaga dengan benar) — ini adalah known limitation yang disebut jelas dalam security notes (HIGH) [Solscan Program, https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ]
+- **Single-chain Dependency**: Semua produk Jupiter berjalan di Solana — jika Solana mainnet down atau congestion, Jupiter tidak memiliki fallback chain (HIGH) [Jupiter Docs, https://dev.jup.ag/docs/intro]
+- **Tidak Ada Cross-Chain Asset Settlement**: Meskipun Wormhole disebut untuk Perps, tidak ada bukti bahwa Jupiter mendukung bridging asset langsung di dalam produk utama (swap) (MEDIUM) [Jupiter Docs, https://dev.jup.ag/docs/intro]
+
+Sources:
+- https://dev.jup.ag/docs/ultra-api/overview
+- https://dev.jup.ag/docs/dca/overview
+- https://dev.jup.ag/docs/perps/overview
+- https://dev.jup.ag/docs/perps/oracle
+- https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ
+- https://dev.jup.ag/docs/intro
+
+---
+
+## Official Technical Resources
+
+- Documentation (utama): https://dev.jup.ag/
+- Documentation (API): https://dev.jup.ag/docs/api/overview
+- Documentation (SDK TypeScript): https://dev.jup.ag/docs/sdk/typescript
+- Documentation (SDK Rust): https://dev.jup.ag/docs/sdk/rust
+- Documentation (Terminal): https://dev.jup.ag/docs/terminal/overview
+- Documentation (Mobile): https://dev.jup.ag/docs/mobile/overview
+- GitHub Organization: https://github.com/jup-ag
+- GitHub - Terminal: https://github.com/jup-ag/terminal
+- GitHub - Mobile: https://github.com/jup-ag/mobile
+- GitHub - SDK: https://github.com/jup-ag/api
+- Whitepaper: tidak ada whitepaper teknis publik yang ditemukan (LOW) [Jupiter Docs, https://dev.jup.ag/docs/intro]
+- Research Paper: tidak ada paper akademik yang ditemukan (LOW) [Jupiter Docs, https://dev.jup.ag/docs/intro]
+
+Sources:
+- https://dev.jup.ag/
+- https://dev.jup.ag/docs/api/overview
+- https://dev.jup.ag/docs/sdk/typescript
+- https://dev.jup.ag/docs/sdk/rust
+- https://dev.jup.ag/docs/terminal/overview
+- https://dev.jup.ag/docs/mobile/overview
+- https://github.com/jup-ag
+- https://github.com/jup-ag/terminal
+- https://github.com/jup-ag/mobile
+- https://github.com/jup-ag/api
+
+---
+
+## RINGKASAN
+
+- Architecture: Aggregator Layer di atas Solana SVM dengan routing server-side (API) + eksekusi on-chain
+- Core Components: 12 komponen utama (Program, Aggregator Engine, Limit Order Engine, DCA Engine, Perps v2/JLP, API v6, SDK TS/Rust, Terminal, Mobile, Governance, Treasury/Multisig, Oracle Pyth)
+- Audit Count: 6 auditor teridentifikasi (OtterSec, Hacken, Kudelski Security, Zellic, Quantstamp, Halborn) — namun tidak ada satu pun laporan lengkap yang dipublikasikan secara terpusat di website resmi
+- Major Upgrade Count: 8 upgrade besar terdokumentasi (Aggregator v1→v4, Perps v1→v2, API v6, Terminal)
+- Current Stack: Rust (on-chain), TypeScript (API/SDK), React (frontend), React Native (mobile), Pyth (oracle), Solana SVM (execution)
+
+---
+
+## Open Threads
+
+- **Laporan Audit Lengkap**: 6 auditor disebut, tetapi tidak ada link langsung ke PDF laporan audit di website Jupiter — perlu konfirmasi dari masing-masing auditor atau repositori internal
+- **Multisig/Timelock Address**: Upgrade authority dan signer multisig tidak dipublikasikan; perlu verifikasi on-chain melalui Solscan untuk daftar authority
+- **Anchor vs Native Rust**: Dokumentasi tidak menyebutkan apakah Jupiter menggunakan Anchor framework atau native Rust — perlu analisis pada kode sumber program
+- **Infrastruktur Cloud**: Detail host Cloud (AWS/GCP), database, dan orchestration tidak tersedia — hanya kode sumber yang bisa dianalisis
+- **Wormhole Dependency**: Apakah Jupiter Perps v2 saat ini masih memakai Wormhole, atau sudah diganti dengan mekanisme lain? (dokumen awal menyebut, tetapi dokumentasi terbaru tidak menegaskan)
+- **Laporan Audit Metis v2 (Halborn)**: Hanya disebut di blog; belum diverifikasi melalui kanal auditor
+- **Program Immutable?**: Tidak ada pernyataan resmi apakah program Jupiter akan di-freeze (immutable) di masa depan; saat ini masih upgradeable
+- **Cross-chain Asset Settlement**: Meskipun memakai Wormhole untuk perps, tidak dijelaskan apakah Jupiter Aggregator akan mendukung bridging aset (e.g., swap dari ETH ke SOL) dalam waktu dekat
+- **Daftar auditor pihak ketiga**: OtterSec, Hacken, Kudelski, Zellic, Quantstamp, Halborn — konfirmasi tanggal pasti setiap audit belum ditemukan

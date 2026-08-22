@@ -1,0 +1,132 @@
+PROJECT: Friend.tech
+
+STATUS AIRDROP
+
+Sudah dilakukan — FRIEND token TGE pada 2024-05-03 (EV-014) menyertakan airdrop retroaktif untuk pengguna V1 (pembeli/penjual keys, pembuat konten) sebagai salah satu kategori alokasi, tetapi persentase alokasi, jumlah penerima, dan detail kriteria kelayakan tidak dipublikasikan resmi oleh tim; hanya dikonfirmasi ada "airdrop to V1 users" di announcement lancement V2【Phase 3 — EV-014】【Phase 6 — Distribution】.
+
+AIRDROP EVENTS
+
+AD-001: FRIEND Token Genesis Airdrop ke Pengguna V1
+Tanggal: 2024-05-03
+Tipe: Retroactive
+Alokasi: Tidak ditemukan (persentase dari 100M total supply tidak diungkap; tidak ada blog post, governance proposal, atau dashboard resmi yang menampilkan breakdown)
+Penerima: Tidak ditemukan (jumlah alamat eligible tidak diungkap; Dune/Arkham tidak mempublikasikan daftar penerima spesifik airdrop vs pembeli CEX/DEX)
+Nilai saat klaim: Tidak ditemukan (harga FRIEND saat TGE bervariasi antar venue; Binance opening ~$1.50-2.00 per CoinGecko historical tapi tidak ada data harga klaim spesifik airdrop karena claim berlangsung beberapa hari)
+Kriteria: Pengguna V1 yang pernah membeli/jual keys atau menciptakan konten (deskripsi tingkat tinggi dari announcement V2); detail snapshot block, minimum volume, tiering, atau multiplier tidak diungkap【Phase 3 — EV-014】【Phase 6 — Distribution】
+Anti-sybil: Tidak ditemukan (tidak ada informasi tentang mekanisme filter sybil, proof-of-humanity, atau scoring on-chain; Privy authentication sudah ada sejak V1 tapi tidak diketahui apakah digunakan sebagai sybil resistance untuk airdrop)【Phase 4 — Core Components】【Phase 7 — Major Integrations】
+Terkait EV: EV-014 (V2 Launch + TGE), EV-019 (V2 Clubs Migration dari V1 Keys)
+Sitasi: Friend.tech V2 Announcement【Phase 3 — EV-014】(HIGH); Friend.tech V2 Blog【Phase 6 — Distribution】(MEDIUM); CoinDesk V2 Launch Coverage【Phase 3 — EV-014】(HIGH)
+
+CONTEXT SAAT KEPUTUSAN
+
+Tahap funding: Post-seed only (satu ronde Seed Agustus 2023, $50M valuation, Paradigm lead); tidak ada follow-on funding【Phase 5 — Funding History】. Ukuran komunitas: >500k unique traders V1 all-time (Dune), DAU peak >50k Agustus 2023, DAU V2 pre-TGE <5k (estimasi Dune Q1 2024)【Phase 8 — Adoption Metrics】. Kondisi pasar: Bitcoin halving April 2024, memecoin supercycle narasi, Base ecosystem growth (Aerodrome, Uniswap V3 Base liquidity mining aktif)【Phase 8 — Market Timeline】. Kompetitor terdekat: Farcaster (tidak ada token, poin saja), Lens Protocol (tidak ada token), Stars Arena (AVAX, bonding curve serupa, tidak ada airdrop besar), Post.tech (Base, points program), Tipcoin (Base, points/airdrop farming)【Phase 8 — Competitor Landscape】.
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Peluncuran V2 (arsitektur modular, clubs NFT, governance) memerlukan token untuk utility (governance, staking fee discount, ecosystem incentives) dan distribusi ownership ke komunitas awal【Phase 3 — EV-013, EV-014】【Phase 6 — Token Utility】. Alternatif yang tidak diambil: (1) Public sale / IDO / IEO — ditolak, tidak ada announcement; (2) Distribusi 100% ke liquidity mining / incentives tanpa airdrop retroaktif — tidak diambil; (3) Tidak meluncurkan token sama sekali (tetap V1 fee-only) — tidak diambil karena V1 volume menurun drastis EV-011 dan investor pressure untuk liquidity event【Phase 9 — Financial Decision Pattern 4】. Alternatif tidak terdokumentasi secara eksplisit; tidak ada blog post "why we chose airdrop over X".
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Distribute ownership to early users who built the network" — narasi standar community ownership【Phase 3 — EV-014】(MEDIUM)
+- "FRIEND token enables governance, staking for fee discounts, and ecosystem incentives" — utility-driven distribution【Phase 6 — Token Utility】(HIGH)
+- "100M fixed supply, no inflation" — tokenomics simplicity【Phase 6 — Inflation/Deflation】(HIGH)
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Memenuhi syarat listing CEX tier-1 (Binance, Coinbase, OKX, Bybit, Kraken) yang biasanya memerlukan circulating supply community yang cukup besar dan distribusi tidak terpusat pada team/investor — listing 5 CEX dalam 1 bulan (EV-015, EV-018) mendukung ini【Phase 3 — EV-015, EV-018】(MEDIUM)
+- Memberikan exit liquidity untuk seed investors (Paradigm, a16z crypto, Variant, Base Ecosystem Fund) yang alokasi token mereka undisclosed — TGE + CEX listing memungkinkan penjualan awal【Phase 5 — Funding History】【Phase 6 — Distribution】(MEDIUM)
+- Mengurangi risiko klasifikasi sekuritas Howey Test dengan mendistribusikan token ke pengguna bukan "investor" — narasi "consumer app" bukan "investment contract"【Phase 3 — EV-008, EV-024】【Phase 8 — Narrative Position】(MEDIUM)
+- Membuat Treasury holds FRIEND menjadi aset likuid yang bisa dijual untuk runway — treasury >$5M Dec 2024 (EV-025) dengan komposisi ETH + FRIEND + USDbC【Phase 3 — EV-025】【Phase 5 — Treasury】(LOW)
+
+OUTCOME PER POV
+
+POV Founder (Racer, Shrimp): Sebagian
+- Jangka pendek: Token launched, 5 CEX listings secured, governance activated, treasury diversified dengan FRIEND holdings; V2 metrics (volume, DAU) tetap rendah (<5k DAU, TVL <$1M)【Phase 3 — EV-022】【Phase 8 — Adoption Metrics】
+- Jangka panjang: Token price volatil ($1.50+ → $0.30-0.60, EV-023); narrative pivot ke non-financial features 2025 (EV-024) menunjukkan V2 clubs belum PMF; runway finansial terjamin via treasury tapi product sustainability unproven【Phase 3 — EV-023, EV-024, EV-025】(HIGH)
+- Dasar: Phase 3 EV-014, EV-022, EV-023, EV-024, EV-025; Phase 8 Adoption Metrics; Phase 9 Behavioral Summary (HIGH)
+
+POV VC (Paradigm, a16z crypto, Variant, Base Ecosystem Fund): Sukses
+- Jangka pendek: Token liquid di 5 major CEX dalam 1 bulan, price discovery dimulai, paper gains pada valuasi $50M seed; exit path terbuka via CEX volume >90%【Phase 3 — EV-015, EV-018】【Phase 8 — Liquidity】
+- Jangka panjang: Token allocation investor undisclosed tapi presumed significant; vesting schedule unknown — jika cliff/vesting pendek, selling pressure berkelanjutan; jika panjang, alignment terjaga【Phase 6 — Vesting Schedule, Open Threads】(MEDIUM)
+- Dasar: Phase 3 EV-015, EV-018; Phase 6 Distribution, Vesting Schedule; Phase 8 Liquidity, Trading Markets (HIGH)
+
+POV Retail (penerima airdrop Season 1): Sebagian
+- Jangka pendek: Klaim token gratis (nilai bervariasi), bisa dijual di CEX/DEX langsung; harga opening ~$1.50-2.00 tapi jatuh ke <$1 dalam minggu【Phase 3 — EV-023】【Phase 8 — Adoption Metrics】
+- Jangka panjang: Harga stagnan $0.30-0.60 rentang 5 bulan pasca-TGE (EV-023); tidak ada utility ekstra (staking discount minor, governance low participation); holding FRIEND = spekulasi murni【Phase 3 — EV-023】【Phase 6 — Token Utility】(MEDIUM)
+- Dasar: Phase 3 EV-023; Phase 6 Token Utility; Phase 8 Adoption Metrics (MEDIUM)
+
+POV Community (pengguna V1 aktif, bukan sekadar claim): Gagal
+- Jangka pendek: Airdrop tidak memicu resurgence aktivitas V2; DAU tetap <5k, volume clubs minimal; migrasi V1→V2 voluntary meninggalkan residual keys unclaimed【Phase 3 — EV-019, EV-022】【Phase 8 — Adoption Metrics】
+- Jangka panjang: Community ownership narrative tidak terwujud — governance participation rendah (proposal threshold/quorum undisclosed, voter turnout tidak dipublikasikan), treasury multi-sig team-controlled【Phase 6 — Governance, Open Threads】【Phase 9 — Governance Decision Pattern】(LOW)
+- Dasar: Phase 3 EV-019, EV-022; Phase 6 Governance, Open Threads; Phase 9 Governance Decision Pattern (LOW)
+
+POV Developer (builder di ekosistem Friend.tech): Tidak relevan
+- Jangka pendek: Tidak ada SDK, API publik, developer portal, atau hackathon程序 announced; V2 contracts modular tapi tidak ada dokumentasi integrasi third-party【Phase 7 — Ecosystem Position】【Phase 8 — Open Threads】
+- Jangka panjang: Tidak ada developer ecosystem terbangun; protocol tetap closed-source frontend, smart contract only【Phase 4 — Architecture】【Phase 7 — Ecosystem Position】(HIGH)
+- Dasar: Phase 4 Architecture; Phase 7 Ecosystem Position; Phase 8 Open Threads (HIGH)
+
+POV Institution (market maker, fund, researcher): Sebagian
+- Jangka pendek: CEX liquidity memadai untuk trading size besar (Wintermute, GSR active), DeFi Llama/Token Terminal/Messari coverage lengkap untuk analisis【Phase 2 — Wintermute, GSR】【Phase 8 — Official Market Resources】
+- Jangka panjang: Token fundamentals lemah (revenue declining, no fee switch, opaque tokenomics); institusi treat sebagai speculative trade bukan investment【Phase 5 — Revenue History】【Phase 6 — Open Threads】(MEDIUM)
+- Dasar: Phase 2 Wintermute, GSR; Phase 5 Revenue History; Phase 6 Open Threads; Phase 8 Official Market Resources (MEDIUM)
+
+POV Validator: Tidak relevan
+- Jangka pendek: Friend.tech bukan chain, tidak ada validator; Base sequencer centralized (Conduit)【Phase 4 — Consensus Mechanism】【Phase 7 — External Dependencies】
+- Jangka panjang: Tidak ada staking untuk security; FRIEND staking hanya untuk fee discount【Phase 6 — Token Utility】(HIGH)
+- Dasar: Phase 4 Consensus Mechanism; Phase 6 Token Utility; Phase 7 External Dependencies (HIGH)
+
+POV Builder (pembangun di atas protokol / integrator): Tidak relevan
+- Jangka pendek: Tidak ada plugin system, SDK, atau composability layer untuk builder; V2 clubs contracts upgradeable tapi tidak ada documentasi integrasi eksternal【Phase 4 — Core Components】【Phase 7 — Ecosystem Position】
+- Jangka panjang: Protocol tidak positioned sebagai infrastructure layer (seperti Farcaster/Lens); positioned sebagai consumer app【Phase 8 — Narrative Position】(HIGH)
+- Dasar: Phase 4 Core Components; Phase 7 Ecosystem Position; Phase 8 Narrative Position (HIGH)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 1.75 USD (2024-05-03) [CoinGecko, https://www.coingecko.com/en/coins/friend-tech] (MEDIUM)
+Harga +30 hari: 0.85 USD (2024-06-02) [CoinGecko, https://www.coingecko.com/en/coins/friend-tech] (MEDIUM)
+Harga +90 hari: 0.45 USD (2024-08-01) [CoinGecko, https://www.coingecko.com/en/coins/friend-tech] (MEDIUM)
+Harga puncak 12 bulan pertama: 2.10 USD (2024-05-04) [CoinGecko, https://www.coingecko.com/en/coins/friend-tech] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan TVL protokol sebelum vs sesudah distribusi: TVL V1 peak ~$50M+ (Agustus 2023, DeFi Llama) → TVL V2 <$1M (Desember 2024, DeFi Llama) — penurunan >98%【Phase 8 — Adoption Metrics】(HIGH) [DeFi Llama, https://defillama.com/protocol/friend-tech]
+Jumlah alamat pemegang token (unique holders): >50,000 address (BaseScan token holders page, Desember 2024) — termasuk CEX cold wallets, market maker, LP, dan airdrop recipients【Phase 6 — Holder Distribution】(MEDIUM) [BaseScan, https://basescan.org/token/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B#balances]
+Jumlah alamat aktif harian (token transfer): Tidak ditemukan (tidak ada dashboard publik yang melacak daily active FRIEND token transfer addresses post-TGE)
+Konsentrasi kepemilikan: Top 10 holders mengontrol ~65-75% supply (estimasi BaseScan holders page termasuk CEX wallets, team/treasury, market maker) — persentase pasti tidak dihitung resmi【Phase 6 — Holder Distribution】(LOW) [BaseScan, https://basescan.org/token/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B#balances]
+Tingkat partisipasi staking: Tidak ditemukan (tidak ada dashboard staking FRIEND publik; staking fee discount mechanism ada tapi participation rate tidak diungkap)【Phase 6 — Token Utility】(LOW)
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+Kriteria kelayakan tidak diungkap detailnya (snapshot block, minimum volume, tiering) → tidak bisa ditebak sebelum snapshot; tidak ada laporan farming massal atau disqualification sybil di media/komunitas; Privy authentication (email/SMS/Twitter OAuth) sudah ada sejak V1 sebagai identity layer tapi tidak dikonfirmasi digunakan sebagai sybil filter untuk airdrop【Phase 4 — Core Components】【Phase 7 — Major Integrations】. Tidak ada announcement tim mengubah kriteria setelah melihat perilaku farming.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi: Token live (FRIEND), governance active, treasury funded (>$5M), CEX liquidity established, V2 contracts audited (Spearbit)【Phase 3 — EV-014, EV-017, EV-021, EV-025】(HIGH).
+Prasyarat yang belum: Product-market fit V2 (DAU <5k, TVL <$1M), token utility terbukti (staking adoption unknown, governance participation unknown), non-financial features 2025 belum dirilis, developer ecosystem tidak ada, tokenomics transparency (allocation, vesting) belum dipublikasikan【Phase 3 — EV-022, EV-024】【Phase 6 — Open Threads】(HIGH).
+Sinyal yang biasanya mendahului: (1) Governance proposal untuk "Season 2" airdrop atau incentive program baru; (2) Deploy kontrak distribusi (MerkleDistributor, VestingEscrow) di BaseScan; (3) Announcement snapshot date di blog/Twitter resmi; (4) Partner integration baru (contoh: Farcaster Frames, Lens, atau game) yang memerlukan token distribution; (5) Treasury diversification proposal yang mencakup community rewards【Phase 6 — Governance】【Phase 3 — EV-024】(MEDIUM).
+Penilaian: Gelombang airdrop kedua (Season 2 / Retroactive V2 users) mungkin terjadi jika V2 metrics tidak membaik dan tim butuh user growth stimulus — namun tanpa PMF, airdrop kedua berisiko hanya menarik mercenary farming. Keyakinan: LOW (30% probability within 12 months). Akan berubah jadi MEDIUM/HIGH jika: (a) DAU V2 naik >10k sustained 30 hari, (b) governance proposal community rewards dilewatkan, (c) non-financial features launch dengan traction nyata.
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika airdrop retroaktif dilakukan tanpa kriteria transparan (snapshot, tiering, anti-sybil) di era 2024 (populasi hunter matur, tooling sybil advanced), komunitas tidak bisa memverifikasi keadilan → trust deficit yang merusak narrative "community ownership"【Phase 6 — Distribution, Open Threads】(HIGH).
+- Ketika token launch dikombinasikan dengan simultaneous major CEX listings (5 CEX dalam 1 bulan) tanpa public sale, price discovery didominasi market maker & early insider selling → retail airdrop recipients jadi exit liquidity【Phase 3 — EV-015, EV-018】【Phase 8 — Liquidity】(HIGH).
+- Ketika governance hybrid (on-chain vote + team multi-sig execution) dan treasury team-controlled, airdrop recipients tidak memiliki leverage nyata untuk mengarahkan protokol → token jadi speculative asset bukan governance asset【Phase 6 — Governance】【Phase 9 — Governance Decision Pattern】(HIGH).
+- Ketika protokol pivot narrative (SocialFi → Consumer Crypto → Non-Financial Social) berulang kali saat metrics menurun, airdrop recipients merasa "dipakai" untuk liquidity event bukan community building → brand loyalty hancur【Phase 3 — EV-011, EV-013, EV-022, EV-024】【Phase 8 — Narrative Position】(HIGH).
+- Ketika single-chain strategy (Base only) dikombinasikan dengan CEX-first liquidity, on-chain activity (DEX volume, TVL, staking) tetap minimal → airdrop tidak mem-bootstrapped DeFi activity di chain tujuan【Phase 7 — External Dependencies】【Phase 8 — Liquidity】(MEDIUM).
+
+OPEN THREADS
+
+- Alokasi persentase FRIEND token ke kategori airdrop V1 users (community) — tidak ditemukan di mana pun sumber resmi
+- Jumlah alamat eligible dan claim rate airdrop — tidak dipublikasikan; Dune dashboard tidak memisahkan airdrop claimers vs CEX depositors
+- Kriteria detail kelayakan (snapshot block, minimum keys traded, tiering multiplier) — tidak diungkap
+- Anti-sybil mechanism yang dipakai (Privy score? proof-of-humanity? on-chain scoring?) — tidak dikonfirmasi
+- Vesting schedule untuk airdrop recipients (instant unlock? linear vesting? cliff?) — tidak diungkap; CoinGecko circulating supply "Self Reported" mengindikasikan tidak ada data on-chain verified
+- Apakah ada unclaimed airdrop tokens dan ke mana mereka dialokasikan (back to treasury? burn? future seasons?) — tidak diketahui
+- Governance proposal threshold dan quorum untuk community rewards proposal — tidak terdokumentasi
+- Staking FRIEND participation rate dan fee discount yang sebenarnya diberikan — tidak ada dashboard publik
+- Apakah tim merencanakan Season 2 airdrop untuk V2 clubs users / non-financial features users — hanya announcement tingkat tinggi EV-024, tidak ada detail
+- Market maker agreement detail (Wintermute, GSR) apakah melibatkan token loan dari treasury/airdrop allocation — tidak publik

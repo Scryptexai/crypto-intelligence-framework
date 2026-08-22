@@ -1,0 +1,140 @@
+PROJECT: Walrus
+
+STATUS AIRDROP
+
+Sudah dilakukan. Walrus mendistribusikan 10% total supply WAL (500 juta dari 5 miliar token) ke komunitas: 4% didistribusikan segera pasca-mainnet/TGE (klaim via portal resmi mulai 27 Maret 2025 untuk wallet eligible dari aktivitas testnet dan kampanye) dan 6% didistribusikan bertahap seiring kematangan ekosistem; co-founder Mysten menyebutnya salah satu airdrop terbesar dan paling terdistribusi meski jumlah penerima tidak dipublikasikan (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]; (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]
+
+AIRDROP EVENTS
+
+AD-001: Community Airdrop Pre-Mainnet (4% Supply)
+Tanggal: 2025-03-27 (klaim dibuka seiring mainnet & TGE)
+Tipe: Retroactive/partisipasi-based (aktivitas testnet, penyimpanan blob, staking testnet, kampanye komunitas)
+Alokasi: 4% total supply (200.000.000 WAL dari 5 miliar) — bagian dari 10% alokasi komunitas (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Penerima: Wallet yang berpartisipasi di Walrus Testnet dan kampanye ekosistem sebelum mainnet; jumlah penerima tidak dipublikasikan resmi (LOW)
+Nilai saat klaim: 0.5390 USD per WAL (close hari TGE 2025-03-27; intraday range 0.1-0.97774) [KuCoin WAL-USDT daily candle, https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)
+Kriteria: Partisipasi testnet (menyimpan blob, staking WAL testnet, kontribusi) dan aktivitas kampanye; detail pembobotan per aktivitas tidak dipublikasikan penuh (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Anti-sybil: Tidak dirinci publik; eligibility berbasis riwayat aktivitas on-chain testnet (LOW)
+Terkait EV: EV-005 (Mainnet & TGE), EV-006 (distribusi airdrop komunitas)
+Sitasi: Phase 3 EV-005, EV-006; Phase 6 Distribution (HIGH/MEDIUM)
+
+AD-002: Community Distribution Post-Mainnet (6% Supply, Bertahap)
+Tanggal: 2025-04 mulai — berlanjut bertahap sepanjang 2025
+Tipe: Distribusi bertahap berbasis aktivitas ekosistem pasca-launch
+Alokasi: 6% total supply (300.000.000 WAL) didistribusikan dalam fase-fase seiring kematangan ekosistem (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+Penerima: Partisipan ekosistem pasca-launch (pengguna storage, staker, kontributor); rincian per gelombang tidak dipublikasikan di sumber yang diakses (LOW)
+Nilai saat klaim: Tidak berlaku (distribusi multi-gelombang; harga mengikuti pasar saat tiap gelombang)
+Kriteria: Aktivitas mainnet (menyimpan data, staking, kontribusi ekosistem) sesuai pengumuman foundation per gelombang (MEDIUM)
+Anti-sybil: Tidak dirinci publik (LOW)
+Terkait EV: EV-006
+Sitasi: Phase 3 EV-006; Phase 6 Distribution (HIGH/MEDIUM)
+
+CONTEXT SAAT KEPUTUSAN
+
+Kondisi saat keputusan distribusi WAL (Q1 2025):
+- Kondisi pasar: Awal 2025 — narasi AI x crypto dan decentralized data/storage menguat; Sui ekosistem tumbuh pesat (Sui naik >40% dalam 12 bulan sebelumnya) (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]
+- Posisi project: Testnet sukses dengan partisipasi besar dari komunitas Sui; token sale $140 juta ditutup seminggu sebelum mainnet memberi modal penuh (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]
+- Kompetitor terdekat: Filecoin, Arweave, Akash (storage/infrastruktur terdesentralisasi) dengan model token berbeda; pembeda Walrus = storage terprogram di atas Sui untuk beban AI/data besar (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+TRIGGER DAN ALTERNATIF
+
+Trigger utama: Peluncuran mainnet membutuhkan lapisan ekonomis aktif (pembayaran storage + staking node) sekaligus penghargaan partisipan testnet yang membangun traksi awal (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network].
+Alternatif tidak diambil:
+- Airdrop sekaligus 10% di hari TGE: tidak dipilih — dipecah 4% pre + 6% post untuk mempertahankan insentif partisipasi pasca-launch (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+- Public sale: tidak dilakukan; pendanaan via private token sale $140 juta (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Menghargai komunitas yang membangun traksi testnet dan mendistribusikan kepemilikan luas ("salah satu airdrop terbesar dan paling terdistribusi") (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]
+- WAL sebagai pembayaran storage, staking, dan governance — distribusi luas memperkuat desentralisasi node storage (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Pemecahan 4%/6% menahan tekanan jual hari pertama sekaligus mengunci retensi pengguna pasca-launch — HIPOTESIS (MEDIUM)
+- Airdrop besar memanfaatkan basis pengguna Sui yang sudah ada sebagai saluran akuisisi murah — HIPOTESIS (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]
+
+OUTCOME PER POV
+
+POV Founder (Mysten Labs / Walrus Foundation): Sukses
+- Jangka pendek: TGE + mainnet terlaksana tepat jadwal; $140 juta token sale selesai pra-launch; listing MEXC hari pertama diikuti exchange lain (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]; [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]
+- Jangka panjang: Jaringan storage produksi berjalan; namun harga WAL terdepresiasi ~85% dari close TGE dalam 12 bulan (0.539 → ~0.07-0.08 per data mingguan KuCoin Mar 2026) — tekanan naratif pada ekosistem [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)
+- Dasar: Phase 3 EV-004, EV-005; KuCoin price history (HIGH/MEDIUM)
+
+POV VC (Standard Crypto, a16z crypto, Electric Capital, Franklin Templeton DA, RW3 Ventures): Sebagian
+- Jangka pendek: Entry via token sale pra-TGE; harga hari TGE (high 0.97774 USD) memberi paper gain awal atas harga sale (tidak dipublikasikan) (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]
+- Jangka panjang: Alokasi investor 7% dengan cliff 12 bulan (unlock pertama ~Maret 2026) terjadi saat harga ~0.07-0.11 USD — jauh di bawah harga hari TGE; realisasi nilai tertekan (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]; [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]
+- Dasar: Phase 6 Distribution, Vesting Schedule; KuCoin price history (HIGH/MEDIUM)
+
+POV Retail (Penerima airdrop komunitas): Sebagian
+- Jangka pendek: Penerima klaim 4% pre-mainnet mendapat WAL pada harga close TGE 0.5390 USD (high hari pertama 0.97774) — penjual hari pertama merealisasi gain dari biaya nol (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]
+- Jangka panjang: Harga turun ke ~0.4078 pada +90 hari dan ~0.07-0.08 per Maret 2026 (-85% dari close TGE); pemegang pasif mengalami depresiasi besar tanpa mekanisme penahan nilai (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]
+- Dasar: KuCoin price history (MEDIUM)
+
+POV Community (Pengguna & peserta kampanye Sui/Walrus): Sebagian
+- Jangka pendek: Distribusi luas (klaim portal + kampanye) berjalan; atensi komunitas Sui besar pada launch (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]
+- Jangka panjang: Gelombang 6% post-mainnet menjaga keterlibatan, namun nilai per token menurun tajam; jumlah penerima tidak pernah dipublikasikan sehingga skala klaim tidak terverifikasi (LOW)
+- Dasar: Phase 3 EV-006; Phase 6 Distribution (HIGH/LOW)
+
+POV Developer (Integrator SDK & aplikasi storage): Sukses
+- Jangka pendek: SDK, docs, dan infrastruktur storage live sejak TGE; developer dapat langsung membangun aplikasi data/AI di atas Walrus (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+- Jangka panjang: Subsidi storage (bagian dari alokasi subsidies) mendukung adopsi; kelangsungan bergantung pendanaan foundation (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+- Dasar: Phase 4 Technology; Phase 7 Ecosystem (HIGH/MEDIUM)
+
+POV Institution (Investor token sale & exchange): Sebagian
+- Jangka pendek: Partisipasi institusional (termasuk Franklin Templeton Digital Assets) dan listing CEX luas sejak hari pertama (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]
+- Jangka panjang: Depresiasi harga 12 bulan dan jadwal unlock yang belum rinci penuh menjadi catatan portofolio (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]
+- Dasar: Phase 5 Financial; KuCoin price history (HIGH/MEDIUM)
+
+POV Validator (Storage node operators / staker): Sebagian
+- Jangka pendek: Staking WAL aktif sejak mainnet; reward epoch berjalan untuk node yang memvalidasi storage proofs (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+- Jangka panjang: Nilai reward dalam WAL terdepresiasi bersama harga; ekonomi node bergantung pertumbuhan permintaan storage riil (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]
+- Dasar: Phase 4 Technology; KuCoin price history (HIGH/MEDIUM)
+
+POV Builder (Protokol yang membangun di Walrus/Sui): Sebagian
+- Jangka pendek: Akses storage terprogram + likuiditas ekosistem Sui sejak launch (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]
+- Jangka panjang: Insentif berlanjut via subsidies, namun skala adopsi storage riil belum terverifikasi di sumber publik (LOW)
+- Dasar: Phase 7 Ecosystem (MEDIUM/LOW)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 0.5390 USD (2025-03-27) [KuCoin WAL-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)
+Harga +30 hari: 0.5356 USD (2025-04-26) [KuCoin WAL-USDT daily candle close, https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)
+Harga +90 hari: 0.4078 USD (2025-06-25) [KuCoin WAL-USDT daily candle close, https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)
+Harga puncak 12 bulan pertama: 0.9777 USD (2025-03-27) [KuCoin WAL-USDT TGE-day high; scan mingguan 12 bulan (Mar 2025-Mar 2026) tidak menemukan high lebih tinggi (tertinggi berikutnya 0.77822 minggu Mei 2025), https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan aktivitas jaringan sebelum vs sesudah distribusi: Testnet bertrafik tinggi pra-launch (dorong komunitas Sui); pasca-TGE volume perdagangan hari pertama besar (setara ~$28,6 juta turnover di KuCoin) lalu menurun bertahap — angka aktivitas storage on-chain pre/post tidak dipublikasikan di sumber sekunder (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]
+Jumlah alamat pemegang token (unique holders): Tidak ditemukan (jumlah penerima airdrop tidak dipublikasikan resmi) (LOW)
+Jumlah alamat aktif harian sebelum vs sesudah: Tidak ditemukan (tidak ada dashboard publik di sumber yang diakses) (LOW)
+Konsentrasi kepemilikan: Tidak dapat dinilai dari sumber publik — alokasi 30% core contributors + 7% investor (keduanya locked) menyiratkan float awal terbatas (~690 juta dari reserve komunitas di launch) (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]
+Tingkat partisipasi staking: Tidak ditemukan (staking aktif namun tingkat partisipasi tidak dipublikasikan di sumber yang diakses) (LOW)
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat (persentase klaim & jual 7/30 hari pertama), tidak tersedia di sumber publik.
+Jumlah wallet penerima airdrop tidak dipublikasikan resmi — klaim "salah satu yang terbesar" tidak terverifikasi kuantitatif.
+Harga entry token sale investor tidak dipublikasikan — paper gain/loss VC tidak dapat dihitung pasti.
+
+FARMING DAN SYBIL
+
+Kriteria berbasis aktivitas testnet (menyimpan blob, staking, kampanye) dapat di-farm selama window testnet (Des 2024 – Mar 2025) yang diumumkan publik; tanpa disclosure mekanisme anti-sybil, multi-wallet farming mungkin terjadi — pola umum airdrop berbasis poin/kampanye era 2024-2025 (LOW) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]
+
+PROSPEK
+
+Metrik yang terpenuhi: Eksekusi TGE tepat jadwal; distribusi 4% pre-mainnet tersalurkan; ekonomi storage aktif (pembayaran + staking) (HIGH)
+Metrik yang tidak terpenuhi: Retensi nilai token (-85% dalam 12 bulan); transparansi jumlah penerima dan jadwal unlock penuh (HIGH)
+Sinyal ke depan: Unlock investor mulai ~Maret 2026 (12-bulan cliff); pertumbuhan permintaan storage riil (AI/data); efektivitas gelombang 6% post-mainnet (MEDIUM)
+Penilaian: Airdrop WAL sukses secara operasional dan distribusi, namun tanpa penahan nilai (fee share/burn efektif) dan dengan unlock bertahun-tahun di depan, retensi harga bergantung penuh pada adopsi storage riil yang belum terbukti skala besar (MEDIUM)
+
+PELAJARAN LINTAS PROJECT
+
+Pemecahan airdrop menjadi pre/post-mainnet (4%/6%) mempertahankan insentif pasca-launch tetapi tidak menahan depresiasi ketika utilitas token belum menghasilkan permintaan organik — distribusi luas bukan pengganti value capture.
+Token sale institusional besar ($140M) seminggu sebelum TGE memberi modal penuh namun menciptakan overhang unlock (cliff 12 bulan) yang jatuh bersamaan dengan harga yang sudah terdepresiasi — risiko struktural bagi VC.
+Klaim skala ("airdrop terbesar") tanpa publikasi jumlah penerima melemahkan akuntabilitas — metrik distribusi seharusnya bagian dari disclosure TGE.
+
+OPEN THREADS
+
+- Jumlah wallet penerima airdrop WAL per gelombang dan total klaim aktual
+- Jadwal unlock lengkap investors pasca cliff dan core contributors
+- Metrik permintaan storage riil (total blob tersimpan, revenue storage dalam WAL)
+- Dampak unlock investor Maret 2026 terhadap harga dan governance

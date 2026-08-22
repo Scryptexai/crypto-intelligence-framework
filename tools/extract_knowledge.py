@@ -69,10 +69,14 @@ SECTIONS = [
     ("Decision Framework", "Step", "Decision Framework"),
     ("Reusable Playbook", "Playbook", "Reusable Playbook"),
     ("Anti-patterns", "Anti-pattern", "Anti-pattern"),
+    # Track A dossiers (LayerZero) emit "PATTERN CANDIDATES" / "Pattern Candidate N:" with
+    # Shape / Drawn From / Applies When / Evidence Level fields instead of Core Insights.
+    ("Pattern Candidates", "Pattern Candidate", "Pattern Candidate"),
     ("Lessons Learned", None, None),  # boundary marker only, never parsed
 ]
 FIELD_LABELS = ["Description", "Explanation", "Evidence", "Supporting Dataset", "Confidence",
-                 "Lesson", "Warning", "Applicability"]
+                 "Lesson", "Warning", "Applicability",
+                 "Shape", "Drawn From", "Applies When", "Evidence Level"]
 _header_alt = "|".join(re.escape(h) for h, _, _ in SECTIONS)
 _field_alt = "|".join(re.escape(l) for l in FIELD_LABELS)
 
@@ -96,8 +100,14 @@ def _normalise_headers(text):
     project: _sections() stops recognising the headers, and -- far worse -- parse_knowledge's
     own phase-boundary lookahead used to stop dead at the first internal `## `, truncating the
     whole phase body to a couple of dozen characters and silently yielding zero items. Safe to
-    do unconditionally: none of these names collide with a phase title."""
-    return _HEADER_MARKUP_RE.sub(r"\1", text)
+    do unconditionally: none of these names collide with a phase title.
+
+    Case is normalised too: Track A dossiers write internal headers in FULL CAPS
+    ("PATTERN CANDIDATES"); the section table keys are title-case."""
+    canon = {h.lower(): h for h in _ALL_INTERNAL_HEADERS}
+    return re.sub(
+        rf"(?im)^[ \t]*(?:#{{1,6}}[ \t]*)?\*{{0,2}}({_internal_header_alt})\*{{0,2}}[ \t]*:?[ \t]*$",
+        lambda m: canon[m.group(1).lower()], text)
 
 
 def _project_name(text):
@@ -148,6 +158,12 @@ def parse_knowledge(text, project_name):
         text, re.S | re.M)
     body = m.group(1) if m else ""
     sections = _sections(body)
+    # Track A writes section headers in FULL CAPS ("PATTERN CANDIDATES") -- map them onto
+    # the canonical title-case keys the SECTIONS table uses.
+    for k in list(sections.keys()):
+        canon = k.title()
+        if canon != k and canon not in sections:
+            sections[canon] = sections[k]
 
     items = []
     idx = 0
@@ -163,14 +179,20 @@ def parse_knowledge(text, project_name):
                 continue
             idx += 1
             fields = {label: _extract_field(rest, label) for label in FIELD_LABELS}
-            description = fields["Description"] or fields["Explanation"] or ""
-            extra = fields["Lesson"] or fields["Warning"] or fields["Applicability"]
+            # Track A's Pattern Candidates carry Shape/Drawn From/Applies When/Evidence Level
+            # -- map them onto the same item shape (Shape=description, Applies When=extra,
+            # Drawn From=evidenceText, Evidence Level=confidence).
+            description = fields["Description"] or fields["Explanation"] or fields["Shape"] or ""
+            extra = (fields["Lesson"] or fields["Warning"] or fields["Applicability"]
+                     or fields["Applies When"])
             if extra:
                 description = f"{description} — {extra}" if description else extra
             confidence = None
-            if fields["Confidence"]:
-                confidence = CONFIDENCE_SCALE.get(fields["Confidence"].strip().lower())
-            dep_source = f"{fields['Supporting Dataset'] or ''} {fields['Evidence'] or ''}"
+            conf_raw = fields["Confidence"] or fields["Evidence Level"]
+            if conf_raw:
+                confidence = CONFIDENCE_SCALE.get(conf_raw.strip().lower())
+            dep_source = (f"{fields['Supporting Dataset'] or ''} {fields['Evidence'] or ''} "
+                          f"{fields['Drawn From'] or ''}")
             dependencies = sorted(set(re.findall(r"EV-\d+", dep_source)))
             items.append({
                 # Intelligence Workspace's `knowledge_items` table keys on a bare `id` (not
@@ -190,7 +212,7 @@ def parse_knowledge(text, project_name):
                 # Raw Evidence-field text, kept separate from `description` (not merged in)
                 # so tools/sync_supabase.py's evidence_rows() can push it into the real
                 # schema's dedicated evidence_items table (see that repo's src/db/schema.ts).
-                "evidenceText": fields["Evidence"],
+                "evidenceText": fields["Evidence"] or fields["Drawn From"],
                 "relatedKnowledge": [],
                 "dependencies": dependencies,
             })

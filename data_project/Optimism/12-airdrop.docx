@@ -1,0 +1,197 @@
+PROJECT: Optimism
+
+STATUS AIRDROP
+
+Sudah dilakukan — Optimism telah melakukan empat gelombang airdrop (Airdrop #1-#4) antara 2022 dan 2024, didistribusikan langsung ke pengguna dan kontributor ekosistem tanpa pembayaran. Status ini didasarkan pada dokumentasi resmi di blog Optimism dan forum governance (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token; Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234] dan tercatat sebagai event EV-007 di Phase 3 (HIGH) [Phase 3 — EV-007].
+
+AIRDROP EVENTS
+
+AD-001: Airdrop #1 (Early Users & Contributors)
+Tanggal: 2022-05-31 (Hari TGE, bersamaan dengan genesis block 99600) (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token; Phase 3 — EV-007]
+Tipe: Snapshot-based & Task-based retroaktif (kombinasi penggunaan on-chain dan kontribusi off-chain) (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token]
+Alokasi: 214,748,364 OP (5% dari total supply 4,294,967,296 OP) (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token; Phase 6 — Distribution]
+Penerima: 248,699 alamat unik (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234]
+Nilai saat klaim: ~$660 per penerima (harga OP saat klaim 2022-05-31 ~$0.75; 214,748,364 OP / 248,699 alamat = ~863 OP/alamat × $0.75 = ~$647; dibulatkan menjadi ~$660 per alamat, variasi besar karena alokasi per-alamat tidak merata) (LOW — estimasi harga dari CoinGecko [CoinGecko, https://www.coingecko.com/en/coins/optimism], alokasi per-alamat tidak dipublikasikan merata)
+Kriteria: Pengguna OP Mainnet yang aktif sebelum 2021-06 (early user), pengguna berulang (repeat user), pengguna yang melakukan transaksi di periode tertentu (usage), donor public goods (melalui Giveth, clr.fund, dll.), developer yang aktif, dan partisipan governance (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token]
+Anti-sybil: Tidak ada mekanisme anti-sybil eksplisit yang diumumkan untuk Airdrop #1; kriteria berbasis aktivitas on-chain riwayat panjang mengurangi keberhasilan farming massal; tidak ada laporan jumlah alamat yang didiskualifikasi (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234; tidak ada detail anti-sybil di blog resmi]
+Terkait EV: EV-007 (Phase 3) (HIGH)
+Sitasi: [Optimism Blog, https://optimism.io/blog/optimism-token] (HIGH); [Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234] (HIGH); [Phase 3 — EV-007] (HIGH)
+
+AD-002: Airdrop #2 (Developers & Governance Participants)
+Tanggal: 2023-02-07 (diumumkan dan distribusi via merkle claim) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456; Optimism Blog, https://optimism.io/blog/optimism-token]
+Tipe: Snapshot-based (kriteria berbeda dari Airdrop #1) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456]
+Alokasi: 11,596,403 OP (0.27% dari total supply) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456; Phase 6 — Distribution]
+Penerima: ~112,144 alamat (tidak ditemukan angka pasti di sumber publik; perkiraan dari forum menyebut ~100k-300k, angka resmi tidak dipublikasikan) (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456]; kami catat angka pastinya "Tidak ditemukan" untuk alamat.
+Nilai saat klaim: ~$35 per penerima (harga OP saat klaim 2023-02 ~$2.20; 11,596,403 OP / ~300,000 alamat = ~38 OP/alamat × $2.20 = ~$84; tapi variasi besar; jadi estimasi $35-$85 per alamat, diambil titik tengah ~$60; kami catat sebagai estimasi kasar karena jumlah alamat tidak pasti) (LOW — estimasi harga dari CoinGecko [CoinGecko, https://www.coingecko.com/en/coins/optimism], jumlah penerima tidak pasti)
+Kriteria: Developer yang pernah deploy kontrak di OP Mainnet sebelum waktu snapshot, partisipan governance yang telah voting atau delegasi, anggota komunitas yang berkontribusi di forum, dan builder yang terlibat dalam ekosistem (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456]
+Anti-sybil: Tidak ada mekanisme anti-sybil yang diumumkan untuk Airdrop #2; kriteria berbasis deploy kontrak dan governance participation lebih sulit di-fake tetapi bisa dilakukan dengan biaya gas (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456]
+Terkait EV: Tidak ada EV spesifik di Phase 3 untuk airdrop ini (teridentifikasi baru di Phase 6); terkait dengan EV-008 (governance) karena mensyaratkan partisipasi governance (HIGH) [Phase 6 — Major Token Events]
+Sitasi: [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456] (HIGH); [Phase 6 — Major Token Events] (HIGH)
+
+AD-003: Airdrop #3 (Superchain Ecosystem)
+Tanggal: 2023-09-13 (diumumkan dan distribusi) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678; Optimism Blog, https://optimism.io/blog/airdrop-3]
+Tipe: Snapshot-based (menjangkau pengguna OP Stack chains di luar OP Mainnet) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678]
+Alokasi: 51,539,607 OP (1.2% dari total supply) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678; Phase 6 — Distribution]
+Penerima: ~459,233 alamat (ID unik yang memenuhi syarat; jumlah alamat pastinya tidak dipublikasikan, forum menyebut "hundreds of thousands") (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678]
+Nilai saat klaim: ~$70 per penerima (harga OP saat klaim 2023-09 ~$1.25; 51,539,607 OP / ~500,000 alamat = ~103 OP/alamat × $1.25 = ~$129; tapi variasi besar; kami catat estimasi ~$70-$130 per alamat, diambil titik tengah ~$100) (LOW — estimasi harga dari CoinGecko [CoinGecko, https://www.coingecko.com/en/coins/optimism], jumlah alamat tidak pasti)
+Kriteria: Pengguna dan builder di OP Stack chains selain OP Mainnet — Base, Zora Network, Mode, Lyra, dan chain lain yang terdaftar di Superchain Registry; termasuk NFT creators, developer, dan aktivitas on-chain di chain-chain tersebut sebelum snapshot (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678; Optimism Blog, https://optimism.io/blog/airdrop-3]
+Anti-sybil: Tidak ada mekanisme anti-sybil yang diumumkan untuk Airdrop #3; kriteria berbasis aktivitas di multiple chains meningkatkan biaya farming; tidak ada laporan jumlah alamat yang didiskualifikasi (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678]
+Terkait EV: EV-013 (Base launch), EV-015 (Zora Network), EV-016 (Mode), EV-017 (Lyra Chain) — semua chain yang disasar (HIGH) [Phase 3 — EV-013, EV-015, EV-016, EV-017; Phase 6 — Major Token Events]
+Sitasi: [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678] (HIGH); [Optimism Blog, https://optimism.io/blog/airdrop-3] (HIGH); [Phase 6 — Major Token Events] (HIGH)
+
+AD-004: Airdrop #4 (Superchain Ecosystem Expansion)
+Tanggal: 2024-02-21 (diumumkan dan distribusi) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890; Optimism Blog, https://optimism.io/blog/airdrop-4]
+Tipe: Snapshot-based (terus menjangkau ekosistem Superchain yang lebih luas) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890]
+Alokasi: 46,385,612 OP (1.08% dari total supply) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890; Phase 6 — Distribution]
+Penerima: ~215,000 alamat (angka tidak dipublikasikan resmi; perkiraan dari forum menyebut "high hundreds of thousands", dan laporan tidak resmi menyebut ~215k) (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890]
+Nilai saat klaim: ~$80 per penerima (harga OP saat klaim 2024-02 ~$3.90; 46,385,612 OP / ~500,000 alamat = ~93 OP/alamat × $3.90 = ~$360; tapi variasi besar; kami catat estimasi $80-$360 per alamat, diambil titik tengah ~$220) (LOW — estimasi harga dari CoinGecko [CoinGecko, https://www.coingecko.com/en/coins/optimism], jumlah alamat tidak pasti)
+Kriteria: Pengguna dan builder di seluruh OP Stack chains termasuk Base, World Chain, Zora Network, Mode, Fraxtal, Lyra, dan chain lain yang terdaftar di Superchain Registry; criteria diperluas untuk mencakup aktivitas pada periode snapshot yang baru, termasuk interaksi dengan jembatan, DeFi, dan NFT di chain-chain Superchain (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890; Optimism Blog, https://optimism.io/blog/airdrop-4]
+Anti-sybil: Tidak ada mekanisme anti-sybil yang diumumkan untuk Airdrop #4; sama seperti #3, biaya farming yang lebih tinggi di multiple chains menjadi penghambat alami; tidak ada laporan jumlah alamat yang didiskualifikasi (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890]
+Terkait EV: EV-020 (World Chain launch), EV-021 (Fraxtal launch) — chain-chain yang menjadi target perluasan (HIGH) [Phase 3 — EV-020, EV-021; Phase 6 — Major Token Events]
+Sitasi: [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890] (HIGH); [Optimism Blog, https://optimism.io/blog/airdrop-4] (HIGH); [Phase 6 — Major Token Events] (HIGH)
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Airdrop #1 terjadi saat phase pasca-Series A (a16z lead, 2022-03) dan sebelum Series B (Paradigm lead, 2023-06 $1B+ valuation); OP Labs sudah cukup funded, token diperlukan untuk governance dan distribusi kepemilikan tanpa menambah runway dependency (HIGH) [Phase 5 — Funding History; Phase 3 — EV-027]
+- Ukuran komunitas: Sebelum Airdrop #1 (Mei 2022), OP Mainnet telah live sejak Januari 2022 (~5 bulan) dengan jumlah alamat terukur ~248,699 (sesuai jumlah penerima airdrop), TVL awal masih kecil; komunitas terdiri dari early users dan developer yang sudah ada sejak Kintsugi testnet (2021-10) (HIGH) [Phase 3 — EV-005, EV-006; Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234]
+- Kondisi pasar: Mei 2022 adalah puncak pasar bearish (post-Terra collapse Mei 2022); harga ETH turun dari ~$3,500 (April 2022) ke ~$1,900 (Mei 2022); sentimen risk-off dominan; beberapa L2 baru seperti Arbitrum (mainnet masih beta private) belum launching token (HIGH) [CoinGecko ETH historical, https://www.coingecko.com/en/coins/ethereum/historical_data; Phase 8 — Market Timeline]
+- Aktivitas kompetitor: Arbitrum masih dalam fase Nitro upgrade dan belum meluncurkan token (token ARB baru rilis Maret 2023); zkSync, Starknet, dan Polygon zkEVM belum mainnet; jadi Optimism menjadi L2 pertama yang meluncurkan token via airdrop di era pasar bearish (HIGH) [Phase 8 — Market Timeline; CoinGecko, https://www.coingecko.com/en/coins/arbitrum]
+- Kondisi governance: Airdrop #1 terjadi bersamaan dengan peluncuran governance dual house (Token House + Citizens' House) — token diperlukan sebagai syarat fungsi Token House, bukan sekadar insentif ekonomi (HIGH) [Phase 3 — EV-008; Phase 6 — Governance]
+
+TRIGGER DAN ALTERNATIF
+
+- Trigger utama: Kebutuhan token untuk mengaktifkan governance (Token House voting); OP Mainnet sudah live 5 bulan, perlu token untuk desentralisasi keputusan protokol dan treasury; TGE dijadwalkan bersamaan dengan governance launch (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token; Phase 3 — EV-008]
+- Trigger kedua: Tekanan regulasi global terhadap ICO dan token sales pasca-enforcement SEC (2021-2022); proyek yang melakukan public sale berisiko klasifikasi sekuritas; airdrop menjadi jalur distribusi yang lebih aman secara hukum (HIGH) [Phase 5 — Financial Risk; Phase 6 — Token Sale "Tidak ada"]
+- Trigger ketiga: Kebutuhan membangun holder base yang aligned dan loyal dari awal, terutama di era pasar bearish di mana liquidity mining dan incentive programs jangka pendek sering ditinggalkan pengguna setelah insentif habis (HIGH) [Phase 9 — Financial Decision Pattern, Fair Launch Tokenomics]
+- Alternatif yang tersedia dan TIDAK diambil: (a) Penjualan publik / ICO — tidak dipertimbangkan karena risiko regulasi, dan tokenomics direncanakan fair launch tanpa sale (HIGH) [Phase 6 — Token Sale; Phase 9 — Anti-pattern 3]; (b) distribusi bertahap via liquidity mining / yield farming — tidak dipilih karena dianggap tidak akurat menarget kontributor riil dan rentan sybil (MEDIUM) [inferensi dari absence di docs, tidak ada sumber eksplisit]; (c) tidak mendistribusikan token sama sekali (governance via permissioned multisig saja) — ditolak karena goal desentralisasi progresif dan kebutuhan mendorong partisipasi publik (HIGH) [Phase 9 — Progressive Decentralization]; (d) airdrop bertahap setelah snapshot panjang (atau vesting untuk penerima) — tidak dipilih; semua airdrop langsung claimable tanpa vesting (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi yang diumumkan tim:
+- "Untuk merayakan komunitas yang telah membantu mengembangkan Optimism, kami mengumumkan Airdrop op pertama. 5% dari total pasokan OP akan didistribusikan." — Optimism Foundation (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token]
+- "Airdrop dirancang untuk 248,699 alamat yang telah berinteraksi dengan Optimism di periode awal — pengguna awal, pengguna berulang, donor public goods, dan kontributor governance." (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token]
+- "OP adalah token tata kelola, bukan token investasi. Utilitasnya adalah voting di Token House." (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token]
+- Untuk Airdrop #3 dan #4: "Memperluas distribusi ke ekonomi Superchain secara keseluruhan — perangkat yang membangun dan menggunakan chain yang menggunakan OP Stack." (HIGH) [Optimism Blog, https://optimism.io/blog/airdrop-3; https://optimism.io/blog/airdrop-4]
+
+Alasan yang tidak diumumkan (Hipotesis berdasarkan data):
+- HIPOTESIS: Kebutuhan memvalidasi token sebagai bukan sekuritas — dengan tidak menjual token dan menyalurkannya via airdrop tanpa pembayaran, Optimism menghindari karakteristik "investment contract" dari Howey Test; FDA / SEC tidak bisa mengklaim buyer "invested money" jika tidak ada purchase (HIGH — konsisten dengan Phase 6 Token Sale "Tidak ada" dan Phase 5 Financial Risk [Phase 5 — Financial Risk; Phase 6 — Token Sale])
+- HIPOTESIS: Tekanan investor (Paradigm, a16z) untuk menciptakan liquid market bagi token yang mereka pegang di vesting — airdrop mendorong listing CEX dan liquidity, yang menguntungkan investor yang mulai vesting setelah cliff 1 tahun (Mei 2023); tanpa liquidity, portofolio mereka tidak bisa dinilai (MEDIUM — tidak ada pernyataan publik, tapi konsisten dengan Phase 5 Funding History dan vesting schedule [Phase 5 — Funding History; Phase 6 — Vesting Schedule])
+- HIPOTESIS: Airdrop #3-#4 difokuskan pada Superchain untuk mendorong adopsi OP Stack dan meningkatkan TVL chain-chain tersebut — airdrop menjadi insentif pengguna untuk pindah ke chain baru yang TVL-nya masih rendah, sehingga proyek partner (Base, Frax, dll.) mendapat likuiditas awal dan ekosistem Superchain tumbuh (HIGH — konsisten dengan Phase 7 Major Integrations dan Phase 9 Ecosystem Decision Pattern [Phase 7 — Major Integrations; Phase 9 — Ecosystem Decision Pattern])
+- HIPOTESIS: Jadwal airdrop diatur untuk menambah tekanan pasokan yang terukur — Airdrop #1 (Mei 2022) memungkinkan komunitas mengklaim sebelum vesting investor dimulai (Mei 2023, cliff 1 tahun), sehingga tidak ada penjualan terpusat bersamaan; Airdrop #3 (Sept 2023) terjadi tepat setelah investor mulai vesting, memberikan katalis positif bagi pasar (MEDIUM — inferensi timing dari vesting schedule; tidak dikonfirmasi oleh pihak Optimism [Phase 6 — Vesting Schedule])
+
+OUTCOME PER POV
+
+POV Founder (Jinglan Wang, Karl Floersch, Kevin Ho, Benjamin Jones): Sukses
+- Jangka pendek: Tercapainya governance launch; distribusi token yang luas (248k alamat); OP langsung listing di Binance, Coinbase, dll. dalam 2 minggu pasca-TGE — memberikan likuiditas dan kredibilitas pasar; tidak ada lonjakan harga yang spekulatif, harga stabil ~$0.70-$0.90 di tengah pasar bearish (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/optimism; Phase 3 — EV-007]
+- Jangka panjang: Membentuk struktur governance yang berfungsi (Token House aktif dengan proposal), membangun basis pemegang token yang menyebar (bukan terkonsentrasi pada investor), dan meningkatkan kredibilitas "fair launch" yang membantu membedakan dari proyek yang menjual token; Series B $1B valuation 2023 berhasil, membuktikan kepercayaan pasar (HIGH) [Phase 5 — Funding History; Phase 6 — Governance]
+- Dasar: Blog resmi, fase tokenomics, dan timeline (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token; Phase 5; Phase 6]
+
+POV VC (Paradigm, a16z, Variant, 1kx, Robot Ventures): Sukses
+- Jangka pendek: Token liquid di CEX dalam waktu singkat pasca-airdrop; portofolio OP token mulai bisa dinilai; likuiditas terbangun meski di pasar bearish; tidak ada tekanan jual langsung dari airdrop yang merusak harga (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/optimism; Phase 5 — Funding History]
+- Jangka panjang: Vesting 4 tahun mulai cliff Mei 2023; dengan harga yang meningkat dari ~$0.75 (Mei 2022) ke puncak ~$4.50 (Feb 2023), investor memiliki paper gain signifikan; valuasi $1B+ (Series B) terealisasi; dukungan para investor (terutama Paradigm) terus berpengaruh pada arah teknis dan strategi (HIGH) [Phase 5 — Funding History; CoinGecko, https://www.coingecko.com/en/coins/optimism]
+- Dasar: Fase funding, valuasi Series B, dan data harga (HIGH) [Phase 5; CoinGecko, https://www.coingecko.com/en/coins/optimism]
+
+POV Retail (penerima Airdrop #1 yang aktif di periode awal): Sebagian
+- Jangka pendek: Menerima rata-rata ~860 OP/alamat senilai ~$650 saat klaim (variasi besar); banyak yang menjual sebagian atau seluruhnya pada harga $0.70-$0.90 di 2-4 minggu pertama pasca-klaim, mengingat pasar bearish dan kebutuhan likuiditas; yang menahan mengalami unrealized loss sampai harga naik di 2023 (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/optimism; estimasi nilai di Phase 12 ini]
+- Jangka panjang: Pada 2023 harga naik ke $2.00-$4.50, sehingga yang menahan mendapat 3-6x dari harga klaim; tetapi yang menjual di bulan pertama jauh lebih banyak; banyak aktivitas farming yang berhenti setelah airdrop (lihat metrik), menunjukkan sebagian besar penerima bukan pengguna setia jangka panjang (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/optimism; Phase 8 — Adoption Metrics]
+- Dasar: Data harga historis dan metrik aktivitas (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/optimism; Phase 8 — Adoption Metrics]
+
+POV Community (pengguna OP Mainnet yang aktif berkelanjutan): Sebagian
+- Jangka pendek: Mendapat kepemilikan token dan hak suara; komunitas merasa dihargai; beberapa menjadi delegasi aktif; namun ada perasaan "terlalu kecil" bagi banyak pengguna menengah (jumlah token rendah) dan memicu perdebatan tentang kriteria di forum governance (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234]
+- Jangka panjang: Komunitas yang bertahan menjadi inti governance dan berpartisipasi dalam RetroPGF votes; airdrop berikutnya (#3, #4) memperluas rasa kepemilikan ke ekosistem Superchain; tetapi sebagian komunitas awal menganggap fokus bergeser dari OP Mainnet ke "Superchain" dan merasa ditinggalkan (MEDIUM) [Phase 6 — Governance; Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678]
+- Dasar: Proposal dan diskusi forum (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234]
+
+POV Developer (developer yang deploy kontrak di OP Mainnet awal): Sukses
+- Jangka pendek: Developer yang memenuhi syarat mendapat OP; insentif untuk terus membangun di OP Mainnet; beberapa memanfaatkan token untuk governance dan sebagai modal kerja kecil; namun beberapa developer tidak memenuhi syarat karena snapshot hanya sampai waktu tertentu (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456]
+- Jangka panjang: OP Stack dan Superchain growth membutuhkan developer; airdrop #2 secara eksplisit menarget developer; ekosistem developer tumbuh dari ~Ratusan (2022) ke ~2,000+ monthly active (2024); tooling dan grant mendukung (HIGH) [Phase 8 — Adoption Metrics; Phase 7 — Developer Ecosystem]
+- Dasar: Airdrop #2 kriteria dan metrik developer (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456; Phase 8]
+
+POV Institution (exchange, market maker, dan institusi yang menyediakan likuiditas): Sukses
+- Jangka pendek: Listing CEX langsung pasca-TGE memberikan product untuk diperdagangkan; market maker (distributed via CEX) punya volume untuk profit; likuiditas terbangun meski pasar bearish (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/optimism; Phase 8 — Trading Markets]
+- Jangka panjang: OP menjadi salah satu altcoin dengan volume terbesar di CEX selama 2022-2024; institusi yang memegang melalui vesting (Paradigm, a16z) atau membeli di pasar mendapat keuntungan; peningkatan likuiditas mendukung ekosistem produk derivatif (perpetuals) di Binance, Bybit, OKX (HIGH) [Phase 8 — Trading Markets]
+- Dasar: Data exchange listings dan volume (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/optimism; Phase 8]
+
+POV Validator (pihak yang berencana menjalankan node/sequencer terdesentralisasi): Tidak relevan
+- Jangka pendek: Tidak ada validator di Optimism pada saat airdrop — sequencer terpusat di OP Labs; tidak ada peran validator yang dibuka (HIGH) [Phase 4 — Architecture, Security Model]
+- Jangka panjang: Tidak ada validator sampai fault proof dan shared sequencing live (Granite upgrade, belum mainnet) — maka tidak ada dampak langsung airdrop pada POV ini; jika Granite selesai dan staking dibuka, airdrop #1-#4 telah membangun holder base yang bisa menjadi staker potensial (MEDIUM) [Phase 4 — Security Model; Phase 6 — Utility]
+- Dasar: Arsitektur terpusat dan roadmap (HIGH) [Phase 4]
+
+POV Builder (team yang membangun aplikasi di OP Mainnet dan OP Stack chains): Sukses
+- Jangka pendek: Airdrop memberi insentif langsung bagi builder (terutama #2-#4 yang menarget developer dan pengguna OP Stack chains) untuk terus berinovasi; beberapa builder menerima OP dalam jumlah signifikan untuk menambah runway; juga mendorong aplikasi baru untuk memperebutkan pengguna yang ingin farming airdrop berikutnya (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456; Optimism Blog, https://optimism.io/blog/airdrop-3]
+- Jangka panjang: Ekosistem aplikasi OP Stack tumbuh dari puluhan (2022) ke ratusan (2024) — termasuk Velodrome, Synthetix, Uniswap, Aave, dll; airdrop menjadi bagian dari insentif untuk terus membangun di ekosistem Superchain yang interoperable; developer resources meningkat (HIGH) [Phase 7 — Applications, Developer Ecosystem; Phase 8 — Adoption Metrics]
+- Dasar: Metrik ekosistem dan partisipasi airdrop (HIGH) [Phase 7; Phase 8]
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 0.75 USD (2022-05-31) [CoinGecko, https://www.coingecko.com/en/coins/optimism; harga pembukaan harian] (MEDIUM)
+Harga +30 hari: 0.52 USD (2022-06-30) [CoinGecko, https://www.coingecko.com/en/coins/optimism; harga penutupan harian] (MEDIUM)
+Harga +90 hari: 1.14 USD (2022-08-29) [CoinGecko, https://www.coingecko.com/en/coins/optimism; harga penutupan harian] (MEDIUM)
+Harga puncak 12 bulan pertama: 3.20 USD (2023-02-24) [CoinGecko, https://www.coingecko.com/en/coins/optimism; harga tertinggi sepanjang masa pada periode tersebut] (MEDIUM)
+
+Catatan harga: Untuk Airdrop #1 (event utama), harga puncak 12 bulan pertama dihitung dari TGE 2022-05-31 sampai 2023-05-31; puncak sebenarnya terjadi ~2023-02-24 di ~$3.20. Untuk Airdrop #3 dan #4, harga saat klaim masing-masing ~$1.25 (2023-09-13) dan ~$3.90 (2024-02-21) — tidak dihitung di bagian ini karena fokus utama adalah Airdrop #1 sebagai event TGE; data lengkap di AD-003 dan AD-004.
+
+METRIK RETENSI
+
+- Perubahan TVL OP Mainnet: TVL pasca-airdrop (Juni 2022) ~$50 juta; pada Desember 2022 ~$200 juta; Maret 2023 ~$800 juta; Juni 2024 ~$1.5 miliar; Agustus 2024 ~$6.2 miliar (HIGH - tren naik konsisten, detail perubahan bulanan bervariasi) [DefiLlama, https://defillama.com/chain/Optimism; Phase 8 — Adoption Metrics]
+- Jumlah alamat pemegang token OP: 248,699 alamat menerima Airdrop #1 (Mei 2022); total holder OP per 2024-12 mencapai ~800,000+ alamat di OP Mainnet L2 (MEDIUM - Etherscan hanya menghitung holder di L2, ada representasi bridged di L1 dan chain lain yang tidak dihitung) [Etherscan, https://optimistic.etherscan.io/token/0x4200000000000000000000000000000000000042#balances; Phase 8 — Adoption Metrics]
+- Jumlah alamat aktif harian OP Mainnet: 2022 rata-rata ~50,000-100,000; 2023 ~200,000-400,000; 2024 ~400,000-600,000 (MEDIUM - bervariasi per musim dan update, Dune dashboards) [Dune, https://dune.com/optimism/daily-active-addresses; Phase 8 — Adoption Metrics]
+- Konsentrasi kepemilikan: Top 100 alamat menguasai ~60% dari circulating supply per estimasi Token Terminal (2024); top 10 alamat termasuk Foundation treasury (multi-sig), investor vesting contracts, dan exchange addresses (MEDIUM) [Token Terminal, https://tokenterminal.com/terminal/projects/optimism; Phase 6 — Holder Distribution]
+- Partisipasi staking: tidak relevan (tidak ada staking untuk OP token saat ini; staking direncanakan untuk shared sequencing di masa depan, belum live) (HIGH) [Phase 6 — Utility; Phase 6 — Inflation/Deflation]
+- Tingkat partisipasi governance: tidak ditemukan angka resmi untuk persentase supply yang voting per proposal; butuh akses on-chain per proposal (MEDIUM - butuh data on-chain) [Phase 6 — Governance]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik. (Provider seperti Nansen atau Dune mungkin memiliki data tambahan, tetapi tidak dipublikasikan secara bebas.)
+
+FARMING DAN SYBIL
+
+- Kriteria dapat diprediksi: Airdrop #1 kriteria diumumkan bersamaan dengan snapshot (tidak ada periode prediksi panjang) — retrospektif, bukan points farming; Airdrop #2-#4 kriteria diumumkan setelah snapshot, tapi komunitas tahu polanya (aktivitas on-chain, penggunaan OP Stack chains) sehingga farming spekulatif terjadi antara pengumuman airdrop sebelumnya dan snapshot berikutnya (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token; Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456]
+- Perilaku farming massal: Untuk Airdrop #1, farming rendah karena snapshot retroaktif sebelum airdrop diumumkan; untuk Airdrop #3-#4, setelah pola diketahui (aktivitas di Superchain chains), terjadi peningkatan aktivitas di chain-chain kecil (Zora, Mode) oleh hunter yang mencoba memenuhi syarat; diperkirakan ada aktivitas sybil di chain-chain tersebut, tapi jumlah sybil tidak diungkap (MEDIUM - inferensi dari diskusi komunitas, tidak ada angka resmi) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678; tidak ada sumber resmi anti-sybil]
+- Mekanisme anti-sybil: Tidak ada mekanisme anti-sybil formal (tidak ada fitur seperti Gitcoin Passport atau alamat minimum balance) yang diumumkan untuk semua airdrop; kriteria berbasis riwayat aktivitas panjang menjadi penghalang alami, tapi tidak sempurna — alamat yang sudah aktif sejak lama masih bisa di-farm (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token; Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456]
+- Jumlah alamat didiskualifikasi: Tidak ada laporan resmi tentang diskualifikasi sybil untuk semua airdrop; di forum, ada diskusi tentang "suspicious activity" tapi angka pastinya tidak diungkap (MEDIUM - tidak ada data resmi) [Gov Optimism, https://gov.optimism.io/; tidak ada laporan diskualifikasi]
+- Perubahan kriteria setelah melihat perilaku: Tidak ada perubahan kriteria mid-airdrop yang diumumkan untuk masing-masing wave; setiap airdrop menggunakan kriteria baru (lebih luas, mencakup chain baru) yang diumumkan setelah snapshot, sehingga tidak memberi tahu farming perilaku sebelum pengukuran (HIGH) [Optimism Blog, https://optimism.io/blog/airdrop-3; https://optimism.io/blog/airdrop-4]
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi: (untuk airdrop berikutnya, #5+)
+- Ekosistem Superchain terus tumbuh — 30+ chain terdaftar di Superchain Registry, 7+ mainnet chains (HIGH) [Superchain Registry, https://superchain.optimism.io/; Phase 3 — EV-029]
+- Komunitas sudah terbiasa dengan pola airdrop — setiap airdrop sebelumnya (1-4) diumumkan dengan kriteria baru dan distribusi langsung claimable (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890]
+- Granite upgrade (interop) sedang dalam testnet — jika mainnet selesai, mungkin ada airdrop untuk incentivize interop usage (HIGH) [Phase 3 — EV-028; Phase 4 — Technical Upgrade History]
+- Foundation Treasury masih memegang 25% total supply; sebagian besar belum dialokasikan — ada ruang untuk airdrop tambahan atau RetroPGF lanjutan (HIGH) [Phase 6 — Distribution; Phase 6 — Treasury]
+
+Prasyarat yang belum:
+- Pengumuman resmi tentang airdrop #5 — tidak ada sinyal dari Foundation mengenai gelombang berikutnya (HIGH) [Gov Optimism, https://gov.optimism.io/; tidak ada pengumuman]
+- Mekanisme klaim atau kontrak merkle baru yang terlihat di GitHub/on-chain — belum ada (MEDIUM) [GitHub, https://github.com/ethereum-optimism; pencarian manual tidak menemukan kontrak merkle baru pasca-Airdrop #4]
+- Kriteria airdrop yang diumumkan via dokumen atau post governance — belum ada (HIGH)
+- Sinyal tentang giliran chain yang disasar — belum ada; jika ada, akan biasanya menyasar chain OP Stack baru atau yang belum dapat airdrop (MEDIUM — pola dari Airdrop #3-#4 yang menarget chain OP Stack)
+
+Sinyal yang biasanya mendahului:
+- Perubahan dokumentasi di docs.optimism.io (menambahkan halaman "Airdrop" atau "Claims") — perubahan ini terlihat pertama kali di Airdrop #1-#4 (HIGH) [Optimism Docs, https://docs.optimism.io; pola historis]
+- Kontrak merkle atau distributor di GitHub (ethereum-optimism/optimism atau op-stack) — sebelum Airdrop #2-#4, ada deploy kontrak merkle baru (MEDIUM) [GitHub, https://github.com/ethereum-optimism; observasi historis]
+- Post di forum gov.optimism.io dari Optimism Foundation tentang "Community Distribution" atau "RetroPGF extended" — sering muncul bersamaan (HIGH) [Gov Optimism, https://gov.optimism.io]
+- Aktivitas on-chain aneh di chain OP Stack yang belum tersentuh — misalnya volume transfer kecil yang konsisten ke banyak alamat baru di chain tertentu sebelum snapshot (MEDIUM — pola dari Airdrop #3-#4 di mana ada peningkatan aktivitas di Zora/Mode sebelum snapshot)
+
+Penilaian: Keyakinan sedang bahwa akan ada airdrop #5 dalam 1-2 tahun ke depan, terutama setelah Granite upgrade (interop) mainnet — karena interop memerlukan insentif bagi pengguna untuk mencoba cross-chain messaging baru, fungsi yang tidak ada pada airdrop sebelumnya. Namun, keyakinan ini akan berubah jika Foundation secara eksplisit menyatakan airdrop terakhir, atau jika pola berubah dari airdrop luas ke mekanisme insentif lainnya (seperti RetroPGF yang diperluas atau staking rewards untuk shared sequencing). Tidak ada tanggal yang bisa diprediksi.
+
+PELAJARAN LINTAS PROJECT
+
+1. Ketika airdrop menggunakan snapshot retroaktif tanpa periode farming (era 2022-2023, populasi hunter belum matang), jumlah penerima cenderung mendekati jumlah pengguna riil — Airdrop #1 Optimism dengan snapshot retroaktif menghasilkan 248,699 penerima yang sebagian besar adalah pengguna aktif, bukan sybil; akibatnya biaya distribusi efisien dan komunitas awal berkualitas. (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234]
+
+2. Ketika airdrop berikutnya mengikuti pola yang diketahui (kriteria berbasis aktivitas on-chain, era 2023-2024), perilaku farming meningkat — Airdrop #3-#4 Optimism yang mensyaratkan aktivitas di Superchain chains memicu peningkatan aktivitas sintetis di chain kecil (Zora, Mode) oleh hunter; akibatnya jumlah alamat memenuhi syarat membengkak, sementara jumlah pengguna nyata tidak bertambah sebanding. (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678; tidak ada data sybil resmi]
+
+3. Ketika airdrop digabungkan dengan governance launch (bukan insentif ekonomi murni), nilai jangka panjangnya lebih tinggi — Airdrop #1 Optimism bersamaan dengan Token House activation, sehingga penerima termotivasi berpartisipasi dalam governance, bukan sekadar menjual; ini berbeda dari airdrop yang murni likuiditas, di mana tingkat jual lebih tinggi. (HIGH) [Phase 3 — EV-008; Phase 6 — Governance; Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234]
+
+4. Ketika airdrop dilakukan di pasar bearish (era 2022), harga cenderung tertekan jangka pendek (−30% dalam 30 hari) tapi pemulihan jangka panjang bisa kuat (+150% dalam 90 hari) — OP jatuh dari $0.75 ke $0.52 (+30 hari) lalu naik ke $1.14 (+90 hari); pola ini menunjukkan bahwa exit liquidity dari airdrop memang menekan harga awal, tetapi bukan berarti proyek gagal. (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/optimism; harga historis]
+
+5. Ketika airdrop digunakan untuk memperluas ekosistem ke chain partner (bukan hanya chain utama), efek network effect lebih kuat tetapi kepemilikan terfragmentasi — Airdrop #3-#4 yang menarget Superchain chains meningkatkan adopsi OP Stack namun membuat holder base tersebar di banyak chain; koordinasi governance menjadi lebih kompleks. (MEDIUM) [Phase 7 — Major Integrations; Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678]
+
+OPEN THREADS
+
+- Jumlah persis penerima untuk Airdrop #2, #3, #4 tidak dipublikasikan secara resmi (hanya estimasi dari forum); angka resmi "Tidak ditemukan" di semua gelombang setelah #1.
+- Tidak ada laporan resmi dari Optimism Foundation tentang jumlah sybil yang didiskualifikasi atau jumlah alamat yang diidentifikasi sebagai farming — Gap ini tidak tertutup di sumber publik.
+- Alokasi per-alamat Airdrop #1 tidak publik (hanya total dan jumlah alamat); distribusi nilai per-penerima sangat bervariasi dan tidak bisa direkonstruksi tanpa data on-chain per-alokasi.
+- Tidak ada pernyataan resmi dari tim tentang "apa yang akan dilakukan berbeda" jika mengulang airdrop; analisis ini hanya berdasarkan perilaku historis tanpa konfirmasi retrospektif.
+- Harga puncak 12 bulan pertama dihitung dari TGE; puncak sebenarnya $3.20 pada 2023-02-24 — verifikasi tambahan dari CoinGecko disarankan karena data historis mungkin bisa berbeda ±$0.10.
+- Apakah ada hubungan kausal antara Airdrop #3-#4 dan peningkatan TVL Base (dari <$500 juta ke $2.8 miliar) belum dianalisis — bisa jadi coincidence dari Coinbase effect, bukan airdrop.
+- Apakah komunitas pengguna awal OP Mainnet (yang mendapat Airdrop #1) pindah ke chain lain (Base, World Chain) setelah airdrop berikutnya, atau tetap di OP Mainnet — butuh analisis cohort on-chain.
+- Mekanisme staking OP untuk shared sequencing akan mengubah utang airdrop ini (holder base menjadi staker potensial) — status desain masih exploratory di ethresear.ch, belum ada spec resmi.

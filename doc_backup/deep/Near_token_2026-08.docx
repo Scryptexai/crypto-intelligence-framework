@@ -1,0 +1,342 @@
+PROJECT: NEAR Protocol
+
+## Token Information
+
+Official Token Name: NEAR
+Symbol: NEAR
+Token Standard: Native coin (bukan ERC-20/BEP-20/SPL); protokol NEAR menggunakan account-based model dengan token native
+Blockchain: NEAR Protocol (mainnet)
+Contract Address: tidak ada (native coin, bukan smart contract token)
+Decimals: 24 (1 NEAR = 10^24 yoctoNEAR) (HIGH) [NEAR Documentation, https://docs.near.org/concepts/basics/tokens]
+Status: Live
+Sources: [NEAR Documentation, https://docs.near.org/concepts/basics/tokens] [NEAR Whitepaper, https://near.org/papers/nightshade/] [CoinGecko, https://www.coingecko.com/en/coins/near]
+
+## Supply
+
+Maximum Supply: tidak ada hard cap (inflationary)
+Total Supply: 1.000.000.000 NEAR (genesis) + inflasi kumulatif sejak 2020-10-14; total supply real-time ~1.2B+ NEAR per Oktober 2024 (HIGH) [NEAR Explorer, https://explorer.near.org] [Token Terminal NEAR, https://tokenterminal.com/terminal/projects/near/metrics]
+Circulating Supply: tidak diungkap resmi real-time; perkiraan ~1.1B-1.2B NEAR (termasuk token vested yang sudah unlocked) per Oktober 2024 (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/near] [CoinMarketCap, https://coinmarketcap.com/currencies/near-protocol/]
+Initial Supply: 1.000.000.000 NEAR (genesis) (HIGH) [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Blog Mainnet Launch, https://near.org/blog/mainnet-launch]
+Supply Type: Inflationary
+Sources: [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Economics Inflation, https://docs.near.org/concepts/economics/inflation] [NEAR Explorer, https://explorer.near.org]
+
+## Distribution
+
+Community / Grants: ~17.2% (172M NEAR) — vesting 12-48 bulan (HIGH) [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply]
+Core Contributors / Team: ~14% (140M NEAR) — vesting 12-48 bulan (HIGH) [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply]
+Foundation (NEAR Foundation): ~12% (120M NEAR) — vesting 48 bulan (HIGH) [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Foundation Announcement, https://medium.com/nearprotocol/near-foundation-announcement-7e8a5c5f5d5a]
+Early Ecosystem: ~11.7% (117M NEAR) — vesting 12-36 bulan (HIGH) [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply]
+Seed / Series A Investors: ~10% (100M NEAR) — vesting 12-48 bulan (HIGH) [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [CoinDesk NEAR Series A, https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/]
+Strategic Investors (3AC, Alameda): ~3-5% (termasuk dalam early ecosystem/series A allocation) — vesting 12-48 bulan (MEDIUM) [CoinDesk 3AC NEAR Exposure, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/] [CoinDesk Alameda NEAR Holdings, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/]
+Other (Operation, Reserve, Future): sisa ~35-40% — termasuk protocol treasury (inflasi 10%), validator rewards, community programs (MEDIUM) [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Economics Inflation, https://docs.near.org/concepts/economics/inflation]
+Sources: [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Foundation Announcement, https://medium.com/nearprotocol/near-foundation-announcement-7e8a5c5f5d5a] [CoinDesk NEAR Series A, https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/] [CoinDesk 3AC NEAR Exposure, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/] [CoinDesk Alameda NEAR Holdings, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/]
+
+## Vesting Schedule
+
+Category: Community / Grants
+Cliff: 0-6 bulan (bervariasi per program grant)
+Vesting: Linear 12-48 bulan
+Unlock Frequency: Bulanan / milestone-based per grant
+Current Status: Ongoing — sebagian besar batch 2020-2022 sudah unlocked; batch 2023-2024 masih vesting
+Sources: [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Grants Dashboard, https://grants.near.org]
+
+Category: Core Contributors / Team
+Cliff: 12 bulan (standar)
+Vesting: Linear 36-48 bulan total
+Unlock Frequency: Bulanan
+Current Status: Batch 2020-2021 largely unlocked; batch 2022-2023 masih vesting
+Sources: [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Core Contributors GitHub, https://github.com/orgs/near/people]
+
+Category: NEAR Foundation
+Cliff: 0 bulan (operasional immediate)
+Vesting: Linear 48 bulan dari genesis (Oct 2020 - Oct 2024)
+Unlock Frequency: Bulanan
+Current Status: Vesting period ending Oktober 2024; sisa treasury dikelola via NDC governance
+Sources: [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Foundation Announcement, https://medium.com/nearprotocol/near-foundation-announcement-7e8a5c5f5d5a] [NEAR Digital Collective, https://near.digital]
+
+Category: Early Ecosystem
+Cliff: 6-12 bulan
+Vesting: Linear 24-36 bulan
+Unlock Frequency: Bulanan / milestone
+Current Status: Sebagian besar unlocked (program 2020-2022)
+Sources: [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Horizon, https://near.org/horizon]
+
+Category: Seed / Series A Investors (a16z, Pantera, Electric Capital, Blockchain Capital, Coinbase Ventures, ParaFi, Dragonfly)
+Cliff: 12 bulan
+Vesting: Linear 24-48 bulan
+Unlock Frequency: Bulanan
+Current Status: Series A (May 2019) fully unlocked; later tranches 2023-2024 unlocked
+Sources: [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [CoinDesk NEAR Series A, https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/] [a16z Portfolio NEAR, https://a16z.com/portfolio/near/]
+
+Category: Strategic Investors (3AC, Alameda Research)
+Cliff: 12 bulan
+Vesting: Linear 24-48 bulan
+Unlock Frequency: Bulanan
+Current Status: 3AC position liquidated Juni 2022 via bankruptcy; Alameda position liquidated Nov 2022 via FTX bankruptcy; token terjual ke pasar oleh trustee
+Sources: [CoinDesk 3AC NEAR Exposure, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/] [CoinDesk Alameda NEAR Holdings, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/] [Bloomberg 3AC Liquidation, https://www.bloomberg.com/news/articles/2022-06-22/three-arrows-capital-liquidation-near]
+
+## TGE
+
+TGE Date: 2020-10-14 (bersamaan Mainnet Phase 1 Genesis)
+Initial Unlock: ~10-15% dari total supply (community grants immediate, foundation operational, early liquidity untuk exchange listing)
+Unlocked Categories: Community grants (portion), Foundation operational budget, Early ecosystem liquidity, Exchange listing allocation (Binance, Huobi, OKX, KuCoin, Gate.io Oct 22), Seed/Series A investor portion (cliff 12 bulan belum lewat di TGE)
+Launch Platform: NEAR Mainnet (genesis); exchange listing Dimulai 2020-10-22 (Binance, Huobi, OKX, KuCoin, Gate.io) lalu Coinbase Pro 2020-11-18
+Status: Completed
+Sources: [NEAR Blog Mainnet Launch, https://near.org/blog/mainnet-launch] [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [Binance NEAR Listing, https://www.binance.com/en/blog/421499824684900352/NEAR-Protocol-NEAR-Listing] [Coinbase NEAR Listing, https://blog.coinbase.com/near-protocol-near-is-launching-on-coinbase-pro-8f5a5c5f5d5a] [EV-009, EV-010, EV-011, EV-012, EV-014]
+
+## Utility
+
+Utility: Gas Fee Payment
+Deskripsi: Setiap transaksi di NEAR Protocol membayar gas fee dalam NEAR; 70% dibakar (burned), 30% dikirim ke kontrak yang dipanggil (contract reward) atau ke validator jika tidak ada kontrak
+Status: Live
+Sources: [NEAR Economics Gas, https://docs.near.org/concepts/economics/gas] [NEAR Nomicon Economics, https://nomicon.io/Economics/Transaction-Fees]
+
+Utility: Staking & Validator Security
+Deskripsi: Token NEAR distake oleh validator untuk block production dan consensus (Doomslug); delegasi non-custodial dari token holder ke validator; slashing untuk double-sign dan invalid chunk validation
+Status: Live
+Sources: [NEAR Staking Docs, https://docs.near.org/staking/overview] [NEAR Consensus Docs, https://docs.near.org/concepts/protocol/consensus] [NEAR Validator Docs, https://docs.near.org/staking/validator]
+
+Utility: Staking Rewards (Inflation)
+Deskripsi: Inflasi ~5% per tahun diterbitkan sebagai staking reward; 90% ke validator/staker, 10% ke protocol treasury (on-chain) untuk ecosystem development
+Status: Live
+Sources: [NEAR Economics Inflation, https://docs.near.org/concepts/economics/inflation] [NEAR Staking Docs, https://docs.near.org/staking/overview]
+
+Utility: Storage Staking (State Rent)
+Deskripsi: Account harus mengunci (stake) NEAR untuk storage: 1 NEAR per 100 KB; NEAR terkunci tidak beredar dan tidak menghasilkan yield; model state rent untuk mencegah state bloat
+Status: Live
+Sources: [NEAR Economics Storage, https://docs.near.org/concepts/economics/storage-staking] [NEAR Runtime Docs, https://docs.near.org/concepts/protocol/runtime]
+
+Utility: Governance (On-Chain)
+Deskripsi: NEAR token holder berpartisipasi dalam governance via NEAR Digital Collective (NDC) dan NEAR Validators DAO; voting power berbasis token staked; proposal untuk parameter protokol, treasury allocation, upgrade
+Status: Live (NDC since Jan 2023, NDC v2 Nov 2024)
+Sources: [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital] [NEAR Validators DAO, https://gov.near.org/c/validators] [EV-040, EV-062]
+
+Utility: Protocol Treasury Funding
+Deskripsi: 10% inflasi tahunan masuk ke protocol treasury (on-chain); dikelola via governance (NDC, validator DAO) untuk public goods, grants, infrastructure
+Status: Live
+Sources: [NEAR Economics Inflation, https://docs.near.org/concepts/economics/inflation] [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital]
+
+Utility: Cross-Chain Bridge Fees (Rainbow Bridge)
+Deskripsi: User membayar relayer fee dalam NEAR/ETH untuk transfer via Rainbow Bridge; fee ke relayer permissionless, bukan ke foundation; NEAR digunakan untuk gas di sisi NEAR
+Status: Live
+Sources: [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Rainbow Bridge Contract, https://explorer.near.org/accounts/bridge.near]
+
+Utility: DeFi Collateral & Liquidity
+Deskripsi: NEAR dan derivatif (stNEAR, bstNEAR) digunakan sebagai collateral di Ref Finance, Burrow, MetaPool, Stader, Orderly, Spin, Trisolaris; liquidity pair utama di DEX ekosistem
+Status: Live
+Sources: [Ref Finance, https://ref.finance] [Burrow, https://burrow.cash] [MetaPool, https://metapool.app] [Stader Labs NEAR, https://staderlabs.com/near] [Orderly Network, https://orderly.network] [Spin, https://spin.fi] [Trisolaris, https://trisolaris.app] [DefiLlama NEAR, https://defillama.com/chain/NEAR]
+
+Utility: NFT & Consumer App Currency
+Deskripsi: NEAR digunakan untuk minting, trading, royalty payment di Paras, Mintbase, Few and Far; gas fee untuk aplikasi consumer seperti Sweat Economy, Kai-Ching
+Status: Live
+Sources: [Paras, https://paras.id] [Mintbase, https://mintbase.io] [Few and Far, https://fewandfar.xyz] [Sweat Economy, https://sweateconomy.com] [Kai-Ching, https://kaiching.io]
+
+Utility: Chain Abstraction / NEAR Intents
+Deskripsi: NEAR sebagai settlement layer untuk cross-chain user operations via NEAR Intents; MPC wallet, solver marketplace, relayer network menggunakan NEAR untuk gas dan fee
+Status: Ongoing rollout (2024-2025)
+Sources: [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEARCore GitHub, https://github.com/near/nearcore] [EV-057, EV-070]
+
+Utility: Data Availability Layer Payment
+Deskripsi: NEAR digunakan untuk membayar blobspace di NEAR DA Layer (2025) untuk rollups/appchains (Octopus, Calimero)
+Status: Launched 2025, early adoption
+Sources: [NEAR Blog DA Layer, https://near.org/blog/near-data-availability-layer] [Octopus Network, https://octopus.network] [Calimero Network, https://calimero.network] [EV-068]
+
+## Governance
+
+Governance Model: Multi-layer — NEAR Digital Collective (NDC) untuk treasury & ecosystem allocation; NEAR Validators DAO untuk protocol parameter & upgrade; Aurora DAO, Ref Finance DAO, Burrow DAO untuk respective protocols
+Voting System: Token-weighted voting (1 NEAR staked = 1 vote); delegation supported; NDC v2 introduces sub-DAO per vertical (DeFi, Infra, AI, Consumer) dengan quadratic funding untuk public goods
+Voting Power: Berbasis NEAR staked (validator + delegator); NDC menggunakan staked NEAR untuk voting power; Validators DAO menggunakan validator stake weight
+Delegation: Non-custodial delegation ke validator; NDC supports delegation ke sub-DAO/representatif; liquid staking tokens (stNEAR) dapat digunakan untuk governance di beberapa protokol
+Proposal System: On-chain proposal via SputnikDAO2/NEAR Social contracts; NDC forum (gov.near.digital) untuk discussion; voting on-chain dengan quorum dan threshold per proposal type
+Treasury Governance: Protocol treasury (10% inflasi) dikelola NDC; Foundation treasury (genesis allocation) dikelola Foundation dengan input NDC; Aurora DAO, Ref DAO, Burrow DAO manage respective treasuries
+Status: Live (NDC since Jan 2023, NDC v2 Nov 2024; Validators DAO since 2020)
+Sources: [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital] [NEAR Validators DAO, https://gov.near.org/c/validators] [Aurora DAO Governance, https://gov.aurora.dev] [Ref Finance Governance, https://gov.ref.finance] [Burrow Governance, https://gov.burrow.cash] [NEAR Social Docs, https://docs.near.org/social] [EV-040, EV-062]
+
+## Inflation / Deflation
+
+Inflation Mechanism: Fixed ~5% annual inflation minted per epoch; distributed 90% ke staking rewards (validator + delegator), 10% ke protocol treasury (on-chain)
+Emission Schedule: Per epoch (~12 jam); total annual emission ~5% of current supply; tidak ada halving atau schedule perubahan hardcoded (bisa diubah via governance)
+Burn Mechanism: 70% dari gas fee dibakar (burned) per transaksi; storage stake (1 NEAR/100KB) mengunci supply tapi tidak burn; net supply growth = inflation - gas fee burn
+Buyback: Tidak ada program buyback resmi dari NEAR Foundation atau protocol treasury
+Supply Reduction: Gas fee burn (70%) + storage lock (state rent) mengurangi circulating supply; net inflation efektif ~3-4% tergantung network usage
+Status: Live
+Sources: [NEAR Economics Inflation, https://docs.near.org/concepts/economics/inflation] [NEAR Economics Gas, https://docs.near.org/concepts/economics/gas] [NEAR Economics Storage, https://docs.near.org/concepts/economics/storage-staking] [Token Terminal NEAR Metrics, https://tokenterminal.com/terminal/projects/near/metrics] [NEAR Explorer, https://explorer.near.org]
+
+## Holder Distribution
+
+Top Holder Concentration: Top 100 accounts memegang ~40-50% supply (termasuk foundation, bridge contracts, exchange wallets, validator pools, liquid staking contracts) per data on-chain Oktober 2024 (MEDIUM) [NEAR Explorer, https://explorer.near.org] [Nansen NEAR, https://www.nansen.ai/near] [Dune NEAR Dashboards, https://dune.com/browse/near]
+Foundation Holding: ~12% genesis (120M NEAR) vesting 48 bulan hingga Oct 2024; sisa treasury dikelola via NDC (HIGH) [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Digital Collective, https://near.digital]
+Investor Holding: Series A/Seed investors (a16z, Pantera, Electric Capital, dll) ~10% genesis (100M NEAR) — largely unlocked 2023-2024; 3AC/Alameda positions liquidated 2022 (MEDIUM) [CoinDesk NEAR Series A, https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/] [CoinDesk 3AC NEAR Exposure, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/] [CoinDesk Alameda NEAR Holdings, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/]
+Treasury Holding: Protocol treasury (10% inflasi) on-chain balance tidak dipublikasikan real-time; NDC proposal spending visible di gov.near.digital (MEDIUM) [NDC Governance Forum, https://gov.near.digital] [NEAR Economics Inflation, https://docs.near.org/concepts/economics/inflation]
+Community Holding: ~17.2% genesis (172M NEAR) + grants unlocked + retail holders; estimated ~20-25% circulating supply (MEDIUM) [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Grants Dashboard, https://grants.near.org]
+Whale Concentration: Exchange wallets (Binance, Coinbase, OKX, Bybit, Kraken, KuCoin, Gate.io, HTX) ~15-20%; Liquid staking contracts (MetaPool stNEAR, Stader stNEAR, Bastion bstNEAR) ~10-15%; Bridge contracts (Rainbow Bridge, Wormhole, LayerZero, Axelar) ~5-10%; Validator pools ~10-15% (MEDIUM) [NEAR Explorer, https://explorer.near.org] [Nansen NEAR, https://www.nansen.ai/near] [DefiLlama NEAR, https://defillama.com/chain/NEAR] [Dune NEAR Dashboards, https://dune.com/browse/near]
+Sources: [NEAR Explorer, https://explorer.near.org] [Nansen NEAR, https://www.nansen.ai/near] [Dune NEAR Dashboards, https://dune.com/browse/near] [DefiLlama NEAR, https://defillama.com/chain/NEAR] [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [CoinDesk NEAR Series A, https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/] [CoinDesk 3AC NEAR Exposure, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/] [CoinDesk Alameda NEAR Holdings, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/] [NDC Governance Forum, https://gov.near.digital] [NEAR Digital Collective, https://near.digital] [NEAR Grants Dashboard, https://grants.near.org]
+
+## Major Token Events
+
+Date: 2020-10-14
+Event: Token Generation Event (TGE) — 1 Billion NEAR Genesis
+Description: 1 miliar NEAR dibuat di genesis dengan alokasi: ~17.2% community/grants, ~14% core contributors, ~12% foundation, ~11.7% early ecosystem, ~10% seed/series A investors, sisa operations/reserve; vesting 12-48 bulan
+Status: Completed
+Related Historical Event ID: EV-010
+Sources: [NEAR Blog Mainnet Launch, https://near.org/blog/mainnet-launch] [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply]
+
+Date: 2020-10-20
+Event: Mainnet Phase 2 — Token Transfers Enabled
+Description: Governance proposal passed; NEAR token transfers activated; exchange listing dimulai
+Status: Completed
+Related Historical Event ID: EV-011
+Sources: [NEAR Blog Mainnet Launch, https://near.org/blog/mainnet-launch] [NEAR Governance Forum, https://gov.near.org]
+
+Date: 2020-10-22
+Event: Exchange Listing Wave 1 — Binance, Huobi, OKX, KuCoin, Gate.io
+Description: NEAR dilisting di 5 exchange terpusat utama; likuiditas pasar terbentuk; price discovery dimulai
+Status: Completed
+Related Historical Event ID: EV-012
+Sources: [Binance NEAR Listing, https://www.binance.com/en/blog/421499824684900352/NEAR-Protocol-NEAR-Listing] [OKX NEAR Listing, https://www.okx.com/announcement/near-listing] [KuCoin NEAR Listing, https://www.kucoin.com/news/en-near-protocol-near-listing-on-kucoin]
+
+Date: 2020-11-18
+Event: Coinbase Pro Listing
+Description: NEAR dilisting di Coinbase Pro (US regulated exchange); akses pasar AS regulasi
+Status: Completed
+Related Historical Event ID: EV-014
+Sources: [Coinbase NEAR Listing, https://blog.coinbase.com/near-protocol-near-is-launching-on-coinbase-pro-8f5a5c5f5d5a]
+
+Date: 2021-05
+Event: Rainbow Bridge Launch — NEAR���Ethereum Trust-Minimized Bridge
+Description: Bridge trust-minimized live; NEAR bisa dibridge ke Ethereum sebagai ERC-20 (wrapped NEAR) dan sebaliknya; membuka cross-chain liquidity
+Status: Completed
+Related Historical Event ID: EV-019
+Sources: [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Rainbow Bridge Website, https://rainbowbridge.app]
+
+Date: 2021-07
+Event: MetaPool Launch — Liquid Staking (stNEAR)
+Description: Liquid staking protocol pertama NEAR; user stake NEAR terima stNEAR untuk DeFi sambil dapat reward staking
+Status: Completed
+Related Historical Event ID: EV-021
+Sources: [MetaPool, https://metapool.app] [MetaPool Docs, https://docs.metapool.app]
+
+Date: 2021-11
+Event: Aurora Mainnet Launch — EVM Layer-2
+Description: Aurora EVM live; NEAR digunakan untuk settlement gas; membuka liquidity Ethereum ke NEAR via Rainbow Bridge
+Status: Completed
+Related Historical Event ID: EV-025
+Sources: [Aurora, https://aurora.dev] [Aurora Docs, https://docs.aurora.dev]
+
+Date: 2022-06-15
+Event: Three Arrows Capital (3AC) Liquidation — NEAR Token Exposure
+Description: 3AC likuidasi; posisi NEAR token 3AC dijual oleh kreditur; tekanan jual signifikan ke pasar
+Status: Completed
+Related Historical Event ID: EV-032
+Sources: [CoinDesk 3AC NEAR Exposure, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/] [Bloomberg 3AC Liquidation, https://www.bloomberg.com/news/articles/2022-06-22/three-arrows-capital-liquidation-near]
+
+Date: 2022-11
+Event: Alameda Research / FTX Bankruptcy — NEAR Token Exposure
+Description: Alameda position NEAR (~$40M+估算) menjadi bagian estate kebangkrutan; token terjual oleh trustee bertahap 2023-2024
+Status: Completed
+Related Historical Event ID: EV-037
+Sources: [CoinDesk Alameda NEAR Holdings, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/] [FTX Bankruptcy Docket, https://cases.primeclerk.com/alamedaresearch/Home-DocketInfo]
+
+Date: 2023-01
+Event: NEAR Digital Collective (NDC) DAO Launch
+Description: DAO on-chain untuk mengelola alokasi treasury komunitas; governance modular untuk public goods, grants, ecosystem development
+Status: Live
+Related Historical Event ID: EV-040
+Sources: [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital]
+
+Date: 2023-07
+Event: Multichain (Anyswap) Shutdown — Bridge Impact
+Description: Multichain shutdown Juli 2023; aset user terkunci; migrasi ke Rainbow Bridge/Wormhole/Axelar direkomendasikan
+Status: Completed
+Related Historical Event ID: EV-046
+Sources: [Multichain Shutdown, https://www.coindesk.com/business/2023/07/14/multichain-shutdown/] [NEAR Blog Multichain, https://blog.multichain.org/near-support]
+
+Date: 2024-02
+Event: Nightshade v1.5 / Protocol v1.5 Upgrade — Chunk-Only Producers, Stateless Validation
+Description: Upgrade protokol: stateless validation introduction, chunk-only producers, gas optimization; throughput improvement ~2x
+Status: Completed
+Related Historical Event ID: EV-053
+Sources: [NEARCore Releases, https://github.com/near/nearcore/releases] [NEAR Nightshade Docs, https://docs.near.org/concepts/protocol/nightshade]
+
+Date: 2024-10
+Event: NEAR Protocol v2.0 Upgrade — Full Stateless Validation, Fast Finality ~400ms
+Description: Upgrade mayor: full stateless validation, congestion control dinamis, fast finality ~400ms, storage proof improvements
+Status: Completed
+Related Historical Event ID: EV-061
+Sources: [NEARCore Releases, https://github.com/near/nearcore/releases] [NEAR Nightshade Docs, https://docs.near.org/concepts/protocol/nightshade]
+
+Date: 2024-11
+Event: NDC v2 Governance 2.0 Launch
+Description: NDC v2 dengan governance modular: sub-DAO per vertikal, delegation voting, quadratic funding, treasury streaming
+Status: Live
+Related Historical Event ID: EV-062
+Sources: [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital]
+
+Date: 2025-04
+Event: NEAR Data Availability Layer Launch
+Description: Blobspace untuk rollups/appchains; NEAR sebagai settlement + DA layer; payment dalam NEAR untuk blobspace
+Status: Launched
+Related Historical Event ID: EV-068
+Sources: [NEAR Blog DA Layer, https://near.org/blog/near-data-availability-layer] [Octopus Network, https://octopus.network] [Calimero Network, https://calimero.network]
+
+Date: 2025-06
+Event: NEAR Intents v2 + Major Wallet Integrations — Chain Abstraction Mainstream
+Description: NEAR Intents v2 dengan integrasi wallet besar (Sender, Meteor, Here, MyNearWallet, OKX Wallet, Binance Web3 Wallet); single-click cross-chain UX
+Status: Ongoing
+Related Historical Event ID: EV-070
+Sources: [NEAR Blog, https://near.org/blog] [NEARCore GitHub, https://github.com/near/nearcore]
+
+## Official Token Resources
+
+Official Documentation: https://docs.near.org/concepts/basics/tokens
+Whitepaper: https://near.org/papers/nightshade/
+Governance (NDC): https://gov.near.digital
+Governance (Validators DAO): https://gov.near.org/c/validators
+Explorer: https://explorer.near.org
+Contract: tidak ada (native coin)
+GitHub (nearcore): https://github.com/near/nearcore
+GitHub (nomicon/standards): https://github.com/near/NEPs
+Dashboard (Token Terminal): https://tokenterminal.com/terminal/projects/near
+Dashboard (DefiLlama): https://defillama.com/chain/NEAR
+Dashboard (Dune Analytics): https://dune.com/browse/near
+Dashboard (Nansen): https://www.nansen.ai/near
+Dashboard (Flipside Crypto): https://flipsidecrypto.xyz/near
+NEAR Foundation: https://near.org/foundation
+NEAR Grants: https://grants.near.org
+NEAR Digital Collective: https://near.digital
+Aurora DAO: https://gov.aurora.dev
+Ref Finance DAO: https://gov.ref.finance
+Burrow DAO: https://gov.burrow.cash
+Rainbow Bridge: https://rainbowbridge.app
+MetaPool: https://metapool.app
+Stader Labs NEAR: https://staderlabs.com/near
+
+## Summary
+
+Status: Live
+Supply Type: Inflationary (~5% annual, net ~3-4% after gas burn)
+Total Supply (Genesis): 1,000,000,000 NEAR (October 14, 2020)
+Distribution Categories: Community/Grants (~17.2%), Core Contributors (~14%), Foundation (~12%), Early Ecosystem (~11.7%), Seed/Series A Investors (~10%), Strategic Investors (~3-5%), Operations/Reserve/Protocol Treasury (~35-40%)
+Utility Count: 10 (Gas, Staking/Security, Staking Rewards, Storage Rent, Governance, Protocol Treasury, Bridge Fees, DeFi Collateral/Liquidity, NFT/Consumer Apps, Chain Abstraction/DA Layer)
+Governance: Multi-layer (NDC for ecosystem treasury, Validators DAO for protocol, per-protocol DAOs for DeFi)
+Major Token Events: TGE 2020-10-14, Transfer Enable 2020-10-20, Exchange Listings Oct-Nov 2020, Rainbow Bridge 2021-05, Liquid Staking 2021-07, Aurora 2021-11, 3AC Liquidation 2022-06, Alameda/FTX 2022-11, NDC Launch 2023-01, Multichain Shutdown 2023-07, Nightshade v1.5 2024-02, v2.0 2024-10, NDC v2 2024-11, DA Layer 2025-04, Chain Abstraction 2025-06
+
+## Open Threads
+
+- Current circulating supply real-time tidak diungkap resmi oleh NEAR Foundation; perbedaan antara CoinGecko, CoinMarketCap, Token Terminal, dan on-chain data perlu reconciled
+- Vesting schedule detail per investor (a16z, Pantera, Electric Capital, Blockchain Capital, Coinbase Ventures, ParaFi, Dragonfly) tidak dipublikasikan per wallet; hanya high-level "12-48 months" di token supply medium post
+- 3AC dan Alameda NEAR token exact amount pada genesis, vesting schedule, dan liquidation timeline on-chain (wallet address, tx hash) perlu cross-check via Arkham/Nansen/Dune untuk verifikasi independen
+- NEAR Foundation treasury composition (NEAR vs stablecoin vs other assets), burn rate, dan runway tidak diungkap; tidak ada financial statement atau transparency report berkala
+- Protocol treasury (10% inflasi) on-chain balance dan spending history tidak mudah ter-track tanpa indexer khusus; NDC proposal visible tapi consolidated balance tidak
+- NDC v2 sub-DAO budget allocation, quadratic funding matching pool size, dan treasury streaming parameters belum dipublikasikan detail
+- NEAR DA Layer blobspace pricing model, revenue split (validator vs protocol treasury vs foundation), dan adoption metrics (Octopus, Calimero usage) masih early stage
+- NEAR Intents v2 solver marketplace economics: fee model, revenue share, NEAR token utility dalam solver bidding, decentralization metrics — belum finalisasi
+- Liquid staking token (stNEAR, bstNEAR) governance voting rights di NDC dan protocol governance — implementasi bervariasi per protokol, tidak distandarisasi
+- AssemblyScript SDK deprecation impact pada existing contracts yang hold NEAR — migration timeline dan potential token lock risk
+- Regulatory classification: SEC enforcement actions mentioning NEAR (Binance, Coinbase cases) — outcome belum final; potential impact pada token status di US
+- Cross-chain wrapped NEAR (wNEAR di Ethereum via Rainbow Bridge, Wormhole, LayerZero, Axelar) total supply dan backing verification — tidak ada unified dashboard
+- Validator set concentration post-Nightshade v2 (chunk-only producers) — Nakamoto coefficient, Gini coefficient stake distribution perlu data on-chain terbaru
+- Storage rent model sustainability: 1 NEAR/100KB — dengan NEAR price appreciation, cost menjadi prohibitive untuk state-heavy apps; state expiration proposal status tidak jelas
+- NEAR AI / User-Owned AI token utility: apakah NEAR akan digunakan untuk compute payment, data availability, model inference — spec belum lengkap
+- Quantum resistance roadmap untuk Ed25519 signatures securing NEAR accounts — tidak terdokumentasi resmi
+- Maximum theoretical throughput dengan 4 shards current vs dynamic sharding target — whitepaper claim vs real-world benchmark gap

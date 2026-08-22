@@ -1,0 +1,277 @@
+PROJECT: Berachain
+
+Entity: Berachain
+Type: Protocol
+Relationship: Layer 1 blockchain dengan konsensus Proof-of-Liquidity, EVM-compatible, dibangun di atas Cosmos SDK dan CometBFT; menyediakan infrastruktur untuk aplikasi DeFi native seperti BEX, Bend, Berps
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Berachain Official Website, https://berachain.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com]
+
+---
+Entity: Berachain Foundation
+Type: Foundation
+Relationship: Entitas hukum berbasis Cayman Islands yang mengelola pengembangan protokol Berachain, ekosistem, dan treasury; memerintah peluncuran mainnet dan TGE
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Berachain Official Website, https://berachain.com]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com]
+
+---
+Entity: Smokey the Bera
+Type: Person
+Relationship: Co-founder Berachain (pseudonim); terlibat dalam arah strategis dan pengembangan protokol sejak awal
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Berachain Official Website, https://berachain.com]; (LOW) [Berachain Twitter, https://x.com/berachain]
+
+---
+Entity: Dev Bear
+Type: Person
+Relationship: Co-founder Berachain (pseudonim); fokus pada pengembangan teknis inti dan arsitektur protokol
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Berachain Official Website, https://berachain.com]; (LOW) [Berachain Twitter, https://x.com/berachain]
+
+---
+Entity: Papa Bear
+Type: Person
+Relationship: Co-founder Berachain (pseudonim); terlibat dalam ekosistem, komunitas, dan strategi go-to-market
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Berachain Official Website, https://berachain.com]; (LOW) [Berachain Twitter, https://x.com/berachain]
+
+---
+Entity: Core Contributors (pseudonymous handles)
+Type: Person
+Relationship: Sekitar 20+ kontributor inti bernama pseudonim (Smokey, Dev, Papa, dll) plus ~50+ kontributor total per halaman tim; membangun protokol, aplikasi native, dan tooling
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Berachain Official Website, https://berachain.com]; (LOW) [Berachain Documentation, https://docs.berachain.com]
+
+---
+Entity: BEX
+Type: Application
+Relationship: Native decentralized exchange (DEX) di Berachain; menyediakan liquidity dan trading untuk token ekosistem termasuk BERA, BGT, HONEY
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Berachain Documentation, https://docs.berachain.com]; (HIGH) [Berachain Official Website, https://berachain.com]
+
+---
+Entity: Bend
+Type: Application
+Relationship: Protokol lending/borrowing native di Berachain; memungkinkan pengguna mendepositkan aset dan meminjam terhadap collateral
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Berachain Documentation, https://docs.berachain.com]; (HIGH) [Berachain Official Website, https://berachain.com]
+
+---
+Entity: Berps
+Type: Application
+Relationship: Perpetual futures exchange native di Berachain; menyediakan leveraged trading dengan liquidity dari vault BEX
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Berachain Documentation, https://docs.berachain.com]; (HIGH) [Berachain Official Website, https://berachain.com]
+
+---
+Entity: HONEY
+Type: Protocol
+Relationship: Stablecoin native Berachain (soft-pegged ke USD); digunakan sebagai medium of exchange dan collateral di ekosistem DeFi native
+Period: 2024–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Berachain Documentation, https://docs.berachain.com]; (HIGH) [Berachain Official Website, https://berachain.com]
+
+---
+Entity: BGT (Berachain Governance Token)
+Type: Protocol
+Relationship: Governance token non-transferable (soulbound) yang didapat melalui proof-of-liquidity; digunakan untuk voting dan mengarahkan emisi reward
+Period: 2024–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Berachain Documentation, https://docs.berachain.com]; (HIGH) [Berachain Official Website, https://berachain.com]
+
+---
+Entity: BERA (Berachain Gas Token)
+Type: Protocol
+Relationship: Native gas token dan staking token Berachain; digunakan untuk transaksi fee, staking validator, dan sebagai base currency di ekosistem
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Berachain Documentation, https://docs.berachain.com]; (HIGH) [Berachain Official Website, https://berachain.com]
+
+---
+Entity: Cosmos SDK
+Type: Organization
+Relationship: Framework modular untuk membangun blockchain application-specific; Berachain dibangun di atas Cosmos SDK untuk konsensus dan state machine
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cosmos SDK Documentation, https://docs.cosmos.network]; (HIGH) [Berachain Documentation, https://docs.berachain.com]
+
+---
+Entity: CometBFT
+Type: Protocol
+Relationship: Konsensus engine (fork Tendermint) yang digunakan Berachain untuk finality cepat dan BFT safety; menggantikan CometBFT sebagai consensus layer
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [CometBFT Documentation, https://cometbft.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com]
+
+---
+Entity: IBC (Inter-Blockchain Communication)
+Type: Protocol
+Relationship: Standar cross-chain communication di ekosistem Cosmos; Berachain kompatibel IBC untuk interoperabilitas dengan chain Cosmos lain
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Berachain Documentation, https://docs.berachain.com]; (HIGH) [IBC Protocol, https://ibc.cosmos.network]
+
+---
+Entity: Ethereum (EVM compatibility)
+Type: Chain
+Relationship: Berachain EVM-equivalent, kompatibel dengan tooling Ethereum (Hardhat, Foundry, MetaMask, dll); memungkinkan porting kontrak Solidity tanpa modifikasi
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Berachain Documentation, https://docs.berachain.com]; (HIGH) [Ethereum Foundation, https://ethereum.org]
+
+---
+Entity: Berascan
+Type: Application
+Relationship: Block explorer resmi Berachain (berascan.com); menyediakan pencarian transaksi, blok, token, dan analytics on-chain
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Berascan, https://berascan.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com]
+
+---
+Entity: Berachain GitHub Repository
+Type: Organization
+Relationship: Repository kode sumber terbuka di github.com/berachain; berisi protokol inti, smart contracts, tooling, dan dokumentasi teknis
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub Berachain, https://github.com/berachain]; (HIGH) [Berachain Documentation, https://docs.berachain.com]
+
+---
+Entity: Berachain Discord Community
+Type: Community
+Relationship: Server Discord resmi (discord.gg/berachain) untuk komunitas pengembang, pengguna, validator, dan kontributor; saluran koordinasi utama
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Discord Berachain, https://discord.gg/berachain]; (MEDIUM) [Berachain Official Website, https://berachain.com]
+
+---
+Entity: Berachain Twitter/X
+Type: Media
+Relationship: Akun X/Twitter resmi (@berachain) untuk pengumuman, update protokol, dan komunikasi komunitas
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [X/Twitter Berachain, https://x.com/berachain]; (MEDIUM) [Berachain Official Website, https://berachain.com]
+
+---
+Entity: Berachain Telegram
+Type: Community
+Relationship: Grup Telegram resmi (@berachainofficial) untuk diskusi komunitas dan dukungan pengguna
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Telegram Berachain, https://t.me/berachainofficial]; (LOW) [Berachain Official Website, https://berachain.com]
+
+---
+Entity: Artio Testnet
+Type: Protocol
+Relationship: Seri testnet Berachain (v1 Jan 2023, v2 Jan 2024, v3 Oct 2024) untuk validasi protokol sebelum mainnet launch
+Period: 2023–2024
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Berachain Documentation, https://docs.berachain.com]; (LOW) [Berachain Blog, https://berachain.com/blog]
+
+---
+Entity: Berachain Mainnet
+Type: Chain
+Relationship: Mainnet genesis peluncuran 6 Juni 2024; TGE token BERA 6 Februari 2025; live Proof-of-Liquidity consensus
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Berachain Documentation, https://docs.berachain.com]; (HIGH) [Berachain Official Website, https://berachain.com]
+
+---
+Entity: Cayman Islands Jurisdiction
+Type: Government
+Relationship: Yurisdiksi incorporasi Berachain Foundation; menyediakan kerangka hukum untuk foundation sebagai entitas non-profit
+Period: 2023–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [Berachain Official Website, https://berachain.com]; (LOW) [Cayman Islands Monetary Authority, https://www.cima.ky]
+
+---
+
+PERSON
+Smokey the Bera
+Dev Bear
+Papa Bear
+Core Contributors (pseudonymous handles)
+
+FOUNDATION
+Berachain Foundation
+
+COMPANY
+Tidak ada entitas Company teridentifikasi dalam fase ini
+
+PROTOCOL
+Berachain
+BEX
+Bend
+Berps
+HONEY
+BGT (Berachain Governance Token)
+BERA (Berachain Gas Token)
+CometBFT
+IBC (Inter-Blockchain Communication)
+Artio Testnet
+
+CHAIN
+Ethereum (EVM compatibility)
+Berachain Mainnet
+Cosmos SDK
+
+INVESTOR
+Tidak ada entitas Investor teridentifikasi dalam fase ini
+
+INFRASTRUCTURE
+Berascan
+Berachain GitHub Repository
+
+APPLICATION
+BEX
+Bend
+Berps
+Berascan
+
+SECURITY
+Tidak ada entitas Security teridentifikasi dalam fase ini
+
+DAO
+Tidak ada entitas DAO teridentifikasi dalam fase ini
+
+GOVERNMENT
+Cayman Islands Jurisdiction
+
+MEDIA
+Berachain Twitter/X
+
+COMMUNITY
+Berachain Discord Community
+Berachain Telegram
+
+OTHER
+Tidak ada entitas Other teridentifikasi dalam fase ini
+
+---
+
+RINGKASAN
+Total Entity: 26
+Internal: 14
+External: 12
+Unknown: 0
+
+---
+
+Open Threads
+- Identitas hukum lengkap founding entity: apakah ada Bera Labs / Berachain Labs terpisah dari Berachain Foundation, dan yurisdiksi masing-masing
+- Daftar investor (VC, strategic angels) yang berpartisipasi di ronde private/public — tidak tersedia di sumber publik fase ini
+- Auditor keamanan (smart contract audit firms) untuk protokol inti dan aplikasi native — belum teridentifikasi
+- Market maker / liquidity provider resmi untuk BERA/BGT/HONEY — tidak terpublikasi
+- Status koneksi IBC live: apakah relayer dan channel IBC sudah aktif mainnet atau hanya testnet
+- Alamat kontrak token BERA/BGT/HONEY pada mainnet — perlu verifikasi on-chain via berascan.com
+- Detail alokasi tokenomics: persentase TGE, vesting schedule, alokasi team/investor/community/ecosystem — whitepaper vs announcement resmi
+- Status fee switch BGT: apakah sudah diaktifkan dan revenue flow ke staker BGT
+- Entitas legal wrapper untuk DAO/governance (jika ada) terpisah dari Foundation
+- Enterprise partnerships / integrasi institusional (custody, node providers, oracle) — belum termuat di dokumentasi publik

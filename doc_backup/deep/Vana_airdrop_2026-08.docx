@@ -1,0 +1,139 @@
+PROJECT: Vana
+
+STATUS AIRDROP
+
+Sudah dilakukan. Vana mendistribusikan token VANA (ERC-20 di Ethereum + native di Vana L1) mulai TGE 16 Desember 2024 melalui klaim komunitas berbasis partisipasi Data DAO, testnet, dan kontributor ekosistem via claim portal, bersamaan dengan listing CEX (termasuk Binance Launchpool yang mulai 14 Desember 2024); rincian persentase alokasi per kategori tidak dipublikasikan resmi di whitepaper maupun blog TGE【Phase 1 — Identity; Phase 5 — Token Sale】(HIGH) [Vana Blog VANA Token Launch, https://blog.vana.org/vana-token-launch/]; [Bittime VANA Airdrop Guide, https://support.bittime.com/hc/en-us/articles/11577239451023-VANA-Airdrop-Understanding-and-Guide-on-How-to-Claim-Free-Tokens] (MEDIUM).
+
+AIRDROP EVENTS
+
+AD-001: Community Claim Portal TGE (Data DAO Participants, Testnet Users, Ecosystem Contributors)
+Tanggal: 2024-12-16 (TGE; klaim dibuka via portal sejak TGE)
+Tipe: Partisipasi-based (Data DAO / testnet / kontribusi ekosistem), tanpa public sale
+Alokasi: Persentase resmi tidak diungkap; whitepaper menyebutkan kategori Community, Team, Investors, Foundation, Ecosystem tanpa angka spesifik; sumber pihak ketiga menyebut total supply 120.000.000 VANA dengan ~25,1% float pada TGE dan mayoritas supply berkategori komunitas (MEDIUM, angka pihak ketiga — lihat INKONSISTENSI)【Phase 6 — Distribution】(HIGH untuk ketiadaan disclosure) [Vana Whitepaper, https://vana.org/whitepaper.pdf]; [Bittime VANA Airdrop Guide, https://support.bittime.com/hc/en-us/articles/11577239451023-VANA-Airdrop-Understanding-and-Guide-on-How-to-Claim-Free-Tokens] (MEDIUM)
+Penerima: Peserta Data DAO, pengguna testnet (Moksha), dan kontributor ekosistem; jumlah wallet penerima tidak dipublikasikan resmi (LOW)
+Nilai saat klaim: 17.34 USD per VANA (close hari pertama listing KuCoin 2025-01-04; TGE 2024-12-16 jatuh sebelum data KuCoin tersedia — lihat METRIK RETENSI untuk penjelasan) [KuCoin VANA-USDT daily candle, https://www.kucoin.com/trade/VANA-USDT] (MEDIUM)
+Kriteria: Partisipasi dalam Data DAO / aktivitas testnet / kontribusi ekosistem sebagaimana ditentukan claim portal; pengguna non-eligible dapat mengajukan formulir klaim untuk pertimbangan (MEDIUM) [Vana Blog VANA Token Launch, https://blog.vana.org/vana-token-launch/]; [Bittime, https://support.bittime.com/hc/en-us/articles/11577239451023-VANA-Airdrop-Understanding-and-Guide-on-How-to-Claim-Free-Tokens]
+Anti-sybil: Tidak dirinci publik; verifikasi berbasis riwayat partisipasi Data DAO/testnet (LOW)
+Terkait EV: EV-016 (VANA Token TGE)
+Sitasi: Phase 3 EV-016; Phase 5 Token Sale; Phase 6 Distribution (HIGH/MEDIUM)
+
+AD-002: Binance Launchpool Farming (Distribusi Paralel Pra-TGE)
+Tanggal: 2024-12-14 mulai (dua hari sebelum TGE)
+Tipe: Launchpool farming (stake BNB/FDUSD untuk farm VANA)
+Alokasi: Bagian dari float TGE per laporan pihak ketiga; angka resmi tidak diungkap (LOW) [Medium Vana Coin Airdrop roundup, https://medium.com/@erinnieblan3/vana-coin-airdrop-new-distribution-event-announced-for-q1-2025-6cf812d5f4ad] (LOW)
+Penerima: Pengguna Binance yang stake BNB/FDUSD selama periode farming (MEDIUM)
+Nilai saat klaim: Tidak berlaku (reward farming terakumulasi selama periode, dijual/dipegang pasca-listing)
+Kriteria: Stake BNB atau FDUSD di Launchpool selama window farming (MEDIUM)
+Anti-sybil: Tidak relevan (berbasis aset yang di-stake di exchange terpusat)
+Terkait EV: EV-016; CEX listing event
+Sitasi: Phase 3 CEX listing; Medium roundup (LOW/MEDIUM)
+
+CONTEXT SAAT KEPUTUSAN
+
+Kondisi saat keputusan TGE/airdrop (Desember 2024):
+- Kondisi pasar: Puncak narasi AI x crypto akhir 2024; kompetisi "data untuk AI" (Grass, Ocean/Fetch merger menjadi ASI, Bittensor) aktif; window listing akhir tahun sebelum siklus 2025【Phase 8 — Market Timeline】(HIGH)
+- Posisi project: Mainnet genesis 16 Oktober 2024; Data DAO deployments Oktober-Desember 2024; TGE dua bulan setelah mainnet — jadwal sangat cepat【Phase 1 — Milestones; Phase 3 — Events】(HIGH)
+- Funding: Ronde awal 2023 dengan partisipasi Paradigm, Polymorphic Capital, Coinbase Ventures, Polychain Capital, Dragonfly Capital; jumlah tidak diungkap di dossier【Phase 5 — Funding History】(HIGH)
+- Kompetitor terdekat: Grass (data bandwidth), Bittensor (AI terdesentralisasi), Ocean Protocol — semua bersaing di narasi data/AI dengan model token berbeda【Phase 8 — Competitor Landscape】(HIGH)
+
+TRIGGER DAN ALTERNATIF
+
+Trigger utama: Momentum narasi AI x crypto akhir 2024 dan kebutuhan likuiditas/insentif untuk bootstrap Data DAO【Phase 9 — Decision Timeline】(HIGH).
+Alternatif tidak diambil:
+- Public sale fixed-price: tidak dilakukan — distribusi via claim portal + Launchpool tanpa penjualan publik langsung (HIGH) [Phase 5 — Token Sale】
+- Menunda TGE hingga model ekonomi Data DAO matang: tidak dipilih — TGE dieksekusi dua bulan pasca-mainnet dengan tokenomics yang belum dirinci publik (keputusan yang kemudian menjadi sumber kritik transparansi) (MEDIUM) [Phase 6 — Distribution Open Threads】
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- VANA sebagai token utilitas dan governance: staking, governance, dan insentif Data DAO agar pengguna mengontrol data mereka sendiri dan berkontribusi pada pelatihan AI (HIGH) [Vana Blog VANA Token Launch, https://blog.vana.org/vana-token-launch/; Phase 6 — Utility】
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Persentase alokasi (team/investor/foundation) tidak dipublikasikan — opasitas tokenomics memungkinkan fleksibilitas distribusi internal tanpa sorotan unlock publik — HIPOTESIS (MEDIUM) [Phase 6 — Distribution; Phase 9 — Financial Decision Pattern】
+- TGE cepat pasca-mainnet mengunci valuasi narasi AI sebelum potensi pendinginan pasar 2025 — HIPOTESIS (LOW)
+
+OUTCOME PER POV
+
+POV Founder (Vana Society / tim inti): Sebagian
+- Jangka pendek: TGE terlaksana dengan listing CEX besar dan Launchpool; atensi narasi AI x crypto maksimal pada window tersebut (HIGH) [Phase 3 — CEX listing】
+- Jangka panjang: Harga turun dari 17.34 USD (close hari pertama KuCoin) ke 6.68 USD pada +90 hari (-61%); opasitas tokenomics menjadi catatan kepercayaan berkelanjutan (MEDIUM) [KuCoin VANA-USDT, https://www.kucoin.com/trade/VANA-USDT]; [Phase 6 — Distribution】
+- Dasar: Phase 3 Events; Phase 6 Distribution; KuCoin price history (HIGH/MEDIUM)
+
+POV VC (Paradigm, Polychain, Dragonfly, Coinbase Ventures, Polymorphic): Sebagian
+- Jangka pendek: Entry ronde 2023 (jumlah tidak diungkap); harga window awal 2025 (puncak terverifikasi KuCoin 20.78 USD pada 4 Jan 2025) memberi ruang apresiasi di atas entry awal (MEDIUM) [Phase 5 — Funding History; KuCoin VANA-USDT】
+- Jangka panjang: Jadwal vesting/unlock investor tidak dipublikasikan — ketidakpastian struktural bagi holder dan pasar; depresiasi -61% dalam 90 hari menekan nilai (MEDIUM) [Phase 6 — Vesting Schedule】
+- Dasar: Phase 5 Funding; Phase 6 Vesting; KuCoin price history (HIGH/MEDIUM)
+
+POV Retail (Penerima klaim & peserta Launchpool): Gagal
+- Jangka pendek: Klaim portal + Launchpool berjalan; akses luas via CEX besar (HIGH) [Phase 3 — CEX listing】
+- Jangka panjang: Harga -61% dalam 90 hari (17.34 → 6.68 USD) dan berlanjut menurun sepanjang 2025 (kisaran 2.5-7 USD per data mingguan KuCoin) — pemegang pasif mengalami kerugian besar tanpa mekanisme penahan nilai (fee/revenue) (MEDIUM) [KuCoin VANA-USDT, https://www.kucoin.com/trade/VANA-USDT】
+- Dasar: KuCoin price history (MEDIUM)
+
+POV Community (Peserta Data DAO): Sebagian
+- Jangka pendek: Peserta Data DAO dan testnet menerima alokasi klaim; model kepemilikan data pengguna menjadi pembeda naratif (HIGH) [Phase 3 — EV-016】
+- Jangka panjang: Keberlanjutan insentif bergantung treasury Foundation yang tidak dirinci publik; adopsi Data DAO pasca-TGE tidak terverifikasi kuat di dossier (MEDIUM) [Phase 6 — Distribution Open Threads】
+- Dasar: Phase 3 Events; Phase 6 Distribution (HIGH/MEDIUM)
+
+POV Developer (Builder DLP & Data DAO): Sebagian
+- Jangka pendek: Kerangka Data Liquidity Pool (DLP) tersedia sejak mainnet Oktober 2024; window build terbuka sebelum dan sesudah TGE (HIGH) [Phase 4 — Architecture】
+- Jangka panjang: Insentif developer tidak dirinci publik (grants/ecosystem fund tanpa angka); daya tarik build bergantung pada adopsi Data DAO yang belum terbukti skala besar (MEDIUM) [Phase 6 — Distribution; Phase 7 — Developer Ecosystem】
+- Dasar: Phase 4 Architecture; Phase 7 Developer Ecosystem (HIGH/MEDIUM)
+
+POV Institution (Exchange, fund): Sebagian
+- Jangka pendek: Listing CEX besar serentak (termasuk Binance Launchpool) — akses pasar luas sejak hari pertama (HIGH) [Phase 3 — CEX listing】
+- Jangka panjang: Ketiadaan disclosure alokasi token menjadi hambatan due-diligence institusional; tidak ada protocol fee revenue live yang dapat dinilai (MEDIUM) [Phase 5 — Revenue Model; Phase 6 — Distribution】
+- Dasar: Phase 3 Listing; Phase 5 Revenue; Phase 6 Distribution (HIGH/MEDIUM)
+
+POV Validator: Sebagian
+- Jangka pendek: Staking VANA menjadi mekanisme keamanan/insentif validator Vana L1 sejak era TGE (utilitas resmi token) (HIGH) [Phase 6 — Utility】
+- Jangka panjang: Skala set validator dan imbal hasil staking tidak terdokumentasi kuat di dossier (LOW) [Phase 4 — Consensus】
+- Dasar: Phase 6 Utility; Phase 4 Consensus (HIGH/LOW)
+
+POV Builder (Protokol data/AI di ekosistem Vana): Sebagian
+- Jangka pendek: Akses ke DLP dan Data DAO infrastructure; narasi AI x crypto menarik atensi awal (HIGH) [Phase 7 — Ecosystem】
+- Jangka panjang: Pendanaan ekosistem (grants) tanpa angka publik; kelangsungan build bergantung keputusan treasury yang tidak transparan (MEDIUM) [Phase 6 — Distribution】
+- Dasar: Phase 6 Distribution; Phase 7 Ecosystem (HIGH/MEDIUM)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 17.34 USD (2025-01-04) [KuCoin VANA-USDT daily candle close — candle terverifikasi terdekat; KuCoin baru listing 4 Jan 2025 sehingga tanggal TGE 2024-12-16 tidak tercakup, https://www.kucoin.com/trade/VANA-USDT] (MEDIUM)
+Harga +30 hari: 12.86 USD (2025-01-15) [KuCoin VANA-USDT daily candle close, https://www.kucoin.com/trade/VANA-USDT] (MEDIUM)
+Harga +90 hari: 6.68 USD (2025-03-16) [KuCoin VANA-USDT daily candle close, https://www.kucoin.com/trade/VANA-USDT] (MEDIUM)
+Harga puncak 12 bulan pertama: 20.78 USD (2025-01-04) [KuCoin VANA-USDT daily candle high (hari pertama listing KuCoin); scan mingguan 12 bulan tidak menemukan high lebih tinggi, https://www.kucoin.com/trade/VANA-USDT] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan TVL atau volume protokol sebelum vs sesudah distribusi: Tidak ditemukan (metrik Data DAO/TVL pre/post TGE tidak diekstrak di fase sebelumnya) (LOW)
+Jumlah alamat pemegang token (unique holders): Tidak ditemukan (jumlah penerima klaim tidak dipublikasikan resmi) (LOW)
+Jumlah alamat aktif harian sebelum vs sesudah: Tidak ditemukan (tidak ada dashboard publik di fase sebelumnya) (LOW)
+Konsentrasi kepemilikan: Tidak dapat dinilai dari sumber publik — alokasi per kategori tidak diungkap (inkonsistensi disclosure; lihat GAP) (LOW)
+Tingkat partisipasi staking: Tidak ditemukan (staking VANA adalah utilitas resmi namun tingkat partisipasi tidak dipublikasikan di fase sebelumnya) (LOW)
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat; klaim portal tidak mempublikasikan statistik.
+INKONSISTENSI antar sumber pihak ketiga: satu roundup menyebut "10% supply untuk airdrop komunitas" (LOW, sumber Medium tidak resmi), sumber lain menyebut "Community 66,9% dengan float TGE 25,1%" dari total 120 juta VANA (MEDIUM, Bittime) — angka resmi tidak tersedia; dossier mempertahankan "persentase tidak diungkap" sebagai posisi terverifikasi.
+Jadwal vesting team/investor tidak dipublikasikan.
+
+FARMING DAN SYBIL
+
+Klaim berbasis partisipasi Data DAO/testnet dengan verifikasi yang tidak dirinci publik; Launchpool farming berbasis aset (BNB/FDUSD) rentan multi-akun bermodal besar namun di luar kendali protokol (mekanisme exchange); tanpa disclosure kriteria anti-sybil, penilaian risiko farming tetap LOW-evidence (LOW) [Bittime, https://support.bittime.com/hc/en-us/articles/11577239451023-VANA-Airdrop-Understanding-and-Guide-on-How-to-Claim-Free-Tokens]; [Medium roundup, https://medium.com/@erinnieblan3/vana-coin-airdrop-new-distribution-event-announced-for-q1-2025-6cf812d5f4ad]
+
+PROSPEK
+
+Metrik yang terpenuhi: Eksekusi TGE + listing CEX besar tepat window narasi; klaim portal fungsional; utilitas token jelas (staking/governance/Data DAO) (HIGH)
+Metrik yang tidak terpenuhi: Retensi harga pasca-TGE (-61% dalam 90 hari); transparansi tokenomics (persentase alokasi, vesting, jumlah penerima tidak diungkap) (HIGH)
+Sinyal ke depan: Publikasi breakdown alokasi; pertumbuhan Data DAO yang terukur; mekanisme value capture protokol (saat ini tanpa fee revenue live) (MEDIUM)
+Penilaian: Distribusi Vana memanfaatkan window narasi dengan eksekusi cepat, namun opasitas tokenomics yang ekstrem dan ketiadaan revenue mengubah airdrop menjadi exit liquidity awal bagi pemegang yang tidak menjual hari pertama (MEDIUM)
+
+PELAJARAN LINTAS PROJECT
+
+TGE dua bulan pasca-mainnet dengan tokenomics tanpa angka resmi adalah pola berisiko tinggi: pasar mengisi kekosongan disclosure dengan spekulasi, dan depresiasi cepat memperburuk kepercayaan yang seharusnya dibangun oleh program komunitas.
+Puncak harga yang terjadi pada hari pertama listing sekunder (bukan hari klaim) mengindikasikan distribusi awal langsung bertemu tekanan jual — tanpa lock/stake-to-claim, windfall komunitas termonetisasi dalam hitungan hari.
+Ketiadaan protocol fee revenue pada era TGE berarti tidak ada penahan nilai selain narasi — pola yang sama terlihat pada proyek AI x crypto lain di cohort 2024.
+
+OPEN THREADS
+
+- Breakdown resmi alokasi VANA (community/team/investors/foundation) dan jadwal vesting.
+- Jumlah wallet penerima klaim dan persentase klaim aktual.
+- Metrik adopsi Data DAO pasca-TGE (jumlah DLP aktif, volume data kontribusi).

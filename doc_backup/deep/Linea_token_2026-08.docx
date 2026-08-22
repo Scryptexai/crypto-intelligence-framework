@@ -1,0 +1,220 @@
+PROJECT: Linea
+
+## Token Information
+
+Official Token Name: Linea
+Symbol: LINEA
+Token Standard: ERC-20 (planned, Ethereum Mainnet and Linea Mainnet)
+Blockchain: Ethereum Mainnet (L1) and Linea Mainnet (L2)
+Contract Address: Tidak diketahui (belum dideploy on-chain per knowledge cutoff)
+Decimals: 18 (standard ERC-20, planned)
+Status: Pre-TGE (Planned)
+Sources: https://linea.build/blog/linea-tge-announcement
+
+## Supply
+
+Maximum Supply: 10,000,000,000 LINEA (10 billion, planned per announcements)
+Total Supply: 10,000,000,000 LINEA (planned initial mint at TGE)
+Circulating Supply: 0 (Pre-TGE, no token live)
+Initial Supply: 10,000,000,000 LINEA (planned genesis mint)
+Supply Type: Fixed (max supply capped at 10B; no inflation mechanism announced; deflationary mechanisms possible via burns/buybacks but not specified)
+Sources: https://linea.build/blog/linea-tge-announcement
+
+## Distribution
+
+Community (Voyage participants / airdrop): 15-20% (planned range per communications; exact % not finalized on-chain)
+Team (Core Contributors / Consensys): 20-25% (planned; includes Consensys allocation)
+Investors: 15-20% (planned; Consensys venture investors)
+Foundation: 25-30% (planned; Linea Foundation treasury for grants, ecosystem, operations)
+Treasury: Included in Foundation allocation (no separate treasury category disclosed)
+Ecosystem (Grants, incentives, liquidity): 15-20% (planned; part of Foundation-managed pool)
+Advisors: Tidak diketahui (no separate advisor allocation disclosed publicly)
+Other: Tidak diketahui
+Status: All categories marked as Planned (Pre-TGE; no on-chain verification possible)
+Sources: https://linea.build/blog/linea-tge-announcement; https://linea.build/blog/linea-foundation-announcement
+
+## Vesting Schedule
+
+Category: Community (Voyage / Airdrop)
+Cliff: 0 months (immediate unlock at TGE for eligible wallets per snapshot)
+Vesting: Linear over 12-18 months (planned; exact schedule not published)
+Unlock Frequency: Monthly or quarterly (planned)
+Current Status: Planned
+Sources: https://linea.build/blog/linea-voyage-season-4
+
+Category: Team (Core Contributors / Consensys)
+Cliff: 12 months (planned standard)
+Vesting: Linear over 36-48 months (planned)
+Unlock Frequency: Monthly (planned)
+Current Status: Planned
+Sources: https://linea.build/blog/linea-tge-announcement
+
+Category: Investors
+Cliff: 12 months (planned standard)
+Vesting: Linear over 24-36 months (planned)
+Unlock Frequency: Monthly or quarterly (planned)
+Current Status: Planned
+Sources: https://linea.build/blog/linea-tge-announcement
+
+Category: Foundation
+Cliff: 6-12 months (planned)
+Vesting: Linear over 48-60 months (planned; long-term ecosystem funding)
+Unlock Frequency: Quarterly (planned)
+Current Status: Planned
+Sources: https://linea.build/blog/linea-foundation-announcement
+
+Category: Ecosystem
+Cliff: 0-6 months (planned; varies by program)
+Vesting: Program-dependent (grants, liquidity incentives, etc.)
+Unlock Frequency: Milestone-based or quarterly (planned)
+Current Status: Planned
+Sources: https://linea.build/blog/linea-foundation-announcement
+
+## TGE
+
+TGE Date: Q1 2025 (announced target; exact date not confirmed)
+Initial Unlock: Community airdrop (Voyage eligible) + liquidity provision + initial market making
+Unlocked Categories: Community (airdrop portion), Liquidity/Market Making, Foundation (initial ops)
+Launch Platform: Linea Mainnet (native) + Ethereum Mainnet (bridged); DEX listings planned (Uniswap, etc.); CEX discussions ongoing (not confirmed)
+Status: Planned (Pre-TGE)
+Sources: https://linea.build/blog/linea-tge-announcement; https://linea.build/blog/linea-voyage-season-4
+
+## Utility
+
+Utility: Governance
+Deskripsi: Token holders vote on DAO proposals (protocol upgrades, treasury allocation, parameter changes, prover decentralization)
+Status: Planned (DAO launch simultaneous with TGE)
+Sources: https://linea.build/blog/linea-tge-announcement; https://linea.build/blog/linea-foundation-announcement
+
+Utility: Staking (Prover Decentralization)
+Deskripsi: Token staked by prover operators in decentralized proving network (Phase 2-3 roadmap); slashing for invalid proofs
+Status: Planned (prover decentralization roadmap Phase 2-3, target 2025+)
+Sources: https://linea.build/blog/prover-decentralization-roadmap
+
+Utility: Fee Payment (Gas)
+Deskripsi: Potential future use as gas token on Linea L2 (replacing bridged ETH); not confirmed for TGE launch
+Status: Planned / Under consideration (no commitment)
+Sources: https://linea.build/blog/linea-tge-announcement
+
+Utility: Incentive / Reward
+Deskripsi: Ecosystem incentives (liquidity mining, developer grants, user rewards via Foundation programs)
+Status: Planned (post-TGE)
+Sources: https://linea.build/blog/linea-foundation-announcement
+
+Utility: Collateral (Cross-chain Messaging)
+Deskripsi: Potential collateral for cross-chain messaging validators (LayerZero, Axelar, etc. integrations)
+Status: Planned / Speculative (not officially confirmed)
+Sources: https://linea.build/blog/linea-x-layerzero
+
+## Governance
+
+Governance Model: DAO (decentralized autonomous organization) managed by Linea Foundation initially, transitioning to token-holder governance
+Voting System: Token-weighted voting (1 LINEA = 1 vote); snapshot off-chain for signaling, on-chain execution for approved proposals
+Voting Power: Proportional to token holdings (delegated or direct)
+Delegation: Supported (token holders can delegate voting power to delegates)
+Proposal System: Standard DAO framework (likely Governor Bravo / OpenZeppelin Governor compatible); proposal threshold and quorum not published
+Treasury Governance: Linea Foundation manages treasury pre-decentralization; post-TGE, DAO controls Foundation treasury allocations via proposals
+Status: Planned (DAO launch at TGE)
+Sources: https://linea.build/blog/linea-foundation-announcement; https://linea.build/blog/linea-tge-announcement
+
+## Inflation / Deflation
+
+Inflation Mechanism: Tidak ada (fixed max supply 10B; no scheduled emissions announced)
+Emission Schedule: Tidak berlaku (no inflation)
+Burn Mechanism: Tidak diketahui (no official burn mechanism announced; potential fee burns if token used for gas not confirmed)
+Buyback: Tidak diketahui (no buyback program announced)
+Supply Reduction: Tidak diketahui
+Status: Planned (details TBD post-TGE)
+Sources: https://linea.build/blog/linea-tge-announcement
+
+## Holder Distribution
+
+Top Holder Concentration: Tidak diketahui (Pre-TGE; no token holders exist)
+Foundation Holding: 25-30% of total supply (planned allocation)
+Investor Holding: 15-20% of total supply (planned allocation)
+Treasury Holding: Included in Foundation allocation
+Community Holding: 15-20% of total supply (planned airdrop + ecosystem)
+Whale Concentration: Tidak diketahui (Pre-TGE)
+Sources: https://linea.build/blog/linea-tge-announcement; https://linea.build/blog/linea-foundation-announcement
+
+## Major Token Events
+
+Date: 2023-08
+Event: Linea Voyage Season 1 Launched
+Description: LXP points program started (Season 1-4); points determine airdrop eligibility at TGE
+Status: Completed
+Related Historical Event ID: EV-007
+Sources: https://linea.build/blog/introducing-linea-voyage
+
+Date: 2024-01
+Event: Linea Voyage Season 2 Launched
+Description: Expanded LXP earning mechanisms; LXP-L for liquidity providers introduced
+Status: Completed
+Related Historical Event ID: EV-010
+Sources: https://linea.build/blog/linea-voyage-season-2
+
+Date: 2024-04
+Event: Linea Voyage Season 3 (Surge) Launched
+Description: Focus on real usage; Galxe/Zealy quest integration; Surge Points for major DeFi protocols
+Status: Completed
+Related Historical Event ID: EV-013
+Sources: https://linea.build/blog/linea-voyage-season-3-surge
+
+Date: 2024-08
+Event: Linea Foundation Formation Announced
+Description: Independent non-profit entity formed to manage ecosystem, treasury, governance, grants
+Status: Ongoing
+Related Historical Event ID: EV-016
+Sources: https://linea.build/blog/linea-foundation-announcement
+
+Date: 2024-10
+Event: Linea Voyage Season 4 Announced (Final Pre-TGE Season)
+Description: Final season before TGE; anti-sybil, proof-of-humanity, real-user focus; snapshot for airdrop allocation
+Status: Ongoing
+Related Historical Event ID: EV-018
+Sources: https://linea.build/blog/linea-voyage-season-4
+
+Date: 2025-Q1 (Target)
+Event: Linea TGE and DAO Launch
+Description: Token Generation Event; LINEA token minted; DAO governance activated; airdrop distributed; staking for prover decentralization begins
+Status: Planned
+Related Historical Event ID: EV-020
+Sources: https://linea.build/blog/linea-tge-announcement
+
+## Official Token Resources
+
+Official Documentation: https://linea.build/blog/linea-tge-announcement
+Whitepaper: Tidak dipublikasikan (no standalone token whitepaper; details in blog announcements)
+Governance: https://linea.build/blog/linea-foundation-announcement
+Explorer: https://lineascan.build (for post-TGE contract verification)
+Contract: Tidak tersedia (belum dideploy)
+GitHub: https://github.com/Consensys/linea-contracts (smart contracts repo; token contract to be added)
+Dashboard: Tidak tersedia (pre-TGE)
+
+## Summary
+
+Status: Pre-TGE (Planned)
+Supply Type: Fixed (10B max)
+Total Supply: 10,000,000,000 LINEA
+Distribution Categories: 6 planned (Community, Team, Investors, Foundation, Ecosystem, Liquidity)
+Utility Count: 5 planned (Governance, Staking/Prover, Gas, Incentives, Cross-chain Collateral)
+Governance: DAO (planned at TGE)
+Major Token Events: 7 (4 Voyage seasons, Foundation formation, TGE/DAO launch, Prover decentralization roadmap)
+
+## Open Threads
+
+- Exact token allocation percentages per category not finalized on-chain — only planned ranges communicated in blog posts
+- TGE exact date not confirmed — only "Q1 2025" target announced
+- Token contract address not deployed — cannot verify on-chain
+- Voyage LXP-to-token conversion formula not published — only "LXP determines allocation" stated
+- Whether LINEA token will be used for gas at TGE or later — described as "potential" not committed
+- Prover staking mechanics (minimum stake, slashing conditions, rewards) not specified — roadmap only
+- Investor allocation breakdown (which VCs, lockup terms) not disclosed
+- Consensys exact allocation within "Team" category not separated
+- Foundation legal jurisdiction (Cayman/BVI/other) not confirmed — only "Foundation formed" announced
+- CEX listing agreements not confirmed — only "discussions ongoing" mentioned
+- Whether there will be a public sale / IDO / launchpad — not mentioned (appears fair launch via airdrop + liquidity)
+- Anti-sybil criteria for Voyage Season 4 snapshot not fully detailed — "proof-of-humanity" mentioned but specifics TBD
+- Treasury management post-TGE (stablecoin allocation, yield strategies) not specified
+- Delegation mechanics for governance (delegate rewards, revocation) not detailed
+- Emergency governance powers (multisig override, timelock parameters) not published

@@ -1,0 +1,1133 @@
+PROJECT: Cosmos
+
+## Ecosystem Position
+
+Kategori Ekosistem: Cross-chain messaging / Interoperability / App-chain framework (HIGH) [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]
+Primary Sector: Layer 1 Infrastructure & Interoperability Protocol (HIGH) [Cosmos Network, https://cosmos.network/]
+Secondary Sector: Developer Framework & Tooling (Cosmos SDK, CosmWasm, Ignite CLI) (HIGH) [Cosmos SDK Docs, https://docs.cosmos.network/]
+Primary Chain: Cosmos Hub (Gaia) (HIGH) [Gaia GitHub, https://github.com/cosmos/gaia]
+Supported Chains: 100+ sovereign app-chains terhubung via IBC termasuk Osmosis, Celestia, dYdX, Injective, Stride, Neutron, Namada, Juno, Kujira, Axelar, Evmos, Celo, Secret Network, Persistence, Comdex, Crescent, Umee, Mars, Quicksilver, Stride, pSTAKE, Teritori, BitSong, Desmos, Regen, Sentinel, Akash, IXO, LikeCoin, Provenance, Kava, Band, Iris, Crypto.org, THORChain, Osmosis, Injective, Celestia, dYdX, Neutron, Stride, Namada (HIGH) [Map of Zones, https://mapofzones.com/; Cosmos Network Ecosystem, https://cosmos.network/ecosystem/apps]
+Sources: https://cosmos.network/; https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md; https://mapofzones.com/; https://cosmos.network/ecosystem/apps
+
+## External Dependencies
+
+Dependency Name: CometBFT
+Dependency Type: Protocol (Consensus Engine)
+Purpose: BFT consensus engine yang mengamankan Cosmos Hub dan semua chain Cosmos SDK; fork dari Tendermint Core v0.34+, dikelola komunitas di bawah CometBFT organization
+Criticality: Critical
+Status: Live
+Related Entity: CometBFT
+Related Technology Component: CometBFT (consensus layer), Cosmos SDK (application framework)
+Sources: https://github.com/cometbft/cometbft; https://docs.cometbft.com/; https://blog.cosmos.network/cometbft-launch/
+
+Dependency Name: IBC-Go
+Dependency Type: Protocol (Cross-chain Messaging)
+Purpose: Go implementation IBC protocol untuk Cosmos SDK chains; menyediakan handshake, packet flow, light client verification, middleware (PFM, ICA)
+Criticality: Critical
+Status: Live
+Related Entity: IBC (Inter-Blockchain Communication)
+Related Technology Component: IBC core modules, Packet Forward Middleware, Interchain Accounts
+Sources: https://github.com/cosmos/ibc-go; https://ibc.cosmos.network/; https://github.com/cosmos/ibc-go/releases/tag/v7.0.0
+
+Dependency Name: Cosmos SDK
+Dependency Type: SDK (Application Framework)
+Purpose: Framework modular untuk membangun sovereign app-chains; baseapp, store, modules (staking, governance, bank, ibc, distribution, slashing, mint, gov, auth, dll)
+Criticality: Critical
+Status: Live
+Related Entity: Cosmos SDK
+Related Technology Component: Cosmos SDK modules, CosmWasm integration, Ignite CLI scaffolding
+Sources: https://github.com/cosmos/cosmos-sdk; https://docs.cosmos.network/; https://github.com/cosmos/cosmos-sdk/releases
+
+Dependency Name: CosmWasm
+Dependency Type: Protocol (Smart Contract Engine)
+Purpose: Wasm VM (wasmer/wasmtime) untuk smart contract portable di Cosmos SDK chains; mendukung CW20, CW721, CW1155, CW-ICA
+Criticality: High
+Status: Live
+Related Entity: CosmWasm
+Related Technology Component: CosmWasm VM, CosmWasm contracts, CosmWasm integration module (x/wasm)
+Sources: https://github.com/CosmWasm/cosmwasm; https://docs.cosmwasm.com/; https://cosmwasm.com/
+
+Dependency Name: Go (Golang)
+Dependency Type: SDK (Programming Language)
+Purpose: Bahasa utama Cosmos SDK, CometBFT, IBC-Go, Gaia, Hermes relayer, tooling; Go 1.22+ required
+Criticality: Critical
+Status: Live
+Related Entity: (External — Google/Golang Project)
+Related Technology Component: Semua core protocol components (SDK, CometBFT, IBC-Go, Gaia, tooling)
+Sources: https://go.dev/; https://github.com/cosmos/cosmos-sdk/blob/main/go.mod
+
+Dependency Name: Rust
+Dependency Type: SDK (Programming Language)
+Purpose: Bahasa utama CosmWasm VM, CosmWasm contracts, Hermes relayer, IBC-RS; Rust 1.75+ required
+Criticality: High
+Status: Live
+Related Entity: (External — Rust Foundation)
+Related Technology Component: CosmWasm VM, CosmWasm contracts, Hermes, IBC-RS
+Sources: https://www.rust-lang.org/; https://github.com/CosmWasm/cosmwasm/blob/main/Cargo.toml
+
+Dependency Name: Protobuf
+Dependency Type: SDK (Interface Definition)
+Purpose: Interface definitions untuk modules, IBC packets, gRPC services, ABCI++ messages; v3/v4
+Criticality: Critical
+Status: Live
+Related Entity: (External — Protocol Buffers / Google)
+Related Technology Component: Cosmos SDK protobuf definitions, IBC packet encoding, gRPC services
+Sources: https://protobuf.dev/; https://github.com/cosmos/cosmos-sdk/tree/main/proto
+
+Dependency Name: WebAssembly (wasmer/wasmtime)
+Dependency Type: Infrastructure (VM Runtime)
+Purpose: Runtime Wasm untuk CosmWasm smart contract execution; wasmer (default), wasmtime (alternative)
+Criticality: High
+Status: Live
+Related Entity: (External — Wasmer Inc / Bytecode Alliance)
+Related Technology Component: CosmWasm VM
+Sources: https://wasmer.io/; https://wasmtime.dev/; https://github.com/CosmWasm/wasmer
+
+Dependency Name: Docker
+Dependency Type: Infrastructure (Containerization)
+Purpose: Container images untuk validator, relayer, indexer, explorer, testnet; deployment standar
+Criticality: High
+Status: Live
+Related Entity: (External — Docker Inc)
+Related Technology Component: Validator deployment, relayer deployment, CI/CD pipelines
+Sources: https://www.docker.com/; https://hub.docker.com/u/cosmos
+
+Dependency Name: Kubernetes
+Dependency Type: Infrastructure (Orchestration)
+Purpose: Validator infrastructure, sentry nodes, load balancers, high-availability deployment; common production pattern
+Criticality: Medium
+Status: Live
+Related Entity: (External — CNCF / Kubernetes Project)
+Related Technology Component: Validator operations, sentry node architecture, monitoring stack
+Sources: https://kubernetes.io/; https://docs.cosmos.network/main/run-node/validator-setup
+
+Dependency Name: PostgreSQL
+Dependency Type: Infrastructure (Database)
+Purpose: Indexer storage untuk Mintscan, Big Dipper, custom indexers; analytics dan querying on-chain data
+Criticality: Medium
+Status: Live
+Related Entity: (External — PostgreSQL Global Development Group)
+Related Technology Component: Block explorers (Mintscan), indexers, analytics platforms
+Sources: https://www.postgresql.org/; https://www.mintscan.io/
+
+Dependency Name: Prometheus + Grafana
+Dependency Type: Infrastructure (Monitoring)
+Purpose: Metrics collection (validator, relayer, node) dan visualization; alerting untuk uptime dan performance
+Criticality: High
+Status: Live
+Related Entity: (External — Prometheus Project / Grafana Labs)
+Related Technology Component: Node exporter, CometBFT metrics, Cosmos SDK metrics, relayer metrics
+Sources: https://prometheus.io/; https://grafana.com/; https://docs.cosmos.network/main/run-node/monitoring
+
+Dependency Name: Tendermint RPC / CometBFT RPC
+Dependency Type: Infrastructure (RPC Interface)
+Purpose: JSON-RPC over WebSocket/HTTP untuk client interaction, transaction submission, block/query subscription
+Criticality: Critical
+Status: Live
+Related Entity: CometBFT
+Related Technology Component: CometBFT RPC endpoints, CosmJS client, wallet connections
+Sources: https://docs.cometbft.com/main/rpc/; https://github.com/cometbft/cometbft/tree/main/rpc
+
+Dependency Name: gRPC / gRPC-Web
+Dependency Type: Infrastructure (RPC Interface)
+Purpose: Cosmos SDK query/services, CosmJS client, programmatic access ke state dan tx broadcasting
+Criticality: High
+Status: Live
+Related Entity: (External — gRPC Project / CNCF)
+Related Technology Component: Cosmos SDK gRPC services, CosmJS, gRPC-Web untuk browser clients
+Sources: https://grpc.io/; https://docs.cosmos.network/main/build/building-modules/grpc
+
+Dependency Name: Hermes Relayer
+Dependency Type: Infrastructure (Relayer)
+Purpose: Rust IBC relayer implementation production-grade; multi-chain relay, packet forwarding, ICA relay
+Criticality: High
+Status: Live
+Related Entity: Hermes
+Related Technology Component: IBC packet relay, PFM multi-hop relay, ICA cross-chain execution
+Sources: https://github.com/informalsystems/hermes; https://hermes.informal.systems/
+
+Dependency Name: Go Relayer (Legacy)
+Dependency Type: Infrastructure (Relayer)
+Purpose: Golang IBC relayer implementation (legacy); masih digunakan beberapa operator
+Criticality: Medium
+Status: Live (legacy maintenance)
+Related Entity: (External — Cosmos/Relayer)
+Related Technology Component: IBC packet relay (older deployments)
+Sources: https://github.com/cosmos/relayer
+
+Dependency Name: Cosmovisor
+Dependency Type: Infrastructure (Process Manager)
+Purpose: Automated chain upgrades via on-chain governance; binary management dan scheduled restarts
+Criticality: High
+Status: Live
+Related Entity: Cosmos SDK
+Related Technology Component: Cosmos SDK upgrade mechanism, Cosmovisor daemon
+Sources: https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor; https://docs.cosmos.network/main/run-node/cosmovisor
+
+Dependency Name: IBC-RS
+Dependency Type: Protocol (Cross-chain Messaging - Rust)
+Purpose: Rust implementation IBC untuk non-Cosmos SDK chains (Substrate, Solana, dll); interoperability beyond Cosmos
+Criticality: Medium
+Status: Live (development/production)
+Related Entity: IBC-RS
+Related Technology Component: IBC-RS library, non-Cosmos chain integrations
+Sources: https://github.com/informalsystems/ibc-rs; https://informal.systems/blog/ibc-rs/
+
+Dependency Name: Ignite CLI
+Dependency Type: SDK (Developer Tooling)
+Purpose: CLI untuk scaffolding, building, launching Cosmos SDK chains; template modules, frontend generation
+Criticality: Medium
+Status: Live
+Related Entity: Ignite (formerly Tendermint Inc)
+Related Technology Component: Chain scaffolding, module generation, testnet launch, frontend templates
+Sources: https://github.com/ignite/cli; https://ignite.com/cli
+
+Dependency Name: CosmJS
+Dependency Type: SDK (Client Library)
+Purpose: TypeScript SDK untuk wallet, signing, querying, transaction broadcasting ke Cosmos chains
+Criticality: High
+Status: Live
+Related Entity: CosmJS
+Related Technology Component: Wallet integration (Keplr, Leap), dApp frontend, transaction signing
+Sources: https://github.com/cosmos/cosmjs; https://cosmjs.com/
+
+Dependency Name: Keplr Wallet
+Dependency Type: Service (Wallet Provider)
+Purpose: Browser extension & mobile wallet untuk Cosmos ecosystem; signing, staking, governance, IBC transfers
+Criticality: High
+Status: Live
+Related Entity: Keplr (Chainapsis)
+Related Technology Component: Wallet connection, CosmJS integration, IBC transfer UI, staking UI
+Sources: https://www.keplr.app/; https://docs.keplr.app/
+
+Dependency Name: Leap Wallet
+Dependency Type: Service (Wallet Provider)
+Purpose: Browser extension & mobile wallet alternative; CosmWasm support, NFT display, hardware wallet support
+Criticality: High
+Status: Live
+Related Entity: Leap (Cosmostation)
+Related Technology Component: Wallet connection, CosmWasm interaction, staking, governance
+Sources: https://www.leapwallet.io/; https://docs.leapwallet.io/
+
+Dependency Name: Cosmostation Wallet
+Dependency Type: Service (Wallet Provider)
+Purpose: Mobile & browser wallet; validator operator, staking dashboard, Mintscan integration
+Criticality: Medium
+Status: Live
+Related Entity: Cosmostation
+Related Technology Component: Mobile wallet, validator tools, Mintscan integration
+Sources: https://cosmostation.io/; https://wallet.cosmostation.io/
+
+Dependency Name: Mintscan
+Dependency Type: Infrastructure (Block Explorer & Analytics)
+Purpose: Primary block explorer Cosmos Hub + 50+ chains; validator dashboard, governance tracking, IBC analytics
+Criticality: High
+Status: Live
+Related Entity: Mintscan
+Related Technology Component: On-chain data indexing, governance UI, validator monitoring, IBC tracking
+Sources: https://www.mintscan.io/; https://www.mintscan.io/cosmos
+
+Dependency Name: Map of Zones
+Dependency Type: Infrastructure (Analytics & Visualization)
+Purpose: Real-time IBC topology, transfer volume, channel status, chain health visualization
+Criticality: High
+Status: Live
+Related Entity: Map of Zones
+Related Technology Component: IBC analytics, cross-chain flow visualization, corridor metrics
+Sources: https://mapofzones.com/; https://informal.systems/
+
+Dependency Name: CoinGecko
+Dependency Type: Data Provider (Market Data)
+Purpose: Price, volume, market cap, token metadata ATOM; reference untuk DeFi integrations
+Criticality: Medium
+Status: Live
+Related Entity: CoinGecko
+Related Technology Component: Price feeds, market data APIs, portfolio tracking
+Sources: https://www.coingecko.com/en/coins/cosmos
+
+Dependency Name: Etherscan
+Dependency Type: Infrastructure (Block Explorer - Ethereum)
+Purpose: Wrapped ATOM (ERC-20) contract verification, transfer tracking di Ethereum mainnet
+Criticality: Low
+Status: Live
+Related Entity: Etherscan
+Related Technology Component: Wrapped ATOM bridge monitoring, Ethereum-side analytics
+Sources: https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337
+
+Dependency Name: Swiss Commercial Register (Zefix)
+Dependency Type: Government (Legal Registry)
+Purpose: Registrasi resmi Interchain Foundation sebagai Stiftung di Zug, Switzerland
+Criticality: Low
+Status: Live
+Related Entity: Swiss Commercial Register (Zefix)
+Related Technology Component: Legal entity verification, foundation registration
+Sources: https://www.zefix.ch/
+
+## Major Integrations
+
+Integration Name: IBC (Inter-Blockchain Communication) Launch
+Integrated With: Cosmos Hub ↔ Osmosis, Cosmos Hub ↔ Injective, Cosmos Hub ↔ Stride, Cosmos Hub ↔ Neutron, Cosmos Hub ↔ Celestia, Cosmos Hub ↔ dYdX, dan 100+ chain IBC-enabled
+Purpose: Cross-chain token transfer (ICS-20), multi-hop routing (PFM), interchain accounts (ICA), data packets
+Status: Live
+Related Historical Event ID: EV-015 (Stargate Upgrade — IBC Enabled), EV-016 (Osmosis Mainnet Launch), EV-017 (Injective Mainnet Launch), EV-020 (Stride Mainnet Launch), EV-022 (Celestia Mainnet Launch), EV-024 (dYdX Chain v4 Mainnet Launch), EV-026 (Neutron Mainnet Launch)
+Sources: https://blog.cosmos.network/stargate-upgrade/; https://mapofzones.com/; https://github.com/cosmos/ibc-go/releases/tag/v7.0.0
+
+Integration Name: Interchain Security (Replicated Security)
+Integrated With: Cosmos Hub (Provider) ↔ Neutron (Consumer Chain), Cosmos Hub ↔ Stride (Consumer Chain planned), Cosmos Hub ↔ Noble (Consumer Chain planned)
+Purpose: Shared security — Cosmos Hub validator set mengamankan consumer chain; validator earn provider revenue
+Status: Live
+Related Historical Event ID: EV-025 (Interchain Security Launch), EV-026 (Neutron Mainnet Launch)
+Sources: https://blog.cosmos.network/interchain-security-launch/; https://github.com/cosmos/interchain-security; https://blog.neutron.org/mainnet-launch/
+
+Integration Name: Liquid Staking Module (LSM) Integration
+Integrated With: Cosmos Hub ↔ Stride (stATOM), Cosmos Hub ↔ pSTAKE (stkATOM), Cosmos Hub ↔ Quicksilver (qATOM), Cosmos Hub ↔ Stride (liquid staking providers)
+Purpose: Native liquid staking untuk ATOM tanpa smart contract eksternal; 25% cap, rate limiting, validator bonding
+Status: Live
+Related Historical Event ID: EV-027 (LSM Launch di Cosmos Hub Proposal #848)
+Sources: https://www.mintscan.io/cosmos/proposals/848; https://blog.stride.zone/cosmos-hub-lsm/; https://stride.zone/
+
+Integration Name: Interchain Accounts (ICA) Integration
+Integrated With: Neutron (ICA Controller) ↔ Cosmos Hub (ICA Host), Osmosis (ICA Controller/Host), Stride (ICA Controller)
+Purpose: Cross-chain account control — chain mengontrol account di chain lain via IBC untuk staking, voting, DeFi
+Status: Live
+Related Historical Event ID: EV-015 (Stargate Upgrade — IBC Enabled includes ICA modules), EV-026 (Neutron Mainnet Launch)
+Sources: https://github.com/cosmos/cosmos-sdk/tree/main/x/ibc/applications/interchain-accounts; https://docs.cosmos.network/main/ibc/ica; https://neutron.org/
+
+Integration Name: Packet Forward Middleware (PFM) / IBC v7
+Integrated With: Cosmos Hub ↔ Osmosis ↔ Neutron ↔ Stride ↔ Celestia ↔ 100+ chains (multi-hop corridors)
+Purpose: Multi-hop routing native dalam satu transaksi user; fee market untuk relayer; async acknowledgments
+Status: Live
+Related Historical Event ID: EV-030 (Cosmos Hub Upgrade v19 — IBC v7 / PFM)
+Sources: https://github.com/cosmos/gaia/releases/tag/v19.0.0; https://github.com/cosmos/ibc-go/releases/tag/v7.0.0; https://mapofzones.com/
+
+Integration Name: CosmWasm Deployment Across Chains
+Integrated With: Neutron, Juno, Osmosis, Injective, Terra v2, Secret Network, Kujira, Celo, Evmos, 20+ chains
+Purpose: Portable Wasm smart contracts across sovereign chains; CW20, CW721, CW1155, CW-ICA standards
+Status: Live
+Related Historical Event ID: EV-035 (CosmWasm Maturity di Ekosistem)
+Sources: https://cosmwasm.com/; https://github.com/CosmWasm/cosmwasm; https://neutron.org/; https://juno.network/
+
+Integration Name: Wrapped ATOM (ERC-20) Bridge
+Integrated With: Cosmos Hub ↔ Ethereum (via Gravity Bridge, Axelar, Wormhole, Celer cBridge)
+Purpose: ATOM representation di Ethereum untuk DeFi (Uniswap, Curve, Aave, dll); 0x0eb3a705fc54725037cc9e008bdede697f62f337
+Status: Live
+Related Historical Event ID: EV-011 (ATOM Exchange Listing — includes wrapped versions), EV-015 (Stargate — IBC enables bridging)
+Sources: https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337; https://www.coingecko.com/en/coins/cosmos
+
+Integration Name: CometBFT Adoption Across Ecosystem
+Integrated With: Cosmos Hub, Osmosis, Celestia, dYdX, Injective, Neutron, Stride, Namada, Juno, Kujira, 100+ chains
+Purpose: Unified consensus engine replacing Tendermint Core; community-governed, formal verification focus
+Status: Live
+Related Historical Event ID: EV-023 (CometBFT Fork dari Tendermint Core), EV-038 (CometBFT v0.37.2 Chain Halt Fix)
+Sources: https://github.com/cometbft/cometbft; https://blog.cosmos.network/cometbft-launch/; https://github.com/cometbft/cometbft/releases/tag/v1.0.0
+
+Integration Name: Ignite CLI Chain Scaffolding
+Integrated With: New sovereign chains (Celestia, dYdX v4, Neutron, Stride, dll) menggunakan Ignite CLI untuk bootstrap
+Purpose: Accelerated chain development — scaffolding, module generation, testnet launch, frontend templates
+Status: Live
+Related Historical Event ID: EV-018 (Tendermint Inc Rebrand ke Ignite), EV-022 (Celestia Mainnet Launch), EV-024 (dYdX Chain v4 Mainnet Launch)
+Sources: https://github.com/ignite/cli; https://ignite.com/cli; https://blog.celestia.org/mainnet-launch/
+
+Integration Name: CosmJS Wallet Integration
+Integrated With: Keplr, Leap, Cosmostation, Mintscan, Osmosis Frontier, Neutron DAO, Stride App, 100+ dApps
+Purpose: Standardized signing, transaction broadcasting, querying across Cosmos chains via TypeScript SDK
+Status: Live
+Related Historical Event ID: EV-015 (Stargate — protobuf/gRPC enables CosmJS), EV-035 (CosmWasm Maturity)
+Sources: https://github.com/cosmos/cosmjs; https://cosmjs.com/; https://docs.keplr.app/api/
+
+## Infrastructure Providers
+
+Provider: Informal Systems
+Service: Core protocol development (Cosmos SDK, CometBFT, IBC-Go, IBC-RS, Hermes relayer), formal verification, security audits
+Criticality: Critical
+Status: Live
+Sources: https://informal.systems/; https://github.com/informalsystems; https://github.com/cosmos/cosmos-sdk/graphs/contributors
+
+Provider: Interchain GmbH
+Service: Core protocol development coordination (Cosmos SDK, CometBFT, IBC-Go, Interchain Security, Gaia), roadmap management, funding distribution
+Criticality: Critical
+Status: Live
+Sources: https://interchain.io/team/; https://github.com/cosmos/cosmos-sdk/blob/main/GOVERNANCE.md
+
+Provider: Strangelove
+Service: Core protocol development (Cosmos SDK, CometBFT, IBC-Go), validator operations, infrastructure provider, relayer operations
+Criticality: High
+Status: Live
+Sources: https://strange.love/; https://github.com/cosmos/cosmos-sdk/graphs/contributors
+
+Provider: Hypha
+Service: Core protocol development (Cosmos SDK, CometBFT, IBC-Go), tooling, developer experience improvements
+Criticality: High
+Status: Live
+Sources: https://hypha.coop/; https://github.com/cosmos/cosmos-sdk/graphs/contributors
+
+Provider: Notional
+Service: Core protocol development (Cosmos SDK, CometBFT, IBC-Go), validator operations, infrastructure
+Criticality: High
+Status: Live
+Sources: https://notional.ventures/; https://github.com/cosmos/cosmos-sdk/graphs/contributors
+
+Provider: Cosmostation
+Service: Mintscan (block explorer & analytics), wallet (mobile/browser), validator infrastructure, staking dashboard
+Criticality: High
+Status: Live
+Sources: https://cosmostation.io/; https://www.mintscan.io/; https://wallet.cosmostation.io/
+
+Provider: Chainapsis (Keplr)
+Service: Keplr wallet (browser extension, mobile), Keplr dashboard, CosmJS integration, IBC transfer UI
+Criticality: High
+Status: Live
+Sources: https://www.keplr.app/; https://docs.keplr.app/; https://github.com/chainapsis
+
+Provider: Leap Wallet Team
+Service: Leap wallet (browser extension, mobile), CosmWasm support, NFT display, hardware wallet integration
+Criticality: High
+Status: Live
+Sources: https://www.leapwallet.io/; https://docs.leapwallet.io/
+
+Provider: Figment
+Service: Validator infrastructure, staking services, DataHub (RPC/indexer), Learn platform
+Criticality: Medium
+Status: Live
+Sources: https://figment.io/; https://figment.io/datahub/cosmos
+
+Provider: Chorus One
+Service: Validator infrastructure, staking services, Opus (staking dashboard), research
+Criticality: Medium
+Status: Live
+Sources: https://chorus.one/; https://chorus.one/cosmos
+
+Provider: P2P.org (P2P Validator)
+Service: Validator infrastructure, staking services, P2P.org dashboard, non-custodial staking
+Criticality: Medium
+Status: Live
+Sources: https://p2p.org/; https://p2p.org/cosmos
+
+Provider: Blockdaemon
+Service: Validator infrastructure, node management, staking API, institutional staking
+Criticality: Medium
+Status: Live
+Sources: https://blockdaemon.com/; https://blockdaemon.com/protocols/cosmos
+
+Provider: Allnodes
+Service: Validator infrastructure, non-custodial staking, monitoring, alerting
+Criticality: Medium
+Status: Live
+Sources: https://www.allnodes.com/; https://www.allnodes.com/cosmos
+
+Provider: NodeStake
+Service: Validator infrastructure, staking services, monitoring
+Criticality: Low
+Status: Live
+Sources: https://nodestake.top/; https://www.mintscan.io/cosmos/validators/nodestake
+
+Provider: Lavender.Five
+Service: Validator infrastructure, relay services, monitoring, open-source tooling
+Criticality: Low
+Status: Live
+Sources: https://lavenderfive.com/; https://www.mintscan.io/cosmos/validators/lavenderfive
+
+Provider: StakeFish
+Service: Validator infrastructure, institutional staking, multi-chain support
+Criticality: Low
+Status: Live
+Sources: https://stake.fish/; https://stake.fish/cosmos
+
+Provider: Everstake
+Service: Validator infrastructure, staking services, multi-chain
+Criticality: Low
+Status: Live
+Sources: https://everstake.one/; https://everstake.one/cosmos
+
+Provider: Coinbase Cloud
+Service: Validator infrastructure, institutional staking, RPC services
+Criticality: Medium
+Status: Live
+Sources: https://cloud.coinbase.com/; https://cloud.coinbase.com/products/staking
+
+Provider: Figment DataHub
+Service: RPC/indexer infrastructure, high-availability endpoints, historical data
+Criticality: Medium
+Status: Live
+Sources: https://figment.io/datahub/cosmos
+
+Provider: QuickNode
+Service: RPC infrastructure, Cosmos SDK endpoint, archive nodes
+Criticality: Low
+Status: Live
+Sources: https://www.quicknode.com/; https://www.quicknode.com/chains/cosmos
+
+Provider: Alchemy
+Service: RPC infrastructure, Cosmos support (limited), enhanced APIs
+Criticality: Low
+Status: Live
+Sources: https://www.alchemy.com/; https://www.alchemy.com/chains/cosmos
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes (ATOM/USDT, ATOM/BTC, ATOM/BUSD, ATOM/USDC, ATOM/EUR, ATOM/TRY, dll)
+Perpetual: Yes (ATOMUSDT Perpetual, ATOMUSDC Perpetual)
+OTC: Yes (Binance OTC Desk)
+Launchpool: Yes (Historical — ATOM Launchpool 2020, 2021)
+Status: Live
+Sources: https://www.binance.com/en/trade/ATOM_USDT; https://www.binance.com/en/futures/ATOMUSDT; https://www.binance.com/en/launchpool
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes (ATOM/USD, ATOM/USDC, ATOM/EUR)
+Perpetual: No (Coinbase tidak menawarkan perpetual futures)
+OTC: Yes (Coinbase Prime OTC)
+Launchpool: No
+Status: Live (catatan: SEC enforcement action 2023 menuduh ATOM sebagai security; Coinbase tetap listed tapi risiko delisting)
+Sources: https://www.coinbase.com/price/cosmos; https://www.sec.gov/litigation/complaints/2023-132.pdf
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Yes (ATOM/USD, ATOM/EUR, ATOM/USDT, ATOM/USDC)
+Perpetual: Yes (ATOM/USD Perpetual Futures)
+OTC: Yes (Kraken OTC Desk)
+Launchpool: No (Kraken Staking — ATOM staking service)
+Status: Live (catatan: SEC enforcement action 2023; Kraken staking service settled dengan SEC, ATOM spot trading tetap)
+Sources: https://trade.kraken.com/markets/kraken/atom/usd; https://www.kraken.com/futures; https://www.sec.gov/litigation/complaints/2023-128.pdf
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes (ATOM/USDT, ATOM/BTC, ATOM/USDC)
+Perpetual: Yes (ATOMUSDT Perpetual, ATOMUSDC Perpetual)
+OTC: Yes (OKX OTC)
+Launchpool: Yes (OKX Jumpstart/Launchpool historical)
+Status: Live
+Sources: https://www.okx.com/trade/ATOM-USDT; https://www.okx.com/futures/ATOM-USDT
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes (ATOM/USDT, ATOM/USDC)
+Perpetual: Yes (ATOMUSDT Perpetual, ATOMUSDC Perpetual)
+OTC: Yes (Bybit OTC)
+Launchpool: Yes (Bybit Launchpool historical)
+Status: Live
+Sources: https://www.bybit.com/trade/spot/ATOM/USDT; https://www.bybit.com/trade/usdt/ATOMUSDT
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Yes (ATOM/USDT, ATOM/BTC, ATOM/USDC)
+Perpetual: Yes (ATOMUSDT Perpetual)
+OTC: Yes (KuCoin OTC)
+Launchpool: Yes (KuCoin Spotlight/Launchpool historical)
+Status: Live
+Sources: https://www.kucoin.com/trade/ATOM-USDT; https://www.kucoin.com/futures/ATOMUSDT
+
+Exchange: Huobi / HTX
+Listing Status: Listed
+Spot: Yes (ATOM/USDT, ATOM/BTC, ATOM/USDC)
+Perpetual: Yes (ATOM/USDT Perpetual)
+OTC: Yes (HTX OTC)
+Launchpool: Yes (Huobi Prime historical)
+Status: Live
+Sources: https://www.htx.com/trade/atom_usdt; https://www.htx.com/futures/atom_usdt
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Yes (ATOM/USDT, ATOM/BTC, ATOM/USDC)
+Perpetual: Yes (ATOM_USDT Perpetual)
+OTC: Yes (Gate.io OTC)
+Launchpool: Yes (Gate.io Startup/Launchpool historical)
+Status: Live
+Sources: https://www.gate.io/trade/ATOM_USDT; https://www.gate.io/futures_trade/ATOM_USDT
+
+Exchange: Robinhood
+Listing Status: Delisted (2023)
+Spot: Was listed (ATOM/USD) — delisted Juni 2023 pasca SEC enforcement
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Delisted
+Sources: https://robinhood.com/us/en/support/articles/changes-to-crypto-trading/; https://www.sec.gov/litigation/complaints/2023-128.pdf
+
+Exchange: Crypto.com
+Listing Status: Listed
+Spot: Yes (ATOM/USDT, ATOM/USDC, ATOM/BTC, ATOM/CRO)
+Perpetual: Yes (ATOMUSDT Perpetual di Crypto.com Exchange)
+OTC: Yes (Crypto.com OTC)
+Launchpool: Yes (Crypto.com Supercharger/Launchpool historical)
+Status: Live
+Sources: https://crypto.com/exchange/trade/ATOM_USDT; https://exchange.crypto.com/trade/ATOM_USDT
+
+Exchange: Bitget
+Listing Status: Listed
+Spot: Yes (ATOM/USDT, ATOM/USDC)
+Perpetual: Yes (ATOMUSDT Perpetual, ATOMUSDC Perpetual)
+OTC: Yes (Bitget OTC)
+Launchpool: Yes (Bitget Launchpad historical)
+Status: Live
+Sources: https://www.bitget.com/spot/ATOMUSDT; https://www.bitget.com/futures/ATOMUSDT
+
+Exchange: MEXC
+Listing Status: Listed
+Spot: Yes (ATOM/USDT, ATOM/USDC, ATOM/BTC)
+Perpetual: Yes (ATOM_USDT Perpetual)
+OTC: Yes (MEXC OTC)
+Launchpool: Yes (MEXC Kickstarter/Launchpool historical)
+Status: Live
+Sources: https://www.mexc.com/exchange/ATOM_USDT; https://futures.mexc.com/exchange/ATOM_USDT
+
+## Wallet Ecosystem
+
+Wallet: Keplr
+Support Type: Browser Extension (Chrome, Firefox, Brave, Edge), Mobile (iOS, Android), Hardware Wallet (Ledger), CosmJS Integration, IBC Transfer UI, Staking UI, Governance UI, NFT Display
+Status: Live
+Sources: https://www.keplr.app/; https://docs.keplr.app/; https://github.com/chainapsis/keplr-wallet
+
+Wallet: Leap
+Support Type: Browser Extension (Chrome, Firefox, Brave, Edge), Mobile (iOS, Android), Hardware Wallet (Ledger, Keystone), CosmWasm Support, NFT Display, Staking UI, Governance UI, IBC Transfer UI
+Status: Live
+Sources: https://www.leapwallet.io/; https://docs.leapwallet.io/; https://github.com/leapwallet
+
+Wallet: Cosmostation
+Support Type: Mobile (iOS, Android), Browser Extension (Chrome), Hardware Wallet (Ledger), Validator Tools, Staking Dashboard, Mintscan Integration, Governance UI
+Status: Live
+Sources: https://cosmostation.io/; https://wallet.cosmostation.io/; https://github.com/cosmostation
+
+Wallet: Trust Wallet
+Support Type: Mobile (iOS, Android), Browser Extension (Chrome), ATOM Native Support, Staking (via Cosmostation/Keplr integration), Multi-chain
+Status: Live
+Sources: https://trustwallet.com/; https://github.com/trustwallet/assets/blob/master/blockchains/cosmos/info/README.md
+
+Wallet: Exodus
+Support Type: Desktop (Windows, Mac, Linux), Mobile (iOS, Android), ATOM Native Support, Built-in Exchange, Staking (via validator partners), Portfolio Tracking
+Status: Live
+Sources: https://www.exodus.com/; https://www.exodus.com/assets/cosmos-atom/
+
+Wallet: Ledger Live
+Support Type: Hardware Wallet (Ledger Nano S/X/Stax), Desktop Companion App, ATOM Native App, Staking via Ledger Live (validator partners), Multi-app Support
+Status: Live
+Sources: https://www.ledger.com/; https://github.com/LedgerHQ/app-cosmos
+
+Wallet: Keystone
+Support Type: Hardware Wallet (Keystone Pro/Essential), Air-gapped Signing, QR Code Transactions, Cosmos App Support, Keplr/Leap Integration
+Status: Live
+Sources: https://keyst.one/; https://github.com/KeystoneHQ/keystone-firmware
+
+Wallet: Rainbow Wallet
+Support Type: Mobile (iOS, Android), Browser Extension, ATOM Support via Cosmos SDK integration, Multi-chain Portfolio
+Status: Live
+Sources: https://rainbow.me/; https://github.com/rainbow-me/rainbow
+
+Wallet: Phantom
+Support Type: Browser Extension (Solana-focused), Mobile, Cosmos Support via Snap/Integration (experimental), Multi-chain Expansion
+Status: Beta / Planned
+Sources: https://phantom.app/; https://github.com/phantom
+
+Wallet: MetaMask
+Support Type: Browser Extension, Mobile, Cosmos Support via Snaps (MetaMask Snaps — Cosmos Snap by Chainapsis/Keplr), Experimental
+Status: Beta / Planned
+Sources: https://metamask.io/; https://snaps.metamask.io/snap/npm/@keplr/metamask-cosmos-snap
+
+Wallet: Frontier
+Support Type: Mobile (iOS, Android), Browser Extension, Multi-chain DeFi Wallet, Cosmos Support, Staking, NFT
+Status: Live
+Sources: https://frontier.xyz/; https://github.com/Frontier-X
+
+Wallet: MathWallet
+Support Type: Mobile (iOS, Android), Browser Extension, Hardware Wallet Support, Multi-chain, Cosmos Support, Staking
+Status: Live
+Sources: https://mathwallet.org/; https://github.com/mathwallet
+
+## Developer Ecosystem
+
+SDK: Cosmos SDK
+Description: Go framework untuk membangun sovereign app-chains; modular architecture (baseapp, store, modules); v0.50+ current
+API: gRPC, REST (via gRPC-gateway), Tendermint/CometBFT RPC, ABCI++
+Developer Tools: Ignite CLI (scaffolding), Cosmovisor (upgrades), Protobuf tooling, Module generator, Testnet launcher
+Open Source Repository: https://github.com/cosmos/cosmos-sdk
+Developer Portal: https://docs.cosmos.network/
+Hackathon: Ignite Hackathons (recurring), Cosmos HackAtom (historical), ETHGlobal Cosmos tracks, HackMoney Cosmos, Chainlink Hackathons dengan Cosmos tracks
+Grant Program: ICF Grants Program (> $50M cumulative), Interchain Foundation Grants, Informal Systems Grants, Strangelove Grants, Hypha Grants
+Sources: https://github.com/cosmos/cosmos-sdk; https://docs.cosmos.network/; https://interchain.io/grants/; https://ignite.com/hackathons
+
+SDK: CosmWasm
+Description: Rust framework untuk Wasm smart contracts di Cosmos SDK; CW20, CW721, CW1155, CW-ICA standards; CosmWasm 1.0+ stable
+API: CosmWasm VM API, JSON Schema generation, Multi-test framework
+Developer Tools: cargo-generate templates, cw-template, cw-orchestrator (testing/deployment), CosmWasm TS/JS SDK (cw-client), DAO DAO tooling
+Open Source Repository: https://github.com/CosmWasm/cosmwasm
+Developer Portal: https://docs.cosmwasm.com/
+Hackathon: CosmWasm Hackathons (recurring), Neutron Hackathons, Juno Hackathons, DAO DAO Hackathons, CosmWasm track di ETHGlobal
+Grant Program: ICF Grants (CosmWasm category), Neutron Grants, Juno Grants, Secret Network Grants, Osmosis Grants
+Sources: https://github.com/CosmWasm/cosmwasm; https://docs.cosmwasm.com/; https://cosmwasm.com/grants
+
+SDK: IBC-Go
+Description: Go library untuk IBC protocol implementation; handshake, channel, packet, light client, middleware (PFM, ICA)
+API: IBC core callbacks, Middleware stack, Light client interface
+Developer Tools: IBC testing framework (ibc-testing), SimApp, Relayer CLI (Hermes, Go Relayer), Channel handshake simulator
+Open Source Repository: https://github.com/cosmos/ibc-go
+Developer Portal: https://ibc.cosmos.network/
+Hackathon: IBC Hackathons (Interchain Hackathons), PFM Hackathon, ICA Hackathon
+Grant Program: ICF Grants (IBC category), Interchain GmbH Grants
+Sources: https://github.com/cosmos/ibc-go; https://ibc.cosmos.network/; https://github.com/cosmos/ibc-go/releases/tag/v7.0.0
+
+SDK: CometBFT
+Description: BFT consensus engine (Go); ABCI++, Evidence handling, State sync, Light client, Validator set changes
+API: ABCI++, RPC (JSON-RPC), P2P protocol, Light client protocol
+Developer Tools: CometBFT testnet tooling, ABCI++ simulator, State sync tooling, Evidence testing
+Open Source Repository: https://github.com/cometbft/cometbft
+Developer Portal: https://docs.cometbft.com/
+Hackathon: CometBFT Hackathons (Informal Systems), ABCI++ Hackathon
+Grant Program: ICF Grants (Consensus category), Informal Systems Grants
+Sources: https://github.com/cometbft/cometbft; https://docs.cometbft.com/; https://informal.systems/
+
+SDK: Ignite CLI
+Description: CLI tool untuk scaffolding Cosmos SDK chains; module generation, frontend (Vue/React/Next.js), testnet launch, deployment
+API: Plugin system, Template marketplace, Chain configuration (YAML)
+Developer Tools: Ignite CLI commands (init, serve, build, testnet, chain), Module scaffolding (message, query, keeper), Frontend generation
+Open Source Repository: https://github.com/ignite/cli
+Developer Portal: https://ignite.com/cli
+Hackathon: Ignite Hackathons (quarterly), Ignite Accelerator program
+Grant Program: Ignite Accelerator (funding + mentorship), ICF Grants (tooling category)
+Sources: https://github.com/ignite/cli; https://ignite.com/cli; https://ignite.com/accelerator
+
+SDK: CosmJS
+Description: TypeScript/JavaScript SDK untuk client-side interaction; signing (Amino, Protobuf, Direct), querying, broadcasting, wallet adapters
+API: SigningStargateClient, QueryClient, Wallet interface, Gas estimation, Fee calculation
+Developer Tools: CosmJS CLI, Ledger/Keplr/Leap adapters, Offline signer, Multi-chain support
+Open Source Repository: https://github.com/cosmos/cosmjs
+Developer Portal: https://cosmjs.com/
+Hackathon: CosmJS workshops di hackathon, Frontend integration challenges
+Grant Program: ICF Grants (Client tooling category)
+Sources: https://github.com/cosmos/cosmjs; https://cosmjs.com/
+
+SDK: Hermes Relayer
+Description: Rust IBC relayer; multi-chain, PFM support, ICA relay, Metrics, Health checks, Config via TOML
+API: REST API (health, metrics), Prometheus metrics, CLI commands
+Developer Tools: Hermes CLI, Config generator, Testnet deployment scripts, Docker images
+Open Source Repository: https://github.com/informalsystems/hermes
+Developer Portal: https://hermes.informal.systems/
+Hackathon: Relayer Hackathons (Interchain), Hermes workshops
+Grant Program: ICF Grants (Relayer/Infrastructure category), Informal Systems Grants
+Sources: https://github.com/informalsystems/hermes; https://hermes.informal.systems/
+
+SDK: IBC-RS
+Description: Rust IBC implementation untuk non-Cosmos chains (Substrate, Solana, Ethereum via light client)
+API: IBC core traits, Light client traits, Host chain interface
+Developer Tools: Cargo templates, Integration examples (Substrate pallet, Solana program)
+Open Source Repository: https://github.com/informalsystems/ibc-rs
+Developer Portal: https://informal.systems/ibc-rs/
+Hackathon: IBC-RS Hackathons (Informal Systems), Cross-ecosystem IBC hackathons
+Grant Program: ICF Grants (Cross-ecosystem IBC category), Informal Systems Grants
+Sources: https://github.com/informalsystems/ibc-rs; https://informal.systems/blog/ibc-rs/
+
+API: Mintscan API
+Description: REST API untuk on-chain data (blocks, txs, validators, governance, IBC channels, tokens)
+Developer Portal: https://www.mintscan.io/api-docs (tidak publik resmi; komunitas gunakan GraphQL/internal)
+Status: Community-used, not officially documented public API
+Sources: https://www.mintscan.io/
+
+API: Map of Zones API
+Description: Real-time IBC analytics data (channels, volumes, corridors, chain health)
+Developer Portal: https://mapofzones.com/api (public API available untuk analytics)
+Status: Live
+Sources: https://mapofzones.com/; https://mapofzones.com/api
+
+API: Cosmos Hub gRPC/REST Endpoints
+Description: Public gRPC dan REST endpoints untuk Cosmos Hub (operated by validators, Figment, QuickNode, Alchemy, Lavender.Five)
+Developer Portal: https://docs.cosmos.network/main/run-node/grpc-rest
+Status: Live (multiple providers)
+Sources: https://docs.cosmos.network/main/run-node/grpc-rest; https://github.com/cosmos/gaia/blob/main/docs/grpc-rest.md
+
+Developer Portal: Cosmos Developer Portal
+URL: https://docs.cosmos.network/
+Description: Official documentation untuk Cosmos SDK, CometBFT, IBC-Go, CosmWasm, Gaia, tooling
+
+Developer Portal: Interchain Developer Portal
+URL: https://ibc.cosmos.network/
+Description: IBC-specific documentation, tutorials, specs, middleware guides
+
+Developer Portal: CosmWasm Developer Portal
+URL: https://docs.cosmwasm.com/
+Description: CosmWasm smart contract development, testing, deployment, security
+
+Developer Portal: CometBFT Developer Portal
+URL: https://docs.cometbft.com/
+Description: Consensus engine documentation, ABCI++, RPC, light client, state sync
+
+Developer Portal: Ignite CLI Documentation
+URL: https://ignite.com/cli/docs
+Description: Chain scaffolding, module generation, frontend templates, deployment
+
+GitHub Organization: Cosmos
+URL: https://github.com/cosmos
+Repositories: cosmos-sdk, gaia, ibc-go, ibc, cosmos (whitepaper), relayer, cosmjs, cosmovisor, etc.
+
+GitHub Organization: CometBFT
+URL: https://github.com/cometbft
+Repositories: cometbft, cometbft-db, cometbft-proto, abci++, specs
+
+GitHub Organization: CosmWasm
+URL: https://github.com/CosmWasm
+Repositories: cosmwasm, cw-plus, cw-template, cw-orchestrator, wasmer, cw-client
+
+GitHub Organization: Informal Systems
+URL: https://github.com/informalsystems
+Repositories: hermes, ibc-rs, ibc-go (contributions), cometbft (contributions), formal verification tools
+
+GitHub Organization: Ignite
+URL: https://github.com/ignite
+Repositories: cli, ignite.com, plugins, templates
+
+## Applications
+
+Application: Osmosis
+Category: DEX / AMM / DeFi Hub
+Relationship: Sovereign app-chain (zone) menggunakan Cosmos SDK + IBC; largest IBC volume corridor dengan Cosmos Hub; liquid staking provider (stOSMO, stATOM via Stride partnership)
+Status: Live
+Sources: https://osmosis.zone/; https://mapofzones.com/; https://blog.osmosis.zone/
+
+Application: Celestia
+Category: Modular Data Availability Layer
+Relationship: Sovereign app-chain (zone) menggunakan Cosmos SDK; provides DA untuk rollups (Optimint, Sovereign SDK, Arbitrum Orbit, Polygon Avail); IBC-connected untuk blobstream
+Status: Live
+Sources: https://celestia.org/; https://blog.celestia.org/mainnet-launch/; https://mapofzones.com/
+
+Application: dYdX Chain (v4)
+Category: Perp DEX / Order Book Exchange
+Relationship: Sovereign app-chain (zone) menggunakan Cosmos SDK + CometBFT; migrated dari StarkEx L2 Ethereum; custom matching engine untuk high-throughput
+Status: Live
+Sources: https://dydx.exchange/chain; https://dydx.exchange/blog/dydx-chain-mainnet; https://mapofzones.com/
+
+Application: Injective
+Category: Derivatives / DeFi / Order Book Exchange
+Relationship: Sovereign app-chain (zone) menggunakan Cosmos SDK + custom modules; IBC-enabled; CosmWasm support; EVM-compatible via Peggy/EVM module
+Status: Live
+Sources: https://injective.com/; https://mapofzones.com/; https://blog.injective.com/
+
+Application: Stride
+Category: Liquid Staking Zone
+Relationship: Sovereign app-chain (zone) menggunakan Cosmos SDK; liquid staking provider untuk ATOM (stATOM), OSMO (stOSMO), dll; LSM integration di Cosmos Hub; Interchain Security consumer chain candidate
+Status: Live
+Sources: https://stride.zone/; https://blog.stride.zone/cosmos-hub-lsm/; https://mapofzones.com/
+
+Application: Neutron
+Category: Smart Contract Platform (CosmWasm) / Interchain Security Consumer Chain
+Relationship: First consumer chain Interchain Security; secured by Cosmos Hub validator set; CosmWasm + ICA + IBC native; DeFi hub untuk cross-chain
+Status: Live
+Sources: https://neutron.org/; https://blog.neutron.org/mainnet-launch/; https://github.com/cosmos/interchain-security
+
+Application: Namada
+Category: Privacy-Preserving Chain (Shielded Transfers)
+Relationship: Sovereign app-chain menggunakan CometBFT + IBC; built by Anoma; Multi-Asset Shielded Pool (MASP); bridge ke Cosmos Hub untuk private transfers
+Status: Live
+Sources: https://namada.net/; https://anoma.net/blog/namada-mainnet; https://mapofzones.com/
+
+Application: Juno
+Category: Smart Contract Platform (CosmWasm) / Community Chain
+Relationship: Sovereign app-chain; CosmWasm hub; community-governed; DAO DAO deployment; IBC-connected
+Status: Live
+Sources: https://juno.network/; https://mapofzones.com/; https://github.com/CosmosContracts/juno
+
+Application: Kujira
+Category: DeFi Ecosystem (FIN, ORCA, BLUE, GHOST)
+Relationship: Sovereign app-chain; custom Cosmos SDK modules untuk order book, lending, liquidation; IBC-connected; CosmWasm support
+Status: Live
+Sources: https://kujira.network/; https://mapofzones.com/; https://github.com/Team-Kujira
+
+Application: Secret Network
+Category: Privacy-Preserving Smart Contracts (Secret Contracts / WASM + TEE)
+Relationship: Sovereign app-chain; CosmWasm + SGX TEE untuk encrypted state; IBC-connected; SNIP-20/721 standards
+Status: Live
+Sources: https://scrt.network/; https://mapofzones.com/; https://github.com/scrtlabs/SecretNetwork
+
+Application: Evmos
+Category: EVM-Compatible Chain (Ethereum Virtual Machine on Cosmos SDK)
+Relationship: Sovereign app-chain; Ethermint (EVM module) + Cosmos SDK; IBC-enabled; Ethereum tooling compatible (Metamask, Hardhat, Foundry)
+Status: Live
+Sources: https://evmos.org/; https://mapofzones.com/; https://github.com/evmos/evmos
+
+Application: Celo
+Category: Mobile-First EVM-Compatible L1 (migrated to Cosmos SDK / OP Stack hybrid)
+Relationship: Sovereign chain; migrated dari standalone ke Cosmos SDK / OP Stack; IBC-enabled via Celestia DA; mobile-first DeFi
+Status: Live (migration completed 2024)
+Sources: https://celo.org/; https://blog.celo.org/celo-mainnet-migration/; https://mapofzones.com/
+
+Application: Axelar
+Category: Cross-Chain Gateway / General Message Passing
+Relationship: Sovereign app-chain; General Message Passing (GMP) protocol; connects Cosmos IBC ke Ethereum, Polygon, Avalanche, Binance Smart Chain, dll; validator set terpisah
+Status: Live
+Sources: https://axelar.network/; https://mapofzones.com/; https://github.com/axelarnetwork/axelar-core
+
+Application: Noble
+Category: Asset Issuance Chain (Native USDC, Native USDT)
+Relationship: Sovereign app-chain; purpose-built untuk native asset issuance (Circle USDC native, Tether USDT native); IBC-connected; Interchain Security consumer chain candidate
+Status: Live
+Sources: https://noble.xyz/; https://mapofzones.com/; https://blog.noble.xyz/
+
+Application: Persistence
+Category: Liquid Staking / DeFi / Real World Assets
+Relationship: Sovereign app-chain; pSTAKE liquid staking (stkATOM, stkOSMO, stkXPRT); Composable DeFi; IBC-connected; RWA focus
+Status: Live
+Sources: https://persistence.one/; https://mapofzones.com/; https://github.com/persistenceOne
+
+Application: Comdex
+Category: Synthetic Assets / DeFi / Commodities
+Relationship: Sovereign app-chain; cAsset synthetic assets; Harbor DEX; IBC-connected; CosmWasm support
+Status: Live
+Sources: https://comdex.one/; https://mapofzones.com/; https://github.com/comdex-official
+
+Application: Crescent
+Category: DeFi / AMM / Order Book Hybrid
+Relationship: Sovereign app-chain; Crescent DEX (AMM + Order Book); liquid staking (bCRES); IBC-connected; CosmWasm
+Status: Live
+Sources: https://crescent.network/; https://mapofzones.com/; https://github.com/CrescentNetwork
+
+Application: Umee
+Category: Cross-Chain Lending / DeFi
+Relationship: Sovereign app-chain; uLend lending protocol; meUSD stablecoin; IBC-connected; gravity bridge ke Ethereum
+Status: Live (rebranded/merged ke Triangle? butuh verifikasi)
+Sources: https://umee.cc/; https://mapofzones.com/; https://github.com/umee-network
+
+Application: Mars Protocol
+Category: Credit Protocol / Lending / DeFi
+Relationship: Deployed di Neutron (CosmWasm) dan Osmosis; cross-chain credit lines; IBC-native; originally Terra, migrated
+Status: Live
+Sources: https://marsprotocol.io/; https://neutron.org/; https://osmosis.zone/
+
+Application: Quicksilver
+Category: Liquid Staking (Interchain Liquid Staking)
+Relationship: Sovereign app-chain; interchain liquid staking untuk ATOM (qATOM), OSMO, dll; ICA-based; IBC-connected; LSM integration
+Status: Live
+Sources: https://quicksilver.zone/; https://mapofzones.com/; https://github.com/ingenuity-build/quicksilver
+
+Application: pSTAKE Finance
+Category: Liquid Staking (Multi-chain)
+Relationship: Multi-chain liquid staking protocol; stkATOM di Persistence/Cosmos Hub; stkETH di Ethereum; stkBNB di BNB Chain; IBC-connected
+Status: Live
+Sources: https://pstake.finance/; https://persistence.one/; https://mapofzones.com/
+
+Application: Teritori
+Category: Social / NFT / Community Platform
+Relationship: Sovereign app-chain; NFT marketplace, social graph, DAO tooling; IBC-connected; CosmWasm
+Status: Live
+Sources: https://teritori.com/; https://mapofzones.com/; https://github.com/teritori
+
+Application: BitSong
+Category: Music Streaming / NFT / Fan Engagement
+Relationship: Sovereign app-chain; NFT music marketplace, fan tokens, streaming royalties; IBC-connected; CosmWasm
+Status: Live
+Sources: https://bitsong.io/; https://mapofzones.com/; https://github.com/BitSongOfficial
+
+Application: Desmos
+Category: Social Network / Decentralized Social
+Relationship: Sovereign app-chain; profiles, posts, reactions, relationships on-chain; IBC-connected; CosmWasm
+Status: Live
+Sources: https://desmos.network/; https://mapofzones.com/; https://github.com/desmos-labs/desmos
+
+Application: Regen Network
+Category: Ecological Assets / Regen Ledger / Climate Finance
+Relationship: Sovereign app-chain; ecological credits, biodiversity data, carbon markets; IBC-connected; CosmWasm
+Status: Live
+Sources: https://regen.network/; https://mapofzones.com/; https://github.com/regen-network/regen-ledger
+
+Application: Sentinel
+Category: dVPN / Decentralized Bandwidth Marketplace
+Relationship: Sovereign app-chain; bandwidth marketplace, node incentives; IBC-connected; session-based payments
+Status: Live
+Sources: https://sentinel.co/; https://mapofzones.com/; https://github.com/sentinel-official
+
+Application: Akash Network
+Category: Decentralized Cloud Compute / Supercloud
+Relationship: Sovereign app-chain; compute marketplace (GPU, CPU, storage); provider bidding; IBC-connected; CosmWasm
+Status: Live
+Sources: https://akash.network/; https://mapofzones.com/; https://github.com/akash-network/provider
+
+Application: IXO
+Category: Impact / SDG Data / Verifiable Claims
+Relationship: Sovereign app-chain; impact claims, verifiable credentials, SDG tracking; IBC-connected; CosmWasm
+Status: Live
+Sources: https://ixo.world/; https://mapofzones.com/; https://github.com/ixo-foundation
+
+Application: LikeCoin
+Category: Creative Content / NFT / Civil Society
+Relationship: Sovereign app-chain; content permanence, NFT licensing, civil society funding; IBC-connected; CosmWasm
+Status: Live
+Sources: https://like.co/; https://mapofzones.com/; https://github.com/likecoin
+
+Application: Provenance Blockchain
+Category: Financial Services / Asset Tokenization / DeFi
+Relationship: Sovereign app-chain; institutional-grade, regulated asset tokenization, figure lending; IBC-connected; CosmWasm
+Status: Live
+Sources: https://provenance.io/; https://mapofzones.com/; https://github.com/provenance-io/provenance
+
+Application: Kava
+Category: DeFi / Lending / CDP / EVM Co-Chain
+Relationship: Sovereign app-chain; Kava Mint (CDP), Kava Lend, Kava EVM (Ethereum co-chain); IBC-connected; Cosmos SDK + Ethermint
+Status: Live
+Sources: https://kava.io/; https://mapofzones.com/; https://github.com/kava-labs/kava
+
+Application: Band Protocol
+Category: Oracle / Data Feeds
+Relationship: Sovereign app-chain; BandChain (Cosmos SDK) untuk oracle data; IBC-connected; cross-chain data feeds ke Cosmos, Ethereum, BSC, dll
+Status: Live
+Sources: https://bandprotocol.com/; https://mapofzones.com/; https://github.com/bandprotocol/bandchain
+
+Application: IRISnet
+Category: Interchain Service Hub / NFT / DeFi
+Relationship: Sovereign app-chain; IRIS Hub (service marketplace), NFT, DeFi; IBC-connected; BSC/Ethereum bridge
+Status: Live
+Sources: https://www.irisnet.org/; https://mapofzones.com/; https://github.com/irisnet/irishub
+
+Application: Crypto.org Chain
+Category: Payments / DeFi / NFT / Cronos EVM
+Relationship: Sovereign app-chain; Crypto.com ecosystem; Cronos EVM (Ethermint); IBC-connected; payment-focused
+Status: Live
+Sources: https://crypto.org/; https://mapofzones.com/; https://github.com/crypto-org-chain/chain-main
+
+Application: THORChain
+Category: Cross-Chain DEX / Native Asset Swaps
+Relationship: Sovereign app-chain; continuous liquidity pools, native BTC/ETH/LTC/DOGE/BCH/ATOM swaps; IBC-connected (ATOM pool); own validator set
+Status: Live
+Sources: https://thorchain.org/; https://mapofzones.com/; https://github.com/thorchain/thornode
+
+## Governance Ecosystem
+
+Foundation: Interchain Foundation (ICF)
+Description: Swiss non-profit foundation (Stiftung) di Zug; manages Cosmos ecosystem, holds trademarks, funds development via grants, treasury management
+Sources: https://interchain.io/; https://www.zefix.ch/; https://cosmos.network/icf-fundraiser
+
+DAO: Cosmos Hub On-Chain Governance
+Description: On-chain governance via ATOM staking; proposal submission, deposit, voting, execution; 1 ATOM = 1 vote (bonded); community pool spending
+Sources: https://github.com/cosmos/cosmos-sdk/tree/main/x/gov; https://www.mintscan.io/cosmos/proposals; https://docs.cosmos.network/main/build/modules/gov
+
+Council: Interchain GmbH Steering Council / Core Contributor Council
+Description: Coordination body untuk core contributors (Informal Systems, Interchain GmbH, Strangelove, Hypha, Notional); roadmap alignment, resource allocation
+Sources: https://interchain.io/team/; https://github.com/cosmos/cosmos-sdk/blob/main/GOVERNANCE.md; https://blog.cosmos.network/interchain-gmbh-formation/
+
+Committee: Cosmos SDK Governance Committee (Maintainers)
+Description: Core maintainers (Billy Rennekamp, Tess Rinearson, Maghnus Mareneck, Christopher Goes, Dev Ojha, dll); code review, release management, security coordination
+Sources: https://github.com/cosmos/cosmos-sdk/blob/main/GOVERNANCE.md; https://github.com/cosmos/cosmos-sdk/graphs/contributors
+
+Committee: CometBFT Governance Committee (Maintainers)
+Description: CometBFT maintainers (Informal Systems, Interchain GmbH, Strangelove, Hypha, Notional representatives); consensus protocol governance, releases
+Sources: https://github.com/cometbft/cometbft/blob/main/GOVERNANCE.md; https://github.com/cometbft/cometbft/graphs/contributors
+
+Committee: IBC-Go Governance Committee (Maintainers)
+Description: IBC-Go maintainers (Interchain GmbH, Informal Systems, Strangelove, Hypha, Notional); IBC protocol evolution, middleware standards
+Sources: https://github.com/cosmos/ibc-go/blob/main/GOVERNANCE.md; https://github.com/cosmos/ibc-go/graphs/contributors
+
+Validator Group: Cosmos Hub Validator Set (180 Active Validators)
+Description: Top 180 validator by voting power; block production, governance voting (representing delegators), Interchain Security provider duties
+Sources: https://www.mintscan.io/cosmos/validators; https://docs.cosmos.network/main/run-node/validator-setup
+
+Validator Group: Interchain Security Consumer Chain Validators (Subset of Cosmos Hub Validators)
+Description: Cosmos Hub validators yang opt-in untuk validate consumer chain (Neutron, dll); slashing risk extended; provider revenue share
+Sources: https://github.com/cosmos/interchain-security; https://blog.cosmos.network/interchain-security-launch/
+
+Validator Group: Consumer Chain Validator Sets (Neutron, Stride, Noble, dll — future)
+Description: Untuk consumer chain menggunakan Partial Set Security / Opt-in Security (Interchain Security v2); subset validator atau sovereign validator set
+Status: Planned (Interchain Security v2 roadmap)
+Sources: https://github.com/cosmos/interchain-security; https://blog.cosmos.network/interchain-security-v2/
+
+## Ecosystem Risks
+
+Risk: Single Infrastructure Dependency — CometBFT Consensus Engine
+Description: Semua Cosmos SDK chains bergantung pada CometBFT sebagai consensus engine; bug di CometBFT (seperti v0.37.x chain halt) mempengaruhi seluruh ekosistem secara simultan
+Confirmed: Yes (EV-038: Partial Set Fork / Chain Halt Incident — CometBFT v0.37.x)
+Sources: https://github.com/cometbft/cometbft/releases/tag/v0.37.2; https://blog.informal.systems/cometbft-v0.37-postmortem/
+
+Risk: Cloud Dependency — Validator Infrastructure Centralization
+Description: Proporsi besar validator (termasuk top 20) berjalan di cloud provider utama (AWS, GCP, Azure, Hetzner, DigitalOcean); risiko correlated failure / regulatory pressure
+Confirmed: Yes (industry-wide observation; validator operator disclosures di Mintscan/Keybase)
+Sources: https://www.mintscan.io/cosmos/validators; https://docs.cosmos.network/main/run-node/validator-setup
+
+Risk: Bridge Dependency — Wrapped ATOM Custody
+Description: Wrapped ATOM di Ethereum (0x0eb3a705fc54725037cc9e008bdede697f62f337) dan chain lain bergantung pada bridge custody (Gravity Bridge, Axelar, Wormhole, Celer); bridge hack risk
+Confirmed: Yes (bridge hacks industry-wide: Wormhole 2022, Nomad 2022, Multichain 2023; ATOM bridges affected)
+Sources: https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337; https://blog.chain.link/wormhole-hack/; https://www.coindesk.com/business/2023/07/14/multichain-bridge-hack/
+
+Risk: Oracle Dependency — Band Protocol / Pyth / Chainlink untuk DeFi
+Description: DeFi applications (Mars, Umee, Kujira, Injective, dYdX) bergantung pada oracle price feeds; oracle manipulation / failure risk
+Confirmed: Yes (DeFi oracle risk well-documented; Band Protocol adalah native Cosmos oracle)
+Sources: https://bandprotocol.com/; https://pyth.network/; https://chain.link/; https://marsprotocol.io/
+
+Risk: Chain Dependency — Interchain Security Provider Liveness
+Description: Consumer chain (Neutron) liveness bergantung pada Cosmos Hub liveness; jika Cosmos Hub halt, consumer chain halt; tidak ada fallback validator set di Replicated Security v1
+Confirmed: Yes (Interchain Security spec dokumentasikan dependency ini)
+Sources: https://github.com/cosmos/interchain-security; https://blog.cosmos.network/interchain-security-launch/
+
+Risk: Centralization Risk — Validator Set Concentration
+Description: Top 10 validator ~30-40% bonded stake; top 20 ~50%+; nakamoto coefficient rendah (~5-7); exchange validators (Coinbase, Binance, Kraken) memegang stake besar
+Confirmed: Yes (on-chain data Mintscan validators)
+Sources: https://www.mintscan.io/cosmos/validators; https://www.mintscan.io/cosmos
+
+Risk: Centralization Risk — Liquid Staking Concentration
+Description: LSM cap 25% liquid staked ATOM; Stride (stATOM) + pSTAKE (stkATOM) + Quicksilver (qATOM) mendominasi; validator bonding requirement mencegah full centralization tapi risiko tetap ada
+Confirmed: Yes (LSM Proposal #848 parameters; on-chain liquid staking distribution)
+Sources: https://www.mintscan.io/cosmos/proposals/848; https://blog.stride.zone/cosmos-hub-lsm/
+
+Risk: Regulatory Risk — SEC Enforcement Actions
+Description: SEC menuduh ATOM sebagai unregistered security (Binance, Kraken, Coinbase complaints); Robinhood delisted ATOM; US liquidity constrained; ongoing litigation
+Confirmed: Yes (SEC complaints publik)
+Sources: https://www.sec.gov/litigation/complaints/2023-128.pdf; https://www.sec.gov/litigation/complaints/2023-132.pdf; https://robinhood.com/us/en/support/articles/changes-to-crypto-trading/
+
+Risk: Single Point of Failure — ICF Treasury Dependency
+Description: Core protocol development (SDK, CometBFT, IBC, Gaia) funded primarily via ICF grants; ICF treasury concentrated in ATOM; no diversified revenue stream disclosed
+Confirmed: Yes (ICF Grants program structure; no public financial statements showing diversification)
+Sources: https://interchain.io/grants/; https://interchain.io/; https://cosmos.network/icf-fundraiser
+
+Risk: Software Dependency — Go/Rust/Protobuf Toolchain
+Description: Entire build/release pipeline bergantung pada Go toolchain, Rust toolchain, Protobuf compiler; supply chain attack risk (typosquatting, compromised releases)
+Confirmed: Yes (industry-wide software supply chain risk; Go/Rust/Protobuf are external dependencies)
+Sources: https://go.dev/; https://www.rust-lang.org/; https://protobuf.dev/; https://github.com/cosmos/cosmos-sdk/blob/main/go.mod
+
+## Official Ecosystem Resources
+
+Official Documentation: https://docs.cosmos.network/
+Developer Portal: https://docs.cosmos.network/main/build
+GitHub: https://github.com/cosmos
+Partner Documentation: https://ibc.cosmos.network/
+Partner Documentation: https://docs.cometbft.com/
+Partner Documentation: https://docs.cosmwasm.com/
+Partner Documentation: https://ignite.com/cli/docs
+Grant Program: https://interchain.io/grants/
+Ecosystem Dashboard: https://mapofzones.com/
+Ecosystem Dashboard: https://www.mintscan.io/
+Ecosystem Dashboard: https://cosmos.network/ecosystem/apps
+Official Blog: https://blog.cosmos.network/
+Interchain Foundation Blog: https://interchain.io/blog/
+Whitepaper: https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md
+IBC Specification: https://github.com/cosmos/ibc
+CometBFT Specification: https://github.com/cometbft/cometbft/tree/main/docs/spec
+Cosmos SDK Architecture: https://docs.cosmos.network/main/learn/beginner/architecture
+Research Papers (Informal Systems): https://informal.systems/papers/
+
+## Summary
+
+Primary Ecosystem: Cosmos / Interchain (cross-chain messaging, interoperability, app-chain framework)
+Supported Chains: 100+ sovereign app-chains terhubung via IBC (Osmosis, Celestia, dYdX, Injective, Stride, Neutron, Namada, Juno, Kujira, Secret Network, Evmos, Celo, Axelar, Noble, Persistence, Comdex, Crescent, Mars, Quicksilver, pSTAKE, Akash, Regen, Sentinel, Band, IRIS, Crypto.org, THORChain, dan banyak lagi)
+External Dependencies: 30+ kritis/tinggi/sedang/rendah (CometBFT, IBC-Go, Cosmos SDK, CosmWasm, Go, Rust, Protobuf, Wasmer, Docker, Kubernetes, PostgreSQL, Prometheus/Grafana, CometBFT RPC, gRPC, Hermes, Cosmovisor, IBC-RS, Ignite CLI, CosmJS, Keplr, Leap, Cosmostation, Mintscan, Map of Zones, CoinGecko, Etherscan, Zefix, Figment, Chorus One, P2P.org, Blockdaemon, Allnodes, Lavender.Five, StakeFish, Everstake, Coinbase Cloud, Figment DataHub, QuickNode, Alchemy)
+Major Integrations: 10+ utama (IBC Launch, Interchain Security, LSM, ICA, PFM/IBC v7, CosmWasm Multi-chain, Wrapped ATOM Bridges, CometBFT Adoption, Ignite CLI Scaffolding, CosmJS Wallet Integration)
+Infrastructure Providers: 20+ (Informal Systems, Interchain GmbH, Strangelove, Hypha, Notional, Cosmostation, Chainapsis/Keplr, Leap Wallet, Figment, Chorus One, P2P.org, Blockdaemon, Allnodes, Lavender.Five, StakeFish, Everstake, Coinbase Cloud, Figment DataHub, QuickNode, Alchemy)
+Developer Programs: 7 SDK utama dengan portal, hackathon, grant program masing-masing (Cosmos SDK, CosmWasm, IBC-Go, CometBFT, Ignite CLI, CosmJS, Hermes, IBC-RS)
+Applications: 30+ sovereign app-chains live di ekosistem (DEX, DA, Perp DEX, Derivatives, Liquid Staking, Smart Contract Platforms, Privacy, EVM, Cross-chain Gateway, Asset Issuance, Synthetic Assets, Lending, Social, Cloud, Impact, NFT, Payments, Oracle, Service Hub)
+
+## Open Threads
+
+- Daftar lengkap 100+ chain IBC-enabled dengan status masing-masing (live/testnet/deprecated) — Map of Zones memiliki data tapi butuh query API untuk daftar lengkap terverifikasi
+- Detail validator operator identity untuk top 20 validator Cosmos Hub — hanya sebagian besar disclosed di Keybase/Mintscan; tidak ada registry terpusat resmi
+- Status Interchain Security v2 (Partial Set Security, Opt-in Security) — roadmap item, testnet timeline tidak dipublikasikan resmi
+- Wrapped ATOM bridge custody details per bridge (Gravity Bridge, Axelar, Wormhole, Celer) — bridge contract addresses, validator sets, upgradeability, audit status
+- ICF treasury composition dan diversification strategy — tidak dipublikasikan; hanya struktur yayasan diketahui
+- CosmWasm 2.0 roadmap dan release timeline — multi-contract atomic execution, better upgradeability; tidak ada tanggal resmi
+- ABCI++ adoption timeline dan production readiness — masih experimental, spec berubah cepat
+- ZK-light client untuk IBC (zkTendermint, zkIBC) progress — R&D stage, tidak ada testnet integration resmi
+- Threshold encryption (FVE - Fair Validated Execution) di Osmosis — closed testnet, spec tidak publik lengkap
+- MEV protection deployment status di Osmosis, dYdX, Injective — Osmosis v15+ include features tapi detail tidak terpusat
+- Daftar lengkap auditor dan audit report untuk setiap core component (SDK modules, CometBFT, IBC-Go, CosmWasm, Interchain Security, LSM) — tersebar di GitHub/security advisories
+- Validator set migration status dari Tendermint Core ke CometBFT per chain — tidak ada registry terpusat
+- Parameter on-chain LSM terkini (cap %, validator bonding, redemption rate, epochs) — butuh query mint/staking module params langsung
+- Community Pool spending proposal track record dan ROI analysis — data tersedia Mintscan tapi tidak dikonsolidasikan resmi
+- Interchain Security provider revenue actuals dari Neutron/consumer chain lain — on-chain tersedia via distribution module tapi tidak diagregasikan publik
+- Status hukum kasus SEC vs Binance/Kraken/Coinbase terkait ATOM — ongoing, outcome belum pasti
+- CometBFT v1.x adoption rate across ecosystem chains — tidak terpelacak terpusat
+- IBC-Go v7 / PFM fee market parameters dan recursion limits per chain — IBC-Go v7 docs tersebar
+- Hardware wallet support matrix (Ledger, Keystone) untuk CosmWasm chains — Keplr/Leap docs tersebar
+- MetaMask Snaps Cosmos integration maturity — experimental, tidak production-ready untuk semua chain

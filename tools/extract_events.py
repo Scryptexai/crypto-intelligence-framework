@@ -97,7 +97,10 @@ def parse_events(text: str, project_slug: str) -> list[dict]:
     # BLOCK_RE's trailing "---" is the delimiter *before* the next block; append one
     # sentinel "---" so the final event in the section (which has no following block) matches.
     rows = []
-    for m in BLOCK_RE.finditer(section + "\n\n---"):
+    blocks = list(BLOCK_RE.finditer(section + "\n\n---"))
+    if not blocks:
+        return _parse_events_track_a(section, project_slug)
+    for m in blocks:
         sources = [s.strip() for s in m.group("sources").strip().splitlines() if s.strip()]
         participants = [p.strip() for p in m.group("participants").split(";") if p.strip()]
         rows.append({
@@ -122,6 +125,67 @@ def parse_events(text: str, project_slug: str) -> list[dict]:
             "affectedKnowledge": [],
             "_location": m.group("location").strip(),
             "_status": m.group("status").strip(),
+        })
+    return rows
+
+
+# Track A dossiers (e.g. LayerZero, assembled from the pre-v3 staged pipeline) carry
+# chronological blocks shaped as `Date: ... / Event: ... / Trigger: ... / Decision: ... /
+# Execution: ... / Short-term Outcome: ... / Long-term Outcome: ... / Evidence: ...` instead
+# of Track C's EV-### blocks. Same rule as everywhere else: parse what is literally there,
+# no invented fields -- absent Track C-only fields stay empty.
+TA_BLOCK_START = re.compile(r"^Date:\s*(.+?)\s*$", re.M)
+TA_EV_RE = re.compile(r"^Event:\s*(.+?)\s*$", re.M)
+TA_URL_RE = re.compile(r"https?://[^\s\]；;]+")
+
+
+def _ta_field(block: str, label: str) -> str:
+    m = re.search(rf"^{re.escape(label)}:\s*(.*?)(?=\n\n[A-Z][a-z\-() ]+:|\Z)", block, re.S | re.M)
+    return re.sub(r"\s+", " ", m.group(1)).strip() if m else ""
+
+
+def _parse_events_track_a(section: str, project_slug: str) -> list[dict]:
+    starts = [m.start() for m in TA_BLOCK_START.finditer(section)]
+    rows = []
+    for i, st in enumerate(starts):
+        end = starts[i + 1] if i + 1 < len(starts) else len(section)
+        block = section[st:end]
+        dm = TA_BLOCK_START.match(block)
+        em = TA_EV_RE.search(block)
+        if not dm or not em:
+            continue
+        date = dm.group(1).strip()
+        name = re.sub(r"\s*\((HIGH|MEDIUM|LOW)\)\s*$", "", em.group(1)).strip()
+        trigger = _ta_field(block, "Trigger")
+        decision = _ta_field(block, "Decision")
+        execution = _ta_field(block, "Execution")
+        short_term = _ta_field(block, "Short-term Outcome")
+        long_term = _ta_field(block, "Long-term Outcome")
+        evidence = _ta_field(block, "Evidence")
+        urls = TA_URL_RE.findall(evidence)
+        desc = " | ".join(x for x in [
+            f"Trigger: {trigger}" if trigger else "",
+            f"Decision: {decision}" if decision else "",
+            f"Execution: {execution}" if execution else "",
+        ] if x)
+        result = " | ".join(x for x in [
+            f"Short-term: {short_term}" if short_term else "",
+            f"Long-term: {long_term}" if long_term else "",
+        ] if x)
+        rows.append({
+            "id": f"{project_slug}-TA-{i + 1:03d}",
+            "projectSlug": project_slug,
+            "name": name,
+            "date": date,
+            "type": "Historical (Track A)",
+            "participants": [],
+            "description": desc,
+            "result": result,
+            "source": "CIF Research Dossier",
+            "url": urls[0] if urls else None,
+            "affectedKnowledge": [],
+            "_location": "",
+            "_status": "",
         })
     return rows
 

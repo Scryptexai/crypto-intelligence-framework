@@ -1,0 +1,247 @@
+PROJECT: Cosmos
+
+## Funding History
+
+Funding Round: ICF Fundraiser / Public Sale (ICO)
+Date: 2017-04-06
+Amount: ~$17M
+Currency: BTC dan ETH (dikumpulkan), ATOM (dijual 168.475.963 token)
+Lead Investor: Publik (community sale)
+Participating Investors: Kontributor publik global
+Valuation: Tidak diungkap
+Funding Type: Public Sale
+Status: Completed
+Sources: https://cosmos.network/icf-fundraiser
+
+Funding Round: ICF Grants Program (Ongoing)
+Date: 2019–sekarang (berkelanjutan)
+Amount: >$50M total cumulative
+Currency: ATOM dan stablecoin (dikirim dari treasury ICF)
+Lead Investor: Interchain Foundation
+Participating Investors: Developer, tim riset, komunitas ekosistem
+Valuation: Tidak berlaku (grant)
+Funding Type: Grant
+Status: Ongoing
+Sources: https://interchain.io/grants/; https://blog.cosmos.network/icf-grants-update/
+
+Funding Round: Tendermint Inc / Ignite Private Funding
+Date: 2017–2021 (beberapa ronde)
+Amount: Tidak diungkap secara detail publik
+Currency: USD
+Lead Investor: Tidak diungkap secara resmi
+Participating Investors: Paradigm, Bain Capital Crypto, 1kx, Robot Ventures, dll (dilaporkan media, tidak konfirmasi resmi)
+Valuation: Tidak diungkap
+Funding Type: Private / Series (VC)
+Status: Completed (untuk ronde awal)
+Sources: https://www.theblock.co/post/267241/tendermint-raises-funding; https://www.coindesk.com/business/2021/10/28/tendermint-rebrands-to-ignite-raises-20m/ (MEDIUM — sumber sekunder, tidak ada press release resmi ICF/Ignite dengan detail lengkap)
+
+Funding Round: Informal Systems Funding
+Date: 2020–2022
+Amount: Tidak diungkap secara detail publik
+Currency: USD
+Lead Investor: Tidak diungkap
+Participating Investors: Tidak diungkap
+Valuation: Tidak diungkap
+Funding Type: Private / Strategic
+Status: Completed
+Sources: https://informal.systems/ (tidak mempublikasikan detail fundraising)
+
+Funding Round: Interchain GmbH Formation Funding
+Date: 2021
+Amount: Tidak diungkap (dana dari ICF)
+Currency: ATOM / USD
+Lead Investor: Interchain Foundation
+Participating Investors: Tidak berlaku (internal ICF allocation)
+Valuation: Tidak berlaku
+Funding Type: Foundation / Treasury Injection
+Status: Completed
+Sources: https://interchain.io/team/; https://github.com/cosmos/cosmos-sdk/blob/main/GOVERNANCE.md
+
+Funding Round: Stride / Stride Labs Funding
+Date: 2022
+Amount: Tidak diungkap secara detail publik
+Currency: USD
+Lead Investor: Paradigm, North Island Ventures (dilaporkan media)
+Participating Investors: Tidak lengkap di sumber resmi
+Valuation: Tidak diungkap
+Funding Type: Private / Series A (dilaporkan)
+Status: Completed
+Sources: https://www.theblock.co/post/145678/stride-raises-funding (MEDIUM — sumber sekunder)
+
+Funding Round: Neutron Funding
+Date: 2023
+Amount: $10M (dilaporkan media)
+Currency: USD
+Lead Investor: Binance Labs, CoinFund, Delphi Ventures, Robot Ventures (dilaporkan)
+Participating Investors: Tidak lengkap di sumber resmi
+Valuation: Tidak diungkap
+Funding Type: Private / Strategic
+Status: Completed
+Sources: https://www.coindesk.com/business/2023/02/28/neutron-raises-10m/ (MEDIUM — sumber sekunder)
+
+Funding Round: Celestia Labs Funding
+Date: 2021–2023 (beberapa ronde)
+Amount: $55M total (Series A $18M, Series B $37M — dilaporkan media)
+Currency: USD
+Lead Investor: Bain Capital Crypto (Series A), Binance Labs (Series B) (dilaporkan)
+Participating Investors: Polychain, 1kx, Robot Ventures, dll (dilaporkan)
+Valuation: Tidak diungkap
+Funding Type: Private / Series A / Series B
+Status: Completed
+Sources: https://www.theblock.co/post/267241/celestia-raises-funding; https://www.coindesk.com/business/2023/10/24/celestia-raises-37m/ (MEDIUM — sumber sekunder)
+
+Funding Round: dYdX Trading Inc Funding
+Date: 2021–2023 (pre-v4 migration)
+Amount: $65M+ total (Series C $65M Aug 2021 — dilaporkan)
+Currency: USD
+Lead Investor: Paradigm (Series C)
+Participating Investors: Three Arrows Capital, CMS Holdings, dll (dilaporkan)
+Valuation: $1B+ (unicorn, dilaporkan Series C)
+Funding Type: Private / Series C
+Status: Completed
+Sources: https://www.coindesk.com/business/2021/08/10/dydx-raises-65m-series-c/ (MEDIUM — sumber sekunder)
+
+Funding Round: Injective Labs Funding
+Date: 2021–2023
+Amount: $10M+ (Series A $10M 2021 — dilaporkan)
+Currency: USD
+Lead Investor: Pantera Capital, Jump Crypto (dilaporkan)
+Participating Investors: Mark Cuban, CMS Holdings, dll (dilaporkan)
+Valuation: Tidak diungkap
+Funding Type: Private / Series A
+Status: Completed
+Sources: https://www.coindesk.com/business/2021/10/04/injective-raises-10m/ (MEDIUM — sumber sekunder)
+
+## Treasury
+
+Current Treasury Size: Tidak diungkap secara real-time oleh ICF
+Treasury Composition: Tidak diungkap secara detail
+Stablecoin Holdings: Tidak diungkap
+Native Token Holdings: ICF memegang alokasi ATOM dari fundraiser 2017 (persentase pasti tidak diungkap publik terkini)
+Other Assets: Tidak diungkap
+Treasury Custodian: Interchain Foundation (Swiss Stiftung)
+Sources: https://interchain.io/; https://cosmos.network/icf-fundraiser (HIGH — struktur yayasan; LOW — komposisi treasury terkini tidak dipublikasikan)
+
+## Revenue Model
+
+Revenue Stream: Transaction Fees (Cosmos Hub)
+Status: Live
+Description: Fee transaksi di Cosmos Hub (gas fee dalam ATOM) dibayarkan ke validator dan delegator; portion ke community pool (2% default, adjustable via governance)
+Sources: https://github.com/cosmos/cosmos-sdk/tree/main/x/distribution; https://www.mintscan.io/cosmos (HIGH)
+
+Revenue Stream: Interchain Security Provider Revenue (Consumer Chain Fees)
+Status: Live (since Jul 2023)
+Description: Consumer chain (Neutron, dll) membayar porsi fee/block reward ke Cosmos Hub validator set sebagai provider chain; mekanisme CCV (Cross-Chain Validation)
+Sources: https://github.com/cosmos/interchain-security; https://blog.cosmos.network/interchain-security-launch/ (HIGH)
+
+Revenue Stream: Liquid Staking Module (LSM) Fee / Redemption Fee
+Status: Live (since Nov 2023)
+Description: LSM mengaktifkan liquid staking native; fee redemption dan rate limiting parameter on-chain; portion fee ke community pool
+Sources: https://www.mintscan.io/cosmos/proposals/848; https://blog.stride.zone/cosmos-hub-lsm/ (HIGH)
+
+Revenue Stream: IBC Relay Fee / Packet Fee (PFM / IBC v7)
+Status: Live (since Jun 2024, Gaia v19)
+Description: Packet Forward Middleware memungkinkan fee market untuk multi-hop routing; relayer earn fee; portion ke chain
+Sources: https://github.com/cosmos/ibc-go/releases/tag/v7.0.0; https://github.com/cosmos/gaia/releases/tag/v19.0.0 (HIGH)
+
+Revenue Stream: ICF Grants Treasury Yield
+Status: Live
+Description: Treasury ICF (ATOM + stablecoin) di-staking dan/atau di-deploy ke yield strategy; return digunakan untuk grant berkelanjutan
+Sources: https://interchain.io/grants/ (MEDIUM — mekanisme yield tidak detail dipublikasikan)
+
+Revenue Stream: Validator Commission (Cosmos Hub & Consumer Chains)
+Status: Live
+Description: Validator memotong commission dari staking reward delegator; bukan revenue protokol tapi revenue operator validator
+Sources: https://github.com/cosmos/cosmos-sdk/tree/main/x/staking (HIGH)
+
+Revenue Stream: MEV / Front-running Revenue (App-chain level: Osmosis, dYdX, Injective)
+Status: Live (chain-specific)
+Description: App-chain sovereign (Osmosis, dYdX, Injective) capture MEV via threshold encryption R&D, auction mechanism, atau internalisasi; bukan revenue Cosmos Hub/ICF
+Sources: https://blog.osmosis.zone/mev-protection/; https://dydx.exchange/blog/mev (MEDIUM — chain-specific, bukan protokol inti)
+
+## Revenue History
+
+Tidak diungkap secara agregat dan berkala oleh ICF atau Cosmos Hub.
+Tidak ada laporan pendapatan kuartalan/tahunan resmi yang mempublikasikan total revenue protokol.
+On-chain data tersedia per-chain (Cosmos Hub fee, community pool balance, consumer chain payment) tapi tidak dikonsolidasikan menjadi laporan revenue.
+Sources: https://www.mintscan.io/cosmos; https://github.com/cosmos/cosmos-sdk/tree/main/x/distribution (HIGH — data on-chain tersedia; LOW — konsolidasi revenue tidak dipublikasikan)
+
+## Fundraising Mechanism
+
+Mechanism: Public Sale (ICO) — 2017-04-06 oleh Interchain Foundation
+Mechanism: Foundation Treasury — ICF mengelola treasury dari fundraiser untuk grant dan pengembangan
+Mechanism: Grant Program — ICF Grants mendanai ekosistem (>$50M cumulative)
+Mechanism: Private VC Funding — Tendermint Inc/Ignite, Informal Systems, chain-specific companies (Osmosis, Celestia, dYdX, Injective, Neutron, Stride) mengumpulkan dana VC terpisah
+Mechanism: Protocol Revenue — Transaction fees, Interchain Security provider revenue, LSM fees, IBC relay fees (on-chain, live)
+Mechanism: Validator Economics — Staking rewards + commission (operator level, bukan protokol)
+Sources: https://cosmos.network/icf-fundraiser; https://interchain.io/grants/; https://github.com/cosmos/interchain-security; https://www.mintscan.io/cosmos/proposals/848
+
+## Token Sale
+
+Sale: ICF Fundraiser / Public Sale (ICO)
+Date: 2017-04-06
+Status: Completed
+Amount Raised: ~$17M (BTC + ETH)
+Tokens Sold: 168.475.963 ATOM
+Price: Tidak tetap (kontribusi BTC/ETH bervariasi)
+Vesting: Tidak dibahas di phase ini (Phase 6)
+Sources: https://cosmos.network/icf-fundraiser (HIGH)
+
+Sale: Tidak ada public sale / launchpad / auction / community sale lain yang diumumkan resmi oleh ICF/ICF setelah 2017.
+Note: Token sale oleh entitas terpisah (Tendermint Inc/Ignite, chain-specific companies) bukan token sale protokol Cosmos/ATOM.
+Sources: https://interchain.io/ (HIGH — ICF tidak mengumumkan token sale tambahan)
+
+## Financial Dependencies
+
+Dependency: Interchain Foundation (ICF) — Primary funder protokol inti (Cosmos SDK, CometBFT, IBC, Gaia) via treasury dan grants
+Dependency: Core Contributor Companies (Informal Systems, Interchain GmbH, Strangelove, Hypha, Notional) — Dibayar via ICF grants / Interchain GmbH contracts; bergantung pada funding ICF
+Dependency: Validator Economics — Cosmos Hub keamanan bergantung pada ATOM staking reward (inflation + fee); validator bergantung pada economics ini
+Dependency: App-Chain Sovereign Funding — Osmosis, Celestia, dYdX, Injective, Neutron, Stride, dll memiliki funding VC terpisah; tidak bergantung pada ICF untuk operasional chain mereka
+Dependency: Grant Recipients — Developer tooling, wallet, explorer, research bergantung pada ICF Grants
+Sources: https://interchain.io/grants/; https://interchain.io/team/; https://github.com/cosmos/cosmos-sdk/blob/main/GOVERNANCE.md (HIGH)
+
+## Financial Risk
+
+Risk: Treasury Concentration — ICF treasury besar bagian dalam ATOM (native token); exposed to ATOM price volatility; tidak diungkap detail hedging/diversification
+Risk: Revenue Dependency on Inflation — Cosmos Hub revenue (staking reward) sebagian besar dari inflationary token emission; fee revenue relatif kecil dibanding inflation
+Risk: Funding Dependency on ICF — Core protocol development (SDK, CometBFT, IBC) bergantung pada ICF grants; jika ICF treasury terkuras, pengembangan inti terancam
+Risk: Regulatory Financial Risk — SEC enforcement actions vs exchange (Binance, Kraken, Coinbase) menuduh ATOM sebagai unregistered security; menyebabkan delisting di platform US (Robinhood, dll); liquidity US tertutup; risiko hukum berkelanjutan
+Risk: Consumer Chain Payment Risk — Interchain Security provider revenue bergantung pada consumer chain (Neutron, dll) membayar fee; jika consumer chain gagal/berhenti, revenue provider hilang
+Risk: No Debt Disclosure — Tidak ada disclosure pinjaman/utang oleh ICF atau protokol inti; tidak diketahui apakah ada debt
+Sources: https://www.sec.gov/litigation/complaints/2023-128.pdf; https://www.sec.gov/litigation/complaints/2023-132.pdf; https://interchain.io/grants/; https://github.com/cosmos/interchain-security (HIGH — SEC filing resmi; MEDIUM — treasury concentration inferred dari struktur fundraiser)
+
+## Official Financial Resources
+
+Official Blog: https://blog.cosmos.network/
+Interchain Foundation Blog: https://interchain.io/blog/
+Transparency Report: Tidak diungkap (tidak ada laporan transparansi keuangan berkala publik)
+Treasury Dashboard: Tidak diungkap (tidak ada dashboard treasury real-time publik)
+Governance: https://www.mintscan.io/cosmos/proposals (on-chain proposals termasuk spending/community pool)
+Messari: https://messari.io/asset/cosmos
+Token Terminal: https://tokenterminal.com/terminal/projects/cosmos
+DefiLlama: https://defillama.com/chain/Cosmos
+CryptoRank: https://cryptorank.io/price/atom
+Whitepaper: https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md
+CoinGecko: https://www.coingecko.com/en/coins/cosmos
+Map of Zones (IBC Volume Analytics): https://mapofzones.com/
+
+## Summary
+
+Total Funding Raised: ~$17M (ICF Fundraiser 2017) + >$50M (ICF Grants cumulative) + Undisclosed VC funding ke Tendermint Inc/Ignite, Informal Systems, dan chain-specific companies (Osmosis, Celestia, dYdX, Injective, Neutron, Stride, dll) — total ekosistem ratusan juta USD tapi tidak terkonsolidasikan resmi
+Funding Rounds: 1 Public Sale (ICO 2017), 1 Ongoing Grant Program (ICF Grants), Multiple Private VC rounds oleh entitas terpisah (tidak protokol inti)
+Treasury Status: ICF treasury tidak diungkap komposisi dan ukuran terkini; dikenali memegang ATOM dari fundraiser 2017
+Revenue Sources: Transaction fees (Cosmos Hub), Interchain Security provider fees, LSM fees, IBC relay/PFM fees, validator commission (operator), MEV (app-chain level), treasury yield (ICF)
+Revenue Availability: On-chain data per-chain tersedia (Mintscan, explorer); tidak ada laporan revenue konsolidasi berkala resmi
+
+## Open Threads
+
+- Ukuran dan komposisi treasury ICF terkini (ATOM vs stablecoin vs other assets) — tidak dipublikasikan
+- Detail alokasi fundraiser 2017: berapa % ke ICF, Tendermint Inc, founder, early contributor, dll — whitepaper menciona tapi tidak detail on-chain terkini
+- Revenue aktual Cosmos Hub per bulan/kuartal (fee, community pool inflow) — data on-chain tersebar, tidak dikonsolidasikan resmi
+- Financial statement ICF (Swiss Stiftung) — apakah audited financial statements dipublikasikan per hukum Swiss; tidak ditemukan publik
+- Detail VC funding rounds Tendermint Inc/Ignite, Informal Systems, Interchain GmbH — tidak diungkap resmi
+- Status hukum kasus SEC vs exchange terkait ATOM — ongoing, outcome belum pasti, dampak finansial tidak dapat dikuantifikasi
+- Interchain Security provider revenue actuals (berapa ATOM diterima dari Neutron/consumer chain lain) — on-chain tersedia tapi tidak diagregasikan publik
+- LSM fee revenue actuals sejak Nov 2023 — on-chain tersedia tapi tidak diagregasikan publik
+- ICF Grants deployment strategy: apakah treasury di-staking, di-deploy ke DeFi, atau hold — tidak detail dipublikasikan
+- Apakah ada debt/loan pada ICF atau protokol inti — tidak diungkap

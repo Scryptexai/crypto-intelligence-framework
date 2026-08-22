@@ -1,0 +1,264 @@
+PROJECT: Ethereum
+
+Entity: Vitalik Buterin
+Type: Person
+Relationship: Co-founder dan penulis whitepaper Ethereum; arsitek visi awal protokol dan peneliti inti hingga saat ini terlibat dalam roadmap scaling (Danksharding, Verge, Purge, Splurge)
+Period: 2013–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum Foundation, https://ethereum.org/en/foundation/]; [Wikipedia, https://en.wikipedia.org/wiki/Vitalik_Buterin]; [Messari, https://messari.io/asset/ethereum/profile]
+
+---
+Entity: Gavin Wood
+Type: Person
+Relationship: Co-founder; penulis Yellow Paper spesifikasi teknis Ethereum; mengembangkan klien C++ awal dan bahasa Solidity; mendirikan Parity Technologies dan Polkadot setelah keluar dari pengembangan inti Ethereum
+Period: 2013–2016 (pengembangan inti); 2016–sekarang (ekosistem terpisah)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum Blog, https://blog.ethereum.org/2014/06/17/ethereum-foundation-developer-update]; [Wikipedia, https://en.wikipedia.org/wiki/Gavin_Wood]; [Messari, https://messari.io/asset/ethereum/profile]
+
+---
+Entity: Jeffrey Wilcke
+Type: Person
+Relationship: Co-founder; pengembang utama klien Go-Ethereum (Geth) menggunakan bahasa Go; memimpin tim eksekusi hingga mundur dari peran aktif pengembangan inti sekitar 2019
+Period: 2013–2019
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub go-ethereum, https://github.com/ethereum/go-ethereum/commits?author=obscuren]; [Ethereum Blog, https://blog.ethereum.org/2015/07/22/frontier-is-coming]; [Messari, https://messari.io/asset/ethereum/profile]
+
+---
+Entity: Charles Hoskinson
+Type: Person
+Relationship: Co-founder; CEO Ethereum Swiss GmbH (Entropy) saat pra-luncuran; peran operasional dan hukum awal; keluar 2014 untuk mendirikan IOHK dan Cardano
+Period: 2013–2014
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Wikipedia, https://en.wikipedia.org/wiki/Charles_Hoskinson]; [Messari, https://messari.io/asset/ethereum/profile]; [Forbes, https://www.forbes.com/sites/laurashin/2017/10/03/charles-hoskinson-cardano]
+
+---
+Entity: Anthony Di Iorio
+Type: Person
+Relationship: Co-founder; pendanaan awal dan pengorganisasian tim founding; keluar awal 2014; kemudian mendirikan Jaxx Wallet dan Decentral
+Period: 2013–2014
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Wikipedia, https://en.wikipedia.org/wiki/Anthony_Di_Iorio]; [CoinDesk, https://www.coindesk.com/business/2014/02/04/ethereums-anthony-di-iorio-on-bitcoin-2-0-and-the-future-of-crypto/]
+
+---
+Entity: Mihai Alisie
+Type: Person
+Relationship: Co-founder; mengelola komunikasi komunitas awal dan Bitcoin Magazine; terlibat pendirian Ethereum Foundation di Swiss
+Period: 2013–2014
+Exposure Type: unknown
+Evidence: (MEDIUM) [Wikipedia, https://en.wikipedia.org/wiki/Mihai_Alisie]; [Bitcoin Magazine, https://bitcoinmagazine.com/authors/mihai-alisie]
+
+---
+Entity: Amir Chetrit
+Type: Person
+Relationship: Co-founder; kontribusi awal pada konsep dan pembentukan tim; peran teknis minimal terdokumentasi publik; keluar sebelum luncuran mainnet
+Period: 2013–2014
+Exposure Type: unknown
+Evidence: (LOW) [Wikipedia, https://en.wikipedia.org/wiki/Ethereum#History]; [Messari, https://messari.io/asset/ethereum/profile]
+
+---
+Entity: Joseph Lubin
+Type: Person
+Relationship: Co-founder; pendiri Consensys (venture studio utama ekosistem Ethereum); pendanaan awal dan pembangunan infrastruktur aplikasi (MetaMask, Infura, Truffle)
+Period: 2013–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Consensys, https://consensys.net/about/]; [Wikipedia, https://en.wikipedia.org/wiki/Joseph_Lubin]; [Messari, https://messari.io/asset/ethereum/profile]
+
+---
+Entity: Justin Drake
+Type: Person
+Relationship: Peneliti inti Ethereum Foundation; arsitek utama konsensus Proof-of-Stake, sharding, dan roadmap scaling (Danksharding, PBS); koordinator riset kriptografi dan mekanisme konsensus
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum Foundation Blog, https://blog.ethereum.org/author/justindrake]; [ethresear.ch, https://ethresear.ch/u/justindrake]; [Bankless Podcast, https://www.youtube.com/watch?v=VvFVjYJJQ0A]
+
+---
+Entity: Dankrad Feist
+Type: Person
+Relationship: Peneliti inti Ethereum Foundation; fokus pada kriptografi (BLS signatures, KZG commitments), data availability sampling, dan protokol sharding
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum Foundation Blog, https://blog.ethereum.org/author/dankrad]; [ethresear.ch, https://ethresear.ch/u/dankrad]; [GitHub ethereum/research, https://github.com/ethereum/research]
+
+---
+Entity: Tim Beiko
+Type: Person
+Relationship: Protocol Support Lead Ethereum Foundation; mengkoordinasi proses hard fork, manajemen rilis klien, dan komunikasi antara tim klien, peneliti, dan komunitas
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum Foundation Blog, https://blog.ethereum.org/author/timbeiko]; [Ethereum Core Dev Calls, https://github.com/ethereum/pm]; [Twitter, https://x.com/timbeiko]
+
+---
+Entity: Danny Ryan
+Type: Person
+Relationship: Peneliti Ethereum Foundation; koordinasi spesifikasi dan peluncuran Beacon Chain (Phase 0); memimpin transisi Merge dari PoW ke PoS
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum Foundation Blog, https://blog.ethereum.org/author/dannyryan]; [ethresear.ch, https://ethresear.ch/u/djrtwo]; [Bankless, https://www.youtube.com/watch?v=9K_23FjJX3M]
+
+---
+Entity: Peter Szilagyi
+Type: Person
+Relationship: Team Lead Geth (Go-Ethereum); mengelola pengembangan klien eksekusi paling dominan; kontributor besar pada EIP dan performa EVM
+Period: 2015–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub go-ethereum, https://github.com/ethereum/go-ethereum/commits?author=karalabe]; [Ethereum Core Dev Calls, https://github.com/ethereum/pm]; [Twitter, https://x.com/peter_szilagyi]
+
+---
+Entity: Terence Tsao
+Type: Person
+Relationship: Co-founder Prysmatic Labs; pengembang utama klien konsensus Prysm (implementasi Go); kontributor signifikan pada spesifikasi Engine API dan testing jaringan
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Prysmatic Labs, https://prysmaticlabs.com/]; [GitHub prysm, https://github.com/prysmaticlabs/prysm/commits?author=terencetsao]; [EthStaker, https://ethstaker.cc/]
+
+---
+Entity: Ethereum Foundation (Stiftung)
+Type: Foundation
+Relationship: Entitas hukum non-profit berbasis Swiss yang mengelola hibuan, riset protokol, pengembangan klien, koordinasi upgrade jaringan, dan perlindungan merek Ethereum
+Period: 2014–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Ethereum Foundation, https://ethereum.org/en/foundation/]; [Swiss Foundation Registry, https://www.stiftungsregister.ch/]; [Annual Report 2023, https://ethereum.foundation/annual-report-2023/]
+
+---
+Entity: Consensys
+Type: Company
+Relationship: Perusahaan perangkat lunak blockchain pendiri Joseph Lubin; membangun MetaMask, Infura, Truffle, Besu (klien eksekusi), Linea (L2), dan menyediakan layanan enterprise serta audit (Consensys Diligence)
+Period: 2014–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Consensys, https://consensys.net/]; [Messari, https://messari.io/project/consensys/profile]; [GitHub hyperledger/besu, https://github.com/hyperledger/besu]
+
+---
+Entity: Nethermind
+Type: Company
+Relationship: Perusahaan R&D blockchain; pengembang klien eksekusi Nethermind (.NET/C#); kontributor besar pada Erigon, riset MEV, dan tooling pengembang (Nethermind IDE, Voyager)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Nethermind, https://nethermind.io/]; [GitHub Nethermind, https://github.com/NethermindEth/nethermind]; [Messari, https://messari.io/project/nethermind/profile]
+
+---
+Entity: Prysmatic Labs
+Type: Company
+Relationship: Perusahaan pengembang klien konsensus Prysm (Go); klien validator paling banyak digunakan awal fase Beacon Chain; kontributor pada spesifikasi konsensus dan interop testing
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Prysmatic Labs, https://prysmaticlabs.com/]; [GitHub prysm, https://github.com/prysmaticlabs/prysm]; [EthStaker Client Diversity, https://clientdiversity.org/]
+
+---
+Entity: Sigma Prime
+Type: Company
+Relationship: Perusahaan keamanan dan R&D Australia; pengembang klien konsensus Lighthouse (Rust); auditor kontrak cerdas terkemuka; kontributor pada formal verification dan fuzzing
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sigma Prime, https://sigmaprime.io/]; [GitHub Lighthouse, https://github.com/sigp/lighthouse]; [Messari, https://messari.io/project/sigma-prime/profile]
+
+---
+Entity: ChainSafe Systems
+Type: Company
+Relationship: Perusahaan R&D Kanada; pengembang klien konsensus Lodestar (TypeScript) dan klien eksekusi Gnosis Chain; kontributor besar pada libp2p, Graph Protocol, dan tooling Polkadot/Ethereum
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [ChainSafe, https://chainsafe.io/]; [GitHub Lodestar, https://github.com/ChainSafe/lodestar]; [Messari, https://messari.io/project/chainsafe/profile]
+
+---
+Entity: Thorax (Erigon)
+Type: Company
+Relationship: Perusahaan di balik pengembangan klien eksekusi Erigon (Go); difokuskan pada efisiensi penyimpanan (staged sync) dan performa arsip; kontributor pada spesifikasi Engine API
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub Erigon, https://github.com/ledgerwatch/erigon]; [Erigon Website, https://erigon.tech/]; [EthStaker Client Diversity, https://clientdiversity.org/]
+
+---
+Entity: Hyperledger Foundation (Linux Foundation)
+Type: Organization
+Relationship: Rumah organisasi proyek Hyperledger Besu (klien eksekusi Java enterprise-grade); menyediakan tata kelola, lisensi Apache 2.0, dan infrastruktur CI/CD untuk pengembangan Besu
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Hyperledger Besu, https://www.hyperledger.org/projects/besu]; [GitHub Besu, https://github.com/hyperledger/besu]; [Linux Foundation, https://www.linuxfoundation.org/]
+
+---
+Entity: Infura
+Type: Company
+Relationship: Penyedia RPC dan infrastruktur API Ethereum (milik Consensys); backbone akses jaringan untuk sebagian besar dApp, wallet, dan L2; kritikal untuk ketersediaan data on-chain
+Period: 2016–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Infura, https://www.infura.io/]; [Consensys Blog, https://consensys.net/blog/infura/]; [Messari, https://messari.io/project/infura/profile]
+
+---
+Entity: Alchemy
+Type: Company
+Relationship: Penyedia platform pengembang dan node API Ethereum (Enhanced APIs, NFT API, Notify); kompetitor utama Infura; infrastruktur kritis untuk ekosistem DeFi dan NFT
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Alchemy, https://www.alchemy.com/]; [Messari, https://messari.io/project/alchemy/profile]; [The Block, https://www.theblock.co/post/2022/alchemy-valuation]
+
+---
+Entity: Flashbots
+Type: Organization
+Relationship: Organisasi riset dan pengembangan mitigasi MEV (Maximal Extractable Value); membangun MEV-Boost (relay/builder), SUAVE, dan mempromosikan transparansi MEV melalui PBS (Proposer-Builder Separation)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Flashbots, https://flashbots.net/]; [GitHub Flashbots, https://github.com/flashbots]; [Messari, https://messari.io/project/flashbots/profile]
+
+---
+Entity: OpenZeppelin
+Type: Company
+Relationship: Perusahaan keamanan dan standar; penerbit library kontrak OpenZeppelin Contracts (ERC20, ERC721, Ownable, Upgradeable); penyedia layanan audit dan Defender (otomatisasi keamanan)
+Period: 2015–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OpenZeppelin, https://www.openzeppelin.com/]; [GitHub OpenZeppelin Contracts, https://github.com/OpenZeppelin/openzeppelin-contracts]; [Messari, https://messari.io/project/openzeppelin/profile]
+
+---
+Entity: Trail of Bits
+Type: Company
+Relationship: Perusahaan keamanan siber terkemuka; auditor utama protokol inti Ethereum (klien, konsensus, EVM), EIP kritis, dan kontrak sistem; pengembang tooling analisis statis (Slither, Crytic)
+Period: 2015–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Trail of Bits, https://www.trailofbits.com/]; [GitHub Trail of Bits, https://github.com/trailofbits]; [Ethereum Foundation Grants, https://esp.ethereum.foundation/]
+
+---
+Entity: Ethereum Protocol
+Type: Protocol
+Relationship: Protokol blockchain Layer 1 itu sendiri; mendefinisikan mesin status (EVM), mekanisme konsensus (Gasper/PoS), aturan validasi blok, dan ekonomi token (ETH) melalui spesifikasi resmi
+Period: 2015–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum Yellow Paper, https://ethereum.github.io/yellowpaper/paper.pdf]; [Consensus Specs, https://github.com/ethereum/consensus-specs]; [Execution Specs, https://github.com/ethereum/execution-specs]
+
+---
+Entity: Geth (Go-Ethereum)
+Type: Protocol
+Relationship: Klien eksekusi referensi dan paling dominan (market share >50% historis); ditulis dalam Go; dikelola tim EF dan kontributor independen; implementasi basis untuk banyak fork dan L2
+Period: 2014–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub go-ethereum, https://github.com/ethereum/go-ethereum]; [EthStats Client Diversity, https://clientdiversity.org/]; [Ethereum.org Clients, https://ethereum.org/en/developers/docs/nodes-and-clients/#execution-clients]
+
+---
+Entity: Prysm
+Type: Protocol
+Relationship: Klien konsensus (Beacon Chain) implementasi Go; klien validator paling populer awal jaringan PoS; dikembangkan Prysmatic Labs; dukungan penuh untuk PBS dan mev-boost
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub Prysm, https://github.com/prysmaticlabs/prysm]; [Prysmatic Labs Docs, https://docs.prylabs.network/]; [EthStaker Client Diversity, https://clientdiversity.org/]
+
+---
+Entity: Lighthouse
+Type: Protocol
+Relationship: Klien konsensus implementasi Rust; dikembangkan Sigma Prime; difokuskan pada keamanan memori, performa, dan formal verification; populer di validator institusional dan solo staker teknis
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub Lighthouse, https://github.com/sigp/lighthouse]; [Sigma Prime Lighthouse, https://lighthouse-book.sigmaprime.io/]; [EthStaker Client Diversity, https://clientdiversity.org/]
+
+---
+Entity: Teku
+Type: Protocol
+Relationship: Klien konsensus implementasi Java; dikembangkan Consensys; difokuskan pada kebutuhan enterprise dan institusional; integrasi native dengan Besu dan Infura
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub Teku, https://github.com/Consensys/teku]; [Consensys Teku, https://consensys.net/teku/]; [EthStaker Client Diversity, https://clientdiversity.org/]
+
+---
+Entity: Nimbus
+Type: Protocol
+Relationship: Klien konsensus dan eksekusi ringan implementasi Nim; dikembangkan Status; target perangkat resource-terbatas (mobile, embedded); arsitektur modular untuk verifikasi ringan
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub Nimbus, https://github.com/status-im/nimbus-eth2]; [Status Nimbus, https://

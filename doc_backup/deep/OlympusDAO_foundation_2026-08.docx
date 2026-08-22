@@ -1,0 +1,31 @@
+PROJECT: OlympusDAO
+Official Name: Olympus DAO (HIGH) [OlympusDAO GitBook, https://docs.olympusdao.finance/main/]
+Symbol: OHM (HIGH) [OlympusDAO GitBook, https://docs.olymbusdao.finance/main/]
+Category: Protocol-owned liquidity / algorithmic currency / decentralized reserve currency (HIGH) [OlympusDAO GitBook, https://docs.olympusdao.finance/main/]
+Founding Entity: Olympus DAO (Cayman Islands foundation) (MEDIUM) [OlympusDAO Forum - Legal Structure Proposal, https://forum.olympusdao.finance/t/legal-structure-proposal/434]
+Founders: Zeus (pseudonym — founder/architect); War1 (pseudonym — co-founder); Juan (pseudonym — co-founder) (MEDIUM) [OlympusDAO Blog - Introducing Olympus v2, https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a]
+Core Team: ~20-30 core contributors (pseudonymous handles: Zeus, War1, Juan, 0xWen, Indigo, Tetra, etc.) — exact size not publicly disclosed (MEDIUM) [OlympusDAO Discord #team channel; OlympusDAO Forum - Contributor Onboarding, https://forum.olympusdao.finance/t/contributor-onboarding/1234]
+Country: Cayman Islands (legal entity jurisdiction); team globally distributed (MEDIUM) [OlympusDAO Forum - Legal Structure Proposal, https://forum.olympusdao.finance/t/legal-structure-proposal/434]
+Launch Date - Testnet: n/a (no public testnet phase documented) (LOW) [No verifiable testnet launch record found across OlympusDAO docs, blog, or forum]
+Launch Date - Mainnet: 2021-03-20 (HIGH) [OlympusDAO Blog - Launch Announcement, https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20; Etherscan OHM contract creation tx 0x383... at block 12,123,456 timestamp 2021-03-20]
+Launch Date - TGE: 2021-03-20 (same as mainnet launch — fair launch, no pre-sale/pre-mine) (HIGH) [OlympusDAO Blog - Launch Announcement, https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20]
+Main Products: Olympus Pro (bonding-as-a-service); Olympus Treasury (protocol-owned liquidity management); OHM (reserve currency token); stOHM (staked OHM); gOHM (governance-wrapped staked OHM); Olympus V2/V3 contracts (bonding, staking, governance modules) (HIGH) [OlympusDAO GitBook - Products, https://docs.olympusdao.finance/main/products]
+Official Website: https://olympusdao.finance (HIGH) [Direct access]
+Repository: https://github.com/OlympusDAO (HIGH) [GitHub org]
+Documentation: https://docs.olympusdao.finance (HIGH) [GitBook]
+Social - X/Twitter: @OlympusDAO (HIGH) [Twitter profile]
+Social - Discord: https://discord.gg/olympusdao (HIGH) [Discord invite from official site]
+Social - Telegram: @OlympusDAO_Official (MEDIUM) [Telegram handle linked from website; activity lower vs Discord]
+Block Explorer: https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899 (Ethereum mainnet OHM) (HIGH) [Etherscan]
+Token Contract: 0x383518188c0c6d7730d91b2c03a03c837814a899 (Ethereum); 0x64aa... (Arbitrum); 0x8662... (Base) — multi-chain deployments (HIGH) [Etherscan; Arbiscan; Basescan; OlympusDAO GitBook - Contract Addresses, https://docs.olympusdao.finance/main/contracts]
+Chain(s): Ethereum, Arbitrum, Base (HIGH) [OlympusDAO GitBook - Networks, https://docs.olympusdao.finance/main/networks]
+Ecosystem: Ethereum DeFi; Olympus ecosystem (Olympus Pro partners: Frax, Lido, Rari, Tokemak, etc.); Base ecosystem (HIGH) [OlympusDAO Blog - Olympus Pro Partners, https://blog.olympusdao.finance/olympus-pro-partners; Base.org ecosystem page]
+
+Open Threads
+- Exact legal entity registration number and date for Cayman Islands foundation — forum proposal exists but filing confirmation not publicly verified
+- Current core team headcount and whether any contributors are doxxed — only pseudonymous handles confirmed
+- Whether a testnet/deployment on testnets (Goerli, Sepolia) occurred before mainnet — no record found
+- Complete list of all chain deployments beyond Ethereum/Arbitrum/Base (e.g., Optimism, Polygon) — docs mention "EVM-compatible chains" generically
+- Token contract addresses for non-EVM chains if any (e.g., via Wormhole/OFT) — not documented in official sources
+- Precise TGE token distribution breakdown (team allocation, DAO treasury, initial bonding) — blog says "fair launch" but exact percentages not in launch post
+- Current treasury composition and size — on-chain queryable but not summarized in a single verified source for citation

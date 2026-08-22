@@ -1,0 +1,37 @@
+PROJECT: Curve
+
+## Ecosystem Overview
+
+Curve adalah infrastruktur likuiditas inti DeFi — pool stableswap-nya menjadi venue dasar bagi stablecoin, LST, dan wrapped assets lintas chain. Posisi ekosistem: lapisan wholesale liquidity yang dipakai protokol lain (agregator, vault, stablecoin issuer). (HIGH) [Phase 2 — Entity; Curve docs, https://resources.curve.fi/]
+
+## Key Integrations
+
+Integrasi 1: Convex Finance — agregasi veCRV terbesar; pengguna Convex mengarahkan gauge reward tanpa lock sendiri; hubungan simbiosis (dan ketergantungan konsentrasi) (HIGH) [Phase 2 — Entity】
+Integrasi 2: Yearn Finance — vault Curve LP & pemegang veCRV historis besar; bagian dari Curve Wars (HIGH) [Phase 2 — Entity】
+Integrasi 3: Frax Finance — pool FRAX & integrasi AMO era 2021-2022 (MEDIUM) [Phase 2 — Entity】
+Integrasi 4: Protokol LST (Lido stETH dkk.) — pool LST/ETH sebagai kategori volume terbesar era 2022-2023 (MEDIUM) [Phase 2 — Entity】
+Integrasi 5: Stablecoin issuers (USDT/USDC/DAI/FRAX, issuer crvUSD internal) — pool 3pool sebagai venue kanonik (HIGH) [Curve docs, https://resources.curve.fi/]
+Integrasi 6: Agregator DEX (1inch, Paraswap, Matcha, dll.) merutekan swap stable via Curve (MEDIUM) [Curve docs, https://resources.curve.fi/]
+
+## Ecosystem Projects
+
+Ekosistem turunan: Convex (veCRV aggregation), Votium (bribe market), StakeDAO, Yearn (vault), protokol yang memakai crvUSD sebagai kolateral (MEDIUM) [Phase 2 — Entity】
+
+## Chain Deployments
+
+Deployment: Ethereum (utama); Arbitrum; Optimism; Polygon; dan chain lain via factory pools — total deployment tidak dikutip angka pastinya di sumber sekunder (MEDIUM) [Phase 2 — Entity; Curve docs, https://resources.curve.fi/]
+
+## Developer Activity
+
+Developer Activity: repositori github.com/curvefi aktif lintas kontrak pool, crvUSD, Lend; kontribusi komunitas via Curve DAO grants tidak dirinci publik (LOW) [GitHub Curve, https://github.com/curvefi]
+
+## Ecosystem Risks
+
+Risk 1: Konsentrasi veCRV (Convex) — perubahan strategi satu agregator mengubah seluruh insentif emisi (MEDIUM)
+Risk 2: Dependensi keamanan Vyper/tooling (insiden 2023) (HIGH)
+Risk 3: Migrasi likuiditas ke venue kompetitor (DEX native L2, stablecoin dengan venue sendiri) (MEDIUM)
+
+Open Threads
+- Jumlah deployment chain aktif terkini
+- Total TVL per kategori pool (stable vs crypto vs LST) terkini
+- Peta bribe market terkini (Votium dkk.)

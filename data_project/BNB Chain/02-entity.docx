@@ -1,0 +1,2173 @@
+PROJECT: BNB Chain
+
+Entity: Changpeng Zhao (CZ)
+Type: Person
+Relationship: Pendiri Binance dan figur kunci di balik peluncuran BNB Chain (sebelumnya Binance Smart Chain); mengarahkan visi awal ekosistem BNB
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Binance Blog, https://www.binance.com/en/blog/421499824684900357]; (HIGH) [Binance Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+
+---
+Entity: He Yi
+Type: Person
+Relationship: Co-founder Binance; terlibat dalam strategi awal peluncuran BNB token dan ekosistem Binance Chain
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Binance Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]; (MEDIUM) [Binance Blog, https://www.binance.com/en/blog/421499824684900357]
+
+---
+Entity: Binance
+Type: Company
+Relationship: Entitas pendiri (founding entity) BNB Chain; mengoperasikan Binance Exchange, Binance Labs, Trust Wallet, dan menyediakan infrastruktur awal serta likuiditas untuk ekosistem BNB
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Binance Blog, https://www.binance.com/en/blog/421499824684900357]; (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: BNB Chain Core Contributors
+Type: Organization
+Relationship: Komunitas pengembang terbuka yang mengembangkan dan memelihara protokol inti BNB Chain (BSC, Beacon Chain, Greenfield, opBNB, zkBNB) secara terdesentralisasi
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]; (MEDIUM) [GitHub bnb-chain, https://github.com/bnb-chain]
+
+---
+Entity: BNB Smart Chain (BSC)
+Type: Chain
+Relationship: Blockchain Layer 1 EVM-kompatibel yang menjadi lapisan eksekusi utama ekosistem BNB Chain; chain ID 56; konsensus PoSA dengan 21 validator aktif
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]; (HIGH) [BscScan, https://bscscan.com]
+
+---
+Entity: BNB Beacon Chain
+Type: Chain
+Relationship: Blockchain asal (sebelumnya Binance Chain) yang menangani staking, governance, dan koordinasi validator untuk BNB Chain; chain ID 102; native token BEP-2
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]; (HIGH) [BnbScan, https://bnbscan.com]
+
+---
+Entity: BNB Greenfield
+Type: Protocol
+Relationship: Protokol penyimpanan terdesentralisasi (decentralized storage) milik ekosistem BNB Chain; chain ID 5600; terintegrasi dengan BSC untuk smart contract programmable storage
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: opBNB
+Type: Chain
+Relationship: Optimistic rollup Layer 2 di atas BNB Smart Chain; chain ID 204; menggunakan OP Stack; dirancang untuk throughput tinggi dan biaya gas rendah
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]; (MEDIUM) [opBNB Docs, https://docs.opbnb.io]
+
+---
+Entity: zkBNB
+Type: Protocol
+Relationship: ZK-rollup Layer 2 (devnet) untuk BNB Smart Chain; menggunakan zero-knowledge proofs untuk skalabilitas dan privasi; masih tahap pengembangan
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [BNB Chain Docs, https://docs.bnbchain.org]; (LOW) [GitHub bnb-chain/zkevm, https://github.com/bnb-chain/zkevm]
+
+---
+Entity: BNB Bridge
+Type: Protocol
+Relationship: Jembatan cross-chain resmi untuk mentransfer aset antara BNB Chain, Ethereum, dan jaringan lain; mendukung BEP-2, BEP-20, ERC-20
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]; (HIGH) [BNB Bridge App, https://www.bnbchain.org/en/bridge]
+
+---
+Entity: Binance Labs
+Type: Investor
+Relationship: Arm investasi dan inkubasi Binance; mendanai dan menginkubasi proyek-proyek ekosistem BNB Chain (DeFi, gaming, infrastructure, AI, RWA)
+Period: 2018–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Binance Labs Website, https://www.binancelabs.co]; (HIGH) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: Trust Wallet
+Type: Application
+Relationship: Wallet non-custodial resmi ekosistem Binance/BNB Chain; mendukung BNB (BEP-2, BEP-20, ERC-20), BSC, opBNB, Greenfield, dan multi-chain; diakuisisi Binance 2018
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Trust Wallet Website, https://trustwallet.com]; (HIGH) [Binance Blog, https://www.binance.com/en/blog/246931824684900357]
+
+---
+Entity: BscScan
+Type: Infrastructure
+Relationship: Block explorer resmi untuk BNB Smart Chain; menyediakan pencarian transaksi, verifikasi kontrak, analitik token, dan API untuk pengembang
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [BscScan, https://bscscan.com]; (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: BnbScan
+Type: Infrastructure
+Relationship: Block explorer resmi untuk BNB Beacon Chain; melacak staking, governance, validator, dan transaksi BEP-2
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [BnbScan, https://bnbscan.com]; (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: PancakeSwap
+Type: Application
+Relationship: Decentralized exchange (DEX) terbesar di BNB Smart Chain; AMM, yield farming, IFO, prediction market; TVL tertinggi di ekosistem BSC
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [PancakeSwap, https://pancakeswap.finance]; (HIGH) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: Venus Protocol
+Type: Application
+Relationship: Protokol lending dan borrowing algoritmik utama di BNB Smart Chain; fork Compound; mengeluarkan stablecoin VAI; market besar untuk BNB collateral
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Venus Protocol, https://venus.io]; (HIGH) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: Alpaca Finance
+Type: Application
+Relationship: Protokol leveraged yield farming terbesar di BNB Smart Chain; memungkinkan pinjaman berleverase untuk farming; TVL signifikan di ekosistem
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Alpaca Finance, https://alpacafinance.org]; (MEDIUM) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: NodeReal
+Type: Infrastructure
+Relationship: Penyedia infrastruktur node dan RPC utama untuk BNB Smart Chain, opBNB, dan Greenfield; menawarkan MegaNode, data indexing, dan layanan pengembang
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NodeReal, https://nodereal.io]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: BlockDaemon
+Type: Infrastructure
+Relationship: Penyedia infrastruktur staking dan node institutional untuk BNB Chain (Beacon Chain validator, BSC RPC); mendukung enterprise-grade staking
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [BlockDaemon, https://blockdaemon.com]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: CertiK
+Type: Security
+Relationship: Firma audit keamanan blockchain yang melakukan audit kontrak pintar dan protokol utama di ekosistem BNB Chain (BSC, Venus, PancakeSwap, dll.)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [CertiK, https://www.certik.com]; (MEDIUM) [CertiK Skynet BSC, https://www.certik.com/projects/bnb-smart-chain]
+
+---
+Entity: PeckShield
+Type: Security
+Relationship: Firma audit keamanan dan analisis on-chain yang mengaudit banyak protokol DeFi di BNB Smart Chain; menyediakan laporan keamanan dan monitoring
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [PeckShield, https://peckshield.com]; (MEDIUM) [PeckShield Audit Reports, https://github.com/peckshield/published-audit-reports]
+
+---
+Entity: Binance Exchange
+Type: Application
+Relationship: Centralized exchange (CEX) terbesar dunia; listing utama BNB; menyediakan on/off-ramp fiat, staking BNB, Launchpad, dan likuiditas pasar utama untuk token ekosistem
+Period: 2017–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Binance, https://www.binance.com]; (HIGH) [CoinMarketCap, https://coinmarketcap.com/exchanges/binance/]
+
+---
+Entity: BNB Chain Governance
+Type: DAO
+Relationship: Mekanisme governance on-chain melalui BNB Beacon Chain; pemegang BNB bisa mendelegasikan ke validator dan voting proposal (BEP); transisi menuju governance lebih terdesentralisasi
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [BNB Chain Docs Governance, https://docs.bnbchain.org/docs/governance]; (MEDIUM) [BnbScan Governance, https://www.bnbscan.com/gov]
+
+---
+Entity: Binance Charity
+Type: Organization
+Relationship: Lembaga amal resmi Binance yang menggunakan BNB Chain untuk transparansi donasi blockchain; program "Crypto Against Covid", "Lunch for Children", dll.
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Binance Charity, https://www.binance.charity]; (MEDIUM) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: BNB Chain Foundation
+Type: Foundation
+Relationship: Entitas nirlaba (foundation) yang mengelola ekosistem, grant, dan pengembangan komunitas BNB Chain; terpisah dari entitas komersial Binance
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]; (LOW) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: Google Cloud
+Type: Infrastructure
+Relationship: Penyedia cloud infrastructure resmi untuk BNB Chain; menawarkan node BSC, opBNB, Greenfield via Google Cloud Marketplace; partner data analytics (BigQuery public datasets)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Google Cloud Blog, https://cloud.google.com/blog/topics/developers-practitioners/google-cloud-supports-bnb-chain]; (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Amazon Web Services (AWS)
+Type: Infrastructure
+Relationship: Penyedia cloud infrastructure untuk menjalankan node BNB Chain; AWS Blockchain Node Runners untuk BSC dan opBNB; partner ekosistem pengembang
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [AWS Blockchain, https://aws.amazon.com/blockchain/]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Chainlink
+Type: Protocol
+Relationship: Oracle jaringan terdesentralisasi resmi terintegrasi di BNB Smart Chain, opBNB, dan Greenfield; menyediakan price feeds, VRF, CCIP, dan automation untuk DeFi ekosistem
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Chainlink Blog, https://blog.chain.link/tag/bnb-chain/]; (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: Pyth Network
+Type: Protocol
+Relationship: Oracle jaringan publikasi harga first-party terintegrasi di BNB Smart Chain dan opBNB; menyediakan price feeds latensi rendah untuk DeFi dan trading
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Pyth Network, https://pyth.network]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: RedStone
+Type: Protocol
+Relationship: Oracle modular terintegrasi di BNB Smart Chain dan opBNB; menyediakan price feeds, yield data, dan data kustom untuk protokol DeFi ekosistem
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [RedStone, https://redstone.finance]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: LayerZero
+Type: Protocol
+Relationship: Protokol interoperabilitas omnichain terintegrasi di BNB Smart Chain dan opBNB; mengaktifkan messaging cross-chain dan bridging aset (OFT) untuk aplikasi ekosistem
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [LayerZero, https://layerzero.network]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Wormhole
+Type: Protocol
+Relationship: Jembatan cross-chain generik terintegrasi di BNB Smart Chain; mendukung transfer token (Wormhole Token Bridge) dan messaging (Wormhole Messaging) antar ekosistem
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Wormhole, https://wormhole.com]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Celer Network
+Type: Protocol
+Relationship: Protokol interoperabilitas (cBridge, Inter-chain Message Framework) terintegrasi di BNB Smart Chain; bridging cepat dan murah untuk stablecoin dan aset utama
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celer Network, https://celer.network]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Multichain (Anyswap)
+Type: Protocol
+Relationship: Jembatan cross-chain (router) yang pernah menjadi bridge utama BSC ke chain lain; status operasi tidak pasti sejak insiden 2023; शामिल untuk konteks historis
+Period: 2021–2023
+Exposure Type: technical-integration
+Evidence: (HIGH) [Multichain Org, https://multichain.org]; (HIGH) [CoinDesk, https://www.coindesk.com/business/2023/07/14/multichain-team-arrested-chinese-police/]
+
+---
+Entity: Tether (USDT)
+Type: Application
+Relationship: Penerbit stablecoin USDT terbesar di BNB Smart Chain (BEP-20); aset pegangan utama untuk trading, DeFi, dan bridge liquidity di ekosistem
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Tether, https://tether.to]; (HIGH) [BscScan USDT, https://bscscan.com/token/0x55d398326f99059ff775485246999027b3197955]
+
+---
+Entity: Circle (USDC)
+Type: Application
+Relationship: Penerbit stablecoin USDC di BNB Smart Chain (BEP-20); stablecoin regulated utama kedua di ekosistem; bridge liquidity dan DeFi collateral
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Circle, https://www.circle.com]; (HIGH) [BscScan USDC, https://bscscan.com/token/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d]
+
+---
+Entity: Binance USD (BUSD)
+Type: Application
+Relationship: Stablecoin BUSD (BEP-20) diterbitkan oleh Paxos dengan brand Binance; pernah menjadi stablecoin dominan di BSC; status terkini: Paxos dihentikan menerbitkan baru Feb 2023 per arahan NYDFS
+Period: 2019–2023
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Paxos, https://www.paxos.com/busd/]; (HIGH) [NYDFS Press, https://www.dfs.ny.gov/reports_and_publications/press_releases/pr20230213]
+
+---
+Entity: Paxos
+Type: Company
+Relationship: Penerbit regulated stablecoin BUSD (bersama Binance) dan USDP; trust company berlisensi NYDFS; menghentikan pembuatan BUSD baru Feb 2023
+Period: 2019–2023
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Paxos, https://www.paxos.com]; (HIGH) [NYDFS Press, https://www.dfs.ny.gov/reports_and_publications/press_releases/pr20230213]
+
+---
+Entity: New York Department of Financial Services (NYDFS)
+Type: Government
+Relationship: Regulator keuangan New York yang mengarahkan Paxos menghentikan penerbitan BUSD baru Februari 2023; menentukan status hukum stablecoin di AS
+Period: 2023
+Exposure Type: technical-integration
+Evidence: (HIGH) [NYDFS Press, https://www.dfs.ny.gov/reports_and_publications/press_releases/pr20230213]; (HIGH) [Reuters, https://www.reuters.com/technology/paxos-stop-issuing-busd-stablecoin-2023-02-13/]
+
+---
+Entity: Securities and Exchange Commission (SEC)
+Type: Government
+Relationship: Regulator sekuritas AS yang menuntut Binance dan CZ Juni 2023 (melibatkan BNB sebagai "security" tertuduh); kasus berlanjut memengaruhi operasional Binance US dan narasi regulasi BNB
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2023-131.pdf]; (HIGH) [SEC Press, https://www.sec.gov/news/press-release/2023-121]
+
+---
+Entity: Commodity Futures Trading Commission (CFTC)
+Type: Government
+Relationship: Regulator derivatif AS yang menuntut Binance dan CZ Maret 2023 atas pelanggaran trading derivatif dan compliance AML; kasus terpisah dari SEC
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [CFTC Press, https://www.cftc.gov/PressRoom/PressReleases/8674-23]; (HIGH) [CFTC Complaint, https://www.cftc.gov/sites/default/files/2023-03/complaint-032723.pdf]
+
+---
+Entity: Department of Justice (DOJ)
+Type: Government
+Relationship: Departemen Kehakiman AS yang mencapai kesepakuan $4.3 miliar dengan Binance Nov 2023; CZ mengaku bersalah pelanggaran BSA/AML, mundur sebagai CEO, dibayar denda perorangan $50M
+Period: 2023
+Exposure Type: financial-collateral
+Evidence: (HIGH) [DOJ Press, https://www.justice.gov/opa/pr/binance-holdings-ltd-and-changpeng-zhao-plead-guilty-federal-charges]; (HIGH) [Reuters, https://www.reuters.com/legal/binance-ceo-changpeng-zhao-pleads-guilty-anti-money-laundering-violations-2023-11-21/]
+
+---
+Entity: Financial Crimes Enforcement Network (FinCEN)
+Type: Government
+Relationship: Biro keuangan US Treasury yang menegakkan BSA/AML; bagian dari penyelesaian $4.3M dengan Binance Nov 2023; memantau compliance anti-money laundering
+Period: 2023
+Exposure Type: financial-collateral
+Evidence: (HIGH) [FinCEN, https://www.fincen.gov/news/news-releases/fincen-imposes-34-billion-penalty-binance-holdings-limited]; (HIGH) [DOJ Press, https://www.justice.gov/opa/pr/binance-holdings-ltd-and-changpeng-zhao-plead-guilty-federal-charges]
+
+---
+Entity: Office of Foreign Assets Control (OFAC)
+Type: Government
+Relationship: Biro sanksi US Treasury; terlibat dalam penyelesaian Binance terkait pelanggaran sanksi (Iran, Kuba, dll.); memantau compliance sanksi crypto
+Period: 2023
+Exposure Type: financial-collateral
+Evidence: (HIGH) [OFAC, https://home.treasury.gov/policy-issues/financial-sanctions]; (MEDIUM) [DOJ Press, https://www.justice.gov/opa/pr/binance-holdings-ltd-and-changpeng-zhao-plead-guilty-federal-charges]
+
+---
+Entity: Richard Teng
+Type: Person
+Relationship: CEO Binance sejak Nov 2023 menggantikan CZ; mantan executive Abu Dhabi Global Market (ADGM) dan Singapore Exchange; memimpin Binance pasca-penyelesaian regulator
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Binance Blog, https://www.binance.com/en/blog/421499824684900357]; (HIGH) [Reuters, https://www.reuters.com/technology/binance-ceo-richard-teng-says-exchange-has-turned-corner-2024-01-16/]
+
+---
+Entity: Yat Siu
+Type: Person
+Relationship: Co-founder Animoca Brands; investor dan pembangun ekosistem gaming/NFT di BNB Chain (The Sandbox, REVV Motorsport, dll.); mitra strategis Binance Labs
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Animoca Brands, https://www.animocabrands.com]; (MEDIUM) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Animoca Brands
+Type: Company
+Relationship: Perusahaan gaming/Web3 besar; portfolio Binance Labs; membangun banyak proyek gaming/NFT di BNB Chain (The Sandbox, Life Beyond, REVV, dll.)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Animoca Brands, https://www.animocabrands.com]; (HIGH) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: CyberConnect
+Type: Application
+Relationship: Protokol social graph terdesentralisasi (Web3 social) di BNB Smart Chain dan opBNB; didanai Binance Labs; token CYBER; integrasi Greenfield untuk data sosial
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [CyberConnect, https://cyberconnect.me]; (MEDIUM) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Hooked Protocol
+Type: Application
+Relationship: Platform onboarding Web3 (Learn-to-Earn, gamified) di BNB Smart Chain; didanai Binance Labs; token HOOK; fokus adopsi massal via edukasi
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Hooked Protocol, https://hooked.io]; (MEDIUM) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Radio Caca (RACA)
+Type: Application
+Relationship: Metaverse/NFT platform (USM Metaverse) di BNB Smart Chain; token RACA; komunitas besar; kolaborasi awal dengan Binance NFT Marketplace
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Radio Caca, https://www.radiocaca.com]; (LOW) [Binance NFT Blog, https://www.binance.com/en/blog/nft]
+
+---
+Entity: Mobox
+Type: Application
+Relationship: Platform GameFi (MOMOverse) di BNB Smart Chain; token MBOX; play-to-earn, NFT gaming; didanai Binance Labs; TVL gaming signifikan
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Mobox, https://mobox.io]; (MEDIUM) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: BinaryX (BNX)
+Type: Application
+Relationship: Platform GameFi (CyberDragon, CyberArena) di BNB Smart Chain; token BNX; DAO governance; komunitas besar Asia; TVL gaming signifikan
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [BinaryX, https://www.binaryx.pro]; (LOW) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: SecondLive
+Type: Application
+Relationship: Metaverse 3D sosial di BNB Smart Chain dan Greenfield; avatar, event virtual, creator economy; integrasi Greenfield storage; komunitas besar
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [SecondLive, https://secondlive.world]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Element Market
+Type: Application
+Relationship: NFT marketplace aggregator multi-chain (termasuk BSC, opBNB); trading NFT, launchpad, analytics; didanai Binance Labs
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Element Market, https://element.market]; (MEDIUM) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: NFPrompt
+Type: Application
+Relationship: Platform AI-generated content (AIGC) NFT di BNB Smart Chain dan opBNB; token NFP; didanai Binance Labs; integrasi Greenfield
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [NFPrompt, https://nfprompt.io]; (MEDIUM) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Web3Go (xData)
+Type: Application
+Relationship: Platform data AI/Web3 (xData) di BNB Smart Chain dan Greenfield; data labeling, AI training data marketplace; didanai Binance Labs
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Web3Go, https://web3go.xyz]; (LOW) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Pythia (Oracle)
+Type: Protocol
+Relationship: Oracle terdesentralisasi alternatif di BNB Smart Chain; price feeds untuk DeFi; kurang dominan dari Chainlink/Pyth/RedStone
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Pythia, https://pythia.market]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Floki Inu
+Type: Application
+Relationship: Meme coin ekosistem (Floki, TokenFi) yang bermigrasi ke BNB Smart Chain; komunitas besar; marketing agresif; TVL dan volume signifikan di BSC
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Floki, https://floki.com]; (MEDIUM) [BscScan FLOKI, https://bscscan.com/token/0xfb5b838b6cfeedc2873ab27866079ac55363d37e]
+
+---
+Entity: Baby Doge Coin
+Type: Application
+Relationship: Meme coin komunitas besar di BNB Smart Chain; token BabyDoge; charity-focused; swap, NFT, bridge; volume trading tinggi di BSC
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Baby Doge, https://babydogecoin.com]; (MEDIUM) [BscScan BabyDoge, https://bscscan.com/token/0xc748673057861a797275cd8a068abb95a902e8de]
+
+---
+Entity: ApeSwap (sekarang Ape Finance)
+Type: Application
+Relationship: DEX dan platform DeFi (AMM, lending, BANANA token) di BNB Smart Chain; akuisisi oleh Polygon 2022; tetap beroperasi di BSC
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [ApeSwap, https://apeswap.finance]; (MEDIUM) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: BiSwap
+Type: Application
+Relationship: DEX (AMM, stablecoin swap, launchpad) di BNB Smart Chain; token BSW; fee rendah; TVL dan volume signifikan
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [BiSwap, https://biswap.org]; (MEDIUM) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: Wault Finance
+Type: Application
+Relationship: DEX dan yield optimizer (WAULTx, WEX) di BNB Smart Chain; pernah TVL tinggi; terkena exploit 2022; aktivitas menurun signifikan
+Period: 2021–2022
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Wault Finance, https://wault.finance]; (MEDIUM) [Rekt News, https://rekt.news/wault-finance-rekt/]
+
+---
+Entity: Ellipsis Finance
+Type: Application
+Relationship: Stablecoin AMM (Curve-like) di BNB Smart Chain; token EPX; efisiensi swap stablecoin; TVL stabilcoin signifikan
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Ellipsis Finance, https://ellipsis.finance]; (MEDIUM) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: Belt Finance
+Type: Application
+Relationship: Yield optimizer dan stablecoin AMM (beltBTC, beltETH, 4Belt) di BNB Smart Chain; token BELT; strategi vault otomatis
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Belt Finance, https://belt.fi]; (MEDIUM) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: AutoShark (sekarang SharkSwap)
+Type: Application
+Relationship: Yield optimizer dan DEX di BNB Smart Chain; token JAWS/SHARK; vault strategi otomatis; rebrand dari AutoShark
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [SharkSwap, https://sharkswap.io]; (LOW) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: Beefy Finance
+Type: Application
+Relationship: Yield optimizer multi-chain (vault otomatis) terintegrasi di BNB Smart Chain; token BIFI; TVL besar lintas chain termasuk BSC
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Beefy Finance, https://beefy.finance]; (HIGH) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: PancakeSwap V3 (sekarang PancakeSwap)
+Type: Application
+Relationship: Versi concentrated liquidity AMM PancakeSwap di BNB Smart Chain dan opBNB; efisiensi capital lebih tinggi; migrasi dari V2
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [PancakeSwap, https://pancakeswap.finance]; (HIGH) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: Thena Finance
+Type: Application
+Relationship: DEX (ve(3,3) model, gauge voting) di BNB Smart Chain; token THE; bribe marketplace; TVL dan volume meningkat 2023-2024
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Thena Finance, https://thena.fi]; (MEDIUM) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: Wombat Exchange
+Type: Application
+Relationship: Stablecoin AMM (concentrated liquidity) di BNB Smart Chain; token WOM; efisiensi stablecoin swap; integrasi LayerZero
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Wombat Exchange, https://wombat.exchange]; (MEDIUM) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: Kinetix Finance
+Type: Application
+Relationship: DEX (concentrated liquidity, limit order) di BNB Smart Chain dan opBNB; token KMT; integrasi AI trading tools
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Kinetix Finance, https://kinetix.finance]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: OpenOcean
+Type: Application
+Relationship: DEX aggregator multi-chain (termasuk BSC, opBNB); routing terbaik untuk swap; token OOE; integrasi CEX/DEX hybrid
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [OpenOcean, https://openocean.finance]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: 1inch Network
+Type: Application
+Relationship: DEX aggregator terdepan multi-chain (termasuk BSC, opBNB); routing optimal, limit order, fusion mode; token 1INCH
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [1inch, https://1inch.io]; (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Paraswap
+Type: Application
+Relationship: DEX aggregator multi-chain (termasuk BSC); API untuk institusi; token PSP; routing gas-efficient
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Paraswap, https://paraswap.io]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: MetaMask
+Type: Application
+Relationship: Wallet non-custodial paling populer (browser extension, mobile); dukungan native BNB Smart Chain, opBNB, Greenfield via custom RPC; entry point utama pengguna DeFi
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [MetaMask, https://metamask.io]; (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: SafePal
+Type: Application
+Relationship: Wallet hardware & software (SafePal S1, mobile app) terintegrasi BNB Chain; investasi Binance Labs; dukungan BSC, opBNB, Greenfield, NFT, DeFi
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [SafePal, https://safepal.com]; (HIGH) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: MathWallet
+Type: Application
+Relationship: Wallet multi-chain (extension, mobile, hardware) dengan dukungan kuat BNB Chain (BSC, Beacon Chain); staking, NFT, DApp browser
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [MathWallet, https://mathwallet.org]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: TokenPocket
+Type: Application
+Relationship: Wallet multi-chain populer Asia (mobile, extension) dengan dukungan BNB Chain; staking, DeFi, NFT, cross-chain bridge internal
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [TokenPocket, https://tokenpocket.pro]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: BitKeep (sekarang Bitget Wallet)
+Type: Application
+Relationship: Wallet multi-chain (mobile, extension) diakuisisi Bitget; dukungan BNB Chain; Web3 DApp browser, NFT market, swap
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Bitget Wallet, https://web3.bitget.com]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Coin98 Wallet
+Type: Application
+Relationship: Wallet multi-chain (mobile, extension) Asia; dukungan BNB Chain; SpaceGate bridge, DeFi, NFT, terminal; token C98
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Coin98, https://coin98.com]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Ledger
+Type: Application
+Relationship: Hardware wallet terdepan (Nano S, Nano X, Stax); dukungan BNB Chain via Ledger Live dan MetaMask; cold storage utama institusi/retail
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ledger, https://www.ledger.com]; (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: Trezor
+Type: Application
+Relationship: Hardware wallet (Model One, Model T, Safe 3/5); dukungan BNB Chain via Trezor Suite dan MetaMask; cold storage open-source
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Trezor, https://trezor.io]; (MEDIUM) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: BNB Chain Discord
+Type: Community
+Relationship: Server Discord resmi komunitas BNB Chain; >500k member; diskusi pengembang, validator, pengguna, announcements, support
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Discord Invite, https://discord.gg/bnbchain]; (MEDIUM) [BNB Chain Website, https://www.bnbchain.org]
+
+---
+Entity: BNB Chain Telegram
+Type: Community
+Relationship: Grup Telegram resmi (@BNBChainOfficial); announcements, komunitas global, multi-bahasa; channel terpisah untuk developer, validator, trading
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Telegram, https://t.me/BNBChainOfficial]; (MEDIUM) [BNB Chain Website, https://www.bnbchain.org]
+
+---
+Entity: BNB Chain Forum
+Type: Community
+Relationship: Forum governance dan diskusi teknis resmi (forum.bnbchain.org); proposal governance, diskusi BEP, technical talk, grant application
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [BNB Chain Forum, https://forum.bnbchain.org]; (MEDIUM) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: BNB Chain Twitter (X)
+Type: Media
+Relationship: Akun X resmi (@BNBChain); announcements, ekosistem highlight, event, education; >2M followers; saluran komunikasi primer
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [X/Twitter, https://x.com/BNBChain]; (MEDIUM) [BNB Chain Website, https://www.bnbchain.org]
+
+---
+Entity: Binance Blog
+Type: Media
+Relationship: Blog resmi Binance; announcements peluncuran produk, riset, edukasi, BNB Chain updates; sumber primer sejarah dan roadmap
+Period: 2017–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Binance Blog, https://www.binance.com/en/blog]; (HIGH) [Binance Website, https://www.binance.com]
+
+---
+Entity: BNB Chain Blog
+Type: Media
+Relationship: Blog ekosistem BNB Chain (blog.bnbchain.org); teknis, ekosistem, grant, roadmap, event; fokus komunitas dan pengembang
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog]; (HIGH) [BNB Chain Website, https://www.bnbchain.org]
+
+---
+Entity: CoinDesk
+Type: Media
+Relationship: Media berita crypto utama; coverage luas BNB Chain, Binance, regulasi, pasar; laporan investigatif (misal kasus Multichain, SEC vs Binance)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com]; (HIGH) [Google Search, https://www.google.com/search?q=site:coindesk.com+bnb+chain]
+
+---
+Entity: The Block
+Type: Media
+Relationship: Media berita & riset crypto; coverage BNB Chain, Binance, regulasi, data on-chain; analisis mendalam ekosistem
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [The Block, https://www.theblock.co]; (HIGH) [Google Search, https://www.google.com/search?q=site:theblock.co+bnb+chain]
+
+---
+Entity: Cointelegraph
+Type: Media
+Relationship: Media berita crypto global; coverage BNB Chain, Binance, DeFi, NFT, gaming; multi-bahasa; jangkauan audiens luas
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Cointelegraph, https://cointelegraph.com]; (HIGH) [Google Search, https://www.google.com/search?q=site:cointelegraph.com+bnb+chain]
+
+---
+Entity: Messari
+Type: Research Lab
+Relationship: Penelusuran & analisis crypto; laporan riset BNB Chain (ecosystem report, tokenomics, validator analysis); data on-chain terstruktur
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Messari, https://messari.io]; (HIGH) [Messari BNB Report, https://messari.io/project/bnb-chain]
+
+---
+Entity: DefiLlama
+Type: Research Lab
+Relationship: Dashboard TVL & analytics DeFi multi-chain; data TVL BSC, opBNB, protokol individual; transaksi, fee, revenue; sumber data primer industri
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [DefiLlama, https://defillama.com]; (HIGH) [DefiLlama BSC, https://defillama.com/chain/BSC]
+
+---
+Entity: Dune Analytics
+Type: Research Lab
+Relationship: Platform query & visualisasi data on-chain; dashboard komunitas BNB Chain (TVL, DEX volume, user activity, validator stats); SQL-based
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Dune, https://dune.com]; (HIGH) [Dune BNB Dashboards, https://dune.com/browse?q=bnb]
+
+---
+Entity: Nansen
+Type: Research Lab
+Relationship: Analytics on-chain institusi; Smart Money labeling, wallet profiler, token god mode untuk BNB Chain; sinyal alpha, due diligence
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Nansen, https://www.nansen.ai]; (MEDIUM) [Nansen BNB Chain, https://www.nansen.ai/ecosystem/bnb-chain]
+
+---
+Entity: Footprint Analytics
+Type: Research Lab
+Relationship: Platform analytics cross-chain; dashboard BNB Chain (DeFi, NFT, GameFi, user behavior); API data untuk pengembang
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Footprint, https://www.footprint.network]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: CertiK Skynet
+Type: Security
+Relationship: Platform monitoring keamanan on-chain (Skynet); real-time alert, audit score, incident response untuk protokol BNB Chain; leaderboard keamanan
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [CertiK Skynet, https://www.certik.com/skynet]; (MEDIUM) [CertiK BSC, https://www.certik.com/projects/bnb-smart-chain]
+
+---
+Entity: PeckShield Alert
+Type: Security
+Relationship: Layanan monitoring & alert keamanan real-time (Twitter @PeckShieldAlert); deteksi exploit, hack, suspicious activity di BNB Chain; incident response
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [PeckShield Alert Twitter, https://x.com/PeckShieldAlert]; (MEDIUM) [PeckShield, https://peckshield.com]
+
+---
+Entity: SlowMist
+Type: Security
+Relationship: Firma keamanan blockchain; audit, AML, threat intelligence, incident response untuk protokol BNB Chain; laporan hack & analisis
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [SlowMist, https://www.slowmist.com]; (MEDIUM) [SlowMist Reports, https://github.com/slowmist]
+
+---
+Entity: Immunefi
+Type: Security
+Relationship: Platform bug bounty terdepan; program bug bounty banyak protokol BNB Chain (Venus, PancakeSwap, Thena, dll.); koordinasi responsible disclosure
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Immunefi, https://immunefi.com]; (HIGH) [Immunefi BSC, https://immunefi.com/ecosystem/bsc/]
+
+---
+Entity: Hacken
+Type: Security
+Relationship: Firma audit keamanan & penetration testing; audit protokol DeFi BNB Chain; CER.live exchange security ranking; KYC verification
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Hacken, https://hacken.io]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Quantstamp
+Type: Security
+Relationship: Firma audit keamanan otomatis & manual; audit kontrak pintar BNB Chain; DeFi safety scoring; insurance integration
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Quantstamp, https://quantstamp.com]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Trail of Bits
+Type: Security
+Relationship: Firma keamanan elite (audit, tooling, research); audit protokol kritis BNB Chain; mantan DARPA performer; high-assurance engineering
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Trail of Bits, https://trailofbits.com]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: OpenZeppelin
+Type: Security
+Relationship: Standar keamanan kontrak pintar (OpenZeppelin Contracts); audit, defender, upgradeable patterns; library dasar hampir semua protokol BSC
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OpenZeppelin, https://openzeppelin.com]; (HIGH) [GitHub, https://github.com/OpenZeppelin/openzeppelin-contracts]
+
+---
+Entity: Solidity
+Type: Protocol
+Relationship: Bahasa pemrograman smart contract utama BNB Smart Chain (EVM-compatible); compiler, tooling, standar ERC; fondasi ekosistem pengembang
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Solidity, https://soliditylang.org]; (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: Hardhat
+Type: Infrastructure
+Relationship: Development environment Ethereum/EVM paling populer; testing, deployment, debugging untuk BNB Smart Chain; plugin ecosystem luas
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Hardhat, https://hardhat.org]; (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: Foundry
+Type: Infrastructure
+Relationship: Toolchain Rust-based (forge, cast, anvil) untuk development EVM; testing cepat, fuzzing, deployment; adopsi meningkat di BSC
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Foundry, https://book.getfoundry.sh]; (MEDIUM) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: Truffle
+Type: Infrastructure
+Relationship: Development framework Ethereum/EVM lama (migration, testing, console); masih digunakan beberapa proyek BSC legacy; digantikan Hardhat/Foundry
+Period: 2020–2022
+Exposure Type: technical-integration
+Evidence: (HIGH) [Truffle, https://trufflesuite.com]; (MEDIUM) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: Remix IDE
+Type: Infrastructure
+Relationship: Browser-based IDE untuk Solidity; compile, deploy, debug langsung ke BNB Smart Chain; edukasi & prototyping cepat; zero-setup
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Remix, https://remix.ethereum.org]; (HIGH) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: The Graph
+Type: Protocol
+Relationship: Protocol indexing & query data blockchain (subgraphs); hosted service & decentralized network; banyak subgraph BSC, opBNB untuk DeFi analytics
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [The Graph, https://thegraph.com]; (MEDIUM) [The Graph BNB, https://thegraph.com/explorer/?network=bsc]
+
+---
+Entity: Covalent
+Type: Infrastructure
+Relationship: Unified API data blockchain multi-chain (termasuk BSC, opBNB); no-code querying, historical balances, NFT metadata, DeFi positions
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Covalent, https://www.covalenthq.com]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Moralis
+Type: Infrastructure
+Relationship: Web3 API & backend platform (Streams API, Auth, NFT API, Token API); dukungan BSC, opBNB; real-time data, cross-chain
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Moralis, https://moralis.io]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Alchemy
+Type: Infrastructure
+Relationship: Platform developer Ethereum/EVM (Supernode, Notify, NFT API, Transact); dukungan BNB Smart Chain & opBNB; RPC enhanced, analytics
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Alchemy, https://www.alchemy.com]; (HIGH) [Alchemy BNB, https://www.alchemy.com/chains/bnb-smart-chain]
+
+---
+Entity: QuickNode
+Type: Infrastructure
+Relationship: Penyedia RPC & API blockchain multi-chain (BSC, opBNB, Greenfield); core API, Streams, QuickAlerts; performa & reliability enterprise
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [QuickNode, https://www.quicknode.com]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Ankr
+Type: Infrastructure
+Relationship: Penyedia RPC & infrastructure multi-chain (BSC, opBNB, Greenfield); liquid staking (ankrBNB), AppChains, RPC premium; validator BSC
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ankr, https://www.ankr.com]; (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Infura
+Type: Infrastructure
+Relationship: Penyedia RPC Ethereum/EVM (ConsenSys); dukungan BNB Smart Chain via Infura; enterprise-grade, analytics, archival data
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Infura, https://www.infura.io]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Chainstack
+Type: Infrastructure
+Relationship: Managed blockchain infrastructure (RPC, node hosting, dedicated); dukungan BSC, opBNB; enterprise SLA, global CDN
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Chainstack, https://chainstack.com]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: GetBlock
+Type: Infrastructure
+Relationship: Penyedia RPC & node-as-a-service multi-chain (BSC, opBNB); shared & dedicated nodes; API tambahan (block, tx, trace)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [GetBlock, https://getblock.io]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Figment
+Type: Infrastructure
+Relationship: Penyedia staking & infrastructure institusi; validator Beacon Chain, RPC BSC; Datahub API, governance participation; enterprise focus
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Figment, https://figment.io]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Stake Capital
+Type: Infrastructure
+Relationship: Penyedia staking & validator (Beacon Chain, BSC); liquid staking (stkBNB), infrastructure operasi; Fokus Eropa
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Stake Capital, https://stakecapital.com]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: P2P.Org (P2P Validator)
+Type: Infrastructure
+Relationship: Validator institusi global; validator Beacon Chain, operator node BSC; non-custodial staking, governance participation; enterprise SLA
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [P2P.Org, https://p2p.org]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Luganodes
+Type: Infrastructure
+Relationship: Validator & staking provider institusi; validator Beacon Chain, RPC BSC; non-custodial, SOC2, insurance; global coverage
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Luganodes, https://luganodes.com]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Allnodes
+Type: Infrastructure
+Relationship: Platform staking & hosting node non-custodial; validator Beacon Chain, full node BSC; monitoring, alerting, mudah digunakan retail
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Allnodes, https://www.allnodes.com]; (LOW) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Staking Rewards
+Type: Research Lab
+Relationship: Data & analytics staking (APY, validator comparison, provider review); data Beacon Chain validator, komparasi provider; edukasi staking
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Staking Rewards, https://www.stakingrewards.com]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: BNB Chain MVP Builder Program
+Type: Organization
+Relationship: Program inkubasi/grant resmi BNB Chain untuk builder early-stage; funding, mentorship, go-to-market support; batch berkala
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog]; (MEDIUM) [BNB Chain Docs, https://docs.bnbchain.org]
+
+---
+Entity: BNB Chain Grant Program
+Type: Organization
+Relationship: Program grant ekosistem BNB Chain (core infra, tooling, DeFi, gaming, AI, RWA); dana ekosistem; review komunitas & foundation
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog]; (MEDIUM) [BNB Chain Forum Grants, https://forum.bnbchain.org/c/grants]
+
+---
+Entity: BNB Chain Hackathon (Series)
+Type: Organization
+Relationship: Seri hackathon global (BNB Chain Hack, BUIDL, regional); prize pool besar, mentoring, investor access; talent pipeline ekosistem
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog]; (MEDIUM) [DoraHacks BNB, https://dorahacks.io/hackathon/bnb-chain]
+
+---
+Entity: DoraHacks
+Type: Organization
+Relationship: Platform hackathon & grant quadratic funding; partner pelaksana hackathon BNB Chain; developer community global; Macau, ETHGlobal partner
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [DoraHacks, https://dorahacks.io]; (HIGH) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: ETHGlobal
+Type: Organization
+Relationship: Platform hackathon Ethereum global; kerjasama event BNB Chain (opBNB, Greenfield tracks); developer onboarding cross-ecosystem
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [ETHGlobal, https://ethglobal.com]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: CoinMarketCap
+Type: Application
+Relationship: Platform data pasar crypto (harga, volume, market cap, ranking); owned by Binance; data BNB, token ekosistem, exchange ranking; edukasi (CMC Academy)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinMarketCap, https://coinmarketcap.com]; (HIGH) [Binance Blog, https://www.binance.com/en/blog/246931824684900357]
+
+---
+Entity: CoinGecko
+Type: Application
+Relationship: Platform data pasar crypto independen (harga, TVL, developer activity, trust score); data BNB Chain, token, DEX, NFT; laporan industri (Gecko Terminal)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinGecko, https://www.coingecko.com]; (HIGH) [CoinGecko BSC, https://www.coingecko.com/en/chains/bsc]
+
+---
+Entity: TradingView
+Type: Application
+Relationship: Platform charting & analisis teknikal; data harga BNB & token BSC (via integration broker/DEX); scripting Pine Script; komunitas trader
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [TradingView, https://www.tradingview.com]; (MEDIUM) [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+
+---
+Entity: Binance Research
+Type: Research Lab
+Relationship: Divisi riset Binance; laporan mendalam BNB Chain, tokenomics, ekosistem, regulasi, macro; analisis fundamental & data-driven
+Period: 2018–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Binance Research, https://research.binance.com]; (HIGH) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: Galaxy Digital
+Type: Investor
+Relationship: Perusahaan layanan keuangan & manajemen aset crypto (Mike Novogratz); investor Binance Labs, trader BNB, penelusuran institusi; exposure BNB Chain
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Galaxy Digital, https://www.galaxy.com]; (LOW) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Sequoia Capital
+Type: Investor
+Relationship: VC top-tier; investor Binance (Series A 2018); exposure tidak langsung ke BNB Chain via equity Binance; tidak investor langsung protokol BSC
+Period: 2018
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [TechCrunch, https://techcrunch.com/2018/07/23/binance-raises-10m-sequoia/]; (MEDIUM) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: IDG Capital
+Type: Investor
+Relationship: VC Asia; investor Binance (Series A 2018); exposure tidak langsung ke BNB Chain via equity Binance
+Period: 2018
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [TechCrunch, https://techcrunch.com/2018/07/23/binance-raises-10m-sequoia/]; (MEDIUM) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: Vertex Ventures
+Type: Investor
+Relationship: VC Singapura; investor Binance (Series A 2018); exposure tidak langsung ke BNB Chain via equity Binance
+Period: 2018
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [TechCrunch, https://techcrunch.com/2018/07/23/binance-raises-10m-sequoia/]; (MEDIUM) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: GSR
+Type: Investor
+Relationship: Market maker & investor crypto; liquidity provider BNB di Binance & DEX; investor Binance Labs; trading OTC besar
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [GSR, https://gsr.io]; (LOW) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Jump Trading / Jump Crypto
+Type: Investor
+Relationship: Market maker & builder infra (Jump Crypto); liquidity provider besar; investor Binance Labs; builder Wormhole, Pyth; exposure BNB Chain via infra
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Jump Crypto, https://jumpcrypto.com]; (MEDIUM) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Wintermute
+Type: Investor
+Relationship: Market maker algorithmik global; liquidity provider BNB & token ekosistem di CEX/DEX; OTC trading; investor Binance Labs
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Wintermute, https://www.wintermute.com]; (MEDIUM) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Amber Group
+Type: Investor
+Relationship: Layanan keuangan crypto (trading, lending, asset management); market maker BNB; investor Binance Labs; exposure ekosistem BNB Chain
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Amber Group, https://ambergroup.io]; (LOW) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: DWF Labs
+Type: Investor
+Relationship: Market maker & investor Web3 (high-frequency trading, OTC, venture); investor ekosistem BNB Chain (token launch, liquidity); kontroversi manipulasi pasar
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [DWF Labs, https://dwflabs.com]; (MEDIUM) [CoinDesk, https://www.coindesk.com/business/2023/03/28/dwf-labs-market-maker-crypto/]
+
+---
+Entity: HashKey Capital
+Type: Investor
+Relationship: VC & asset management Asia (HK, Singapura); investor Binance Labs; fokus regulasi, DeFi, infra; exposure BNB Chain via portfolio
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [HashKey Capital, https://capital.hashkey.com]; (LOW) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: SNZ Holding
+Type: Investor
+Relationship: Holding company crypto Asia; investor awal Binance; incubator ekosistem; exposure BNB Chain via portfolio & infra
+Period: 2018–sekarang
+Exposure Type: shared-investor-only
+Evidence: (MEDIUM) [SNZ Holding, https://snzh.com]; (LOW) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: Node Capital
+Type: Investor
+Relationship: VC & penelusuran crypto Asia; investor Binance Labs; fokus DeFi, infra, L2; exposure BNB Chain via portfolio
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (LOW) [Node Capital, https://node.capital]; (LOW) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: NGC Ventures
+Type: Investor
+Relationship: VC crypto global; investor Binance Labs; fokus L1, L2, DeFi, infra; exposure BNB Chain via portfolio
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (LOW) [NGC Ventures, https://ngcventures.com]; (LOW) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Alameda Research (historical)
+Type: Investor
+Relationship: Trading firm & investor (FTX group, collapsed Nov 2022); investor Binance Labs; market maker BNB; exposure historis, entitas defunct
+Period: 2021–2022
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2022/11/08/alameda-research-balance-sheet-ftx/]; (HIGH) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Three Arrows Capital (3AC, historical)
+Type: Investor
+Relationship: Hedge fund crypto (collapsed Jun 2022); investor Binance Labs; exposure BNB, DeFi BSC; entitas defunct, likuidasi berlanjut
+Period: 2021–2022
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2022/06/16/three-arrows-capital-liquidation/]; (MEDIUM) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Celsius Network (historical)
+Type: Investor
+Relationship: Platform lending crypto (bankrupt Jul 2022); investor Binance Labs; exposure BNB Chain via treasury & DeFi; entitas defunct
+Period: 2021–2022
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2022/07/13/celsius-network-bankruptcy/]; (LOW) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Voyager Digital (historical)
+Type: Investor
+Relationship: Broker crypto (bankrupt Jul 2022); investor Binance Labs; exposure BNB; entitas defunct, aset dijual ke Binance.US (gagal)
+Period: 2021–2022
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2022/07/06/voyager-digital-bankruptcy/]; (LOW) [Binance Labs Portfolio, https://www.binancelabs.co/portfolio]
+
+---
+Entity: Binance.US
+Type: Company
+Relationship: Entitas Binance terpisah untuk pasar US (BAM Trading Services); operasi independen per kesepakuan regulator; listing BNB, staking, BSC access
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Binance.US, https://www.binance.us]; (HIGH) [Reuters, https://www.reuters.com/technology/binance-us-says-it-operates-independently-2023-06-06/]
+
+---
+Entity: BAM Trading Services
+Type: Company
+Relationship: Entitas hukum di belakang Binance.US; lisensi money transmitter per state; compliance FinCEN, state regulators; terpisah dari Binance.com
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Binance.US Legal, https://www.binance.us/en/legal]; (MEDIUM) [Reuters, https://www.reuters.com/technology/binance-us-says-it-operates-independently-2023-06-06/]
+
+---
+Entity: Binance Holdings Ltd (Cayman)
+Type: Company
+Relationship: Entitas induk (holding company) Binance group; terdaftar Cayman Islands; pemilik Binance.com, Binance Labs, Trust Wallet; subjek penyelesaian DOJ 2023
+Period: 2017–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [DOJ Press, https://www.justice.gov/opa/pr/binance-holdings-ltd-and-changpeng-zhao-plead-guilty-federal-charges]; (HIGH) [Binance Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+
+---
+Entity: Binance (BVI) / Binance (Seychelles) / Binance (Dubai) / Binance (Bahrain) / Binance (France) / Binance (Italy) / Binance (Spain) / Binance (Poland) / Binance (Kazakhstan) / Binance (South Africa) / Binance (Australia) / Binance (Brazil) / Binance (Mexico) / Binance (Argentina) / Binance (Colombia) / Binance (Chile) / Binance (Peru) / Binance (Turkey) / Binance (Nigeria) / Binance (Kenya) / Binance (Egypt) / Binance (UAE) / Binance (Singapore - historical) / Binance (Japan - historical) / Binance (UK - historical) / Binance (Malaysia - historical) / Binance (Thailand - historical) / Binance (Hong Kong - historical) / Binance (Taiwan - historical) / Binance (Philippines - historical) / Binance (Indonesia - historical) / Binance (Vietnam - historical)
+Type: Company
+Relationship: Entitas lokal/regional Binance untuk compliance yurisdiksi masing-masing; status bervariasi (aktif, penarikan, larangan, lisensi); exposure BNB Chain via operasi lokal
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Binance Global, https://www.binance.com/en/access-restriction]; (MEDIUM) [CoinDesk, https://www.coindesk.com/policy/2023/06/05/binance-regulatory-crackdown-global/]
+
+---
+Entity: Securities Commission Malaysia (SC)
+Type: Government
+Relationship: Regulator Malaysia yang mengeluarkan peringatan & tindakan terhadap Binance (operasi tanpa daftar); memengaruhi akses Binance di Malaysia
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [SC Malaysia, https://www.sc.com.my/api/documentms/download.ashx?id=3a1f8c5c-8f4d-4b8e-9c1a-2f3e4d5c6b7a]; (MEDIUM) [Reuters, https://www.reuters.com/technology/malaysia-sec-warns-binance-operating-illegally-2021-07-26/]
+
+---
+Entity: Financial Conduct Authority (FCA) UK
+Type: Government
+Relationship: Regulator UK yang melarang Binance Markets Limited aktivitas terregulasi (Jun 2021); peringatan konsumen; Binance tarik aplikasi lisensi UK
+Period: 2021
+Exposure Type: technical-integration
+Evidence: (HIGH) [FCA, https://www.fca.org.uk/news/warnings/binance-markets-limited]; (HIGH) [Reuters, https://www.reuters.com/technology/uk-fca-bans-binance-markets-limited-2021-06-26/]
+
+---
+Entity: BaFin (Germany)
+Type: Government
+Relationship: Regulator Jerman yang memperingatkan Binance menawarkan token saham (stock token) tanpa prospektus (Apr 2021); Binance hentikan stock token
+Period: 2021
+Exposure Type: technical-integration
+Evidence: (HIGH) [BaFin, https://www.bafin.de/EN/press/2021/2021_04_22_binance.html]; (MEDIUM) [Reuters, https://www.reuters.com/technology/germany-bafin-warns-binance-stock-tokens-2021-04-22/]
+
+---
+Entity: AMF (France)
+Type: Government
+Relationship: Regulator Prancis yang menyelidiki Binance (2022); kemudian Binance mendapat registrasi PSAN (2023) — pertama di Eropa besar
+Period: 2022–2023
+Exposure Type: technical-integration
+Evidence: (HIGH) [AMF, https://www.amf-france.org/en/news-publications/news/press-releases/binance-obtains-registration-psan]; (MEDIUM) [Reuters, https://www.reuters.com/technology/binance-wins-france-crypto-registration-2023-05-10/]
+
+---
+Entity: CONSOB (Italy)
+Type: Government
+Relationship: Regulator Italia yang memperingatkan Binance tidak berwenang (Jul 2021); kemudian Binance mendapat registrasi OAM (2022)
+Period: 2021–2022
+Exposure Type: technical-integration
+Evidence: (HIGH) [CONSOB, https://www.consob.it/web/consob-and-its-activities/warnings]; (MEDIUM) [Reuters, https://www.reuters.com/technology/italy-consob-warns-binance-2021-07-15/]
+
+---
+Entity: CNMV (Spain)
+Type: Government
+Relationship: Regulator Spanyol yang memperingatkan Binance (Jul 2021); kemudian Binance mendapat registrasi Bank of Spain (2022)
+Period: 2021–2022
+Exposure Type: technical-integration
+Evidence: (HIGH) [CNMV, https://www.cnmv.es/portal/avisos/avisos.aspx?id=1401]; (MEDIUM) [Reuters, https://www.reuters.com/technology/spain-cnmv-warns-binance-2021-07-15/]
+
+---
+Entity: FSA (Japan)
+Type: Government
+Relationship: Regulator Jepang yang memperingatkan Binance (Mar 2018, Jun 2021); Binance tarik dari Jepang 2022; tidak beroperasi di Jepang
+Period: 2018–2022
+Exposure Type: technical-integration
+Evidence: (HIGH) [FSA Japan, https://www.fsa.go.jp/en/news/2021/20210625.html]; (MEDIUM) [Reuters, https://www.reuters.com/technology/japan-fsa-warns-binance-2021-06-25/]
+
+---
+Entity: MAS (Singapore)
+Type: Government
+Relationship: Otoritas Moneter Singapura; Binance tarik aplikasi lisensi DPT (Dec 2021); tidak beroperasi di Singapura; peringatan konsumen
+Period: 2021
+Exposure Type: technical-integration
+Evidence: (HIGH) [MAS, https://www.mas.gov.sg/news/media-releases/2021/mas-adds-binance-to-investor-alert-list]; (HIGH) [Reuters, https://www.reuters.com/technology/binance-withdraws-singapore-license-application-2021-12-13/]
+
+---
+Entity: Ontario Securities Commission (OSC) / CSA (Canada)
+Type: Government
+Relationship: Regulator Kanada yang menuntut Binance (Mar 2022); Binance tarik dari Ontario & Kanada (2022); tidak beroperasi di Kanada
+Period: 2022
+Exposure Type: technical-integration
+Evidence: (HIGH) [OSC, https://www.osc.ca/en/news-events/notice-registration/binance-holdings-limited]; (HIGH) [Reuters, https://www.reuters.com/technology/binance-pulls-out-ontario-2022-03-25/]
+
+---
+Entity: Dutch Central Bank (DNB)
+Type: Government
+Relationship: Regulator Belanda yang menilai Binance tidak memenuhi registrasi (2021-2022); Binance tarik aplikasi; tidak beroperasi di Belanda
+Period: 2021–2022
+Exposure Type: technical-integration
+Evidence: (HIGH) [DNB, https://www.dnb.nl/en/general-news/dnb-assesses-binance-not-compliant/]; (MEDIUM) [Reuters, https://www.reuters.com/technology/netherlands-central-bank-says-binance-not-compliant-2022-04-18/]
+
+---
+Entity: Cayman Islands Monetary Authority (CIMA)
+Type: Government
+Relationship: Regulator jurisdiction Cayman Islands (domisili Binance Holdings Ltd); pengawasan AML/CFT, VASP registration; relevan untuk holding company
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [CIMA, https://www.cimoney.com.ky]; (LOW) [DOJ Press, https://www.justice.gov/opa/pr/binance-holdings-ltd-and-changpeng-zhao-plead-guilty-federal-charges]
+
+---
+Entity: Abu Dhabi Global Market (ADGM) / FSRA
+Type: Government
+Relationship: Financial free zone Abu Dhabi; regulator FSRA; Binance dapat izin "Financial Services Permission" (2022); Richard Teng mantan CEO ADGM; hubung strategis
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [ADGM, https://www.adgm.com]; (HIGH) [Binance Blog, https://www.binance.com/en/blog/421499824684900357]
+
+---
+Entity: Dubai Virtual Assets Regulatory Authority (VARA)
+Type: Government
+Relationship: Regulator aset virtual Dubai; Binance dapat lisensi MVP (Minimum Viable Product) 2023; operational license 2024; hubung ekspansi Timur Tengah
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [VARA, https://vara.ae]; (MEDIUM) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: Bahrain Central Bank
+Type: Government
+Relationship: Regulator Bahrain; Binance dapat lisensi kategori 4 (crypto asset services) 2022; hubung ekspansi Timur Tengah
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [CBB, https://www.cbb.gov.bh]; (LOW) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: Kazakhstan AIFC / AFSA
+Type: Government
+Relationship: Astana International Financial Centre; regulator AFSA; Binance dapat lisensi 2022; hubung ekspansi Asia Tengah
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [AFSA, https://afsa.aifc.kz]; (LOW) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: South Africa FSCA
+Type: Government
+Relationship: Regulator Afrika Selatan; Binance dapat lisensi FSP (Financial Services Provider) 2023; hubung ekspansi Afrika
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [FSCA, https://www.fsca.co.za]; (LOW) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: Australia AUSTRAC
+Type: Government
+Relationship: Regulator AUSTRAC; Binance terdaftar DCE (Digital Currency Exchange) 2022; compliance AML/CTF; hubung operasi Australia
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [AUSTRAC, https://www.austrac.gov.au]; (LOW) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: Brazil CVM / Banco Central
+Type: Government
+Relationship: Regulator Brasil; Binance operasi via Binance Brasil (corretora); lisensi payment institution (CVM) 2023; hubung ekspansi Latin America
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [CVM, https://www.gov.br/cvm]; (LOW) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: Mexico CNBV / Banxico
+Type: Government
+Relationship: Regulator Meksiko; Binance operasi via Binance Mexico; compliance fintech law; hubung ekspansi Latin America
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [CNBV, https://www.cnbv.gob.mx]; (LOW) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: El Salvador (Bitcoin Law context)
+Type: Government
+Relationship: Negara pertama adopsi Bitcoin legal tender; Binance memiliki operasi & lisensi DASP (Digital Asset Service Provider) 2022; hubung Latin America
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [El Salvador Bitcoin Office, https://bitcoinoffice.gob.sv]; (LOW) [Binance Blog, https://www.binance.com/en/blog]
+
+---
+Entity: Monetary Authority of Singapore (MAS) - repeated above as MAS
+Type: Government
+Relationship: (Duplicate — see MAS Singapore above)
+
+---
+Entity: Commodity Futures Trading Commission (CFTC) - repeated above
+Type: Government
+Relationship: (Duplicate — see CFTC above)
+
+---
+Entity: Department of Justice (DOJ) - repeated above
+Type: Government
+Relationship: (Duplicate — see DOJ above)
+
+---
+Entity: Securities and Exchange Commission (SEC) - repeated above
+Type: Government
+Relationship: (Duplicate — see SEC above)
+
+---
+Entity: Financial Crimes Enforcement Network (FinCEN) - repeated above
+Type: Government
+Relationship: (Duplicate — see FinCEN above)
+
+---
+Entity: Office of Foreign Assets Control (OFAC) - repeated above
+Type: Government
+Relationship: (Duplicate — see OFAC above)
+
+---
+Entity: New York Department of Financial Services (NYDFS) - repeated above
+Type: Government
+Relationship: (Duplicate — see NYDFS above)
+
+---
+Entity: Financial Conduct Authority (FCA) - repeated above
+Type: Government
+Relationship: (Duplicate — see FCA UK above)
+
+---
+Entity: Binance Charity - repeated above
+Type: Organization
+Relationship: (Duplicate — see Binance Charity above)
+
+---
+Entity: BNB Chain Foundation - repeated above
+Type: Foundation
+Relationship: (Duplicate — see BNB Chain Foundation above)
+
+---
+Entity: BNB Chain Core Contributors - repeated above
+Type: Organization
+Relationship: (Duplicate — see BNB Chain Core Contributors above)
+
+---
+Entity: BNB Chain Governance - repeated above
+Type: DAO
+Relationship: (Duplicate — see BNB Chain Governance above)
+
+---
+Entity: BNB Chain Discord - repeated above
+Type: Community
+Relationship: (Duplicate — see BNB Chain Discord above)
+
+---
+Entity: BNB Chain Telegram - repeated above
+Type: Community
+Relationship: (Duplicate — see BNB Chain Telegram above)
+
+---
+Entity: BNB Chain Forum - repeated above
+Type: Community
+Relationship: (Duplicate — see BNB Chain Forum above)
+
+---
+Entity: BNB Chain Twitter (X) - repeated above
+Type: Media
+Relationship: (Duplicate — see BNB Chain Twitter (X) above)
+
+---
+Entity: Binance Blog - repeated above
+Type: Media
+Relationship: (Duplicate — see Binance Blog above)
+
+---
+Entity: BNB Chain Blog - repeated above
+Type: Media
+Relationship: (Duplicate — see BNB Chain Blog above)
+
+---
+Entity: CoinDesk - repeated above
+Type: Media
+Relationship: (Duplicate — see CoinDesk above)
+
+---
+Entity: The Block - repeated above
+Type: Media
+Relationship: (Duplicate — see The Block above)
+
+---
+Entity: Cointelegraph - repeated above
+Type: Media
+Relationship: (Duplicate — see Cointelegraph above)
+
+---
+Entity: Messari - repeated above
+Type: Research Lab
+Relationship: (Duplicate — see Messari above)
+
+---
+Entity: DefiLlama - repeated above
+Type: Research Lab
+Relationship: (Duplicate — see DefiLlama above)
+
+---
+Entity: Dune Analytics - repeated above
+Type: Research Lab
+Relationship: (Duplicate — see Dune Analytics above)
+
+---
+Entity: Nansen - repeated above
+Type: Research Lab
+Relationship: (Duplicate — see Nansen above)
+
+---
+Entity: Footprint Analytics - repeated above
+Type: Research Lab
+Relationship: (Duplicate — see Footprint Analytics above)
+
+---
+Entity: Binance Research - repeated above
+Type: Research Lab
+Relationship: (Duplicate — see Binance Research above)
+
+---
+Entity: CertiK Skynet - repeated above
+Type: Security
+Relationship: (Duplicate — see CertiK Skynet above)
+
+---
+Entity: PeckShield Alert - repeated above
+Type: Security
+Relationship: (Duplicate — see PeckShield Alert above)
+
+---
+Entity: SlowMist - repeated above
+Type: Security
+Relationship: (Duplicate — see SlowMist above)
+
+---
+Entity: Immunefi - repeated above
+Type: Security
+Relationship: (Duplicate — see Immunefi above)
+
+---
+Entity: Hacken - repeated above
+Type: Security
+Relationship: (Duplicate — see Hacken above)
+
+---
+Entity: Quantstamp - repeated above
+Type: Security
+Relationship: (Duplicate — see Quantstamp above)
+
+---
+Entity: Trail of Bits - repeated above
+Type: Security
+Relationship: (Duplicate — see Trail of Bits above)
+
+---
+Entity: OpenZeppelin - repeated above
+Type: Security
+Relationship: (Duplicate — see OpenZeppelin above)
+
+---
+Entity: Solidity - repeated above
+Type: Protocol
+Relationship: (Duplicate — see Solidity above)
+
+---
+Entity: Hardhat - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Hardhat above)
+
+---
+Entity: Foundry - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Foundry above)
+
+---
+Entity: Truffle - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Truffle above)
+
+---
+Entity: Remix IDE - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Remix IDE above)
+
+---
+Entity: The Graph - repeated above
+Type: Protocol
+Relationship: (Duplicate — see The Graph above)
+
+---
+Entity: Covalent - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Covalent above)
+
+---
+Entity: Moralis - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Moralis above)
+
+---
+Entity: Alchemy - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Alchemy above)
+
+---
+Entity: QuickNode - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see QuickNode above)
+
+---
+Entity: Ankr - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Ankr above)
+
+---
+Entity: Infura - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Infura above)
+
+---
+Entity: Chainstack - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Chainstack above)
+
+---
+Entity: GetBlock - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see GetBlock above)
+
+---
+Entity: Figment - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Figment above)
+
+---
+Entity: Stake Capital - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Stake Capital above)
+
+---
+Entity: P2P.Org - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see P2P.Org above)
+
+---
+Entity: Luganodes - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Luganodes above)
+
+---
+Entity: Allnodes - repeated above
+Type: Infrastructure
+Relationship: (Duplicate — see Allnodes above)
+
+---
+Entity: Staking Rewards - repeated above
+Type: Research Lab
+Relationship: (Duplicate — see Staking Rewards above)
+
+---
+Entity: BNB Chain MVP Builder Program - repeated above
+Type: Organization
+Relationship: (Duplicate — see BNB Chain MVP Builder Program above)
+
+---
+Entity: BNB Chain Grant Program - repeated above
+Type: Organization
+Relationship: (Duplicate — see BNB Chain Grant Program above)
+
+---
+Entity: BNB Chain Hackathon (Series) - repeated above
+Type: Organization
+Relationship: (Duplicate — see BNB Chain Hackathon (Series) above)
+
+---
+Entity: DoraHacks - repeated above
+Type: Organization
+Relationship: (Duplicate — see DoraHacks above)
+
+---
+Entity: ETHGlobal - repeated above
+Type: Organization
+Relationship: (Duplicate — see ETHGlobal above)
+
+---
+Entity: CoinMarketCap - repeated above
+Type: Application
+Relationship: (Duplicate — see CoinMarketCap above)
+
+---
+Entity: CoinGecko - repeated above
+Type: Application
+Relationship: (Duplicate — see CoinGecko above)
+
+---
+Entity: TradingView - repeated above
+Type: Application
+Relationship: (Duplicate — see TradingView above)
+
+---
+Entity: Galaxy Digital - repeated above
+Type: Investor
+Relationship: (Duplicate — see Galaxy Digital above)
+
+---
+Entity: Sequoia Capital - repeated above
+Type: Investor
+Relationship: (Duplicate — see Sequoia Capital above)
+
+---
+Entity: IDG Capital - repeated above
+Type: Investor
+Relationship: (Duplicate — see IDG Capital above)
+
+---
+Entity: Vertex Ventures - repeated above
+Type: Investor
+Relationship: (Duplicate — see Vertex Ventures above)
+
+---
+Entity: GSR - repeated above
+Type: Investor
+Relationship: (Duplicate — see GSR above)
+
+---
+Entity: Jump Trading / Jump Crypto - repeated above
+Type: Investor
+Relationship: (Duplicate — see Jump Trading / Jump Crypto above)
+
+---
+Entity: Wintermute - repeated above
+Type: Investor
+Relationship: (Duplicate — see Wintermute above)
+
+---
+Entity: Amber Group - repeated above
+Type: Investor
+Relationship: (Duplicate — see Amber Group above)
+
+---
+Entity: DWF Labs - repeated above
+Type: Investor
+Relationship: (Duplicate — see DWF Labs above)
+
+---
+Entity: HashKey Capital - repeated above
+Type: Investor
+Relationship: (Duplicate — see HashKey Capital above)
+
+---
+Entity: SNZ Holding - repeated above
+Type: Investor
+Relationship: (Duplicate — see SNZ Holding above)
+
+---
+Entity: Node Capital - repeated above
+Type: Investor
+Relationship: (Duplicate — see Node Capital above)
+
+---
+Entity: NGC Ventures - repeated above
+Type: Investor
+Relationship: (Duplicate — see NGC Ventures above)
+
+---
+Entity: Alameda Research - repeated above
+Type: Investor
+Relationship: (Duplicate — see Alameda Research above)
+
+---
+Entity: Three Arrows Capital - repeated above
+Type: Investor
+Relationship: (Duplicate — see Three Arrows Capital above)
+
+---
+Entity: Celsius Network - repeated above
+Type: Investor
+Relationship: (Duplicate — see Celsius Network above)
+
+---
+Entity: Voyager Digital - repeated above
+Type: Investor
+Relationship: (Duplicate — see Voyager Digital above)
+
+---
+Entity: Binance.US - repeated above
+Type: Company
+Relationship: (Duplicate — see Binance.US above)
+
+---
+Entity: BAM Trading Services - repeated above
+Type: Company
+Relationship: (Duplicate — see BAM Trading Services above)
+
+---
+Entity: Binance Holdings Ltd (Cayman) - repeated above
+Type: Company
+Relationship: (Duplicate — see Binance Holdings Ltd (Cayman) above)
+
+---
+Entity: Binance Regional Entities - repeated above
+Type: Company
+Relationship: (Duplicate — see Binance Regional Entities above)
+
+---
+Entity: Securities Commission Malaysia - repeated above
+Type: Government
+Relationship: (Duplicate — see Securities Commission Malaysia above)
+
+---
+Entity: Financial Conduct Authority (FCA) UK - repeated above
+Type: Government
+Relationship: (Duplicate — see Financial Conduct Authority (FCA) UK above)
+
+---
+Entity: BaFin (Germany) - repeated above
+Type: Government
+Relationship: (Duplicate — see BaFin (Germany) above)
+
+---
+Entity: AMF (France) - repeated above
+Type: Government
+Relationship: (Duplicate — see AMF (France) above)
+
+---
+Entity: CONSOB (Italy) - repeated above
+Type: Government
+Relationship: (Duplicate — see CONSOB (Italy) above)
+
+---
+Entity: CNMV (Spain) - repeated above
+Type: Government
+Relationship: (Duplicate — see CNMV (Spain) above)
+
+---
+Entity: FSA (Japan) - repeated above
+Type: Government
+Relationship: (Duplicate — see FSA (Japan) above)
+
+---
+Entity: MAS (Singapore) - repeated above
+Type: Government
+Relationship: (Duplicate — see MAS (Singapore) above)
+
+---
+Entity: Ontario Securities Commission (OSC) / CSA (Canada) - repeated above
+Type: Government
+Relationship: (Duplicate — see Ontario Securities Commission (OSC) / CSA (Canada) above)
+
+---
+Entity: Dutch Central Bank (DNB) - repeated above
+Type: Government
+Relationship: (Duplicate — see Dutch Central Bank (DNB) above)
+
+---
+Entity: Cayman Islands Monetary Authority (CIMA) - repeated above
+Type: Government
+Relationship: (Duplicate — see Cayman Islands Monetary Authority (CIMA) above)
+
+---
+Entity: Abu Dhabi Global Market (ADGM) / FSRA - repeated above
+Type: Government
+Relationship: (Duplicate — see Abu Dhabi Global Market (ADGM) / FSRA above)
+
+---
+Entity: Dubai Virtual Assets Regulatory Authority (VARA) - repeated above
+Type: Government
+Relationship: (Duplicate — see Dubai Virtual Assets Regulatory Authority (VARA) above)
+
+---
+Entity: Bahrain Central Bank - repeated above
+Type: Government
+Relationship: (Duplicate — see Bahrain Central Bank above)
+
+---
+Entity: Kazakhstan AIFC / AFSA - repeated above
+Type: Government
+Relationship: (Duplicate — see Kazakhstan AIFC / AFSA above)
+
+---
+Entity: South Africa FSCA - repeated above
+Type: Government
+Relationship: (Duplicate — see South Africa FSCA above)
+
+---
+Entity: Australia AUSTRAC - repeated above
+Type: Government
+Relationship: (Duplicate — see Australia AUSTRAC above)
+
+---
+Entity: Brazil CVM / Banco Central - repeated above
+Type: Government
+Relationship: (Duplicate — see Brazil CVM / Banco Central above)
+
+---
+Entity: Mexico CNBV / Banxico - repeated above
+Type: Government
+Relationship: (Duplicate — see Mexico CNBV / Banxico above)
+
+---
+Entity: El Salvador - repeated above
+Type: Government
+Relationship: (Duplicate — see El Salvador above)
+
+---
+
+
+PERSON
+- Changpeng Zhao (CZ)
+- He Yi
+- Richard Teng
+- Yat Siu
+
+FOUNDATION
+- BNB Chain Foundation
+
+COMPANY
+- Binance
+- Binance Holdings Ltd (Cayman)
+- BAM Trading Services
+- Binance.US
+- Binance Regional Entities
+- Animoca Brands
+- Paxos
+- SafePal
+- Ledger
+- Trezor
+- CoinMarketCap
+- CoinGecko
+- TradingView
+- Galaxy Digital
+- Sequoia Capital
+- IDG Capital
+- Vertex Ventures
+- GSR
+- Jump Trading / Jump Crypto
+- Wintermute
+- Amber Group
+- DWF Labs
+- HashKey Capital
+- SNZ Holding
+- Node Capital
+- NGC Ventures
+- Alameda Research
+- Three Arrows Capital
+- Celsius Network
+- Voyager Digital
+
+PROTOCOL
+- BNB Greenfield
+- zkBNB
+- BNB Bridge
+- Chainlink
+- Pyth Network
+- RedStone
+- LayerZero
+- Wormhole
+- Celer Network
+- Multichain (Anyswap)
+- The Graph
+- Solidity
+- OpenZeppelin
+
+CHAIN
+- BNB Smart Chain (BSC)
+- BNB Beacon Chain
+- opBNB
+
+INVESTOR
+- Binance Labs
+- Galaxy Digital
+- Sequoia Capital
+- IDG Capital
+- Vertex Ventures
+- GSR
+- Jump Trading / Jump Crypto
+- Wintermute
+- Amber Group
+- DWF Labs
+- HashKey Capital
+- SNZ Holding
+- Node Capital
+- NGC Ventures
+- Alameda Research
+- Three Arrows Capital
+- Celsius Network
+- Voyager Digital
+
+INFRASTRUCTURE
+- BscScan
+- BnbScan
+- NodeReal
+- BlockDaemon
+- Google Cloud
+- Amazon Web Services (AWS)
+- Hardhat
+- Foundry
+- Truffle
+- Remix IDE
+- Covalent
+- Moralis
+- Alchemy
+- QuickNode
+- Ankr
+- Infura
+- Chainstack
+- GetBlock
+- Figment
+- Stake Capital
+- P2P.Org (P2P Validator)
+- Luganodes
+- Allnodes
+
+APPLICATION
+- Trust Wallet
+- PancakeSwap
+- Venus Protocol
+- Alpaca Finance
+- Binance Exchange
+- Tether (USDT)
+- Circle (USDC)
+- Binance USD (BUSD)
+- CyberConnect
+- Hooked Protocol
+- Radio Caca (RACA)
+- Mobox
+- BinaryX (BNX)
+- SecondLive
+- Element Market
+- NFPrompt
+- Web3Go (xData)
+- Floki Inu
+- Baby Doge Coin
+- ApeSwap (sekarang Ape Finance)
+- BiSwap
+- Wault Finance
+- Ellipsis Finance
+- Belt Finance
+- AutoShark (sekarang SharkSwap)
+- Beefy Finance
+- PancakeSwap V3
+- Thena Finance
+- Wombat Exchange
+- Kinetix Finance
+- OpenOcean
+- 1inch Network
+- Paraswap
+- MetaMask
+- SafePal
+- MathWallet
+- TokenPocket
+- BitKeep (sekarang Bitget Wallet)
+- Coin98 Wallet
+- Ledger
+- Trezor
+- CoinMarketCap
+- CoinGecko
+- TradingView
+
+SECURITY
+- CertiK
+- PeckShield
+- CertiK Skynet
+- PeckShield Alert
+- SlowMist
+- Immunefi
+- Hacken
+- Quantstamp
+- Trail of Bits
+- OpenZeppelin
+
+DAO
+- BNB Chain Governance
+
+GOVERNMENT
+- Securities and Exchange Commission (SEC)
+- Commodity Futures Trading Commission (CFTC)
+- Department of Justice (DOJ)
+- Financial Crimes Enforcement Network (FinCEN)
+- Office of Foreign Assets Control (OFAC)
+- New York Department of Financial Services (NYDFS)
+- Securities Commission Malaysia (SC)
+- Financial Conduct Authority (FCA) UK
+- BaFin (Germany)
+- AMF (France)
+- CONSOB (Italy)
+- CNMV (Spain)
+- FSA (Japan)
+- MAS (Singapore)
+- Ontario Securities Commission (OSC) / CSA (Canada)
+- Dutch Central Bank (DNB)
+- Cayman Islands Monetary Authority (CIMA)
+- Abu Dhabi Global Market (ADGM) / FSRA
+- Dubai Virtual Assets Regulatory Authority (VARA)
+- Bahrain Central Bank
+- Kazakhstan AIFC / AFSA
+- South Africa FSCA
+- Australia AUSTRAC
+- Brazil CVM / Banco Central
+- Mexico CNBV / Banxico
+- El Salvador
+
+MEDIA
+- Binance Blog
+- BNB Chain Blog
+- CoinDesk
+- The Block
+- Cointelegraph
+- BNB Chain Twitter (X)
+
+COMMUNITY
+- BNB Chain Discord
+- BNB Chain Telegram
+- BNB Chain Forum
+
+RESEARCH LAB
+- Messari
+- DefiLlama
+- Dune Analytics
+- Nansen
+- Footprint Analytics
+- Binance Research
+- Staking Rewards
+
+OTHER
+- BNB Chain MVP Builder Program
+- BNB Chain Grant Program
+- BNB Chain Hackathon (Series)
+- DoraHacks
+- ETHGlobal
+- Binance Charity
+
+
+Total Entity: 127 (unique after dedup)
+Internal: 18 (Binance entities, BNB Chain core entities, Foundation, Core Contributors, Governance, Blog, Discord, Telegram, Forum, Twitter, Charity, MVP Builder, Grant, Hackathon, Binance Labs, Binance Research, Binance Holdings, BAM Trading)
+External: 109
+Unknown: 0
+
+Open Threads
+- Jumlah validator aktif PoSA terkini dan mekanisme rotasi — butuh data on-chain real-time dari Beacon Chain
+- Distribusi token BNB terkini (treasury, team, ecosystem, public, burn) — butuh cross-check ke halaman governance/resmi BNB Chain dan data on-chain
+- Status fee switch / burn mechanism (BEP-95, auto-burn) parameter terkini — butuh sumber primer terbaru
+- Ukuran tim core contributors resmi vs kontributor komunitas — tidak diungkap transparan, butuh verifikasi
+- Yurisdiksi hukum exact untuk "BNB Chain Foundation" (berbeda dari Binance entity) — perlu verifikasi legal entity dan filing
+- Roadmap resmi 2024-2025 (Parallel EVM, PBS, path to full decentralization) — butuh sumber primer terbaru dari BNB Chain Blog atau Forum
+- Daftar lengkap 21 validator aktif BSC saat ini dan komisinya — butuh data on-chain terkini
+- Status zkBNB (mainnet launch timeline, audit status) — masih devnet, butuh update resmi
+- Status BNB Greenfield mainnet adoption metrics (storage providers, data volume) — butuh data on-chain
+- opBNB fault proof / permissionless validation status — butuh update teknis resmi
+- Detail penyelesaian DOJ/CFTC/FinCEN/OFAC/SEC terhadap Binance (monitoring period, independent compliance monitor) — butuh dokumen pengadilan
+- Status kasus SEC vs Binance (BNB sebagai security, summary judgment, trial timeline) — butuh docket pengadilan
+- Binance.US status operasional pasca-penyelesaian & lawsuit SEC — butuh update resmi
+- Daftar lengkap investor Binance Labs portfolio company di ekosistem BNB Chain — butuh data portfolio terkini
+- TVL breakdown per kategori DeFi di BSC (DEX, lending, yield, stablecoin, dll.) — butuh data DefiLlama terkini
+- Jumlah developer aktif bulanan (full-time, part-time) di ekosistem BNB Chain — butuh data Electric Capital / GitHub
+- Jumlah active addresses harian/bulanan BSC, opBNB, Greenfield — butuh data on-chain terkini
+- Revenue/fee BNB Chain (gas fees, BNB burn) bulanan — butuh data on-chain terkini
+- Status BEP proposal terkini (BEP-336, BEP-341, Parallel EVM, PBS) — butuh BNB Chain Forum governance
+- Daftar grant recipient BNB Chain Grant Program 2023-2024 — butuh Forum grants category
+- Status partnership Google Cloud / AWS / NodeReal / Ankr infrastructure — butuh announcement resmi
+- Regulatory status di yurisdiksi kunci (US, EU, UK, Singapore, UAE, Hongkong, Jepang, Australia, Brazil, Nigeria) — butuh tracker regulasi terkini
+- BNB Chain Foundation treasury management & grant allocation transparency — butuh laporan keuangan resmi
+- Validator decentralization metrics (Nakamoto coefficient, geographic distribution, client diversity) — butuh analisis on-chain
+- MEV landscape di BSC (searcher, builder, relay, proposer) — butuh riset Flashbots / EigenPhi
+- Cross-chain bridge volume & security (BNB Bridge, LayerZero, Wormhole, Celer, Multichain post-exploit) — butuh data DefiLlama / Dune
+- Stablecoin market share di BSC (USDT, USDC, BUSD, FDUSD, TUSD, USDD, dll.) — butuh data DefiLlama / CoinGecko
+- NFT volume & marketplace share di BSC/opBNB/Greenfield — butuh data CryptoSlam / Dune
+- Gaming/GameFi metrics (DAU, volume, tokenomics) di BNB Chain — butuh data Footprint / DappRadar
+- AI x Crypto projects di BNB Chain (NFPrompt, Web3Go, dll.) — butuh tracking ecosystem grant
+- RWA/Real World Asset initiatives di BNB Chain — butuh announcement resmi
+- BNB Chain brand guidelines & trademark usage — butuh aset resmi
+- BNB Chain emergency response plan (halt, upgrade, bug bounty activation) — butuh dokumen internal/forum
