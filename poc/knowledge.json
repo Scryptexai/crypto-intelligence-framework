@@ -43452,5 +43452,87 @@
       "relatedKnowledge": [],
       "dependencies": []
     }
+  ],
+  "Pendle": [
+    {
+      "id": "pendle-K-001",
+      "projectSlug": "pendle",
+      "name": "Yield tokenization menciptakan fixed-income on-chain — kategori baru yang tumbuh bersama gelombang LST/restaking",
+      "category": "Core Insight",
+      "description": "PT/YT mengubah yield menjadi aset tradable; demand fixed-rate + spekulasi yield bertemu di satu AMM; TVL mengikuti siklus aset underlying.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "TVL $230M→$8.9B mengikuti gelombang LST/LRT 2023-2025【Datawallet】; market share 50-60%.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "pendle-K-002",
+      "projectSlug": "pendle",
+      "name": "Revenue nyata dari fee volume (0.15%) + 5% YT yield menghasilkan positive cash flow lintas siklus",
+      "category": "Core Insight",
+      "description": "Berbeda dengan banyak protokol insentif-only, Pendle memiliki revenue organik (~$40M annualized 2025).",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "defi-intel & Blockbase memo.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "pendle-K-003",
+      "projectSlug": "pendle",
+      "name": "Transisi vePENDLE→sPENDLE menunjukkan pola industri meninggalkan lock illikuid menuju staking likuid",
+      "category": "Core Insight",
+      "description": "Lock 4 tahun estilo Curve diganti token likuid untuk fleksibilitas holder; inflasi 2% dijadwalkan untuk insentif berkelanjutan.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Pintu 2026 update; Blockbase memo.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "pendle-K-004",
+      "projectSlug": "pendle",
+      "name": "Platform niche yang membangun AMM khusus untuk kelas aset baru dapat mendominasi share pasar 50%+ saat gelombang aset itu tiba",
+      "category": "Pattern Candidate",
+      "description": "Kategori aset yield-bearing baru (LST) + AMM khusus + timing gelombang = dominasi share. — Kategori aset baru muncul dengan demand heterogen (fixed vs variable).",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "EV-007, EV-008; TVL trajectory.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-007",
+        "EV-008"
+      ]
+    },
+    {
+      "id": "pendle-K-005",
+      "projectSlug": "pendle",
+      "name": "Eksploitasi hot wallet terbatas tidak merusak protokol dengan audit inti kuat",
+      "category": "Pattern Candidate",
+      "description": "Insiden periferal (hot wallet) dengan kerugian kecil vs TVL tidak mengubah trajectory bila kontrak inti aman & komunikasi jelas. — Audit multi-firma pada inti + respons cepat.",
+      "confidence": 30,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "EV-009.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-009"
+      ]
+    }
   ]
 }

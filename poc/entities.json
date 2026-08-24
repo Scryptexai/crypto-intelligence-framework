@@ -54348,5 +54348,211 @@
         "evidence": "(HIGH) [zkSync TGE announcement, https://blog.matterlabs.dev/zksync-token-launch-17-june-2024-9f8e7d6c5b4a]; (HIGH) [Etherscan ZK token, https://etherscan.io/token/0x5A7d6b2F92C77FAD6CcA6d7a03359b8a6D9f4a4c]"
       }
     }
+  ],
+  "Pendle": [
+    {
+      "id": "pendle-ENT-001",
+      "projectSlug": "pendle",
+      "name": "TN Lee",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder Pendle; kepemimpinan produk & visi yield tokenization",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Messari, https://messari.io/project/pendle/profile]"
+      }
+    },
+    {
+      "id": "pendle-ENT-002",
+      "projectSlug": "pendle",
+      "name": "Vu Nguyen",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder Pendle",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Messari, https://messari.io/project/pendle/profile]"
+      }
+    },
+    {
+      "id": "pendle-ENT-003",
+      "projectSlug": "pendle",
+      "name": "Mechanism Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor Series A (Apr 2021)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Tracxn, https://tracxn.com/d/companies/pendle/__xRr_PBH5nTFW7hsedkR-sGn_5BXeOJARC8__GUDoHSw/funding-and-investors]"
+      }
+    },
+    {
+      "id": "pendle-ENT-004",
+      "projectSlug": "pendle",
+      "name": "Spartan Group",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor Series A 2021 & lead Series A Nov 2023",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Tracxn, https://tracxn.com/d/companies/pendle/__xRr_PBH5nTFW7hsedkR-sGn_5BXeOJARC8__GUDoHSw/funding-and-investors]"
+      }
+    },
+    {
+      "id": "pendle-ENT-005",
+      "projectSlug": "pendle",
+      "name": "Binance (YZi Labs)",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor Series A Aug 2023; sebelumnya disebut Binance Labs",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Tracxn, https://tracxn.com/d/companies/pendle/__xRr_PBH5nTFW7hsedkR-sGn_5BXeOJARC8__GUDoHSw/funding-and-investors; Uphold, https://uphold.com/blog/crypto-basics/what-is-pendle]"
+      }
+    },
+    {
+      "id": "pendle-ENT-006",
+      "projectSlug": "pendle",
+      "name": "CMS Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor Series A Apr 2021",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Tracxn, https://tracxn.com/d/companies/pendle/__xRr_PBH5nTFW7hsedkR-sGn_5BXeOJARC8__GUDoHSw/funding-and-investors]"
+      }
+    },
+    {
+      "id": "pendle-ENT-007",
+      "projectSlug": "pendle",
+      "name": "Lido (stETH)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Aset yield-bearing utama yang di-tokenisasi (PT/YT stETH) — driver TVL era 2023-2024",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(MEDIUM) [Datawallet, https://www.datawallet.com/crypto/what-is-pendle-finance]"
+      }
+    },
+    {
+      "id": "pendle-ENT-008",
+      "projectSlug": "pendle",
+      "name": "Ethena (USDe)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Aset yield-bearing besar (USDe/sUSDe) yang diintegrasikan 2024 — kontributor TVL puncak 2025",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(MEDIUM) [Datawallet, https://www.datawallet.com/crypto/what-is-pendle-finance]"
+      }
+    },
+    {
+      "id": "pendle-ENT-009",
+      "projectSlug": "pendle",
+      "name": "Aave",
+      "type": "Protocol",
+      "status": null,
+      "description": "Sumber aset awal (aUSDC) pada mainnet 2021 (mint YT/OT aUSDC/cDAI)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Messari, https://messari.io/project/pendle/profile]"
+      }
+    },
+    {
+      "id": "pendle-ENT-010",
+      "projectSlug": "pendle",
+      "name": "Chainlink",
+      "type": "Protocol",
+      "status": null,
+      "description": "Oracle funding-rate untuk Boros (data Binance/Hyperliquid)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2025–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Pintu, https://www.pintu.co.id/en/academy/post/pendle-update-2026-spendle-and-other-important-things-you-need-to-know]"
+      }
+    },
+    {
+      "id": "pendle-ENT-011",
+      "projectSlug": "pendle",
+      "name": "Ackee Blockchain Security",
+      "type": "Company",
+      "status": null,
+      "description": "Firma audit kontrak Pendle (bersama Dedaub, Code4rena audits/contests)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [defi-intel, https://defi-intel.com/best-yield-protocols/; Datawallet, https://www.datawallet.com/crypto/what-is-pendle-finance]"
+      }
+    },
+    {
+      "id": "pendle-ENT-012",
+      "projectSlug": "pendle",
+      "name": "Dedaub",
+      "type": "Company",
+      "status": null,
+      "description": "Firma audit kontrak Pendle",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [defi-intel, https://defi-intel.com/best-yield-protocols/]"
+      }
+    }
   ]
 }

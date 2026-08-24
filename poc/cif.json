@@ -1,10 +1,10 @@
 {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-22 04:50 UTC",
+    "generated": "2026-08-24 12:12 UTC",
     "projects": 70,
-    "deep": 60,
-    "summary": 10,
+    "deep": 61,
+    "summary": 9,
     "sentiment": 0,
     "patterns": 16,
     "source": "examples/DatasetIndex.md + examples/PatternRegistry.md + examples/Sentiment/"
@@ -705,18 +705,14 @@
     },
     {
       "n": "Pendle",
-      "tier": "Summary",
-      "file": "examples/Pioneer/Pendle.md",
-      "cat": "DeFi / Yield Tokenization (PT/YT)",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Pendle.md",
+      "cat": "DeFi / Yield Tokenization (PT/YT, Boros funding-rate)",
       "era": "2021–",
       "tags": [
         "defi",
-        "airdrop",
-        "restaking",
-        "liquid-staking",
         "amm",
-        "governance",
-        "shared-security"
+        "perps"
       ]
     },
     {

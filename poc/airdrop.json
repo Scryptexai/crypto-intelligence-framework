@@ -7376,5 +7376,21 @@
       "assessment": "Airdrop ZK adalah contoh distribusi besar yang sukses secara operasional namun merugikan secara naratif — desain kriteria dan opacity treasury mengubah windfall komunitas menjadi krisis kepercayaan (MEDIUM)"
     },
     "lessons": []
+  },
+  "Pendle": {
+    "projectSlug": "pendle",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {},
+    "priceTrajectory": {},
+    "retention": [],
+    "gaps": [],
+    "prospect": {
+      "met": null,
+      "unmet": null,
+      "signals": null,
+      "assessment": null
+    },
+    "lessons": []
   }
 }

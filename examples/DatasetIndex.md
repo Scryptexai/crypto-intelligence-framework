@@ -552,6 +552,7 @@ _Tier: Deep · anchor projects with full causal history._
 | D70 | Yearn Finance | DeFi yield aggregator/optimizer (vaults & strategi yield otomatis) | 2020– | Deep Research (DeepSeek/Nemotron via gateway), Format v3 Dependency Pipeline Track C (12/12 phases — Phase 11 QA + Phase 12 Airdrop lengkap); **6 phases rekonstruksi 2026-08-20 via riset web (CIF agent)** | `CaseStudies/Yearn Finance.md` | `data_project/Yearn Finance/01..12-*.docx`, diarsip ke `doc_backup/deep/Yearn Finance_<phase>_2026-08.docx` |
 | D71 | dYdX | decentralized perpetual futures exchange / orderbook DEX | 2017– | Deep Research (DeepSeek/Nemotron via gateway), Format v3 Dependency Pipeline Track C (12/12 phases — Phase 11 QA + Phase 12 Airdrop lengkap) | `CaseStudies/dYdX.md` | `data_project/dYdX/01..12-*.docx`, diarsip ke `doc_backup/deep/dYdX_<phase>_2026-08.docx` |
 | D72 | zkSync | ZK-rollup / Layer 2 scaling solution for Ethereum | 2018– | Deep Research (DeepSeek/Nemotron via gateway), Format v3 Dependency Pipeline Track C (12/12 phases — Phase 11 QA + Phase 12 Airdrop lengkap) | `CaseStudies/zkSync.md` | `data_project/zkSync/01..12-*.docx`, diarsip ke `doc_backup/deep/zkSync_<phase>_2026-08.docx` |
+| D73 | Pendle | DeFi / Yield Tokenization (PT/YT, Boros funding-rate) | 2021– | Web research langsung (Messari, Tracxn, CryptoRank, Blockbase, Datawallet, Pintu, defi-intel), 2026-08-22 — upgrade Summary→Deep | `CaseStudies/Pendle.md` | publik (tautan di dossier) |
 
 **Blast (D15) — Phase 11 deliberately deferred, first project run through the new automated
 `run_ingest_extract_sync()` chain.** Used as the validation project for `reset/run_deepseek_reset.py`'s
@@ -670,7 +671,6 @@ _Tier: Summary · breadth batch pertama pasca-reset; riset web publik dengan pro
 
 | # | Project | Category | Era | Source | File | Raw source |
 |---|---------|----------|-----|--------|------|-----------|
-| 1 | Pendle | DeFi / Yield Tokenization (PT/YT) | 2021– | Web research (Messari, Datawallet, Uphold), 2026-08-20 | `Pioneer/Pendle.md` | publik (tautan di dossier) |
 | 2 | Algorand | Layer 1 / Pure Proof-of-Stake | 2019– | Web research (99bitcoins, Grokipedia), 2026-08-20 | `Pioneer/Algorand.md` | publik (tautan di dossier) |
 | 3 | Tron | Layer 1 / DPoS, stablecoin settlement | 2017– | Web research (HTX, CoinCodex, crypto.com), 2026-08-20 | `Pioneer/Tron.md` | publik (tautan di dossier) |
 | 4 | Toncoin | Layer 1 / PoS (asal PoW Giver), Telegram | 2020– | Web research (CCN, Bitget, Reflexivity), 2026-08-20 | `Pioneer/Toncoin.md` | publik (tautan di dossier) |

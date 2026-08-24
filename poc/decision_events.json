@@ -12734,5 +12734,36 @@
       "supporting_dataset": "Phase 3 EV-022, EV-023, Phase 6 TGE, Distribution, Vesting, Governance, Phase 7 Governance Ecosystem",
       "open_threads": null
     }
+  ],
+  "Pendle": [
+    {
+      "project": "Pendle",
+      "date": "2022-11",
+      "title": "Rebuild arsitektur penuh via Pendle V2",
+      "motivation": "V1 terbatas pada aset & expiry tetap; dibutuhkan skalabilitas untuk gelombang LST yang mulai terlihat (Lido tumbuh cepat). (MEDIUM) [Pintu, https://www.pintu.co.id/en/academy/post/pendle-update-2026-spendle-and-other-important-things-you-need-to-know]",
+      "constraint": "Tim kecil; TVL masih kecil (~$100-200M); pasar bear 2022 membatasi sumber daya. (Inferensi berdasar-kuat dari timeline TVL)",
+      "pressure": "Kompetisi vault optimizer (Convex/Yearn) & kebutuhan diferensiasi produk. (Inferensi)",
+      "tradeoff": "Migrasi penuh berarti meninggalkan likuiditas V1 yang ada; kompleksitas migrasi pengguna & integrasi. (Inferensi)",
+      "alternatives": "Iterasi inkremental V1 (tidak dipilih — tidak cukup untuk skala LST). (Inferensi LOW)",
+      "expectation_vs_actual": "Harapan: platform siap gelombang yield berikutnya. Actual: V2 menjadi fondasi ledakan TVL 2023-2025 ($230M → $8.9B). (MEDIUM) [Datawallet, https://www.datawallet.com/crypto/what-is-pendle-finance]",
+      "reactions": {
+        "Founder": "Positif — keputusan arsitektur paling berdampak dalam sejarah proyek. (MEDIUM)",
+        "VC": "Positif — lanjutan investasi Series A 2023 (Binance, Spartan) menandakan keyakinan pasca-V2. (MEDIUM) [Tracxn]",
+        "Retail": "Positif lambat — adopsi retail mengikuti gelombang LST 2023+, bukan saat V2 launch. (Inferensi)",
+        "Community": "Netral-positif — migrasi berjalan tanpa insiden besar dilaporkan. (Inferensi)",
+        "Developer": "Positif — integrasi aset baru lebih mudah; SDK V2. (Inferensi)",
+        "Institution": "Positif lambat — Citadels KYC kemudian (2025+) membuka pintu institusi. (MEDIUM) [Datawallet]",
+        "Validator": "Tidak relevan (tidak ada validator set sendiri).",
+        "Builder": "Positif — ekosistem PT/YT komposabel (integrasi LST/LRT). (MEDIUM)"
+      },
+      "grounding": "Timeline TVL + funding 2023 + integrasi LST terdokumentasi; motivasi internal sebagian inferensi.",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
+      "open_threads": null
+    }
   ]
 }

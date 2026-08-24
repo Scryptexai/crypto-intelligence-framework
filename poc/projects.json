@@ -694,18 +694,14 @@
   },
   {
     "n": "Pendle",
-    "tier": "Summary",
-    "file": "examples/Pioneer/Pendle.md",
-    "cat": "DeFi / Yield Tokenization (PT/YT)",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Pendle.md",
+    "cat": "DeFi / Yield Tokenization (PT/YT, Boros funding-rate)",
     "era": "2021–",
     "tags": [
       "defi",
-      "airdrop",
-      "restaking",
-      "liquid-staking",
       "amm",
-      "governance",
-      "shared-security"
+      "perps"
     ]
   },
   {

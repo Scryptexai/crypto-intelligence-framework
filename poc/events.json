@@ -27677,5 +27677,210 @@
       "_location": "",
       "_status": ""
     }
+  ],
+  "Pendle": [
+    {
+      "id": "pendle-EV-001",
+      "projectSlug": "pendle",
+      "name": "Pendahuluan \"Benchmark\" — konsep awal agregasi yield on-chain",
+      "date": "2020-11",
+      "type": "Founding",
+      "participants": [
+        "TN Lee",
+        "Vu Nguyen",
+        "GT",
+        "YK"
+      ],
+      "description": "Tim (TN Lee, Vu Nguyen, GT, YK) memperkenalkan \"Benchmark\" sebagai on-chain yield asset aggregator yang memisahkan dan memperdagangkan future yield.",
+      "result": "Konsep PT/YT terbentuk; berkembang menjadi Pendle.",
+      "source": "CIF Research Dossier",
+      "url": "https://messari.io/project/pendle/profile",
+      "affectedKnowledge": [],
+      "_location": "Remote",
+      "_status": "Completed"
+    },
+    {
+      "id": "pendle-EV-002",
+      "projectSlug": "pendle",
+      "name": "Ronde Series A awal $3.5M (Mechanism Capital, CMS Ventures, Spartan, dll.)",
+      "date": "2021-04-16",
+      "type": "Funding",
+      "participants": [
+        "Pendle",
+        "Mechanism Capital",
+        "CMS Ventures",
+        "Spartan Group"
+      ],
+      "description": "Pendle menutup ronde awal $3.5M (Tracxn) dari 15+ investor institusi, setahun setelah founding.",
+      "result": "Modal pengembangan menuju testnet & LBE.",
+      "source": "CIF Research Dossier",
+      "url": "https://tracxn.com/d/companies/pendle/__xRr_PBH5nTFW7hsedkR-sGn_5BXeOJARC8__GUDoHSw/funding-and-investors",
+      "affectedKnowledge": [],
+      "_location": "Remote",
+      "_status": "Completed"
+    },
+    {
+      "id": "pendle-EV-003",
+      "projectSlug": "pendle",
+      "name": "Deploy kontrak ERC-20 PENDLE",
+      "date": "2021-04-27",
+      "type": "Token Deployment",
+      "participants": [
+        "Pendle"
+      ],
+      "description": "Kontrak token PENDLE di-deploy di Ethereum sehari sebelum liquidity bootstrapping event.",
+      "result": "Token siap distribusi/pasar.",
+      "source": "CIF Research Dossier",
+      "url": "https://messari.io/project/pendle/profile",
+      "affectedKnowledge": [],
+      "_location": "Ethereum",
+      "_status": "Completed"
+    },
+    {
+      "id": "pendle-EV-004",
+      "projectSlug": "pendle",
+      "name": "Liquidity Bootstrapping Event (LBE) PENDLE — penggalangan ~$11.8M",
+      "date": "2021-04-28",
+      "type": "Token Sale",
+      "participants": [
+        "Pendle",
+        "komunitas pembeli"
+      ],
+      "description": "LBE publik untuk ERC-20 PENDLE; Tracxn mencatat ronde ICO $11.8M pada tanggal ini.",
+      "result": "Likuiditas awal + price discovery PENDLE.",
+      "source": "CIF Research Dossier",
+      "url": "https://tracxn.com/d/companies/pendle/__xRr_PBH5nTFW7hsedkR-sGn_5BXeOJARC8__GUDoHSw/funding-and-investors",
+      "affectedKnowledge": [],
+      "_location": "Ethereum",
+      "_status": "Completed"
+    },
+    {
+      "id": "pendle-EV-005",
+      "projectSlug": "pendle",
+      "name": "Mainnet Ethereum: mint YT/OT (kini PT) untuk aUSDC & cDAI",
+      "date": "2021-06-16",
+      "type": "Product Launch",
+      "participants": [
+        "Pendle",
+        "pengguna awal DeFi"
+      ],
+      "description": "Peluncuran mainnet: pengguna dapat mint YT/OT dari aUSDC dan cDAI, trade & provide liquidity; single-sided staking PENDLE menghasilkan yield.",
+      "result": "Produk yield-tokenization pertama live.",
+      "source": "CIF Research Dossier",
+      "url": "https://messari.io/project/pendle/profile",
+      "affectedKnowledge": [],
+      "_location": "Ethereum",
+      "_status": "Completed"
+    },
+    {
+      "id": "pendle-EV-006",
+      "projectSlug": "pendle",
+      "name": "Ekspansi ke Avalanche C-Chain",
+      "date": "2021-11-04",
+      "type": "Expansion",
+      "participants": [
+        "Pendle",
+        "ekosistem Avalanche"
+      ],
+      "description": "Pengumuman Pendle di Avalanche; pool diluncurkan November 2021.",
+      "result": "Multi-chain pertama; diversifikasi basis likuiditas.",
+      "source": "CIF Research Dossier",
+      "url": "https://messari.io/project/pendle/profile",
+      "affectedKnowledge": [],
+      "_location": "Avalanche",
+      "_status": "Completed"
+    },
+    {
+      "id": "pendle-EV-007",
+      "projectSlug": "pendle",
+      "name": "Peluncuran Pendle V2",
+      "date": "2022-11",
+      "type": "Product Launch",
+      "participants": [
+        "Pendle"
+      ],
+      "description": "V2 merombak arsitektur PT/YT (AMM khusus dengan skalabilitas lebih baik & expiry fleksibel), fondasi pertumbuhan era LST.",
+      "result": "Platform siap skala; dasar integrasi LST 2023+.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.pintu.co.id/en/academy/post/pendle-update-2026-spendle-and-other-important-things-you-need-to-know",
+      "affectedKnowledge": [],
+      "_location": "Multi-chain",
+      "_status": "Completed"
+    },
+    {
+      "id": "pendle-EV-008",
+      "projectSlug": "pendle",
+      "name": "Integrasi gelombang LST/restaking (stETH, EtherFi, Ethena USDe)",
+      "date": "2023–2024",
+      "type": "Ecosystem Growth",
+      "participants": [
+        "Pendle",
+        "Lido",
+        "EtherFi",
+        "Ethena",
+        "pengguna LST"
+      ],
+      "description": "Pendle menjadi venue utama tokenisasi yield LST/LRT; TVL naik dari ~$230M (awal 2023) menuju puncak ~$8.9B (Agustus 2025).",
+      "result": "Dominasi 50-60% pasar yield tokenization.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.datawallet.com/crypto/what-is-pendle-finance",
+      "affectedKnowledge": [],
+      "_location": "Multi-chain",
+      "_status": "Completed"
+    },
+    {
+      "id": "pendle-EV-009",
+      "projectSlug": "pendle",
+      "name": "Eksploitasi hot wallet ~$1.7M",
+      "date": "2024-12 (akhir 2024)",
+      "type": "Security Incident",
+      "participants": [
+        "Penyerang",
+        "tim Pendle"
+      ],
+      "description": "Pendle mengalami eksploitasi hot wallet ~$1.7M; kontrak inti tidak terdampak (audit multi-firma sebelumnya).",
+      "result": "Kerugian terbatas; operasional berlanjut; tidak ada kerugian dana pengguna dilaporkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.datawallet.com/crypto/what-is-pendle-finance",
+      "affectedKnowledge": [],
+      "_location": "Ethereum",
+      "_status": "Completed"
+    },
+    {
+      "id": "pendle-EV-010",
+      "projectSlug": "pendle",
+      "name": "Peluncuran Boros — pasar funding-rate perps di Arbitrum",
+      "date": "2025-08",
+      "type": "Product Launch",
+      "participants": [
+        "Pendle",
+        "trader perps"
+      ],
+      "description": "Boros membuka perdagangan funding rate perpetual (BTC/ETH) via oracle Chainlink (data Binance/Hyperliquid), leverage maks 1.4x; volume >$2.83B dengan notional OI $6.9B sejak launch.",
+      "result": "Kategori yield baru di luar on-chain assets; revenue protocol tumbuh (~$40M annualized 2025).",
+      "source": "CIF Research Dossier",
+      "url": "https://www.pintu.co.id/en/academy/post/pendle-update-2026-spendle-and-other-important-things-you-need-to-know; https://defi-intel.com/best-yield-protocols/",
+      "affectedKnowledge": [],
+      "_location": "Arbitrum",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "pendle-EV-011",
+      "projectSlug": "pendle",
+      "name": "sPENDLE menggantikan vePENDLE (lock-based staking → liquid staking)",
+      "date": "2026-01",
+      "type": "Tokenomics Change",
+      "participants": [
+        "Pendle",
+        "pemegang PENDLE"
+      ],
+      "description": "Sistem lock vePENDLE diganti sPENDLE yang likuid & fleksibel; bersamaan, inflasi 2%/tahun dijadwalkan mulai Mei 2026.",
+      "result": "Staking lebih fleksibel (~55-58M PENDLE staked, ~19.5% supply).",
+      "source": "CIF Research Dossier",
+      "url": "https://www.pintu.co.id/en/academy/post/pendle-update-2026-spendle-and-other-important-things-you-need-to-know; https://insights.blockbase.co/pendle-finance-investment-memo/",
+      "affectedKnowledge": [],
+      "_location": "Multi-chain",
+      "_status": "Completed"
+    }
   ]
 }
