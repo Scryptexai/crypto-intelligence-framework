@@ -7408,5 +7408,21 @@
       "assessment": null
     },
     "lessons": []
+  },
+  "Tron": {
+    "projectSlug": "tron",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {},
+    "priceTrajectory": {},
+    "retention": [],
+    "gaps": [],
+    "prospect": {
+      "met": null,
+      "unmet": null,
+      "signals": null,
+      "assessment": null
+    },
+    "lessons": []
   }
 }

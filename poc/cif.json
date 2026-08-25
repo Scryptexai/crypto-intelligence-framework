@@ -1,10 +1,10 @@
 {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-25 04:02 UTC",
+    "generated": "2026-08-25 05:37 UTC",
     "projects": 70,
-    "deep": 62,
-    "summary": 8,
+    "deep": 63,
+    "summary": 7,
     "sentiment": 0,
     "patterns": 16,
     "source": "examples/DatasetIndex.md + examples/PatternRegistry.md + examples/Sentiment/"
@@ -728,15 +728,14 @@
     },
     {
       "n": "Tron",
-      "tier": "Summary",
-      "file": "examples/Pioneer/Tron.md",
-      "cat": "Layer 1 / DPoS, stablecoin settlement",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Tron.md",
+      "cat": "Layer 1 / DPoS, USDT TRC-20 settlement + memecoin (SunPump)",
       "era": "2017–",
       "tags": [
         "l1",
-        "airdrop",
-        "first-mover",
-        "stablecoin"
+        "stablecoin",
+        "governance"
       ]
     },
     {

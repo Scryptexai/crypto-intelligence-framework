@@ -3175,5 +3175,28 @@
       "Foundation-heavy distribution vs persepsi desentralisasi",
       "Governance rewards (likuiditas terkunci) vs kebebasan holder"
     ]
+  },
+  "Tron": {
+    "projectSlug": "tron",
+    "strategicObjectives": [
+      "Menangkap niche stablecoin settlement global via fee rendah + kecepatan",
+      "Agresivitas pemasaran & akuisisi distribusi (BitTorrent) sebagai pengganti network-effect organik awal",
+      "Platform memecoin (SunPump) sebagai mesin revenue & aktivitas baru 2024"
+    ],
+    "decisionPatterns": [
+      "DPoS 27 SR untuk throughput & finalitas cepat dengan biaya desentralisasi",
+      "ICO pre-ban + konsentrasi insider 45%",
+      "Burn mechanism perlahan + fee rendah untuk menjaga utilitas transfer",
+      "Transisi Foundation→DAO sambil mempertahankan pengaruh pusat",
+      "Pivot narasi berulang (entertainment → payments → stablecoin hub → memecoin)"
+    ],
+    "riskResponse": [
+      "Melanjutkan ekspansi global meski gugatan SEC (fokus yurisdiksi non-AS)"
+    ],
+    "tradeOffs": [
+      "Sentralisasi vs performa & eksekusi cepat",
+      "Fee hampir nol vs revenue protocol langsung",
+      "Ketergantungan pada USDT TRC-20"
+    ]
   }
 }

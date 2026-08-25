@@ -43602,5 +43602,71 @@
         "EV-007"
       ]
     }
+  ],
+  "Tron": [
+    {
+      "id": "tron-K-001",
+      "projectSlug": "tron",
+      "name": "Niche stablecoin settlement dapat mengalahkan L1 \"lebih desentralisasi\" pada utilitas nyata",
+      "category": "Core Insight",
+      "description": "Fee rendah + kecepatan + default exchange flows menciptakan product-market-fit yang tahan siklus; dominasi TRC-20 >50% supply USDT global.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "CCN; BingX; eco.com.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "tron-K-002",
+      "projectSlug": "tron",
+      "name": "Konsentrasi insider + timing ICO pre-ban menciptakan kas besar namun liabilitas reputasi jangka panjang",
+      "category": "Core Insight",
+      "description": "45% insider & ICO 3 hari pre-ban memberi sumber daya dekade; biaya: gugatan SEC & narasi sentralisasi permanen.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "HTX.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "tron-K-003",
+      "projectSlug": "tron",
+      "name": "Dominasi satu kontrak stablecoin menjadikan L1 \"settlement chain\" dengan TVL DeFi kecil namun volume raksasa",
+      "category": "Pattern Candidate",
+      "description": "Utilitas payments > DeFi; revenue dari aktivitas, bukan TVL. — Fee rendah + integrasi exchange + remittance demand.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "EV-005; Market Intelligence.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-005"
+      ]
+    },
+    {
+      "id": "tron-K-004",
+      "projectSlug": "tron",
+      "name": "Platform memecoin in-house sebagai counter-cyclical revenue saat narasi lain mendingin",
+      "category": "Pattern Candidate",
+      "description": "Launchpad internal menangkap fee spekulasi tanpa bergantung dApp pihak ketiga. — Chain dengan fee rendah + figur founder kuat.",
+      "confidence": 30,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "EV-007.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-007"
+      ]
+    }
   ]
 }

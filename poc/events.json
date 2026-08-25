@@ -28007,5 +28007,151 @@
       "_location": "Global",
       "_status": "Ongoing"
     }
+  ],
+  "Tron": [
+    {
+      "id": "tron-EV-001",
+      "projectSlug": "tron",
+      "name": "Pendirian TRON Foundation & whitepaper \"desentralisasi internet\"",
+      "date": "2017-07",
+      "type": "Founding",
+      "participants": [
+        "Justin Sun"
+      ],
+      "description": "Justin Sun mendirikan TRON Foundation dengan visi internet terdesentralisasi; whitepaper dirilis.",
+      "result": "Persiapan ICO.",
+      "source": "CIF Research Dossier",
+      "url": "https://coincodex.com/crypto/tron/",
+      "affectedKnowledge": [],
+      "_location": "Tiongkok",
+      "_status": "Completed"
+    },
+    {
+      "id": "tron-EV-002",
+      "projectSlug": "tron",
+      "name": "ICO TRX: 40 miliar token (40% supply) terjual, ~$70 juta (15.200 BTC) @ $0.0019",
+      "date": "2017-08-31",
+      "type": "Token Sale",
+      "participants": [
+        "TRON Foundation",
+        "pembeli ICO"
+      ],
+      "description": "ICO berlangsung 31 Agustus–2 September 2017 (3 hari per HTX; \"month-long\" per CoinCodex — Conflict C-002), tepat sebelum larangan ICO Tiongkok; 45% supply ke Justin Sun + TRON Foundation (konsentrasi dikritik).",
+      "result": "TRX (ERC-20) trading September 2017; kas pengembangan besar.",
+      "source": "CIF Research Dossier",
+      "url": "https://square.htx.com/tron-nasdaq-listing-journey-2025/; https://coincodex.com/crypto/tron/",
+      "affectedKnowledge": [],
+      "_location": "Tiongkok/global",
+      "_status": "Completed"
+    },
+    {
+      "id": "tron-EV-003",
+      "projectSlug": "tron",
+      "name": "Mainnet Odyssey 2.0 + migrasi ERC-20 → native TRX",
+      "date": "2018-06",
+      "type": "Mainnet Launch",
+      "participants": [
+        "TRON Foundation"
+      ],
+      "description": "Mainnet live (Mei/Juni 2018 — Conflict C-001); token bermigrasi dari Ethereum ke jaringan native.",
+      "result": "Independensi jaringan; DPoS 27 Super Representatives.",
+      "source": "CIF Research Dossier",
+      "url": "https://crypto.com/us/coins-ai/tron/what-is; https://coincodex.com/crypto/tron/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "tron-EV-004",
+      "projectSlug": "tron",
+      "name": "Akuisisi BitTorrent",
+      "date": "2018-07",
+      "type": "Acquisition",
+      "participants": [
+        "TRON",
+        "BitTorrent"
+      ],
+      "description": "TRON mengakuisisi BitTorrent (Juli 2018) — basis pengguna P2P raksasa & eksperimen token BTT.",
+      "result": "Distribusi pengguna + token BTT (2019); kemudian jadi bagian gugatan SEC.",
+      "source": "CIF Research Dossier",
+      "url": "https://crypto.com/us/coins-ai/tron/what-is",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "tron-EV-005",
+      "projectSlug": "tron",
+      "name": "Adopsi USDT TRC-20 → TRON menjadi carrier stablecoin terbesar",
+      "date": "2019–2023",
+      "type": "Adoption",
+      "participants": [
+        "Tether",
+        "exchange",
+        "pengguna remittance"
+      ],
+      "description": "Fee rendah + kecepatan membuat TRC-20 USDT dominan untuk remittance & exchange flows; melewati Ethereum awal 2023; >$80B (mid-2025) = >50% supply USDT global.",
+      "result": "Product-market-fit stabil: volume settlement harian $23.5B (Agustus 2025) vs Ethereum $20B.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.ccn.com/education/crypto/tron-vs-ethereum-usdt-dominance-explained/; https://bingx.com/en/learn/article/what-is-usdt-trc20",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "tron-EV-006",
+      "projectSlug": "tron",
+      "name": "Gugatan SEC terhadap Justin Sun / TRON (TRX & BTT unregistered; wash trading; endorsemen selebriti)",
+      "date": "2023",
+      "type": "Regulatory",
+      "participants": [
+        "SEC",
+        "Justin Sun",
+        "TRON"
+      ],
+      "description": "SEC menuduh penawaran sekuritas tidak terdaftar + manipulasi pasar; risiko hukum berkelanjutan.",
+      "result": "Tekanan reputasi & ketidakpastian listing AS; operasi global berlanjut.",
+      "source": "CIF Research Dossier",
+      "url": "https://square.htx.com/tron-nasdaq-listing-journey-2025/",
+      "affectedKnowledge": [],
+      "_location": "AS",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "tron-EV-007",
+      "projectSlug": "tron",
+      "name": "Peluncuran SunPump (memecoin launchpad) + insentif Meme Ecosystem Boost $10M",
+      "date": "2024-08-09",
+      "type": "Product Launch",
+      "participants": [
+        "Justin Sun",
+        "SUN.io team",
+        "TronDAO"
+      ],
+      "description": "SunPump live 9 Agustus 2024 (diumumkan ~13 Agustus); pendapatan ~$1.1M dalam 11 hari; 98,000+ token diluncurkan hingga mid-2025; fee nol 6 bulan awal.",
+      "result": "Lonjakan aktivitas & revenue jaringan; TRX terdorong.",
+      "source": "CIF Research Dossier",
+      "url": "https://en.cryptonomist.ch/2024/08/21/sunpump-the-new-platform-for-the-launch-of-memecoin-on-tron-records-a-revenue-record/; https://bingx.com/en/learn/article/what-is-sunpump-and-how-to-launch-a-tron-memecoin-on-it",
+      "affectedKnowledge": [],
+      "_location": "TRON",
+      "_status": "Completed"
+    },
+    {
+      "id": "tron-EV-008",
+      "projectSlug": "tron",
+      "name": "Nasdaq opening bell (perjalanan listing/entitas terkait TRON)",
+      "date": "2025",
+      "type": "Milestone",
+      "participants": [
+        "TRON/entitas terkait"
+      ],
+      "description": "Entitas terkait TRON berpartisipasi di Nasdaq opening bell 2025 — simbol legitimasi pasar tradisional di tengah gugatan SEC.",
+      "result": "Narasi legitimasi institusional.",
+      "source": "CIF Research Dossier",
+      "url": "https://square.htx.com/tron-nasdaq-listing-journey-2025/",
+      "affectedKnowledge": [],
+      "_location": "New York",
+      "_status": "Completed"
+    }
   ]
 }

@@ -12796,5 +12796,36 @@
       "supporting_dataset": null,
       "open_threads": null
     }
+  ],
+  "Tron": [
+    {
+      "project": "Tron",
+      "date": "2024-08-09",
+      "title": "Meluncurkan SunPump di tengah pasar memecoin yang mulai mendingin",
+      "motivation": "Menangkap gelombang memecoin & revenue fee; memanfaatkan fee rendah TRON vs Solana. (MEDIUM) [Cryptonomist, https://en.cryptonomist.ch/2024/08/21/sunpump-the-new-platform-for-the-launch-of-memecoin-on-tron-records-a-revenue-record/]",
+      "constraint": "Pasar memecoin mendingin (-56.8% kapitalisasi sejak Des 2024 per BeInCrypto) — timing berisiko. (MEDIUM) [BeInCrypto, https://beincrypto.com/meme-coin-market-cools-can-justin-sun-and-tron-lead-the-next-surge/]",
+      "pressure": "Kompetisi Pump.fun (Solana) & kebutuhan revenue jaringan baru. (MEDIUM)",
+      "tradeoff": "Fee nol 6 bulan mengorbankan revenue awal demi akuisisi. (MEDIUM) [BeInCrypto]",
+      "alternatives": "Tidak memasuki pasar memecoin (ditolak — kehilangan momentum narasi). (Inferensi LOW)",
+      "expectation_vs_actual": "Harapan: dominasi memecoin baru. Actual: revenue awal kuat ($1.1M/11 hari) lalu pasar mendingin; komitmen Sun berlanjut (janji tanpa profit pribadi). (MEDIUM) [Cryptonomist; BeInCrypto]",
+      "reactions": {
+        "Founder": "Positif — mesin revenue & narasi baru. (MEDIUM)",
+        "VC": "Tidak relevan (tidak ada VC tradisional signifikan).",
+        "Retail": "Positif awal (akses memecoin fee rendah); lalu kehati-hatian saat pasar mendingin. (MEDIUM)",
+        "Community": "Aktif; program insentif $10M menarik builder. (MEDIUM)",
+        "Developer": "Positif — launchpad no-code & fee nol awal. (MEDIUM)",
+        "Institution": "Hati-hati — gugatan SEC membatasi kenyamanan institusi AS. (MEDIUM)",
+        "Validator": "Positif — aktivitas tinggi menaikkan reward SR. (MEDIUM)",
+        "Builder": "Positif — 98,000+ token diluncurkan hingga mid-2025. (MEDIUM)"
+      },
+      "grounding": "Cryptonomist, BeInCrypto, BingX + timeline internal.",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
+      "open_threads": null
+    }
   ]
 }

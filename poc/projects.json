@@ -717,15 +717,14 @@
   },
   {
     "n": "Tron",
-    "tier": "Summary",
-    "file": "examples/Pioneer/Tron.md",
-    "cat": "Layer 1 / DPoS, stablecoin settlement",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Tron.md",
+    "cat": "Layer 1 / DPoS, USDT TRC-20 settlement + memecoin (SunPump)",
     "era": "2017–",
     "tags": [
       "l1",
-      "airdrop",
-      "first-mover",
-      "stablecoin"
+      "stablecoin",
+      "governance"
     ]
   },
   {

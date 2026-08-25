@@ -54658,5 +54658,109 @@
         "evidence": "(LOW) [Grokipedia, https://grokipedia.com/page/Algorand]"
       }
     }
+  ],
+  "Tron": [
+    {
+      "id": "tron-ENT-001",
+      "projectSlug": "tron",
+      "name": "Justin Sun",
+      "type": "Person",
+      "status": null,
+      "description": "Founder; figur sentral pemasaran & strategi; dituduh SEC 2023 (unregistered securities TRX/BTT + wash trading + endorsemen selebriti)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [HTX, https://square.htx.com/tron-nasdaq-listing-journey-2025/]"
+      }
+    },
+    {
+      "id": "tron-ENT-002",
+      "projectSlug": "tron",
+      "name": "TRON Foundation / Tron DAO",
+      "type": "Foundation",
+      "status": null,
+      "description": "Pengelola awal distribusi & pengembangan; bertransisi ke DAO",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [CoinCodex, https://coincodex.com/crypto/tron/]"
+      }
+    },
+    {
+      "id": "tron-ENT-003",
+      "projectSlug": "tron",
+      "name": "BitTorrent",
+      "type": "Company",
+      "status": null,
+      "description": "Diakuisisi Juli 2018; basis distribusi pengguna & token BTT",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [crypto.com, https://crypto.com/us/coins-ai/tron/what-is; CoinCodex, https://coincodex.com/crypto/tron/]"
+      }
+    },
+    {
+      "id": "tron-ENT-004",
+      "projectSlug": "tron",
+      "name": "Tether (USDT)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Issuer USDT TRC-20 — >50% supply global USDT di TRON sejak awal 2023; driver volume utama",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [CCN, https://www.ccn.com/education/crypto/tron-vs-ethereum-usdt-dominance-explained/; BingX, https://bingx.com/en/learn/article/what-is-usdt-trc20]"
+      }
+    },
+    {
+      "id": "tron-ENT-005",
+      "projectSlug": "tron",
+      "name": "SEC (US Securities and Exchange Commission)",
+      "type": "Government",
+      "status": null,
+      "description": "Penggugat 2023: TRX/BTT unregistered securities, wash trading, endorsemen selebriti tidak diungkapkan",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [HTX, https://square.htx.com/tron-nasdaq-listing-journey-2025/]"
+      }
+    },
+    {
+      "id": "tron-ENT-006",
+      "projectSlug": "tron",
+      "name": "Binance",
+      "type": "Company",
+      "status": null,
+      "description": "Listing awal TRX (2017) & BTT; venue utama likuiditas",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2017–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(MEDIUM) [CoinCodex, https://coincodex.com/crypto/tron/]"
+      }
+    }
   ]
 }
