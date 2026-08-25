@@ -12765,5 +12765,36 @@
       "supporting_dataset": null,
       "open_threads": null
     }
+  ],
+  "Algorand": [
+    {
+      "project": "Algorand",
+      "date": "2021-10-01",
+      "title": "Mengganti participation rewards pasif dengan governance rewards",
+      "motivation": "Reward pasif tidak menciptakan keterlibatan & tidak mendukung desentralisasi keputusan; holder menerima ~7.5% tanpa komitmen. (MEDIUM) [99bitcoins-staking, https://99bitcoins.com/cryptocurrency/best-crypto-staking-coins/algorand/]",
+      "constraint": "Tekanan komunitas atas \"free riding\"; kebutuhan mengunci likuiditas untuk stabilitas. (Inferensi)",
+      "pressure": "Kompetisi staking chain lain (Cardano, Tezos, PoS ETH menjelang merge) menaikkan standar insentif partisipasi. (Inferensi MEDIUM)",
+      "tradeoff": "Holder kehilangan likuiditas 3 bulan per periode; sebagian memilih tidak berpartisipasi. (MEDIUM) [Ledger, https://www.ledger.com/staking-algorand]",
+      "alternatives": "Mempertahankan participation rewards (ditolak — tidak mendukung governance); staking delegasi langsung (diadopsi kemudian 2025). (MEDIUM)",
+      "expectation_vs_actual": "Harapan: partisipasi voting tinggi + likuiditas terkendali. Actual: program berjalan 2021-2024 dengan partisipasi signifikan, lalu dihentikan 2025 digantikan consensus rewards. (MEDIUM) [99bitcoins-staking]",
+      "reactions": {
+        "Founder": "Positif — tujuan keterlibatan tercapai. (MEDIUM)",
+        "VC": "Netral — tidak berdampak langsung pada alokasi vesting. (Inferensi)",
+        "Retail": "Mixed — reward menarik bagi yang berkomitmen; keluhan kehilangan likuiditas & kompleksitas (MyAlgo wallet_required). (MEDIUM) [Ledger]",
+        "Community": "Positif awal; adaptasi berulang terhadap perubahan skema menimbulkan kelelahan. (Inferensi MEDIUM)",
+        "Developer": "Netral — tidak mengubah tooling. (Inferensi)",
+        "Institution": "Positif — struktur foundation + transparansi jadwal rilis disukai enterprise. (Inferensi MEDIUM)",
+        "Validator": "Positif — participation node rewards berlanjut via grants; keamanan terjaga. (MEDIUM)",
+        "Builder": "Netral — insentif builder tidak terikat skema holder. (Inferensi)"
+      },
+      "grounding": "Sumber staking/governance (99bitcoins, Ledger, Algodaddy) + distribusi table.",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
+      "open_threads": null
+    }
   ]
 }

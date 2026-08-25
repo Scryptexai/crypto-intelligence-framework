@@ -706,15 +706,13 @@
   },
   {
     "n": "Algorand",
-    "tier": "Summary",
-    "file": "examples/Pioneer/Algorand.md",
-    "cat": "Layer 1 / Pure Proof-of-Stake",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Algorand.md",
+    "cat": "Layer 1 / Pure Proof-of-Stake (PPoS)",
     "era": "2019–",
     "tags": [
       "l1",
-      "airdrop",
-      "governance",
-      "mining"
+      "governance"
     ]
   },
   {

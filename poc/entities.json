@@ -54554,5 +54554,109 @@
         "evidence": "(MEDIUM) [defi-intel, https://defi-intel.com/best-yield-protocols/]"
       }
     }
+  ],
+  "Algorand": [
+    {
+      "id": "algorand-ENT-001",
+      "projectSlug": "algorand",
+      "name": "Silvio Micali",
+      "type": "Person",
+      "status": null,
+      "description": "Founder & inventor PPoS/hashgraph-alternatif consensus; Turing Award (2012) atas kriptografi",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Grokipedia, https://grokipedia.com/page/Algorand]"
+      }
+    },
+    {
+      "id": "algorand-ENT-002",
+      "projectSlug": "algorand",
+      "name": "Jing Chen",
+      "type": "Person",
+      "status": null,
+      "description": "Co-author whitepaper Algorand 2017",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2017–(awal)",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Grokipedia, https://grokipedia.com/page/Algorand]"
+      }
+    },
+    {
+      "id": "algorand-ENT-003",
+      "projectSlug": "algorand",
+      "name": "Algorand Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "Pengelola distribusi token, ekosistem, grants; penyelenggara Dutch auction 2019 & governance program",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [99bitcoins, https://99bitcoins.com/cryptocurrency/what-is-algorand/]"
+      }
+    },
+    {
+      "id": "algorand-ENT-004",
+      "projectSlug": "algorand",
+      "name": "Algorand Inc.",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas pengembangan inti protokol (software)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Grokipedia, https://grokipedia.com/page/Algorand]"
+      }
+    },
+    {
+      "id": "algorand-ENT-005",
+      "projectSlug": "algorand",
+      "name": "Relay node runners (komunitas awal)",
+      "type": "DAO",
+      "status": null,
+      "description": "Penerima alokasi node-running grants 25% untuk bootstrap infrastruktur",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2019–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(MEDIUM) [Medium/PowerTrade, https://medium.com/@powertrade_options/algorand-options-unleashed-high-speed-algo-trading-with-advanced-strategies-on-powertrade-ee850edb7dd8]"
+      }
+    },
+    {
+      "id": "algorand-ENT-006",
+      "projectSlug": "algorand",
+      "name": "Union Square Ventures / investor awal",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor equity awal Algorand Inc. (detail ronde tidak lengkap di sumber publik; nama spesifik tidak diverifikasi turn ini)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "LOW",
+        "period": "2018–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(LOW) [Grokipedia, https://grokipedia.com/page/Algorand]"
+      }
+    }
   ]
 }

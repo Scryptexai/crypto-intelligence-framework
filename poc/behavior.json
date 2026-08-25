@@ -3151,5 +3151,29 @@
       "Modular Stack (Shared Prover/VM) vs. Sovereign Chain Independence (Own Prover, Own Token, Own Economics)",
       "Early Token Launch (TGE 2024, Post-Mainnet Maturity) vs. Token Utility Readiness (Staking, Fee Payment, Prover Security Not Live)"
     ]
+  },
+  "Algorand": {
+    "projectSlug": "algorand",
+    "strategicObjectives": [
+      "Mencapai finalitas & throughput tinggi tanpa mengorbankan desentralisasi (PPoS)",
+      "Distribusi token via auction + grants untuk bootstrap infrastruktur tanpa ICO spekulatif",
+      "Transisi insentif: participation → governance → staking rewards"
+    ],
+    "decisionPatterns": [
+      "Consensus akademis-first (PPoS) sebagai diferensiasi vs Nakamoto/PoS konvensional",
+      "State proofs untuk interoperabilitas ringan tanpa bridge terpercaya",
+      "Dutch auction bertahap sebagai mekanisme price-discovery \"adil\"",
+      "Yayasan memegang tranche besar + vesting panjang (~2030)",
+      "Rewarded governance (commit+voting) lalu pengakhiran rewards 2024-2025",
+      "Distribusi terpusat-foundation dengan pelepasan bertahap"
+    ],
+    "riskResponse": [
+      "Mengganti skema insentif bila tujuan bergeser (partisipasi→voting→keamanan)"
+    ],
+    "tradeOffs": [
+      "Kecepatan/finalitas vs adopsi ekosistem",
+      "Foundation-heavy distribution vs persepsi desentralisasi",
+      "Governance rewards (likuiditas terkunci) vs kebebasan holder"
+    ]
   }
 }

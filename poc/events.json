@@ -27882,5 +27882,130 @@
       "_location": "Multi-chain",
       "_status": "Completed"
     }
+  ],
+  "Algorand": [
+    {
+      "id": "algorand-EV-001",
+      "projectSlug": "algorand",
+      "name": "Whitepaper Algorand (Micali & Chen) — PPoS & cryptographic sortition",
+      "date": "2017",
+      "type": "Founding",
+      "participants": [
+        "Silvio Micali",
+        "Jing Chen"
+      ],
+      "description": "Publikasi whitepaper \"Algorand: Scaling Byzantine Agreements for Cryptocurrencies\" (SOSP 2017) — fondasi PPoS dengan finalitas instan tanpa forking.",
+      "result": "Pendirian Algorand Inc. & pengembangan protokol.",
+      "source": "CIF Research Dossier",
+      "url": "https://grokipedia.com/page/Algorand",
+      "affectedKnowledge": [],
+      "_location": "MIT / AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "algorand-EV-002",
+      "projectSlug": "algorand",
+      "name": "Testnet awal dibuka untuk partisipan pertama",
+      "date": "2018-06",
+      "type": "Testnet Launch",
+      "participants": [
+        "Algorand Inc."
+      ],
+      "description": "Testnet dimulai (Juni 2018 per 99bitcoins; Grokipedia menyebut April 2019 untuk testnet publik — lihat Conflict C-002).",
+      "result": "Validasi protokol sebelum mainnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://99bitcoins.com/cryptocurrency/what-is-algorand/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "algorand-EV-003",
+      "projectSlug": "algorand",
+      "name": "Mainnet live + Dutch auction ALGO pertama (25 juta token)",
+      "date": "2019-06-19",
+      "type": "TGE",
+      "participants": [
+        "Algorand Foundation",
+        "pembeli auction"
+      ],
+      "description": "Mainnet PPoS live; Algorand Foundation menjual 25 juta ALGO via serangkaian Dutch auction (harga awal dilaporkan berbeda antar sumber — Conflict C-001); 0.25% supply terjual pada auction awal.",
+      "result": "ALGO masuk sirkulasi; model distribusi unik (auction menurun + alokasi grants).",
+      "source": "CIF Research Dossier",
+      "url": "https://99bitcoins.com/cryptocurrency/what-is-algorand/; https://grokipedia.com/page/Algorand",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "algorand-EV-004",
+      "projectSlug": "algorand",
+      "name": "Era participation rewards: reward otomatis untuk holding ALGO",
+      "date": "2019–2021",
+      "type": "Incentive Program",
+      "participants": [
+        "Pemegang ALGO"
+      ],
+      "description": "Pemegang ALGO menerima reward otomatis (~7.5% APY era awal) tanpa komitmen — distribusi 17.5% participation rewards berjalan.",
+      "result": "Adopsi holder awal; kritik sentralisasi distribusi foundation.",
+      "source": "CIF Research Dossier",
+      "url": "https://99bitcoins.com/cryptocurrency/best-crypto-staking-coins/algorand/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "algorand-EV-005",
+      "projectSlug": "algorand",
+      "name": "Transisi ke Algorand Governance Program (commit 3 bulan + voting)",
+      "date": "2021-10-01",
+      "type": "Incentive Change",
+      "participants": [
+        "Algorand Foundation",
+        "governors"
+      ],
+      "description": "Participation rewards pasif diganti governance rewards: komitmen 3 bulan + partisipasi voting untuk reward; staking rewards pasif dihapus bertahap (per Ledger: dropped to 0 per April 2022).",
+      "result": "Keterlibatan governance naik; likuiditas holder terkunci per kuartal.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.algodaddy.org/2021/11/algorand-staking-governance.html; https://www.ledger.com/staking-algorand",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "algorand-EV-006",
+      "projectSlug": "algorand",
+      "name": "Rebrand & fokus enterprise/RWA berkelanjutan; xDay 2022 evolusi ekosistem",
+      "date": "2022-11",
+      "type": "Strategy",
+      "participants": [
+        "Algorand Foundation"
+      ],
+      "description": "Fokus ke enterprise, tokenization aset riil, dan skalabilitas; governance berlanjut hingga 2024.",
+      "result": "Posisi sebagai L1 enterprise/RWA.",
+      "source": "CIF Research Dossier",
+      "url": "https://grokipedia.com/page/Algorand",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "algorand-EV-007",
+      "projectSlug": "algorand",
+      "name": "Peluncuran consensus/staking rewards program (pengganti governance rewards)",
+      "date": "2025",
+      "type": "Incentive Change",
+      "participants": [
+        "Algorand Foundation",
+        "stakers"
+      ],
+      "description": "Governance rewards diakhiri; program staking baru dengan 4 opsi (solo, pool, delegated, liquidity staking); minimum solo 30,000 ALGO; voting governance tetap aktif tanpa insentif moneter.",
+      "result": "Insentif keamanan kembali ke staking; governance menjadi sukarela murni.",
+      "source": "CIF Research Dossier",
+      "url": "https://99bitcoins.com/cryptocurrency/best-crypto-staking-coins/algorand/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Ongoing"
+    }
   ]
 }

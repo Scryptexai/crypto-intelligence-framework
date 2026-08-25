@@ -43534,5 +43534,73 @@
         "EV-009"
       ]
     }
+  ],
+  "Algorand": [
+    {
+      "id": "algorand-K-001",
+      "projectSlug": "algorand",
+      "name": "Distribusi Dutch auction + grants menghasilkan bootstrap infrastruktur nyata namun narasi sentralisasi menetap",
+      "category": "Core Insight",
+      "description": "25% node grants mengamankan relay nodes awal; foundation tranche membiayai dekade; tetapi persepsi \"foundation-heavy\" menekan narasi desentralisasi.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Distribution table 99bitcoins; Medium/PowerTrade.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "algorand-K-002",
+      "projectSlug": "algorand",
+      "name": "Evolusi insentif tiga-era (participation→governance→staking) menunjukkan adaptasi tujuan insentif lintas siklus",
+      "category": "Core Insight",
+      "description": "Setiap skema diganti saat tujuan tercapai/kedaluwarsa — pola manajemen insentif yang jarang didokumentasikan proyek lain.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "99bitcoins-staking; Ledger; Algodaddy.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "algorand-K-003",
+      "projectSlug": "algorand",
+      "name": "L1 akademis-first dengan consensus novel memenangkan reputasi teknis tetapi kalah network-effect ekosistem terhadap EVM-general chains",
+      "category": "Pattern Candidate",
+      "description": "Keunggulan konsensus ≠ adopsi developer; distribusi & kompatibilitas EVM lebih menentukan pertumbuhan ekosistem. — L1 non-EVM dengan desain consensus baru.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "EV-001..EV-007; market adoption.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-001",
+        "EV-007"
+      ]
+    },
+    {
+      "id": "algorand-K-004",
+      "projectSlug": "algorand",
+      "name": "Rewarded governance efektif menaikkan partisipasi tetapi menciptakan ekspektasi imbal hasil yang sulit dihentikan tanpa gesekan",
+      "category": "Pattern Candidate",
+      "description": "Insentif voting → partisipasi tinggi → penghentian reward → keluhan & migrasi perhatian. — Protokol mengganti skema insentif governance.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "EV-005, EV-007.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-005",
+        "EV-007"
+      ]
+    }
   ]
 }

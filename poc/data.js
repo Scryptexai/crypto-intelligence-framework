@@ -2,10 +2,10 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-24 12:12 UTC",
+    "generated": "2026-08-25 04:02 UTC",
     "projects": 70,
-    "deep": 61,
-    "summary": 9,
+    "deep": 62,
+    "summary": 8,
     "sentiment": 0,
     "patterns": 16,
     "source": "examples/DatasetIndex.md + examples/PatternRegistry.md + examples/Sentiment/"
@@ -718,15 +718,13 @@ window.CIF = {
     },
     {
       "n": "Algorand",
-      "tier": "Summary",
-      "file": "examples/Pioneer/Algorand.md",
-      "cat": "Layer 1 / Pure Proof-of-Stake",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Algorand.md",
+      "cat": "Layer 1 / Pure Proof-of-Stake (PPoS)",
       "era": "2019–",
       "tags": [
         "l1",
-        "airdrop",
-        "governance",
-        "mining"
+        "governance"
       ]
     },
     {
