@@ -555,6 +555,7 @@ _Tier: Deep · anchor projects with full causal history._
 | D73 | Pendle | DeFi / Yield Tokenization (PT/YT, Boros funding-rate) | 2021– | Web research langsung (Messari, Tracxn, CryptoRank, Blockbase, Datawallet, Pintu, defi-intel), 2026-08-22 — upgrade Summary→Deep | `CaseStudies/Pendle.md` | publik (tautan di dossier) |
 | D74 | Algorand | Layer 1 / Pure Proof-of-Stake (PPoS) | 2019– | Web research langsung (99bitcoins, Grokipedia, Ledger, Algodaddy, Medium), 2026-08-22 — upgrade Summary→Deep | `CaseStudies/Algorand.md` | publik (tautan di dossier) |
 | D75 | Tron | Layer 1 / DPoS, USDT TRC-20 settlement + memecoin (SunPump) | 2017– | Web research langsung (HTX, CoinCodex, crypto.com, CCN, BingX, Cryptonomist, BeInCrypto), 2026-08-22 — upgrade Summary→Deep | `CaseStudies/Tron.md` | publik (tautan di dossier) |
+| D76 | Toncoin | Layer 1 / PoS (Catchain) dynamic sharding, integrasi Telegram mini-apps | 2020– (asal Telegram 2018) | Web research langsung (coin.space, Wublock, CoinShares, DACM, CoinMonks, White Rabbit, CoinStats, Encoding Labs, Messari, Bitget, Decrypt, BeInCrypto, The Defiant, Phemex, Flagship, Changelly, BestChange, CoinLaunch), 2026-08-25 — upgrade Summary→Deep | `CaseStudies/Toncoin.md` | publik (tautan di dossier) |
 
 **Blast (D15) — Phase 11 deliberately deferred, first project run through the new automated
 `run_ingest_extract_sync()` chain.** Used as the validation project for `reset/run_deepseek_reset.py`'s
@@ -673,7 +674,6 @@ _Tier: Summary · breadth batch pertama pasca-reset; riset web publik dengan pro
 
 | # | Project | Category | Era | Source | File | Raw source |
 |---|---------|----------|-----|--------|------|-----------|
-| 4 | Toncoin | Layer 1 / PoS (asal PoW Giver), Telegram | 2020– | Web research (CCN, Bitget, Reflexivity), 2026-08-20 | `Pioneer/Toncoin.md` | publik (tautan di dossier) |
 | 5 | Kaspa | Layer 1 / PoW BlockDAG (GHOSTDAG) | 2021– | Web research (Coinstancy, Grokipedia, BYDFi), 2026-08-20 | `Pioneer/Kaspa.md` | publik (tautan di dossier) |
 | 6 | Hedera | Layer 1 enterprise / Hashgraph aBFT | 2019– | Web research (Hedera Council, Upay), 2026-08-20 | `Pioneer/Hedera.md` | publik (tautan di dossier) |
 

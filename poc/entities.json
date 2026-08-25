@@ -54762,5 +54762,160 @@
         "evidence": "(MEDIUM) [CoinCodex, https://coincodex.com/crypto/tron/]"
       }
     }
+  ],
+  "Toncoin": [
+    {
+      "id": "toncoin-ENT-001",
+      "projectSlug": "toncoin",
+      "name": "Pavel Durov",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder Telegram & TON; mundur dari TON Mei 2020 akibat SEC; ditangkap di Paris 2024-08-24 (12 dakwaan, bail €5 juta) — memicu crash TON ~15-17%; pasca-2025 memimpin reintegrasi Telegram–TON (MTONGA)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [BeInCrypto, https://beincrypto.com/telegram-pavel-durovs-arrested-in-france/; Phemex, https://phemex.com/academy/who-is-pavel-durov-telegram-founder-story]"
+      }
+    },
+    {
+      "id": "toncoin-ENT-002",
+      "projectSlug": "toncoin",
+      "name": "Nikolai Durov",
+      "type": "Person",
+      "status": null,
+      "description": "Chief architect TON; penulis whitepaper; perancang Infinite Sharding Paradigm, TVM, struktur multi-blockchain",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [CoinStats, https://coinstats.app/ai/a/fundamental-analysis-the-open-network]"
+      }
+    },
+    {
+      "id": "toncoin-ENT-003",
+      "projectSlug": "toncoin",
+      "name": "Telegram",
+      "type": "Company",
+      "status": null,
+      "description": "Pengembang awal (2018–2020) & penjual SAFT $1.7B; exit Mei 2020 pasca-injunction SEC; kembali April 2026 sebagai operator utama + validator terbesar (2.2 juta TON di-stake 2026-04-30, program MTONGA)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Wublock, https://wublock.substack.com/p/compliance-chronicles-the-evolution; CoinShares, https://coinshares.com/us/insights/knowledge/toncoin-ton-guide/]"
+      }
+    },
+    {
+      "id": "toncoin-ENT-004",
+      "projectSlug": "toncoin",
+      "name": "SEC (US Securities and Exchange Commission)",
+      "type": "Government",
+      "status": null,
+      "description": "Menggugat Telegram Group Inc. & TON Issuer Inc. Oktober 2019 (penjualan Gram $1.7B = sekuritas tidak terdaftar); preliminary injunction Judge Castel 2020-03-24; settlement 2020-06-26: refund $1.224B + penalti $18.5M",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–2020",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Wublock, https://wublock.substack.com/p/compliance-chronicles-the-evolution]"
+      }
+    },
+    {
+      "id": "toncoin-ENT-005",
+      "projectSlug": "toncoin",
+      "name": "TON Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "Organisasi komunitas/nirlaba pendukung ekosistem; terbentuk seiring renama mainnet Mei 2021 (tanggal formalisasi disengketakan — Conflict C-004); per April 2026 peran utamanya diambil alih Telegram",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "governance-dependency",
+        "evidence": "(MEDIUM) [coin.space, https://coin.space/toncoin-origin-story-how-to-buy-and-where-to-store/; CoinStats, https://coinstats.app/ai/a/fundamental-analysis-the-open-network]"
+      }
+    },
+    {
+      "id": "toncoin-ENT-006",
+      "projectSlug": "toncoin",
+      "name": "Tether (USDT/XAUT)",
+      "type": "Protocol",
+      "status": null,
+      "description": "USDT + XAUT diluncurkan native di TON April 2024 (diumumkan di Token2049 Dubai); >$200M beredar dalam <1 bulan; ~$1.43B per November 2025; driver likuiditas utama",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Flagship, https://flagship.fyi/outposts/blockchains/the-state-of-the-ton-ecosystem-may-2024/; Changelly, https://changelly.com/blog/ton-ecosystem/; CryptoNewsNavigator, https://www.cryptonewsnavigator.com/academy/article/toncoin-survived-telegrams-sec-battle-and-built-something-bigger]"
+      }
+    },
+    {
+      "id": "toncoin-ENT-007",
+      "projectSlug": "toncoin",
+      "name": "Notcoin",
+      "type": "Protocol",
+      "status": null,
+      "description": "Game tap-to-earn Telegram yang mempopulerkan format mini-app airdrop; 35 juta pemain; TGE token NOT 2024-05-16 di TON (listing Binance/OKX/Bybit); 1 NOT per 1.000 koin in-game",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Flagship, https://flagship.fyi/outposts/blockchains/the-state-of-the-ton-ecosystem-may-2024/; Decrypt, https://decrypt.co/236360/hamster-kombat-telegram-game-airdrop-everything-need-know]"
+      }
+    },
+    {
+      "id": "toncoin-ENT-008",
+      "projectSlug": "toncoin",
+      "name": "DOGS",
+      "type": "Protocol",
+      "status": null,
+      "description": "Airdrop berbasis umur akun Telegram; claim mulai 2024-08-16, TGE 2024-08-20; gelombang claim memicu kemacetan & outage jaringan TON 27–28 Agustus 2024",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [CoinLaunch, https://coinlaunch.space/projects/dogs/; Decrypt, https://decrypt.co/246776/telegram-game-hamster-kombat-token-launch-airdrop-september]"
+      }
+    },
+    {
+      "id": "toncoin-ENT-009",
+      "projectSlug": "toncoin",
+      "name": "Hamster Kombat",
+      "type": "Protocol",
+      "status": null,
+      "description": "Game tap-to-earn terbesar (300 juta pemain diklaim, 80 juta MAU Juli 2024); TGE + airdrop HMSTR 2024-09-26 di TON, 60% alokasi untuk pemain; TGE ditunda dari Juli karena skala claim",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Decrypt, https://decrypt.co/246776/telegram-game-hamster-kombat-token-launch-airdrop-september; BeInCrypto, https://beincrypto.com/week-in-crypto-hamster-kombat-tge-telegram-ceo-release/]"
+      }
+    }
   ]
 }

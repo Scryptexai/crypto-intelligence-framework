@@ -43668,5 +43668,140 @@
         "EV-007"
       ]
     }
+  ],
+  "Toncoin": [
+    {
+      "id": "toncoin-K-001",
+      "projectSlug": "toncoin",
+      "name": "Proyek yang dibunuh regulasi dapat bangkit bila kode benar-benar open-source dan jalur distribusinya kredibel non-sekuritas",
+      "category": "Core Insight",
+      "description": "PoW Giver mengubah \"aset sitaan hukum\" menjadi distribusi ala Bitcoin; tanpa TGE baru, tidak ada penawaran sekuritas baru yang bisa digugat.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Wublock; coin.space; DACM.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "toncoin-K-002",
+      "projectSlug": "toncoin",
+      "name": "Saluran distribusi platform (900+ juta pengguna Telegram) adalah moat L1 yang lebih kuat daripada insentif token",
+      "category": "Core Insight",
+      "description": "Mini Apps + @wallet mengonversi pengguna yang tidak pernah berniat memakai blockchain; USDT-in-chat memberi utilitas nyata tanpa subsidi.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "CryptoNewsNavigator; ABC Money; The Defiant.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "toncoin-K-003",
+      "projectSlug": "toncoin",
+      "name": "Label \"fair mining\" tidak menjamin hasil distribusi merata — kurva mining menentukan",
+      "category": "Core Insight",
+      "description": "96% supply habis dalam 51 hari ke 248 alamat; kesulitan awal rendah + kapasitas industri menghasilkan konsentrasi instan (analisis White Rabbit ~85.8% kelompok terhubung).",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "White Rabbit; DACM.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "toncoin-K-004",
+      "projectSlug": "toncoin",
+      "name": "Key-person risk terharga brutal ketika identitas proyek menempel pada satu figur",
+      "category": "Core Insight",
+      "description": "Penangkapan Durov (24 Agustus 2024) menjatuhkan TON 15-17% dalam jam dan TVL -30% dalam hari, meski ia tidak memegang peran resmi di TON saat itu.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "BeInCrypto; The Defiant.",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "toncoin-K-005",
+      "projectSlug": "toncoin",
+      "name": "Corporate-abandonment revival — proyek mati regulasi bangkit via open-source + distribusi mining kredibel",
+      "category": "Pattern Candidate",
+      "description": "Exit korporat penuh → komunitas melanjutkan kode → distribusi non-sale (mining) → legitimasi bertahap → (opsional) reintegrasi korporat. — Aset teknis solid, kode terbuka, dan jalur sale asli dibatalkan/direfund.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "EV-003; EV-004; EV-005; EV-006.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-003",
+        "EV-004",
+        "EV-005",
+        "EV-006"
+      ]
+    },
+    {
+      "id": "toncoin-K-006",
+      "projectSlug": "toncoin",
+      "name": "Mega-app TGE melampaui kapasitas L1 bila claim tidak bertahap",
+      "category": "Pattern Candidate",
+      "description": "Airdrop puluhan-juta pengguna → lonjakan transaksi serentak → kemacetan/outage multi-jam → redesain eksekusi claim. — L1 menjadi tuan rumah token launch aplikasi dengan basis pengguna >50 juta.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "EV-011.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-011"
+      ]
+    },
+    {
+      "id": "toncoin-K-007",
+      "projectSlug": "toncoin",
+      "name": "Distribusi platform mengalahkan insentif token untuk adopsi massal",
+      "category": "Pattern Candidate",
+      "description": "Integrasi chat/wallet dalam aplikasi 900+ juta pengguna + ad-revenue share native → aktivitas organik tanpa program poin. — L1 terintegrasi aplikasi konsumen raksasa dengan pembayaran mikro sebagai use case.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "EV-009; EV-012; Market Intelligence.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-009",
+        "EV-012"
+      ]
+    },
+    {
+      "id": "toncoin-K-008",
+      "projectSlug": "toncoin",
+      "name": "Renama token sebagai penanda peralihan rezim governance",
+      "category": "Pattern Candidate",
+      "description": "Gram (2018, korporat) → Toncoin (2021, komunitas) → Gram (2026, hibrida korporat-komunitas); nama berubah saat penjaga jaringan berubah, tanpa migrasi teknis (1:1). — Pergeseran kontrol proyek membutuhkan sinyal identitas baru tanpa memecah likuiditas.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "EV-006; EV-012.",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-006",
+        "EV-012"
+      ]
+    }
   ]
 }

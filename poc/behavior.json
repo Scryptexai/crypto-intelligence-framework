@@ -3198,5 +3198,31 @@
       "Fee hampir nol vs revenue protocol langsung",
       "Ketergantungan pada USDT TRC-20"
     ]
+  },
+  "Toncoin": {
+    "projectSlug": "toncoin",
+    "strategicObjectives": [
+      "Menjadikan Telegram (900+ juta pengguna) sebagai saluran distribusi mass-adoption pertama sebuah L1",
+      "Membangun legitimasi distribusi lewat mining publik setelah kematian korporat",
+      "Memisahkan diri sepenuhnya dari Telegram saat risiko hukum memuncak, lalu reintegrasi setelah iklim regulasi melunak",
+      "Mengejar skala konsumen lewat sharding dinamis & consensus cepat"
+    ],
+    "decisionPatterns": [
+      "Infinite Sharding + model aktor asinkron untuk throughput skala konsumen",
+      "Bootstrapping PoW untuk distribusi, lalu konsolidasi ke PoS (Catchain)",
+      "Menolak penjualan ulang token; seluruh supply lewat mining terbuka",
+      "Intervensi supply-side via governance (freeze 48 bulan + fee burn)",
+      "Stewardship foundation komunitas → reintegrasi korporat saat legal memungkinkan",
+      "Siklus \"kematian & kebangkitan\" dengan redefinisi identitas setiap fase"
+    ],
+    "riskResponse": [
+      "Pemisahan total dari entitas bermasalah hukum, lalu pemulihan hubungan bertahap",
+      "Koordinasi beban dengan aplikasi saat event mega-airdrop"
+    ],
+    "tradeOffs": [
+      "Ketergantungan distribusi Telegram vs narasi desentralisasi",
+      "Distribusi mining \"fair\" vs konsentrasi whale awal",
+      "Eksekusi asinkron & sharding vs pengalaman developer"
+    ]
   }
 }

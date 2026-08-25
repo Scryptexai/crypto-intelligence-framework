@@ -1,10 +1,10 @@
 {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-25 05:37 UTC",
+    "generated": "2026-08-25 07:34 UTC",
     "projects": 70,
-    "deep": 63,
-    "summary": 7,
+    "deep": 64,
+    "summary": 6,
     "sentiment": 0,
     "patterns": 16,
     "source": "examples/DatasetIndex.md + examples/PatternRegistry.md + examples/Sentiment/"
@@ -740,15 +740,14 @@
     },
     {
       "n": "Toncoin",
-      "tier": "Summary",
-      "file": "examples/Pioneer/Toncoin.md",
-      "cat": "Layer 1 / PoS (asal PoW Giver), Telegram",
-      "era": "2020–",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Toncoin.md",
+      "cat": "Layer 1 / PoS (Catchain) dynamic sharding, integrasi Telegram mini-apps",
+      "era": "2020– (asal Telegram 2018)",
       "tags": [
         "l1",
-        "airdrop",
-        "mining",
-        "pivot"
+        "governance",
+        "mining"
       ]
     },
     {

@@ -480,5 +480,119 @@
       "affectedKnowledge": [],
       "affectedPhase": "Phase 5"
     }
+  ],
+  "Toncoin": [
+    {
+      "id": "C-001",
+      "projectSlug": "toncoin",
+      "category": "Timeline",
+      "title": "Tanggal mainnet komunitas (Mei 2021 vs Agustus 2021)",
+      "description": "coin.space mencatat renama testnet2 menjadi mainnet pada Mei 2021, sementara OnChain Times mencatat peluncuran ulang resmi di bawah TON Foundation pada Agustus 2021. Keduanya mungkin merujuk momen berbeda (renama jaringan vs gelombang listing/relaunch publik).",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "coin.space",
+        "value": "renama testnet2 menjadi mainnet pada Mei 2021",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "OnChain Times",
+        "value": "peluncuran ulang resmi di bawah TON Foundation pada Agustus 2021",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Dicatat Mei 2021 sebagai renama mainnet (didukung dua sumber: coin.space, White Rabbit); Agustus 2021 sebagai era listing/relaunch; tidak resolved.",
+      "affectedKnowledge": [
+        "K-timeline"
+      ],
+      "affectedPhase": "Phase 3"
+    },
+    {
+      "id": "C-002",
+      "projectSlug": "toncoin",
+      "category": "Token",
+      "title": "Definisi circulating supply (~1.2 miliar vs ~2.76 miliar)",
+      "description": "DACM melaporkan estimasi supply beredar 1.2 miliar TON pada Juli 2023, sementara Coinbase melaporkan circulating supply 2.76 miliar TON pada Agustus 2026. Perbedaan disebabkan waktu pengukuran, pembukaan supply bertahap (inflasi validator + unfreeze), dan metodologi penghitungan.",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "DACM",
+        "value": "estimasi supply beredar 1.2 miliar TON pada Juli 2023",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Coinbase",
+        "value": "circulating supply 2",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Dipertahankan keduanya dengan timestamp masing-masing; tidak resolved.",
+      "affectedKnowledge": [
+        "K-tokenomics"
+      ],
+      "affectedPhase": "Phase 5"
+    },
+    {
+      "id": "C-003",
+      "projectSlug": "toncoin",
+      "category": "Token",
+      "title": "Narasi distribusi (mining komunitas vs konsentrasi whale)",
+      "description": "Narasi resmi ekosistem mencatat 98.55% supply (4.9275 miliar TON) didistribusikan lewat mining komunitas terbuka, sementara White Rabbit mencatat 85.8% supply ditambang oleh beberapa kelompok whale yang saling terhubung. Analisis on-chain menunjukkan 96% emisi Large Giver habis dalam 51 hari ke 248 alamat.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Narasi resmi ekosistem",
+        "value": "98.55% supply (4.9275 miliar TON) didistribusikan lewat mining komunitas terbuka",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "White Rabbit",
+        "value": "85.8% supply ditambang oleh beberapa kelompok whale yang saling terhubung",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Kedua fakta dipertahankan: mekanisme distribusi memang mining terbuka, namun hasil empirisnya terkonsentrasi; freeze 48 bulan (Des 2022) adalah respons governance sebagian. Tidak resolved penuh.",
+      "affectedKnowledge": [
+        "K-tokenomics; K-governance"
+      ],
+      "affectedPhase": "Phase 5"
+    },
+    {
+      "id": "C-004",
+      "projectSlug": "toncoin",
+      "category": "Governance",
+      "title": "Waktu pembentukan TON Foundation (Mei 2021 vs 2023)",
+      "description": "coin.space mencatat TON Foundation dibentuk pada Mei 2021 bersama renama mainnet, sementara CoinStats mencatat TON Foundation baru didirikan resmi sebagai organisasi non-profit pada 2023. Kemungkinan perbedaan antara pembentukan informal/branding komunitas dan formalisasi badan hukum.",
+      "severity": "Low",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "coin.space",
+        "value": "TON Foundation dibentuk pada Mei 2021 bersama renama mainnet",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "CoinStats",
+        "value": "TON Foundation baru didirikan resmi sebagai organisasi non-profit pada 2023",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Dicatat \"hadir sejak 2021, formalisasi nirlaba dilaporkan 2023\"; tidak resolved.",
+      "affectedKnowledge": [
+        "K-governance"
+      ],
+      "affectedPhase": "Phase 3"
+    }
   ]
 }

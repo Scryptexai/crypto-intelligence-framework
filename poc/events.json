@@ -28153,5 +28153,236 @@
       "_location": "New York",
       "_status": "Completed"
     }
+  ],
+  "Toncoin": [
+    {
+      "id": "toncoin-EV-001",
+      "projectSlug": "toncoin",
+      "name": "Gram SAFT: Telegram menghimpun $1.7 miliar dari 171 investor",
+      "date": "2018-01",
+      "type": "Token Sale",
+      "participants": [
+        "Telegram Group Inc.",
+        "TON Issuer Inc.",
+        "171 investor terakreditasi"
+      ],
+      "description": "Telegram menjual Gram Token Purchase Agreements lewat private placement (Regulation D 506(c)) dalam dua ronde (Januari & Maret 2018), menghimpun ~$1.7 miliar — penjualan token terbesar era itu; struktur SAFT klasik dengan janji token Gram pasca-mainnet.",
+      "result": "Kas pengembangan besar; mainnet ditargetkan 2019.",
+      "source": "CIF Research Dossier",
+      "url": "https://wublock.substack.com/p/compliance-chronicles-the-evolution; https://businessmodelcanvastemplate.com/blogs/owners/ton-provider-who-owns",
+      "affectedKnowledge": [],
+      "_location": "AS/global",
+      "_status": "Completed"
+    },
+    {
+      "id": "toncoin-EV-002",
+      "projectSlug": "toncoin",
+      "name": "SEC menggugat Telegram: penjualan Gram $1.7B = sekuritas tidak terdaftar",
+      "date": "2019-10-11",
+      "type": "Regulatory",
+      "participants": [
+        "SEC",
+        "Telegram Group Inc.",
+        "TON Issuer Inc."
+      ],
+      "description": "SEC mengajukan gugatan terhadap Telegram Group Inc. dan TON Issuer Inc., menuduh penjualan Gram sebagai penawaran sekuritas tidak terdaftar; peluncuran mainnet tertunda selama proses hukum.",
+      "result": "Mainnet Gram tertunda; proses injunction dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://wublock.substack.com/p/compliance-chronicles-the-evolution; https://coin.space/toncoin-origin-story-how-to-buy-and-where-to-store/",
+      "affectedKnowledge": [],
+      "_location": "Amerika Serikat (S.D.N.Y.)",
+      "_status": "Completed"
+    },
+    {
+      "id": "toncoin-EV-003",
+      "projectSlug": "toncoin",
+      "name": "Preliminary injunction Judge Castel menghentikan distribusi Gram",
+      "date": "2020-03-24",
+      "type": "Regulatory",
+      "participants": [
+        "Judge P. Kevin Castel (S.D.N.Y.)",
+        "SEC",
+        "Telegram"
+      ],
+      "description": "Judge P. Kevin Castel mengabulkan preliminary injunction: SAFT dan token Gram dinilai satu kesatuan penawaran sekuritas terintegrasi (pembeli SAFT sejak awal diharapkan menjual ulang token di pasar sekunder), sehingga distribusi ke investor AS maupun non-AS dihentikan.",
+      "result": "Distribusi Gram terblokir global; Telegram mencari opsi hukum.",
+      "source": "CIF Research Dossier",
+      "url": "https://wublock.substack.com/p/compliance-chronicles-the-evolution",
+      "affectedKnowledge": [],
+      "_location": "New York",
+      "_status": "Completed"
+    },
+    {
+      "id": "toncoin-EV-004",
+      "projectSlug": "toncoin",
+      "name": "Telegram menyerah: Durov mengumumkan penghentian TON; settlement & open-source",
+      "date": "2020-05-12",
+      "type": "Shutdown / Settlement",
+      "participants": [
+        "Pavel Durov",
+        "Telegram",
+        "SEC"
+      ],
+      "description": "Setelah gagal membalik injunction, Pavel Durov mengumumkan Telegram mengakhiri keterlibatan di TON (Mei 2020). Settlement SEC 2020-06-26: pengembalian $1.224 miliar ke investor + penalti perdata $18.5 juta; kode TON kemudian dipublikasikan open-source sehingga komunitas dapat melanjutkan.",
+      "result": "Proyek korporat mati secara resmi; kode terbuka menjadi basis komunitas.",
+      "source": "CIF Research Dossier",
+      "url": "https://wublock.substack.com/p/compliance-chronicles-the-evolution; https://coin.space/toncoin-origin-story-how-to-buy-and-where-to-store/; https://tradersunion.com/news/editors-picks/show/2374093-toncoin-becomes-gram/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "toncoin-EV-005",
+      "projectSlug": "toncoin",
+      "name": "Mining PoW Giver dimulai: 98.55% supply 5 miliar didistribusikan publik",
+      "date": "2020-07-06",
+      "type": "Distribution",
+      "participants": [
+        "Komunitas penambang",
+        "TON Foundation/pengelola Giver"
+      ],
+      "description": "Alih-alih menjual ulang token, supply awal 5 miliar Gram/Toncoin dikunci dalam kontrak \"Giver\" proof-of-work yang dapat ditambang siapa pun (6 Juli 2020–28 Juni 2022). Large Giver mendistribusikan ~4.8 miliar (96%) hanya dalam 51 hari pertama (6 Juli–26 Agustus 2020) ke 248 alamat; analisis White Rabbit menemukan ~85.8% supply ditambang kelompok whale yang saling terhubung (Conflict C-003). Mining berakhir 2022-06-28 setelah seluruh alokasi tertambang.",
+      "result": "Distribusi ala Bitcoin tanpa ICO; konsentrasi whale awal menjadi isu jangka panjang.",
+      "source": "CIF Research Dossier",
+      "url": "https://medium.com/@richard.galvin/the-open-network-b307676640e0; https://medium.com/@whiterabbit_hq/ton-blockchain-a-group-of-related-whales-mined-85-of-ton-supply-2e3300cc93bc; https://coin.space/toncoin-origin-story-how-to-buy-and-where-to-store/",
+      "affectedKnowledge": [],
+      "_location": "Global (on-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "toncoin-EV-006",
+      "projectSlug": "toncoin",
+      "name": "Mainnet komunitas: testnet2 menjadi mainnet; Gram renama Toncoin; TON Foundation terbentuk",
+      "date": "2021-05",
+      "type": "Launch",
+      "participants": [
+        "Komunitas TON",
+        "TON Foundation"
+      ],
+      "description": "Setelah setahun operasi stabil, komunitas memberi voting mengganti nama testnet2 menjadi mainnet (Mei 2021), token Gram diganti nama Toncoin untuk memutus asosiasi legal dengan Telegram, dan TON Foundation dibentuk sebagai pendukung nirlaba; hak ton.org & GitHub dialihkan ke tim pengembang. OnChain Times mencatat \"relaunch resmi\" Agustus 2021 (Conflict C-001). Jembatan TON-ETH/TON-BSC (Juni 2021), TON Payments (Juli), listing exchange besar (Agustus), TON Sites (September) menyusul.",
+      "result": "Jaringan beroperasi penuh sebagai proyek komunitas; listing exchange besar 2021.",
+      "source": "CIF Research Dossier",
+      "url": "https://coin.space/toncoin-origin-story-how-to-buy-and-where-to-store/; https://www.onchaintimes.com/ton-the-most-credible-mass-adoption/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "toncoin-EV-007",
+      "projectSlug": "toncoin",
+      "name": "@wallet di Telegram + mekanisme deflasi Toncoin",
+      "date": "2022-06",
+      "type": "Product",
+      "participants": [
+        "TON Foundation",
+        "Telegram",
+        "komunitas"
+      ],
+      "description": "Wallet custodial @wallet diintegrasikan ke Telegram (P2P exchange dalam aplikasi); mekanisme deflasi Toncoin diperkenalkan (sebagian biaya jaringan dibakar) sebagai penahan nilai.",
+      "result": "Akses on-ramp langsung ke ratusan juta pengguna Telegram.",
+      "source": "CIF Research Dossier",
+      "url": "https://coin.space/toncoin-origin-story-how-to-buy-and-where-to-store/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "toncoin-EV-008",
+      "projectSlug": "toncoin",
+      "name": "Voting komunitas membekukan ~1.081 miliar TON milik penambang genesis nonaktif",
+      "date": "2022-12",
+      "type": "Governance",
+      "participants": [
+        "Pemegang TON (voting on-chain)",
+        "TON Foundation"
+      ],
+      "description": "Pengguna TON memberi voting membekukan ~20% total supply (~1.081 miliar TON dari 171 akun genesis penambang Giver yang tidak pernah bertransaksi) selama 48 bulan — intervensi tata kelola untuk menekan overhang supply whale pasif.",
+      "result": "Effective supply beredar berkurang; preseden governance supply-side.",
+      "source": "CIF Research Dossier",
+      "url": "https://medium.com/@richard.galvin/the-open-network-b307676640e0; https://medium.com/coinmonks/ton-tokenomics-an-overview-1d63413b1ebc",
+      "affectedKnowledge": [],
+      "_location": "Global (on-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "toncoin-EV-009",
+      "projectSlug": "toncoin",
+      "name": "USDT/XAUT native di TON + gelombang mini-apps (Notcoin TGE)",
+      "date": "2024-04",
+      "type": "Ecosystem",
+      "participants": [
+        "Tether",
+        "TON Foundation",
+        "Telegram",
+        "Notcoin"
+      ],
+      "description": "Tether meluncurkan USDT dan XAUT native di TON (diumumkan di Token2049 Dubai, April 2024); >$200M beredar dalam <1 bulan (launch USDT tercepat dalam sejarah Tether). Program ad-revenue-sharing Telegram membayar pemilik channel 50% pendapatan iklan dalam TON (awal 2024). Notcoin TGE 2024-05-16 (35 juta pemain) menetapkan format airdrop mini-app. Rekor throughput publik ~104 ribu TPS dicapai pada uji stres Oktober 2023. TVL DeFi memuncak ~$800 juta musim panas 2024.",
+      "result": "Likuiditas stablecoin + distribusi Telegram menjadikan TON L1 tercepat tumbuh 2024.",
+      "source": "CIF Research Dossier",
+      "url": "https://flagship.fyi/outposts/blockchains/the-state-of-the-ton-ecosystem-may-2024/; https://changelly.com/blog/ton-ecosystem/; https://thedefiant.io/news/blockchains/toncoin-surges-as-telegram-takes-direct-control-of-ton-network; https://www.bestchange.com/blog/tether-usdt-on-ton-network",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "toncoin-EV-010",
+      "projectSlug": "toncoin",
+      "name": "Pavel Durov ditangkap di Paris; TON jatuh ~15-17%",
+      "date": "2024-08-24",
+      "type": "Risk",
+      "participants": [
+        "Pavel Durov",
+        "otoritas Prancis",
+        "pasar TON"
+      ],
+      "description": "Pavel Durov ditangkap di bandara Le Bourget, Paris, dengan 12 dakwaan terkait aktivitas ilegal di Telegram (termasuk kegagalan moderasi konten); bail €5 juta + wajib tinggal di Prancis. Toncoin turun ~15-17% dalam hitungan jam ($6.80 → ~$5.4-5.7); TVL TON jatuh ~30% beberapa hari setelahnya. Bebas dari tahanan memicu rebound ~8%.",
+      "result": "Key-person risk terekspos; TVL & harga pulih bertahap; Telegram memperketat moderasi.",
+      "source": "CIF Research Dossier",
+      "url": "https://beincrypto.com/telegram-pavel-durovs-arrested-in-france/; https://thedefiant.io/news/blockchains/toncoin-surges-as-telegram-takes-direct-control-of-ton-network; https://beincrypto.com/week-in-crypto-hamster-kombat-tge-telegram-ceo-release/",
+      "affectedKnowledge": [],
+      "_location": "Paris, Prancis",
+      "_status": "Completed"
+    },
+    {
+      "id": "toncoin-EV-011",
+      "projectSlug": "toncoin",
+      "name": "DOGS TGE + outage jaringan; Hamster Kombat HMSTR 26 September",
+      "date": "2024-08-20",
+      "type": "Ecosystem / Incident",
+      "participants": [
+        "DOGS",
+        "Hamster Kombat",
+        "TON Core"
+      ],
+      "description": "DOGS TGE 2024-08-20 (claim mulai 16 Agustus) dan gelombang claim lanjutan memicu kemacetan besar; TON mengalami outage beberapa jam pada dua hari beruntun (27–28 Agustus 2024) yang dikonfirmasi terkait token launch DOGS. Hamster Kombat (300 juta pemain) menjadwalkan ulang TGE HMSTR ke 2024-09-26 dengan 60% airdrop untuk pemain, berkoordinasi dengan TON Core untuk eksekusi claim skala besar.",
+      "result": "Stress-test nyata skalabilitas TON; pembelajaran desain claim bertahap.",
+      "source": "CIF Research Dossier",
+      "url": "https://coinlaunch.space/projects/dogs/; https://decrypt.co/246776/telegram-game-hamster-kombat-token-launch-airdrop-september; https://decrypt.co/236360/hamster-kombat-telegram-game-airdrop-everything-need-know",
+      "affectedKnowledge": [],
+      "_location": "Global (on-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "toncoin-EV-012",
+      "projectSlug": "toncoin",
+      "name": "Kembalinya era institusional & pengambilalihan Telegram (2025–2026)",
+      "date": "2025-11",
+      "type": "Milestone",
+      "participants": [
+        "Pantera",
+        "SkyBridge",
+        "Kraken",
+        "Telegram",
+        "TON Foundation",
+        "komunitas"
+      ],
+      "description": "PIPE ~$558 juta (Pantera, SkyBridge, Kraken) membawa investor institusional (2025); USDT di TON menembus ~$1.43 miliar per November 2025; Telegram meluncurkan wallet TON terintegrasi ke ~87 juta pengguna AS (Juli 2025). April 2026: Telegram mengambil alih peran utama TON Foundation dan menjadi validator terbesar (stake 2.2 juta TON per 2026-04-30, program \"Make TON Great Again\"/MTONGA); upgrade Catchain 2.0 memangkas block time ke ~400 ms & finalitas <1 detik. 2026-06-15: vote komunitas (81.22%) mengganti nama Toncoin→Gram (konversi 1:1, tanpa migrasi).",
+      "result": "Reintegrasi Telegram–TON; performa naik drastis; harga Agustus 2026 ~$1.40-1.50, market cap ~$3.8-4.2 miliar (~peringkat 31).",
+      "source": "CIF Research Dossier",
+      "url": "https://www.cryptonewsnavigator.com/academy/article/toncoin-survived-telegrams-sec-battle-and-built-something-bigger; https://coinshares.com/us/insights/knowledge/toncoin-ton-guide/; https://coinstats.app/ai/a/fundamental-analysis-the-open-network; https://www.coinbase.com/price/toncoin",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Ongoing"
+    }
   ]
 }

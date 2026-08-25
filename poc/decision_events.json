@@ -12827,5 +12827,36 @@
       "supporting_dataset": null,
       "open_threads": null
     }
+  ],
+  "Toncoin": [
+    {
+      "project": "Toncoin",
+      "date": "2020-07-06",
+      "title": "Mendistribusikan 98.55% supply 5 miliar lewat kontrak PoW Giver alih-alih menjual ulang token pasca-exit Telegram",
+      "motivation": "Setelah Telegram dipaksa keluar oleh SEC, supply 5 miliar yang sudah \"tercipta\" memerlukan jalur distribusi yang (a) tidak dapat dituduh sebagai penawaran sekuritas baru dan (b) memberi legitimasi komunitas — mining terbuka ala Bitcoin memenuhi keduanya. (MEDIUM) [coin.space, https://coin.space/toncoin-origin-story-how-to-buy-and-where-to-store/]",
+      "constraint": "Tidak ada kas/entitas resmi pasca-settlement ($1.224B dikembalikan ke investor); risiko hukum jika token dijual ulang oleh entitas mana pun yang terafiliasi Telegram. (HIGH) [Wublock, https://wublock.substack.com/p/compliance-chronicles-the-evolution]",
+      "pressure": "Komunitas developer sudah mulai membangun (Free TON dll.) dan membutuhkan aset dasar yang terdistribusi; tekanan waktu sebelum momentum hilang. (MEDIUM)",
+      "tradeoff": "Meninggalkan potensi pendapatan penjualan token demi kredibilitas distribusi; konsekuensi tak diinginkan: mining 51 hari pertama dikuasai kelompok whale terhubung (~85.8%). (MEDIUM) [White Rabbit, https://medium.com/@whiterabbit_hq/ton-blockchain-a-group-of-related-whales-mined-85-of-ton-supply-2e3300cc93bc]",
+      "alternatives": "(1) Menjual ulang via ICO/exchange — ditolak karena risiko sekuritas; (2) Membakar seluruh supply & mulai nol — ditolak karena membuang aset teknis/ekonomi; (3) Distribusi privat ke komunitas inti — ditolak karena mengulangi pola SAFT. (Inferensi LOW)",
+      "expectation_vs_actual": "Harapan: distribusi luas & terdesentralisasi seperti Bitcoin. Actual: 96% supply tertambang dalam 51 hari oleh 248 alamat (konsentrasi tinggi), namun jaringan tetap hidup, tumbuh menjadi mainnet komunitas (2021), dan akhirnya menarik reintegrasi Telegram (2026). (MEDIUM) [DACM; White Rabbit]",
+      "reactions": {
+        "Founder": "Positif tertahan — Durov bersaudara tidak terlibat resmi namun secara publik menyambut kelanjutan komunitas; reintegrasi penuh baru terjadi 2026. (MEDIUM)",
+        "VC": "Negatif — investor SAFT menerima refund $1.224B (modal kembali) namun kehilangan potensi upside Gram/Toncoin. (MEDIUM) [Wublock]",
+        "Retail": "Positif — akses mining terbuka tanpa modal besar (Small Giver) dan tanpa KYC penjualan token. (MEDIUM)",
+        "Community": "Positif — menjadi fondasi kebangkitan proyek; basis motivasi komunitas inti. (HIGH)",
+        "Developer": "Positif — kode open-source + aset terdistribusi memberi landasan membangun (wallet, bridge, dApps sejak 2021). (MEDIUM)",
+        "Institution": "Negatif/hati-hati — sejarah sekuritas Gram membuat institusi menjauh hingga era PIPE 2025. (MEDIUM) [CryptoNewsNavigator]",
+        "Validator": "Positif — supply terdistribusi memungkinkan transisi PoS dengan basis nominator/validator luas (311 validator per mid-2023). (MEDIUM) [DACM]",
+        "Builder": "Positif — distribusi tanpa gatekeeper VC membuka akses setara bagi builder awal. (Inferensi LOW)"
+      },
+      "grounding": "coin.space, Wublock, DACM, White Rabbit, CoinMonks + timeline internal EV-004..EV-006.",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
+      "open_threads": null
+    }
   ]
 }

@@ -729,15 +729,14 @@
   },
   {
     "n": "Toncoin",
-    "tier": "Summary",
-    "file": "examples/Pioneer/Toncoin.md",
-    "cat": "Layer 1 / PoS (asal PoW Giver), Telegram",
-    "era": "2020–",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Toncoin.md",
+    "cat": "Layer 1 / PoS (Catchain) dynamic sharding, integrasi Telegram mini-apps",
+    "era": "2020– (asal Telegram 2018)",
     "tags": [
       "l1",
-      "airdrop",
-      "mining",
-      "pivot"
+      "governance",
+      "mining"
     ]
   },
   {
